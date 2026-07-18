@@ -2,99 +2,170 @@
 
 
 # Complete CommonMark & GitHub Markdown Test
-
-This document tests the core features of **CommonMark** and selected **GitHub Flavored Markdown (GFM)**.
+# Markdown Syntax Cheat Sheet
+*A complete guide showing what to type and what it renders as.*
 
 ---
 
+# Headings
+
+## Syntax
+
+```md
 # Heading 1
-
-Paragraph under Heading 1.
-
 ## Heading 2
-
-Paragraph under Heading 2.
-
 ### Heading 3
-
-Paragraph under Heading 3.
-
 #### Heading 4
-
-Paragraph under Heading 4.
-
 ##### Heading 5
-
-Paragraph under Heading 5.
-
 ###### Heading 6
+```
 
-Paragraph under Heading 6.
+## Output
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
 
 ---
 
 # Paragraphs
 
-This is the first paragraph.
+## Syntax
 
-This is the second paragraph.
+```md
+This is paragraph one.
 
-This paragraph contains multiple
-lines that should render
-as one paragraph.
+This is paragraph two.
 
-This paragraph ends with two spaces.  
-This line should appear below it.
+This is still
+the same paragraph.
+
+This line ends with two spaces.··
+Next line
+```
+
+(The `··` represents **two spaces** before pressing Enter.)
+
+## Output
+
+This is paragraph one.
+
+This is paragraph two.
+
+This is still
+the same paragraph.
+
+This line ends with two spaces.  
+Next line
 
 ---
 
-# Emphasis
+# Bold
 
-*Italic*
+## Syntax
 
-_Italic_
+```md
+**Bold Text**
 
-**Bold**
+__Bold Text__
+```
 
-__Bold__
+## Output
+
+**Bold Text**
+
+__Bold Text__
+
+---
+
+# Italic
+
+## Syntax
+
+```md
+*Italic Text*
+
+_Italic Text_
+```
+
+## Output
+
+*Italic Text*
+
+_Italic Text_
+
+---
+
+# Bold + Italic
+
+## Syntax
+
+```md
+***Bold Italic***
+
+___Bold Italic___
+```
+
+## Output
 
 ***Bold Italic***
 
 ___Bold Italic___
 
-~~Strikethrough~~
+---
 
-**Bold with _italic_ inside**
+# Strikethrough
 
-*Italic with **bold** inside*
+## Syntax
+
+```md
+~~Deleted Text~~
+```
+
+## Output
+
+~~Deleted Text~~
+
+---
+
+# Mixed Formatting
+
+## Syntax
+
+```md
+**Bold with _Italic_ inside**
+
+*Italic with **Bold** inside*
+
+~~**Bold Strikethrough**~~
+```
+
+## Output
+
+**Bold with _Italic_ inside**
+
+*Italic with **Bold** inside*
 
 ~~**Bold Strikethrough**~~
 
 ---
 
-# Escaping Characters
+# Horizontal Rules
 
-\*Not italic\*
+## Syntax
 
-\# Not a heading
-
-\`Not code\`
-
-\\ Backslash
-
-\> Not a blockquote
-
-\_Not italic\_
-
-\[\]
-
-\(\)
-
-\{\}
-
+```md
 ---
 
-# Horizontal Rules
+***
+
+___
+```
+
+## Output
 
 ---
 
@@ -106,444 +177,251 @@ ___
 
 # Blockquotes
 
-> Simple quote.
+## Syntax
 
-> Another quote
-> continuing onto another line.
+```md
+> Quote
 
-> Nested quote
->
->> Second level
->>
->>> Third level
+> Multi-line
+> Quote
 
-> ## Quote with Heading
->
-> - List item
-> - Another item
->
-> **Bold**
->
-> `inline code`
+>> Nested Quote
+
+>>> Triple Nested
+```
+
+## Output
+
+> Quote
+
+> Multi-line
+> Quote
+
+>> Nested Quote
+
+>>> Triple Nested
 
 ---
 
 # Lists
 
-## Unordered
+## Unordered List
 
-- Item 1
-- Item 2
-- Item 3
+### Syntax
 
-* Item A
-* Item B
-* Item C
+```md
+- Apple
+- Banana
+- Cherry
+```
 
-+ Item X
-+ Item Y
-+ Item Z
+### Output
+
+- Apple
+- Banana
+- Cherry
 
 ---
 
-## Nested Lists
+### Syntax
+
+```md
+* Apple
+* Banana
+* Cherry
+```
+
+### Output
+
+* Apple
+* Banana
+* Cherry
+
+---
+
+### Syntax
+
+```md
++ Apple
++ Banana
++ Cherry
+```
+
+### Output
+
++ Apple
++ Banana
++ Cherry
+
+---
+
+# Nested Lists
+
+## Syntax
+
+```md
+- Parent
+    - Child
+        - Grandchild
+```
+
+## Output
 
 - Parent
     - Child
         - Grandchild
-            - Great Grandchild
 
 ---
 
-## Ordered Lists
+# Ordered Lists
 
-1. One
-2. Two
-3. Three
+## Syntax
+
+```md
+1. First
+2. Second
+3. Third
+```
+
+## Output
 
 1. First
-1. Second
-1. Third
+2. Second
+3. Third
 
 ---
 
-## Mixed Lists
+# Mixed Lists
 
-1. Ordered
-    - Unordered
-        1. Ordered
-            - Unordered
+## Syntax
+
+```md
+1. Item
+    - Child
+        1. Grandchild
+```
+
+## Output
+
+1. Item
+    - Child
+        1. Grandchild
 
 ---
 
 # Links
 
-Inline link:
+## Inline Link
 
-<https://github.com>
+### Syntax
 
-Named link:
+```md
+[GitHub](https://github.com)
+```
+
+### Output
 
 [GitHub](https://github.com)
 
-Reference link:
+---
 
-[GitHub Docs][docs]
+## Automatic Link
 
-[docs]: https://docs.github.com
+### Syntax
 
-Email:
+```md
+<https://github.com>
+```
+
+### Output
+
+<https://github.com>
+
+---
+
+## Email Link
+
+### Syntax
+
+```md
+<example@example.com>
+```
+
+### Output
 
 <example@example.com>
 
 ---
 
-# Images
+## Reference Link
 
-Basic image
+### Syntax
 
-![Placeholder](https://via.placeholder.com/200)
+```md
+[GitHub][github]
 
-Linked image
+[github]: https://github.com
+```
 
-[![Placeholder](https://via.placeholder.com/100)](https://github.com)
+### Output
 
-Reference image
+[GitHub][github]
 
-![Logo][logo]
-
-[logo]: https://via.placeholder.com/150
+[github]: https://github.com
 
 ---
 
-# Automatic Links
+# Images
 
-<https://google.com>
+## Basic Image
 
-<https://github.com>
+### Syntax
 
-<mailto:test@example.com>
+```md
+![Alt Text](https://via.placeholder.com/200)
+```
+
+### Output
+
+![Alt Text](https://via.placeholder.com/200)
+
+---
+
+## Clickable Image
+
+### Syntax
+
+```md
+[![Alt](https://via.placeholder.com/150)](https://github.com)
+```
+
+### Output
+
+[![Alt](https://via.placeholder.com/150)](https://github.com)
 
 ---
 
 # Inline Code
 
-Use the `printf()` function.
+## Syntax
 
-Use `git status`.
+```md
+Use the `git status` command.
+```
 
-Use `npm install`.
+## Output
+
+Use the `git status` command.
 
 ---
 
 # Code Blocks
 
-Indented:
+## Plain
 
-    This is code.
-    Still code.
+### Syntax
 
-Fenced:
-
+````md
 ```
-Plain text
+Hello World
 ```
-
-Language:
-
-```python
-print("Hello World")
-```
-
-```javascript
-console.log("Hello");
-```
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "Hello";
-}
-```
-
-```bash
-git status
-git add .
-git commit -m "test"
-```
-
-```json
-{
-  "name": "markdown"
-}
-```
-
----
-
-# Inline HTML
-
-<b>Bold HTML</b>
-
-<strong>Strong HTML</strong>
-
-<i>Italic HTML</i>
-
-<em>Emphasis HTML</em>
-
-<u>Underline</u>
-
-<mark>Highlighted</mark>
-
-<small>Small text</small>
-
-<big>Big text (deprecated HTML)</big>
-
-<sub>Subscript</sub>
-
-<sup>Superscript</sup>
-
-<del>Deleted</del>
-
-<ins>Inserted</ins>
-
-<code>Inline code</code>
-
-<kbd>Ctrl</kbd> + <kbd>C</kbd>
-
-<samp>Output</samp>
-
-<var>x</var>
-
-<abbr title="HyperText Markup Language">HTML</abbr>
-
----
-
-# HTML Paragraph
-
-<p>
-This paragraph uses raw HTML.
-Markdown is ignored inside HTML blocks unless specifically supported.
-</p>
-
----
-
-# HTML Div
-
-<div>
-
-This content is inside a div.
-
-**Markdown may not render here depending on parser.**
-
-</div>
-
----
-
-# HTML Span
-
-<span style="color:red;">Red Text (style stripped on GitHub)</span>
-
-<span>Plain Span</span>
-
----
-
-# HTML Line Breaks
-
-Line One<br>
-Line Two<br>
-Line Three
-
----
-
-# HTML Horizontal Rule
-
-<hr>
-
----
-
-# HTML Tables
-
-<table>
-<tr>
-<th>Name</th>
-<th>Age</th>
-</tr>
-
-<tr>
-<td>Alice</td>
-<td>30</td>
-</tr>
-
-<tr>
-<td>Bob</td>
-<td>25</td>
-</tr>
-</table>
-
----
-
-# HTML Lists
-
-<ul>
-<li>Apple</li>
-<li>Banana</li>
-<li>Cherry</li>
-</ul>
-
-<ol>
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
-</ol>
-
----
-
-# HTML Details
-
-<details>
-
-<summary>Click to expand</summary>
-
-Hidden content.
-
-More hidden content.
-
-</details>
-
----
-
-# HTML Images
-
-<img
-src="https://via.placeholder.com/300"
-alt="Placeholder"
-width="300">
-
----
-
-# HTML Links
-
-<a href="https://github.com">GitHub</a>
-
----
-
-# HTML Quote
-
-<blockquote>
-
-This is an HTML blockquote.
-
-</blockquote>
-
----
-
-# HTML Preformatted
-
-<pre>
-Line 1
-Line 2
-Line 3
-</pre>
-
----
-
-# HTML Code
-
-<pre><code>
-function hello() {
-    console.log("Hello");
-}
-</code></pre>
-
----
-
-# HTML Comments
-
-<!--
-Invisible comment
--->
-
-Visible text.
-
----
-
-# Entity References
-
-&amp;
-
-&lt;
-
-&gt;
-
-&quot;
-
-&apos;
-
-&copy;
-
-&trade;
-
-&hearts;
-
----
-
-# Mixed Markdown + HTML
-
-<div>
-
-# Markdown Heading
-
-This may or may not render depending on parser.
-
-**Bold**
-
-</div>
-
----
-
-# Edge Cases
-
-******
-
-___
-
-- - -
-
-***
-
-> **Bold Quote**
-
-> *Italic Quote*
-
-> `Code Quote`
-
----
-
-# Empty Elements
-
-<br>
-
-<hr>
-
----
-
-# Unicode
-
-😀 😁 😂 🤖 🚀 ❤️
-
-こんにちは
-
-Привет
-
-مرحبا
-
-שלום
-
-नमस्ते
-
----
-
-# End
-
-If everything above renders correctly, your renderer supports nearly all core CommonMark syntax plus GitHub's supported inline HTML.
