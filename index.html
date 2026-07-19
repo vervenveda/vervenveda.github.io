@@ -1,3 +1,1448 @@
+from pathlib import Path
+
+output = Path("/mnt/data/index.html")
+
+html = r'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Verve N Veda is a sovereign sanctuary for learning, stewardship, creativity, community, and compassionate public resources.">
+  <meta name="theme-color" content="#e9e2d3">
+  <meta name="color-scheme" content="light">
+  <title>Verve N Veda</title>
+
+  <style>
+    :root {
+      --paper: #f4efe4;
+      --paper-deep: #e6dcc9;
+      --cream: #fffdf7;
+      --ink: #213128;
+      --muted: #68756c;
+      --moss: #556b55;
+      --forest: #2f4a3b;
+      --river: #4b7772;
+      --river-light: #a9cbc2;
+      --clay: #b77b5b;
+      --gold: #b89958;
+      --bark: #725746;
+      --line: rgba(47, 74, 59, .15);
+      --white-line: rgba(255,255,255,.26);
+      --shadow: 0 28px 80px rgba(47, 74, 59, .15);
+      --shadow-soft: 0 16px 46px rgba(47, 74, 59, .09);
+      --radius: 28px;
+      --max: 1180px;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      min-width: 280px;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(184,153,88,.15), transparent 30%),
+        radial-gradient(circle at 92% 12%, rgba(75,119,114,.13), transparent 28%),
+        linear-gradient(180deg, #fffdf8 0%, var(--paper) 58%, #eaf0e8 100%);
+      font-family: var(--sans);
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    body.menu-open { overflow: hidden; }
+
+    a { color: inherit; }
+    img, svg { display: block; max-width: 100%; }
+    button, input, textarea, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .skip-link {
+      position: fixed;
+      z-index: 5000;
+      top: 12px;
+      left: 12px;
+      transform: translateY(-160%);
+      padding: .75rem 1rem;
+      border-radius: 999px;
+      color: white;
+      background: #111;
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .shell {
+      width: min(calc(100% - 36px), var(--max));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(47,74,59,.08);
+      background: rgba(255,253,247,.78);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-shell {
+      width: min(calc(100% - 32px), var(--max));
+      min-height: 76px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 44px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(184,153,88,.45);
+      border-radius: 50%;
+      background: rgba(255,255,255,.72);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .brand-mark svg {
+      width: 26px;
+      fill: none;
+      stroke: var(--gold);
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .brand-copy {
+      display: grid;
+      line-height: 1.02;
+    }
+
+    .brand-copy strong {
+      font-family: var(--serif);
+      font-size: 1.18rem;
+      font-weight: 500;
+      letter-spacing: .02em;
+    }
+
+    .brand-copy small {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: .65rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-actions > a {
+      padding: .7rem .88rem;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--forest);
+      font-size: .88rem;
+      font-weight: 750;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .nav-actions > a:hover,
+    .nav-actions > a:focus-visible {
+      background: rgba(255,255,255,.82);
+      transform: translateY(-1px);
+    }
+
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--forest);
+      box-shadow: var(--shadow-soft);
+      cursor: pointer;
+    }
+
+    .menu-button span,
+    .menu-button::before,
+    .menu-button::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      display: block;
+      border-radius: 10px;
+      background: currentColor;
+      transition: transform 180ms ease, opacity 180ms ease;
+    }
+
+    .menu-button span { margin: 4px auto; }
+    .menu-button[aria-expanded="true"] span { opacity: 0; }
+    .menu-button[aria-expanded="true"]::before { transform: translateY(6px) rotate(45deg); }
+    .menu-button[aria-expanded="true"]::after { transform: translateY(-6px) rotate(-45deg); }
+
+    .menu-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1400;
+      opacity: 0;
+      visibility: hidden;
+      background: rgba(28,40,33,.38);
+      backdrop-filter: blur(5px);
+      transition: opacity 220ms ease, visibility 220ms ease;
+    }
+
+    .menu-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .site-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1500;
+      width: min(460px, 94vw);
+      height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(circle at 90% 5%, rgba(184,153,88,.16), transparent 27%),
+        var(--cream);
+      box-shadow: -24px 0 70px rgba(26,40,31,.22);
+      transform: translateX(102%);
+      transition: transform 280ms ease;
+    }
+
+    .site-drawer.open { transform: translateX(0); }
+
+    .drawer-head {
+      min-height: 80px;
+      padding: 0 20px 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .drawer-head strong {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--forest);
+    }
+
+    .drawer-close {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: white;
+      color: var(--forest);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .drawer-nav {
+      padding: 22px 22px 38px;
+      overflow-y: auto;
+    }
+
+    .drawer-group {
+      margin: 18px 10px 8px;
+      color: var(--gold);
+      font-size: .72rem;
+      font-weight: 850;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .drawer-nav a {
+      min-height: 52px;
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: background 160ms ease;
+    }
+
+    .drawer-nav a:hover,
+    .drawer-nav a:focus-visible {
+      background: rgba(75,119,114,.09);
+      outline: none;
+    }
+
+    .drawer-nav a span:last-child { color: var(--gold); }
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      padding: 130px 0 72px;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(255,253,247,.55), rgba(244,239,228,.88)),
+        radial-gradient(circle at 50% 20%, rgba(255,255,255,.9), transparent 38%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: auto -10% -180px;
+      height: 360px;
+      border-radius: 50%;
+      background: rgba(75,119,114,.10);
+      filter: blur(12px);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(360px, .98fr);
+      gap: clamp(42px, 7vw, 94px);
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 850;
+      letter-spacing: .21em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 38px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-family: var(--serif);
+      font-size: clamp(4.8rem, 10.5vw, 9.4rem);
+      font-weight: 500;
+      line-height: .84;
+      letter-spacing: -.06em;
+      color: var(--forest);
+    }
+
+    .hero h1 span {
+      display: block;
+      margin-top: .18em;
+      color: var(--river);
+      font-family: var(--sans);
+      font-size: .21em;
+      font-weight: 850;
+      line-height: 1.15;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .hero-copy {
+      max-width: 680px;
+      margin: 30px 0 0;
+      color: #55645b;
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      min-height: 52px;
+      padding: .82rem 1.25rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 820;
+      cursor: pointer;
+      transition: transform 170ms ease, box-shadow 170ms ease, background 170ms ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+    .button:focus-visible { outline: 3px solid rgba(184,153,88,.42); outline-offset: 3px; }
+
+    .button-primary {
+      color: #fff;
+      background: var(--forest);
+      box-shadow: 0 14px 34px rgba(47,74,59,.22);
+    }
+
+    .button-secondary {
+      color: var(--forest);
+      border-color: var(--line);
+      background: rgba(255,255,255,.72);
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 590px;
+      display: grid;
+      place-items: center;
+    }
+
+    .watercolor-card {
+      position: relative;
+      width: min(100%, 510px);
+      min-height: 560px;
+      padding: 22px;
+      border: 1px solid rgba(184,153,88,.24);
+      border-radius: 44px;
+      overflow: hidden;
+      background: rgba(255,255,255,.64);
+      box-shadow: var(--shadow);
+    }
+
+    .watercolor-card::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(184,153,88,.18);
+      border-radius: 32px;
+      pointer-events: none;
+    }
+
+    .watercolor-scene {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      border-radius: inherit;
+      background:
+        radial-gradient(circle at 64% 18%, rgba(255,228,169,.92), transparent 15%),
+        linear-gradient(180deg, #dce8df 0%, #e9d9bd 45%, #8eb1a4 46%, #456c62 100%);
+    }
+
+    .watercolor-scene .wash {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(10px);
+      opacity: .5;
+    }
+
+    .wash.one { width: 260px; height: 180px; left: -60px; top: 110px; background: #96b7a0; }
+    .wash.two { width: 260px; height: 190px; right: -50px; top: 210px; background: #d39c78; }
+    .wash.three { width: 380px; height: 220px; left: 70px; bottom: -70px; background: #31584f; }
+
+    .oak {
+      position: absolute;
+      left: -40px;
+      top: 20px;
+      width: 80%;
+      height: 75%;
+      opacity: .92;
+    }
+
+    .oak svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: var(--bark);
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .foliage {
+      position: absolute;
+      left: -30px;
+      top: -18px;
+      width: 86%;
+      height: 45%;
+      opacity: .76;
+      background:
+        radial-gradient(circle at 20% 60%, #56735b 0 11%, transparent 12%),
+        radial-gradient(circle at 38% 45%, #68826b 0 13%, transparent 14%),
+        radial-gradient(circle at 52% 55%, #48654f 0 15%, transparent 16%),
+        radial-gradient(circle at 66% 42%, #738c72 0 12%, transparent 13%),
+        radial-gradient(circle at 77% 62%, #5a735d 0 13%, transparent 14%);
+      filter: blur(1px);
+    }
+
+    .river {
+      position: absolute;
+      inset: auto 0 0;
+      height: 45%;
+      background:
+        linear-gradient(180deg, rgba(170,204,195,.75), rgba(48,91,82,.92)),
+        repeating-linear-gradient(170deg, transparent 0 18px, rgba(255,255,255,.16) 19px 21px);
+      clip-path: polygon(0 20%, 20% 13%, 44% 21%, 65% 14%, 100% 22%, 100% 100%, 0 100%);
+    }
+
+    .heron {
+      position: absolute;
+      right: 56px;
+      bottom: 95px;
+      width: 105px;
+      opacity: .92;
+    }
+
+    .heron svg {
+      width: 100%;
+      fill: none;
+      stroke: #f2eee3;
+      stroke-width: 3.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .art-caption {
+      position: absolute;
+      left: 42px;
+      right: 42px;
+      bottom: 36px;
+      z-index: 2;
+      padding: 18px 20px;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 20px;
+      color: #fff;
+      background: rgba(35,61,52,.45);
+      backdrop-filter: blur(12px);
+      text-align: center;
+    }
+
+    .art-caption strong {
+      display: block;
+      margin-bottom: 4px;
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      font-weight: 500;
+    }
+
+    .art-caption span {
+      color: rgba(255,255,255,.82);
+      font-size: .92rem;
+    }
+
+    .section {
+      position: relative;
+      padding: clamp(78px, 10vw, 128px) 0;
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin-bottom: 46px;
+    }
+
+    .section-heading.center {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .19em;
+      text-transform: uppercase;
+    }
+
+    .section h2 {
+      margin: 0;
+      color: var(--forest);
+      font-family: var(--serif);
+      font-size: clamp(2.45rem, 5vw, 4.8rem);
+      font-weight: 500;
+      line-height: 1.02;
+      letter-spacing: -.04em;
+    }
+
+    .section-heading p {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .ecosystem {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 15% 30%, rgba(75,119,114,.08), transparent 23%),
+        rgba(255,255,255,.34);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .portal-card {
+      min-height: 235px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: rgba(255,255,255,.72);
+      box-shadow: var(--shadow-soft);
+      text-decoration: none;
+      overflow: hidden;
+      position: relative;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .portal-card::after {
+      content: "";
+      position: absolute;
+      right: -42px;
+      bottom: -42px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,153,88,.28), transparent 68%);
+    }
+
+    .portal-card:hover,
+    .portal-card:focus-visible {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+      border-color: rgba(184,153,88,.45);
+      outline: none;
+    }
+
+    .portal-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      color: #fff;
+      background: var(--forest);
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .portal-card:nth-child(2) .portal-icon { background: var(--river); }
+    .portal-card:nth-child(3) .portal-icon { background: var(--clay); }
+    .portal-card:nth-child(4) .portal-icon { color: var(--ink); background: var(--gold); }
+    .portal-card:nth-child(5) .portal-icon { background: #526475; }
+    .portal-card:nth-child(6) .portal-icon { background: #785f54; }
+    .portal-card:nth-child(7) .portal-icon { background: #5f6f4e; }
+    .portal-card:nth-child(8) .portal-icon { background: #6d5d80; }
+
+    .portal-card h3 {
+      margin: 30px 0 7px;
+      color: var(--forest);
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      font-weight: 500;
+    }
+
+    .portal-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.55;
+    }
+
+    .portal-link {
+      margin-top: 22px;
+      color: var(--river);
+      font-size: .84rem;
+      font-weight: 850;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(34px, 7vw, 90px);
+      align-items: center;
+    }
+
+    .botanical-panel {
+      min-height: 520px;
+      padding: 30px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 72% 22%, rgba(184,153,88,.18), transparent 26%),
+        linear-gradient(145deg, #e2eadf, #f7efe1);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .botanical-panel svg {
+      width: min(100%, 430px);
+      fill: none;
+      stroke: var(--moss);
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .about-copy > p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .values {
+      display: grid;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .value {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 17px 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.63);
+    }
+
+    .value span:first-child {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      color: white;
+      background: var(--river);
+      font-weight: 850;
+    }
+
+    .value strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--forest);
+    }
+
+    .value small {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .donation {
+      color: #fff;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(169,203,194,.15), transparent 30%),
+        radial-gradient(circle at 82% 10%, rgba(184,153,88,.15), transparent 28%),
+        linear-gradient(145deg, #274438, #1f352d);
+    }
+
+    .donation-grid {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      gap: clamp(34px, 7vw, 90px);
+      align-items: center;
+    }
+
+    .donation .kicker { color: #d7bf84; }
+    .donation h2 { color: #fff; }
+    .donation-copy p {
+      max-width: 720px;
+      color: rgba(255,255,255,.72);
+      font-size: 1.05rem;
+    }
+
+    .donation-art {
+      min-height: 420px;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .donation-art svg {
+      width: min(100%, 420px);
+      fill: none;
+      stroke: rgba(255,255,255,.72);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .donation-box {
+      margin-top: 30px;
+      max-width: 520px;
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 24px;
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(12px);
+    }
+
+    .donation-box p {
+      margin: 0 0 16px;
+      font-size: .92rem;
+      color: rgba(255,255,255,.68);
+    }
+
+    stripe-buy-button {
+      display: block;
+      max-width: 100%;
+    }
+
+    .quote {
+      text-align: center;
+      padding: clamp(80px, 10vw, 120px) 0;
+    }
+
+    .quote blockquote {
+      max-width: 940px;
+      margin: 0 auto;
+      color: var(--forest);
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4.5vw, 3.9rem);
+      line-height: 1.25;
+    }
+
+    .quote cite {
+      display: block;
+      margin-top: 24px;
+      color: var(--gold);
+      font-family: var(--sans);
+      font-size: .75rem;
+      font-style: normal;
+      font-weight: 850;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .site-footer {
+      padding: 48px 0 36px;
+      color: rgba(255,255,255,.7);
+      background: #18231d;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: end;
+    }
+
+    .footer-brand {
+      color: #fff;
+      font-family: var(--serif);
+      font-size: 1.25rem;
+    }
+
+    .footer-copy {
+      max-width: 720px;
+      margin: 8px 0 0;
+      font-size: .9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .footer-links a,
+    .footer-links button {
+      padding: .58rem .75rem;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 10px;
+      color: rgba(255,255,255,.78);
+      background: transparent;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .footer-links a:hover,
+    .footer-links button:hover {
+      color: #fff;
+      border-color: rgba(255,255,255,.38);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 680ms ease, transform 680ms ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 1040px) {
+      .nav-actions > a { display: none; }
+
+      .hero-grid,
+      .about-grid,
+      .donation-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy-wrap { text-align: center; }
+      .hero .eyebrow, .hero-actions { justify-content: center; }
+      .hero-copy { margin-inline: auto; }
+      .hero-art { min-height: 500px; }
+      .ecosystem-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .donation-art { min-height: 320px; }
+    }
+
+    @media (max-width: 640px) {
+      .shell,
+      .nav-shell {
+        width: min(calc(100% - 24px), var(--max));
+      }
+
+      .brand-copy small { display: none; }
+
+      .hero {
+        min-height: auto;
+        padding-top: 112px;
+      }
+
+      .hero h1 {
+        font-size: clamp(4rem, 23vw, 6.4rem);
+      }
+
+      .hero h1 span {
+        font-size: .19em;
+        letter-spacing: .12em;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .button { width: 100%; }
+
+      .hero-art { min-height: 420px; }
+
+      .watercolor-card {
+        min-height: 410px;
+        border-radius: 30px;
+      }
+
+      .art-caption {
+        left: 28px;
+        right: 28px;
+        bottom: 26px;
+      }
+
+      .ecosystem-grid { grid-template-columns: 1fr; }
+
+      .portal-card { min-height: 205px; }
+
+      .botanical-panel { min-height: 410px; }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links { justify-content: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media print {
+      .site-header,
+      .menu-overlay,
+      .site-drawer,
+      .hero-actions,
+      .donation,
+      .footer-links {
+        display: none !important;
+      }
+
+      body { background: #fff; }
+      .hero { min-height: auto; }
+      .hero-art { display: none; }
+      .ecosystem-grid { grid-template-columns: repeat(2, 1fr); }
+      .site-footer { color: #333; background: #fff; }
+      .footer-brand { color: #111; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Verve N Veda home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <path d="M20 34V7"/>
+            <path d="M20 18c-7-1-11-5-12-11 7 0 11 4 12 11Z"/>
+            <path d="M20 18c7-1 11-5 12-11-7 0-11 4-12 11Z"/>
+            <path d="M20 27c-6 0-10-3-13-8 6-1 11 2 13 8Z"/>
+            <path d="M20 27c6 0 10-3 13-8-6-1-11 2-13 8Z"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Verve N Veda</strong>
+          <small>Learning · stewardship · creativity</small>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open ecosystem navigation" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" hidden></div>
+
+  <aside class="site-drawer" id="siteDrawer" aria-hidden="true" aria-label="Ecosystem navigation">
+    <div class="drawer-head">
+      <strong>The Living Compass</strong>
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="Close ecosystem navigation">×</button>
+    </div>
+
+    <nav class="drawer-nav">
+      <div class="drawer-group">The Ecosystem</div>
+      <a href="https://vervenveda.github.io/"><span>Verve N Veda</span><span>↗</span></a>
+      <a href="https://vervenveda.github.io/firmament.github.io/"><span>Firmament</span><span>↗</span></a>
+      <a href="https://vervenveda.github.io/theverifier.github.io/"><span>The Verifier</span><span>↗</span></a>
+      <a href="https://vervenveda.github.io/river_to_road.github.io/"><span>River-to-Road</span><span>↗</span></a>
+      <a href="https://vervenveda.github.io/Arshif.github.io/"><span>ARSHIF</span><span>↗</span></a>
+      <a href="https://vervenveda.github.io/arcade.github.io/"><span>Arcade</span><span>↗</span></a>
+      <a href="https://vervenveda.github.io/onenationforall.github.io/"><span>One Nation for All</span><span>↗</span></a>
+      <a href="https://vervenveda.github.io/khaemenesacademy.github.io/"><span>Khaemenes Academy</span><span>↗</span></a>
+
+      <div class="drawer-group">On This Page</div>
+      <a href="#ecosystem"><span>Explore the ecosystem</span><span>↓</span></a>
+      <a href="#about"><span>Our purpose</span><span>↓</span></a>
+      <a href="#support"><span>Help this garden grow</span><span>↓</span></a>
+    </nav>
+  </aside>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy-wrap reveal">
+          <p class="eyebrow">A sovereign digital sanctuary</p>
+          <h1 id="hero-title">
+            Verve N Veda
+            <span>Learning · stewardship · creativity · community</span>
+          </h1>
+          <p class="hero-copy">
+            A calm, independent space where knowledge, art, service, public resources, and compassionate action can grow together.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#ecosystem">Enter the sanctuary <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#support">Help this garden grow</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="watercolor-card">
+            <div class="watercolor-scene">
+              <span class="wash one"></span>
+              <span class="wash two"></span>
+              <span class="wash three"></span>
+              <span class="foliage"></span>
+
+              <div class="oak">
+                <svg viewBox="0 0 500 500">
+                  <path d="M182 500c7-98 28-180 63-247 26-49 58-91 96-126"/>
+                  <path d="M243 500c-14-106-6-195 24-267 25-61 63-112 114-153"/>
+                  <path d="M285 500c4-91 23-165 58-221 28-45 67-82 117-110"/>
+                  <path d="M249 270c-39-47-79-78-120-94"/>
+                  <path d="M296 201c-28-48-53-91-75-129"/>
+                  <path d="M336 150c23-44 49-81 80-111"/>
+                  <path d="M190 500c-25-53-53-99-84-137"/>
+                  <path d="M153 423c-35-26-70-43-106-51"/>
+                  <path d="M315 294c46-38 91-61 134-70"/>
+                  <path d="M272 339c-44-16-86-17-126-4"/>
+                </svg>
+              </div>
+
+              <div class="river"></div>
+
+              <div class="heron">
+                <svg viewBox="0 0 120 180">
+                  <path d="M58 20c18 14 23 31 14 51-8 18-22 32-42 43"/>
+                  <path d="M58 20c-4 21-3 40 3 57 7 20 19 34 37 42"/>
+                  <path d="M31 114c-9 11-14 26-15 45"/>
+                  <path d="M35 115c9 12 14 28 14 48"/>
+                  <path d="M60 77c18 3 32 11 42 23"/>
+                  <path d="M60 77c-16 8-29 20-38 36"/>
+                  <path d="M73 28 98 21"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="art-caption">
+              <strong>Begin where you are.</strong>
+              <span>Every path here leads toward learning, renewal, service, or creative discovery.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ecosystem" id="ecosystem" aria-labelledby="ecosystem-title">
+      <div class="shell">
+        <div class="section-heading center reveal">
+          <p class="kicker">The living ecosystem</p>
+          <h2 id="ecosystem-title">Eight sovereign pathways, one connected purpose.</h2>
+          <p>
+            Each destination has its own identity, while remaining part of a shared public ecosystem devoted to knowledge, stewardship, creativity, civic life, and learning.
+          </p>
+        </div>
+
+        <div class="ecosystem-grid">
+          <a class="portal-card reveal" href="https://vervenveda.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">VV</span>
+            <span>
+              <h3>Verve N Veda</h3>
+              <p>The garden gate to public resources, creative work, community initiatives, and learning.</p>
+            </span>
+            <span class="portal-link">Enter the garden →</span>
+          </a>
+
+          <a class="portal-card reveal" href="https://vervenveda.github.io/firmament.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">⚖</span>
+            <span>
+              <h3>Firmament</h3>
+              <p>Law, rights, governance, civic knowledge, and public understanding.</p>
+            </span>
+            <span class="portal-link">Enter the hall →</span>
+          </a>
+
+          <a class="portal-card reveal" href="https://vervenveda.github.io/theverifier.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">V</span>
+            <span>
+              <h3>The Verifier</h3>
+              <p>Independent research, news discovery, source checking, and public information tools.</p>
+            </span>
+            <span class="portal-link">Open the observatory →</span>
+          </a>
+
+          <a class="portal-card reveal" href="https://vervenveda.github.io/river_to_road.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">R</span>
+            <span>
+              <h3>River-to-Road</h3>
+              <p>Environmental stewardship, local clean-up, restoration, and community action.</p>
+            </span>
+            <span class="portal-link">Visit the preserve →</span>
+          </a>
+
+          <a class="portal-card reveal" href="https://vervenveda.github.io/Arshif.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">A</span>
+            <span>
+              <h3>ARSHIF</h3>
+              <p>Archives, evidence, research halls, timelines, and cultural exploration.</p>
+            </span>
+            <span class="portal-link">Enter the archive →</span>
+          </a>
+
+          <a class="portal-card reveal" href="https://vervenveda.github.io/arcade.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">✦</span>
+            <span>
+              <h3>Arcade</h3>
+              <p>Playful learning, experiments, games, creative challenges, and discovery.</p>
+            </span>
+            <span class="portal-link">Enter the workshop →</span>
+          </a>
+
+          <a class="portal-card reveal" href="https://vervenveda.github.io/onenationforall.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">1</span>
+            <span>
+              <h3>One Nation for All</h3>
+              <p>Civic participation, unity, community dialogue, and shared public solutions.</p>
+            </span>
+            <span class="portal-link">Enter the commons →</span>
+          </a>
+
+          <a class="portal-card reveal" href="https://vervenveda.github.io/khaemenesacademy.github.io/" target="_blank" rel="noopener noreferrer">
+            <span class="portal-icon">KA</span>
+            <span>
+              <h3>Khaemenes Academy</h3>
+              <p>Sovereign education, curriculum portals, student tools, and lifelong learning.</p>
+            </span>
+            <span class="portal-link">Enter the academy →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div class="botanical-panel reveal" aria-hidden="true">
+          <svg viewBox="0 0 520 620">
+            <path d="M262 590c0-104 4-207 11-309 6-87 15-171 27-251"/>
+            <path d="M276 420c-57-11-101-43-133-96 62 2 107 34 133 96Z"/>
+            <path d="M280 362c56-20 97-59 124-118-65 12-107 51-124 118Z"/>
+            <path d="M286 286c-49-14-86-44-112-91 53 5 91 35 112 91Z"/>
+            <path d="M294 223c45-20 76-55 94-106-52 15-83 50-94 106Z"/>
+            <path d="M301 153c-36-13-64-36-84-71 40 4 68 28 84 71Z"/>
+            <path d="M257 488c-42 11-80 7-114-13 34-24 72-20 114 13Z"/>
+            <path d="M270 515c40 9 76 4 107-14-33-22-69-18-107 14Z"/>
+            <circle cx="271" cy="419" r="4"/>
+            <circle cx="287" cy="285" r="4"/>
+            <circle cx="299" cy="152" r="4"/>
+            <path d="M132 486c-20 20-31 44-32 72"/>
+            <path d="M121 495c-23 4-42 17-57 39"/>
+            <path d="M388 454c20 20 31 44 32 72"/>
+            <path d="M399 463c23 4 42 17 57 39"/>
+          </svg>
+        </div>
+
+        <div class="about-copy reveal">
+          <div class="section-heading">
+            <p class="kicker">Why this exists</p>
+            <h2 id="about-title">A quieter kind of public space.</h2>
+            <p>
+              Verve N Veda was created as an independent home for tools, knowledge, art, education, public service, and community care—without reducing people to data points or forcing every experience through a commercial platform.
+            </p>
+          </div>
+
+          <p>
+            The design is intentionally calm. The technology is intentionally simple. Each page is built with open web standards so the work remains understandable, portable, and under the creator’s control.
+          </p>
+
+          <div class="values">
+            <div class="value">
+              <span>01</span>
+              <span><strong>Sovereignty</strong><small>Independent tools, portable files, and fewer unnecessary dependencies.</small></span>
+            </div>
+            <div class="value">
+              <span>02</span>
+              <span><strong>Accessibility</strong><small>Public knowledge and learning experiences designed to welcome more people.</small></span>
+            </div>
+            <div class="value">
+              <span>03</span>
+              <span><strong>Stewardship</strong><small>Care for communities, public spaces, culture, land, water, and future generations.</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section donation" id="support" aria-labelledby="support-title">
+      <div class="shell donation-grid">
+        <div class="donation-copy reveal">
+          <p class="kicker">Help this garden grow</p>
+          <h2 id="support-title">Support independent public work.</h2>
+          <p>
+            Verve N Veda and its connected projects are built independently with the belief that learning, creativity, public resources, and compassionate tools should remain accessible.
+          </p>
+          <p>
+            Every contribution helps support the continued development of educational portals, environmental initiatives, community resources, research tools, and creative opportunities.
+          </p>
+
+          <div class="donation-box">
+            <p>Your secure contribution is processed by Stripe.</p>
+
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+            <stripe-buy-button
+              buy-button-id="buy_btn_1Tv3YgJv39zQCMS1t3kmWiq8"
+              publishable-key="pk_live_51RpGqiJv39zQCMS1Gms5qklNYpH8haeue2dSLG76KHSims5CbWbitNjqlwhxDvjewGefNyrh24zNMsdQSk5m3mbE00Ajsji1iw">
+            </stripe-buy-button>
+          </div>
+        </div>
+
+        <div class="donation-art reveal" aria-hidden="true">
+          <svg viewBox="0 0 520 520">
+            <path d="M261 493c-8-89 5-171 39-245 27-59 68-111 123-156"/>
+            <path d="M264 493c10-93-1-175-34-246-28-59-70-110-126-152"/>
+            <path d="M277 353c56-23 102-61 138-114-68 11-114 49-138 114Z"/>
+            <path d="M249 355c-60-20-109-56-147-107 70 8 119 43 147 107Z"/>
+            <path d="M295 264c44-27 76-64 96-111-54 17-87 54-96 111Z"/>
+            <path d="M229 268c-47-24-83-59-107-105 56 13 92 48 107 105Z"/>
+            <path d="M317 186c30-28 51-61 62-99-41 21-62 54-62 99Z"/>
+            <path d="M203 190c-33-26-56-58-70-96 44 18 67 50 70 96Z"/>
+            <path d="M262 493c-54 0-104-12-150-37"/>
+            <path d="M262 493c54 0 104-12 150-37"/>
+            <path d="M173 457c-19 13-31 31-36 53"/>
+            <path d="M347 457c19 13 31 31 36 53"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="shell reveal">
+        <blockquote>
+          “Knowledge grows where curiosity is welcomed, and community grows where care becomes action.”
+          <cite>Verve N Veda</cite>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <div class="footer-brand">Verve N Veda</div>
+        <p class="footer-copy">
+          A sovereign ecosystem built with open web standards for learning, creativity, stewardship, civic life, and community care.
+        </p>
+        <p class="footer-copy">© <span id="year">2026</span> Verve N Veda.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#support">Support</a>
+        <button type="button" id="backToTop">Back to top</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const body = document.body;
+      const menuButton = document.getElementById("menuButton");
+      const drawer = document.getElementById("siteDrawer");
+      const drawerClose = document.getElementById("drawerClose");
+      const overlay = document.getElementById("menuOverlay");
+      const backToTop = document.getElementById("backToTop");
+      const year = document.getElementById("year");
+
+      if (year) year.textContent = String(new Date().getFullYear());
+
+      function openMenu() {
+        body.classList.add("menu-open");
+        drawer.classList.add("open");
+        overlay.hidden = false;
+        requestAnimationFrame(() => overlay.classList.add("open"));
+        drawer.setAttribute("aria-hidden", "false");
+        menuButton.setAttribute("aria-expanded", "true");
+        drawerClose.focus();
+      }
+
+      function closeMenu() {
+        body.classList.remove("menu-open");
+        drawer.classList.remove("open");
+        overlay.classList.remove("open");
+        drawer.setAttribute("aria-hidden", "true");
+        menuButton.setAttribute("aria-expanded", "false");
+        setTimeout(() => { overlay.hidden = true; }, 240);
+        menuButton.focus();
+      }
+
+      menuButton.addEventListener("click", () => {
+        const open = menuButton.getAttribute("aria-expanded") === "true";
+        open ? closeMenu() : openMenu();
+      });
+
+      drawerClose.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu);
+
+      drawer.addEventListener("click", event => {
+        if (event.target.closest("a")) closeMenu();
+      });
+
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && drawer.classList.contains("open")) {
+          closeMenu();
+        }
+      });
+
+      if (backToTop) {
+        backToTop.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: .12 });
+
+        revealElements.forEach(element => observer.observe(element));
+      } else {
+        revealElements.forEach(element => element.classList.add("visible"));
+      }
+    })();
+  </script>
+</body>
+</html>
+'''
+
+output.write_text(html, encoding="utf-8")
+print(f"Created {output.name} — {output.stat().st_size:,} bytes")
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
