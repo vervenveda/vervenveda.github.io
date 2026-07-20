@@ -1,3 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Verve N Veda — a gateway to learning, stewardship, research, creativity, and community resources.">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Verve N Veda</title>
+
+  <style>
+    :root {
+      --background: #f7f5ef;
+      --surface: #ffffff;
+      --text: #203029;
+      --muted: #68736d;
+      --accent: #3f6351;
+      --accent-dark: #294638;
+      --border: #dce2dc;
+      --shadow: 0 14px 34px rgba(32, 48, 41, 0.08);
+      --radius: 18px;
+      --max-width: 1040px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 280px;
+      color: var(--text);
+      background: var(--background);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 1000;
+      transform: translateY(-150%);
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: #ffffff;
+      background: #111111;
+      text-decoration: none;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(247, 245, 239, 0.95);
+    }
+
+    .header-inner,
+    .page-inner,
+    .footer-inner {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.25rem;
+      text-decoration: none;
+    }
+
+    .header-link {
+      color: var(--accent-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .header-link:hover,
+    .header-link:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    main { min-height: calc(100vh - 150px); }
+
+    .hero {
+      padding: clamp(80px, 12vw, 145px) 0 54px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--accent-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.2rem, 9vw, 6.8rem);
+      font-weight: 500;
+      line-height: 0.95;
+      letter-spacing: -0.045em;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 28px auto 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.18rem);
+    }
+
+    .links-section {
+      padding: 28px 0 clamp(90px, 12vw, 140px);
+    }
+
+    .section-heading {
+      margin-bottom: 26px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 500;
+    }
+
+    .section-heading p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .landing-link {
+      min-height: 86px;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .landing-link:hover,
+    .landing-link:focus-visible {
+      transform: translateY(-3px);
+      border-color: #9db2a6;
+      box-shadow: 0 18px 42px rgba(32, 48, 41, 0.12);
+      outline: none;
+    }
+
+    .landing-link strong {
+      display: block;
+      color: var(--accent-dark);
+      font-size: 1.05rem;
+    }
+
+    .landing-link small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .arrow {
+      flex: 0 0 auto;
+      color: var(--accent);
+      font-size: 1.25rem;
+    }
+
+    .site-footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      background: #f1efe8;
+      font-size: 0.86rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .back-to-top {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-to-top:hover,
+    .back-to-top:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 700px) {
+      .link-grid { grid-template-columns: 1fr; }
+      .header-link { display: none; }
+      .hero { padding-top: 72px; }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">Verve N Veda</a>
+      <a class="header-link" href="#landings">Explore the ecosystem</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="page-inner">
+        <p class="eyebrow">A connected public ecosystem</p>
+        <h1>Verve N Veda</h1>
+        <p class="intro">
+          A simple gateway to independent projects devoted to learning,
+          research, public service, creativity, environmental stewardship,
+          and community.
+        </p>
+      </div>
+    </section>
+
+    <section class="links-section" id="landings" aria-labelledby="landings-title">
+      <div class="page-inner">
+        <div class="section-heading">
+          <h2 id="landings-title">Landing Pages</h2>
+          <p>Select a destination to continue.</p>
+        </div>
+
+        <nav class="link-grid" aria-label="Verve N Veda landing pages">
+          <a class="landing-link" href="https://vervenveda.github.io/">
+            <span>
+              <strong>Verve N Veda</strong>
+              <small>Public resources, creativity, and community</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="landing-link" href="https://vervenveda.github.io/firmament.github.io/">
+            <span>
+              <strong>Firmament</strong>
+              <small>Law, rights, governance, and civic knowledge</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="landing-link" href="https://vervenveda.github.io/theverifier.github.io/">
+            <span>
+              <strong>The Verifier</strong>
+              <small>Research, source review, and public information</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="landing-link" href="https://vervenveda.github.io/river_to_road.github.io/">
+            <span>
+              <strong>River to Road</strong>
+              <small>Environmental stewardship and community clean-up</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="landing-link" href="https://vervenveda.github.io/Arshif.github.io/">
+            <span>
+              <strong>ARSHIF</strong>
+              <small>Archives, research halls, and cultural exploration</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="landing-link" href="https://vervenveda.github.io/arcade.github.io/">
+            <span>
+              <strong>Arcade</strong>
+              <small>Games, experiments, and playful learning</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="landing-link" href="https://vervenveda.github.io/onenationforall.github.io/">
+            <span>
+              <strong>One Nation for All</strong>
+              <small>Civic participation, unity, and shared solutions</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="landing-link" href="https://vervenveda.github.io/khaemenesacademy.github.io/">
+            <span>
+              <strong>Khaemenes Academy</strong>
+              <small>Education, curriculum, and lifelong learning</small>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span id="year">2026</span> Verve N Veda</span>
+      <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
