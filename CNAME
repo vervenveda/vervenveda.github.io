@@ -1,7 +1,1 @@
-from pathlib import Path
-
-path = Path("/mnt/data/CNAME")
-path.write_text("www.vervenveda.com\n", encoding="utf-8")
-
-print(f"Created {path} with contents:")
-print(path.read_text(encoding="utf-8"))
+www.vervenveda.com
