@@ -134,25 +134,13 @@
     .wordmark {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 0;
       text-decoration: none;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       font-size: 0.78rem;
       font-weight: 700;
     }
-
-    .wordmark-mark {
-      width: 40px;
-      aspect-ratio: 1;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(181, 151, 86, 0.42);
-      border-radius: 50%;
-      background: rgba(255, 253, 248, 0.62);
-    }
-
-    .wordmark-mark svg { width: 24px; height: 24px; }
 
     .header-actions {
       display: flex;
@@ -212,7 +200,7 @@
 
     .hero {
       min-height: 100svh;
-      padding: 136px clamp(18px, 4vw, 64px) 72px;
+      padding: 150px clamp(18px, 4vw, 64px) 92px;
       display: grid;
       align-items: center;
       position: relative;
@@ -230,12 +218,18 @@
     }
 
     .hero-inner {
-      width: min(100%, var(--max));
+      width: min(100%, 980px);
       margin: 0 auto;
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      place-items: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: clamp(46px, 7vw, 110px);
     }
 
     .eyebrow {
@@ -271,8 +265,8 @@
     .hero h1 .n { color: var(--gold); font-style: italic; font-size: 0.62em; margin-left: 0.18em; }
 
     .hero-copy {
-      max-width: 650px;
-      margin: 28px 0 0;
+      max-width: 720px;
+      margin: 28px auto 0;
       color: var(--ink-soft);
       font-family: var(--serif);
       font-size: clamp(1.2rem, 2vw, 1.65rem);
@@ -282,6 +276,7 @@
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 14px;
       margin-top: 36px;
     }
@@ -322,57 +317,6 @@
       background: white;
       border-color: rgba(181, 151, 86, 0.48);
       box-shadow: var(--shadow-soft);
-    }
-
-    .hero-art {
-      position: relative;
-      min-height: 520px;
-      display: grid;
-      place-items: center;
-    }
-
-    .orbital-card {
-      width: min(100%, 470px);
-      aspect-ratio: 0.84;
-      border-radius: 50% 50% 45% 45% / 42% 42% 58% 58%;
-      border: 1px solid rgba(181, 151, 86, 0.35);
-      background:
-        linear-gradient(150deg, rgba(255,255,255,0.88), rgba(246,241,231,0.55)),
-        radial-gradient(circle at 50% 32%, rgba(217,199,156,0.34), transparent 45%);
-      box-shadow: var(--shadow);
-      display: grid;
-      place-items: center;
-      overflow: hidden;
-      position: relative;
-      animation: rise 900ms cubic-bezier(.2,.8,.2,1) both 120ms;
-    }
-
-    .orbital-card::before,
-    .orbital-card::after {
-      content: "";
-      position: absolute;
-      border: 1px solid rgba(113, 133, 122, 0.18);
-      border-radius: 50%;
-    }
-
-    .orbital-card::before { width: 76%; aspect-ratio: 1; }
-    .orbital-card::after { width: 92%; aspect-ratio: 1; }
-
-  
-    .art-caption {
-      position: absolute;
-      bottom: 42px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 3;
-      width: min(77%, 222px);
-      margin: 0;
-      text-align: center;
-      font-size: 0.55rem;
-      font-weight: 444;
-      letter-spacing: 0.20em;
-      text-transform: uppercase;
-      color: var(--sage-deep);
     }
 
     .scroll-cue {
@@ -903,8 +847,6 @@
       .eyebrow { justify-content: center; }
       .hero-copy { margin-inline: auto; }
       .hero-actions { justify-content: center; }
-      .hero-art { min-height: 430px; }
-      .orbital-card { max-width: 390px; }
       .scroll-cue { display: none; }
       .section-heading { grid-template-columns: 1fr; align-items: start; }
       .directory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -912,14 +854,10 @@
 
     @media (max-width: 760px) {
       .site-header { padding: 14px 16px; }
-      .wordmark span:last-child { display: none; }
       .menu-button { width: 48px; height: 48px; }
       .hero { padding-inline: 16px; padding-bottom: 58px; }
       .hero::before { inset: 22px 8px 22px; border-radius: 28px; }
       .hero h1 { font-size: clamp(4rem, 22vw, 6.5rem); }
-      .hero-art { min-height: 370px; }
-      .orbital-card { max-width: 320px; }
-      .art-caption { bottom: 24px; }
       .section { padding-inline: 16px; }
       .featured-grid { grid-template-columns: 1fr; }
       .feature-card,
@@ -957,16 +895,6 @@
   <header class="site-header" id="siteHeader">
     <div class="header-inner">
       <a class="wordmark" href="https://www.vervenveda.com/" aria-label="Verve N Veda home">
-        <span class="wordmark-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M32 49V27"></path>
-            <path d="M32 28c-10-1-17-8-18-18 10 1 17 8 18 18Z"></path>
-            <path d="M32 28c10-1 17-8 18-18-10 1-17 8-18 18Z"></path>
-            <path d="M32 40c-8 0-14-5-17-12 8 0 14 5 17 12Z"></path>
-            <path d="M32 40c8 0 14-5 17-12-8 0-14 5-17 12Z"></path>
-            <path d="M19 51h26"></path>
-          </svg>
-        </span>
         <span>Verve N Veda</span>
       </a>
 
@@ -980,6 +908,7 @@
   </header>
 
   <main id="main">
+    <!-- Centered text-only hero: botanical logo and lotus artwork intentionally removed. -->
     <section class="hero" aria-labelledby="heroTitle">
       <div class="hero-inner">
         <div class="hero-content">
@@ -1001,31 +930,6 @@
               Visit the Academy
               <span aria-hidden="true">↗</span>
             </a>
-          </div>
-        </div>
-
-        <div class="hero-art" aria-hidden="true">
-          <div class="orbital-card">
-            <div class="lotus-wrap">
-              <svg viewBox="0 0 560 420" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M280 280c-46-57-55-116 0-192 55 76 46 135 0 192Z"></path>
-                <path d="M279 282c-79-24-111-74-104-154 74 27 106 77 104 154Z"></path>
-                <path d="M281 282c79-24 111-74 104-154-74 27-106 77-104 154Z"></path>
-                <path d="M274 289c-94 12-145-22-169-94 86-8 137 27 169 94Z"></path>
-                <path d="M286 289c94 12 145-22 169-94-86-8-137 27-169 94Z"></path>
-                <path d="M276 292c-80 43-141 28-190-31 72-37 133-25 190 31Z"></path>
-                <path d="M284 292c80 43 141 28 190-31-72-37-133-25-190 31Z"></path>
-                <path d="M77 298c51 31 111 41 203 13 92 28 152 18 203-13"></path>
-                <path d="M96 304c-25 5-47 18-65 38 27 1 49-7 68-24"></path>
-                <path d="M464 304c25 5 47 18 65 38-27 1-49-7-68-24"></path>
-                <path d="M121 327c-16 13-27 29-33 49 21-7 37-19 49-36"></path>
-                <path d="M439 327c16 13 27 29 33 49-21-7-37-19-49-36"></path>
-                <path d="M160 345c-9 17-12 35-8 55 18-12 30-28 36-47"></path>
-                <path d="M400 345c9 17 12 35 8 55-18-12-30-28-36-47"></path>
-                <path d="M280 311v74"></path>
-              </svg>
-            </div>
-            <p class="art-caption">Explore · Learn · Create · Restore</p>
           </div>
         </div>
       </div>
