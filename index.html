@@ -1,355 +1,1511 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Verve N Veda — a gateway to learning, stewardship, research, creativity, and community resources.">
-  <meta name="theme-color" content="#f7f5ef">
-  <title>Verve N Veda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Verve N Veda — a sanctuary of learning, creativity, practical resources, and conscious exploration.">
+  <meta name="theme-color" content="#f6f1e7">
+  <meta name="color-scheme" content="light">
+  <title>Verve N Veda | Welcome</title>
 
   <style>
     :root {
-      --background: #f7f5ef;
-      --surface: #ffffff;
-      --text: #203029;
-      --muted: #68736d;
-      --accent: #3f6351;
-      --accent-dark: #294638;
-      --border: #dce2dc;
-      --shadow: 0 14px 34px rgba(32, 48, 41, 0.08);
-      --radius: 18px;
-      --max-width: 1040px;
+      --ivory: #f6f1e7;
+      --ivory-deep: #ede4d5;
+      --paper: #fffdf8;
+      --ink: #18231f;
+      --ink-soft: #50605a;
+      --sage: #71857a;
+      --sage-deep: #364b42;
+      --sage-pale: #dfe7e0;
+      --gold: #b59756;
+      --gold-soft: #d9c79c;
+      --navy: #10243a;
+      --line: rgba(37, 58, 49, 0.14);
+      --shadow: 0 22px 70px rgba(45, 52, 46, 0.12);
+      --shadow-soft: 0 12px 35px rgba(45, 52, 46, 0.09);
+      --radius-lg: 34px;
+      --radius-md: 22px;
+      --radius-sm: 14px;
+      --serif: Georgia, "Times New Roman", Times, serif;
+      --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --max: 1240px;
     }
 
-    * { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
-      min-width: 280px;
-      color: var(--text);
-      background: var(--background);
-      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 5%, rgba(181, 151, 86, 0.14), transparent 23rem),
+        radial-gradient(circle at 92% 15%, rgba(113, 133, 122, 0.16), transparent 28rem),
+        linear-gradient(180deg, #fffdf8 0%, var(--ivory) 54%, #f0eadf 100%);
+      font-family: var(--sans);
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
+    body.menu-open { overflow: hidden; }
+
     a { color: inherit; }
+
+    button, input { font: inherit; }
+
+    button { color: inherit; }
+
+    ::selection {
+      background: var(--gold-soft);
+      color: var(--ink);
+    }
 
     .skip-link {
       position: fixed;
       top: 12px;
       left: 12px;
-      z-index: 1000;
-      transform: translateY(-150%);
+      z-index: 3000;
       padding: 10px 14px;
-      border-radius: 999px;
-      color: #ffffff;
-      background: #111111;
-      text-decoration: none;
+      border-radius: 10px;
+      background: var(--ink);
+      color: white;
+      transform: translateY(-160%);
+      transition: transform 180ms ease;
     }
 
     .skip-link:focus { transform: translateY(0); }
 
-    .site-header {
-      border-bottom: 1px solid var(--border);
-      background: rgba(247, 245, 239, 0.95);
+    .ambient {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+      overflow: hidden;
     }
 
-    .header-inner,
-    .page-inner,
-    .footer-inner {
-      width: min(calc(100% - 32px), var(--max-width));
-      margin-inline: auto;
+    .ambient::before,
+    .ambient::after {
+      content: "";
+      position: absolute;
+      width: 34rem;
+      height: 34rem;
+      border-radius: 50%;
+      filter: blur(4px);
+      opacity: 0.25;
+    }
+
+    .ambient::before {
+      top: -18rem;
+      left: -12rem;
+      background: rgba(215, 194, 145, 0.55);
+    }
+
+    .ambient::after {
+      right: -17rem;
+      bottom: 8rem;
+      background: rgba(151, 173, 160, 0.48);
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 1200;
+      padding: 18px clamp(18px, 4vw, 64px);
+      transition: background 220ms ease, box-shadow 220ms ease, backdrop-filter 220ms ease;
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 253, 248, 0.84);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 1px 0 var(--line);
     }
 
     .header-inner {
-      min-height: 72px;
+      width: min(100%, var(--max));
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
     }
 
-    .brand {
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.25rem;
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
       text-decoration: none;
-    }
-
-    .header-link {
-      color: var(--accent-dark);
-      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
       font-weight: 700;
+    }
+
+    .wordmark-mark {
+      width: 40px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(181, 151, 86, 0.42);
+      border-radius: 50%;
+      background: rgba(255, 253, 248, 0.62);
+    }
+
+    .wordmark-mark svg { width: 24px; height: 24px; }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .quiet-link {
+      display: none;
       text-decoration: none;
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      padding: 10px 14px;
+      border-radius: 999px;
     }
 
-    .header-link:hover,
-    .header-link:focus-visible {
-      text-decoration: underline;
-      text-underline-offset: 4px;
+    .quiet-link:hover,
+    .quiet-link:focus-visible { background: rgba(113, 133, 122, 0.10); }
+
+    .menu-button {
+      width: 54px;
+      height: 54px;
+      border: 0;
+      border-radius: 50%;
+      background: var(--ink);
+      color: white;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      box-shadow: 0 12px 30px rgba(24, 35, 31, 0.20);
+      transition: transform 180ms ease, background 180ms ease;
     }
 
-    main { min-height: calc(100vh - 150px); }
+    .menu-button:hover { transform: translateY(-2px); background: var(--sage-deep); }
+    .menu-button:active { transform: translateY(0); }
+
+    .menu-lines,
+    .menu-lines::before,
+    .menu-lines::after {
+      width: 22px;
+      height: 2px;
+      display: block;
+      border-radius: 999px;
+      background: currentColor;
+      transition: transform 200ms ease, opacity 200ms ease;
+    }
+
+    .menu-lines { position: relative; }
+    .menu-lines::before,
+    .menu-lines::after { content: ""; position: absolute; left: 0; }
+    .menu-lines::before { top: -7px; }
+    .menu-lines::after { top: 7px; }
+
+    .menu-button[aria-expanded="true"] .menu-lines { background: transparent; }
+    .menu-button[aria-expanded="true"] .menu-lines::before { transform: translateY(7px) rotate(45deg); }
+    .menu-button[aria-expanded="true"] .menu-lines::after { transform: translateY(-7px) rotate(-45deg); }
 
     .hero {
-      padding: clamp(80px, 12vw, 145px) 0 54px;
-      text-align: center;
+      min-height: 100svh;
+      padding: 136px clamp(18px, 4vw, 64px) 72px;
+      display: grid;
+      align-items: center;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 34px clamp(12px, 2.7vw, 46px) 34px;
+      border: 1px solid rgba(181, 151, 86, 0.19);
+      border-radius: 40px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      align-items: center;
+      gap: clamp(46px, 7vw, 110px);
     }
 
     .eyebrow {
-      margin: 0 0 16px;
-      color: var(--accent);
-      font-size: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 22px;
+      color: var(--sage-deep);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 0.88;
+      letter-spacing: -0.055em;
+      font-size: clamp(4.5rem, 10vw, 9.6rem);
+      text-wrap: balance;
+    }
+
+    .hero h1 span { display: block; }
+    .hero h1 .n { color: var(--gold); font-style: italic; font-size: 0.62em; margin-left: 0.18em; }
+
+    .hero-copy {
+      max-width: 650px;
+      margin: 28px 0 0;
+      color: var(--ink-soft);
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2vw, 1.65rem);
+      line-height: 1.55;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 36px;
+    }
+
+    .button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.015em;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+    .button:active { transform: translateY(0); }
+
+    .button-primary {
+      background: var(--ink);
+      color: white;
+      box-shadow: 0 14px 30px rgba(24, 35, 31, 0.18);
+    }
+
+    .button-primary:hover { background: var(--sage-deep); }
+
+    .button-secondary {
+      border-color: rgba(54, 75, 66, 0.22);
+      background: rgba(255, 253, 248, 0.72);
+      color: var(--sage-deep);
+    }
+
+    .button-secondary:hover {
+      background: white;
+      border-color: rgba(181, 151, 86, 0.48);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 520px;
+      display: grid;
+      place-items: center;
+    }
+
+    .orbital-card {
+      width: min(100%, 470px);
+      aspect-ratio: 0.84;
+      border-radius: 50% 50% 45% 45% / 42% 42% 58% 58%;
+      border: 1px solid rgba(181, 151, 86, 0.35);
+      background:
+        linear-gradient(150deg, rgba(255,255,255,0.88), rgba(246,241,231,0.55)),
+        radial-gradient(circle at 50% 32%, rgba(217,199,156,0.34), transparent 45%);
+      box-shadow: var(--shadow);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      position: relative;
+      animation: rise 900ms cubic-bezier(.2,.8,.2,1) both 120ms;
+    }
+
+    .orbital-card::before,
+    .orbital-card::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(113, 133, 122, 0.18);
+      border-radius: 50%;
+    }
+
+    .orbital-card::before { width: 76%; aspect-ratio: 1; }
+    .orbital-card::after { width: 92%; aspect-ratio: 1; }
+
+    .lotus-wrap {
+      width: 78%;
+      position: relative;
+      z-index: 2;
+      color: var(--gold);
+    }
+
+    .lotus-wrap svg { width: 100%; height: auto; display: block; }
+
+    .art-caption {
+      position: absolute;
+      bottom: 42px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      width: min(84%, 330px);
+      margin: 0;
+      text-align: center;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--sage-deep);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      left: 50%;
+      bottom: 34px;
+      transform: translateX(-50%);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      color: var(--ink-soft);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.67rem;
+      letter-spacing: 0.18em;
+    }
+
+    .scroll-cue span:last-child {
+      width: 1px;
+      height: 28px;
+      background: linear-gradient(var(--gold), transparent);
+    }
+
+    .section {
+      padding: clamp(78px, 10vw, 136px) clamp(18px, 4vw, 64px);
+    }
+
+    .section-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 46px;
+    }
+
+    .section-kicker {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 0.76rem;
       font-weight: 800;
       letter-spacing: 0.18em;
       text-transform: uppercase;
     }
 
-    h1 {
+    .section h2 {
       margin: 0;
-      color: var(--accent-dark);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(3.2rem, 9vw, 6.8rem);
-      font-weight: 500;
-      line-height: 0.95;
-      letter-spacing: -0.045em;
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 6vw, 5.2rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.04em;
     }
 
-    .intro {
-      max-width: 720px;
-      margin: 28px auto 0;
-      color: var(--muted);
-      font-size: clamp(1rem, 2vw, 1.18rem);
-    }
-
-    .links-section {
-      padding: 28px 0 clamp(90px, 12vw, 140px);
-    }
-
-    .section-heading {
-      margin-bottom: 26px;
-      text-align: center;
-    }
-
-    .section-heading h2 {
+    .section-intro {
       margin: 0;
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 500;
+      color: var(--ink-soft);
+      font-size: clamp(1rem, 1.7vw, 1.18rem);
+      max-width: 680px;
     }
 
-    .section-heading p {
-      margin: 10px 0 0;
-      color: var(--muted);
-    }
-
-    .link-grid {
+    .featured-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
     }
 
-    .landing-link {
-      min-height: 86px;
-      padding: 20px 22px;
+    .feature-card {
+      position: relative;
+      min-height: 270px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 253, 248, 0.77);
+      box-shadow: var(--shadow-soft);
+      text-decoration: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      isolation: isolate;
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .feature-card:nth-child(1),
+    .feature-card:nth-child(4) { grid-column: span 7; }
+
+    .feature-card:nth-child(2),
+    .feature-card:nth-child(3) { grid-column: span 5; }
+
+    .feature-card:hover,
+    .feature-card:focus-visible {
+      transform: translateY(-6px);
+      border-color: rgba(181, 151, 86, 0.52);
+      box-shadow: var(--shadow);
+    }
+
+    .feature-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -15% -45% auto;
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      background: rgba(113, 133, 122, 0.12);
+      z-index: -1;
+    }
+
+    .feature-card:nth-child(2)::before,
+    .feature-card:nth-child(4)::before { background: rgba(181, 151, 86, 0.13); }
+
+    .feature-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      color: var(--text);
-      background: var(--surface);
-      box-shadow: var(--shadow);
-      text-decoration: none;
-      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+      gap: 16px;
     }
 
-    .landing-link:hover,
-    .landing-link:focus-visible {
-      transform: translateY(-3px);
-      border-color: #9db2a6;
-      box-shadow: 0 18px 42px rgba(32, 48, 41, 0.12);
-      outline: none;
+    .feature-number {
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
     }
 
-    .landing-link strong {
-      display: block;
-      color: var(--accent-dark);
-      font-size: 1.05rem;
+    .feature-arrow {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(54, 75, 66, 0.18);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,0.62);
+      transition: transform 200ms ease, background 200ms ease;
     }
 
-    .landing-link small {
-      display: block;
-      margin-top: 3px;
-      color: var(--muted);
-      font-size: 0.86rem;
+    .feature-card:hover .feature-arrow { transform: translate(4px, -4px); background: white; }
+
+    .feature-card h3 {
+      margin: 70px 0 8px;
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.035em;
     }
 
-    .arrow {
-      flex: 0 0 auto;
-      color: var(--accent);
-      font-size: 1.25rem;
+    .feature-card p {
+      margin: 0;
+      color: var(--ink-soft);
+      max-width: 48ch;
     }
 
-    .site-footer {
-      padding: 28px 0;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      background: #f1efe8;
-      font-size: 0.86rem;
+    .directory-section {
+      background: rgba(255, 253, 248, 0.48);
+      border-block: 1px solid rgba(54, 75, 66, 0.09);
     }
 
-    .footer-inner {
+    .directory-tools {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 18px;
+      margin-bottom: 26px;
+      flex-wrap: wrap;
     }
 
-    .back-to-top {
-      color: var(--accent-dark);
-      font-weight: 700;
+    .search-box {
+      flex: 1 1 340px;
+      max-width: 620px;
+      position: relative;
+    }
+
+    .search-box svg {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 19px;
+      height: 19px;
+      color: var(--sage);
+      pointer-events: none;
+    }
+
+    .search-box input {
+      width: 100%;
+      min-height: 56px;
+      padding: 14px 18px 14px 50px;
+      border: 1px solid rgba(54, 75, 66, 0.17);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.82);
+      color: var(--ink);
+      outline: none;
+      box-shadow: 0 8px 24px rgba(45, 52, 46, 0.05);
+      transition: border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .search-box input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(181, 151, 86, 0.12);
+    }
+
+    .result-count {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+    }
+
+    .directory-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .directory-card {
+      min-height: 138px;
+      padding: 20px;
+      border: 1px solid rgba(54, 75, 66, 0.13);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.70);
       text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
     }
 
-    .back-to-top:hover,
-    .back-to-top:focus-visible {
-      text-decoration: underline;
-      text-underline-offset: 4px;
+    .directory-card:hover,
+    .directory-card:focus-visible {
+      transform: translateY(-3px);
+      background: white;
+      border-color: rgba(181, 151, 86, 0.45);
+      box-shadow: var(--shadow-soft);
     }
 
-    @media (max-width: 700px) {
-      .link-grid { grid-template-columns: 1fr; }
-      .header-link { display: none; }
-      .hero { padding-top: 72px; }
+    .directory-card small {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 0.67rem;
+      letter-spacing: 0.14em;
+    }
 
-      .footer-inner {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+    .directory-card strong {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      line-height: 1.1;
+      font-weight: 400;
+    }
+
+    .directory-card span {
+      color: var(--ink-soft);
+      font-size: 0.82rem;
+      word-break: break-word;
+    }
+
+    .empty-state {
+      display: none;
+      padding: 34px;
+      border: 1px dashed rgba(54, 75, 66, 0.22);
+      border-radius: var(--radius-md);
+      text-align: center;
+      color: var(--ink-soft);
+    }
+
+    .partners {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .partner-panel {
+      padding: clamp(34px, 6vw, 72px);
+      border-radius: 42px;
+      background:
+        linear-gradient(130deg, rgba(16, 36, 58, 0.97), rgba(54, 75, 66, 0.97)),
+        var(--navy);
+      color: white;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .partner-panel::before {
+      content: "";
+      position: absolute;
+      width: 560px;
+      height: 560px;
+      right: -250px;
+      top: -280px;
+      border: 1px solid rgba(217, 199, 156, 0.24);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 46px rgba(217, 199, 156, 0.05),
+        0 0 0 92px rgba(217, 199, 156, 0.035);
+    }
+
+    .partner-panel .section-kicker { color: var(--gold-soft); }
+    .partner-panel h2 { max-width: 780px; }
+    .partner-panel p { color: rgba(255,255,255,0.72); max-width: 700px; }
+
+    .partner-links {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .partner-link {
+      min-height: 112px;
+      padding: 22px 24px;
+      border: 1px solid rgba(255,255,255,0.17);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.08);
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+
+    .partner-link:hover,
+    .partner-link:focus-visible {
+      transform: translateY(-3px);
+      background: rgba(255,255,255,0.13);
+      border-color: rgba(217, 199, 156, 0.52);
+    }
+
+    .partner-link strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(1.45rem, 3vw, 2.2rem);
+      font-weight: 400;
+      line-height: 1.05;
+    }
+
+    .partner-link small {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255,255,255,0.64);
+      font-size: 0.76rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .partner-link svg { flex: 0 0 auto; }
+
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 42px;
+    }
+
+    .principle {
+      padding: 28px 0 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .principle h3 {
+      margin: 0 0 8px;
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      font-weight: 400;
+    }
+
+    .principle p { margin: 0; color: var(--ink-soft); }
+
+    .site-footer {
+      padding: 54px clamp(18px, 4vw, 64px) 34px;
+    }
+
+    .footer-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .footer-note { margin: 10px 0 0; color: var(--ink-soft); }
+    .footer-meta { color: var(--ink-soft); font-size: 0.86rem; }
+
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1600;
+      background: rgba(13, 25, 21, 0.46);
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 220ms ease, visibility 220ms ease;
+    }
+
+    .drawer-overlay.open { opacity: 1; visibility: visible; }
+
+    .drawer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: min(92vw, 480px);
+      height: 100%;
+      padding: 24px;
+      background: #fffdf8;
+      box-shadow: -20px 0 70px rgba(13, 25, 21, 0.22);
+      transform: translateX(105%);
+      transition: transform 260ms cubic-bezier(.2,.75,.2,1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .drawer-overlay.open .drawer { transform: translateX(0); }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 4px 2px 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .drawer-title {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    .close-button {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: white;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    }
+
+    .close-button:hover { background: var(--ivory); }
+
+    .drawer-search { margin: 20px 0 14px; }
+    .drawer-search input { min-height: 48px; }
+
+    .drawer-nav {
+      overflow-y: auto;
+      padding-right: 4px;
+      overscroll-behavior: contain;
+    }
+
+    .drawer-nav a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 10px;
+      border-bottom: 1px solid rgba(54, 75, 66, 0.08);
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .drawer-nav a:hover,
+    .drawer-nav a:focus-visible { color: var(--gold); background: rgba(181, 151, 86, 0.055); }
+
+    .drawer-nav small {
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .drawer-footer {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: 0.82rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 700ms ease, transform 700ms ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(28px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(181, 151, 86, 0.62);
+      outline-offset: 3px;
+    }
+
+    @media (min-width: 760px) {
+      .quiet-link { display: inline-flex; }
+    }
+
+    @media (max-width: 980px) {
+      .hero { min-height: auto; padding-top: 132px; }
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-content { text-align: center; }
+      .eyebrow { justify-content: center; }
+      .hero-copy { margin-inline: auto; }
+      .hero-actions { justify-content: center; }
+      .hero-art { min-height: 430px; }
+      .orbital-card { max-width: 390px; }
+      .scroll-cue { display: none; }
+      .section-heading { grid-template-columns: 1fr; align-items: start; }
+      .directory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .site-header { padding: 14px 16px; }
+      .wordmark span:last-child { display: none; }
+      .menu-button { width: 48px; height: 48px; }
+      .hero { padding-inline: 16px; padding-bottom: 58px; }
+      .hero::before { inset: 22px 8px 22px; border-radius: 28px; }
+      .hero h1 { font-size: clamp(4rem, 22vw, 6.5rem); }
+      .hero-art { min-height: 370px; }
+      .orbital-card { max-width: 320px; }
+      .art-caption { bottom: 24px; }
+      .section { padding-inline: 16px; }
+      .featured-grid { grid-template-columns: 1fr; }
+      .feature-card,
+      .feature-card:nth-child(n) { grid-column: auto; }
+      .feature-card { min-height: 235px; }
+      .directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .partner-links { grid-template-columns: 1fr; }
+      .principles { grid-template-columns: 1fr; }
+      .footer-inner { align-items: flex-start; }
+    }
+
+    @media (max-width: 470px) {
+      .hero-actions .button { width: 100%; }
+      .directory-grid { grid-template-columns: 1fr; }
+      .directory-card { min-height: 118px; }
+      .partner-panel { border-radius: 28px; }
+      .drawer { width: 100%; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
         transition-duration: 0.01ms !important;
       }
+      .reveal { opacity: 1; transform: none; }
     }
   </style>
 </head>
-
-<body id="top">
+<body>
   <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="ambient" aria-hidden="true"></div>
 
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="header-inner">
-      <a class="brand" href="#top">Verve N Veda</a>
-      <a class="header-link" href="#landings">Explore the ecosystem</a>
+      <a class="wordmark" href="https://www.vervenveda.com/" aria-label="Verve N Veda home">
+        <span class="wordmark-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M32 49V27"></path>
+            <path d="M32 28c-10-1-17-8-18-18 10 1 17 8 18 18Z"></path>
+            <path d="M32 28c10-1 17-8 18-18-10 1-17 8-18 18Z"></path>
+            <path d="M32 40c-8 0-14-5-17-12 8 0 14 5 17 12Z"></path>
+            <path d="M32 40c8 0 14-5 17-12-8 0-14 5-17 12Z"></path>
+            <path d="M19 51h26"></path>
+          </svg>
+        </span>
+        <span>Verve N Veda</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="quiet-link" href="#directory">Explore the sanctuary</a>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open site menu" aria-controls="menuDrawer" aria-expanded="false">
+          <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="page-inner">
-        <p class="eyebrow">A connected public ecosystem</p>
-        <h1>Verve N Veda</h1>
-        <p class="intro">
-          A simple gateway to independent projects devoted to learning,
-          research, public service, creativity, environmental stewardship,
-          and community.
-        </p>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Welcome to the sanctuary</p>
+          <h1 id="heroTitle">
+            <span>Verve</span>
+            <span class="n">N</span>
+            <span>Veda</span>
+          </h1>
+          <p class="hero-copy">
+            A sanctuary of learning — a place where curiosity, creativity, practical care, and consciousness meet.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#featured">
+              Enter the sanctuary
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a class="button button-secondary" href="https://www.khaemenesacademy.org" target="_blank" rel="noopener noreferrer">
+              Visit the Academy
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbital-card">
+            <div class="lotus-wrap">
+              <svg viewBox="0 0 560 420" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M280 280c-46-57-55-116 0-192 55 76 46 135 0 192Z"></path>
+                <path d="M279 282c-79-24-111-74-104-154 74 27 106 77 104 154Z"></path>
+                <path d="M281 282c79-24 111-74 104-154-74 27-106 77-104 154Z"></path>
+                <path d="M274 289c-94 12-145-22-169-94 86-8 137 27 169 94Z"></path>
+                <path d="M286 289c94 12 145-22 169-94-86-8-137 27-169 94Z"></path>
+                <path d="M276 292c-80 43-141 28-190-31 72-37 133-25 190 31Z"></path>
+                <path d="M284 292c80 43 141 28 190-31-72-37-133-25-190 31Z"></path>
+                <path d="M77 298c51 31 111 41 203 13 92 28 152 18 203-13"></path>
+                <path d="M96 304c-25 5-47 18-65 38 27 1 49-7 68-24"></path>
+                <path d="M464 304c25 5 47 18 65 38-27 1-49-7-68-24"></path>
+                <path d="M121 327c-16 13-27 29-33 49 21-7 37-19 49-36"></path>
+                <path d="M439 327c16 13 27 29 33 49-21-7-37-19-49-36"></path>
+                <path d="M160 345c-9 17-12 35-8 55 18-12 30-28 36-47"></path>
+                <path d="M400 345c9 17 12 35 8 55-18-12-30-28-36-47"></path>
+                <path d="M280 311v74"></path>
+              </svg>
+            </div>
+            <p class="art-caption">Explore · Learn · Create · Restore</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#featured" aria-label="Scroll to featured gateways">
+        <span>Discover</span>
+        <span aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="section" id="featured" aria-labelledby="featuredTitle">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">Begin here</p>
+            <h2 id="featuredTitle">Featured gateways</h2>
+          </div>
+          <p class="section-intro">
+            Step directly into the spaces most visitors seek first: truth-centered news, community resources, learning, and creative practice.
+          </p>
+        </div>
+
+        <div class="featured-grid" id="featuredGrid"></div>
       </div>
     </section>
 
-    <section class="links-section" id="landings" aria-labelledby="landings-title">
-      <div class="page-inner">
-        <div class="section-heading">
-          <h2 id="landings-title">Landing Pages</h2>
-          <p>Select a destination to continue.</p>
+    <section class="section directory-section" id="directory" aria-labelledby="directoryTitle">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">The full collection</p>
+            <h2 id="directoryTitle">Explore every space</h2>
+          </div>
+          <p class="section-intro">
+            Every destination is managed from one simple JavaScript list near the bottom of this file, making future additions and edits easy.
+          </p>
         </div>
 
-        <nav class="link-grid" aria-label="Verve N Veda landing pages">
-          <a class="landing-link" href="https://vervenveda.github.io/">
-            <span>
-              <strong>Verve N Veda</strong>
-              <small>Public resources, creativity, and community</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
+        <div class="directory-tools reveal">
+          <label class="search-box" for="directorySearch">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-4-4"></path>
+            </svg>
+            <input id="directorySearch" type="search" placeholder="Search pages, hubs, tools, and learning spaces…" autocomplete="off">
+          </label>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+        </div>
 
-          <a class="landing-link" href="https://vervenveda.github.io/firmament.github.io/">
-            <span>
-              <strong>Firmament</strong>
-              <small>Law, rights, governance, and civic knowledge</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
+        <div class="directory-grid" id="directoryGrid"></div>
+        <div class="empty-state" id="emptyState">
+          No spaces match that search yet. Try another word.
+        </div>
+      </div>
+    </section>
 
-          <a class="landing-link" href="https://vervenveda.github.io/theverifier.github.io/">
-            <span>
-              <strong>The Verifier</strong>
-              <small>Research, source review, and public information</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
+    <section class="section partners" aria-labelledby="partnersTitle">
+      <div class="section-inner">
+        <div class="partner-panel reveal">
+          <p class="section-kicker">Connected worlds</p>
+          <h2 id="partnersTitle">Continue the journey</h2>
+          <p>
+            Visit the campaign and academy portals that extend the Verve N Veda ecosystem into civic leadership and sovereign education.
+          </p>
 
-          <a class="landing-link" href="https://vervenveda.github.io/river_to_road.github.io/">
-            <span>
-              <strong>River to Road</strong>
-              <small>Environmental stewardship and community clean-up</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="partner-links">
+            <a class="partner-link" href="https://www.jenniferpearl2028.com" target="_blank" rel="noopener noreferrer">
+              <span>
+                <strong>Jennifer Pearl 2028</strong>
+                <small>Leadership · Civic vision · Public service</small>
+              </span>
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M5 19 19 5"></path>
+                <path d="M8 5h11v11"></path>
+              </svg>
+            </a>
 
-          <a class="landing-link" href="https://vervenveda.github.io/Arshif.github.io/">
-            <span>
-              <strong>ARSHIF</strong>
-              <small>Archives, research halls, and cultural exploration</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
+            <a class="partner-link" href="https://www.khaemenesacademy.org" target="_blank" rel="noopener noreferrer">
+              <span>
+                <strong>Khaemenes Academy</strong>
+                <small>Learning · Creativity · Sovereign education</small>
+              </span>
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M5 19 19 5"></path>
+                <path d="M8 5h11v11"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-          <a class="landing-link" href="https://vervenveda.github.io/arcade.github.io/">
-            <span>
-              <strong>Arcade</strong>
-              <small>Games, experiments, and playful learning</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a class="landing-link" href="https://vervenveda.github.io/onenationforall.github.io/">
-            <span>
-              <strong>One Nation for All</strong>
-              <small>Civic participation, unity, and shared solutions</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a class="landing-link" href="https://vervenveda.github.io/khaemenesacademy.github.io/">
-            <span>
-              <strong>Khaemenes Academy</strong>
-              <small>Education, curriculum, and lifelong learning</small>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-        </nav>
+        <div class="principles reveal" aria-label="Site principles">
+          <article class="principle">
+            <h3>Sovereign by design</h3>
+            <p>One portable HTML file with no framework, no analytics, no cookies, and no build process.</p>
+          </article>
+          <article class="principle">
+            <h3>Calm and welcoming</h3>
+            <p>An elegant, breathable front door that helps visitors choose a path without feeling overwhelmed.</p>
+          </article>
+          <article class="principle">
+            <h3>Easy to maintain</h3>
+            <p>Update a page title, description, or URL once in the destination list and the menu and directory update together.</p>
+          </article>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <span>© <span id="year">2026</span> Verve N Veda</span>
-      <a class="back-to-top" href="#top">Back to top</a>
+      <div>
+        <p class="footer-brand">Verve N Veda</p>
+        <p class="footer-note">A sanctuary to explore, learn, create, and restore.</p>
+      </div>
+      <div class="footer-meta">
+        <div>© <span id="year"></span> Verve N Veda</div>
+        <div>Vanilla HTML · CSS · JavaScript</div>
+      </div>
     </div>
   </footer>
 
+  <div class="drawer-overlay" id="menuDrawer" role="dialog" aria-modal="true" aria-label="Site navigation" aria-hidden="true">
+    <aside class="drawer">
+      <div class="drawer-header">
+        <h2 class="drawer-title">Explore</h2>
+        <button class="close-button" id="closeMenu" type="button" aria-label="Close site menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18"></path>
+          </svg>
+        </button>
+      </div>
+
+      <label class="search-box drawer-search" for="menuSearch">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-4-4"></path>
+        </svg>
+        <input id="menuSearch" type="search" placeholder="Search connected sites…" autocomplete="off">
+      </label>
+
+      <nav class="drawer-nav" id="drawerNav" aria-label="All Verve N Veda connected sites"></nav>
+
+      <div class="drawer-footer">
+        Verve N Veda · A sanctuary of learning and conscious exploration.
+      </div>
+    </aside>
+  </div>
+
+  <noscript>
+    <div style="padding:18px;background:#fff4cf;color:#342d18;text-align:center;">
+      This page uses a small amount of JavaScript to build the navigation directory. Please enable JavaScript to view all links.
+    </div>
+  </noscript>
+
   <script>
+    "use strict";
+
+    /* ================================================================
+       EDIT YOUR CONNECTED SITES HERE
+       ----------------------------------------------------------------
+       Change a title, description, category, repository name, or URL
+       in this one registry. The landing-page directory and hamburger
+       menu update together automatically.
+       ================================================================ */
+
+    const SITE_ROOT = "https://vervenveda.github.io/";
+
+    const destinations = [
+      {
+        title: "Verve N Veda",
+        repo: "vervenveda.github.io",
+        path: "https://vervenveda.github.io/",
+        category: "Welcome",
+        description: "The public front door to the Verve N Veda ecosystem, its projects, values, and shared resources."
+      },
+      {
+        title: "Firmament Law",
+        repo: "firmament.github.io",
+        path: "https://vervenveda.github.io/firmament.github.io/",
+        category: "Law & Resources",
+        description: "Legal-information tools, evidence workspaces, public-resource libraries, and civic reference applications."
+      },
+      {
+        title: "Administration",
+        repo: "admin.github.io",
+        path: "https://vervenveda.github.io/admin.github.io/",
+        category: "Administration",
+        description: "Administrative portals, organization tools, records, planning spaces, and operational resources."
+      },
+      {
+        title: "Arcade",
+        repo: "arcade.github.io",
+        path: "https://vervenveda.github.io/arcade.github.io/",
+        category: "Play & Discovery",
+        description: "Games, puzzles, strategy, trivia, creative challenges, and learning through thoughtful play."
+      },
+      {
+        title: "Professional Resource Hub",
+        repo: "proresource_hub.github.io",
+        path: "https://vervenveda.github.io/proresource_hub.github.io/",
+        category: "Professional Tools",
+        description: "Practical tools, professional development resources, planning support, and independent-work pathways."
+      },
+      {
+        title: "Preschool",
+        repo: "preschool.github.io",
+        path: "https://vervenveda.github.io/preschool.github.io/",
+        category: "Early Learning",
+        description: "A gentle early-learning portal with foundational activities, stories, games, and creative exploration."
+      },
+      {
+        title: "One Nation for All",
+        repo: "onenationforall.github.io",
+        path: "https://vervenveda.github.io/onenationforall.github.io/",
+        category: "Civic Life",
+        description: "Civic engagement, public policy, unity, accountability, and community-centered national ideas."
+      },
+      {
+        title: "Solanar",
+        repo: "solanar.github.io",
+        path: "https://vervenveda.github.io/solanar.github.io/",
+        category: "Earth & Sky",
+        description: "Weather, earth science, environmental awareness, lunar information, and global observation tools."
+      },
+      {
+        title: "Khaemenes Academy",
+        repo: "khaemenesacademy.github.io",
+        path: "https://vervenveda.github.io/khaemenesacademy.github.io/",
+        category: "Learning",
+        description: "Sovereign education portals, curriculum, student resources, research, and lifelong learning halls."
+      },
+      {
+        title: "The Verifier",
+        repo: "theverifier.github.io",
+        path: "https://vervenveda.github.io/theverifier.github.io/",
+        category: "News & Verification",
+        description: "Information literacy, news discovery, source comparison, verification, and research navigation."
+      },
+      {
+        title: "ARSHIF Archives",
+        repo: "Arshif.github.io",
+        path: "https://vervenveda.github.io/Arshif.github.io/",
+        category: "Research & Archives",
+        description: "Deep research, archives, evidence preservation, cultural records, and intellectual collections."
+      },
+      {
+        title: "River to Road",
+        repo: "river_to_road.github.io",
+        path: "https://vervenveda.github.io/river_to_road.github.io/",
+        category: "Environment",
+        description: "Environmental stewardship, community cleanup, local action, and river-to-neighborhood restoration."
+      },
+      {
+        title: "PLERA Search",
+        repo: "PLERASearch.github.io",
+        path: "https://vervenveda.github.io/PLERASearch.github.io/",
+        category: "Search & Discovery",
+        description: "A broad search gateway connecting trusted research, public resources, learning, and discovery tools."
+      },
+      {
+        title: "Sanctuary",
+        repo: "Sanctuary.github.io",
+        path: "https://vervenveda.github.io/Sanctuary.github.io/",
+        category: "Reflection & Wellbeing",
+        description: "A quiet digital sanctuary for reflection, grounding, creativity, restoration, and personal space."
+      }
+    ];
+
+    const featured = [
+      {
+        title: "The Verifier",
+        path: "https://vervenveda.github.io/theverifier.github.io/",
+        description: "Explore news and public information with stronger source awareness and intellectual independence."
+      },
+      {
+        title: "Khaemenes Academy",
+        path: "https://vervenveda.github.io/khaemenesacademy.github.io/",
+        description: "Enter a sovereign learning environment built around curiosity, creativity, and accessible education."
+      },
+      {
+        title: "Firmament Law",
+        path: "https://vervenveda.github.io/firmament.github.io/",
+        description: "Open the law and public-resource library for structured research, evidence work, and practical support."
+      },
+      {
+        title: "PLERA Search",
+        path: "https://vervenveda.github.io/PLERASearch.github.io/",
+        description: "Search across public resources, research paths, educational tools, and the wider Verve N Veda network."
+      }
+    ];
+
+    const directoryGrid = document.getElementById("directoryGrid");
+    const featuredGrid = document.getElementById("featuredGrid");
+    const drawerNav = document.getElementById("drawerNav");
+    const directorySearch = document.getElementById("directorySearch");
+    const menuSearch = document.getElementById("menuSearch");
+    const resultCount = document.getElementById("resultCount");
+    const emptyState = document.getElementById("emptyState");
+    const siteHeader = document.getElementById("siteHeader");
+    const menuDrawer = document.getElementById("menuDrawer");
+    const menuButton = document.getElementById("menuButton");
+    const closeMenuButton = document.getElementById("closeMenu");
+
+    let lastFocusedElement = null;
+
+    const makeUrl = (path) => {
+      if (/^https?:\/\//i.test(path)) return path;
+      if (path === "/") return SITE_ROOT + "/";
+      return SITE_ROOT + path;
+    };
+
+    const escapeHtml = (value) => String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+
+    function renderFeatured() {
+      featuredGrid.innerHTML = featured.map((item, index) => `
+        <a class="feature-card reveal" href="${escapeHtml(makeUrl(item.path))}">
+          <div class="feature-top">
+            <span class="feature-number">0${index + 1}</span>
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div>
+            <h3>${escapeHtml(item.title)}</h3>
+            <p>${escapeHtml(item.description)}</p>
+          </div>
+        </a>
+      `).join("");
+    }
+
+    function filterDestinations(query) {
+      const normalized = query.trim().toLowerCase();
+      if (!normalized) return destinations;
+
+      return destinations.filter((item) => {
+        const haystack = [item.title, item.category, item.description, item.repo, item.path]
+          .join(" ")
+          .toLowerCase();
+        return haystack.includes(normalized);
+      });
+    }
+
+    function renderDirectory(items) {
+      directoryGrid.innerHTML = items.map((item) => `
+        <a class="directory-card reveal" href="${escapeHtml(makeUrl(item.path))}">
+          <small>${escapeHtml(item.category)}</small>
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${escapeHtml(item.repo || item.path)}</span>
+        </a>
+      `).join("");
+
+      resultCount.textContent = `${items.length} ${items.length === 1 ? "space" : "spaces"}`;
+      emptyState.style.display = items.length ? "none" : "block";
+      observeReveals();
+    }
+
+    function renderDrawer(items) {
+      drawerNav.innerHTML = items.map((item) => `
+        <a href="${escapeHtml(makeUrl(item.path))}">
+          <span>${escapeHtml(item.title)}</span>
+          <small>${escapeHtml(item.category)}</small>
+        </a>
+      `).join("");
+    }
+
+    function openMenu() {
+      lastFocusedElement = document.activeElement;
+      menuDrawer.classList.add("open");
+      menuDrawer.setAttribute("aria-hidden", "false");
+      menuButton.setAttribute("aria-expanded", "true");
+      menuButton.setAttribute("aria-label", "Close site menu");
+      document.body.classList.add("menu-open");
+      window.setTimeout(() => menuSearch.focus(), 80);
+    }
+
+    function closeMenu() {
+      menuDrawer.classList.remove("open");
+      menuDrawer.setAttribute("aria-hidden", "true");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open site menu");
+      document.body.classList.remove("menu-open");
+      menuSearch.value = "";
+      renderDrawer(destinations);
+      if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+        lastFocusedElement.focus();
+      }
+    }
+
+    function trapFocus(event) {
+      if (event.key !== "Tab" || !menuDrawer.classList.contains("open")) return;
+
+      const focusable = menuDrawer.querySelectorAll(
+        'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      );
+      const items = Array.from(focusable).filter((el) => el.offsetParent !== null);
+      if (!items.length) return;
+
+      const first = items[0];
+      const last = items[items.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+
+    let revealObserver;
+
+    function observeReveals() {
+      const nodes = document.querySelectorAll(".reveal:not(.visible)");
+
+      if (!("IntersectionObserver" in window)) {
+        nodes.forEach((node) => node.classList.add("visible"));
+        return;
+      }
+
+      if (!revealObserver) {
+        revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+      }
+
+      nodes.forEach((node) => revealObserver.observe(node));
+    }
+
+    renderFeatured();
+    renderDirectory(destinations);
+    renderDrawer(destinations);
+    observeReveals();
+
+    directorySearch.addEventListener("input", (event) => {
+      renderDirectory(filterDestinations(event.target.value));
+    });
+
+    menuSearch.addEventListener("input", (event) => {
+      renderDrawer(filterDestinations(event.target.value));
+    });
+
+    menuButton.addEventListener("click", () => {
+      menuDrawer.classList.contains("open") ? closeMenu() : openMenu();
+    });
+
+    closeMenuButton.addEventListener("click", closeMenu);
+
+    menuDrawer.addEventListener("click", (event) => {
+      if (event.target === menuDrawer) closeMenu();
+    });
+
+    drawerNav.addEventListener("click", (event) => {
+      if (event.target.closest("a")) closeMenu();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menuDrawer.classList.contains("open")) closeMenu();
+      trapFocus(event);
+    });
+
+    window.addEventListener("scroll", () => {
+      siteHeader.classList.toggle("scrolled", window.scrollY > 18);
+    }, { passive: true });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
