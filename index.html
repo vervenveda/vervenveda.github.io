@@ -128,7 +128,7 @@
     .brand-admin{
       margin-top:5px;
       color:var(--ink-soft);
-      font-size:.61rem;
+      font-size:.72rem;
       font-weight:700;
       letter-spacing:.14em;
       text-transform:uppercase;
@@ -465,7 +465,7 @@
     .card-arrow{
       align-self:flex-end;
       color:var(--gold);
-      font-size:.9rem;
+      font-size:1rem;
     }
     .empty-state{
       display:none;
@@ -550,9 +550,9 @@
     .drawer-title{
       margin:0;
       font-family:var(--ceremonial);
-      font-size:1rem;
+      font-size:1.14rem;
       font-weight:500;
-      letter-spacing:.12em;
+      letter-spacing:.13em;
       text-transform:uppercase;
     }
     .close-button{
@@ -565,22 +565,46 @@
       border:1px solid var(--line-strong);
       border-radius:2px;
     }
-    .drawer-search{margin:16px 0 10px;max-width:none}
-    .drawer-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+    /* The global .search-box is flexible in the page toolbar. Inside the
+       vertical drawer it must not grow, otherwise it creates a large blank
+       column between the search field and the navigation links. */
+    .drawer-search{
+      width:100%;
+      max-width:none;
+      flex:0 0 auto;
+      margin:16px 0 12px;
+    }
+    .drawer-search input{font-size:1rem}
+    .drawer-tabs{
+      flex:0 0 auto;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin:0 0 14px;
+    }
     .drawer-tab{
-      padding:6px 9px;
+      min-height:34px;
+      padding:8px 11px;
       cursor:pointer;
       color:var(--ink-soft);
       background:#fff;
       border:1px solid var(--line);
       border-radius:2px;
-      font-size:.62rem;
-      font-weight:700;
-      letter-spacing:.06em;
+      font-size:.72rem;
+      font-weight:750;
+      line-height:1.2;
+      letter-spacing:.065em;
       text-transform:uppercase;
     }
+    .drawer-tab:hover{color:var(--ink);border-color:var(--line-strong)}
     .drawer-tab.active{color:#fff;background:var(--ink);border-color:var(--ink)}
-    .drawer-nav{overflow:auto;padding-right:4px;overscroll-behavior:contain}
+    .drawer-nav{
+      flex:1 1 auto;
+      min-height:0;
+      overflow:auto;
+      padding-right:6px;
+      overscroll-behavior:contain;
+    }
     .nav-group{border-top:1px solid var(--line)}
     .nav-heading{
       position:sticky;
@@ -591,7 +615,7 @@
       color:var(--gold);
       background:linear-gradient(180deg,var(--paper-bright),rgba(251,249,244,.93));
       font-family:var(--ceremonial);
-      font-size:.61rem;
+      font-size:.72rem;
       letter-spacing:.14em;
       text-transform:uppercase;
     }
@@ -600,20 +624,22 @@
       grid-template-columns:1fr auto;
       gap:10px;
       align-items:center;
-      padding:11px 4px;
+      padding:13px 6px;
       color:var(--ink);
       border-bottom:1px solid rgba(18,23,19,.08);
       text-decoration:none;
-      font-size:.9rem;
+      font-size:1rem;
+      line-height:1.35;
     }
     .drawer-nav a:hover,.drawer-nav a:focus-visible{color:var(--gold)}
-    .drawer-nav small{color:var(--ink-soft);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase}
+    .drawer-nav small{color:var(--ink-soft);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
     .drawer-footer{
       margin-top:auto;
       padding-top:14px;
       color:var(--ink-soft);
       border-top:1px solid var(--line);
-      font-size:.72rem;
+      font-size:.8rem;
+      line-height:1.5;
     }
 
     .admin-overlay{
