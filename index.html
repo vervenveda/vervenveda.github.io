@@ -1,567 +1,1249 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Verve N Veda — a calm sanctuary for learning, creativity, resources, and exploration.">
-<meta name="theme-color" content="#fbf8f1">
-<meta name="color-scheme" content="light">
-<title>Verve N Veda | Sanctuary</title>
-<style>
-  :root{
-    --ivory:#fbf8f1;
-    --paper:#fffdf8;
-    --paper-soft:rgba(255,253,248,.82);
-    --ink:#24342d;
-    --ink-soft:#607069;
-    --sage:#73887c;
-    --sage-dark:#344b42;
-    --sage-pale:#e6eee8;
-    --gold:#b79a5b;
-    --gold-soft:#dfcca1;
-    --line:rgba(45,66,57,.14);
-    --shadow:0 24px 80px rgba(38,48,42,.10);
-    --soft-shadow:0 12px 36px rgba(38,48,42,.07);
-    --radius:32px;
-    --max:1180px;
-    --serif:Georgia,"Times New Roman",serif;
-    --sans:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Verve N Veda — the public gateway to learning, research, news, weather, civic resources, professional tools, art, and community projects.">
+  <meta name="theme-color" content="#f4f0e7">
+  <meta name="color-scheme" content="light">
+  <title>Verve N Veda | Public Gateway</title>
 
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    margin:0;
-    min-height:100vh;
-    color:var(--ink);
-    font-family:var(--sans);
-    line-height:1.6;
-    background:
-      radial-gradient(circle at 12% 5%, rgba(183,154,91,.10), transparent 26rem),
-      radial-gradient(circle at 88% 18%, rgba(115,136,124,.12), transparent 28rem),
-      linear-gradient(180deg,#fffefb 0%,var(--ivory) 62%,#f2ebdf 100%);
-    overflow-x:hidden;
-  }
-  body.menu-open{overflow:hidden}
-  a{color:inherit}
-  button,input{font:inherit}
-  button{color:inherit}
-  ::selection{background:var(--gold-soft);color:var(--ink)}
+  <!-- Open-license display fonts. Brandon Grotesque and Gaspacho remain first in the CSS stacks
+       so licensed/self-hosted copies can be added later without redesigning the page. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  .skip-link{
-    position:fixed;left:14px;top:14px;z-index:3000;
-    padding:10px 14px;border-radius:12px;background:var(--ink);color:#fff;
-    transform:translateY(-160%);transition:transform .18s ease;
-  }
-  .skip-link:focus{transform:translateY(0)}
+  <style>
+    :root{
+      --paper:#f4f0e7;
+      --paper-bright:#fbf9f4;
+      --white:#ffffff;
+      --ink:#121713;
+      --ink-soft:#525c55;
+      --forest:#243d33;
+      --forest-deep:#15251f;
+      --gold:#b48b45;
+      --gold-pale:#e7d7b6;
+      --navy:#10243b;
+      --line:rgba(18,23,19,.14);
+      --line-strong:rgba(18,23,19,.25);
+      --shadow:0 18px 50px rgba(27,34,29,.09);
+      --shadow-small:0 8px 24px rgba(27,34,29,.07);
+      --max:1220px;
+      --display:"Gaspacho","Cormorant Garamond",Baskerville,Georgia,serif;
+      --ceremonial:"Cinzel","Aboreto","Times New Roman",serif;
+      --sans:"Brandon Grotesque","Montserrat","Avenir Next",Avenir,Arial,sans-serif;
+    }
 
-  .botanical{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
-  .leaf-cluster{position:absolute;opacity:.28;filter:blur(.1px)}
-  .leaf-cluster.top{left:-24px;top:-26px;transform:rotate(-18deg) scale(1.05)}
-  .leaf-cluster.bottom{right:-44px;bottom:-34px;transform:rotate(162deg) scale(1.22)}
-  .leaf-cluster svg{width:min(320px,38vw);height:auto}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      overflow-x:hidden;
+      color:var(--ink);
+      background:var(--paper);
+      font-family:var(--sans);
+      line-height:1.65;
+    }
+    body.menu-open{overflow:hidden}
+    a{color:inherit}
+    button,input{font:inherit}
+    button{color:inherit}
+    ::selection{background:var(--gold-pale);color:var(--ink)}
 
-  .site-header{
-    position:fixed;inset:0 0 auto 0;z-index:1200;
-    padding:18px clamp(16px,4vw,54px);
-    transition:background .22s ease,box-shadow .22s ease,backdrop-filter .22s ease;
-  }
-  .site-header.scrolled{
-    background:rgba(255,253,248,.84);
-    backdrop-filter:blur(18px);
-    box-shadow:0 1px 0 var(--line);
-  }
-  .header-inner{
-    width:min(100%,var(--max));margin:0 auto;
-    display:flex;align-items:center;justify-content:space-between;gap:16px;
-  }
-  .wordmark{
-    text-decoration:none;
-    font-family:var(--serif);
-    font-size:clamp(1.05rem,2vw,1.32rem);
-    letter-spacing:.08em;
-    color:var(--sage-dark);
-  }
-  .header-actions{display:flex;align-items:center;gap:10px}
-  .quiet-link{
-    display:inline-flex;align-items:center;justify-content:center;
-    min-height:42px;padding:9px 14px;border-radius:999px;
-    text-decoration:none;color:var(--ink-soft);font-weight:650;font-size:.92rem;
-  }
-  .quiet-link:hover,.quiet-link:focus-visible{background:rgba(115,136,124,.10)}
-  .menu-button{
-    min-width:48px;width:48px;height:48px;border:1px solid rgba(52,75,66,.16);
-    border-radius:999px;background:var(--paper-soft);cursor:pointer;
-    display:grid;place-items:center;box-shadow:var(--soft-shadow);
-  }
-  .menu-button:hover{background:#fff}
-  .menu-lines,.menu-lines:before,.menu-lines:after{
-    content:"";display:block;width:20px;height:2px;border-radius:99px;background:var(--sage-dark);
-    transition:transform .2s ease,opacity .2s ease;
-  }
-  .menu-lines{position:relative}
-  .menu-lines:before,.menu-lines:after{position:absolute;left:0}
-  .menu-lines:before{top:-7px}.menu-lines:after{top:7px}
-  .menu-button[aria-expanded="true"] .menu-lines{background:transparent}
-  .menu-button[aria-expanded="true"] .menu-lines:before{transform:translateY(7px) rotate(45deg)}
-  .menu-button[aria-expanded="true"] .menu-lines:after{transform:translateY(-7px) rotate(-45deg)}
+    .skip-link{
+      position:fixed;
+      top:12px;
+      left:12px;
+      z-index:3000;
+      transform:translateY(-160%);
+      padding:10px 14px;
+      border-radius:4px;
+      color:#fff;
+      background:var(--ink);
+      transition:transform .18s ease;
+    }
+    .skip-link:focus{transform:translateY(0)}
 
-  .hero{
-    min-height:100svh;
-    display:grid;place-items:center;text-align:center;
-    padding:150px clamp(18px,4vw,64px) 90px;
-    position:relative;isolation:isolate;
-  }
-  .hero:before{
-    content:"";position:absolute;inset:36px clamp(12px,3vw,52px);
-    border:1px solid rgba(183,154,91,.18);border-radius:44px;z-index:-1;
-  }
-  .hero-inner{width:min(100%,900px);margin:0 auto}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:12px;margin:0 0 24px;
-    color:var(--gold);font-size:.75rem;font-weight:800;letter-spacing:.20em;text-transform:uppercase;
-  }
-  .eyebrow:before,.eyebrow:after{content:"";width:42px;height:1px;background:var(--gold-soft)}
-  .hero-title{
-    margin:0;
-    font-family:var(--serif);
-    font-weight:400;
-    line-height:.95;
-    letter-spacing:-.045em;
-    font-size:clamp(4.4rem,11vw,10rem);
-    color:var(--sage-dark);
-  }
-  .hero-copy{
-    max-width:680px;margin:30px auto 0;
-    color:var(--ink-soft);font-family:var(--serif);
-    font-size:clamp(1.18rem,2vw,1.58rem);line-height:1.55;
-  }
-  .hero-actions{display:flex;flex-wrap:wrap;gap:13px;justify-content:center;margin-top:36px}
-  .button{
-    min-height:50px;display:inline-flex;align-items:center;justify-content:center;gap:10px;
-    padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:750;border:1px solid transparent;
-    transition:transform .18s ease,box-shadow .18s ease,background .18s ease,border-color .18s ease;
-  }
-  .button:hover{transform:translateY(-2px)}
-  .button-primary{background:var(--sage-dark);color:#fff;box-shadow:0 16px 34px rgba(52,75,66,.17)}
-  .button-primary:hover{background:var(--ink)}
-  .button-secondary{background:rgba(255,253,248,.76);color:var(--sage-dark);border-color:rgba(52,75,66,.18)}
-  .button-secondary:hover{background:#fff;border-color:rgba(183,154,91,.42);box-shadow:var(--soft-shadow)}
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1200;
+      border-bottom:1px solid var(--line);
+      background:rgba(244,240,231,.94);
+      backdrop-filter:blur(18px);
+    }
+    .header-inner{
+      width:min(calc(100% - 32px),var(--max));
+      min-height:78px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+    .admin-brand{
+      display:inline-flex;
+      align-items:center;
+      gap:13px;
+      min-width:0;
+      color:var(--ink);
+      text-decoration:none;
+    }
+    .brand-mark{
+      width:44px;
+      height:44px;
+      flex:0 0 44px;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      background:var(--ink);
+      border:1px solid var(--ink);
+      border-radius:3px;
+      font-family:var(--ceremonial);
+      font-size:.72rem;
+      letter-spacing:.11em;
+      transition:transform .18s ease,background .18s ease;
+    }
+    .admin-brand:hover .brand-mark,
+    .admin-brand:focus-visible .brand-mark{
+      transform:translateY(-2px);
+      background:var(--forest);
+    }
+    .brand-copy{display:grid;line-height:1.05}
+    .brand-name{
+      font-family:var(--ceremonial);
+      font-size:clamp(.92rem,1.7vw,1.12rem);
+      font-weight:500;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+    }
+    .brand-admin{
+      margin-top:5px;
+      color:var(--ink-soft);
+      font-size:.61rem;
+      font-weight:700;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .header-actions{display:flex;align-items:center;gap:10px}
+    .header-link{
+      display:inline-flex;
+      align-items:center;
+      min-height:42px;
+      padding:9px 13px;
+      color:var(--ink-soft);
+      text-decoration:none;
+      font-size:.78rem;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .header-link:hover,.header-link:focus-visible{color:var(--ink)}
+    .menu-button{
+      width:46px;
+      height:46px;
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      border:1px solid var(--line-strong);
+      border-radius:3px;
+      background:transparent;
+    }
+    .menu-button:hover{background:var(--white)}
+    .menu-lines,.menu-lines::before,.menu-lines::after{
+      content:"";
+      display:block;
+      width:19px;
+      height:1.5px;
+      border-radius:99px;
+      background:var(--ink);
+      transition:transform .18s ease,opacity .18s ease;
+    }
+    .menu-lines{position:relative}
+    .menu-lines::before,.menu-lines::after{position:absolute;left:0}
+    .menu-lines::before{top:-6px}
+    .menu-lines::after{top:6px}
+    .menu-button[aria-expanded="true"] .menu-lines{background:transparent}
+    .menu-button[aria-expanded="true"] .menu-lines::before{transform:translateY(6px) rotate(45deg)}
+    .menu-button[aria-expanded="true"] .menu-lines::after{transform:translateY(-6px) rotate(-45deg)}
 
-  .section{padding:clamp(66px,9vw,122px) clamp(18px,4vw,64px)}
-  .section-inner{width:min(100%,var(--max));margin:0 auto}
-  .section-heading{
-    display:grid;grid-template-columns:minmax(0,.85fr) minmax(280px,1.15fr);gap:32px;align-items:end;margin-bottom:34px;
-  }
-  .kicker{margin:0 0 10px;color:var(--gold);font-size:.72rem;font-weight:850;letter-spacing:.18em;text-transform:uppercase}
-  .section h2{margin:0;font-family:var(--serif);font-size:clamp(2.6rem,5.2vw,5rem);line-height:1;font-weight:400;letter-spacing:-.04em}
-  .section-intro{margin:0;color:var(--ink-soft);font-size:clamp(1rem,1.6vw,1.14rem);max-width:680px}
+    .hero{
+      min-height:74svh;
+      display:grid;
+      align-items:center;
+      border-bottom:1px solid var(--line);
+      background:var(--paper-bright);
+    }
+    .hero-inner{
+      width:min(calc(100% - 36px),var(--max));
+      margin:0 auto;
+      padding:clamp(82px,11vw,138px) 0 clamp(70px,9vw,110px);
+      display:grid;
+      grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);
+      gap:clamp(40px,7vw,90px);
+      align-items:end;
+    }
+    .eyebrow,.kicker{
+      margin:0;
+      color:var(--gold);
+      font-family:var(--ceremonial);
+      font-size:.7rem;
+      font-weight:600;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+    }
+    .hero-title{
+      margin:20px 0 0;
+      max-width:820px;
+      color:var(--forest-deep);
+      font-family:var(--display);
+      font-size:clamp(4.5rem,10.5vw,9.6rem);
+      font-weight:500;
+      line-height:.78;
+      letter-spacing:.015em;
+    }
+    .hero-title span{display:block}
+    .hero-aside{
+      padding:0 0 8px;
+      border-top:1px solid var(--line-strong);
+    }
+    .hero-copy{
+      margin:24px 0 0;
+      color:var(--ink-soft);
+      font-family:var(--display);
+      font-size:clamp(1.3rem,2vw,1.72rem);
+      line-height:1.45;
+      letter-spacing:.01em;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:30px;
+    }
+    .button{
+      min-height:48px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:11px 17px;
+      border:1px solid transparent;
+      border-radius:3px;
+      text-decoration:none;
+      font-size:.76rem;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      transition:transform .17s ease,background .17s ease,border-color .17s ease,box-shadow .17s ease;
+    }
+    .button:hover{transform:translateY(-2px)}
+    .button-primary{color:#fff;background:var(--ink);box-shadow:var(--shadow-small)}
+    .button-primary:hover{background:var(--forest)}
+    .button-secondary{color:var(--ink);background:transparent;border-color:var(--line-strong)}
+    .button-secondary:hover{background:var(--white);border-color:var(--ink)}
 
-  .featured-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
-  .feature-card{
-    min-height:250px;grid-column:span 6;position:relative;overflow:hidden;isolation:isolate;
-    padding:26px;border:1px solid var(--line);border-radius:var(--radius);
-    background:rgba(255,253,248,.74);box-shadow:var(--soft-shadow);text-decoration:none;
-    display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
-  }
-  .feature-card:nth-child(1){grid-column:span 7}.feature-card:nth-child(2){grid-column:span 5}
-  .feature-card:hover,.feature-card:focus-visible{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(183,154,91,.48)}
-  .feature-card:before{content:"";position:absolute;right:-110px;bottom:-130px;width:260px;height:260px;border-radius:50%;background:rgba(115,136,124,.12);z-index:-1}
-  .feature-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .feature-number{color:var(--gold);font-size:.72rem;font-weight:850;letter-spacing:.16em}
-  .feature-arrow{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.65)}
-  .feature-card h3{margin:64px 0 8px;font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.4rem);font-weight:400;line-height:1;letter-spacing:-.035em}
-  .feature-card p{margin:0;color:var(--ink-soft);max-width:50ch}
+    .section{padding:clamp(70px,9vw,118px) 18px}
+    .section-inner{width:min(100%,var(--max));margin:0 auto}
+    .section-heading{
+      display:grid;
+      grid-template-columns:minmax(260px,.82fr) minmax(320px,1.18fr);
+      gap:clamp(28px,5vw,70px);
+      align-items:end;
+      margin-bottom:34px;
+    }
+    .section h2{
+      margin:12px 0 0;
+      max-width:700px;
+      font-family:var(--display);
+      font-size:clamp(2.9rem,6vw,5.7rem);
+      font-weight:500;
+      line-height:.9;
+      letter-spacing:.01em;
+    }
+    .section-intro{
+      margin:0;
+      max-width:710px;
+      color:var(--ink-soft);
+      font-size:clamp(.98rem,1.5vw,1.08rem);
+    }
 
-  .directory-section{background:rgba(255,253,248,.42);border-block:1px solid rgba(52,75,66,.08)}
-  .directory-tools{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:22px}
-  .search-box{flex:1 1 320px;position:relative;max-width:640px}
-  .search-box svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--sage);pointer-events:none}
-  .search-box input{
-    width:100%;min-height:54px;padding:13px 18px 13px 50px;border-radius:999px;
-    border:1px solid rgba(52,75,66,.15);background:rgba(255,255,255,.78);outline:none;color:var(--ink);
-  }
-  .search-box input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(183,154,91,.12)}
-  .category-strip{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-  .chip{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);padding:8px 12px;cursor:pointer;color:var(--ink-soft);font-weight:700;font-size:.88rem}
-  .chip.active{background:var(--sage-dark);color:#fff;border-color:transparent}
-  .result-count{margin:0;color:var(--ink-soft);font-size:.9rem}
-  .directory-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-  .directory-card{
-    min-height:126px;padding:18px;border:1px solid rgba(52,75,66,.12);border-radius:22px;background:rgba(255,255,255,.72);
-    text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;gap:14px;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease;
-  }
-  .directory-card:hover,.directory-card:focus-visible{transform:translateY(-3px);background:#fff;border-color:rgba(183,154,91,.42);box-shadow:var(--soft-shadow)}
-  .directory-card small{color:var(--gold);font-weight:850;letter-spacing:.12em;text-transform:uppercase;font-size:.64rem}
-  .directory-card strong{font-family:var(--serif);font-size:1.32rem;line-height:1.1;font-weight:400}
-  .directory-card span{color:var(--ink-soft);font-size:.82rem;word-break:break-word}
-  .empty-state{display:none;padding:28px;border:1px dashed rgba(52,75,66,.22);border-radius:22px;text-align:center;color:var(--ink-soft)}
+    .featured-section{background:var(--paper)}
+    .featured-groups{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
+    }
+    .gateway-group{
+      padding:24px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.48);
+      box-shadow:var(--shadow-small);
+    }
+    .gateway-group.academy{grid-column:1 / -1}
+    .gateway-group.news{border-top:4px solid var(--gold)}
+    .gateway-group.civic{border-top:4px solid var(--navy)}
+    .gateway-group.pro{border-top:4px solid var(--forest)}
+    .gateway-group.research{border-top:4px solid #6a5c4c}
+    .gateway-head{
+      display:flex;
+      align-items:start;
+      justify-content:space-between;
+      gap:18px;
+      margin-bottom:18px;
+    }
+    .gateway-label{
+      margin:0;
+      font-family:var(--ceremonial);
+      font-size:.78rem;
+      font-weight:600;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+    .gateway-note{margin:7px 0 0;color:var(--ink-soft);font-size:.84rem}
+    .category-jump{
+      flex:0 0 auto;
+      border:0;
+      padding:4px 0;
+      cursor:pointer;
+      color:var(--ink-soft);
+      background:transparent;
+      font-size:.67rem;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .category-jump:hover{color:var(--ink)}
+    .gateway-links{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:9px;
+    }
+    .gateway-group.academy .gateway-links{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .gateway-link{
+      min-height:48px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:11px 14px;
+      color:#fff;
+      background:#151515;
+      border:1px solid #151515;
+      border-radius:2px;
+      text-decoration:none;
+      font-size:.73rem;
+      font-weight:700;
+      letter-spacing:.055em;
+      text-transform:uppercase;
+      transition:transform .16s ease,background .16s ease,border-color .16s ease;
+    }
+    .gateway-link:hover,.gateway-link:focus-visible{transform:translateY(-2px);background:var(--forest);border-color:var(--forest)}
+    .gateway-link.priority{color:var(--ink);background:var(--gold-pale);border-color:var(--gold)}
+    .gateway-link.priority:hover{background:#d8bd85;border-color:#a57e39}
+    .gateway-link.navy{background:var(--navy);border-color:var(--navy)}
 
-  .partner-panel{
-    padding:clamp(30px,5vw,62px);border-radius:38px;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden;
-    background:linear-gradient(132deg,rgba(31,48,42,.98),rgba(78,96,86,.95));
-  }
-  .partner-panel:before{content:"";position:absolute;right:-260px;top:-300px;width:560px;height:560px;border:1px solid rgba(223,204,161,.28);border-radius:50%;box-shadow:0 0 0 52px rgba(223,204,161,.05),0 0 0 104px rgba(223,204,161,.035)}
-  .partner-panel .kicker{color:var(--gold-soft)}
-  .partner-panel h2{max-width:760px}.partner-panel p{color:rgba(255,255,255,.73);max-width:720px}
-  .partner-links{margin-top:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;position:relative;z-index:1}
-  .partner-link{min-height:105px;padding:20px 22px;border:1px solid rgba(255,255,255,.15);border-radius:22px;background:rgba(255,255,255,.08);color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:transform .18s ease,background .18s ease,border-color .18s ease}
-  .partner-link:hover,.partner-link:focus-visible{transform:translateY(-3px);background:rgba(255,255,255,.13);border-color:rgba(223,204,161,.50)}
-  .partner-link strong{display:block;font-family:var(--serif);font-size:clamp(1.42rem,2.8vw,2.1rem);font-weight:400;line-height:1.05}
-  .partner-link small{display:block;margin-top:7px;color:rgba(255,255,255,.64);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
+    .directory-section{
+      border-block:1px solid var(--line);
+      background:var(--paper-bright);
+    }
+    .directory-tools{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+    .search-box{
+      position:relative;
+      flex:1 1 360px;
+      max-width:670px;
+    }
+    .search-box svg{
+      position:absolute;
+      left:15px;
+      top:50%;
+      width:18px;
+      height:18px;
+      transform:translateY(-50%);
+      color:var(--ink-soft);
+      pointer-events:none;
+    }
+    .search-box input{
+      width:100%;
+      min-height:50px;
+      padding:12px 16px 12px 44px;
+      color:var(--ink);
+      background:#fff;
+      border:1px solid var(--line-strong);
+      border-radius:3px;
+      outline:none;
+    }
+    .search-box input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(180,139,69,.13)}
+    .result-count{margin:0;color:var(--ink-soft);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+    .category-strip{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+    .chip{
+      min-height:38px;
+      padding:7px 11px;
+      cursor:pointer;
+      color:var(--ink-soft);
+      background:transparent;
+      border:1px solid var(--line);
+      border-radius:2px;
+      font-size:.69rem;
+      font-weight:700;
+      letter-spacing:.07em;
+      text-transform:uppercase;
+    }
+    .chip:hover{border-color:var(--ink);color:var(--ink)}
+    .chip.active{color:#fff;background:var(--ink);border-color:var(--ink)}
+    .directory-groups{display:grid;gap:28px}
+    .directory-group{
+      scroll-margin-top:106px;
+      padding-top:24px;
+      border-top:1px solid var(--line);
+    }
+    .directory-group:first-child{padding-top:0;border-top:0}
+    .directory-group-heading{
+      display:grid;
+      grid-template-columns:minmax(210px,.45fr) minmax(280px,1fr);
+      gap:22px;
+      align-items:start;
+      margin-bottom:16px;
+    }
+    .directory-group h3{
+      margin:0;
+      font-family:var(--ceremonial);
+      font-size:clamp(1rem,2vw,1.28rem);
+      font-weight:500;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .directory-group-heading p{margin:0;color:var(--ink-soft);font-size:.86rem}
+    .directory-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:10px;
+    }
+    .directory-card{
+      min-height:126px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:16px;
+      padding:17px;
+      color:var(--ink);
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:3px;
+      text-decoration:none;
+      transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+    }
+    .directory-card:hover,.directory-card:focus-visible{transform:translateY(-3px);border-color:var(--gold);box-shadow:var(--shadow-small)}
+    .directory-card strong{
+      display:block;
+      font-family:var(--display);
+      font-size:1.45rem;
+      font-weight:600;
+      line-height:1;
+      letter-spacing:.01em;
+    }
+    .directory-card span{display:block;margin-top:10px;color:var(--ink-soft);font-size:.8rem;line-height:1.45}
+    .card-arrow{
+      align-self:flex-end;
+      color:var(--gold);
+      font-size:.9rem;
+    }
+    .empty-state{
+      display:none;
+      padding:28px;
+      color:var(--ink-soft);
+      text-align:center;
+      background:#fff;
+      border:1px dashed var(--line-strong);
+    }
 
-  .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:42px}
-  .principle{padding-top:24px;border-top:1px solid var(--line)}
-  .principle h3{margin:0 0 8px;font-family:var(--serif);font-size:1.46rem;font-weight:400}
-  .principle p{margin:0;color:var(--ink-soft)}
+    .closing-section{background:var(--forest-deep);color:#fff}
+    .closing-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);
+      gap:clamp(40px,7vw,90px);
+      align-items:end;
+    }
+    .closing-section .kicker{color:var(--gold-pale)}
+    .closing-section h2{color:#fff}
+    .closing-copy{margin:0;color:rgba(255,255,255,.72)}
+    .closing-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+    .closing-section .button-primary{color:var(--ink);background:var(--gold-pale)}
+    .closing-section .button-primary:hover{background:#fff}
+    .closing-section .button-secondary{color:#fff;border-color:rgba(255,255,255,.38)}
+    .closing-section .button-secondary:hover{color:var(--ink);background:#fff;border-color:#fff}
 
-  .site-footer{padding:52px clamp(18px,4vw,64px) 34px}
-  .footer-inner{width:min(100%,var(--max));margin:0 auto;padding-top:28px;border-top:1px solid var(--line);display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
-  .footer-brand{margin:0;font-family:var(--serif);font-size:clamp(2.1rem,4.8vw,3.8rem);line-height:1;letter-spacing:-.04em}
-  .footer-note,.footer-meta{color:var(--ink-soft)}.footer-note{margin:10px 0 0}.footer-meta{font-size:.86rem}
+    .site-footer{padding:34px 18px;background:var(--ink);color:#fff}
+    .footer-inner{
+      width:min(100%,var(--max));
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    .footer-brand{
+      margin:0;
+      font-family:var(--ceremonial);
+      font-size:.8rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .footer-meta{color:rgba(255,255,255,.62);font-size:.75rem;letter-spacing:.04em}
 
-  .drawer-overlay{position:fixed;inset:0;z-index:1600;background:rgba(21,32,27,.38);backdrop-filter:blur(6px);opacity:0;visibility:hidden;transition:opacity .22s ease,visibility .22s ease}
-  .drawer-overlay.open{opacity:1;visibility:visible}
-  .drawer{position:absolute;right:0;top:0;width:min(94vw,460px);height:100%;padding:22px;background:var(--paper);box-shadow:-20px 0 70px rgba(21,32,27,.20);transform:translateX(105%);transition:transform .26s cubic-bezier(.2,.75,.2,1);display:flex;flex-direction:column}
-  .drawer-overlay.open .drawer{transform:translateX(0)}
-  .drawer-header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:2px 2px 18px;border-bottom:1px solid var(--line)}
-  .drawer-title{margin:0;font-family:var(--serif);font-size:1.85rem;font-weight:400}
-  .close-button{width:44px;height:44px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;display:grid;place-items:center}
-  .drawer-search{margin:16px 0 12px;max-width:none}.drawer-search input{min-height:48px}
-  .drawer-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
-  .drawer-tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 10px;cursor:pointer;color:var(--ink-soft);font-weight:750;font-size:.8rem}
-  .drawer-tab.active{background:var(--sage-dark);color:#fff;border-color:transparent}
-  .drawer-nav{overflow:auto;padding-right:4px;overscroll-behavior:contain}
-  .nav-group{border-top:1px solid rgba(52,75,66,.08)}
-  .nav-heading{position:sticky;top:0;background:linear-gradient(180deg,var(--paper),rgba(255,253,248,.92));z-index:2;margin:0;padding:12px 2px 8px;color:var(--gold);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:850}
-  .drawer-nav a{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:12px 4px;border-bottom:1px solid rgba(52,75,66,.07);text-decoration:none;color:var(--ink)}
-  .drawer-nav a:hover,.drawer-nav a:focus-visible{color:var(--gold)}
-  .drawer-nav small{color:var(--ink-soft);font-size:.72rem}
-  .drawer-footer{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:.82rem}
+    .drawer-overlay{
+      position:fixed;
+      inset:0;
+      z-index:1600;
+      visibility:hidden;
+      opacity:0;
+      background:rgba(8,12,10,.55);
+      backdrop-filter:blur(5px);
+      transition:opacity .2s ease,visibility .2s ease;
+    }
+    .drawer-overlay.open{visibility:visible;opacity:1}
+    .drawer{
+      position:absolute;
+      top:0;
+      right:0;
+      width:min(94vw,470px);
+      height:100%;
+      display:flex;
+      flex-direction:column;
+      padding:22px;
+      background:var(--paper-bright);
+      box-shadow:-24px 0 70px rgba(0,0,0,.2);
+      transform:translateX(104%);
+      transition:transform .24s ease;
+    }
+    .drawer-overlay.open .drawer{transform:translateX(0)}
+    .drawer-header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding-bottom:16px;
+      border-bottom:1px solid var(--line);
+    }
+    .drawer-title{
+      margin:0;
+      font-family:var(--ceremonial);
+      font-size:1rem;
+      font-weight:500;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .close-button{
+      width:42px;
+      height:42px;
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      background:transparent;
+      border:1px solid var(--line-strong);
+      border-radius:2px;
+    }
+    .drawer-search{margin:16px 0 10px;max-width:none}
+    .drawer-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+    .drawer-tab{
+      padding:6px 9px;
+      cursor:pointer;
+      color:var(--ink-soft);
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:2px;
+      font-size:.62rem;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+    .drawer-tab.active{color:#fff;background:var(--ink);border-color:var(--ink)}
+    .drawer-nav{overflow:auto;padding-right:4px;overscroll-behavior:contain}
+    .nav-group{border-top:1px solid var(--line)}
+    .nav-heading{
+      position:sticky;
+      top:0;
+      z-index:2;
+      margin:0;
+      padding:12px 2px 8px;
+      color:var(--gold);
+      background:linear-gradient(180deg,var(--paper-bright),rgba(251,249,244,.93));
+      font-family:var(--ceremonial);
+      font-size:.61rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .drawer-nav a{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:10px;
+      align-items:center;
+      padding:11px 4px;
+      color:var(--ink);
+      border-bottom:1px solid rgba(18,23,19,.08);
+      text-decoration:none;
+      font-size:.9rem;
+    }
+    .drawer-nav a:hover,.drawer-nav a:focus-visible{color:var(--gold)}
+    .drawer-nav small{color:var(--ink-soft);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase}
+    .drawer-footer{
+      margin-top:auto;
+      padding-top:14px;
+      color:var(--ink-soft);
+      border-top:1px solid var(--line);
+      font-size:.72rem;
+    }
 
-  .reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
-  :focus-visible{outline:3px solid rgba(183,154,91,.58);outline-offset:3px}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .58s ease,transform .58s ease}
+    .reveal.visible{opacity:1;transform:none}
+    :focus-visible{outline:3px solid rgba(180,139,69,.58);outline-offset:3px}
 
-  @media(max-width:980px){.section-heading{grid-template-columns:1fr}.directory-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.feature-card,.feature-card:nth-child(n){grid-column:span 6}}
-  @media(max-width:760px){.site-header{padding:14px 16px}.quiet-link{display:none}.hero{min-height:auto;padding:126px 16px 62px}.hero:before{inset:22px 8px;border-radius:28px}.hero-title{font-size:clamp(4rem,21vw,6.5rem)}.featured-grid{grid-template-columns:1fr}.feature-card,.feature-card:nth-child(n){grid-column:auto}.directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-links,.principles{grid-template-columns:1fr}}
-  @media(max-width:470px){.hero-actions .button{width:100%}.directory-grid{grid-template-columns:1fr}.drawer{width:100%;padding:18px}.leaf-cluster svg{width:260px}}
-  @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
-</style>
+    @media(max-width:980px){
+      .hero-inner,.section-heading,.closing-grid{grid-template-columns:1fr}
+      .hero-aside{max-width:700px}
+      .gateway-group.academy .gateway-links{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:730px){
+      .header-inner{min-height:68px}
+      .header-link{display:none}
+      .hero{min-height:auto}
+      .hero-inner{padding-top:76px}
+      .hero-title{font-size:clamp(4rem,20vw,6.7rem)}
+      .featured-groups{grid-template-columns:1fr}
+      .gateway-group.academy{grid-column:auto}
+      .gateway-group.academy .gateway-links,.gateway-links{grid-template-columns:1fr}
+      .directory-group-heading{grid-template-columns:1fr}
+      .directory-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:470px){
+      .brand-admin{display:none}
+      .hero-actions .button,.closing-actions .button{width:100%}
+      .drawer{width:100%;padding:18px}
+      .gateway-group{padding:18px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+      .reveal{opacity:1;transform:none}
+    }
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
-<div class="botanical" aria-hidden="true">
-  <div class="leaf-cluster top">
-    <svg viewBox="0 0 320 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g stroke="#73887c" stroke-width="1.4" opacity=".55"><path d="M22 18c68 58 112 118 138 222"/><path d="M52 50c44-10 62 12 77 49-42 8-64-11-77-49Z" fill="#73887c" fill-opacity=".12"/><path d="M95 96c48-4 62 25 67 66-45 0-65-24-67-66Z" fill="#73887c" fill-opacity=".12"/><path d="M132 157c48 5 58 36 54 76-43-8-60-36-54-76Z" fill="#73887c" fill-opacity=".12"/><path d="M45 85c-32 22-33 53-20 82 34-20 43-50 20-82Z" fill="#73887c" fill-opacity=".10"/><path d="M84 140c-35 20-39 52-28 84 37-17 48-47 28-84Z" fill="#73887c" fill-opacity=".10"/></g>
-    </svg>
-  </div>
-  <div class="leaf-cluster bottom">
-    <svg viewBox="0 0 320 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g stroke="#73887c" stroke-width="1.4" opacity=".45"><path d="M22 18c68 58 112 118 138 222"/><path d="M52 50c44-10 62 12 77 49-42 8-64-11-77-49Z" fill="#73887c" fill-opacity=".10"/><path d="M95 96c48-4 62 25 67 66-45 0-65-24-67-66Z" fill="#73887c" fill-opacity=".10"/><path d="M132 157c48 5 58 36 54 76-43-8-60-36-54-76Z" fill="#73887c" fill-opacity=".10"/><path d="M45 85c-32 22-33 53-20 82 34-20 43-50 20-82Z" fill="#73887c" fill-opacity=".08"/><path d="M84 140c-35 20-39 52-28 84 37-17 48-47 28-84Z" fill="#73887c" fill-opacity=".08"/></g>
-    </svg>
-  </div>
-</div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<header class="site-header" id="siteHeader">
-  <div class="header-inner">
-    <a class="wordmark" href="https://www.vervenveda.com/" aria-label="Verve N Veda home">Verve N Veda</a>
-    <div class="header-actions">
-      <a class="quiet-link" href="#directory">Explore</a>
-      <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-controls="menuDrawer" aria-expanded="false"><span class="menu-lines" aria-hidden="true"></span></button>
-    </div>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="admin-brand" href="https://vervenveda.github.io/admin.github.io/" aria-label="Open the Verve N Veda administration page" title="Administration">
+        <span class="brand-mark" aria-hidden="true">VNV</span>
+        <span class="brand-copy">
+          <span class="brand-name">Verve N Veda</span>
+          <span class="brand-admin">Administration gateway</span>
+        </span>
+      </a>
 
-<main id="main">
-  <section class="hero" aria-labelledby="heroTitle">
-    <div class="hero-inner reveal">
-      <p class="eyebrow">Welcome to the sanctuary</p>
-      <h1 class="hero-title" id="heroTitle">Verve N Veda</h1>
-      <p class="hero-copy">A calm place to explore learning, creativity, practical resources, and thoughtful discovery.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#featured">Enter the sanctuary <span aria-hidden="true">↘</span></a>
-        <a class="button button-secondary" href="https://www.khaemenesacademy.org" target="_blank" rel="noopener noreferrer">Visit the Academy <span aria-hidden="true">↗</span></a>
+      <div class="header-actions">
+        <a class="header-link" href="#journey">Explore all gateways</a>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation" aria-controls="menuDrawer" aria-expanded="false">
+          <span class="menu-lines" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="section" id="featured" aria-labelledby="featuredTitle">
-    <div class="section-inner">
-      <div class="section-heading reveal">
-        <div><p class="kicker">Begin here</p><h2 id="featuredTitle">Featured gateways</h2></div>
-        <p class="section-intro">Start with the spaces visitors usually need first: early learning, academy pathways, source-aware discovery, and creative practice.</p>
-      </div>
-      <div class="featured-grid" id="featuredGrid"></div>
-    </div>
-  </section>
-
-  <section class="section directory-section" id="directory" aria-labelledby="directoryTitle">
-    <div class="section-inner">
-      <div class="section-heading reveal">
-        <div><p class="kicker">The full collection</p><h2 id="directoryTitle">Explore every space</h2></div>
-        <p class="section-intro">Use search or choose a category to find the right doorway without feeling overwhelmed.</p>
-      </div>
-      <div class="directory-tools reveal">
-        <label class="search-box" for="directorySearch">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
-          <input id="directorySearch" type="search" placeholder="Search learning, resources, tools, or portals…" autocomplete="off">
-        </label>
-        <p class="result-count" id="resultCount" aria-live="polite"></p>
-      </div>
-      <div class="category-strip" id="categoryStrip" aria-label="Filter spaces by category"></div>
-      <div class="directory-grid" id="directoryGrid"></div>
-      <div class="empty-state" id="emptyState">No spaces match that search yet. Try another word or category.</div>
-    </div>
-  </section>
-
-  <section class="section partners" aria-labelledby="partnersTitle">
-    <div class="section-inner">
-      <div class="partner-panel reveal">
-        <p class="kicker">Connected worlds</p>
-        <h2 id="partnersTitle">Continue the journey</h2>
-        <p>Open the primary public websites connected to Verve N Veda, Khaemenes Academy, civic leadership, and the art gallery.</p>
-        <div class="partner-links">
-          <a class="partner-link" href="https://www.vervenveda.com" target="_blank" rel="noopener noreferrer"><span><strong>VerveN Veda</strong><small>Public sanctuary · Learning · Resources</small></span><span aria-hidden="true">↗</span></a>
-          <a class="partner-link" href="https://www.khaemenesacademy.org" target="_blank" rel="noopener noreferrer"><span><strong>Khaemenes Academy</strong><small>Learning · Creativity · Sovereign education</small></span><span aria-hidden="true">↗</span></a>
-          <a class="partner-link" href="https://www.jenniferpearl2028.com" target="_blank" rel="noopener noreferrer"><span><strong>Jennifer Pearl 2028</strong><small>Leadership · Civic vision · Public service</small></span><span aria-hidden="true">↗</span></a>
-          <a class="partner-link" href="https://myartgallery.online" target="_blank" rel="noopener noreferrer"><span><strong>My Art Gallery</strong><small>Art · Portfolio · Creative showcase</small></span><span aria-hidden="true">↗</span></a>
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-inner">
+        <div class="reveal">
+          <p class="eyebrow">The public gateway</p>
+          <h1 class="hero-title" id="heroTitle"><span>Verve N</span><span>Veda</span></h1>
+        </div>
+        <div class="hero-aside reveal">
+          <p class="hero-copy">A clear entrance to a growing matrix of free learning, research, news, weather, civic, health, creative, and professional resources.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://vervenveda.github.io/aurora.github.io/">Enter Aurora Sanctuary <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://vervenveda.github.io/khaemenesacademy.github.io/">Visit Khaemenes Academy <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </div>
-      <div class="principles reveal" aria-label="Site principles">
-        <article class="principle"><h3>Calm by design</h3><p>A spacious front door that gives visitors fewer decisions at once.</p></article>
-        <article class="principle"><h3>Simple to explore</h3><p>Search, category filters, and a grouped menu keep the network easier to navigate.</p></article>
-        <article class="principle"><h3>Private by default</h3><p>No ads, no trackers, and no accounts are needed to browse the public doorway.</p></article>
+    </section>
+
+    <section class="section featured-section" id="featured" aria-labelledby="featuredTitle">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">Begin with a category</p>
+            <h2 id="featuredTitle">Featured gateways</h2>
+          </div>
+          <p class="section-intro">The largest boxes have been replaced with compact, professional gateway buttons. Academy levels stay together, news and weather are prominent, and civic destinations share one clearly defined section.</p>
+        </div>
+        <div class="featured-groups" id="featuredGroups"></div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div><p class="footer-brand">Verve N Veda</p><p class="footer-note">A sanctuary to explore, learn, create, and restore.</p></div>
-    <div class="footer-meta"><div>© <span id="year"></span> Verve N Veda</div><div>No ads · No trackers · Public resources</div></div>
+    <section class="section directory-section" id="journey" aria-labelledby="journeyTitle">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">Continue the journey</p>
+            <h2 id="journeyTitle">Every landing page, organized</h2>
+          </div>
+          <p class="section-intro">Search the public network or filter it by category. The directory, featured gateways, and dropdown menu all use the same central link registry so the navigation stays consistent.</p>
+        </div>
+
+        <div class="directory-tools reveal">
+          <label class="search-box" for="directorySearch">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            <input id="directorySearch" type="search" placeholder="Search news, school, health, veterans, editing, movies…" autocomplete="off">
+          </label>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+        </div>
+
+        <div class="category-strip reveal" id="categoryStrip" aria-label="Filter gateways by category"></div>
+        <div class="directory-groups" id="directoryGroups"></div>
+        <div class="empty-state" id="emptyState">No gateways match that search. Try another word or choose All.</div>
+      </div>
+    </section>
+
+    <section class="section closing-section" aria-labelledby="closingTitle">
+      <div class="section-inner closing-grid">
+        <div class="reveal">
+          <p class="kicker">One network, many doorways</p>
+          <h2 id="closingTitle">Find the right space without the clutter.</h2>
+        </div>
+        <div class="reveal">
+          <p class="closing-copy">Verve N Veda serves as the crisp public front door. Each connected landing page can continue developing its own character while remaining easy to locate from one dependable map.</p>
+          <div class="closing-actions">
+            <a class="button button-primary" href="https://vervenveda.github.io/theverifier.github.io/">Open The Verifier <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://vervenveda.github.io/solanar.github.io/">Open Solanar Weather <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Verve N Veda</p>
+      <div class="footer-meta">Verve N Veda · Khaemenes Academy · Jennifer Kay Pearl · All Rights Reserved 2026</div>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" id="menuDrawer" role="dialog" aria-modal="true" aria-label="Verve N Veda navigation" aria-hidden="true">
+    <aside class="drawer">
+      <div class="drawer-header">
+        <h2 class="drawer-title">Explore the matrix</h2>
+        <button class="close-button" id="closeMenu" type="button" aria-label="Close navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+      <label class="search-box drawer-search" for="menuSearch">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+        <input id="menuSearch" type="search" placeholder="Search gateways…" autocomplete="off">
+      </label>
+      <div class="drawer-tabs" id="drawerTabs" aria-label="Navigation categories"></div>
+      <nav class="drawer-nav" id="drawerNav" aria-label="Connected landing pages"></nav>
+      <div class="drawer-footer">The upper-left Verve N Veda mark opens Administration.</div>
+    </aside>
   </div>
-</footer>
 
-<div class="drawer-overlay" id="menuDrawer" role="dialog" aria-modal="true" aria-label="Site navigation" aria-hidden="true">
-  <aside class="drawer">
-    <div class="drawer-header">
-      <h2 class="drawer-title">Explore</h2>
-      <button class="close-button" id="closeMenu" type="button" aria-label="Close menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button>
-    </div>
-    <label class="search-box drawer-search" for="menuSearch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="menuSearch" type="search" placeholder="Search spaces…" autocomplete="off"></label>
-    <div class="drawer-tabs" id="drawerTabs" aria-label="Menu categories"></div>
-    <nav class="drawer-nav" id="drawerNav" aria-label="Verve N Veda connected spaces"></nav>
-    <div class="drawer-footer">Verve N Veda · Learning, resources, creativity, and discovery.</div>
-  </aside>
-</div>
+  <noscript><div style="padding:18px;background:#fff4cf;color:#342d18;text-align:center;">This page uses a small local script to build its shared navigation. Please enable JavaScript to view the full directory.</div></noscript>
 
-<noscript><div style="padding:18px;background:#fff4cf;color:#342d18;text-align:center;">This page uses a small script to build the navigation directory. Please enable scripts to view all links.</div></noscript>
+  <script>
+  "use strict";
 
-<script>
-"use strict";
+  /* ==============================================================
+     CENTRAL LINK REGISTRY
+     Update a URL here once. Featured groups, the directory, and the
+     dropdown menu will all update together.
+     ============================================================== */
+  const destinations = [
+    {
+      id:"aurora-sanctuary",
+      title:"Aurora Sanctuary",
+      category:"Sanctuary",
+      url:"https://vervenveda.github.io/aurora.github.io/",
+      description:"A restorative sanctuary for reflection, inspiration, and thoughtful exploration."
+    },
 
-const SITE_ROOT = "https://vervenveda.github.io/";
+    {
+      id:"academy-home",
+      title:"Khaemenes Academy",
+      category:"Khaemenes Academy",
+      url:"https://vervenveda.github.io/khaemenesacademy.github.io/",
+      description:"The central academy landing page for curriculum, student pathways, research, and lifelong learning."
+    },
+    {
+      id:"creche",
+      title:"Crèche Preschool",
+      category:"Khaemenes Academy",
+      url:"https://vervenveda.github.io/creche_preschool.github.io/",
+      description:"Early stories, games, creative play, and foundational learning for preschool children."
+    },
+    {
+      id:"kindergarten",
+      title:"Kinder Garden",
+      category:"Khaemenes Academy",
+      url:"https://vervenveda.github.io/KinderGarden.github.io/",
+      description:"Kindergarten lessons, alphabet learning, early reading, and playful foundations."
+    },
+    {
+      id:"elementary",
+      title:"Elementary School",
+      category:"Khaemenes Academy",
+      url:"https://vervenveda.github.io/Khaemenes-elementary.github.io/",
+      description:"Elementary learning spaces, lessons, tools, and child-friendly academic pathways."
+    },
+    {
+      id:"middle-school",
+      title:"Middle School",
+      category:"Khaemenes Academy",
+      url:"https://vervenveda.github.io/Khaemenes-jrhigh.github.io/",
+      description:"Middle-school and junior-high curriculum, projects, reading, and student tools."
+    },
+    {
+      id:"high-school",
+      title:"High School",
+      category:"Khaemenes Academy",
+      url:"https://vervenveda.github.io/Khaemenes-High_github.io/",
+      description:"High-school courses, academic tools, records, college preparation, and student portals."
+    },
+    {
+      id:"higher-education",
+      title:"Higher Education",
+      category:"Khaemenes Academy",
+      url:"https://vervenveda.github.io/Khaemenes-university.github.io/",
+      description:"University, adult learning, advanced study, certification, and professional education."
+    },
 
-const destinations = [
-  { title:"Verve N Veda", repo:"vervenveda.github.io", path:"https://vervenveda.github.io/", category:"Welcome", description:"The GitHub Pages front door for the Verve N Veda ecosystem." },
-  { title:"VerveN Veda Main Site", repo:"www.vervenveda.com", path:"https://www.vervenveda.com", category:"Welcome", description:"The public Verve N Veda website and sanctuary doorway." },
+    {
+      id:"the-verifier",
+      title:"The Verifier News",
+      category:"News & Weather",
+      url:"https://vervenveda.github.io/theverifier.github.io/",
+      description:"News discovery, source comparison, information literacy, verification, and research navigation.",
+      tone:"priority"
+    },
+    {
+      id:"solanar",
+      title:"Solanar Weather",
+      category:"News & Weather",
+      url:"https://vervenveda.github.io/solanar.github.io/",
+      description:"Weather, earth science, environmental observation, lunar information, and global conditions.",
+      tone:"navy"
+    },
 
-  { title:"Creche Preschool", repo:"creche_preschool.github.io", path:"https://vervenveda.github.io/creche_preschool.github.io/", category:"Early Learning", description:"A gentle preschool portal for early stories, games, creativity, and foundational learning." },
-  { title:"Kinder Garden", repo:"KinderGarden.github.io", path:"https://vervenveda.github.io/KinderGarden.github.io/", category:"Early Learning", description:"Kindergarten learning pathways, alphabet work, early reading, and playful foundations." },
-  { title:"Khaemenes Elementary", repo:"Khaemenes-elementary.github.io", path:"https://vervenveda.github.io/Khaemenes-elementary.github.io/", category:"Early Learning", description:"Elementary learning spaces, lessons, tools, and child-friendly portals." },
+    {
+      id:"one-nation",
+      title:"One Nation For All",
+      category:"Civic & Public Service",
+      url:"https://vervenveda.github.io/onenationforall.github.io/",
+      description:"Civic engagement, public policy, veterans resources, unity, accountability, and government navigation."
+    },
+    {
+      id:"jennifer-2028",
+      title:"Jennifer Pearl for President 2028",
+      category:"Civic & Public Service",
+      url:"https://www.jenniferpearl2028.com",
+      description:"Jennifer Kay Pearl's national leadership, reform, accountability, and public-service platform."
+    },
+    {
+      id:"veterans",
+      title:"Veterans Resource Hub",
+      category:"Civic & Public Service",
+      url:"https://www.vervenveda.com/veterans",
+      description:"A direct doorway to veteran services, support, public resources, and practical assistance."
+    },
 
-  { title:"Khaemenes Academy", repo:"khaemenesacademy.github.io", path:"https://vervenveda.github.io/khaemenesacademy.github.io/", category:"Academy", description:"The academy portal for curriculum, student resources, research, and lifelong learning halls." },
-  { title:"Khaemenes Academy .org", repo:"www.khaemenesacademy.org", path:"https://www.khaemenesacademy.org", category:"Academy", description:"The public Khaemenes Academy website." },
-  { title:"Khaemenes Jr High", repo:"Khaemenes-jrhigh.github.io", path:"https://vervenveda.github.io/Khaemenes-jrhigh.github.io/", category:"Academy", description:"Junior high learning portals, reading, projects, and student tools." },
-  { title:"Khaemenes High School", repo:"Khaemenes-High_github.io", path:"https://vervenveda.github.io/Khaemenes-High_github.io/", category:"Academy", description:"High school learning portals, workshops, curriculum pathways, and academic tools." },
-  { title:"Khaemenes University", repo:"Khaemenes-university.github.io", path:"https://vervenveda.github.io/Khaemenes-university.github.io/", category:"Academy", description:"Advanced learning, adult education, research, and university-style study portals." },
+    {
+      id:"arshif",
+      title:"ARSHIF Archives",
+      category:"Research, Health & Law",
+      url:"https://vervenveda.github.io/Arshif.github.io/",
+      description:"Deep research, evidence preservation, history, culture, science, archives, and human knowledge."
+    },
+    {
+      id:"arshif-health",
+      title:"Health at ARSHIF",
+      category:"Research, Health & Law",
+      url:"https://vervenveda.github.io/Arshif.github.io/apps/holistic_medicine_hall/",
+      description:"The ARSHIF health doorway for evidence-aware wellness, medicine traditions, ethics, and safety."
+    },
+    {
+      id:"plera-search",
+      title:"PLERA Search",
+      category:"Research, Health & Law",
+      url:"https://vervenveda.github.io/PLERASearch.github.io/",
+      description:"A broad search gateway connecting public resources, learning tools, maps, research, and discovery."
+    },
+    {
+      id:"firmament",
+      title:"Firmament Law",
+      category:"Research, Health & Law",
+      url:"https://vervenveda.github.io/firmament.github.io/",
+      description:"Legal-information tools, evidence workspaces, public resources, governance, and civic reference."
+    },
+    {
+      id:"linguistics",
+      title:"Linguistics",
+      category:"Research, Health & Law",
+      url:"https://vervenveda.github.io/linguistics.github.io/",
+      description:"Language learning, vocabulary, linguistics, communication, translation, and word study."
+    },
 
-  { title:"The Verifier", repo:"theverifier.github.io", path:"https://vervenveda.github.io/theverifier.github.io/", category:"Research & Verification", description:"Information literacy, news discovery, source comparison, verification, and research navigation." },
-  { title:"PLERA Search", repo:"PLERASearch.github.io", path:"https://vervenveda.github.io/PLERASearch.github.io/", category:"Research & Verification", description:"A search gateway connecting public resources, research paths, educational tools, and discovery spaces." },
-  { title:"ARSHIF Archives", repo:"Arshif.github.io", path:"https://vervenveda.github.io/Arshif.github.io/", category:"Research & Verification", description:"Deep research, archives, evidence preservation, cultural records, and intellectual collections." },
-  { title:"Aurora", repo:"aurora.github.io", path:"https://vervenveda.github.io/aurora.github.io/", category:"Research & Verification", description:"A reflective research and discovery space within the Verve N Veda network." },
-  { title:"Linguistics", repo:"linguistics.github.io", path:"https://vervenveda.github.io/linguistics.github.io/", category:"Research & Verification", description:"Language learning, word study, communication, and linguistics resources." },
+    {
+      id:"proresources",
+      title:"ProReSources Hub",
+      category:"Professional Tools & Media",
+      url:"https://vervenveda.github.io/proresource_hub.github.io/",
+      description:"Free professional browser tools for writing, media, code, design, files, productivity, and creative work."
+    },
+    {
+      id:"prose",
+      title:"PROSE Editing Suite",
+      category:"Professional Tools & Media",
+      url:"https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE%E2%84%A2%20editingsuite_index.html",
+      description:"A sovereign editorial suite for drafting, formatting, reviewing, organizing, and exporting written work."
+    },
+    {
+      id:"fleapit",
+      title:"Movies at FleaPit",
+      category:"Professional Tools & Media",
+      url:"https://vervenveda.github.io/proresource_hub.github.io/Protools/FleaPit%E2%84%A2_media_hub_Index.html",
+      description:"A media hub for finding, collecting, organizing, and exploring movies, video, and public media sources."
+    },
 
-  { title:"Bazaar Art", repo:"bazaarart.github.io", path:"https://vervenveda.github.io/bazaarart.github.io/", category:"Art & Creativity", description:"Creative practice, art resources, artist pathways, and community art spaces." },
-  { title:"My Art Gallery", repo:"myartgallery.github.io", path:"https://vervenveda.github.io/myartgallery.github.io/", category:"Art & Creativity", description:"Gallery tools, art portfolios, creative showcases, and visual-art resources." },
-  { title:"My Art Gallery Online", repo:"myartgallery.online", path:"https://myartgallery.online", category:"Art & Creativity", description:"The public online art-gallery doorway." },
-  { title:"Arcade", repo:"arcade.github.io", path:"https://vervenveda.github.io/arcade.github.io/", category:"Art & Creativity", description:"Games, puzzles, strategy, trivia, creative challenges, and learning through play." },
+    {
+      id:"my-art-gallery",
+      title:"My Art Gallery",
+      category:"Art, Games & Creativity",
+      url:"https://vervenveda.github.io/myartgallery.github.io/",
+      description:"Gallery tools, artist portfolios, visual showcases, exhibitions, and creative resources."
+    },
+    {
+      id:"bazaar-art",
+      title:"Bazaar Art",
+      category:"Art, Games & Creativity",
+      url:"https://vervenveda.github.io/bazaarart.github.io/",
+      description:"Artist resources, community art, creative tools, portfolios, events, and social experiences."
+    },
+    {
+      id:"arcade",
+      title:"Arcade",
+      category:"Art, Games & Creativity",
+      url:"https://vervenveda.github.io/arcade.github.io/",
+      description:"Games, puzzles, strategy, trivia, creativity, and learning through play."
+    },
 
-  { title:"River to Road", repo:"river_to_road.github.io", path:"https://vervenveda.github.io/river_to_road.github.io/", category:"Earth & Community", description:"Environmental stewardship, community cleanup, local action, and river-to-neighborhood restoration." },
-  { title:"Solanar", repo:"solanar.github.io", path:"https://vervenveda.github.io/solanar.github.io/", category:"Earth & Community", description:"Weather, earth science, environmental awareness, lunar information, and observation tools." },
-  { title:"One Nation for All", repo:"onenationforall.github.io", path:"https://vervenveda.github.io/onenationforall.github.io/", category:"Earth & Community", description:"Civic engagement, unity, accountability, public policy, and community-centered national ideas." },
-  { title:"Jennifer Pearl 2028", repo:"JenniferPearl2028.com", path:"https://www.jenniferpearl2028.com", category:"Earth & Community", description:"Leadership, civic vision, public service, and national campaign information." },
+    {
+      id:"river-to-road",
+      title:"River to Road",
+      category:"Earth & Community",
+      url:"https://vervenveda.github.io/river_to_road.github.io/",
+      description:"Environmental stewardship, community cleanup, local action, and neighborhood restoration."
+    }
+  ];
 
-  { title:"Professional Resource Hub", repo:"proresource_hub.github.io", path:"https://vervenveda.github.io/proresource_hub.github.io/", category:"Practical Resources", description:"Professional development, planning support, independent-work tools, and practical pathways." },
-  { title:"Administration", repo:"admin.github.io", path:"https://vervenveda.github.io/admin.github.io/", category:"Practical Resources", description:"Administrative portals, organization tools, records, planning spaces, and operational resources." },
-  { title:"Firmament Law", repo:"firmament.github.io", path:"https://vervenveda.github.io/firmament.github.io/", category:"Practical Resources", description:"Legal-information tools, evidence workspaces, public-resource libraries, and civic reference applications." }
-];
+  const categoryDetails = {
+    "Sanctuary":"A quiet first doorway for reflection, restoration, and creative renewal.",
+    "Khaemenes Academy":"The Academy landing page and every major learning level kept together in one sequence.",
+    "News & Weather":"Fast access to current information, verification, weather, and environmental observation.",
+    "Civic & Public Service":"National leadership, civic participation, veterans resources, policy, and public service.",
+    "Research, Health & Law":"Archives, health study, legal information, language, public research, and evidence-aware discovery.",
+    "Professional Tools & Media":"Professional writing, editing, media, movies, design, workflow, and local browser tools.",
+    "Art, Games & Creativity":"Visual art, artist communities, gallery spaces, games, puzzles, and creative exploration.",
+    "Earth & Community":"Environmental stewardship, local action, cleanup, restoration, and community connection."
+  };
 
-const featured = ["Khaemenes Academy","The Verifier","Creche Preschool","My Art Gallery"].map(title => destinations.find(item => item.title === title)).filter(Boolean);
+  const categoryOrder = [
+    "Sanctuary",
+    "Khaemenes Academy",
+    "News & Weather",
+    "Civic & Public Service",
+    "Research, Health & Law",
+    "Professional Tools & Media",
+    "Art, Games & Creativity",
+    "Earth & Community"
+  ];
 
-const directoryGrid = document.getElementById("directoryGrid");
-const featuredGrid = document.getElementById("featuredGrid");
-const drawerNav = document.getElementById("drawerNav");
-const drawerTabs = document.getElementById("drawerTabs");
-const categoryStrip = document.getElementById("categoryStrip");
-const directorySearch = document.getElementById("directorySearch");
-const menuSearch = document.getElementById("menuSearch");
-const resultCount = document.getElementById("resultCount");
-const emptyState = document.getElementById("emptyState");
-const siteHeader = document.getElementById("siteHeader");
-const menuDrawer = document.getElementById("menuDrawer");
-const menuButton = document.getElementById("menuButton");
-const closeMenuButton = document.getElementById("closeMenu");
+  const featuredGroups = [
+    {
+      category:"Khaemenes Academy",
+      className:"academy",
+      title:"Khaemenes Academy Pathways",
+      note:"Academy home, early learning, school levels, and higher education stay together.",
+      ids:["academy-home","creche","kindergarten","elementary","middle-school","high-school","higher-education"]
+    },
+    {
+      category:"News & Weather",
+      className:"news",
+      title:"News & Weather",
+      note:"The Verifier and Solanar are prominent and immediately recognizable.",
+      ids:["the-verifier","solanar"]
+    },
+    {
+      category:"Civic & Public Service",
+      className:"civic",
+      title:"Civic & Public Service",
+      note:"One Nation For All, the presidential platform, and Veterans belong together.",
+      ids:["one-nation","jennifer-2028","veterans"]
+    },
+    {
+      category:"Professional Tools & Media",
+      className:"pro",
+      title:"Professional Tools & Media",
+      note:"ProReSources, PROSE, and FleaPit provide a direct professional-work path.",
+      ids:["proresources","prose","fleapit"]
+    },
+    {
+      category:"Research, Health & Law",
+      className:"research",
+      title:"Research, Health & Law",
+      note:"ARSHIF, health resources, PLERA Search, and Firmament are grouped by purpose.",
+      ids:["arshif","arshif-health","plera-search","firmament"]
+    }
+  ];
 
-let selectedCategory = "All";
-let selectedDrawerCategory = "All";
-let lastFocusedElement = null;
-let revealObserver;
+  const featuredGroupsNode = document.getElementById("featuredGroups");
+  const directoryGroups = document.getElementById("directoryGroups");
+  const directorySearch = document.getElementById("directorySearch");
+  const categoryStrip = document.getElementById("categoryStrip");
+  const resultCount = document.getElementById("resultCount");
+  const emptyState = document.getElementById("emptyState");
+  const menuDrawer = document.getElementById("menuDrawer");
+  const menuButton = document.getElementById("menuButton");
+  const closeMenuButton = document.getElementById("closeMenu");
+  const menuSearch = document.getElementById("menuSearch");
+  const drawerTabs = document.getElementById("drawerTabs");
+  const drawerNav = document.getElementById("drawerNav");
 
-const categoryOrder = ["All", ...Array.from(new Set(destinations.map(item => item.category))).sort((a,b)=>a.localeCompare(b))];
-const makeUrl = path => /^https?:\/\//i.test(path) ? path : SITE_ROOT + path.replace(/^\//,"");
-const escapeHtml = value => String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
+  let selectedCategory = "All";
+  let selectedDrawerCategory = "All";
+  let lastFocusedElement = null;
+  let revealObserver;
 
-function filterDestinations(query, category){
-  const normalized = String(query || "").trim().toLowerCase();
-  return destinations.filter(item => {
-    const categoryMatch = !category || category === "All" || item.category === category;
-    if(!categoryMatch) return false;
-    if(!normalized) return true;
-    const haystack = [item.title,item.category,item.description,item.repo,item.path].join(" ").toLowerCase();
-    return haystack.includes(normalized);
-  });
-}
+  const escapeHtml = value => String(value)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
 
-function renderCategoryChips(){
-  categoryStrip.innerHTML = categoryOrder.map(cat => `<button class="chip${cat===selectedCategory?" active":""}" type="button" data-category="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`).join("");
-  drawerTabs.innerHTML = categoryOrder.map(cat => `<button class="drawer-tab${cat===selectedDrawerCategory?" active":""}" type="button" data-category="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`).join("");
-}
+  const slugify = value => String(value)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9]+/g,"-")
+    .replace(/^-|-$/g,"");
 
-function renderFeatured(){
-  featuredGrid.innerHTML = featured.map((item,index)=>`
-    <a class="feature-card reveal" href="${escapeHtml(makeUrl(item.path))}">
-      <div class="feature-top"><span class="feature-number">0${index+1}</span><span class="feature-arrow" aria-hidden="true">↗</span></div>
-      <div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></div>
-    </a>`).join("");
-}
+  const getById = id => destinations.find(item => item.id === id);
 
-function renderDirectory(items){
-  directoryGrid.innerHTML = items.map(item=>`
-    <a class="directory-card reveal" href="${escapeHtml(makeUrl(item.path))}">
-      <small>${escapeHtml(item.category)}</small>
-      <strong>${escapeHtml(item.title)}</strong>
-      <span>${escapeHtml(item.description)}</span>
-    </a>`).join("");
-  resultCount.textContent = `${items.length} ${items.length === 1 ? "space" : "spaces"}`;
-  emptyState.style.display = items.length ? "none" : "block";
-  observeReveals();
-}
-
-function groupByCategory(items){
-  return items.reduce((groups,item)=>{
-    (groups[item.category] ||= []).push(item);
-    return groups;
-  },{});
-}
-
-function renderDrawer(items){
-  const grouped = groupByCategory(items);
-  const categories = Object.keys(grouped).sort((a,b)=>a.localeCompare(b));
-  if(!items.length){
-    drawerNav.innerHTML = `<p class="empty-state" style="display:block;margin:0;">No spaces match that search.</p>`;
-    return;
+  function filterDestinations(query,category){
+    const normalized = String(query || "").trim().toLowerCase();
+    return destinations.filter(item => {
+      const categoryMatch = category === "All" || item.category === category;
+      if(!categoryMatch) return false;
+      if(!normalized) return true;
+      const haystack = [item.title,item.category,item.description,item.url].join(" ").toLowerCase();
+      return haystack.includes(normalized);
+    });
   }
-  drawerNav.innerHTML = categories.map(category => `
-    <section class="nav-group">
-      <h3 class="nav-heading">${escapeHtml(category)}</h3>
-      ${grouped[category].map(item=>`
-        <a href="${escapeHtml(makeUrl(item.path))}"><span>${escapeHtml(item.title)}</span><small>Open</small></a>`).join("")}
-    </section>`).join("");
-}
 
-function updateDirectory(){
-  renderCategoryChips();
-  renderDirectory(filterDestinations(directorySearch.value, selectedCategory));
-}
-
-function updateDrawer(){
-  renderCategoryChips();
-  renderDrawer(filterDestinations(menuSearch.value, selectedDrawerCategory));
-}
-
-function openMenu(){
-  lastFocusedElement = document.activeElement;
-  menuDrawer.classList.add("open");
-  menuDrawer.setAttribute("aria-hidden","false");
-  menuButton.setAttribute("aria-expanded","true");
-  menuButton.setAttribute("aria-label","Close menu");
-  document.body.classList.add("menu-open");
-  window.setTimeout(()=>menuSearch.focus(),80);
-}
-
-function closeMenu(){
-  menuDrawer.classList.remove("open");
-  menuDrawer.setAttribute("aria-hidden","true");
-  menuButton.setAttribute("aria-expanded","false");
-  menuButton.setAttribute("aria-label","Open menu");
-  document.body.classList.remove("menu-open");
-  menuSearch.value = "";
-  selectedDrawerCategory = "All";
-  updateDrawer();
-  if(lastFocusedElement && typeof lastFocusedElement.focus === "function") lastFocusedElement.focus();
-}
-
-function trapFocus(event){
-  if(event.key !== "Tab" || !menuDrawer.classList.contains("open")) return;
-  const focusable = Array.from(menuDrawer.querySelectorAll('a[href], button:not([disabled]), input:not([disabled])')).filter(el=>el.offsetParent !== null);
-  if(!focusable.length) return;
-  const first = focusable[0];
-  const last = focusable[focusable.length-1];
-  if(event.shiftKey && document.activeElement === first){event.preventDefault();last.focus();}
-  else if(!event.shiftKey && document.activeElement === last){event.preventDefault();first.focus();}
-}
-
-function observeReveals(){
-  const nodes = document.querySelectorAll(".reveal:not(.visible)");
-  if(!("IntersectionObserver" in window)){nodes.forEach(node=>node.classList.add("visible"));return;}
-  if(!revealObserver){
-    revealObserver = new IntersectionObserver((entries,observer)=>{
-      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}});
-    },{threshold:.12});
+  function groupByCategory(items){
+    return items.reduce((groups,item) => {
+      (groups[item.category] ||= []).push(item);
+      return groups;
+    },{});
   }
-  nodes.forEach(node=>revealObserver.observe(node));
-}
 
-renderFeatured();
-renderCategoryChips();
-updateDirectory();
-updateDrawer();
-observeReveals();
+  function renderFeatured(){
+    featuredGroupsNode.innerHTML = featuredGroups.map(group => {
+      const links = group.ids.map(getById).filter(Boolean).map(item => {
+        const tone = item.tone ? ` ${escapeHtml(item.tone)}` : "";
+        return `<a class="gateway-link${tone}" href="${escapeHtml(item.url)}"><span>${escapeHtml(item.title)}</span><span aria-hidden="true">↗</span></a>`;
+      }).join("");
 
-directorySearch.addEventListener("input", updateDirectory);
-menuSearch.addEventListener("input", updateDrawer);
-categoryStrip.addEventListener("click", event => {
-  const btn = event.target.closest("button[data-category]");
-  if(!btn) return;
-  selectedCategory = btn.dataset.category;
+      return `
+        <article class="gateway-group ${escapeHtml(group.className)} reveal">
+          <div class="gateway-head">
+            <div>
+              <h3 class="gateway-label">${escapeHtml(group.title)}</h3>
+              <p class="gateway-note">${escapeHtml(group.note)}</p>
+            </div>
+            <button class="category-jump" type="button" data-jump-category="${escapeHtml(group.category)}">View all</button>
+          </div>
+          <div class="gateway-links">${links}</div>
+        </article>`;
+    }).join("");
+  }
+
+  function renderCategoryControls(){
+    const controls = ["All",...categoryOrder];
+    categoryStrip.innerHTML = controls.map(category => `
+      <button class="chip${category === selectedCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
+
+    drawerTabs.innerHTML = controls.map(category => `
+      <button class="drawer-tab${category === selectedDrawerCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
+  }
+
+  function renderDirectory(items){
+    const grouped = groupByCategory(items);
+    const categories = categoryOrder.filter(category => grouped[category]?.length);
+
+    directoryGroups.innerHTML = categories.map(category => `
+      <section class="directory-group reveal" id="category-${slugify(category)}" data-category-section="${escapeHtml(category)}">
+        <div class="directory-group-heading">
+          <h3>${escapeHtml(category)}</h3>
+          <p>${escapeHtml(categoryDetails[category] || "")}</p>
+        </div>
+        <div class="directory-grid">
+          ${grouped[category].map(item => `
+            <a class="directory-card" href="${escapeHtml(item.url)}">
+              <span><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.description)}</span></span>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </a>`).join("")}
+        </div>
+      </section>`).join("");
+
+    resultCount.textContent = `${items.length} ${items.length === 1 ? "gateway" : "gateways"}`;
+    emptyState.style.display = items.length ? "none" : "block";
+    observeReveals();
+  }
+
+  function renderDrawer(items){
+    const grouped = groupByCategory(items);
+    const categories = categoryOrder.filter(category => grouped[category]?.length);
+
+    if(!items.length){
+      drawerNav.innerHTML = `<p class="empty-state" style="display:block;margin:0;">No gateways match that search.</p>`;
+      return;
+    }
+
+    drawerNav.innerHTML = categories.map(category => `
+      <section class="nav-group">
+        <h3 class="nav-heading">${escapeHtml(category)}</h3>
+        ${grouped[category].map(item => `
+          <a href="${escapeHtml(item.url)}"><span>${escapeHtml(item.title)}</span><small>Open</small></a>`).join("")}
+      </section>`).join("");
+  }
+
+  function updateDirectory(){
+    renderCategoryControls();
+    renderDirectory(filterDestinations(directorySearch.value,selectedCategory));
+  }
+
+  function updateDrawer(){
+    renderCategoryControls();
+    renderDrawer(filterDestinations(menuSearch.value,selectedDrawerCategory));
+  }
+
+  function jumpToCategory(category){
+    selectedCategory = category;
+    directorySearch.value = "";
+    updateDirectory();
+    window.requestAnimationFrame(() => {
+      const target = document.getElementById(`category-${slugify(category)}`) || document.getElementById("journey");
+      target.scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  }
+
+  function openMenu(){
+    lastFocusedElement = document.activeElement;
+    menuDrawer.classList.add("open");
+    menuDrawer.setAttribute("aria-hidden","false");
+    menuButton.setAttribute("aria-expanded","true");
+    menuButton.setAttribute("aria-label","Close navigation");
+    document.body.classList.add("menu-open");
+    window.setTimeout(() => menuSearch.focus(),80);
+  }
+
+  function closeMenu(){
+    menuDrawer.classList.remove("open");
+    menuDrawer.setAttribute("aria-hidden","true");
+    menuButton.setAttribute("aria-expanded","false");
+    menuButton.setAttribute("aria-label","Open navigation");
+    document.body.classList.remove("menu-open");
+    menuSearch.value = "";
+    selectedDrawerCategory = "All";
+    updateDrawer();
+    if(lastFocusedElement && typeof lastFocusedElement.focus === "function") lastFocusedElement.focus();
+  }
+
+  function trapFocus(event){
+    if(event.key !== "Tab" || !menuDrawer.classList.contains("open")) return;
+    const focusable = Array.from(menuDrawer.querySelectorAll('a[href],button:not([disabled]),input:not([disabled])')).filter(element => element.offsetParent !== null);
+    if(!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if(event.shiftKey && document.activeElement === first){event.preventDefault();last.focus();}
+    else if(!event.shiftKey && document.activeElement === last){event.preventDefault();first.focus();}
+  }
+
+  function observeReveals(){
+    const nodes = document.querySelectorAll(".reveal:not(.visible)");
+    if(!("IntersectionObserver" in window)){
+      nodes.forEach(node => node.classList.add("visible"));
+      return;
+    }
+    if(!revealObserver){
+      revealObserver = new IntersectionObserver((entries,observer) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },{threshold:.1});
+    }
+    nodes.forEach(node => revealObserver.observe(node));
+  }
+
+  renderFeatured();
   updateDirectory();
-});
-drawerTabs.addEventListener("click", event => {
-  const btn = event.target.closest("button[data-category]");
-  if(!btn) return;
-  selectedDrawerCategory = btn.dataset.category;
   updateDrawer();
-});
-menuButton.addEventListener("click",()=>menuDrawer.classList.contains("open") ? closeMenu() : openMenu());
-closeMenuButton.addEventListener("click",closeMenu);
-menuDrawer.addEventListener("click",event=>{if(event.target === menuDrawer) closeMenu();});
-drawerNav.addEventListener("click",event=>{if(event.target.closest("a")) closeMenu();});
-document.addEventListener("keydown",event=>{if(event.key === "Escape" && menuDrawer.classList.contains("open")) closeMenu();trapFocus(event);});
-window.addEventListener("scroll",()=>siteHeader.classList.toggle("scrolled",window.scrollY > 16),{passive:true});
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  observeReveals();
+
+  directorySearch.addEventListener("input",updateDirectory);
+  menuSearch.addEventListener("input",updateDrawer);
+
+  categoryStrip.addEventListener("click",event => {
+    const button = event.target.closest("button[data-category]");
+    if(!button) return;
+    selectedCategory = button.dataset.category;
+    updateDirectory();
+  });
+
+  drawerTabs.addEventListener("click",event => {
+    const button = event.target.closest("button[data-category]");
+    if(!button) return;
+    selectedDrawerCategory = button.dataset.category;
+    updateDrawer();
+  });
+
+  featuredGroupsNode.addEventListener("click",event => {
+    const button = event.target.closest("button[data-jump-category]");
+    if(!button) return;
+    jumpToCategory(button.dataset.jumpCategory);
+  });
+
+  menuButton.addEventListener("click",() => menuDrawer.classList.contains("open") ? closeMenu() : openMenu());
+  closeMenuButton.addEventListener("click",closeMenu);
+  menuDrawer.addEventListener("click",event => {if(event.target === menuDrawer) closeMenu();});
+  drawerNav.addEventListener("click",event => {if(event.target.closest("a")) closeMenu();});
+  document.addEventListener("keydown",event => {
+    if(event.key === "Escape" && menuDrawer.classList.contains("open")) closeMenu();
+    trapFocus(event);
+  });
+  </script>
 </body>
 </html>
