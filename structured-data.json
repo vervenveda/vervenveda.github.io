@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vervenveda.com/#organization",
+      "name": "Verve N Veda",
+      "url": "https://vervenveda.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vervenveda.com/icon-512.png"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jennifer Kay Pearl"
+      },
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Jennifer Pearl"
+        },
+        {
+          "@type": "Person",
+          "name": "Autumn Pearl"
+        }
+      ],
+      "description": "A public digital gateway connecting education, arts, wellness, research, civic resources, creative tools, and community-centered projects."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vervenveda.com/#website",
+      "url": "https://vervenveda.com/",
+      "name": "Verve N Veda",
+      "description": "A public digital gateway connecting education, arts, wellness, research, civic resources, creative tools, and community-centered projects.",
+      "publisher": {
+        "@id": "https://vervenveda.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vervenveda.com/#webpage",
+      "url": "https://vervenveda.com/",
+      "name": "Verve N Veda",
+      "isPartOf": {
+        "@id": "https://vervenveda.com/#website"
+      },
+      "about": {
+        "@id": "https://vervenveda.com/#organization"
+      },
+      "description": "The central public gateway to Verve N Veda's educational, creative, wellness, civic, research, and community resources.",
+      "inLanguage": "en-US"
+    }
+  ]
+}
