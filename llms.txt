@@ -1,0 +1,5 @@
+# Verve N Veda
+
+Public gateway to the Verve N Veda ecosystem.
+Canonical: https://vervenveda.com/
+See robots.txt, sitemap.xml, README.md and LICENSE.md.
