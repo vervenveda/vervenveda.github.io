@@ -1,0 +1,31 @@
+/* TEAM */
+
+Founder and Project Director: Jennifer Kay Pearl
+Project Credit: Jennifer Pearl and Autumn Pearl
+Organization: Inner National Corporation
+Organization: Rhaine Forest LLC
+Organization: Bazaar Art LLC
+Location: Florida, United States
+
+/* SITE */
+
+Site: Verve N Veda
+Primary URL: https://vervenveda.com
+GitHub Pages URL: https://vervenveda.github.io
+Purpose: Public gateway for educational, creative, civic, wellness, research, and community resources
+Technologies: HTML, CSS, JavaScript, GitHub Pages
+Language: English
+Standards: Responsive design, accessibility, privacy-conscious development
+
+/* VALUES */
+
+Public access
+Creative independence
+Educational opportunity
+Community service
+Respectful design
+Local-first tools where practical
+
+/* THANKS */
+
+Thank you to the families, learners, artists, educators, researchers, volunteers, and community members who inspire the Verve N Veda ecosystem.
