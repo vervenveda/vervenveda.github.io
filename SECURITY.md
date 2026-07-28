@@ -1,31 +1,177 @@
 # Security Policy
 
-## Reporting a Security or Privacy Concern
+## Verve N Veda Security Commitment
 
-Do not publish sensitive vulnerability details in a public GitHub issue. Report concerns privately through an official Verve N Veda contact channel and include the affected page, a clear description, reproduction steps, and the possible impact.
+Verve N Veda is committed to protecting the privacy, integrity, and security of its public websites, educational platforms, creative tools, and community resources.
 
-Never include passwords, access tokens, private keys, personal records, or other sensitive information in a report.
+We appreciate responsible security research and welcome reports that help improve the safety of our projects.
 
-## Responsible Testing
+---
 
-Do not access, alter, delete, or download data that does not belong to you. Do not disrupt services, perform denial-of-service testing, attempt credential theft, install malware, use social engineering, or test third-party systems without permission. Stop immediately if personal information or credentials become visible.
+# Supported Projects
 
-## Client-Side Applications
+This policy applies to the public Verve N Veda ecosystem, including GitHub Pages websites and official public repositories unless otherwise noted.
 
-Many Verve N Veda tools are static browser applications. Browser-side passcodes, hidden panels, localStorage values, and JavaScript checks are convenience features—not secure authentication.
+Examples include:
 
-Never store registrar or DNS API keys, GitHub tokens, cloud credentials, payment secrets, administrator passwords, private member records, or confidential legal, medical, educational, or financial information in public HTML, CSS, JavaScript, or repository files.
+- Verve N Veda
+- Khaemenes Academy
+- Medicament Hub
+- Sanctuary
+- Solanar
+- The Refrain
+- ProResources
+- Bazaar Art
+- One Nation For All
+- The Verifier
+- PLERA Search
+- Other official Verve N Veda projects
 
-Features requiring real authentication, billing, DNS provisioning, shared accounts, private records, or administrator authority must use a secured server-side system.
+---
 
-## External Resources
+# Reporting a Security Issue
 
-External scripts, fonts, APIs, feeds, embeds, and links should use HTTPS, minimal permissions, reputable providers, and graceful failure. Essential functions should prefer local or self-hosted alternatives when practical.
+Please **do not disclose vulnerabilities publicly** before they have been reviewed.
 
-## Privacy
+When reporting a concern, please include:
 
-Do not add analytics, tracking pixels, fingerprinting, advertising scripts, or unnecessary data collection without clear disclosure and prior review. Local browser storage should be limited to clearly explained preferences, progress, or user-created work.
+- affected page or application
+- URL
+- steps to reproduce
+- browser and operating system
+- screenshots when helpful
+- estimated impact
 
-## Scope
+Do **not** include:
 
-This policy applies only to Verve N Veda-controlled resources. It does not authorize testing against GitHub, registrars, hosting providers, linked agencies, external APIs, or other third parties.
+- passwords
+- authentication tokens
+- API keys
+- private keys
+- personal information
+- financial information
+- medical information
+- educational records
+
+---
+
+# Responsible Testing
+
+Researchers should:
+
+- respect user privacy
+- avoid service disruption
+- avoid denial-of-service testing
+- avoid credential attacks
+- avoid social engineering
+- avoid malware
+- stop immediately if sensitive information becomes visible
+
+Testing should never intentionally affect other users or third-party services.
+
+---
+
+# Static Website Security
+
+Many Verve N Veda applications are delivered as static HTML, CSS, and JavaScript.
+
+Because these applications execute in the user's browser:
+
+- localStorage is not secure storage
+- JavaScript is publicly visible
+- client-side passwords are convenience features only
+- hidden menus are not security controls
+
+Public repositories should never contain:
+
+- registrar credentials
+- GitHub personal access tokens
+- cloud credentials
+- payment secrets
+- administrator passwords
+- encryption keys
+- production API secrets
+
+Sensitive operations should always occur on secured server infrastructure.
+
+---
+
+# Privacy
+
+Verve N Veda values privacy-first design.
+
+Projects should avoid unnecessary collection of:
+
+- personal information
+- behavioral analytics
+- fingerprinting
+- advertising identifiers
+- hidden tracking technologies
+
+Local browser storage should be limited to:
+
+- preferences
+- accessibility settings
+- saved work
+- educational progress
+- locally generated content
+
+---
+
+# Third-Party Resources
+
+External resources should:
+
+- use HTTPS
+- come from reputable providers
+- request minimal permissions
+- degrade gracefully when unavailable
+
+Self-hosted resources are preferred whenever practical.
+
+---
+
+# HTTPS
+
+Official Verve N Veda websites are intended to be served over HTTPS.
+
+If a browser reports a certificate warning or insecure connection, please verify:
+
+- the URL
+- the browser version
+- cached DNS information
+- mixed-content warnings
+
+These issues are typically configuration-related rather than application vulnerabilities.
+
+---
+
+# Scope
+
+This policy applies only to Verve N Veda-controlled websites and repositories.
+
+It does **not** authorize testing against:
+
+- GitHub
+- GitHub Pages
+- Namecheap
+- DNS providers
+- hosting providers
+- payment processors
+- government systems
+- third-party APIs
+- external websites linked from Verve N Veda
+
+---
+
+# Disclosure
+
+After a reported issue has been investigated and resolved, Verve N Veda may publicly acknowledge the contribution of the reporting researcher when appropriate and with their permission.
+
+---
+
+# Thank You
+
+Responsible security reporting helps improve the safety and reliability of Verve N Veda for everyone.
+
+Thank you for helping make these resources more secure.
