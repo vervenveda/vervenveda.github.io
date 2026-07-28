@@ -72,7 +72,7 @@ Project credit:
 Organizational credit order:
 
 1. Inner National Corporation
-2. Rhaine Forest LLC
+2. Artist Jenny Pearl
 3. Bazaar Art LLC
 
 ## Contact and Security
