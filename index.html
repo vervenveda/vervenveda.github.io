@@ -94,11 +94,11 @@
       display:inline-flex;
       align-items:center;
       gap:11px;
-      min-width:o;
+      min-width:0;
       color:var(--ink);
       text-decoration:none;
-      padding:.03px;
-      border:.03px;
+      padding:0;
+      border:0;
       background:transparent;
       cursor:pointer;
       text-align:left;
@@ -203,9 +203,12 @@
       margin:3px;
       color:var(--gold);
       font-family:var(--ceremonial);
-      font-size:clamp(2rem,2.2vw,1.92rem);
-      font-weight:700;
-      letter-spacing:.22em;
+      max-width:100%;
+      font-size:clamp(.72rem,1.25vw,.92rem);
+      font-weight:600;
+      line-height:1.45;
+      letter-spacing:.16em;
+      overflow-wrap:anywhere;
       text-transform:uppercase;
     }
     .hero-title{
@@ -215,7 +218,7 @@
       font-family:var(--display);
       font-size:clamp(4rem,7vw,7rem);
       font-weight:444;
-      line-height:.88;
+      line-height:.96;
       letter-spacing:.025em;
       white-space:normal;
       text-wrap:balance;
@@ -277,7 +280,7 @@
       font-family:var(--display);
       font-size:clamp(2.9rem,6vw,5.7rem);
       font-weight:444;
-      line-height:.9;
+      line-height:1.02;
       letter-spacing:.01em;
     }
     .section-intro{
@@ -319,8 +322,11 @@
       display:flex;
       flex-direction:column;
       justify-content:space-between;
+      align-items:center;
       gap:28px;
       padding:24px;
+      text-align:center;
+      overflow:hidden;
       color:var(--ink);
       background:#fff;
       border:1px solid var(--line);
@@ -346,14 +352,19 @@
       font-family:var(--display);
       font-size:clamp(1.72rem,2.7vw,2.3rem);
       font-weight:700;
-      line-height:1;
+      line-height:1.12;
+      overflow-wrap:anywhere;
     }
     .pillar-card p{margin:12px 0 0;color:var(--ink-soft);font-size:.86rem;line-height:1.55}
     .pillar-open{
       display:flex;
       align-items:center;
-      justify-content:space-between;
+      justify-content:center;
+      gap:8px;
+      width:100%;
       padding-top:15px;
+      text-align:center;
+      overflow-wrap:anywhere;
       border-top:1px solid var(--line);
       color:var(--ink-soft);
       font-size:.68rem;
@@ -391,16 +402,19 @@
       font-family:var(--display);
       font-size:clamp(2rem,5vw,5rem);
       font-weight:700;
-      line-height:.88;
+      line-height:.96;
+      text-wrap:balance;
+      overflow-wrap:anywhere;
     }
-    .spotlight-primary p{max-width:650px;margin:22px 0 0;color:rgba(255,255,255,.76);font-size:1rem}
-    .spotlight-primary .button{margin-top:28px;align-self:start;width:max-content;color:var(--ink);background:var(--gold-pale)}
-    .spotlight-secondary{display:grid;align-content:start;padding:28px}
+    .spotlight-primary p{max-width:650px;margin:22px auto 0;color:rgba(255,255,255,.76);font-size:1rem;text-align:center}
+    .spotlight-primary .button{margin:28px auto 0;align-self:center;width:max-content;max-width:100%;color:var(--ink);background:var(--gold-pale)}
+    .spotlight-secondary{display:grid;align-content:start;padding:28px;text-align:center}
     .update-list{display:grid;margin-top:12px}
     .update-item{
       display:grid;
-      grid-template-columns:auto 1fr;
-      gap:14px;
+      grid-template-columns:1fr;
+      gap:8px;
+      text-align:center;
       padding:18px 0;
       border-top:1px solid var(--line);
     }
@@ -422,7 +436,9 @@
       font-family:var(--display);
       font-size:clamp(2.8rem,6vw,5.25rem);
       font-weight:700;
-      line-height:.92;
+      line-height:1;
+      text-wrap:balance;
+      overflow-wrap:anywhere;
     }
     .search-intro-section p{max-width:680px;margin:20px auto 0;color:rgba(255,255,255,.72)}
     .search-launch{
@@ -430,9 +446,11 @@
       min-height:58px;
       display:flex;
       align-items:center;
-      justify-content:space-between;
-      gap:18px;
+      justify-content:center;
+      gap:10px 18px;
       margin:30px auto 0;
+      text-align:center;
+      flex-wrap:wrap;
       padding:14px 18px;
       color:var(--ink);
       background:#fff;
@@ -497,14 +515,21 @@
       grid-template-columns:repeat(2,minmax(0,1fr));
       gap:9px;
     }
-    .gateway-group.academy .gateway-links{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .gateway-group.academy .gateway-links{grid-template-columns:repeat(4,minmax(0,1fr))}
     .gateway-link{
       min-height:48px;
       display:flex;
+      flex-direction:column;
       align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:11px 14px;
+      justify-content:center;
+      gap:7px;
+      min-width:0;
+      padding:13px 14px;
+      text-align:center;
+      line-height:1.35;
+      overflow:hidden;
+      overflow-wrap:anywhere;
+      word-break:normal;
       color:#fff;
       background:#151515;
       border:1px solid #151515;
@@ -563,7 +588,7 @@
     }
     .search-box input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(180,139,69,.13)}
     .result-count{margin:0;color:var(--ink-soft);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
-    .category-strip{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+    .category-strip{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:28px;text-align:center}
     .chip{
       min-height:38px;
       padding:7px 11px;
@@ -613,8 +638,12 @@
       display:flex;
       flex-direction:column;
       justify-content:space-between;
+      align-items:center;
       gap:16px;
-      padding:17px;
+      min-width:0;
+      padding:19px 17px;
+      text-align:center;
+      overflow:hidden;
       color:var(--ink);
       background:#fff;
       border:1px solid var(--line);
@@ -628,10 +657,12 @@
       font-family:var(--display);
       font-size:1.45rem;
       font-weight:700;
-      line-height:1;
+      line-height:1.1;
       letter-spacing:.01em;
+      overflow-wrap:anywhere;
     }
-    .directory-card span{display:block;margin-top:10px;color:var(--ink-soft);font-size:.8rem;line-height:1.45}
+    .directory-card > span > span{display:block;max-width:100%;margin-top:10px;color:var(--ink-soft);font-size:.8rem;line-height:1.45;overflow-wrap:anywhere}
+    .directory-card strong .link-label{margin-top:0;color:var(--ink);font-size:inherit;line-height:1.1}
     .card-arrow{
       align-self:center;
       color:var(--gold);
@@ -670,7 +701,8 @@
       margin:0 auto;
       display:flex;
       align-items:center;
-      justify-content:space-between;
+      justify-content:center;
+      text-align:center;
       gap:20px;
       flex-wrap:wrap;
     }
@@ -791,10 +823,13 @@
     }
     .drawer-nav a{
       display:grid;
-      grid-template-columns:1fr auto;
-      gap:10px;
+      grid-template-columns:1fr;
+      gap:5px;
       align-items:center;
+      justify-items:center;
       padding:13px 6px;
+      text-align:center;
+      overflow-wrap:anywhere;
       color:var(--ink);
       border-bottom:1px solid rgba(18,23,19,.08);
       text-decoration:none;
@@ -805,6 +840,7 @@
     .drawer-nav small{color:var(--ink-soft);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
     .drawer-footer{
       margin-top:auto;
+      text-align:center;
       padding-top:14px;
       color:var(--ink-soft);
       border-top:1px solid var(--line);
@@ -883,6 +919,35 @@
       .drawer{width:100%;padding:18px}
       .gateway-group{padding:18px}
     }
+
+    /* ============================================================
+       CENTERING + TEXT-CONTAINMENT REPAIR
+       Long repository names remain inside their borders at every width.
+       ============================================================ */
+    h1,h2,h3,p,.button,.gateway-link,.directory-card,.pillar-card,.chip,.drawer-tab,.drawer-nav a{
+      max-width:100%;
+      overflow-wrap:anywhere;
+      word-break:normal;
+    }
+    .button{white-space:normal;text-align:center;line-height:1.35}
+    .link-label{display:block;min-width:0;max-width:100%;text-align:center;line-height:1.35}
+    .link-label br{display:block}
+    .gateway-link > [aria-hidden="true"],.drawer-nav small{margin:0;text-align:center}
+    .directory-tools{justify-content:center;text-align:center}
+    .search-box{margin-inline:auto}
+    .result-count{flex:1 1 100%;text-align:center}
+    .spotlight-primary{text-align:center;justify-items:center}
+    .closing-actions,.hero-actions{align-items:stretch}
+    .closing-actions .button,.hero-actions .button{max-width:100%}
+    .footer-meta{max-width:100%;overflow-wrap:anywhere}
+    .gateway-group.finance{border-top:4px solid #8a6b2f}
+    .gateway-group.network{border-top:4px solid #4f6375}
+
+    @media(max-width:730px){
+      .search-launch{flex-direction:column}
+      .gateway-link{min-height:60px}
+    }
+
     @media(prefers-reduced-motion:reduce){
       *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
       .reveal{opacity:1;transform:none}
@@ -941,27 +1006,27 @@
       <div class="section-inner">
         <div class="section-heading reveal">
           <p class="kicker">The campus at a glance</p>
-          <h2 id="pillarsTitle">Twelve paths to begin</h2>
+          <h2 id="pillarsTitle">Twelve paths<br>to begin</h2>
           <p class="section-intro">Choose a broad path first. The complete directories remain below for visitors who prefer a detailed map of every available gateway.</p>
         </div>
         <div class="pillar-grid">
           <a class="pillar-card reveal" style="--pillar-accent:#708b76" href="https://vervenveda.github.io/aurora.github.io/">
             <span class="pillar-number">01 · RESTORE</span><div><h3>The Sanctuary</h3><p>Reflection, renewal, gentle routines, wellbeing, and spaces designed for thoughtful pauses.</p></div><span class="pillar-open">Enter Aurora <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#315c49" href="https://vervenveda.github.io/khaemenesacademy.github.io/">
-            <span class="pillar-number">02 · LEARN</span><div><h3>Pre K - Higher Education</h3><p>Learning pathways from preschool through university, adult study, and lifelong exploration.</p></div><span class="pillar-open">Visit the Academy <span aria-hidden="true">↗</span></span>
+          <a class="pillar-card reveal" style="--pillar-accent:#315c49" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">
+            <span class="pillar-number">02 · LEARN</span><div><h3>Pre-K through<br>Higher Learning</h3><p>Learning pathways from preschool through university, adult study, and lifelong exploration.</p></div><span class="pillar-open">Visit the Academy <span aria-hidden="true">↗</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#7b3945" href="https://vervenveda.github.io/the_refrain.github.io/">
-            <span class="pillar-number">03 · LISTEN</span><div><h3>The Refrain Music Page</h3><p>Composition, performance, recording, music education, and resources for creators of every age.</p></div><span class="pillar-open">Open The Refrain <span aria-hidden="true">↗</span></span>
+            <span class="pillar-number">03 · LISTEN</span><div><h3>The Refrain<br>Music Hall</h3><p>Composition, performance, recording, music education, and resources for creators of every age.</p></div><span class="pillar-open">Open The Refrain <span aria-hidden="true">↗</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#7c654d" href="https://vervenveda.github.io/Arshif.github.io/">
             <span class="pillar-number">04 · DISCOVER</span><div><h3>Arshif Archives</h3><p>Research, history, science, language, law, evidence, and deeper paths into human knowledge.</p></div><span class="pillar-open">Explore ARSHIF <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#8a554f" href="medicament-hall.github.io">
-            <span class="pillar-number">05 · CARE</span><div><h3>Health &amp; Health and Nutrition</h3><p>Children’s medicine, holistic and traditional medicine, movement tracking, safety, evidence, and public wellness learning.</p></div><span class="pillar-open">Explore Medical Halls <span aria-hidden="true">↓</span></span>
+          <a class="pillar-card reveal" style="--pillar-accent:#8a554f" href="https://vervenveda.github.io/medicament-hub.github.io/">
+            <span class="pillar-number">05 · CARE</span><div><h3>Health, Medicine<br>&amp; Nutrition</h3><p>Children’s medicine, holistic and traditional medicine, movement tracking, safety, evidence, and public wellness learning.</p></div><span class="pillar-open">Explore Medical Halls <span aria-hidden="true">↓</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#243f63" href="https://vervenveda.github.io/proresource_hub.github.io/">
-            <span class="pillar-number">06 · MAKE</span><div><h3>Professional Tools</h3><p>Writing, editing, media, workflow, design, productivity, and sovereign browser-based tools.</p></div><span class="pillar-open">Open ProReSources <span aria-hidden="true">↗</span></span>
+            <span class="pillar-number">06 · MAKE</span><div><h3>Professional<br>Tools</h3><p>Writing, editing, media, workflow, design, productivity, and sovereign browser-based tools.</p></div><span class="pillar-open">Open ProReSources <span aria-hidden="true">↗</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#9a6d43" href="https://vervenveda.github.io/bazaarart.github.io/">
             <span class="pillar-number">07 · CREATE</span><div><h3>Bazaar Arts</h3><p>Gallery spaces, artist resources, portfolios, exhibitions, visual learning, and creative community.</p></div><span class="pillar-open">Visit Bazaar Art <span aria-hidden="true">↗</span></span>
@@ -970,18 +1035,18 @@
             <span class="pillar-number">08 · PLAY</span><div><h3>Arcade</h3><p>Strategy, puzzles, educational games, trivia, imaginative play, and discovery through challenge.</p></div><span class="pillar-open">Enter the Arcade <span aria-hidden="true">↗</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#315b6a" href="https://vervenveda.github.io/onenationforall.github.io/">
-            <span class="pillar-number">09 · SERVE</span><div><h3>Civic Resources</h3><p>Civic participation, public resources, environmental stewardship, veterans, and community service.</p></div><span class="pillar-open">Explore Community <span aria-hidden="true">↗</span></span>
+            <span class="pillar-number">09 · SERVE</span><div><h3>Civic<br>Resources</h3><p>Civic participation, public resources, environmental stewardship, veterans, and community service.</p></div><span class="pillar-open">Explore Community <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#6f5b4b" href="https://vervneveda.wixsite.com/home/veterans">
-            <span class="pillar-number">10 · ASSISTANCE</span><div><h3>Veterans</h3><p>VA and Florida Veteran resources for crisis support, benefits, health care, housing, education, employment, and local offices.</p></div><span class="pillar-open">Visit OHMIC Foundry <span aria-hidden="true">↗</span></span>
+          <a class="pillar-card reveal" style="--pillar-accent:#6f5b4b" href="https://vervenveda.github.io/veterans.github.io/">
+            <span class="pillar-number">10 · ASSISTANCE</span><div><h3>Veterans<br>Resource Hub</h3><p>VA and Florida Veteran resources for crisis support, benefits, health care, housing, education, employment, and local offices.</p></div><span class="pillar-open">Open Veterans Resources <span aria-hidden="true">↗</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#52725a" href="https://vervenveda.github.io/river_to_road.github.io/">
             <span class="pillar-number">11 · STEWARD</span><div><h3>River-to-Road</h3><p>Environmental education, cleanup, weather, local action, restoration, and responsible care for shared places.</p></div><span class="pillar-open">Enter River to Road <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#836e50" href="https://vervneveda.wixsite.com/home/campaign">
-            <span class="pillar-number">12 · VOTE</span><div><h3>President 2028</h3><p>Jennifer Kay Pearl • Artist • Mother • Teacher • Community Builder • Environmental Steward
+          <a class="pillar-card reveal" style="--pillar-accent:#836e50" href="https://www.jenniferpearl2028.com/">
+            <span class="pillar-number">12 · VOTE</span><div><h3>Jennifer Pearl<br>for President 2028</h3><p>Jennifer Kay Pearl • Artist • Mother • Teacher • Community Builder • Environmental Steward
 
-The dreamer who sees possibility where others see obstacles.</p></div><span class="pillar-open">Explore Foundations <span aria-hidden="true">↓</span></span>
+The dreamer who sees possibility where others see obstacles.</p></div><span class="pillar-open">Visit the Campaign <span aria-hidden="true">↓</span></span>
           </a>
         </div>
       </div>
@@ -991,7 +1056,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       <div class="section-inner">
         <div class="section-heading reveal">
           <p class="kicker">Featured and newly connected</p>
-          <h2 id="spotlightTitle">Places worth visiting now</h2>
+          <h2 id="spotlightTitle">Places worth<br>visiting now</h2>
           <p class="section-intro">A quiet editorial spotlight for important releases and newly connected parts of the network.</p>
         </div>
         <div class="spotlight-grid">
@@ -1017,7 +1082,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     <section class="search-intro-section" aria-labelledby="searchIntroTitle">
       <div class="search-intro-inner reveal">
         <p class="kicker">Looking for something specific?</p>
-        <h2 id="searchIntroTitle">Search the entire public gateway.</h2>
+        <h2 id="searchIntroTitle">Search the entire<br>public gateway.</h2>
         <p>The full directory below can be searched by destination, subject, purpose, or category. Nothing has been removed—only moved into a calmer, more deliberate place.</p>
         <button class="search-launch" id="searchLaunch" type="button"><strong>Open directory search</strong><span>Music, school, weather, art, law, veterans… ↓</span></button>
       </div>
@@ -1028,7 +1093,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
         <div class="section-heading reveal">
           <div>
             <p class="kicker">Detailed access</p>
-            <h2 id="featuredTitle">Featured gateway groups</h2>
+            <h2 id="featuredTitle">Featured<br>gateway groups</h2>
           </div>
           <p class="section-intro">Compact, professional gateway buttons provide direct access for visitors who already know which part of the network they need.</p>
         </div>
@@ -1041,7 +1106,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
         <div class="section-heading reveal">
           <div>
             <p class="kicker">Complete reference directory</p>
-            <h2 id="journeyTitle">Every public landing page, organized</h2>
+            <h2 id="journeyTitle">Every public landing page,<br>organized</h2>
           </div>
           <p class="section-intro">Search the public network or filter it by category. The directory, featured gateways, and dropdown menu all use the same central link registry so the navigation stays consistent—including the newly separated Medicament medical repository.</p>
         </div>
@@ -1064,7 +1129,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       <div class="section-inner closing-grid">
         <div class="reveal">
           <p class="kicker">One network, many doorways</p>
-          <h2 id="closingTitle">Find the right space without the clutter.</h2>
+          <h2 id="closingTitle">Find the right space<br>without the clutter.</h2>
         </div>
         <div class="reveal">
           <p class="closing-copy">Verve N Veda serves as the crisp public front door. Each connected landing page can continue developing its own character while remaining easy to locate from one dependable map.</p>
@@ -1166,20 +1231,41 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
      Update a URL here once. Featured groups, the directory, and the
      dropdown menu will all update together.
      ============================================================== */
+  const BASE = "https://vervenveda.github.io/";
+  const academy_urls = Object.freeze({
+    preschool:BASE + "Khaemenes_Preschool.github.io/",
+    kindergarten:BASE + "Khaemenes_KinderGarden.github.io/",
+    elementary:BASE + "Khaemenes_Elementary.github.io/",
+    middle:BASE + "Khaemenes_Middle.github.io/",
+    high:BASE + "Khaemenes_High.github.io/",
+    higher:BASE + "Khaemenes_Higher_Learning.github.io/",
+    linguistics:BASE + "Khaemenes_Linguistics.github.io/",
+    academy:BASE + "Khaemenes_Academy.github.io/"
+  });
+
   const destinations = [
+    {
+      id:"verve-n-veda",
+      title:"Verve N Veda",
+      category:"Network Home",
+      url:BASE,
+      description:"The public front door to the complete resource network.",
+      tone:"priority"
+    },
+
     {
       id:"aurora-sanctuary",
       title:"Aurora Sanctuary",
       category:"Sanctuary",
-      url:"https://vervenveda.github.io/aurora.github.io/",
-      description:"A restorative sanctuary for reflection, inspiration, and thoughtful exploration."
+      url:BASE + "aurora.github.io/",
+      description:"Rest, reflection, encouragement, wellbeing, and creative renewal."
     },
 
     {
       id:"the-refrain",
       title:"The Refrain™",
       category:"Music & Audio",
-      url:"https://vervenveda.github.io/the_refrain.github.io/",
+      url:BASE + "the_refrain.github.io/",
       description:"Music education, composition, performance, recording, workshops, and creative resources for every age.",
       tone:"priority"
     },
@@ -1195,66 +1281,66 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       id:"academy-home",
       title:"Khaemenes Academy",
       category:"Khaemenes Academy",
-      url:"https://vervenveda.github.io/khaemenesacademy.github.io/",
-      description:"The central academy landing page for curriculum, student pathways, research, and lifelong learning."
+      url:academy_urls.academy,
+      description:"The central international learning campus and Academy directory."
     },
     {
-      id:"creche",
-      title:"Crèche Preschool",
+      id:"preschool",
+      title:"Khaemenes Preschool",
       category:"Khaemenes Academy",
-      url:"https://vervenveda.github.io/creche_preschool.github.io/",
-      description:"Early stories, games, creative play, and foundational learning for preschool children."
+      url:academy_urls.preschool,
+      description:"This colorful early-learning home and Crèche adventure garden."
     },
     {
       id:"kindergarten",
-      title:"Kinder Garden",
+      title:"Khaemenes Kinder Garden",
       category:"Khaemenes Academy",
-      url:"https://vervenveda.github.io/KinderGarden.github.io/",
-      description:"Kindergarten lessons, alphabet learning, early reading, and playful foundations."
+      url:academy_urls.kindergarten,
+      description:"Kindness, curiosity, early literacy, number sense, nature, and school readiness."
     },
     {
       id:"elementary",
-      title:"Elementary School",
+      title:"Khaemenes Elementary",
       category:"Khaemenes Academy",
-      url:"https://vervenveda.github.io/Khaemenes-elementary.github.io/",
-      description:"Elementary learning spaces, lessons, tools, and child-friendly academic pathways."
+      url:academy_urls.elementary,
+      description:"Kinder Garden through Grade 5 learning and family resources."
     },
     {
       id:"middle-school",
-      title:"Middle School",
+      title:"Khaemenes Middle",
       category:"Khaemenes Academy",
-      url:"https://vervenveda.github.io/Khaemenes-jrhigh.github.io/",
-      description:"Middle-school and junior-high curriculum, projects, reading, and student tools."
+      url:academy_urls.middle,
+      description:"Grades 6–8 academics, independence, exploration, and preparation."
     },
     {
       id:"high-school",
-      title:"High School",
+      title:"Khaemenes High",
       category:"Khaemenes Academy",
-      url:"https://vervenveda.github.io/Khaemenes-High_github.io/",
-      description:"High-school courses, academic tools, records, college preparation, and student portals."
+      url:academy_urls.high,
+      description:"Grades 9–12 homerooms, courses, records, and graduation pathways."
     },
     {
       id:"higher-education",
-      title:"Higher Education",
+      title:"Khaemenes Higher Learning",
       category:"Khaemenes Academy",
-      url:"https://vervenveda.github.io/Khaemenes-university.github.io/",
-      description:"University, adult learning, advanced study, certification, and professional education."
+      url:academy_urls.higher,
+      description:"GED, college, careers, professional development, and lifelong learning."
     },
 
     {
       id:"the-verifier",
-      title:"The Verifier News",
+      title:"The Verifier",
       category:"News & Weather",
-      url:"https://vervenveda.github.io/theverifier.github.io/",
-      description:"News discovery, source comparison, information literacy, verification, and research navigation.",
+      url:BASE + "theverifier.github.io/",
+      description:"News discovery, evidence, research, and media literacy.",
       tone:"priority"
     },
     {
       id:"solanar",
-      title:"Solanar Weather",
+      title:"Solanar",
       category:"News & Weather",
-      url:"https://vervenveda.github.io/solanar.github.io/",
-      description:"Weather, earth science, environmental observation, lunar information, and global conditions.",
+      url:BASE + "solanar.github.io/",
+      description:"Weather, Earth systems, moon cycles, climate, and observation.",
       tone:"navy"
     },
 
@@ -1262,8 +1348,8 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       id:"one-nation",
       title:"One Nation For All",
       category:"Civic & Public Service",
-      url:"https://vervenveda.github.io/onenationforall.github.io/",
-      description:"Civic engagement, public policy, veterans resources, unity, accountability, and government navigation."
+      url:BASE + "onenationforall.github.io/",
+      description:"Civic learning, public ideas, government, and community solutions."
     },
     {
       id:"jennifer-2028",
@@ -1274,53 +1360,53 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     },
     {
       id:"veterans",
-      title:"Veterans Resource Hub",
+      title:"Veterans",
       category:"Civic & Public Service",
-      url:"https://www.vervenveda.com/veterans",
-      description:"A direct doorway to veteran services, support, public resources, and practical assistance."
+      url:BASE + "veterans.github.io/",
+      description:"Veteran resources, crisis support, benefits, and family assistance."
     },
 
     {
       id:"arshif",
-      title:"ARSHIF Archives",
+      title:"ARSHIF",
       category:"Research, Health & Law",
-      url:"https://vervenveda.github.io/Arshif.github.io/",
-      description:"Deep research, evidence preservation, history, culture, science, archives, and human knowledge."
+      url:BASE + "Arshif.github.io/",
+      description:"Research, literature, history, culture, classics, and memory."
     },
     {
       id:"medicament-hub",
-      title:"Medicament Hub Repository",
+      title:"Medicament Hub",
       category:"Medical Halls",
-      url:"https://github.com/vervenveda/medicament-hub.github.io",
-      description:"The central repository for the Medical Halls while its dedicated public landing page is prepared.",
+      url:BASE + "medicament-hub.github.io/",
+      description:"Health, medicine, wellness, family care, and safety resources.",
       tone:"priority"
     },
     {
       id:"holistic-medicine-hall",
       title:"Holistic Medicine Hall",
       category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/%20Holistic%20Medicine%20Hall/",
+      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/%20Holistic_Medicine_Hall/",
       description:"A whole-person health course portal emphasizing wellness, safety, ethics, evidence, and responsible comparison."
     },
     {
       id:"traditional-medicine-hall",
       title:"Traditional Medicine Hall",
       category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/Traditional%20Medicine%20Hall/",
+      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/Traditional_Medicine_Hall/",
       description:"Traditional healing systems studied through cultural context, historical evidence, safety, ethics, and careful source review."
     },
     {
       id:"childrens-medicine-hall",
       title:"Children’s Medicine Hall",
       category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/Children%27s%20Medicine%20Hall/",
+      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/Childrens_Medicine_Hall/",
       description:"A safety-first children’s medicine education portal for families, symptom literacy, medicine awareness, and caregiver records."
     },
     {
       id:"universal-exercise-log",
       title:"Universal Exercise Log",
       category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/tools/Universal%20Exercise%20Log%20%26%20Workout%20Tracker_index.html",
+      url:"https://vervenveda.github.io/medicament-hub.github.io/tools/Universal_Exercise_Log_Workout_Tracker_index.html",
       description:"A private local workout and movement tracker for middle-school, high-school, and adult profiles."
     },
 
@@ -1328,30 +1414,38 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       id:"plera-search",
       title:"PLERA Search",
       category:"Research, Health & Law",
-      url:"https://vervenveda.github.io/PLERASearch.github.io/",
-      description:"A broad search gateway connecting public resources, learning tools, maps, research, and discovery."
+      url:BASE + "PLERASearch.github.io/",
+      description:"Search and trusted public-resource pathways."
     },
+    {
+      id:"finance",
+      title:"Finance",
+      category:"Finance & Practical Life",
+      url:BASE + "finance.github.io/",
+      description:"Financial literacy, planning, markets, and practical public resources."
+    },
+
     {
       id:"firmament",
       title:"Firmament Law",
       category:"Research, Health & Law",
-      url:"https://vervenveda.github.io/firmament.github.io/",
-      description:"Legal-information tools, evidence workspaces, public resources, governance, and civic reference."
+      url:BASE + "firmament.github.io/",
+      description:"Legal information, rights, civic literacy, and public resources."
     },
     {
       id:"linguistics",
-      title:"Linguistics",
-      category:"Research, Health & Law",
-      url:"https://vervenveda.github.io/linguistics.github.io/",
-      description:"Language learning, vocabulary, linguistics, communication, translation, and word study."
+      title:"Khaemenes Linguistics",
+      category:"Khaemenes Academy",
+      url:academy_urls.linguistics,
+      description:"Languages, linguistics, writing systems, translation, and communication."
     },
 
     {
       id:"proresources",
-      title:"ProReSources Hub",
+      title:"ProResource Hub",
       category:"Professional Tools & Media",
-      url:"https://vervenveda.github.io/proresource_hub.github.io/",
-      description:"Free professional browser tools for writing, media, code, design, files, productivity, and creative work."
+      url:BASE + "proresource_hub.github.io/",
+      description:"Professional writing, design, media, research, and productivity tools."
     },
     {
       id:"prose",
@@ -1372,22 +1466,22 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       id:"my-art-gallery",
       title:"My Art Gallery",
       category:"Art, Games & Creativity",
-      url:"https://vervenveda.github.io/myartgallery.github.io/",
-      description:"Gallery tools, artist portfolios, visual showcases, exhibitions, and creative resources."
+      url:BASE + "myartgallery.github.io/",
+      description:"A personal space for preserving and presenting artwork."
     },
     {
       id:"bazaar-art",
       title:"Bazaar Art",
       category:"Art, Games & Creativity",
-      url:"https://vervenveda.github.io/bazaarart.github.io/",
-      description:"Artist resources, community art, creative tools, portfolios, events, and social experiences."
+      url:BASE + "bazaarart.github.io/",
+      description:"Art tools, classes, galleries, education, and creative resources."
     },
     {
       id:"arcade",
       title:"Arcade",
       category:"Art, Games & Creativity",
-      url:"https://vervenveda.github.io/arcade.github.io/",
-      description:"Games, puzzles, strategy, trivia, creativity, and learning through play."
+      url:BASE + "arcade.github.io/",
+      description:"Games, puzzles, strategy, trivia, and playful learning."
     },
 
     {
@@ -1488,18 +1582,20 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       id:"river-to-road",
       title:"River to Road",
       category:"Earth & Community",
-      url:"https://vervenveda.github.io/river_to_road.github.io/",
-      description:"Environmental stewardship, community cleanup, local action, and neighborhood restoration."
+      url:BASE + "river_to_road.github.io/",
+      description:"Environmental stewardship, science, service, and community action."
     }
   ];
 
   const categoryDetails = {
+    "Network Home":"The public front door and complete map of the Verve N Veda resource network.",
     "Sanctuary":"A quiet first doorway for reflection, restoration, and creative renewal.",
     "Music & Audio":"Music education, composition, performance, recording, workshops, and creative resources.",
     "Innovation & Development":"Engineering, open standards, documentation, design systems, components, and experiments.",
     "Khaemenes Academy":"The Academy landing page and every major learning level kept together in one sequence.",
     "Medical Halls":"Children’s medicine, holistic and traditional health study, movement tracking, safety, evidence, and public wellness resources.",
     "News & Weather":"Fast access to current information, verification, weather, and environmental observation.",
+    "Finance & Practical Life":"Financial literacy, planning, markets, household resources, and practical public tools.",
     "Civic & Public Service":"National leadership, civic participation, veterans resources, policy, and public service.",
     "Research, Health & Law":"Archives, health study, legal information, language, public research, and evidence-aware discovery.",
     "Professional Tools & Media":"Professional writing, editing, media, movies, design, workflow, and local browser tools.",
@@ -1509,12 +1605,14 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
   };
 
   const categoryOrder = [
+    "Network Home",
     "Sanctuary",
     "Khaemenes Academy",
     "Music & Audio",
     "Innovation & Development",
     "Medical Halls",
     "News & Weather",
+    "Finance & Practical Life",
     "Civic & Public Service",
     "Research, Health & Law",
     "Professional Tools & Media",
@@ -1529,7 +1627,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       className:"academy",
       title:"Khaemenes Academy Pathways",
       note:"Academy home, early learning, school levels, and higher education stay together.",
-      ids:["academy-home","creche","kindergarten","elementary","middle-school","high-school","higher-education"]
+      ids:["academy-home","preschool","kindergarten","elementary","middle-school","high-school","higher-education","linguistics"]
     },
     {
       category:"News & Weather",
@@ -1537,6 +1635,13 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       title:"News & Weather",
       note:"The Verifier and Solanar are prominent and immediately recognizable.",
       ids:["the-verifier","solanar"]
+    },
+    {
+      category:"Finance & Practical Life",
+      className:"finance",
+      title:"Finance & Practical Life",
+      note:"Financial literacy, planning, markets, and practical public resources remain easy to reach.",
+      ids:["finance"]
     },
     {
       category:"Civic & Public Service",
@@ -1585,7 +1690,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       className:"research",
       title:"Research, Health & Law",
       note:"ARSHIF, PLERA Search, Firmament, and language research are grouped by purpose.",
-      ids:["arshif","plera-search","firmament","linguistics"]
+      ids:["arshif","plera-search","firmament"]
     },
     {
       category:"Foundations & Codex",
@@ -1649,6 +1754,34 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     .replace(/^-|-$/g,"");
 
   const getById = id => destinations.find(item => item.id === id);
+  const titleBreaks = Object.freeze({
+    "Khaemenes Academy":["Khaemenes","Academy"],
+    "Khaemenes Preschool":["Khaemenes","Preschool"],
+    "Khaemenes Kinder Garden":["Khaemenes","Kinder Garden"],
+    "Khaemenes Elementary":["Khaemenes","Elementary"],
+    "Khaemenes Middle":["Khaemenes","Middle"],
+    "Khaemenes High":["Khaemenes","High"],
+    "Khaemenes Higher Learning":["Khaemenes","Higher Learning"],
+    "Khaemenes Linguistics":["Khaemenes","Linguistics"],
+    "Jennifer Pearl for President 2028":["Jennifer Pearl","for President 2028"],
+    "Universal Exercise Log":["Universal","Exercise Log"],
+    "Holistic Medicine Hall":["Holistic","Medicine Hall"],
+    "Traditional Medicine Hall":["Traditional","Medicine Hall"],
+    "Children’s Medicine Hall":["Children’s","Medicine Hall"],
+    "ProResource Hub":["ProResource","Hub"],
+    "PROSE Editing Suite":["PROSE","Editing Suite"],
+    "Movies at FleaPit":["Movies at","FleaPit"],
+    "My Art Gallery":["My Art","Gallery"],
+    "One Nation For All":["One Nation","For All"],
+    "River to Road":["River","to Road"],
+    "The Refrain™":["The","Refrain™"]
+  });
+
+  function formatTitle(title){
+    const lines = titleBreaks[title] || [title];
+    return `<span class="link-label">${lines.map(escapeHtml).join("<br>")}</span>`;
+  }
+
 
   function filterDestinations(query,category){
     const normalized = String(query || "").trim().toLowerCase();
@@ -1679,12 +1812,10 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
   function renderFeatured(){
     featuredGroupsNode.innerHTML = featuredGroups.map(group => {
       const groupItems = group.ids.map(getById).filter(Boolean);
-      const columns = group.className === "academy" ? 3 : 2;
-      const needed = (columns - (groupItems.length % columns)) % columns;
       const links = groupItems.map(item => {
         const tone = item.tone ? ` ${escapeHtml(item.tone)}` : "";
-        return `<a class="gateway-link${tone}" href="${escapeHtml(item.url)}"><span>${escapeHtml(item.title)}</span><span aria-hidden="true">↗</span></a>`;
-      }).join("") + Array.from({length:needed},(_,i) => placeholderGateway(`Future ${group.title} doorway ${i+1}`)).join("");
+        return `<a class="gateway-link${tone}" href="${escapeHtml(item.url)}" aria-label="${escapeHtml(item.title)}">${formatTitle(item.title)}<span aria-hidden="true">↗</span></a>`;
+      }).join("");
 
       return `
         <article class="gateway-group ${escapeHtml(group.className)} reveal">
@@ -1721,11 +1852,10 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
         </div>
         <div class="directory-grid">
           ${grouped[category].map(item => `
-            <a class="directory-card" href="${escapeHtml(item.url)}">
-              <span><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.description)}</span></span>
+            <a class="directory-card" href="${escapeHtml(item.url)}" aria-label="${escapeHtml(item.title)}">
+              <span><strong>${formatTitle(item.title)}</strong><span>${escapeHtml(item.description)}</span></span>
               <span class="card-arrow" aria-hidden="true">↗</span>
             </a>`).join("")}
-          ${Array.from({length:(3 - (grouped[category].length % 3)) % 3},placeholderDirectory).join("")}
         </div>
       </section>`).join("");
 
@@ -1747,7 +1877,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       <section class="nav-group">
         <h3 class="nav-heading">${escapeHtml(category)}</h3>
         ${grouped[category].map(item => `
-          <a href="${escapeHtml(item.url)}"><span>${escapeHtml(item.title)}</span><small>Open</small></a>`).join("")}
+          <a href="${escapeHtml(item.url)}" aria-label="${escapeHtml(item.title)}">${formatTitle(item.title)}<small>Open</small></a>`).join("")}
       </section>`).join("");
   }
 
@@ -1890,6 +2020,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     const issues = [];
     const ids = new Set();
     const urls = new Set();
+    const stalePathPattern = /(\/khaemenesacademy\.github\.io\/|\/creche_preschool\.github\.io\/|\/kindergarden\.github\.io\/|\/khaemenes-elementary\.github\.io\/|\/khaemenes-jrhigh\.github\.io\/|\/khaemenes-high_github\.io\/|\/khaemenes-university\.github\.io\/|\/linguistics\.github\.io\/)/i;
 
     destinations.forEach(item => {
       if(!item.id || ids.has(item.id)) issues.push(`Duplicate or missing destination id: ${item.id || "(missing)"}`);
@@ -1902,6 +2033,9 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       if(item.url && !/^https:\/\//i.test(item.url) && !item.url.startsWith("#")){
         issues.push(`Unexpected destination URL format: ${item.title} → ${item.url}`);
       }
+
+      if(/\s/.test(item.url)) issues.push(`Unencoded whitespace in destination URL: ${item.title} → ${item.url}`);
+      if(stalePathPattern.test(item.url)) issues.push(`Possible stale renamed repository path: ${item.title} → ${item.url}`);
 
       if(urls.has(item.url)) issues.push(`Duplicate destination URL: ${item.url}`);
       urls.add(item.url);
@@ -1939,7 +2073,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     nodes.forEach(node => revealObserver.observe(node));
   }
 
-  document.getElementById("ecosystemCount").textContent = `${destinations.length} connected public gateways`;
+  document.getElementById("ecosystemCount").textContent = `${destinations.length} connected gateways`;
   auditDestinations();
   renderFeatured();
   updateDirectory();
