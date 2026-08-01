@@ -2,34 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Verve N Veda — the public gateway to learning, research, news, weather, civic resources, professional tools, art, and community projects.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Verve N Veda — the elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, and community service.">
   <meta name="theme-color" content="#f4f0e7">
   <meta name="color-scheme" content="light">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
   <title>Verve N Veda | Public Gateway</title>
-  <link rel="canonical" href="https://vervenveda.com/">
+  <link rel="canonical" href="https://vervenveda.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Verve N Veda | Public Gateway">
-  <meta property="og:description" content="A reviewed public digital campus for learning, research, news, weather, civic resources, professional tools, art, health, music, and community projects.">
-  <meta property="og:url" content="https://vervenveda.com/">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:description" content="A connected public campus for lifelong education, research, creativity, public service, and community growth.">
+  <meta property="og:url" content="https://vervenveda.github.io/">
 
-  <!-- Open-license display fonts. Brandon Grotesque and Gaspacho remain first in the CSS stacks
-       so licensed/self-hosted copies can be added later without redesigning the page. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root{
       --paper:#f4f0e7;
       --paper-bright:#fbf9f4;
-      --white:#ffffff;
+      --white:#fff;
       --ink:#121713;
-      --ink-soft:#525c55;
+      --ink-soft:#58615b;
       --forest:#243d33;
       --forest-deep:#15251f;
       --gold:#b48b45;
@@ -37,231 +32,151 @@
       --navy:#10243b;
       --line:rgba(18,23,19,.14);
       --line-strong:rgba(18,23,19,.25);
-      --shadow:0 18px 50px rgba(27,34,29,.09);
-      --shadow-small:0 8px 24px rgba(27,34,29,.07);
-      --max:1220px;
+      --shadow:0 22px 55px rgba(27,34,29,.09);
+      --shadow-small:0 11px 33px rgba(27,34,29,.07);
+      --max:1221px;
+      --r-small:7px;
+      --r-card:21px;
       --display:"Gaspacho","Cormorant Garamond",Baskerville,Georgia,serif;
       --ceremonial:"Cinzel","Aboreto","Times New Roman",serif;
       --sans:"Brandon Grotesque","Montserrat","Avenir Next",Avenir,Arial,sans-serif;
     }
 
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
     body{
       margin:0;
-      min-height:100vh;
+      min-width:300px;
       overflow-x:hidden;
       color:var(--ink);
       background:var(--paper);
       font-family:var(--sans);
-      line-height:1.65;
+      font-size:16px;
+      line-height:1.66;
+      font-weight:400;
+      text-align:center;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
     }
     body.menu-open{overflow:hidden}
-    a{color:inherit}
-    button,input{font:inherit}
-    button{color:inherit}
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+    button{cursor:pointer}
+    [hidden]{display:none!important}
     ::selection{background:var(--gold-pale);color:var(--ink)}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .shell{width:min(calc(100% - 33px),var(--max));margin-inline:auto}
 
     .skip-link{
-      position:fixed;
-      top:12px;
-      left:12px;
-      z-index:3000;
-      transform:translateY(-160%);
-      padding:10px 14px;
-      border-radius:4px;
-      color:#fff;
-      background:var(--ink);
-      transition:transform .18s ease;
+      position:fixed;top:11px;left:11px;z-index:3000;
+      transform:translateY(-170%);
+      padding:11px 14px;border-radius:7px;
+      color:#fff;background:var(--ink);
     }
-    .skip-link:focus{transform:translateY(0)}
+    .skip-link:focus{transform:none}
 
     .site-header{
-      position:sticky;
-      top:0;
-      z-index:1200;
+      position:sticky;top:0;z-index:1200;
       border-bottom:1px solid var(--line);
-      background:rgba(244,240,231,.94);
+      background:rgba(244,240,231,.95);
       backdrop-filter:blur(18px);
     }
     .header-inner{
-      width:min(calc(100% - 32px),var(--max));
-      min-height:55px;
-      margin:0 auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
+      min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:22px;
     }
-    .admin-brand{
-      display:inline-flex;
-      align-items:center;
-      gap:11px;
-      min-width:0;
-      color:var(--ink);
-      text-decoration:none;
-      padding:0;
-      border:0;
-      background:transparent;
-      cursor:pointer;
-      text-align:left;
+    .brand{
+      display:inline-flex;align-items:center;gap:11px;
+      min-width:0;color:var(--ink);text-align:left;
     }
     .brand-mark{
-      width:33px;
-      height:24px;
-      flex:0 0 33px;
-      display:grid;
-      place-items:center;
-      color:#fff;
-      background:var(--ink);
-      border:1px solid var(--ink);
-      border-radius:7px;
-      font-family:var(--ceremonial);
-      font-size:.44rem;
+      width:44px;height:33px;flex:0 0 44px;
+      display:grid;place-items:center;
+      border:1px solid var(--ink);border-radius:7px;
+      color:#fff;background:var(--ink);
+      font:444 .52rem var(--ceremonial);
       letter-spacing:.09em;
-      transition:transform .18s ease,background .18s ease;
-    }
-    .admin-brand:hover .brand-mark,
-    .admin-brand:focus-visible .brand-mark{
-      transform:translateY(-2px);
-      background:var(--forest);
     }
     .brand-copy{display:grid;line-height:1.05}
     .brand-name{
       font-family:var(--ceremonial);
-      font-size:clamp(.99rem,1.1vw,1.1rem);
-      font-weight:222;
-      letter-spacing:.07em;
+      font-size:clamp(.95rem,1.2vw,1.1rem);
+      font-weight:400;
+      letter-spacing:.09em;
       text-transform:uppercase;
     }
-    .brand-admin{
-      margin-top:2px;
+    .brand-sub{
+      margin-top:3px;color:var(--ink-soft);
+      font-size:.52rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;
+    }
+    .header-links{display:flex;align-items:center;gap:3px}
+    .header-links a{
+      min-height:44px;display:inline-flex;align-items:center;
+      padding:8px 11px;border-radius:7px;
       color:var(--ink-soft);
-      font-size:.44rem;
-      font-weight:222;
-      letter-spacing:.05em;
-      text-transform:uppercase;
+      font-size:.7rem;font-weight:400;letter-spacing:.07em;text-transform:uppercase;
     }
-    .header-actions{display:flex;align-items:center;gap:10px}
-    .header-link{
-      display:inline-flex;
-      align-items:center;
-      min-height:33px;
-      padding:7px 11px;
-      color:var(--ink-soft);
-      text-decoration:none;
-      font-size:.78rem;
-      font-weight:333;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-    }
-    .header-link:hover,.header-link:focus-visible{color:var(--ink)}
+    .header-links a:hover{color:var(--ink);background:var(--white)}
     .menu-button{
-      width:33px;
-      height:33px;
-      display:grid;
-      place-items:center;
-      cursor:pointer;
-      border:1px solid var(--line-strong);
-      border-radius:7px;
-      background:transparent;
+      width:44px;height:44px;display:grid;place-items:center;
+      border:1px solid var(--line-strong);border-radius:7px;
+      background:transparent;color:var(--ink);
     }
-    .menu-button:hover{background:var(--white)}
     .menu-lines,.menu-lines::before,.menu-lines::after{
-      content:"";
-      display:block;
-      width:14px;
-      height:1.5px;
-      border-radius:7px;
-      background:var(--ink);
-      transition:transform .18s ease,opacity .18s ease;
+      content:"";display:block;width:14px;height:1.5px;
+      border-radius:7px;background:var(--ink);transition:.18s;
     }
     .menu-lines{position:relative}
     .menu-lines::before,.menu-lines::after{position:absolute;left:0}
-    .menu-lines::before{top:-6px}
-    .menu-lines::after{top:6px}
+    .menu-lines::before{top:-6px}.menu-lines::after{top:6px}
     .menu-button[aria-expanded="true"] .menu-lines{background:transparent}
     .menu-button[aria-expanded="true"] .menu-lines::before{transform:translateY(6px) rotate(45deg)}
     .menu-button[aria-expanded="true"] .menu-lines::after{transform:translateY(-6px) rotate(-45deg)}
 
     .hero{
-      min-height:74svh;
-      display:grid;
-      align-items:center;
+      min-height:calc(100svh - 66px);
+      display:grid;align-items:center;
       border-bottom:1px solid var(--line);
-      background:var(--paper-bright);
+      background:
+        radial-gradient(circle at 50% 0,rgba(180,139,69,.10),transparent 33rem),
+        var(--paper-bright);
     }
     .hero-inner{
-      width:min(calc(100% - 36px),var(--max));
-      margin:0 auto;
-      padding:clamp(82px,11vw,138px) 0 clamp(70px,9vw,110px);
-      display:grid;
-      grid-template-columns:1fr;
-      gap:34px;
-      align-items:center;
-      justify-items:center;
-      text-align:center;
+      padding:99px 0 88px;
+      display:grid;justify-items:center;gap:33px;
     }
+    .hero-copy{max-width:1089px}
     .eyebrow,.kicker{
-      margin:3px;
-      color:var(--gold);
+      margin:0;color:var(--gold);
       font-family:var(--ceremonial);
-      max-width:100%;
-      font-size:clamp(.72rem,1.25vw,.92rem);
-      font-weight:600;
-      line-height:1.45;
-      letter-spacing:.16em;
-      overflow-wrap:anywhere;
-      text-transform:uppercase;
+      font-size:clamp(.68rem,1.1vw,.88rem);
+      font-weight:500;line-height:1.5;letter-spacing:.22em;text-transform:uppercase;
     }
-    .hero-title{
-      margin:20px 0 0;
-      max-width:none;
+    h1,h2,h3{margin:0;font-family:var(--display);font-weight:444;letter-spacing:.01em;text-wrap:balance}
+    h1{
+      margin-top:22px;max-width:1100px;
       color:var(--forest-deep);
-      font-family:var(--display);
-      font-size:clamp(4rem,7vw,7rem);
-      font-weight:444;
-      line-height:.96;
-      letter-spacing:.025em;
-      white-space:normal;
-      text-wrap:balance;
+      font-size:clamp(4rem,8vw,7.7rem);
+      line-height:.91;
     }
     .hero-aside{
-      width:min(100%,780px);
-      padding:24px 0 0;
-      border-top:1px solid var(--line-strong);
-      text-align:center;
+      width:min(100%,792px);
+      padding-top:22px;border-top:1px solid var(--line-strong);
     }
-    .hero-copy{
-      margin:24px 0 0;
+    .hero-lead{
+      margin:0 auto;max-width:760px;
       color:var(--ink-soft);
       font-family:var(--display);
-      font-size:clamp(1rem,1.55vw,1rem);
-      line-height:1.35;
-      letter-spacing:.01em;
+      font-size:clamp(1.12rem,2vw,1.5rem);
+      line-height:1.5;
     }
-    .hero-actions{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:11px;
-      margin-top:33px;
+    .hero-actions,.actions{
+      display:flex;justify-content:center;flex-wrap:wrap;gap:11px;margin-top:33px;
     }
     .button{
-      min-height:44px;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:11px;
-      padding:11px 14px;
-      border:1px solid transparent;
-      border-radius:3px;
-      text-decoration:none;
-      font-size:.76rem;
-      font-weight:444;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      transition:transform .17s ease,background .17s ease,border-color .17s ease,box-shadow .17s ease;
+      min-height:44px;display:inline-flex;align-items:center;justify-content:center;
+      padding:11px 16px;border:1px solid transparent;border-radius:7px;
+      font-size:.72rem;font-weight:444;letter-spacing:.08em;text-transform:uppercase;
+      transition:transform .17s,background .17s,border-color .17s;
     }
     .button:hover{transform:translateY(-2px)}
     .button-primary{color:#fff;background:var(--ink);box-shadow:var(--shadow-small)}
@@ -269,1217 +184,495 @@
     .button-secondary{color:var(--ink);background:transparent;border-color:var(--line-strong)}
     .button-secondary:hover{background:var(--white);border-color:var(--ink)}
 
-    .section{padding:clamp(70px,9vw,118px) 18px}
-    .section-inner{width:min(100%,var(--max));margin:0 auto}
-    .section-heading{
-      display:block;
-      max-width:900px;
-      margin:0 auto 38px;
-      text-align:center;
-    }
+    .section{padding:88px 18px}
+    .section-alt{background:var(--paper-bright);border-block:1px solid var(--line)}
+    .section-dark{color:#fff;background:var(--forest-deep)}
+    .section-inner{width:min(100%,var(--max));margin:auto}
+    .section-heading{max-width:880px;margin:0 auto 44px}
     .section h2{
-      margin:12px auto 0;
-      max-width:760px;
-      font-family:var(--display);
-      font-size:clamp(2.9rem,6vw,5.7rem);
-      font-weight:444;
-      line-height:1.02;
-      letter-spacing:.01em;
+      margin:11px auto 0;max-width:850px;
+      font-size:clamp(2.8rem,5.5vw,5.6rem);line-height:.98;
     }
     .section-intro{
-      margin:24px auto 0;
-      max-width:710px;
-      color:var(--ink-soft);
-      font-size:clamp(.9rem,1.25vw,.98rem);
+      max-width:700px;margin:22px auto 0;color:var(--ink-soft);
     }
+    .section-dark .section-intro{color:rgba(255,255,255,.7)}
+    .section-dark h2{color:#fff}
 
-    .welcome-section{
-      padding:clamp(76px,9vw,112px) 18px;
-      background:var(--paper);
-      border-bottom:1px solid var(--line);
-    }
-    .welcome-copy{
-      width:min(100%,900px);
-      margin:0 auto;
-      text-align:center;
-    }
-    .welcome-copy p:last-child{
-      margin:24px auto 0;
-      max-width:790px;
-      color:var(--ink-soft);
-      font-family:var(--display);
-      font-size:clamp(2.25rem,3.25vw,2.72rem);
-      line-height:1.55;
-    }
-
-    .pillars-section{background:var(--paper-bright)}
-    .pillar-grid{
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:12px;
-      margin-top:38px;
-    }
+    .pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
     .pillar-card{
-      position:relative;
-      min-height:224px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      align-items:center;
-      gap:28px;
-      padding:24px;
-      text-align:center;
-      overflow:hidden;
-      color:var(--ink);
-      background:#fff;
-      border:1px solid var(--line);
-      border-top:3px solid var(--pillar-accent,var(--gold));
-      border-radius:3px;
-      text-decoration:none;
-      transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+      min-height:242px;display:flex;flex-direction:column;align-items:center;
+      padding:22px;border:1px solid var(--line);border-top:3px solid var(--accent);
+      border-radius:21px;background:#fff;box-shadow:var(--shadow-small);transition:.18s;
     }
-    .pillar-card:hover,.pillar-card:focus-visible{
-      transform:translateY(-4px);
-      border-color:var(--pillar-accent,var(--gold));
-      box-shadow:var(--shadow-small);
-    }
-    .pillar-number{
-      color:var(--pillar-accent,var(--gold));
-      font-family:var(--ceremonial);
-      font-size:.55rem;
-      font-weight:444;
-      letter-spacing:.18em;
-    }
-    .pillar-card h3{
-      margin:0;
-      font-family:var(--display);
-      font-size:clamp(1.72rem,2.7vw,2.3rem);
-      font-weight:700;
-      line-height:1.12;
-      overflow-wrap:anywhere;
-    }
-    .pillar-card p{margin:12px 0 0;color:var(--ink-soft);font-size:.86rem;line-height:1.55}
+    .pillar-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow)}
+    .pillar-number{color:var(--accent);font:500 .62rem var(--ceremonial);letter-spacing:.18em}
+    .pillar-card h3{margin-top:22px;font-size:clamp(1.6rem,2.4vw,2.25rem);line-height:1.08}
+    .pillar-card p{color:var(--ink-soft);font-size:.84rem}
     .pillar-open{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      width:100%;
-      padding-top:15px;
-      text-align:center;
-      overflow-wrap:anywhere;
-      border-top:1px solid var(--line);
-      color:var(--ink-soft);
-      font-size:.68rem;
-      font-weight:700;
-      letter-spacing:.09em;
-      text-transform:uppercase;
+      width:100%;margin-top:auto;padding-top:15px;border-top:1px solid var(--line);
+      color:var(--ink-soft);font-size:.66rem;font-weight:444;letter-spacing:.08em;text-transform:uppercase;
     }
 
-    .spotlight-section{background:var(--paper)}
-    .spotlight-grid{
-      display:grid;
-      grid-template-columns:minmax(0,1.35fr) minmax(290px,.65fr);
-      gap:16px;
-      margin-top:38px;
+    .featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+    .feature-card{
+      min-height:275px;display:flex;flex-direction:column;align-items:center;
+      padding:22px;border:1px solid var(--line);border-radius:21px;
+      background:#fff;box-shadow:var(--shadow-small);transition:.18s;
     }
-    .spotlight-primary,
-    .spotlight-secondary{
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.55);
-      box-shadow:var(--shadow-small);
+    .feature-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .feature-icon{
+      width:55px;height:44px;display:grid;place-items:center;
+      border-radius:7px;color:#fff;background:var(--forest);
+      font:444 .72rem var(--ceremonial);
     }
-    .spotlight-primary{
-      min-height:380px;
-      display:grid;
-      align-content:end;
-      padding:clamp(30px,5vw,58px);
-      color:#fff;
-      background:
-        linear-gradient(120deg,rgba(21,37,31,.97),rgba(36,61,51,.91)),
-        repeating-linear-gradient(to bottom,transparent 0,transparent 16px,rgba(255,255,255,.08) 17px,transparent 18px);
-    }
-    .spotlight-primary .kicker{color:var(--gold-pale)}
-    .spotlight-primary h3{
-      margin:14px 0 0;
-      font-family:var(--display);
-      font-size:clamp(2rem,5vw,5rem);
-      font-weight:444;
-      line-height:.96;
-      text-wrap:balance;
-      overflow-wrap:anywhere;
-    }
-    .spotlight-primary p{max-width:650px;margin:22px auto 0;color:rgba(255,255,255,.76);font-size:1rem;text-align:center}
-    .spotlight-primary .button{margin:28px auto 0;align-self:center;width:max-content;max-width:100%;color:var(--ink);background:var(--gold-pale)}
-    .spotlight-secondary{display:grid;align-content:start;padding:28px;text-align:center}
-    .update-list{display:grid;margin-top:12px}
-    .update-item{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:8px;
-      text-align:center;
-      padding:18px 0;
-      border-top:1px solid var(--line);
-    }
-    .update-item:first-child{border-top:0}
-    .update-date{color:var(--gold);font-family:var(--ceremonial);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase}
-    .update-item strong{display:block;font-family:var(--display);font-size:1.3rem;line-height:1.05}
-    .update-item span{display:block;margin-top:6px;color:var(--ink-soft);font-size:.78rem;line-height:1.45}
+    .feature-card h3{margin-top:18px;font-size:1.62rem;line-height:1.08}
+    .feature-card p{color:var(--ink-soft);font-size:.84rem}
+    .feature-card .button{width:100%;margin-top:auto}
 
-    .search-intro-section{
-      padding:clamp(68px,8vw,96px) 18px;
-      color:#fff;
-      background:var(--navy);
-      border-block:1px solid rgba(255,255,255,.12);
+    .directory-controls{
+      display:grid;grid-template-columns:minmax(240px,1fr) 220px auto;gap:11px;
+      max-width:950px;margin:0 auto 22px;
     }
-    .search-intro-inner{width:min(100%,900px);margin:0 auto;text-align:center}
-    .search-intro-section .kicker{color:var(--gold-pale)}
-    .search-intro-section h2{
-      margin:14px 0 0;
-      font-family:var(--display);
-      font-size:clamp(2rem,6vw,5.25rem);
-      font-weight:700;
-      line-height:1;
-      text-wrap:balance;
-      overflow-wrap:anywhere;
+    .field{
+      width:100%;min-height:44px;padding:0 13px;
+      border:1px solid var(--line-strong);border-radius:7px;
+      color:var(--ink);background:#fff;
     }
-    .search-intro-section p{max-width:680px;margin:20px auto 0;color:rgba(255,255,255,.72)}
-    .search-launch{
-      width:min(100%,700px);
-      min-height:58px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px 18px;
-      margin:30px auto 0;
-      text-align:center;
-      flex-wrap:wrap;
-      padding:14px 18px;
-      color:var(--ink);
-      background:#fff;
-      border:0;
-      border-radius:3px;
-      cursor:pointer;
-      text-align:left;
+    .control-button{
+      min-height:44px;padding:0 14px;
+      border:1px solid var(--line-strong);border-radius:7px;
+      color:var(--ink);background:#fff;font-weight:444;
     }
-    .search-launch strong{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
-    .search-launch span{color:var(--ink-soft);font-size:.82rem}
+    .directory-status{margin:0 0 22px;color:var(--ink-soft);font-size:.78rem}
+    .directory-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+    .site-card{
+      min-height:235px;display:flex;flex-direction:column;align-items:center;
+      padding:20px;border:1px solid var(--line);border-radius:21px;
+      background:#fff;box-shadow:var(--shadow-small);transition:.18s;
+    }
+    .site-card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:var(--shadow)}
+    .site-icon{
+      width:48px;height:40px;display:grid;place-items:center;
+      border-radius:7px;color:#fff;background:var(--forest);
+      font:444 .68rem var(--ceremonial);
+    }
+    .site-group{
+      margin-top:16px;color:var(--gold);
+      font-size:.62rem;font-weight:444;letter-spacing:.1em;text-transform:uppercase;
+    }
+    .site-card h3{margin-top:8px;font-size:1.38rem;line-height:1.08}
+    .site-card p{color:var(--ink-soft);font-size:.8rem}
+    .site-card small{margin-top:auto;color:var(--forest);font-weight:444}
 
-    .featured-section{background:var(--paper)}
-    .featured-groups{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:16px;
+    .network-statement{
+      display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;
+      max-width:1056px;margin:auto;
     }
-    .gateway-group{
-      padding:24px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.48);
-      box-shadow:var(--shadow-small);
+    .statement-copy{text-align:center}
+    .statement-copy p{color:rgba(255,255,255,.72)}
+    .statement-values{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
+    .value{
+      min-height:132px;display:grid;place-items:center;padding:18px;
+      border:1px solid rgba(255,255,255,.14);border-radius:21px;
+      background:rgba(255,255,255,.04);
     }
-    .gateway-group.academy{grid-column:1 / -1}
-    .gateway-group.news{border-top:4px solid var(--gold)}
-    .gateway-group.civic{border-top:4px solid var(--navy)}
-    .gateway-group.pro{border-top:4px solid var(--forest)}
-    .gateway-group.music{border-top:4px solid #7b3945}
-    .gateway-group.medical{border-top:4px solid #8a554f}
-    .gateway-group.innovation{border-top:4px solid #6f5b4b}
-    .gateway-group.research{border-top:4px solid #6a5c4c}
-    .gateway-head{
-      display:block;
-      margin-bottom:18px;
-      text-align:center;
-    }
-    .gateway-label{
-      margin:0;
-      font-family:var(--ceremonial);
-      font-size:.66rem;
-      font-weight:444;
-      letter-spacing:.13em;
-      text-transform:uppercase;
-    }
-    .gateway-note{margin:7px 0 0;color:var(--ink-soft);font-size:.84rem}
-    .category-jump{
-      display:inline-block;
-      margin-top:10px;
-      border:0;
-      padding:4px 0;
-      cursor:pointer;
-      color:var(--ink-soft);
-      background:transparent;
-      font-size:.66rem;
-      font-weight:444;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-    }
-    .category-jump:hover{color:var(--ink)}
-    .gateway-links{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:9px;
-    }
-    .gateway-group.academy .gateway-links{grid-template-columns:repeat(4,minmax(0,1fr))}
-    .gateway-link{
-      min-height:48px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      gap:7px;
-      min-width:0;
-      padding:13px 14px;
-      text-align:center;
-      line-height:1.35;
-      overflow:hidden;
-      overflow-wrap:anywhere;
-      word-break:normal;
-      color:#fff;
-      background:#151515;
-      border:1px solid #151515;
-      border-radius:2px;
-      text-decoration:none;
-      font-size:.66rem;
-      font-weight:444;
-      letter-spacing:.055em;
-      text-transform:uppercase;
-      transition:transform .16s ease,background .16s ease,border-color .16s ease;
-    }
-    .gateway-link:hover,.gateway-link:focus-visible{transform:translateY(-2px);background:var(--forest);border-color:var(--forest)}
-    .gateway-link.priority{color:var(--ink);background:var(--gold-pale);border-color:var(--gold)}
-    .gateway-link.priority:hover{background:#d8bd85;border-color:#a57e39}
-    .gateway-link.navy{background:var(--navy);border-color:var(--navy)}
-    .gateway-note{max-width:620px;margin:7px auto 0}
-    .gateway-link.placeholder,.directory-card.placeholder{cursor:default;color:var(--ink-soft);background:transparent;border:1px dashed var(--line-strong);box-shadow:none}
-    .gateway-link.placeholder:hover,.directory-card.placeholder:hover{transform:none;color:var(--ink-soft);background:transparent;border-color:var(--line-strong);box-shadow:none}
+    .value strong{font-family:var(--display);font-size:1.3rem;font-weight:444}
 
-    .directory-section{
-      border-block:1px solid var(--line);
-      background:var(--paper-bright);
-    }
-    .directory-tools{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      flex-wrap:wrap;
-      margin-bottom:18px;
-    }
-    .search-box{
-      position:relative;
-      flex:1 1 360px;
-      max-width:670px;
-    }
-    .search-box svg{
-      position:absolute;
-      left:15px;
-      top:50%;
-      width:18px;
-      height:18px;
-      transform:translateY(-50%);
-      color:var(--ink-soft);
-      pointer-events:none;
-    }
-    .search-box input{
-      width:100%;
-      min-height:50px;
-      padding:12px 16px 12px 44px;
-      color:var(--ink);
-      background:#fff;
-      border:1px solid var(--line-strong);
-      border-radius:3px;
-      outline:none;
-    }
-    .search-box input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(180,139,69,.13)}
-    .result-count{margin:0;color:var(--ink-soft);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
-    .category-strip{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:28px;text-align:center}
-    .chip{
-      min-height:38px;
-      padding:7px 11px;
-      cursor:pointer;
-      color:var(--ink-soft);
-      background:transparent;
-      border:1px solid var(--line);
-      border-radius:2px;
-      font-size:.69rem;
-      font-weight:700;
-      letter-spacing:.07em;
-      text-transform:uppercase;
-    }
-    .chip:hover{border-color:var(--ink);color:var(--ink)}
-    .chip.active{color:#fff;background:var(--ink);border-color:var(--ink)}
-    .directory-groups{display:grid;gap:28px}
-    .directory-group{
-      scroll-margin-top:106px;
-      padding-top:24px;
-      border-top:1px solid var(--line);
-    }
-    .directory-group:first-child{padding-top:0;border-top:0}
-    .directory-group-heading{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:10px;
-      align-items:start;
-      margin-bottom:18px;
-      text-align:center;
-    }
-    .directory-group h3{
-      margin:0;
-      font-family:var(--ceremonial);
-      font-size:clamp(1rem,2vw,1.28rem);
-      font-weight:700;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-    }
-    .directory-group-heading p{margin:0;color:var(--ink-soft);font-size:.86rem}
-    .directory-grid{
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:10px;
-    }
-    .directory-card{
-      min-height:126px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      align-items:center;
-      gap:16px;
-      min-width:0;
-      padding:19px 17px;
-      text-align:center;
-      overflow:hidden;
-      color:var(--ink);
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:3px;
-      text-decoration:none;
-      transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
-    }
-    .directory-card:hover,.directory-card:focus-visible{transform:translateY(-3px);border-color:var(--gold);box-shadow:var(--shadow-small)}
-    .directory-card strong{
-      display:block;
-      font-family:var(--display);
-      font-size:1rem;
-      font-weight:444;
-      line-height:1.1;
-      letter-spacing:.01em;
-      overflow-wrap:anywhere;
-    }
-    .directory-card > span > span{display:block;max-width:100%;margin-top:10px;color:var(--ink-soft);font-size:.8rem;line-height:1.45;overflow-wrap:anywhere}
-    .directory-card strong .link-label{margin-top:0;color:var(--ink);font-size:inherit;line-height:1.1}
-    .card-arrow{
-      align-self:center;
-      color:var(--gold);
-      font-size:1rem;
-    }
-    .empty-state{
-      display:none;
-      padding:28px;
-      color:var(--ink-soft);
-      text-align:center;
-      background:#fff;
-      border:1px dashed var(--line-strong);
-    }
+    .final{background:var(--gold-pale)}
+    .final p{max-width:700px;margin:22px auto 0;color:var(--ink-soft)}
 
-    .closing-section{background:var(--forest-deep);color:#fff}
-    .closing-grid{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:28px;
-      align-items:center;
-      justify-items:center;
-      text-align:center;
-    }
-    .closing-section .kicker{color:var(--gold-pale)}
-    .closing-section h2{color:#fff}
-    .closing-copy{max-width:760px;margin:0 auto;color:rgba(255,255,255,.72)}
-    .closing-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
-    .closing-section .button-primary{color:var(--ink);background:var(--gold-pale)}
-    .closing-section .button-primary:hover{background:#fff}
-    .closing-section .button-secondary{color:#fff;border-color:rgba(255,255,255,.38)}
-    .closing-section .button-secondary:hover{color:var(--ink);background:#fff;border-color:#fff}
+    footer{padding:44px 18px;color:rgba(255,255,255,.68);background:#0a1511}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+    .footer-links{display:flex;gap:15px;flex-wrap:wrap}
 
-    .site-footer{padding:34px 18px;background:var(--ink);color:#fff}
-    .footer-inner{
-      width:min(100%,var(--max));
-      margin:0 auto;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      gap:20px;
-      flex-wrap:wrap;
+    .menu-overlay{
+      position:fixed;inset:0;z-index:2000;
+      visibility:hidden;opacity:0;background:rgba(6,15,12,.72);transition:.2s;
     }
-    .footer-brand{
-      margin:0;
-      font-family:var(--ceremonial);
-      font-size:.8rem;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-    }
-    .footer-meta{color:rgba(255,255,255,.62);font-size:.75rem;letter-spacing:.04em}
-
-    .drawer-overlay{
-      position:fixed;
-      inset:0;
-      z-index:1600;
-      visibility:hidden;
-      opacity:0;
-      background:rgba(8,12,10,.55);
-      backdrop-filter:blur(5px);
-      transition:opacity .2s ease,visibility .2s ease;
-    }
-    .drawer-overlay.open{visibility:visible;opacity:1}
+    .menu-overlay.open{visibility:visible;opacity:1}
     .drawer{
-      position:absolute;
-      top:0;
-      right:0;
-      width:min(94vw,470px);
-      height:100%;
-      display:flex;
-      flex-direction:column;
-      padding:22px;
-      background:var(--paper-bright);
-      box-shadow:-24px 0 70px rgba(0,0,0,.2);
-      transform:translateX(104%);
-      transition:transform .24s ease;
+      position:absolute;right:0;top:0;width:min(94vw,500px);height:100%;
+      overflow:auto;padding:22px;text-align:left;
+      background:var(--paper-bright);transform:translateX(100%);transition:.22s;
     }
-    .drawer-overlay.open .drawer{transform:translateX(0)}
-    .drawer-header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      padding-bottom:16px;
-      border-bottom:1px solid var(--line);
-    }
-    .drawer-title{
-      margin:0;
-      font-family:var(--ceremonial);
-      font-size:1.14rem;
-      font-weight:500;
-      letter-spacing:.13em;
-      text-transform:uppercase;
-    }
+    .menu-overlay.open .drawer{transform:none}
+    .drawer-top{display:flex;align-items:center;justify-content:space-between;gap:11px}
+    .drawer h2{font-size:2rem}
     .close-button{
-      width:42px;
-      height:42px;
-      display:grid;
-      place-items:center;
-      cursor:pointer;
-      background:transparent;
-      border:1px solid var(--line-strong);
-      border-radius:2px;
+      width:44px;height:44px;border:1px solid var(--line-strong);border-radius:7px;background:#fff;
     }
-    /* The global .search-box is flexible in the page toolbar. Inside the
-       vertical drawer it must not grow, otherwise it creates a large blank
-       column between the search field and the navigation links. */
     .drawer-search{
-      width:100%;
-      max-width:none;
-      flex:0 0 auto;
-      margin:16px 0 12px;
+      width:100%;min-height:44px;margin-top:18px;padding:0 13px;
+      border:1px solid var(--line-strong);border-radius:7px;background:#fff;
     }
-    .drawer-search input{font-size:1rem}
-    .drawer-tabs{
-      flex:0 0 auto;
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-      margin:0 0 14px;
+    .menu-group{margin:22px 0 8px;color:var(--gold);font-size:.68rem;font-weight:444;letter-spacing:.1em;text-transform:uppercase}
+    .menu-list{display:grid;gap:7px}
+    .menu-link{
+      display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:11px;
+      padding:11px;border:1px solid var(--line);border-radius:7px;background:#fff;
     }
-    .drawer-tab{
-      min-height:34px;
-      padding:8px 11px;
-      cursor:pointer;
-      color:var(--ink-soft);
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:2px;
-      font-size:.72rem;
-      font-weight:750;
-      line-height:1.2;
-      letter-spacing:.065em;
-      text-transform:uppercase;
+    .menu-link i{
+      width:38px;height:33px;display:grid;place-items:center;
+      border-radius:7px;color:#fff;background:var(--forest);font-style:normal;font-size:.65rem;
     }
-    .drawer-tab:hover{color:var(--ink);border-color:var(--line-strong)}
-    .drawer-tab.active{color:#fff;background:var(--ink);border-color:var(--ink)}
-    .drawer-nav{
-      flex:1 1 auto;
-      min-height:0;
-      overflow:auto;
-      padding-right:6px;
-      overscroll-behavior:contain;
-    }
-    .nav-group{border-top:1px solid var(--line)}
-    .nav-heading{
-      position:sticky;
-      top:0;
-      z-index:2;
-      margin:0;
-      padding:12px 2px 8px;
-      color:var(--gold);
-      background:linear-gradient(180deg,var(--paper-bright),rgba(251,249,244,.93));
-      font-family:var(--ceremonial);
-      font-size:.72rem;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-    }
-    .drawer-nav a{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:5px;
-      align-items:center;
-      justify-items:center;
-      padding:13px 6px;
-      text-align:center;
-      overflow-wrap:anywhere;
-      color:var(--ink);
-      border-bottom:1px solid rgba(18,23,19,.08);
-      text-decoration:none;
-      font-size:1rem;
-      line-height:1.35;
-    }
-    .drawer-nav a:hover,.drawer-nav a:focus-visible{color:var(--gold)}
-    .drawer-nav small{color:var(--ink-soft);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
-    .drawer-footer{
-      margin-top:auto;
-      text-align:center;
-      padding-top:14px;
-      color:var(--ink-soft);
-      border-top:1px solid var(--line);
-      font-size:.8rem;
-      line-height:1.5;
-    }
+    .menu-link strong{display:block;font-weight:444}
+    .menu-link small{display:block;color:var(--ink-soft);font-size:.68rem}
 
-    .development-note{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:7px;
-      margin-top:10px;
-      padding:5px 9px;
-      color:var(--ink-soft);
-      background:rgba(255,255,255,.55);
-      border:1px solid var(--line);
-      border-radius:999px;
-      font-size:.64rem;
-      font-weight:600;
-      letter-spacing:.08em;
-      text-transform:uppercase;
+    @media(max-width:1050px){
+      .pillar-grid,.directory-grid{grid-template-columns:repeat(2,1fr)}
+      .featured-grid{grid-template-columns:repeat(2,1fr)}
+      .header-links{display:none}
+      .network-statement{grid-template-columns:1fr}
     }
-    .pillar-card.placeholder{
-      cursor:default;
-      color:var(--ink-soft);
-      background:rgba(255,255,255,.42);
-      border-style:dashed;
-      box-shadow:none;
+    @media(max-width:700px){
+      .directory-controls{grid-template-columns:1fr}
+      .statement-values{grid-template-columns:1fr}
     }
-    .pillar-card.placeholder:hover{transform:none;border-color:var(--line-strong);box-shadow:none}
-    .gateway-link.placeholder,.directory-card.placeholder{user-select:none}
-    .directory-card.placeholder .card-arrow{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
-    .nav-placeholder{
-      display:grid;
-      justify-items:center;
-      gap:5px;
-      padding:13px 6px;
-      color:var(--ink-soft);
-      text-align:center;
-      border-bottom:1px solid rgba(18,23,19,.08);
-      font-size:1rem;
-      line-height:1.35;
+    @media(max-width:560px){
+      .pillar-grid,.featured-grid,.directory-grid{grid-template-columns:1fr}
+      .hero-actions,.actions{display:grid}
+      .button{width:100%}
+      .brand-sub{display:none}
+      .footer-inner{justify-content:center}
     }
-    .nav-placeholder small{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase}
-
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .58s ease,transform .58s ease}
-    .reveal.visible{opacity:1;transform:none}
-    :focus-visible{outline:3px solid rgba(180,139,69,.58);outline-offset:3px}
-
-    @media(max-width:980px){
-      .hero-inner,.section-heading,.closing-grid{grid-template-columns:1fr}
-      .hero-aside{max-width:700px}
-      .gateway-group.academy .gateway-links{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .spotlight-grid{grid-template-columns:1fr}
-    }
-    @media(max-width:730px){
-      .header-inner{min-height:68px}
-      .header-link{display:none}
-      .hero{min-height:auto}
-      .hero-inner{padding-top:76px}
-      .hero-title{font-size:clamp(2.45rem,12.5vw,5.25rem)}
-      .featured-groups{grid-template-columns:1fr}
-      .gateway-group.academy{grid-column:auto}
-      .gateway-group.academy .gateway-links,.gateway-links{grid-template-columns:1fr}
-      .directory-group-heading{grid-template-columns:1fr}
-      .directory-grid{grid-template-columns:1fr}
-      .pillar-grid{grid-template-columns:1fr}
-      .pillar-card{min-height:190px}
-    }
-    @media(max-width:470px){
-      .brand-admin{display:none}
-      .hero-actions .button,.closing-actions .button{width:100%}
-      .drawer{width:100%;padding:18px}
-      .gateway-group{padding:18px}
-    }
-
-    /* ============================================================
-       CENTERING + TEXT-CONTAINMENT REPAIR
-       Long repository names remain inside their borders at every width.
-       ============================================================ */
-    h1,h2,h3,p,.button,.gateway-link,.directory-card,.pillar-card,.chip,.drawer-tab,.drawer-nav a{
-      max-width:100%;
-      overflow-wrap:anywhere;
-      word-break:normal;
-    }
-    .button{white-space:normal;text-align:center;line-height:1.35}
-    .link-label{display:block;min-width:0;max-width:100%;text-align:center;line-height:1.35}
-    .link-label br{display:block}
-    .gateway-link > [aria-hidden="true"],.drawer-nav small{margin:0;text-align:center}
-    .directory-tools{justify-content:center;text-align:center}
-    .search-box{margin-inline:auto}
-    .result-count{flex:1 1 100%;text-align:center}
-    .spotlight-primary{text-align:center;justify-items:center}
-    .closing-actions,.hero-actions{align-items:stretch}
-    .closing-actions .button,.hero-actions .button{max-width:100%}
-    .footer-meta{max-width:100%;overflow-wrap:anywhere}
-    .gateway-group.finance{border-top:4px solid #8a6b2f}
-    .gateway-group.network{border-top:4px solid #4f6375}
-
-    @media(max-width:730px){
-      .search-launch{flex-direction:column}
-      .gateway-link{min-height:60px}
-    }
-
     @media(prefers-reduced-motion:reduce){
-      *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-      .reveal{opacity:1;transform:none}
+      *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
     }
   </style>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="header-inner">
-      <a class="admin-brand" href="#main" aria-label="Return to the top of the Verve N Veda public gateway">
-        <span class="brand-mark" aria-hidden="true">VNV</span>
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Verve N Veda home">
+        <span class="brand-mark">VNV</span>
         <span class="brand-copy">
           <span class="brand-name">Verve N Veda</span>
-          <span class="brand-admin">Public gateway</span>
+          <span class="brand-sub">Public Learning · Creative Work · Community Service</span>
         </span>
       </a>
 
-      <div class="header-actions">
-        <a class="header-link" href="#pillars">Explore the campus</a>
-        <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation" aria-controls="menuDrawer" aria-expanded="false">
-          <span class="menu-lines" aria-hidden="true"></span>
-        </button>
-      </div>
+      <nav class="header-links" aria-label="Primary navigation">
+        <a href="#pillars">Halls</a>
+        <a href="#featured">Featured</a>
+        <a href="#directory">Directory</a>
+        <a href="#mission">Mission</a>
+      </nav>
+
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open complete menu">
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
     </div>
   </header>
 
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <aside class="drawer" aria-label="Complete Verve N Veda directory">
+      <div class="drawer-top">
+        <h2>Verve N Veda Directory</h2>
+        <button class="close-button" id="closeMenu" type="button" aria-label="Close menu">×</button>
+      </div>
+      <p>Search every connected public landing page. Repository screens are never used as visitor destinations.</p>
+      <input class="drawer-search" id="menuSearch" type="search" placeholder="Search education, law, weather, art, veterans…">
+      <div id="menuContent"></div>
+    </aside>
+  </div>
+
   <main id="main">
-    <section class="hero" aria-labelledby="heroTitle">
-      <div class="hero-inner">
-        <div class="reveal">
-          <p class="eyebrow">A connected digital campus</p>
-          <h1 class="hero-title" id="heroTitle">Verve N Veda</h1>
+    <section class="hero">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">One Connected Public Campus</p>
+          <h1>Verve N Veda</h1>
         </div>
-        <div class="hero-aside reveal">
-          <p class="hero-copy">Explore. Learn. Create. Build.</p>
-          <p style="margin:14px auto 0;max-width:690px;color:var(--ink-soft);">A thoughtfully organized collection of educational, creative, professional, civic, wellness, music, and research resources, openly connected through one calm public gateway.</p>
+
+        <div class="hero-aside">
+          <p class="hero-lead">
+            A sovereign public ecosystem joining education, research, creativity,
+            professional tools, health, civic knowledge, environmental stewardship,
+            and compassionate service through one elegant gateway.
+          </p>
+
           <div class="hero-actions">
-            <a class="button button-primary" href="#pillars">Begin exploring <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="#journey">Search the directory <span aria-hidden="true">↘</span></a>
+            <a class="button button-primary" href="#directory">Explore the Network</a>
+            <a class="button button-secondary" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">Enter Khaemenes Academy</a>
+            <a class="button button-secondary" href="https://vervenveda.github.io/PLERASearch.github.io/">Open PLERA Search</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="welcome-section" aria-labelledby="welcomeTitle">
-      <div class="welcome-copy reveal">
-        <p class="kicker">Welcome</p>
-        <h2 id="welcomeTitle" style="margin:14px 0 0;font-family:var(--display);font-size:clamp(2rem,5vw,5rem);font-weight:700;line-height:.92;">One network. <br> Many meaningful doorways.</h2>
-        <p>Each destination has its own purpose and character, yet together they form one connected ecosystem designed to make learning, discovery, creativity, practical tools, reflection, and public service easier to reach.</p>
-      </div>
-    </section>
-
-    <section class="section pillars-section" id="pillars" aria-labelledby="pillarsTitle">
+    <section class="section section-alt" id="pillars">
       <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="kicker">The campus at a glance</p>
-          <h2 id="pillarsTitle">Twelve paths<br>to begin</h2>
-          <p class="section-intro">Choose a broad path first. The complete directories remain below for visitors who prefer a detailed map of every available gateway.</p>
+        <div class="section-heading">
+          <p class="kicker">The Four Great Halls</p>
+          <h2>Many public resources. One organized home.</h2>
+          <p class="section-intro">The ecosystem is arranged into four clear families so visitors can find the right doorway without being overwhelmed.</p>
         </div>
+
         <div class="pillar-grid">
-          <a class="pillar-card reveal" style="--pillar-accent:#708b76" href="https://vervenveda.github.io/aurora.github.io/">
-            <span class="pillar-number">01 · RESTORE</span><div><h3>The Sanctuary</h3><p>Reflection, renewal, gentle routines, wellbeing, and spaces designed for thoughtful pauses.</p></div><span class="pillar-open">Enter Aurora <span aria-hidden="true">↗</span></span>
+          <a class="pillar-card" href="#directory" data-group-link="Education" style="--accent:#9c7b42">
+            <span class="pillar-number">01 / LEARNING</span>
+            <div><h3>Education</h3><p>Preschool through Higher Learning, languages, research, news literacy, and lifelong study.</p></div>
+            <span class="pillar-open">Open Educational Halls →</span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#315c49" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">
-            <span class="pillar-number">02 · LEARN</span><div><h3>Pre-K through<br>Higher Learning</h3><p>Learning pathways from preschool through university, adult study, and lifelong exploration.</p></div><span class="pillar-open">Visit the Academy <span aria-hidden="true">↗</span></span>
+
+          <a class="pillar-card" href="#directory" data-group-link="Knowledge" style="--accent:#315b7b">
+            <span class="pillar-number">02 / KNOWLEDGE</span>
+            <div><h3>Research & Discovery</h3><p>Archives, search, evidence, weather, Earth systems, and informed public understanding.</p></div>
+            <span class="pillar-open">Open Knowledge Halls →</span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#7b3945" href="https://vervenveda.github.io/the_refrain.github.io/">
-            <span class="pillar-number">03 · LISTEN</span><div><h3>The Refrain<br>Music Hall</h3><p>Composition, performance, recording, music education, and resources for creators of every age.</p></div><span class="pillar-open">Open The Refrain <span aria-hidden="true">↗</span></span>
+
+          <a class="pillar-card" href="#directory" data-group-link="Public Service" style="--accent:#7d3d3d">
+            <span class="pillar-number">03 / SERVICE</span>
+            <div><h3>Public Service</h3><p>Health, law, civic participation, veterans, finance, environment, and practical support.</p></div>
+            <span class="pillar-open">Open Service Halls →</span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#7c654d" href="https://vervenveda.github.io/Arshif.github.io/">
-            <span class="pillar-number">04 · DISCOVER</span><div><h3>Arshif Archives</h3><p>Research, history, science, language, law, evidence, and deeper paths into human knowledge.</p></div><span class="pillar-open">Explore ARSHIF <span aria-hidden="true">↗</span></span>
+
+          <a class="pillar-card" href="#directory" data-group-link="Creative & Professional" style="--accent:#6c5078">
+            <span class="pillar-number">04 / CREATION</span>
+            <div><h3>Creative & Professional</h3><p>Art, music, games, media, productivity, professional tools, and personal renewal.</p></div>
+            <span class="pillar-open">Open Creative Halls →</span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#8a554f" href="https://vervenveda.github.io/medicament-hub.github.io/">
-            <span class="pillar-number">05 · CARE</span><div><h3>Health, Medicine<br>&amp; Nutrition</h3><p>Children’s medicine, holistic and traditional medicine, movement tracking, safety, evidence, and public wellness learning.</p></div><span class="pillar-open">Explore Medical Halls <span aria-hidden="true">↗</span></span>
-          </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#243f63" href="https://vervenveda.github.io/proresource_hub.github.io/">
-            <span class="pillar-number">06 · MAKE</span><div><h3>Professional<br>Tools</h3><p>Writing, editing, media, workflow, design, productivity, and sovereign browser-based tools.</p></div><span class="pillar-open">Open ProReSources <span aria-hidden="true">↗</span></span>
-          </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#9a6d43" href="https://vervenveda.github.io/bazaarart.github.io/">
-            <span class="pillar-number">07 · CREATE</span><div><h3>Bazaar Arts</h3><p>Gallery spaces, artist resources, portfolios, exhibitions, visual learning, and creative community.</p></div><span class="pillar-open">Visit Bazaar Art <span aria-hidden="true">↗</span></span>
-          </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#59618d" href="https://vervenveda.github.io/arcade.github.io/">
-            <span class="pillar-number">08 · PLAY</span><div><h3>Arcade</h3><p>Strategy, puzzles, educational games, trivia, imaginative play, and discovery through challenge.</p></div><span class="pillar-open">Enter the Arcade <span aria-hidden="true">↗</span></span>
-          </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#315b6a" href="https://vervenveda.github.io/onenationforall.github.io/">
-            <span class="pillar-number">09 · SERVE</span><div><h3>Civic<br>Resources</h3><p>Civic participation, public resources, environmental stewardship, veterans, and community service.</p></div><span class="pillar-open">Explore Community <span aria-hidden="true">↗</span></span>
-          </a>
-          <article class="pillar-card reveal placeholder" style="--pillar-accent:#6f5b4b" aria-label="Veterans Resource Hub is in development">
-            <span class="pillar-number">10 · ASSISTANCE</span><div><h3>Veterans<br>Resource Hub</h3><p>VA and Florida Veteran resources for crisis support, benefits, health care, housing, education, employment, and local offices.</p><span class="development-note">In development</span></div><span class="pillar-open">Public doorway coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="kicker">Featured Public Destinations</p>
+          <h2>Begin with the heart of the network.</h2>
+          <p class="section-intro">These gateways provide the broadest entry into learning, research, public service, and professional creation.</p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="feature-card">
+            <span class="feature-icon">KA</span>
+            <h3>Khaemenes Academy</h3>
+            <p>An international educational campus connecting Preschool, Kinder Garden, Elementary, Middle, High School, Higher Learning, and Linguistics.</p>
+            <a class="button button-primary" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">Enter the Academy</a>
           </article>
-          <a class="pillar-card reveal" style="--pillar-accent:#52725a" href="https://vervenveda.github.io/river_to_road.github.io/">
-            <span class="pillar-number">11 · STEWARD</span><div><h3>River-to-Road</h3><p>Environmental education, cleanup, weather, local action, restoration, and responsible care for shared places.</p></div><span class="pillar-open">Enter River to Road <span aria-hidden="true">↗</span></span>
-          </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#836e50" href="https://vervenveda.com/JenniferPearl2028.github.io/">
-            <span class="pillar-number">12 · VOTE</span><div><h3>Jennifer Pearl<br>for President 2028</h3><p>Jennifer Kay Pearl • Artist • Mother • Teacher • Community Builder • Environmental Steward
 
-The dreamer who sees possibility where others see obstacles.</p></div><span class="pillar-open">Visit the Campaign <span aria-hidden="true">↗</span></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section spotlight-section" aria-labelledby="spotlightTitle">
-      <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="kicker">Featured and newly connected</p>
-          <h2 id="spotlightTitle">Places worth<br>visiting now</h2>
-          <p class="section-intro">A quiet editorial spotlight for important releases and newly connected parts of the network.</p>
-        </div>
-        <div class="spotlight-grid">
-          <article class="spotlight-primary reveal">
-            <p class="kicker">Featured destination · Music</p>
-            <h3>The Refrain™</h3>
-            <p>A new home for music education, composition, performance, recording, workshops, and creative resources designed with the atmosphere of a refined conservatory.</p>
-            <a class="button" href="https://vervenveda.github.io/the_refrain.github.io/">Enter The Refrain <span aria-hidden="true">↗</span></a>
+          <article class="feature-card">
+            <span class="feature-icon">P</span>
+            <h3>ProResource Hub</h3>
+            <p>Professional tools for writing, editing, research, media, meetings, design, organization, and everyday productivity.</p>
+            <a class="button button-primary" href="https://vervenveda.github.io/proresource_hub.github.io/">Open Professional Tools</a>
           </article>
-          <aside class="spotlight-secondary reveal" aria-label="What's new">
-            <p class="kicker">What’s new</p>
-            <div class="update-list">
-              <div class="update-item"><span class="update-date">New</span><div><strong>The Refrain</strong><span>Music worlds, workshops, composition, performance, and production resources.</span></div></div>
-              <div class="update-item"><span class="update-date">New</span><div><strong>Medicament Hub</strong><span>A dedicated repository for children’s medicine, holistic and traditional medicine, and private movement tracking.</span></div></div>
-              <div class="update-item"><span class="update-date">Building</span><div><strong>OHMIC Foundry</strong><span>A future home for engineering, documentation, open standards, components, and experiments.</span></div></div>
-              <div class="update-item"><span class="update-date">Expanded</span><div><strong>Verve N Veda Directory</strong><span>The complete searchable directory remains available below in its original organized form.</span></div></div>
-            </div>
-          </aside>
+
+          <article class="feature-card">
+            <span class="feature-icon">V</span>
+            <h3>The Verifier</h3>
+            <p>News discovery, evidence, source comparison, research support, editorials, and media-literacy resources.</p>
+            <a class="button button-primary" href="https://vervenveda.github.io/theverifier.github.io/">Open The Verifier</a>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">M</span>
+            <h3>Medicament Hub</h3>
+            <p>A broad public health gateway for medicine, family care, safety, wellness, seniors, insurance, and support resources.</p>
+            <a class="button button-primary" href="https://vervenveda.github.io/medicament-hub.github.io/">Open Health Resources</a>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">A</span>
+            <h3>ARSHIF</h3>
+            <p>A calm archive and cultural hall for literature, philosophy, history, science, world classics, faith, and memory.</p>
+            <a class="button button-primary" href="https://vervenveda.github.io/Arshif.github.io/">Open ARSHIF</a>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">ON</span>
+            <h3>One Nation for All</h3>
+            <p>Civic learning, public participation, constitutional information, service, unity, policy, and community support.</p>
+            <a class="button button-primary" href="https://vervenveda.github.io/onenationforall.github.io/">Open Civic Resources</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="search-intro-section" aria-labelledby="searchIntroTitle">
-      <div class="search-intro-inner reveal">
-        <p class="kicker">Looking for something specific?</p>
-        <h2 id="searchIntroTitle">Search the entire<br>public gateway.</h2>
-        <p>The public directory below can be searched by destination, subject, purpose, or category. Private source repositories and development archives are intentionally not exposed from this page.</p>
-        <button class="search-launch" id="searchLaunch" type="button"><strong>Open directory search</strong><span>Music, school, weather, art, law, veterans… ↓</span></button>
-      </div>
-    </section>
-
-    <section class="section featured-section" id="featured" aria-labelledby="featuredTitle">
+    <section class="section section-alt" id="directory">
       <div class="section-inner">
-        <div class="section-heading reveal">
-          <div>
-            <p class="kicker">Detailed access</p>
-            <h2 id="featuredTitle">Featured<br>gateway groups</h2>
-          </div>
-          <p class="section-intro">Compact, professional gateway buttons provide direct access for visitors who already know which part of the network they need.</p>
+        <div class="section-heading">
+          <p class="kicker">Complete Public Directory</p>
+          <h2>Every landing page, centered in one place.</h2>
+          <p class="section-intro">Search or filter the network. Every card opens a public landing page—never a repository screen.</p>
         </div>
-        <div class="featured-groups" id="featuredGroups"></div>
+
+        <div class="directory-controls">
+          <input class="field" id="search" type="search" placeholder="Search education, art, law, weather, finance, veterans…">
+          <select class="field" id="groupFilter" aria-label="Filter destination group">
+            <option value="all">All Public Halls</option>
+          </select>
+          <button class="control-button" id="randomButton" type="button">Surprise Me ✦</button>
+        </div>
+
+        <p class="directory-status" id="directoryStatus" aria-live="polite"></p>
+        <div class="directory-grid" id="directoryGrid"></div>
       </div>
     </section>
 
-    <section class="section directory-section" id="journey" aria-labelledby="journeyTitle">
+    <section class="section section-dark" id="mission">
+      <div class="section-inner network-statement">
+        <div class="statement-copy">
+          <p class="kicker">The Verve N Veda Promise</p>
+          <h2>A network designed to connect rather than divide.</h2>
+          <p>
+            Each public hall has its own purpose and personality, yet every destination
+            is linked through consistent navigation, respectful design, open access,
+            practical usefulness, and lifelong learning.
+          </p>
+        </div>
+
+        <div class="statement-values">
+          <div class="value"><strong>11 · Clear Doorways</strong></div>
+          <div class="value"><strong>22 · Thoughtful Structure</strong></div>
+          <div class="value"><strong>33 · Shared Purpose</strong></div>
+          <div class="value"><strong>∞ · Room to Grow</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final">
       <div class="section-inner">
-        <div class="section-heading reveal">
-          <div>
-            <p class="kicker">Complete reference directory</p>
-            <h2 id="journeyTitle">Every public doorway,<br>reviewed and organized</h2>
-          </div>
-          <p class="section-intro">Search the public network or filter it by category. Every active doorway comes from one reviewed registry. Projects that are not yet published remain visible as clearly marked development cards without broken links.</p>
-        </div>
-
-        <div class="directory-tools reveal">
-          <label class="search-box" for="directorySearch">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
-            <input id="directorySearch" type="search" placeholder="Search news, school, health, veterans, editing, movies…" autocomplete="off">
-          </label>
-          <p class="result-count" id="resultCount" aria-live="polite"></p>
-        </div>
-
-        <div class="category-strip reveal" id="categoryStrip" aria-label="Filter gateways by category"></div>
-        <div class="directory-groups" id="directoryGroups"></div>
-        <div class="empty-state" id="emptyState">No gateways match that search. Try another word or choose All.</div>
-      </div>
-    </section>
-
-    <section class="section closing-section" aria-labelledby="closingTitle">
-      <div class="section-inner closing-grid">
-        <div class="reveal">
-          <p class="kicker">One network, many doorways</p>
-          <h2 id="closingTitle">Find the right space<br>without the clutter.</h2>
-        </div>
-        <div class="reveal">
-          <p class="closing-copy">Verve N Veda serves as the crisp public front door. Each connected landing page can continue developing its own character while remaining easy to locate from one dependable map.</p>
-          <div class="closing-actions">
-            <a class="button button-primary" href="https://vervenveda.github.io/theverifier.github.io/">Open The Verifier <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="https://vervenveda.github.io/solanar.github.io/">Open Solanar Weather <span aria-hidden="true">↗</span></a>
-          </div>
+        <p class="kicker">Welcome Home</p>
+        <h2>Enter through one doorway. Discover an entire world.</h2>
+        <p>
+          Verve N Veda is built as a public bridge between knowledge, creativity,
+          service, community, and the lifelong practice of becoming.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="#directory">View Every Public Hall</a>
+          <a class="button button-secondary" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">Begin Learning</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p class="footer-brand">Verve N Veda</p>
-      <div class="footer-meta"><span id="ecosystemCount"></span> · Verve N Veda · Khaemenes Academy · Jennifer Kay Pearl · All Rights Reserved 2026</div>
+  <footer>
+    <div class="shell footer-inner">
+      <span><strong>© <span id="year"></span> Verve N Veda · Jennifer Kay Pearl</strong></span>
+      <nav class="footer-links">
+        <a href="#pillars">Halls</a>
+        <a href="#directory">Directory</a>
+        <a href="#mission">Mission</a>
+        <a href="#top">Back to Top</a>
+      </nav>
     </div>
   </footer>
 
-  <div class="drawer-overlay" id="menuDrawer" role="dialog" aria-modal="true" aria-label="Verve N Veda navigation" aria-hidden="true">
-    <aside class="drawer">
-      <div class="drawer-header">
-        <h2 class="drawer-title">Explore the matrix</h2>
-        <button class="close-button" id="closeMenu" type="button" aria-label="Close navigation">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
-        </button>
-      </div>
-      <label class="search-box drawer-search" for="menuSearch">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
-        <input id="menuSearch" type="search" placeholder="Search gateways…" autocomplete="off">
-      </label>
-      <div class="drawer-tabs" id="drawerTabs" aria-label="Navigation categories"></div>
-      <nav class="drawer-nav" id="drawerNav" aria-label="Connected landing pages"></nav>
-      <div class="drawer-footer">The upper-left Verve N Veda mark returns to the public gateway. Private administration is intentionally not exposed here.</div>
-    </aside>
-  </div>
-
-  <noscript><div style="padding:18px;background:#fff4cf;color:#342d18;text-align:center;">JavaScript is required to search and filter the gateway directory. The primary destination cards above remain available.</div></noscript>
-
   <script>
-  "use strict";
+    (() => {
+      "use strict";
 
-  /* ==============================================================
-     REVIEWED PUBLIC LINK REGISTRY
-     - Public website destinations only
-     - No github.com repository links
-     - Unpublished projects have status:"development" and no URL
-     - Featured groups, the directory, and the drawer share this data
-     ============================================================== */
-  const BASE = "https://vervenveda.github.io/";
-  const STATUS_OPEN = "open";
-  const STATUS_DEVELOPMENT = "development";
+      const SITES = [{"title": "Khaemenes Academy", "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/", "icon": "KA", "group": "Education", "desc": "The central international learning campus from preschool through lifelong education."}, {"title": "Khaemenes Preschool", "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/", "icon": "PS", "group": "Education", "desc": "Colorful early-learning stories, play, life skills, creativity, and discovery."}, {"title": "Khaemenes Kinder Garden", "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/", "icon": "KG", "group": "Education", "desc": "A garden of kindness, curiosity, literacy, numbers, nature, and wonder."}, {"title": "Khaemenes Elementary", "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/", "icon": "E", "group": "Education", "desc": "Kinder Garden through Grade 5 academics, creativity, and family learning."}, {"title": "Khaemenes Middle", "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/", "icon": "M", "group": "Education", "desc": "Grades 6–8 academic foundations, independence, exploration, and preparation."}, {"title": "Khaemenes High", "url": "https://vervenveda.github.io/Khaemenes_High.github.io/", "icon": "HS", "group": "Education", "desc": "Grades 9–12 homerooms, complete courses, portfolios, records, and graduation pathways."}, {"title": "Khaemenes Higher Learning", "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/", "icon": "HL", "group": "Education", "desc": "GED, college access, careers, professional development, and lifelong study."}, {"title": "Khaemenes Linguistics", "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/", "icon": "L", "group": "Education", "desc": "Languages, linguistics, translation, writing systems, and communication."}, {"title": "ARSHIF", "url": "https://vervenveda.github.io/Arshif.github.io/", "icon": "A", "group": "Knowledge", "desc": "Research, literature, history, philosophy, culture, archives, and memory."}, {"title": "The Verifier", "url": "https://vervenveda.github.io/theverifier.github.io/", "icon": "V", "group": "Knowledge", "desc": "News discovery, source comparison, evidence, research, and media literacy."}, {"title": "PLERA Search", "url": "https://vervenveda.github.io/PLERASearch.github.io/", "icon": "◎", "group": "Knowledge", "desc": "A search gateway into trusted public learning and resource destinations."}, {"title": "Solanar", "url": "https://vervenveda.github.io/solanar.github.io/", "icon": "☀", "group": "Knowledge", "desc": "Weather, Earth systems, climate, moon cycles, and environmental observation."}, {"title": "Medicament Hub", "url": "https://vervenveda.github.io/medicament-hub.github.io/", "icon": "⚕", "group": "Public Service", "desc": "Health, medicine, family care, safety, wellness, and worldwide public resources."}, {"title": "Firmament Law", "url": "https://vervenveda.github.io/firmament.github.io/", "icon": "§", "group": "Public Service", "desc": "Legal information, rights, civic literacy, and public-resource halls."}, {"title": "One Nation for All", "url": "https://vervenveda.github.io/onenationforall.github.io/", "icon": "☆", "group": "Public Service", "desc": "Civic learning, policy, government, unity, service, and public participation."}, {"title": "Veterans", "url": "https://vervenveda.github.io/veterans.github.io/", "icon": "★", "group": "Public Service", "desc": "Veteran support, crisis resources, benefits, services, and family assistance."}, {"title": "Finance", "url": "https://vervenveda.github.io/finance.github.io/", "icon": "$", "group": "Public Service", "desc": "Financial literacy, planning, markets, budgeting, and practical public resources."}, {"title": "River to Road", "url": "https://vervenveda.github.io/river_to_road.github.io/", "icon": "≈", "group": "Public Service", "desc": "Environmental stewardship, science, service learning, and community action."}, {"title": "ProResource Hub", "url": "https://vervenveda.github.io/proresource_hub.github.io/", "icon": "P", "group": "Creative & Professional", "desc": "Professional tools for writing, media, research, design, meetings, and productivity."}, {"title": "Bazaar Art", "url": "https://vervenveda.github.io/bazaarart.github.io/", "icon": "✦", "group": "Creative & Professional", "desc": "Art education, artist tools, galleries, creativity, and cultural enterprise."}, {"title": "My Art Gallery", "url": "https://vervenveda.github.io/myartgallery.github.io/", "icon": "▧", "group": "Creative & Professional", "desc": "A portfolio and gallery preserving more than three decades of professional artistry."}, {"title": "The Refrain", "url": "https://vervenveda.github.io/the_refrain.github.io/", "icon": "♫", "group": "Creative & Professional", "desc": "Music education, composition, recording, performance, and creative exploration."}, {"title": "Arcade", "url": "https://vervenveda.github.io/arcade.github.io/", "icon": "◆", "group": "Creative & Professional", "desc": "Games, strategy, puzzles, trivia, practice, and playful discovery."}, {"title": "Aurora", "url": "https://vervenveda.github.io/aurora.github.io/", "icon": "☼", "group": "Wellbeing", "desc": "Rest, reflection, encouragement, organization, wellness, and creative renewal."}];
+      const $ = id => document.getElementById(id);
+      const groups = [...new Set(SITES.map(site => site.group))];
 
-  const destinations = [
-    {id:"verve-n-veda",title:"Verve N Veda",category:"Network Home",url:BASE,description:"The public front door to the complete resource network.",tone:"priority",status:STATUS_OPEN},
-    {id:"aurora-sanctuary",title:"Aurora Sanctuary",category:"Sanctuary",url:BASE+"aurora.github.io/",description:"Rest, reflection, encouragement, wellbeing, and creative renewal.",status:STATUS_OPEN},
-    {id:"the-refrain",title:"The Refrain™",category:"Music & Audio",url:BASE+"the_refrain.github.io/",description:"Music education, composition, performance, recording, workshops, and creative resources for every age.",tone:"priority",status:STATUS_OPEN},
-    {id:"ohmic-foundry",title:"OHMIC Foundry™",category:"Innovation & Development",description:"Engineering, open standards, documentation, components, templates, experiments, and future development resources.",status:STATUS_DEVELOPMENT},
-
-    {id:"academy-home",title:"Khaemenes Academy",category:"Khaemenes Academy",url:BASE+"Khaemenes_Academy.github.io/",description:"The central international learning campus and Academy directory.",status:STATUS_OPEN},
-    {id:"preschool",title:"Khaemenes Preschool",category:"Khaemenes Academy",url:BASE+"Khaemenes_Preschool.github.io/",description:"A colorful early-learning home and Crèche adventure garden.",status:STATUS_OPEN},
-    {id:"kindergarten",title:"Khaemenes Kinder Garden",category:"Khaemenes Academy",url:BASE+"Khaemenes_KinderGarden.github.io/",description:"Kindness, curiosity, early literacy, number sense, nature, and school readiness.",status:STATUS_OPEN},
-    {id:"elementary",title:"Khaemenes Elementary",category:"Khaemenes Academy",description:"Kinder Garden through Grade 5 learning and family resources.",status:STATUS_DEVELOPMENT},
-    {id:"middle-school",title:"Khaemenes Middle",category:"Khaemenes Academy",description:"Grades 6–8 academics, independence, exploration, and preparation.",status:STATUS_DEVELOPMENT},
-    {id:"high-school",title:"Khaemenes High",category:"Khaemenes Academy",url:BASE+"Khaemenes_High.github.io/",description:"Grades 9–12 homerooms, courses, records, and graduation pathways.",status:STATUS_OPEN},
-    {id:"higher-education",title:"Khaemenes Higher Learning",category:"Khaemenes Academy",url:BASE+"Khaemenes_Higher_Learning.github.io/",description:"GED, college, careers, professional development, and lifelong learning.",status:STATUS_OPEN},
-    {id:"linguistics",title:"Khaemenes Linguistics",category:"Khaemenes Academy",description:"Languages, linguistics, writing systems, translation, and communication.",status:STATUS_DEVELOPMENT},
-
-    {id:"the-verifier",title:"The Verifier",category:"News & Weather",url:BASE+"theverifier.github.io/",description:"News discovery, evidence, research, and media literacy.",tone:"priority",status:STATUS_OPEN},
-    {id:"solanar",title:"Solanar",category:"News & Weather",url:BASE+"solanar.github.io/",description:"Weather, Earth systems, moon cycles, climate, and observation.",tone:"navy",status:STATUS_OPEN},
-
-    {id:"one-nation",title:"One Nation For All",category:"Civic & Public Service",url:BASE+"onenationforall.github.io/",description:"Civic learning, public ideas, government, and community solutions.",status:STATUS_OPEN},
-    {id:"jennifer-2028",title:"Jennifer Pearl for President 2028",category:"Civic & Public Service",url:"https://github.com/vervenveda/jenniferpearl2028.github.io",description:"Jennifer Kay Pearl's national leadership, reform, accountability, and public-service platform.",status:STATUS_OPEN},
-    {id:"veterans",title:"Veterans Resource Hub",category:"Civic & Public Service",description:"Veteran resources, crisis support, benefits, and family assistance.",status:STATUS_DEVELOPMENT},
-
-    {id:"arshif",title:"ARSHIF",category:"Research, Health & Law",url:BASE+"Arshif.github.io/",description:"Research, literature, history, culture, classics, and memory.",status:STATUS_OPEN},
-    {id:"medicament-hub",title:"Medicament Hub",category:"Medical Halls",url:BASE+"medicament-hub.github.io/",description:"Health, medicine, wellness, family care, and safety resources.",tone:"priority",status:STATUS_OPEN},
-    {id:"holistic-medicine-hall",title:"Holistic Medicine Hall",category:"Medical Halls",url:BASE+"medicament-hub.github.io/halls/%20Holistic_Medicine_Hall/",description:"Whole-person health study emphasizing wellness, safety, ethics, evidence, and responsible comparison.",status:STATUS_OPEN},
-    {id:"traditional-medicine-hall",title:"Traditional Medicine Hall",category:"Medical Halls",url:BASE+"medicament-hub.github.io/halls/Traditional_Medicine_Hall/",description:"Traditional healing systems studied through cultural context, safety, ethics, and careful source review.",status:STATUS_OPEN},
-    {id:"childrens-medicine-hall",title:"Children’s Medicine Hall",category:"Medical Halls",url:BASE+"medicament-hub.github.io/halls/Childrens_Medicine_Hall/",description:"A safety-first children’s medicine education portal for families and caregivers.",status:STATUS_OPEN},
-    {id:"universal-exercise-log",title:"Universal Exercise Log",category:"Medical Halls",url:BASE+"medicament-hub.github.io/tools/Universal_Exercise_Log_Workout_Tracker_index.html",description:"A private local workout and movement tracker for middle-school, high-school, and adult profiles.",status:STATUS_OPEN},
-
-    {id:"plera-search",title:"PLERA Search",category:"Research, Health & Law",url:BASE+"PLERASearch.github.io/",description:"Search and trusted public-resource pathways.",status:STATUS_OPEN},
-    {id:"finance",title:"Finance",category:"Finance & Practical Life",description:"Financial literacy, planning, markets, and practical public resources.",status:STATUS_DEVELOPMENT},
-    {id:"firmament",title:"Firmament Law",category:"Research, Health & Law",url:BASE+"firmament.github.io/",description:"Legal information, rights, civic literacy, and public resources.",status:STATUS_OPEN},
-
-    {id:"proresources",title:"ProResource Hub",category:"Professional Tools & Media",url:BASE+"proresource_hub.github.io/",description:"Professional writing, design, media, research, and productivity tools.",status:STATUS_OPEN},
-    {id:"prose",title:"PROSE Editing Suite",category:"Professional Tools & Media",url:BASE+"proresource_hub.github.io/Protools/PROSE%E2%84%A2%20editingsuite_index.html",description:"A sovereign editorial suite for drafting, formatting, reviewing, organizing, and exporting written work.",status:STATUS_OPEN},
-    {id:"fleapit",title:"Movies at FleaPit",category:"Professional Tools & Media",url:BASE+"proresource_hub.github.io/Protools/FleaPit%E2%84%A2_media_hub_Index.html",description:"A media hub for finding, collecting, organizing, and exploring movies, video, and public media sources.",status:STATUS_OPEN},
-
-    {id:"my-art-gallery",title:"My Art Gallery",category:"Art, Games & Creativity",description:"A personal space for preserving and presenting artwork.",status:STATUS_DEVELOPMENT},
-    {id:"bazaar-art",title:"Bazaar Art",category:"Art, Games & Creativity",url:BASE+"bazaarart.github.io/",description:"Art tools, classes, galleries, education, and creative resources.",status:STATUS_OPEN},
-    {id:"arcade",title:"Arcade",category:"Art, Games & Creativity",url:BASE+"arcade.github.io/",description:"Games, puzzles, strategy, trivia, and playful learning.",status:STATUS_OPEN},
-    {id:"creative-spark",title:"Creative Spark",category:"Art, Games & Creativity",url:"https://artist1970.github.io/creative-spark.github.io/creative-spark.html",description:"An offline-ready art and idea generator for students, artists, classrooms, makers, and sovereign learners.",tone:"priority",status:STATUS_OPEN},
-
-    {id:"river-to-road",title:"River to Road",category:"Earth & Community",url:BASE+"river_to_road.github.io/",description:"Environmental stewardship, science, service, and community action.",status:STATUS_OPEN}
-  ];
-
-  const categoryDetails = {
-    "Network Home":"The public front door and complete map of the Verve N Veda resource network.",
-    "Sanctuary":"A quiet first doorway for reflection, restoration, and creative renewal.",
-    "Khaemenes Academy":"The Academy landing page and every major learning level kept together in one sequence.",
-    "Music & Audio":"Music education, composition, performance, recording, workshops, and creative resources.",
-    "Innovation & Development":"Engineering, open standards, documentation, design systems, components, and experiments.",
-    "Medical Halls":"Children’s medicine, holistic and traditional health study, movement tracking, safety, evidence, and public wellness resources.",
-    "News & Weather":"Fast access to current information, verification, weather, and environmental observation.",
-    "Finance & Practical Life":"Financial literacy, planning, markets, household resources, and practical public tools.",
-    "Civic & Public Service":"National leadership, civic participation, veterans resources, policy, and public service.",
-    "Research, Health & Law":"Archives, health study, legal information, public research, and evidence-aware discovery.",
-    "Professional Tools & Media":"Professional writing, editing, media, movies, design, workflow, and local browser tools.",
-    "Art, Games & Creativity":"Visual art, artist communities, gallery spaces, games, puzzles, and creative exploration.",
-    "Earth & Community":"Environmental stewardship, local action, cleanup, restoration, and community connection."
-  };
-
-  const categoryOrder = [
-    "Network Home","Sanctuary","Khaemenes Academy","Music & Audio","Innovation & Development",
-    "Medical Halls","News & Weather","Finance & Practical Life","Civic & Public Service",
-    "Research, Health & Law","Professional Tools & Media","Art, Games & Creativity","Earth & Community"
-  ];
-
-  const featuredGroups = [
-    {category:"Khaemenes Academy",className:"academy",title:"Khaemenes Academy Pathways",note:"Academy home, early learning, school levels, and higher education stay together.",ids:["academy-home","preschool","kindergarten","elementary","middle-school","high-school","higher-education","linguistics"]},
-    {category:"News & Weather",className:"news",title:"News & Weather",note:"The Verifier and Solanar are prominent and immediately recognizable.",ids:["the-verifier","solanar"]},
-    {category:"Finance & Practical Life",className:"finance",title:"Finance & Practical Life",note:"Financial literacy, planning, markets, and practical public resources.",ids:["finance"]},
-    {category:"Civic & Public Service",className:"civic",title:"Civic & Public Service",note:"One Nation For All, the presidential platform, and Veterans belong together.",ids:["one-nation","jennifer-2028","veterans"]},
-    {category:"Music & Audio",className:"music",title:"Music & Audio",note:"The Refrain provides a dedicated conservatory-style doorway for music learning and creation.",ids:["the-refrain"]},
-    {category:"Innovation & Development",className:"innovation",title:"Innovation & Development",note:"OHMIC Foundry will gather engineering, design-system, documentation, and experimental work.",ids:["ohmic-foundry"]},
-    {category:"Medical Halls",className:"medical",title:"Medical Halls",note:"The dedicated Medicament repository and its active health tools stay together in one public doorway.",ids:["medicament-hub","childrens-medicine-hall","holistic-medicine-hall","traditional-medicine-hall","universal-exercise-log"]},
-    {category:"Professional Tools & Media",className:"pro",title:"Professional Tools & Media",note:"ProReSources, PROSE, and FleaPit provide a direct professional-work path.",ids:["proresources","prose","fleapit"]},
-    {category:"Art, Games & Creativity",className:"art",title:"Art, Games & Creativity",note:"Bazaar Art, My Art Gallery, Arcade, and Creative Spark connect the creative side of the network.",ids:["bazaar-art","my-art-gallery","arcade","creative-spark"]},
-    {category:"Research, Health & Law",className:"research",title:"Research, Health & Law",note:"ARSHIF, PLERA Search, and Firmament are grouped by purpose.",ids:["arshif","plera-search","firmament"]}
-  ];
-
-  const featuredGroupsNode = document.getElementById("featuredGroups");
-  const directoryGroups = document.getElementById("directoryGroups");
-  const directorySearch = document.getElementById("directorySearch");
-  const searchLaunch = document.getElementById("searchLaunch");
-  const categoryStrip = document.getElementById("categoryStrip");
-  const resultCount = document.getElementById("resultCount");
-  const emptyState = document.getElementById("emptyState");
-  const menuDrawer = document.getElementById("menuDrawer");
-  const menuButton = document.getElementById("menuButton");
-  const closeMenuButton = document.getElementById("closeMenu");
-  const menuSearch = document.getElementById("menuSearch");
-  const drawerTabs = document.getElementById("drawerTabs");
-  const drawerNav = document.getElementById("drawerNav");
-
-  let selectedCategory = "All";
-  let selectedDrawerCategory = "All";
-  let lastFocusedElement = null;
-  let revealObserver;
-
-  const escapeHtml = value => String(value)
-    .replaceAll("&","&amp;")
-    .replaceAll("<","&lt;")
-    .replaceAll(">","&gt;")
-    .replaceAll('"',"&quot;")
-    .replaceAll("'","&#039;");
-
-  const slugify = value => String(value)
-    .toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
-    .replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
-
-  const getById = id => destinations.find(item => item.id === id);
-  const isOpen = item => item.status === STATUS_OPEN && Boolean(item.url);
-  const titleBreaks = Object.freeze({
-    "Khaemenes Academy":["Khaemenes","Academy"],"Khaemenes Preschool":["Khaemenes","Preschool"],
-    "Khaemenes Kinder Garden":["Khaemenes","Kinder Garden"],"Khaemenes Elementary":["Khaemenes","Elementary"],
-    "Khaemenes Middle":["Khaemenes","Middle"],"Khaemenes High":["Khaemenes","High"],
-    "Khaemenes Higher Learning":["Khaemenes","Higher Learning"],"Khaemenes Linguistics":["Khaemenes","Linguistics"],
-    "Jennifer Pearl for President 2028":["Jennifer Pearl","for President 2028"],"Veterans Resource Hub":["Veterans","Resource Hub"],
-    "Universal Exercise Log":["Universal","Exercise Log"],"Holistic Medicine Hall":["Holistic","Medicine Hall"],
-    "Traditional Medicine Hall":["Traditional","Medicine Hall"],"Children’s Medicine Hall":["Children’s","Medicine Hall"],
-    "ProResource Hub":["ProResource","Hub"],"PROSE Editing Suite":["PROSE","Editing Suite"],
-    "Movies at FleaPit":["Movies at","FleaPit"],"My Art Gallery":["My Art","Gallery"],
-    "One Nation For All":["One Nation","For All"],"River to Road":["River","to Road"],"The Refrain™":["The","Refrain™"]
-  });
-
-  function formatTitle(title){
-    return `<span class="link-label">${(titleBreaks[title] || [title]).map(escapeHtml).join("<br>")}</span>`;
-  }
-
-  function filterDestinations(query,category){
-    const normalized = String(query || "").trim().toLowerCase();
-    return destinations.filter(item => {
-      if(category !== "All" && item.category !== category) return false;
-      if(!normalized) return true;
-      return [item.title,item.category,item.description,item.url || "",item.status].join(" ").toLowerCase().includes(normalized);
-    });
-  }
-
-  function groupByCategory(items){
-    return items.reduce((groups,item) => ((groups[item.category] ||= []).push(item),groups),{});
-  }
-
-  function featuredItem(item){
-    if(!isOpen(item)){
-      return `<span class="gateway-link placeholder" role="status" aria-label="${escapeHtml(item.title)} is in development">${formatTitle(item.title)}<span>In development</span></span>`;
-    }
-    const tone = item.tone ? ` ${escapeHtml(item.tone)}` : "";
-    return `<a class="gateway-link${tone}" href="${escapeHtml(item.url)}" aria-label="Open ${escapeHtml(item.title)}">${formatTitle(item.title)}<span aria-hidden="true">↗</span></a>`;
-  }
-
-  function directoryItem(item){
-    if(!isOpen(item)){
-      return `<article class="directory-card placeholder" aria-label="${escapeHtml(item.title)} is in development"><span><strong>${formatTitle(item.title)}</strong><span>${escapeHtml(item.description)}</span></span><span class="card-arrow">In development</span></article>`;
-    }
-    return `<a class="directory-card" href="${escapeHtml(item.url)}" aria-label="Open ${escapeHtml(item.title)}"><span><strong>${formatTitle(item.title)}</strong><span>${escapeHtml(item.description)}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>`;
-  }
-
-  function drawerItem(item){
-    if(!isOpen(item)){
-      return `<div class="nav-placeholder" aria-label="${escapeHtml(item.title)} is in development">${formatTitle(item.title)}<small>In development</small></div>`;
-    }
-    return `<a href="${escapeHtml(item.url)}" aria-label="Open ${escapeHtml(item.title)}">${formatTitle(item.title)}<small>Open</small></a>`;
-  }
-
-  function renderFeatured(){
-    featuredGroupsNode.innerHTML = featuredGroups.map(group => {
-      const groupItems = group.ids.map(getById).filter(Boolean);
-      return `<article class="gateway-group ${escapeHtml(group.className)} reveal"><div class="gateway-head"><div><h3 class="gateway-label">${escapeHtml(group.title)}</h3><p class="gateway-note">${escapeHtml(group.note)}</p></div><button class="category-jump" type="button" data-jump-category="${escapeHtml(group.category)}">View all</button></div><div class="gateway-links">${groupItems.map(featuredItem).join("")}</div></article>`;
-    }).join("");
-  }
-
-  function renderCategoryControls(){
-    const controls = ["All",...categoryOrder];
-    categoryStrip.innerHTML = controls.map(category => `<button class="chip${category === selectedCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
-    drawerTabs.innerHTML = controls.map(category => `<button class="drawer-tab${category === selectedDrawerCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
-  }
-
-  function renderDirectory(items){
-    const grouped = groupByCategory(items);
-    const categories = categoryOrder.filter(category => grouped[category]?.length);
-    directoryGroups.innerHTML = categories.map(category => `<section class="directory-group reveal" id="category-${slugify(category)}" data-category-section="${escapeHtml(category)}"><div class="directory-group-heading"><h3>${escapeHtml(category)}</h3><p>${escapeHtml(categoryDetails[category] || "")}</p></div><div class="directory-grid">${grouped[category].map(directoryItem).join("")}</div></section>`).join("");
-    const openCount = items.filter(isOpen).length;
-    const developmentCount = items.length - openCount;
-    resultCount.textContent = `${openCount} open${developmentCount ? ` · ${developmentCount} in development` : ""}`;
-    emptyState.style.display = items.length ? "none" : "block";
-    observeReveals();
-  }
-
-  function renderDrawer(items){
-    const grouped = groupByCategory(items);
-    const categories = categoryOrder.filter(category => grouped[category]?.length);
-    drawerNav.innerHTML = items.length ? categories.map(category => `<section class="nav-group"><h3 class="nav-heading">${escapeHtml(category)}</h3>${grouped[category].map(drawerItem).join("")}</section>`).join("") : `<p class="empty-state" style="display:block;margin:0;">No gateways match that search.</p>`;
-  }
-
-  function updateDirectory(){renderCategoryControls();renderDirectory(filterDestinations(directorySearch.value,selectedCategory));}
-  function updateDrawer(){renderCategoryControls();renderDrawer(filterDestinations(menuSearch.value,selectedDrawerCategory));}
-
-  function jumpToCategory(category){
-    selectedCategory = category;
-    directorySearch.value = "";
-    updateDirectory();
-    requestAnimationFrame(() => (document.getElementById(`category-${slugify(category)}`) || document.getElementById("journey")).scrollIntoView({behavior:"smooth",block:"start"}));
-  }
-
-  function openMenu(){
-    lastFocusedElement = document.activeElement;
-    menuDrawer.classList.add("open");
-    menuDrawer.setAttribute("aria-hidden","false");
-    menuButton.setAttribute("aria-expanded","true");
-    menuButton.setAttribute("aria-label","Close navigation");
-    document.body.classList.add("menu-open");
-    setTimeout(() => menuSearch.focus(),80);
-  }
-
-  function closeMenu(){
-    menuDrawer.classList.remove("open");
-    menuDrawer.setAttribute("aria-hidden","true");
-    menuButton.setAttribute("aria-expanded","false");
-    menuButton.setAttribute("aria-label","Open navigation");
-    document.body.classList.remove("menu-open");
-    menuSearch.value = "";
-    selectedDrawerCategory = "All";
-    updateDrawer();
-    if(lastFocusedElement && typeof lastFocusedElement.focus === "function") lastFocusedElement.focus();
-  }
-
-  function trapFocus(event){
-    if(event.key !== "Tab" || !menuDrawer.classList.contains("open")) return;
-    const focusable = Array.from(menuDrawer.querySelectorAll('a[href],button:not([disabled]),input:not([disabled])')).filter(element => element.offsetParent !== null);
-    if(!focusable.length) return;
-    const first = focusable[0], last = focusable[focusable.length-1];
-    if(event.shiftKey && document.activeElement === first){event.preventDefault();last.focus();}
-    else if(!event.shiftKey && document.activeElement === last){event.preventDefault();first.focus();}
-  }
-
-  function auditDestinations(){
-    const issues = [];
-    const ids = new Set(), urls = new Set();
-    const allowedHosts = new Set(["vervenveda.github.io","www.jenniferpearl2028.com","jenniferpearl2028.com","artist1970.github.io"]);
-    const blockedWords = /(casino|slots?|sportsbook|gambling|poker|affiliate|jackpot|roulette)/i;
-
-    destinations.forEach(item => {
-      if(!item.id || ids.has(item.id)) issues.push(`Duplicate or missing destination id: ${item.id || "(missing)"}`);
-      ids.add(item.id);
-
-      if(item.status === STATUS_DEVELOPMENT){
-        if(item.url) issues.push(`Development item must not expose a URL: ${item.title}`);
-        return;
+      function escapeHtml(value) {
+        return String(value).replace(/[&<>"']/g, char => ({
+          "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+        }[char]));
       }
 
-      if(!item.url){issues.push(`Open destination is missing a URL: ${item.title}`);return;}
-      try{
-        const parsed = new URL(item.url);
-        if(parsed.protocol !== "https:") issues.push(`Non-HTTPS destination: ${item.title}`);
-        if(parsed.hostname === "github.com" || parsed.hostname.endsWith(".github.com")) issues.push(`Repository link exposed: ${item.title}`);
-        if(!allowedHosts.has(parsed.hostname)) issues.push(`Unreviewed external host: ${item.title} → ${parsed.hostname}`);
-        if(blockedWords.test(`${parsed.hostname}${parsed.pathname}`)) issues.push(`Blocked casino/spam keyword: ${item.title}`);
-      }catch(error){issues.push(`Invalid URL: ${item.title}`);}
-      if(urls.has(item.url)) issues.push(`Duplicate destination URL: ${item.url}`);
-      urls.add(item.url);
-    });
+      function renderDirectory() {
+        const query = $("search").value.trim().toLowerCase();
+        const group = $("groupFilter").value;
 
-    featuredGroups.forEach(group => group.ids.forEach(id => {if(!getById(id)) issues.push(`Featured group references a missing destination: ${id}`);}));
-    if(issues.length) console.warn("Verve N Veda public-link audit found issues:",issues);
-    else console.info(`Verve N Veda public-link audit passed: ${destinations.filter(isOpen).length} open destinations; ${destinations.filter(item => !isOpen(item)).length} development placeholders.`);
-  }
+        const filtered = SITES.filter(site => {
+          const haystack = `${site.title} ${site.group} ${site.desc}`.toLowerCase();
+          return (group === "all" || site.group === group) && (!query || haystack.includes(query));
+        });
 
-  function observeReveals(){
-    const nodes = document.querySelectorAll(".reveal:not(.visible)");
-    if(!("IntersectionObserver" in window)){nodes.forEach(node => node.classList.add("visible"));return;}
-    if(!revealObserver){revealObserver = new IntersectionObserver((entries,observer) => entries.forEach(entry => {if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}}),{threshold:.1});}
-    nodes.forEach(node => revealObserver.observe(node));
-  }
+        $("directoryGrid").innerHTML = filtered.map(site => `
+          <a class="site-card" href="${site.url}">
+            <span class="site-icon">${escapeHtml(site.icon)}</span>
+            <span class="site-group">${escapeHtml(site.group)}</span>
+            <h3>${escapeHtml(site.title)}</h3>
+            <p>${escapeHtml(site.desc)}</p>
+            <small>Open public landing page →</small>
+          </a>
+        `).join("");
 
-  const openCount = destinations.filter(isOpen).length;
-  const developmentCount = destinations.length - openCount;
-  document.getElementById("ecosystemCount").textContent = `${openCount} public gateways · ${developmentCount} in development`;
-  auditDestinations();
-  renderFeatured();
-  updateDirectory();
-  updateDrawer();
-  observeReveals();
+        $("directoryStatus").textContent =
+          `${filtered.length} of ${SITES.length} public destinations shown.`;
+      }
 
-  searchLaunch.addEventListener("click",() => {document.getElementById("journey").scrollIntoView({behavior:"smooth",block:"start"});setTimeout(() => directorySearch.focus(),520);});
-  directorySearch.addEventListener("input",updateDirectory);
-  menuSearch.addEventListener("input",updateDrawer);
-  categoryStrip.addEventListener("click",event => {const button=event.target.closest("button[data-category]");if(button){selectedCategory=button.dataset.category;updateDirectory();}});
-  drawerTabs.addEventListener("click",event => {const button=event.target.closest("button[data-category]");if(button){selectedDrawerCategory=button.dataset.category;updateDrawer();}});
-  featuredGroupsNode.addEventListener("click",event => {const button=event.target.closest("button[data-jump-category]");if(button) jumpToCategory(button.dataset.jumpCategory);});
-  menuButton.addEventListener("click",() => menuDrawer.classList.contains("open") ? closeMenu() : openMenu());
-  closeMenuButton.addEventListener("click",closeMenu);
-  menuDrawer.addEventListener("click",event => {if(event.target === menuDrawer) closeMenu();});
-  drawerNav.addEventListener("click",event => {if(event.target.closest("a")) closeMenu();});
-  document.addEventListener("keydown",event => {if(event.key === "Escape" && menuDrawer.classList.contains("open")) closeMenu();trapFocus(event);});
+      function buildMenu(query = "") {
+        const q = query.trim().toLowerCase();
+        const filtered = SITES.filter(site =>
+          !q || `${site.title} ${site.group} ${site.desc}`.toLowerCase().includes(q)
+        );
+
+        $("menuContent").innerHTML = groups.map(group => {
+          const items = filtered.filter(site => site.group === group);
+          if (!items.length) return "";
+          return `
+            <p class="menu-group">${escapeHtml(group)} · ${items.length}</p>
+            <div class="menu-list">
+              ${items.map(site => `
+                <a class="menu-link" href="${site.url}">
+                  <i>${escapeHtml(site.icon)}</i>
+                  <span><strong>${escapeHtml(site.title)}</strong><small>${escapeHtml(site.desc)}</small></span>
+                  <span>→</span>
+                </a>
+              `).join("")}
+            </div>
+          `;
+        }).join("");
+      }
+
+      $("groupFilter").innerHTML += groups
+        .map(group => `<option value="${escapeHtml(group)}">${escapeHtml(group)}</option>`)
+        .join("");
+
+      document.querySelectorAll("[data-group-link]").forEach(link => {
+        link.addEventListener("click", () => {
+          $("groupFilter").value = link.dataset.groupLink;
+          $("search").value = "";
+          renderDirectory();
+        });
+      });
+
+      $("search").addEventListener("input", renderDirectory);
+      $("groupFilter").addEventListener("change", renderDirectory);
+      $("randomButton").addEventListener("click", () => {
+        const site = SITES[Math.floor(Math.random() * SITES.length)];
+        location.href = site.url;
+      });
+
+      const menuOverlay = $("menuOverlay");
+      $("menuButton").addEventListener("click", () => {
+        menuOverlay.classList.add("open");
+        menuOverlay.setAttribute("aria-hidden","false");
+        $("menuButton").setAttribute("aria-expanded","true");
+        document.body.classList.add("menu-open");
+        buildMenu();
+        setTimeout(() => $("menuSearch").focus(), 80);
+      });
+
+      function closeMenu() {
+        menuOverlay.classList.remove("open");
+        menuOverlay.setAttribute("aria-hidden","true");
+        $("menuButton").setAttribute("aria-expanded","false");
+        document.body.classList.remove("menu-open");
+      }
+
+      $("closeMenu").addEventListener("click", closeMenu);
+      menuOverlay.addEventListener("click", event => {
+        if (event.target === menuOverlay) closeMenu();
+      });
+      $("menuSearch").addEventListener("input", event => buildMenu(event.target.value));
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") closeMenu();
+      });
+
+      $("year").textContent = new Date().getFullYear();
+      renderDirectory();
+      buildMenu();
+    })();
   </script>
 </body>
 </html>
