@@ -6,11 +6,14 @@
   <meta name="description" content="Verve N Veda — the public gateway to learning, research, news, weather, civic resources, professional tools, art, and community projects.">
   <meta name="theme-color" content="#f4f0e7">
   <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
   <title>Verve N Veda | Public Gateway</title>
   <link rel="canonical" href="https://vervenveda.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Verve N Veda | Public Gateway">
-  <meta property="og:description" content="A connected digital campus for learning, research, news, weather, civic resources, professional tools, art, health, music, and community projects.">
+  <meta property="og:description" content="A reviewed public digital campus for learning, research, news, weather, civic resources, professional tools, art, health, music, and community projects.">
   <meta property="og:url" content="https://vervenveda.com/">
   <meta name="twitter:card" content="summary">
 
@@ -106,7 +109,7 @@
     .brand-mark{
       width:33px;
       height:24px;
-      flex:0 0 44px;
+      flex:0 0 33px;
       display:grid;
       place-items:center;
       color:#fff;
@@ -848,44 +851,44 @@
       line-height:1.5;
     }
 
-    .admin-overlay{
-      position:fixed;
-      inset:0;
-      z-index:2200;
+    .development-note{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:7px;
+      margin-top:10px;
+      padding:5px 9px;
+      color:var(--ink-soft);
+      background:rgba(255,255,255,.55);
+      border:1px solid var(--line);
+      border-radius:999px;
+      font-size:.64rem;
+      font-weight:600;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .pillar-card.placeholder{
+      cursor:default;
+      color:var(--ink-soft);
+      background:rgba(255,255,255,.42);
+      border-style:dashed;
+      box-shadow:none;
+    }
+    .pillar-card.placeholder:hover{transform:none;border-color:var(--line-strong);box-shadow:none}
+    .gateway-link.placeholder,.directory-card.placeholder{user-select:none}
+    .directory-card.placeholder .card-arrow{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
+    .nav-placeholder{
       display:grid;
-      place-items:center;
-      padding:18px;
-      visibility:hidden;
-      opacity:0;
-      background:rgba(8,12,10,.62);
-      backdrop-filter:blur(7px);
-      transition:opacity .18s ease,visibility .18s ease;
+      justify-items:center;
+      gap:5px;
+      padding:13px 6px;
+      color:var(--ink-soft);
+      text-align:center;
+      border-bottom:1px solid rgba(18,23,19,.08);
+      font-size:1rem;
+      line-height:1.35;
     }
-    .admin-overlay.open{visibility:visible;opacity:1}
-    .admin-dialog{
-      width:min(100%,470px);
-      max-height:min(90vh,680px);
-      overflow:auto;
-      padding:26px;
-      color:var(--ink);
-      background:var(--paper-bright);
-      border:1px solid var(--line-strong);
-      box-shadow:0 28px 90px rgba(0,0,0,.28);
-    }
-    .admin-dialog-head{display:flex;align-items:start;justify-content:space-between;gap:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
-    .admin-dialog h2{margin:8px 0 0;font-family:var(--display);font-size:2.25rem;line-height:1;font-weight:600}
-    .admin-dialog-copy{margin:18px 0;color:var(--ink-soft);font-size:.9rem}
-    .admin-form{display:grid;gap:14px}
-    .admin-field{display:grid;gap:7px}
-    .admin-field span{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-    .admin-field input{width:100%;min-height:50px;padding:12px 14px;color:var(--ink);background:#fff;border:1px solid var(--line-strong);border-radius:3px;outline:none;letter-spacing:.28em}
-    .admin-field input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(180,139,69,.13)}
-    .admin-form-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
-    .admin-form-actions .button{cursor:pointer}
-    .admin-message{min-height:1.5em;margin:2px 0 0;color:#8a2f2f;font-size:.82rem}
-    .admin-message.success{color:#2f654c}
-    .admin-security-note{margin:18px 0 0;padding-top:14px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:.72rem}
-    .admin-change-panel[hidden],.admin-login-panel[hidden]{display:none}
+    .nav-placeholder small{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase}
 
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .58s ease,transform .58s ease}
     .reveal.visible{opacity:1;transform:none}
@@ -959,13 +962,13 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <button class="admin-brand" id="adminTrigger" type="button" aria-haspopup="dialog" aria-controls="adminGate" aria-label="Open the password-protected Verve N Veda administration gateway" title="Administration">
+      <a class="admin-brand" href="#main" aria-label="Return to the top of the Verve N Veda public gateway">
         <span class="brand-mark" aria-hidden="true">VNV</span>
         <span class="brand-copy">
           <span class="brand-name">Verve N Veda</span>
-          <span class="brand-admin">Protected administration gateway</span>
+          <span class="brand-admin">Public gateway</span>
         </span>
-      </button>
+      </a>
 
       <div class="header-actions">
         <a class="header-link" href="#pillars">Explore the campus</a>
@@ -1023,7 +1026,7 @@
             <span class="pillar-number">04 · DISCOVER</span><div><h3>Arshif Archives</h3><p>Research, history, science, language, law, evidence, and deeper paths into human knowledge.</p></div><span class="pillar-open">Explore ARSHIF <span aria-hidden="true">↗</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#8a554f" href="https://vervenveda.github.io/medicament-hub.github.io/">
-            <span class="pillar-number">05 · CARE</span><div><h3>Health, Medicine<br>&amp; Nutrition</h3><p>Children’s medicine, holistic and traditional medicine, movement tracking, safety, evidence, and public wellness learning.</p></div><span class="pillar-open">Explore Medical Halls <span aria-hidden="true">↓</span></span>
+            <span class="pillar-number">05 · CARE</span><div><h3>Health, Medicine<br>&amp; Nutrition</h3><p>Children’s medicine, holistic and traditional medicine, movement tracking, safety, evidence, and public wellness learning.</p></div><span class="pillar-open">Explore Medical Halls <span aria-hidden="true">↗</span></span>
           </a>
           <a class="pillar-card reveal" style="--pillar-accent:#243f63" href="https://vervenveda.github.io/proresource_hub.github.io/">
             <span class="pillar-number">06 · MAKE</span><div><h3>Professional<br>Tools</h3><p>Writing, editing, media, workflow, design, productivity, and sovereign browser-based tools.</p></div><span class="pillar-open">Open ProReSources <span aria-hidden="true">↗</span></span>
@@ -1037,16 +1040,16 @@
           <a class="pillar-card reveal" style="--pillar-accent:#315b6a" href="https://vervenveda.github.io/onenationforall.github.io/">
             <span class="pillar-number">09 · SERVE</span><div><h3>Civic<br>Resources</h3><p>Civic participation, public resources, environmental stewardship, veterans, and community service.</p></div><span class="pillar-open">Explore Community <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#6f5b4b" href="https://vervenveda.github.io/veterans.github.io/">
-            <span class="pillar-number">10 · ASSISTANCE</span><div><h3>Veterans<br>Resource Hub</h3><p>VA and Florida Veteran resources for crisis support, benefits, health care, housing, education, employment, and local offices.</p></div><span class="pillar-open">Open Veterans Resources <span aria-hidden="true">↗</span></span>
-          </a>
+          <article class="pillar-card reveal placeholder" style="--pillar-accent:#6f5b4b" aria-label="Veterans Resource Hub is in development">
+            <span class="pillar-number">10 · ASSISTANCE</span><div><h3>Veterans<br>Resource Hub</h3><p>VA and Florida Veteran resources for crisis support, benefits, health care, housing, education, employment, and local offices.</p><span class="development-note">In development</span></div><span class="pillar-open">Public doorway coming soon</span>
+          </article>
           <a class="pillar-card reveal" style="--pillar-accent:#52725a" href="https://vervenveda.github.io/river_to_road.github.io/">
             <span class="pillar-number">11 · STEWARD</span><div><h3>River-to-Road</h3><p>Environmental education, cleanup, weather, local action, restoration, and responsible care for shared places.</p></div><span class="pillar-open">Enter River to Road <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="pillar-card reveal" style="--pillar-accent:#836e50" href="https://vervenveda.com/JenniferPearl2028.github.io/">
+          <a class="pillar-card reveal" style="--pillar-accent:#836e50" href="https://www.jenniferpearl2028.com">
             <span class="pillar-number">12 · VOTE</span><div><h3>Jennifer Pearl<br>for President 2028</h3><p>Jennifer Kay Pearl • Artist • Mother • Teacher • Community Builder • Environmental Steward
 
-The dreamer who sees possibility where others see obstacles.</p></div><span class="pillar-open">Visit the Campaign <span aria-hidden="true">↓</span></span>
+The dreamer who sees possibility where others see obstacles.</p></div><span class="pillar-open">Visit the Campaign <span aria-hidden="true">↗</span></span>
           </a>
         </div>
       </div>
@@ -1083,7 +1086,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       <div class="search-intro-inner reveal">
         <p class="kicker">Looking for something specific?</p>
         <h2 id="searchIntroTitle">Search the entire<br>public gateway.</h2>
-        <p>The full directory below can be searched by destination, subject, purpose, or category. Nothing has been removed—only moved into a calmer, more deliberate place.</p>
+        <p>The public directory below can be searched by destination, subject, purpose, or category. Private source repositories and development archives are intentionally not exposed from this page.</p>
         <button class="search-launch" id="searchLaunch" type="button"><strong>Open directory search</strong><span>Music, school, weather, art, law, veterans… ↓</span></button>
       </div>
     </section>
@@ -1106,9 +1109,9 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
         <div class="section-heading reveal">
           <div>
             <p class="kicker">Complete reference directory</p>
-            <h2 id="journeyTitle">Every public landing page,<br>organized</h2>
+            <h2 id="journeyTitle">Every public doorway,<br>reviewed and organized</h2>
           </div>
-          <p class="section-intro">Search the public network or filter it by category. The directory, featured gateways, and dropdown menu all use the same central link registry so the navigation stays consistent—including the newly separated Medicament medical repository.</p>
+          <p class="section-intro">Search the public network or filter it by category. Every active doorway comes from one reviewed registry. Projects that are not yet published remain visible as clearly marked development cards without broken links.</p>
         </div>
 
         <div class="directory-tools reveal">
@@ -1163,542 +1166,104 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
       </label>
       <div class="drawer-tabs" id="drawerTabs" aria-label="Navigation categories"></div>
       <nav class="drawer-nav" id="drawerNav" aria-label="Connected landing pages"></nav>
-      <div class="drawer-footer">The upper-left Verve N Veda mark opens the protected Administration gateway.</div>
+      <div class="drawer-footer">The upper-left Verve N Veda mark returns to the public gateway. Private administration is intentionally not exposed here.</div>
     </aside>
   </div>
 
-  <div class="admin-overlay" id="adminGate" role="dialog" aria-modal="true" aria-labelledby="adminGateTitle" aria-hidden="true">
-    <section class="admin-dialog">
-      <div class="admin-dialog-head">
-        <div>
-          <p class="kicker">Protected gateway</p>
-          <h2 id="adminGateTitle">Administration</h2>
-        </div>
-        <button class="close-button" id="closeAdminGate" type="button" aria-label="Close administration gateway">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
-        </button>
-      </div>
-
-      <div class="admin-login-panel" id="adminLoginPanel">
-        <p class="admin-dialog-copy">Enter the five-digit administration passcode.</p>
-        <form class="admin-form" id="adminLoginForm" novalidate>
-          <label class="admin-field">
-            <span>Administration passcode</span>
-            <input id="adminPasscode" type="password" inputmode="numeric" autocomplete="current-password" pattern="[0-9]{5}" maxlength="5" placeholder="•••••" required>
-          </label>
-          <p class="admin-message" id="adminLoginMessage" role="status" aria-live="polite"></p>
-          <div class="admin-form-actions">
-            <button class="button button-primary" type="submit">Open Administration <span aria-hidden="true">↗</span></button>
-            <button class="button button-secondary" id="showChangePasscode" type="button">Change Passcode</button>
-          </div>
-        </form>
-      </div>
-
-      <div class="admin-change-panel" id="adminChangePanel" hidden>
-        <p class="admin-dialog-copy">Confirm the current passcode, then choose a new five-digit passcode.</p>
-        <form class="admin-form" id="adminChangeForm" novalidate>
-          <label class="admin-field">
-            <span>Current passcode</span>
-            <input id="currentPasscode" type="password" inputmode="numeric" autocomplete="current-password" pattern="[0-9]{5}" maxlength="5" placeholder="•••••" required>
-          </label>
-          <label class="admin-field">
-            <span>New passcode</span>
-            <input id="newPasscode" type="password" inputmode="numeric" autocomplete="new-password" pattern="[0-9]{5}" maxlength="5" placeholder="•••••" required>
-          </label>
-          <label class="admin-field">
-            <span>Confirm new passcode</span>
-            <input id="confirmPasscode" type="password" inputmode="numeric" autocomplete="new-password" pattern="[0-9]{5}" maxlength="5" placeholder="•••••" required>
-          </label>
-          <p class="admin-message" id="adminChangeMessage" role="status" aria-live="polite"></p>
-          <div class="admin-form-actions">
-            <button class="button button-primary" type="submit">Save New Passcode</button>
-            <button class="button button-secondary" id="cancelChangePasscode" type="button">Return to Sign In</button>
-          </div>
-        </form>
-      </div>
-
-      <p class="admin-security-note">This is a local browser gate intended to provide structured casual access.</p>
-    </section>
-  </div>
-
-  <noscript><div style="padding:18px;background:#fff4cf;color:#342d18;text-align:center;"></div></noscript>
+  <noscript><div style="padding:18px;background:#fff4cf;color:#342d18;text-align:center;">JavaScript is required to search and filter the gateway directory. The primary destination cards above remain available.</div></noscript>
 
   <script>
   "use strict";
 
   /* ==============================================================
-     CENTRAL LINK REGISTRY
-     Update a URL here once. Featured groups, the directory, and the
-     dropdown menu will all update together.
+     REVIEWED PUBLIC LINK REGISTRY
+     - Public website destinations only
+     - No github.com repository links
+     - Unpublished projects have status:"development" and no URL
+     - Featured groups, the directory, and the drawer share this data
      ============================================================== */
   const BASE = "https://vervenveda.github.io/";
-  const academy_urls = Object.freeze({
-    preschool:BASE + "Khaemenes_Preschool.github.io/",
-    kindergarten:BASE + "Khaemenes_KinderGarden.github.io/",
-    elementary:BASE + "Khaemenes_Elementary.github.io/",
-    middle:BASE + "Khaemenes_Middle.github.io/",
-    high:BASE + "Khaemenes_High.github.io/",
-    higher:BASE + "Khaemenes_Higher_Learning.github.io/",
-    linguistics:BASE + "Khaemenes_Linguistics.github.io/",
-    academy:BASE + "Khaemenes_Academy.github.io/"
-  });
+  const STATUS_OPEN = "open";
+  const STATUS_DEVELOPMENT = "development";
 
   const destinations = [
-    {
-      id:"verve-n-veda",
-      title:"Verve N Veda",
-      category:"Network Home",
-      url:BASE,
-      description:"The public front door to the complete resource network.",
-      tone:"priority"
-    },
+    {id:"verve-n-veda",title:"Verve N Veda",category:"Network Home",url:BASE,description:"The public front door to the complete resource network.",tone:"priority",status:STATUS_OPEN},
+    {id:"aurora-sanctuary",title:"Aurora Sanctuary",category:"Sanctuary",url:BASE+"aurora.github.io/",description:"Rest, reflection, encouragement, wellbeing, and creative renewal.",status:STATUS_OPEN},
+    {id:"the-refrain",title:"The Refrain™",category:"Music & Audio",url:BASE+"the_refrain.github.io/",description:"Music education, composition, performance, recording, workshops, and creative resources for every age.",tone:"priority",status:STATUS_OPEN},
+    {id:"ohmic-foundry",title:"OHMIC Foundry™",category:"Innovation & Development",description:"Engineering, open standards, documentation, components, templates, experiments, and future development resources.",status:STATUS_DEVELOPMENT},
 
-    {
-      id:"aurora-sanctuary",
-      title:"Aurora Sanctuary",
-      category:"Sanctuary",
-      url:BASE + "aurora.github.io/",
-      description:"Rest, reflection, encouragement, wellbeing, and creative renewal."
-    },
+    {id:"academy-home",title:"Khaemenes Academy",category:"Khaemenes Academy",url:BASE+"Khaemenes_Academy.github.io/",description:"The central international learning campus and Academy directory.",status:STATUS_OPEN},
+    {id:"preschool",title:"Khaemenes Preschool",category:"Khaemenes Academy",url:BASE+"Khaemenes_Preschool.github.io/",description:"A colorful early-learning home and Crèche adventure garden.",status:STATUS_OPEN},
+    {id:"kindergarten",title:"Khaemenes Kinder Garden",category:"Khaemenes Academy",url:BASE+"Khaemenes_KinderGarden.github.io/",description:"Kindness, curiosity, early literacy, number sense, nature, and school readiness.",status:STATUS_OPEN},
+    {id:"elementary",title:"Khaemenes Elementary",category:"Khaemenes Academy",description:"Kinder Garden through Grade 5 learning and family resources.",status:STATUS_DEVELOPMENT},
+    {id:"middle-school",title:"Khaemenes Middle",category:"Khaemenes Academy",description:"Grades 6–8 academics, independence, exploration, and preparation.",status:STATUS_DEVELOPMENT},
+    {id:"high-school",title:"Khaemenes High",category:"Khaemenes Academy",url:BASE+"Khaemenes_High.github.io/",description:"Grades 9–12 homerooms, courses, records, and graduation pathways.",status:STATUS_OPEN},
+    {id:"higher-education",title:"Khaemenes Higher Learning",category:"Khaemenes Academy",url:BASE+"Khaemenes_Higher_Learning.github.io/",description:"GED, college, careers, professional development, and lifelong learning.",status:STATUS_OPEN},
+    {id:"linguistics",title:"Khaemenes Linguistics",category:"Khaemenes Academy",description:"Languages, linguistics, writing systems, translation, and communication.",status:STATUS_DEVELOPMENT},
 
-    {
-      id:"the-refrain",
-      title:"The Refrain™",
-      category:"Music & Audio",
-      url:BASE + "the_refrain.github.io/",
-      description:"Music education, composition, performance, recording, workshops, and creative resources for every age.",
-      tone:"priority"
-    },
-    {
-      id:"ohmic-foundry",
-      title:"OHMIC Foundry™",
-      category:"Innovation & Development",
-      url:"https://github.com/artist1970/Ohmic_Foundry_github.io",
-      description:"Engineering, open standards, documentation, components, templates, experiments, and future development resources from the earlier OHMIC Foundry repository."
-    },
+    {id:"the-verifier",title:"The Verifier",category:"News & Weather",url:BASE+"theverifier.github.io/",description:"News discovery, evidence, research, and media literacy.",tone:"priority",status:STATUS_OPEN},
+    {id:"solanar",title:"Solanar",category:"News & Weather",url:BASE+"solanar.github.io/",description:"Weather, Earth systems, moon cycles, climate, and observation.",tone:"navy",status:STATUS_OPEN},
 
-    {
-      id:"academy-home",
-      title:"Khaemenes Academy",
-      category:"Khaemenes Academy",
-      url:academy_urls.academy,
-      description:"The central international learning campus and Academy directory."
-    },
-    {
-      id:"preschool",
-      title:"Khaemenes Preschool",
-      category:"Khaemenes Academy",
-      url:academy_urls.preschool,
-      description:"This colorful early-learning home and Crèche adventure garden."
-    },
-    {
-      id:"kindergarten",
-      title:"Khaemenes Kinder Garden",
-      category:"Khaemenes Academy",
-      url:academy_urls.kindergarten,
-      description:"Kindness, curiosity, early literacy, number sense, nature, and school readiness."
-    },
-    {
-      id:"elementary",
-      title:"Khaemenes Elementary",
-      category:"Khaemenes Academy",
-      url:academy_urls.elementary,
-      description:"Kinder Garden through Grade 5 learning and family resources."
-    },
-    {
-      id:"middle-school",
-      title:"Khaemenes Middle",
-      category:"Khaemenes Academy",
-      url:academy_urls.middle,
-      description:"Grades 6–8 academics, independence, exploration, and preparation."
-    },
-    {
-      id:"high-school",
-      title:"Khaemenes High",
-      category:"Khaemenes Academy",
-      url:academy_urls.high,
-      description:"Grades 9–12 homerooms, courses, records, and graduation pathways."
-    },
-    {
-      id:"higher-education",
-      title:"Khaemenes Higher Learning",
-      category:"Khaemenes Academy",
-      url:academy_urls.higher,
-      description:"GED, college, careers, professional development, and lifelong learning."
-    },
+    {id:"one-nation",title:"One Nation For All",category:"Civic & Public Service",url:BASE+"onenationforall.github.io/",description:"Civic learning, public ideas, government, and community solutions.",status:STATUS_OPEN},
+    {id:"jennifer-2028",title:"Jennifer Pearl for President 2028",category:"Civic & Public Service",url:"https://www.jenniferpearl2028.com",description:"Jennifer Kay Pearl's national leadership, reform, accountability, and public-service platform.",status:STATUS_OPEN},
+    {id:"veterans",title:"Veterans Resource Hub",category:"Civic & Public Service",description:"Veteran resources, crisis support, benefits, and family assistance.",status:STATUS_DEVELOPMENT},
 
-    {
-      id:"the-verifier",
-      title:"The Verifier",
-      category:"News & Weather",
-      url:BASE + "theverifier.github.io/",
-      description:"News discovery, evidence, research, and media literacy.",
-      tone:"priority"
-    },
-    {
-      id:"solanar",
-      title:"Solanar",
-      category:"News & Weather",
-      url:BASE + "solanar.github.io/",
-      description:"Weather, Earth systems, moon cycles, climate, and observation.",
-      tone:"navy"
-    },
+    {id:"arshif",title:"ARSHIF",category:"Research, Health & Law",url:BASE+"Arshif.github.io/",description:"Research, literature, history, culture, classics, and memory.",status:STATUS_OPEN},
+    {id:"medicament-hub",title:"Medicament Hub",category:"Medical Halls",url:BASE+"medicament-hub.github.io/",description:"Health, medicine, wellness, family care, and safety resources.",tone:"priority",status:STATUS_OPEN},
+    {id:"holistic-medicine-hall",title:"Holistic Medicine Hall",category:"Medical Halls",url:BASE+"medicament-hub.github.io/halls/%20Holistic_Medicine_Hall/",description:"Whole-person health study emphasizing wellness, safety, ethics, evidence, and responsible comparison.",status:STATUS_OPEN},
+    {id:"traditional-medicine-hall",title:"Traditional Medicine Hall",category:"Medical Halls",url:BASE+"medicament-hub.github.io/halls/Traditional_Medicine_Hall/",description:"Traditional healing systems studied through cultural context, safety, ethics, and careful source review.",status:STATUS_OPEN},
+    {id:"childrens-medicine-hall",title:"Children’s Medicine Hall",category:"Medical Halls",url:BASE+"medicament-hub.github.io/halls/Childrens_Medicine_Hall/",description:"A safety-first children’s medicine education portal for families and caregivers.",status:STATUS_OPEN},
+    {id:"universal-exercise-log",title:"Universal Exercise Log",category:"Medical Halls",url:BASE+"medicament-hub.github.io/tools/Universal_Exercise_Log_Workout_Tracker_index.html",description:"A private local workout and movement tracker for middle-school, high-school, and adult profiles.",status:STATUS_OPEN},
 
-    {
-      id:"one-nation",
-      title:"One Nation For All",
-      category:"Civic & Public Service",
-      url:BASE + "onenationforall.github.io/",
-      description:"Civic learning, public ideas, government, and community solutions."
-    },
-    {
-      id:"jennifer-2028",
-      title:"Jennifer Pearl for President 2028",
-      category:"Civic & Public Service",
-      url:"https://www.jenniferpearl2028.com",
-      description:"Jennifer Kay Pearl's national leadership, reform, accountability, and public-service platform."
-    },
-    {
-      id:"veterans",
-      title:"Veterans",
-      category:"Civic & Public Service",
-      url:BASE + "veterans.github.io/",
-      description:"Veteran resources, crisis support, benefits, and family assistance."
-    },
+    {id:"plera-search",title:"PLERA Search",category:"Research, Health & Law",url:BASE+"PLERASearch.github.io/",description:"Search and trusted public-resource pathways.",status:STATUS_OPEN},
+    {id:"finance",title:"Finance",category:"Finance & Practical Life",description:"Financial literacy, planning, markets, and practical public resources.",status:STATUS_DEVELOPMENT},
+    {id:"firmament",title:"Firmament Law",category:"Research, Health & Law",url:BASE+"firmament.github.io/",description:"Legal information, rights, civic literacy, and public resources.",status:STATUS_OPEN},
 
-    {
-      id:"arshif",
-      title:"ARSHIF",
-      category:"Research, Health & Law",
-      url:BASE + "Arshif.github.io/",
-      description:"Research, literature, history, culture, classics, and memory."
-    },
-    {
-      id:"medicament-hub",
-      title:"Medicament Hub",
-      category:"Medical Halls",
-      url:BASE + "medicament-hub.github.io/",
-      description:"Health, medicine, wellness, family care, and safety resources.",
-      tone:"priority"
-    },
-    {
-      id:"holistic-medicine-hall",
-      title:"Holistic Medicine Hall",
-      category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/%20Holistic_Medicine_Hall/",
-      description:"A whole-person health course portal emphasizing wellness, safety, ethics, evidence, and responsible comparison."
-    },
-    {
-      id:"traditional-medicine-hall",
-      title:"Traditional Medicine Hall",
-      category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/Traditional_Medicine_Hall/",
-      description:"Traditional healing systems studied through cultural context, historical evidence, safety, ethics, and careful source review."
-    },
-    {
-      id:"childrens-medicine-hall",
-      title:"Children’s Medicine Hall",
-      category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/halls/Childrens_Medicine_Hall/",
-      description:"A safety-first children’s medicine education portal for families, symptom literacy, medicine awareness, and caregiver records."
-    },
-    {
-      id:"universal-exercise-log",
-      title:"Universal Exercise Log",
-      category:"Medical Halls",
-      url:"https://vervenveda.github.io/medicament-hub.github.io/tools/Universal_Exercise_Log_Workout_Tracker_index.html",
-      description:"A private local workout and movement tracker for middle-school, high-school, and adult profiles."
-    },
+    {id:"proresources",title:"ProResource Hub",category:"Professional Tools & Media",url:BASE+"proresource_hub.github.io/",description:"Professional writing, design, media, research, and productivity tools.",status:STATUS_OPEN},
+    {id:"prose",title:"PROSE Editing Suite",category:"Professional Tools & Media",url:BASE+"proresource_hub.github.io/Protools/PROSE%E2%84%A2%20editingsuite_index.html",description:"A sovereign editorial suite for drafting, formatting, reviewing, organizing, and exporting written work.",status:STATUS_OPEN},
+    {id:"fleapit",title:"Movies at FleaPit",category:"Professional Tools & Media",url:BASE+"proresource_hub.github.io/Protools/FleaPit%E2%84%A2_media_hub_Index.html",description:"A media hub for finding, collecting, organizing, and exploring movies, video, and public media sources.",status:STATUS_OPEN},
 
-    {
-      id:"plera-search",
-      title:"PLERA Search",
-      category:"Research, Health & Law",
-      url:BASE + "PLERASearch.github.io/",
-      description:"Search and trusted public-resource pathways."
-    },
-    {
-      id:"finance",
-      title:"Finance",
-      category:"Finance & Practical Life",
-      url:BASE + "finance.github.io/",
-      description:"Financial literacy, planning, markets, and practical public resources."
-    },
+    {id:"my-art-gallery",title:"My Art Gallery",category:"Art, Games & Creativity",description:"A personal space for preserving and presenting artwork.",status:STATUS_DEVELOPMENT},
+    {id:"bazaar-art",title:"Bazaar Art",category:"Art, Games & Creativity",url:BASE+"bazaarart.github.io/",description:"Art tools, classes, galleries, education, and creative resources.",status:STATUS_OPEN},
+    {id:"arcade",title:"Arcade",category:"Art, Games & Creativity",url:BASE+"arcade.github.io/",description:"Games, puzzles, strategy, trivia, and playful learning.",status:STATUS_OPEN},
+    {id:"creative-spark",title:"Creative Spark",category:"Art, Games & Creativity",url:"https://artist1970.github.io/creative-spark.github.io/creative-spark.html",description:"An offline-ready art and idea generator for students, artists, classrooms, makers, and sovereign learners.",tone:"priority",status:STATUS_OPEN},
 
-    {
-      id:"firmament",
-      title:"Firmament Law",
-      category:"Research, Health & Law",
-      url:BASE + "firmament.github.io/",
-      description:"Legal information, rights, civic literacy, and public resources."
-    },
-    {
-      id:"linguistics",
-      title:"Khaemenes Linguistics",
-      category:"Khaemenes Academy",
-      url:academy_urls.linguistics,
-      description:"Languages, linguistics, writing systems, translation, and communication."
-    },
-
-    {
-      id:"proresources",
-      title:"ProResource Hub",
-      category:"Professional Tools & Media",
-      url:BASE + "proresource_hub.github.io/",
-      description:"Professional writing, design, media, research, and productivity tools."
-    },
-    {
-      id:"prose",
-      title:"PROSE Editing Suite",
-      category:"Professional Tools & Media",
-      url:"https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE%E2%84%A2%20editingsuite_index.html",
-      description:"A sovereign editorial suite for drafting, formatting, reviewing, organizing, and exporting written work."
-    },
-    {
-      id:"fleapit",
-      title:"Movies at FleaPit",
-      category:"Professional Tools & Media",
-      url:"https://vervenveda.github.io/proresource_hub.github.io/Protools/FleaPit%E2%84%A2_media_hub_Index.html",
-      description:"A media hub for finding, collecting, organizing, and exploring movies, video, and public media sources."
-    },
-
-    {
-      id:"my-art-gallery",
-      title:"My Art Gallery",
-      category:"Art, Games & Creativity",
-      url:BASE + "myartgallery.github.io/",
-      description:"A personal space for preserving and presenting artwork."
-    },
-    {
-      id:"bazaar-art",
-      title:"Bazaar Art",
-      category:"Art, Games & Creativity",
-      url:BASE + "bazaarart.github.io/",
-      description:"Art tools, classes, galleries, education, and creative resources."
-    },
-    {
-      id:"arcade",
-      title:"Arcade",
-      category:"Art, Games & Creativity",
-      url:BASE + "arcade.github.io/",
-      description:"Games, puzzles, strategy, trivia, and playful learning."
-    },
-
-    {
-      id:"creative-spark",
-      title:"Creative Spark",
-      category:"Art, Games & Creativity",
-      url:"https://artist1970.github.io/creative-spark.github.io/creative-spark.html",
-      description:"An offline-ready art and idea generator for students, artists, classrooms, makers, and sovereign learners.",
-      tone:"priority"
-    },
-    {
-      id:"bazaar-art-live-legacy",
-      title:"Bazaar Art Live Legacy",
-      category:"Art, Games & Creativity",
-      url:"https://github.com/artist1970/Bazaar-Art-Live.github.io",
-      description:"An earlier Bazaar Art Live repository that may contain reusable social, gallery, or creative-community material."
-    },
-    {
-      id:"cosmic-math-mission",
-      title:"Cosmic Math Mission",
-      category:"Khaemenes Academy",
-      url:"https://github.com/artist1970/8th-Grade-Math-Portal",
-      description:"A deep-space 42-week 8th-grade math portal with lessons, missions, badges, progress tracking, and teacher-dashboard planning."
-    },
-    {
-      id:"khaemenes-legacy",
-      title:"Khaemenes Academy Legacy",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/KhaemenesAcademy",
-      description:"An earlier Academy foundation with creative learning, whole-child curriculum, privacy by design, and offline accessibility concepts."
-    },
-    {
-      id:"arshif-legacy",
-      title:"ARSHIF Legacy Repository",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/Arshif",
-      description:"An earlier ARSHIF repository for archive, research, preservation, and knowledge-system lineage."
-    },
-    {
-      id:"pearls-gamut-founders",
-      title:"Pearls Gamut Founders Page",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/PearlsGamutFoundersPage",
-      description:"A foundational map of Pearls Gamut, PLERA, HTURT, Academy, art, law, finance, archives, and creative ecosystem lineage."
-    },
-    {
-      id:"hturt-root",
-      title:"HTURT.org Root Archive",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/HTURT.org",
-      description:"The root governance and stewardship archive for ethics, sovereignty, creative autonomy, and the Heart Codex."
-    },
-    {
-      id:"plera-founders-portal",
-      title:"PLERA Founder’s Portal",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/Plera-Founders-Portal",
-      description:"An early Founder’s Portal concept for PLERA, Codex entries, platform command, AI guardians, and sovereign system memory."
-    },
-    {
-      id:"sovereign-hope-ai",
-      title:"Sovereign Hope AI",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/sovereign-hope-ai",
-      description:"A sovereign AI companion concept focused on memory, Codex preservation, adaptive journaling, and locally controlled creative intelligence."
-    },
-    {
-      id:"aurora-core",
-      title:"AuroraCore",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/AuroraCore",
-      description:"A language-refinement core for grammar, flow, thesaurus, metaphor, rhythm, mood, cohesion, and author-centered polishing.",
-      tone:"priority"
-    },
-    {
-      id:"moirai",
-      title:"Moirai",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/Moirai",
-      description:"A future-facing sovereign image-generation and symbolic art module connected to Creative Spark, PROSE, ARSHIF, and PLERA."
-    },
-    {
-      id:"weal",
-      title:"Weal",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/Weal",
-      description:"An earlier resource that may support wellbeing, restoration, public benefit, or civic-service development after review."
-    },
-    {
-      id:"click-logger",
-      title:"Click Logger",
-      category:"Foundations & Codex",
-      url:"https://github.com/artist1970/click-logger",
-      description:"A small utility repository that can be reviewed for local testing, interaction logging, or admin diagnostics before public use."
-    },
-
-    {
-      id:"river-to-road",
-      title:"River to Road",
-      category:"Earth & Community",
-      url:BASE + "river_to_road.github.io/",
-      description:"Environmental stewardship, science, service, and community action."
-    }
+    {id:"river-to-road",title:"River to Road",category:"Earth & Community",url:BASE+"river_to_road.github.io/",description:"Environmental stewardship, science, service, and community action.",status:STATUS_OPEN}
   ];
 
   const categoryDetails = {
     "Network Home":"The public front door and complete map of the Verve N Veda resource network.",
     "Sanctuary":"A quiet first doorway for reflection, restoration, and creative renewal.",
+    "Khaemenes Academy":"The Academy landing page and every major learning level kept together in one sequence.",
     "Music & Audio":"Music education, composition, performance, recording, workshops, and creative resources.",
     "Innovation & Development":"Engineering, open standards, documentation, design systems, components, and experiments.",
-    "Khaemenes Academy":"The Academy landing page and every major learning level kept together in one sequence.",
     "Medical Halls":"Children’s medicine, holistic and traditional health study, movement tracking, safety, evidence, and public wellness resources.",
     "News & Weather":"Fast access to current information, verification, weather, and environmental observation.",
     "Finance & Practical Life":"Financial literacy, planning, markets, household resources, and practical public tools.",
     "Civic & Public Service":"National leadership, civic participation, veterans resources, policy, and public service.",
-    "Research, Health & Law":"Archives, health study, legal information, language, public research, and evidence-aware discovery.",
+    "Research, Health & Law":"Archives, health study, legal information, public research, and evidence-aware discovery.",
     "Professional Tools & Media":"Professional writing, editing, media, movies, design, workflow, and local browser tools.",
     "Art, Games & Creativity":"Visual art, artist communities, gallery spaces, games, puzzles, and creative exploration.",
-    "Earth & Community":"Environmental stewardship, local action, cleanup, restoration, and community connection.",
-    "Foundations & Codex":"Older root projects, Founder archives, PLERA concepts, Aurora, Creative Spark, HTURT, Moirai, and sovereign system lineage."
+    "Earth & Community":"Environmental stewardship, local action, cleanup, restoration, and community connection."
   };
 
   const categoryOrder = [
-    "Network Home",
-    "Sanctuary",
-    "Khaemenes Academy",
-    "Music & Audio",
-    "Innovation & Development",
-    "Medical Halls",
-    "News & Weather",
-    "Finance & Practical Life",
-    "Civic & Public Service",
-    "Research, Health & Law",
-    "Professional Tools & Media",
-    "Art, Games & Creativity",
-    "Earth & Community",
-    "Foundations & Codex"
+    "Network Home","Sanctuary","Khaemenes Academy","Music & Audio","Innovation & Development",
+    "Medical Halls","News & Weather","Finance & Practical Life","Civic & Public Service",
+    "Research, Health & Law","Professional Tools & Media","Art, Games & Creativity","Earth & Community"
   ];
 
   const featuredGroups = [
-    {
-      category:"Khaemenes Academy",
-      className:"academy",
-      title:"Khaemenes Academy Pathways",
-      note:"Academy home, early learning, school levels, and higher education stay together.",
-      ids:["academy-home","preschool","kindergarten","elementary","middle-school","high-school","higher-education","linguistics"]
-    },
-    {
-      category:"News & Weather",
-      className:"news",
-      title:"News & Weather",
-      note:"The Verifier and Solanar are prominent and immediately recognizable.",
-      ids:["the-verifier","solanar"]
-    },
-    {
-      category:"Finance & Practical Life",
-      className:"finance",
-      title:"Finance & Practical Life",
-      note:"Financial literacy, planning, markets, and practical public resources.",
-      ids:["finance"]
-    },
-    {
-      category:"Civic & Public Service",
-      className:"civic",
-      title:"Civic & Public Service",
-      note:"One Nation For All, the presidential platform, and Veterans belong together.",
-      ids:["one-nation","jennifer-2028","veterans"]
-    },
-    {
-      category:"Music & Audio",
-      className:"music",
-      title:"Music & Audio",
-      note:"The Refrain provides a dedicated conservatory-style doorway for music learning and creation.",
-      ids:["the-refrain"]
-    },
-    {
-      category:"Innovation & Development",
-      className:"innovation",
-      title:"Innovation & Development",
-      note:"OHMIC Foundry will gather engineering, design-system, documentation, and experimental work.",
-      ids:["ohmic-foundry"]
-    },
-    {
-      category:"Medical Halls",
-      className:"medical",
-      title:"Medical Halls",
-      note:"The dedicated Medicament repository and its active health tools now stay together in one public doorway.",
-      ids:["medicament-hub","childrens-medicine-hall","holistic-medicine-hall","traditional-medicine-hall","universal-exercise-log"]
-    },
-    {
-      category:"Professional Tools & Media",
-      className:"pro",
-      title:"Professional Tools & Media",
-      note:"ProReSources, PROSE, and FleaPit provide a direct professional-work path.",
-      ids:["proresources","prose","fleapit"]
-    },
-    {
-      category:"Art, Games & Creativity",
-      className:"art",
-      title:"Art, Games & Creativity",
-      note:"Bazaar Art, My Art Gallery, Arcade, and Creative Spark connect the creative side of the network.",
-      ids:["bazaar-art","my-art-gallery","arcade","creative-spark"]
-    },
-    {
-      category:"Research, Health & Law",
-      className:"research",
-      title:"Research, Health & Law",
-      note:"ARSHIF, PLERA Search, Firmament, and language research are grouped by purpose.",
-      ids:["arshif","plera-search","firmament"]
-    },
-    {
-      category:"Foundations & Codex",
-      className:"codex",
-      title:"Foundations & Codex",
-      note:"Older root projects, Founder archives, PLERA, HTURT, Aurora, Sovereign Hope, and Moirai are preserved as lineage materials.",
-      ids:["pearls-gamut-founders","hturt-root","plera-founders-portal","sovereign-hope-ai","aurora-core","moirai"]
-    }
+    {category:"Khaemenes Academy",className:"academy",title:"Khaemenes Academy Pathways",note:"Academy home, early learning, school levels, and higher education stay together.",ids:["academy-home","preschool","kindergarten","elementary","middle-school","high-school","higher-education","linguistics"]},
+    {category:"News & Weather",className:"news",title:"News & Weather",note:"The Verifier and Solanar are prominent and immediately recognizable.",ids:["the-verifier","solanar"]},
+    {category:"Finance & Practical Life",className:"finance",title:"Finance & Practical Life",note:"Financial literacy, planning, markets, and practical public resources.",ids:["finance"]},
+    {category:"Civic & Public Service",className:"civic",title:"Civic & Public Service",note:"One Nation For All, the presidential platform, and Veterans belong together.",ids:["one-nation","jennifer-2028","veterans"]},
+    {category:"Music & Audio",className:"music",title:"Music & Audio",note:"The Refrain provides a dedicated conservatory-style doorway for music learning and creation.",ids:["the-refrain"]},
+    {category:"Innovation & Development",className:"innovation",title:"Innovation & Development",note:"OHMIC Foundry will gather engineering, design-system, documentation, and experimental work.",ids:["ohmic-foundry"]},
+    {category:"Medical Halls",className:"medical",title:"Medical Halls",note:"The dedicated Medicament repository and its active health tools stay together in one public doorway.",ids:["medicament-hub","childrens-medicine-hall","holistic-medicine-hall","traditional-medicine-hall","universal-exercise-log"]},
+    {category:"Professional Tools & Media",className:"pro",title:"Professional Tools & Media",note:"ProReSources, PROSE, and FleaPit provide a direct professional-work path.",ids:["proresources","prose","fleapit"]},
+    {category:"Art, Games & Creativity",className:"art",title:"Art, Games & Creativity",note:"Bazaar Art, My Art Gallery, Arcade, and Creative Spark connect the creative side of the network.",ids:["bazaar-art","my-art-gallery","arcade","creative-spark"]},
+    {category:"Research, Health & Law",className:"research",title:"Research, Health & Law",note:"ARSHIF, PLERA Search, and Firmament are grouped by purpose.",ids:["arshif","plera-search","firmament"]}
   ];
 
   const featuredGroupsNode = document.getElementById("featuredGroups");
@@ -1714,25 +1279,6 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
   const menuSearch = document.getElementById("menuSearch");
   const drawerTabs = document.getElementById("drawerTabs");
   const drawerNav = document.getElementById("drawerNav");
-  const adminTrigger = document.getElementById("adminTrigger");
-  const adminGate = document.getElementById("adminGate");
-  const closeAdminGateButton = document.getElementById("closeAdminGate");
-  const adminLoginPanel = document.getElementById("adminLoginPanel");
-  const adminChangePanel = document.getElementById("adminChangePanel");
-  const adminLoginForm = document.getElementById("adminLoginForm");
-  const adminChangeForm = document.getElementById("adminChangeForm");
-  const adminPasscode = document.getElementById("adminPasscode");
-  const currentPasscode = document.getElementById("currentPasscode");
-  const newPasscode = document.getElementById("newPasscode");
-  const confirmPasscode = document.getElementById("confirmPasscode");
-  const adminLoginMessage = document.getElementById("adminLoginMessage");
-  const adminChangeMessage = document.getElementById("adminChangeMessage");
-  const showChangePasscode = document.getElementById("showChangePasscode");
-  const cancelChangePasscode = document.getElementById("cancelChangePasscode");
-
-  const ADMIN_URL = "https://vervenveda.github.io/admin.github.io/";
-  const ADMIN_PASSCODE_KEY = "vnvAdminPasscodeHash";
-  const DEFAULT_ADMIN_PASSCODE = "00000";
 
   let selectedCategory = "All";
   let selectedDrawerCategory = "All";
@@ -1747,119 +1293,83 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     .replaceAll("'","&#039;");
 
   const slugify = value => String(value)
-    .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g,"")
-    .replace(/[^a-z0-9]+/g,"-")
-    .replace(/^-|-$/g,"");
+    .toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 
   const getById = id => destinations.find(item => item.id === id);
+  const isOpen = item => item.status === STATUS_OPEN && Boolean(item.url);
   const titleBreaks = Object.freeze({
-    "Khaemenes Academy":["Khaemenes","Academy"],
-    "Khaemenes Preschool":["Khaemenes","Preschool"],
-    "Khaemenes Kinder Garden":["Khaemenes","Kinder Garden"],
-    "Khaemenes Elementary":["Khaemenes","Elementary"],
-    "Khaemenes Middle":["Khaemenes","Middle"],
-    "Khaemenes High":["Khaemenes","High"],
-    "Khaemenes Higher Learning":["Khaemenes","Higher Learning"],
-    "Khaemenes Linguistics":["Khaemenes","Linguistics"],
-    "Jennifer Pearl for President 2028":["Jennifer Pearl","for President 2028"],
-    "Universal Exercise Log":["Universal","Exercise Log"],
-    "Holistic Medicine Hall":["Holistic","Medicine Hall"],
-    "Traditional Medicine Hall":["Traditional","Medicine Hall"],
-    "Children’s Medicine Hall":["Children’s","Medicine Hall"],
-    "ProResource Hub":["ProResource","Hub"],
-    "PROSE Editing Suite":["PROSE","Editing Suite"],
-    "Movies at FleaPit":["Movies at","FleaPit"],
-    "My Art Gallery":["My Art","Gallery"],
-    "One Nation For All":["One Nation","For All"],
-    "River to Road":["River","to Road"],
-    "The Refrain™":["The","Refrain™"]
+    "Khaemenes Academy":["Khaemenes","Academy"],"Khaemenes Preschool":["Khaemenes","Preschool"],
+    "Khaemenes Kinder Garden":["Khaemenes","Kinder Garden"],"Khaemenes Elementary":["Khaemenes","Elementary"],
+    "Khaemenes Middle":["Khaemenes","Middle"],"Khaemenes High":["Khaemenes","High"],
+    "Khaemenes Higher Learning":["Khaemenes","Higher Learning"],"Khaemenes Linguistics":["Khaemenes","Linguistics"],
+    "Jennifer Pearl for President 2028":["Jennifer Pearl","for President 2028"],"Veterans Resource Hub":["Veterans","Resource Hub"],
+    "Universal Exercise Log":["Universal","Exercise Log"],"Holistic Medicine Hall":["Holistic","Medicine Hall"],
+    "Traditional Medicine Hall":["Traditional","Medicine Hall"],"Children’s Medicine Hall":["Children’s","Medicine Hall"],
+    "ProResource Hub":["ProResource","Hub"],"PROSE Editing Suite":["PROSE","Editing Suite"],
+    "Movies at FleaPit":["Movies at","FleaPit"],"My Art Gallery":["My Art","Gallery"],
+    "One Nation For All":["One Nation","For All"],"River to Road":["River","to Road"],"The Refrain™":["The","Refrain™"]
   });
 
   function formatTitle(title){
-    const lines = titleBreaks[title] || [title];
-    return `<span class="link-label">${lines.map(escapeHtml).join("<br>")}</span>`;
+    return `<span class="link-label">${(titleBreaks[title] || [title]).map(escapeHtml).join("<br>")}</span>`;
   }
-
 
   function filterDestinations(query,category){
     const normalized = String(query || "").trim().toLowerCase();
     return destinations.filter(item => {
-      const categoryMatch = category === "All" || item.category === category;
-      if(!categoryMatch) return false;
+      if(category !== "All" && item.category !== category) return false;
       if(!normalized) return true;
-      const haystack = [item.title,item.category,item.description,item.url].join(" ").toLowerCase();
-      return haystack.includes(normalized);
+      return [item.title,item.category,item.description,item.url || "",item.status].join(" ").toLowerCase().includes(normalized);
     });
   }
 
   function groupByCategory(items){
-    return items.reduce((groups,item) => {
-      (groups[item.category] ||= []).push(item);
-      return groups;
-    },{});
+    return items.reduce((groups,item) => ((groups[item.category] ||= []).push(item),groups),{});
   }
 
-  function placeholderGateway(label = "Future doorway"){
-    return `<span class="gateway-link placeholder" aria-hidden="true"><span>${escapeHtml(label)}</span><span>In development</span></span>`;
+  function featuredItem(item){
+    if(!isOpen(item)){
+      return `<span class="gateway-link placeholder" role="status" aria-label="${escapeHtml(item.title)} is in development">${formatTitle(item.title)}<span>In development</span></span>`;
+    }
+    const tone = item.tone ? ` ${escapeHtml(item.tone)}` : "";
+    return `<a class="gateway-link${tone}" href="${escapeHtml(item.url)}" aria-label="Open ${escapeHtml(item.title)}">${formatTitle(item.title)}<span aria-hidden="true">↗</span></a>`;
   }
 
-  function placeholderDirectory(){
-    return `<div class="directory-card placeholder" aria-hidden="true"><span><strong>Future gateway</strong><span>A balanced space reserved for the next connected public destination.</span></span><span class="card-arrow">·</span></div>`;
+  function directoryItem(item){
+    if(!isOpen(item)){
+      return `<article class="directory-card placeholder" aria-label="${escapeHtml(item.title)} is in development"><span><strong>${formatTitle(item.title)}</strong><span>${escapeHtml(item.description)}</span></span><span class="card-arrow">In development</span></article>`;
+    }
+    return `<a class="directory-card" href="${escapeHtml(item.url)}" aria-label="Open ${escapeHtml(item.title)}"><span><strong>${formatTitle(item.title)}</strong><span>${escapeHtml(item.description)}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>`;
+  }
+
+  function drawerItem(item){
+    if(!isOpen(item)){
+      return `<div class="nav-placeholder" aria-label="${escapeHtml(item.title)} is in development">${formatTitle(item.title)}<small>In development</small></div>`;
+    }
+    return `<a href="${escapeHtml(item.url)}" aria-label="Open ${escapeHtml(item.title)}">${formatTitle(item.title)}<small>Open</small></a>`;
   }
 
   function renderFeatured(){
     featuredGroupsNode.innerHTML = featuredGroups.map(group => {
       const groupItems = group.ids.map(getById).filter(Boolean);
-      const links = groupItems.map(item => {
-        const tone = item.tone ? ` ${escapeHtml(item.tone)}` : "";
-        return `<a class="gateway-link${tone}" href="${escapeHtml(item.url)}" aria-label="${escapeHtml(item.title)}">${formatTitle(item.title)}<span aria-hidden="true">↗</span></a>`;
-      }).join("");
-
-      return `
-        <article class="gateway-group ${escapeHtml(group.className)} reveal">
-          <div class="gateway-head">
-            <div>
-              <h3 class="gateway-label">${escapeHtml(group.title)}</h3>
-              <p class="gateway-note">${escapeHtml(group.note)}</p>
-            </div>
-            <button class="category-jump" type="button" data-jump-category="${escapeHtml(group.category)}">View all</button>
-          </div>
-          <div class="gateway-links">${links}</div>
-        </article>`;
+      return `<article class="gateway-group ${escapeHtml(group.className)} reveal"><div class="gateway-head"><div><h3 class="gateway-label">${escapeHtml(group.title)}</h3><p class="gateway-note">${escapeHtml(group.note)}</p></div><button class="category-jump" type="button" data-jump-category="${escapeHtml(group.category)}">View all</button></div><div class="gateway-links">${groupItems.map(featuredItem).join("")}</div></article>`;
     }).join("");
   }
 
   function renderCategoryControls(){
     const controls = ["All",...categoryOrder];
-    categoryStrip.innerHTML = controls.map(category => `
-      <button class="chip${category === selectedCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
-
-    drawerTabs.innerHTML = controls.map(category => `
-      <button class="drawer-tab${category === selectedDrawerCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
+    categoryStrip.innerHTML = controls.map(category => `<button class="chip${category === selectedCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
+    drawerTabs.innerHTML = controls.map(category => `<button class="drawer-tab${category === selectedDrawerCategory ? " active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
   }
 
   function renderDirectory(items){
     const grouped = groupByCategory(items);
     const categories = categoryOrder.filter(category => grouped[category]?.length);
-
-    directoryGroups.innerHTML = categories.map(category => `
-      <section class="directory-group reveal" id="category-${slugify(category)}" data-category-section="${escapeHtml(category)}">
-        <div class="directory-group-heading">
-          <h3>${escapeHtml(category)}</h3>
-          <p>${escapeHtml(categoryDetails[category] || "")}</p>
-        </div>
-        <div class="directory-grid">
-          ${grouped[category].map(item => `
-            <a class="directory-card" href="${escapeHtml(item.url)}" aria-label="${escapeHtml(item.title)}">
-              <span><strong>${formatTitle(item.title)}</strong><span>${escapeHtml(item.description)}</span></span>
-              <span class="card-arrow" aria-hidden="true">↗</span>
-            </a>`).join("")}
-        </div>
-      </section>`).join("");
-
-    resultCount.textContent = `${items.length} ${items.length === 1 ? "gateway" : "gateways"}`;
+    directoryGroups.innerHTML = categories.map(category => `<section class="directory-group reveal" id="category-${slugify(category)}" data-category-section="${escapeHtml(category)}"><div class="directory-group-heading"><h3>${escapeHtml(category)}</h3><p>${escapeHtml(categoryDetails[category] || "")}</p></div><div class="directory-grid">${grouped[category].map(directoryItem).join("")}</div></section>`).join("");
+    const openCount = items.filter(isOpen).length;
+    const developmentCount = items.length - openCount;
+    resultCount.textContent = `${openCount} open${developmentCount ? ` · ${developmentCount} in development` : ""}`;
     emptyState.style.display = items.length ? "none" : "block";
     observeReveals();
   }
@@ -1867,38 +1377,17 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
   function renderDrawer(items){
     const grouped = groupByCategory(items);
     const categories = categoryOrder.filter(category => grouped[category]?.length);
-
-    if(!items.length){
-      drawerNav.innerHTML = `<p class="empty-state" style="display:block;margin:0;">No gateways match that search.</p>`;
-      return;
-    }
-
-    drawerNav.innerHTML = categories.map(category => `
-      <section class="nav-group">
-        <h3 class="nav-heading">${escapeHtml(category)}</h3>
-        ${grouped[category].map(item => `
-          <a href="${escapeHtml(item.url)}" aria-label="${escapeHtml(item.title)}">${formatTitle(item.title)}<small>Open</small></a>`).join("")}
-      </section>`).join("");
+    drawerNav.innerHTML = items.length ? categories.map(category => `<section class="nav-group"><h3 class="nav-heading">${escapeHtml(category)}</h3>${grouped[category].map(drawerItem).join("")}</section>`).join("") : `<p class="empty-state" style="display:block;margin:0;">No gateways match that search.</p>`;
   }
 
-  function updateDirectory(){
-    renderCategoryControls();
-    renderDirectory(filterDestinations(directorySearch.value,selectedCategory));
-  }
-
-  function updateDrawer(){
-    renderCategoryControls();
-    renderDrawer(filterDestinations(menuSearch.value,selectedDrawerCategory));
-  }
+  function updateDirectory(){renderCategoryControls();renderDirectory(filterDestinations(directorySearch.value,selectedCategory));}
+  function updateDrawer(){renderCategoryControls();renderDrawer(filterDestinations(menuSearch.value,selectedDrawerCategory));}
 
   function jumpToCategory(category){
     selectedCategory = category;
     directorySearch.value = "";
     updateDirectory();
-    window.requestAnimationFrame(() => {
-      const target = document.getElementById(`category-${slugify(category)}`) || document.getElementById("journey");
-      target.scrollIntoView({behavior:"smooth",block:"start"});
-    });
+    requestAnimationFrame(() => (document.getElementById(`category-${slugify(category)}`) || document.getElementById("journey")).scrollIntoView({behavior:"smooth",block:"start"}));
   }
 
   function openMenu(){
@@ -1908,7 +1397,7 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     menuButton.setAttribute("aria-expanded","true");
     menuButton.setAttribute("aria-label","Close navigation");
     document.body.classList.add("menu-open");
-    window.setTimeout(() => menuSearch.focus(),80);
+    setTimeout(() => menuSearch.focus(),80);
   }
 
   function closeMenu(){
@@ -1927,250 +1416,70 @@ The dreamer who sees possibility where others see obstacles.</p></div><span clas
     if(event.key !== "Tab" || !menuDrawer.classList.contains("open")) return;
     const focusable = Array.from(menuDrawer.querySelectorAll('a[href],button:not([disabled]),input:not([disabled])')).filter(element => element.offsetParent !== null);
     if(!focusable.length) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    if(event.shiftKey && document.activeElement === first){event.preventDefault();last.focus();}
-    else if(!event.shiftKey && document.activeElement === last){event.preventDefault();first.focus();}
-  }
-
-  function isFiveDigits(value){
-    return /^\d{5}$/.test(String(value || ""));
-  }
-
-  async function hashPasscode(value){
-    if(window.crypto?.subtle && window.TextEncoder){
-      const bytes = new TextEncoder().encode(String(value));
-      const digest = await window.crypto.subtle.digest("SHA-256",bytes);
-      return Array.from(new Uint8Array(digest)).map(byte => byte.toString(16).padStart(2,"0")).join("");
-    }
-    let hash = 2166136261;
-    for(const character of String(value)){
-      hash ^= character.charCodeAt(0);
-      hash = Math.imul(hash,16777619);
-    }
-    return `fallback-${(hash >>> 0).toString(16)}`;
-  }
-
-  async function getStoredPasscodeHash(){
-    let stored = localStorage.getItem(ADMIN_PASSCODE_KEY);
-    if(!stored){
-      stored = await hashPasscode(DEFAULT_ADMIN_PASSCODE);
-      localStorage.setItem(ADMIN_PASSCODE_KEY,stored);
-    }
-    return stored;
-  }
-
-  function resetAdminMessages(){
-    adminLoginMessage.textContent = "";
-    adminLoginMessage.classList.remove("success");
-    adminChangeMessage.textContent = "";
-    adminChangeMessage.classList.remove("success");
-  }
-
-  function showAdminLogin(){
-    adminChangePanel.hidden = true;
-    adminLoginPanel.hidden = false;
-    adminChangeForm.reset();
-    resetAdminMessages();
-    window.setTimeout(() => adminPasscode.focus(),40);
-  }
-
-  function showAdminChange(){
-    adminLoginPanel.hidden = true;
-    adminChangePanel.hidden = false;
-    adminLoginForm.reset();
-    resetAdminMessages();
-    window.setTimeout(() => currentPasscode.focus(),40);
-  }
-
-  function openAdminGate(){
-    lastFocusedElement = document.activeElement;
-    adminGate.classList.add("open");
-    adminGate.setAttribute("aria-hidden","false");
-    document.body.classList.add("menu-open");
-    showAdminLogin();
-  }
-
-  function closeAdminGate(){
-    adminGate.classList.remove("open");
-    adminGate.setAttribute("aria-hidden","true");
-    document.body.classList.remove("menu-open");
-    adminLoginForm.reset();
-    adminChangeForm.reset();
-    resetAdminMessages();
-    if(lastFocusedElement && typeof lastFocusedElement.focus === "function") lastFocusedElement.focus();
-  }
-
-  async function verifyPasscode(candidate){
-    const [candidateHash,storedHash] = await Promise.all([hashPasscode(candidate),getStoredPasscodeHash()]);
-    return candidateHash === storedHash;
-  }
-
-  function trapDialogFocus(event,dialogRoot){
-    if(event.key !== "Tab" || !dialogRoot.classList.contains("open")) return;
-    const focusable = Array.from(dialogRoot.querySelectorAll('a[href],button:not([disabled]),input:not([disabled])')).filter(element => element.offsetParent !== null);
-    if(!focusable.length) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
+    const first = focusable[0], last = focusable[focusable.length-1];
     if(event.shiftKey && document.activeElement === first){event.preventDefault();last.focus();}
     else if(!event.shiftKey && document.activeElement === last){event.preventDefault();first.focus();}
   }
 
   function auditDestinations(){
     const issues = [];
-    const ids = new Set();
-    const urls = new Set();
-    const stalePathPattern = /(\/khaemenesacademy\.github\.io\/|\/creche_preschool\.github\.io\/|\/kindergarden\.github\.io\/|\/khaemenes-elementary\.github\.io\/|\/khaemenes-jrhigh\.github\.io\/|\/khaemenes-high_github\.io\/|\/khaemenes-university\.github\.io\/|\/linguistics\.github\.io\/)/i;
+    const ids = new Set(), urls = new Set();
+    const allowedHosts = new Set(["vervenveda.github.io","www.jenniferpearl2028.com","jenniferpearl2028.com","artist1970.github.io"]);
+    const blockedWords = /(casino|slots?|sportsbook|gambling|poker|affiliate|jackpot|roulette)/i;
 
     destinations.forEach(item => {
       if(!item.id || ids.has(item.id)) issues.push(`Duplicate or missing destination id: ${item.id || "(missing)"}`);
       ids.add(item.id);
 
-      if(!item.url || item.url === "#" || /^javascript:/i.test(item.url)){
-        issues.push(`Unsafe or empty destination URL: ${item.title}`);
+      if(item.status === STATUS_DEVELOPMENT){
+        if(item.url) issues.push(`Development item must not expose a URL: ${item.title}`);
+        return;
       }
 
-      if(item.url && !/^https:\/\//i.test(item.url) && !item.url.startsWith("#")){
-        issues.push(`Unexpected destination URL format: ${item.title} → ${item.url}`);
-      }
-
-      if(/\s/.test(item.url)) issues.push(`Unencoded whitespace in destination URL: ${item.title} → ${item.url}`);
-      if(stalePathPattern.test(item.url)) issues.push(`Possible stale renamed repository path: ${item.title} → ${item.url}`);
-
+      if(!item.url){issues.push(`Open destination is missing a URL: ${item.title}`);return;}
+      try{
+        const parsed = new URL(item.url);
+        if(parsed.protocol !== "https:") issues.push(`Non-HTTPS destination: ${item.title}`);
+        if(parsed.hostname === "github.com" || parsed.hostname.endsWith(".github.com")) issues.push(`Repository link exposed: ${item.title}`);
+        if(!allowedHosts.has(parsed.hostname)) issues.push(`Unreviewed external host: ${item.title} → ${parsed.hostname}`);
+        if(blockedWords.test(`${parsed.hostname}${parsed.pathname}`)) issues.push(`Blocked casino/spam keyword: ${item.title}`);
+      }catch(error){issues.push(`Invalid URL: ${item.title}`);}
       if(urls.has(item.url)) issues.push(`Duplicate destination URL: ${item.url}`);
       urls.add(item.url);
     });
 
-    featuredGroups.forEach(group => {
-      group.ids.forEach(id => {
-        if(!getById(id)) issues.push(`Featured group references a missing destination: ${id}`);
-      });
-    });
-
-    if(issues.length){
-      console.warn("Verve N Veda directory audit found issues:",issues);
-    }else{
-      console.info(`Verve N Veda directory audit passed: ${destinations.length} destinations.`);
-    }
+    featuredGroups.forEach(group => group.ids.forEach(id => {if(!getById(id)) issues.push(`Featured group references a missing destination: ${id}`);}));
+    if(issues.length) console.warn("Verve N Veda public-link audit found issues:",issues);
+    else console.info(`Verve N Veda public-link audit passed: ${destinations.filter(isOpen).length} open destinations; ${destinations.filter(item => !isOpen(item)).length} development placeholders.`);
   }
 
   function observeReveals(){
     const nodes = document.querySelectorAll(".reveal:not(.visible)");
-    if(!("IntersectionObserver" in window)){
-      nodes.forEach(node => node.classList.add("visible"));
-      return;
-    }
-    if(!revealObserver){
-      revealObserver = new IntersectionObserver((entries,observer) => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },{threshold:.1});
-    }
+    if(!("IntersectionObserver" in window)){nodes.forEach(node => node.classList.add("visible"));return;}
+    if(!revealObserver){revealObserver = new IntersectionObserver((entries,observer) => entries.forEach(entry => {if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}}),{threshold:.1});}
     nodes.forEach(node => revealObserver.observe(node));
   }
 
-  document.getElementById("ecosystemCount").textContent = `${destinations.length} connected gateways`;
+  const openCount = destinations.filter(isOpen).length;
+  const developmentCount = destinations.length - openCount;
+  document.getElementById("ecosystemCount").textContent = `${openCount} public gateways · ${developmentCount} in development`;
   auditDestinations();
   renderFeatured();
   updateDirectory();
   updateDrawer();
   observeReveals();
 
-  searchLaunch.addEventListener("click",() => {
-    document.getElementById("journey").scrollIntoView({behavior:"smooth",block:"start"});
-    window.setTimeout(() => directorySearch.focus(),520);
-  });
-
+  searchLaunch.addEventListener("click",() => {document.getElementById("journey").scrollIntoView({behavior:"smooth",block:"start"});setTimeout(() => directorySearch.focus(),520);});
   directorySearch.addEventListener("input",updateDirectory);
   menuSearch.addEventListener("input",updateDrawer);
-
-  categoryStrip.addEventListener("click",event => {
-    const button = event.target.closest("button[data-category]");
-    if(!button) return;
-    selectedCategory = button.dataset.category;
-    updateDirectory();
-  });
-
-  drawerTabs.addEventListener("click",event => {
-    const button = event.target.closest("button[data-category]");
-    if(!button) return;
-    selectedDrawerCategory = button.dataset.category;
-    updateDrawer();
-  });
-
-  featuredGroupsNode.addEventListener("click",event => {
-    const button = event.target.closest("button[data-jump-category]");
-    if(!button) return;
-    jumpToCategory(button.dataset.jumpCategory);
-  });
-
-  adminTrigger.addEventListener("click",openAdminGate);
-  closeAdminGateButton.addEventListener("click",closeAdminGate);
-  adminGate.addEventListener("click",event => {if(event.target === adminGate) closeAdminGate();});
-  showChangePasscode.addEventListener("click",showAdminChange);
-  cancelChangePasscode.addEventListener("click",showAdminLogin);
-
-  [adminPasscode,currentPasscode,newPasscode,confirmPasscode].forEach(input => {
-    input.addEventListener("input",() => {input.value = input.value.replace(/\D/g,"").slice(0,5);});
-  });
-
-  adminLoginForm.addEventListener("submit",async event => {
-    event.preventDefault();
-    adminLoginMessage.classList.remove("success");
-    if(!isFiveDigits(adminPasscode.value)){
-      adminLoginMessage.textContent = "Enter exactly five numbers.";
-      adminPasscode.focus();
-      return;
-    }
-    adminLoginMessage.textContent = "Checking passcode…";
-    if(await verifyPasscode(adminPasscode.value)){
-      adminLoginMessage.classList.add("success");
-      adminLoginMessage.textContent = "Passcode accepted. Opening Administration…";
-      window.setTimeout(() => window.location.assign(ADMIN_URL),220);
-    }else{
-      adminLoginMessage.textContent = "That passcode is not correct.";
-      adminPasscode.select();
-    }
-  });
-
-  adminChangeForm.addEventListener("submit",async event => {
-    event.preventDefault();
-    adminChangeMessage.classList.remove("success");
-    if(![currentPasscode.value,newPasscode.value,confirmPasscode.value].every(isFiveDigits)){
-      adminChangeMessage.textContent = "Every passcode must contain exactly five numbers.";
-      return;
-    }
-    if(!(await verifyPasscode(currentPasscode.value))){
-      adminChangeMessage.textContent = "The current passcode is not correct.";
-      currentPasscode.select();
-      return;
-    }
-    if(newPasscode.value !== confirmPasscode.value){
-      adminChangeMessage.textContent = "The new passcodes do not match.";
-      confirmPasscode.select();
-      return;
-    }
-    localStorage.setItem(ADMIN_PASSCODE_KEY,await hashPasscode(newPasscode.value));
-    adminChangeForm.reset();
-    adminChangeMessage.classList.add("success");
-    adminChangeMessage.textContent = "The passcode was changed in this browser.";
-    window.setTimeout(showAdminLogin,900);
-  });
-
+  categoryStrip.addEventListener("click",event => {const button=event.target.closest("button[data-category]");if(button){selectedCategory=button.dataset.category;updateDirectory();}});
+  drawerTabs.addEventListener("click",event => {const button=event.target.closest("button[data-category]");if(button){selectedDrawerCategory=button.dataset.category;updateDrawer();}});
+  featuredGroupsNode.addEventListener("click",event => {const button=event.target.closest("button[data-jump-category]");if(button) jumpToCategory(button.dataset.jumpCategory);});
   menuButton.addEventListener("click",() => menuDrawer.classList.contains("open") ? closeMenu() : openMenu());
   closeMenuButton.addEventListener("click",closeMenu);
   menuDrawer.addEventListener("click",event => {if(event.target === menuDrawer) closeMenu();});
   drawerNav.addEventListener("click",event => {if(event.target.closest("a")) closeMenu();});
-  document.addEventListener("keydown",event => {
-    if(event.key === "Escape" && adminGate.classList.contains("open")){closeAdminGate();return;}
-    if(event.key === "Escape" && menuDrawer.classList.contains("open")) closeMenu();
-    trapDialogFocus(event,adminGate);
-    trapFocus(event);
-  });
+  document.addEventListener("keydown",event => {if(event.key === "Escape" && menuDrawer.classList.contains("open")) closeMenu();trapFocus(event);});
   </script>
 </body>
 </html>
