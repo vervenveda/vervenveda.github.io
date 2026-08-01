@@ -43,7 +43,7 @@
     }
 
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    html{scroll-behavior:smooth;scroll-padding-top:126px}
     body{
       margin:0;
       min-width:300px;
@@ -75,8 +75,94 @@
     }
     .skip-link:focus{transform:none}
 
+    .network-ticker{
+      position:sticky;
+      top:0;
+      z-index:1300;
+      height:38px;
+      overflow:hidden;
+      border-bottom:1px solid rgba(255,255,255,.11);
+      color:#f4ead1;
+      background:
+        linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
+      box-shadow:0 5px 18px rgba(6,15,27,.18);
+    }
+    .network-ticker-link{
+      height:100%;
+      display:flex;
+      align-items:center;
+      overflow:hidden;
+      color:inherit;
+      text-decoration:none;
+    }
+    .network-ticker-link:focus-visible{
+      outline:3px solid var(--gold-pale);
+      outline-offset:-4px;
+    }
+    .network-ticker-track{
+      width:max-content;
+      min-width:200%;
+      display:flex;
+      align-items:center;
+      white-space:nowrap;
+      animation:networkTickerMove 32s linear infinite;
+      will-change:transform;
+    }
+    .network-ticker-link:hover .network-ticker-track,
+    .network-ticker-link:focus .network-ticker-track{
+      animation-play-state:paused;
+    }
+    .network-ticker-set{
+      min-width:50%;
+      display:flex;
+      align-items:center;
+      justify-content:space-around;
+      gap:33px;
+      padding:0 33px;
+    }
+    .network-ticker-label{
+      color:var(--gold-pale);
+      font-family:var(--ceremonial);
+      font-size:.58rem;
+      font-weight:444;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .network-ticker-app{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      color:#eef3f7;
+      font-size:.66rem;
+      font-weight:400;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+    }
+    .network-ticker-app::before{
+      content:"";
+      width:5px;
+      height:5px;
+      border-radius:50%;
+      background:var(--gold);
+      box-shadow:0 0 0 3px rgba(180,139,69,.13);
+    }
+    .network-ticker-call{
+      padding:4px 8px;
+      border:1px solid rgba(231,215,182,.28);
+      border-radius:7px;
+      color:#fff;
+      background:rgba(255,255,255,.045);
+      font-size:.6rem;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+    }
+    @keyframes networkTickerMove{
+      from{transform:translateX(0)}
+      to{transform:translateX(-50%)}
+    }
+
     .site-header{
-      position:sticky;top:0;z-index:1200;
+      position:sticky;top:38px;z-index:1200;
       border-bottom:1px solid var(--line);
       background:rgba(244,240,231,.95);
       backdrop-filter:blur(18px);
@@ -336,13 +422,55 @@
       .brand-sub{display:none}
       .footer-inner{justify-content:center}
     }
+    @media(max-width:560px){
+      .network-ticker{height:34px}
+      .site-header{top:34px}
+      .network-ticker-track{animation-duration:24s}
+      .network-ticker-set{gap:22px;padding-inline:22px}
+      .network-ticker-label{font-size:.53rem}
+      .network-ticker-app{font-size:.6rem}
+      .network-ticker-call{font-size:.54rem}
+    }
     @media(prefers-reduced-motion:reduce){
       *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+      .network-ticker-track{transform:none!important}
     }
   </style>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
+
+
+  <div class="network-ticker" aria-label="333 Network application ticker">
+    <a
+      class="network-ticker-link"
+      href="https://vervenveda.github.io/333.github.io/"
+      aria-label="Open the 333 Network gateway for HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte, and Bunya"
+    >
+      <span class="network-ticker-track">
+        <span class="network-ticker-set">
+          <span class="network-ticker-label">333 Network</span>
+          <span class="network-ticker-app">HOLLO Enrollment</span>
+          <span class="network-ticker-app">KANSEE Meetings</span>
+          <span class="network-ticker-app">E=Ven Mail</span>
+          <span class="network-ticker-app">Bazaar Art Live</span>
+          <span class="network-ticker-app">SIte + Embed Studio</span>
+          <span class="network-ticker-app">Bunya Registry</span>
+          <span class="network-ticker-call">Open the Network →</span>
+        </span>
+        <span class="network-ticker-set" aria-hidden="true">
+          <span class="network-ticker-label">333 Network</span>
+          <span class="network-ticker-app">HOLLO Enrollment</span>
+          <span class="network-ticker-app">KANSEE Meetings</span>
+          <span class="network-ticker-app">E=Ven Mail</span>
+          <span class="network-ticker-app">Bazaar Art Live</span>
+          <span class="network-ticker-app">SIte + Embed Studio</span>
+          <span class="network-ticker-app">Bunya Registry</span>
+          <span class="network-ticker-call">Open the Network →</span>
+        </span>
+      </span>
+    </a>
+  </div>
 
   <header class="site-header">
     <div class="shell header-inner">
@@ -567,7 +695,7 @@
     (() => {
       "use strict";
 
-      const SITES = [{"title": "Khaemenes Academy", "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/", "icon": "KA", "group": "Education", "desc": "The central international learning campus from preschool through lifelong education."}, {"title": "Khaemenes Preschool", "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/", "icon": "PS", "group": "Education", "desc": "Colorful early-learning stories, play, life skills, creativity, and discovery."}, {"title": "Khaemenes Kinder Garden", "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/", "icon": "KG", "group": "Education", "desc": "A garden of kindness, curiosity, literacy, numbers, nature, and wonder."}, {"title": "Khaemenes Elementary", "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/", "icon": "E", "group": "Education", "desc": "Kinder Garden through Grade 5 academics, creativity, and family learning."}, {"title": "Khaemenes Middle", "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/", "icon": "M", "group": "Education", "desc": "Grades 6–8 academic foundations, independence, exploration, and preparation."}, {"title": "Khaemenes High", "url": "https://vervenveda.github.io/Khaemenes_High.github.io/", "icon": "HS", "group": "Education", "desc": "Grades 9–12 homerooms, complete courses, portfolios, records, and graduation pathways."}, {"title": "Khaemenes Higher Learning", "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/", "icon": "HL", "group": "Education", "desc": "GED, college access, careers, professional development, and lifelong study."}, {"title": "Khaemenes Linguistics", "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/", "icon": "L", "group": "Education", "desc": "Languages, linguistics, translation, writing systems, and communication."}, {"title": "ARSHIF", "url": "https://vervenveda.github.io/Arshif.github.io/", "icon": "A", "group": "Knowledge", "desc": "Research, literature, history, philosophy, culture, archives, and memory."}, {"title": "The Verifier", "url": "https://vervenveda.github.io/theverifier.github.io/", "icon": "V", "group": "Knowledge", "desc": "News discovery, source comparison, evidence, research, and media literacy."}, {"title": "PLERA Search", "url": "https://vervenveda.github.io/PLERASearch.github.io/", "icon": "◎", "group": "Knowledge", "desc": "A search gateway into trusted public learning and resource destinations."}, {"title": "Solanar", "url": "https://vervenveda.github.io/solanar.github.io/", "icon": "☀", "group": "Knowledge", "desc": "Weather, Earth systems, climate, moon cycles, and environmental observation."}, {"title": "Medicament Hub", "url": "https://vervenveda.github.io/medicament-hub.github.io/", "icon": "⚕", "group": "Public Service", "desc": "Health, medicine, family care, safety, wellness, and worldwide public resources."}, {"title": "Firmament Law", "url": "https://vervenveda.github.io/firmament.github.io/", "icon": "§", "group": "Public Service", "desc": "Legal information, rights, civic literacy, and public-resource halls."}, {"title": "One Nation for All", "url": "https://vervenveda.github.io/onenationforall.github.io/", "icon": "☆", "group": "Public Service", "desc": "Civic learning, policy, government, unity, service, and public participation."}, {"title": "Veterans", "url": "https://vervenveda.github.io/veterans.github.io/", "icon": "★", "group": "Public Service", "desc": "Veteran support, crisis resources, benefits, services, and family assistance."}, {"title": "Finance", "url": "https://vervenveda.github.io/finance.github.io/", "icon": "$", "group": "Public Service", "desc": "Financial literacy, planning, markets, budgeting, and practical public resources."}, {"title": "River to Road", "url": "https://vervenveda.github.io/river_to_road.github.io/", "icon": "≈", "group": "Public Service", "desc": "Environmental stewardship, science, service learning, and community action."}, {"title": "ProResource Hub", "url": "https://vervenveda.github.io/proresource_hub.github.io/", "icon": "P", "group": "Creative & Professional", "desc": "Professional tools for writing, media, research, design, meetings, and productivity."}, {"title": "Bazaar Art", "url": "https://vervenveda.github.io/bazaarart.github.io/", "icon": "✦", "group": "Creative & Professional", "desc": "Art education, artist tools, galleries, creativity, and cultural enterprise."}, {"title": "My Art Gallery", "url": "https://vervenveda.github.io/myartgallery.github.io/", "icon": "▧", "group": "Creative & Professional", "desc": "A portfolio and gallery preserving more than three decades of professional artistry."}, {"title": "The Refrain", "url": "https://vervenveda.github.io/the_refrain.github.io/", "icon": "♫", "group": "Creative & Professional", "desc": "Music education, composition, recording, performance, and creative exploration."}, {"title": "Arcade", "url": "https://vervenveda.github.io/arcade.github.io/", "icon": "◆", "group": "Creative & Professional", "desc": "Games, strategy, puzzles, trivia, practice, and playful discovery."}, {"title": "Aurora", "url": "https://vervenveda.github.io/aurora.github.io/", "icon": "☼", "group": "Wellbeing", "desc": "Rest, reflection, encouragement, organization, wellness, and creative renewal."}];
+      const SITES = [{"title": "333 Network", "url": "https://vervenveda.github.io/333.github.io/", "icon": "333", "group": "Creative & Professional", "desc": "Shared HOLLO enrollment, KANSEE meetings, E=Ven email applications, Bazaar Art Live, SIte with Embed Studio, and the Bunya infrastructure registry."}, {"title": "Khaemenes Academy", "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/", "icon": "KA", "group": "Education", "desc": "The central international learning campus from preschool through lifelong education."}, {"title": "Khaemenes Preschool", "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/", "icon": "PS", "group": "Education", "desc": "Colorful early-learning stories, play, life skills, creativity, and discovery."}, {"title": "Khaemenes Kinder Garden", "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/", "icon": "KG", "group": "Education", "desc": "A garden of kindness, curiosity, literacy, numbers, nature, and wonder."}, {"title": "Khaemenes Elementary", "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/", "icon": "E", "group": "Education", "desc": "Kinder Garden through Grade 5 academics, creativity, and family learning."}, {"title": "Khaemenes Middle", "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/", "icon": "M", "group": "Education", "desc": "Grades 6–8 academic foundations, independence, exploration, and preparation."}, {"title": "Khaemenes High", "url": "https://vervenveda.github.io/Khaemenes_High.github.io/", "icon": "HS", "group": "Education", "desc": "Grades 9–12 homerooms, complete courses, portfolios, records, and graduation pathways."}, {"title": "Khaemenes Higher Learning", "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/", "icon": "HL", "group": "Education", "desc": "GED, college access, careers, professional development, and lifelong study."}, {"title": "Khaemenes Linguistics", "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/", "icon": "L", "group": "Education", "desc": "Languages, linguistics, translation, writing systems, and communication."}, {"title": "ARSHIF", "url": "https://vervenveda.github.io/Arshif.github.io/", "icon": "A", "group": "Knowledge", "desc": "Research, literature, history, philosophy, culture, archives, and memory."}, {"title": "The Verifier", "url": "https://vervenveda.github.io/theverifier.github.io/", "icon": "V", "group": "Knowledge", "desc": "News discovery, source comparison, evidence, research, and media literacy."}, {"title": "PLERA Search", "url": "https://vervenveda.github.io/PLERASearch.github.io/", "icon": "◎", "group": "Knowledge", "desc": "A search gateway into trusted public learning and resource destinations."}, {"title": "Solanar", "url": "https://vervenveda.github.io/solanar.github.io/", "icon": "☀", "group": "Knowledge", "desc": "Weather, Earth systems, climate, moon cycles, and environmental observation."}, {"title": "Medicament Hub", "url": "https://vervenveda.github.io/medicament-hub.github.io/", "icon": "⚕", "group": "Public Service", "desc": "Health, medicine, family care, safety, wellness, and worldwide public resources."}, {"title": "Firmament Law", "url": "https://vervenveda.github.io/firmament.github.io/", "icon": "§", "group": "Public Service", "desc": "Legal information, rights, civic literacy, and public-resource halls."}, {"title": "One Nation for All", "url": "https://vervenveda.github.io/onenationforall.github.io/", "icon": "☆", "group": "Public Service", "desc": "Civic learning, policy, government, unity, service, and public participation."}, {"title": "Veterans", "url": "https://vervenveda.github.io/veterans.github.io/", "icon": "★", "group": "Public Service", "desc": "Veteran support, crisis resources, benefits, services, and family assistance."}, {"title": "Finance", "url": "https://vervenveda.github.io/finance.github.io/", "icon": "$", "group": "Public Service", "desc": "Financial literacy, planning, markets, budgeting, and practical public resources."}, {"title": "River to Road", "url": "https://vervenveda.github.io/river_to_road.github.io/", "icon": "≈", "group": "Public Service", "desc": "Environmental stewardship, science, service learning, and community action."}, {"title": "ProResource Hub", "url": "https://vervenveda.github.io/proresource_hub.github.io/", "icon": "P", "group": "Creative & Professional", "desc": "Professional tools for writing, media, research, design, meetings, and productivity."}, {"title": "Bazaar Art", "url": "https://vervenveda.github.io/bazaarart.github.io/", "icon": "✦", "group": "Creative & Professional", "desc": "Art education, artist tools, galleries, creativity, and cultural enterprise."}, {"title": "My Art Gallery", "url": "https://vervenveda.github.io/myartgallery.github.io/", "icon": "▧", "group": "Creative & Professional", "desc": "A portfolio and gallery preserving more than three decades of professional artistry."}, {"title": "The Refrain", "url": "https://vervenveda.github.io/the_refrain.github.io/", "icon": "♫", "group": "Creative & Professional", "desc": "Music education, composition, recording, performance, and creative exploration."}, {"title": "Arcade", "url": "https://vervenveda.github.io/arcade.github.io/", "icon": "◆", "group": "Creative & Professional", "desc": "Games, strategy, puzzles, trivia, practice, and playful discovery."}, {"title": "Aurora", "url": "https://vervenveda.github.io/aurora.github.io/", "icon": "☼", "group": "Wellbeing", "desc": "Rest, reflection, encouragement, organization, wellness, and creative renewal."}];
       const $ = id => document.getElementById(id);
       const groups = [...new Set(SITES.map(site => site.group))];
 
