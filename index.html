@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#f4f0e7">
   <meta name="color-scheme" content="light">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
   <meta name="robots" content="index,follow">
   <title>Verve N Veda | Public Gateway</title>
 
@@ -66,6 +67,8 @@
       text-rendering:optimizeLegibility;
     }
     body.menu-open{overflow:hidden}
+    a,button,input,select{max-width:100%}
+    p,h1,h2,h3,strong,small,span{overflow-wrap:anywhere}
     a{color:inherit;text-decoration:none}
     button,input,select{font:inherit}
     button{cursor:pointer}
@@ -89,47 +92,44 @@
 
     .network-ticker{
       position:sticky;top:0;z-index:1300;
-      height:33px;overflow:hidden;
-      border-bottom:1px solid rgba(255,255,255,.11);
-      color:#f4ead1;
-      background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
+      min-height:35px;display:grid;grid-template-columns:minmax(0,1fr) auto;
+      overflow:hidden;border-bottom:1px solid rgba(255,255,255,.11);
+      color:#f4ead1;background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
       box-shadow:0 4px 14px rgba(6,15,27,.16);
     }
-    .network-ticker-link{
-      height:100%;display:flex;align-items:center;overflow:hidden;
-      color:inherit;text-decoration:none;
-    }
-    .network-ticker-link:focus-visible{outline:2px solid var(--gold-pale);outline-offset:-3px}
+    .network-ticker-viewport{min-width:0;overflow:hidden}
     .network-ticker-track{
-      width:max-content;min-width:200%;
-      display:flex;align-items:center;white-space:nowrap;
-      animation:networkTickerMove 36s linear infinite;
-      will-change:transform;
+      width:max-content;display:flex;align-items:center;white-space:nowrap;
+      animation:networkTickerMove 42s linear infinite;will-change:transform;
     }
-    .network-ticker-link:hover .network-ticker-track,
-    .network-ticker-link:focus .network-ticker-track{animation-play-state:paused}
-    .network-ticker-set{
-      min-width:50%;display:flex;align-items:center;justify-content:space-around;
-      gap:27px;padding:0 27px;
-    }
+    .network-ticker:hover .network-ticker-track,
+    .network-ticker:focus-within .network-ticker-track,
+    .network-ticker[data-paused="true"] .network-ticker-track{animation-play-state:paused}
+    .network-ticker-set{display:flex;align-items:center;gap:24px;padding:0 24px}
     .network-ticker-label{
       color:var(--gold-pale);font-family:var(--ceremonial);
-      font-size:.49rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;
+      font-size:.51rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
     }
-    .network-ticker-app{
-      display:inline-flex;align-items:center;gap:6px;
-      color:#eef3f7;font-size:.56rem;font-weight:400;
-      letter-spacing:.045em;text-transform:uppercase;
+    .network-ticker-app,
+    .network-ticker-call{
+      min-height:35px;display:inline-flex;align-items:center;gap:7px;
+      color:#eef3f7;font-size:.57rem;font-weight:400;
+      letter-spacing:.05em;text-transform:uppercase;text-decoration:none;
     }
     .network-ticker-app::before{
       content:"";width:4px;height:4px;border-radius:50%;
       background:var(--gold);box-shadow:0 0 0 2px rgba(180,139,69,.12);
     }
+    .network-ticker-app:hover,.network-ticker-call:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
     .network-ticker-call{
-      padding:3px 7px;border:1px solid rgba(231,215,182,.28);
+      min-height:25px;margin-block:5px;padding:3px 9px;border:1px solid rgba(231,215,182,.28);
       border-radius:7px;color:#fff;background:rgba(255,255,255,.045);
-      font-size:.51rem;letter-spacing:.075em;text-transform:uppercase;
     }
+    .ticker-control{
+      width:38px;min-height:35px;border:0;border-left:1px solid rgba(255,255,255,.12);
+      color:#f4ead1;background:rgba(0,0,0,.12);font-size:.68rem;
+    }
+    .ticker-control:hover{background:rgba(255,255,255,.08)}
     @keyframes networkTickerMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
     .site-header{
@@ -387,70 +387,360 @@
     .menu-link strong{display:block;font-size:.82rem;font-weight:444}
     .menu-link small{display:block;color:var(--ink-soft);font-size:.63rem;line-height:1.45}
 
-    @media(max-width:1050px){
-      .pillar-grid{grid-template-columns:repeat(2,1fr)}
-      .featured-grid{grid-template-columns:repeat(2,1fr)}
+    /* =========================================================
+       CALM GATEWAY COMPOSITION
+       Full-screen opening · centered rhythm · generous spacing
+       ========================================================= */
+    :root{--r-card:7px}
+
+    body{font-size:16px}
+    .shell{width:min(calc(100% - 48px),1240px)}
+
+    .network-ticker{
+      min-height:34px;
+      grid-template-columns:minmax(0,1fr) 40px;
+    }
+    .network-ticker-viewport{
+      -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 26px,#000 calc(100% - 26px),transparent 100%);
+      mask-image:linear-gradient(90deg,transparent 0,#000 26px,#000 calc(100% - 26px),transparent 100%);
+    }
+    .network-ticker-track{animation-duration:48s}
+    .network-ticker-set{gap:31px;padding-inline:31px}
+    .network-ticker-app{min-height:34px}
+    .network-ticker-call{min-height:24px;margin-block:5px}
+    .ticker-control{width:40px;min-height:34px}
+
+    .site-header{top:34px}
+    .header-inner{
+      min-height:76px;
+      grid-template-columns:minmax(250px,1fr) auto minmax(48px,1fr);
+      gap:28px;
+    }
+    .brand{gap:12px;max-width:360px}
+    .brand-mark{width:44px;height:36px;flex-basis:44px}
+    .brand-copy{min-width:0;gap:4px}
+    .brand-name{font-size:.94rem;letter-spacing:.095em}
+    .brand-sub{
+      margin:0;
+      font-size:.5rem;
+      line-height:1.35;
+      letter-spacing:.085em;
+      white-space:nowrap;
+    }
+    .header-links{gap:8px}
+    .header-links a{
+      min-height:42px;
+      padding:8px 11px;
+      font-size:.62rem;
+      letter-spacing:.075em;
+      white-space:nowrap;
+    }
+    .menu-button{width:42px;height:42px}
+
+    .hero{
+      position:relative;
+      min-height:calc(100svh - 111px);
+      display:grid;
+      align-items:stretch;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 50% 4%,rgba(180,139,69,.09),transparent 31rem),
+        linear-gradient(180deg,var(--paper-bright),#f8f5ee);
+    }
+    .hero-inner{
+      min-height:inherit;
+      padding:clamp(58px,9vh,96px) 0 24px;
+      display:grid;
+      grid-template-rows:1fr auto;
+      align-items:stretch;
+      gap:28px;
+    }
+    .hero-stage{
+      align-self:center;
+      display:grid;
+      justify-items:center;
+      gap:clamp(26px,4vh,40px);
+    }
+    .hero-copy{max-width:1050px}
+    .eyebrow{font-size:clamp(.63rem,.85vw,.76rem)}
+    h1{
+      margin-top:24px;
+      max-width:1050px;
+      font-size:clamp(4.7rem,8vw,7.8rem);
+      line-height:.88;
+      letter-spacing:.012em;
+    }
+    .hero-aside{
+      width:min(100%,760px);
+      padding-top:0;
+      border-top:0;
+      display:grid;
+      justify-items:center;
+      gap:24px;
+    }
+    .hero-aside::before{
+      content:"";
+      width:88px;
+      height:1px;
+      background:var(--line-strong);
+    }
+    .hero-lead{
+      max-width:720px;
+      font-size:clamp(1.08rem,1.65vw,1.34rem);
+      line-height:1.58;
+    }
+    .hero-actions{
+      width:auto;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:12px;
+      margin:0;
+    }
+    .hero-actions .button{
+      width:auto;
+      min-width:205px;
+      min-height:48px;
+      padding:12px 22px;
+    }
+    .scroll-cue{
+      align-self:end;
+      display:inline-grid;
+      justify-items:center;
+      gap:7px;
+      margin-inline:auto;
+      color:var(--ink-soft);
+      font-family:var(--ceremonial);
+      font-size:.55rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .scroll-cue::after{
+      content:"";
+      width:1px;
+      height:27px;
+      background:linear-gradient(var(--gold),transparent);
+    }
+    .scroll-cue:hover{color:var(--ink)}
+
+    .section{padding:clamp(92px,9vw,124px) 20px}
+    .section-heading{margin-bottom:54px}
+    .section h2{
+      max-width:900px;
+      font-size:clamp(2.65rem,4.8vw,4.8rem);
+      line-height:1.02;
+    }
+    .section-intro{margin-top:24px;font-size:.95rem;line-height:1.72}
+
+    .pillar-grid,.featured-grid{gap:18px}
+    .pillar-card,.feature-card,.site-card,.campaign-bridge,.value{
+      border-radius:var(--r-card);
+    }
+    .pillar-card{
+      min-height:270px;
+      padding:30px 26px;
+      box-shadow:0 10px 30px rgba(27,34,29,.055);
+    }
+    .pillar-card h3{margin-top:26px}
+    .pillar-card p{font-size:.83rem;line-height:1.65}
+    .pillar-open{padding-top:18px}
+
+    .featured-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .feature-card{
+      min-height:305px;
+      padding:28px 24px;
+      box-shadow:0 10px 30px rgba(27,34,29,.055);
+    }
+    .feature-card p{font-size:.82rem;line-height:1.65}
+
+    .directory-controls{
+      grid-template-columns:minmax(250px,1fr) 230px auto auto;
+      gap:12px;
+      margin-bottom:28px;
+    }
+    .directory-status{margin-bottom:28px}
+    .directory-grid{gap:18px}
+    .site-card{
+      flex-basis:260px;
+      max-width:302px;
+      min-height:252px;
+      padding:25px 22px;
+      box-shadow:0 10px 30px rgba(27,34,29,.055);
+    }
+    .site-card p{font-size:.79rem;line-height:1.62}
+
+    .campaign-bridge{
+      grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);
+      gap:42px;
+      padding:42px;
+      box-shadow:0 12px 34px rgba(27,34,29,.06);
+    }
+    .campaign-copy h2{font-size:clamp(2.3rem,4vw,3.8rem);line-height:1.02}
+    .campaign-copy p{font-size:.92rem;line-height:1.7}
+    .campaign-actions{gap:12px}
+
+    .network-statement{gap:48px}
+    .statement-values{gap:16px}
+    .value{min-height:145px}
+    .final p{line-height:1.75}
+    .privacy-note{padding:28px}
+    footer{padding:52px 20px}
+
+    @media(max-width:1140px){
       .header-inner{grid-template-columns:1fr auto}
       .header-links{display:none}
+      .pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .campaign-bridge{grid-template-columns:1fr}
+      .campaign-copy{text-align:center}
       .network-statement{grid-template-columns:1fr}
     }
     @media(max-width:760px){
+      .shell{width:min(calc(100% - 26px),1240px)}
+      .hero{min-height:calc(100svh - 111px)}
+      .hero-inner{padding:54px 0 20px;gap:22px}
+      .hero-stage{gap:26px}
+      h1{font-size:clamp(3.55rem,16vw,5.3rem);line-height:.91}
+      .hero-lead{font-size:1rem;line-height:1.65}
+      .hero-actions{
+        width:min(100%,340px);
+        display:grid;
+        grid-template-columns:1fr;
+      }
+      .hero-actions .button{width:100%;min-width:0}
+      .section{padding:78px 14px}
+      .section-heading{margin-bottom:40px}
       .directory-controls{grid-template-columns:1fr}
       .statement-values{grid-template-columns:1fr}
       .footer-inner{grid-template-columns:1fr;justify-items:center}
       .footer-credit,.footer-meta{justify-self:center;text-align:center}
     }
     @media(max-width:560px){
-      .network-ticker{height:31px}
-      .site-header{top:31px}
-      .network-ticker-track{animation-duration:27s}
-      .network-ticker-set{gap:18px;padding-inline:18px}
-      .network-ticker-label{font-size:.45rem}
-      .network-ticker-app{font-size:.52rem}
-      .network-ticker-call{font-size:.47rem}
-      .brand-mark{width:43px;height:34px;flex-basis:43px;font-size:.4rem}
+      .network-ticker{min-height:32px;grid-template-columns:minmax(0,1fr) 36px}
+      .site-header{top:32px}
+      .network-ticker-track{animation-duration:34s}
+      .network-ticker-set{gap:20px;padding-inline:20px}
+      .network-ticker-app{min-height:32px}
+      .network-ticker-call{min-height:22px;margin-block:5px}
+      .ticker-control{width:36px;min-height:32px}
+      .header-inner{min-height:66px;gap:14px}
+      .brand{gap:9px}
+      .brand-mark{width:40px;height:32px;flex-basis:40px;font-size:.39rem}
+      .brand-name{font-size:.82rem}
       .brand-sub{display:none}
+      .menu-button{width:40px;height:40px}
+      .hero{min-height:calc(100svh - 99px)}
+      .hero-inner{padding-top:46px}
+      .eyebrow{font-size:.57rem;letter-spacing:.16em}
+      h1{font-size:clamp(3.2rem,17vw,4.5rem)}
+      .scroll-cue{font-size:.5rem}
       .pillar-grid,.featured-grid{grid-template-columns:1fr}
-      .hero-actions,.actions{display:grid}
+      .pillar-card,.feature-card{padding:26px 22px}
       .button{width:100%}
       .site-card{max-width:100%;min-width:100%}
+      .campaign-bridge{padding:28px 20px}
     }
     @media(prefers-reduced-motion:reduce){
       *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
       .network-ticker-track{transform:none!important}
+      .scroll-cue::after{height:20px}
     }
+
+    /* =========================================================
+       DEFINITIVE HEADER COLLISION REPAIR
+       Fixed ticker offset · reserved side columns · no wrapping
+       ========================================================= */
+    :root{--ticker-height:34px}
+    .network-ticker{
+      height:var(--ticker-height);
+      min-height:var(--ticker-height);
+    }
+    .site-header{top:var(--ticker-height)}
+    .header-inner{
+      min-height:74px;
+      display:grid;
+      grid-template-columns:minmax(190px,1fr) auto minmax(190px,1fr);
+      align-items:center;
+      column-gap:24px;
+    }
+    .brand{
+      justify-self:start;
+      width:auto;
+      max-width:240px;
+      min-width:0;
+      overflow:hidden;
+    }
+    .brand-copy{
+      min-width:0;
+      overflow:hidden;
+    }
+    .brand-name,.brand-sub{
+      display:block;
+      max-width:100%;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .brand-sub{
+      margin-top:4px;
+      font-size:.49rem;
+      line-height:1.2;
+      letter-spacing:.11em;
+    }
+    .header-links{
+      min-width:0;
+      flex-wrap:nowrap;
+      white-space:nowrap;
+    }
+    .header-links a{
+      flex:0 0 auto;
+      white-space:nowrap;
+    }
+    .menu-button{justify-self:end}
+
+    @media(max-width:1220px){
+      .header-inner{grid-template-columns:minmax(0,1fr) auto}
+      .header-links{display:none}
+      .brand{max-width:min(320px,calc(100vw - 110px))}
+    }
+    @media(max-width:560px){
+      :root{--ticker-height:32px}
+      .header-inner{min-height:66px}
+      .brand{max-width:calc(100vw - 92px)}
+      .brand-sub{display:none}
+    }
+
   </style>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <div class="network-ticker" aria-label="333 Network application ticker">
-    <a class="network-ticker-link"
-       href="https://vervenveda.github.io/333.github.io/"
-       aria-label="Open the 333 Network gateway for HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte Studio, and Bunya">
-      <span class="network-ticker-track">
-        <span class="network-ticker-set">
+  <div class="network-ticker" id="networkTicker" data-paused="false" aria-label="333 Network application ticker">
+    <div class="network-ticker-viewport">
+      <div class="network-ticker-track" id="networkTickerTrack">
+        <div class="network-ticker-set">
           <span class="network-ticker-label">333 Network</span>
-          <span class="network-ticker-app">HOLLO</span>
-          <span class="network-ticker-app">KANSEE</span>
-          <span class="network-ticker-app">E=Ven Mail</span>
-          <span class="network-ticker-app">Bazaar Art Live</span>
-          <span class="network-ticker-app">SIte Studio</span>
-          <span class="network-ticker-app">Bunya</span>
-          <span class="network-ticker-call">Open 333 →</span>
-        </span>
-        <span class="network-ticker-set" aria-hidden="true">
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+          <a class="network-ticker-call" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
+        </div>
+        <div class="network-ticker-set" aria-label="Repeated 333 Network links">
           <span class="network-ticker-label">333 Network</span>
-          <span class="network-ticker-app">HOLLO</span>
-          <span class="network-ticker-app">KANSEE</span>
-          <span class="network-ticker-app">E=Ven Mail</span>
-          <span class="network-ticker-app">Bazaar Art Live</span>
-          <span class="network-ticker-app">SIte Studio</span>
-          <span class="network-ticker-app">Bunya</span>
-          <span class="network-ticker-call">Open 333 →</span>
-        </span>
-      </span>
-    </a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+          <a class="network-ticker-call" tabindex="-1" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
+        </div>
+      </div>
+    </div>
+    <button class="ticker-control" id="tickerControl" type="button" aria-pressed="false" aria-label="Pause 333 Network ticker">Ⅱ</button>
   </div>
 
   <header class="site-header">
@@ -459,7 +749,7 @@
         <span class="brand-mark" aria-hidden="true">VNV</span>
         <span class="brand-copy">
           <span class="brand-name">Verve N Veda</span>
-          <span class="brand-sub">Public Learning · Creative Work · Research<br>Community Service · Activism</span>
+          <span class="brand-sub">Public Gateway</span>
         </span>
       </a>
 
@@ -468,6 +758,7 @@
         <a href="#featured">Featured</a>
         <a href="#directory">Directory</a>
         <a href="#mission">Mission</a>
+        <a href="#campaign">Jennifer Pearl 2028</a>
       </nav>
 
       <button class="menu-button" id="menuButton" type="button"
@@ -495,26 +786,30 @@
   </div>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="gatewayTitle">
       <div class="shell hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">One Connected Public Campus</p>
-          <h1>Verve N Veda</h1>
-        </div>
+        <div class="hero-stage">
+          <div class="hero-copy">
+            <p class="eyebrow">One Connected Public Campus</p>
+            <h1 id="gatewayTitle">Verve N Veda</h1>
+          </div>
 
-        <div class="hero-aside">
-          <p class="hero-lead">
-            A sovereign public ecosystem joining education, research, creativity,
-            professional tools, health, civic knowledge, environmental stewardship,
-            and compassionate service through one elegant gateway.
-          </p>
+          <div class="hero-aside">
+            <p class="hero-lead">
+              An elegant public gateway to education, research, creativity, health,
+              civic knowledge, environmental stewardship, and compassionate service.
+            </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#directory">Explore the Network</a>
-            <a class="button button-secondary" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">Enter Khaemenes Academy</a>
-            <a class="button button-secondary" href="https://vervenveda.github.io/PLERASearch.github.io/">Open PLERA Search</a>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#pillars">Discover the Halls</a>
+              <a class="button button-secondary" href="https://vervenveda.github.io/333.github.io/">Open 333 Network</a>
+            </div>
           </div>
         </div>
+
+        <a class="scroll-cue" href="#pillars" aria-label="Scroll to discover the Verve N Veda public halls">
+          <span>Scroll to Explore</span>
+        </a>
       </div>
     </section>
 
@@ -571,6 +866,20 @@
           </article>
 
           <article class="feature-card">
+            <span class="feature-icon">333</span>
+            <h3>333 Network</h3>
+            <p>HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte Studio, and Bunya in one local-first communication and creation network.</p>
+            <a class="button button-primary" href="https://vervenveda.github.io/333.github.io/">Open 333 Network</a>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">JP</span>
+            <h3>Jennifer Pearl 2028</h3>
+            <p>The official public-service campaign gateway for policy, constitutional learning, voter access, petitions, and community connection.</p>
+            <a class="button button-primary" href="https://JenniferPearl2028.com/">Open Campaign Website</a>
+          </article>
+
+          <article class="feature-card">
             <span class="feature-icon">P</span>
             <h3>ProResource Hub</h3>
             <p>Professional tools for writing, editing, research, media, meetings, design, organization, and everyday productivity.</p>
@@ -608,7 +917,23 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="directory">
+    <section class="section section-alt" id="campaign">
+      <div class="section-inner">
+        <div class="campaign-bridge">
+          <div class="campaign-copy">
+            <p class="kicker">Public Service 2028</p>
+            <h2>Jennifer Pearl for President</h2>
+            <p>The campaign now has a dedicated official domain and an independent GitHub Pages home. Both routes lead visitors to the current public-service campaign rather than an older Verve N Veda repository path.</p>
+          </div>
+          <div class="campaign-actions">
+            <a class="button button-primary" href="https://JenniferPearl2028.com/">Visit JenniferPearl2028.com</a>
+            <a class="button button-secondary" href="https://jenniferpearl2028.github.io/">Open Campaign GitHub Pages</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="directory">
       <div class="section-inner">
         <div class="section-heading">
           <p class="kicker">Complete Public Directory</p>
@@ -629,6 +954,7 @@
               <option value="all">All Public Halls</option>
             </select>
           </div>
+          <button class="control-button" id="clearSearchButton" type="button">Clear Search</button>
           <button class="control-button" id="randomButton" type="button">Surprise Me ✦</button>
         </div>
 
@@ -672,6 +998,14 @@
         </div>
       </div>
     </section>
+    <section class="section section-alt" id="privacy">
+      <div class="section-inner">
+        <div class="privacy-note">
+          <strong>Privacy & Public Access</strong>
+          This gateway does not require an account and does not collect form submissions on this page. Individual applications may store voluntary workspace data locally in the visitor’s browser; each application explains its own local-storage and connected-service status.
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -681,11 +1015,12 @@
         <a href="#pillars">Halls</a>
         <a href="#directory">Directory</a>
         <a href="#mission">Mission</a>
+        <a href="#campaign">Jennifer Pearl 2028</a>
         <a href="#top">Back to Top</a>
       </nav>
       <span class="footer-meta">
-        <a href="/privacy-policy.html">Privacy</a>
-        <a href="https://vervenveda.github.io/JenniferPearl2028.github.io/">Public Service 2028</a>
+        <a href="https://JenniferPearl2028.com/">JenniferPearl2028.com</a>
+        <a href="https://jenniferpearl2028.github.io/">Campaign GitHub Pages</a>
       </span>
     </div>
   </footer>
@@ -825,7 +1160,7 @@
         },
         {
                 "title": "Jennifer Pearl 2028",
-                "url": "https://vervenveda.github.io/JenniferPearl2028.github.io/",
+                "url": "https://JenniferPearl2028.com/",
                 "icon": "JP",
                 "group": "Public Service",
                 "desc": "Jennifer Pearl’s public-service campaign, policy work, voter access, and connected community mission.",
@@ -880,6 +1215,14 @@
                 "keywords": "artist painting drawing photo album gallery community social feed art business"
         },
         {
+                "title": "Bazaar Art Live",
+                "url": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+                "icon": "LIVE",
+                "group": "Creative & Professional",
+                "desc": "The live local-first creative community feed for profiles, posts, stories, reels, groups, events, and artistic connection.",
+                "keywords": "artists social network creative feed stories reels groups events community 333 live"
+        },
+        {
                 "title": "My Art Gallery",
                 "url": "https://vervenveda.github.io/myartgallery.github.io/",
                 "icon": "▧",
@@ -905,10 +1248,20 @@
         }
 ];
       const GROUP_ORDER = ["Education", "Knowledge", "Public Service", "Creative & Professional"];
-      const ALLOWED_HOSTS = new Set(["vervenveda.github.io", "vervenveda.com"]);
+      const ALLOWED_HOSTS = new Set(["vervenveda.github.io", "vervenveda.com", "jenniferpearl2028.com", "www.jenniferpearl2028.com"]);
       const $ = id => document.getElementById(id);
       let currentResults = [...SITES];
       let lastFocusedElement = null;
+
+      const networkTicker = $("networkTicker");
+      const tickerControl = $("tickerControl");
+      tickerControl.addEventListener("click", () => {
+        const paused = networkTicker.dataset.paused !== "true";
+        networkTicker.dataset.paused = String(paused);
+        tickerControl.setAttribute("aria-pressed", String(paused));
+        tickerControl.setAttribute("aria-label", paused ? "Resume 333 Network ticker" : "Pause 333 Network ticker");
+        tickerControl.textContent = paused ? "▶" : "Ⅱ";
+      });
 
       function escapeHtml(value) {
         return String(value).replace(/[&<>"']/g, char => ({
@@ -1038,6 +1391,12 @@
 
       $("search").addEventListener("input", renderDirectory);
       $("groupFilter").addEventListener("change", renderDirectory);
+      $("clearSearchButton").addEventListener("click", () => {
+        $("search").value = "";
+        $("groupFilter").value = "all";
+        renderDirectory();
+        $("search").focus();
+      });
       $("randomButton").addEventListener("click", () => {
         const pool = currentResults.length ? currentResults : SITES;
         const site = pool[Math.floor(Math.random() * pool.length)];
@@ -1082,6 +1441,12 @@
       $("menuSearch").addEventListener("input", event => buildMenu(event.target.value));
 
       document.addEventListener("keydown", event => {
+        if (!menuOverlay.classList.contains("open") && event.key === "/" && !/^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement?.tagName || "")) {
+          event.preventDefault();
+          $("search").focus();
+          $("directory").scrollIntoView({behavior:"smooth", block:"start"});
+          return;
+        }
         if (!menuOverlay.classList.contains("open")) return;
 
         if (event.key === "Escape") {
@@ -1104,6 +1469,10 @@
             first.focus();
           }
         }
+      });
+
+      document.querySelectorAll('a[href^="https://"]').forEach(link => {
+        link.rel = "noopener noreferrer";
       });
 
       $("year").textContent = new Date().getFullYear();
