@@ -23,8 +23,8 @@
       --paper:#f4f0e7;
       --paper-bright:#fbf9f4;
       --white:#fff;
-      --ink:#121713;
-      --ink-soft:#58615b;
+      --ink:#080B0F;
+      --ink-soft:#0A2424;
       --forest:#243d33;
       --forest-deep:#15251f;
       --gold:#b48b45;
@@ -51,7 +51,7 @@
       color:var(--ink);
       background:var(--paper);
       font-family:var(--sans);
-      font-size:16px;
+      font-size:14px;
       line-height:1.66;
       font-weight:400;
       text-align:center;
@@ -65,7 +65,7 @@
     [hidden]{display:none!important}
     ::selection{background:var(--gold-pale);color:var(--ink)}
     :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-    .shell{width:min(calc(100% - 33px),var(--max));margin-inline:auto}
+    .shell{width:min(calc(100% - 24px),var(--max));margin-inline:auto}
 
     .skip-link{
       position:fixed;top:11px;left:11px;z-index:3000;
@@ -79,13 +79,13 @@
       position:sticky;
       top:0;
       z-index:1300;
-      height:38px;
+      height:33px;
       overflow:hidden;
-      border-bottom:1px solid rgba(255,255,255,.11);
+      border-bottom:.5px solid rgba(255,255,255,.11);
       color:#f4ead1;
       background:
         linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
-      box-shadow:0 5px 18px rgba(6,15,27,.18);
+      box-shadow:0 7px 11px rgba(6,15,27,.18);
     }
     .network-ticker-link{
       height:100%;
@@ -96,8 +96,8 @@
       text-decoration:none;
     }
     .network-ticker-link:focus-visible{
-      outline:3px solid var(--gold-pale);
-      outline-offset:-4px;
+      outline:2px solid var(--gold-pale);
+      outline-offset:-3px;
     }
     .network-ticker-track{
       width:max-content;
@@ -105,7 +105,7 @@
       display:flex;
       align-items:center;
       white-space:nowrap;
-      animation:networkTickerMove 32s linear infinite;
+      animation:networkTickerMove 24s linear infinite;
       will-change:transform;
     }
     .network-ticker-link:hover .network-ticker-track,
@@ -117,14 +117,14 @@
       display:flex;
       align-items:center;
       justify-content:space-around;
-      gap:33px;
-      padding:0 33px;
+      gap:24px;
+      padding:0 24px;
     }
     .network-ticker-label{
       color:var(--gold-pale);
       font-family:var(--ceremonial);
-      font-size:.58rem;
-      font-weight:444;
+      font-size:.66rem;
+      font-weight:333;
       letter-spacing:.14em;
       text-transform:uppercase;
     }
@@ -133,7 +133,7 @@
       align-items:center;
       gap:7px;
       color:#eef3f7;
-      font-size:.66rem;
+      font-size:.55rem;
       font-weight:400;
       letter-spacing:.05em;
       text-transform:uppercase;
@@ -141,13 +141,13 @@
     .network-ticker-app::before{
       content:"";
       width:5px;
-      height:5px;
+      height:3px;
       border-radius:50%;
       background:var(--gold);
       box-shadow:0 0 0 3px rgba(180,139,69,.13);
     }
     .network-ticker-call{
-      padding:4px 8px;
+      padding:3px 7px;
       border:1px solid rgba(231,215,182,.28);
       border-radius:7px;
       color:#fff;
@@ -162,25 +162,25 @@
     }
 
     .site-header{
-      position:sticky;top:38px;z-index:1200;
+      position:sticky;top:33px;z-index:1200;
       border-bottom:1px solid var(--line);
       background:rgba(244,240,231,.95);
       backdrop-filter:blur(18px);
     }
     .header-inner{
-      min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:22px;
+      min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:22px;
     }
     .brand{
       display:inline-flex;align-items:center;gap:11px;
       min-width:0;color:var(--ink);text-align:left;
     }
     .brand-mark{
-      width:55px;height:33px;flex:0 0 44px;
+      width:44px;height:33px;flex:0 0 44px;
       display:grid;place-items:center;
       border:1px solid var(--ink);border-radius:7px;
       color:#fff;background:var(--ink);
-      font:333; font-size:.44rem var(--ceremonial);
-      letter-spacing:.09em;
+      font:333; font-size:.55rem var(--ceremonial);
+      letter-spacing:.07em;
     }
     .brand-copy{display:grid;line-height:1.05}
     .brand-name{
@@ -191,8 +191,8 @@
       text-transform:uppercase;
     }
     .brand-sub{
-      margin-top:3px;color:var(--ink-soft);
-      font-size:.52rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;
+      margin-top:2px;color:var(--ink-soft);
+      font-size:.44rem;font-weight:333;letter-spacing:.07em;text-transform:uppercase;
     }
     .header-links{display:flex;align-items:center;gap:3px}
     .header-links a{
