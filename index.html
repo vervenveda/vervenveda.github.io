@@ -100,7 +100,7 @@
     .network-ticker-viewport{min-width:0;overflow:hidden}
     .network-ticker-track{
       width:max-content;display:flex;align-items:center;white-space:nowrap;
-      animation:networkTickerMove 24s linear infinite;will-change:transform;
+      animation:networkTickerMove 14s linear infinite;will-change:transform;
     }
     .network-ticker:hover .network-ticker-track,
     .network-ticker:focus-within .network-ticker-track,
@@ -112,22 +112,22 @@
     }
     .network-ticker-app,
     .network-ticker-call{
-      min-height:35px;display:inline-flex;align-items:center;gap:7px;
-      color:#eef3f7;font-size:.44rem;font-weight:333;
+      min-height:36px;display:inline-flex;align-items:center;gap:7px;
+      color:#eef3f7;font-size:.55rem;font-weight:333;
       letter-spacing:.11em;text-transform:uppercase;text-decoration:none;
     }
     .network-ticker-app::before{
-      content:"";width:3px;height:3px;border-radius:50%;
+      content:"";width:3px;height:3.5px;border-radius:50%;
       background:var(--gold);box-shadow:0 0 0 2px rgba(180,139,69,.12);
     }
     .network-ticker-app:hover,.network-ticker-call:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
     .network-ticker-call{
-      min-height:24px;margin-block:5px;padding:3px 9px;border:1px solid rgba(231,215,182,.28);
+      min-height:33px;margin-block:5px;padding:3px 9px;border:1px solid rgba(231,215,182,.28);
       border-radius:7px;color:#fff;background:rgba(255,255,255,.045);
     }
     .ticker-control{
-      width:44px;min-height:33px;border:0;border-left:1px solid rgba(255,255,255,.12);
-      color:#f4ead1;background:rgba(0,0,0,.12);font-size:.68rem;
+      width:44px;min-height:36px;border:0;border-left:1px solid rgba(255,255,255,.12);
+      color:#f4ead1;background:rgba(0,0,0,.12);font-size:.77rem;
     }
     .ticker-control:hover{background:rgba(255,255,255,.08)}
     @keyframes networkTickerMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
