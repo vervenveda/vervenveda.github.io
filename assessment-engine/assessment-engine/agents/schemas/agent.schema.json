@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vervenveda.com/assessment-engine/agents/schemas/agent.schema.json",
+  "title": "Verve Agent Registration",
+  "type": "object",
+  "required": ["id", "name", "version", "entry", "capabilities", "privacy"],
+  "properties": {
+    "id": { "type": "string", "minLength": 3 },
+    "name": { "type": "string", "minLength": 3 },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "entry": { "type": "string" },
+    "execution": { "enum": ["browser-local", "worker-local", "server", "hybrid"] },
+    "capabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "privacy": {
+      "type": "object",
+      "required": ["defaultStorage", "formalGradeAuthority"],
+      "properties": {
+        "defaultStorage": { "enum": ["none", "local-only", "authorized-sync"] },
+        "collectsNames": { "type": "boolean" },
+        "collectsFreeFormText": { "type": "boolean" },
+        "formalGradeAuthority": { "type": "boolean", "const": false }
+      }
+    }
+  },
+  "additionalProperties": true
+}
