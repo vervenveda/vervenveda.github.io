@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryId": "verve-n-veda.agent-registry",
+  "updatedAt": "2026-08-06",
+  "agents": [
+    {
+      "id": "verve.sovereign-problem-solving-agent",
+      "name": "Verve Sovereign Problem-Solving Agent",
+      "version": "0.1.0",
+      "entry": "./core/sovereign-agent.js",
+      "execution": "browser-local",
+      "capabilities": [
+        "constraint-filtering",
+        "heuristic-ranking",
+        "monte-carlo-simulation",
+        "minimax-alpha-beta",
+        "constraint-backtracking",
+        "adaptive-local-memory",
+        "decision-explanations",
+        "assessment-evidence-export"
+      ],
+      "privacy": {
+        "defaultStorage": "local-only",
+        "collectsNames": false,
+        "collectsFreeFormText": false,
+        "formalGradeAuthority": false
+      },
+      "demos": ["./demos/index.html"]
+    }
+  ],
+  "plannedAdapters": [
+    "arcade.affix-six",
+    "arcade.chess-studio",
+    "arcade.checkers-variant-lab",
+    "arcade.six-by-six",
+    "arcade.sudoku",
+    "arcade.orion-connect-four",
+    "arcade.backgammon",
+    "language.aurora-core",
+    "creativity.creative-spark"
+  ]
+}

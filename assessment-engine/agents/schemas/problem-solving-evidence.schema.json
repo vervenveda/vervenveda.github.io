@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vervenveda.com/assessment-engine/agents/schemas/problem-solving-evidence.schema.json",
+  "title": "Problem-Solving Evidence Bundle",
+  "type": "object",
+  "required": ["schemaVersion", "exportedAt", "sourceApp", "events"],
+  "properties": {
+    "schemaVersion": { "type": "string" },
+    "exportedAt": { "type": "string", "format": "date-time" },
+    "sourceApp": { "type": "string" },
+    "events": {
+      "type": "array",
+      "items": { "$ref": "./agent-event.schema.json" }
+    }
+  }
+}

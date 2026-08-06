@@ -1,0 +1,7 @@
+{
+  "name": "@verve-n-veda/sovereign-problem-solving-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first explainable reasoning agent for the Verve N Veda Assessment Engine"
+}
