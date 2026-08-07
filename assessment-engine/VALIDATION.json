@@ -1,0 +1,45 @@
+{
+  "createdAt": "2026-08-07T15:38:57.435731+00:00",
+  "phase": "1.1",
+  "fileCount": 26,
+  "jsonValid": true,
+  "jsSyntaxValid": true,
+  "testsPassed": true,
+  "policyMetadataPreserved": true,
+  "searchLayerAdded": true,
+  "sovereignRanksOnlyPostPolicyCandidates": true,
+  "preschoolBridgeAdded": true,
+  "workflowPushCollisionHardened": true,
+  "actionsNode24Native": true,
+  "errors": [],
+  "testOutput": "TAP version 13\n# Subtest: Admin repository is restricted\nok 1 - Admin repository is restricted\n  ---\n  duration_ms: 0.891814\n  type: 'test'\n  ...\n# Subtest: Campaign account is segregated\nok 2 - Campaign account is segregated\n  ---\n  duration_ms: 1.231077\n  type: 'test'\n  ...\n# Subtest: Khaemenes repository is recognized as educational\nok 3 - Khaemenes repository is recognized as educational\n  ---\n  duration_ms: 0.220858\n  type: 'test'\n  ...\n# Subtest: stable lesson requires no freshness verification\nok 4 - stable lesson requires no freshness verification\n  ---\n  duration_ms: 0.926035\n  type: 'test'\n  ...\n# Subtest: dynamic resource requires verification without evidence\nok 5 - dynamic resource requires verification without evidence\n  ---\n  duration_ms: 0.273456\n  type: 'test'\n  ...\n# Subtest: session freshness evidence clears verification requirement\nok 6 - session freshness evidence clears verification requirement\n  ---\n  duration_ms: 0.190273\n  type: 'test'\n  ...\n# Subtest: search prefers current-school geometry resource\nok 7 - search prefers current-school geometry resource\n  ---\n  duration_ms: 3.545664\n  type: 'test'\n  ...\n# Subtest: faith-specific resource does not appear for generic Arabic request\nok 8 - faith-specific resource does not appear for generic Arabic request\n  ---\n  duration_ms: 1.735447\n  type: 'test'\n  ...\n# Subtest: explicit Quranic query permits preference-gated resource\nok 9 - explicit Quranic query permits preference-gated resource\n  ---\n  duration_ms: 0.514303\n  type: 'test'\n  ...\n# Subtest: Preschool bridge prioritizes local mentor-eligible activity\nok 10 - Preschool bridge prioritizes local mentor-eligible activity\n  ---\n  duration_ms: 4.829331\n  type: 'test'\n  ...\n# Subtest: policy metadata survives normalization\nok 11 - policy metadata survives normalization\n  ---\n  duration_ms: 1.411436\n  type: 'test'\n  ...\n# Subtest: Admin is blocked regardless of query\nok 12 - Admin is blocked regardless of query\n  ---\n  duration_ms: 1.078291\n  type: 'test'\n  ...\n# Subtest: faith-specific resource requires family preference or explicit query\nok 13 - faith-specific resource requires family preference or explicit query\n  ---\n  duration_ms: 1.385817\n  type: 'test'\n  ...\n# Subtest: dynamic resource is conditional until freshness is handled downstream\nok 14 - dynamic resource is conditional until freshness is handled downstream\n  ---\n  duration_ms: 0.262801\n  type: 'test'\n  ...\n# Subtest: account-aware network resource is conditional without account context\nok 15 - account-aware network resource is conditional without account context\n  ---\n  duration_ms: 0.199296\n  type: 'test'\n  ...\n# Subtest: Elementary student can receive educational resource\nok 16 - Elementary student can receive educational resource\n  ---\n  duration_ms: 1.685222\n  type: 'test'\n  ...\n# Subtest: Admin resource is never recommended\nok 17 - Admin resource is never recommended\n  ---\n  duration_ms: 0.250973\n  type: 'test'\n  ...\n1..17\n# tests 17\n# suites 0\n# pass 17\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 181.349148\n",
+  "testErrors": "",
+  "fullSearchTestsDeferredToLiveAgentMirror": false,
+  "policyGateRegressionFixed": true,
+  "testCount": 17,
+  "indexExportImportPassed": true,
+  "indexExportOutput": "index exports ok",
+  "sovereignIntegrationValidation": {
+    "mode": "API-compatible local test double",
+    "liveInterfaceInspected": true,
+    "liveMethodsUsed": [
+      "chooseAction",
+      "receiveOutcome"
+    ],
+    "note": "Existing live Sovereign Agent is not replaced by this package."
+  },
+  "wave01SchemaValidation": {
+    "validator": "jsonschema Draft 2020-12",
+    "manifestCount": 16,
+    "resourceCount": 100,
+    "valid": true,
+    "errors": []
+  },
+  "actionsUpgrade": {
+    "checkout": "actions/checkout@v7",
+    "setupNode": "actions/setup-node@v7",
+    "nodeVersion": "24",
+    "fetchDepth": 0,
+    "rebaseBeforePush": true
+  }
+}
