@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "createdAt": "2026-08-07T14:56:25.182708+00:00",
+  "manifestCount": 16,
+  "resourceCount": 100,
+  "jsonParseValid": true,
+  "schemaValidator": "jsonschema Draft 2020-12",
+  "schemaValid": true,
+  "schemaErrors": [],
+  "customChecksValid": true,
+  "customErrors": [],
+  "routeRepairs": [
+    "Khaemenes Academy Parent_resources folder replaced with direct Homeschool Compass, Transcript Generator, and Diploma Generator routes.",
+    "ProReSources scientific calculator changed to verified Khaemenes_Scientific_Calculator_index.html route."
+  ],
+  "policyAssertions": {
+    "adminIncluded": false,
+    "candidateCampaignPagesInEducationalManifests": false,
+    "dynamicResourcesCarryFreshnessMetadata": true,
+    "faithResourcesCarryPreferenceMetadata": true,
+    "network333ChildGeneralAccess": false
+  },
+  "repositories": [
+    {
+      "repository": "vervenveda/333.github.io",
+      "classification": "professional-practical",
+      "resources": 1
+    },
+    {
+      "repository": "vervenveda/Arshif.github.io",
+      "classification": "creative-cultural",
+      "resources": 6
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "resources": 4
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "resources": 9
+    },
+    {
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "resources": 5
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "resources": 11
+    },
+    {
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "resources": 9
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "resources": 7
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Middle.github.io",
+      "classification": "educational",
+      "resources": 1
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Preschool.github.io",
+      "classification": "educational",
+      "resources": 2
+    },
+    {
+      "repository": "vervenveda/PLERASearch.github.io",
+      "classification": "research-information",
+      "resources": 5
+    },
+    {
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "resources": 12
+    },
+    {
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "wellness",
+      "resources": 7
+    },
+    {
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "resources": 7
+    },
+    {
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "resources": 8
+    },
+    {
+      "repository": "vervenveda/theverifier.github.io",
+      "classification": "research-information",
+      "resources": 6
+    }
+  ]
+}
