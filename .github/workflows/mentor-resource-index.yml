@@ -1,1 +1,56 @@
+name: Mentor Resource Index
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "mentor-manifest.json"
+      - "assessment-engine/mentor/discovery/**"
+      - "assessment-engine/mentor/schemas/**"
+      - ".github/workflows/mentor-resource-index.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mentor-resource-index
+  cancel-in-progress: true
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build repository and resource index
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node assessment-engine/mentor/discovery/build-resource-index.mjs
+
+      - name: Run Mentor Core tests
+        run: node --test assessment-engine/mentor/tests/*.test.mjs
+
+      - name: Commit index changes
+        shell: bash
+        run: |
+          if git diff --quiet -- assessment-engine/mentor/registry/ecosystem-repositories.json assessment-engine/mentor/registry/ecosystem-resources.json; then
+            echo "No registry changes."
+            exit 0
+          fi
+
+          git config user.name "khaemenes-mentor-indexer"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assessment-engine/mentor/registry/ecosystem-repositories.json
+          git add assessment-engine/mentor/registry/ecosystem-resources.json
+          git commit -m "chore(mentor): refresh ecosystem resource index"
+          git push
