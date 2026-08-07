@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vervenveda.com/assessment-engine/mentor/schemas/family-context.schema.json",
+  "title": "Family Mentor Context",
+  "type": "object",
+  "required": [
+    "version",
+    "learnerIds",
+    "parentMentorId"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "familyId": {
+      "type": "string",
+      "maxLength": 128
+    },
+    "activeLearnerId": {
+      "type": "string",
+      "maxLength": 128
+    },
+    "learnerIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "parentMentorId": {
+      "type": "string"
+    },
+    "approvedSharedFields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

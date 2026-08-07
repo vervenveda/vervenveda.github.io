@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "accounts": [
+    {
+      "login": "vervenveda",
+      "trust": "ecosystem-owner",
+      "autoAcknowledge": true,
+      "defaultClassification": "unclassified",
+      "notes": "Primary Verve N Veda and Khaemenes ecosystem."
+    },
+    {
+      "login": "JenniferPearl2028",
+      "trust": "campaign-owner",
+      "autoAcknowledge": true,
+      "defaultClassification": "campaign",
+      "notes": "Campaign/public-policy repository family. Segregated from ordinary learner recommendations."
+    },
+    {
+      "login": "artist1970",
+      "trust": "legacy-and-creative-owner",
+      "autoAcknowledge": true,
+      "defaultClassification": "unclassified",
+      "notes": "Legacy, creative, educational, and experimental repositories; classify individually."
+    }
+  ],
+  "knownSourceAliases": {
+    "arcade": [
+      "arcade.github.io"
+    ],
+    "arshif": [
+      "Arshif.github.io"
+    ],
+    "aurora": [
+      "aurora.github.io",
+      "AuroraCore"
+    ],
+    "verifier": [
+      "theverifier.github.io"
+    ],
+    "plera-search": [
+      "PLERASearch.github.io"
+    ],
+    "proresources": [
+      "proresource_hub.github.io"
+    ],
+    "one-nation-for-all": [
+      "onenationforall.github.io"
+    ],
+    "khaemenes": [
+      "Khaemenes_Academy.github.io",
+      "Khaemenes_Preschool.github.io",
+      "Khaemenes_KinderGarden.github.io",
+      "Khaemenes_Elementary.github.io",
+      "Khaemenes_Middle.github.io",
+      "Khaemenes_High.github.io",
+      "Khaemenes_Higher_Learning.github.io",
+      "Khaemenes_Linguistics.github.io"
+    ]
+  }
+}

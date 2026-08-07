@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vervenveda.com/assessment-engine/mentor/schemas/mentor-avatar.schema.json",
+  "title": "Mentor Avatar",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": [
+        "embedded",
+        "custom"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 24
+    },
+    "emoji": {
+      "type": "string",
+      "maxLength": 8
+    },
+    "colors": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "pattern": "^#[0-9A-Fa-f]{6}$"
+      }
+    },
+    "accessory": {
+      "type": "string",
+      "enum": [
+        "none",
+        "star",
+        "leaf",
+        "glasses",
+        "hat"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

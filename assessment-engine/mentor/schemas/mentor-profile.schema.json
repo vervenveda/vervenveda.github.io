@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vervenveda.com/assessment-engine/mentor/schemas/mentor-profile.schema.json",
+  "title": "Khaemenes Mentor Profile",
+  "type": "object",
+  "required": [
+    "learnerId",
+    "mentorStyleId"
+  ],
+  "properties": {
+    "learnerId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "mentorStyleId": {
+      "type": "string",
+      "enum": [
+        "pip",
+        "miri",
+        "nova",
+        "sage"
+      ]
+    },
+    "avatar": {
+      "$ref": "./mentor-avatar.schema.json"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

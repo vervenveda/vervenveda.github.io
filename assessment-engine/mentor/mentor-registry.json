@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "program": "Khaemenes Mentor",
+  "studentMentor": {
+    "persistentIdentity": true,
+    "customAvatarAllowed": true,
+    "embeddedStyles": ["pip", "miri", "nova", "sage"]
+  },
+  "parentMentor": {
+    "id": "family-guide",
+    "name": "Family Guide",
+    "role": "adult-navigation",
+    "persistentIdentity": true
+  },
+  "resourceDiscovery": {
+    "automaticRepositoryAcknowledgement": true,
+    "manifestFilename": "mentor-manifest.json",
+    "generatedRepositoryIndex": "./registry/ecosystem-repositories.json",
+    "generatedResourceIndex": "./registry/ecosystem-resources.json"
+  }
+}

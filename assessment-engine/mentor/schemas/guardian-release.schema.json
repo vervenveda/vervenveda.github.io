@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vervenveda.com/assessment-engine/mentor/schemas/guardian-release.schema.json",
+  "title": "Guardian Release Record",
+  "type": "object",
+  "required": [
+    "accepted",
+    "version",
+    "acceptedAt",
+    "adultAuthority",
+    "educationalToolNotice",
+    "parentalResponsibility",
+    "aiMentorBoundaries",
+    "respectfulUsePolicy",
+    "voluntaryUseAndLimits",
+    "localPrivacyControls"
+  ],
+  "properties": {
+    "accepted": {
+      "const": true
+    },
+    "version": {
+      "type": "string"
+    },
+    "acceptedAt": {
+      "type": "string"
+    },
+    "learnerId": {
+      "type": "string"
+    },
+    "attribution": {
+      "type": "string"
+    },
+    "adultAuthority": {
+      "const": true
+    },
+    "educationalToolNotice": {
+      "const": true
+    },
+    "parentalResponsibility": {
+      "const": true
+    },
+    "aiMentorBoundaries": {
+      "const": true
+    },
+    "respectfulUsePolicy": {
+      "const": true
+    },
+    "voluntaryUseAndLimits": {
+      "const": true
+    },
+    "localPrivacyControls": {
+      "const": true
+    }
+  },
+  "additionalProperties": true
+}
