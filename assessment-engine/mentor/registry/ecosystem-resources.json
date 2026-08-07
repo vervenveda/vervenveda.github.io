@@ -1,5 +1,3741 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-07T14:47:08Z",
-  "resources": []
+  "generatedAt": "2026-08-07T15:14:27Z",
+  "resources": [
+    {
+      "id": "vervenveda.333.github.io.333-gateway",
+      "title": "333 Network Gateway",
+      "description": "Shared 333 Network entry point for connected services and identity.",
+      "url": "https://vervenveda.com/333.github.io/",
+      "sourceId": "verve.333-network",
+      "repository": "vervenveda/333.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "communication",
+        "network",
+        "creative-community"
+      ],
+      "skills": [
+        "digital-navigation"
+      ],
+      "tags": [
+        "333-network",
+        "communications",
+        "account-service",
+        "privacy-sensitive"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.arcade-home",
+      "title": "Verve N Veda Arcade",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [],
+      "tags": [
+        "arcade",
+        "learning-games"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.affix-six",
+      "title": "Affix Six™",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/AffixSix%E2%84%A2_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "word-formation",
+        "vocabulary"
+      ],
+      "tags": [
+        "language",
+        "game"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.backgammon",
+      "title": "Backgammon",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Backgammon_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "strategy",
+        "probability"
+      ],
+      "tags": [
+        "strategy",
+        "board-game"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.checkers-lab",
+      "title": "Checkers Variant Lab",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Checkers_Variant_Lab_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "strategy",
+        "planning"
+      ],
+      "tags": [
+        "strategy",
+        "board-game"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.chess-studio",
+      "title": "Chess Studio",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Chess_Studio_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "strategy",
+        "planning"
+      ],
+      "tags": [
+        "strategy",
+        "chess"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.hangman",
+      "title": "Hangman",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Hangman_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "spelling",
+        "vocabulary"
+      ],
+      "tags": [
+        "language",
+        "word-game"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.sudoku",
+      "title": "Jenny's Sudoku",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Jenny%27s_Sudoku_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "logic",
+        "number-reasoning"
+      ],
+      "tags": [
+        "logic",
+        "puzzle"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.new-word",
+      "title": "Learn a New Word",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Learn_a_New_Word_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "vocabulary",
+        "word-learning"
+      ],
+      "tags": [
+        "language",
+        "words"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.connect-four",
+      "title": "Orion's Connect Four",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Orions_connect_four_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "strategy",
+        "pattern-recognition"
+      ],
+      "tags": [
+        "strategy",
+        "game"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.six-by-six",
+      "title": "Six by Six",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/SixbySix_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "logic",
+        "pattern-recognition"
+      ],
+      "tags": [
+        "logic",
+        "puzzle"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.tic-tac-toe",
+      "title": "Tic-Tac-Toe",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Tictactoe_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "strategy",
+        "pattern-recognition"
+      ],
+      "tags": [
+        "strategy",
+        "game"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arcade.github.io.trivia-esl",
+      "title": "ESL Trivia",
+      "description": "",
+      "url": "https://vervenveda.com/arcade.github.io/Trivia_ESL_index.html",
+      "sourceId": "verve.arcade",
+      "repository": "vervenveda/arcade.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "games",
+        "logic"
+      ],
+      "skills": [
+        "english",
+        "vocabulary"
+      ],
+      "tags": [
+        "language",
+        "trivia"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arshif.github.io.arshif-home",
+      "title": "ARSHIF Archives",
+      "description": "",
+      "url": "https://vervenveda.com/Arshif.github.io/",
+      "sourceId": "verve.arshif",
+      "repository": "vervenveda/Arshif.github.io",
+      "classification": "creative-cultural",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "archives",
+        "reading",
+        "culture"
+      ],
+      "skills": [],
+      "tags": [
+        "archive",
+        "reading",
+        "culture"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arshif.github.io.reading-room",
+      "title": "ARSHIF Reading Room",
+      "description": "",
+      "url": "https://vervenveda.com/Arshif.github.io/apps/Reading_room_index.html",
+      "sourceId": "verve.arshif",
+      "repository": "vervenveda/Arshif.github.io",
+      "classification": "creative-cultural",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "reading",
+        "archives"
+      ],
+      "skills": [
+        "reading",
+        "reflection"
+      ],
+      "tags": [
+        "reading-room",
+        "archive"
+      ],
+      "minutes": 20,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arshif.github.io.bible-history",
+      "title": "Bible & History",
+      "description": "",
+      "url": "https://vervenveda.com/Arshif.github.io/apps/Bible_and_History_index.html",
+      "sourceId": "verve.arshif",
+      "repository": "vervenveda/Arshif.github.io",
+      "classification": "creative-cultural",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "history",
+        "textual-study"
+      ],
+      "skills": [
+        "historical-context",
+        "reading"
+      ],
+      "tags": [
+        "history",
+        "bible",
+        "faith"
+      ],
+      "minutes": 25,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arshif.github.io.bible-context",
+      "title": "Bible Context",
+      "description": "",
+      "url": "https://vervenveda.com/Arshif.github.io/apps/Bible_context_index.html",
+      "sourceId": "verve.arshif",
+      "repository": "vervenveda/Arshif.github.io",
+      "classification": "creative-cultural",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "history",
+        "textual-study"
+      ],
+      "skills": [
+        "contextual-reading"
+      ],
+      "tags": [
+        "bible",
+        "history",
+        "faith"
+      ],
+      "minutes": 20,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arshif.github.io.foundations-faith",
+      "title": "Foundations of Faith",
+      "description": "",
+      "url": "https://vervenveda.com/Arshif.github.io/apps/Foundations_of_faith_index.html",
+      "sourceId": "verve.arshif",
+      "repository": "vervenveda/Arshif.github.io",
+      "classification": "creative-cultural",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "faith-study"
+      ],
+      "skills": [
+        "reflection",
+        "textual-study"
+      ],
+      "tags": [
+        "faith",
+        "religion"
+      ],
+      "minutes": 20,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.arshif.github.io.truth-tribe-kids",
+      "title": "Truth Tribe Kids",
+      "description": "",
+      "url": "https://vervenveda.com/Arshif.github.io/apps/Truth_tribe_kids_index.html",
+      "sourceId": "verve.arshif",
+      "repository": "vervenveda/Arshif.github.io",
+      "classification": "creative-cultural",
+      "audiences": [
+        "elementary",
+        "middle"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "faith-study",
+        "reading"
+      ],
+      "skills": [
+        "reading",
+        "reflection"
+      ],
+      "tags": [
+        "faith",
+        "kids"
+      ],
+      "minutes": 15,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.aurora.github.io.aurora-home",
+      "title": "Aurora",
+      "description": "",
+      "url": "https://vervenveda.com/aurora.github.io/",
+      "sourceId": "verve.aurora",
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "wellness",
+        "reflection"
+      ],
+      "skills": [],
+      "tags": [
+        "calm",
+        "reflection",
+        "wellness"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.aurora.github.io.breath-reset",
+      "title": "Breath Reset",
+      "description": "",
+      "url": "https://vervenveda.com/aurora.github.io/apps/breath_reset_index.html",
+      "sourceId": "verve.aurora",
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "wellness"
+      ],
+      "skills": [
+        "paced-breathing",
+        "pause"
+      ],
+      "tags": [
+        "breathing",
+        "calm",
+        "not-medical-advice"
+      ],
+      "minutes": 5,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.aurora.github.io.breathe-ground",
+      "title": "Breathe & Ground",
+      "description": "",
+      "url": "https://vervenveda.com/aurora.github.io/apps/breathe_ground_index.html",
+      "sourceId": "verve.aurora",
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "wellness"
+      ],
+      "skills": [
+        "grounding",
+        "reflection"
+      ],
+      "tags": [
+        "breathing",
+        "grounding",
+        "not-medical-advice"
+      ],
+      "minutes": 7,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.aurora.github.io.evening-breath",
+      "title": "Evening Breath",
+      "description": "",
+      "url": "https://vervenveda.com/aurora.github.io/apps/Breath_evening_index.html",
+      "sourceId": "verve.aurora",
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "wellness"
+      ],
+      "skills": [
+        "relaxation-routine"
+      ],
+      "tags": [
+        "evening",
+        "breathing",
+        "not-medical-advice"
+      ],
+      "minutes": 7,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.aurora.github.io.affirmation-garden",
+      "title": "Affirmation Garden",
+      "description": "",
+      "url": "https://vervenveda.com/aurora.github.io/apps/affirmation_garden_index.html",
+      "sourceId": "verve.aurora",
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "wellness",
+        "reflection"
+      ],
+      "skills": [
+        "reflection"
+      ],
+      "tags": [
+        "affirmations",
+        "reflection"
+      ],
+      "minutes": 10,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.aurora.github.io.aurora-inspiration",
+      "title": "Aurora Inspiration",
+      "description": "",
+      "url": "https://vervenveda.com/aurora.github.io/apps/Aurora_Inspiration_index.html",
+      "sourceId": "verve.aurora",
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "creative",
+        "reflection"
+      ],
+      "skills": [
+        "creative-reflection"
+      ],
+      "tags": [
+        "inspiration",
+        "creative"
+      ],
+      "minutes": 10,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.aurora.github.io.color-alchemy",
+      "title": "Color Alchemy",
+      "description": "",
+      "url": "https://vervenveda.com/aurora.github.io/apps/color_alchemy_index.html",
+      "sourceId": "verve.aurora",
+      "repository": "vervenveda/aurora.github.io",
+      "classification": "creative-cultural",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "creative"
+      ],
+      "skills": [
+        "color-exploration",
+        "creativity"
+      ],
+      "tags": [
+        "art",
+        "color",
+        "creative"
+      ],
+      "minutes": 15,
+      "energy": "creative",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_academy.github.io.academy-home",
+      "title": "Khaemenes Academy",
+      "description": "Main Khaemenes Academy gateway for families and learners.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/",
+      "sourceId": "khaemenes.academy",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "audiences": [
+        "preschool",
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation"
+      ],
+      "skills": [],
+      "tags": [
+        "academy",
+        "school-navigation"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_academy.github.io.homeschool-compass",
+      "title": "Homeschool Compass",
+      "description": "Parent-facing homeschool planning and guidance resource.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Homeschool_compass_index.html",
+      "sourceId": "khaemenes.academy",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "family-learning",
+        "education",
+        "planning"
+      ],
+      "skills": [
+        "planning",
+        "home-education-navigation"
+      ],
+      "tags": [
+        "parent",
+        "homeschool",
+        "planning"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_academy.github.io.transcript-generator",
+      "title": "Transcript Generator",
+      "description": "Parent-facing academic record preparation tool.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Transcript_generator_index.html",
+      "sourceId": "khaemenes.academy",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "family-learning",
+        "academic-records"
+      ],
+      "skills": [
+        "record-keeping"
+      ],
+      "tags": [
+        "parent",
+        "transcript",
+        "records"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_academy.github.io.diploma-generator",
+      "title": "Diploma Generator",
+      "description": "Parent-facing diploma preparation tool for appropriate educational recordkeeping.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Diploma_generator_index.html",
+      "sourceId": "khaemenes.academy",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "family-learning",
+        "academic-records"
+      ],
+      "skills": [
+        "record-keeping"
+      ],
+      "tags": [
+        "parent",
+        "diploma",
+        "records"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.elementary-home",
+      "title": "Khaemenes Elementary",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation"
+      ],
+      "skills": [],
+      "tags": [
+        "elementary",
+        "learning-home"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.geometry-game",
+      "title": "Elementary Geometry Game",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/elementary_geometry_game_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "geometry",
+        "spatial-reasoning"
+      ],
+      "tags": [
+        "math",
+        "game"
+      ],
+      "minutes": 15,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.kindness-quest",
+      "title": "Kindness Quest",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/elementary_kindness_quest_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "social-emotional"
+      ],
+      "skills": [
+        "kindness",
+        "reflection"
+      ],
+      "tags": [
+        "sel",
+        "character"
+      ],
+      "minutes": 12,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.vocabulary-garden",
+      "title": "Vocabulary Garden",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/elementary_vocabulary_garden_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "vocabulary",
+        "reading"
+      ],
+      "tags": [
+        "words",
+        "literacy"
+      ],
+      "minutes": 15,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.weather-portal",
+      "title": "Elementary Weather Portal",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/elementary_weather_portal_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "science"
+      ],
+      "skills": [
+        "weather",
+        "observation"
+      ],
+      "tags": [
+        "science",
+        "weather"
+      ],
+      "minutes": 15,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.emotional-garden",
+      "title": "Emotional Garden",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/emotional_garden_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "social-emotional"
+      ],
+      "skills": [
+        "feelings-vocabulary",
+        "reflection"
+      ],
+      "tags": [
+        "sel",
+        "feelings"
+      ],
+      "minutes": 10,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.learn-new-word",
+      "title": "Learn a New Word · Elementary",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/learn_a_new_word_elementary_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "vocabulary",
+        "word-learning"
+      ],
+      "tags": [
+        "words",
+        "literacy"
+      ],
+      "minutes": 8,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.little-kitchen-helper",
+      "title": "Little Kitchen Helper",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/little_kitchen_helper_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "life-skills"
+      ],
+      "skills": [
+        "following-directions",
+        "practical-learning"
+      ],
+      "tags": [
+        "life-skills",
+        "family",
+        "off-screen"
+      ],
+      "minutes": 20,
+      "energy": "active",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_elementary.github.io.lunar-phase-explorer",
+      "title": "Lunar Phase Explorer",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/apps/lunar_phase_explorer_index.html",
+      "sourceId": "khaemenes.elementary",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "science"
+      ],
+      "skills": [
+        "moon-phases",
+        "observation"
+      ],
+      "tags": [
+        "space",
+        "science"
+      ],
+      "minutes": 15,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.high-home",
+      "title": "Khaemenes Academy High School",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation"
+      ],
+      "skills": [],
+      "tags": [
+        "high-school",
+        "course-navigation"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.high-language-arts",
+      "title": "High School Language Arts",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-arts"
+      ],
+      "skills": [
+        "reading",
+        "writing",
+        "analysis"
+      ],
+      "tags": [
+        "english",
+        "literature",
+        "composition"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.high-mathematics",
+      "title": "High School Mathematics",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "mathematical-reasoning"
+      ],
+      "tags": [
+        "math",
+        "pre-algebra",
+        "algebra",
+        "geometry"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.high-science",
+      "title": "High School Science",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "science"
+      ],
+      "skills": [
+        "scientific-reasoning",
+        "evidence"
+      ],
+      "tags": [
+        "science",
+        "laboratory",
+        "inquiry"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.high-social-studies",
+      "title": "High School Social Studies",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "social-studies",
+        "civics",
+        "history"
+      ],
+      "skills": [
+        "historical-analysis",
+        "civic-literacy"
+      ],
+      "tags": [
+        "history",
+        "civics",
+        "social-studies"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.higher-home",
+      "title": "Khaemenes Higher Learning",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation"
+      ],
+      "skills": [],
+      "tags": [
+        "higher-learning",
+        "advanced-study"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.higher-math-catalog",
+      "title": "Higher Mathematics Course Catalog",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "advanced-mathematics"
+      ],
+      "tags": [
+        "course-catalog",
+        "mathematics"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.intro-proofs",
+      "title": "Introduction to Proofs",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/introduction-to-proofs/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "proof",
+        "logic"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.linear-algebra",
+      "title": "Linear Algebra",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/linear-algebra/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "vectors",
+        "matrices"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.calculus-ii",
+      "title": "Calculus II",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/calculus-ii/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "calculus",
+        "integration"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.differential-equations",
+      "title": "Differential Equations",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/differential-equations/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "differential-equations"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.discrete-math",
+      "title": "Discrete Mathematics",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/discrete-mathematics/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "logic",
+        "combinatorics"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.abstract-algebra",
+      "title": "Abstract Algebra",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/abstract-algebra/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "groups",
+        "rings",
+        "algebra"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.statistics",
+      "title": "Statistics",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/statistics/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "statistics",
+        "probability"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.real-complex-analysis",
+      "title": "Real & Complex Analysis",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/real-complex-analysis/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "analysis",
+        "complex-analysis"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.topology-geometry",
+      "title": "Topology & Differential Geometry",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/",
+      "sourceId": "khaemenes.higher-learning",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "topology",
+        "geometry"
+      ],
+      "tags": [
+        "advanced-math",
+        "course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.kindergarten-home",
+      "title": "Khaemenes Kinder Garden",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation"
+      ],
+      "skills": [],
+      "tags": [
+        "kindergarten",
+        "learning-home"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.abc-curriculum",
+      "title": "ABC Curriculum",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/ABC_curriculum_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "letters",
+        "early-reading"
+      ],
+      "tags": [
+        "alphabet",
+        "literacy"
+      ],
+      "minutes": 15,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.abc-spelling-soup",
+      "title": "ABC Spelling Soup",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/ABC_spelling_soup_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "letters",
+        "spelling"
+      ],
+      "tags": [
+        "word-play",
+        "literacy"
+      ],
+      "minutes": 10,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.abc-story",
+      "title": "ABC Story",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/ABC_story_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "story",
+        "letter-recognition"
+      ],
+      "tags": [
+        "storytelling",
+        "literacy"
+      ],
+      "minutes": 10,
+      "energy": "gentle",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.math-curriculum",
+      "title": "Kindergarten Math Curriculum",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Math_curriculum_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "number-sense",
+        "early-math"
+      ],
+      "tags": [
+        "math",
+        "curriculum"
+      ],
+      "minutes": 20,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.numbers-1-12",
+      "title": "Numbers 1–12",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Numbers_1-12_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "counting",
+        "number-recognition"
+      ],
+      "tags": [
+        "numbers",
+        "counting"
+      ],
+      "minutes": 8,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.spelling-safari",
+      "title": "Spelling Safari",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Spelling_safari_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-literacy"
+      ],
+      "skills": [
+        "spelling",
+        "phonics"
+      ],
+      "tags": [
+        "words",
+        "spelling"
+      ],
+      "minutes": 10,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.weather-compass",
+      "title": "Weather Compass",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/Weather_compass_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "science",
+        "wonder"
+      ],
+      "skills": [
+        "observation",
+        "weather"
+      ],
+      "tags": [
+        "weather",
+        "science"
+      ],
+      "minutes": 10,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_kindergarden.github.io.pe-curriculum",
+      "title": "Kinder Movement & PE",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/apps/PE_curriculum_index.html",
+      "sourceId": "khaemenes.kindergarten",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "classification": "educational",
+      "audiences": [
+        "kindergarten"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "movement",
+        "physical-learning"
+      ],
+      "skills": [
+        "gross-motor",
+        "movement"
+      ],
+      "tags": [
+        "movement",
+        "off-screen"
+      ],
+      "minutes": 15,
+      "energy": "active",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.linguistics-home",
+      "title": "Khaemenes Linguistics · Polyglot",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages",
+        "linguistics"
+      ],
+      "skills": [],
+      "tags": [
+        "polyglot",
+        "language-learning"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.arabic-365",
+      "title": "Arabic 365",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_365_index.html",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages"
+      ],
+      "skills": [
+        "arabic",
+        "vocabulary"
+      ],
+      "tags": [
+        "arabic",
+        "daily-practice"
+      ],
+      "minutes": 15,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.arabic-daily",
+      "title": "Arabic Daily",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_daily_index.html",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages"
+      ],
+      "skills": [
+        "arabic",
+        "practice"
+      ],
+      "tags": [
+        "arabic",
+        "daily-practice"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.arabic-memory",
+      "title": "Arabic Memory Game",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_memory_game_index.html",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages"
+      ],
+      "skills": [
+        "arabic",
+        "memory"
+      ],
+      "tags": [
+        "arabic",
+        "game"
+      ],
+      "minutes": 10,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.arabic-numbers",
+      "title": "Arabic Numbers",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_numbers_index.html",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages",
+        "mathematics"
+      ],
+      "skills": [
+        "arabic",
+        "numbers"
+      ],
+      "tags": [
+        "arabic",
+        "numbers"
+      ],
+      "minutes": 10,
+      "energy": "playful",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.esl-course",
+      "title": "ESL Course",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/ESL_course_index.html",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages"
+      ],
+      "skills": [
+        "english",
+        "esl"
+      ],
+      "tags": [
+        "english",
+        "language-learning"
+      ],
+      "minutes": 20,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.quran-root-explorer",
+      "title": "Arabic Qur'an Root Explorer",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_Quran_root_explorer_index.html",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages",
+        "textual-study"
+      ],
+      "skills": [
+        "arabic-roots",
+        "text-analysis"
+      ],
+      "tags": [
+        "arabic",
+        "quranic-study",
+        "faith"
+      ],
+      "minutes": 20,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_middle.github.io.middle-home",
+      "title": "Khaemenes Middle School",
+      "description": "",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/",
+      "sourceId": "khaemenes.middle",
+      "repository": "vervenveda/Khaemenes_Middle.github.io",
+      "classification": "educational",
+      "audiences": [
+        "middle",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation"
+      ],
+      "skills": [],
+      "tags": [
+        "middle-school",
+        "course-navigation"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_preschool.github.io.preschool-family-home",
+      "title": "Crechè Family Home",
+      "description": "Preschool family learning home with the shared activity catalog.",
+      "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/",
+      "sourceId": "khaemenes.preschool",
+      "repository": "vervenveda/Khaemenes_Preschool.github.io",
+      "classification": "educational",
+      "audiences": [
+        "preschool",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "early-learning",
+        "family-learning"
+      ],
+      "skills": [],
+      "tags": [
+        "preschool",
+        "play",
+        "activities"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_preschool.github.io.preschool-mentor",
+      "title": "Preschool Mentor",
+      "description": "Guided Preschool Mentor with guardian authorization, local progress, and age-appropriate activities.",
+      "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/",
+      "sourceId": "khaemenes.preschool",
+      "repository": "vervenveda/Khaemenes_Preschool.github.io",
+      "classification": "educational",
+      "audiences": [
+        "preschool",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "early-learning",
+        "mentor"
+      ],
+      "skills": [],
+      "tags": [
+        "mentor",
+        "guided-learning",
+        "parent"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.onenationforall.github.io.one-nation-home",
+      "title": "One Nation for All",
+      "description": "",
+      "url": "https://vervenveda.com/onenationforall.github.io/",
+      "sourceId": "verve.one-nation-for-all",
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "civics",
+        "public-life"
+      ],
+      "skills": [
+        "civic-literacy"
+      ],
+      "tags": [
+        "civics",
+        "public-life"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.onenationforall.github.io.elementary-kids-vote",
+      "title": "Elementary Kids Vote",
+      "description": "",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Elementary_Kids_Vote_index.html",
+      "sourceId": "verve.one-nation-for-all",
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "audiences": [
+        "elementary"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "civics"
+      ],
+      "skills": [
+        "voting-basics",
+        "civic-literacy"
+      ],
+      "tags": [
+        "civics",
+        "voting",
+        "educational"
+      ],
+      "minutes": 15,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.onenationforall.github.io.middle-voting-portal",
+      "title": "Middle School Voting Portal",
+      "description": "",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/MiddleSchool_Voting_Portal_index.html",
+      "sourceId": "verve.one-nation-for-all",
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "audiences": [
+        "middle"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "civics"
+      ],
+      "skills": [
+        "voting",
+        "civic-literacy"
+      ],
+      "tags": [
+        "civics",
+        "voting"
+      ],
+      "minutes": 20,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.onenationforall.github.io.high-voter-portal",
+      "title": "High School Voter Portal",
+      "description": "",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/High_School_voter_portal_index.html",
+      "sourceId": "verve.one-nation-for-all",
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "civics"
+      ],
+      "skills": [
+        "voting",
+        "civic-literacy"
+      ],
+      "tags": [
+        "civics",
+        "voting"
+      ],
+      "minutes": 20,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.onenationforall.github.io.us-voter-hub",
+      "title": "U.S. Voter Hub",
+      "description": "",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/US_VOTER_HUB_index.html",
+      "sourceId": "verve.one-nation-for-all",
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "civics"
+      ],
+      "skills": [
+        "voting-information"
+      ],
+      "tags": [
+        "civics",
+        "voter-information",
+        "current-info"
+      ],
+      "minutes": 15,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.onenationforall.github.io.florida-citizen-connect",
+      "title": "Florida Citizen Connect",
+      "description": "",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Florida_Citizen_connect_index.html",
+      "sourceId": "verve.one-nation-for-all",
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "civics"
+      ],
+      "skills": [
+        "government-navigation"
+      ],
+      "tags": [
+        "florida",
+        "civics",
+        "current-info"
+      ],
+      "minutes": 15,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.onenationforall.github.io.global-voter-portal",
+      "title": "Global Voter Portal",
+      "description": "",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Global_Voter_Portal_index.html",
+      "sourceId": "verve.one-nation-for-all",
+      "repository": "vervenveda/onenationforall.github.io",
+      "classification": "civic",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "civics",
+        "global-studies"
+      ],
+      "skills": [
+        "comparative-civics"
+      ],
+      "tags": [
+        "global",
+        "voting",
+        "current-info"
+      ],
+      "minutes": 20,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plerasearch.github.io.plera-search-home",
+      "title": "PLERA Search",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERASearch.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "research",
+        "navigation"
+      ],
+      "skills": [
+        "research-navigation"
+      ],
+      "tags": [
+        "search",
+        "research",
+        "current-info"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plerasearch.github.io.search-gate",
+      "title": "PLERA Search Gate",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/PLERA_Search_Gate_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERASearch.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "research"
+      ],
+      "skills": [
+        "search",
+        "research-navigation"
+      ],
+      "tags": [
+        "search",
+        "research",
+        "current-info"
+      ],
+      "minutes": 10,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plerasearch.github.io.search-pro",
+      "title": "PLERA Search Pro",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/PLERA_search_pro_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERASearch.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "research"
+      ],
+      "skills": [
+        "advanced-search",
+        "research-navigation"
+      ],
+      "tags": [
+        "search",
+        "research",
+        "current-info"
+      ],
+      "minutes": 15,
+      "energy": "focused",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plerasearch.github.io.insurance-gate",
+      "title": "Insurance Resource Gate",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/Insurance_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERASearch.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "practical-resources"
+      ],
+      "skills": [
+        "resource-navigation"
+      ],
+      "tags": [
+        "insurance",
+        "adult-resource",
+        "current-info"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plerasearch.github.io.shopping-gate",
+      "title": "Shopping Resource Gate",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/Shopping_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERASearch.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "practical-resources"
+      ],
+      "skills": [
+        "resource-navigation"
+      ],
+      "tags": [
+        "shopping",
+        "adult-resource",
+        "current-info"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.proresources-home",
+      "title": "ProReSources Hub",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "professional",
+        "productivity",
+        "technology"
+      ],
+      "skills": [],
+      "tags": [
+        "resources",
+        "tools"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.daily-spark",
+      "title": "DailySpark™ Task Studio",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/DailySpark%E2%84%A2_task_studio_index.html",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "productivity"
+      ],
+      "skills": [
+        "planning",
+        "task-management"
+      ],
+      "tags": [
+        "planner",
+        "tasks"
+      ],
+      "minutes": 15,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.khae-clean",
+      "title": "KhaeClean™",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/KhaeClean%E2%84%A2_index.html",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "technology"
+      ],
+      "skills": [
+        "file-organization",
+        "digital-tools"
+      ],
+      "tags": [
+        "utility",
+        "cleanup"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.khae-zip",
+      "title": "KhaeZip™",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/KhaeZip%E2%84%A2_index.html",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "technology"
+      ],
+      "skills": [
+        "file-management"
+      ],
+      "tags": [
+        "utility",
+        "archive"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.ohmic-cad",
+      "title": "Ohmic CAD Studio",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "engineering",
+        "design",
+        "technology"
+      ],
+      "skills": [
+        "cad",
+        "design"
+      ],
+      "tags": [
+        "engineering",
+        "cad"
+      ],
+      "minutes": 30,
+      "energy": "focused",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.prose",
+      "title": "PROSE™ Writing Studio",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/PROSE_index.html",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "writing",
+        "productivity"
+      ],
+      "skills": [
+        "writing",
+        "editing"
+      ],
+      "tags": [
+        "editor",
+        "writing"
+      ],
+      "minutes": 30,
+      "energy": "focused",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.plera-search-gate",
+      "title": "PLERA™ Search Gate",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/PLERA%E2%84%A2%20Search%20Gate_index.html",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "research"
+      ],
+      "skills": [
+        "research-navigation"
+      ],
+      "tags": [
+        "search",
+        "research"
+      ],
+      "minutes": 10,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.proresource_hub.github.io.scientific-calculator",
+      "title": "Khaemenes Scientific Calculator",
+      "description": "",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
+      "sourceId": "verve.proresources",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "classification": "professional-practical",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "mathematics",
+        "science"
+      ],
+      "skills": [
+        "calculation"
+      ],
+      "tags": [
+        "calculator",
+        "math",
+        "science"
+      ],
+      "minutes": 10,
+      "energy": "focused",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.theverifier.github.io.verifier-home",
+      "title": "The Verifier",
+      "description": "",
+      "url": "https://vervenveda.com/theverifier.github.io/",
+      "sourceId": "verve.verifier",
+      "repository": "vervenveda/theverifier.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "news",
+        "research"
+      ],
+      "skills": [
+        "media-literacy",
+        "research"
+      ],
+      "tags": [
+        "news",
+        "research",
+        "current-info"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.theverifier.github.io.education-news",
+      "title": "Education News",
+      "description": "",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/education_news_index.html",
+      "sourceId": "verve.verifier",
+      "repository": "vervenveda/theverifier.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "news",
+        "education"
+      ],
+      "skills": [
+        "media-literacy"
+      ],
+      "tags": [
+        "news",
+        "education",
+        "current-info"
+      ],
+      "minutes": 15,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.theverifier.github.io.eco-pulse",
+      "title": "EcoPulse News",
+      "description": "",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/EcoPulse_news_index.html",
+      "sourceId": "verve.verifier",
+      "repository": "vervenveda/theverifier.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "news",
+        "environment"
+      ],
+      "skills": [
+        "media-literacy",
+        "environmental-literacy"
+      ],
+      "tags": [
+        "news",
+        "environment",
+        "current-info"
+      ],
+      "minutes": 15,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.theverifier.github.io.interactive-news",
+      "title": "Interactive News Dashboard",
+      "description": "",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/interactive_news_index.html",
+      "sourceId": "verve.verifier",
+      "repository": "vervenveda/theverifier.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "news",
+        "research"
+      ],
+      "skills": [
+        "news-navigation",
+        "media-literacy"
+      ],
+      "tags": [
+        "news",
+        "dashboard",
+        "current-info"
+      ],
+      "minutes": 20,
+      "energy": "focused",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.theverifier.github.io.global-digest",
+      "title": "Global News Digest",
+      "description": "",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/global_news_digest_index.html",
+      "sourceId": "verve.verifier",
+      "repository": "vervenveda/theverifier.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "news",
+        "global-studies"
+      ],
+      "skills": [
+        "media-literacy",
+        "global-awareness"
+      ],
+      "tags": [
+        "news",
+        "global",
+        "current-info"
+      ],
+      "minutes": 15,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.theverifier.github.io.live-research-news",
+      "title": "Live Research News",
+      "description": "",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/Live_Research_News_index.html",
+      "sourceId": "verve.verifier",
+      "repository": "vervenveda/theverifier.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "news",
+        "research"
+      ],
+      "skills": [
+        "research",
+        "source-comparison"
+      ],
+      "tags": [
+        "news",
+        "research",
+        "current-info"
+      ],
+      "minutes": 20,
+      "energy": "focused",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "manifestPath": "mentor-manifest.json"
+    }
+  ]
 }

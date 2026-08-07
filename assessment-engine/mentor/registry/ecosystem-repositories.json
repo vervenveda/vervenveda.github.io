@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-07T14:47:08Z",
+  "generatedAt": "2026-08-07T15:14:27Z",
   "accounts": [
     "vervenveda",
     "JenniferPearl2028",
@@ -20,13 +20,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-08-01T19:31:21Z",
-      "updatedAt": "2026-08-02T18:43:15Z",
-      "pushedAt": "2026-08-02T18:43:12Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-07T15:02:33Z",
+      "pushedAt": "2026-08-07T15:00:40Z",
+      "discoveryStatus": "manifested",
+      "classification": "professional-practical",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Repository acknowledged but not yet classified for recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "5377c8ec8059944d0585cda16556fa074c62a196",
+        "htmlUrl": "https://github.com/vervenveda/333.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/arcade.github.io",
@@ -41,13 +48,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T19:42:04Z",
-      "updatedAt": "2026-08-01T14:11:14Z",
-      "pushedAt": "2026-08-01T14:11:01Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-07T15:04:13Z",
+      "pushedAt": "2026-08-07T15:01:19Z",
+      "discoveryStatus": "manifested",
+      "classification": "educational",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Repository acknowledged but not yet classified for recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "66eaaa25f28c327dfdf3e952cdf351a85a4828e7",
+        "htmlUrl": "https://github.com/vervenveda/arcade.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/arshif.github.io",
@@ -62,13 +76,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T14:11:37Z",
-      "updatedAt": "2026-08-01T13:28:11Z",
-      "pushedAt": "2026-08-01T13:28:05Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:02:42Z",
+      "pushedAt": "2026-08-07T15:01:48Z",
+      "discoveryStatus": "manifested",
       "classification": "creative-cultural",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "efe9ed78bf26d734bfc1170d5686ef788daa5b37",
+        "htmlUrl": "https://github.com/vervenveda/Arshif.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/aurora.github.io",
@@ -83,13 +104,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-21T13:16:21Z",
-      "updatedAt": "2026-08-01T14:16:51Z",
-      "pushedAt": "2026-08-01T14:16:18Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:06:19Z",
+      "pushedAt": "2026-08-07T15:02:22Z",
+      "discoveryStatus": "manifested",
       "classification": "wellness",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "b189c21f5de15517964e532bc393c6892030a418",
+        "htmlUrl": "https://github.com/vervenveda/aurora.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/bazaarart.github.io",
@@ -209,13 +237,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T03:18:31Z",
-      "updatedAt": "2026-08-06T20:20:02Z",
-      "pushedAt": "2026-08-06T20:19:37Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:07:27Z",
+      "pushedAt": "2026-08-07T15:03:21Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "1823b42fdb40e79984d1d6211899f26d4c751da2",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_Academy.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/khaemenes_elementary.github.io",
@@ -230,13 +265,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T19:04:39Z",
-      "updatedAt": "2026-08-05T01:14:51Z",
-      "pushedAt": "2026-08-05T01:14:47Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:06:42Z",
+      "pushedAt": "2026-08-07T15:04:01Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "ec485fe04cb7ca89fe512cc85d399dc1c32c8cdb",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_Elementary.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/khaemenes_high.github.io",
@@ -251,13 +293,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T18:59:55Z",
-      "updatedAt": "2026-08-07T12:59:27Z",
-      "pushedAt": "2026-08-07T12:56:53Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:07:49Z",
+      "pushedAt": "2026-08-07T15:04:31Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "dcaf020e1b052b4114cf45125dd758a61014aded",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_High.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/khaemenes_higher_learning.github.io",
@@ -272,13 +321,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T19:05:35Z",
-      "updatedAt": "2026-08-07T12:18:01Z",
-      "pushedAt": "2026-08-07T12:17:58Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:09:57Z",
+      "pushedAt": "2026-08-07T15:05:07Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "e4071919146eb53208ed0d4239898f6e2d787d4a",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_Higher_Learning.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/khaemenes_kindergarden.github.io",
@@ -293,13 +349,20 @@
       "disabled": false,
       "hasPages": false,
       "createdAt": "2026-07-21T19:15:12Z",
-      "updatedAt": "2026-08-05T00:30:03Z",
-      "pushedAt": "2026-08-05T00:29:58Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:08:19Z",
+      "pushedAt": "2026-08-07T15:05:43Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "b5f326ee4d530a4880c75412a40f27cccbc8c4d2",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_KinderGarden.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/khaemenes_linguistics.github.io",
@@ -314,13 +377,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-21T15:41:05Z",
-      "updatedAt": "2026-08-02T16:18:17Z",
-      "pushedAt": "2026-08-02T16:17:53Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:08:35Z",
+      "pushedAt": "2026-08-07T15:06:13Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "3054877d7ba4f97612b302e55ea1188e2e969c6e",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_Linguistics.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/khaemenes_middle.github.io",
@@ -335,13 +405,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T19:01:31Z",
-      "updatedAt": "2026-08-01T18:12:52Z",
-      "pushedAt": "2026-08-01T18:12:44Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:08:29Z",
+      "pushedAt": "2026-08-07T15:07:05Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "55f0dcc38c452fc41e987cd5ec0fa05e60533eb3",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_Middle.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/khaemenes_preschool.github.io",
@@ -356,13 +433,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-20T20:28:56Z",
-      "updatedAt": "2026-08-07T14:18:55Z",
-      "pushedAt": "2026-08-07T14:17:14Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:12:31Z",
+      "pushedAt": "2026-08-07T15:07:41Z",
+      "discoveryStatus": "manifested",
       "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "25c8781a99f84fecb92d85be41dc9b163a0b0b62",
+        "htmlUrl": "https://github.com/vervenveda/Khaemenes_Preschool.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/medicament-hub.github.io",
@@ -419,13 +503,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T18:56:45Z",
-      "updatedAt": "2026-08-02T04:25:25Z",
-      "pushedAt": "2026-08-02T04:25:08Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:11:40Z",
+      "pushedAt": "2026-08-07T15:08:12Z",
+      "discoveryStatus": "manifested",
       "classification": "civic",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "c8231ce4bbe4f8d8048774a282ff30db2a5aec10",
+        "htmlUrl": "https://github.com/vervenveda/onenationforall.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/plerasearch.github.io",
@@ -440,13 +531,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-20T00:27:06Z",
-      "updatedAt": "2026-07-27T13:40:47Z",
-      "pushedAt": "2026-07-27T13:37:59Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:16:51Z",
+      "pushedAt": "2026-08-07T15:14:27Z",
+      "discoveryStatus": "manifested",
       "classification": "research-information",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "e32858b04daf1a6f99abaffc22bfaf50981aef03",
+        "htmlUrl": "https://github.com/vervenveda/PLERASearch.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/proresource_hub.github.io",
@@ -461,13 +559,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-20T22:33:41Z",
-      "updatedAt": "2026-08-07T04:23:45Z",
-      "pushedAt": "2026-08-07T04:23:09Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:11:50Z",
+      "pushedAt": "2026-08-07T15:09:08Z",
+      "discoveryStatus": "manifested",
       "classification": "professional-practical",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "c4cd76fc47142a61e4a8c6511eccbd3d483de874",
+        "htmlUrl": "https://github.com/vervenveda/proresource_hub.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/river_to_road.github.io",
@@ -524,13 +629,20 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T22:57:37Z",
-      "updatedAt": "2026-08-03T13:55:43Z",
-      "pushedAt": "2026-08-03T13:50:42Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-07T15:11:26Z",
+      "pushedAt": "2026-08-07T15:09:38Z",
+      "discoveryStatus": "manifested",
       "classification": "research-information",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "7a9ea0d9083a5b046a483714e9ee0b6a24983152",
+        "htmlUrl": "https://github.com/vervenveda/theverifier.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "mentorSearchable": true
+      }
     },
     {
       "id": "github:vervenveda/the_refrain.github.io",
@@ -566,8 +678,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-18T22:34:19Z",
-      "updatedAt": "2026-08-07T14:41:52Z",
-      "pushedAt": "2026-08-07T14:47:08Z",
+      "updatedAt": "2026-08-07T15:14:42Z",
+      "pushedAt": "2026-08-07T15:11:24Z",
       "discoveryStatus": "discovered",
       "classification": "unclassified",
       "confidence": 0.25,
