@@ -122,6 +122,52 @@
           },
           "explicitAdultOptIn": {
             "type": "boolean"
+          },
+          "requiresFreshnessCheck": {
+            "type": "boolean"
+          },
+          "dynamicContent": {
+            "type": "boolean"
+          },
+          "requiresPreferenceMatch": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "requiresAccountAwareness": {
+            "type": "boolean"
+          },
+          "sensitiveTopics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "externalInformation": {
+            "type": "boolean"
+          },
+          "sourcePriority": {
+            "type": "number"
+          },
+          "freshnessWindowMinutes": {
+            "type": "number",
+            "minimum": 1
+          },
+          "contentType": {
+            "type": "string"
+          },
+          "policyTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "requiresExplicitQuery": {
+            "type": "boolean"
           }
         },
         "additionalProperties": true

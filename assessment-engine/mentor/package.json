@@ -1,9 +1,9 @@
 {
   "name": "@verve-n-veda/khaemenes-mentor-core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Shared family mentor, resource discovery, and safety foundation for Khaemenes Academy",
+  "description": "Shared family mentor, resource discovery, policy-aware search, and safety foundation for Khaemenes Academy",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "build:registry": "node discovery/build-resource-index.mjs"

@@ -1,6 +1,7 @@
 import { normalizeLearnerContext } from "./learner-context.js";
 import { createMentorIdentity } from "./mentor-identity.js";
 import { ResourceResolver } from "../registry/resource-resolver.js";
+import { MentorSearch } from "../search/mentor-search.js";
 import { InteractionGuard } from "../safety/interaction-guard.js";
 
 export class MentorCore {
@@ -12,9 +13,15 @@ export class MentorCore {
       styleId: this.learner.mentorStyleId
     });
     this.resolver = new ResourceResolver({ registry });
+    this.search = new MentorSearch({
+      registry,
+      learner: this.learner,
+      role
+    });
     this.guard = safety || new InteractionGuard({ stage: this.learner.stage, role });
   }
 
+  // Backward-compatible low-level resource lookup.
   async findResources(query, options = {}) {
     return this.resolver.resolve({
       query,
@@ -22,6 +29,19 @@ export class MentorCore {
       role: this.role,
       ...options
     });
+  }
+
+  // New policy-aware, explainable, Sovereign-ranked search.
+  async searchResources(query, options = {}) {
+    return this.search.search(query, {
+      learner: this.learner,
+      role: this.role,
+      ...options
+    });
+  }
+
+  recordResourceOutcome({ reward = 0, label = "" } = {}) {
+    return this.search.recordOutcome({ reward, label });
   }
 
   handleSafetySignal(signal) {

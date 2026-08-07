@@ -1,26 +1,64 @@
 import { rankResources } from "./resource-ranker.js";
 import { resourceAllowedForStage } from "../safety/age-policy.js";
-
-const NEVER_RECOMMEND = new Set(["admin-only", "restricted", "unclassified", "archived"]);
+import { evaluateResourcePolicy } from "../safety/resource-policy.js";
 
 function roleAllowed(resource, role) {
   const roles = resource.roles || ["student", "parent", "educator"];
   return roles.includes(role);
 }
 
-function classificationAllowed(resource, role) {
-  const classification = resource.classification || "unclassified";
-  if (NEVER_RECOMMEND.has(classification)) return false;
-
-  // Campaign/political sources are never part of ordinary student recommendations.
-  if (classification === "campaign") return role === "parent" && resource.explicitAdultOptIn === true;
-
-  return true;
-}
-
 export class ResourceResolver {
   constructor({ registry } = {}) {
     this.registry = registry;
+  }
+
+  evaluate({
+    query = "",
+    learner,
+    role = "student",
+    familyPreferences = [],
+    explicitPreferenceTags = [],
+    includeAdultResources = false,
+    accountAware = false,
+    explicitAdultOptIn = false
+  } = {}) {
+    const resources = this.registry?.all?.() || [];
+    const ready = [];
+    const conditional = [];
+    const blocked = [];
+
+    for (const resource of resources) {
+      if (!roleAllowed(resource, role)) {
+        blocked.push({ resource, reason: "role-not-eligible" });
+        continue;
+      }
+
+      if (!resourceAllowedForStage(resource, learner?.stage || "preschool", {
+        includeAdultResources,
+        role
+      })) {
+        blocked.push({ resource, reason: "stage-not-eligible" });
+        continue;
+      }
+
+      const policy = evaluateResourcePolicy(resource, {
+        learner,
+        role,
+        query,
+        familyPreferences,
+        explicitPreferenceTags,
+        accountAware,
+        explicitAdultOptIn
+      });
+
+      const decorated = { ...resource, _mentorPolicy: policy };
+
+      if (!policy.allowed) blocked.push({ resource: decorated, reason: policy.reasons[0] || "policy-blocked" });
+      else if (policy.ready) ready.push(decorated);
+      else conditional.push(decorated);
+    }
+
+    return { ready, conditional, blocked };
   }
 
   resolve({
@@ -29,29 +67,42 @@ export class ResourceResolver {
     role = "student",
     limit = 5,
     preferredDomains = [],
+    intentDomains = [],
     favoriteResourceIds = [],
     recentResourceIds = [],
-    includeAdultResources = false
+    includeAdultResources = false,
+    includeConditional = false,
+    familyPreferences = [],
+    explicitPreferenceTags = [],
+    accountAware = false,
+    explicitAdultOptIn = false,
+    sourcePriorityByRepository = {},
+    preferredMinutes
   } = {}) {
-    const resources = this.registry?.all?.() || [];
-
-    const filtered = resources.filter(resource => {
-      if (resource.recommendable !== true) return false;
-      if (!roleAllowed(resource, role)) return false;
-      if (!classificationAllowed(resource, role)) return false;
-      if (!resourceAllowedForStage(resource, learner?.stage || "preschool", {
-        includeAdultResources,
-        role
-      })) return false;
-      return true;
+    const evaluated = this.evaluate({
+      query,
+      learner,
+      role,
+      familyPreferences,
+      explicitPreferenceTags,
+      includeAdultResources,
+      accountAware,
+      explicitAdultOptIn
     });
 
-    return rankResources(filtered, {
+    const candidates = includeConditional
+      ? [...evaluated.ready, ...evaluated.conditional]
+      : evaluated.ready;
+
+    return rankResources(candidates, {
       query,
       learner,
       preferredDomains,
+      intentDomains,
       favoriteResourceIds,
-      recentResourceIds
+      recentResourceIds,
+      sourcePriorityByRepository,
+      preferredMinutes
     }).slice(0, Math.max(1, Math.min(20, limit)));
   }
 }

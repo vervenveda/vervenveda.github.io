@@ -17,9 +17,21 @@ export { rankResources } from "./registry/resource-ranker.js";
 
 export { classifyRepository } from "./discovery/repository-classifier.js";
 export { discoverRepositories } from "./discovery/repository-discovery.js";
+export { normalizeMentorResource } from "./discovery/resource-normalizer.js";
 
 export { AGE_POLICIES, resourceAllowedForStage } from "./safety/age-policy.js";
 export { RESPECTFUL_USE_POLICY } from "./safety/respectful-use-policy.js";
 export { InteractionGuard } from "./safety/interaction-guard.js";
 export { EscalationController } from "./safety/escalation-controller.js";
 export { validateGuardianRelease } from "./safety/guardian-release.js";
+export { evaluateResourcePolicy, resourcePolicyAllows } from "./safety/resource-policy.js";
+
+export { detectQueryIntent } from "./search/query-intent.js";
+export { buildSearchContext } from "./search/context-builder.js";
+export { FreshnessController } from "./search/freshness-controller.js";
+export { SovereignResourceAdapter } from "./search/sovereign-resource-adapter.js";
+export { RecommendationEngine } from "./search/recommendation-engine.js";
+export { explainRecommendation } from "./search/recommendation-explainer.js";
+export { MentorSearch } from "./search/mentor-search.js";
+
+export { PreschoolResourceBridge } from "./adapters/preschool-resource-bridge.js";
