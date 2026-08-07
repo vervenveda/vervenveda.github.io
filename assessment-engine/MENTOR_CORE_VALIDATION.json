@@ -1,0 +1,23 @@
+{
+  "createdAt": "2026-08-07T14:35:52.648801+00:00",
+  "fileCount": 54,
+  "jsonFiles": 14,
+  "jsonValid": true,
+  "jsFiles": 35,
+  "jsSyntaxValid": true,
+  "testsPassed": true,
+  "accounts": [
+    "vervenveda",
+    "JenniferPearl2028",
+    "artist1970"
+  ],
+  "adminPolicy": "admin-only / never recommendable",
+  "campaignPolicy": "acknowledged / segregated / not ordinary learner recommendations",
+  "automaticRepositoryAcknowledgement": true,
+  "manifestDrivenResourceIncorporation": true,
+  "jsCheckFailures": [],
+  "testOutput": "TAP version 13\n# Subtest: Admin repository is restricted\nok 1 - Admin repository is restricted\n  ---\n  duration_ms: 0.811845\n  type: 'test'\n  ...\n# Subtest: Campaign account is segregated\nok 2 - Campaign account is segregated\n  ---\n  duration_ms: 0.933706\n  type: 'test'\n  ...\n# Subtest: Khaemenes repository is recognized as educational\nok 3 - Khaemenes repository is recognized as educational\n  ---\n  duration_ms: 0.261348\n  type: 'test'\n  ...\n# Subtest: Elementary student can receive educational resource\nok 4 - Elementary student can receive educational resource\n  ---\n  duration_ms: 0.880287\n  type: 'test'\n  ...\n# Subtest: Admin resource is never recommended\nok 5 - Admin resource is never recommended\n  ---\n  duration_ms: 0.2359\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 52.039172\n",
+  "testErrors": "",
+  "stableGeneratedRegistry": true,
+  "registryCommitDoesNotRetriggerWorkflow": true
+}
