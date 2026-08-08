@@ -191,31 +191,29 @@
     /* ADMIN GATE — local creative front gate; server auth remains separate */
     .admin-entry{
       position:absolute;
-      left:10px;
+      left:12px;
       top:50%;
       z-index:6;
       transform:translateY(-50%);
-      min-width:24px;
-      height:24px;
+      width:22px;
+      height:22px;
       display:inline-grid;
       place-items:center;
-      padding:0 11px;
+      padding:0;
       border:1px solid #7f1717;
-      border-radius:var(--radius);
-      color:#fff;
-      background:linear-gradient(180deg,#c83a3a,#971f1f);
-      box-shadow:0 7px 20px rgba(126,25,25,.22);
-      font-size:0px;
-      font-weight:0;
-      letter-spacing:0em;
-      text-transform:uppercase;
+      border-radius:50%;
+      color:transparent;
+      background:radial-gradient(circle at 35% 35%,#e55b5b 0%,#c93434 45%,#951c1c 100%);
+      box-shadow:0 6px 18px rgba(126,25,25,.24);
+      font-size:0;
+      line-height:0;
     }
     .admin-entry:hover,.admin-entry:focus-visible{
       background:linear-gradient(180deg,#dc4545,#a92323);
       box-shadow:0 9px 24px rgba(126,25,25,.3);
     }
     .site-header{position:sticky}
-    .header-inner{padding-left:70px}
+    .header-inner{padding-left:44px}
 
     .admin-gate-overlay{
       position:fixed;
@@ -1137,7 +1135,7 @@
   </div>
 
   <header class="site-header">
-    <button class="admin-entry" id="adminEntry" type="button" aria-haspopup="dialog" aria-controls="adminGate">Admin</button>
+    <button class="admin-entry" id="adminEntry" type="button" aria-label="Open administrator gate" title="Admin" aria-haspopup="dialog" aria-controls="adminGate"></button>
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="Verve N Veda home">
         <span class="brand-mark" aria-hidden="true">V</span>
