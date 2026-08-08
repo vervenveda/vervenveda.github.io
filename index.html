@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, and community service.">
+  <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, community service, and the NAIB / NOEMA intelligence navigation layer.">
   <meta name="theme-color" content="#f4f0e7">
   <meta name="color-scheme" content="light">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -18,7 +18,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Verve N Veda | Public Gateway">
-  <meta property="og:description" content="A connected public campus for lifelong education, research, creativity, public service, and community growth.">
+  <meta property="og:description" content="A connected public campus for lifelong education, research, creativity, public service, community growth, and intelligent navigation through NAIB / NOEMA.">
   <meta property="og:url" content="https://vervenveda.com/">
   <meta property="og:site_name" content="Verve N Veda">
 
@@ -506,6 +506,108 @@
       text-transform:uppercase;
     }
 
+    /* NAIB / NOEMA — intelligence and navigation layer */
+    .intelligence-section{
+      color:#fff;
+      background:
+        radial-gradient(circle at 18% 12%,rgba(180,139,69,.18),transparent 28rem),
+        radial-gradient(circle at 86% 76%,rgba(255,255,255,.07),transparent 30rem),
+        linear-gradient(135deg,#0b1828,var(--navy) 52%,#15251f);
+      border-block:1px solid rgba(255,255,255,.1);
+    }
+    .intelligence-bridge{
+      max-width:1120px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);
+      gap:48px;
+      align-items:center;
+      text-align:left;
+    }
+    .intelligence-copy .kicker{color:var(--gold-pale)}
+    .intelligence-copy h2{
+      margin-top:12px;
+      color:#fff;
+      font-size:clamp(42px,5.5vw,76px);
+      line-height:.98;
+    }
+    .intelligence-copy p{
+      margin:20px 0 0;
+      color:rgba(255,255,255,.76);
+      font-size:15px;
+      line-height:1.78;
+    }
+    .intelligence-copy strong{color:#fff;font-weight:600}
+    .intelligence-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:11px;
+      margin-top:28px;
+    }
+    .intelligence-actions .button-primary{
+      color:var(--navy);
+      background:var(--gold-pale);
+      box-shadow:none;
+    }
+    .intelligence-actions .button-primary:hover{background:#fff}
+    .intelligence-actions .button-secondary{
+      color:#fff;
+      border-color:rgba(255,255,255,.28);
+    }
+    .intelligence-actions .button-secondary:hover{
+      color:var(--navy);
+      background:#fff;
+      border-color:#fff;
+    }
+    .intelligence-map{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+    }
+    .intelligence-node{
+      min-height:132px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:20px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.055);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+    }
+    .intelligence-node span{
+      color:var(--gold-pale);
+      font-family:var(--ceremonial);
+      font-size:9px;
+      font-weight:500;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .intelligence-node strong{
+      margin-top:8px;
+      color:#fff;
+      font-family:var(--display);
+      font-size:22px;
+      font-weight:500;
+      line-height:1.08;
+    }
+    .intelligence-node small{
+      margin-top:7px;
+      color:rgba(255,255,255,.62);
+      font-size:11px;
+      line-height:1.5;
+    }
+    .intelligence-note{
+      grid-column:1 / -1;
+      margin:2px 0 0;
+      padding:13px 15px;
+      border-left:2px solid var(--gold);
+      color:rgba(255,255,255,.62);
+      background:rgba(0,0,0,.12);
+      font-size:11px;
+      line-height:1.6;
+    }
+
     .featured-grid{
       display:grid;
       grid-template-columns:repeat(4,minmax(0,1fr));
@@ -827,6 +929,8 @@
       .featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
       .campaign-bridge{grid-template-columns:1fr}
       .campaign-copy{text-align:center}
+      .intelligence-bridge{grid-template-columns:1fr;text-align:center}
+      .intelligence-actions{justify-content:center}
       .network-statement{grid-template-columns:1fr}
     }
     @media(max-width:760px){
@@ -872,6 +976,9 @@
       h1{font-size:clamp(52px,17vw,76px)}
       .pillar-grid,.featured-grid{grid-template-columns:1fr}
       .pillar-card,.feature-card{padding:26px 22px}
+      .intelligence-map{grid-template-columns:1fr}
+      .intelligence-note{grid-column:auto}
+      .intelligence-actions{display:grid;width:100%}
       .site-card{max-width:100%;min-width:100%}
       .campaign-bridge{padding:28px 20px}
       .button{width:100%}
@@ -930,6 +1037,7 @@
 
       <nav class="header-links" aria-label="Primary navigation">
         <a href="#pillars">Halls</a>
+        <a href="#intelligence">NAIB</a>
         <a href="#featured">Featured</a>
         <a href="#directory">Directory</a>
         <a href="#mission">Mission</a>
@@ -972,11 +1080,13 @@
           <div class="hero-aside">
             <p class="hero-lead">
               An elegant public gateway to education, research, creativity, health,
-              civic knowledge, environmental stewardship, and compassionate service.
+              civic knowledge, environmental stewardship, compassionate service, and
+              intelligent navigation through the connected Verve N Veda ecosystem.
             </p>
 
             <div class="hero-actions">
               <a class="button button-primary" href="#pillars">Discover the Halls</a>
+              <a class="button button-secondary" href="#intelligence">Meet NAIB / NOEMA</a>
               <a class="button button-secondary" href="https://vervenveda.github.io/333.github.io/">Open 333 Network</a>
             </div>
           </div>
@@ -988,11 +1098,62 @@
       </div>
     </section>
 
+    <section class="section intelligence-section" id="intelligence" aria-labelledby="intelligenceTitle">
+      <div class="section-inner intelligence-bridge">
+        <div class="intelligence-copy">
+          <p class="kicker">Intelligence &amp; Navigation Layer</p>
+          <h2 id="intelligenceTitle">NAIB guides. NOEMA orchestrates.</h2>
+          <p>
+            <strong>NAIB</strong> is the public-facing guide into the Verve N Veda ecosystem.
+            <strong>NOEMA</strong> is the orchestration layer behind that experience—organizing context,
+            coordinating specialist systems, and helping visitors reach the most appropriate doorway
+            without turning every Hall into the same application.
+          </p>
+          <p>
+            A learning request can route toward Khaemenes Academy; discovery can move through PLERA Search;
+            deeper context can reach ARSHIF; evidence-sensitive questions can use The Verifier; creative and
+            professional work can move toward specialist tools; and connected communication can hand off to 333.
+          </p>
+          <div class="intelligence-actions">
+            <a class="button button-primary" href="https://artist1970.github.io/noema-ai.github.io/">Open NAIB / NOEMA</a>
+            <a class="button button-secondary" href="#directory">Browse Every Public Hall</a>
+          </div>
+        </div>
+
+        <div class="intelligence-map" aria-label="NAIB and NOEMA navigation roles">
+          <div class="intelligence-node">
+            <span>01 · Understand</span>
+            <strong>Context</strong>
+            <small>Recognizes the visitor’s current mode, learning stage, project, and explicit preferences.</small>
+          </div>
+          <div class="intelligence-node">
+            <span>02 · Organize</span>
+            <strong>Route</strong>
+            <small>Directs the request toward the right Verve N Veda Hall, resource, or specialist pathway.</small>
+          </div>
+          <div class="intelligence-node">
+            <span>03 · Coordinate</span>
+            <strong>Specialists</strong>
+            <small>Connects learning, research, verification, creativity, planning, archives, and communication.</small>
+          </div>
+          <div class="intelligence-node">
+            <span>04 · Preserve</span>
+            <strong>Boundaries</strong>
+            <small>Keeps permissions, provenance, privacy, and high-stakes verification separate from simple discovery.</small>
+          </div>
+          <p class="intelligence-note">
+            The public NOEMA release currently provides local orchestration, memory, resource federation, and verification structure.
+            Generative model services remain a separate secure provider layer rather than being embedded as public credentials.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-alt" id="pillars">
       <div class="section-inner">
         <div class="section-heading">
           <p class="kicker">The Four Great Halls</p>
-          <h2>Many public resources. <br>One organized home.</h2>
+          <h2>Many public resources. One organized home.</h2>
           <p class="section-intro">
             The ecosystem is arranged into four balanced families so visitors can find
             the right doorway without being overwhelmed.
@@ -1026,7 +1187,7 @@
         </div>
 
         <div class="network-counts" aria-label="Verve N Veda network overview">
-          <div class="network-count"><div><strong id="destinationCount">27</strong><span>Public Doorways</span></div></div>
+          <div class="network-count"><div><strong id="destinationCount">28</strong><span>Public Doorways</span></div></div>
           <div class="network-count"><div><strong>4</strong><span>Organized Halls</span></div></div>
           <div class="network-count"><div><strong>1</strong><span>Connected Campus</span></div></div>
         </div>
@@ -1060,10 +1221,10 @@
           </article>
 
           <article class="feature-card">
-            <span class="feature-icon">JP</span>
-            <h3>Jennifer Pearl 2028</h3>
-            <p>The official public-service campaign gateway for policy, constitutional learning, voter access, petitions, and community connection.</p>
-            <a class="button button-primary" href="https://jenniferpearl2028.github.io/">Open Campaign Website</a>
+            <span class="feature-icon">N</span>
+            <h3>NAIB / NOEMA</h3>
+            <p>The intelligence and navigation layer that organizes context and routes visitors toward the right learning, research, creative, service, or communication system.</p>
+            <a class="button button-primary" href="https://artist1970.github.io/noema-ai.github.io/">Open Intelligence Layer</a>
           </article>
 
           <article class="feature-card">
@@ -1130,7 +1291,7 @@
           <p class="kicker">Complete Public Directory</p>
           <h2>Every verified public landing page, centered in one place.</h2>
           <p class="section-intro">
-            Search or filter the network. <br>Every card opens a rendered public landing page—
+            Search or filter the network. Every card opens a rendered public landing page—
             never a repository or source-code screen.
           </p>
         </div>
@@ -1160,7 +1321,7 @@
     <section class="section section-dark" id="mission">
       <div class="section-inner network-statement">
         <div class="statement-copy">
-          <p class="kicker">The Verve N Veda Promise</p> <br>
+          <p class="kicker">The Verve N Veda Promise</p>
           <h2>A network designed to connect rather than divide.</h2>
           <p>
             Each public Hall has its own purpose and personality, yet every destination
@@ -1210,6 +1371,7 @@
       <span class="footer-credit"><strong>© <span id="year"></span> Verve N Veda · Jennifer Kay Pearl</strong></span>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="#pillars">Halls</a>
+        <a href="#intelligence">NAIB / NOEMA</a>
         <a href="#directory">Directory</a>
         <a href="#mission">Mission</a>
         <a href="#campaign">Jennifer Pearl 2028</a>
@@ -1226,12 +1388,13 @@
     (() => {
       "use strict";
 
-      const SITES = [{"title":"333 Network","url":"https://vervenveda.github.io/333.github.io/","icon":"333","group":"Creative & Professional","desc":"HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte Studio, and Bunya digital infrastructure.","keywords":"communication meetings email social network website builder domains hosting infrastructure collaboration"},{"title":"Khaemenes Academy","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/","icon":"KA","group":"Education","desc":"The central international learning campus from preschool through higher learning and lifelong education.","keywords":"school homeschool curriculum students parents teachers learning international education"},{"title":"Khaemenes Preschool","url":"https://vervenveda.github.io/Khaemenes_Preschool.github.io/","icon":"PS","group":"Education","desc":"Colorful early-learning stories, play, life skills, creativity, and discovery.","keywords":"pre-k early childhood children stories games preschool parents"},{"title":"Khaemenes Kinder Garden","url":"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/","icon":"KG","group":"Education","desc":"A garden of kindness, curiosity, literacy, numbers, nature, and wonder.","keywords":"kindergarten early learning reading math nature children"},{"title":"Khaemenes Elementary","url":"https://vervenveda.github.io/Khaemenes_Elementary.github.io/","icon":"E","group":"Education","desc":"Grades 1–5 academics, creativity, family learning, and foundational skills.","keywords":"elementary first second third fourth fifth grade homeschool parents"},{"title":"Khaemenes Middle","url":"https://vervenveda.github.io/Khaemenes_Middle.github.io/","icon":"M","group":"Education","desc":"Grades 6–8 academic foundations, independence, exploration, and preparation.","keywords":"middle school sixth seventh eighth grade homeschool students"},{"title":"Khaemenes High","url":"https://vervenveda.github.io/Khaemenes_High.github.io/","icon":"HS","group":"Education","desc":"Grades 9–12 courses, portfolios, records, examinations, and graduation pathways.","keywords":"high school ninth tenth eleventh twelfth grade diploma certificate math curriculum homeschool"},{"title":"Khaemenes Higher Learning","url":"https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/","icon":"HL","group":"Education","desc":"GED, college access, careers, professional development, and lifelong study.","keywords":"adult education college university career workforce employment ged training"},{"title":"Khaemenes Linguistics","url":"https://vervenveda.github.io/Khaemenes_Linguistics.github.io/","icon":"L","group":"Education","desc":"Languages, linguistics, translation, writing systems, and communication.","keywords":"language arabic spanish english translation literacy writing"},{"title":"ARSHIF","url":"https://vervenveda.github.io/Arshif.github.io/","icon":"A","group":"Knowledge","desc":"Research, literature, history, philosophy, culture, faith, archives, and memory.","keywords":"classics books library religion mythology science theatre travel oral traditions"},{"title":"The Verifier","url":"https://vervenveda.github.io/theverifier.github.io/","icon":"V","group":"Knowledge","desc":"News discovery, source comparison, evidence, editorials, research, and media literacy.","keywords":"news fact check journalism politics current events science daily children news"},{"title":"PLERA Search","url":"https://vervenveda.github.io/PLERASearch.github.io/","icon":"◎","group":"Knowledge","desc":"A search gateway into trusted public learning and resource destinations.","keywords":"search engine research directory find resources"},{"title":"Solanar","url":"https://vervenveda.github.io/solanar.github.io/","icon":"☀","group":"Knowledge","desc":"Weather, Earth systems, climate, moon cycles, world time, and environmental observation.","keywords":"weather forecast hurricane storm emergency climate moon phase space weather world clock"},{"title":"Medicament Hub","url":"https://vervenveda.github.io/medicament-hub.github.io/","icon":"⚕","group":"Public Service","desc":"Health, medicine, trauma, mental wellness, family care, seniors, insurance, and safety resources.","keywords":"medical hospital doctor medication tbi memory loss mental health addiction recovery disability maternal child health"},{"title":"Firmament Law","url":"https://vervenveda.github.io/firmament.github.io/","icon":"§","group":"Public Service","desc":"Legal information, rights, family and veteran resources, evidence tools, and civic literacy.","keywords":"legal help attorney rights court family law lgbtq seniors insurance veterans citations evidence"},{"title":"One Nation for All","url":"https://vervenveda.github.io/onenationforall.github.io/","icon":"☆","group":"Public Service","desc":"Constitutional learning, voter access, policy, veterans, homelessness, service, and community support.","keywords":"government voting elections constitution civic homeless housing legal help public policy unity"},{"title":"Jennifer Pearl 2028","url":"https://jenniferpearl2028.github.io/","icon":"JP","group":"Public Service","desc":"Jennifer Pearl’s public-service campaign, policy work, voter access, and connected community mission.","keywords":"president campaign candidate policy voter registration petition public service 2028"},{"title":"Veterans","url":"https://vervenveda.github.io/veterans.github.io/","icon":"★","group":"Public Service","desc":"Veteran benefits, crisis resources, housing, employment, services, and family assistance.","keywords":"military va benefits disability housing jobs crisis family"},{"title":"Finance","url":"https://vervenveda.github.io/finance.github.io/","icon":"$","group":"Public Service","desc":"Financial literacy, budgeting, planning, markets, consumer knowledge, and practical tools.","keywords":"money banking credit debt taxes budget investing business insurance"},{"title":"River to Road","url":"https://vervenveda.github.io/river_to_road.github.io/","icon":"≈","group":"Public Service","desc":"Environmental stewardship, clean water, science, service learning, events, and community action.","keywords":"environment pollution cleanup activism conservation climate ocean river road trash ecology"},{"title":"Aurora","url":"https://vervenveda.github.io/aurora.github.io/","icon":"☼","group":"Public Service","desc":"Rest, yoga, reflection, encouragement, organization, wellness, and creative renewal.","keywords":"wellbeing meditation prayer breathing sleep journal relaxation mental health self care"},{"title":"ProResource Hub","url":"https://vervenveda.github.io/proresource_hub.github.io/","icon":"P","group":"Creative & Professional","desc":"Professional tools for writing, editing, media, research, design, meetings, and productivity.","keywords":"prose editor pdf docx letters zip clean task manager meeting media cad tools"},{"title":"Bazaar Art","url":"https://vervenveda.github.io/bazaarart.github.io/","icon":"✦","group":"Creative & Professional","desc":"Art education, artist tools, galleries, creativity, social expression, and cultural enterprise.","keywords":"artist painting drawing photo album gallery community social feed art business"},{"title":"Bazaar Art Live","url":"https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html","icon":"LIVE","group":"Creative & Professional","desc":"The live local-first creative community feed for profiles, posts, stories, reels, groups, events, and artistic connection.","keywords":"artists social network creative feed stories reels groups events community 333 live"},{"title":"My Art Gallery","url":"https://vervenveda.github.io/myartgallery.github.io/","icon":"▧","group":"Creative & Professional","desc":"Artist Jenny Pearl’s portfolio preserving more than three decades of professional artistry.","keywords":"Jennifer Jenny Pearl artist portfolio murals watercolor acrylic commissions photography"},{"title":"The Refrain","url":"https://vervenveda.github.io/the_refrain.github.io/","icon":"♫","group":"Creative & Professional","desc":"Music education, composition, recording, performance, and creative exploration.","keywords":"music studio composer multitrack recording harmony songs instruments"},{"title":"Arcade","url":"https://vervenveda.github.io/arcade.github.io/","icon":"◆","group":"Creative & Professional","desc":"Original games, strategy, puzzles, trivia, practice, and playful discovery.","keywords":"games chess checkers sudoku trivia educational arcade puzzles"}];
+      const SITES = [{"title":"333 Network","url":"https://vervenveda.github.io/333.github.io/","icon":"333","group":"Creative & Professional","desc":"HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte Studio, and Bunya digital infrastructure.","keywords":"communication meetings email social network website builder domains hosting infrastructure collaboration"},{"title":"NAIB / NOEMA","url":"https://artist1970.github.io/noema-ai.github.io/","icon":"N","group":"Knowledge","desc":"The Verve N Veda intelligence and navigation layer for context, resource federation, specialist routing, memory, and verification-aware orchestration.","keywords":"naib noema ai intelligence navigation orchestration mentor context memory routing federation specialists verifier plera khaemenes arshif 333"},{"title":"Khaemenes Academy","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/","icon":"KA","group":"Education","desc":"The central international learning campus from preschool through higher learning and lifelong education.","keywords":"school homeschool curriculum students parents teachers learning international education"},{"title":"Khaemenes Preschool","url":"https://vervenveda.github.io/Khaemenes_Preschool.github.io/","icon":"PS","group":"Education","desc":"Colorful early-learning stories, play, life skills, creativity, and discovery.","keywords":"pre-k early childhood children stories games preschool parents"},{"title":"Khaemenes Kinder Garden","url":"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/","icon":"KG","group":"Education","desc":"A garden of kindness, curiosity, literacy, numbers, nature, and wonder.","keywords":"kindergarten early learning reading math nature children"},{"title":"Khaemenes Elementary","url":"https://vervenveda.github.io/Khaemenes_Elementary.github.io/","icon":"E","group":"Education","desc":"Grades 1–5 academics, creativity, family learning, and foundational skills.","keywords":"elementary first second third fourth fifth grade homeschool parents"},{"title":"Khaemenes Middle","url":"https://vervenveda.github.io/Khaemenes_Middle.github.io/","icon":"M","group":"Education","desc":"Grades 6–8 academic foundations, independence, exploration, and preparation.","keywords":"middle school sixth seventh eighth grade homeschool students"},{"title":"Khaemenes High","url":"https://vervenveda.github.io/Khaemenes_High.github.io/","icon":"HS","group":"Education","desc":"Grades 9–12 courses, portfolios, records, examinations, and graduation pathways.","keywords":"high school ninth tenth eleventh twelfth grade diploma certificate math curriculum homeschool"},{"title":"Khaemenes Higher Learning","url":"https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/","icon":"HL","group":"Education","desc":"GED, college access, careers, professional development, and lifelong study.","keywords":"adult education college university career workforce employment ged training"},{"title":"Khaemenes Linguistics","url":"https://vervenveda.github.io/Khaemenes_Linguistics.github.io/","icon":"L","group":"Education","desc":"Languages, linguistics, translation, writing systems, and communication.","keywords":"language arabic spanish english translation literacy writing"},{"title":"ARSHIF","url":"https://vervenveda.github.io/Arshif.github.io/","icon":"A","group":"Knowledge","desc":"Research, literature, history, philosophy, culture, faith, archives, and memory.","keywords":"classics books library religion mythology science theatre travel oral traditions"},{"title":"The Verifier","url":"https://vervenveda.github.io/theverifier.github.io/","icon":"V","group":"Knowledge","desc":"News discovery, source comparison, evidence, editorials, research, and media literacy.","keywords":"news fact check journalism politics current events science daily children news"},{"title":"PLERA Search","url":"https://vervenveda.github.io/PLERASearch.github.io/","icon":"◎","group":"Knowledge","desc":"A search gateway into trusted public learning and resource destinations.","keywords":"search engine research directory find resources"},{"title":"Solanar","url":"https://vervenveda.github.io/solanar.github.io/","icon":"☀","group":"Knowledge","desc":"Weather, Earth systems, climate, moon cycles, world time, and environmental observation.","keywords":"weather forecast hurricane storm emergency climate moon phase space weather world clock"},{"title":"Medicament Hub","url":"https://vervenveda.github.io/medicament-hub.github.io/","icon":"⚕","group":"Public Service","desc":"Health, medicine, trauma, mental wellness, family care, seniors, insurance, and safety resources.","keywords":"medical hospital doctor medication tbi memory loss mental health addiction recovery disability maternal child health"},{"title":"Firmament Law","url":"https://vervenveda.github.io/firmament.github.io/","icon":"§","group":"Public Service","desc":"Legal information, rights, family and veteran resources, evidence tools, and civic literacy.","keywords":"legal help attorney rights court family law lgbtq seniors insurance veterans citations evidence"},{"title":"One Nation for All","url":"https://vervenveda.github.io/onenationforall.github.io/","icon":"☆","group":"Public Service","desc":"Constitutional learning, voter access, policy, veterans, homelessness, service, and community support.","keywords":"government voting elections constitution civic homeless housing legal help public policy unity"},{"title":"Jennifer Pearl 2028","url":"https://jenniferpearl2028.github.io/","icon":"JP","group":"Public Service","desc":"Jennifer Pearl’s public-service campaign, policy work, voter access, and connected community mission.","keywords":"president campaign candidate policy voter registration petition public service 2028"},{"title":"Veterans","url":"https://vervenveda.github.io/veterans.github.io/","icon":"★","group":"Public Service","desc":"Veteran benefits, crisis resources, housing, employment, services, and family assistance.","keywords":"military va benefits disability housing jobs crisis family"},{"title":"Finance","url":"https://vervenveda.github.io/finance.github.io/","icon":"$","group":"Public Service","desc":"Financial literacy, budgeting, planning, markets, consumer knowledge, and practical tools.","keywords":"money banking credit debt taxes budget investing business insurance"},{"title":"River to Road","url":"https://vervenveda.github.io/river_to_road.github.io/","icon":"≈","group":"Public Service","desc":"Environmental stewardship, clean water, science, service learning, events, and community action.","keywords":"environment pollution cleanup activism conservation climate ocean river road trash ecology"},{"title":"Aurora","url":"https://vervenveda.github.io/aurora.github.io/","icon":"☼","group":"Public Service","desc":"Rest, yoga, reflection, encouragement, organization, wellness, and creative renewal.","keywords":"wellbeing meditation prayer breathing sleep journal relaxation mental health self care"},{"title":"ProResource Hub","url":"https://vervenveda.github.io/proresource_hub.github.io/","icon":"P","group":"Creative & Professional","desc":"Professional tools for writing, editing, media, research, design, meetings, and productivity.","keywords":"prose editor pdf docx letters zip clean task manager meeting media cad tools"},{"title":"Bazaar Art","url":"https://vervenveda.github.io/bazaarart.github.io/","icon":"✦","group":"Creative & Professional","desc":"Art education, artist tools, galleries, creativity, social expression, and cultural enterprise.","keywords":"artist painting drawing photo album gallery community social feed art business"},{"title":"Bazaar Art Live","url":"https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html","icon":"LIVE","group":"Creative & Professional","desc":"The live local-first creative community feed for profiles, posts, stories, reels, groups, events, and artistic connection.","keywords":"artists social network creative feed stories reels groups events community 333 live"},{"title":"My Art Gallery","url":"https://vervenveda.github.io/myartgallery.github.io/","icon":"▧","group":"Creative & Professional","desc":"Artist Jenny Pearl’s portfolio preserving more than three decades of professional artistry.","keywords":"Jennifer Jenny Pearl artist portfolio murals watercolor acrylic commissions photography"},{"title":"The Refrain","url":"https://vervenveda.github.io/the_refrain.github.io/","icon":"♫","group":"Creative & Professional","desc":"Music education, composition, recording, performance, and creative exploration.","keywords":"music studio composer multitrack recording harmony songs instruments"},{"title":"Arcade","url":"https://vervenveda.github.io/arcade.github.io/","icon":"◆","group":"Creative & Professional","desc":"Original games, strategy, puzzles, trivia, practice, and playful discovery.","keywords":"games chess checkers sudoku trivia educational arcade puzzles"}];
       const GROUP_ORDER = ["Education","Knowledge","Public Service","Creative & Professional"];
       const ALLOWED_HOSTS = new Set([
         "vervenveda.github.io",
         "vervenveda.com",
         "www.vervenveda.com",
+        "artist1970.github.io",
         "jenniferpearl2028.github.io",
         "vervneveda.wixsite.com/home"
       ]);
