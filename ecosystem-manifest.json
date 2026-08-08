@@ -1,0 +1,1913 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schemaVersion": "1.0.0",
+  "manifestVersion": "2026.08.07.1",
+  "generatedAt": "2026-08-07T21:05:00-04:00",
+  "canonical": {
+    "repository": "vervenveda/vervenveda.github.io",
+    "path": "/ecosystem-manifest.json",
+    "publicUrl": "https://vervenveda.com/ecosystem-manifest.json",
+    "githubPagesUrl": "https://vervenveda.github.io/ecosystem-manifest.json"
+  },
+  "scope": {
+    "definition": "First-class public gateways, connected applications, connected specialist applications, backstage platform systems, and declared legacy/reserved modules in the Verve N Veda ecosystem.",
+    "embeddedContentPolicy": "Individual courses, lessons, games, documents, and small embedded utilities remain source-owned by their parent application manifests and are not duplicated here.",
+    "versionPolicy": "A version is only populated when a version is explicitly declared by the source. Unknown versions remain null; they are never inferred from dates or repository history."
+  },
+  "identityPolicy": {
+    "frontlineAI": "naib",
+    "backstageIntelligence": "noema",
+    "rules": [
+      "NAIB is the public/front-line AI identity.",
+      "NOEMA is backstage only and must never be presented as the public/front-line AI.",
+      "NOEMA governs orchestration, permissions, memory, identity, evidence standards, security, provider boundaries, and specialist authority.",
+      "NAIB may expose results and route users to specialists without revealing NOEMA as a public destination.",
+      "Specialists retain their own identities and authority boundaries; NAIB does not impersonate them."
+    ]
+  },
+  "statusDefinitions": {
+    "current": "Current product or system in the canonical ecosystem.",
+    "current-local": "Current browser/local-first application; some networked capability requires backend services.",
+    "resource-portal": "Current curated public gateway/resource portal.",
+    "handoff-ready": "Current specialist that receives structured handoffs but is not directly integrated for execution.",
+    "manifest-discoverable": "Current source discoverable through machine-readable manifests.",
+    "restricted": "Current capability intentionally gated by account, permissions, or infrastructure.",
+    "backstage": "Current internal orchestration/governance system; not a public navigation destination.",
+    "reserved": "Repository/module exists but is not yet a published app.",
+    "legacy-active": "Historical lineage retained and intentionally still reachable.",
+    "legacy": "Historical/superseded implementation retained for lineage or archive purposes.",
+    "development-collection": "Development/prototype collection without a canonical root public landing."
+  },
+  "owners": [
+    {
+      "id": "vervenveda",
+      "github": "vervenveda",
+      "role": "primary-public-product-namespace",
+      "publicRoot": "https://vervenveda.com/"
+    },
+    {
+      "id": "artist1970",
+      "github": "artist1970",
+      "role": "intelligence-specialists-and-legacy-lineage",
+      "publicRoot": "https://artist1970.github.io/"
+    },
+    {
+      "id": "jenniferpearl2028",
+      "github": "JenniferPearl2028",
+      "role": "campaign-namespace",
+      "publicRoot": "https://jenniferpearl2028.github.io/"
+    }
+  ],
+  "apps": [
+    {
+      "id": "verve-n-veda",
+      "name": "Verve N Veda",
+      "aliases": [
+        "VNV",
+        "Verve N Veda Public Gateway"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/vervenveda.github.io",
+      "role": "public-campus-gateway",
+      "hall": "Network",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/",
+        "githubPages": "https://vervenveda.github.io/",
+        "repository": "https://github.com/vervenveda/vervenveda.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "ecosystem-navigation",
+        "public-directory",
+        "cross-domain-discovery",
+        "public-resource-routing"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "333-network",
+      "name": "333 Network",
+      "aliases": [
+        "333",
+        "333 Network"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/333.github.io",
+      "role": "communications-and-network-suite",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/333.github.io/",
+        "githubPages": "https://vervenveda.github.io/333.github.io/",
+        "repository": "https://github.com/vervenveda/333.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "communication-suite",
+        "local-first-workspaces",
+        "identity-planning",
+        "creative-social",
+        "site-building",
+        "digital-infrastructure"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-academy",
+      "name": "Khaemenes Academy",
+      "aliases": [
+        "Khaemenes",
+        "Khaemenes Academy"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "role": "learning-federation-gateway",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_Academy.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_Academy.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_Academy.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "education-federation",
+        "student-pathways",
+        "family-tools",
+        "records-tools",
+        "resource-discovery"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [
+        "artist1970/KhaemenesAcademy.github.io"
+      ],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-preschool",
+      "name": "Khaemenes Preschool",
+      "aliases": [
+        "Crèche",
+        "Khaemenes Crèche",
+        "Preschool"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_Preschool.github.io",
+      "role": "learning-stage",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_Preschool.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_Preschool.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "preschool-learning",
+        "stories",
+        "games",
+        "creative-play",
+        "family-learning"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-kindergarten",
+      "name": "Khaemenes Kinder Garden",
+      "aliases": [
+        "Khaemenes Kindergarten",
+        "Kinder Garden",
+        "Kindergarten"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "role": "learning-stage",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_KinderGarden.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "kindergarten-curriculum",
+        "literacy",
+        "numeracy",
+        "science",
+        "art",
+        "movement",
+        "family-tools"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-elementary",
+      "name": "Khaemenes Elementary",
+      "aliases": [
+        "Elementary",
+        "Khaemenes Elementary School"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "role": "learning-stage",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_Elementary.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_Elementary.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "elementary-curriculum",
+        "student-tools",
+        "family-learning",
+        "foundational-skills"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-middle",
+      "name": "Khaemenes Middle",
+      "aliases": [
+        "Khaemenes Middle School",
+        "Middle School"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_Middle.github.io",
+      "role": "learning-stage",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_Middle.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_Middle.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_Middle.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "middle-school-curriculum",
+        "independent-study",
+        "project-work",
+        "grade-level-portals"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [
+        "artist1970/8th-Grade-Math-Portal"
+      ],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-high",
+      "name": "Khaemenes High",
+      "aliases": [
+        "Khaemenes High School",
+        "High School"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "role": "learning-stage",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_High.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_High.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_High.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "high-school-curriculum",
+        "assessments",
+        "portfolios",
+        "records",
+        "graduation-pathways",
+        "college-career-prep"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-higher-learning",
+      "name": "Khaemenes Higher Learning",
+      "aliases": [
+        "Higher Learning",
+        "Khaemenes Higher Learning"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "role": "learning-stage",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_Higher_Learning.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "higher-education",
+        "advanced-mathematics",
+        "research-preparation",
+        "career-development",
+        "records-tools"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "khaemenes-linguistics",
+      "name": "Khaemenes Linguistics",
+      "aliases": [
+        "Linguistics",
+        "Polyglot"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "role": "language-learning-gateway",
+      "hall": "Education",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Khaemenes_Linguistics.github.io/",
+        "githubPages": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/",
+        "repository": "https://github.com/vervenveda/Khaemenes_Linguistics.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "language-learning",
+        "linguistics",
+        "translation",
+        "writing-systems",
+        "multilingual-tools"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "arshif",
+      "name": "ARSHIF",
+      "aliases": [
+        "Arshif",
+        "ARSHIF Archives"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/Arshif.github.io",
+      "role": "archive-and-context",
+      "hall": "Knowledge",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/Arshif.github.io/",
+        "githubPages": "https://vervenveda.github.io/Arshif.github.io/",
+        "repository": "https://github.com/vervenveda/Arshif.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "archives",
+        "cultural-memory",
+        "history",
+        "literature",
+        "philosophy",
+        "reference",
+        "contextual-research"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [
+        "artist1970/Arshif.github.io"
+      ],
+      "notes": null
+    },
+    {
+      "id": "verifier",
+      "name": "The Verifier",
+      "aliases": [
+        "Verifier"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/theverifier.github.io",
+      "role": "evidence-governance",
+      "hall": "Knowledge",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/theverifier.github.io/",
+        "githubPages": "https://vervenveda.github.io/theverifier.github.io/",
+        "repository": "https://github.com/vervenveda/theverifier.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "evidence-governance",
+        "source-comparison",
+        "claim-analysis",
+        "news-literacy",
+        "research-sessions"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "plera-search",
+      "name": "PLERA Search",
+      "aliases": [
+        "PLERA",
+        "PLERASearch"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/PLERASearch.github.io",
+      "role": "discovery-and-research-routing",
+      "hall": "Knowledge",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/PLERASearch.github.io/",
+        "githubPages": "https://vervenveda.github.io/PLERASearch.github.io/",
+        "repository": "https://github.com/vervenveda/PLERASearch.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "research-routing",
+        "search-routing",
+        "resource-discovery",
+        "source-finding",
+        "public-repository-discovery"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "solanar",
+      "name": "Solanar",
+      "aliases": [
+        "Solanar Weather",
+        "Solanar Earth"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/solanar.github.io",
+      "role": "environmental-intelligence-portal",
+      "hall": "Knowledge",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/solanar.github.io/",
+        "githubPages": "https://vervenveda.github.io/solanar.github.io/",
+        "repository": "https://github.com/vervenveda/solanar.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "weather",
+        "earth-systems",
+        "climate",
+        "moon-cycles",
+        "world-time",
+        "environmental-observation"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "medicament-hub",
+      "name": "Medicament Hub",
+      "aliases": [
+        "Medicament",
+        "Health Hub"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "role": "health-resource-gateway",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/medicament-hub.github.io/",
+        "githubPages": "https://vervenveda.github.io/medicament-hub.github.io/",
+        "repository": "https://github.com/vervenveda/medicament-hub.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "health-education",
+        "medical-resource-routing",
+        "wellness",
+        "family-care",
+        "safety-information"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "firmament-law",
+      "name": "Firmament Law",
+      "aliases": [
+        "Firmament",
+        "Firmament"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/firmament.github.io",
+      "role": "legal-resource-gateway",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/firmament.github.io/",
+        "githubPages": "https://vervenveda.github.io/firmament.github.io/",
+        "repository": "https://github.com/vervenveda/firmament.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "legal-information",
+        "rights-literacy",
+        "evidence-tools",
+        "citation-tools",
+        "public-law-resources"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "one-nation-for-all",
+      "name": "One Nation for All",
+      "aliases": [
+        "One Nation",
+        "ONFA"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/onenationforall.github.io",
+      "role": "civic-resource-gateway",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/onenationforall.github.io/",
+        "githubPages": "https://vervenveda.github.io/onenationforall.github.io/",
+        "repository": "https://github.com/vervenveda/onenationforall.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "civic-education",
+        "constitutional-learning",
+        "voter-access",
+        "public-service-resources",
+        "community-support"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "jennifer-pearl-2028",
+      "name": "Jennifer Pearl 2028",
+      "aliases": [
+        "Jennifer Pearl for President 2028",
+        "Campaign 2028"
+      ],
+      "owner": "JenniferPearl2028",
+      "repository": "JenniferPearl2028/jenniferpearl2028.github.io",
+      "role": "campaign-property",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://jenniferpearl2028.github.io/",
+        "githubPages": "https://jenniferpearl2028.github.io/",
+        "repository": "https://github.com/JenniferPearl2028/jenniferpearl2028.github.io",
+        "customDomain": "https://jenniferpearl2028.com/"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "campaign-information",
+        "policy-publication",
+        "voter-information",
+        "public-engagement"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "veterans",
+      "name": "Veterans",
+      "aliases": [
+        "Veterans Hub",
+        "Veteran Resources"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/veterans.github.io",
+      "role": "veteran-resource-gateway",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/veterans.github.io/",
+        "githubPages": "https://vervenveda.github.io/veterans.github.io/",
+        "repository": "https://github.com/vervenveda/veterans.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "veteran-benefits-resources",
+        "healthcare-routing",
+        "housing-resources",
+        "employment-resources",
+        "family-assistance"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "aliases": [
+        "Finance Hub",
+        "Financial Academy"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/finance.github.io",
+      "role": "financial-resource-gateway",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/finance.github.io/",
+        "githubPages": "https://vervenveda.github.io/finance.github.io/",
+        "repository": "https://github.com/vervenveda/finance.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "financial-literacy",
+        "budgeting",
+        "consumer-knowledge",
+        "planning",
+        "markets-education"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "river-to-road",
+      "name": "River to Road",
+      "aliases": [
+        "River-to-Road",
+        "River to Road"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/river_to_road.github.io",
+      "role": "environmental-service-gateway",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/river_to_road.github.io/",
+        "githubPages": "https://vervenveda.github.io/river_to_road.github.io/",
+        "repository": "https://github.com/vervenveda/river_to_road.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "environmental-stewardship",
+        "service-learning",
+        "clean-water-education",
+        "community-events"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "aliases": [
+        "Aurora Sanctuary"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/aurora.github.io",
+      "role": "wellbeing-sanctuary",
+      "hall": "Public Service",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/aurora.github.io/",
+        "githubPages": "https://vervenveda.github.io/aurora.github.io/",
+        "repository": "https://github.com/vervenveda/aurora.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "wellbeing",
+        "reflection",
+        "rest",
+        "journaling",
+        "gentle-routines"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "proresource-hub",
+      "name": "ProResource Hub",
+      "aliases": [
+        "ProResource",
+        "Professional Resource Hub"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "role": "professional-tool-suite",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/proresource_hub.github.io/",
+        "githubPages": "https://vervenveda.github.io/proresource_hub.github.io/",
+        "repository": "https://github.com/vervenveda/proresource_hub.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "writing-tools",
+        "editing-tools",
+        "document-tools",
+        "media-tools",
+        "design-tools",
+        "productivity"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "bazaar-art",
+      "name": "Bazaar Art",
+      "aliases": [
+        "Bazaar",
+        "Bazaar Art"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/bazaarart.github.io",
+      "role": "creative-resource-gateway",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/bazaarart.github.io/",
+        "githubPages": "https://vervenveda.github.io/bazaarart.github.io/",
+        "repository": "https://github.com/vervenveda/bazaarart.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "resource-portal",
+      "capabilities": [
+        "art-education",
+        "artist-resources",
+        "galleries",
+        "creative-business",
+        "community-expression"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "bazaar-art-live",
+      "name": "Bazaar Art Live",
+      "aliases": [
+        "Bazaar Live",
+        "BAL"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/333.github.io",
+      "role": "creative-community-app",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+        "githubPages": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+        "repository": "https://github.com/vervenveda/333.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "creative-social-feed",
+        "profiles",
+        "posts",
+        "groups",
+        "events",
+        "local-first-community"
+      ],
+      "parent": "333-network",
+      "dependsOn": [],
+      "legacyReplacementFor": [
+        "artist1970/Bazaar-Art-Live.github.io"
+      ],
+      "notes": null
+    },
+    {
+      "id": "my-art-gallery",
+      "name": "My Art Gallery",
+      "aliases": [
+        "Artist Jenny Pearl Gallery",
+        "Jenny Pearl Art"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/myartgallery.github.io",
+      "role": "artist-portfolio",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/myartgallery.github.io/",
+        "githubPages": "https://vervenveda.github.io/myartgallery.github.io/",
+        "repository": "https://github.com/vervenveda/myartgallery.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "artist-portfolio",
+        "gallery",
+        "art-archive",
+        "commissions-showcase"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "the-refrain",
+      "name": "The Refrain",
+      "aliases": [
+        "Refrain"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/the_refrain.github.io",
+      "role": "music-creation-and-learning",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/the_refrain.github.io/",
+        "githubPages": "https://vervenveda.github.io/the_refrain.github.io/",
+        "repository": "https://github.com/vervenveda/the_refrain.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current",
+      "capabilities": [
+        "music-education",
+        "composition",
+        "recording",
+        "performance",
+        "creative-audio"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "aliases": [
+        "Verve Arcade",
+        "Khaemenes Arcade"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/arcade.github.io",
+      "role": "games-and-learning-suite",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/arcade.github.io/",
+        "githubPages": "https://vervenveda.github.io/arcade.github.io/",
+        "repository": "https://github.com/vervenveda/arcade.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "games",
+        "puzzles",
+        "strategy",
+        "trivia",
+        "educational-play",
+        "offline-play"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": null
+    },
+    {
+      "id": "naib",
+      "name": "NAIB",
+      "aliases": [
+        "Public Intelligence Director",
+        "Front AI",
+        "Sovereign Adult Intelligence"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/noema-ai.github.io",
+      "role": "frontline-ai",
+      "hall": "Intelligence",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://artist1970.github.io/noema-ai.github.io/",
+        "githubPages": "https://artist1970.github.io/noema-ai.github.io/",
+        "repository": "https://github.com/artist1970/noema-ai.github.io"
+      },
+      "version": {
+        "value": "1.3.0",
+        "source": "declared-in-README"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "conversation-interface",
+        "intent-routing",
+        "specialist-routing",
+        "learning-resource-discovery",
+        "evidence-aware-synthesis",
+        "provider-independent-ai-interface",
+        "optional-browser-voice",
+        "transparent-specialist-status"
+      ],
+      "parent": null,
+      "dependsOn": [
+        "noema"
+      ],
+      "legacyReplacementFor": [],
+      "notes": "NAIB is the only public/front-line AI identity. The default public release has orchestration and a provider seam; a live generative provider is not assumed."
+    },
+    {
+      "id": "moirai",
+      "name": "Moirai",
+      "aliases": [
+        "Moir AI",
+        "Visual Imagination Specialist"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/Moir_ai.github.io",
+      "role": "visual-specialist",
+      "hall": "Intelligence",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://artist1970.github.io/Moir_ai.github.io/",
+        "githubPages": "https://artist1970.github.io/Moir_ai.github.io/",
+        "repository": "https://github.com/artist1970/Moir_ai.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "handoff-ready",
+      "capabilities": [
+        "creative-visual-handoff",
+        "image-concept-routing",
+        "art-and-design-support"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Structured creative handoff is current; direct image-model execution remains a separate seam."
+    },
+    {
+      "id": "hope",
+      "name": "Hope",
+      "aliases": [
+        "HOPE",
+        "Legacy Companion"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/hope-ai.github.io",
+      "role": "distinct-companion-lineage",
+      "hall": "Intelligence",
+      "publicNavigation": false,
+      "urls": {
+        "public": "https://artist1970.github.io/hope-ai.github.io/",
+        "githubPages": "https://artist1970.github.io/hope-ai.github.io/",
+        "repository": "https://github.com/artist1970/hope-ai.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy-active",
+      "capabilities": [
+        "explicit-request-companion-handoff",
+        "distinct-conversation-lineage"
+      ],
+      "parent": null,
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Distinct legacy companion lineage. Founder-specific/private Hope memory is never silently inherited by NAIB or NOEMA."
+    },
+    {
+      "id": "prose",
+      "name": "PROSE",
+      "aliases": [
+        "PROSE Editor",
+        "PROSE Suite"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/proresource_hub.github.io",
+      "role": "writing-specialist",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.com/proresource_hub.github.io/",
+        "githubPages": "https://vervenveda.github.io/proresource_hub.github.io/",
+        "repository": "https://github.com/vervenveda/proresource_hub.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "handoff-ready",
+      "capabilities": [
+        "writing",
+        "editing",
+        "drafting",
+        "document-workflows"
+      ],
+      "parent": "proresource-hub",
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Specialist handoff target within the ProResource ecosystem."
+    },
+    {
+      "id": "hollo",
+      "name": "HOLLO",
+      "aliases": [
+        "HOLLO Enrollment",
+        "HOLLO Direct Connect"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/333.github.io",
+      "role": "333-network-application",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+        "githubPages": "https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+        "repository": "https://github.com/vervenveda/333.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "local-profiles",
+        "contacts",
+        "local-messages",
+        "invitations",
+        "portable-backup"
+      ],
+      "parent": "333-network",
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Browser/local-first capability is current. Full authenticated multi-device/network behavior requires connected backend infrastructure."
+    },
+    {
+      "id": "kansee",
+      "name": "KANSEE",
+      "aliases": [
+        "KANSEE Meetings",
+        "KANSEE Meeting Rooms"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/333.github.io",
+      "role": "333-network-application",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+        "githubPages": "https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+        "repository": "https://github.com/vervenveda/333.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "camera-preview",
+        "microphone-preview",
+        "meeting-planning",
+        "room-workspace"
+      ],
+      "parent": "333-network",
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Browser/local-first capability is current. Full authenticated multi-device/network behavior requires connected backend infrastructure."
+    },
+    {
+      "id": "even-mail",
+      "name": "E=Ven Mail",
+      "aliases": [
+        "EVen Mail",
+        "Even Mail"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/333.github.io",
+      "role": "333-network-application",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html",
+        "githubPages": "https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html",
+        "repository": "https://github.com/vervenveda/333.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "mail-workspace",
+        "message-composition",
+        "local-first-mail-planning"
+      ],
+      "parent": "333-network",
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Browser/local-first capability is current. Full authenticated multi-device/network behavior requires connected backend infrastructure."
+    },
+    {
+      "id": "site-studio",
+      "name": "SIte Studio",
+      "aliases": [
+        "SIte",
+        "SIte Builder",
+        "Site Studio"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/333.github.io",
+      "role": "333-network-application",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html",
+        "githubPages": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html",
+        "repository": "https://github.com/vervenveda/333.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "site-building",
+        "embed-workflows",
+        "local-web-authoring"
+      ],
+      "parent": "333-network",
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Browser/local-first capability is current. Full authenticated multi-device/network behavior requires connected backend infrastructure."
+    },
+    {
+      "id": "bunya",
+      "name": "Bunya",
+      "aliases": [
+        "Bunya Digital Infrastructure",
+        "Bunya Registry"
+      ],
+      "owner": "vervenveda",
+      "repository": "vervenveda/333.github.io",
+      "role": "333-network-application",
+      "hall": "Creative & Professional",
+      "publicNavigation": true,
+      "urls": {
+        "public": "https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html",
+        "githubPages": "https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html",
+        "repository": "https://github.com/vervenveda/333.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "current-local",
+      "capabilities": [
+        "digital-infrastructure-planning",
+        "registry-workflows",
+        "hosting-domain-planning"
+      ],
+      "parent": "333-network",
+      "dependsOn": [],
+      "legacyReplacementFor": [],
+      "notes": "Browser/local-first capability is current. Full authenticated multi-device/network behavior requires connected backend infrastructure."
+    }
+  ],
+  "backstageSystems": [
+    {
+      "id": "noema",
+      "name": "NOEMA",
+      "aliases": [
+        "Administrative Intelligence",
+        "Orchestration Intelligence"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/noema-ai.github.io",
+      "role": "backstage-administrative-intelligence",
+      "visibility": "backstage-only",
+      "frontline": false,
+      "publicNavigation": false,
+      "urls": {
+        "public": null,
+        "repository": "https://github.com/artist1970/noema-ai.github.io"
+      },
+      "version": {
+        "value": "1.3.0",
+        "source": "declared-in-README"
+      },
+      "status": "backstage",
+      "capabilities": [
+        "constitution-and-policy-governance",
+        "permissions",
+        "memory-governance",
+        "identity-governance",
+        "specialist-authority",
+        "resource-federation",
+        "evidence-standards",
+        "security-boundaries",
+        "provider-boundaries",
+        "provider-context-minimization",
+        "orchestration",
+        "provenance"
+      ],
+      "publicIdentity": "naib",
+      "rules": [
+        "NOEMA must never be rendered as a public directory destination.",
+        "NOEMA must never be used as the front-line AI name.",
+        "Public conversational presentation belongs to NAIB."
+      ]
+    },
+    {
+      "id": "khaemenes-mentor-core",
+      "name": "Khaemenes Mentor Core",
+      "aliases": [
+        "Khaemenes Mentor",
+        "Mentor Core"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/noema-ai.github.io",
+      "role": "learning-and-family-specialist",
+      "visibility": "internal-component",
+      "frontline": false,
+      "publicNavigation": false,
+      "urls": {
+        "public": null,
+        "repository": "https://github.com/artist1970/noema-ai.github.io"
+      },
+      "version": {
+        "value": "1.3.0",
+        "source": "host-release"
+      },
+      "status": "backstage",
+      "capabilities": [
+        "learning-context",
+        "family-context",
+        "presentation-adaptation",
+        "enrollment-aware-routing"
+      ],
+      "publicIdentity": "naib"
+    },
+    {
+      "id": "sovereign-agent",
+      "name": "Sovereign Problem-Solving Agent",
+      "aliases": [
+        "Sovereign Agent"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/noema-ai.github.io",
+      "role": "bounded-decision-support-specialist",
+      "visibility": "internal-component",
+      "frontline": false,
+      "publicNavigation": false,
+      "urls": {
+        "public": null,
+        "repository": "https://github.com/artist1970/noema-ai.github.io"
+      },
+      "version": {
+        "value": "1.3.0",
+        "source": "host-release"
+      },
+      "status": "backstage",
+      "capabilities": [
+        "decision-criteria",
+        "comparison",
+        "planning",
+        "prioritization"
+      ],
+      "publicIdentity": "naib"
+    },
+    {
+      "id": "learning-resource-federation",
+      "name": "Learning Resource Federation",
+      "aliases": [
+        "Resource Director"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/noema-ai.github.io",
+      "role": "learning-resource-discovery",
+      "visibility": "internal-component",
+      "frontline": false,
+      "publicNavigation": false,
+      "urls": {
+        "public": null,
+        "repository": "https://github.com/artist1970/noema-ai.github.io"
+      },
+      "version": {
+        "value": "1.3.0",
+        "source": "host-release"
+      },
+      "status": "backstage",
+      "capabilities": [
+        "stage-aware-learning-discovery",
+        "manifest-loading",
+        "provenance",
+        "course-graph"
+      ],
+      "publicIdentity": "naib"
+    }
+  ],
+  "reservedModules": [
+    {
+      "id": "campaign-documents",
+      "name": "Campaign Documents",
+      "aliases": [],
+      "owner": "jenniferpearl2028",
+      "repository": "JenniferPearl2028/documents.github.io",
+      "role": "campaign-module",
+      "urls": {
+        "public": "https://jenniferpearl2028.github.io/documents.github.io/",
+        "repository": "https://github.com/JenniferPearl2028/documents.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": []
+    },
+    {
+      "id": "campaign-events",
+      "name": "Campaign Events",
+      "aliases": [],
+      "owner": "jenniferpearl2028",
+      "repository": "JenniferPearl2028/events.github.io",
+      "role": "campaign-module",
+      "urls": {
+        "public": "https://jenniferpearl2028.github.io/events.github.io/",
+        "repository": "https://github.com/JenniferPearl2028/events.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": []
+    },
+    {
+      "id": "campaign-issues",
+      "name": "Campaign Issues",
+      "aliases": [],
+      "owner": "jenniferpearl2028",
+      "repository": "JenniferPearl2028/issues.github.io",
+      "role": "campaign-module",
+      "urls": {
+        "public": "https://jenniferpearl2028.github.io/issues.github.io/",
+        "repository": "https://github.com/JenniferPearl2028/issues.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": []
+    },
+    {
+      "id": "campaign-policies",
+      "name": "Campaign Policies",
+      "aliases": [],
+      "owner": "jenniferpearl2028",
+      "repository": "JenniferPearl2028/policies.github.io",
+      "role": "campaign-module",
+      "urls": {
+        "public": "https://jenniferpearl2028.github.io/policies.github.io/",
+        "repository": "https://github.com/JenniferPearl2028/policies.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": []
+    },
+    {
+      "id": "campaign-press",
+      "name": "Campaign Press",
+      "aliases": [],
+      "owner": "jenniferpearl2028",
+      "repository": "JenniferPearl2028/press.github.io",
+      "role": "campaign-module",
+      "urls": {
+        "public": "https://jenniferpearl2028.github.io/press.github.io/",
+        "repository": "https://github.com/JenniferPearl2028/press.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": []
+    },
+    {
+      "id": "campaign-volunteer",
+      "name": "Campaign Volunteer",
+      "aliases": [],
+      "owner": "jenniferpearl2028",
+      "repository": "JenniferPearl2028/volunteer.github.io",
+      "role": "campaign-module",
+      "urls": {
+        "public": "https://jenniferpearl2028.github.io/volunteer.github.io/",
+        "repository": "https://github.com/JenniferPearl2028/volunteer.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": []
+    }
+  ],
+  "legacyRepositories": [
+    {
+      "id": "artist1970-arshif-github-io",
+      "name": "ARSHIF legacy repository",
+      "aliases": [
+        "Arshif legacy"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/Arshif.github.io",
+      "urls": {
+        "repository": "https://github.com/artist1970/Arshif.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": "arshif",
+      "replacementReason": "Current canonical public ARSHIF is maintained in the Verve N Veda namespace."
+    },
+    {
+      "id": "artist1970-khaemenesacademy-github-io",
+      "name": "Khaemenes Academy legacy repository",
+      "aliases": [
+        "KhaemenesAcademy"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/KhaemenesAcademy.github.io",
+      "urls": {
+        "repository": "https://github.com/artist1970/KhaemenesAcademy.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": "khaemenes-academy",
+      "replacementReason": "Current canonical Academy is maintained in the organized Verve N Veda Khaemenes namespace."
+    },
+    {
+      "id": "artist1970-bazaar-art-live-github-io",
+      "name": "Bazaar Art Live legacy repository",
+      "aliases": [
+        "Bazaar-Art-Live"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/Bazaar-Art-Live.github.io",
+      "urls": {
+        "repository": "https://github.com/artist1970/Bazaar-Art-Live.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": "bazaar-art-live",
+      "replacementReason": "Current Bazaar Art Live is hosted as a first-class application inside the 333 Network."
+    },
+    {
+      "id": "artist1970-8th-grade-math-portal",
+      "name": "8th Grade Math Portal lineage",
+      "aliases": [
+        "8th-Grade-Math-Portal"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/8th-Grade-Math-Portal",
+      "urls": {
+        "repository": "https://github.com/artist1970/8th-Grade-Math-Portal"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": "khaemenes-middle",
+      "replacementReason": "Current grade-level learning belongs to the Khaemenes Middle federation; exact course paths remain source-owned."
+    },
+    {
+      "id": "artist1970-ohmic-foundry-github-io",
+      "name": "Ohmic Foundry prototype collection",
+      "aliases": [
+        "Ohmic Foundry",
+        "Ohmic_Foundry"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/Ohmic_Foundry_github.io",
+      "urls": {
+        "repository": "https://github.com/artist1970/Ohmic_Foundry_github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "development-collection",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "Retained as a development/prototype collection; individual prototypes may have newer canonical homes."
+    },
+    {
+      "id": "artist1970-creative-spark-github-io",
+      "name": "Creative Spark lineage",
+      "aliases": [
+        "Creative Spark"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/creative-spark.github.io",
+      "urls": {
+        "repository": "https://github.com/artist1970/creative-spark.github.io"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "No canonical replacement is declared in this manifest."
+    },
+    {
+      "id": "artist1970-auroracore",
+      "name": "AuroraCore lineage",
+      "aliases": [
+        "Aurora Core"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/AuroraCore",
+      "urls": {
+        "repository": "https://github.com/artist1970/AuroraCore"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "No canonical replacement is declared; do not conflate automatically with the public Aurora wellbeing portal."
+    },
+    {
+      "id": "artist1970-hturt-org",
+      "name": "HTURT lineage",
+      "aliases": [
+        "HTURT"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/HTURT.org",
+      "urls": {
+        "repository": "https://github.com/artist1970/HTURT.org"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "No canonical replacement is declared in this manifest."
+    },
+    {
+      "id": "artist1970-weal",
+      "name": "Weal lineage",
+      "aliases": [
+        "Weal"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/Weal",
+      "urls": {
+        "repository": "https://github.com/artist1970/Weal"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "No canonical replacement is declared in this manifest."
+    },
+    {
+      "id": "artist1970-plera-founders-portal",
+      "name": "PLERA Founders Portal lineage",
+      "aliases": [
+        "Plera Founders Portal"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/Plera-Founders-Portal",
+      "urls": {
+        "repository": "https://github.com/artist1970/Plera-Founders-Portal"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "Founder/admin lineage retained separately from the public PLERA Search product."
+    },
+    {
+      "id": "artist1970-pearlsgamutfounderspage",
+      "name": "Pearl's Gamut Founders Page lineage",
+      "aliases": [
+        "Pearls Gamut Founders Page"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/PearlsGamutFoundersPage",
+      "urls": {
+        "repository": "https://github.com/artist1970/PearlsGamutFoundersPage"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "Founder/archive lineage; no public canonical replacement is declared."
+    },
+    {
+      "id": "artist1970-click-logger",
+      "name": "Click Logger utility",
+      "aliases": [
+        "click-logger"
+      ],
+      "owner": "artist1970",
+      "repository": "artist1970/click-logger",
+      "urls": {
+        "repository": "https://github.com/artist1970/click-logger"
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "legacy",
+      "capabilities": [],
+      "replacement": null,
+      "replacementReason": "Supporting utility, not a canonical public application."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "naib",
+      "type": "public-interface-for",
+      "to": "noema"
+    },
+    {
+      "from": "noema",
+      "type": "governs-routing-to",
+      "to": "verifier"
+    },
+    {
+      "from": "noema",
+      "type": "discovers",
+      "to": "plera-search"
+    },
+    {
+      "from": "noema",
+      "type": "discovers",
+      "to": "arshif"
+    },
+    {
+      "from": "noema",
+      "type": "federates",
+      "to": "khaemenes-academy"
+    },
+    {
+      "from": "noema",
+      "type": "handoff",
+      "to": "prose"
+    },
+    {
+      "from": "noema",
+      "type": "handoff",
+      "to": "moirai"
+    },
+    {
+      "from": "noema",
+      "type": "explicit-request-handoff",
+      "to": "hope"
+    },
+    {
+      "from": "noema",
+      "type": "restricted-handoff",
+      "to": "333-network"
+    },
+    {
+      "from": "333-network",
+      "type": "contains",
+      "to": "hollo"
+    },
+    {
+      "from": "333-network",
+      "type": "contains",
+      "to": "kansee"
+    },
+    {
+      "from": "333-network",
+      "type": "contains",
+      "to": "even-mail"
+    },
+    {
+      "from": "333-network",
+      "type": "contains",
+      "to": "site-studio"
+    },
+    {
+      "from": "333-network",
+      "type": "contains",
+      "to": "bunya"
+    },
+    {
+      "from": "333-network",
+      "type": "contains",
+      "to": "bazaar-art-live"
+    }
+  ],
+  "integrity": {
+    "counts": {
+      "apps": 37,
+      "backstageSystems": 4,
+      "reservedModules": 6,
+      "legacyRepositories": 12,
+      "relationships": 15
+    },
+    "invariants": [
+      "Exactly one app has role=frontline-ai and it is NAIB.",
+      "NOEMA exists only in backstageSystems.",
+      "NOEMA publicNavigation is false and urls.public is null.",
+      "App IDs are unique.",
+      "Every populated replacement references a canonical app ID.",
+      "Unknown versions are represented as null rather than guessed."
+    ]
+  }
+}
