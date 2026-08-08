@@ -111,34 +111,15 @@
       -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
       mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
     }
-  /* CONTINUOUS 333 NETWORK TICKER */
-.network-ticker-track{
-  width:max-content;
-  height:100%;
-  display:flex;
-  align-items:center;
-  white-space:nowrap;
-  animation:networkTickerMove 26s linear infinite;
-  will-change:transform;
-}
-
-.network-ticker-set{
-  flex:0 0 auto;
-  height:100%;
-  display:flex;
-  align-items:center;
-  gap:22px;
-  padding:0 11px;
-}
-
-@keyframes networkTickerMove{
-  from{
-    transform:translate3d(0,0,0);
-  }
-  to{
-    transform:translate3d(-50%,0,0);
-  }
-}
+    .network-ticker-track{
+      width:max-content;
+      height:100%;
+      display:flex;
+      align-items:center;
+      white-space:nowrap;
+      animation:networkTickerMove 26s linear infinite;
+      will-change:transform;
+    }
     .network-ticker:hover .network-ticker-track,
     .network-ticker:focus-within .network-ticker-track,
     .network-ticker[data-paused="true"] .network-ticker-track{
@@ -148,8 +129,8 @@
       height:100%;
       display:flex;
       align-items:center;
-      gap:31px;
-      padding-inline:31px;
+      gap:22px;
+      padding-inline:11px;
     }
     .network-ticker-label{
       flex:0 0 auto;
@@ -352,8 +333,8 @@
       border-radius:var(--radius);
       color:#fff;background:var(--ink);
       font-family:var(--ceremonial);
-      font-size:14px;
-      font-weight:555;
+      font-size:10px;
+      font-weight:400;
       line-height:1;
       letter-spacing:.07em;
       white-space:nowrap;
@@ -777,6 +758,34 @@
     }
     .feature-card .button{width:100%;margin-top:auto}
 
+    /* SUPPORT / CONTRIBUTIONS */
+    .support-bridge{
+      display:grid;
+      grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);
+      gap:32px;
+      align-items:center;
+      padding:36px;
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(248,244,233,.92));
+      box-shadow:var(--shadow);
+    }
+    .support-copy{text-align:left}
+    .support-copy h2{margin:.25rem 0 .7rem;color:var(--forest-deep)}
+    .support-copy p{margin:.45rem 0;color:var(--ink-soft)}
+    .support-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+    .support-points span{
+      display:inline-flex;align-items:center;min-height:30px;padding:6px 9px;
+      border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink-soft);
+      font-size:11px;font-weight:650;
+    }
+    .support-payment{
+      display:grid;place-items:center;min-height:190px;padding:22px;
+      border:1px solid rgba(35,79,54,.14);border-radius:var(--radius);
+      background:#fff;text-align:center;
+    }
+    .support-payment small{display:block;margin-top:12px;color:var(--muted);line-height:1.5}
+
     .campaign-bridge{
       max-width:1080px;
       margin:auto;
@@ -1055,8 +1064,8 @@
       .brand{max-width:min(360px,calc(100vw - 120px))}
       .pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
       .featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .campaign-bridge{grid-template-columns:1fr}
-      .campaign-copy{text-align:center}
+      .support-bridge,.campaign-bridge{grid-template-columns:1fr}
+      .support-copy,.campaign-copy{text-align:center}
       .intelligence-bridge{grid-template-columns:1fr;text-align:center}
       .intelligence-actions{justify-content:center}
       .network-statement{grid-template-columns:1fr}
@@ -1088,8 +1097,8 @@
         --header-height:64px;
       }
       .network-ticker{grid-template-columns:minmax(0,1fr) 36px}
-     .network-ticker-track{animation-duration:24s}
-      .network-ticker-set{gap:20px;padding-inline:20px}
+      .network-ticker-track{animation-duration:24s}
+      .network-ticker-set{gap:18px;padding-inline:9px}
       .network-ticker-label{font-size:9px}
       .network-ticker-app,.network-ticker-call{font-size:10px}
       .ticker-control{width:36px}
@@ -1108,7 +1117,7 @@
       .intelligence-note{grid-column:auto}
       .intelligence-actions{display:grid;width:100%}
       .site-card{max-width:100%;min-width:100%}
-      .campaign-bridge{padding:28px 20px}
+      .support-bridge,.campaign-bridge{padding:28px 20px}
       .button{width:100%}
     }
     @media(prefers-reduced-motion:reduce){
@@ -1136,6 +1145,7 @@
           <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
           <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
           <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+          <a class="network-ticker-call" href="#support">Support Original Work · Contribute</a>
           <a class="network-ticker-call" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
         </div>
         <div class="network-ticker-set" aria-hidden="true">
@@ -1146,6 +1156,7 @@
           <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
           <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
           <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+          <a class="network-ticker-call" tabindex="-1" href="#support">Support Original Work · Contribute</a>
           <a class="network-ticker-call" tabindex="-1" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
         </div>
       </div>
@@ -1169,6 +1180,7 @@
         <a href="#intelligence">NAIB</a>
         <a href="#featured">Featured</a>
         <a href="#directory">Directory</a>
+        <a href="#support">Contribute</a>
         <a href="#mission">Mission</a>
         <a href="#campaign">Jennifer Pearl 2028</a>
       </nav>
@@ -1436,6 +1448,29 @@
       </div>
     </section>
 
+    <section class="section" id="support" aria-labelledby="supportTitle">
+      <div class="section-inner">
+        <div class="support-bridge">
+          <div class="support-copy">
+            <p class="kicker">Support Independent Creation</p>
+            <h2 id="supportTitle">Help original learning, games, tools, art, and public resources keep growing.</h2>
+            <p>Verve N Veda and the Khaemenes learning ecosystem are built as original educational, creative, and public-resource work. Voluntary contributions help support continued development, maintenance, hosting, research, curriculum building, and new tools.</p>
+            <p><strong>This support area is separate from Jennifer Pearl campaign contributions.</strong> No tax-deductibility or charitable status is represented on this page.</p>
+            <div class="support-points" aria-label="What contributions support">
+              <span>Original curriculum</span><span>Original games</span><span>Learning tools</span><span>Public resources</span><span>Independent development</span>
+            </div>
+          </div>
+          <div class="support-payment">
+            <stripe-buy-button
+              buy-button-id="buy_btn_1TtUqXJv39zQCMS1skiXSbvP"
+              publishable-key="pk_live_51RpGqiJv39zQCMS1Gms5qklNYpH8haeue2dSLG76KHSims5CbWbitNjqlwhxDvjewGefNyrh24zNMsdQSk5m3mbE00Ajsji1iw">
+            </stripe-buy-button>
+            <small>Secure payment form provided through Stripe. Contributions are voluntary support for Verve N Veda original work.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-alt" id="campaign">
       <div class="section-inner">
         <div class="campaign-bridge">
@@ -1544,6 +1579,7 @@
         <a href="#pillars">Halls</a>
         <a href="#intelligence">NAIB</a>
         <a href="#directory">Directory</a>
+        <a href="#support">Contribute</a>
         <a href="#mission">Mission</a>
         <a href="#campaign">Jennifer Pearl 2028</a>
         <a href="/privacy-policy.html">Privacy Policy</a>
@@ -2054,5 +2090,6 @@
       buildMenu();
     })();
   </script>
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </body>
 </html>
