@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-07T20:08:46Z",
+  "generatedAt": "2026-08-08T04:32:10Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -4220,8 +4220,8 @@
     },
     {
       "id": "vervenveda.khaemenes_preschool.github.io.preschool-family-home",
-      "title": "Crechè Family Home",
-      "description": "Preschool family learning home with the shared activity catalog.",
+      "title": "Crechè Family Home · Open Adventure Garden",
+      "description": "Full animated Crechè home with 52 public child adventures, Adventure Rooms, Today’s Pick, favorites, child/grown-up views, and family tools. No registration required for public activities.",
       "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/",
       "sourceId": "khaemenes.preschool",
       "repository": "vervenveda/Khaemenes_Preschool.github.io",
@@ -4243,7 +4243,10 @@
       "tags": [
         "preschool",
         "play",
-        "activities"
+        "activities",
+        "open-access",
+        "no-registration",
+        "52-adventures"
       ],
       "minutes": null,
       "energy": "",
@@ -4276,8 +4279,8 @@
     },
     {
       "id": "vervenveda.khaemenes_preschool.github.io.preschool-mentor",
-      "title": "Preschool Mentor",
-      "description": "Guided Preschool Mentor with guardian authorization, local progress, and age-appropriate activities.",
+      "title": "Khaemenes Preschool Mentor · Guest Mode",
+      "description": "Full Guided Preschool Mentor with Pip, Miri, Nova, Sage, balanced daily paths, hints, play suggestions, feelings check-in, read-aloud, Family Guide, and Guest Mode requiring no registration.",
       "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/",
       "sourceId": "khaemenes.preschool",
       "repository": "vervenveda/Khaemenes_Preschool.github.io",
@@ -4299,13 +4302,70 @@
       "tags": [
         "mentor",
         "guided-learning",
-        "parent"
+        "guest-mode",
+        "open-access",
+        "no-registration"
       ],
       "minutes": null,
       "energy": "",
       "featured": true,
       "mentorEligible": true,
       "recommendable": true,
+      "explicitAdultOptIn": false,
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_preschool.github.io.academy-family-registration",
+      "title": "Khaemenes Family & Learner Registration",
+      "description": "Academy-wide family and learner identity for formal curricula that require persistent progress, assessments, portfolio evidence, certification, or cross-grade records.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/family/",
+      "sourceId": "khaemenes.preschool",
+      "repository": "vervenveda/Khaemenes_Preschool.github.io",
+      "classification": "educational",
+      "audiences": [
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "family-learning",
+        "academic-records"
+      ],
+      "skills": [],
+      "tags": [
+        "formal-curriculum",
+        "registration",
+        "family-profile",
+        "learner-account"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": false,
+      "recommendable": false,
       "explicitAdultOptIn": false,
       "requiresFreshnessCheck": false,
       "dynamicContent": false,
