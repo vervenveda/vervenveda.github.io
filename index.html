@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, community service, and the NAIB / NOEMA intelligence navigation layer.">
+  <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, community service, and the NAIB intelligence navigation layer.">
   <meta name="theme-color" content="#f4f0e7">
   <meta name="color-scheme" content="light">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -18,7 +18,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Verve N Veda | Public Gateway">
-  <meta property="og:description" content="A connected public campus for lifelong education, research, creativity, public service, community growth, and intelligent navigation through NAIB / NOEMA.">
+  <meta property="og:description" content="A connected public campus for lifelong education, research, creativity, public service, community growth, and intelligent navigation through NAIB.">
   <meta property="og:url" content="https://vervenveda.com/">
   <meta property="og:site_name" content="Verve N Veda">
 
@@ -185,6 +185,117 @@
     @keyframes networkTickerMove{
       from{transform:translateX(0)}
       to{transform:translateX(-50%)}
+    }
+
+
+    /* ADMIN GATE — local creative front gate; server auth remains separate */
+    .admin-entry{
+      position:absolute;
+      left:10px;
+      top:50%;
+      z-index:6;
+      transform:translateY(-50%);
+      min-width:64px;
+      height:38px;
+      display:inline-grid;
+      place-items:center;
+      padding:0 11px;
+      border:1px solid #7f1717;
+      border-radius:var(--radius);
+      color:#fff;
+      background:linear-gradient(180deg,#c83a3a,#971f1f);
+      box-shadow:0 7px 20px rgba(126,25,25,.22);
+      font-size:9px;
+      font-weight:800;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+    .admin-entry:hover,.admin-entry:focus-visible{
+      background:linear-gradient(180deg,#dc4545,#a92323);
+      box-shadow:0 9px 24px rgba(126,25,25,.3);
+    }
+    .site-header{position:sticky}
+    .header-inner{padding-left:70px}
+
+    .admin-gate-overlay{
+      position:fixed;
+      inset:0;
+      z-index:5000;
+      display:grid;
+      place-items:center;
+      padding:20px;
+      visibility:hidden;
+      opacity:0;
+      background:rgba(5,10,9,.72);
+      -webkit-backdrop-filter:blur(8px);
+      backdrop-filter:blur(8px);
+      transition:opacity .18s ease,visibility .18s ease;
+    }
+    .admin-gate-overlay.open{visibility:visible;opacity:1}
+    .admin-gate-panel{
+      width:min(100%,470px);
+      max-height:min(760px,calc(100svh - 40px));
+      overflow:auto;
+      padding:30px;
+      border:1px solid rgba(145,31,31,.28);
+      border-top:4px solid #a92323;
+      border-radius:11px;
+      color:var(--ink);
+      background:var(--paper-bright);
+      box-shadow:0 30px 80px rgba(0,0,0,.28);
+      text-align:left;
+    }
+    .admin-gate-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+    .admin-gate-kicker{
+      color:#9d2626;
+      font-family:var(--ceremonial);
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .admin-gate-panel h2{margin-top:7px;color:var(--forest-deep);font-size:38px;line-height:1}
+    .admin-gate-panel p{color:var(--ink-soft);font-size:13px;line-height:1.65}
+    .admin-gate-close{
+      width:38px;height:38px;flex:0 0 38px;
+      border:1px solid var(--line-strong);border-radius:var(--radius);
+      color:var(--ink);background:#fff;font-size:21px;
+    }
+    .admin-gate-form{display:grid;gap:13px;margin-top:22px}
+    .admin-gate-form label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .admin-code-row{display:grid;grid-template-columns:minmax(0,1fr) 78px;gap:9px}
+    .admin-code-input{
+      width:100%;min-height:49px;padding:0 14px;
+      border:1px solid var(--line-strong);border-radius:var(--radius);
+      color:var(--ink);background:#fff;
+      font:600 18px/1 var(--sans);letter-spacing:.16em;
+    }
+    .admin-code-toggle{
+      border:1px solid var(--line-strong);border-radius:var(--radius);
+      color:var(--ink);background:#fff;font-size:11px;font-weight:700;
+    }
+    .admin-gate-submit,.admin-gate-secondary{
+      min-height:46px;border-radius:var(--radius);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+    }
+    .admin-gate-submit{border:1px solid #7f1717;color:#fff;background:#a92323}
+    .admin-gate-submit:hover{background:#8b1919}
+    .admin-gate-secondary{border:1px solid var(--line-strong);color:var(--ink);background:#fff}
+    .admin-gate-status{min-height:22px;margin:0!important;font-weight:650}
+    .admin-gate-status.error{color:#9d2626}
+    .admin-gate-status.ok{color:#26633d}
+    .admin-unlocked-actions{display:grid;gap:10px;margin-top:16px}
+    .admin-change-panel{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+    .admin-gate-note{
+      margin:20px 0 0!important;padding:12px 13px;border-left:2px solid var(--gold);
+      background:#fff;color:#66716c!important;font-size:11px!important;
+    }
+
+    @media(max-width:560px){
+      .admin-entry{left:6px;min-width:54px;height:34px;padding:0 8px;font-size:8px}
+      .header-inner{padding-left:52px}
+      .admin-gate-panel{padding:24px 18px}
+      .admin-code-row{grid-template-columns:1fr}
+      .admin-code-toggle{min-height:42px}
     }
 
     /* HEADER — 72px desktop, aligned to ticker through shared variables */
@@ -506,7 +617,7 @@
       text-transform:uppercase;
     }
 
-    /* NAIB / NOEMA — intelligence and navigation layer */
+    /* NAIB — intelligence and navigation layer */
     .intelligence-section{
       color:#fff;
       background:
@@ -1026,6 +1137,7 @@
   </div>
 
   <header class="site-header">
+    <button class="admin-entry" id="adminEntry" type="button" aria-haspopup="dialog" aria-controls="adminGate">Admin</button>
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="Verve N Veda home">
         <span class="brand-mark" aria-hidden="true">V</span>
@@ -1051,6 +1163,52 @@
       </button>
     </div>
   </header>
+
+
+  <div class="admin-gate-overlay" id="adminGate" aria-hidden="true">
+    <section class="admin-gate-panel" role="dialog" aria-modal="true" aria-labelledby="adminGateTitle">
+      <div class="admin-gate-top">
+        <div>
+          <span class="admin-gate-kicker">Administrator Access</span>
+          <h2 id="adminGateTitle">Admin Gate</h2>
+        </div>
+        <button class="admin-gate-close" id="adminGateClose" type="button" aria-label="Close administrator gate">×</button>
+      </div>
+      <p>Enter the 10-digit local administrator gate code to continue to the Verve N Veda administration portal.</p>
+
+      <form class="admin-gate-form" id="adminGateForm" novalidate>
+        <label for="adminCode">10-digit gate code</label>
+        <div class="admin-code-row">
+          <input class="admin-code-input" id="adminCode" name="adminCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="off" aria-describedby="adminGateStatus" required>
+          <button class="admin-code-toggle" id="adminShowCode" type="button" aria-pressed="false">Show</button>
+        </div>
+        <p class="admin-gate-status" id="adminGateStatus" role="status" aria-live="polite"></p>
+        <button class="admin-gate-submit" type="submit">Unlock Admin Portal</button>
+      </form>
+
+      <div id="adminUnlocked" hidden>
+        <p class="admin-gate-status ok">Gate unlocked for this browser session.</p>
+        <div class="admin-unlocked-actions">
+          <button class="admin-gate-submit" id="adminOpenPortal" type="button">Open Admin Portal</button>
+          <button class="admin-gate-secondary" id="adminChangeToggle" type="button" aria-expanded="false" aria-controls="adminChangePanel">Change Gate Code</button>
+          <button class="admin-gate-secondary" id="adminLockNow" type="button">Lock This Session</button>
+        </div>
+
+        <form class="admin-gate-form admin-change-panel" id="adminChangePanel" hidden novalidate>
+          <label for="adminCurrentCode">Current 10-digit code</label>
+          <input class="admin-code-input" id="adminCurrentCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="off" required>
+          <label for="adminNewCode">New 10-digit code</label>
+          <input class="admin-code-input" id="adminNewCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="new-password" required>
+          <label for="adminConfirmCode">Confirm new code</label>
+          <input class="admin-code-input" id="adminConfirmCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="new-password" required>
+          <p class="admin-gate-status" id="adminChangeStatus" role="status" aria-live="polite"></p>
+          <button class="admin-gate-submit" type="submit">Save New Gate Code</button>
+        </form>
+      </div>
+
+      <p class="admin-gate-note"><strong>Local gate:</strong> this is a creative browser-local entrance gate. The Admin Cloud will use its own server-side administrator authentication for protected account data.</p>
+    </section>
+  </div>
 
   <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
     <aside class="drawer" id="menuDrawer" role="dialog" aria-modal="true"
@@ -1086,7 +1244,7 @@
 
             <div class="hero-actions">
               <a class="button button-primary" href="#pillars">Discover the Halls</a>
-              <a class="button button-secondary" href="#intelligence">Meet NAIB / NOEMA</a>
+              <a class="button button-secondary" href="#intelligence">Meet NAIB</a>
               <a class="button button-secondary" href="https://vervenveda.github.io/333.github.io/">Open 333 Network</a>
             </div>
           </div>
@@ -1102,12 +1260,9 @@
       <div class="section-inner intelligence-bridge">
         <div class="intelligence-copy">
           <p class="kicker">Intelligence &amp; Navigation Layer</p>
-          <h2 id="intelligenceTitle">NAIB guides. NOEMA orchestrates.</h2>
+          <h2 id="intelligenceTitle">NAIB guides the ecosystem.</h2>
           <p>
-            <strong>NAIB</strong> is the public-facing guide into the Verve N Veda ecosystem.
-            <strong>NOEMA</strong> is the orchestration layer behind that experience—organizing context,
-            coordinating specialist systems, and helping visitors reach the most appropriate doorway
-            without turning every Hall into the same application.
+            <strong>NAIB</strong> is the public-facing intelligence and navigation guide for the Verve N Veda ecosystem—organizing context, coordinating approved specialist pathways, and helping visitors reach the most appropriate doorway without turning every Hall into the same application.
           </p>
           <p>
             A learning request can route toward Khaemenes Academy; discovery can move through PLERA Search;
@@ -1115,12 +1270,12 @@
             professional work can move toward specialist tools; and connected communication can hand off to 333.
           </p>
           <div class="intelligence-actions">
-            <a class="button button-primary" href="https://artist1970.github.io/noema-ai.github.io/">Open NAIB / NOEMA</a>
+            <a class="button button-primary" href="https://artist1970.github.io/noema-ai.github.io/">Open NAIB</a>
             <a class="button button-secondary" href="#directory">Browse Every Public Hall</a>
           </div>
         </div>
 
-        <div class="intelligence-map" aria-label="NAIB and NOEMA navigation roles">
+        <div class="intelligence-map" aria-label="NAIB navigation roles">
           <div class="intelligence-node">
             <span>01 · Understand</span>
             <strong>Context</strong>
@@ -1142,8 +1297,7 @@
             <small>Keeps permissions, provenance, privacy, and high-stakes verification separate from simple discovery.</small>
           </div>
           <p class="intelligence-note">
-            The public NOEMA release currently provides local orchestration, memory, resource federation, and verification structure.
-            Generative model services remain a separate secure provider layer rather than being embedded as public credentials.
+            NAIB provides local navigation, memory, resource federation, and verification-aware structure. Secure provider services remain separate from public page credentials.
           </p>
         </div>
       </div>
@@ -1187,7 +1341,7 @@
         </div>
 
         <div class="network-counts" aria-label="Verve N Veda network overview">
-          <div class="network-count"><div><strong id="destinationCount">28</strong><span>Public Doorways</span></div></div>
+          <div class="network-count"><div><strong id="destinationCount">29</strong><span>Public Doorways</span></div></div>
           <div class="network-count"><div><strong>4</strong><span>Organized Halls</span></div></div>
           <div class="network-count"><div><strong>1</strong><span>Connected Campus</span></div></div>
         </div>
@@ -1222,7 +1376,7 @@
 
           <article class="feature-card">
             <span class="feature-icon">N</span>
-            <h3>NAIB / NOEMA</h3>
+            <h3>NAIB</h3>
             <p>The intelligence and navigation layer that organizes context and routes visitors toward the right learning, research, creative, service, or communication system.</p>
             <a class="button button-primary" href="https://artist1970.github.io/noema-ai.github.io/">Open Intelligence Layer</a>
           </article>
@@ -1358,9 +1512,9 @@
       <div class="section-inner">
         <div class="privacy-note">
           <strong>Privacy &amp; Public Access</strong>
-          This gateway does not require an account and does not collect form submissions on this page.
-          Individual applications may store voluntary workspace data locally in the visitor’s browser;
-          each application explains its own local-storage and connected-service status.
+          This public gateway does not require an account and does not collect public form submissions on this page.
+          The administrator gate stores only its local gate record and session state in this browser; the gate code is not transmitted by this page.
+          Individual applications may store voluntary workspace data locally in the visitor’s browser, and each application explains its own local-storage and connected-service status.
         </div>
       </div>
     </section>
@@ -1371,10 +1525,11 @@
       <span class="footer-credit"><strong>© <span id="year"></span> Verve N Veda · Jennifer Kay Pearl</strong></span>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="#pillars">Halls</a>
-        <a href="#intelligence">NAIB / NOEMA</a>
+        <a href="#intelligence">NAIB</a>
         <a href="#directory">Directory</a>
         <a href="#mission">Mission</a>
         <a href="#campaign">Jennifer Pearl 2028</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
         <a href="#top">Back to Top</a>
       </nav>
       <span class="footer-meta">
@@ -1384,11 +1539,256 @@
     </div>
   </footer>
 
+
   <script>
     (() => {
       "use strict";
 
-      const SITES = [{"title":"333 Network","url":"https://vervenveda.github.io/333.github.io/","icon":"333","group":"Creative & Professional","desc":"HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte Studio, and Bunya digital infrastructure.","keywords":"communication meetings email social network website builder domains hosting infrastructure collaboration"},{"title":"NAIB / NOEMA","url":"https://artist1970.github.io/noema-ai.github.io/","icon":"N","group":"Knowledge","desc":"The Verve N Veda intelligence and navigation layer for context, resource federation, specialist routing, memory, and verification-aware orchestration.","keywords":"naib noema ai intelligence navigation orchestration mentor context memory routing federation specialists verifier plera khaemenes arshif 333"},{"title":"Khaemenes Academy","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/","icon":"KA","group":"Education","desc":"The central international learning campus from preschool through higher learning and lifelong education.","keywords":"school homeschool curriculum students parents teachers learning international education"},{"title":"Khaemenes Preschool","url":"https://vervenveda.github.io/Khaemenes_Preschool.github.io/","icon":"PS","group":"Education","desc":"Colorful early-learning stories, play, life skills, creativity, and discovery.","keywords":"pre-k early childhood children stories games preschool parents"},{"title":"Khaemenes Kinder Garden","url":"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/","icon":"KG","group":"Education","desc":"A garden of kindness, curiosity, literacy, numbers, nature, and wonder.","keywords":"kindergarten early learning reading math nature children"},{"title":"Khaemenes Elementary","url":"https://vervenveda.github.io/Khaemenes_Elementary.github.io/","icon":"E","group":"Education","desc":"Grades 1–5 academics, creativity, family learning, and foundational skills.","keywords":"elementary first second third fourth fifth grade homeschool parents"},{"title":"Khaemenes Middle","url":"https://vervenveda.github.io/Khaemenes_Middle.github.io/","icon":"M","group":"Education","desc":"Grades 6–8 academic foundations, independence, exploration, and preparation.","keywords":"middle school sixth seventh eighth grade homeschool students"},{"title":"Khaemenes High","url":"https://vervenveda.github.io/Khaemenes_High.github.io/","icon":"HS","group":"Education","desc":"Grades 9–12 courses, portfolios, records, examinations, and graduation pathways.","keywords":"high school ninth tenth eleventh twelfth grade diploma certificate math curriculum homeschool"},{"title":"Khaemenes Higher Learning","url":"https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/","icon":"HL","group":"Education","desc":"GED, college access, careers, professional development, and lifelong study.","keywords":"adult education college university career workforce employment ged training"},{"title":"Khaemenes Linguistics","url":"https://vervenveda.github.io/Khaemenes_Linguistics.github.io/","icon":"L","group":"Education","desc":"Languages, linguistics, translation, writing systems, and communication.","keywords":"language arabic spanish english translation literacy writing"},{"title":"ARSHIF","url":"https://vervenveda.github.io/Arshif.github.io/","icon":"A","group":"Knowledge","desc":"Research, literature, history, philosophy, culture, faith, archives, and memory.","keywords":"classics books library religion mythology science theatre travel oral traditions"},{"title":"The Verifier","url":"https://vervenveda.github.io/theverifier.github.io/","icon":"V","group":"Knowledge","desc":"News discovery, source comparison, evidence, editorials, research, and media literacy.","keywords":"news fact check journalism politics current events science daily children news"},{"title":"PLERA Search","url":"https://vervenveda.github.io/PLERASearch.github.io/","icon":"◎","group":"Knowledge","desc":"A search gateway into trusted public learning and resource destinations.","keywords":"search engine research directory find resources"},{"title":"Solanar","url":"https://vervenveda.github.io/solanar.github.io/","icon":"☀","group":"Knowledge","desc":"Weather, Earth systems, climate, moon cycles, world time, and environmental observation.","keywords":"weather forecast hurricane storm emergency climate moon phase space weather world clock"},{"title":"Medicament Hub","url":"https://vervenveda.github.io/medicament-hub.github.io/","icon":"⚕","group":"Public Service","desc":"Health, medicine, trauma, mental wellness, family care, seniors, insurance, and safety resources.","keywords":"medical hospital doctor medication tbi memory loss mental health addiction recovery disability maternal child health"},{"title":"Firmament Law","url":"https://vervenveda.github.io/firmament.github.io/","icon":"§","group":"Public Service","desc":"Legal information, rights, family and veteran resources, evidence tools, and civic literacy.","keywords":"legal help attorney rights court family law lgbtq seniors insurance veterans citations evidence"},{"title":"One Nation for All","url":"https://vervenveda.github.io/onenationforall.github.io/","icon":"☆","group":"Public Service","desc":"Constitutional learning, voter access, policy, veterans, homelessness, service, and community support.","keywords":"government voting elections constitution civic homeless housing legal help public policy unity"},{"title":"Jennifer Pearl 2028","url":"https://jenniferpearl2028.github.io/","icon":"JP","group":"Public Service","desc":"Jennifer Pearl’s public-service campaign, policy work, voter access, and connected community mission.","keywords":"president campaign candidate policy voter registration petition public service 2028"},{"title":"Veterans","url":"https://vervenveda.github.io/veterans.github.io/","icon":"★","group":"Public Service","desc":"Veteran benefits, crisis resources, housing, employment, services, and family assistance.","keywords":"military va benefits disability housing jobs crisis family"},{"title":"Finance","url":"https://vervenveda.github.io/finance.github.io/","icon":"$","group":"Public Service","desc":"Financial literacy, budgeting, planning, markets, consumer knowledge, and practical tools.","keywords":"money banking credit debt taxes budget investing business insurance"},{"title":"River to Road","url":"https://vervenveda.github.io/river_to_road.github.io/","icon":"≈","group":"Public Service","desc":"Environmental stewardship, clean water, science, service learning, events, and community action.","keywords":"environment pollution cleanup activism conservation climate ocean river road trash ecology"},{"title":"Aurora","url":"https://vervenveda.github.io/aurora.github.io/","icon":"☼","group":"Public Service","desc":"Rest, yoga, reflection, encouragement, organization, wellness, and creative renewal.","keywords":"wellbeing meditation prayer breathing sleep journal relaxation mental health self care"},{"title":"ProResource Hub","url":"https://vervenveda.github.io/proresource_hub.github.io/","icon":"P","group":"Creative & Professional","desc":"Professional tools for writing, editing, media, research, design, meetings, and productivity.","keywords":"prose editor pdf docx letters zip clean task manager meeting media cad tools"},{"title":"Bazaar Art","url":"https://vervenveda.github.io/bazaarart.github.io/","icon":"✦","group":"Creative & Professional","desc":"Art education, artist tools, galleries, creativity, social expression, and cultural enterprise.","keywords":"artist painting drawing photo album gallery community social feed art business"},{"title":"Bazaar Art Live","url":"https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html","icon":"LIVE","group":"Creative & Professional","desc":"The live local-first creative community feed for profiles, posts, stories, reels, groups, events, and artistic connection.","keywords":"artists social network creative feed stories reels groups events community 333 live"},{"title":"My Art Gallery","url":"https://vervenveda.github.io/myartgallery.github.io/","icon":"▧","group":"Creative & Professional","desc":"Artist Jenny Pearl’s portfolio preserving more than three decades of professional artistry.","keywords":"Jennifer Jenny Pearl artist portfolio murals watercolor acrylic commissions photography"},{"title":"The Refrain","url":"https://vervenveda.github.io/the_refrain.github.io/","icon":"♫","group":"Creative & Professional","desc":"Music education, composition, recording, performance, and creative exploration.","keywords":"music studio composer multitrack recording harmony songs instruments"},{"title":"Arcade","url":"https://vervenveda.github.io/arcade.github.io/","icon":"◆","group":"Creative & Professional","desc":"Original games, strategy, puzzles, trivia, practice, and playful discovery.","keywords":"games chess checkers sudoku trivia educational arcade puzzles"}];
+      const ADMIN_PORTAL_URL = "/admin.github.io/";
+      const RECORD_KEY = "VNV_ADMIN_GATE_RECORD_V2";
+      const SESSION_KEY = "VNV_ADMIN_GATE_SESSION_V2";
+      const DEFAULT_CODE = "0000000000";
+      const ITERATIONS = 120000;
+      const encoder = new TextEncoder();
+      const $ = id => document.getElementById(id);
+      let priorFocus = null;
+
+      const overlay = $("adminGate");
+      const panel = overlay?.querySelector(".admin-gate-panel");
+      const codeInput = $("adminCode");
+      const form = $("adminGateForm");
+      const unlocked = $("adminUnlocked");
+      const status = $("adminGateStatus");
+
+      function cleanCode(value){
+        return String(value || "").replace(/\D/g, "").slice(0,10);
+      }
+
+      function isValidCode(value){
+        return /^[0-9]{10}$/.test(String(value || ""));
+      }
+
+      function bytesToBase64(bytes){
+        let binary = "";
+        bytes.forEach(byte => binary += String.fromCharCode(byte));
+        return btoa(binary);
+      }
+
+      function base64ToBytes(value){
+        const binary = atob(value);
+        return Uint8Array.from(binary, char => char.charCodeAt(0));
+      }
+
+      async function derive(code,salt){
+        const material = await crypto.subtle.importKey(
+          "raw", encoder.encode(code), {name:"PBKDF2"}, false, ["deriveBits"]
+        );
+        const bits = await crypto.subtle.deriveBits(
+          {name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},
+          material,256
+        );
+        return new Uint8Array(bits);
+      }
+
+      function constantTimeEqual(a,b){
+        if(a.length !== b.length) return false;
+        let diff = 0;
+        for(let i=0;i<a.length;i++) diff |= a[i] ^ b[i];
+        return diff === 0;
+      }
+
+      function readRecord(){
+        try{
+          const raw = localStorage.getItem(RECORD_KEY);
+          return raw ? JSON.parse(raw) : null;
+        }catch{ return null; }
+      }
+
+      async function verify(code){
+        if(!isValidCode(code)) return false;
+        const record = readRecord();
+        if(!record?.salt || !record?.hash) return code === DEFAULT_CODE;
+        try{
+          const salt = base64ToBytes(record.salt);
+          const expected = base64ToBytes(record.hash);
+          const actual = await derive(code,salt);
+          return constantTimeEqual(actual,expected);
+        }catch{ return false; }
+      }
+
+      async function saveNewCode(code){
+        const salt = crypto.getRandomValues(new Uint8Array(16));
+        const hash = await derive(code,salt);
+        const record = {
+          version:2,
+          algorithm:"PBKDF2-SHA256",
+          iterations:ITERATIONS,
+          salt:bytesToBase64(salt),
+          hash:bytesToBase64(hash),
+          changedAt:new Date().toISOString()
+        };
+        localStorage.setItem(RECORD_KEY,JSON.stringify(record));
+      }
+
+      function setSessionUnlocked(value){
+        try{
+          if(value) sessionStorage.setItem(SESSION_KEY,JSON.stringify({unlocked:true,at:new Date().toISOString()}));
+          else sessionStorage.removeItem(SESSION_KEY);
+        }catch{}
+      }
+
+      function isSessionUnlocked(){
+        try{ return Boolean(JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null")?.unlocked); }
+        catch{ return false; }
+      }
+
+      function renderGate(){
+        const open = isSessionUnlocked();
+        form.hidden = open;
+        unlocked.hidden = !open;
+        status.textContent = "";
+        status.className = "admin-gate-status";
+        if(!open){
+          codeInput.value = "";
+          setTimeout(() => codeInput.focus(),70);
+        }else{
+          setTimeout(() => $("adminOpenPortal")?.focus(),70);
+        }
+      }
+
+      function openGate(){
+        priorFocus = document.activeElement;
+        overlay.classList.add("open");
+        overlay.setAttribute("aria-hidden","false");
+        document.body.classList.add("menu-open");
+        renderGate();
+      }
+
+      function closeGate(){
+        overlay.classList.remove("open");
+        overlay.setAttribute("aria-hidden","true");
+        document.body.classList.remove("menu-open");
+        $("adminChangePanel").hidden = true;
+        $("adminChangeToggle").setAttribute("aria-expanded","false");
+        if(priorFocus instanceof HTMLElement) priorFocus.focus();
+      }
+
+      function gateFocusable(){
+        return [...panel.querySelectorAll('button:not([disabled]),input:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])')]
+          .filter(el => !el.hidden && !el.closest('[hidden]'));
+      }
+
+      [codeInput,$("adminCurrentCode"),$("adminNewCode"),$("adminConfirmCode")].forEach(input => {
+        input?.addEventListener("input",() => { input.value = cleanCode(input.value); });
+      });
+
+      $("adminEntry")?.addEventListener("click",openGate);
+      $("adminGateClose")?.addEventListener("click",closeGate);
+      overlay?.addEventListener("click",event => { if(event.target === overlay) closeGate(); });
+
+      $("adminShowCode")?.addEventListener("click",() => {
+        const show = codeInput.type === "password";
+        codeInput.type = show ? "text" : "password";
+        $("adminShowCode").textContent = show ? "Hide" : "Show";
+        $("adminShowCode").setAttribute("aria-pressed",String(show));
+        codeInput.focus();
+      });
+
+      form?.addEventListener("submit",async event => {
+        event.preventDefault();
+        const code = cleanCode(codeInput.value);
+        if(!isValidCode(code)){
+          status.textContent = "Enter exactly 10 digits.";
+          status.className = "admin-gate-status error";
+          codeInput.focus();
+          return;
+        }
+        status.textContent = "Checking gate…";
+        status.className = "admin-gate-status";
+        const ok = await verify(code);
+        if(!ok){
+          status.textContent = "That gate code was not accepted.";
+          status.className = "admin-gate-status error";
+          codeInput.select();
+          return;
+        }
+        // First successful use initializes a hashed copy of the default code locally.
+        if(!readRecord()) await saveNewCode(code);
+        setSessionUnlocked(true);
+        renderGate();
+      });
+
+      $("adminOpenPortal")?.addEventListener("click",() => {
+        window.location.assign(ADMIN_PORTAL_URL);
+      });
+
+      $("adminLockNow")?.addEventListener("click",() => {
+        setSessionUnlocked(false);
+        renderGate();
+      });
+
+      $("adminChangeToggle")?.addEventListener("click",() => {
+        const change = $("adminChangePanel");
+        const opening = change.hidden;
+        change.hidden = !opening;
+        $("adminChangeToggle").setAttribute("aria-expanded",String(opening));
+        if(opening) setTimeout(() => $("adminCurrentCode").focus(),50);
+      });
+
+      $("adminChangePanel")?.addEventListener("submit",async event => {
+        event.preventDefault();
+        const current = cleanCode($("adminCurrentCode").value);
+        const next = cleanCode($("adminNewCode").value);
+        const confirm = cleanCode($("adminConfirmCode").value);
+        const changeStatus = $("adminChangeStatus");
+
+        if(!isValidCode(current) || !isValidCode(next) || !isValidCode(confirm)){
+          changeStatus.textContent = "All gate-code fields must contain exactly 10 digits.";
+          changeStatus.className = "admin-gate-status error";
+          return;
+        }
+        if(next !== confirm){
+          changeStatus.textContent = "The new gate codes do not match.";
+          changeStatus.className = "admin-gate-status error";
+          return;
+        }
+        if(!(await verify(current))){
+          changeStatus.textContent = "The current gate code was not accepted.";
+          changeStatus.className = "admin-gate-status error";
+          return;
+        }
+        await saveNewCode(next);
+        changeStatus.textContent = "New 10-digit gate code saved to this browser.";
+        changeStatus.className = "admin-gate-status ok";
+        $("adminCurrentCode").value = "";
+        $("adminNewCode").value = "";
+        $("adminConfirmCode").value = "";
+      });
+
+      document.addEventListener("keydown",event => {
+        if(!overlay.classList.contains("open")) return;
+        if(event.key === "Escape"){
+          event.preventDefault();
+          closeGate();
+          return;
+        }
+        if(event.key === "Tab"){
+          const focusable = gateFocusable();
+          if(!focusable.length) return;
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); }
+          else if(!event.shiftKey && document.activeElement === last){ event.preventDefault(); first.focus(); }
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const SITES = [{"title":"333 Network","url":"https://vervenveda.github.io/333.github.io/","icon":"333","group":"Creative & Professional","desc":"HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte Studio, and Bunya digital infrastructure.","keywords":"communication meetings email social network website builder domains hosting infrastructure collaboration"},{"title":"NAIB","url":"https://artist1970.github.io/noema-ai.github.io/","icon":"N","group":"Knowledge","desc":"The Verve N Veda intelligence and navigation guide for context, resource federation, specialist routing, memory, and verification-aware discovery.","keywords":"naib ai intelligence navigation mentor context memory routing federation specialists verifier plera khaemenes arshif 333"},{"title":"Khaemenes Academy","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/","icon":"KA","group":"Education","desc":"The central international learning campus from preschool through higher learning and lifelong education.","keywords":"school homeschool curriculum students parents teachers learning international education"},{"title":"Khaemenes Preschool","url":"https://vervenveda.github.io/Khaemenes_Preschool.github.io/","icon":"PS","group":"Education","desc":"Colorful early-learning stories, play, life skills, creativity, and discovery.","keywords":"pre-k early childhood children stories games preschool parents"},{"title":"Khaemenes Kinder Garden","url":"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/","icon":"KG","group":"Education","desc":"A garden of kindness, curiosity, literacy, numbers, nature, and wonder.","keywords":"kindergarten early learning reading math nature children"},{"title":"Khaemenes Elementary","url":"https://vervenveda.github.io/Khaemenes_Elementary.github.io/","icon":"E","group":"Education","desc":"Grades 1–5 academics, creativity, family learning, and foundational skills.","keywords":"elementary first second third fourth fifth grade homeschool parents"},{"title":"Khaemenes Middle","url":"https://vervenveda.github.io/Khaemenes_Middle.github.io/","icon":"M","group":"Education","desc":"Grades 6–8 academic foundations, independence, exploration, and preparation.","keywords":"middle school sixth seventh eighth grade homeschool students"},{"title":"Khaemenes High","url":"https://vervenveda.github.io/Khaemenes_High.github.io/","icon":"HS","group":"Education","desc":"Grades 9–12 courses, portfolios, records, examinations, and graduation pathways.","keywords":"high school ninth tenth eleventh twelfth grade diploma certificate math curriculum homeschool"},{"title":"Khaemenes Higher Learning","url":"https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/","icon":"HL","group":"Education","desc":"GED, college access, careers, professional development, and lifelong study.","keywords":"adult education college university career workforce employment ged training"},{"title":"Khaemenes Linguistics","url":"https://vervenveda.github.io/Khaemenes_Linguistics.github.io/","icon":"L","group":"Education","desc":"Languages, linguistics, translation, writing systems, and communication.","keywords":"language arabic spanish english translation literacy writing"},{"title":"ARSHIF","url":"https://vervenveda.github.io/Arshif.github.io/","icon":"A","group":"Knowledge","desc":"Research, literature, history, philosophy, culture, faith, archives, and memory.","keywords":"classics books library religion mythology science theatre travel oral traditions"},{"title":"The Verifier","url":"https://vervenveda.github.io/theverifier.github.io/","icon":"V","group":"Knowledge","desc":"News discovery, source comparison, evidence, editorials, research, and media literacy.","keywords":"news fact check journalism politics current events science daily children news"},{"title":"PLERA Search","url":"https://vervenveda.github.io/PLERASearch.github.io/","icon":"◎","group":"Knowledge","desc":"A search gateway into trusted public learning and resource destinations.","keywords":"search engine research directory find resources"},{"title":"Solanar","url":"https://vervenveda.github.io/solanar.github.io/","icon":"☀","group":"Knowledge","desc":"Weather, Earth systems, climate, moon cycles, world time, and environmental observation.","keywords":"weather forecast hurricane storm emergency climate moon phase space weather world clock"},{"title":"Medicament Hub","url":"https://vervenveda.github.io/medicament-hub.github.io/","icon":"⚕","group":"Public Service","desc":"Health, medicine, trauma, mental wellness, family care, seniors, insurance, and safety resources.","keywords":"medical hospital doctor medication tbi memory loss mental health addiction recovery disability maternal child health"},{"title":"Firmament Law","url":"https://vervenveda.github.io/firmament.github.io/","icon":"§","group":"Public Service","desc":"Legal information, rights, family and veteran resources, evidence tools, and civic literacy.","keywords":"legal help attorney rights court family law lgbtq seniors insurance veterans citations evidence"},{"title":"One Nation for All","url":"https://vervenveda.github.io/onenationforall.github.io/","icon":"☆","group":"Public Service","desc":"Constitutional learning, voter access, policy, veterans, homelessness, service, and community support.","keywords":"government voting elections constitution civic homeless housing legal help public policy unity"},{"title":"Jennifer Pearl 2028 · GitHub","url":"https://jenniferpearl2028.github.io/","icon":"JP","group":"Public Service","desc":"Jennifer Pearl’s public-service campaign GitHub Pages destination for policy, voter access, and connected community resources.","keywords":"president campaign candidate policy voter registration petition public service 2028 github"},{"title":"Jennifer Pearl 2028 · Campaign Home","url":"https://vervneveda.wixsite.com/home","icon":"JP","group":"Public Service","desc":"The live Jennifer Pearl 2028 campaign home for public-service information, policy, voter access, and community updates.","keywords":"president campaign candidate policy voter registration petition public service 2028 wix campaign home"},{"title":"Veterans","url":"https://vervenveda.github.io/veterans.github.io/","icon":"★","group":"Public Service","desc":"Veteran benefits, crisis resources, housing, employment, services, and family assistance.","keywords":"military va benefits disability housing jobs crisis family"},{"title":"Finance","url":"https://vervenveda.github.io/finance.github.io/","icon":"$","group":"Public Service","desc":"Financial literacy, budgeting, planning, markets, consumer knowledge, and practical tools.","keywords":"money banking credit debt taxes budget investing business insurance"},{"title":"River to Road","url":"https://vervenveda.github.io/river_to_road.github.io/","icon":"≈","group":"Public Service","desc":"Environmental stewardship, clean water, science, service learning, events, and community action.","keywords":"environment pollution cleanup activism conservation climate ocean river road trash ecology"},{"title":"Aurora","url":"https://vervenveda.github.io/aurora.github.io/","icon":"☼","group":"Public Service","desc":"Rest, yoga, reflection, encouragement, organization, wellness, and creative renewal.","keywords":"wellbeing meditation prayer breathing sleep journal relaxation mental health self care"},{"title":"ProResource Hub","url":"https://vervenveda.github.io/proresource_hub.github.io/","icon":"P","group":"Creative & Professional","desc":"Professional tools for writing, editing, media, research, design, meetings, and productivity.","keywords":"prose editor pdf docx letters zip clean task manager meeting media cad tools"},{"title":"Bazaar Art","url":"https://vervenveda.github.io/bazaarart.github.io/","icon":"✦","group":"Creative & Professional","desc":"Art education, artist tools, galleries, creativity, social expression, and cultural enterprise.","keywords":"artist painting drawing photo album gallery community social feed art business"},{"title":"Bazaar Art Live","url":"https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html","icon":"LIVE","group":"Creative & Professional","desc":"The live local-first creative community feed for profiles, posts, stories, reels, groups, events, and artistic connection.","keywords":"artists social network creative feed stories reels groups events community 333 live"},{"title":"My Art Gallery","url":"https://vervenveda.github.io/myartgallery.github.io/","icon":"▧","group":"Creative & Professional","desc":"Artist Jenny Pearl’s portfolio preserving more than three decades of professional artistry.","keywords":"Jennifer Jenny Pearl artist portfolio murals watercolor acrylic commissions photography"},{"title":"The Refrain","url":"https://vervenveda.github.io/the_refrain.github.io/","icon":"♫","group":"Creative & Professional","desc":"Music education, composition, recording, performance, and creative exploration.","keywords":"music studio composer multitrack recording harmony songs instruments"},{"title":"Arcade","url":"https://vervenveda.github.io/arcade.github.io/","icon":"◆","group":"Creative & Professional","desc":"Original games, strategy, puzzles, trivia, practice, and playful discovery.","keywords":"games chess checkers sudoku trivia educational arcade puzzles"}];
       const GROUP_ORDER = ["Education","Knowledge","Public Service","Creative & Professional"];
       const ALLOWED_HOSTS = new Set([
         "vervenveda.github.io",
@@ -1396,7 +1796,7 @@
         "www.vervenveda.com",
         "artist1970.github.io",
         "jenniferpearl2028.github.io",
-        "vervneveda.wixsite.com/home"
+        "vervneveda.wixsite.com"
       ]);
       const $ = id => document.getElementById(id);
       let currentResults = [...SITES];
