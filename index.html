@@ -111,15 +111,34 @@
       -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
       mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
     }
-    .network-ticker-track{
-      width:max-content;
-      height:100%;
-      display:flex;
-      align-items:center;
-      white-space:nowrap;
-      animation:networkTickerMove 60s linear infinite;
-      will-change:transform;
-    }
+  /* CONTINUOUS 333 NETWORK TICKER */
+.network-ticker-track{
+  width:max-content;
+  height:100%;
+  display:flex;
+  align-items:center;
+  white-space:nowrap;
+  animation:networkTickerMove 26s linear infinite;
+  will-change:transform;
+}
+
+.network-ticker-set{
+  flex:0 0 auto;
+  height:100%;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  padding:0 11px;
+}
+
+@keyframes networkTickerMove{
+  from{
+    transform:translate3d(0,0,0);
+  }
+  to{
+    transform:translate3d(-50%,0,0);
+  }
+}
     .network-ticker:hover .network-ticker-track,
     .network-ticker:focus-within .network-ticker-track,
     .network-ticker[data-paused="true"] .network-ticker-track{
