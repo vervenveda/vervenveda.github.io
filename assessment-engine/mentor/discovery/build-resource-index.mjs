@@ -21,13 +21,16 @@ const latestRepositoryTimestamp = repositories
   .sort()
   .at(-1) || null;
 
-const generatedAt = latestRepositoryTimestamp;
+// generatedAt is the time this registry snapshot was actually built.
+// The newest repository timestamp is retained separately as source metadata.
+const generatedAt = new Date().toISOString();
 const resources = [];
 
 for (const repoRecord of repositories) {
   if (repoRecord.archived || repoRecord.disabled) {
     repoRecord.discoveryStatus = "archived";
     repoRecord.recommendable = false;
+    repoRecord.reason = "Repository is archived or disabled.";
     continue;
   }
 
@@ -40,13 +43,18 @@ for (const repoRecord of repositories) {
     if (!result) continue;
 
     const manifest = result.manifest || {};
+    const listed = Array.isArray(manifest.resources) ? manifest.resources : [];
+
     repoRecord.discoveryStatus = "manifested";
     repoRecord.manifest = {
       path: result.path,
       sha: result.sha,
       htmlUrl: result.htmlUrl,
       version: manifest.version || 1,
-      mentorSearchable: manifest.mentorSearchable === true
+      sourceId: String(manifest.sourceId || ""),
+      mentorSearchable: manifest.mentorSearchable === true,
+      inventoryAuthority: String(manifest.inventoryAuthority || ""),
+      resourceCount: listed.length
     };
 
     if (manifest.classification && repoRecord.classification !== "admin-only") {
@@ -54,24 +62,30 @@ for (const repoRecord of repositories) {
       repoRecord.confidence = 1;
     }
 
-    const listed = Array.isArray(manifest.resources) ? manifest.resources : [];
-    listed.forEach((resource, index) => {
-      resources.push(normalizeMentorResource(resource, repoRecord, manifest, index));
-    });
-
-    repoRecord.recommendable = resources.some(
-      resource => resource.repository === repoRecord.fullName && resource.recommendable
+    const normalizedResources = listed.map((resource, index) =>
+      normalizeMentorResource(resource, repoRecord, manifest, index)
     );
+    resources.push(...normalizedResources);
+
+    repoRecord.recommendable = normalizedResources.some(
+      resource => resource.recommendable
+    );
+
+    repoRecord.reason = repoRecord.recommendable
+      ? "Valid Mentor manifest loaded; repository has recommendable source-owned resources."
+      : "Valid Mentor manifest loaded; no resources are currently recommendable under manifest policy.";
   } catch (error) {
     repoRecord.discoveryStatus = "manifest-error";
     repoRecord.manifestError = String(error?.message || error);
     repoRecord.recommendable = false;
+    repoRecord.reason = "Mentor manifest was found but could not be loaded or normalized.";
   }
 }
 
 await fs.writeFile(reposPath, JSON.stringify({
   version: 2,
   generatedAt,
+  sourceLatestRepositoryTimestamp: latestRepositoryTimestamp,
   accounts: (accounts.accounts || []).map(item => item.login),
   repositories
 }, null, 2) + "\n");
@@ -79,9 +93,12 @@ await fs.writeFile(reposPath, JSON.stringify({
 await fs.writeFile(resourcesPath, JSON.stringify({
   version: 2,
   generatedAt,
+  sourceLatestRepositoryTimestamp: latestRepositoryTimestamp,
   resources
 }, null, 2) + "\n");
 
 console.log(`Indexed ${repositories.length} public repositories.`);
 console.log(`Indexed ${resources.length} Mentor-manifest resources.`);
-console.log("Resource policy metadata preserved: freshness, preferences, account awareness, sensitive topics.");
+console.log(`Registry generated at ${generatedAt}.`);
+console.log(`Newest discovered repository timestamp: ${latestRepositoryTimestamp || "none"}.`);
+console.log("Resource metadata preserved: learning, authority, freshness, account boundaries, sensitive topics, and high-stakes domains.");

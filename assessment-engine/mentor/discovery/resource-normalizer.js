@@ -15,6 +15,11 @@ function booleanValue(value, fallback = false) {
   return typeof value === "boolean" ? value : fallback;
 }
 
+function textValue(value, fallback = "") {
+  if (value === null || value === undefined) return fallback;
+  return String(value).trim();
+}
+
 export function normalizeMentorResource(resource, repoRecord, manifest, index = 0) {
   const localId = String(resource?.id || `resource-${index + 1}`).trim();
   const owner = String(repoRecord?.owner || "unknown").toLowerCase();
@@ -36,11 +41,27 @@ export function normalizeMentorResource(resource, repoRecord, manifest, index = 
   const requiresFreshnessCheck = booleanValue(resource?.requiresFreshnessCheck);
   const dynamicContent = booleanValue(resource?.dynamicContent);
   const requiresAccountAwareness = booleanValue(resource?.requiresAccountAwareness);
+  const requiresLinkedLearner = booleanValue(resource?.requiresLinkedLearner);
   const externalInformation = booleanValue(
     resource?.externalInformation,
     requiresFreshnessCheck || dynamicContent ||
       ["research-information", "civic"].includes(classification)
   );
+
+  // Preserve the richer learning, authority, and safety metadata now emitted
+  // by source-owned Mentor manifests. These fields are intentionally carried
+  // through to the generated static registry instead of being reconstructed
+  // later by consumers.
+  const resourceType = textValue(resource?.resourceType);
+  const learningValue = textValue(resource?.learningValue);
+  const curricularWeight = textValue(resource?.curricularWeight);
+  const learningObjectives = cleanArray(resource?.learningObjectives);
+  const subjects = cleanArray(resource?.subjects);
+  const highStakesDomain = textValue(resource?.highStakesDomain);
+  const inventoryAuthority = textValue(
+    resource?.inventoryAuthority || manifest?.inventoryAuthority
+  );
+  const requiredStage = textValue(resource?.requiredStage);
 
   const normalized = {
     id,
@@ -65,6 +86,19 @@ export function normalizeMentorResource(resource, repoRecord, manifest, index = 
       !["admin-only", "restricted", "unclassified", "archived"].includes(classification),
     explicitAdultOptIn: booleanValue(resource?.explicitAdultOptIn),
 
+    // Learning and source-authority metadata.
+    resourceType,
+    learningValue,
+    curricularWeight,
+    learningObjectives,
+    subjects,
+    highStakesDomain,
+    inventoryAuthority,
+
+    // Learner/account boundary metadata.
+    requiresLinkedLearner,
+    requiredStage,
+
     // Resource-policy metadata retained end-to-end.
     requiresFreshnessCheck,
     dynamicContent,
@@ -84,8 +118,11 @@ export function normalizeMentorResource(resource, repoRecord, manifest, index = 
       dynamicContent,
       requiresPreferenceMatch,
       requiresAccountAwareness,
+      requiresLinkedLearner,
+      requiredStage,
       sensitiveTopics,
       externalInformation,
+      highStakesDomain,
       requiresExplicitQuery: booleanValue(resource?.requiresExplicitQuery),
       policyTags
     },
