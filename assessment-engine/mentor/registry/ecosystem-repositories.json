@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-09T04:49:04Z",
+  "generatedAt": "2026-08-09T14:05:46Z",
   "accounts": [
     "vervenveda",
     "JenniferPearl2028",
@@ -433,8 +433,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-20T20:28:56Z",
-      "updatedAt": "2026-08-08T23:02:49Z",
-      "pushedAt": "2026-08-08T23:02:46Z",
+      "updatedAt": "2026-08-09T14:06:06Z",
+      "pushedAt": "2026-08-09T14:05:46Z",
       "discoveryStatus": "manifested",
       "classification": "educational",
       "confidence": 1,
@@ -442,9 +442,9 @@
       "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "020cdf8da2553465acb373863958fe1ac3f2cc45",
+        "sha": "ab5f47278830f2bc9311b187c7e97e4ea2f027e2",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Preschool.github.io/blob/main/mentor-manifest.json",
-        "version": 3,
+        "version": 4,
         "mentorSearchable": true
       }
     },
@@ -678,8 +678,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-18T22:34:19Z",
-      "updatedAt": "2026-08-09T04:49:07Z",
-      "pushedAt": "2026-08-09T04:49:04Z",
+      "updatedAt": "2026-08-09T08:25:31Z",
+      "pushedAt": "2026-08-09T08:25:17Z",
       "discoveryStatus": "discovered",
       "classification": "unclassified",
       "confidence": 0.25,
