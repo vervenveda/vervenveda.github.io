@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-08T19:47:15Z",
+  "generatedAt": "2026-08-09T03:52:23Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -5918,6 +5918,143 @@
         "requiresAccountAwareness": false,
         "sensitiveTopics": [],
         "externalInformation": true,
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "artist1970.auroracore.aurora-core-dictionary",
+      "title": "AuroraCore A–Z Dictionary",
+      "description": "An A–Z English dictionary organized into one JSON letter collection per alphabet letter for focused vocabulary and word-definition lookup.",
+      "url": "https://github.com/artist1970/AuroraCore/tree/main/dictionary",
+      "sourceId": "aurora.core",
+      "repository": "artist1970/AuroraCore",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-arts",
+        "english",
+        "vocabulary",
+        "reference"
+      ],
+      "skills": [
+        "vocabulary",
+        "word-meaning",
+        "reading-comprehension",
+        "writing"
+      ],
+      "tags": [
+        "dictionary",
+        "words",
+        "definitions",
+        "vocabulary",
+        "language-reference",
+        "aurora-core"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "artist1970.auroracore.aurora-core-language-refinement",
+      "title": "Aurora Language Refinement Core",
+      "description": "Browser-friendly language refinement tools for grammar, flow, thesaurus support, metaphor, rhythm, mood, and cohesion while preserving authorial intent.",
+      "url": "https://github.com/artist1970/AuroraCore",
+      "sourceId": "aurora.core",
+      "repository": "artist1970/AuroraCore",
+      "classification": "educational",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-arts",
+        "writing",
+        "editing"
+      ],
+      "skills": [
+        "revision",
+        "grammar",
+        "word-choice",
+        "style"
+      ],
+      "tags": [
+        "writing",
+        "grammar",
+        "thesaurus",
+        "editing",
+        "aurora-core"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "sensitiveTopics": [],
+        "externalInformation": false,
         "requiresExplicitQuery": false,
         "policyTags": []
       },
