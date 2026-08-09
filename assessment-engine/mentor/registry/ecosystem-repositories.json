@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-09T19:50:45Z",
+  "generatedAt": "2026-08-09T22:49:28.823Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-09T22:49:21Z",
   "accounts": [
     "vervenveda",
     "JenniferPearl2028",
@@ -26,13 +27,16 @@
       "classification": "professional-practical",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Repository acknowledged but not yet classified for recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "5377c8ec8059944d0585cda16556fa074c62a196",
         "htmlUrl": "https://github.com/vervenveda/333.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.333-network",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 1
       }
     },
     {
@@ -54,13 +58,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Repository acknowledged but not yet classified for recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "66eaaa25f28c327dfdf3e952cdf351a85a4828e7",
         "htmlUrl": "https://github.com/vervenveda/arcade.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.arcade",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 12
       }
     },
     {
@@ -82,13 +89,16 @@
       "classification": "creative-cultural",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "efe9ed78bf26d734bfc1170d5686ef788daa5b37",
         "htmlUrl": "https://github.com/vervenveda/Arshif.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.arshif",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 6
       }
     },
     {
@@ -110,13 +120,16 @@
       "classification": "wellness",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "b189c21f5de15517964e532bc393c6892030a418",
         "htmlUrl": "https://github.com/vervenveda/aurora.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.aurora",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 7
       }
     },
     {
@@ -132,13 +145,23 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-21T10:02:11Z",
-      "updatedAt": "2026-08-09T00:07:28Z",
-      "pushedAt": "2026-08-09T00:07:25Z",
-      "discoveryStatus": "discovered",
+      "updatedAt": "2026-08-09T22:38:36Z",
+      "pushedAt": "2026-08-09T22:38:26Z",
+      "discoveryStatus": "manifested",
       "classification": "creative-cultural",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "352d6b5994065390b8cb92e6994a8c08ce37e924",
+        "htmlUrl": "https://github.com/vervenveda/bazaarart.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.bazaar-art",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:vervenveda/finance.github.io",
@@ -174,13 +197,23 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T22:58:54Z",
-      "updatedAt": "2026-08-01T16:05:54Z",
-      "pushedAt": "2026-08-01T16:05:36Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-09T22:39:06Z",
+      "pushedAt": "2026-08-09T22:39:02Z",
+      "discoveryStatus": "manifested",
+      "classification": "research-information",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "f7582a9a9bb7455c80fc6fb74721597caac3f9a3",
+        "htmlUrl": "https://github.com/vervenveda/firmament.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.firmament",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:vervenveda/homeless.github.io",
@@ -195,13 +228,23 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-29T01:18:24Z",
-      "updatedAt": "2026-08-01T16:28:51Z",
-      "pushedAt": "2026-08-01T16:28:47Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-09T22:39:35Z",
+      "pushedAt": "2026-08-09T22:39:30Z",
+      "discoveryStatus": "manifested",
+      "classification": "civic",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "84a7bc46c72131ea5f478f6acdc6a16dc7166318",
+        "htmlUrl": "https://github.com/vervenveda/Homeless.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.homeless-services",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:vervenveda/jenniferpearl2028.github.io",
@@ -243,13 +286,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "1823b42fdb40e79984d1d6211899f26d4c751da2",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Academy.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "khaemenes.academy",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 4
       }
     },
     {
@@ -265,19 +311,22 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T19:04:39Z",
-      "updatedAt": "2026-08-09T03:52:27Z",
-      "pushedAt": "2026-08-09T03:52:23Z",
+      "updatedAt": "2026-08-09T22:15:05Z",
+      "pushedAt": "2026-08-09T22:14:56Z",
       "discoveryStatus": "manifested",
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "ec485fe04cb7ca89fe512cc85d399dc1c32c8cdb",
+        "sha": "d6e55480937d2cccca02dbf935ad3ee457ae3dc5",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Elementary.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
-        "mentorSearchable": true
+        "version": 2,
+        "sourceId": "khaemenes.elementary",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 18
       }
     },
     {
@@ -299,13 +348,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "dcaf020e1b052b4114cf45125dd758a61014aded",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_High.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "khaemenes.high",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 5
       }
     },
     {
@@ -327,13 +379,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "e4071919146eb53208ed0d4239898f6e2d787d4a",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Higher_Learning.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "khaemenes.higher-learning",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 11
       }
     },
     {
@@ -355,13 +410,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "b5f326ee4d530a4880c75412a40f27cccbc8c4d2",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_KinderGarden.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "khaemenes.kindergarten",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 9
       }
     },
     {
@@ -383,13 +441,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "3054877d7ba4f97612b302e55ea1188e2e969c6e",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Linguistics.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "khaemenes.linguistics",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 7
       }
     },
     {
@@ -405,19 +466,22 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T19:01:31Z",
-      "updatedAt": "2026-08-08T13:20:13Z",
-      "pushedAt": "2026-08-08T13:20:08Z",
+      "updatedAt": "2026-08-09T22:25:16Z",
+      "pushedAt": "2026-08-09T22:25:11Z",
       "discoveryStatus": "manifested",
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "55f0dcc38c452fc41e987cd5ec0fa05e60533eb3",
+        "sha": "e108bdea171fbf67cc103cf9a21bfbbb03c1d5b5",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Middle.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
-        "mentorSearchable": true
+        "version": 2,
+        "sourceId": "khaemenes.middle",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 31
       }
     },
     {
@@ -439,13 +503,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "ab5f47278830f2bc9311b187c7e97e4ea2f027e2",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Preschool.github.io/blob/main/mentor-manifest.json",
         "version": 4,
-        "mentorSearchable": true
+        "sourceId": "khaemenes.preschool",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 4
       }
     },
     {
@@ -461,13 +528,23 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-26T15:33:02Z",
-      "updatedAt": "2026-08-01T00:13:52Z",
-      "pushedAt": "2026-08-01T00:13:47Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-09T22:40:08Z",
+      "pushedAt": "2026-08-09T22:40:03Z",
+      "discoveryStatus": "manifested",
+      "classification": "wellness",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "7243d592d2b5ec7d359a8c6e4907cb6fd66f073f",
+        "htmlUrl": "https://github.com/vervenveda/medicament-hub.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.medicament",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:vervenveda/myartgallery.github.io",
@@ -509,13 +586,16 @@
       "classification": "civic",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "c8231ce4bbe4f8d8048774a282ff30db2a5aec10",
         "htmlUrl": "https://github.com/vervenveda/onenationforall.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.one-nation-for-all",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 7
       }
     },
     {
@@ -537,13 +617,16 @@
       "classification": "research-information",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "e32858b04daf1a6f99abaffc22bfaf50981aef03",
         "htmlUrl": "https://github.com/vervenveda/PLERASearch.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.plera-search",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 5
       }
     },
     {
@@ -565,13 +648,16 @@
       "classification": "professional-practical",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "c4cd76fc47142a61e4a8c6511eccbd3d483de874",
         "htmlUrl": "https://github.com/vervenveda/proresource_hub.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.proresources",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 8
       }
     },
     {
@@ -587,13 +673,23 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T22:42:11Z",
-      "updatedAt": "2026-08-01T11:49:19Z",
-      "pushedAt": "2026-08-01T11:49:13Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-09T22:40:43Z",
+      "pushedAt": "2026-08-09T22:40:35Z",
+      "discoveryStatus": "manifested",
+      "classification": "civic",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "46be1a6c8a56abbbb8465d4caf4110f395d6c596",
+        "htmlUrl": "https://github.com/vervenveda/river_to_road.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.river-to-road",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:vervenveda/solanar.github.io",
@@ -608,13 +704,23 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-20T13:41:18Z",
-      "updatedAt": "2026-08-09T19:51:00Z",
-      "pushedAt": "2026-08-09T19:50:45Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-09T22:37:58Z",
+      "pushedAt": "2026-08-09T22:37:52Z",
+      "discoveryStatus": "manifested",
+      "classification": "educational",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "d6b869a50ac88dfc03b1d65c3ad2e8a31b9b5e47",
+        "htmlUrl": "https://github.com/vervenveda/solanar.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.solanar",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:vervenveda/theverifier.github.io",
@@ -635,13 +741,16 @@
       "classification": "research-information",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "7a9ea0d9083a5b046a483714e9ee0b6a24983152",
         "htmlUrl": "https://github.com/vervenveda/theverifier.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "verve.verifier",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 6
       }
     },
     {
@@ -678,8 +787,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-18T22:34:19Z",
-      "updatedAt": "2026-08-09T14:20:12Z",
-      "pushedAt": "2026-08-09T14:19:52Z",
+      "updatedAt": "2026-08-09T22:42:06Z",
+      "pushedAt": "2026-08-09T22:49:21Z",
       "discoveryStatus": "discovered",
       "classification": "unclassified",
       "confidence": 0.25,
@@ -699,13 +808,23 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-29T01:17:58Z",
-      "updatedAt": "2026-08-01T18:03:03Z",
-      "pushedAt": "2026-08-01T18:02:59Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
+      "updatedAt": "2026-08-09T22:41:35Z",
+      "pushedAt": "2026-08-09T22:41:20Z",
+      "discoveryStatus": "manifested",
+      "classification": "civic",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "e67ab59ce620d7c38107fa464e4dd0279ddde071",
+        "htmlUrl": "https://github.com/vervenveda/veterans.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.veterans",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:jenniferpearl2028/documents.github.io",
@@ -915,13 +1034,16 @@
       "classification": "educational",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "bfa7b735a02bf0e169755a494f5965264f545ff8",
         "htmlUrl": "https://github.com/artist1970/AuroraCore/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "aurora.core",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 2
       }
     },
     {
@@ -1090,13 +1212,16 @@
       "classification": "professional-practical",
       "confidence": 1,
       "recommendable": true,
-      "reason": "Repository acknowledged but not yet classified for recommendation.",
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
         "sha": "f8b45061411f391ec53e306607ab5bbf3e360890",
         "htmlUrl": "https://github.com/artist1970/noema-ai.github.io/blob/main/mentor-manifest.json",
         "version": 1,
-        "mentorSearchable": true
+        "sourceId": "artist1970.noema",
+        "mentorSearchable": true,
+        "inventoryAuthority": "",
+        "resourceCount": 1
       }
     },
     {
