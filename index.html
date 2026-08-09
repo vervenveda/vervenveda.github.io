@@ -2091,5 +2091,40 @@
     })();
   </script>
 <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+  <!-- Legacy reference branch: intentionally absent from the public directory. -->
+  <script>
+    (() => {
+      "use strict";
+
+      /*
+        This branch is not an authentication boundary and contains no privileged
+        routes or protected information. It is simply a legacy/reference Easter egg.
+      */
+      const mark = document.querySelector(".brand-mark");
+      if (!mark) return;
+
+      let taps = 0;
+      let resetTimer = 0;
+
+      mark.addEventListener("click", event => {
+        taps += 1;
+        clearTimeout(resetTimer);
+
+        if (taps >= 7) {
+          event.preventDefault();
+          taps = 0;
+          const route = ["archive", "reference", "index.html"].join("/");
+          window.location.assign(new URL(route, window.location.href).href);
+          return;
+        }
+
+        resetTimer = window.setTimeout(() => {
+          taps = 0;
+        }, 3200);
+      });
+    })();
+  </script>
+
 </body>
 </html>
