@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#050708">
+<title>Reference Node</title>
+<style>
+:root{
+  --void:#020304;
+  --void2:#070a0d;
+  --ink:#dfe7e8;
+  --muted:#738084;
+  --line:rgba(220,232,234,.13);
+  --gold:#b99655;
+  --blue:#6b9db2;
+  --green:#6b8d7a;
+  --radius:7px;
+  --serif:Georgia,"Times New Roman",serif;
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{
+  margin:0;
+  min-height:100svh;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 50% 42%,#0a0f12 0 5%,#030506 19%,#000 48%,#020304 100%);
+  font-family:var(--mono);
+  line-height:1.55;
+}
+a{color:inherit}
+button{font:inherit}
+.shell{width:min(calc(100% - 34px),880px);margin:auto}
+.top{
+  min-height:100svh;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+}
+.bar{
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  border-bottom:1px solid var(--line);
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.bar a{text-decoration:none}
+.bar a:hover{color:#fff}
+.stage{
+  display:grid;
+  place-items:center;
+  padding:58px 0;
+}
+.node{
+  width:min(100%,720px);
+  display:grid;
+  justify-items:center;
+  text-align:center;
+}
+.hole{
+  position:relative;
+  width:92px;
+  height:92px;
+  margin-bottom:34px;
+  border-radius:50%;
+  background:#000;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.04),
+    0 0 24px rgba(107,157,178,.09),
+    0 0 62px rgba(185,150,85,.07);
+}
+.hole::before,.hole::after{
+  content:"";
+  position:absolute;
+  inset:-13px;
+  border:1px solid rgba(185,150,85,.19);
+  border-radius:50%;
+  transform:rotate(-19deg) scaleY(.36);
+}
+.hole::after{
+  inset:-23px;
+  border-color:rgba(107,157,178,.10);
+  transform:rotate(23deg) scaleY(.48);
+}
+.kicker{
+  color:var(--gold);
+  font-size:10px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+h1{
+  margin:12px 0 0;
+  font:400 clamp(2.5rem,7vw,5rem)/.95 var(--serif);
+  letter-spacing:.015em;
+}
+.lead{
+  max-width:610px;
+  margin:22px auto 0;
+  color:#9ba8aa;
+  font-size:13px;
+}
+.trace{
+  width:100%;
+  margin-top:38px;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.018);
+  text-align:left;
+}
+.trace-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  color:var(--muted);
+  font-size:9px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.trace-path{
+  margin-top:12px;
+  color:#b6c1c3;
+  overflow-wrap:anywhere;
+  font-size:12px;
+}
+.nodes{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:7px;
+  margin-top:12px;
+}
+.nodes a{
+  min-height:46px;
+  display:grid;
+  place-items:center;
+  padding:8px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  color:#8e9a9c;
+  background:#050708;
+  text-decoration:none;
+  font-size:9px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.nodes a:hover,.nodes a[aria-current="true"]{
+  color:#fff;
+  border-color:rgba(185,150,85,.42);
+  background:#0a0d0f;
+}
+.packet{
+  width:100%;
+  margin-top:10px;
+  padding:16px 18px;
+  border-left:2px solid var(--green);
+  background:rgba(107,141,122,.055);
+  text-align:left;
+}
+.packet strong{
+  display:block;
+  color:#c8d0cc;
+  font-size:11px;
+  font-weight:500;
+}
+.packet p{
+  margin:7px 0 0;
+  color:#7f8d8f;
+  font-size:11px;
+}
+.meta{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  width:100%;
+  gap:7px;
+  margin-top:10px;
+}
+.meta div{
+  padding:11px 8px;
+  border:1px solid var(--line);
+  color:#69777a;
+  background:rgba(255,255,255,.012);
+  font-size:9px;
+  text-align:center;
+}
+.meta strong{
+  display:block;
+  margin-bottom:3px;
+  color:#a8b3b5;
+  font:400 17px var(--serif);
+}
+.foot{
+  min-height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-top:1px solid var(--line);
+  color:#495356;
+  font-size:9px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.exit{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  opacity:.16;
+  color:#fff;
+  text-decoration:none;
+  font-size:9px;
+}
+.exit:hover,.exit:focus{opacity:.8}
+@media(max-width:650px){
+  .nodes{grid-template-columns:1fr 1fr}
+  .meta{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:no-preference){
+  .hole::before{animation:orbitA 18s linear infinite}
+  .hole::after{animation:orbitB 27s linear infinite reverse}
+  @keyframes orbitA{to{transform:rotate(341deg) scaleY(.36)}}
+  @keyframes orbitB{to{transform:rotate(383deg) scaleY(.48)}}
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <header class="bar shell">
+    <span>Reference Node · Public Snapshot</span>
+    <span id="stamp">v.33</span>
+  </header>
+
+  <main class="stage shell">
+    <section class="node" aria-labelledby="nodeTitle">
+      <div class="hole" aria-hidden="true"></div>
+      <div class="kicker">Legacy Routing Reference</div>
+      <h1 id="nodeTitle">Index Fragment</h1>
+      <p class="lead" id="nodeLead">
+        A small public routing snapshot retained for continuity. This reference contains
+        descriptive waypoints only; current destinations are resolved from the live public gateway.
+      </p>
+
+      <div class="trace">
+        <div class="trace-head">
+          <span>Trace</span>
+          <span id="traceState">root / 11</span>
+        </div>
+        <div class="trace-path" id="tracePath">root → halls → knowledge → network → root</div>
+
+        <nav class="nodes" aria-label="Reference nodes">
+          <a href="#root" data-node="root">Root</a>
+          <a href="#halls" data-node="halls">Halls</a>
+          <a href="#knowledge" data-node="knowledge">Knowledge</a>
+          <a href="#network" data-node="network">Network</a>
+          <a href="#continuity" data-node="continuity">Continuity</a>
+        </nav>
+
+        <div class="packet" id="packet">
+          <strong>Public gateway summary</strong>
+          <p>Verve N Veda connects education, research, creativity, health, civic knowledge, practical resources, community service, and intelligent navigation.</p>
+        </div>
+
+        <div class="meta" aria-label="Reference counters">
+          <div><strong>11</strong>doorways</div>
+          <div><strong>22</strong>structures</div>
+          <div><strong>33</strong>network</div>
+          <div><strong>∞</strong>continuity</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">Static reference · no account state · no privileged routes</footer>
+</div>
+
+<a class="exit" href="../../index.html" aria-label="Return to public gateway">exit</a>
+
+<script>
+(() => {
+  "use strict";
+
+  const nodes = {
+    root: {
+      state: "root / 11",
+      path: "root → halls → knowledge → network → root",
+      title: "Public gateway summary",
+      text: "Verve N Veda connects education, research, creativity, health, civic knowledge, practical resources, community service, and intelligent navigation."
+    },
+    halls: {
+      state: "halls / 22",
+      path: "halls → education → research → service → halls",
+      title: "Independent public halls",
+      text: "The ecosystem is intentionally distributed. Public halls keep distinct purposes and personalities while sharing navigation and public-access conventions."
+    },
+    knowledge: {
+      state: "knowledge / 33",
+      path: "knowledge → learning → archive → verification → discovery → knowledge",
+      title: "Knowledge pathways",
+      text: "Learning, archival context, research discovery, verification-aware review, and guided navigation operate as related but separate public pathways."
+    },
+    network: {
+      state: "network / 333",
+      path: "network → communication → creative work → infrastructure → network",
+      title: "Connected network",
+      text: "Communication and creative-community services connect outward through the broader network without requiring every public hall to become the same application."
+    },
+    continuity: {
+      state: "continuity / ∞",
+      path: "continuity → branch → revision → bridge → continuity",
+      title: "Continuity note",
+      text: "Projects can evolve in separate branches and still remain connected through public gateways, stable identities, manifests, and explicit handoffs."
+    }
+  };
+
+  const links = [...document.querySelectorAll("[data-node]")];
+  const state = document.querySelector("#traceState");
+  const path = document.querySelector("#tracePath");
+  const packet = document.querySelector("#packet");
+
+  function render(){
+    const key = location.hash.slice(1);
+    const current = nodes[key] || nodes.root;
+
+    state.textContent = current.state;
+    path.textContent = current.path;
+    packet.innerHTML = `<strong>${current.title}</strong><p>${current.text}</p>`;
+
+    links.forEach(link => {
+      link.setAttribute("aria-current", link.dataset.node === (nodes[key] ? key : "root") ? "true" : "false");
+    });
+  }
+
+  addEventListener("hashchange", render);
+  render();
+})();
+</script>
+</body>
+</html>
