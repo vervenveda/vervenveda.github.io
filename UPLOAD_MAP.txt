@@ -1,0 +1,31 @@
+Repair 03A upload map
+
+Upload each file to the ROOT of the matching repository as mentor-manifest.json.
+
+solanar.github.io/mentor-manifest.json
+  -> vervenveda/solanar.github.io
+
+firmament.github.io/mentor-manifest.json
+  -> vervenveda/firmament.github.io
+
+medicament-hub.github.io/mentor-manifest.json
+  -> vervenveda/medicament-hub.github.io
+
+bazaarart.github.io/mentor-manifest.json
+  -> vervenveda/bazaarart.github.io
+
+river_to_road.github.io/mentor-manifest.json
+  -> vervenveda/river_to_road.github.io
+
+veterans.github.io/mentor-manifest.json
+  -> vervenveda/veterans.github.io
+
+Homeless.github.io/mentor-manifest.json
+  -> vervenveda/Homeless.github.io
+
+DEFERRED:
+finance.github.io — do not upload a provisional manifest from this package.
+
+UNCHANGED:
+vervenveda.github.io
+Khaemenes_Preschool.github.io
