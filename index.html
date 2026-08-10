@@ -2339,7 +2339,11 @@
 
 <section class="section ecosystem-directory-section" id="directory" aria-labelledby="ecosystemDirectoryTitle">
       <div class="section-inner">
-        <h2 class="visually-hidden" id="ecosystemDirectoryTitle">Verve N Veda ecosystem directory</h2>
+        <div class="section-heading ecosystem-directory-heading">
+          <p class="kicker">Featured Sites</p>
+          <h2 id="ecosystemDirectoryTitle">Choose a doorway or browse its complete resources.</h2>
+          <p class="section-intro">Open a site name to enter its primary hub, or use the arrow to explore every related resource without leaving this page.</p>
+        </div>
         <div class="ecosystem-category-grid" id="ecosystemCategoryGrid" aria-label="Explore the Verve N Veda ecosystem by category"></div>
 
         <div class="ecosystem-dropdown-stage" id="ecosystemDropdownStage">
@@ -2661,6 +2665,39 @@
       </div>
     </div>
   </footer>
+
+
+<div class="ecosystem-viewer-overlay" id="ecosystemViewerOverlay" aria-hidden="true">
+    <section class="ecosystem-viewer" id="ecosystemViewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
+      <header class="ecosystem-viewer-toolbar">
+        <nav class="viewer-breadcrumbs" id="viewerBreadcrumbs" aria-label="Ecosystem breadcrumb"></nav>
+        <div class="viewer-toolbar-actions">
+          <button class="viewer-tool" id="viewerPrint" type="button" title="Print this destination"><span>Print</span> ⎙</button>
+          <button class="viewer-close" id="viewerClose" type="button" aria-label="Close ecosystem viewer">×</button>
+        </div>
+      </header>
+      <div class="viewer-summary">
+        <div>
+          <h3 id="viewerTitle">Verve N Veda</h3>
+          <p id="viewerDescription"></p>
+        </div>
+        <a class="viewer-full-link" id="viewerFullLink" href="#" target="_blank" rel="noopener noreferrer">Open full page ↗</a>
+      </div>
+      <div class="viewer-frame-wrap">
+        <iframe class="viewer-frame" id="viewerFrame" title="Featured Verve N Veda destination" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="viewer-embed-blocked" id="viewerEmbedBlocked" hidden>
+          <div>
+            <p class="viewer-blocked-kicker">Protected Display</p>
+            <h3 id="viewerBlockedTitle">This destination protects itself from embedded display.</h3>
+            <p>This page uses a frame-ancestor policy that prevents it from appearing inside another site. Open it in a new tab; this Verve N Veda page will remain open behind it.</p>
+            <a class="viewer-full-link" id="viewerBlockedLink" href="#" target="_blank" rel="noopener noreferrer">Open protected page ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="viewer-frame-note">Some destinations protect themselves from embedded display. If a page declines the viewer, use <strong>Open full page</strong>; Verve N Veda remains open behind it.</div>
+    </section>
+  </div>
+
 
 
   <script>
@@ -3468,11 +3505,16 @@
         if(!item) return;
 
         const frame=$("viewerFrame");
+        let sameOrigin=false;
+        try{
+          sameOrigin=new URL(item.url,window.location.href).origin === window.location.origin;
+        }catch{}
         const canPrintFrame=Boolean(
           frame &&
           !frame.hidden &&
           frame.src &&
           frame.src !== "about:blank" &&
+          sameOrigin &&
           !isKnownNonEmbeddable(item.url)
         );
 
@@ -3875,6 +3917,100 @@
       }
     }
 
+
+
+    /* =========================================================
+       FEATURED SITES — precision typography refinement
+       ========================================================= */
+    .ecosystem-directory-heading{
+      max-width:820px;
+      margin-bottom:clamp(30px,4vw,48px)!important;
+    }
+    .ecosystem-directory-heading .kicker{
+      font-size:clamp(25px,2.15vw,33px)!important;
+      letter-spacing:clamp(.07em,.1vw,.105em)!important;
+    }
+    .ecosystem-directory-heading h2{
+      font-size:clamp(19px,1.8vw,27px)!important;
+    }
+    .ecosystem-directory-heading .section-intro{
+      max-width:720px;
+      font-size:clamp(13px,1vw,15px)!important;
+    }
+
+    /* Keep all ten names intact on one line. The grid drops a column
+       before the lettering is allowed to wrap. */
+    .ecosystem-category-grid{
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr))!important;
+      gap:clamp(9px,1vw,12px)!important;
+    }
+    .ecosystem-category-doorway{
+      grid-template-columns:minmax(0,1fr) clamp(40px,3.3vw,46px)!important;
+      min-height:clamp(62px,5vw,70px)!important;
+    }
+    .ecosystem-category-link{
+      min-height:inherit!important;
+      padding:12px 8px 12px 12px!important;
+      gap:6px!important;
+      font-size:clamp(10px,.72vw,12px)!important;
+      letter-spacing:clamp(.055em,.075vw,.085em)!important;
+      line-height:1!important;
+      white-space:nowrap!important;
+      overflow:visible!important;
+      text-overflow:clip!important;
+    }
+    .ecosystem-category-link::after{
+      font-size:clamp(9px,.65vw,11px)!important;
+    }
+    .ecosystem-category-toggle{
+      min-width:40px!important;
+      min-height:inherit!important;
+      font-size:clamp(11px,.75vw,13px)!important;
+    }
+
+    /* Compact action labels across the root page. */
+    .button,
+    .header-links a,
+    .admin-gate-submit,
+    .admin-gate-secondary,
+    .admin-code-toggle,
+    .feature-open-button,
+    .feature-pause-button,
+    .viewer-tool,
+    .viewer-full-link{
+      font-size:clamp(9px,.68vw,11px)!important;
+      letter-spacing:clamp(.035em,.055vw,.075em)!important;
+      line-height:1.15!important;
+      white-space:nowrap!important;
+      overflow:visible!important;
+      text-overflow:clip!important;
+    }
+
+    /* Popup controls must always sit above the embedded page. */
+    .ecosystem-viewer-toolbar,
+    .viewer-toolbar-actions,
+    .viewer-tool,
+    .viewer-close{
+      position:relative;
+      z-index:5;
+    }
+    .viewer-tool,
+    .viewer-close{
+      pointer-events:auto;
+    }
+    .viewer-close{
+      font-size:clamp(20px,1.7vw,24px)!important;
+    }
+
+    @media(max-width:520px){
+      .ecosystem-category-grid{
+        grid-template-columns:1fr!important;
+      }
+      .ecosystem-category-link{
+        font-size:clamp(10px,3vw,12px)!important;
+      }
+    }
+
 </style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script></body></html>`);
         printWindow.document.close();
       }
@@ -3969,38 +4105,5 @@
       });
     })();
   </script>
-
-
-
-  <div class="ecosystem-viewer-overlay" id="ecosystemViewerOverlay" aria-hidden="true">
-    <section class="ecosystem-viewer" id="ecosystemViewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
-      <header class="ecosystem-viewer-toolbar">
-        <nav class="viewer-breadcrumbs" id="viewerBreadcrumbs" aria-label="Ecosystem breadcrumb"></nav>
-        <div class="viewer-toolbar-actions">
-          <button class="viewer-tool" id="viewerPrint" type="button" title="Print this destination"><span>Print</span> ⎙</button>
-          <button class="viewer-close" id="viewerClose" type="button" aria-label="Close ecosystem viewer">×</button>
-        </div>
-      </header>
-      <div class="viewer-summary">
-        <div>
-          <h3 id="viewerTitle">Verve N Veda</h3>
-          <p id="viewerDescription"></p>
-        </div>
-        <a class="viewer-full-link" id="viewerFullLink" href="#" target="_blank" rel="noopener noreferrer">Open full page ↗</a>
-      </div>
-      <div class="viewer-frame-wrap">
-        <iframe class="viewer-frame" id="viewerFrame" title="Featured Verve N Veda destination" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <div class="viewer-embed-blocked" id="viewerEmbedBlocked" hidden>
-          <div>
-            <p class="viewer-blocked-kicker">Protected Display</p>
-            <h3 id="viewerBlockedTitle">This destination protects itself from embedded display.</h3>
-            <p>This page uses a frame-ancestor policy that prevents it from appearing inside another site. Open it in a new tab; this Verve N Veda page will remain open behind it.</p>
-            <a class="viewer-full-link" id="viewerBlockedLink" href="#" target="_blank" rel="noopener noreferrer">Open protected page ↗</a>
-          </div>
-        </div>
-      </div>
-      <div class="viewer-frame-note">Some destinations protect themselves from embedded display. If a page declines the viewer, use <strong>Open full page</strong>; Verve N Veda remains open behind it.</div>
-    </section>
-  </div>
 </body>
 </html>
