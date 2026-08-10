@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Sovereign Mini Cloud OS · Admin Gate</title>
+<title>ADMIN</title>
 <style>
 :root{
   --bg:#0e1117;--panel:#0d1117;--panel2:#161b22;--ink:#e6edf3;--muted:#8b949e;
@@ -26,9 +26,9 @@ button{cursor:pointer}
   border-radius:12px;background:var(--paper);color:#111;box-shadow:0 30px 80px #0008
 }
 .gate-kicker{color:#8e2424;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-.gate-card h1{margin:8px 0 8px;font-family:Georgia,serif;font-weight:500;font-size:38px}
+.gate-card h1{margin:0 0 24px;font-family:Georgia,serif;font-weight:500;font-size:44px;letter-spacing:.11em;text-align:center}\n.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 .gate-card p{font-family:system-ui,sans-serif;color:#4d5751;font-size:13px;line-height:1.6}
-.gate-form{display:grid;gap:12px;margin-top:20px}
+.gate-form{display:grid;gap:14px;margin-top:0}
 .gate-form label{font-family:system-ui,sans-serif;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .code-row{display:grid;grid-template-columns:1fr 76px;gap:8px}
 .code-input{min-height:50px;padding:0 14px;border:1px solid #aeb7b2;border-radius:7px;background:#fff;color:#111;font-size:18px;letter-spacing:.16em}
@@ -92,27 +92,26 @@ li{cursor:pointer;margin:4px 0}
 </head>
 <body>
 
-<section id="gate" aria-label="Mini Cloud administrator gate">
+<section id="gate" aria-label="ADMIN">
   <div class="gate-card">
-    <div class="gate-kicker">Administrator Access</div>
-    <h1>Mini Cloud Vault</h1>
-    <p>Enter the 10-digit administrator passcode to unlock the Sovereign Mini Cloud OS.</p>
+    <h1>ADMIN</h1>
     <form class="gate-form" id="gateForm">
-      <label for="gateCode">10-digit passcode</label>
+      <label class="visually-hidden" for="gateCode">10-digit administrator passcode</label>
       <div class="code-row">
-        <input class="code-input" id="gateCode" type="password" inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" autocomplete="off" required>
+        <input class="code-input" id="gateCode" type="password" inputmode="numeric"
+               pattern="[0-9]{10}" minlength="10" maxlength="10" autocomplete="off"
+               aria-label="10-digit administrator passcode" placeholder="••••••••••" required>
         <button class="show-btn" id="showCode" type="button">Show</button>
       </div>
       <p class="status" id="gateStatus" role="status" aria-live="polite"></p>
-      <button class="gate-submit" type="submit">Unlock Mini Cloud</button>
+      <button class="gate-submit" type="submit">Enter</button>
     </form>
-    <p class="gate-note"><strong>Initial code:</strong> 0000000000. After you change it, this browser stores only the PBKDF2 salt/hash record, not the passcode itself.</p>
   </div>
 </section>
 
 <div id="cloudRoot">
   <header id="cloudHeader">
-    <strong>☁ Sovereign Mini Cloud OS</strong>
+    <strong>ADMIN</strong>
     <div class="header-actions">
       <button id="showDashboard">Admin Dashboard</button>
       <button id="showCloud">Mini Cloud</button>
@@ -636,12 +635,26 @@ li{cursor:pointer;margin:4px 0}
 /* =========================================================
    PASSCODE GATE — same core logic as Verve N Veda home gate
    ========================================================= */
-const RECORD_KEY="VNV_ADMIN_GATE_RECORD_V2";
+// Shared with the public-home Admin Gate.\nconst RECORD_KEY="VNV_ADMIN_GATE_RECORD_V2";
 const SESSION_KEY="VNV_MINI_CLOUD_SESSION_V2";
 const ATTEMPT_KEY="VNV_MINI_CLOUD_FAILED_ATTEMPTS_V2";
 const DEFAULT_CODE="0000000000";
 const ITERATIONS=120000;
 const encoder=new TextEncoder();
+
+const gateCode=document.getElementById("gateCode");
+const showCode=document.getElementById("showCode");
+const gateForm=document.getElementById("gateForm");
+const gateStatus=document.getElementById("gateStatus");
+const lockCloud=document.getElementById("lockCloud");
+const changePasscode=document.getElementById("changePasscode");
+const changeOverlay=document.getElementById("changeOverlay");
+const cancelChange=document.getElementById("cancelChange");
+const changeForm=document.getElementById("changeForm");
+const currentCode=document.getElementById("currentCode");
+const newCode=document.getElementById("newCode");
+const confirmCode=document.getElementById("confirmCode");
+const changeStatus=document.getElementById("changeStatus");
 
 function cleanCode(v){return String(v||"").replace(/\D/g,"").slice(0,10)}
 function isValidCode(v){return /^[0-9]{10}$/.test(String(v||""))}
@@ -690,7 +703,7 @@ function wrongPasscodeMessage(attempt){
   if(attempt===1) return "Wrong password! You unlocked a new achievement: 'Most Predictable Guess of the Day'.";
   if(attempt===2) return "Access rejected. My cat walked across the keyboard and almost guessed a better password.";
   if(attempt===3) return "Incorrect. Please consult a magic 8-ball for better password guessing abilities.";
-  if(attempt===4) return "Incorrect password. The FBI agents watching your webcam are currently yawning.;
+  if(attempt===4) return "Incorrect password. This computer is now judging your life choices.";
   if(attempt===5) return "Password incorrect. Your IP address has been reported to the Cyber Police of Disappointment.";
   return "Access rejected. Incorrect administrator passcode.";
 }
