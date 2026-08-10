@@ -3487,7 +3487,395 @@
         const printWindow=window.open("","vnvFeaturePrint","width=820,height=720");
         if(!printWindow) return;
         const media=FEATURE_MEDIA[item.url] || null;
-        printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(item.title)}</title><style>body{font-family:Georgia,serif;color:#18201c;margin:48px;line-height:1.6}small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#806a42}h1{font-weight:444;font-size:33px}img{max-width:100%;max-height:420px;object-fit:contain;border:1px solid #ddd}a{color:#21493d;word-break:break-all}.crumb{font:11px Arial,sans-serif;color:#756d60;margin-bottom:24px}</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script></body></html>`);
+        printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(item.title)}</title><style>body{font-family:Georgia,serif;color:#18201c;margin:48px;line-height:1.6}small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#806a42}h1{font-weight:444;font-size:33px}img{max-width:100%;max-height:420px;object-fit:contain;border:1px solid #ddd}a{color:#21493d;word-break:break-all}.crumb{font:11px Arial,sans-serif;color:#756d60;margin-bottom:24px}
+
+    /* =========================================================
+       2026-08-10 FLUID RESPONSIVE TYPOGRAPHY + LAYOUT PASS
+       - section eyebrows grow with the screen
+       - reading text scales smoothly
+       - controls remain compact and single-line where practical
+       - cards/grids/popup shells resize without hard jumps
+       ========================================================= */
+
+    :root{
+      --fluid-utility:clamp(10px,calc(9px + .16vw),12px);
+      --fluid-button:clamp(9.5px,calc(8.7px + .18vw),11.5px);
+      --fluid-small:clamp(12px,calc(11px + .22vw),14px);
+      --fluid-body:clamp(14px,calc(13px + .28vw),17px);
+      --fluid-card-title:clamp(20px,calc(18px + .55vw),25px);
+      --fluid-support-title:clamp(21px,calc(18px + 1vw),31px);
+      --fluid-eyebrow:clamp(23px,calc(19px + 1.15vw),32px);
+      --fluid-popup-title:clamp(27px,calc(22px + 1.45vw),38px);
+      --fluid-count:clamp(28px,calc(24px + 1.5vw),38px);
+      --fluid-section-pad:clamp(58px,7.2vw,104px);
+      --fluid-inline-pad:clamp(13px,2.4vw,30px);
+    }
+
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    body{
+      min-width:0;
+      font-size:var(--fluid-body)!important;
+    }
+    p{ text-wrap:pretty; }
+    h1,h2,h3,.kicker,.eyebrow{ text-wrap:balance; }
+
+    .shell{
+      width:min(calc(100% - clamp(26px,5vw,56px)),var(--max));
+    }
+
+    .section{
+      padding:var(--fluid-section-pad) var(--fluid-inline-pad)!important;
+    }
+    .section-inner,
+    .support-bridge,
+    .campaign-bridge,
+    .network-statement,
+    .intelligence-bridge,
+    .privacy-note{
+      width:min(100%,var(--max));
+      min-width:0;
+    }
+
+    /* Bigger, fluid down-page eyebrows. */
+    .section .kicker,
+    .support-copy .kicker,
+    .campaign-copy .kicker,
+    .statement-copy .kicker,
+    .final .kicker,
+    .intelligence-copy .kicker{
+      font-size:var(--fluid-eyebrow)!important;
+      line-height:1.12!important;
+      letter-spacing:clamp(.065em,.11vw,.11em)!important;
+    }
+
+    /* Supporting headline directly under the eyebrow remains subordinate. */
+    .section .section-heading h2,
+    .support-copy h2,
+    .campaign-copy h2,
+    .statement-copy h2,
+    .final h2,
+    .intelligence-copy h2{
+      font-size:var(--fluid-support-title)!important;
+      line-height:1.22!important;
+    }
+
+    /* Fluid normal reading text. */
+    .section-intro,
+    .pillar-card p,
+    .feature-card p,
+    .support-copy p,
+    .campaign-copy p,
+    .statement-copy p,
+    .final p,
+    .intelligence-copy p,
+    .privacy-note,
+    .drawer p,
+    .admin-gate-panel p,
+    .feature-description,
+    .viewer-summary p,
+    .viewer-embed-blocked p,
+    .ecosystem-panel-note,
+    .ecosystem-link small,
+    .menu-link small{
+      font-size:var(--fluid-body)!important;
+    }
+
+    /* Compact metadata stays legible but fluid. */
+    .network-ticker-label,
+    .network-ticker-app,
+    .network-ticker-call,
+    .scroll-cue,
+    .eyebrow,
+    .brand-sub,
+    .header-links a,
+    .pillar-number,
+    .pillar-open,
+    .footer-meta span,
+    .ecosystem-subgroup-title,
+    .feature-visual-label,
+    .feature-kicker,
+    .feature-breadcrumbs,
+    .feature-counter,
+    .viewer-breadcrumbs,
+    .viewer-frame-note,
+    .viewer-blocked-kicker,
+    .menu-group,
+    .menu-link i{
+      font-size:var(--fluid-utility)!important;
+    }
+
+    /* Titles within cards and popup modules. */
+    .feature-card h3,
+    .intelligence-node strong,
+    .site-card h3,
+    .value strong,
+    .ecosystem-panel-heading,
+    .viewer-summary h3,
+    .viewer-embed-blocked h3{
+      font-size:var(--fluid-card-title)!important;
+      line-height:1.16!important;
+    }
+    .admin-gate-panel h2,
+    .drawer h2{
+      font-size:var(--fluid-popup-title)!important;
+      line-height:1.05!important;
+    }
+    .network-count strong{
+      font-size:var(--fluid-count)!important;
+    }
+
+    /* Keep control labels compact so long labels do not jump to a second line. */
+    .button,
+    .header-links a,
+    .admin-gate-submit,
+    .admin-gate-secondary,
+    .admin-code-toggle,
+    .close-button,
+    .ecosystem-panel-close,
+    .feature-open-button,
+    .feature-pause-button,
+    .viewer-tool,
+    .viewer-full-link,
+    .viewer-close,
+    .ticker-control{
+      font-size:var(--fluid-button)!important;
+      line-height:1.15!important;
+    }
+    .button,
+    .admin-gate-submit,
+    .admin-gate-secondary,
+    .admin-code-toggle,
+    .feature-open-button,
+    .feature-pause-button,
+    .viewer-tool,
+    .viewer-full-link{
+      max-width:100%;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      letter-spacing:clamp(.035em,.08vw,.08em)!important;
+    }
+
+    /* The linked category words may be larger than utility buttons. */
+    .ecosystem-category-link{
+      font-size:clamp(12px,calc(10px + .4vw),15px)!important;
+      letter-spacing:clamp(.075em,.12vw,.13em)!important;
+      white-space:nowrap;
+    }
+    .ecosystem-category-toggle{
+      font-size:clamp(13px,calc(11px + .35vw),16px)!important;
+    }
+
+    /* Fluid hero and brand without losing the established hierarchy. */
+    .hero h1{
+      font-size:clamp(52px,9.2vw,124px)!important;
+    }
+    .hero .eyebrow{
+      font-size:clamp(11px,calc(9px + .45vw),14px)!important;
+    }
+    .hero-lead{
+      font-size:clamp(16px,calc(14px + .55vw),20px)!important;
+    }
+    .brand-name{
+      font-size:clamp(13px,calc(11px + .45vw),17px)!important;
+    }
+
+    /* Auto-fit grids: cards choose the right column count for available width. */
+    .pillar-grid{
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr))!important;
+    }
+    .featured-grid{
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr))!important;
+    }
+    .network-counts{
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))!important;
+    }
+    .ecosystem-category-grid{
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr))!important;
+    }
+    .ecosystem-panel-grid{
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr))!important;
+    }
+    .statement-values,
+    .intelligence-map{
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr))!important;
+    }
+
+    .pillar-card,
+    .feature-card,
+    .network-count,
+    .value,
+    .intelligence-node,
+    .ecosystem-category-doorway{
+      min-width:0;
+    }
+
+    /* Fluid cards: no oversized fixed padding on smaller screens. */
+    .pillar-card,
+    .feature-card,
+    .site-card{
+      padding:clamp(21px,2.7vw,30px)!important;
+    }
+    .value,
+    .intelligence-node{
+      min-height:clamp(112px,12vw,156px)!important;
+      padding:clamp(16px,2.4vw,24px)!important;
+    }
+    .network-count{
+      min-height:clamp(100px,10vw,132px)!important;
+      padding:clamp(15px,2.2vw,22px)!important;
+    }
+
+    /* Drawer scales to desktop, tablet and phone without becoming cramped. */
+    .drawer{
+      width:min(94vw,clamp(340px,46vw,520px))!important;
+      padding:clamp(17px,2.8vw,26px)!important;
+    }
+    .drawer-search{
+      min-height:clamp(44px,5.3vw,50px)!important;
+      font-size:clamp(14px,calc(13px + .25vw),16px)!important;
+    }
+    .menu-link{
+      grid-template-columns:auto minmax(0,1fr) auto;
+      gap:clamp(8px,1.1vw,12px);
+      padding:clamp(9px,1.2vw,13px)!important;
+    }
+    .menu-link strong{
+      font-size:clamp(13px,calc(12px + .28vw),15px)!important;
+    }
+
+    /* Admin popup shell only — no change to admin logic. */
+    .admin-gate-overlay{
+      padding:clamp(10px,3vw,24px)!important;
+    }
+    .admin-gate-panel{
+      width:min(94vw,500px)!important;
+      max-height:min(90svh,780px)!important;
+      padding:clamp(20px,4vw,32px)!important;
+    }
+    .admin-code-row{
+      grid-template-columns:minmax(0,1fr) minmax(68px,82px);
+      gap:clamp(7px,1.2vw,10px);
+    }
+    .admin-code-input{
+      min-width:0;
+      min-height:clamp(46px,5.4vw,52px)!important;
+      font-size:clamp(15px,calc(14px + .45vw),18px)!important;
+    }
+
+    /* Ecosystem slideshow fluidizes before it reaches mobile breakpoint. */
+    .feature-showcase-shell,
+    .feature-slide{
+      min-height:clamp(218px,24vw,280px)!important;
+    }
+    .feature-slide{
+      grid-template-columns:minmax(150px,22%) minmax(0,1fr)!important;
+    }
+    .feature-visual{
+      min-height:inherit!important;
+    }
+    .feature-copy{
+      padding:clamp(21px,3vw,34px)!important;
+    }
+    .feature-title{
+      font-size:clamp(22px,3vw,38px)!important;
+    }
+
+    /* Viewer/popup application shell follows viewport dimensions. */
+    .ecosystem-viewer-overlay{
+      padding:clamp(7px,2.2vw,26px)!important;
+    }
+    .ecosystem-viewer{
+      width:min(96vw,1180px)!important;
+      height:min(92svh,830px)!important;
+      max-width:100%;
+      max-height:100%;
+    }
+    .ecosystem-viewer-toolbar{
+      min-height:clamp(50px,5vw,60px)!important;
+      padding:clamp(8px,1.2vw,12px) clamp(10px,1.5vw,18px)!important;
+    }
+    .viewer-summary{
+      grid-template-columns:minmax(0,1fr) auto;
+      gap:clamp(10px,1.8vw,18px)!important;
+      padding:clamp(11px,1.5vw,16px) clamp(12px,1.8vw,20px)!important;
+    }
+    .viewer-frame,
+    iframe{
+      max-width:100%;
+    }
+    .viewer-embed-blocked{
+      padding:clamp(18px,4vw,38px)!important;
+    }
+
+    /* Bridges/panels breathe proportionally. */
+    .support-bridge,
+    .campaign-bridge{
+      padding:clamp(24px,4vw,44px)!important;
+      gap:clamp(24px,4vw,48px)!important;
+    }
+    .ecosystem-directory-panel{
+      padding:clamp(20px,3.2vw,32px)!important;
+    }
+
+    /* Narrow screens: preserve readable controls without wrapping them. */
+    @media(max-width:700px){
+      .feature-slide{
+        grid-template-columns:1fr!important;
+        grid-template-rows:clamp(105px,24vw,145px) auto!important;
+      }
+      .feature-visual{
+        min-height:0!important;
+        border-right:0!important;
+        border-bottom:1px solid rgba(27,34,29,.12);
+      }
+      .viewer-summary{
+        grid-template-columns:1fr!important;
+      }
+      .viewer-full-link{
+        justify-self:start;
+      }
+      .admin-code-row{
+        grid-template-columns:1fr!important;
+      }
+      .admin-code-toggle{
+        min-height:42px;
+      }
+      .actions,
+      .campaign-actions,
+      .intelligence-actions{
+        width:min(100%,420px);
+        margin-inline:auto;
+      }
+      .actions .button,
+      .campaign-actions .button,
+      .intelligence-actions .button{
+        width:100%;
+      }
+    }
+
+    @media(max-width:430px){
+      .shell{width:min(calc(100% - 22px),var(--max))}
+      .section{padding-inline:11px!important}
+      .ecosystem-category-grid{grid-template-columns:1fr!important}
+      .ecosystem-category-link{
+        font-size:clamp(12px,3.7vw,14px)!important;
+      }
+      .button,
+      .admin-gate-submit,
+      .admin-gate-secondary,
+      .feature-open-button,
+      .feature-pause-button,
+      .viewer-full-link{
+        font-size:clamp(9px,2.8vw,10.5px)!important;
+      }
+      .ecosystem-viewer{
+        width:100%!important;
+        height:96svh!important;
+      }
+    }
+
+</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script></body></html>`);
         printWindow.document.close();
       }
 
