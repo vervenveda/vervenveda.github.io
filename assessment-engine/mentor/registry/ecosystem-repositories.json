@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-09T22:49:28.823Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-09T22:49:21Z",
+  "generatedAt": "2026-08-10T02:42:02.897Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-10T02:20:02Z",
   "accounts": [
     "vervenveda",
     "JenniferPearl2028",
@@ -83,18 +83,18 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T14:11:37Z",
-      "updatedAt": "2026-08-07T15:02:42Z",
-      "pushedAt": "2026-08-07T15:01:48Z",
+      "updatedAt": "2026-08-09T22:58:33Z",
+      "pushedAt": "2026-08-09T22:58:29Z",
       "discoveryStatus": "manifested",
-      "classification": "creative-cultural",
+      "classification": "research-information",
       "confidence": 1,
       "recommendable": true,
       "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "efe9ed78bf26d734bfc1170d5686ef788daa5b37",
+        "sha": "3d8366adfb7ed322d52e67266d4fd81071bb1799",
         "htmlUrl": "https://github.com/vervenveda/Arshif.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
+        "version": 2,
         "sourceId": "verve.arshif",
         "mentorSearchable": true,
         "inventoryAuthority": "",
@@ -342,8 +342,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T18:59:55Z",
-      "updatedAt": "2026-08-07T21:50:43Z",
-      "pushedAt": "2026-08-07T21:50:39Z",
+      "updatedAt": "2026-08-10T00:47:59Z",
+      "pushedAt": "2026-08-10T00:47:55Z",
       "discoveryStatus": "manifested",
       "classification": "educational",
       "confidence": 1,
@@ -351,13 +351,13 @@
       "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "dcaf020e1b052b4114cf45125dd758a61014aded",
+        "sha": "5fe4b719aa95fb59c41c0d1373ece37845c4ac41",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_High.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
+        "version": 4,
         "sourceId": "khaemenes.high",
         "mentorSearchable": true,
         "inventoryAuthority": "",
-        "resourceCount": 5
+        "resourceCount": 9
       }
     },
     {
@@ -373,8 +373,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T19:05:35Z",
-      "updatedAt": "2026-08-08T16:35:40Z",
-      "pushedAt": "2026-08-08T16:35:35Z",
+      "updatedAt": "2026-08-09T23:17:35Z",
+      "pushedAt": "2026-08-09T23:17:11Z",
       "discoveryStatus": "manifested",
       "classification": "educational",
       "confidence": 1,
@@ -382,12 +382,12 @@
       "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "e4071919146eb53208ed0d4239898f6e2d787d4a",
+        "sha": "8fa8fb5376939a0d156f73031a6740b9a6527656",
         "htmlUrl": "https://github.com/vervenveda/Khaemenes_Higher_Learning.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
+        "version": 2,
         "sourceId": "khaemenes.higher-learning",
         "mentorSearchable": true,
-        "inventoryAuthority": "",
+        "inventoryAuthority": "source-owned-local-only",
         "resourceCount": 11
       }
     },
@@ -528,8 +528,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-26T15:33:02Z",
-      "updatedAt": "2026-08-09T22:40:08Z",
-      "pushedAt": "2026-08-09T22:40:03Z",
+      "updatedAt": "2026-08-10T01:00:14Z",
+      "pushedAt": "2026-08-10T01:00:06Z",
       "discoveryStatus": "manifested",
       "classification": "wellness",
       "confidence": 1,
@@ -537,13 +537,13 @@
       "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "7243d592d2b5ec7d359a8c6e4907cb6fd66f073f",
+        "sha": "7ce84b3aa5a6fa89e4a7d69c9f4f30cd94b93264",
         "htmlUrl": "https://github.com/vervenveda/medicament-hub.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
+        "version": 2,
         "sourceId": "verve.medicament",
         "mentorSearchable": true,
-        "inventoryAuthority": "provisional-root-anchor",
-        "resourceCount": 1
+        "inventoryAuthority": "verified-partial-inventory",
+        "resourceCount": 10
       }
     },
     {
@@ -787,8 +787,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-18T22:34:19Z",
-      "updatedAt": "2026-08-09T22:42:06Z",
-      "pushedAt": "2026-08-09T22:49:21Z",
+      "updatedAt": "2026-08-10T02:20:06Z",
+      "pushedAt": "2026-08-10T02:20:02Z",
       "discoveryStatus": "discovered",
       "classification": "unclassified",
       "confidence": 0.25,

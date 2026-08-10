@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-09T22:49:28.823Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-09T22:49:21Z",
+  "generatedAt": "2026-08-10T02:42:02.897Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-10T02:20:02Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -953,11 +953,11 @@
     {
       "id": "vervenveda.arshif.github.io.arshif-home",
       "title": "ARSHIF Archives",
-      "description": "",
+      "description": "The Living Archive of Human Knowledge: a privacy-respecting gateway to research, public learning, culture, history, science, art, reading, and human memory.",
       "url": "https://vervenveda.com/Arshif.github.io/",
       "sourceId": "verve.arshif",
       "repository": "vervenveda/Arshif.github.io",
-      "classification": "creative-cultural",
+      "classification": "research-information",
       "audiences": [
         "middle",
         "high",
@@ -972,14 +972,24 @@
       ],
       "domains": [
         "archives",
+        "research",
+        "reference",
         "reading",
-        "culture"
+        "culture",
+        "history"
       ],
-      "skills": [],
+      "skills": [
+        "research-navigation",
+        "source-discovery",
+        "reading"
+      ],
       "tags": [
         "archive",
+        "research",
+        "reference",
         "reading",
-        "culture"
+        "culture",
+        "human-knowledge"
       ],
       "minutes": null,
       "energy": "",
@@ -987,9 +997,9 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "hub",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
       "subjects": [],
       "highStakesDomain": "",
@@ -1001,7 +1011,7 @@
       "requiresPreferenceMatch": [],
       "requiresAccountAwareness": false,
       "sensitiveTopics": [],
-      "externalInformation": false,
+      "externalInformation": true,
       "sourcePriority": 0,
       "freshnessWindowMinutes": null,
       "contentType": "",
@@ -1015,7 +1025,7 @@
         "requiresLinkedLearner": false,
         "requiredStage": "",
         "sensitiveTopics": [],
-        "externalInformation": false,
+        "externalInformation": true,
         "highStakesDomain": "",
         "requiresExplicitQuery": false,
         "policyTags": []
@@ -1025,11 +1035,11 @@
     {
       "id": "vervenveda.arshif.github.io.reading-room",
       "title": "ARSHIF Reading Room",
-      "description": "",
+      "description": "Archive reading room for literature, historical texts, and reflective reading.",
       "url": "https://vervenveda.com/Arshif.github.io/apps/Reading_room_index.html",
       "sourceId": "verve.arshif",
       "repository": "vervenveda/Arshif.github.io",
-      "classification": "creative-cultural",
+      "classification": "research-information",
       "audiences": [
         "middle",
         "high",
@@ -1043,15 +1053,20 @@
       ],
       "domains": [
         "reading",
-        "archives"
+        "archives",
+        "literature",
+        "reference"
       ],
       "skills": [
         "reading",
-        "reflection"
+        "reflection",
+        "source-discovery"
       ],
       "tags": [
         "reading-room",
-        "archive"
+        "archive",
+        "literature",
+        "reference"
       ],
       "minutes": 20,
       "energy": "gentle",
@@ -1059,9 +1074,9 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "reference",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
       "subjects": [],
       "highStakesDomain": "",
@@ -1073,7 +1088,7 @@
       "requiresPreferenceMatch": [],
       "requiresAccountAwareness": false,
       "sensitiveTopics": [],
-      "externalInformation": false,
+      "externalInformation": true,
       "sourcePriority": 0,
       "freshnessWindowMinutes": null,
       "contentType": "",
@@ -1087,7 +1102,7 @@
         "requiresLinkedLearner": false,
         "requiredStage": "",
         "sensitiveTopics": [],
-        "externalInformation": false,
+        "externalInformation": true,
         "highStakesDomain": "",
         "requiresExplicitQuery": false,
         "policyTags": []
@@ -1097,11 +1112,11 @@
     {
       "id": "vervenveda.arshif.github.io.bible-history",
       "title": "Bible & History",
-      "description": "",
+      "description": "Structured historical-context study connecting biblical texts with historical inquiry.",
       "url": "https://vervenveda.com/Arshif.github.io/apps/Bible_and_History_index.html",
       "sourceId": "verve.arshif",
       "repository": "vervenveda/Arshif.github.io",
-      "classification": "creative-cultural",
+      "classification": "educational",
       "audiences": [
         "high",
         "higher-learning",
@@ -1114,16 +1129,19 @@
       ],
       "domains": [
         "history",
-        "textual-study"
+        "textual-study",
+        "religious-studies"
       ],
       "skills": [
         "historical-context",
-        "reading"
+        "reading",
+        "comparative-analysis"
       ],
       "tags": [
         "history",
         "bible",
-        "faith"
+        "faith",
+        "textual-study"
       ],
       "minutes": 25,
       "energy": "steady",
@@ -1131,11 +1149,14 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "history",
+        "religious-studies"
+      ],
       "highStakesDomain": "",
       "inventoryAuthority": "",
       "requiresLinkedLearner": false,
@@ -1175,11 +1196,11 @@
     {
       "id": "vervenveda.arshif.github.io.bible-context",
       "title": "Bible Context",
-      "description": "",
+      "description": "Structured course in textual context, transmission, canon, and contextual reading.",
       "url": "https://vervenveda.com/Arshif.github.io/apps/Bible_context_index.html",
       "sourceId": "verve.arshif",
       "repository": "vervenveda/Arshif.github.io",
-      "classification": "creative-cultural",
+      "classification": "educational",
       "audiences": [
         "high",
         "higher-learning",
@@ -1192,15 +1213,20 @@
       ],
       "domains": [
         "history",
-        "textual-study"
+        "textual-study",
+        "religious-studies"
       ],
       "skills": [
-        "contextual-reading"
+        "contextual-reading",
+        "textual-analysis",
+        "historical-context"
       ],
       "tags": [
         "bible",
         "history",
-        "faith"
+        "faith",
+        "context",
+        "textual-study"
       ],
       "minutes": 20,
       "energy": "steady",
@@ -1208,11 +1234,14 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "history",
+        "religious-studies"
+      ],
       "highStakesDomain": "",
       "inventoryAuthority": "",
       "requiresLinkedLearner": false,
@@ -1252,11 +1281,11 @@
     {
       "id": "vervenveda.arshif.github.io.foundations-faith",
       "title": "Foundations of Faith",
-      "description": "",
+      "description": "Self-paced faith-study portal for reflection and textual study.",
       "url": "https://vervenveda.com/Arshif.github.io/apps/Foundations_of_faith_index.html",
       "sourceId": "verve.arshif",
       "repository": "vervenveda/Arshif.github.io",
-      "classification": "creative-cultural",
+      "classification": "educational",
       "audiences": [
         "high",
         "higher-learning",
@@ -1268,7 +1297,8 @@
         "educator"
       ],
       "domains": [
-        "faith-study"
+        "faith-study",
+        "religious-studies"
       ],
       "skills": [
         "reflection",
@@ -1276,7 +1306,8 @@
       ],
       "tags": [
         "faith",
-        "religion"
+        "religion",
+        "study"
       ],
       "minutes": 20,
       "energy": "gentle",
@@ -1284,11 +1315,13 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "religious-studies"
+      ],
       "highStakesDomain": "",
       "inventoryAuthority": "",
       "requiresLinkedLearner": false,
@@ -1326,11 +1359,11 @@
     {
       "id": "vervenveda.arshif.github.io.truth-tribe-kids",
       "title": "Truth Tribe Kids",
-      "description": "",
+      "description": "Elementary and middle-school faith-oriented reading, exploration, and reflection portal.",
       "url": "https://vervenveda.com/Arshif.github.io/apps/Truth_tribe_kids_index.html",
       "sourceId": "verve.arshif",
       "repository": "vervenveda/Arshif.github.io",
-      "classification": "creative-cultural",
+      "classification": "educational",
       "audiences": [
         "elementary",
         "middle"
@@ -1342,7 +1375,8 @@
       ],
       "domains": [
         "faith-study",
-        "reading"
+        "reading",
+        "religious-studies"
       ],
       "skills": [
         "reading",
@@ -1350,7 +1384,8 @@
       ],
       "tags": [
         "faith",
-        "kids"
+        "kids",
+        "reading"
       ],
       "minutes": 15,
       "energy": "gentle",
@@ -1358,11 +1393,14 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "learning-portal",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "reading",
+        "religious-studies"
+      ],
       "highStakesDomain": "",
       "inventoryAuthority": "",
       "requiresLinkedLearner": false,
@@ -3703,7 +3741,7 @@
     {
       "id": "vervenveda.khaemenes_high.github.io.high-home",
       "title": "Khaemenes Academy High School",
-      "description": "",
+      "description": "Grades 9–12 Khaemenes Academy campus and course navigation.",
       "url": "https://vervenveda.com/Khaemenes_High.github.io/",
       "sourceId": "khaemenes.high",
       "repository": "vervenveda/Khaemenes_High.github.io",
@@ -3732,7 +3770,7 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
+      "resourceType": "hub",
       "learningValue": "",
       "curricularWeight": "",
       "learningObjectives": [],
@@ -3770,7 +3808,7 @@
     {
       "id": "vervenveda.khaemenes_high.github.io.high-language-arts",
       "title": "High School Language Arts",
-      "description": "",
+      "description": "Grades 9–12 English language arts, literature, composition, research, and analysis.",
       "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/",
       "sourceId": "khaemenes.high",
       "repository": "vervenveda/Khaemenes_High.github.io",
@@ -3802,7 +3840,7 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
+      "resourceType": "department",
       "learningValue": "",
       "curricularWeight": "",
       "learningObjectives": [],
@@ -3840,7 +3878,7 @@
     {
       "id": "vervenveda.khaemenes_high.github.io.high-mathematics",
       "title": "High School Mathematics",
-      "description": "",
+      "description": "High-school mathematics course family and quantitative tools.",
       "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/",
       "sourceId": "khaemenes.high",
       "repository": "vervenveda/Khaemenes_High.github.io",
@@ -3861,9 +3899,9 @@
       ],
       "tags": [
         "math",
-        "pre-algebra",
         "algebra",
-        "geometry"
+        "geometry",
+        "precalculus"
       ],
       "minutes": null,
       "energy": "",
@@ -3871,7 +3909,7 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
+      "resourceType": "department",
       "learningValue": "",
       "curricularWeight": "",
       "learningObjectives": [],
@@ -3908,8 +3946,8 @@
     },
     {
       "id": "vervenveda.khaemenes_high.github.io.high-science",
-      "title": "High School Science",
-      "description": "",
+      "title": "High School Science Department",
+      "description": "Four-year laboratory science pathway: Integrated Science 9, Biology 10, Chemistry 11, Physics & Engineering 12, plus federated science extensions.",
       "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/",
       "sourceId": "khaemenes.high",
       "repository": "vervenveda/Khaemenes_High.github.io",
@@ -3927,20 +3965,23 @@
       ],
       "skills": [
         "scientific-reasoning",
-        "evidence"
+        "evidence",
+        "modeling",
+        "data-analysis"
       ],
       "tags": [
         "science",
         "laboratory",
-        "inquiry"
+        "inquiry",
+        "engineering"
       ],
       "minutes": null,
       "energy": "",
-      "featured": false,
+      "featured": true,
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
+      "resourceType": "department",
       "learningValue": "",
       "curricularWeight": "",
       "learningObjectives": [],
@@ -3976,9 +4017,316 @@
       "manifestPath": "mentor-manifest.json"
     },
     {
+      "id": "vervenveda.khaemenes_high.github.io.science-integrated-9",
+      "title": "International Integrated Science 9",
+      "description": "36-week integrated foundation in life, matter, energy, Earth systems, inquiry, engineering, and scientific information literacy.",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/integrated-science-9/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "science",
+        "biology",
+        "chemistry",
+        "physics",
+        "earth-science"
+      ],
+      "skills": [
+        "scientific-inquiry",
+        "modeling",
+        "data-analysis",
+        "CER"
+      ],
+      "tags": [
+        "grade-9",
+        "integrated-science",
+        "36-weeks"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "science"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.science-biology-10",
+      "title": "International Biology & Biotechnology 10",
+      "description": "36-week advanced biology sequence from molecular/cellular systems through genetics, biotechnology, evolution, ecology, biodiversity, and capstone.",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/biology-10/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "biology",
+        "life-science",
+        "biotechnology",
+        "ecology"
+      ],
+      "skills": [
+        "scientific-inquiry",
+        "data-analysis",
+        "genetic-reasoning",
+        "CER"
+      ],
+      "tags": [
+        "grade-10",
+        "biology",
+        "biotechnology",
+        "36-weeks"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "biology"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.science-chemistry-11",
+      "title": "International Chemistry & Materials Science 11",
+      "description": "36-week quantitative chemistry sequence in structure, bonding, reactions, stoichiometry, kinetics, thermodynamics, equilibrium, acids/bases, electrochemistry, and materials.",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/chemistry-11/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "chemistry",
+        "physical-science",
+        "materials-science"
+      ],
+      "skills": [
+        "quantitative-reasoning",
+        "laboratory-analysis",
+        "modeling",
+        "CER"
+      ],
+      "tags": [
+        "grade-11",
+        "chemistry",
+        "materials",
+        "36-weeks"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "chemistry"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_high.github.io.science-physics-12",
+      "title": "International Physics & Engineering 12",
+      "description": "36-week algebra-based physics and engineering sequence in mechanics, rotation, waves, fluids, thermal physics, electricity, magnetism, information technologies, space applications, and design.",
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/physics-engineering-12/",
+      "sourceId": "khaemenes.high",
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "classification": "educational",
+      "audiences": [
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "physics",
+        "engineering",
+        "physical-science"
+      ],
+      "skills": [
+        "quantitative-modeling",
+        "experimental-design",
+        "engineering-design",
+        "data-analysis"
+      ],
+      "tags": [
+        "grade-12",
+        "physics",
+        "engineering",
+        "36-weeks"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "physics",
+        "engineering"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
       "id": "vervenveda.khaemenes_high.github.io.high-social-studies",
       "title": "High School Social Studies",
-      "description": "",
+      "description": "Grades 9–12 social studies, history, civics, and public-life learning.",
       "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/",
       "sourceId": "khaemenes.high",
       "repository": "vervenveda/Khaemenes_High.github.io",
@@ -4011,7 +4359,7 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
+      "resourceType": "department",
       "learningValue": "",
       "curricularWeight": "",
       "learningObjectives": [],
@@ -4049,7 +4397,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.higher-home",
       "title": "Khaemenes Higher Learning",
-      "description": "",
+      "description": "Central university campus, student entry point, academic pathways, university catalog, and federated campus navigation.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4065,12 +4413,16 @@
       ],
       "domains": [
         "education",
+        "university",
         "navigation"
       ],
-      "skills": [],
+      "skills": [
+        "university-navigation"
+      ],
       "tags": [
         "higher-learning",
-        "advanced-study"
+        "university",
+        "federated-campus"
       ],
       "minutes": null,
       "energy": "",
@@ -4078,13 +4430,13 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "hub",
+      "learningValue": "navigation",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
       "subjects": [],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4115,8 +4467,8 @@
     },
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.higher-math-catalog",
-      "title": "Higher Mathematics Course Catalog",
-      "description": "",
+      "title": "School of Mathematical Sciences",
+      "description": "Higher Learning's locally owned mathematics department and course catalog.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4131,14 +4483,16 @@
         "educator"
       ],
       "domains": [
-        "mathematics"
+        "mathematics",
+        "university"
       ],
       "skills": [
         "advanced-mathematics"
       ],
       "tags": [
-        "course-catalog",
-        "mathematics"
+        "mathematics",
+        "department",
+        "course-catalog"
       ],
       "minutes": null,
       "energy": "",
@@ -4146,13 +4500,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "department",
+      "learningValue": "core",
+      "curricularWeight": "supplemental",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4184,7 +4540,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.intro-proofs",
       "title": "Introduction to Proofs",
-      "description": "",
+      "description": "University mathematics course in logic, proof structure, and mathematical reasoning.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/introduction-to-proofs/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4215,13 +4571,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4253,7 +4611,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.linear-algebra",
       "title": "Linear Algebra",
-      "description": "",
+      "description": "University mathematics course in vectors, matrices, transformations, and linear systems.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/linear-algebra/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4284,13 +4642,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4322,7 +4682,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.calculus-ii",
       "title": "Calculus II",
-      "description": "",
+      "description": "University mathematics course extending integral calculus and related advanced topics.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/calculus-ii/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4353,13 +4713,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4391,7 +4753,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.differential-equations",
       "title": "Differential Equations",
-      "description": "",
+      "description": "University mathematics course in differential equations and mathematical modeling.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/differential-equations/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4409,7 +4771,8 @@
         "mathematics"
       ],
       "skills": [
-        "differential-equations"
+        "differential-equations",
+        "modeling"
       ],
       "tags": [
         "advanced-math",
@@ -4421,13 +4784,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4459,7 +4824,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.discrete-math",
       "title": "Discrete Mathematics",
-      "description": "",
+      "description": "University mathematics course in logic, combinatorics, discrete structures, and reasoning.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/discrete-mathematics/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4490,13 +4855,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4528,7 +4895,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.abstract-algebra",
       "title": "Abstract Algebra",
-      "description": "",
+      "description": "Advanced university mathematics course in algebraic structures including groups and rings.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/abstract-algebra/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4560,13 +4927,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4598,7 +4967,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.statistics",
       "title": "Statistics",
-      "description": "",
+      "description": "University mathematics course in statistics, probability, inference, and quantitative reasoning.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/statistics/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4613,7 +4982,8 @@
         "educator"
       ],
       "domains": [
-        "mathematics"
+        "mathematics",
+        "statistics"
       ],
       "skills": [
         "statistics",
@@ -4629,13 +4999,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4667,7 +5039,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.real-complex-analysis",
       "title": "Real & Complex Analysis",
-      "description": "",
+      "description": "Advanced university mathematics course in real and complex analysis.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/real-complex-analysis/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4698,13 +5070,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -4736,7 +5110,7 @@
     {
       "id": "vervenveda.khaemenes_higher_learning.github.io.topology-geometry",
       "title": "Topology & Differential Geometry",
-      "description": "",
+      "description": "Advanced university mathematics course in topology and differential geometry.",
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/",
       "sourceId": "khaemenes.higher-learning",
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
@@ -4767,13 +5141,15 @@
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
       "learningObjectives": [],
-      "subjects": [],
+      "subjects": [
+        "mathematics"
+      ],
       "highStakesDomain": "",
-      "inventoryAuthority": "",
+      "inventoryAuthority": "source-owned-local-only",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": false,
@@ -8460,7 +8836,7 @@
       ],
       "minutes": null,
       "energy": "",
-      "featured": false,
+      "featured": true,
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
@@ -8470,7 +8846,686 @@
       "learningObjectives": [],
       "subjects": [],
       "highStakesDomain": "medical",
-      "inventoryAuthority": "provisional-root-anchor",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "medical",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-high-school-health",
+      "title": "High School Health Academy",
+      "description": "Federated Khaemenes High campus for Physical Education, Health & Wellness, teacher resources, readers, and future secondary health/human-performance study.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "physical-education",
+        "health-education",
+        "wellness",
+        "human-performance"
+      ],
+      "skills": [
+        "health-literacy",
+        "fitness-planning",
+        "decision-making",
+        "goal-setting"
+      ],
+      "tags": [
+        "high-school",
+        "health-academy",
+        "physical-education",
+        "wellness"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "academy",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "health-education",
+        "physical-education"
+      ],
+      "highStakesDomain": "medical",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "medical",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-pe",
+      "title": "High School Physical Education",
+      "description": "Grades 9–12 PE department with the established 42-week portal, grade study guides/quizzes, PLERA reader, teacher guide, and current standards crosswalk.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/courses/physical-education/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "physical-education",
+        "fitness",
+        "movement",
+        "wellness"
+      ],
+      "skills": [
+        "physical-literacy",
+        "fitness-planning",
+        "movement-safety",
+        "goal-setting",
+        "leadership"
+      ],
+      "tags": [
+        "physical-education",
+        "grades-9-12",
+        "42-weeks",
+        "lifetime-fitness"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "department",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "physical-education"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-pe-core",
+      "title": "High School PE — 42 Week Core Portal",
+      "description": "Self-paced PE curriculum with weekly lessons, quizzes, progress tracking, final examination, certificate, and export/import.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "physical-education",
+        "fitness",
+        "movement"
+      ],
+      "skills": [
+        "physical-literacy",
+        "fitness-planning",
+        "safe-participation"
+      ],
+      "tags": [
+        "pe",
+        "42-week",
+        "core-course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "physical-education"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-pe-reader",
+      "title": "PLERA P.E. Mini Textbook Reader",
+      "description": "Accessible PE101/PE201 reading companion with notes, TTS, print, search, progress, and local export/import.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/courses/physical-education/reader/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "physical-education",
+        "reading"
+      ],
+      "skills": [
+        "study-skills",
+        "health-literacy"
+      ],
+      "tags": [
+        "pe-reader",
+        "tts",
+        "local-storage"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "reader",
+      "learningValue": "support",
+      "curricularWeight": "supplemental",
+      "learningObjectives": [],
+      "subjects": [
+        "physical-education"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-health",
+      "title": "High School Health & Wellness",
+      "description": "Four-grade skills-based Health Education pathway emphasizing reliable information, privacy, communication, decisions, goals, healthy practices, resources, and advocacy.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/courses/health-wellness/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "health-education",
+        "wellness",
+        "health-literacy"
+      ],
+      "skills": [
+        "resource-evaluation",
+        "communication",
+        "decision-making",
+        "goal-setting",
+        "advocacy"
+      ],
+      "tags": [
+        "health-education",
+        "grades-9-12",
+        "privacy-protective"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "department",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "health-education"
+      ],
+      "highStakesDomain": "medical",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "medical",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-health-09",
+      "title": "Personal Health Foundations 9",
+      "description": "Health literacy, reliable information, sleep, movement, nutrition, stress, communication, safety, prevention, digital wellness, and healthcare navigation.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/courses/health-wellness/grade-09/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "health-education",
+        "wellness"
+      ],
+      "skills": [
+        "health-literacy",
+        "decision-making",
+        "communication",
+        "planning"
+      ],
+      "tags": [
+        "grade-9",
+        "health"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "health-education"
+      ],
+      "highStakesDomain": "medical",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "medical",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-health-10",
+      "title": "Relationships, Safety & Decision-Making 10",
+      "description": "Influences, communication, relationships, consent/boundaries, safety, substance prevention, mental-health literacy, consumer health, and advocacy.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/courses/health-wellness/grade-10/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "health-education",
+        "wellness"
+      ],
+      "skills": [
+        "health-literacy",
+        "decision-making",
+        "communication",
+        "planning"
+      ],
+      "tags": [
+        "grade-10",
+        "health"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "health-education"
+      ],
+      "highStakesDomain": "medical",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "medical",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-health-11",
+      "title": "Community Health, Media & Systems 11",
+      "description": "Social determinants, public health, equity/access, epidemiology literacy, environmental/occupational health, healthcare systems, media claims, preparedness, and advocacy.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/courses/health-wellness/grade-11/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "health-education",
+        "wellness"
+      ],
+      "skills": [
+        "health-literacy",
+        "decision-making",
+        "communication",
+        "planning"
+      ],
+      "tags": [
+        "grade-11",
+        "health"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "health-education"
+      ],
+      "highStakesDomain": "medical",
+      "inventoryAuthority": "verified-partial-inventory",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "medical",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.medicament-hub.github.io.medicament-health-12",
+      "title": "Lifelong Health & Independent Living 12",
+      "description": "Adult healthcare navigation, privacy, insurance/cost literacy, prevention, movement, food planning, work/recovery, relationships, impairment risk, workplace safety, digital health, and a lifelong plan.",
+      "url": "https://vervenveda.com/medicament-hub.github.io/academy/high-school-health/courses/health-wellness/grade-12/",
+      "sourceId": "verve.medicament",
+      "repository": "vervenveda/medicament-hub.github.io",
+      "classification": "wellness",
+      "audiences": [
+        "high",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "health-education",
+        "wellness"
+      ],
+      "skills": [
+        "health-literacy",
+        "decision-making",
+        "communication",
+        "planning"
+      ],
+      "tags": [
+        "grade-12",
+        "health"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "course",
+      "learningValue": "core",
+      "curricularWeight": "core",
+      "learningObjectives": [],
+      "subjects": [
+        "health-education"
+      ],
+      "highStakesDomain": "medical",
+      "inventoryAuthority": "verified-partial-inventory",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": true,
