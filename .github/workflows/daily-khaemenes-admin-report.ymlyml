@@ -1,0 +1,70 @@
+name: Daily Khaemenes Admin Report
+
+on:
+  schedule:
+    - cron: "30 7 * * *"
+      timezone: "America/New_York"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  daily-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Run Mentor Matrix
+        id: matrix
+        continue-on-error: true
+        run: |
+          node assessment-engine/mentor/matrix/matrix-validator.mjs             --out="${RUNNER_TEMP}/mentor-matrix-report.json"
+
+      - name: Build and send daily admin report
+        if: always()
+        env:
+          MATRIX_REPORT_PATH: ${{ runner.temp }}/mentor-matrix-report.json
+
+          REPORT_TO: ${{ secrets.REPORT_TO }}
+          REPORT_SMTP_HOST: ${{ secrets.REPORT_SMTP_HOST }}
+          REPORT_SMTP_PORT: ${{ secrets.REPORT_SMTP_PORT }}
+          REPORT_SMTP_USERNAME: ${{ secrets.REPORT_SMTP_USERNAME }}
+          REPORT_SMTP_PASSWORD: ${{ secrets.REPORT_SMTP_PASSWORD }}
+          REPORT_SMTP_FROM: ${{ secrets.REPORT_SMTP_FROM }}
+          REPORT_SMTP_SECURITY: ${{ secrets.REPORT_SMTP_SECURITY }}
+
+          REPORT_ACCOUNT_API_URL: ${{ secrets.REPORT_ACCOUNT_API_URL }}
+          REPORT_ACCOUNT_API_TOKEN: ${{ secrets.REPORT_ACCOUNT_API_TOKEN }}
+
+          REPORT_ATTACH_ADULT_ROSTER: "true"
+          REPORT_ATTACH_STUDENT_ROSTER: "false"
+          REPORT_BIRTHDAY_WINDOW_DAYS: "14"
+          REPORT_ATTENTION_INACTIVE_DAYS: "7"
+          REPORT_ATTENTION_MASTERY_THRESHOLD: "80"
+        run: |
+          python assessment-engine/mentor/reports/send-daily-admin-report.py             --matrix "${MATRIX_REPORT_PATH}"
+
+      - name: Upload report artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-khaemenes-admin-report
+          path: |
+            ${{ runner.temp }}/mentor-matrix-report.json
+            ${{ runner.temp }}/khaemenes-daily-report/
+          if-no-files-found: ignore
+          retention-days: 14
