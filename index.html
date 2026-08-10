@@ -874,7 +874,9 @@
       padding:20px;
       border:1px solid var(--line);
       border-radius:var(--radius);
+      color:inherit;
       background:rgba(255,255,255,.62);
+      text-decoration:none;
     }
     .network-count strong{
       display:block;
@@ -890,6 +892,38 @@
       font-size:10px;
       letter-spacing:.12em;
       text-transform:uppercase;
+    }
+    .network-count small{
+      display:block;
+      margin-top:10px;
+      color:#876d3d;
+      font-size:clamp(9px,.65vw,10.5px);
+      font-weight:600;
+      letter-spacing:.045em;
+      line-height:1.3;
+      text-transform:uppercase;
+    }
+    .network-count-action{
+      width:100%;
+      appearance:none;
+      -webkit-appearance:none;
+      cursor:pointer;
+      font:inherit;
+      transition:
+        transform .17s ease,
+        border-color .17s ease,
+        box-shadow .17s ease,
+        background .17s ease;
+    }
+    .network-count-action:hover,
+    .network-count-action:focus-visible{
+      transform:translateY(-3px);
+      border-color:rgba(180,139,69,.62);
+      background:linear-gradient(180deg,#fff,#fbf7ee);
+      box-shadow:0 14px 30px rgba(27,34,29,.09);
+    }
+    .network-count-action:active{
+      transform:translateY(-1px) scale(.995);
     }
 
     .directory-controls{
@@ -2979,9 +3013,29 @@
         </div>
 
         <div class="network-counts" aria-label="Verve N Veda network overview">
-          <div class="network-count"><div><strong id="destinationCount">29</strong><span>Public Doorways</span></div></div>
-          <div class="network-count"><div><strong>4</strong><span>Organized Halls</span></div></div>
-          <div class="network-count"><div><strong>1</strong><span>Connected Campus</span></div></div>
+          <button class="network-count network-count-action" id="openAllGateways" type="button" aria-label="Browse all primary Verve N Veda gateways">
+            <div>
+              <strong id="destinationCount">29</strong>
+              <span>Primary Gateways</span>
+              <small>Browse the complete directory →</small>
+            </div>
+          </button>
+
+          <a class="network-count network-count-action" href="#pillars" aria-label="Return to the Four Great Halls">
+            <div>
+              <strong>4</strong>
+              <span>Organized Halls</span>
+              <small>Return to the Four Great Halls ↑</small>
+            </div>
+          </a>
+
+          <a class="network-count network-count-action" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/" aria-label="Enter the connected Khaemenes Academy campus">
+            <div>
+              <strong>1</strong>
+              <span>Connected Campus</span>
+              <small>Enter Khaemenes Academy ↗</small>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -3842,6 +3896,7 @@
       }
 
       $("menuButton").addEventListener("click",openMenu);
+      $("openAllGateways")?.addEventListener("click",() => openMenu(""));
       $("closeMenu").addEventListener("click",() => closeMenu());
       menuOverlay.addEventListener("click",event => {
         if(event.target === menuOverlay) closeMenu();
