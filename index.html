@@ -783,6 +783,40 @@
       transition:.18s;
     }
     .feature-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .feature-card-doorway{
+      cursor:pointer;
+      outline:none;
+    }
+    .feature-card-doorway:hover,
+    .feature-card-doorway:focus-visible{
+      transform:translateY(-4px);
+      border-color:var(--gold);
+      box-shadow:var(--shadow);
+    }
+    .feature-card-doorway:focus-visible{
+      outline:3px solid var(--gold);
+      outline-offset:4px;
+    }
+    .feature-card-doorway:active{
+      transform:translateY(-2px) scale(.995);
+    }
+    .feature-card-doorway .feature-icon,
+    .feature-card-doorway h3,
+    .feature-card-doorway .feature-card-cta{
+      transition:transform .17s ease,color .17s ease,background .17s ease,border-color .17s ease;
+    }
+    .feature-card-doorway:hover .feature-icon,
+    .feature-card-doorway:focus-visible .feature-icon{
+      transform:translateY(-2px) scale(1.035);
+    }
+    .feature-card-doorway:hover h3,
+    .feature-card-doorway:focus-visible h3{
+      color:var(--forest);
+    }
+    .feature-card-cta{
+      pointer-events:none;
+      user-select:none;
+    }
     .feature-icon{
       width:55px;height:44px;
       display:grid;place-items:center;
@@ -3110,60 +3144,60 @@
         </div>
 
         <div class="featured-grid">
-          <article class="feature-card">
-            <span class="feature-icon">KA</span>
+          <article class="feature-card feature-card-doorway" data-href="https://vervenveda.github.io/Khaemenes_Academy.github.io/" tabindex="0" role="link" aria-label="Open Khaemenes Academy">
+            <span class="feature-icon" aria-hidden="true">KA</span>
             <h3>Khaemenes Academy</h3>
             <p>An international educational campus connecting Preschool, Kinder Garden, Elementary, Middle, High School, Higher Learning, and Linguistics.</p>
-            <a class="button button-primary" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">Enter the Academy</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Enter the Academy</span>
           </article>
 
-          <article class="feature-card">
-            <span class="feature-icon">333</span>
+          <article class="feature-card feature-card-doorway" data-href="https://vervenveda.github.io/333.github.io/" tabindex="0" role="link" aria-label="Open 333 Network">
+            <span class="feature-icon" aria-hidden="true">333</span>
             <h3>333 Network</h3>
             <p>HOLLO, KANSEE, E=Ven Mail, Bazaar Art Live, SIte Studio, and Bunya in one local-first communication and creation network.</p>
-            <a class="button button-primary" href="https://vervenveda.github.io/333.github.io/">Open 333 Network</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Open 333 Network</span>
           </article>
 
-          <article class="feature-card">
-            <span class="feature-icon">N</span>
+          <article class="feature-card feature-card-doorway" data-href="https://artist1970.github.io/noema-ai.github.io/" tabindex="0" role="link" aria-label="Open NAIB intelligence layer">
+            <span class="feature-icon" aria-hidden="true">N</span>
             <h3>NAIB</h3>
             <p>The intelligence and navigation layer that organizes context and routes visitors toward the right learning, research, creative, service, or communication system.</p>
-            <a class="button button-primary" href="https://artist1970.github.io/noema-ai.github.io/">Open Intelligence Layer</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Open Intelligence Layer</span>
           </article>
 
-          <article class="feature-card">
-            <span class="feature-icon">P</span>
+          <article class="feature-card feature-card-doorway" data-href="https://vervenveda.github.io/proresource_hub.github.io/" tabindex="0" role="link" aria-label="Open ProResource Hub">
+            <span class="feature-icon" aria-hidden="true">P</span>
             <h3>ProResource Hub</h3>
             <p>Professional tools for writing, editing, research, media, meetings, design, organization, and everyday productivity.</p>
-            <a class="button button-primary" href="https://vervenveda.github.io/proresource_hub.github.io/">Professional Tools</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Professional Tools</span>
           </article>
 
-          <article class="feature-card">
-            <span class="feature-icon">V</span>
+          <article class="feature-card feature-card-doorway" data-href="https://vervenveda.github.io/theverifier.github.io/" tabindex="0" role="link" aria-label="Open The Verifier">
+            <span class="feature-icon" aria-hidden="true">V</span>
             <h3>The Verifier</h3>
             <p>News discovery, evidence, source comparison, research support, editorials, and media-literacy resources.</p>
-            <a class="button button-primary" href="https://vervenveda.github.io/theverifier.github.io/">Read The Verifier</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Read The Verifier</span>
           </article>
 
-          <article class="feature-card">
-            <span class="feature-icon">M</span>
+          <article class="feature-card feature-card-doorway" data-href="https://vervenveda.github.io/medicament-hub.github.io/" tabindex="0" role="link" aria-label="Open Medicament Hub">
+            <span class="feature-icon" aria-hidden="true">M</span>
             <h3>Medicament Hub</h3>
             <p>A broad public-health gateway for medicine, trauma, mental wellness, family care, seniors, insurance, and safety.</p>
-            <a class="button button-primary" href="https://vervenveda.github.io/medicament-hub.github.io/">Open Health Resources</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Open Health Resources</span>
           </article>
 
-          <article class="feature-card">
-            <span class="feature-icon">A</span>
+          <article class="feature-card feature-card-doorway" data-href="https://vervenveda.github.io/Arshif.github.io/" tabindex="0" role="link" aria-label="Open ARSHIF">
+            <span class="feature-icon" aria-hidden="true">A</span>
             <h3>ARSHIF</h3>
             <p>A calm archive and cultural hall for literature, philosophy, history, science, world classics, faith, and memory.</p>
-            <a class="button button-primary" href="https://vervenveda.github.io/Arshif.github.io/">Explore ARSHIF</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Explore ARSHIF</span>
           </article>
 
-          <article class="feature-card">
-            <span class="feature-icon">ON</span>
+          <article class="feature-card feature-card-doorway" data-href="https://vervenveda.github.io/onenationforall.github.io/" tabindex="0" role="link" aria-label="Open One Nation for All">
+            <span class="feature-icon" aria-hidden="true">ON</span>
             <h3>One Nation for All</h3>
             <p>Civic learning, constitutional information, voter access, service, policy, veterans, homelessness, and community support.</p>
-            <a class="button button-primary" href="https://vervenveda.github.io/onenationforall.github.io/">Find Civic Resources</a>
+            <span class="button button-primary feature-card-cta" aria-hidden="true">Find Civic Resources</span>
           </article>
         </div>
       </div>
@@ -3868,6 +3902,20 @@
       document.querySelectorAll("[data-group-browse]").forEach(button => {
         button.addEventListener("click",() => {
           openMenu(button.dataset.groupBrowse || "");
+        });
+      });
+
+      document.querySelectorAll(".feature-card-doorway[data-href]").forEach(card => {
+        const openCard = () => {
+          const href = card.dataset.href;
+          if(href) window.location.assign(href);
+        };
+        card.addEventListener("click",openCard);
+        card.addEventListener("keydown",event => {
+          if(event.key === "Enter" || event.key === " "){
+            event.preventDefault();
+            openCard();
+          }
         });
       });
 
