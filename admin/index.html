@@ -26,7 +26,8 @@ button{cursor:pointer}
   border-radius:12px;background:var(--paper);color:#111;box-shadow:0 30px 80px #0008
 }
 .gate-kicker{color:#8e2424;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-.gate-card h1{margin:0 0 24px;font-family:Georgia,serif;font-weight:500;font-size:44px;letter-spacing:.11em;text-align:center}\n.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.gate-card h1{margin:0 0 24px;font-family:Georgia,serif;font-weight:500;font-size:44px;letter-spacing:.11em;text-align:center}
+.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 .gate-card p{font-family:system-ui,sans-serif;color:#4d5751;font-size:13px;line-height:1.6}
 .gate-form{display:grid;gap:14px;margin-top:0}
 .gate-form label{font-family:system-ui,sans-serif;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
@@ -635,7 +636,9 @@ li{cursor:pointer;margin:4px 0}
 /* =========================================================
    PASSCODE GATE — same core logic as Verve N Veda home gate
    ========================================================= */
-// Shared with the public-home Admin Gate.\nconst RECORD_KEY="VNV_ADMIN_GATE_RECORD_V2";
+// Shared with the public-home Admin Gate.
+const RECORD_KEY="VNV_ADMIN_GATE_RECORD_V2";
+// Intentional second-layer session: separate from the public gateway gate.
 const SESSION_KEY="VNV_MINI_CLOUD_SESSION_V2";
 const ATTEMPT_KEY="VNV_MINI_CLOUD_FAILED_ATTEMPTS_V2";
 const DEFAULT_CODE="0000000000";
@@ -704,7 +707,7 @@ function wrongPasscodeMessage(attempt){
   if(attempt===2) return "Access rejected. My cat walked across the keyboard and almost guessed a better password.";
   if(attempt===3) return "Incorrect. Please consult a magic 8-ball for better password guessing abilities.";
   if(attempt===4) return "Incorrect password. This computer is now judging your life choices.";
-  if(attempt===5) return "Password incorrect. Your IP address has been reported to the Cyber Police of Disappointment.";
+  if(attempt===5) return "Password incorrect. The Cyber Police of Disappointment have declined to comment.";
   return "Access rejected. Incorrect administrator passcode.";
 }
 function renderGate(){document.body.classList.toggle("unlocked",isUnlocked());if(!isUnlocked())setTimeout(()=>gateCode.focus(),40)}
