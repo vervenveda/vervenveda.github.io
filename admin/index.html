@@ -38,21 +38,23 @@ a{color:inherit}
 }
 .gate-card{
   width:min(100%,470px);padding:34px;border:1px solid rgba(180,139,69,.34);border-top:4px solid var(--red);
-  border-radius:14px;background:var(--paper);color:#111;box-shadow:0 35px 100px rgba(0,0,0,.52)
+  border-radius:14px;background:var(--paper);color:#111;box-shadow:0 35px 100px rgba(0,0,0,.52);
+  text-align:center
 }
 .gate-kicker{display:block;color:#8e2424;font:700 10px/1 var(--ceremonial);letter-spacing:.16em;text-transform:uppercase;text-align:center}
 .gate-card h1{margin:10px 0 24px;font-family:var(--display);font-weight:500;font-size:clamp(42px,8vw,58px);letter-spacing:.05em;text-align:center}
 .gate-card p{font-family:var(--sans);color:#4d5751;font-size:13px;line-height:1.6}
-.gate-form{display:grid;gap:14px}
-.gate-form label{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.code-row{display:grid;grid-template-columns:1fr 76px;gap:8px}
-.code-input{min-height:52px;padding:0 14px;border:1px solid #aeb7b2;border-radius:7px;background:#fff;color:#111;font-size:18px;letter-spacing:.16em}
-.show-btn,.gate-submit,.secondary{min-height:46px;border-radius:7px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.gate-form{display:grid;gap:14px;justify-items:stretch}
+.gate-form label{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;text-align:center}
+.code-row{display:grid;grid-template-columns:minmax(0,1fr) 94px;gap:9px;align-items:stretch}
+.code-input{width:100%;min-width:0;min-height:52px;padding:0 14px;border:1px solid #aeb7b2;border-radius:7px;background:#fff;color:#111;font-size:18px;letter-spacing:.16em;text-align:center}
+.show-btn,.gate-submit,.secondary{min-height:46px;border-radius:7px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.055em}
+.show-btn{min-width:94px;padding:0 12px;white-space:nowrap;overflow:hidden;text-overflow:clip}
 .show-btn,.secondary{border:1px solid #aeb7b2;background:#fff;color:#111}
 .gate-submit{border:1px solid #7f1717;background:var(--red);color:#fff}
 .status{min-height:22px;margin:0!important;font-size:12px;font-weight:700}
 .status.error{color:#9d2626}.status.ok{color:#26633d}
-.gate-note{margin-top:18px!important;padding:10px 12px;border-left:2px solid var(--gold);background:#fff;font-size:11px!important}
+.gate-note{margin:18px auto 0!important;padding:10px 12px;border:1px solid #ded4c4;border-top:2px solid var(--gold);background:#fff;font-size:11px!important;text-align:center;max-width:360px}
 body.unlocked #gate{display:none}
 body:not(.unlocked) #adminRoot{display:none}
 
@@ -106,7 +108,7 @@ body:not(.unlocked) #adminRoot{display:none}
 .view-head h1{margin:0;font:500 clamp(34px,4vw,54px)/.98 var(--display)}
 .view-head p{max-width:680px;margin:10px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
 
-.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.metric-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
 .metric{
   min-height:126px;padding:18px;border:1px solid #263a50;border-radius:var(--radius-lg);
   background:linear-gradient(145deg,#101f30,#0e1a29);box-shadow:0 12px 32px rgba(0,0,0,.12)
@@ -270,6 +272,9 @@ td small{color:#6f8293}
   #sidebarCloud{border-right:0;border-bottom:1px solid #24374b;max-height:260px}
 }
 @media(max-width:620px){
+  .gate-card{padding:28px 20px}
+  .code-row{grid-template-columns:1fr}
+  .show-btn{width:100%;min-width:0}
   .view{padding:16px 11px}
   .topbar{padding-inline:11px}.status-pill{display:none}
   .metric-grid{grid-template-columns:1fr 1fr}
@@ -286,6 +291,122 @@ td small{color:#6f8293}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+
+/* Repair 03 — centered premium hierarchy */
+.view-head{
+  justify-content:center!important;
+  align-items:center!important;
+  text-align:center!important;
+}
+.view-head>div{width:100%}
+.view-head p{margin-left:auto!important;margin-right:auto!important}
+.metric{text-align:center}
+.panel-head{
+  align-items:center!important;
+  text-align:center!important;
+  flex-direction:column;
+}
+.panel-head p{margin-left:auto!important;margin-right:auto!important}
+.mail-card{text-align:center}
+.mail-actions{justify-content:center}
+.quick-card{text-align:center}
+.eco-card{text-align:center}
+.eco-top,.eco-actions{justify-content:center}
+.setting-card{text-align:center}
+.setting-card label{text-align:left}
+.bridge-state{justify-content:center}
+
+
+
+/* Light command-center appearance */
+body[data-theme="light"]{
+  --bg:#edf1f4;--bg2:#f7f9fb;--panel:#fff;--panel2:#f7f9fb;--panel3:#eef3f7;
+  --ink:#101820;--ink2:#2f3a44;--muted:#657482;--line:#d4dde5;--line2:#c5d0d9;
+  background:#edf1f4;color:#101820;
+}
+body[data-theme="light"] #adminRoot{background:linear-gradient(180deg,#f7f9fb,#edf1f4)}
+body[data-theme="light"] .sidebar{
+  border-color:#d5dde4;background:linear-gradient(180deg,#f7f9fb,#edf2f6)
+}
+body[data-theme="light"] .brand,
+body[data-theme="light"] .sidebar-status{border-color:#d3dce4}
+body[data-theme="light"] .brand-mark{color:#142232;background:#fff;border-color:#9b7a3f}
+body[data-theme="light"] .brand-sub,
+body[data-theme="light"] .sidebar-status,
+body[data-theme="light"] .nav-count{color:#687988}
+body[data-theme="light"] .nav-button{color:#4b5c6a}
+body[data-theme="light"] .nav-button:hover{background:#e7edf2;color:#142232}
+body[data-theme="light"] .nav-button.active{border-color:#c4d0da;color:#142232;background:#e4ebf1}
+body[data-theme="light"] .topbar{
+  border-color:#d3dce4;background:rgba(248,250,252,.94)
+}
+body[data-theme="light"] .top-btn,
+body[data-theme="light"] .small-btn,
+body[data-theme="light"] .small-link,
+body[data-theme="light"] .action-btn,
+body[data-theme="light"] .launch-btn{
+  color:#243543;background:#fff;border-color:#c6d1db
+}
+body[data-theme="light"] .top-btn:hover,
+body[data-theme="light"] .small-btn:hover,
+body[data-theme="light"] .small-link:hover,
+body[data-theme="light"] .action-btn:hover,
+body[data-theme="light"] .launch-btn:hover{background:#edf2f6}
+body[data-theme="light"] .metric,
+body[data-theme="light"] .panel,
+body[data-theme="light"] .mail-card,
+body[data-theme="light"] .quick-card,
+body[data-theme="light"] .eco-card,
+body[data-theme="light"] .notice-card,
+body[data-theme="light"] .setting-card{
+  color:#14212b;background:linear-gradient(145deg,#fff,#f7f9fb);border-color:#d1dbe3;
+  box-shadow:0 12px 30px rgba(31,51,67,.07)
+}
+body[data-theme="light"] .metric strong,
+body[data-theme="light"] .panel-head h2,
+body[data-theme="light"] .eco-card h3{color:#14212b}
+body[data-theme="light"] .metric-label,
+body[data-theme="light"] .metric small,
+body[data-theme="light"] .panel-head p,
+body[data-theme="light"] .mail-card p,
+body[data-theme="light"] .quick-card small,
+body[data-theme="light"] .eco-card p,
+body[data-theme="light"] .notice-copy p,
+body[data-theme="light"] .feed-copy small{color:#6b7b88}
+body[data-theme="light"] .feed-item,
+body[data-theme="light"] th,
+body[data-theme="light"] td{border-color:#d8e0e7}
+body[data-theme="light"] .table-wrap{border-color:#d1dbe3;background:#fff}
+body[data-theme="light"] th{color:#5f7180;background:#edf2f6}
+body[data-theme="light"] td{color:#263744;background:#fff}
+body[data-theme="light"] td small{color:#70808d}
+body[data-theme="light"] .search,
+body[data-theme="light"] .select,
+body[data-theme="light"] .form-grid input,
+body[data-theme="light"] .form-grid select,
+body[data-theme="light"] .form-grid textarea,
+body[data-theme="light"] .setting-card input{
+  color:#14212b;background:#fff;border-color:#c8d3dc
+}
+body[data-theme="light"] .panel-tag{
+  color:#586b7a;background:#f7f9fb;border-color:#d0dae2
+}
+body[data-theme="light"] .status-pill{
+  color:#24613d;background:#edf8f1;border-color:#bad8c4
+}
+body[data-theme="light"] .cloud-shell{background:#fff;border-color:#d1dbe3}
+body[data-theme="light"] #sidebarCloud{background:#edf2f6;border-color:#d1dbe3}
+body[data-theme="light"] #path{color:#637482;background:#f7f9fb;border-color:#d1dbe3}
+body[data-theme="light"] #editor{color:#1c2b36;background:#fff}
+body[data-theme="light"] #cloudToolbar{background:#edf2f6;border-color:#d1dbe3}
+body[data-theme="light"] .cloud-actions button,
+body[data-theme="light"] #cloudToolbar button{
+  color:#243543;background:#fff;border-color:#c7d2dc
+}
+body[data-theme="light"] #tree li{color:#4d5f6d}
+body[data-theme="light"] #tree li:hover{color:#111}
+
 </style>
 </head>
 <body>
@@ -324,7 +445,9 @@ td small{color:#6f8293}
       <button class="nav-button" type="button" data-view="ecosystem"><span class="nav-icon">◇</span><span class="nav-label">Ecosystem</span><span class="nav-count" id="navGatewayCount">29</span></button>
       <button class="nav-button" type="button" data-view="activity"><span class="nav-icon">↗</span><span class="nav-label">Activity</span><span class="nav-count" id="navActivityCount">0</span></button>
       <button class="nav-button" type="button" data-view="notifications"><span class="nav-icon">●</span><span class="nav-label">Notifications</span><span class="nav-count" id="navUnreadCount">0</span></button>
+      <button class="nav-button" type="button" data-view="accounts"><span class="nav-icon">◎</span><span class="nav-label">Accounts</span><span class="nav-count" id="navAccountCount">0</span></button>
       <button class="nav-button" type="button" data-view="beta"><span class="nav-icon">β</span><span class="nav-label">Beta Queue</span><span class="nav-count" id="navBetaCount">0</span></button>
+      <button class="nav-button" type="button" data-view="github"><span class="nav-icon">GH</span><span class="nav-label">GitHub</span><span class="nav-count" id="navGithubCount">5</span></button>
       <button class="nav-button" type="button" data-view="cloud"><span class="nav-icon">▦</span><span class="nav-label">Mini Cloud</span></button>
       <button class="nav-button" type="button" data-view="settings"><span class="nav-icon">⚙</span><span class="nav-label">Settings</span></button>
     </nav>
@@ -345,6 +468,7 @@ td small{color:#6f8293}
       </div>
       <div class="topbar-actions">
         <span class="status-pill"><span class="status-dot"></span>Session unlocked</span>
+        <button class="top-btn" id="themeToggle" type="button" aria-pressed="false">Light Mode</button>
         <button class="top-btn" id="enableAlerts" type="button">Desktop Alerts</button>
         <button class="top-btn" id="changePasscode" type="button">Passcode</button>
       </div>
@@ -363,8 +487,9 @@ td small{color:#6f8293}
         <div class="metric-grid">
           <article class="metric gold"><span class="metric-label">Primary Gateways</span><strong id="metricGateways">29</strong><small>Current top-level ecosystem destinations</small></article>
           <article class="metric blue"><span class="metric-label">Portal Launches</span><strong id="metricActivity">0</strong><small>Links opened from this admin portal</small></article>
+          <article class="metric green"><span class="metric-label">New Accounts</span><strong id="metricAccounts">0</strong><small>Account events received by the admin feed</small></article>
           <article class="metric green"><span class="metric-label">Notifications</span><strong id="metricUnread">0</strong><small>Unread local or bridged notices</small></article>
-          <article class="metric red"><span class="metric-label">Beta Queue</span><strong id="metricBeta">0</strong><small>Local preview enrollment leads</small></article>
+          <article class="metric red"><span class="metric-label">Beta Queue</span><strong id="metricBeta">0</strong><small>Preview enrollment leads</small></article>
         </div>
 
         <div class="dashboard-grid">
@@ -404,10 +529,27 @@ td small{color:#6f8293}
           </article>
         </div>
 
+        <div class="dashboard-grid">
+          <article class="panel">
+            <div class="panel-head">
+              <div><h2>New Accounts</h2><p>Newest account events received from the future account service/Data Bridge.</p></div>
+              <button class="small-btn" type="button" data-view-jump="accounts">Open Accounts</button>
+            </div>
+            <div class="feed" id="dashboardAccountsFeed"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head">
+              <div><h2>GitHub Intelligence</h2><p>Recent repository activity across the core ecosystem watch list.</p></div>
+              <button class="small-btn" type="button" data-view-jump="github">Open GitHub</button>
+            </div>
+            <div class="feed" id="dashboardGithubFeed"></div>
+          </article>
+        </div>
+
         <div class="quick-grid">
           <button class="quick-card" type="button" data-view-jump="ecosystem"><span>Network</span><strong>Browse Ecosystem</strong><small>Launch and inspect all 29 primary gateways.</small></button>
-          <button class="quick-card" type="button" data-view-jump="activity"><span>Analytics</span><strong>Review Activity</strong><small>See administrator-origin launches and future public metrics.</small></button>
-          <button class="quick-card" type="button" data-view-jump="beta"><span>Enrollment</span><strong>Open Beta Queue</strong><small>Stage prospective beta participants without sensitive records.</small></button>
+          <button class="quick-card" type="button" data-view-jump="accounts"><span>Accounts</span><strong>Review New Accounts</strong><small>See account events from the connected account service.</small></button>
+          <button class="quick-card" type="button" data-view-jump="github"><span>GitHub</span><strong>Repository Intelligence</strong><small>Review recent commits, issues, pull requests, and repository health.</small></button>
         </div>
       </section>
 
@@ -459,6 +601,29 @@ td small{color:#6f8293}
         <div class="notice-list" id="notificationList"></div>
       </section>
 
+
+      <section class="view" id="view-accounts" data-view-panel="accounts">
+        <div class="view-head">
+          <div><p class="eyebrow">Account Formation</p><h1>New Accounts</h1><p>Account events from the future family, student, parent, beta, or ecosystem account service will appear here through the Data Bridge. This static page does not invent account registrations.</p></div>
+          <button class="action-btn" id="exportAccounts" type="button">Export Accounts</button>
+        </div>
+        <div class="metric-grid" style="margin-bottom:14px">
+          <article class="metric green"><span class="metric-label">Total Received</span><strong id="accountTotal">0</strong><small>Account events retained locally</small></article>
+          <article class="metric blue"><span class="metric-label">Last 7 Days</span><strong id="accountWeek">0</strong><small>Recently formed accounts</small></article>
+          <article class="metric gold"><span class="metric-label">Pending</span><strong id="accountPending">0</strong><small>Awaiting review or completion</small></article>
+          <article class="metric red"><span class="metric-label">Bridge Status</span><strong id="accountBridgeState">—</strong><small>Account-service connection</small></article>
+        </div>
+        <article class="panel">
+          <div class="panel-head"><div><h2>Account Formation Feed</h2><p>Newest account records first. Sensitive credentials are never displayed.</p></div><button class="small-btn" id="syncAccounts" type="button">Sync Bridge</button></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Created</th><th>Account</th><th>Type</th><th>Email</th><th>Source</th><th>Status</th></tr></thead>
+              <tbody id="accountRows"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
       <section class="view" id="view-beta" data-view-panel="beta">
         <div class="view-head">
           <div><p class="eyebrow">Future Enrollment Operations</p><h1>Beta Queue</h1><p>A lightweight preview queue for prospective beta participants. It intentionally avoids sensitive student records until a protected enrollment service exists.</p></div>
@@ -482,6 +647,22 @@ td small{color:#6f8293}
             <div class="table-wrap"><table><thead><tr><th>Added</th><th>Name</th><th>Email</th><th>Interest</th><th>Status</th><th></th></tr></thead><tbody id="betaRows"></tbody></table></div>
           </article>
         </div>
+      </section>
+
+
+      <section class="view" id="view-github" data-view-panel="github">
+        <div class="view-head">
+          <div><p class="eyebrow">Repository Operations</p><h1>GitHub Intelligence</h1><p>Public repository health for the core Verve N Veda ecosystem: latest commit, last push, default branch, open issues, and open pull requests. No GitHub token is stored in this page.</p></div>
+          <button class="action-btn" id="refreshGithub" type="button">Refresh GitHub</button>
+        </div>
+        <div class="metric-grid" style="margin-bottom:14px">
+          <article class="metric gold"><span class="metric-label">Watched Repositories</span><strong id="githubWatched">5</strong><small>Core ecosystem repositories</small></article>
+          <article class="metric green"><span class="metric-label">Updated Today</span><strong id="githubUpdatedToday">0</strong><small>Repos pushed today</small></article>
+          <article class="metric blue"><span class="metric-label">Open Issues</span><strong id="githubIssues">0</strong><small>Across watched repositories</small></article>
+          <article class="metric red"><span class="metric-label">Open Pull Requests</span><strong id="githubPulls">0</strong><small>Across watched repositories</small></article>
+        </div>
+        <div class="ecosystem-grid" id="githubGrid"></div>
+        <p class="safety-note" style="max-width:900px;margin:16px auto 0!important;text-align:center">GitHub data here is public repository metadata fetched from GitHub’s public API. Private repository information and account permissions remain governed by GitHub and are not stored in this page.</p>
       </section>
 
       <section class="view" id="view-cloud" data-view-panel="cloud">
@@ -677,9 +858,13 @@ const ECOSYSTEM=[{"title":"333 Network","url":"https://vervenveda.github.io/333.
 const K_ACTIVITY="VNV_ADMIN_ACTIVITY_V1";
 const K_NOTICES="VNV_ADMIN_NOTIFICATIONS_V1";
 const K_BETA="VNV_ADMIN_BETA_V1";
+const K_ACCOUNTS="VNV_ADMIN_ACCOUNTS_V1";
 const K_SETTINGS="VNV_ADMIN_SETTINGS_V1";
+const K_THEME="VNV_ADMIN_THEME_V1";
+const K_GITHUB_CACHE="VNV_ADMIN_GITHUB_CACHE_V1";
+const K_GITHUB_STATE="VNV_ADMIN_GITHUB_STATE_V1";
 
-const VIEW_TITLES={dashboard:"Command Center",ecosystem:"Ecosystem",activity:"Activity",notifications:"Notifications",beta:"Beta Queue",cloud:"Mini Cloud",settings:"Settings"};
+const VIEW_TITLES={dashboard:"Command Center",ecosystem:"Ecosystem",activity:"Activity",notifications:"Notifications",accounts:"New Accounts",beta:"Beta Queue",github:"GitHub Intelligence",cloud:"Mini Cloud",settings:"Settings"};
 
 function readJSON(key,fallback){
   try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}
@@ -694,8 +879,19 @@ function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;",
 let activity=readJSON(K_ACTIVITY,[]);
 let notices=readJSON(K_NOTICES,[]);
 let betaQueue=readJSON(K_BETA,[]);
+let accounts=readJSON(K_ACCOUNTS,[]);
 let settings=readJSON(K_SETTINGS,{bridgeEndpoint:""});
+let githubCache=readJSON(K_GITHUB_CACHE,{at:0,repos:[]});
+let githubState=readJSON(K_GITHUB_STATE,{});
 let remoteMetrics={};
+
+const WATCHED_REPOS=[
+  "vervenveda/vervenveda.github.io",
+  "vervenveda/Khaemenes_Academy.github.io",
+  "vervenveda/333.github.io",
+  "artist1970/noema-ai.github.io",
+  "JenniferPearl2028/jenniferpearl2028.github.io"
+];
 
 function seedNotices(){
   if(notices.length)return;
@@ -707,6 +903,24 @@ function seedNotices(){
 }
 seedNotices();
 
+
+function applyTheme(theme){
+  const t=theme==="light"?"light":"dark";
+  document.body.dataset.theme=t;
+  try{localStorage.setItem(K_THEME,t)}catch{}
+  const btn=document.getElementById("themeToggle");
+  if(btn){
+    btn.textContent=t==="dark"?"Light Mode":"Dark Mode";
+    btn.setAttribute("aria-pressed",String(t==="light"));
+  }
+}
+function initTheme(){
+  let saved="dark";
+  try{saved=localStorage.getItem(K_THEME)||"dark"}catch{}
+  applyTheme(saved);
+}
+document.getElementById("themeToggle").addEventListener("click",()=>applyTheme(document.body.dataset.theme==="light"?"dark":"light"));
+
 function showView(name){
   document.querySelectorAll("[data-view-panel]").forEach(p=>p.classList.toggle("active",p.dataset.viewPanel===name));
   document.querySelectorAll(".nav-button[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===name));
@@ -714,7 +928,9 @@ function showView(name){
   if(name==="ecosystem")renderEcosystem();
   if(name==="activity")renderActivity();
   if(name==="notifications")renderNotifications();
+  if(name==="accounts")renderAccounts();
   if(name==="beta")renderBeta();
+  if(name==="github")renderGithub();
   if(name==="dashboard")renderDashboard();
 }
 document.querySelectorAll(".nav-button[data-view]").forEach(b=>b.addEventListener("click",()=>showView(b.dataset.view)));
@@ -725,9 +941,12 @@ function updateCounts(){
   document.getElementById("navGatewayCount").textContent=String(ECOSYSTEM.length);
   document.getElementById("navActivityCount").textContent=String(activity.length);
   document.getElementById("navUnreadCount").textContent=String(unread);
+  document.getElementById("navAccountCount").textContent=String(accounts.length);
   document.getElementById("navBetaCount").textContent=String(betaQueue.length);
+  document.getElementById("navGithubCount").textContent=String(WATCHED_REPOS.length);
   document.getElementById("metricGateways").textContent=String(ECOSYSTEM.length);
   document.getElementById("metricActivity").textContent=String(remoteMetrics.portalLaunches??activity.length);
+  document.getElementById("metricAccounts").textContent=String(remoteMetrics.newAccounts??accounts.length);
   document.getElementById("metricUnread").textContent=String(unread);
   document.getElementById("metricBeta").textContent=String(betaQueue.length);
 }
@@ -754,6 +973,14 @@ function renderDashboard(){
   feed.innerHTML=list.length?list.map(n=>`<div class="feed-item"><span class="feed-dot ${escapeHtml(n.level||"info")}"></span><div class="feed-copy"><strong>${escapeHtml(n.title)}</strong><small>${escapeHtml(n.body)}</small></div><span class="feed-time">${escapeHtml(formatDateTime(n.at))}</span></div>`).join(""):`<div class="empty">No notices yet.</div>`;
   const tag=document.getElementById("mailBridgeTag");
   tag.textContent=settings.bridgeEndpoint?"Bridge configured":"Bridge waiting";
+
+  const accountFeed=document.getElementById("dashboardAccountsFeed");
+  const recentAccounts=accounts.slice(0,4);
+  accountFeed.innerHTML=recentAccounts.length?recentAccounts.map(a=>`<div class="feed-item"><span class="feed-dot success"></span><div class="feed-copy"><strong>${escapeHtml(a.name||a.email||"New account")}</strong><small>${escapeHtml(a.type||"Account")} · ${escapeHtml(a.status||"New")}</small></div><span class="feed-time">${escapeHtml(formatDateTime(a.createdAt||a.at))}</span></div>`).join(""):`<div class="empty">Awaiting account-formation events from the Data Bridge.</div>`;
+
+  const githubFeed=document.getElementById("dashboardGithubFeed");
+  const repoFeed=(githubCache.repos||[]).slice().sort((a,b)=>new Date(b.pushedAt||0)-new Date(a.pushedAt||0)).slice(0,4);
+  githubFeed.innerHTML=repoFeed.length?repoFeed.map(r=>`<div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>${escapeHtml(r.name)}</strong><small>${escapeHtml(r.commitMessage||"Repository metadata loaded")}</small></div><span class="feed-time">${escapeHtml(formatDateTime(r.commitAt||r.pushedAt))}</span></div>`).join(""):`<div class="empty">GitHub intelligence will load from the public repository API.</div>`;
 }
 
 function renderEcosystem(){
@@ -766,6 +993,78 @@ function renderEcosystem(){
 }
 document.getElementById("ecosystemSearch").addEventListener("input",renderEcosystem);
 document.getElementById("ecosystemFilter").addEventListener("change",renderEcosystem);
+
+
+async function githubFetchJson(url){
+  const res=await fetch(url,{headers:{"Accept":"application/vnd.github+json"},cache:"no-store"});
+  if(!res.ok)throw new Error(`GitHub ${res.status}`);
+  return res.json();
+}
+async function fetchGithubRepo(fullName){
+  const base=`https://api.github.com/repos/${fullName}`;
+  const [meta,commits,pulls,issues]=await Promise.all([
+    githubFetchJson(base),
+    githubFetchJson(`${base}/commits?per_page=1`),
+    githubFetchJson(`${base}/pulls?state=open&per_page=100`),
+    githubFetchJson(`${base}/issues?state=open&per_page=100`)
+  ]);
+  const commit=Array.isArray(commits)?commits[0]:null;
+  const realIssues=Array.isArray(issues)?issues.filter(i=>!i.pull_request):[];
+  return {
+    fullName,
+    name:meta.name||fullName.split("/")[1],
+    htmlUrl:meta.html_url||`https://github.com/${fullName}`,
+    description:meta.description||"",
+    defaultBranch:meta.default_branch||"main",
+    pushedAt:meta.pushed_at||meta.updated_at||"",
+    updatedAt:meta.updated_at||"",
+    issues:realIssues.length,
+    pulls:Array.isArray(pulls)?pulls.length:0,
+    commitSha:commit?.sha||"",
+    commitMessage:commit?.commit?.message?.split("\n")[0]||"",
+    commitAt:commit?.commit?.committer?.date||commit?.commit?.author?.date||""
+  };
+}
+async function refreshGitHub(manual=false){
+  const btn=document.getElementById("refreshGithub");
+  if(btn){btn.disabled=true;btn.textContent="Refreshing…"}
+  try{
+    const repos=[];
+    for(const repo of WATCHED_REPOS){
+      try{repos.push(await fetchGithubRepo(repo))}
+      catch(err){repos.push({fullName:repo,name:repo.split("/")[1],error:String(err.message||err)})}
+    }
+    const previous=githubState||{};
+    repos.forEach(r=>{
+      if(r.commitSha && previous[r.fullName] && previous[r.fullName]!==r.commitSha){
+        addNotice("New GitHub commit",`${r.fullName}: ${r.commitMessage||r.commitSha.slice(0,7)}`,{source:"GitHub",level:"info",remoteId:`gh:${r.fullName}:${r.commitSha}`});
+      }
+      if(r.commitSha)previous[r.fullName]=r.commitSha;
+    });
+    githubState=previous;writeJSON(K_GITHUB_STATE,githubState);
+    githubCache={at:Date.now(),repos};writeJSON(K_GITHUB_CACHE,githubCache);
+    renderGithub();renderDashboard();
+    if(manual)addNotice("GitHub intelligence refreshed","Core repository metadata was refreshed from GitHub.",{source:"GitHub",level:"success"});
+  }catch(err){
+    if(manual)addNotice("GitHub refresh failed",String(err.message||err),{source:"GitHub",level:"error"});
+  }finally{
+    if(btn){btn.disabled=false;btn.textContent="Refresh GitHub"}
+  }
+}
+function renderGithub(){
+  const repos=githubCache.repos||[];
+  const today=new Date();today.setHours(0,0,0,0);
+  const updatedToday=repos.filter(r=>r.pushedAt&&new Date(r.pushedAt)>=today).length;
+  const issueCount=repos.reduce((n,r)=>n+(Number(r.issues)||0),0);
+  const pullCount=repos.reduce((n,r)=>n+(Number(r.pulls)||0),0);
+  document.getElementById("githubWatched").textContent=String(WATCHED_REPOS.length);
+  document.getElementById("githubUpdatedToday").textContent=String(updatedToday);
+  document.getElementById("githubIssues").textContent=String(issueCount);
+  document.getElementById("githubPulls").textContent=String(pullCount);
+  const grid=document.getElementById("githubGrid");
+  grid.innerHTML=repos.length?repos.map(r=>`<article class="eco-card"><div class="eco-top"><span class="eco-icon">GH</span><span class="eco-category">${escapeHtml(r.defaultBranch||"Repository")}</span></div><h3>${escapeHtml(r.name)}</h3><p>${escapeHtml(r.error||r.commitMessage||r.description||"Repository metadata")}</p><div class="feed" style="margin:0 0 12px"><div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>Last push</strong><small>${escapeHtml(formatDateTime(r.pushedAt))}</small></div></div><div class="feed-item"><span class="feed-dot warn"></span><div class="feed-copy"><strong>Issues / PRs</strong><small>${Number(r.issues)||0} issues · ${Number(r.pulls)||0} pull requests</small></div></div></div><div class="eco-actions"><a class="launch-btn" href="${escapeHtml(r.htmlUrl||`https://github.com/${r.fullName}`)}" target="_blank" rel="noopener noreferrer">Open Repository ↗</a></div></article>`).join(""):`<div class="empty">GitHub metadata has not been loaded yet.</div>`;
+}
+document.getElementById("refreshGithub").onclick=()=>refreshGitHub(true);
 
 function lastSevenDays(){
   const out=[];
@@ -793,6 +1092,49 @@ function renderNotifications(){
   list.innerHTML=notices.length?notices.map(n=>`<article class="notice-card ${n.read?"":"unread"}" data-notice-id="${escapeHtml(n.id)}"><span class="notice-icon">${n.source==="Email"?"✉":n.source==="Beta"?"β":"●"}</span><div class="notice-copy"><strong>${escapeHtml(n.title)}</strong><p>${escapeHtml(n.body)}</p></div><div class="notice-meta">${escapeHtml(n.source)}<br>${escapeHtml(formatDateTime(n.at))}</div></article>`).join(""):`<div class="empty">No notifications.</div>`;
   list.querySelectorAll("[data-notice-id]").forEach(el=>el.addEventListener("click",()=>{const n=notices.find(x=>x.id===el.dataset.noticeId);if(n&&!n.read){n.read=true;writeJSON(K_NOTICES,notices);renderNotifications();renderDashboard()}}));
 }
+
+
+function normalizeAccount(a){
+  return {
+    id:a.id||a.accountId||uid(),
+    remoteId:a.remoteId||a.id||"",
+    createdAt:a.createdAt||a.at||new Date().toISOString(),
+    name:a.name||a.displayName||a.household||"",
+    email:a.email||"",
+    type:a.type||a.accountType||"Account",
+    source:a.source||"Account Service",
+    status:a.status||"New"
+  };
+}
+function mergeAccounts(incoming){
+  let added=0;
+  (incoming||[]).forEach(raw=>{
+    const a=normalizeAccount(raw);
+    const key=a.remoteId||a.id||a.email;
+    const exists=accounts.some(x=>(x.remoteId||x.id||x.email)===key);
+    if(!exists){
+      accounts.unshift(a);added++;
+      addNotice("New account formed",`${a.name||a.email||"Account"} · ${a.type}`,{source:"Accounts",level:"success",remoteId:a.remoteId?`account:${a.remoteId}`:""});
+    }
+  });
+  accounts=accounts.slice(0,500);
+  writeJSON(K_ACCOUNTS,accounts);
+  return added;
+}
+function renderAccounts(){
+  updateCounts();
+  const now=Date.now();
+  const week=accounts.filter(a=>now-new Date(a.createdAt||a.at).getTime()<=7*86400000).length;
+  const pending=accounts.filter(a=>/pending|new|review/i.test(a.status||"")).length;
+  document.getElementById("accountTotal").textContent=String(accounts.length);
+  document.getElementById("accountWeek").textContent=String(week);
+  document.getElementById("accountPending").textContent=String(pending);
+  document.getElementById("accountBridgeState").textContent=settings.bridgeEndpoint?"ON":"—";
+  const rows=document.getElementById("accountRows");
+  rows.innerHTML=accounts.length?accounts.map(a=>`<tr><td>${escapeHtml(formatDateTime(a.createdAt||a.at))}</td><td>${escapeHtml(a.name||"—")}</td><td>${escapeHtml(a.type||"Account")}</td><td>${escapeHtml(a.email||"—")}</td><td>${escapeHtml(a.source||"—")}</td><td>${escapeHtml(a.status||"New")}</td></tr>`).join(""):`<tr><td colspan="6">No account events received yet. Configure the Data Bridge when the account service is ready.</td></tr>`;
+}
+document.getElementById("exportAccounts").onclick=()=>downloadJSON("verve-n-veda-accounts.json",accounts);
+document.getElementById("syncAccounts").onclick=()=>syncBridge(true);
 
 function renderBeta(){
   updateCounts();
@@ -861,6 +1203,7 @@ async function syncBridge(showFeedback=false){
     if(Array.isArray(data.notifications)){
       data.notifications.forEach(n=>addNotice(n.title||"Remote notification",n.body||"",{source:n.source||"Bridge",level:n.level||"info",remoteId:n.id||""}));
     }
+    if(Array.isArray(data.accounts))mergeAccounts(data.accounts);
     if(Array.isArray(data.beta)){
       data.beta.forEach(lead=>{if(lead?.id&&!betaQueue.some(x=>x.remoteId===lead.id)){betaQueue.unshift({id:uid(),remoteId:lead.id,at:lead.at||new Date().toISOString(),name:lead.name||"Remote lead",email:lead.email||"",program:lead.program||"General Verve N Veda Beta",status:lead.status||"New",note:lead.note||""})}});
       betaQueue=betaQueue.slice(0,250);writeJSON(K_BETA,betaQueue);
@@ -870,7 +1213,7 @@ async function syncBridge(showFeedback=false){
     if(state)state.querySelector("span:last-child").textContent="Connected successfully";
     document.getElementById("telemetryTag").textContent="Bridge connected";
     document.getElementById("mailBridgeTag").textContent="Bridge connected";
-    renderDashboard();renderBeta();
+    renderDashboard();renderAccounts();renderBeta();
     if(showFeedback)addNotice("Data Bridge synchronized","Remote admin feed synchronized successfully.",{source:"Bridge",level:"success"});
     return true;
   }catch(err){
@@ -962,6 +1305,7 @@ function countCloudFiles(node){let n=0;(node.children||[]).forEach(c=>{if(c.type
 /* =========================================================
    INITIALIZATION
    ========================================================= */
+initTheme();
 renderGate();
 renderTree();
 updatePathBar([]);
@@ -969,9 +1313,16 @@ renderSettings();
 renderEcosystem();
 renderActivity();
 renderNotifications();
+renderAccounts();
 renderBeta();
+renderGithub();
 renderDashboard();
 showView("dashboard");
+
+const githubCacheAge=Date.now()-(Number(githubCache.at)||0);
+if(!githubCache.repos?.length || githubCacheAge>10*60*1000){
+  window.setTimeout(()=>refreshGitHub(false),900);
+}
 
 if(settings.bridgeEndpoint){
   window.setTimeout(()=>syncBridge(false),1200);
