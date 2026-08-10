@@ -1998,7 +1998,14 @@
 
       const networkTicker = $("networkTicker");
       const tickerControl = $("tickerControl");
-      const storedTickerState = localStorage.getItem("VNV_TICKER_PAUSED") === "true";
+      let storedTickerState = false;
+
+     let storedTickerState = false;
+
+try{
+  storedTickerState =
+    localStorage.getItem("VNV_TICKER_PAUSED") === "true";
+}catch{}
 
       function setTickerPaused(paused){
         networkTicker.dataset.paused = String(paused);
