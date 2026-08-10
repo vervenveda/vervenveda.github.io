@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "name": "Verve N Veda Mentor Matrix Validator",
+  "registryBase": "../registry/",
+  "githubApiBase": "https://api.github.com",
+  "publicHost": "vervenveda.com",
+  "urlConcurrency": 6,
+  "urlTimeoutMs": 9000,
+  "deepScan": {
+    "candidatePatterns": [
+      "(^|/)(apps|games|tools|Protools)/.*\\.html$",
+      "(^|/)(apps|games|tools|Protools)/[^/]+/index\\.html$",
+      "^[^/]+_index\\.html$",
+      "^academy/[^/]+/index\\.html$"
+    ],
+    "excludePatterns": [
+      "(^|/)(assessments?|records?|teacher-tools?|lessons?|weeks?|units?)/",
+      "(^|/)node_modules/",
+      "(^|/)vendor/",
+      "(^|/)dist/",
+      "(^|/)docs?/"
+    ],
+    "maxRepositories": 80
+  },
+  "severityPolicy": {
+    "brokenRecommendableUrl": "error",
+    "missingManifest": "error",
+    "duplicateSourceAuthority": "error",
+    "duplicateResourceId": "error",
+    "invalidObjectiveReference": "error",
+    "staleRegistryManifest": "warning",
+    "orphanCandidateFullInventory": "warning",
+    "orphanCandidateProvisionalInventory": "info",
+    "unmanifestedClassifiedRepository": "warning",
+    "unmanifestedUnclassifiedRepository": "info"
+  }
+}

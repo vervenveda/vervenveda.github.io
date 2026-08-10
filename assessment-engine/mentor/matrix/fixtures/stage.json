@@ -1,0 +1,11 @@
+{
+  "stages": {
+    "elementary": {
+      "subjects": {
+        "mathematics": [
+          "MATH.TEST"
+        ]
+      }
+    }
+  }
+}

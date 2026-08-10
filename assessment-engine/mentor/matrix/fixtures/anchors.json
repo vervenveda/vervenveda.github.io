@@ -1,0 +1,10 @@
+{
+  "anchors": [
+    {
+      "pattern": "test",
+      "objectives": [
+        "MATH.TEST"
+      ]
+    }
+  ]
+}
