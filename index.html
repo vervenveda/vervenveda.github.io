@@ -3261,6 +3261,7 @@
       let featurePaused = false;
       let featureHoverPaused = false;
       let currentFeature = null;
+      let viewerCurrentItem = null;
       let viewerLastFocus = null;
       const FEATURE_INTERVAL = 4000;
 
@@ -3347,6 +3348,7 @@
 
       function openFeatureViewer(item){
         if(!item) return;
+        viewerCurrentItem=item;
         viewerLastFocus=document.activeElement;
         const overlay=$("ecosystemViewerOverlay");
         $("viewerBreadcrumbs").innerHTML=viewerBreadcrumbHtml(item);
@@ -3382,22 +3384,36 @@
         $("viewerFrame").src="about:blank";
         $("viewerFrame").hidden=false;
         $("viewerEmbedBlocked").hidden=true;
+        viewerCurrentItem=null;
         if(restoreFocus && viewerLastFocus instanceof HTMLElement) viewerLastFocus.focus();
         startFeatureTimer();
       }
 
       function printCurrentFeature(){
-        if(!currentFeature) return;
+        const item=viewerCurrentItem || currentFeature;
+        if(!item) return;
+
         const frame=$("viewerFrame");
-        try{
-          frame.contentWindow.focus();
-          frame.contentWindow.print();
-          return;
-        }catch{}
+        const canPrintFrame=Boolean(
+          frame &&
+          !frame.hidden &&
+          frame.src &&
+          frame.src !== "about:blank" &&
+          !isKnownNonEmbeddable(item.url)
+        );
+
+        if(canPrintFrame){
+          try{
+            frame.contentWindow.focus();
+            frame.contentWindow.print();
+            return;
+          }catch{}
+        }
+
         const printWindow=window.open("","vnvFeaturePrint","width=820,height=720");
         if(!printWindow) return;
-        const media=FEATURE_MEDIA[currentFeature.url] || null;
-        printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(currentFeature.title)}</title><style>body{font-family:Georgia,serif;color:#18201c;margin:48px;line-height:1.6}small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#806a42}h1{font-weight:444;font-size:33px}img{max-width:100%;max-height:420px;object-fit:contain;border:1px solid #ddd}a{color:#21493d;word-break:break-all}.crumb{font:11px Arial,sans-serif;color:#756d60;margin-bottom:24px}</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(currentFeature.category)} › ${escapeHtml(currentFeature.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(currentFeature.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(currentFeature.desc)}</p><p><a href="${escapeAttribute(currentFeature.url)}">${escapeHtml(currentFeature.url)}</a></p><script>window.onload=()=>window.print()<\/script></body></html>`);
+        const media=FEATURE_MEDIA[item.url] || null;
+        printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(item.title)}</title><style>body{font-family:Georgia,serif;color:#18201c;margin:48px;line-height:1.6}small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#806a42}h1{font-weight:444;font-size:33px}img{max-width:100%;max-height:420px;object-fit:contain;border:1px solid #ddd}a{color:#21493d;word-break:break-all}.crumb{font:11px Arial,sans-serif;color:#756d60;margin-bottom:24px}</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script></body></html>`);
         printWindow.document.close();
       }
 
