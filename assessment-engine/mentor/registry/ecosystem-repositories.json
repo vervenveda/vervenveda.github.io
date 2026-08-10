@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-10T02:52:17.657Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-10T02:51:13Z",
+  "generatedAt": "2026-08-10T03:25:08.331Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-10T02:52:29Z",
   "accounts": [
     "vervenveda",
     "JenniferPearl2028",
@@ -787,8 +787,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-18T22:34:19Z",
-      "updatedAt": "2026-08-10T02:51:25Z",
-      "pushedAt": "2026-08-10T02:51:13Z",
+      "updatedAt": "2026-08-10T02:52:39Z",
+      "pushedAt": "2026-08-10T02:52:29Z",
       "discoveryStatus": "discovered",
       "classification": "unclassified",
       "confidence": 0.25,
@@ -974,27 +974,6 @@
       "reason": "Campaign account is segregated from ordinary educational recommendations."
     },
     {
-      "id": "github:artist1970/8th-grade-math-portal",
-      "owner": "artist1970",
-      "name": "8th-Grade-Math-Portal",
-      "fullName": "artist1970/8th-Grade-Math-Portal",
-      "description": "",
-      "htmlUrl": "https://github.com/artist1970/8th-Grade-Math-Portal",
-      "homepage": "",
-      "defaultBranch": "main",
-      "archived": false,
-      "disabled": false,
-      "hasPages": false,
-      "createdAt": "2025-10-27T13:18:52Z",
-      "updatedAt": "2025-10-27T16:12:56Z",
-      "pushedAt": "2025-10-27T16:12:53Z",
-      "discoveryStatus": "discovered",
-      "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
-    },
-    {
       "id": "github:artist1970/arshif.github.io",
       "owner": "artist1970",
       "name": "Arshif.github.io",
@@ -1045,27 +1024,6 @@
         "inventoryAuthority": "",
         "resourceCount": 2
       }
-    },
-    {
-      "id": "github:artist1970/bazaar-art-live.github.io",
-      "owner": "artist1970",
-      "name": "Bazaar-Art-Live.github.io",
-      "fullName": "artist1970/Bazaar-Art-Live.github.io",
-      "description": "",
-      "htmlUrl": "https://github.com/artist1970/Bazaar-Art-Live.github.io",
-      "homepage": "",
-      "defaultBranch": "main",
-      "archived": false,
-      "disabled": false,
-      "hasPages": true,
-      "createdAt": "2026-01-27T21:11:21Z",
-      "updatedAt": "2026-07-25T02:23:19Z",
-      "pushedAt": "2026-01-28T01:29:43Z",
-      "discoveryStatus": "discovered",
-      "classification": "creative-cultural",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
     },
     {
       "id": "github:artist1970/click-logger",
@@ -1152,27 +1110,6 @@
       "reason": "Repository acknowledged but not yet classified for recommendation."
     },
     {
-      "id": "github:artist1970/khaemenesacademy.github.io",
-      "owner": "artist1970",
-      "name": "KhaemenesAcademy.github.io",
-      "fullName": "artist1970/KhaemenesAcademy.github.io",
-      "description": "Khemaenes Academy is a creative learning platform dedicated to art, design, and education. Built to inspire curiosity and craftsmanship, it offers interactive lessons, games, and resources that empower students, teachers, and artists to learn, create, and grow together.",
-      "htmlUrl": "https://github.com/artist1970/KhaemenesAcademy.github.io",
-      "homepage": "",
-      "defaultBranch": "main",
-      "archived": false,
-      "disabled": false,
-      "hasPages": false,
-      "createdAt": "2025-10-14T09:58:23Z",
-      "updatedAt": "2026-08-06T20:29:54Z",
-      "pushedAt": "2025-10-17T15:35:35Z",
-      "discoveryStatus": "discovered",
-      "classification": "educational",
-      "confidence": 0.72,
-      "recommendable": false,
-      "reason": "Heuristic repository classification; a valid Mentor manifest is required for resource recommendation."
-    },
-    {
       "id": "github:artist1970/moir_ai.github.io",
       "owner": "artist1970",
       "name": "Moir_ai.github.io",
@@ -1223,27 +1160,6 @@
         "inventoryAuthority": "",
         "resourceCount": 1
       }
-    },
-    {
-      "id": "github:artist1970/ohmic_foundry_github.io",
-      "owner": "artist1970",
-      "name": "Ohmic_Foundry_github.io",
-      "fullName": "artist1970/Ohmic_Foundry_github.io",
-      "description": "",
-      "htmlUrl": "https://github.com/artist1970/Ohmic_Foundry_github.io",
-      "homepage": "",
-      "defaultBranch": "main",
-      "archived": false,
-      "disabled": false,
-      "hasPages": false,
-      "createdAt": "2026-07-22T23:39:05Z",
-      "updatedAt": "2026-07-22T23:53:06Z",
-      "pushedAt": "2026-07-22T23:53:02Z",
-      "discoveryStatus": "discovered",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Repository acknowledged but not yet classified for recommendation."
     },
     {
       "id": "github:artist1970/pearlsgamutfounderspage",
