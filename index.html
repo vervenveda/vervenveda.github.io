@@ -1405,6 +1405,63 @@
       height:100%;
       text-align:center;
     }
+    .value-link{
+      position:relative;
+      display:grid;
+      place-items:center;
+      align-content:center;
+      gap:11px;
+      color:#fff;
+      text-decoration:none;
+      cursor:pointer;
+      transition:
+        transform .17s ease,
+        border-color .17s ease,
+        background .17s ease,
+        box-shadow .17s ease;
+    }
+    .value-link::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      pointer-events:none;
+      border:1px solid rgba(231,215,182,0);
+      border-radius:4px;
+      transition:border-color .17s ease;
+    }
+    .value-link strong{
+      position:relative;
+      z-index:1;
+    }
+    .value-link small{
+      position:relative;
+      z-index:1;
+      display:block;
+      color:rgba(244,240,231,.68);
+      font-size:clamp(9px,.68vw,11px);
+      font-weight:500;
+      letter-spacing:.065em;
+      line-height:1.25;
+      text-transform:uppercase;
+    }
+    .value-link:hover,
+    .value-link:focus-visible{
+      transform:translateY(-3px);
+      border-color:rgba(231,215,182,.42);
+      background:rgba(255,255,255,.075);
+      box-shadow:0 14px 30px rgba(0,0,0,.14);
+    }
+    .value-link:hover::after,
+    .value-link:focus-visible::after{
+      border-color:rgba(231,215,182,.18);
+    }
+    .value-link:hover small,
+    .value-link:focus-visible small{
+      color:#f4ead1;
+    }
+    .value-link:active{
+      transform:translateY(-1px) scale(.995);
+    }
 
     /* Final welcome: title first, restrained statement second. */
     .final .section-inner{max-width:900px}
@@ -2373,7 +2430,8 @@
     .viewer-frame-note,
     .viewer-blocked-kicker,
     .menu-group,
-    .menu-link i{
+    .menu-link i,
+    .value-link small{
       font-size:var(--fluid-utility)!important;
     }
 
@@ -3149,10 +3207,25 @@
         </div>
 
         <div class="statement-values">
-          <div class="value"><strong>11 · Clear Doorways</strong></div>
-          <div class="value"><strong>22 · Thoughtful Structure</strong></div>
-          <div class="value"><strong>33 · Shared Purpose</strong></div>
-          <div class="value"><strong>∞ · Room to Grow</strong></div>
+          <a class="value value-link" href="#directory" aria-label="Explore the Verve N Veda directory">
+            <strong>11 · Clear Doorways</strong>
+            <small>Explore the ecosystem ↓</small>
+          </a>
+
+          <a class="value value-link" href="#pillars" aria-label="Explore the Four Great Halls">
+            <strong>22 · Thoughtful Structure</strong>
+            <small>Explore the Four Great Halls ↑</small>
+          </a>
+
+          <a class="value value-link" href="https://vervenveda.github.io/333.github.io/" aria-label="Open the 333 Network">
+            <strong>33 · Shared Purpose</strong>
+            <small>Open the 333 Network ↗</small>
+          </a>
+
+          <a class="value value-link" href="#support" aria-label="Support continued growth of Verve N Veda">
+            <strong>∞ · Room to Grow</strong>
+            <small>Support continued growth ↓</small>
+          </a>
         </div>
       </div>
     </section>
