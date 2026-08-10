@@ -3189,8 +3189,7 @@
            event.key === "/" &&
            !/^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement?.tagName || "")){
           event.preventDefault();
-          $("directory").scrollIntoView({behavior:"smooth",block:"start"});
-          setTimeout(() => $("search").focus(),450);
+          openMenu();
           return;
         }
 
