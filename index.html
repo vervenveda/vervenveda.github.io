@@ -1762,11 +1762,12 @@
         status.className = "admin-gate-status";
         const ok = await verify(code);
         if(!ok){
-          status.textContent = "That gate code was not accepted.";
-          status.className = "admin-gate-status error";
-          codeInput.select();
-          return;
-        }
+  status.textContent =
+    "Notice: This computer is now judging your life choices.";
+  status.className = "admin-gate-status error";
+  codeInput.select();
+  return;
+}
         // First successful use initializes a hashed copy of the default code locally.
         if(!readRecord()) await saveNewCode(code);
         setSessionUnlocked(true);
