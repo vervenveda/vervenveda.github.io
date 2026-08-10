@@ -407,6 +407,60 @@ body[data-theme="light"] #cloudToolbar button{
 body[data-theme="light"] #tree li{color:#4d5f6d}
 body[data-theme="light"] #tree li:hover{color:#111}
 
+
+
+.github-family-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.github-family-card{
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:17px;
+  border:1px solid #293f55;
+  border-radius:10px;
+  background:linear-gradient(145deg,#101f30,#0c1825);
+  text-align:center;
+}
+.github-family-avatar{
+  width:54px;height:54px;
+  display:grid;place-items:center;
+  overflow:hidden;
+  border:1px solid #435c75;
+  border-radius:50%;
+  color:#ead7ad;
+  background:#08131e;
+  font:500 13px/1 var(--ceremonial);
+}
+.github-family-avatar img{width:100%;height:100%;object-fit:cover}
+.github-family-card h3{margin:12px 0 0;font:500 20px/1.05 var(--display)}
+.github-family-card p{margin:7px 0 12px;color:#7d90a1;font-size:9.5px;line-height:1.5}
+.github-family-meta{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:auto
+}
+.github-family-meta span{
+  padding:4px 7px;border:1px solid #30485f;border-radius:999px;color:#9cb0c0;background:#0b1724;
+  font-size:8px;font-weight:650;letter-spacing:.04em
+}
+.github-family-actions{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:11px}
+body[data-theme="light"] .github-family-card{
+  color:#14212b;background:linear-gradient(145deg,#fff,#f7f9fb);border-color:#d1dbe3
+}
+body[data-theme="light"] .github-family-card p{color:#697a88}
+body[data-theme="light"] .github-family-avatar{color:#614d28;background:#fff;border-color:#c9d4dd}
+body[data-theme="light"] .github-family-meta span{
+  color:#5d6f7d;background:#f5f8fa;border-color:#d2dce4
+}
+@media(max-width:1100px){
+  .github-family-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .github-family-grid{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -447,7 +501,7 @@ body[data-theme="light"] #tree li:hover{color:#111}
       <button class="nav-button" type="button" data-view="notifications"><span class="nav-icon">●</span><span class="nav-label">Notifications</span><span class="nav-count" id="navUnreadCount">0</span></button>
       <button class="nav-button" type="button" data-view="accounts"><span class="nav-icon">◎</span><span class="nav-label">Accounts</span><span class="nav-count" id="navAccountCount">0</span></button>
       <button class="nav-button" type="button" data-view="beta"><span class="nav-icon">β</span><span class="nav-label">Beta Queue</span><span class="nav-count" id="navBetaCount">0</span></button>
-      <button class="nav-button" type="button" data-view="github"><span class="nav-icon">GH</span><span class="nav-label">GitHub</span><span class="nav-count" id="navGithubCount">5</span></button>
+      <button class="nav-button" type="button" data-view="github"><span class="nav-icon">GH</span><span class="nav-label">GitHub</span><span class="nav-count" id="navGithubCount">4</span></button>
       <button class="nav-button" type="button" data-view="cloud"><span class="nav-icon">▦</span><span class="nav-label">Mini Cloud</span></button>
       <button class="nav-button" type="button" data-view="settings"><span class="nav-icon">⚙</span><span class="nav-label">Settings</span></button>
     </nav>
@@ -539,7 +593,7 @@ body[data-theme="light"] #tree li:hover{color:#111}
           </article>
           <article class="panel">
             <div class="panel-head">
-              <div><h2>GitHub Intelligence</h2><p>Recent repository activity across the core ecosystem watch list.</p></div>
+              <div><h2>GitHub Intelligence</h2><p>Recent activity across all four connected GitHub account families.</p></div>
               <button class="small-btn" type="button" data-view-jump="github">Open GitHub</button>
             </div>
             <div class="feed" id="dashboardGithubFeed"></div>
@@ -652,17 +706,73 @@ body[data-theme="light"] #tree li:hover{color:#111}
 
       <section class="view" id="view-github" data-view-panel="github">
         <div class="view-head">
-          <div><p class="eyebrow">Repository Operations</p><h1>GitHub Intelligence</h1><p>Public repository health for the core Verve N Veda ecosystem: latest commit, last push, default branch, open issues, and open pull requests. No GitHub token is stored in this page.</p></div>
+          <div>
+            <p class="eyebrow">Repository Operations</p>
+            <h1>GitHub Intelligence</h1>
+            <p>Four connected GitHub families—Verve N Veda, JenniferPearl2028, artist1970, and KhaemenesAcademy—with public repository discovery plus deeper monitoring of the core root repositories.</p>
+          </div>
           <button class="action-btn" id="refreshGithub" type="button">Refresh GitHub</button>
         </div>
+
         <div class="metric-grid" style="margin-bottom:14px">
-          <article class="metric gold"><span class="metric-label">Watched Repositories</span><strong id="githubWatched">5</strong><small>Core ecosystem repositories</small></article>
-          <article class="metric green"><span class="metric-label">Updated Today</span><strong id="githubUpdatedToday">0</strong><small>Repos pushed today</small></article>
-          <article class="metric blue"><span class="metric-label">Open Issues</span><strong id="githubIssues">0</strong><small>Across watched repositories</small></article>
-          <article class="metric red"><span class="metric-label">Open Pull Requests</span><strong id="githubPulls">0</strong><small>Across watched repositories</small></article>
+          <article class="metric gold"><span class="metric-label">GitHub Families</span><strong id="githubAccounts">4</strong><small>Connected account roots</small></article>
+          <article class="metric blue"><span class="metric-label">Public Repositories</span><strong id="githubPublicRepos">0</strong><small>Currently discoverable across the four accounts</small></article>
+          <article class="metric green"><span class="metric-label">Updated Today</span><strong id="githubUpdatedToday">0</strong><small>Public repositories pushed today</small></article>
+          <article class="metric red"><span class="metric-label">Core Watch</span><strong id="githubWatched">6</strong><small>Detailed root and infrastructure repositories</small></article>
+          <article class="metric blue"><span class="metric-label">API Remaining</span><strong id="githubRateRemaining">—</strong><small>Unauthenticated GitHub API requests remaining</small></article>
         </div>
-        <div class="ecosystem-grid" id="githubGrid"></div>
-        <p class="safety-note" style="max-width:900px;margin:16px auto 0!important;text-align:center">GitHub data here is public repository metadata fetched from GitHub’s public API. Private repository information and account permissions remain governed by GitHub and are not stored in this page.</p>
+
+        <article class="panel" style="margin-bottom:14px">
+          <div class="panel-head">
+            <div>
+              <h2>Account Families</h2>
+              <p>Each family discovers only repositories GitHub exposes publicly. Private repository names are intentionally not embedded in this Pages file.</p>
+            </div>
+            <span class="panel-tag" id="githubFamilyTag">Public discovery</span>
+          </div>
+          <div class="github-family-grid" id="githubFamilyGrid"></div>
+        </article>
+
+        <article class="panel" style="margin-bottom:14px">
+          <div class="panel-head">
+            <div>
+              <h2>Public Repository Directory</h2>
+              <p>Search and filter the public repositories currently visible beneath the connected account roots.</p>
+            </div>
+            <span class="panel-tag" id="githubRepoCountTag">0 repositories</span>
+          </div>
+          <div class="toolbar-row">
+            <input class="search" id="githubRepoSearch" type="search" placeholder="Search repository, account, description…">
+            <select class="select" id="githubOwnerFilter">
+              <option value="">All Accounts</option>
+              <option value="vervenveda">Verve N Veda</option>
+              <option value="JenniferPearl2028">JenniferPearl2028</option>
+              <option value="artist1970">artist1970</option>
+              <option value="KhaemenesAcademy">KhaemenesAcademy</option>
+            </select>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Account</th><th>Repository</th><th>Last Push</th><th>Branch</th><th>Open Items</th><th></th></tr></thead>
+              <tbody id="githubRepoRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Core Root Watch</h2>
+              <p>Deeper commit, issue, and pull-request monitoring for the primary infrastructure and root Pages repositories.</p>
+            </div>
+            <span class="panel-tag">Detailed watch</span>
+          </div>
+          <div class="ecosystem-grid" id="githubGrid"></div>
+        </article>
+
+        <p class="safety-note" style="max-width:900px;margin:16px auto 0!important;text-align:center">
+          This page uses GitHub’s public API without embedding a GitHub token. Public discovery is cached locally to reduce API use. Private repository information is not written into this static admin source.
+        </p>
       </section>
 
       <section class="view" id="view-cloud" data-view-panel="cloud">
@@ -862,6 +972,7 @@ const K_ACCOUNTS="VNV_ADMIN_ACCOUNTS_V1";
 const K_SETTINGS="VNV_ADMIN_SETTINGS_V1";
 const K_THEME="VNV_ADMIN_THEME_V1";
 const K_GITHUB_CACHE="VNV_ADMIN_GITHUB_CACHE_V1";
+const K_GITHUB_FAMILY_CACHE="VNV_ADMIN_GITHUB_FAMILY_CACHE_V1";
 const K_GITHUB_STATE="VNV_ADMIN_GITHUB_STATE_V1";
 
 const VIEW_TITLES={dashboard:"Command Center",ecosystem:"Ecosystem",activity:"Activity",notifications:"Notifications",accounts:"New Accounts",beta:"Beta Queue",github:"GitHub Intelligence",cloud:"Mini Cloud",settings:"Settings"};
@@ -882,15 +993,48 @@ let betaQueue=readJSON(K_BETA,[]);
 let accounts=readJSON(K_ACCOUNTS,[]);
 let settings=readJSON(K_SETTINGS,{bridgeEndpoint:""});
 let githubCache=readJSON(K_GITHUB_CACHE,{at:0,repos:[]});
+let githubFamilyCache=readJSON(K_GITHUB_FAMILY_CACHE,{at:0,families:[],repos:[],rateRemaining:null});
 let githubState=readJSON(K_GITHUB_STATE,{});
 let remoteMetrics={};
+
+const GITHUB_FAMILIES=[
+  {
+    owner:"vervenveda",
+    label:"Verve N Veda",
+    accountUrl:"https://github.com/vervenveda",
+    rootRepo:"vervenveda/vervenveda.github.io",
+    description:"Primary public ecosystem and infrastructure repositories."
+  },
+  {
+    owner:"JenniferPearl2028",
+    label:"JenniferPearl2028",
+    accountUrl:"https://github.com/JenniferPearl2028",
+    rootRepo:"JenniferPearl2028/jenniferpearl2028.github.io",
+    description:"Presidential campaign Pages, policies, press, events, documents, and related public repositories."
+  },
+  {
+    owner:"artist1970",
+    label:"artist1970",
+    accountUrl:"https://github.com/artist1970",
+    rootRepo:"artist1970/noema-ai.github.io",
+    description:"Legacy, intelligence, archive, creative, experimental, and supporting public repositories."
+  },
+  {
+    owner:"KhaemenesAcademy",
+    label:"KhaemenesAcademy",
+    accountUrl:"https://github.com/KhaemenesAcademy",
+    rootRepo:"KhaemenesAcademy/KhaemenesAcademy.github.io",
+    description:"Independent Khaemenes Academy account root and future Academy repository family."
+  }
+];
 
 const WATCHED_REPOS=[
   "vervenveda/vervenveda.github.io",
   "vervenveda/Khaemenes_Academy.github.io",
   "vervenveda/333.github.io",
   "artist1970/noema-ai.github.io",
-  "JenniferPearl2028/jenniferpearl2028.github.io"
+  "JenniferPearl2028/jenniferpearl2028.github.io",
+  "KhaemenesAcademy/KhaemenesAcademy.github.io"
 ];
 
 function seedNotices(){
@@ -943,7 +1087,7 @@ function updateCounts(){
   document.getElementById("navUnreadCount").textContent=String(unread);
   document.getElementById("navAccountCount").textContent=String(accounts.length);
   document.getElementById("navBetaCount").textContent=String(betaQueue.length);
-  document.getElementById("navGithubCount").textContent=String(WATCHED_REPOS.length);
+  document.getElementById("navGithubCount").textContent=String(GITHUB_FAMILIES.length);
   document.getElementById("metricGateways").textContent=String(ECOSYSTEM.length);
   document.getElementById("metricActivity").textContent=String(remoteMetrics.portalLaunches??activity.length);
   document.getElementById("metricAccounts").textContent=String(remoteMetrics.newAccounts??accounts.length);
@@ -979,8 +1123,24 @@ function renderDashboard(){
   accountFeed.innerHTML=recentAccounts.length?recentAccounts.map(a=>`<div class="feed-item"><span class="feed-dot success"></span><div class="feed-copy"><strong>${escapeHtml(a.name||a.email||"New account")}</strong><small>${escapeHtml(a.type||"Account")} · ${escapeHtml(a.status||"New")}</small></div><span class="feed-time">${escapeHtml(formatDateTime(a.createdAt||a.at))}</span></div>`).join(""):`<div class="empty">Awaiting account-formation events from the Data Bridge.</div>`;
 
   const githubFeed=document.getElementById("dashboardGithubFeed");
-  const repoFeed=(githubCache.repos||[]).slice().sort((a,b)=>new Date(b.pushedAt||0)-new Date(a.pushedAt||0)).slice(0,4);
-  githubFeed.innerHTML=repoFeed.length?repoFeed.map(r=>`<div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>${escapeHtml(r.name)}</strong><small>${escapeHtml(r.commitMessage||"Repository metadata loaded")}</small></div><span class="feed-time">${escapeHtml(formatDateTime(r.commitAt||r.pushedAt))}</span></div>`).join(""):`<div class="empty">GitHub intelligence will load from the public repository API.</div>`;
+  const detailedFeed=(githubCache.repos||[]).map(r=>({
+    name:r.name,
+    owner:r.owner||r.fullName?.split("/")[0]||"",
+    message:r.commitMessage||"Core repository metadata loaded",
+    at:r.commitAt||r.pushedAt
+  }));
+  const familyFeed=(githubFamilyCache.repos||[]).slice(0,8).map(r=>({
+    name:r.name,
+    owner:r.owner,
+    message:`Public repository push · ${r.owner}`,
+    at:r.pushedAt
+  }));
+  const repoFeed=[...detailedFeed,...familyFeed]
+    .filter(r=>r.at)
+    .sort((a,b)=>new Date(b.at||0)-new Date(a.at||0))
+    .filter((r,i,arr)=>arr.findIndex(x=>`${x.owner}/${x.name}`===`${r.owner}/${r.name}`)===i)
+    .slice(0,4);
+  githubFeed.innerHTML=repoFeed.length?repoFeed.map(r=>`<div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>${escapeHtml(r.owner)} / ${escapeHtml(r.name)}</strong><small>${escapeHtml(r.message)}</small></div><span class="feed-time">${escapeHtml(formatDateTime(r.at))}</span></div>`).join(""):`<div class="empty">GitHub intelligence will load from the public repository API.</div>`;
 }
 
 function renderEcosystem(){
@@ -997,9 +1157,75 @@ document.getElementById("ecosystemFilter").addEventListener("change",renderEcosy
 
 async function githubFetchJson(url){
   const res=await fetch(url,{headers:{"Accept":"application/vnd.github+json"},cache:"no-store"});
-  if(!res.ok)throw new Error(`GitHub ${res.status}`);
+  const remaining=res.headers.get("X-RateLimit-Remaining");
+  if(remaining!==null){
+    githubFamilyCache.rateRemaining=Number(remaining);
+  }
+  if(!res.ok){
+    const reset=res.headers.get("X-RateLimit-Reset");
+    const extra=res.status===403&&reset?` · resets ${new Date(Number(reset)*1000).toLocaleTimeString()}`:"";
+    throw new Error(`GitHub ${res.status}${extra}`);
+  }
   return res.json();
 }
+
+async function fetchGithubFamily(family){
+  const url=`https://api.github.com/users/${encodeURIComponent(family.owner)}/repos?per_page=100&sort=pushed&direction=desc&type=owner`;
+  const repos=await githubFetchJson(url);
+  const publicRepos=Array.isArray(repos)?repos.filter(r=>!r.private):[];
+  return {
+    owner:family.owner,
+    label:family.label,
+    accountUrl:family.accountUrl,
+    rootRepo:family.rootRepo,
+    description:family.description,
+    avatarUrl:publicRepos[0]?.owner?.avatar_url||"",
+    repoCount:publicRepos.length,
+    latestPush:publicRepos[0]?.pushed_at||"",
+    repos:publicRepos.map(r=>({
+      owner:family.owner,
+      label:family.label,
+      name:r.name||"",
+      fullName:r.full_name||`${family.owner}/${r.name||""}`,
+      htmlUrl:r.html_url||`https://github.com/${family.owner}/${r.name||""}`,
+      description:r.description||"",
+      defaultBranch:r.default_branch||"main",
+      pushedAt:r.pushed_at||r.updated_at||"",
+      updatedAt:r.updated_at||"",
+      openItems:Number(r.open_issues_count)||0,
+      archived:Boolean(r.archived),
+      fork:Boolean(r.fork)
+    }))
+  };
+}
+
+async function refreshGithubFamilies(){
+  const families=[];
+  const repos=[];
+  for(const family of GITHUB_FAMILIES){
+    try{
+      const result=await fetchGithubFamily(family);
+      families.push({...result,repos:undefined});
+      repos.push(...result.repos);
+    }catch(err){
+      families.push({
+        ...family,
+        avatarUrl:"",
+        repoCount:null,
+        latestPush:"",
+        error:String(err.message||err)
+      });
+    }
+  }
+  githubFamilyCache={
+    at:Date.now(),
+    families,
+    repos:repos.sort((a,b)=>new Date(b.pushedAt||0)-new Date(a.pushedAt||0)),
+    rateRemaining:githubFamilyCache.rateRemaining
+  };
+  writeJSON(K_GITHUB_FAMILY_CACHE,githubFamilyCache);
+}
+
 async function fetchGithubRepo(fullName){
   const base=`https://api.github.com/repos/${fullName}`;
   const [meta,commits,pulls,issues]=await Promise.all([
@@ -1013,6 +1239,7 @@ async function fetchGithubRepo(fullName){
   return {
     fullName,
     name:meta.name||fullName.split("/")[1],
+    owner:fullName.split("/")[0],
     htmlUrl:meta.html_url||`https://github.com/${fullName}`,
     description:meta.description||"",
     defaultBranch:meta.default_branch||"main",
@@ -1025,45 +1252,149 @@ async function fetchGithubRepo(fullName){
     commitAt:commit?.commit?.committer?.date||commit?.commit?.author?.date||""
   };
 }
+
 async function refreshGitHub(manual=false){
   const btn=document.getElementById("refreshGithub");
   if(btn){btn.disabled=true;btn.textContent="Refreshing…"}
   try{
+    await refreshGithubFamilies();
+
     const repos=[];
     for(const repo of WATCHED_REPOS){
       try{repos.push(await fetchGithubRepo(repo))}
-      catch(err){repos.push({fullName:repo,name:repo.split("/")[1],error:String(err.message||err)})}
+      catch(err){repos.push({fullName:repo,name:repo.split("/")[1],owner:repo.split("/")[0],error:String(err.message||err)})}
     }
+
     const previous=githubState||{};
     repos.forEach(r=>{
       if(r.commitSha && previous[r.fullName] && previous[r.fullName]!==r.commitSha){
-        addNotice("New GitHub commit",`${r.fullName}: ${r.commitMessage||r.commitSha.slice(0,7)}`,{source:"GitHub",level:"info",remoteId:`gh:${r.fullName}:${r.commitSha}`});
+        addNotice(
+          "New GitHub commit",
+          `${r.fullName}: ${r.commitMessage||r.commitSha.slice(0,7)}`,
+          {source:"GitHub",level:"info",remoteId:`gh:${r.fullName}:${r.commitSha}`}
+        );
       }
       if(r.commitSha)previous[r.fullName]=r.commitSha;
     });
-    githubState=previous;writeJSON(K_GITHUB_STATE,githubState);
-    githubCache={at:Date.now(),repos};writeJSON(K_GITHUB_CACHE,githubCache);
-    renderGithub();renderDashboard();
-    if(manual)addNotice("GitHub intelligence refreshed","Core repository metadata was refreshed from GitHub.",{source:"GitHub",level:"success"});
+
+    githubState=previous;
+    writeJSON(K_GITHUB_STATE,githubState);
+    githubCache={at:Date.now(),repos};
+    writeJSON(K_GITHUB_CACHE,githubCache);
+
+    renderGithub();
+    renderDashboard();
+    if(manual){
+      addNotice(
+        "GitHub intelligence refreshed",
+        "Four account families and the detailed core watch were refreshed.",
+        {source:"GitHub",level:"success"}
+      );
+    }
   }catch(err){
     if(manual)addNotice("GitHub refresh failed",String(err.message||err),{source:"GitHub",level:"error"});
   }finally{
     if(btn){btn.disabled=false;btn.textContent="Refresh GitHub"}
   }
 }
-function renderGithub(){
-  const repos=githubCache.repos||[];
-  const today=new Date();today.setHours(0,0,0,0);
-  const updatedToday=repos.filter(r=>r.pushedAt&&new Date(r.pushedAt)>=today).length;
-  const issueCount=repos.reduce((n,r)=>n+(Number(r.issues)||0),0);
-  const pullCount=repos.reduce((n,r)=>n+(Number(r.pulls)||0),0);
-  document.getElementById("githubWatched").textContent=String(WATCHED_REPOS.length);
-  document.getElementById("githubUpdatedToday").textContent=String(updatedToday);
-  document.getElementById("githubIssues").textContent=String(issueCount);
-  document.getElementById("githubPulls").textContent=String(pullCount);
-  const grid=document.getElementById("githubGrid");
-  grid.innerHTML=repos.length?repos.map(r=>`<article class="eco-card"><div class="eco-top"><span class="eco-icon">GH</span><span class="eco-category">${escapeHtml(r.defaultBranch||"Repository")}</span></div><h3>${escapeHtml(r.name)}</h3><p>${escapeHtml(r.error||r.commitMessage||r.description||"Repository metadata")}</p><div class="feed" style="margin:0 0 12px"><div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>Last push</strong><small>${escapeHtml(formatDateTime(r.pushedAt))}</small></div></div><div class="feed-item"><span class="feed-dot warn"></span><div class="feed-copy"><strong>Issues / PRs</strong><small>${Number(r.issues)||0} issues · ${Number(r.pulls)||0} pull requests</small></div></div></div><div class="eco-actions"><a class="launch-btn" href="${escapeHtml(r.htmlUrl||`https://github.com/${r.fullName}`)}" target="_blank" rel="noopener noreferrer">Open Repository ↗</a></div></article>`).join(""):`<div class="empty">GitHub metadata has not been loaded yet.</div>`;
+
+function renderGithubFamilies(){
+  const families=githubFamilyCache.families||[];
+  const familyGrid=document.getElementById("githubFamilyGrid");
+
+  familyGrid.innerHTML=families.length?families.map(f=>{
+    const initials=(f.label||f.owner||"GH").split(/\s+/).map(x=>x[0]).join("").slice(0,3).toUpperCase();
+    const avatar=f.avatarUrl
+      ? `<img src="${escapeHtml(f.avatarUrl)}" alt="">`
+      : escapeHtml(initials||"GH");
+    const count=f.repoCount===null||f.repoCount===undefined?"—":String(f.repoCount);
+    const latest=f.latestPush?formatDateTime(f.latestPush):"No public push loaded";
+    return `<article class="github-family-card">
+      <span class="github-family-avatar">${avatar}</span>
+      <h3>${escapeHtml(f.label||f.owner)}</h3>
+      <p>${escapeHtml(f.error||f.description||"GitHub account family")}</p>
+      <div class="github-family-meta">
+        <span>${escapeHtml(count)} public repos</span>
+        <span>${escapeHtml(latest)}</span>
+      </div>
+      <div class="github-family-actions">
+        <a class="small-link" href="${escapeHtml(f.accountUrl)}" target="_blank" rel="noopener noreferrer">Open Account ↗</a>
+        <button class="small-btn github-family-filter" type="button" data-owner="${escapeHtml(f.owner)}">Show Repositories</button>
+      </div>
+    </article>`;
+  }).join(""):`<div class="empty">GitHub account families have not been loaded yet.</div>`;
+
+  familyGrid.querySelectorAll(".github-family-filter").forEach(btn=>btn.addEventListener("click",()=>{
+    document.getElementById("githubOwnerFilter").value=btn.dataset.owner||"";
+    renderGithubRepositoryDirectory();
+    document.getElementById("githubRepoRows")?.closest(".panel")?.scrollIntoView({behavior:"smooth",block:"start"});
+  }));
 }
+
+function renderGithubRepositoryDirectory(){
+  const allRepos=githubFamilyCache.repos||[];
+  const q=(document.getElementById("githubRepoSearch")?.value||"").trim().toLowerCase();
+  const owner=document.getElementById("githubOwnerFilter")?.value||"";
+  const repos=allRepos.filter(r=>{
+    if(owner && r.owner!==owner)return false;
+    if(!q)return true;
+    return `${r.owner} ${r.name} ${r.fullName} ${r.description}`.toLowerCase().includes(q);
+  });
+
+  document.getElementById("githubRepoCountTag").textContent=`${repos.length} repositor${repos.length===1?"y":"ies"}`;
+
+  const rows=document.getElementById("githubRepoRows");
+  rows.innerHTML=repos.length?repos.map(r=>`<tr>
+    <td>${escapeHtml(r.label||r.owner)}</td>
+    <td><strong>${escapeHtml(r.name)}</strong>${r.archived?" <small>· archived</small>":""}</td>
+    <td>${escapeHtml(formatDateTime(r.pushedAt))}</td>
+    <td>${escapeHtml(r.defaultBranch||"main")}</td>
+    <td>${Number(r.openItems)||0}</td>
+    <td><a class="small-link" href="${escapeHtml(r.htmlUrl)}" target="_blank" rel="noopener noreferrer">Open ↗</a></td>
+  </tr>`).join(""):`<tr><td colspan="6">No public repositories match this filter.</td></tr>`;
+}
+
+function renderGithub(){
+  const detailed=githubCache.repos||[];
+  const publicRepos=githubFamilyCache.repos||[];
+  const today=new Date();today.setHours(0,0,0,0);
+
+  const updatedToday=publicRepos.filter(r=>r.pushedAt&&new Date(r.pushedAt)>=today).length;
+
+  document.getElementById("githubAccounts").textContent=String(GITHUB_FAMILIES.length);
+  document.getElementById("githubPublicRepos").textContent=String(publicRepos.length);
+  document.getElementById("githubUpdatedToday").textContent=String(updatedToday);
+  document.getElementById("githubWatched").textContent=String(WATCHED_REPOS.length);
+  document.getElementById("githubRateRemaining").textContent=
+    githubFamilyCache.rateRemaining===null||githubFamilyCache.rateRemaining===undefined
+      ?"—"
+      :String(githubFamilyCache.rateRemaining);
+
+  const familyTag=document.getElementById("githubFamilyTag");
+  if(familyTag){
+    familyTag.textContent=githubFamilyCache.at
+      ? `Updated ${formatDateTime(new Date(githubFamilyCache.at).toISOString())}`
+      : "Public discovery";
+  }
+
+  renderGithubFamilies();
+  renderGithubRepositoryDirectory();
+
+  const grid=document.getElementById("githubGrid");
+  grid.innerHTML=detailed.length?detailed.map(r=>`<article class="eco-card">
+    <div class="eco-top"><span class="eco-icon">GH</span><span class="eco-category">${escapeHtml(r.owner||"Repository")} · ${escapeHtml(r.defaultBranch||"main")}</span></div>
+    <h3>${escapeHtml(r.name)}</h3>
+    <p>${escapeHtml(r.error||r.commitMessage||r.description||"Repository metadata")}</p>
+    <div class="feed" style="margin:0 0 12px">
+      <div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>Last push</strong><small>${escapeHtml(formatDateTime(r.pushedAt))}</small></div></div>
+      <div class="feed-item"><span class="feed-dot warn"></span><div class="feed-copy"><strong>Issues / PRs</strong><small>${Number(r.issues)||0} issues · ${Number(r.pulls)||0} pull requests</small></div></div>
+    </div>
+    <div class="eco-actions"><a class="launch-btn" href="${escapeHtml(r.htmlUrl||`https://github.com/${r.fullName}`)}" target="_blank" rel="noopener noreferrer">Open Repository ↗</a></div>
+  </article>`).join(""):`<div class="empty">Detailed root monitoring has not been loaded yet.</div>`;
+}
+
+document.getElementById("githubRepoSearch").addEventListener("input",renderGithubRepositoryDirectory);
+document.getElementById("githubOwnerFilter").addEventListener("change",renderGithubRepositoryDirectory);
 document.getElementById("refreshGithub").onclick=()=>refreshGitHub(true);
 
 function lastSevenDays(){
@@ -1320,7 +1651,13 @@ renderDashboard();
 showView("dashboard");
 
 const githubCacheAge=Date.now()-(Number(githubCache.at)||0);
-if(!githubCache.repos?.length || githubCacheAge>10*60*1000){
+const githubFamilyCacheAge=Date.now()-(Number(githubFamilyCache.at)||0);
+if(
+  !githubCache.repos?.length ||
+  !githubFamilyCache.repos?.length ||
+  githubCacheAge>30*60*1000 ||
+  githubFamilyCacheAge>30*60*1000
+){
   window.setTimeout(()=>refreshGitHub(false),900);
 }
 
