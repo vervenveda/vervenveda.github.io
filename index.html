@@ -1405,7 +1405,547 @@
       .footer-links a{white-space:normal}
     }
 
-  </style>
+
+    /* ECOSYSTEM DIRECTORY — elegant dropdown categories */
+    .ecosystem-directory-section{
+      background:linear-gradient(180deg,#f2eee5,#f7f4ed);
+      border-block:1px solid var(--line);
+    }
+    .ecosystem-category-grid{
+      width:min(100%,1120px);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:12px;
+      align-items:stretch;
+    }
+    .ecosystem-category-button{
+      position:relative;
+      min-height:70px;
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      padding:15px 18px;
+      border:1px solid #171a19;
+      border-radius:4px;
+      color:#f4f0e7;
+      background:linear-gradient(180deg,#343837,#272b2a);
+      box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.11),
+        inset 0 -1px 0 rgba(0,0,0,.45),
+        0 8px 18px rgba(16,20,18,.08);
+      font-family:var(--ceremonial);
+      font-size:11px;
+      font-weight:500;
+      letter-spacing:.13em;
+      line-height:1.3;
+      text-transform:uppercase;
+      text-align:center;
+      transition:transform .16s ease,background .16s ease,border-color .16s ease,box-shadow .16s ease,color .16s ease;
+    }
+    .ecosystem-category-button::after{
+      content:"⌄";
+      flex:0 0 auto;
+      color:#d7c6a4;
+      font-family:var(--sans);
+      font-size:13px;
+      line-height:1;
+      transition:transform .16s ease;
+    }
+    .ecosystem-category-button:hover,
+    .ecosystem-category-button:focus-visible,
+    .ecosystem-category-button[aria-expanded="true"]{
+      color:#fff;
+      background:linear-gradient(180deg,#3d4240,#2b302e);
+      border-color:#0f1110;
+      box-shadow:
+        inset 0 0 0 1px rgba(231,215,182,.24),
+        inset 0 -1px 0 rgba(0,0,0,.55),
+        0 11px 24px rgba(16,20,18,.12);
+      transform:translateY(-1px);
+    }
+    .ecosystem-category-button[aria-expanded="true"]::after{
+      transform:rotate(180deg);
+    }
+    .ecosystem-dropdown-stage{
+      width:min(100%,1120px);
+      margin:0 auto;
+    }
+    .ecosystem-directory-panel{
+      margin-top:16px;
+      padding:30px;
+      border:1px solid rgba(30,36,33,.16);
+      border-radius:7px;
+      background:rgba(251,249,244,.99);
+      box-shadow:0 18px 45px rgba(27,34,29,.08);
+      text-align:left;
+    }
+    .ecosystem-directory-panel[hidden]{display:none!important}
+    .ecosystem-panel-head{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:start;
+      gap:24px;
+      padding-bottom:20px;
+      border-bottom:1px solid var(--line);
+    }
+    .ecosystem-panel-heading{
+      margin:0;
+      color:var(--forest-deep);
+      font-family:var(--ceremonial);
+      font-size:clamp(20px,2.1vw,28px);
+      font-weight:500;
+      letter-spacing:.08em;
+      line-height:1.1;
+      text-transform:uppercase;
+    }
+    .ecosystem-panel-note{
+      max-width:740px;
+      margin:8px 0 0;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .ecosystem-panel-close{
+      width:38px;height:38px;
+      display:grid;place-items:center;
+      border:1px solid var(--line-strong);
+      border-radius:4px;
+      color:var(--ink);
+      background:#fff;
+      font-size:19px;
+    }
+    .ecosystem-panel-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:26px 30px;
+      margin-top:26px;
+    }
+    .ecosystem-subgroup{
+      min-width:0;
+    }
+    .ecosystem-subgroup-title{
+      margin:0 0 10px;
+      padding-bottom:9px;
+      border-bottom:1px solid rgba(180,139,69,.45);
+      color:#7e6332;
+      font-family:var(--ceremonial);
+      font-size:10px;
+      font-weight:600;
+      letter-spacing:.16em;
+      line-height:1.4;
+      text-transform:uppercase;
+    }
+    .ecosystem-link-list{
+      display:grid;
+      gap:2px;
+    }
+    .ecosystem-link{
+      min-height:54px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:center;
+      gap:14px;
+      padding:9px 5px 9px 0;
+      border-bottom:1px solid rgba(18,23,19,.08);
+      color:var(--ink);
+      text-decoration:none;
+    }
+    .ecosystem-link:last-child{border-bottom:0}
+    .ecosystem-link:hover{
+      color:var(--forest);
+      background:linear-gradient(90deg,rgba(180,139,69,.055),transparent);
+    }
+    .ecosystem-link-copy{min-width:0}
+    .ecosystem-link strong{
+      display:block;
+      font-family:var(--display);
+      font-size:15px;
+      font-weight:500;
+      line-height:1.2;
+    }
+    .ecosystem-link small{
+      display:block;
+      margin-top:4px;
+      color:var(--muted);
+      font-size:10.5px;
+      line-height:1.48;
+    }
+    .ecosystem-link-arrow{
+      color:#9b8150;
+      font-size:13px;
+    }
+    @media(max-width:1040px){
+      .ecosystem-category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .ecosystem-panel-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:680px){
+      .ecosystem-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .ecosystem-directory-panel{padding:22px 18px}
+      .ecosystem-panel-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:430px){
+      .ecosystem-category-grid{grid-template-columns:1fr}
+      .ecosystem-category-button{min-height:62px}
+    }
+
+  
+
+    /* FEATURED ECOSYSTEM DISCOVERY — compact random slideshow */
+    .ecosystem-feature-showcase{
+      width:min(100%,1120px);
+      margin:18px auto 0;
+      position:relative;
+    }
+    .feature-showcase-shell{
+      position:relative;
+      min-height:224px;
+      overflow:hidden;
+      border:1px solid rgba(31,36,34,.16);
+      border-radius:7px;
+      background:
+        radial-gradient(circle at 88% 18%,rgba(180,139,69,.10),transparent 19rem),
+        linear-gradient(135deg,#fcfaf5,#f3eee3);
+      box-shadow:0 13px 32px rgba(27,34,29,.06);
+    }
+    .feature-showcase-shell::before{
+      content:"";
+      position:absolute;
+      inset:7px;
+      z-index:0;
+      pointer-events:none;
+      border:1px solid rgba(26,31,29,.075);
+      border-radius:4px;
+    }
+    .feature-slide{
+      position:relative;
+      z-index:1;
+      min-height:224px;
+      display:grid;
+      grid-template-columns:230px minmax(0,1fr);
+      gap:0;
+      align-items:stretch;
+      opacity:1;
+      transform:translateX(0);
+      transition:opacity .30s ease,transform .30s ease;
+    }
+    .feature-slide.is-leaving{opacity:0;transform:translateX(-34px)}
+    .feature-slide.is-entering{opacity:0;transform:translateX(34px)}
+    .feature-visual{
+      position:relative;
+      min-height:224px;
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+      border-right:1px solid rgba(27,34,29,.12);
+      background:
+        linear-gradient(145deg,rgba(18,28,23,.94),rgba(42,48,45,.96)),
+        #242a27;
+    }
+    .feature-visual::after{
+      content:"";
+      position:absolute;
+      inset:12px;
+      pointer-events:none;
+      border:1px solid rgba(230,216,185,.25);
+    }
+    .feature-visual img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:none;
+    }
+    .feature-visual.has-image img{display:block}
+    .feature-visual.has-image::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:1;
+      background:linear-gradient(180deg,transparent 52%,rgba(15,20,18,.56));
+    }
+    .feature-monogram{
+      position:relative;
+      z-index:2;
+      display:grid;
+      place-items:center;
+      width:104px;
+      height:84px;
+      border:1px solid rgba(231,216,184,.48);
+      color:#f0e7d4;
+      font-family:var(--ceremonial);
+      font-size:clamp(24px,3vw,38px);
+      font-weight:500;
+      letter-spacing:.08em;
+      text-align:center;
+      box-shadow:inset 0 0 0 5px rgba(255,255,255,.025);
+    }
+    .feature-visual-label{
+      position:absolute;
+      z-index:2;
+      left:22px;
+      right:22px;
+      bottom:20px;
+      color:rgba(246,240,227,.72);
+      font-size:8.5px;
+      letter-spacing:.16em;
+      line-height:1.4;
+      text-align:center;
+      text-transform:uppercase;
+    }
+    .feature-copy{
+      min-width:0;
+      padding:28px 34px 26px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      text-align:left;
+    }
+    .feature-kicker{
+      margin:0;
+      color:#896b35;
+      font-family:var(--ceremonial);
+      font-size:8.5px;
+      font-weight:600;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+    .feature-title{
+      margin:8px 0 0;
+      color:var(--forest-deep);
+      font-family:var(--display);
+      font-size:clamp(24px,3.2vw,38px);
+      font-weight:500;
+      line-height:1;
+      letter-spacing:-.015em;
+      text-wrap:balance;
+    }
+    .feature-description{
+      max-width:700px;
+      margin:10px 0 0;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+    }
+    .feature-breadcrumbs{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:6px;
+      margin-top:12px;
+      color:#796e5d;
+      font-size:8.5px;
+      letter-spacing:.065em;
+      text-transform:uppercase;
+    }
+    .feature-breadcrumbs span[aria-hidden="true"]{color:#b59a67}
+    .feature-actions{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .feature-open-button,
+    .feature-pause-button{
+      min-height:38px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:8px 13px;
+      border-radius:4px;
+      font-size:9px;
+      font-weight:600;
+      letter-spacing:.11em;
+      line-height:1.2;
+      text-transform:uppercase;
+    }
+    .feature-open-button{
+      border:1px solid #222725;
+      color:#f6f1e7;
+      background:#2d3230;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.09);
+    }
+    .feature-open-button:hover{background:#1f2422}
+    .feature-pause-button{
+      border:1px solid var(--line-strong);
+      color:#625843;
+      background:rgba(255,255,255,.68);
+    }
+    .feature-counter{
+      margin-left:auto;
+      color:#817765;
+      font-family:var(--ceremonial);
+      font-size:8px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+
+    /* Internal ecosystem viewer */
+    .ecosystem-viewer-overlay{
+      position:fixed;
+      inset:0;
+      z-index:4800;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:26px;
+      background:rgba(13,18,16,.62);
+      backdrop-filter:blur(8px);
+    }
+    .ecosystem-viewer-overlay.open{display:flex}
+    body.feature-viewer-open{overflow:hidden}
+    .ecosystem-viewer{
+      width:min(1180px,96vw);
+      height:min(830px,92vh);
+      display:grid;
+      grid-template-rows:auto auto minmax(0,1fr) auto;
+      overflow:hidden;
+      border:1px solid rgba(231,216,184,.42);
+      border-radius:7px;
+      color:#17201c;
+      background:#f7f4ed;
+      box-shadow:0 30px 90px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.64);
+    }
+    .ecosystem-viewer-toolbar{
+      min-height:58px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:center;
+      gap:16px;
+      padding:10px 12px 10px 18px;
+      color:#f4efe4;
+      background:#252a28;
+      border-bottom:1px solid #111412;
+    }
+    .viewer-breadcrumbs{
+      min-width:0;
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      align-items:center;
+      font-size:8.5px;
+      letter-spacing:.085em;
+      line-height:1.4;
+      text-transform:uppercase;
+    }
+    .viewer-breadcrumbs strong{color:#e2cfaa;font-weight:600}
+    .viewer-breadcrumbs span{color:rgba(255,255,255,.58)}
+    .viewer-toolbar-actions{display:flex;align-items:center;gap:7px}
+    .viewer-tool{
+      min-height:36px;
+      padding:7px 11px;
+      border:1px solid rgba(255,255,255,.24);
+      border-radius:4px;
+      color:#f6f1e7;
+      background:rgba(255,255,255,.045);
+      font-size:8.5px;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+    }
+    .viewer-tool:hover{background:rgba(255,255,255,.10)}
+    .viewer-close{
+      width:38px;height:38px;
+      display:grid;place-items:center;
+      padding:0;
+      border:1px solid rgba(255,255,255,.30);
+      border-radius:4px;
+      color:#fff;
+      background:rgba(255,255,255,.04);
+      font-size:22px;
+      line-height:1;
+    }
+    .viewer-summary{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:center;
+      gap:18px;
+      padding:13px 18px;
+      border-bottom:1px solid var(--line);
+      background:#fbf9f4;
+    }
+    .viewer-summary h3{
+      margin:0;
+      color:var(--forest-deep);
+      font-family:var(--display);
+      font-size:20px;
+      font-weight:500;
+      line-height:1.15;
+    }
+    .viewer-summary p{
+      max-width:820px;
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:10.5px;
+      line-height:1.5;
+    }
+    .viewer-full-link{
+      min-height:38px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:8px 12px;
+      border:1px solid #252a28;
+      border-radius:4px;
+      color:#fff;
+      background:#303633;
+      font-size:8.5px;
+      font-weight:600;
+      letter-spacing:.09em;
+      text-decoration:none;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .viewer-frame-wrap{
+      position:relative;
+      min-height:0;
+      background:#e9e5dc;
+    }
+    .viewer-frame{
+      width:100%;
+      height:100%;
+      display:block;
+      border:0;
+      background:#fff;
+    }
+    .viewer-frame-note{
+      padding:8px 14px;
+      border-top:1px solid var(--line);
+      color:#706756;
+      background:#f7f4ed;
+      font-size:9px;
+      line-height:1.5;
+      text-align:center;
+    }
+    @media(max-width:760px){
+      .feature-slide{grid-template-columns:150px minmax(0,1fr)}
+      .feature-copy{padding:24px 22px}
+      .feature-title{font-size:clamp(20px,6vw,29px)}
+      .feature-description{font-size:11px}
+      .viewer-summary{grid-template-columns:1fr}
+      .viewer-full-link{justify-self:start}
+      .viewer-tool span{display:none}
+    }
+    @media(max-width:540px){
+      .feature-showcase-shell,.feature-slide{min-height:304px}
+      .feature-slide{grid-template-columns:1fr;grid-template-rows:108px 1fr}
+      .feature-visual{min-height:108px;border-right:0;border-bottom:1px solid rgba(27,34,29,.12)}
+      .feature-monogram{width:82px;height:54px;font-size:22px}
+      .feature-visual-label{left:auto;right:20px;bottom:15px;text-align:right}
+      .feature-copy{padding:20px 20px 22px}
+      .feature-counter{width:100%;margin-left:0;margin-top:3px}
+      .ecosystem-viewer-overlay{padding:8px}
+      .ecosystem-viewer{width:100%;height:96vh}
+      .ecosystem-viewer-toolbar{padding-left:12px}
+      .viewer-breadcrumbs{font-size:7.6px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      .feature-slide{transition:none}
+    }
+</style>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -1721,36 +2261,47 @@
       </div>
     </section>
 
-    <section class="section" id="directory">
+
+    <section class="section ecosystem-directory-section" id="directory" aria-labelledby="ecosystemDirectoryTitle">
       <div class="section-inner">
-        <div class="section-heading">
-          <p class="kicker">Complete Public Directory</p>
-          <h2>Every verified public landing page, centered in one place.</h2>
-          <p class="section-intro">
-            Search or filter the network. Every card opens a rendered public landing page—
-            never a repository or source-code screen.
-          </p>
-        </div>
+        <h2 class="visually-hidden" id="ecosystemDirectoryTitle">Verve N Veda ecosystem directory</h2>
+        <div class="ecosystem-category-grid" id="ecosystemCategoryGrid" aria-label="Explore the Verve N Veda ecosystem by category"></div>
 
-        <div class="directory-controls">
-          <div>
-            <label class="visually-hidden" for="search">Search the Verve N Veda network</label>
-            <input class="field" id="search" type="search"
-                   placeholder="Search education, housing, law, weather, finance, veterans…"
-                   autocomplete="off">
+        <section class="ecosystem-feature-showcase" id="ecosystemFeatureShowcase" aria-label="Featured destination across Verve N Veda">
+          <div class="feature-showcase-shell">
+            <article class="feature-slide" id="featureSlide" aria-live="polite">
+              <div class="feature-visual" id="featureVisual">
+                <img id="featureImage" alt="">
+                <span class="feature-monogram" id="featureMonogram" aria-hidden="true">V</span>
+                <span class="feature-visual-label" id="featureVisualLabel">Featured across Verve N Veda</span>
+              </div>
+              <div class="feature-copy">
+                <p class="feature-kicker" id="featureKicker">Featured across Verve N Veda</p>
+                <h3 class="feature-title" id="featureTitle">Discover the ecosystem</h3>
+                <p class="feature-description" id="featureDescription">A rotating doorway into the applications, learning halls, studios, services, games, and public resources across Verve N Veda.</p>
+                <nav class="feature-breadcrumbs" id="featureBreadcrumbs" aria-label="Featured destination breadcrumb"></nav>
+                <div class="feature-actions">
+                  <button class="feature-open-button" id="featureOpenButton" type="button">Open in ecosystem viewer</button>
+                  <button class="feature-pause-button" id="featurePauseButton" type="button" aria-pressed="false">Pause</button>
+                  <span class="feature-counter" id="featureCounter"></span>
+                </div>
+              </div>
+            </article>
           </div>
-          <div>
-            <label class="visually-hidden" for="groupFilter">Filter by public Hall</label>
-            <select class="field" id="groupFilter" aria-label="Filter destination group">
-              <option value="all">All Public Halls</option>
-            </select>
-          </div>
-          <button class="control-button" id="clearSearchButton" type="button">Clear Search</button>
-          <button class="control-button" id="randomButton" type="button">Surprise Me ✦</button>
-        </div>
+        </section>
 
-        <p class="directory-status" id="directoryStatus" aria-live="polite"></p>
-        <div class="directory-grid" id="directoryGrid"></div>
+        <div class="ecosystem-dropdown-stage" id="ecosystemDropdownStage">
+          <section class="ecosystem-directory-panel" id="ecosystemDirectoryPanel" role="region" aria-labelledby="ecosystemPanelHeading" hidden>
+            <div class="ecosystem-panel-head">
+              <div>
+                <h3 class="ecosystem-panel-heading" id="ecosystemPanelHeading"></h3>
+                <p class="ecosystem-panel-note" id="ecosystemPanelNote"></p>
+              </div>
+              <button class="ecosystem-panel-close" id="ecosystemPanelClose" type="button" aria-label="Close directory category">×</button>
+            </div>
+            <div class="ecosystem-panel-grid" id="ecosystemPanelGrid"></div>
+          </section>
+        </div>
       </div>
     </section>
 
@@ -2133,7 +2684,6 @@
         "vervneveda.wixsite.com"
       ]);
       const $ = id => document.getElementById(id);
-      let currentResults = [...SITES];
       let lastFocusedElement = null;
 
       function escapeHtml(value){
@@ -2180,99 +2730,132 @@
         else console.info(`Verve N Veda directory registry loaded: ${SITES.length} destinations.`);
       }
 
-      function getFilteredSites(){
-        const query = $("search").value.trim().toLowerCase();
-        const group = $("groupFilter").value;
 
-        return SITES.filter(site =>
-          (group === "all" || site.group === group) &&
-          (!query || searchableText(site).includes(query))
-        );
+      const ECOSYSTEM_DIRECTORY = [{"id":"news","label":"News","groups":[{"title":"Gateways & Live News","items":[{"title":"The Verifier","url":"https://vervenveda.github.io/theverifier.github.io/","desc":"Primary news, evidence, source-comparison, and media-literacy gateway."},{"title":"Live News","url":"https://vervenveda.github.io/theverifier.github.io/apps/live_news_index.html","desc":"A compact live-news doorway inside The Verifier."},{"title":"Interactive Live News Dashboard","url":"https://vervenveda.github.io/theverifier.github.io/apps/interactive_news_index.html","desc":"Interactive dashboard for exploring current reporting and source context."},{"title":"Modern News Engine","url":"https://vervenveda.github.io/theverifier.github.io/apps/Modern_News_Engine_index.html","desc":"Modern multi-topic news discovery interface."},{"title":"Global News Digest","url":"https://vervenveda.github.io/theverifier.github.io/apps/global_news_digest_index.html","desc":"A global digest for scanning international reporting."},{"title":"World Wire","url":"https://vervenveda.github.io/theverifier.github.io/apps/world_wire_index.html","desc":"World-focused news wire and discovery tool."}]},{"title":"Topic News","items":[{"title":"Education News","url":"https://vervenveda.github.io/theverifier.github.io/apps/education_news_index.html","desc":"Education reporting and learning-sector developments."},{"title":"Science News","url":"https://vervenveda.github.io/theverifier.github.io/apps/science_news_index.html","desc":"Science reporting and research-oriented news."},{"title":"Science Daily","url":"https://vervenveda.github.io/theverifier.github.io/apps/science_daily_index.html","desc":"A lighter daily science-news doorway."},{"title":"EcoPulse News","url":"https://vervenveda.github.io/theverifier.github.io/apps/EcoPulse_news_index.html","desc":"Environmental and ecological news stream."},{"title":"Kids News Network","url":"https://vervenveda.github.io/theverifier.github.io/apps/kids_news_network_index.html","desc":"A child-oriented news-learning environment."},{"title":"Finance News","url":"https://vervenveda.github.io/finance.github.io/apps/news_finance_index.html","desc":"Finance-focused news inside the Verve N Veda finance hall."},{"title":"Finance & Employment News","url":"https://vervenveda.github.io/finance.github.io/apps/news_finance_employment_index.html","desc":"Finance, workforce, and employment reporting."}]},{"title":"Analysis & Columns","items":[{"title":"Editors' Choice","url":"https://vervenveda.github.io/theverifier.github.io/columns/editors_choice_index.html","desc":"Curated editorial and analysis selections."},{"title":"U.S. Politics","url":"https://vervenveda.github.io/theverifier.github.io/columns/us_politics_index.html","desc":"United States politics and public-affairs analysis."},{"title":"Foreign Politics","url":"https://vervenveda.github.io/theverifier.github.io/columns/foreign_politics_index.html","desc":"International politics and geopolitical analysis."},{"title":"Health & Lifestyle","url":"https://vervenveda.github.io/theverifier.github.io/columns/health_lifestyle_index.html","desc":"Health and lifestyle reporting with source-aware context."},{"title":"Environment","url":"https://vervenveda.github.io/theverifier.github.io/columns/environment_index.html","desc":"Environment, climate, conservation, and ecological reporting."},{"title":"Arts & Humanities","url":"https://vervenveda.github.io/theverifier.github.io/columns/arts_humanities_index.html","desc":"Arts, culture, literature, and humanities coverage."},{"title":"Finance","url":"https://vervenveda.github.io/theverifier.github.io/columns/finance_index.html","desc":"Economic and financial analysis."},{"title":"Sports","url":"https://vervenveda.github.io/theverifier.github.io/columns/sports_index.html","desc":"Sports reporting and analysis."},{"title":"Debunked","url":"https://vervenveda.github.io/theverifier.github.io/columns/debunked_index.html","desc":"Claims, context, corrections, and evidence checks."}]},{"title":"News Learning","items":[{"title":"News Trivia","url":"https://vervenveda.github.io/theverifier.github.io/apps/Trivia_news_index.html","desc":"News-literacy and current-events trivia."},{"title":"Daily News Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_daily_news_index.html","desc":"Arcade-based current-events trivia."}]}]},{"id":"weather","label":"Weather","groups":[{"title":"Weather Gateways","items":[{"title":"Solanar","url":"https://vervenveda.github.io/solanar.github.io/","desc":"Verve N Veda weather, Earth systems, sky, time, and environmental observation hub."},{"title":"Solanar Live Weather","url":"https://vervenveda.github.io/solanar.github.io/apps/Solanar_Live_Weather_index.html","desc":"Live weather interface and forecasting doorway."},{"title":"Solanar Platform","url":"https://vervenveda.github.io/solanar.github.io/apps/Solanar_Platform_index.html","desc":"Broader operational Solanar weather platform."},{"title":"Solanar TraceLab","url":"https://vervenveda.github.io/solanar.github.io/apps/Solanar-TraceLab/","desc":"Weather and observation trace-lab workspace."}]},{"title":"Sky, Moon & Space","items":[{"title":"Solanar Planetarium","url":"https://vervenveda.github.io/solanar.github.io/apps/Solanar_Planetarium_index.html","desc":"Sky, planetary, and observation environment."},{"title":"Kids Skylab","url":"https://vervenveda.github.io/solanar.github.io/apps/Solanar_kids_skylab_index.html","desc":"Child-friendly sky and weather exploration."},{"title":"Lunar Reflections","url":"https://vervenveda.github.io/solanar.github.io/apps/Lunar_reflections_index.html","desc":"Moon-cycle observation and reflective tracking."}]},{"title":"Weather Academy","items":[{"title":"Weather Academy","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/","desc":"The structured Solanar weather-learning campus."},{"title":"Elementary Weather Academy","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/","desc":"Elementary weather science and observation courses."},{"title":"Middle Weather Academy","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/","desc":"Middle-school meteorology and Earth-systems pathway."},{"title":"High School Weather Academy","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/","desc":"Secondary weather science and forecasting study."},{"title":"Advanced Operational Meteorology","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/advanced-operational-meteorology/","desc":"Graduate-level operational meteorology program."}]},{"title":"Environment Through Weather","items":[{"title":"Solanar Environmental News","url":"https://vervenveda.github.io/solanar.github.io/apps/environmental_news_index.html","desc":"Environmental developments connected to Solanar."},{"title":"EcoPulse News","url":"https://vervenveda.github.io/theverifier.github.io/apps/EcoPulse_news_index.html","desc":"Environmental reporting through The Verifier."}]}]},{"id":"creative","label":"Creative","groups":[{"title":"Art","items":[{"title":"Bazaar Art Creative Hub","url":"https://vervenveda.github.io/bazaarart.github.io/","desc":"Main creative-art ecosystem and studio gateway."},{"title":"Art Resources","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Art_resources_index.html","desc":"Art reference, study, and resource directory."},{"title":"Art Hall","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_hall_index.html","desc":"Broad visual-art learning hall."},{"title":"Elementary Art Atlas","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Elementary_Art_Atlas_index.html","desc":"Child-friendly art exploration and study."},{"title":"Art 101","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_101_index.html","desc":"Foundational art course."},{"title":"Art 201","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_201_index.html","desc":"Intermediate art course."},{"title":"Art 301","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_301_index.html","desc":"Advanced art course."},{"title":"Sketch Lab","url":"https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_sketch_lab_index.html","desc":"Browser-based sketching workspace."},{"title":"Advanced Sketch Studio","url":"https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_advanced_sketch_index.html","desc":"Expanded drawing and sketching tools."},{"title":"Color Studio","url":"https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_color_studio_index.html","desc":"Color exploration and visual design."},{"title":"Trace & Draw","url":"https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_trace_draw_index.html","desc":"Tracing and drawing practice."},{"title":"Sagaen Art Studio","url":"https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_Sagaen%E2%84%A2_art_studio_index.html","desc":"Creative studio for visual experimentation."},{"title":"SpinSpire Art Prompt Generator","url":"https://vervenveda.github.io/bazaarart.github.io/apps/SpinSpire_Art_Prompt_Generator_index.html","desc":"Creative prompt generator for artists."},{"title":"Photo Album Studio","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Photo_Album_Studio/","desc":"Photo organization and presentation studio."},{"title":"My Art Gallery","url":"https://vervenveda.github.io/myartgallery.github.io/","desc":"Jennifer Kay Pearl's long-form art portfolio and gallery."}]},{"title":"Music","items":[{"title":"The Refrain","url":"https://vervenveda.github.io/the_refrain.github.io/","desc":"Permanent Verve N Veda music-course and conservatory home."},{"title":"Music 101 Workshop","url":"https://vervenveda.github.io/the_refrain.github.io/education/Music%20101%20Workshop_index.html","desc":"Foundational music study."},{"title":"Music 201 Workshop","url":"https://vervenveda.github.io/the_refrain.github.io/education/Music%20201%20Workshop_index.html","desc":"Intermediate music study."},{"title":"Little Composer Studio","url":"https://vervenveda.github.io/the_refrain.github.io/apps/composer_studio_index.html","desc":"Early composition, piano, rhythm, recording, and notation."},{"title":"Pro Keyboard","url":"https://vervenveda.github.io/the_refrain.github.io/apps/pro-keyboard_index.html","desc":"Performance and keyboard workspace."},{"title":"The Staff","url":"https://vervenveda.github.io/the_refrain.github.io/apps/the-staff_index.html","desc":"Five-line staff and music-reading tool."},{"title":"ARSHIF Music Hall","url":"https://vervenveda.github.io/the_refrain.github.io/apps/ARSHIF_Music_Hall_Resources_Updated_index.html","desc":"Music history, research, and scholarship resources."},{"title":"Vivoser Composer","url":"https://vervenveda.github.io/bazaarart.github.io/apps/composition/vivoser-composer_index.html","desc":"Advanced browser composition environment."},{"title":"Staff Studio","url":"https://vervenveda.github.io/bazaarart.github.io/apps/composition/staff-studio_index.html","desc":"Notation and staff composition studio."},{"title":"Music Reading 101","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_reading_101_index.html","desc":"Foundational music-reading practice."},{"title":"Music Theory 201","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_theory_201_index.html","desc":"Intermediate music theory."}]},{"title":"Writing","items":[{"title":"PROSE Editorial Suite","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE%E2%84%A2%20editingsuite_index.html","desc":"Professional local-first writing and editing suite."},{"title":"PROSE Gateway","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE_index.html","desc":"Writing-suite gateway and editorial tools."},{"title":"Bazaar Journal / PROSE Suite","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Journal_prose_editing_suite_index.html","desc":"Creative-writing and journal editing environment."},{"title":"Teen Boys Journal","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Journal_teen_boys_index.html","desc":"Guided journaling and creative writing."},{"title":"Teen Girls Journal","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Journal_teen_girls_index.html","desc":"Guided journaling and creative writing."},{"title":"Word Alchemy","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Word_alchemy_game_index.html","desc":"Playful word-building and language creativity."},{"title":"Khaemenes Linguistics","url":"https://vervenveda.github.io/Khaemenes_Linguistics.github.io/","desc":"Languages, linguistics, translation, and writing systems."}]}]},{"id":"professional","label":"Professional","groups":[{"title":"Professional Hub & Productivity","items":[{"title":"ProReSources","url":"https://vervenveda.github.io/proresource_hub.github.io/ProReSources_updated_index.html","desc":"Main professional resource and tool gateway."},{"title":"DailySpark Task Studio","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/DailySpark%E2%84%A2_task_studio_index.html","desc":"Task planning, workflow, and daily organization."},{"title":"KhaeZip","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeZip%E2%84%A2_index.html","desc":"Browser-based archive and file-packaging tool."},{"title":"KhaeClean","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeClean%E2%84%A2_index.html","desc":"File cleanup and organization utility."},{"title":"Scientific Calculator","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/","desc":"Professional and academic scientific calculator."}]},{"title":"Writing, Research & Evidence","items":[{"title":"PROSE Editorial Suite","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE%E2%84%A2%20editingsuite_index.html","desc":"Professional writing, correspondence, and editorial workspace."},{"title":"Evidence & Citation Studio","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/","desc":"Evidence organization, citation, and research support."},{"title":"PLERA Search Gate","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/PLERA%E2%84%A2%20Search%20Gate_index.html","desc":"Professional search and resource-discovery gateway."}]},{"title":"Design, Media & Production","items":[{"title":"Ohmic CAD Studio","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html","desc":"Computer-aided design workspace."},{"title":"Ohmic CAD Gateway","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_index.html","desc":"CAD tool gateway and project doorway."},{"title":"FleaPit Protected Media Hub","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/FleaPit%E2%84%A2%20Protected%20Media%20Hub_index.html","desc":"Protected media workspace."},{"title":"SixBit Bun Studio","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/SixBit_Bun_Studio_index.html","desc":"Creative and technical studio utility."},{"title":"Harmony's Haven Multi-Track","url":"https://vervenveda.github.io/proresource_hub.github.io/Protools/Harmony%27s%20Haven%20Studio%E2%84%A2%20Multi-Track_index.html","desc":"Multi-track music-production studio."}]},{"title":"Finance, Careers & Practice","items":[{"title":"Finance Hall","url":"https://vervenveda.github.io/finance.github.io/","desc":"Financial literacy, planning, markets, employment, and practical tools."},{"title":"Budget Planner","url":"https://vervenveda.github.io/finance.github.io/apps/budget_planner_index.html","desc":"Personal budgeting and planning."},{"title":"Global Job Search","url":"https://vervenveda.github.io/finance.github.io/apps/global_job_search_index.html","desc":"Employment-search gateway."},{"title":"Finance & Employment News","url":"https://vervenveda.github.io/finance.github.io/apps/news_finance_employment_index.html","desc":"Workforce and financial developments."},{"title":"Firmament Law","url":"https://vervenveda.github.io/firmament.github.io/","desc":"Law, evidence, family resources, and professional legal-learning pathways."},{"title":"Firmament Legal Console","url":"https://vervenveda.github.io/firmament.github.io/apps/Firmament_Legal_Console_index.html","desc":"Structured legal-information and case-work console."}]}]},{"id":"education","label":"Education","groups":[{"title":"Pre School","items":[{"title":"Khaemenes Preschool · Crechè","url":"https://vervenveda.github.io/Khaemenes_Preschool.github.io/","desc":"Open early-learning garden for stories, play, life skills, creativity, and discovery."},{"title":"Khaemenes Kinder Garden","url":"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/","desc":"Formal Kindergarten curriculum plus an open cumulative learning toolbox."},{"title":"Khaemenes Academy","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/","desc":"Central Khaemenes family and lifelong-learning gateway."}]},{"title":"Elementary","items":[{"title":"Khaemenes Elementary","url":"https://vervenveda.github.io/Khaemenes_Elementary.github.io/","desc":"Grades 1–5 curriculum, games, tools, profiles, and family learning."},{"title":"Elementary Weather Academy","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/","desc":"Weather-science elective pathway for elementary learners."},{"title":"Elementary Art Atlas","url":"https://vervenveda.github.io/bazaarart.github.io/apps/Elementary_Art_Atlas_index.html","desc":"Visual-art enrichment for elementary learners."}]},{"title":"Jr. High","items":[{"title":"Khaemenes Middle","url":"https://vervenveda.github.io/Khaemenes_Middle.github.io/","desc":"Grades 6–8 academic foundations and high-school preparation."},{"title":"Middle Weather Academy","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/","desc":"Middle-school weather science and meteorology."}]},{"title":"High School","items":[{"title":"Khaemenes High","url":"https://vervenveda.github.io/Khaemenes_High.github.io/","desc":"Grades 9–12 courses, assessments, portfolios, and graduation pathways."},{"title":"High School Weather Academy","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/","desc":"Secondary meteorology and forecasting pathway."},{"title":"The Refrain","url":"https://vervenveda.github.io/the_refrain.github.io/","desc":"Music courses, composition, theory, recording, and performance electives."},{"title":"Bazaar Art","url":"https://vervenveda.github.io/bazaarart.github.io/","desc":"Art courses, studios, creative electives, and artist resources."}]},{"title":"University","items":[{"title":"Khaemenes Higher Learning","url":"https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/","desc":"University-level and lifelong higher-learning pathways."},{"title":"Khaemenes Linguistics","url":"https://vervenveda.github.io/Khaemenes_Linguistics.github.io/","desc":"Advanced language and linguistics learning."},{"title":"Advanced Operational Meteorology","url":"https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/advanced-operational-meteorology/","desc":"Graduate-level weather and operational meteorology."},{"title":"ARSHIF","url":"https://vervenveda.github.io/Arshif.github.io/","desc":"Research, archives, history, culture, literature, philosophy, and scholarship."}]}]},{"id":"games","label":"Games","groups":[{"title":"Board Games","items":[{"title":"Chess Studio","url":"https://vervenveda.github.io/arcade.github.io/Chess_Studio_index.html","desc":"Chess play and strategy studio."},{"title":"Checkers Variant Lab","url":"https://vervenveda.github.io/arcade.github.io/Checkers_Variant_Lab_index.html","desc":"Checkers with variant experimentation."},{"title":"Backgammon","url":"https://vervenveda.github.io/arcade.github.io/Backgammon_index.html","desc":"Classic backgammon board game."},{"title":"Orion's Connect Four","url":"https://vervenveda.github.io/arcade.github.io/Orions_connect_four_index.html","desc":"Connect Four strategy game."},{"title":"Tic-Tac-Toe","url":"https://vervenveda.github.io/arcade.github.io/Tictactoe_index.html","desc":"Classic tic-tac-toe."}]},{"title":"Classic Games","items":[{"title":"Jenny's Sudoku","url":"https://vervenveda.github.io/arcade.github.io/Jenny%27s_Sudoku_index.html","desc":"Sudoku logic and number-placement game."},{"title":"Hangman","url":"https://vervenveda.github.io/arcade.github.io/Hangman_index.html","desc":"Classic word-guessing game."},{"title":"Six by Six","url":"https://vervenveda.github.io/arcade.github.io/SixbySix_index.html","desc":"Compact grid-based puzzle play."},{"title":"Pocket Arcade","url":"https://vervenveda.github.io/arcade.github.io/Pocket_Arcade_index.html","desc":"A small collection of quick-play classics."},{"title":"Learn a New Word","url":"https://vervenveda.github.io/arcade.github.io/Learn_a_New_Word_index.html","desc":"Vocabulary game and word discovery."},{"title":"AffixSix","url":"https://vervenveda.github.io/arcade.github.io/AffixSix%E2%84%A2_index.html","desc":"Word-building and affix play."}]},{"title":"Trivia","items":[{"title":"Daily News Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_daily_news_index.html","desc":"Current-events trivia."},{"title":"Music Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_music_index.html","desc":"Music knowledge challenge."},{"title":"Arts Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_arts_index.html","desc":"Visual arts and culture trivia."},{"title":"Sovereign Arts Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_Soveriegn_arts_index.html","desc":"Expanded arts knowledge challenge."},{"title":"Ancients Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_ancients_index.html","desc":"Ancient-world history and culture."},{"title":"Civic Compass Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_civic_Compass_inndex.html","desc":"Civics and public-life challenge."},{"title":"Health Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_health_index.html","desc":"Health-literacy trivia."},{"title":"Mini IQ Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_mini_IQ_index.html","desc":"Short logic and knowledge challenge."},{"title":"Oddball Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_oddball_index.html","desc":"Unexpected and unusual trivia."},{"title":"ESL Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_ESL_index.html","desc":"English-language-learning trivia."},{"title":"Testament Kids Trivia","url":"https://vervenveda.github.io/arcade.github.io/Trivia_testament_kids_index.html","desc":"Child-oriented Testament trivia."}]},{"title":"Kids Games","items":[{"title":"ABC Bubbles","url":"https://vervenveda.github.io/arcade.github.io/games/kids/ABC_Bubbles_index.html","desc":"Alphabet bubble play."},{"title":"Acts of Kindness","url":"https://vervenveda.github.io/arcade.github.io/games/kids/Acts_of_Kindness_index.html","desc":"Kindness and social-emotional play."},{"title":"Bubble Pop","url":"https://vervenveda.github.io/arcade.github.io/games/kids/Bubble_Pop_index.html","desc":"Simple child-friendly bubble game."},{"title":"Palette Quest","url":"https://vervenveda.github.io/arcade.github.io/games/kids/Palette_Quest_index.html","desc":"Color and art exploration."},{"title":"Pattern Pirates","url":"https://vervenveda.github.io/arcade.github.io/games/kids/Pattern_Pirates_index.html","desc":"Pattern recognition and playful reasoning."},{"title":"Pizza Amorè","url":"https://vervenveda.github.io/arcade.github.io/games/kids/PizzaAmor%C3%A8_index.html","desc":"Playful pizza-themed kids game."},{"title":"Pizza Amorè Deluxe","url":"https://vervenveda.github.io/arcade.github.io/games/kids/PizzaAmor%C3%A8_deluxe_index.html","desc":"Expanded pizza-themed play."},{"title":"Shapes","url":"https://vervenveda.github.io/arcade.github.io/games/kids/Shapes_index.html","desc":"Early shape recognition."},{"title":"Pre-K Weather Match","url":"https://vervenveda.github.io/arcade.github.io/games/kids/prek_waether_match_index.html","desc":"Weather matching for younger learners."}]},{"title":"Unique Games","items":[{"title":"Balloon Brigade","url":"https://vervenveda.github.io/arcade.github.io/a_balloon_brigade_game_index.html","desc":"Original defensive strategy and challenge game."},{"title":"Chromatic Focus","url":"https://vervenveda.github.io/arcade.github.io/a_chromatic_focus_game_index.html","desc":"Color, attention, and focus challenge."},{"title":"Color Clash","url":"https://vervenveda.github.io/arcade.github.io/a_color_clash_game_index.html","desc":"Fast color-recognition challenge."},{"title":"Colorshift Cascade","url":"https://vervenveda.github.io/arcade.github.io/a_colorshift_cascade_game_index.html","desc":"Original color-shifting puzzle."},{"title":"Critter Crafter","url":"https://vervenveda.github.io/arcade.github.io/a_critter_crafter_game_index.html","desc":"Creative creature-building game."},{"title":"Geometry Sanctuary","url":"https://vervenveda.github.io/arcade.github.io/a_geometry_sanctuary_game_index.html","desc":"Geometry-inspired visual puzzle world."},{"title":"Haystack Escape","url":"https://vervenveda.github.io/arcade.github.io/a_haystack_escape_game_index.html","desc":"Progressive maze escape game."},{"title":"Lumin Gate","url":"https://vervenveda.github.io/arcade.github.io/a_lumin_gate_game_index.html","desc":"Original light-and-gate challenge."},{"title":"Mandala Rings","url":"https://vervenveda.github.io/arcade.github.io/a_mandala_rings_game_index.html","desc":"Pattern and ring puzzle."},{"title":"Mind Garden","url":"https://vervenveda.github.io/arcade.github.io/a_mind_garden_game_index.html","desc":"Reflective logic and discovery game."},{"title":"Permafrost Escape","url":"https://vervenveda.github.io/arcade.github.io/a_permafrost_escape_game_index.html","desc":"Original environmental escape challenge."},{"title":"Quantum Storyseed Orb","url":"https://vervenveda.github.io/arcade.github.io/a_quantum_storyseed_orb_game_index.html","desc":"Story generation and creative play."},{"title":"Sacred Geometry","url":"https://vervenveda.github.io/arcade.github.io/a_sacred_geometry_game_index.html","desc":"Geometry and pattern exploration."},{"title":"Signal Garden","url":"https://vervenveda.github.io/arcade.github.io/a_signal_garden_game_index.html","desc":"Signal and pattern challenge."},{"title":"Stadium Showdown","url":"https://vervenveda.github.io/arcade.github.io/a_statium_showdown_game_index.html","desc":"Original competition game."},{"title":"Thyme to Mow","url":"https://vervenveda.github.io/arcade.github.io/a_thyme_to_mow_game_index.html","desc":"Original lawn-and-garden challenge."}]}]},{"id":"civic","label":"Civic Resources","groups":[{"title":"Voters","items":[{"title":"One Nation For All","url":"https://vervenveda.github.io/onenationforall.github.io/","desc":"Independent civic-learning and public-service gateway."},{"title":"U.S. Voter Hub","url":"https://vervenveda.github.io/onenationforall.github.io/apps/US_VOTER_HUB_index.html","desc":"United States voter education and participation hub."},{"title":"Florida Voter Hub","url":"https://vervenveda.github.io/onenationforall.github.io/apps/Florida_Voter_Hub_index.html","desc":"Florida voter information and learning gateway."},{"title":"Global Voter Portal","url":"https://vervenveda.github.io/onenationforall.github.io/apps/Global_Voter_Portal_index.html","desc":"International voter and election-resource portal."},{"title":"Elementary Kids Vote","url":"https://vervenveda.github.io/onenationforall.github.io/apps/Elementary_Kids_Vote_index.html","desc":"Young-learner civic and mock-election activity."},{"title":"Middle School Voting Portal","url":"https://vervenveda.github.io/onenationforall.github.io/apps/MiddleSchool_Voting_Portal_index.html","desc":"Civic participation for middle-school learners."},{"title":"High School Voter Portal","url":"https://vervenveda.github.io/onenationforall.github.io/apps/High_School_voter_portal_index.html","desc":"Student elections and civic issues for high school."},{"title":"Voter Concerns Compass","url":"https://vervenveda.github.io/onenationforall.github.io/apps/voter_concerns_compass_index.html","desc":"Structured exploration of public concerns."}]},{"title":"Veterans","items":[{"title":"Veterans Resource Hall","url":"https://vervenveda.github.io/veterans.github.io/","desc":"Dedicated veteran support and resource gateway."},{"title":"Veterans Hub · National","url":"https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_National_index.html","desc":"National veteran resources within Firmament."},{"title":"Veterans Hub · Florida","url":"https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_Florida_index.html","desc":"Florida-focused veteran resources."}]},{"title":"Homeless","items":[{"title":"Homeless Hub","url":"https://vervenveda.github.io/firmament.github.io/apps/Homeless_Hub_index.html","desc":"Housing, homelessness, rights, public-service, and assistance pathways."},{"title":"Firmament Law","url":"https://vervenveda.github.io/firmament.github.io/","desc":"Legal and public-resource gateway supporting housing and rights navigation."},{"title":"One Nation For All","url":"https://vervenveda.github.io/onenationforall.github.io/","desc":"Civic gateway connecting housing and public-service resources."}]},{"title":"Families","items":[{"title":"Family Hub","url":"https://vervenveda.github.io/firmament.github.io/apps/Family_Hub_index.html","desc":"Family-law, household, resource, and support gateway."},{"title":"Khaemenes Family Portal","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/family/","desc":"Family account, learner, and Academy continuity portal."},{"title":"Homeschool Compass","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/Parent_resources/Homeschool_compass_index.html","desc":"Parent-facing homeschool planning and navigation."},{"title":"KindredVault","url":"https://vervenveda.github.io/firmament.github.io/apps/Heritage_KindredVault_v5_index.html","desc":"Heritage and family-record exploration."}]}]},{"id":"environmental","label":"Environmental","groups":[{"title":"River-to-Road","items":[{"title":"River to Road","url":"https://vervenveda.github.io/river_to_road.github.io/","desc":"Environmental stewardship, cleanups, water, service learning, and community action."},{"title":"Lawn Care Quiz","url":"https://vervenveda.github.io/river_to_road.github.io/apps/lawn_care_quiz_index.html","desc":"Environmental lawn-care knowledge activity."},{"title":"Virtual Lawn Mower","url":"https://vervenveda.github.io/river_to_road.github.io/apps/virtual_lawn_mower_index.html","desc":"Interactive environmental/lawn-care simulation."}]},{"title":"Connected Environmental Learning","items":[{"title":"Solanar Environmental News","url":"https://vervenveda.github.io/solanar.github.io/apps/environmental_news_index.html","desc":"Weather-linked environmental reporting."},{"title":"EcoPulse News","url":"https://vervenveda.github.io/theverifier.github.io/apps/EcoPulse_news_index.html","desc":"Environmental news through The Verifier."},{"title":"Environment Column","url":"https://vervenveda.github.io/theverifier.github.io/columns/environment_index.html","desc":"Environment, climate, conservation, and ecological analysis."},{"title":"Animals & Biodiversity","url":"https://vervenveda.github.io/theverifier.github.io/columns/animals_biodiversity_index.html","desc":"Biodiversity and animal-focused reporting."}]}]},{"id":"health","label":"Health","groups":[{"title":"Children's Health","items":[{"title":"Children's Medicine Hall","url":"https://vervenveda.github.io/medicament-hub.github.io/halls/Childrens_Medicine_Hall/","desc":"Family-centered health literacy, pediatric safety, caregiver questions, and medicine awareness."},{"title":"Health Is Wealth · 6 Weeks","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/Health_is_wealth_6weeks_index.html","desc":"Structured student health-learning course."},{"title":"Health Is Wealth Trivia","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/Trivia_Health_index.html","desc":"Health-literacy review activity."},{"title":"Wellness Workshop","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/wellness_workshop_index.html","desc":"General wellness-learning workshop."}]},{"title":"Holistic Health","items":[{"title":"Medicament Hub","url":"https://vervenveda.github.io/medicament-hub.github.io/","desc":"Whole-person health, safety, medicine, lifestyle, and evidence gateway."},{"title":"Holistic Medicine Hall","url":"https://vervenveda.github.io/medicament-hub.github.io/halls/%20Holistic_Medicine_Hall/","desc":"Whole-person health, lifestyle, mind-body approaches, ethics, and evidence awareness."},{"title":"Psychology & Mind Hall","url":"https://vervenveda.github.io/medicament-hub.github.io/halls/Psychology_Mind_Hall/","desc":"Psychology, mind, mental-health literacy, and human development."},{"title":"10-Week Wellness Program","url":"https://vervenveda.github.io/medicament-hub.github.io/workshops/10-Week_Wellness_Program_index.html","desc":"Reflective whole-person wellness sequence."},{"title":"Aurora","url":"https://vervenveda.github.io/aurora.github.io/","desc":"Zen-inspired breathing, reflection, calm, creative reset, and restoration."}]},{"title":"Traditional Medicine","items":[{"title":"Traditional Medicine Hall","url":"https://vervenveda.github.io/medicament-hub.github.io/halls/Traditional_Medicine_Hall/","desc":"Traditional healing systems studied through culture, safety, ethics, and current research."},{"title":"Medicament Hub","url":"https://vervenveda.github.io/medicament-hub.github.io/","desc":"Comparative health-learning gateway for traditional and modern approaches."},{"title":"Art & Culture Context · ARSHIF","url":"https://vervenveda.github.io/Arshif.github.io/","desc":"Historical and cultural context that can support deeper study of healing traditions."}]}]},{"id":"communication","label":"Communication","groups":[{"title":"333 Network","items":[{"title":"333 Network","url":"https://vervenveda.github.io/333.github.io/","desc":"Connected communication, community, meeting, mail, site, and infrastructure network."},{"title":"Bunya","url":"https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html","desc":"Digital infrastructure and connected-service workspace."},{"title":"Bazaar Art Live","url":"https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html","desc":"Creative social feed, profiles, posts, groups, events, and artistic connection."},{"title":"KANSEE","url":"https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html","desc":"Meeting rooms and connected conversation space."},{"title":"HOLLO","url":"https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html","desc":"Direct-connect communication tool."},{"title":"E=Ven Mail","url":"https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html","desc":"Mail and message environment."},{"title":"SIte","url":"https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html","desc":"Site-building and publishing studio."}]}]}];
+      let activeEcosystemCategory = null;
+
+      function ecosystemCategoryById(id){
+        return ECOSYSTEM_DIRECTORY.find(category => category.id === id) || null;
       }
 
-      function renderDirectory(){
-        currentResults = getFilteredSites();
-
-        $("directoryGrid").innerHTML = currentResults.map(site => `
-          <a class="site-card"
-             href="${escapeAttribute(site.url)}"
-             aria-label="Open ${escapeAttribute(site.title)} public landing page">
-            <span class="site-icon" aria-hidden="true">${escapeHtml(site.icon)}</span>
-            <span class="site-group">${escapeHtml(site.group)}</span>
-            <h3>${escapeHtml(site.title)}</h3>
-            <p>${escapeHtml(site.desc)}</p>
-            <small>Open public landing page →</small>
-          </a>
-        `).join("");
-
-        $("directoryStatus").textContent = currentResults.length
-          ? `${currentResults.length} of ${SITES.length} public destinations shown.`
-          : "No destinations match that search yet.";
+      function ecosystemCategorySummary(category){
+        const count = category.groups.reduce((sum,group) => sum + group.items.length,0);
+        const subgroupNames = category.groups.map(group => group.title).join(" · ");
+        return `${count} verified ecosystem destination${count === 1 ? "" : "s"} · ${subgroupNames}`;
       }
 
-      function buildMenu(query = ""){
-        const q = query.trim().toLowerCase();
-        const filtered = SITES.filter(site => !q || searchableText(site).includes(q));
+      function renderEcosystemPanel(category){
+        const panel = $("ecosystemDirectoryPanel");
+        const heading = $("ecosystemPanelHeading");
+        const note = $("ecosystemPanelNote");
+        const grid = $("ecosystemPanelGrid");
+        if(!panel || !heading || !note || !grid) return;
 
-        $("menuContent").innerHTML = GROUP_ORDER.map(group => {
-          const items = filtered.filter(site => site.group === group);
-          if(!items.length) return "";
-          return `
-            <p class="menu-group">${escapeHtml(group)} · ${items.length}</p>
-            <div class="menu-list">
-              ${items.map(site => `
-                <a class="menu-link"
-                   href="${escapeAttribute(site.url)}"
-                   aria-label="Open ${escapeAttribute(site.title)}">
-                  <i aria-hidden="true">${escapeHtml(site.icon)}</i>
-                  <span>
-                    <strong>${escapeHtml(site.title)}</strong>
-                    <small>${escapeHtml(site.desc)}</small>
+        heading.textContent = category.label;
+        note.textContent = ecosystemCategorySummary(category);
+        grid.innerHTML = category.groups.map(group => `
+          <section class="ecosystem-subgroup">
+            <h4 class="ecosystem-subgroup-title">${escapeHtml(group.title)}</h4>
+            <div class="ecosystem-link-list">
+              ${group.items.map(entry => `
+                <a class="ecosystem-link"
+                   href="${escapeAttribute(entry.url)}"
+                   aria-label="Open ${escapeAttribute(entry.title)}">
+                  <span class="ecosystem-link-copy">
+                    <strong>${escapeHtml(entry.title)}</strong>
+                    <small>${escapeHtml(entry.desc)}</small>
                   </span>
-                  <span aria-hidden="true">→</span>
+                  <span class="ecosystem-link-arrow" aria-hidden="true">→</span>
                 </a>
               `).join("")}
             </div>
-          `;
-        }).join("");
+          </section>
+        `).join("");
+        panel.hidden = false;
+      }
 
-        $("menuContent").querySelectorAll("a").forEach(link => {
-          link.addEventListener("click",() => closeMenu(false));
+      function setEcosystemCategory(id,{
+        scroll=false,
+        focusPanel=false
+      }={}){
+        const category = ecosystemCategoryById(id);
+        if(!category) return;
+
+        const buttons = [...document.querySelectorAll(".ecosystem-category-button")];
+        const isClosing = activeEcosystemCategory === id;
+
+        buttons.forEach(button => {
+          const expanded = !isClosing && button.dataset.category === id;
+          button.setAttribute("aria-expanded", String(expanded));
+        });
+
+        if(isClosing){
+          activeEcosystemCategory = null;
+          $("ecosystemDirectoryPanel").hidden = true;
+          return;
+        }
+
+        activeEcosystemCategory = id;
+        renderEcosystemPanel(category);
+
+        if(scroll){
+          $("directory")?.scrollIntoView({behavior:"smooth",block:"start"});
+        }
+        if(focusPanel){
+          requestAnimationFrame(() => $("ecosystemPanelHeading")?.focus?.());
+        }
+      }
+
+      function renderEcosystemDirectory(){
+        const grid = $("ecosystemCategoryGrid");
+        if(!grid) return;
+
+        grid.innerHTML = ECOSYSTEM_DIRECTORY.map(category => `
+          <button class="ecosystem-category-button"
+                  type="button"
+                  data-category="${escapeAttribute(category.id)}"
+                  aria-expanded="false"
+                  aria-controls="ecosystemDirectoryPanel">
+            <span>${escapeHtml(category.label)}</span>
+          </button>
+        `).join("");
+
+        grid.querySelectorAll(".ecosystem-category-button").forEach(button => {
+          button.addEventListener("click",() => setEcosystemCategory(button.dataset.category));
+        });
+
+        $("ecosystemPanelClose")?.addEventListener("click",() => {
+          if(!activeEcosystemCategory) return;
+          const prior = document.querySelector(`.ecosystem-category-button[data-category="${activeEcosystemCategory}"]`);
+          activeEcosystemCategory = null;
+          $("ecosystemDirectoryPanel").hidden = true;
+          document.querySelectorAll(".ecosystem-category-button").forEach(button => button.setAttribute("aria-expanded","false"));
+          prior?.focus();
+        });
+
+        document.addEventListener("keydown",event => {
+          if(event.key !== "Escape" || !activeEcosystemCategory || $("menuOverlay")?.classList.contains("open") || $("adminGate")?.classList.contains("open")) return;
+          const prior = document.querySelector(`.ecosystem-category-button[data-category="${activeEcosystemCategory}"]`);
+          activeEcosystemCategory = null;
+          $("ecosystemDirectoryPanel").hidden = true;
+          document.querySelectorAll(".ecosystem-category-button").forEach(button => button.setAttribute("aria-expanded","false"));
+          prior?.focus();
         });
       }
 
-      function populateGroupFilter(){
-        $("groupFilter").innerHTML =
-          '<option value="all">All Public Halls</option>' +
-          GROUP_ORDER.map(group =>
-            `<option value="${escapeAttribute(group)}">${escapeHtml(group)}</option>`
-          ).join("");
-      }
+      const PILLAR_DIRECTORY_MAP = {
+        "Education":"education",
+        "Knowledge":"news",
+        "Public Service":"civic",
+        "Creative & Professional":"creative"
+      };
 
       document.querySelectorAll("[data-group-link]").forEach(button => {
         button.addEventListener("click",() => {
-          $("groupFilter").value = button.dataset.groupLink;
-          $("search").value = "";
-          renderDirectory();
-          $("directory").scrollIntoView({behavior:"smooth",block:"start"});
-          setTimeout(() => $("search").focus(),450);
+          const id = PILLAR_DIRECTORY_MAP[button.dataset.groupLink] || "education";
+          if(activeEcosystemCategory === id) activeEcosystemCategory = null;
+          setEcosystemCategory(id,{scroll:true});
         });
-      });
-
-      $("search").addEventListener("input",renderDirectory);
-      $("groupFilter").addEventListener("change",renderDirectory);
-
-      $("clearSearchButton").addEventListener("click",() => {
-        $("search").value = "";
-        $("groupFilter").value = "all";
-        renderDirectory();
-        $("search").focus();
-      });
-
-      $("randomButton").addEventListener("click",() => {
-        const pool = currentResults.length ? currentResults : SITES;
-        const site = pool[Math.floor(Math.random() * pool.length)];
-        window.location.assign(site.url);
       });
 
       const networkTicker = $("networkTicker");
@@ -2367,12 +2950,217 @@
         }
       });
 
+
+
+      /* Featured ecosystem discovery -------------------------------------- */
+      const FEATURE_MEDIA = Object.freeze({
+        /* Optional visuals can be added without changing slideshow logic.
+           Example:
+           "https://vervenveda.github.io/bazaarart.github.io/": {
+             image:"assets/bazaar-art-feature.jpg",
+             alt:"Bazaar Art feature poster",
+             type:"Feature poster"
+           }
+        */
+      });
+
+      const FEATURE_POOL = ECOSYSTEM_DIRECTORY.flatMap(category =>
+        category.groups.flatMap(group =>
+          group.items.map(item => ({
+            ...item,
+            categoryId:category.id,
+            category:category.label,
+            subgroup:group.title
+          }))
+        )
+      ).filter(item => item.url && item.title && item.desc);
+
+      let featuredIndex = -1;
+      let featureTimer = 0;
+      let featurePaused = false;
+      let featureHoverPaused = false;
+      let currentFeature = null;
+      let viewerLastFocus = null;
+      const FEATURE_INTERVAL = 4000;
+
+      function featureInitials(title){
+        const words=String(title).replace(/[^A-Za-z0-9 ]+/g," ").trim().split(/\s+/).filter(Boolean);
+        if(!words.length) return "V";
+        if(words.length===1) return words[0].slice(0,3).toUpperCase();
+        return words.slice(0,3).map(word=>word[0]).join("").toUpperCase();
+      }
+
+      function chooseRandomFeature(){
+        if(!FEATURE_POOL.length) return null;
+        if(FEATURE_POOL.length===1){ featuredIndex=0; return FEATURE_POOL[0]; }
+        let next=featuredIndex;
+        while(next===featuredIndex) next=Math.floor(Math.random()*FEATURE_POOL.length);
+        featuredIndex=next;
+        return FEATURE_POOL[next];
+      }
+
+      function renderFeature(item,{animate=true}={}){
+        if(!item) return;
+        const slide=$("featureSlide");
+        const apply=()=>{
+          currentFeature=item;
+          const media=FEATURE_MEDIA[item.url] || null;
+          const visual=$("featureVisual");
+          const image=$("featureImage");
+          visual.classList.toggle("has-image",Boolean(media?.image));
+          if(media?.image){
+            image.src=media.image;
+            image.alt=media.alt || `${item.title} feature image`;
+          }else{
+            image.removeAttribute("src");
+            image.alt="";
+          }
+          $("featureMonogram").textContent=featureInitials(item.title);
+          $("featureVisualLabel").textContent=media?.type || `${item.category} · ${item.subgroup}`;
+          $("featureKicker").textContent=`Featured · ${item.category}`;
+          $("featureTitle").textContent=item.title;
+          $("featureDescription").textContent=item.desc;
+          $("featureBreadcrumbs").innerHTML=`
+            <span>Verve N Veda</span><span aria-hidden="true">›</span>
+            <span>${escapeHtml(item.category)}</span><span aria-hidden="true">›</span>
+            <span>${escapeHtml(item.subgroup)}</span>`;
+          $("featureCounter").textContent=`${featuredIndex+1} of ${FEATURE_POOL.length} possible features`;
+        };
+
+        if(!animate || window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+          apply();
+          return;
+        }
+        slide.classList.remove("is-entering");
+        slide.classList.add("is-leaving");
+        window.setTimeout(()=>{
+          apply();
+          slide.classList.remove("is-leaving");
+          slide.classList.add("is-entering");
+          requestAnimationFrame(()=>requestAnimationFrame(()=>slide.classList.remove("is-entering")));
+        },240);
+      }
+
+      function advanceFeature(){ renderFeature(chooseRandomFeature()); }
+
+      function stopFeatureTimer(){
+        if(featureTimer){ window.clearInterval(featureTimer); featureTimer=0; }
+      }
+
+      function startFeatureTimer(){
+        stopFeatureTimer();
+        if(featurePaused || featureHoverPaused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        featureTimer=window.setInterval(advanceFeature,FEATURE_INTERVAL);
+      }
+
+      function syncFeaturePauseButton(){
+        const button=$("featurePauseButton");
+        if(!button) return;
+        button.setAttribute("aria-pressed",String(featurePaused));
+        button.textContent=featurePaused ? "Play" : "Pause";
+      }
+
+      function viewerBreadcrumbHtml(item){
+        return `<strong>Verve N Veda</strong><span>›</span><span>${escapeHtml(item.category)}</span><span>›</span><span>${escapeHtml(item.subgroup)}</span><span>›</span><span>${escapeHtml(item.title)}</span>`;
+      }
+
+      function openFeatureViewer(item){
+        if(!item) return;
+        viewerLastFocus=document.activeElement;
+        const overlay=$("ecosystemViewerOverlay");
+        $("viewerBreadcrumbs").innerHTML=viewerBreadcrumbHtml(item);
+        $("viewerTitle").textContent=item.title;
+        $("viewerDescription").textContent=item.desc;
+        $("viewerFullLink").href=item.url;
+        const frame=$("viewerFrame");
+        frame.title=`${item.title} — Verve N Veda ecosystem viewer`;
+        frame.src=item.url;
+        overlay.classList.add("open");
+        overlay.setAttribute("aria-hidden","false");
+        document.body.classList.add("feature-viewer-open");
+        stopFeatureTimer();
+        window.setTimeout(()=>$("viewerClose")?.focus(),80);
+      }
+
+      function closeFeatureViewer({restoreFocus=true}={}){
+        const overlay=$("ecosystemViewerOverlay");
+        if(!overlay?.classList.contains("open")) return;
+        overlay.classList.remove("open");
+        overlay.setAttribute("aria-hidden","true");
+        document.body.classList.remove("feature-viewer-open");
+        $("viewerFrame").src="about:blank";
+        if(restoreFocus && viewerLastFocus instanceof HTMLElement) viewerLastFocus.focus();
+        startFeatureTimer();
+      }
+
+      function printCurrentFeature(){
+        if(!currentFeature) return;
+        const frame=$("viewerFrame");
+        try{
+          frame.contentWindow.focus();
+          frame.contentWindow.print();
+          return;
+        }catch{}
+        const printWindow=window.open("","vnvFeaturePrint","width=820,height=720");
+        if(!printWindow) return;
+        const media=FEATURE_MEDIA[currentFeature.url] || null;
+        printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(currentFeature.title)}</title><style>body{font-family:Georgia,serif;color:#18201c;margin:48px;line-height:1.6}small{letter-spacing:.12em;text-transform:uppercase;color:#806a42}h1{font-weight:400;font-size:34px}img{max-width:100%;max-height:420px;object-fit:contain;border:1px solid #ddd}a{color:#21493d;word-break:break-all}.crumb{font:12px Arial,sans-serif;color:#756d60;margin-bottom:24px}</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(currentFeature.category)} › ${escapeHtml(currentFeature.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(currentFeature.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(currentFeature.desc)}</p><p><a href="${escapeAttribute(currentFeature.url)}">${escapeHtml(currentFeature.url)}</a></p><script>window.onload=()=>window.print()<\/script></body></html>`);
+        printWindow.document.close();
+      }
+
+      function initFeaturedShowcase(){
+        if(!FEATURE_POOL.length || !$("featureSlide")) return;
+        renderFeature(chooseRandomFeature(),{animate:false});
+        syncFeaturePauseButton();
+        startFeatureTimer();
+
+        $("featureOpenButton")?.addEventListener("click",()=>openFeatureViewer(currentFeature));
+        $("featurePauseButton")?.addEventListener("click",()=>{
+          featurePaused=!featurePaused;
+          syncFeaturePauseButton();
+          startFeatureTimer();
+        });
+
+        const showcase=$("ecosystemFeatureShowcase");
+        showcase?.addEventListener("mouseenter",()=>{featureHoverPaused=true;stopFeatureTimer()});
+        showcase?.addEventListener("mouseleave",()=>{featureHoverPaused=false;startFeatureTimer()});
+        showcase?.addEventListener("focusin",()=>{featureHoverPaused=true;stopFeatureTimer()});
+        showcase?.addEventListener("focusout",event=>{
+          if(showcase.contains(event.relatedTarget)) return;
+          featureHoverPaused=false;
+          startFeatureTimer();
+        });
+
+        $("viewerClose")?.addEventListener("click",()=>closeFeatureViewer());
+        $("viewerPrint")?.addEventListener("click",printCurrentFeature);
+        $("ecosystemViewerOverlay")?.addEventListener("click",event=>{
+          if(event.target===$("ecosystemViewerOverlay")) closeFeatureViewer();
+        });
+
+        document.addEventListener("keydown",event=>{
+          const overlay=$("ecosystemViewerOverlay");
+          if(!overlay?.classList.contains("open")) return;
+          if(event.key==="Escape"){
+            event.preventDefault();
+            closeFeatureViewer();
+            return;
+          }
+          if(event.key==="Tab"){
+            const focusable=[...$("ecosystemViewer").querySelectorAll('a[href],button:not([disabled]),iframe,[tabindex]:not([tabindex="-1"])')];
+            if(!focusable.length) return;
+            const first=focusable[0],last=focusable[focusable.length-1];
+            if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus()}
+            else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus()}
+          }
+        });
+      }
+
       $("destinationCount").textContent = String(SITES.length);
       $("year").textContent = String(new Date().getFullYear());
-      populateGroupFilter();
       validateSiteRegistry();
-      renderDirectory();
+      renderEcosystemDirectory();
       buildMenu();
+      initFeaturedShowcase();
     })();
   </script>
 <script async src="https://js.stripe.com/v3/buy-button.js"></script>
@@ -2411,5 +3199,29 @@
     })();
   </script>
 
+
+
+  <div class="ecosystem-viewer-overlay" id="ecosystemViewerOverlay" aria-hidden="true">
+    <section class="ecosystem-viewer" id="ecosystemViewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
+      <header class="ecosystem-viewer-toolbar">
+        <nav class="viewer-breadcrumbs" id="viewerBreadcrumbs" aria-label="Ecosystem breadcrumb"></nav>
+        <div class="viewer-toolbar-actions">
+          <button class="viewer-tool" id="viewerPrint" type="button" title="Print this destination"><span>Print</span> ⎙</button>
+          <button class="viewer-close" id="viewerClose" type="button" aria-label="Close ecosystem viewer">×</button>
+        </div>
+      </header>
+      <div class="viewer-summary">
+        <div>
+          <h3 id="viewerTitle">Verve N Veda</h3>
+          <p id="viewerDescription"></p>
+        </div>
+        <a class="viewer-full-link" id="viewerFullLink" href="#" target="_blank" rel="noopener noreferrer">Open full page ↗</a>
+      </div>
+      <div class="viewer-frame-wrap">
+        <iframe class="viewer-frame" id="viewerFrame" title="Featured Verve N Veda destination" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="viewer-frame-note">Some destinations protect themselves from embedded display. If a page declines the viewer, use <strong>Open full page</strong>; Verve N Veda remains open behind it.</div>
+    </section>
+  </div>
 </body>
 </html>
