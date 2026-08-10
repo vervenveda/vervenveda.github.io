@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-10T02:11:36.596585+00:00",
+  "families": [
+    {
+      "familyId": "fam_example",
+      "displayName": "Example Family",
+      "createdAt": "2026-08-10T00:11:36.596585+00:00"
+    }
+  ],
+  "adults": [
+    {
+      "adultId": "adult_example",
+      "displayName": "Parent Example",
+      "role": "parent",
+      "email": "parent@example.com",
+      "emailVerified": true,
+      "contactOptIn": true,
+      "birthday": {
+        "month": 8,
+        "day": 10
+      },
+      "birthdayWishesOptIn": false,
+      "createdAt": "2026-08-10T00:11:36.596585+00:00"
+    }
+  ],
+  "learners": [
+    {
+      "learnerId": "learner_example",
+      "familyId": "fam_example",
+      "nickname": "Learner Example",
+      "stage": "elementary",
+      "email": "",
+      "birthday": {
+        "month": 8,
+        "day": 10
+      },
+      "birthdayWishesOptIn": false,
+      "guardianBirthdayConsent": false,
+      "createdAt": "2026-08-10T01:11:36.596585+00:00"
+    }
+  ],
+  "progress": [
+    {
+      "learnerId": "learner_example",
+      "courseId": "grade-04-mathematics",
+      "courseTitle": "Grade 4 Mathematics",
+      "expectedAssignments": 5,
+      "completedAssignments": 3,
+      "overdueAssignments": 2,
+      "masteryAverage": 76,
+      "scoredItems": 3,
+      "lastActivityAt": "2026-08-02T02:11:36.596585+00:00",
+      "updatedAt": "2026-08-02T02:11:36.596585+00:00"
+    }
+  ]
+}
