@@ -1,0 +1,1329 @@
+{
+  "version": 1,
+  "generated": "2026-08-09",
+  "alignmentDefinitions": {
+    "core": "The resource is itself an instructional course/program for the objective and may contribute evidence when its own assessments/rubrics support that claim.",
+    "direct-practice": "The resource directly practices the target skill or concept.",
+    "support": "The resource helps complete learning but usage alone is not mastery evidence.",
+    "transfer-practice": "The resource exercises a transferable reasoning skill; do not relabel it as subject instruction.",
+    "exploration": "Optional enrichment/discovery with weak or broad curricular specificity."
+  },
+  "overrides": [
+    {
+      "sourceId": "verve.arcade",
+      "localId": "affix-six",
+      "title": "Affix Six\u2122",
+      "objectiveIds": [
+        "ELA.MORPHOLOGY",
+        "ELA.VOCABULARY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Word-formation and vocabulary practice; not a replacement for explicit morphology instruction.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "backgammon",
+      "title": "Backgammon",
+      "objectiveIds": [
+        "MATH.PROBABILITY",
+        "X.STRATEGY"
+      ],
+      "alignment": "transfer-practice",
+      "subjects": [
+        "mathematics",
+        "cross-curricular"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Useful for probability/strategy discussion; gameplay alone is not probability mastery evidence.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "checkers-lab",
+      "title": "Checkers Variant Lab",
+      "objectiveIds": [
+        "X.STRATEGY",
+        "X.PLANNING"
+      ],
+      "alignment": "transfer-practice",
+      "subjects": [
+        "cross-curricular"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Planning/strategy transfer practice.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "chess-studio",
+      "title": "Chess Studio",
+      "objectiveIds": [
+        "X.STRATEGY",
+        "X.PLANNING",
+        "X.PATTERN_RECOGNITION"
+      ],
+      "alignment": "transfer-practice",
+      "subjects": [
+        "cross-curricular"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Executive/strategic transfer practice, not generic mathematics mastery.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "hangman",
+      "title": "Hangman",
+      "objectiveIds": [
+        "ELA.SPELLING",
+        "ELA.VOCABULARY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "sudoku",
+      "title": "Jenny's Sudoku",
+      "objectiveIds": [
+        "X.LOGIC",
+        "X.PATTERN_RECOGNITION",
+        "MATH.NUMBER_SENSE"
+      ],
+      "alignment": "transfer-practice",
+      "subjects": [
+        "cross-curricular",
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Number symbols are used, but Sudoku should not be treated as arithmetic instruction.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "new-word",
+      "title": "Learn a New Word",
+      "objectiveIds": [
+        "ELA.VOCABULARY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "connect-four",
+      "title": "Orion's Connect Four",
+      "objectiveIds": [
+        "X.STRATEGY",
+        "X.PATTERN_RECOGNITION"
+      ],
+      "alignment": "transfer-practice",
+      "subjects": [
+        "cross-curricular"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "six-by-six",
+      "title": "Six by Six",
+      "objectiveIds": [
+        "X.LOGIC",
+        "X.PATTERN_RECOGNITION"
+      ],
+      "alignment": "transfer-practice",
+      "subjects": [
+        "cross-curricular"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "tic-tac-toe",
+      "title": "Tic-Tac-Toe",
+      "objectiveIds": [
+        "X.STRATEGY",
+        "X.PATTERN_RECOGNITION"
+      ],
+      "alignment": "transfer-practice",
+      "subjects": [
+        "cross-curricular"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": "middle",
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arcade",
+      "localId": "trivia-esl",
+      "title": "ESL Trivia",
+      "objectiveIds": [
+        "LANG.ESL",
+        "ELA.VOCABULARY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "world-languages",
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "abc-curriculum",
+      "title": "ABC Curriculum",
+      "objectiveIds": [
+        "ELA.LETTER_RECOGNITION",
+        "ELA.PHONICS",
+        "ELA.READING_COMPREHENSION"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "abc-spelling-soup",
+      "title": "ABC Spelling Soup",
+      "objectiveIds": [
+        "ELA.LETTER_RECOGNITION",
+        "ELA.SPELLING"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "abc-story",
+      "title": "ABC Story",
+      "objectiveIds": [
+        "ELA.LETTER_RECOGNITION",
+        "ELA.READING_COMPREHENSION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "math-curriculum",
+      "title": "Kindergarten Math Curriculum",
+      "objectiveIds": [
+        "MATH.NUMBER_SENSE",
+        "MATH.COUNTING",
+        "MATH.NUMBER_RECOGNITION"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "numbers-1-12",
+      "title": "Numbers 1\u201312",
+      "objectiveIds": [
+        "MATH.COUNTING",
+        "MATH.NUMBER_RECOGNITION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "spelling-safari",
+      "title": "Spelling Safari",
+      "objectiveIds": [
+        "ELA.SPELLING",
+        "ELA.PHONICS"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "weather-compass",
+      "title": "Weather Compass",
+      "objectiveIds": [
+        "SCI.WEATHER_CLIMATE",
+        "SCI.OBSERVATION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "science"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.kindergarten",
+      "localId": "pe-curriculum",
+      "title": "Kinder Movement & PE",
+      "objectiveIds": [
+        "PE.MOVEMENT",
+        "PE.GROSS_MOTOR"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "physical-education"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "geometry-game",
+      "title": "Elementary Geometry",
+      "objectiveIds": [
+        "MATH.GEOMETRY",
+        "MATH.SYMMETRY",
+        "X.PATTERN_RECOGNITION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "kindness-quest",
+      "title": "Kindness Quest Academy",
+      "objectiveIds": [
+        "SEL.REFLECTION",
+        "SS.CITIZENSHIP_SERVICE",
+        "X.SERVICE_LEARNING"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "social-emotional",
+        "social-studies"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "vocabulary-garden",
+      "title": "Vocabulary Garden Academy",
+      "objectiveIds": [
+        "ELA.VOCABULARY",
+        "ELA.MORPHOLOGY",
+        "ELA.READING_COMPREHENSION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "weather-portal",
+      "title": "Solanar for Kids \u00b7 Elementary Weather Portal",
+      "objectiveIds": [
+        "SCI.WEATHER_CLIMATE",
+        "SCI.OBSERVATION",
+        "SCI.INQUIRY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "science"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Best match for elementary weather/climate weeks; dynamic observations should preserve freshness awareness.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "emotional-garden",
+      "title": "Noetic Elementary Psychology Garden",
+      "objectiveIds": [
+        "SEL.EMOTIONAL_LITERACY",
+        "SEL.REFLECTION",
+        "SEL.SELF_MANAGEMENT"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "social-emotional",
+        "health"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Privacy-first support; not clinical or diagnostic and not academic mastery evidence.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "learn-new-word",
+      "title": "Learn a New Word \u00b7 Enchanted Word Garden",
+      "objectiveIds": [
+        "ELA.VOCABULARY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "force-motion-ramp-lab",
+      "title": "Force & Motion Ramp Lab",
+      "objectiveIds": [
+        "SCI.FORCE_MOTION",
+        "SCI.INQUIRY",
+        "MATH.DATA_GRAPHING",
+        "ENG.DESIGN"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "science",
+        "mathematics",
+        "engineering"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "fraction-picnic",
+      "title": "Fraction Picnic",
+      "objectiveIds": [
+        "MATH.FRACTIONS",
+        "MATH.FRACTION_EQUIVALENCE"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "junior-city-council",
+      "title": "Junior City Council",
+      "objectiveIds": [
+        "SS.CIVICS_GOVERNMENT",
+        "SS.PUBLIC_ARGUMENT",
+        "SS.RIGHTS_RESPONSIBILITIES"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "social-studies"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "junior-engineer-studio",
+      "title": "Junior Engineer Studio",
+      "objectiveIds": [
+        "ENG.DESIGN",
+        "X.PROBLEM_SOLVING"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "engineering",
+        "technology"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "bazaar-junior-art-studio",
+      "title": "Bazaar Junior Art Studio",
+      "objectiveIds": [
+        "ART.VISUAL_ART",
+        "ART.COLOR",
+        "ART.COMPOSITION",
+        "MATH.SYMMETRY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "arts",
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.elementary",
+      "localId": "curiosity-machine",
+      "title": "Curiosity Machine",
+      "objectiveIds": [
+        "SCI.INQUIRY",
+        "SCI.OBSERVATION",
+        "ELA.INFORMATIONAL_WRITING",
+        "SEL.REFLECTION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "science",
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.proresources",
+      "localId": "daily-spark",
+      "title": "DailySpark\u2122 Task Studio",
+      "objectiveIds": [
+        "X.PLANNING",
+        "SEL.SELF_MANAGEMENT"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "cross-curricular"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Planning support; never substitutes for subject learning evidence.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.proresources",
+      "localId": "khae-clean",
+      "title": "KhaeClean\u2122",
+      "objectiveIds": [
+        "TECH.DIGITAL_TOOLS",
+        "TECH.FILE_MANAGEMENT"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "technology"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.proresources",
+      "localId": "khae-zip",
+      "title": "KhaeZip\u2122",
+      "objectiveIds": [
+        "TECH.FILE_MANAGEMENT"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "technology"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.proresources",
+      "localId": "ohmic-cad",
+      "title": "Ohmic CAD Studio",
+      "objectiveIds": [
+        "ENG.CAD",
+        "ENG.DESIGN",
+        "MATH.GEOMETRY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "engineering",
+        "technology",
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.proresources",
+      "localId": "prose",
+      "title": "PROSE\u2122 Writing Studio",
+      "objectiveIds": [
+        "ELA.NARRATIVE_WRITING",
+        "ELA.INFORMATIONAL_WRITING",
+        "ELA.OPINION_ARGUMENT",
+        "ELA.EDITING",
+        "ELA.RESEARCH"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Writing production tool; quality/mastery must come from the submitted writing and rubric, not tool usage.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.proresources",
+      "localId": "plera-search-gate",
+      "title": "PLERA\u2122 Search Gate",
+      "objectiveIds": [
+        "X.RESEARCH_NAVIGATION",
+        "X.SOURCE_DISCOVERY",
+        "ELA.RESEARCH"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "research",
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Research navigation; current/external information requires source freshness and verification.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.proresources",
+      "localId": "scientific-calculator",
+      "title": "Khaemenes Scientific Calculator",
+      "objectiveIds": [
+        "MATH.CALCULATION",
+        "SCI.QUANTITATIVE_REASONING"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "mathematics",
+        "science"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Computation tool; calculator use itself is not mastery evidence.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.linguistics",
+      "localId": "arabic-365",
+      "title": "Arabic 365",
+      "objectiveIds": [
+        "LANG.ARABIC",
+        "LANG.LANGUAGE_LEARNING"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "world-languages"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.linguistics",
+      "localId": "arabic-daily",
+      "title": "Arabic Daily",
+      "objectiveIds": [
+        "LANG.ARABIC",
+        "LANG.LANGUAGE_LEARNING"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "world-languages"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.linguistics",
+      "localId": "arabic-memory",
+      "title": "Arabic Memory Game",
+      "objectiveIds": [
+        "LANG.ARABIC",
+        "X.PATTERN_RECOGNITION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "world-languages"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.linguistics",
+      "localId": "arabic-numbers",
+      "title": "Arabic Numbers",
+      "objectiveIds": [
+        "LANG.ARABIC",
+        "MATH.NUMBER_RECOGNITION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "world-languages",
+        "mathematics"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.linguistics",
+      "localId": "esl-course",
+      "title": "ESL Course",
+      "objectiveIds": [
+        "LANG.ESL",
+        "LANG.COMMUNICATION",
+        "ELA.VOCABULARY"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "world-languages",
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.linguistics",
+      "localId": "quran-root-explorer",
+      "title": "Arabic Qur'an Root Explorer",
+      "objectiveIds": [
+        "LANG.ARABIC_ROOTS",
+        "ELA.MORPHOLOGY"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "world-languages",
+        "textual-study"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": [
+        "faith",
+        "quranic-study"
+      ]
+    },
+    {
+      "sourceId": "verve.aurora",
+      "localId": "breath-reset",
+      "title": "Breath Reset",
+      "objectiveIds": [
+        "SEL.SELF_MANAGEMENT"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "social-emotional"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Optional pause tool; not medical/therapeutic treatment and never mastery evidence.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.aurora",
+      "localId": "breathe-ground",
+      "title": "Breathe & Ground",
+      "objectiveIds": [
+        "SEL.SELF_MANAGEMENT",
+        "SEL.REFLECTION"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "social-emotional"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Optional support only.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.aurora",
+      "localId": "evening-breath",
+      "title": "Evening Breath",
+      "objectiveIds": [
+        "SEL.SELF_MANAGEMENT",
+        "SEL.WELLNESS"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "social-emotional"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Optional support only.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.aurora",
+      "localId": "affirmation-garden",
+      "title": "Affirmation Garden",
+      "objectiveIds": [
+        "SEL.REFLECTION"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "social-emotional"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.aurora",
+      "localId": "aurora-inspiration",
+      "title": "Aurora Inspiration",
+      "objectiveIds": [
+        "SEL.REFLECTION",
+        "ART.CREATIVE_EXPRESSION"
+      ],
+      "alignment": "exploration",
+      "subjects": [
+        "social-emotional",
+        "arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.aurora",
+      "localId": "color-alchemy",
+      "title": "Color Alchemy",
+      "objectiveIds": [
+        "ART.COLOR",
+        "ART.CREATIVE_EXPRESSION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arshif",
+      "localId": "arshif-home",
+      "title": "ARSHIF Archives",
+      "objectiveIds": [
+        "X.RESEARCH_NAVIGATION",
+        "X.SOURCE_DISCOVERY",
+        "SS.HISTORY_PERSPECTIVE",
+        "ELA.RESEARCH"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "research",
+        "social-studies",
+        "language-arts"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arshif",
+      "localId": "reading-room",
+      "title": "ARSHIF Reading Room",
+      "objectiveIds": [
+        "ELA.READING_COMPREHENSION",
+        "X.SOURCE_DISCOVERY",
+        "SEL.REFLECTION"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "language-arts",
+        "research"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.arshif",
+      "localId": "bible-history",
+      "title": "Bible & History",
+      "objectiveIds": [
+        "SS.HISTORY_PERSPECTIVE",
+        "ELA.TEXT_EVIDENCE"
+      ],
+      "alignment": "exploration",
+      "subjects": [
+        "history",
+        "religious-studies"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": [
+        "faith",
+        "biblical-study"
+      ]
+    },
+    {
+      "sourceId": "verve.arshif",
+      "localId": "bible-context",
+      "title": "Bible Context",
+      "objectiveIds": [
+        "ELA.TEXT_EVIDENCE",
+        "SS.HISTORY_PERSPECTIVE"
+      ],
+      "alignment": "exploration",
+      "subjects": [
+        "history",
+        "religious-studies"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": [
+        "faith",
+        "biblical-study"
+      ]
+    },
+    {
+      "sourceId": "verve.arshif",
+      "localId": "foundations-faith",
+      "title": "Foundations of Faith",
+      "objectiveIds": [
+        "SEL.REFLECTION"
+      ],
+      "alignment": "exploration",
+      "subjects": [
+        "religious-studies"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": [
+        "faith"
+      ]
+    },
+    {
+      "sourceId": "verve.arshif",
+      "localId": "truth-tribe-kids",
+      "title": "Truth Tribe Kids",
+      "objectiveIds": [
+        "ELA.READING_COMPREHENSION",
+        "SEL.REFLECTION"
+      ],
+      "alignment": "exploration",
+      "subjects": [
+        "reading",
+        "religious-studies"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": [
+        "faith"
+      ]
+    },
+    {
+      "sourceId": "verve.solanar",
+      "localId": "solanar-home",
+      "title": "Solanar Observatory",
+      "objectiveIds": [
+        "SCI.WEATHER_CLIMATE",
+        "SCI.EARTH_SYSTEMS",
+        "SCI.OBSERVATION",
+        "X.RESEARCH_NAVIGATION"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "science",
+        "research"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Root-only provisional source; use for weather/Earth-system extension while preserving freshness checks.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.river-to-road",
+      "localId": "river-to-road-home",
+      "title": "River-to-Road",
+      "objectiveIds": [
+        "SCI.ENVIRONMENTAL_STEWARDSHIP",
+        "SS.CITIZENSHIP_SERVICE",
+        "X.SERVICE_LEARNING",
+        "SCI.OBSERVATION"
+      ],
+      "alignment": "direct-practice",
+      "subjects": [
+        "science",
+        "social-studies"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "Service-learning/community-science extension; dynamic event information requires freshness awareness.",
+      "stageFloor": null,
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-high-school-health",
+      "title": "High School Health Academy",
+      "objectiveIds": [
+        "HEALTH.HEALTH_LITERACY",
+        "PE.MOVEMENT",
+        "PE.FITNESS_PLANNING"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "health",
+        "physical-education"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-pe",
+      "title": "High School Physical Education",
+      "objectiveIds": [
+        "PE.MOVEMENT",
+        "PE.FITNESS_PLANNING",
+        "PE.LEADERSHIP"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "physical-education"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-pe-core",
+      "title": "High School PE \u2014 42 Week Core Portal",
+      "objectiveIds": [
+        "PE.MOVEMENT",
+        "PE.FITNESS_PLANNING",
+        "PE.LEADERSHIP"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "physical-education"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-pe-reader",
+      "title": "PLERA P.E. Mini Textbook Reader",
+      "objectiveIds": [
+        "PE.MOVEMENT",
+        "PE.FITNESS_PLANNING",
+        "HEALTH.HEALTH_LITERACY"
+      ],
+      "alignment": "support",
+      "subjects": [
+        "physical-education",
+        "health"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-health",
+      "title": "High School Health & Wellness",
+      "objectiveIds": [
+        "HEALTH.HEALTH_LITERACY",
+        "HEALTH.RESOURCE_EVALUATION",
+        "HEALTH.DECISION_MAKING",
+        "HEALTH.COMMUNICATION",
+        "HEALTH.GOAL_SETTING",
+        "HEALTH.RELATIONSHIP_SAFETY"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "health"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-health-09",
+      "title": "High School Health Grade 9",
+      "objectiveIds": [
+        "HEALTH.HEALTH_LITERACY",
+        "HEALTH.RESOURCE_EVALUATION",
+        "HEALTH.DECISION_MAKING",
+        "HEALTH.COMMUNICATION",
+        "HEALTH.GOAL_SETTING"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "health"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-health-10",
+      "title": "High School Health Grade 10",
+      "objectiveIds": [
+        "HEALTH.HEALTH_LITERACY",
+        "HEALTH.RESOURCE_EVALUATION",
+        "HEALTH.DECISION_MAKING",
+        "HEALTH.COMMUNICATION",
+        "HEALTH.GOAL_SETTING",
+        "HEALTH.RELATIONSHIP_SAFETY"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "health"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-health-11",
+      "title": "High School Health Grade 11",
+      "objectiveIds": [
+        "HEALTH.HEALTH_LITERACY",
+        "HEALTH.RESOURCE_EVALUATION",
+        "HEALTH.DECISION_MAKING",
+        "HEALTH.COMMUNICATION",
+        "HEALTH.GOAL_SETTING",
+        "X.RESEARCH_NAVIGATION",
+        "X.SOURCE_DISCOVERY"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "health"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "verve.medicament",
+      "localId": "medicament-health-12",
+      "title": "High School Health Grade 12",
+      "objectiveIds": [
+        "HEALTH.HEALTH_LITERACY",
+        "HEALTH.RESOURCE_EVALUATION",
+        "HEALTH.DECISION_MAKING",
+        "HEALTH.COMMUNICATION",
+        "HEALTH.GOAL_SETTING",
+        "X.RESEARCH_NAVIGATION",
+        "X.SOURCE_DISCOVERY"
+      ],
+      "alignment": "core",
+      "subjects": [
+        "health"
+      ],
+      "canCountAsMasteryEvidence": true,
+      "notes": "",
+      "stageFloor": "high",
+      "stageCeiling": null,
+      "requiresPreferenceMatch": []
+    },
+    {
+      "sourceId": "khaemenes.preschool",
+      "localId": "preschool-adventure-garden",
+      "title": "Crech\u00e8 Adventure Garden",
+      "objectiveIds": [
+        "ART.CREATIVE_EXPRESSION",
+        "ELA.VOCABULARY",
+        "MATH.NUMBER_SENSE",
+        "SCI.OBSERVATION",
+        "PE.MOVEMENT"
+      ],
+      "alignment": "exploration",
+      "subjects": [
+        "early-learning"
+      ],
+      "canCountAsMasteryEvidence": false,
+      "notes": "The 52 adventures are currently cataloged as one resource, so Mentor should not claim activity-level objective precision from this hub alone.",
+      "stageFloor": null,
+      "stageCeiling": "kindergarten",
+      "requiresPreferenceMatch": []
+    }
+  ]
+}

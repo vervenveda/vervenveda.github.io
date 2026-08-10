@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "stages": {
+    "kindergarten": {
+      "subjects": {
+        "language-arts": [
+          "ELA.LETTER_RECOGNITION",
+          "ELA.PHONICS",
+          "ELA.SPELLING",
+          "ELA.VOCABULARY",
+          "ELA.READING_COMPREHENSION"
+        ],
+        "mathematics": [
+          "MATH.COUNTING",
+          "MATH.NUMBER_RECOGNITION",
+          "MATH.NUMBER_SENSE",
+          "X.PATTERN_RECOGNITION"
+        ],
+        "science": [
+          "SCI.OBSERVATION",
+          "SCI.WEATHER_CLIMATE"
+        ],
+        "physical-education": [
+          "PE.MOVEMENT",
+          "PE.GROSS_MOTOR"
+        ],
+        "arts": [
+          "ART.COLOR",
+          "ART.CREATIVE_EXPRESSION"
+        ]
+      }
+    },
+    "elementary": {
+      "subjects": {
+        "language-arts": [
+          "ELA.PHONICS",
+          "ELA.SPELLING",
+          "ELA.VOCABULARY",
+          "ELA.MORPHOLOGY",
+          "ELA.FLUENCY",
+          "ELA.READING_COMPREHENSION",
+          "ELA.TEXT_EVIDENCE",
+          "ELA.NARRATIVE_WRITING",
+          "ELA.INFORMATIONAL_WRITING",
+          "ELA.OPINION_ARGUMENT",
+          "ELA.RESEARCH",
+          "ELA.PUBLIC_SPEAKING"
+        ],
+        "mathematics": [
+          "MATH.NUMBER_SENSE",
+          "MATH.PLACE_VALUE",
+          "MATH.ADD_SUB",
+          "MATH.MULT_DIV",
+          "MATH.FRACTIONS",
+          "MATH.FRACTION_EQUIVALENCE",
+          "MATH.DECIMALS",
+          "MATH.GEOMETRY",
+          "MATH.SYMMETRY",
+          "MATH.MEASUREMENT",
+          "MATH.AREA_VOLUME",
+          "MATH.COORDINATE_PLANE",
+          "MATH.DATA_GRAPHING",
+          "MATH.STATISTICS",
+          "MATH.FINANCIAL_REASONING"
+        ],
+        "science": [
+          "SCI.OBSERVATION",
+          "SCI.INQUIRY",
+          "SCI.FORCE_MOTION",
+          "SCI.MATTER",
+          "SCI.ENERGY_WAVES",
+          "SCI.LIFE_CYCLES",
+          "SCI.GENETICS_HEREDITY",
+          "SCI.ECOSYSTEMS",
+          "SCI.EARTH_MATERIALS",
+          "SCI.EARTH_SYSTEMS",
+          "SCI.WEATHER_CLIMATE",
+          "SCI.ASTRONOMY",
+          "SCI.ENVIRONMENTAL_STEWARDSHIP",
+          "ENG.DESIGN"
+        ],
+        "social-studies": [
+          "SS.GEOGRAPHY_MAPS",
+          "SS.CIVICS_GOVERNMENT",
+          "SS.RIGHTS_RESPONSIBILITIES",
+          "SS.CITIZENSHIP_SERVICE",
+          "SS.ECONOMICS",
+          "SS.HISTORY_PERSPECTIVE",
+          "SS.CULTURE",
+          "SS.PUBLIC_ARGUMENT"
+        ],
+        "technology": [
+          "TECH.DIGITAL_CITIZENSHIP",
+          "TECH.CODING",
+          "TECH.DATA_TOOLS",
+          "TECH.DIGITAL_TOOLS",
+          "ENG.DESIGN"
+        ],
+        "arts-music": [
+          "ART.VISUAL_ART",
+          "ART.COLOR",
+          "ART.COMPOSITION",
+          "ART.CREATIVE_EXPRESSION",
+          "MUSIC.RHYTHM",
+          "MUSIC.LITERACY"
+        ],
+        "health-pe-sel": [
+          "SEL.WELLNESS",
+          "SEL.SELF_MANAGEMENT",
+          "SEL.EMOTIONAL_LITERACY",
+          "SEL.REFLECTION",
+          "PE.MOVEMENT",
+          "SS.CITIZENSHIP_SERVICE"
+        ]
+      }
+    },
+    "middle": {
+      "subjects": {
+        "language-arts": [
+          "ELA.READING_COMPREHENSION",
+          "ELA.TEXT_EVIDENCE",
+          "ELA.VOCABULARY",
+          "ELA.MORPHOLOGY",
+          "ELA.NARRATIVE_WRITING",
+          "ELA.INFORMATIONAL_WRITING",
+          "ELA.OPINION_ARGUMENT",
+          "ELA.RESEARCH",
+          "ELA.EDITING",
+          "ELA.PUBLIC_SPEAKING",
+          "ELA.MEDIA_LITERACY"
+        ],
+        "mathematics": [
+          "MATH.RATIOS_RATES",
+          "MATH.PERCENT",
+          "MATH.FRACTIONS",
+          "MATH.RATIONAL_NUMBERS",
+          "MATH.ALGEBRAIC_EXPRESSIONS",
+          "MATH.EQUATIONS_INEQUALITIES",
+          "MATH.COORDINATE_PLANE",
+          "MATH.AREA_VOLUME",
+          "MATH.STATISTICS",
+          "MATH.PROBABILITY",
+          "X.PROBLEM_SOLVING"
+        ],
+        "science": [
+          "SCI.INQUIRY",
+          "SCI.MEASUREMENT_EVIDENCE",
+          "SCI.FORCE_MOTION",
+          "SCI.MATTER",
+          "SCI.ENERGY_WAVES",
+          "SCI.CELLS_SYSTEMS",
+          "SCI.GENETICS_HEREDITY",
+          "SCI.ECOSYSTEMS",
+          "SCI.EARTH_SYSTEMS",
+          "SCI.WEATHER_CLIMATE",
+          "SCI.QUANTITATIVE_REASONING",
+          "SCI.MODELING",
+          "SCI.CER",
+          "ENG.DESIGN"
+        ],
+        "social-studies": [
+          "SS.GEOGRAPHY_MAPS",
+          "SS.CIVICS_GOVERNMENT",
+          "SS.RIGHTS_RESPONSIBILITIES",
+          "SS.ECONOMICS",
+          "SS.HISTORY_PERSPECTIVE",
+          "SS.LAW_POLICY",
+          "SS.CULTURE",
+          "SS.TRADE_MIGRATION",
+          "SS.PUBLIC_ARGUMENT"
+        ],
+        "technology-design": [
+          "TECH.DIGITAL_CITIZENSHIP",
+          "TECH.CODING",
+          "TECH.DATA_TOOLS",
+          "TECH.FILE_MANAGEMENT",
+          "TECH.DIGITAL_TOOLS",
+          "TECH.ETHICAL_CREATION",
+          "ENG.DESIGN",
+          "X.PROBLEM_SOLVING"
+        ],
+        "world-languages": [
+          "LANG.LANGUAGE_LEARNING",
+          "LANG.COMMUNICATION"
+        ],
+        "health-pe-sel": [
+          "HEALTH.HEALTH_LITERACY",
+          "HEALTH.DECISION_MAKING",
+          "HEALTH.COMMUNICATION",
+          "HEALTH.GOAL_SETTING",
+          "SEL.WELLNESS",
+          "SEL.SELF_MANAGEMENT",
+          "PE.MOVEMENT",
+          "PE.FITNESS_PLANNING"
+        ],
+        "arts-music": [
+          "ART.VISUAL_ART",
+          "ART.COLOR",
+          "ART.COMPOSITION",
+          "ART.CREATIVE_EXPRESSION",
+          "MUSIC.RHYTHM",
+          "MUSIC.LITERACY",
+          "MUSIC.COMPOSITION"
+        ],
+        "integrated-projects": [
+          "ELA.RESEARCH",
+          "X.PLANNING",
+          "X.PRESENTATION",
+          "ENG.DESIGN",
+          "X.PROBLEM_SOLVING"
+        ]
+      }
+    },
+    "high": {
+      "subjects": {
+        "language-arts": [
+          "ELA.READING_COMPREHENSION",
+          "ELA.TEXT_EVIDENCE",
+          "ELA.MORPHOLOGY",
+          "ELA.NARRATIVE_WRITING",
+          "ELA.INFORMATIONAL_WRITING",
+          "ELA.OPINION_ARGUMENT",
+          "ELA.RESEARCH",
+          "ELA.EDITING",
+          "ELA.PUBLIC_SPEAKING",
+          "ELA.MEDIA_LITERACY"
+        ],
+        "mathematics": [
+          "MATH.RATIOS_RATES",
+          "MATH.PERCENT",
+          "MATH.RATIONAL_NUMBERS",
+          "MATH.ALGEBRAIC_EXPRESSIONS",
+          "MATH.EQUATIONS_INEQUALITIES",
+          "MATH.GEOMETRY",
+          "MATH.COORDINATE_PLANE",
+          "MATH.STATISTICS",
+          "MATH.PROBABILITY",
+          "MATH.CALCULATION",
+          "X.PROBLEM_SOLVING"
+        ],
+        "science": [
+          "SCI.INQUIRY",
+          "SCI.MEASUREMENT_EVIDENCE",
+          "SCI.FORCE_MOTION",
+          "SCI.MATTER",
+          "SCI.ENERGY_WAVES",
+          "SCI.CELLS_SYSTEMS",
+          "SCI.GENETICS_HEREDITY",
+          "SCI.ECOSYSTEMS",
+          "SCI.EARTH_SYSTEMS",
+          "SCI.WEATHER_CLIMATE",
+          "SCI.ASTRONOMY",
+          "SCI.QUANTITATIVE_REASONING",
+          "SCI.MODELING",
+          "SCI.CER",
+          "ENG.DESIGN"
+        ],
+        "social-studies": [
+          "SS.GEOGRAPHY_MAPS",
+          "SS.CIVICS_GOVERNMENT",
+          "SS.RIGHTS_RESPONSIBILITIES",
+          "SS.ECONOMICS",
+          "SS.HISTORY_PERSPECTIVE",
+          "SS.LAW_POLICY",
+          "SS.CULTURE",
+          "SS.TRADE_MIGRATION",
+          "SS.PUBLIC_ARGUMENT",
+          "ELA.RESEARCH"
+        ],
+        "technology": [
+          "TECH.DIGITAL_CITIZENSHIP",
+          "TECH.CODING",
+          "TECH.DATA_TOOLS",
+          "TECH.FILE_MANAGEMENT",
+          "TECH.DIGITAL_TOOLS",
+          "TECH.ETHICAL_CREATION",
+          "ENG.CAD",
+          "ENG.DESIGN"
+        ],
+        "world-languages": [
+          "LANG.LANGUAGE_LEARNING",
+          "LANG.COMMUNICATION",
+          "LANG.ARABIC",
+          "LANG.ESL"
+        ],
+        "health": [
+          "HEALTH.HEALTH_LITERACY",
+          "HEALTH.RESOURCE_EVALUATION",
+          "HEALTH.DECISION_MAKING",
+          "HEALTH.COMMUNICATION",
+          "HEALTH.GOAL_SETTING",
+          "HEALTH.RELATIONSHIP_SAFETY"
+        ],
+        "physical-education": [
+          "PE.MOVEMENT",
+          "PE.FITNESS_PLANNING",
+          "PE.LEADERSHIP"
+        ],
+        "arts-music": [
+          "ART.VISUAL_ART",
+          "ART.COLOR",
+          "ART.COMPOSITION",
+          "ART.CREATIVE_EXPRESSION",
+          "MUSIC.RHYTHM",
+          "MUSIC.LITERACY",
+          "MUSIC.COMPOSITION"
+        ]
+      }
+    }
+  }
+}

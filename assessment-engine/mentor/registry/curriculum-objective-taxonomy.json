@@ -1,0 +1,2005 @@
+{
+  "version": 1,
+  "generated": "2026-08-09",
+  "purpose": "Canonical Khaemenes curriculum objective vocabulary used to connect lessons to existing ecosystem resources.",
+  "principles": [
+    "Map a resource only to what its source metadata and observable function support.",
+    "Strategy/logic transfer is not the same as subject mastery.",
+    "Wellness support is never medical treatment and does not count as curriculum mastery unless the course itself defines appropriate evidence.",
+    "Preference-gated resources remain preference-gated.",
+    "Dynamic or external-information resources preserve freshness requirements.",
+    "A hub is usually supplemental navigation; a direct course/lab/tool may carry stronger alignment."
+  ],
+  "objectives": [
+    {
+      "id": "ELA.LETTER_RECOGNITION",
+      "subject": "language-arts",
+      "label": "Letter recognition",
+      "description": "Letter recognition",
+      "aliases": [
+        "letters",
+        "letter recognition",
+        "alphabet",
+        "letter-recognition"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.PHONICS",
+      "subject": "language-arts",
+      "label": "Phonics and decoding",
+      "description": "Phonics and decoding",
+      "aliases": [
+        "phonics",
+        "short vowels",
+        "long vowels",
+        "silent e",
+        "digraphs",
+        "r-controlled vowels",
+        "decoding"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.SPELLING",
+      "subject": "language-arts",
+      "label": "Spelling patterns",
+      "description": "Spelling patterns",
+      "aliases": [
+        "spelling",
+        "spelling patterns",
+        "word building"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.VOCABULARY",
+      "subject": "language-arts",
+      "label": "Vocabulary development",
+      "description": "Vocabulary development",
+      "aliases": [
+        "vocabulary",
+        "word learning",
+        "definitions",
+        "synonyms",
+        "antonyms",
+        "context clues",
+        "context-clues"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.MORPHOLOGY",
+      "subject": "language-arts",
+      "label": "Morphology and word formation",
+      "description": "Morphology and word formation",
+      "aliases": [
+        "morphology",
+        "word formation",
+        "word-formation",
+        "prefixes",
+        "suffixes",
+        "roots",
+        "greek roots",
+        "latin roots",
+        "arabic roots"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.FLUENCY",
+      "subject": "language-arts",
+      "label": "Reading fluency",
+      "description": "Reading fluency",
+      "aliases": [
+        "fluency",
+        "reading stamina",
+        "oral reading"
+      ],
+      "stages": [
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.READING_COMPREHENSION",
+      "subject": "language-arts",
+      "label": "Reading comprehension",
+      "description": "Reading comprehension",
+      "aliases": [
+        "reading",
+        "reading comprehension",
+        "theme",
+        "character",
+        "informational text",
+        "literature",
+        "fables",
+        "folktales",
+        "genres"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.TEXT_EVIDENCE",
+      "subject": "language-arts",
+      "label": "Text evidence and analysis",
+      "description": "Text evidence and analysis",
+      "aliases": [
+        "text evidence",
+        "close reading",
+        "annotation",
+        "analysis",
+        "comparative analysis"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.NARRATIVE_WRITING",
+      "subject": "language-arts",
+      "label": "Narrative writing",
+      "description": "Narrative writing",
+      "aliases": [
+        "narrative",
+        "narrative writing",
+        "personal narrative",
+        "storytelling"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.INFORMATIONAL_WRITING",
+      "subject": "language-arts",
+      "label": "Informational and explanatory writing",
+      "description": "Informational and explanatory writing",
+      "aliases": [
+        "informational writing",
+        "explanation",
+        "explanatory writing",
+        "procedural writing"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.OPINION_ARGUMENT",
+      "subject": "language-arts",
+      "label": "Opinion and argument writing",
+      "description": "Opinion and argument writing",
+      "aliases": [
+        "opinion writing",
+        "argument writing",
+        "persuasion",
+        "argument",
+        "debate",
+        "civic arguments"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.RESEARCH",
+      "subject": "language-arts",
+      "label": "Research and source use",
+      "description": "Research and source use",
+      "aliases": [
+        "research",
+        "research writing",
+        "sources",
+        "thesis",
+        "citation",
+        "bibliography",
+        "evidence"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.EDITING",
+      "subject": "language-arts",
+      "label": "Editing and revision",
+      "description": "Editing and revision",
+      "aliases": [
+        "editing",
+        "revision",
+        "proofreading"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.PUBLIC_SPEAKING",
+      "subject": "language-arts",
+      "label": "Public speaking and oral defense",
+      "description": "Public speaking and oral defense",
+      "aliases": [
+        "public speaking",
+        "presentation",
+        "oral defense",
+        "debate"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ELA.MEDIA_LITERACY",
+      "subject": "language-arts",
+      "label": "Media and information literacy",
+      "description": "Media and information literacy",
+      "aliases": [
+        "media literacy",
+        "media interpretation",
+        "source comparison",
+        "verification"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.COUNTING",
+      "subject": "mathematics",
+      "label": "Counting",
+      "description": "Counting",
+      "aliases": [
+        "counting",
+        "numbers 1-12",
+        "numbers to 120"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.NUMBER_RECOGNITION",
+      "subject": "mathematics",
+      "label": "Number recognition",
+      "description": "Number recognition",
+      "aliases": [
+        "number recognition",
+        "number-recognition",
+        "numbers"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.NUMBER_SENSE",
+      "subject": "mathematics",
+      "label": "Number sense",
+      "description": "Number sense",
+      "aliases": [
+        "number sense",
+        "number-sense",
+        "early math",
+        "number reasoning",
+        "number-reasoning"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.PLACE_VALUE",
+      "subject": "mathematics",
+      "label": "Place value",
+      "description": "Place value",
+      "aliases": [
+        "place value",
+        "tens and ones",
+        "powers of ten",
+        "decimal place value"
+      ],
+      "stages": [
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.ADD_SUB",
+      "subject": "mathematics",
+      "label": "Addition and subtraction",
+      "description": "Addition and subtraction",
+      "aliases": [
+        "addition",
+        "subtraction",
+        "addition stories",
+        "subtraction stories"
+      ],
+      "stages": [
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.MULT_DIV",
+      "subject": "mathematics",
+      "label": "Multiplication and division",
+      "description": "Multiplication and division",
+      "aliases": [
+        "multiplication",
+        "division",
+        "arrays",
+        "long division",
+        "multiplication fluency"
+      ],
+      "stages": [
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.FRACTIONS",
+      "subject": "mathematics",
+      "label": "Fractions",
+      "description": "Fractions",
+      "aliases": [
+        "fractions",
+        "fraction division",
+        "equal shares",
+        "fair sharing",
+        "fraction scaling"
+      ],
+      "stages": [
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.FRACTION_EQUIVALENCE",
+      "subject": "mathematics",
+      "label": "Fraction equivalence",
+      "description": "Fraction equivalence",
+      "aliases": [
+        "equivalent fractions",
+        "equivalence",
+        "visual fraction models"
+      ],
+      "stages": [
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.DECIMALS",
+      "subject": "mathematics",
+      "label": "Decimals",
+      "description": "Decimals",
+      "aliases": [
+        "decimals",
+        "decimal operations",
+        "decimal fractions"
+      ],
+      "stages": [
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.RATIOS_RATES",
+      "subject": "mathematics",
+      "label": "Ratios and rates",
+      "description": "Ratios and rates",
+      "aliases": [
+        "ratios",
+        "rates",
+        "unit rates",
+        "ratios and rates"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.PERCENT",
+      "subject": "mathematics",
+      "label": "Percent",
+      "description": "Percent",
+      "aliases": [
+        "percent",
+        "percentage",
+        "percentages"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.RATIONAL_NUMBERS",
+      "subject": "mathematics",
+      "label": "Rational numbers",
+      "description": "Rational numbers",
+      "aliases": [
+        "rational numbers"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.ALGEBRAIC_EXPRESSIONS",
+      "subject": "mathematics",
+      "label": "Algebraic expressions",
+      "description": "Algebraic expressions",
+      "aliases": [
+        "expressions",
+        "algebraic thinking",
+        "algebra"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.EQUATIONS_INEQUALITIES",
+      "subject": "mathematics",
+      "label": "Equations and inequalities",
+      "description": "Equations and inequalities",
+      "aliases": [
+        "equations",
+        "inequalities",
+        "equations/inequalities"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.GEOMETRY",
+      "subject": "mathematics",
+      "label": "Geometry and spatial reasoning",
+      "description": "Geometry and spatial reasoning",
+      "aliases": [
+        "geometry",
+        "shapes",
+        "shape design",
+        "quadrilaterals",
+        "lines",
+        "angles",
+        "spatial reasoning",
+        "spatial-reasoning"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.SYMMETRY",
+      "subject": "mathematics",
+      "label": "Symmetry and pattern design",
+      "description": "Symmetry and pattern design",
+      "aliases": [
+        "symmetry"
+      ],
+      "stages": [
+        "elementary",
+        "middle"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.MEASUREMENT",
+      "subject": "mathematics",
+      "label": "Measurement",
+      "description": "Measurement",
+      "aliases": [
+        "measurement",
+        "mass",
+        "volume",
+        "time",
+        "measurement conversions"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.AREA_VOLUME",
+      "subject": "mathematics",
+      "label": "Area, perimeter, surface area, and volume",
+      "description": "Area, perimeter, surface area, and volume",
+      "aliases": [
+        "area",
+        "perimeter",
+        "surface area",
+        "volume",
+        "three-dimensional design",
+        "3d models"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.COORDINATE_PLANE",
+      "subject": "mathematics",
+      "label": "Coordinate planes",
+      "description": "Coordinate planes",
+      "aliases": [
+        "coordinate planes",
+        "coordinate plane",
+        "coordinates"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.DATA_GRAPHING",
+      "subject": "mathematics",
+      "label": "Data and graphing",
+      "description": "Data and graphing",
+      "aliases": [
+        "data",
+        "graphing",
+        "data displays",
+        "data tools",
+        "spreadsheets"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.STATISTICS",
+      "subject": "mathematics",
+      "label": "Statistics",
+      "description": "Statistics",
+      "aliases": [
+        "statistics",
+        "distribution",
+        "statistical reasoning"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.PROBABILITY",
+      "subject": "mathematics",
+      "label": "Probability",
+      "description": "Probability",
+      "aliases": [
+        "probability",
+        "chance"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.FINANCIAL_REASONING",
+      "subject": "mathematics",
+      "label": "Financial reasoning",
+      "description": "Financial reasoning",
+      "aliases": [
+        "money",
+        "budgets",
+        "financial reasoning",
+        "economics",
+        "entrepreneurship"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MATH.CALCULATION",
+      "subject": "mathematics",
+      "label": "Calculation fluency and tool use",
+      "description": "Calculation fluency and tool use",
+      "aliases": [
+        "calculation",
+        "calculator",
+        "quantitative calculation"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.OBSERVATION",
+      "subject": "science",
+      "label": "Scientific observation",
+      "description": "Scientific observation",
+      "aliases": [
+        "observation",
+        "careful observation",
+        "sky watch"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.INQUIRY",
+      "subject": "science",
+      "label": "Scientific inquiry and fair testing",
+      "description": "Scientific inquiry and fair testing",
+      "aliases": [
+        "scientific inquiry",
+        "scientific-inquiry",
+        "inquiry",
+        "fair tests",
+        "experimentation",
+        "testing"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.MEASUREMENT_EVIDENCE",
+      "subject": "science",
+      "label": "Measurement, uncertainty, and evidence",
+      "description": "Measurement, uncertainty, and evidence",
+      "aliases": [
+        "measurement",
+        "evidence",
+        "uncertainty",
+        "variables",
+        "controls"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.FORCE_MOTION",
+      "subject": "science",
+      "label": "Forces and motion",
+      "description": "Forces and motion",
+      "aliases": [
+        "force",
+        "forces",
+        "motion",
+        "kinematics",
+        "velocity",
+        "acceleration",
+        "newton's laws",
+        "projectiles"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.MATTER",
+      "subject": "science",
+      "label": "Matter and material properties",
+      "description": "Matter and material properties",
+      "aliases": [
+        "matter",
+        "properties",
+        "mixtures",
+        "particles",
+        "phase change",
+        "atomic",
+        "bonding",
+        "stoichiometry"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.ENERGY_WAVES",
+      "subject": "science",
+      "label": "Energy, sound, light, and waves",
+      "description": "Energy, sound, light, and waves",
+      "aliases": [
+        "energy",
+        "sound",
+        "light",
+        "waves",
+        "thermal energy",
+        "electricity",
+        "magnetism",
+        "power",
+        "momentum"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.LIFE_CYCLES",
+      "subject": "science",
+      "label": "Life cycles and living things",
+      "description": "Life cycles and living things",
+      "aliases": [
+        "plants",
+        "seeds",
+        "living things",
+        "life cycles",
+        "animals",
+        "offspring"
+      ],
+      "stages": [
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.CELLS_SYSTEMS",
+      "subject": "science",
+      "label": "Cells, structures, and systems",
+      "description": "Cells, structures, and systems",
+      "aliases": [
+        "cells",
+        "cell theory",
+        "cellular",
+        "life structures",
+        "systems",
+        "homeostasis"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.GENETICS_HEREDITY",
+      "subject": "science",
+      "label": "Heredity, genetics, and variation",
+      "description": "Heredity, genetics, and variation",
+      "aliases": [
+        "traits",
+        "variation",
+        "genetics",
+        "heredity",
+        "dna",
+        "meiosis",
+        "mendelian",
+        "gene"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.ECOSYSTEMS",
+      "subject": "science",
+      "label": "Ecosystems, habitats, and energy flow",
+      "description": "Ecosystems, habitats, and energy flow",
+      "aliases": [
+        "ecosystems",
+        "habitats",
+        "adaptations",
+        "survival",
+        "energy flow",
+        "biodiversity",
+        "population"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.EARTH_MATERIALS",
+      "subject": "science",
+      "label": "Earth materials, weathering, erosion, and fossils",
+      "description": "Earth materials, weathering, erosion, and fossils",
+      "aliases": [
+        "earth materials",
+        "weathering",
+        "erosion",
+        "fossils",
+        "earth history"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.EARTH_SYSTEMS",
+      "subject": "science",
+      "label": "Earth systems and water",
+      "description": "Earth systems and water",
+      "aliases": [
+        "earth systems",
+        "earth spheres",
+        "water cycle",
+        "water"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.WEATHER_CLIMATE",
+      "subject": "science",
+      "label": "Weather and climate",
+      "description": "Weather and climate",
+      "aliases": [
+        "weather",
+        "climate",
+        "seasonal patterns",
+        "weather patterns",
+        "weather literacy",
+        "meteorology"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.ASTRONOMY",
+      "subject": "science",
+      "label": "Sun, Earth, Moon, stars, and space",
+      "description": "Sun, Earth, Moon, stars, and space",
+      "aliases": [
+        "stars",
+        "sun",
+        "moon",
+        "astronomy",
+        "orbital",
+        "gravitation"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.ENVIRONMENTAL_STEWARDSHIP",
+      "subject": "science",
+      "label": "Environmental stewardship and human impact",
+      "description": "Environmental stewardship and human impact",
+      "aliases": [
+        "environmental stewardship",
+        "human impact",
+        "cleanup",
+        "restoration",
+        "environmental literacy"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.QUANTITATIVE_REASONING",
+      "subject": "science",
+      "label": "Scientific quantitative reasoning",
+      "description": "Scientific quantitative reasoning",
+      "aliases": [
+        "quantitative reasoning",
+        "quantitative",
+        "data analysis",
+        "graph reaction rate"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.MODELING",
+      "subject": "science",
+      "label": "Scientific modeling",
+      "description": "Scientific modeling",
+      "aliases": [
+        "modeling",
+        "models",
+        "scientific models",
+        "model selection"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SCI.CER",
+      "subject": "science",
+      "label": "Claims, evidence, and reasoning",
+      "description": "Claims, evidence, and reasoning",
+      "aliases": [
+        "cer",
+        "claim evidence reasoning",
+        "argument from evidence"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ENG.DESIGN",
+      "subject": "engineering",
+      "label": "Engineering design",
+      "description": "Engineering design",
+      "aliases": [
+        "engineering design",
+        "engineering-design",
+        "design thinking",
+        "design-thinking",
+        "engineering solutions"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ENG.CAD",
+      "subject": "engineering",
+      "label": "CAD and technical design",
+      "description": "CAD and technical design",
+      "aliases": [
+        "cad",
+        "technical design",
+        "drafting"
+      ],
+      "stages": [
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "X.PROBLEM_SOLVING",
+      "subject": "cross-curricular",
+      "label": "Problem solving",
+      "description": "Problem solving",
+      "aliases": [
+        "problem solving",
+        "problem-solving"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.GEOGRAPHY_MAPS",
+      "subject": "social-studies",
+      "label": "Geography and maps",
+      "description": "Geography and maps",
+      "aliases": [
+        "maps",
+        "geography",
+        "regions",
+        "landforms",
+        "cultural geography",
+        "coordinate geography"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.CIVICS_GOVERNMENT",
+      "subject": "social-studies",
+      "label": "Civics and government",
+      "description": "Civics and government",
+      "aliases": [
+        "civics",
+        "government",
+        "voting",
+        "constitution",
+        "constitutional principles",
+        "civic literacy"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.RIGHTS_RESPONSIBILITIES",
+      "subject": "social-studies",
+      "label": "Rights and responsibilities",
+      "description": "Rights and responsibilities",
+      "aliases": [
+        "rights",
+        "responsibilities",
+        "citizenship"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.CITIZENSHIP_SERVICE",
+      "subject": "social-studies",
+      "label": "Citizenship and service",
+      "description": "Citizenship and service",
+      "aliases": [
+        "service",
+        "public service",
+        "civic participation",
+        "civic-participation",
+        "service learning",
+        "service-learning"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.ECONOMICS",
+      "subject": "social-studies",
+      "label": "Economics, goods, services, and budgets",
+      "description": "Economics, goods, services, and budgets",
+      "aliases": [
+        "economics",
+        "needs",
+        "wants",
+        "goods",
+        "services",
+        "budgets",
+        "entrepreneurship"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.HISTORY_PERSPECTIVE",
+      "subject": "social-studies",
+      "label": "History and historical perspective",
+      "description": "History and historical perspective",
+      "aliases": [
+        "history",
+        "historical perspective",
+        "historical context",
+        "colonial",
+        "revolution",
+        "civilizations",
+        "indigenous histories"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.LAW_POLICY",
+      "subject": "social-studies",
+      "label": "Law, policy, and civic institutions",
+      "description": "Law, policy, and civic institutions",
+      "aliases": [
+        "law",
+        "laws",
+        "policy",
+        "legal",
+        "governance"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.CULTURE",
+      "subject": "social-studies",
+      "label": "Culture and comparative human study",
+      "description": "Culture and comparative human study",
+      "aliases": [
+        "culture",
+        "cultural",
+        "traditions",
+        "world stories",
+        "belief systems"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.TRADE_MIGRATION",
+      "subject": "social-studies",
+      "label": "Trade, migration, and exchange",
+      "description": "Trade, migration, and exchange",
+      "aliases": [
+        "trade",
+        "migration",
+        "exchange",
+        "trade routes"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SS.PUBLIC_ARGUMENT",
+      "subject": "social-studies",
+      "label": "Civic reasoning and public argument",
+      "description": "Civic reasoning and public argument",
+      "aliases": [
+        "civic voice",
+        "public argument",
+        "viewpoints",
+        "reasoning",
+        "debate"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "TECH.DIGITAL_CITIZENSHIP",
+      "subject": "technology",
+      "label": "Digital citizenship and safety",
+      "description": "Digital citizenship and safety",
+      "aliases": [
+        "digital citizenship",
+        "online safety",
+        "digital wellness"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "TECH.CODING",
+      "subject": "technology",
+      "label": "Coding and computational thinking",
+      "description": "Coding and computational thinking",
+      "aliases": [
+        "coding",
+        "unplugged coding",
+        "computational thinking"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "TECH.DATA_TOOLS",
+      "subject": "technology",
+      "label": "Data tools and spreadsheets",
+      "description": "Data tools and spreadsheets",
+      "aliases": [
+        "spreadsheets",
+        "data tools",
+        "digital data"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "TECH.FILE_MANAGEMENT",
+      "subject": "technology",
+      "label": "File and archive management",
+      "description": "File and archive management",
+      "aliases": [
+        "file management",
+        "file-management",
+        "file organization",
+        "file-organization",
+        "archives"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "TECH.DIGITAL_TOOLS",
+      "subject": "technology",
+      "label": "Digital tool fluency",
+      "description": "Digital tool fluency",
+      "aliases": [
+        "digital tools",
+        "digital-tools",
+        "productivity tools"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "TECH.ETHICAL_CREATION",
+      "subject": "technology",
+      "label": "Ethical technology creation",
+      "description": "Ethical technology creation",
+      "aliases": [
+        "ethical creation",
+        "responsible technology",
+        "technology ethics"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ART.VISUAL_ART",
+      "subject": "arts",
+      "label": "Visual art",
+      "description": "Visual art",
+      "aliases": [
+        "visual art",
+        "visual-art",
+        "art",
+        "drawing",
+        "painting"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ART.COLOR",
+      "subject": "arts",
+      "label": "Color theory and exploration",
+      "description": "Color theory and exploration",
+      "aliases": [
+        "color theory",
+        "color-theory",
+        "color exploration",
+        "color-exploration",
+        "color"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ART.COMPOSITION",
+      "subject": "arts",
+      "label": "Composition and visual design",
+      "description": "Composition and visual design",
+      "aliases": [
+        "composition",
+        "poster design",
+        "collage"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "ART.CREATIVE_EXPRESSION",
+      "subject": "arts",
+      "label": "Creative expression",
+      "description": "Creative expression",
+      "aliases": [
+        "creative expression",
+        "creativity",
+        "creative"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MUSIC.RHYTHM",
+      "subject": "music",
+      "label": "Rhythm and musical pattern",
+      "description": "Rhythm and musical pattern",
+      "aliases": [
+        "rhythm",
+        "music rhythm"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MUSIC.LITERACY",
+      "subject": "music",
+      "label": "Music literacy",
+      "description": "Music literacy",
+      "aliases": [
+        "music literacy",
+        "music-literacy",
+        "notation",
+        "pitch",
+        "scales",
+        "chords"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "MUSIC.COMPOSITION",
+      "subject": "music",
+      "label": "Composition and arrangement",
+      "description": "Composition and arrangement",
+      "aliases": [
+        "music composition",
+        "composition",
+        "arrangement"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "LANG.LANGUAGE_LEARNING",
+      "subject": "world-languages",
+      "label": "Language learning",
+      "description": "Language learning",
+      "aliases": [
+        "language learning",
+        "language-learning",
+        "languages",
+        "practice"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "LANG.COMMUNICATION",
+      "subject": "world-languages",
+      "label": "Communication in another language",
+      "description": "Communication in another language",
+      "aliases": [
+        "communication",
+        "cultural communication"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "LANG.ARABIC",
+      "subject": "world-languages",
+      "label": "Arabic language",
+      "description": "Arabic language",
+      "aliases": [
+        "arabic",
+        "arabic vocabulary",
+        "arabic numbers"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "LANG.ESL",
+      "subject": "world-languages",
+      "label": "English language development / ESL",
+      "description": "English language development / ESL",
+      "aliases": [
+        "esl",
+        "english language learning",
+        "english"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "LANG.ARABIC_ROOTS",
+      "subject": "world-languages",
+      "label": "Arabic roots and textual morphology",
+      "description": "Arabic roots and textual morphology",
+      "aliases": [
+        "arabic roots",
+        "arabic-roots",
+        "quranic roots",
+        "text analysis",
+        "text-analysis"
+      ],
+      "stages": [
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "HEALTH.HEALTH_LITERACY",
+      "subject": "health",
+      "label": "Health literacy",
+      "description": "Health literacy",
+      "aliases": [
+        "health literacy",
+        "health-literacy",
+        "medical literacy",
+        "wellness literacy"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "HEALTH.RESOURCE_EVALUATION",
+      "subject": "health",
+      "label": "Evaluating health information and resources",
+      "description": "Evaluating health information and resources",
+      "aliases": [
+        "resource evaluation",
+        "resource-evaluation",
+        "source evaluation",
+        "source-evaluation"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "HEALTH.DECISION_MAKING",
+      "subject": "health",
+      "label": "Health decision making",
+      "description": "Health decision making",
+      "aliases": [
+        "decision making",
+        "decision-making",
+        "responsible choices"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "HEALTH.COMMUNICATION",
+      "subject": "health",
+      "label": "Health and relationship communication",
+      "description": "Health and relationship communication",
+      "aliases": [
+        "health communication",
+        "communication",
+        "boundaries",
+        "consent"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "HEALTH.GOAL_SETTING",
+      "subject": "health",
+      "label": "Health goal setting",
+      "description": "Health goal setting",
+      "aliases": [
+        "goal setting",
+        "goal-setting",
+        "planning"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "HEALTH.RELATIONSHIP_SAFETY",
+      "subject": "health",
+      "label": "Relationships, boundaries, and safety",
+      "description": "Relationships, boundaries, and safety",
+      "aliases": [
+        "relationship safety",
+        "consent",
+        "boundaries",
+        "safety"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SEL.WELLNESS",
+      "subject": "social-emotional",
+      "label": "Whole-person wellness",
+      "description": "Whole-person wellness",
+      "aliases": [
+        "wellness",
+        "healthy routines"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SEL.SELF_MANAGEMENT",
+      "subject": "social-emotional",
+      "label": "Self-management and regulation",
+      "description": "Self-management and regulation",
+      "aliases": [
+        "self management",
+        "self-management",
+        "paced breathing",
+        "grounding",
+        "pause",
+        "relaxation routine",
+        "task management"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": false
+    },
+    {
+      "id": "SEL.EMOTIONAL_LITERACY",
+      "subject": "social-emotional",
+      "label": "Emotional literacy and self-awareness",
+      "description": "Emotional literacy and self-awareness",
+      "aliases": [
+        "feelings vocabulary",
+        "feelings-vocabulary",
+        "emotional literacy",
+        "self awareness",
+        "self-awareness"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "SEL.REFLECTION",
+      "subject": "social-emotional",
+      "label": "Reflection",
+      "description": "Reflection",
+      "aliases": [
+        "reflection",
+        "creative reflection",
+        "creative-reflection"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": false
+    },
+    {
+      "id": "PE.MOVEMENT",
+      "subject": "physical-education",
+      "label": "Movement competence",
+      "description": "Movement competence",
+      "aliases": [
+        "movement",
+        "physical learning",
+        "physical-learning",
+        "physical literacy"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "PE.GROSS_MOTOR",
+      "subject": "physical-education",
+      "label": "Gross motor development",
+      "description": "Gross motor development",
+      "aliases": [
+        "gross motor",
+        "gross-motor"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "PE.FITNESS_PLANNING",
+      "subject": "physical-education",
+      "label": "Fitness planning and lifelong activity",
+      "description": "Fitness planning and lifelong activity",
+      "aliases": [
+        "fitness planning",
+        "fitness-planning",
+        "lifetime fitness",
+        "safe participation"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "PE.LEADERSHIP",
+      "subject": "physical-education",
+      "label": "Leadership and social skills through movement",
+      "description": "Leadership and social skills through movement",
+      "aliases": [
+        "leadership",
+        "teamwork"
+      ],
+      "stages": [
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "X.LOGIC",
+      "subject": "cross-curricular",
+      "label": "Logic and deduction",
+      "description": "Logic and deduction",
+      "aliases": [
+        "logic",
+        "deduction"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "X.STRATEGY",
+      "subject": "cross-curricular",
+      "label": "Strategy",
+      "description": "Strategy",
+      "aliases": [
+        "strategy"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": false
+    },
+    {
+      "id": "X.PLANNING",
+      "subject": "cross-curricular",
+      "label": "Planning and organization",
+      "description": "Planning and organization",
+      "aliases": [
+        "planning",
+        "task management",
+        "task-management"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": false
+    },
+    {
+      "id": "X.PATTERN_RECOGNITION",
+      "subject": "cross-curricular",
+      "label": "Pattern recognition",
+      "description": "Pattern recognition",
+      "aliases": [
+        "pattern recognition",
+        "pattern-recognition",
+        "patterns"
+      ],
+      "stages": [
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "X.RESEARCH_NAVIGATION",
+      "subject": "cross-curricular",
+      "label": "Research navigation",
+      "description": "Research navigation",
+      "aliases": [
+        "research navigation",
+        "research-navigation",
+        "search",
+        "research"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "X.SOURCE_DISCOVERY",
+      "subject": "cross-curricular",
+      "label": "Source discovery and evaluation",
+      "description": "Source discovery and evaluation",
+      "aliases": [
+        "source discovery",
+        "source-discovery",
+        "reference",
+        "archives"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "X.PRESENTATION",
+      "subject": "cross-curricular",
+      "label": "Presentation and defense",
+      "description": "Presentation and defense",
+      "aliases": [
+        "presentation",
+        "oral defense",
+        "public presentation"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    },
+    {
+      "id": "X.SERVICE_LEARNING",
+      "subject": "cross-curricular",
+      "label": "Service learning",
+      "description": "Service learning",
+      "aliases": [
+        "service learning",
+        "service-learning",
+        "community service"
+      ],
+      "stages": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "canContributeToMasteryEvidence": true
+    }
+  ]
+}

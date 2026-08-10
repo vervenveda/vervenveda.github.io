@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Khaemenes Mentor · Objective Map Diagnostics</title>
+<style>
+:root{--bg:#07131f;--panel:#0d2233;--panel2:#102b40;--ink:#f4f0e6;--muted:#aebbc5;--gold:#d6b46d;--teal:#6fd3c7;--line:rgba(255,255,255,.14);--r:11px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 0,#28796f33,transparent 30rem),var(--bg);color:var(--ink);font:15px/1.6 Inter,"Segoe UI",Arial,sans-serif}
+main{width:min(calc(100% - 30px),1280px);margin:auto;padding:48px 0 70px}h1,h2{font-family:Georgia,serif;font-weight:500}.eyebrow{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:.72rem}.lead{max-width:900px;color:var(--muted)}
+.panel{margin:18px 0;padding:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--panel)}
+.controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}label{font-size:.75rem;color:var(--muted)}input,select,textarea,button{width:100%;font:inherit;border-radius:9px;border:1px solid var(--line);background:#071c2b;color:var(--ink);padding:9px}textarea{min-height:92px}.wide{grid-column:1/-1}button{background:var(--teal);color:#05241f;font-weight:800;cursor:pointer}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.stat{padding:14px;border:1px solid var(--line);border-radius:9px;background:#0a1d2c}.stat strong{display:block;font-size:1.5rem}.stat span{color:var(--muted)}
+.result{display:grid;grid-template-columns:72px 1fr auto;gap:12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--line)}.score{font:600 1.4rem Georgia,serif;color:var(--teal)}.meta,.small{color:var(--muted);font-size:.78rem}.pill{display:inline-block;margin:2px;padding:2px 6px;border:1px solid var(--line);border-radius:999px}
+.warn{color:#f0c58e}.ok{color:#8de0b3}
+@media(max-width:760px){.controls,.stats{grid-template-columns:1fr}.result{grid-template-columns:1fr}}
+</style></head>
+<body><main>
+<p class="eyebrow">Repair 09 · Mentor Registry</p>
+<h1>Curriculum ↔ Resource Intelligence</h1>
+<p class="lead">This page never edits the generated registry. It loads the current ecosystem resource index, enriches it with the Repair 09 objective overlay, and shows what Mentor would recommend for a lesson context.</p>
+
+<section class="panel">
+<h2>Coverage</h2><div class="stats" id="stats"><div class="stat"><strong>…</strong><span>Loading</span></div></div>
+</section>
+
+<section class="panel">
+<h2>Test a lesson</h2>
+<div class="controls">
+<label>Stage<select id="stage"><option>kindergarten</option><option selected>elementary</option><option>middle</option><option>high</option></select></label>
+<label>Subject<select id="subject"><option value="language-arts">Language Arts</option><option value="mathematics">Mathematics</option><option value="science" selected>Science</option><option value="social-studies">Social Studies</option><option value="technology">Technology</option><option value="world-languages">World Languages</option><option value="health">Health</option><option value="physical-education">Physical Education</option><option value="arts">Arts</option></select></label>
+<label>Max results<input id="max" type="number" min="1" max="30" value="10"></label>
+<label>Linked learner<select id="linked"><option value="yes">Yes</option><option value="no">No</option></select></label>
+<label class="wide">Lesson title / focus<input id="title" value="Forces, Motion, and Fair Tests"></label>
+<label class="wide">Objective / essential question<textarea id="objective">Investigate how forces change motion, collect data, graph results, and explain evidence.</textarea></label>
+</div><button id="run">Rank resources</button>
+</section>
+
+<section class="panel"><h2>Recommended resources</h2><div id="results">Run a lesson test.</div></section>
+<section class="panel"><h2>Unmapped / low-specificity resources</h2><p class="small">These are not automatically “bad.” Many are hubs or provisional inventories that need deeper source manifests before Mentor should claim lesson-level precision.</p><div id="unmapped"></div></section>
+
+<script src="./resource-objective-mapper.js"></script>
+<script>
+(async()=>{
+ const $=id=>document.getElementById(id);
+ const data=await KhaemenesObjectiveMapper.load("./");
+ const registry=await fetch("./ecosystem-resources.json").then(r=>r.json());
+ const resources=registry.resources||[];
+ const enriched=resources.map(r=>KhaemenesObjectiveMapper.enrichResource(r,data));
+ const mapped=enriched.filter(r=>r.objectiveIds?.length);
+ const curated=enriched.filter(r=>r.objectiveMappingSource==="curated-override");
+ const unmapped=enriched.filter(r=>!r.objectiveIds?.length);
+ $("stats").innerHTML=[
+   ["Resources",resources.length],
+   ["Objective-mapped",mapped.length],
+   ["Curated overrides",curated.length],
+   ["Still unmapped",unmapped.length]
+ ].map(([a,b])=>`<div class="stat"><strong>${b}</strong><span>${a}</span></div>`).join("");
+ $("unmapped").innerHTML=unmapped.slice(0,40).map(r=>`<div class="result"><div>—</div><div><strong>${r.title||r.id}</strong><div class="meta">${r.sourceId||""} · ${(r.domains||[]).join(", ")}</div></div><div class="warn">needs metadata</div></div>`).join("")||"<p class='ok'>No unmapped resources.</p>";
+ function run(){
+   const context={stage:$("stage").value,subjects:[$("subject").value],title:$("title").value,objective:$("objective").value,linkedLearner:$("linked").value==="yes",preferences:[]};
+   const ranked=KhaemenesObjectiveMapper.rankResources(resources,context,data,{max:+$("max").value||10,minScore:18});
+   $("results").innerHTML=ranked.map(x=>`<div class="result"><div class="score">${x.score}</div><div><strong>${x.resource.title}</strong><div class="meta">${x.resource.sourceId} · ${x.resource.objectiveAlignment} · ${x.resource.objectiveMappingSource}</div><div>${x.matchedObjectiveIds.map(o=>`<span class="pill">${o}</span>`).join("")}</div><div class="small">${x.reasons.join(" · ")}</div></div><div>${x.requiresFreshnessCheck?"<span class='warn'>freshness check</span>":""}${x.canCountAsMasteryEvidence?"<br><span class='ok'>evidence-capable</span>":""}</div></div>`).join("")||"<p>No resource cleared the threshold.</p>";
+ }
+ $("run").onclick=run; run();
+})().catch(err=>{document.body.insertAdjacentHTML("beforeend",`<pre>${String(err.stack||err)}</pre>`)});
+</script></main></body></html>
