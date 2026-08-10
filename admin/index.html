@@ -461,6 +461,61 @@ body[data-theme="light"] .github-family-meta span{
   .github-family-grid{grid-template-columns:1fr}
 }
 
+
+
+/* Repair 05 — Ecosystem Pulse */
+.pulse-panel{margin-top:14px;padding:clamp(20px,2.6vw,28px)}
+.pulse-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.pulse-stat{
+  min-height:118px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:15px 12px;border:1px solid #293f55;border-radius:10px;background:#0b1724;text-align:center
+}
+.pulse-stat>span{color:#8ea0af;font-size:8px;font-weight:750;letter-spacing:.11em;text-transform:uppercase}
+.pulse-stat strong{display:block;margin-top:8px;color:#fff;font:500 34px/1 var(--display)}
+.pulse-stat strong.pulse-family{max-width:100%;font-size:clamp(17px,1.7vw,24px);overflow-wrap:anywhere}
+.pulse-stat small{display:block;margin-top:8px;color:#718394;font-size:9px;line-height:1.4}
+.pulse-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:12px;margin-top:12px}
+.pulse-family-list,.pulse-attention{display:grid;align-content:start;gap:8px;min-width:0}
+.pulse-family-row{
+  display:grid;grid-template-columns:minmax(110px,.7fr) minmax(0,1.3fr) auto;gap:10px;align-items:center;
+  min-height:52px;padding:10px 12px;border:1px solid #25394e;border-radius:8px;background:#0d1a28
+}
+.pulse-family-row strong{font-size:10px;overflow-wrap:anywhere}
+.pulse-family-bar{height:6px;overflow:hidden;border-radius:999px;background:#16283a}
+.pulse-family-bar i{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,#8e6d30,#d1ad66)}
+.pulse-family-row small{color:#7e90a0;font-size:8.5px;white-space:nowrap}
+.pulse-attention-title{
+  margin:0 0 2px;color:#d8c397;font:600 9px/1.2 var(--ceremonial);
+  letter-spacing:.12em;text-transform:uppercase;text-align:center
+}
+.pulse-signal{
+  display:grid;grid-template-columns:8px minmax(0,1fr);gap:9px;align-items:start;
+  padding:9px 10px;border:1px solid #293f55;border-radius:8px;background:#0d1926
+}
+.pulse-signal .feed-dot{margin-top:4px}
+.pulse-signal strong{display:block;font-size:9.5px}
+.pulse-signal small{display:block;margin-top:3px;color:#768899;font-size:8.5px;line-height:1.4}
+body[data-theme="light"] .pulse-stat,
+body[data-theme="light"] .pulse-family-row,
+body[data-theme="light"] .pulse-signal{color:#14212b;background:#fff;border-color:#d1dbe3}
+body[data-theme="light"] .pulse-stat strong{color:#14212b}
+body[data-theme="light"] .pulse-stat>span,
+body[data-theme="light"] .pulse-stat small,
+body[data-theme="light"] .pulse-family-row small,
+body[data-theme="light"] .pulse-signal small{color:#697b89}
+body[data-theme="light"] .pulse-family-bar{background:#e6edf2}
+body[data-theme="light"] .pulse-attention-title{color:#725b30}
+@media(max-width:1100px){
+  .pulse-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pulse-layout{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .pulse-metrics{grid-template-columns:1fr 1fr}
+  .pulse-family-row{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .pulse-family-bar{width:100%}
+}
+@media(max-width:410px){.pulse-metrics{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -582,6 +637,44 @@ body[data-theme="light"] .github-family-meta span{
             <div class="feed" id="dashboardFeed"></div>
           </article>
         </div>
+
+        <article class="panel pulse-panel">
+          <div class="panel-head">
+            <div>
+              <h2>Ecosystem Pulse</h2>
+              <p>At-a-glance operational health across the four connected GitHub account families.</p>
+            </div>
+            <button class="small-btn" type="button" data-view-jump="github">Open GitHub Intelligence</button>
+          </div>
+
+          <div class="pulse-metrics">
+            <div class="pulse-stat">
+              <span>Updated Today</span>
+              <strong id="pulseUpdatedToday">0</strong>
+              <small>public repositories pushed today</small>
+            </div>
+            <div class="pulse-stat">
+              <span>New Core Commits</span>
+              <strong id="pulseNewCommits">0</strong>
+              <small>since the previous GitHub check</small>
+            </div>
+            <div class="pulse-stat">
+              <span>Attention Signals</span>
+              <strong id="pulseAttention">0</strong>
+              <small>core repos with issues, PRs, or fetch errors</small>
+            </div>
+            <div class="pulse-stat">
+              <span>Most Active Family</span>
+              <strong class="pulse-family" id="pulseActiveFamily">—</strong>
+              <small id="pulseActiveFamilyNote">waiting for GitHub data</small>
+            </div>
+          </div>
+
+          <div class="pulse-layout">
+            <div class="pulse-family-list" id="pulseFamilyList"></div>
+            <div class="pulse-attention" id="pulseAttentionList"></div>
+          </div>
+        </article>
 
         <div class="dashboard-grid">
           <article class="panel">
@@ -763,7 +856,7 @@ body[data-theme="light"] .github-family-meta span{
           <div class="panel-head">
             <div>
               <h2>Core Root Watch</h2>
-              <p>Deeper commit, issue, and pull-request monitoring for the primary infrastructure and root Pages repositories.</p>
+              <p id="coreWatchSummary">Deeper commit, issue, and pull-request monitoring for the primary infrastructure and root Pages repositories.</p>
             </div>
             <span class="panel-tag">Detailed watch</span>
           </div>
@@ -974,6 +1067,7 @@ const K_THEME="VNV_ADMIN_THEME_V1";
 const K_GITHUB_CACHE="VNV_ADMIN_GITHUB_CACHE_V1";
 const K_GITHUB_FAMILY_CACHE="VNV_ADMIN_GITHUB_FAMILY_CACHE_V1";
 const K_GITHUB_STATE="VNV_ADMIN_GITHUB_STATE_V1";
+const K_GITHUB_PULSE="VNV_ADMIN_GITHUB_PULSE_V1";
 
 const VIEW_TITLES={dashboard:"Command Center",ecosystem:"Ecosystem",activity:"Activity",notifications:"Notifications",accounts:"New Accounts",beta:"Beta Queue",github:"GitHub Intelligence",cloud:"Mini Cloud",settings:"Settings"};
 
@@ -995,6 +1089,7 @@ let settings=readJSON(K_SETTINGS,{bridgeEndpoint:""});
 let githubCache=readJSON(K_GITHUB_CACHE,{at:0,repos:[]});
 let githubFamilyCache=readJSON(K_GITHUB_FAMILY_CACHE,{at:0,families:[],repos:[],rateRemaining:null});
 let githubState=readJSON(K_GITHUB_STATE,{});
+let githubPulse=readJSON(K_GITHUB_PULSE,{at:0,changedCore:[],attention:[]});
 let remoteMetrics={};
 
 const GITHUB_FAMILIES=[
@@ -1110,8 +1205,97 @@ function openGateway(item){
   if(!w)window.location.assign(item.url);
 }
 
+
+function githubFamilyPulse(){
+  const repos=githubFamilyCache.repos||[];
+  const families=GITHUB_FAMILIES.map(f=>{
+    const familyRepos=repos.filter(r=>r.owner===f.owner);
+    const sevenDaysAgo=Date.now()-7*86400000;
+    const recent=familyRepos.filter(r=>r.pushedAt&&new Date(r.pushedAt).getTime()>=sevenDaysAgo);
+    const latest=familyRepos
+      .filter(r=>r.pushedAt)
+      .sort((a,b)=>new Date(b.pushedAt)-new Date(a.pushedAt))[0]||null;
+    return {
+      owner:f.owner,
+      label:f.label,
+      total:familyRepos.length,
+      recent:recent.length,
+      latestPush:latest?.pushedAt||"",
+      latestRepo:latest?.name||""
+    };
+  });
+
+  const today=new Date();
+  today.setHours(0,0,0,0);
+  const updatedToday=repos.filter(r=>r.pushedAt&&new Date(r.pushedAt)>=today).length;
+  const active=families.slice().sort((a,b)=>{
+    if(b.recent!==a.recent)return b.recent-a.recent;
+    return new Date(b.latestPush||0)-new Date(a.latestPush||0);
+  })[0]||null;
+
+  return {families,updatedToday,active};
+}
+
+function renderEcosystemPulse(){
+  const pulse=githubFamilyPulse();
+  const changed=githubPulse.changedCore||[];
+  const attention=githubPulse.attention||[];
+
+  document.getElementById("pulseUpdatedToday").textContent=String(pulse.updatedToday);
+  document.getElementById("pulseNewCommits").textContent=String(changed.length);
+  document.getElementById("pulseAttention").textContent=String(attention.length);
+
+  const activeName=document.getElementById("pulseActiveFamily");
+  const activeNote=document.getElementById("pulseActiveFamilyNote");
+  if(pulse.active && pulse.active.total){
+    activeName.textContent=pulse.active.label;
+    activeNote.textContent=pulse.active.recent
+      ? `${pulse.active.recent} repos pushed in the last 7 days`
+      : (pulse.active.latestRepo ? `latest: ${pulse.active.latestRepo}` : "no recent push loaded");
+  }else{
+    activeName.textContent="—";
+    activeNote.textContent="waiting for GitHub data";
+  }
+
+  const maxRecent=Math.max(1,...pulse.families.map(f=>f.recent));
+  const familyList=document.getElementById("pulseFamilyList");
+  familyList.innerHTML=pulse.families.map(f=>{
+    const pct=Math.round((f.recent/maxRecent)*100);
+    const detail=f.total ? `${f.recent} recent · ${f.total} public` : "awaiting public data";
+    return `<div class="pulse-family-row">
+      <strong>${escapeHtml(f.label)}</strong>
+      <span class="pulse-family-bar" aria-hidden="true"><i style="width:${pct}%"></i></span>
+      <small>${escapeHtml(detail)}</small>
+    </div>`;
+  }).join("");
+
+  const attentionList=document.getElementById("pulseAttentionList");
+  if(attention.length){
+    attentionList.innerHTML=
+      `<p class="pulse-attention-title">Attention Signals</p>`+
+      attention.slice(0,6).map(r=>{
+        let reason="",level="warn";
+        if(r.error){reason=`Fetch error: ${r.error}`;level="error"}
+        else{
+          const parts=[];
+          if(r.issues)parts.push(`${r.issues} open issue${r.issues===1?"":"s"}`);
+          if(r.pulls)parts.push(`${r.pulls} open PR${r.pulls===1?"":"s"}`);
+          reason=parts.join(" · ")||"Review repository";
+        }
+        return `<div class="pulse-signal">
+          <span class="feed-dot ${level}"></span>
+          <div><strong>${escapeHtml(r.fullName)}</strong><small>${escapeHtml(reason)}</small></div>
+        </div>`;
+      }).join("");
+  }else{
+    attentionList.innerHTML=
+      `<p class="pulse-attention-title">Attention Signals</p><div class="empty">No core issues, pull requests, or fetch errors are currently recorded.</div>`;
+  }
+}
+
 function renderDashboard(){
   updateCounts();
+  renderEcosystemPulse();
   const feed=document.getElementById("dashboardFeed");
   const list=notices.slice(0,4);
   feed.innerHTML=list.length?list.map(n=>`<div class="feed-item"><span class="feed-dot ${escapeHtml(n.level||"info")}"></span><div class="feed-copy"><strong>${escapeHtml(n.title)}</strong><small>${escapeHtml(n.body)}</small></div><span class="feed-time">${escapeHtml(formatDateTime(n.at))}</span></div>`).join(""):`<div class="empty">No notices yet.</div>`;
@@ -1123,6 +1307,12 @@ function renderDashboard(){
   accountFeed.innerHTML=recentAccounts.length?recentAccounts.map(a=>`<div class="feed-item"><span class="feed-dot success"></span><div class="feed-copy"><strong>${escapeHtml(a.name||a.email||"New account")}</strong><small>${escapeHtml(a.type||"Account")} · ${escapeHtml(a.status||"New")}</small></div><span class="feed-time">${escapeHtml(formatDateTime(a.createdAt||a.at))}</span></div>`).join(""):`<div class="empty">Awaiting account-formation events from the Data Bridge.</div>`;
 
   const githubFeed=document.getElementById("dashboardGithubFeed");
+  const changedFeed=(githubPulse.changedCore||[]).map(r=>({
+    name:r.name,
+    owner:r.owner||r.fullName?.split("/")[0]||"",
+    message:`New core commit · ${r.commitMessage||r.commitSha?.slice(0,7)||""}`,
+    at:r.commitAt
+  }));
   const detailedFeed=(githubCache.repos||[]).map(r=>({
     name:r.name,
     owner:r.owner||r.fullName?.split("/")[0]||"",
@@ -1135,7 +1325,7 @@ function renderDashboard(){
     message:`Public repository push · ${r.owner}`,
     at:r.pushedAt
   }));
-  const repoFeed=[...detailedFeed,...familyFeed]
+  const repoFeed=[...changedFeed,...detailedFeed,...familyFeed]
     .filter(r=>r.at)
     .sort((a,b)=>new Date(b.at||0)-new Date(a.at||0))
     .filter((r,i,arr)=>arr.findIndex(x=>`${x.owner}/${x.name}`===`${r.owner}/${r.name}`)===i)
@@ -1266,8 +1456,17 @@ async function refreshGitHub(manual=false){
     }
 
     const previous=githubState||{};
+    const changedCore=[];
     repos.forEach(r=>{
       if(r.commitSha && previous[r.fullName] && previous[r.fullName]!==r.commitSha){
+        changedCore.push({
+          fullName:r.fullName,
+          name:r.name,
+          owner:r.owner,
+          commitSha:r.commitSha,
+          commitMessage:r.commitMessage||"",
+          commitAt:r.commitAt||r.pushedAt||new Date().toISOString()
+        });
         addNotice(
           "New GitHub commit",
           `${r.fullName}: ${r.commitMessage||r.commitSha.slice(0,7)}`,
@@ -1276,6 +1475,21 @@ async function refreshGitHub(manual=false){
       }
       if(r.commitSha)previous[r.fullName]=r.commitSha;
     });
+
+    const attention=repos
+      .filter(r=>r.error || Number(r.issues)>0 || Number(r.pulls)>0)
+      .map(r=>({
+        fullName:r.fullName,
+        name:r.name,
+        owner:r.owner,
+        error:r.error||"",
+        issues:Number(r.issues)||0,
+        pulls:Number(r.pulls)||0,
+        pushedAt:r.pushedAt||""
+      }));
+
+    githubPulse={at:Date.now(),changedCore,attention};
+    writeJSON(K_GITHUB_PULSE,githubPulse);
 
     githubState=previous;
     writeJSON(K_GITHUB_STATE,githubState);
@@ -1369,6 +1583,20 @@ function renderGithub(){
     githubFamilyCache.rateRemaining===null||githubFamilyCache.rateRemaining===undefined
       ?"—"
       :String(githubFamilyCache.rateRemaining);
+
+  const coreIssues=detailed.reduce((n,r)=>n+(Number(r.issues)||0),0);
+  const corePulls=detailed.reduce((n,r)=>n+(Number(r.pulls)||0),0);
+  const coreErrors=detailed.filter(r=>r.error).length;
+  const summary=document.getElementById("coreWatchSummary");
+  if(summary){
+    const parts=[
+      `${detailed.length||WATCHED_REPOS.length} watched`,
+      `${coreIssues} open issue${coreIssues===1?"":"s"}`,
+      `${corePulls} open PR${corePulls===1?"":"s"}`
+    ];
+    if(coreErrors)parts.push(`${coreErrors} fetch error${coreErrors===1?"":"s"}`);
+    summary.textContent=parts.join(" · ");
+  }
 
   const familyTag=document.getElementById("githubFamilyTag");
   if(familyTag){
@@ -1647,6 +1875,26 @@ renderNotifications();
 renderAccounts();
 renderBeta();
 renderGithub();
+
+if(!(githubPulse.at) && Array.isArray(githubCache.repos) && githubCache.repos.length){
+  githubPulse={
+    at:Date.now(),
+    changedCore:[],
+    attention:githubCache.repos
+      .filter(r=>r.error || Number(r.issues)>0 || Number(r.pulls)>0)
+      .map(r=>({
+        fullName:r.fullName,
+        name:r.name,
+        owner:r.owner,
+        error:r.error||"",
+        issues:Number(r.issues)||0,
+        pulls:Number(r.pulls)||0,
+        pushedAt:r.pushedAt||""
+      }))
+  };
+  writeJSON(K_GITHUB_PULSE,githubPulse);
+}
+
 renderDashboard();
 showView("dashboard");
 
