@@ -571,22 +571,38 @@
       height:100%;
       display:flex;
       flex-direction:column;
-      align-items:center;
-      padding:30px 26px;
+      align-items:stretch;
+      padding:0!important;
+      overflow:hidden;
       border:1px solid var(--line);
       border-top:3px solid var(--accent);
       border-radius:var(--radius);
       color:var(--ink);
       background:#fff;
       box-shadow:0 10px 30px rgba(27,34,29,.055);
-      transition:.18s;
+      transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
       text-align:center;
-      appearance:none;
     }
-    .pillar-card:hover{
+    .pillar-card:hover,
+    .pillar-card:focus-within{
       transform:translateY(-4px);
       border-color:var(--accent);
       box-shadow:var(--shadow);
+    }
+    .pillar-main-link{
+      min-width:0;
+      flex:1 1 auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:clamp(23px,2.7vw,30px) clamp(20px,2.4vw,26px) 20px;
+      color:inherit;
+      background:#fff;
+      text-decoration:none;
+    }
+    .pillar-main-link:hover,
+    .pillar-main-link:focus-visible{
+      background:linear-gradient(180deg,#fff,rgba(180,139,69,.045));
     }
     .pillar-number{
       color:var(--accent);
@@ -595,9 +611,12 @@
       font-weight:500;
       letter-spacing:.18em;
     }
+    .pillar-copy{
+      width:100%;
+    }
     .pillar-card h3{
       margin-top:26px;
-      font-size:clamp(26px,2.1vw,34px);
+      font-size:clamp(24px,2.1vw,34px);
       line-height:1.08;
     }
     .pillar-card p{
@@ -605,16 +624,41 @@
       font-size:13px;
       line-height:1.65;
     }
-    .pillar-open{
+    .pillar-primary{
       width:100%;
       margin-top:auto;
       padding-top:18px;
       border-top:1px solid var(--line);
-      color:var(--ink-soft);
-      font-size:10px;
+      color:var(--accent);
+      font-size:clamp(9px,.7vw,11px);
       font-weight:600;
-      letter-spacing:.08em;
+      letter-spacing:.07em;
       text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .pillar-browse{
+      width:100%;
+      min-height:46px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 12px;
+      border:0;
+      border-top:1px solid var(--line);
+      color:var(--ink-soft);
+      background:#f8f5ee;
+      font-size:clamp(9px,.68vw,11px);
+      font-weight:600;
+      letter-spacing:.055em;
+      line-height:1.15;
+      text-transform:uppercase;
+      white-space:nowrap;
+      transition:background .16s ease,color .16s ease;
+    }
+    .pillar-browse:hover,
+    .pillar-browse:focus-visible{
+      color:#fff;
+      background:var(--accent);
     }
 
     /* NAIB — intelligence and navigation layer */
@@ -1114,7 +1158,8 @@
       .eyebrow{font-size:10px;letter-spacing:.16em}
       h1{font-size:clamp(52px,17vw,76px)}
       .pillar-grid,.featured-grid{grid-template-columns:1fr}
-      .pillar-card,.feature-card{padding:26px 22px}
+      .feature-card{padding:26px 22px}
+      .pillar-main-link{padding:24px 20px 18px}
       .intelligence-map{grid-template-columns:1fr}
       .intelligence-note{grid-column:auto}
       .intelligence-actions{display:grid;width:100%}
@@ -2019,7 +2064,8 @@
     .header-links a,
     .button,
     .pillar-number,
-    .pillar-open,
+    .pillar-primary,
+    .pillar-browse,
     .footer-meta span,
     .ecosystem-subgroup-title,
     .feature-visual-label,
@@ -2875,29 +2921,61 @@
         </div>
 
         <div class="pillar-grid">
-          <button class="pillar-card" type="button" data-group-link="Education" style="--accent:#9c7b42">
-            <span class="pillar-number">01 / LEARNING</span>
-            <div><h3>Education</h3><p>Preschool through Higher Learning, languages, research skills, and lifelong study.</p></div>
-            <span class="pillar-open">View Educational Halls →</span>
-          </button>
+          <article class="pillar-card" style="--accent:#9c7b42">
+            <a class="pillar-main-link" href="https://vervenveda.github.io/Khaemenes_Academy.github.io/" aria-label="Enter the Education Hall through Khaemenes Academy">
+              <span class="pillar-number">01 / LEARNING</span>
+              <div class="pillar-copy">
+                <h3>Education</h3>
+                <p>Preschool through Higher Learning, languages, research skills, and lifelong study.</p>
+              </div>
+              <span class="pillar-primary">Enter Khaemenes Academy ↗</span>
+            </a>
+            <button class="pillar-browse" type="button" data-group-browse="Education" aria-label="Browse every Education doorway">
+              Browse Entire Education Hall →
+            </button>
+          </article>
 
-          <button class="pillar-card" type="button" data-group-link="Knowledge" style="--accent:#315b7b">
-            <span class="pillar-number">02 / KNOWLEDGE</span>
-            <div><h3>Research &amp; Discovery</h3><p>Archives, search, evidence, news literacy, weather, Earth systems, and public understanding.</p></div>
-            <span class="pillar-open">View Knowledge Halls →</span>
-          </button>
+          <article class="pillar-card" style="--accent:#315b7b">
+            <a class="pillar-main-link" href="https://vervenveda.github.io/PLERASearch.github.io/" aria-label="Enter Research and Discovery through PLERA Search">
+              <span class="pillar-number">02 / KNOWLEDGE</span>
+              <div class="pillar-copy">
+                <h3>Research &amp; Discovery</h3>
+                <p>Archives, search, evidence, news literacy, weather, Earth systems, and public understanding.</p>
+              </div>
+              <span class="pillar-primary">Enter PLERA Search ↗</span>
+            </a>
+            <button class="pillar-browse" type="button" data-group-browse="Knowledge" aria-label="Browse every Knowledge doorway">
+              Browse Entire Knowledge Hall →
+            </button>
+          </article>
 
-          <button class="pillar-card" type="button" data-group-link="Public Service" style="--accent:#7d3d3d">
-            <span class="pillar-number">03 / SERVICE</span>
-            <div><h3>Public Service &amp; Wellbeing</h3><p>Health, law, civic participation, veterans, finance, environment, relief, and renewal.</p></div>
-            <span class="pillar-open">View Service Halls →</span>
-          </button>
+          <article class="pillar-card" style="--accent:#7d3d3d">
+            <a class="pillar-main-link" href="https://vervenveda.github.io/onenationforall.github.io/" aria-label="Enter Public Service and Wellbeing through One Nation for All">
+              <span class="pillar-number">03 / SERVICE</span>
+              <div class="pillar-copy">
+                <h3>Public Service &amp; Wellbeing</h3>
+                <p>Health, law, civic participation, veterans, finance, environment, relief, and renewal.</p>
+              </div>
+              <span class="pillar-primary">Enter One Nation for All ↗</span>
+            </a>
+            <button class="pillar-browse" type="button" data-group-browse="Public Service" aria-label="Browse every Public Service doorway">
+              Browse Entire Service Hall →
+            </button>
+          </article>
 
-          <button class="pillar-card" type="button" data-group-link="Creative & Professional" style="--accent:#6c5078">
-            <span class="pillar-number">04 / CREATION</span>
-            <div><h3>Creative &amp; Professional</h3><p>Art, music, games, communication, media, productivity, and professional tools.</p></div>
-            <span class="pillar-open">View Creative Halls →</span>
-          </button>
+          <article class="pillar-card" style="--accent:#6c5078">
+            <a class="pillar-main-link" href="https://vervenveda.github.io/proresource_hub.github.io/" aria-label="Enter Creative and Professional resources through ProResource Hub">
+              <span class="pillar-number">04 / CREATION</span>
+              <div class="pillar-copy">
+                <h3>Creative &amp; Professional</h3>
+                <p>Art, music, games, communication, media, productivity, and professional tools.</p>
+              </div>
+              <span class="pillar-primary">Enter ProResource Hub ↗</span>
+            </a>
+            <button class="pillar-browse" type="button" data-group-browse="Creative &amp; Professional" aria-label="Browse every Creative and Professional doorway">
+              Browse Entire Creative Hall →
+            </button>
+          </article>
         </div>
 
         <div class="network-counts" aria-label="Verve N Veda network overview">
@@ -3660,18 +3738,9 @@
         });
       }
 
-      const PILLAR_DIRECTORY_MAP = {
-        "Education":"education",
-        "Knowledge":"news",
-        "Public Service":"civic",
-        "Creative & Professional":"creative"
-      };
-
-      document.querySelectorAll("[data-group-link]").forEach(button => {
+      document.querySelectorAll("[data-group-browse]").forEach(button => {
         button.addEventListener("click",() => {
-          const id = PILLAR_DIRECTORY_MAP[button.dataset.groupLink] || "education";
-          if(activeEcosystemCategory === id) activeEcosystemCategory = null;
-          setEcosystemCategory(id,{scroll:true});
+          openMenu(button.dataset.groupBrowse || "");
         });
       });
 
@@ -3746,14 +3815,19 @@
         )].filter(element => !element.hasAttribute("hidden"));
       }
 
-      function openMenu(){
+      function openMenu(initialQuery = ""){
         lastFocusedElement = document.activeElement;
         menuOverlay.classList.add("open");
         menuOverlay.setAttribute("aria-hidden","false");
         $("menuButton").setAttribute("aria-expanded","true");
         document.body.classList.add("menu-open");
-        buildMenu();
-        setTimeout(() => $("menuSearch").focus(),80);
+        const query = String(initialQuery || "");
+        $("menuSearch").value = query;
+        buildMenu(query);
+        setTimeout(() => {
+          $("menuSearch").focus();
+          if(query) $("menuSearch").select();
+        },80);
       }
 
       function closeMenu(restoreFocus = true){
