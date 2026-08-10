@@ -752,6 +752,62 @@
       font-size:11px;
       line-height:1.5;
     }
+    .intelligence-node-link{
+      position:relative;
+      color:inherit;
+      text-decoration:none;
+      cursor:pointer;
+      overflow:hidden;
+      transition:
+        transform .17s ease,
+        border-color .17s ease,
+        background .17s ease,
+        box-shadow .17s ease;
+    }
+    .intelligence-node-link::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      pointer-events:none;
+      border:1px solid rgba(231,215,182,0);
+      border-radius:4px;
+      transition:border-color .17s ease;
+    }
+    .intelligence-node-link:hover,
+    .intelligence-node-link:focus-visible{
+      transform:translateY(-3px);
+      border-color:rgba(231,215,182,.38);
+      background:rgba(255,255,255,.085);
+      box-shadow:0 14px 30px rgba(0,0,0,.15);
+    }
+    .intelligence-node-link:hover::after,
+    .intelligence-node-link:focus-visible::after{
+      border-color:rgba(231,215,182,.16);
+    }
+    .intelligence-node-link:active{
+      transform:translateY(-1px) scale(.995);
+    }
+    .intelligence-node-link strong{
+      transition:color .17s ease,transform .17s ease;
+    }
+    .intelligence-node-link:hover strong,
+    .intelligence-node-link:focus-visible strong{
+      color:#f4ead1;
+      transform:translateY(-1px);
+    }
+    .intelligence-path{
+      position:relative;
+      z-index:1;
+      display:block;
+      margin-top:12px;
+      color:var(--gold-pale);
+      font-family:var(--sans);
+      font-size:clamp(9px,.68vw,11px);
+      font-weight:600;
+      letter-spacing:.07em;
+      line-height:1.25;
+      text-transform:uppercase;
+    }
     .intelligence-note{
       grid-column:1 / -1;
       margin:2px 0 0;
@@ -2465,7 +2521,8 @@
     .viewer-blocked-kicker,
     .menu-group,
     .menu-link i,
-    .value-link small{
+    .value-link small,
+    .intelligence-path{
       font-size:var(--fluid-utility)!important;
     }
 
@@ -3332,26 +3389,42 @@
         </div>
 
         <div class="intelligence-map" aria-label="NAIB navigation roles">
-          <div class="intelligence-node">
+          <a class="intelligence-node intelligence-node-link"
+             href="https://artist1970.github.io/noema-ai.github.io/"
+             aria-label="Open NAIB for context and navigation">
             <span>01 · Understand</span>
             <strong>Context</strong>
             <small>Recognizes the visitor’s current mode, learning stage, project, and explicit preferences.</small>
-          </div>
-          <div class="intelligence-node">
+            <b class="intelligence-path">Open NAIB ↗</b>
+          </a>
+
+          <a class="intelligence-node intelligence-node-link"
+             href="#directory"
+             aria-label="Browse the Verve N Veda ecosystem directory">
             <span>02 · Organize</span>
             <strong>Route</strong>
             <small>Directs the request toward the right Verve N Veda Hall, resource, or specialist pathway.</small>
-          </div>
-          <div class="intelligence-node">
+            <b class="intelligence-path">Browse routes ↑</b>
+          </a>
+
+          <a class="intelligence-node intelligence-node-link"
+             href="#featured"
+             aria-label="Browse featured Verve N Veda specialist gateways">
             <span>03 · Coordinate</span>
             <strong>Specialists</strong>
             <small>Connects learning, research, verification, creativity, planning, archives, and communication.</small>
-          </div>
-          <div class="intelligence-node">
+            <b class="intelligence-path">Meet the gateways ↑</b>
+          </a>
+
+          <a class="intelligence-node intelligence-node-link"
+             href="#privacy"
+             aria-label="Read Verve N Veda privacy and public access guidance">
             <span>04 · Preserve</span>
             <strong>Boundaries</strong>
             <small>Keeps permissions, provenance, privacy, and high-stakes verification separate from simple discovery.</small>
-          </div>
+            <b class="intelligence-path">Review boundaries ↑</b>
+          </a>
+
           <p class="intelligence-note">
             NAIB provides local navigation, memory, resource federation, and verification-aware structure. Secure provider services remain separate from public page credentials.
           </p>
