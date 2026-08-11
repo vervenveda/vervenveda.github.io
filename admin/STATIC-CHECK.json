@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "IIFE": true,
+    "registry endpoint": true,
+    "no GitHub token literal": true,
+    "no passcode constant": true,
+    "snapshot compare": true,
+    "category map": true,
+    "export": true,
+    "TTL": true,
+    "admin unlocked check": true
+  },
+  "passed": true
+}
