@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "description": "Allowlisted public-folder discovery for supplemental Mentor/Career resources. Explicit mentor manifests remain authoritative.",
+  "repositories": [
+    {
+      "repository": "vervenveda/proresource_hub.github.io",
+      "enabled": true,
+      "baseUrl": "https://vervenveda.com/proresource_hub.github.io/",
+      "roots": [
+        {
+          "path": "Protools",
+          "recursive": true,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "professional-practical",
+          "resourceType": "professional-tool",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high"
+          ],
+          "domains": [
+            "professional-skills"
+          ],
+          "tags": [
+            "career",
+            "professional-tools",
+            "auto-discovered"
+          ]
+        },
+        {
+          "path": "templates",
+          "recursive": true,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "professional-practical",
+          "resourceType": "professional-template",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high"
+          ],
+          "domains": [
+            "writing",
+            "professional-skills"
+          ],
+          "tags": [
+            "career",
+            "prose",
+            "template",
+            "professional-writing",
+            "auto-discovered"
+          ]
+        }
+      ],
+      "excludePathFragments": [
+        "README",
+        "CHANGELOG",
+        "VALIDATION",
+        "TEST",
+        "manifest",
+        "service-worker",
+        "404.html",
+        "403.html"
+      ]
+    },
+    {
+      "repository": "vervenveda/arcade.github.io",
+      "enabled": true,
+      "baseUrl": "https://vervenveda.com/arcade.github.io/",
+      "roots": [
+        {
+          "path": "",
+          "recursive": false,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "learning-game",
+          "resourceType": "game",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high",
+            "middle"
+          ],
+          "domains": [
+            "logic",
+            "reasoning",
+            "strategy"
+          ],
+          "tags": [
+            "career-skills",
+            "game",
+            "problem-solving",
+            "auto-discovered"
+          ]
+        }
+      ],
+      "excludePathFragments": [
+        "index.html",
+        "404.html",
+        "403.html",
+        "privacy",
+        "terms"
+      ]
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "enabled": true,
+      "baseUrl": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
+      "roots": [
+        {
+          "path": "Technology",
+          "recursive": true,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "curricular",
+          "resourceType": "course-tool",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high"
+          ],
+          "domains": [
+            "technology",
+            "coding"
+          ],
+          "tags": [
+            "career-skills",
+            "technology",
+            "auto-discovered"
+          ]
+        }
+      ],
+      "excludePathFragments": [
+        "README",
+        "CHANGELOG",
+        "VALIDATION",
+        "TEST",
+        "404.html",
+        "403.html"
+      ]
+    },
+    {
+      "repository": "vervenveda/finance.github.io",
+      "enabled": true,
+      "baseUrl": "https://vervenveda.com/finance.github.io/",
+      "roots": [
+        {
+          "path": "apps",
+          "recursive": true,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "professional-practical",
+          "resourceType": "finance-tool",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high"
+          ],
+          "domains": [
+            "finance",
+            "business"
+          ],
+          "tags": [
+            "career-skills",
+            "finance",
+            "auto-discovered"
+          ]
+        },
+        {
+          "path": "workshops",
+          "recursive": true,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "curricular",
+          "resourceType": "workshop",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high"
+          ],
+          "domains": [
+            "finance",
+            "business"
+          ],
+          "tags": [
+            "career-skills",
+            "finance",
+            "workshop",
+            "auto-discovered"
+          ]
+        }
+      ],
+      "excludePathFragments": [
+        "README",
+        "CHANGELOG",
+        "VALIDATION",
+        "TEST",
+        "404.html",
+        "403.html"
+      ]
+    },
+    {
+      "repository": "vervenveda/firmament.github.io",
+      "enabled": true,
+      "baseUrl": "https://vervenveda.com/firmament.github.io/",
+      "roots": [
+        {
+          "path": "",
+          "recursive": true,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "professional-practical",
+          "resourceType": "legal-public-service-tool",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high"
+          ],
+          "domains": [
+            "law",
+            "public-service",
+            "research"
+          ],
+          "tags": [
+            "career-skills",
+            "law",
+            "public-service",
+            "auto-discovered"
+          ]
+        }
+      ],
+      "excludePathFragments": [
+        "admin",
+        "README",
+        "CHANGELOG",
+        "VALIDATION",
+        "TEST",
+        "404.html",
+        "403.html"
+      ]
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "enabled": true,
+      "baseUrl": "https://vervenveda.com/Khaemenes_Linguistics.github.io/",
+      "roots": [
+        {
+          "path": "apps",
+          "recursive": true,
+          "extensions": [
+            ".html"
+          ],
+          "classification": "curricular",
+          "resourceType": "language-tool",
+          "audiences": [
+            "higher-learning",
+            "adult",
+            "high"
+          ],
+          "domains": [
+            "communication",
+            "language"
+          ],
+          "tags": [
+            "career-skills",
+            "communication",
+            "language",
+            "auto-discovered"
+          ]
+        }
+      ],
+      "excludePathFragments": [
+        "README",
+        "CHANGELOG",
+        "VALIDATION",
+        "TEST",
+        "404.html",
+        "403.html"
+      ]
+    }
+  ]
+}
