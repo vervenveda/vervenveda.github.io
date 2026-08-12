@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <title>VNV Directory AGI</title>
+  <style>
+    :root{
+      --ink:#101713;
+      --muted:#64706a;
+      --paper:#f4f1e9;
+      --panel:#fffdf8;
+      --forest:#203d31;
+      --gold:#b28a48;
+      --line:rgba(16,23,19,.16);
+      --shadow:0 18px 50px rgba(16,23,19,.08);
+      --radius:11px;
+      --display:Georgia,"Times New Roman",serif;
+      --sans:Arial,Helvetica,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;padding:28px;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5}
+    h1,h2,h3{font-family:var(--display);font-weight:400}
+    h1{margin:0;text-align:center;font-size:clamp(2rem,5vw,4rem);letter-spacing:.04em}
+    .sub{max-width:900px;margin:10px auto 24px;text-align:center;color:var(--muted)}
+    .status{width:max-content;max-width:100%;margin:0 auto 22px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    #container{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:18px;align-items:start}
+    .module{min-width:0;padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow);text-align:left}
+    #cloud{border-top:4px solid #7aa0a8}
+    #directory{border-top:4px solid var(--gold)}
+    #interface{border-top:4px solid var(--forest)}
+    textarea,input,select,button{width:100%;font:inherit}
+    textarea,input,select{margin:5px 0 9px;padding:10px 11px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--ink)}
+    textarea{min-height:96px;resize:vertical}
+    button{margin:5px 0;padding:10px 12px;border:1px solid var(--ink);border-radius:7px;background:var(--ink);color:#fff;cursor:pointer}
+    button.secondary{background:#fff;color:var(--ink);border-color:var(--line)}
+    button:hover{filter:brightness(.96)}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .small{font-size:12px;color:var(--muted)}
+    .scroll{max-height:420px;overflow:auto;padding-right:4px}
+    ul{padding-left:20px}
+    li{margin:5px 0}
+    details{margin:8px 0;border:1px solid var(--line);border-radius:7px;background:#fff}
+    summary{padding:9px 11px;cursor:pointer;font-weight:700}
+    .group-body{padding:0 11px 10px}
+    .item{padding:9px 0;border-top:1px solid rgba(16,23,19,.09)}
+    .item:first-child{border-top:0}
+    .item strong{display:block}
+    .item a{color:var(--forest);word-break:break-word}
+    .aliases{font-size:11px;color:var(--muted)}
+    .output{min-height:150px;padding:12px;border:1px solid var(--line);border-radius:7px;background:#0f1713;color:#e9efe9;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
+    .toolbar{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0}
+    .stat{padding:9px;border:1px solid var(--line);border-radius:7px;background:#fff;text-align:center}
+    .stat b{display:block;font-size:20px;font-family:var(--display)}
+    .stat span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .divider{height:1px;background:var(--line);margin:16px 0}
+    code{background:rgba(178,138,72,.12);padding:2px 4px;border-radius:4px}
+    @media(max-width:1050px){#container{grid-template-columns:1fr}.scroll{max-height:340px}}
+    @media(max-width:560px){body{padding:16px}.row,.toolbar,.stats{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <h1>VNV Directory AGI</h1>
+  <p class="sub">Independent Mini AGI chassis for canonical ecosystem routing, aliases, migration awareness, and local directory notes. Dormant by design; the Verve N Veda Gateway does not import or reference this file.</p>
+  <div class="status">Dormant · Local-first · Directory seed v1</div>
+
+  <div id="container">
+    <section id="cloud" class="module" aria-labelledby="cloudTitle">
+      <h2 id="cloudTitle">Cloud Storage</h2>
+      <p class="small">Local notes and migration observations. This uses a namespaced browser store and contains no credentials.</p>
+      <textarea id="cloudInput" placeholder="Store a routing note, migration observation, or directory reminder..."></textarea>
+      <button id="cloudStore">Store in Cloud</button>
+      <div class="toolbar">
+        <button class="secondary" id="cloudClear">Clear Cloud</button>
+        <button class="secondary" id="exportBtn">Export JSON</button>
+      </div>
+      <h3>Cloud Data</h3>
+      <div class="scroll"><ul id="cloudData"></ul></div>
+    </section>
+
+    <section id="directory" class="module" aria-labelledby="directoryTitle">
+      <h2 id="directoryTitle">Directory</h2>
+      <p class="small">Canonical records are nested by category and group. Search checks titles, aliases, descriptions, groups, and URLs.</p>
+      <input id="directorySearch" type="search" placeholder="Search the directory..." autocomplete="off">
+      <div class="stats" id="stats"></div>
+      <div class="scroll" id="directoryList"></div>
+
+      <div class="divider"></div>
+      <h3>Add Local Directory Record</h3>
+      <input id="addTitle" placeholder="Title">
+      <input id="addUrl" placeholder="https://...">
+      <div class="row">
+        <input id="addCategory" placeholder="Category">
+        <input id="addGroup" placeholder="Group">
+      </div>
+      <input id="addAliases" placeholder="Aliases, comma separated">
+      <button id="addRecord">Add Local Record</button>
+      <button class="secondary" id="resetSeed">Reset Directory to Seed</button>
+    </section>
+
+    <section id="interface" class="module" aria-labelledby="interfaceTitle">
+      <h2 id="interfaceTitle">User Interface</h2>
+      <p class="small">Commands operate on the local Directory AGI only.</p>
+      <input id="userInput" placeholder="Try: resolve iq quantum" autocomplete="off">
+      <button id="runCommand">Run</button>
+      <h3>Output</h3>
+      <div id="output" class="output" role="status" aria-live="polite">Directory AGI ready. Type help.</div>
+      <div class="divider"></div>
+      <p class="small"><strong>Commands</strong><br>
+        <code>find term</code><br>
+        <code>resolve name</code><br>
+        <code>show category education</code><br>
+        <code>show moved</code><br>
+        <code>show directory</code><br>
+        <code>show cloud</code><br>
+        <code>validate</code><br>
+        <code>stats</code><br>
+        <code>help</code>
+      </p>
+    </section>
+  </div>
+
+  <script>
+  (() => {
+    'use strict';
+
+    const VERSION = '1.0.0';
+    const KEYS = Object.freeze({
+      cloud: 'VNV_DIRECTORY_AGI_CLOUD_V1',
+      directory: 'VNV_DIRECTORY_AGI_DIRECTORY_V1',
+      state: 'VNV_DIRECTORY_AGI_STATE_V1'
+    });
+
+    const u = (path) => `https://vervenveda.github.io/${path}`;
+    const item = (id,title,url,desc,aliases=[],previousLocations=[]) => ({id,title,url,desc,aliases,previousLocations});
+
+    const SEED_DIRECTORY = [
+      {
+        id:'education', label:'Education', groups:[
+          {title:'Academy Gateways', items:[
+            item('khaemenes-academy','Khaemenes Academy',u('Khaemenes_Academy.github.io/'),'Central family and lifelong-learning gateway.',['academy','khaemenes']),
+            item('preschool','Khaemenes Preschool · Crechè',u('Khaemenes_Preschool.github.io/'),'Early-learning campus and open discovery garden.',['creche','preschool']),
+            item('kindergarten','Khaemenes Kinder Garden',u('Khaemenes_KinderGarden.github.io/'),'Kindergarten curriculum and open learning toolbox.',['kinder garden','kindergarten']),
+            item('elementary','Khaemenes Elementary',u('Khaemenes_Elementary.github.io/'),'Grades 1–5 campus.',['elementary school']),
+            item('middle','Khaemenes Middle',u('Khaemenes_Middle.github.io/'),'Grades 6–8 campus.',['middle school','junior high']),
+            item('high','Khaemenes High',u('Khaemenes_High.github.io/'),'Grades 9–12 campus.',['high school']),
+            item('higher-learning','Khaemenes Higher Learning',u('Khaemenes_Higher_Learning.github.io/'),'University, career, technology, science, and lifelong higher learning.',['university','higher education'])
+          ]},
+          {title:'Higher Learning · Careers', items:[
+            item('career-star','Career Star',u('Khaemenes_Higher_Learning.github.io/Career/apps/career-star_index.html'),'Career exploration tool.',['career finder','career star']),
+            item('career-assessment','Career Assessment',u('Khaemenes_Higher_Learning.github.io/Career/apps/career-assessment_index.html'),'Structured career assessment.',['career test','career assessment']),
+            item('career-mentor-hub','Career Mentor Hub',u('Khaemenes_Higher_Learning.github.io/Career/apps/career-mentor-hub_index.html'),'Career mentoring gateway.',['career mentor','mentor hub']),
+            item('assessment-mentor','Assessment Mentor',u('Khaemenes_Higher_Learning.github.io/Career/apps/assessment-mentor_index.html'),'Assessment support inside the Career area.',['mentor review','career assessment mentor'])
+          ]},
+          {title:'Higher Learning · GED', items:[
+            item('ged-portal','GED Portal',u('Khaemenes_Higher_Learning.github.io/GED/portal_index.html'),'GED program gateway.',['ged']),
+            item('ged-survey','GED Readiness Survey',u('Khaemenes_Higher_Learning.github.io/GED/Survey_index.html'),'Readiness survey.',['ged survey']),
+            item('ged-interactive','GED Interactive',u('Khaemenes_Higher_Learning.github.io/GED/Interactive_index.html'),'Interactive GED learning tool.',['ged interactive']),
+            item('ged-preparation','GED Preparation',u('Khaemenes_Higher_Learning.github.io/GED/Preparation_index.html'),'GED preparation resource.',['ged prep'])
+          ]},
+          {title:'Higher Learning · Technology', items:[
+            item('coding-101','Coding 101',u('Khaemenes_Higher_Learning.github.io/Technology/coding/coding-101/'),'Foundational coding course.',['programming 101']),
+            item('coding-102','Coding 102',u('Khaemenes_Higher_Learning.github.io/Technology/coding/coding-102/'),'Second coding course.',['programming 102']),
+            item('coding-103','Coding 103',u('Khaemenes_Higher_Learning.github.io/Technology/coding/coding-103/'),'Third coding course.',['programming 103']),
+            item('higher-science','Higher Learning Science',u('Khaemenes_Higher_Learning.github.io/Science/'),'Higher-learning science gateway.',['university science'])
+          ]}
+        ]
+      },
+      {
+        id:'archives', label:'Archives, Faith & Literacy', groups:[
+          {title:'ARSHIF Gateways', items:[
+            item('arshif','ARSHIF',u('Arshif.github.io/'),'Archives, history, culture, literature, research, philosophy, and scholarship.',['archive','archives']),
+            item('arshif-halls','ARSHIF Halls',u('Arshif.github.io/halls/'),'Current ARSHIF hall directory.',['halls','archive halls']),
+            item('reading-room','Reading Room',u('Arshif.github.io/apps/Reading_room_index.html'),'Reading and research room.',['reading room','library']),
+            item('field-lab','Field Lab',u('Arshif.github.io/tools/field-lab/'),'Current ARSHIF field research lab.',['research field lab','living field lab'],['Arshif.github.io/apps/field-lab/','Arshif.github.io/apps/%20field-lab/'])
+          ]},
+          {title:'Literacy Halls', items:[
+            item('childrens-classics','Children’s Classics Hall',u('Arshif.github.io/halls/literacy-childrens-classics/'),'Children’s classics and reading scholarship.',['children hall','childrens hall','children’s hall','children classics','literacy childrens classics']),
+            item('world-classics','World Classics Hall',u('Arshif.github.io/halls/literacy-world-classics/'),'World classics and comparative literature.',['world literacy','world literacy hall','world classics']),
+            item('indigenous-oral-traditions','Indigenous Oral Traditions',u('Arshif.github.io/halls/literacy-indiginous-oral-traditions/'),'Oral traditions and cultural literacy hall.',['oral traditions','indigenous literacy']),
+            item('lost-books','Lost Books Hall',u('Arshif.github.io/halls/literacy-lost-books/'),'Archive and literacy study of lost and recovered books.',['lost books']),
+            item('poetry-hall','Poetry Hall',u('Arshif.github.io/halls/literacy-poetry-9th-university/'),'Poetry studies from secondary through university levels.',['poetry','literacy poetry'])
+          ]},
+          {title:'Faith', items:[
+            item('faith','Faith',u('Arshif.github.io/Faith/'),'Current home for the reorganized Faith collection.',['faith hall','faith gateway']),
+            item('bible-context','Bible Context',u('Arshif.github.io/Faith/apps/Bible-context_index.html'),'Biblical context study.',['bible context']),
+            item('biblical-portal','Biblical Portal',u('Arshif.github.io/Faith/apps/biblical_portal_index.html'),'Biblical study gateway.',['bible portal']),
+            item('biblical-directory','Biblical Web Directory',u('Arshif.github.io/Faith/apps/biblical_web_directory_index.html'),'Biblical resource directory.',['biblical directory']),
+            item('foundations-faith','Foundations of Faith',u('Arshif.github.io/Faith/apps/foundations_of_faith_index.html'),'Foundational faith study.',['foundations of faith']),
+            item('testament','The Testament',u('Arshif.github.io/Faith/apps/testament_index.html'),'Testament study resource.',['testament']),
+            item('testament-study','Testament Study Portal',u('Arshif.github.io/Faith/apps/testament_study_portal_index.html'),'Testament study portal.',['testament portal']),
+            item('truth-tribe','Truth Tribe',u('Arshif.github.io/Faith/apps/truth_tribe_index.html'),'Truth Tribe gateway.',['truth tribe']),
+            item('truth-tribe-class','Truth Tribe Class',u('Arshif.github.io/Faith/apps/truth_tribe_class_index.html'),'Truth Tribe class resource.',['truth tribe class']),
+            item('yahushua-study','Yahushua Study',u('Arshif.github.io/Faith/apps/Yahushua_Study_index.html'),'Yahushua study resource.',['yahushua']),
+            item('yahushua-portal','Yahushua Portal',u('Arshif.github.io/Faith/apps/Yahushua_portal_index.html'),'Yahushua study portal.',['yahushua portal']),
+            item('prayer','Prayer',u('Arshif.github.io/Faith/apps/prayer_index.html'),'Prayer resource.',['prayer']),
+            item('before-canon','Bible Before the Canon',u('Arshif.github.io/Faith/apps/bible_before_cannon_index.html'),'Study of biblical texts before canon formation.',['before canon','bible before canon']),
+            item('remnant-nations','Remnant Nations',u('Arshif.github.io/Faith/apps/remnant_nations_index.html'),'Faith and history study resource.',['remnant nations']),
+            item('zionism-course','Zionism Course',u('Arshif.github.io/Faith/apps/zionism_course_index.html'),'Historical study course.',['zionism'])
+          ]}
+        ]
+      },
+      {
+        id:'languages', label:'Languages', groups:[
+          {title:'Linguistics Gateways', items:[
+            item('linguistics','Khaemenes Linguistics',u('Khaemenes_Linguistics.github.io/'),'Languages, linguistics, translation, and writing systems.',['language campus','linguistics']),
+            item('language-hall','Language Hall',u('Khaemenes_Linguistics.github.io/Halls/'),'Current home of the reorganized Language Hall.',['language hall','languages hall']),
+            item('language-learning','Language Learning Hall',u('Khaemenes_Linguistics.github.io/Halls/language-learning-v3_index.html'),'Expanded language-learning hall.',['language learning'])
+          ]},
+          {title:'Arabic', items:[
+            item('arabic-365','Arabic 365',u('Khaemenes_Linguistics.github.io/apps/Arabic_365_index.html'),'Arabic learning resource.',['arabic']),
+            item('arabic-daily','Arabic Daily',u('Khaemenes_Linguistics.github.io/apps/Arabic_daily_index.html'),'Daily Arabic practice.',['daily arabic']),
+            item('arabic-quran-study','Arabic Qur’anic Study',u('Khaemenes_Linguistics.github.io/apps/Arabic_Quranic_Study_index.html'),'Arabic and Qur’anic study.',['quranic arabic','arabic quran']),
+            item('arabic-root-explorer','Arabic Qur’an Root Explorer',u('Khaemenes_Linguistics.github.io/apps/Arabic_Quran_root_explorer_index.html'),'Arabic root exploration.',['root explorer','arabic roots'])
+          ]}
+        ]
+      },
+      {
+        id:'finance', label:'Finance & Professional', groups:[
+          {title:'Finance Gateways', items:[
+            item('finance','Finance',u('finance.github.io/'),'Financial literacy, planning, markets, employment, and practical tools.',['finance hall','financial']),
+            item('financial-hall','Financial Hall',u('finance.github.io/financial-hall/'),'Current financial hall.',['financial hall']),
+            item('financial-aid','Financial Aid',u('finance.github.io/Financial-Aid/'),'Financial aid gateway.',['grants','student aid']),
+            item('financial-library','Financial Library',u('finance.github.io/apps/financial-library_index.html'),'Financial resource library.',['finance library','resource library'])
+          ]},
+          {title:'Budgeting & Work', items:[
+            item('budget-planner','Budget Planner',u('finance.github.io/apps/budget_planner_index.html'),'Personal budgeting and planning.',['budget']),
+            item('budget-calculator','Budget Calculator',u('finance.github.io/apps/budget-calculator_index.html'),'Budget calculator.',['budget calculator']),
+            item('budget-tool','Budget Tool',u('finance.github.io/apps/budget-tool_index.html'),'Budget utility.',['ultimate budget tool']),
+            item('small-business-budget','Small Business Budget',u('finance.github.io/apps/small-business-budget_index.html'),'Small-business budgeting.',['business budget']),
+            item('global-job-search','Global Job Search',u('finance.github.io/apps/global_job_search_index.html'),'Employment search gateway.',['jobs','job search']),
+            item('finance-employment-news','Finance & Employment News',u('finance.github.io/apps/news_finance_employment_index.html'),'Finance and workforce reporting.',['employment news'])
+          ]},
+          {title:'Finance Learning', items:[
+            item('personal-finance-six-week','6-Week Personal Finance',u('finance.github.io/workshops/6-week-personal-finance_index.html'),'Structured personal-finance learning.',['personal finance']),
+            item('international-finance','International Finance',u('finance.github.io/apps/international-finance_index.html'),'International finance learning.',['global finance']),
+            item('investment-foundations','Investment Foundations',u('finance.github.io/workshops/investment-foundations_index.html'),'Investment foundations workshop.',['investing']),
+            item('stock-market','Stock Market Workshop',u('finance.github.io/workshops/stock-market_index.html'),'Stock-market learning workshop.',['stocks']),
+            item('personal-taxes','Personal Taxes',u('finance.github.io/workshops/personal-taxes_index.html'),'Personal tax learning workshop.',['taxes']),
+            item('debit-credit','Debit & Credit',u('finance.github.io/workshops/debit-credit_index.html'),'Debit and credit learning workshop.',['credit','debit']),
+            item('nonprofit-hall','Nonprofit Hall',u('finance.github.io/nonprofit-hall/'),'Nonprofit and business resource hall.',['nonprofit','business hall'])
+          ]},
+          {title:'Professional Gateways', items:[
+            item('proresources','ProReSources',u('proresource_hub.github.io/ProReSources_updated_index.html'),'Professional tools and productivity resources.',['pro resource','professional tools']),
+            item('firmament','Firmament Law',u('firmament.github.io/'),'Law, evidence, and public-resource gateway.',['law','legal']),
+            item('plera-search','PLERA Search',u('PLERASearch.github.io/'),'Search and discovery gateway.',['search'])
+          ]}
+        ]
+      },
+      {
+        id:'games', label:'Games & Reasoning', groups:[
+          {title:'Arcade', items:[
+            item('arcade','Verve N Veda Arcade',u('arcade.github.io/'),'Games, puzzles, trivia, and original interactive experiences.',['games','arcade']),
+            item('iq-quantum','IQ Quantum',u('arcade.github.io/IQ-Quantum_index.html'),'IQ and reasoning application in the Arcade.',['iq app','reasoning center','quantum iq'],['Khaemenes_Academy.github.io/higher_learming/apps/IQ-Quantum_index.html']),
+            item('iq-mini','IQ Mini',u('arcade.github.io/IQ-mini_index.html'),'Compact IQ and reasoning application in the Arcade.',['mini iq','iq mini app'],['Khaemenes_Academy.github.io/higher_learming/apps/IQ-mini_index.html']),
+            item('chess','Chess Studio',u('arcade.github.io/Chess_Studio_index.html'),'Chess and strategy studio.',['chess']),
+            item('sudoku','Jenny’s Sudoku',u('arcade.github.io/Jenny%27s_Sudoku_index.html'),'Sudoku logic game.',['sudoku'])
+          ]}
+        ]
+      },
+      {
+        id:'creative', label:'Creative', groups:[
+          {title:'Creative Gateways', items:[
+            item('bazaar-art','Bazaar Art',u('bazaarart.github.io/'),'Creative arts ecosystem and studio gateway.',['art','creative']),
+            item('refrain','The Refrain',u('the_refrain.github.io/'),'Music, composition, theory, recording, and performance.',['music','refrain']),
+            item('art-gallery','My Art Gallery',u('myartgallery.github.io/'),'Jennifer Kay Pearl art portfolio and gallery.',['gallery','art gallery'])
+          ]}
+        ]
+      },
+      {
+        id:'health', label:'Health & Wellness', groups:[
+          {title:'Health Gateways', items:[
+            item('medicament','Medicament Hub',u('medicament-hub.github.io/'),'Health, medicine, evidence, and wellness gateway.',['medicine','health']),
+            item('aurora','Aurora',u('aurora.github.io/'),'Calm, reflection, breathing, and wellness space.',['wellness','zen'])
+          ]}
+        ]
+      },
+      {
+        id:'civic', label:'Civic & Service', groups:[
+          {title:'Civic Gateways', items:[
+            item('one-nation','One Nation For All',u('onenationforall.github.io/'),'Civic learning and public-service gateway.',['civic','voter']),
+            item('veterans','Veterans Resource Hall',u('veterans.github.io/'),'Veteran support and resource gateway.',['veterans']),
+            item('river-road','River to Road',u('river_to_road.github.io/'),'Environmental stewardship and community service.',['cleanup','environmental service'])
+          ]}
+        ]
+      },
+      {
+        id:'news-weather-communication', label:'News, Weather & Communication', groups:[
+          {title:'News & Weather', items:[
+            item('verifier','The Verifier',u('theverifier.github.io/'),'News, evidence, source comparison, and media literacy.',['news','verifier']),
+            item('solanar','Solanar',u('solanar.github.io/'),'Weather, Earth systems, sky, time, and environmental observation.',['weather','meteorology'])
+          ]},
+          {title:'Communication', items:[
+            item('333','333 Network',u('333.github.io/'),'Communication, community, meeting, mail, and infrastructure network.',['333','network'])
+          ]}
+        ]
+      }
+    ];
+
+    const clone = value => JSON.parse(JSON.stringify(value));
+    const safeParse = (raw,fallback) => { try { const value=JSON.parse(raw); return value ?? fallback; } catch { return fallback; } };
+    const read = (key,fallback) => safeParse(localStorage.getItem(key),fallback);
+    const write = (key,value) => localStorage.setItem(key,JSON.stringify(value));
+    const esc = value => String(value ?? '').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+    const normalize = value => String(value ?? '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+
+    function getDirectory(){
+      const stored = read(KEYS.directory,null);
+      if(Array.isArray(stored)) return stored;
+      const seeded = clone(SEED_DIRECTORY);
+      write(KEYS.directory,seeded);
+      write(KEYS.state,{version:VERSION,seededAt:new Date().toISOString()});
+      return seeded;
+    }
+
+    function setDirectory(directory){ write(KEYS.directory,directory); }
+    function getCloud(){ const c=read(KEYS.cloud,[]); return Array.isArray(c)?c:[]; }
+    function setCloud(cloud){ write(KEYS.cloud,cloud); }
+
+    function flatten(directory=getDirectory()){
+      return directory.flatMap(category => category.groups.flatMap(group => group.items.map(record => ({...record,categoryId:category.id,category:category.label,group:group.title}))));
+    }
+
+    function searchable(record){
+      return normalize([record.title,record.id,record.desc,record.category,record.group,...(record.aliases||[]),record.url].join(' '));
+    }
+
+    function matches(query){
+      const q=normalize(query);
+      if(!q) return flatten();
+      return flatten().filter(record => searchable(record).includes(q));
+    }
+
+    function resolve(name){
+      const q=normalize(name);
+      if(!q) return null;
+      const records=flatten();
+      return records.find(r=>normalize(r.id)===q || normalize(r.title)===q || (r.aliases||[]).some(a=>normalize(a)===q))
+        || records.find(r=>searchable(r).includes(q))
+        || null;
+    }
+
+    function formatRecord(r){
+      if(!r) return 'No matching directory record.';
+      const moved=(r.previousLocations||[]).length ? `\nPrevious: ${(r.previousLocations||[]).join(' | ')}` : '';
+      const aliases=(r.aliases||[]).length ? `\nAliases: ${(r.aliases||[]).join(', ')}` : '';
+      return `${r.title}\nCategory: ${r.category} / ${r.group}\nURL: ${r.url}\n${r.desc}${aliases}${moved}`;
+    }
+
+    function renderCloud(){
+      const list=document.getElementById('cloudData');
+      const cloud=getCloud();
+      list.innerHTML=cloud.length ? cloud.slice().reverse().map(entry=>`<li><strong>${esc(new Date(entry.createdAt).toLocaleString())}</strong><br>${esc(entry.text)}</li>`).join('') : '<li>Cloud is empty.</li>';
+    }
+
+    function renderStats(){
+      const directory=getDirectory();
+      const records=flatten(directory);
+      const moved=records.filter(r=>(r.previousLocations||[]).length).length;
+      document.getElementById('stats').innerHTML=`
+        <div class="stat"><b>${records.length}</b><span>Records</span></div>
+        <div class="stat"><b>${directory.length}</b><span>Categories</span></div>
+        <div class="stat"><b>${moved}</b><span>Moved</span></div>`;
+    }
+
+    function renderDirectory(query=''){
+      const root=document.getElementById('directoryList');
+      const directory=getDirectory();
+      const q=normalize(query);
+      const html=[];
+      directory.forEach(category=>{
+        const groups=[];
+        category.groups.forEach(group=>{
+          const items=group.items.filter(record=>!q || searchable({...record,category:category.label,group:group.title}).includes(q));
+          if(!items.length) return;
+          groups.push(`<details open><summary>${esc(group.title)} · ${items.length}</summary><div class="group-body">${items.map(record=>`
+            <div class="item">
+              <strong>${esc(record.title)}</strong>
+              <div class="small">${esc(record.desc)}</div>
+              <a href="${esc(record.url)}" target="_blank" rel="noopener noreferrer">${esc(record.url)}</a>
+              ${(record.aliases||[]).length?`<div class="aliases">Aliases: ${esc(record.aliases.join(', '))}</div>`:''}
+              ${(record.previousLocations||[]).length?`<div class="aliases">Moved from: ${esc(record.previousLocations.join(' · '))}</div>`:''}
+            </div>`).join('')}</div></details>`);
+        });
+        if(groups.length) html.push(`<h3>${esc(category.label)}</h3>${groups.join('')}`);
+      });
+      root.innerHTML=html.join('') || '<p class="small">No matching records.</p>';
+      renderStats();
+    }
+
+    function addLocalRecord(){
+      const title=document.getElementById('addTitle').value.trim();
+      const url=document.getElementById('addUrl').value.trim();
+      const categoryLabel=document.getElementById('addCategory').value.trim() || 'Local';
+      const groupTitle=document.getElementById('addGroup').value.trim() || 'Added Records';
+      const aliases=document.getElementById('addAliases').value.split(',').map(s=>s.trim()).filter(Boolean);
+      if(!title || !url) return setOutput('Title and URL are required.');
+      try { const parsed=new URL(url); if(parsed.protocol!=='https:') throw new Error(); } catch { return setOutput('Use a valid https:// URL.'); }
+      const directory=getDirectory();
+      let category=directory.find(c=>normalize(c.label)===normalize(categoryLabel));
+      if(!category){ category={id:`local-${Date.now()}`,label:categoryLabel,groups:[]}; directory.push(category); }
+      let group=category.groups.find(g=>normalize(g.title)===normalize(groupTitle));
+      if(!group){ group={title:groupTitle,items:[]}; category.groups.push(group); }
+      group.items.push(item(`local-${Date.now()}`,title,url,'Locally added directory record.',aliases));
+      setDirectory(directory);
+      ['addTitle','addUrl','addCategory','addGroup','addAliases'].forEach(id=>document.getElementById(id).value='');
+      renderDirectory(document.getElementById('directorySearch').value);
+      setOutput(`Added local directory record: ${title}`);
+    }
+
+    function validateDirectory(){
+      const records=flatten();
+      const problems=[];
+      const ids=new Set();
+      records.forEach(r=>{
+        if(!r.id||!r.title||!r.url) problems.push(`Missing required field: ${r.title||r.id||'unknown'}`);
+        if(ids.has(r.id)) problems.push(`Duplicate id: ${r.id}`); else ids.add(r.id);
+        try { const parsed=new URL(r.url); if(parsed.protocol!=='https:') problems.push(`Non-HTTPS URL: ${r.title}`); } catch { problems.push(`Invalid URL: ${r.title}`); }
+      });
+      return problems;
+    }
+
+    function setOutput(text){ document.getElementById('output').textContent=text; }
+
+    function processCommand(){
+      const field=document.getElementById('userInput');
+      const raw=field.value.trim();
+      const lower=raw.toLowerCase();
+      let output='';
+      if(!raw) return;
+
+      if(lower==='help'){
+        output='Commands:\nfind <term>\nresolve <name>\nshow category <name>\nshow moved\nshow directory\nshow cloud\nvalidate\nstats\nhelp';
+      } else if(lower==='show cloud'){
+        const cloud=getCloud();
+        output=cloud.length?cloud.map(x=>`${x.createdAt} · ${x.text}`).join('\n'):'Cloud is empty.';
+      } else if(lower==='show directory'){
+        output=flatten().map(r=>`${r.category} / ${r.group} · ${r.title} · ${r.url}`).join('\n');
+      } else if(lower==='show moved'){
+        const moved=flatten().filter(r=>(r.previousLocations||[]).length);
+        output=moved.length?moved.map(r=>`${r.title}\n  now: ${r.url}\n  from: ${r.previousLocations.join(' | ')}`).join('\n\n'):'No migration records.';
+      } else if(lower==='validate'){
+        const problems=validateDirectory();
+        output=problems.length?`Validation found ${problems.length} issue(s):\n${problems.join('\n')}`:`Validation passed: ${flatten().length} records have unique IDs and valid HTTPS URL syntax.`;
+      } else if(lower==='stats'){
+        const records=flatten();
+        const aliases=records.reduce((n,r)=>n+(r.aliases||[]).length,0);
+        const moved=records.filter(r=>(r.previousLocations||[]).length).length;
+        output=`Version: ${VERSION}\nCategories: ${getDirectory().length}\nRecords: ${records.length}\nAliases: ${aliases}\nMigration records: ${moved}`;
+      } else if(lower.startsWith('resolve ')){
+        output=formatRecord(resolve(raw.slice(8)));
+      } else if(lower.startsWith('find ')){
+        const results=matches(raw.slice(5));
+        output=results.length?results.slice(0,25).map(formatRecord).join('\n\n---\n\n'):'No matches.';
+      } else if(lower.startsWith('show category ')){
+        const q=normalize(raw.slice(14));
+        const results=flatten().filter(r=>normalize(r.category).includes(q)||normalize(r.categoryId).includes(q));
+        output=results.length?results.map(r=>`${r.group} · ${r.title} · ${r.url}`).join('\n'):'Category not found.';
+      } else {
+        const direct=resolve(raw);
+        output=direct?formatRecord(direct):'Command not recognized. Type help.';
+      }
+      setOutput(output);
+      field.value='';
+    }
+
+    function exportJson(){
+      const payload={
+        type:'VNV_DIRECTORY_AGI_EXPORT',
+        version:VERSION,
+        exportedAt:new Date().toISOString(),
+        directory:getDirectory(),
+        cloud:getCloud()
+      };
+      const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');
+      a.href=url;
+      a.download='vnv-directory-agi-export.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),500);
+    }
+
+    document.getElementById('cloudStore').addEventListener('click',()=>{
+      const input=document.getElementById('cloudInput');
+      const text=input.value.trim();
+      if(!text) return;
+      const cloud=getCloud();
+      cloud.push({id:`note-${Date.now()}`,createdAt:new Date().toISOString(),text});
+      setCloud(cloud);
+      input.value='';
+      renderCloud();
+    });
+    document.getElementById('cloudClear').addEventListener('click',()=>{ setCloud([]); renderCloud(); setOutput('Cloud cleared.'); });
+    document.getElementById('directorySearch').addEventListener('input',e=>renderDirectory(e.target.value));
+    document.getElementById('addRecord').addEventListener('click',addLocalRecord);
+    document.getElementById('resetSeed').addEventListener('click',()=>{ setDirectory(clone(SEED_DIRECTORY)); renderDirectory(); setOutput('Directory reset to embedded seed v1.'); });
+    document.getElementById('runCommand').addEventListener('click',processCommand);
+    document.getElementById('userInput').addEventListener('keydown',e=>{ if(e.key==='Enter') processCommand(); });
+    document.getElementById('exportBtn').addEventListener('click',exportJson);
+
+    renderCloud();
+    renderDirectory();
+
+    Object.defineProperty(window,'VNVDirectoryAGI',{
+      value:Object.freeze({
+        version:VERSION,
+        find:(term)=>matches(term),
+        resolve:(name)=>resolve(name),
+        all:()=>flatten(),
+        categories:()=>getDirectory().map(c=>({id:c.id,label:c.label})),
+        validate:()=>validateDirectory(),
+        reset:()=>{setDirectory(clone(SEED_DIRECTORY));renderDirectory();return true;}
+      }),
+      enumerable:false,
+      configurable:false,
+      writable:false
+    });
+  })();
+  </script>
+</body>
+</html>
