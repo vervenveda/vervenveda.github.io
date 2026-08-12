@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-12T20:23:38.869Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-12T16:21:12Z",
+  "generatedAt": "2026-08-12T23:56:54.782Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-12T23:56:45Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -11152,6 +11152,177 @@
         "sensitiveTopics": [],
         "externalInformation": true,
         "highStakesDomain": "public-services",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "artist1970.aipcore.aurora-core-dictionary",
+      "title": "AuroraCore A–Z Dictionary",
+      "description": "An A–Z English dictionary organized into one JSON letter collection per alphabet letter for focused vocabulary and word-definition lookup.",
+      "url": "https://github.com/artist1970/AuroraCore/tree/main/dictionary",
+      "sourceId": "aurora.core",
+      "repository": "artist1970/AIPCore",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-arts",
+        "english",
+        "vocabulary",
+        "reference"
+      ],
+      "skills": [
+        "vocabulary",
+        "word-meaning",
+        "reading-comprehension",
+        "writing"
+      ],
+      "tags": [
+        "dictionary",
+        "words",
+        "definitions",
+        "vocabulary",
+        "language-reference",
+        "aurora-core"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "reference",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
+      "learningObjectives": [
+        "Determine the meaning of unfamiliar English words",
+        "Build vocabulary for reading and writing",
+        "Use concise definitions as a starting point for contextual word study"
+      ],
+      "subjects": [
+        "language-arts",
+        "english"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "artist1970.aipcore.aurora-core-language-refinement",
+      "title": "Aurora Language Refinement Core",
+      "description": "Browser-friendly language refinement tools for grammar, flow, thesaurus support, metaphor, rhythm, mood, and cohesion while preserving authorial intent.",
+      "url": "https://github.com/artist1970/AuroraCore",
+      "sourceId": "aurora.core",
+      "repository": "artist1970/AIPCore",
+      "classification": "educational",
+      "audiences": [
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "language-arts",
+        "writing",
+        "editing"
+      ],
+      "skills": [
+        "revision",
+        "grammar",
+        "word-choice",
+        "style"
+      ],
+      "tags": [
+        "writing",
+        "grammar",
+        "thesaurus",
+        "editing",
+        "aurora-core"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "tool",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
+      "learningObjectives": [],
+      "subjects": [
+        "language-arts",
+        "english"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
         "requiresExplicitQuery": false,
         "policyTags": []
       },
