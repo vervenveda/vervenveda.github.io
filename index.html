@@ -46,8 +46,8 @@
       --header-height:72px;
       --sticky-stack:calc(var(--ticker-height) + var(--header-height));
       --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
-      --ceremonial:Cinzel,Aboreto,"Times New Roman",serif;
-      --sans:"Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
+      --ceremonial:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+      --sans:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
     }
 
     *,*::before,*::after{box-sizing:border-box}
@@ -249,8 +249,8 @@
     .admin-gate-kicker{
       color:#9d2626;
       font-family:var(--ceremonial);
-      font-size:14px;
-      font-weight:777;
+      font-size:10px;
+      font-weight:700;
       letter-spacing:.16em;
       text-transform:uppercase;
     }
@@ -327,7 +327,7 @@
       text-align:left;
     }
     .brand-mark{
-      width:36px;height:36px;
+      width:44px;height:36px;
       flex:0 0 44px;
       display:grid;place-items:center;
       overflow:hidden;
@@ -335,7 +335,7 @@
       border-radius:var(--radius);
       color:#fff;background:var(--ink);
       font-family:var(--ceremonial);
-      font-size:14px;
+      font-size:17px;
       font-weight:555;
       line-height:1;
       letter-spacing:.07em;
@@ -381,22 +381,22 @@
       white-space:nowrap;
     }
     .header-links a{
-      min-height:24px;
+      min-height:40px;
       display:inline-flex;
       align-items:center;
-      padding:4px 7px;
-      border-radius:7px;
+      padding:7px 10px;
+      border-radius:var(--radius);
       color:var(--ink-soft);
-      font-size:7px;
-      font-weight:333;
-      letter-spacing:.055em;
+      font-size:11px;
+      font-weight:500;
+      letter-spacing:.075em;
       text-transform:uppercase;
       white-space:nowrap;
     }
     .header-links a:hover{color:var(--ink);background:var(--white)}
     .menu-button{
       justify-self:end;
-      width:36px;height:36px;
+      width:40px;height:40px;
       display:grid;place-items:center;
       border:1px solid var(--line-strong);
       border-radius:var(--radius);
@@ -452,20 +452,20 @@
       font-family:var(--ceremonial);
       font-size:clamp(11px,.85vw,13px);
       font-weight:500;
-      line-height:1.9;
+      line-height:1.5;
       letter-spacing:.19em;
       text-transform:uppercase;
     }
     h1,h2,h3{
       margin:0;
       font-family:var(--display);
-      font-weight:444;
+      font-weight:500;
       letter-spacing:.01em;
       text-wrap:balance;
     }
     h1{
-      margin-top:33px;
-      max-width:1111px;
+      margin-top:24px;
+      max-width:1050px;
       color:var(--forest-deep);
       font-size:clamp(72px,8vw,124px);
       line-height:.88;
@@ -3206,9 +3206,9 @@
        ========================================================= */
     :root{
       --vnv-fine:clamp(13px,calc(12px + .16vw),15px);
-      --vnv-control:clamp(12.5px,calc(11.7px + .18vw),14.5px);
-      --vnv-eyebrow:clamp(27px,calc(22px + 1.15vw),36px);
-      --vnv-support:clamp(20px,calc(17px + .8vw),27px);
+      --vnv-control:clamp(11px,calc(10.8px + .05vw),11.5px);
+      --vnv-eyebrow:clamp(24px,calc(21px + .72vw),30px);
+      --vnv-support:clamp(18px,calc(16px + .58vw),23px);
     }
 
     /* Exact desktop centerline: brand | centered section bank | menu. */
@@ -3223,24 +3223,27 @@
       width:auto!important;
       justify-self:center!important;
       justify-content:center!important;
-      gap:7px!important;
+      gap:6px!important;
     }
     .header-links a{
-      width:112px!important;
-      min-width:112px!important;
-      height:40px!important;
-      min-height:40px!important;
+      width:106px!important;
+      min-width:106px!important;
+      height:32px!important;
+      min-height:32px!important;
       justify-content:center!important;
-      padding:0 10px!important;
-      border:1px solid var(--ink)!important;
+      padding:0 2px!important;
+      border:1px solid rgba(8,11,15,.9)!important;
       border-radius:7px!important;
       color:#fff!important;
       background:var(--ink)!important;
-      box-shadow:0 7px 18px rgba(8,11,15,.08);
+      box-shadow:none!important;
+      font-family:var(--sans)!important;
       font-size:var(--vnv-control)!important;
-      font-weight:555!important;
-      letter-spacing:.045em!important;
-      overflow:visible!important;
+      font-weight:400!important;
+      letter-spacing:.02em!important;
+      line-height:1!important;
+      white-space:nowrap!important;
+      overflow:hidden!important;
       text-overflow:clip!important;
     }
     .header-links a:hover,
@@ -3254,17 +3257,32 @@
     /* The flanking controls mirror one another. */
     .brand-mark,
     .menu-button{
-      width:44px!important;
-      height:44px!important;
+      width:36px!important;
+      height:36px!important;
     }
     .brand-mark{
-      flex:0 0 44px!important;
+      flex:0 0 36px!important;
+      font-weight:400!important;
     }
     .menu-button{
       justify-self:end!important;
       border-color:var(--ink)!important;
       color:#fff!important;
       background:var(--ink)!important;
+    }
+
+    .brand{gap:10px!important;}
+    .brand-name{
+      font-family:var(--ceremonial)!important;
+      font-size:15px!important;
+      font-weight:400!important;
+      letter-spacing:.075em!important;
+    }
+    .brand-sub{
+      font-family:var(--sans)!important;
+      font-size:12px!important;
+      font-weight:400!important;
+      letter-spacing:.12em!important;
     }
     .menu-button:hover,
     .menu-button:focus-visible{
@@ -3392,9 +3410,14 @@
       justify-content:center!important;
     }
 
+    /* Refined public typography: hierarchy comes from scale and spacing, not heaviness. */
+    body *{font-weight:400!important;}
+    body strong,
+    body b{font-weight:444!important;}
+
     @media(max-width:1230px){
       .header-inner{
-        grid-template-columns:minmax(0,1fr) 44px!important;
+        grid-template-columns:minmax(0,1fr) 36px!important;
       }
       .header-links{
         display:none!important;
