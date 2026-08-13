@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-12T23:56:54.782Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-12T23:56:45Z",
+  "generatedAt": "2026-08-13T05:52:35.290Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-13T03:11:47Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -11080,14 +11080,13 @@
     },
     {
       "id": "vervenveda.veterans.github.io.veterans-home",
-      "title": "Veterans Resource Hub",
-      "description": "Public gateway to veteran benefits, health care, housing, careers, education, family support, legal resources, and connected services.",
+      "title": "Veterans Career & Resource Hub",
+      "description": "Veteran-centered career transition and public-service gateway connecting career direction, skills translation, employment, education, entrepreneurship, benefits, health, housing, family, legal, and community resources.",
       "url": "https://vervenveda.com/veterans.github.io/",
       "sourceId": "verve.veterans",
       "repository": "vervenveda/veterans.github.io",
       "classification": "civic",
       "audiences": [
-        "high",
         "higher-learning",
         "adult",
         "parent"
@@ -11099,26 +11098,26 @@
       ],
       "domains": [
         "veterans",
+        "career",
         "public-services",
-        "benefits",
         "education",
         "community-support"
       ],
       "skills": [
         "resource-navigation",
-        "public-service-literacy",
-        "benefits-research"
+        "career-planning",
+        "public-service-literacy"
       ],
       "tags": [
         "veterans",
+        "career-transition",
         "service-members",
         "families",
-        "public-resources",
-        "active-expansion"
+        "public-resources"
       ],
       "minutes": null,
       "energy": "",
-      "featured": false,
+      "featured": true,
       "mentorEligible": true,
       "recommendable": true,
       "explicitAdultOptIn": false,
@@ -11128,7 +11127,449 @@
       "learningObjectives": [],
       "subjects": [],
       "highStakesDomain": "public-services",
-      "inventoryAuthority": "provisional-root-anchor",
+      "inventoryAuthority": "verified-root-sections",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "public-services",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.veterans.github.io.veterans-career-mission",
+      "title": "Veteran Career Mission",
+      "description": "Six-stage career transition pathway: discover direction, translate service, build professional materials, train or credential, enter the market, and consider entrepreneurship.",
+      "url": "https://vervenveda.com/veterans.github.io/#career-mission",
+      "sourceId": "verve.veterans",
+      "repository": "vervenveda/veterans.github.io",
+      "classification": "civic",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "career",
+        "employment",
+        "veterans"
+      ],
+      "skills": [
+        "career-planning",
+        "career-exploration",
+        "transition-planning"
+      ],
+      "tags": [
+        "veterans",
+        "career",
+        "employment",
+        "transition"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "career-transition",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "verified-root-sections",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.veterans.github.io.veterans-skills-translation",
+      "title": "Military Skills Translation Notebook",
+      "description": "Local-only civilian-language notebook for translating military responsibilities, transferable skills, credentials, target roles, and credential gaps without storing sensitive information.",
+      "url": "https://vervenveda.com/veterans.github.io/#skills-notebook",
+      "sourceId": "verve.veterans",
+      "repository": "vervenveda/veterans.github.io",
+      "classification": "civic",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "career",
+        "professional-skills"
+      ],
+      "skills": [
+        "skills-translation",
+        "resume-preparation",
+        "self-reflection"
+      ],
+      "tags": [
+        "veterans",
+        "military-skills",
+        "resume",
+        "career-readiness"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "career-tool",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "verified-root-sections",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [
+        "do-not-enter-classified-or-sensitive-information"
+      ],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": [
+          "do-not-enter-classified-or-sensitive-information"
+        ]
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.veterans.github.io.veterans-employment",
+      "title": "Veteran Employment Launch",
+      "description": "Veteran employment pathways including DOL VETS, VA VR&E, federal hiring, and Registered Apprenticeship.",
+      "url": "https://vervenveda.com/veterans.github.io/#employment",
+      "sourceId": "verve.veterans",
+      "repository": "vervenveda/veterans.github.io",
+      "classification": "civic",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "career",
+        "employment",
+        "veterans"
+      ],
+      "skills": [
+        "job-search",
+        "career-navigation"
+      ],
+      "tags": [
+        "veterans",
+        "employment",
+        "federal-jobs",
+        "apprenticeship",
+        "vre"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "resource-hub",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "public-services",
+      "inventoryAuthority": "verified-root-sections",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "public-services",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.veterans.github.io.veterans-education-training",
+      "title": "Veteran Education & Training",
+      "description": "Education and training pathway connecting official VA education resources, the GI Bill Comparison Tool, Khaemenes Higher Learning, and professional preparation.",
+      "url": "https://vervenveda.com/veterans.github.io/#education-training",
+      "sourceId": "verve.veterans",
+      "repository": "vervenveda/veterans.github.io",
+      "classification": "civic",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "career",
+        "training"
+      ],
+      "skills": [
+        "education-planning",
+        "credential-research"
+      ],
+      "tags": [
+        "veterans",
+        "gi-bill",
+        "education",
+        "training",
+        "higher-learning"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "education-hub",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "public-services",
+      "inventoryAuthority": "verified-root-sections",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "public-services",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.veterans.github.io.veterans-entrepreneurship",
+      "title": "Veteran Entrepreneurship",
+      "description": "Veteran small-business pathway connecting SBA veteran business development, VBOCs, Boots to Business, and veteran contracting resources.",
+      "url": "https://vervenveda.com/veterans.github.io/#entrepreneurship",
+      "sourceId": "verve.veterans",
+      "repository": "vervenveda/veterans.github.io",
+      "classification": "civic",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "business",
+        "career",
+        "entrepreneurship"
+      ],
+      "skills": [
+        "business-planning",
+        "entrepreneurship"
+      ],
+      "tags": [
+        "veterans",
+        "small-business",
+        "vboc",
+        "boots-to-business",
+        "contracting"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "business-hub",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "public-services",
+      "inventoryAuthority": "verified-root-sections",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "public-services",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.veterans.github.io.veterans-official-resources",
+      "title": "Veterans Official Resource Directory",
+      "description": "Curated authoritative government pathways for veteran employment, education, business, health, housing, records, legal/claims help, and community services.",
+      "url": "https://vervenveda.com/veterans.github.io/#official-resources",
+      "sourceId": "verve.veterans",
+      "repository": "vervenveda/veterans.github.io",
+      "classification": "civic",
+      "audiences": [
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "veterans",
+        "public-services"
+      ],
+      "skills": [
+        "resource-navigation",
+        "benefits-research"
+      ],
+      "tags": [
+        "veterans",
+        "official-resources",
+        "va",
+        "dol",
+        "sba"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "directory",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "public-services",
+      "inventoryAuthority": "verified-root-sections",
       "requiresLinkedLearner": false,
       "requiredStage": "",
       "requiresFreshnessCheck": true,
