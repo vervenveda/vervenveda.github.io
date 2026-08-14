@@ -34,16 +34,16 @@
       --gold:#b48b45;
       --gold-pale:#e7d7b6;
       --navy:#10243b;
-      --line:rgba(18,23,19,.14);
-      --line-strong:rgba(18,23,19,.25);
-      --shadow:0 22px 55px rgba(27,34,29,.09);
-      --shadow-small:0 11px 33px rgba(27,34,29,.07);
-      --max:1240px;
+      --line:rgba(11,14,24,.33);
+      --line-strong:rgba(14,24,33,.44);
+      --shadow:0 22px 55px rgba(24,33,24,.07);
+      --shadow-small:0 11px 33px rgba(24,33,249,.07);
+      --max:1222px;
       --radius:7px;
       --radius-lg:11px;
       --muted:#66716c;
-      --ticker-height:36px;
-      --header-height:72px;
+      --ticker-height:33px;
+      --header-height:66px;
       --sticky-stack:calc(var(--ticker-height) + var(--header-height));
       --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
       --ceremonial:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
@@ -57,14 +57,14 @@
     }
     body{
       margin:0;
-      min-width:300px;
+      min-width:333px;
       overflow-x:hidden;
       color:var(--ink);
       background:var(--paper);
       font-family:var(--sans);
-      font-size:16px;
-      line-height:1.62;
-      font-weight:400;
+      font-size:14px;
+      line-height:1.66;
+      font-weight:444;
       text-align:center;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
@@ -207,7 +207,7 @@
       color:transparent;
       background:radial-gradient(circle at 35% 35%,#e55b5b 0%,#c93434 45%,#951c1c 100%);
       box-shadow:0 6px 18px rgba(126,25,25,.24);
-      font-size:0;
+      font-size:7px;
       line-height:0;
     }
     .admin-entry:hover,.admin-entry:focus-visible{
@@ -249,8 +249,8 @@
     .admin-gate-kicker{
       color:#9d2626;
       font-family:var(--ceremonial);
-      font-size:10px;
-      font-weight:700;
+      font-size:14px;
+      font-weight:666;
       letter-spacing:.16em;
       text-transform:uppercase;
     }
@@ -291,11 +291,11 @@
     }
 
     @media(max-width:560px){
-      .admin-entry{left:6px;min-width:54px;height:34px;padding:0 8px;font-size:8px}
-      .header-inner{padding-left:52px}
-      .admin-gate-panel{padding:24px 18px}
+      .admin-entry{left:7px;min-width:55px;height:33px;padding:0 7px;font-size:11px}
+      .header-inner{padding-left:44px}
+      .admin-gate-panel{padding:24px 24px}
       .admin-code-row{grid-template-columns:1fr}
-      .admin-code-toggle{min-height:42px}
+      .admin-code-toggle{min-height:44px}
     }
 
     /* HEADER — 72px desktop, aligned to ticker through shared variables */
@@ -377,19 +377,19 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      gap:5px;
+      gap:7px;
       white-space:nowrap;
     }
     .header-links a{
-      min-height:40px;
+      min-height:44px;
       display:inline-flex;
       align-items:center;
-      padding:7px 10px;
+      padding:7px 11px;
       border-radius:var(--radius);
       color:var(--ink-soft);
-      font-size:11px;
-      font-weight:500;
-      letter-spacing:.075em;
+      font-size:9px;
+      font-weight:444;
+      letter-spacing:.077em;
       text-transform:uppercase;
       white-space:nowrap;
     }
