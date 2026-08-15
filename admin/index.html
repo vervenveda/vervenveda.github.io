@@ -1,0 +1,2202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="color-scheme" content="dark">
+<title>Verve N Veda · Administration</title>
+<style>
+:root{
+  --bg:#07101a;--bg2:#0b1522;--panel:#0f1b2a;--panel2:#132235;--panel3:#17283e;
+  --ink:#f3efe6;--ink2:#d7dde5;--muted:#8795a6;--line:#24364a;--line2:#31475f;
+  --gold:#b48b45;--gold2:#dfc48e;--forest:#29483d;--green:#4aa56a;--red:#a52a37;
+  --blue:#3e6f9f;--violet:#725b86;--paper:#f4f0e7;
+  --radius:9px;--radius-lg:14px;--shadow:0 24px 70px rgba(0,0,0,.28);
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
+  --ceremonial:Cinzel,Aboreto,"Times New Roman",serif;
+  --sans:"Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:var(--sans)}
+html{scroll-behavior:smooth}
+body{min-width:300px}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+/* second-layer administrator gate */
+#gate{
+  position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:20px;
+  background:
+    radial-gradient(circle at 50% 12%,rgba(180,139,69,.14),transparent 28rem),
+    linear-gradient(135deg,#07101a,#0e1d2d 55%,#09121d);
+}
+.gate-card{
+  width:min(100%,470px);padding:34px;border:1px solid rgba(180,139,69,.34);border-top:4px solid var(--red);
+  border-radius:14px;background:var(--paper);color:#111;box-shadow:0 35px 100px rgba(0,0,0,.52);
+  text-align:center
+}
+.gate-kicker{display:block;color:#8e2424;font:700 10px/1 var(--ceremonial);letter-spacing:.16em;text-transform:uppercase;text-align:center}
+.gate-card h1{margin:10px 0 24px;font-family:var(--display);font-weight:500;font-size:clamp(42px,8vw,58px);letter-spacing:.05em;text-align:center}
+.gate-card p{font-family:var(--sans);color:#4d5751;font-size:13px;line-height:1.6}
+.gate-form{display:grid;gap:14px;justify-items:stretch}
+.gate-form label{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;text-align:center}
+.code-row{display:grid;grid-template-columns:minmax(0,1fr) 94px;gap:9px;align-items:stretch}
+.code-input{width:100%;min-width:0;min-height:52px;padding:0 14px;border:1px solid #aeb7b2;border-radius:7px;background:#fff;color:#111;font-size:18px;letter-spacing:.16em;text-align:center}
+.show-btn,.gate-submit,.secondary{min-height:46px;border-radius:7px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.055em}
+.show-btn{min-width:94px;padding:0 12px;white-space:nowrap;overflow:hidden;text-overflow:clip}
+.show-btn,.secondary{border:1px solid #aeb7b2;background:#fff;color:#111}
+.gate-submit{border:1px solid #7f1717;background:var(--red);color:#fff}
+.status{min-height:22px;margin:0!important;font-size:12px;font-weight:700}
+.status.error{color:#9d2626}.status.ok{color:#26633d}
+.gate-note{margin:18px auto 0!important;padding:10px 12px;border:1px solid #ded4c4;border-top:2px solid var(--gold);background:#fff;font-size:11px!important;text-align:center;max-width:360px}
+body.unlocked #gate{display:none}
+body:not(.unlocked) #adminRoot{display:none}
+
+  .gate-breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:7px;
+  margin:0 0 16px;
+  color:#727a75;
+  font-size:9px;
+  letter-spacing:.07em;
+  line-height:1.4;
+  text-transform:uppercase;
+}
+.gate-breadcrumbs a{color:#4f5a54;text-decoration:none}
+.gate-breadcrumbs strong{color:#8f2424;font-weight:700}
+.gate-breadcrumbs .sep{color:#b59a67;user-select:none}
+
+
+/* premium command center */
+#adminRoot{min-height:100svh;display:grid;grid-template-columns:248px minmax(0,1fr);background:linear-gradient(180deg,#08121e,#0b1522)}
+.sidebar{
+  position:sticky;top:0;height:100svh;display:flex;flex-direction:column;padding:18px 14px;
+  border-right:1px solid #1e3043;background:linear-gradient(180deg,#07101a,#091521);
+}
+.brand{display:flex;align-items:center;gap:11px;padding:8px 8px 18px;border-bottom:1px solid #1d2b3a}
+.brand-mark{width:44px;height:38px;display:grid;place-items:center;border:1px solid #d0b479;border-radius:7px;background:#0e1721;color:#f4ead1;font:500 16px/1 var(--ceremonial)}
+.brand-copy{display:grid;gap:2px}
+.brand-name{font-family:var(--ceremonial);font-size:13px;letter-spacing:.09em;text-transform:uppercase}
+.brand-sub{color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.nav{display:grid;gap:5px;margin-top:18px}
+.nav-button{
+  width:100%;min-height:43px;display:grid;grid-template-columns:28px minmax(0,1fr) auto;align-items:center;gap:8px;
+  padding:7px 9px;border:1px solid transparent;border-radius:7px;color:#b9c4cf;background:transparent;text-align:left;
+}
+.nav-button:hover{background:#111f30;color:#fff}
+.nav-button.active{border-color:#2c435a;color:#fff;background:linear-gradient(90deg,#17283d,#111f30)}
+.nav-icon{width:24px;text-align:center;color:var(--gold2);font-size:13px}
+.nav-label{font-size:11px;font-weight:650;letter-spacing:.045em}
+.nav-count{min-width:22px;padding:2px 6px;border:1px solid #30465d;border-radius:999px;color:#9eafbf;font-size:9px;text-align:center}
+.sidebar-spacer{flex:1}
+.sidebar-status{padding:12px 9px;border-top:1px solid #1d2b3a;color:var(--muted);font-size:10px;line-height:1.6}
+.sidebar-status strong{display:block;color:#c8d0d8;font-size:10px}
+.lock-nav{width:100%;min-height:40px;margin-top:10px;border:1px solid #69313a;border-radius:7px;color:#f5dce0;background:#2a151c;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+
+.workspace{min-width:0}
+.topbar{
+  position:sticky;top:0;z-index:50;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:10px clamp(16px,3vw,34px);border-bottom:1px solid #203246;background:rgba(8,18,30,.92);backdrop-filter:blur(16px)
+}
+.topbar-title{min-width:0}
+.topbar-title strong{display:block;font-family:var(--display);font-size:20px;font-weight:500}
+.topbar-title span{display:block;color:var(--muted);font-size:10px;letter-spacing:.07em;text-transform:uppercase}
+.topbar-actions{display:flex;gap:7px;align-items:center}
+.top-btn{
+  min-height:38px;padding:7px 10px;border:1px solid #2b4158;border-radius:7px;color:#dbe3ea;background:#101d2b;font-size:10px;font-weight:650;
+}
+.top-btn:hover{background:#18283a}
+.status-pill{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid #28503d;border-radius:999px;color:#bfe1ca;background:#0d2218;font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.status-dot{width:7px;height:7px;border-radius:50%;background:#4db36d;box-shadow:0 0 0 3px rgba(77,179,109,.13)}
+
+.view{display:none;padding:clamp(20px,3vw,34px);animation:viewIn .16s ease}
+.view.active{display:block}
+@keyframes viewIn{from{opacity:.35;transform:translateY(5px)}to{opacity:1;transform:none}}
+.view-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px}
+.view-head .eyebrow{margin:0 0 5px;color:var(--gold2);font:600 10px/1.3 var(--ceremonial);letter-spacing:.15em;text-transform:uppercase}
+.view-head h1{margin:0;font:500 clamp(34px,4vw,54px)/.98 var(--display)}
+.view-head p{max-width:680px;margin:10px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
+
+.metric-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.metric{
+  min-height:126px;padding:18px;border:1px solid #263a50;border-radius:var(--radius-lg);
+  background:linear-gradient(145deg,#101f30,#0e1a29);box-shadow:0 12px 32px rgba(0,0,0,.12)
+}
+.metric-label{color:#8fa0af;font-size:9px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+.metric strong{display:block;margin-top:10px;font:500 38px/1 var(--display);color:#fff}
+.metric small{display:block;margin-top:9px;color:#748596;font-size:10px;line-height:1.45}
+.metric.gold{border-top:3px solid var(--gold)}
+.metric.green{border-top:3px solid var(--green)}
+.metric.blue{border-top:3px solid var(--blue)}
+.metric.red{border-top:3px solid var(--red)}
+
+.dashboard-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:14px;margin-top:14px}
+.panel{
+  min-width:0;padding:20px;border:1px solid #263a50;border-radius:var(--radius-lg);
+  background:linear-gradient(145deg,#101e2e,#0e1a28);box-shadow:0 12px 32px rgba(0,0,0,.11)
+}
+.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+.panel-head h2{margin:0;font:500 24px/1.05 var(--display)}
+.panel-head p{margin:6px 0 0;color:var(--muted);font-size:10.5px;line-height:1.5}
+.panel-tag{flex:0 0 auto;padding:5px 8px;border:1px solid #31475f;border-radius:999px;color:#9fb0bf;font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+
+.mail-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mail-card{padding:15px;border:1px solid #2a4057;border-radius:9px;background:#0b1725}
+.mail-card .mail-label{color:#7f91a2;font-size:8px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.mail-card strong{display:block;margin-top:7px;font-size:12px;overflow-wrap:anywhere}
+.mail-card p{margin:7px 0 12px;color:#7f91a2;font-size:10px;line-height:1.5}
+.mail-actions{display:flex;gap:6px;flex-wrap:wrap}
+.small-btn,.small-link{
+  min-height:34px;display:inline-flex;align-items:center;justify-content:center;padding:6px 9px;border:1px solid #30465e;border-radius:6px;
+  color:#dbe3ea;background:#112033;font-size:9px;font-weight:650;text-decoration:none
+}
+.small-btn:hover,.small-link:hover{background:#1a2c40}
+
+.feed{display:grid;gap:8px}
+.feed-item{display:grid;grid-template-columns:9px minmax(0,1fr) auto;gap:10px;align-items:start;padding:10px 0;border-bottom:1px solid #213346}
+.feed-item:last-child{border-bottom:0}
+.feed-dot{width:8px;height:8px;margin-top:5px;border-radius:50%;background:#5a7186}
+.feed-dot.success{background:var(--green)}.feed-dot.warn{background:var(--gold)}.feed-dot.error{background:var(--red)}.feed-dot.info{background:var(--blue)}
+.feed-copy strong{display:block;font-size:10.5px}
+.feed-copy small{display:block;margin-top:3px;color:#748596;font-size:9px;line-height:1.45}
+.feed-time{color:#66798a;font:9px/1.2 var(--mono);white-space:nowrap}
+
+.quick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:14px}
+.quick-card{
+  min-height:94px;padding:13px;border:1px solid #263a50;border-radius:9px;color:inherit;background:#0e1a28;text-decoration:none;cursor:pointer;
+  transition:transform .16s ease,border-color .16s ease,background .16s ease
+}
+.quick-card:hover{transform:translateY(-2px);border-color:#46617b;background:#132337}
+.quick-card span{display:block;color:var(--gold2);font-size:8px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.quick-card strong{display:block;margin-top:6px;font-size:11px}
+.quick-card small{display:block;margin-top:5px;color:#748596;font-size:9px;line-height:1.4}
+
+.toolbar-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.search{min-height:42px;min-width:min(100%,300px);padding:0 12px;border:1px solid #30455c;border-radius:7px;color:#eef2f6;background:#0b1724}
+.select{min-height:42px;padding:0 10px;border:1px solid #30455c;border-radius:7px;color:#eef2f6;background:#0b1724}
+.action-btn{min-height:42px;padding:8px 11px;border:1px solid #345069;border-radius:7px;color:#e7edf3;background:#122236;font-size:10px;font-weight:650}
+.action-btn:hover{background:#1a3048}
+.action-btn.gold{border-color:#745f36;color:#f3dfb6;background:#261f12}
+.action-btn.red{border-color:#6b3540;color:#f4d8dd;background:#2a161d}
+.action-btn.green{border-color:#315d43;color:#cce7d5;background:#10251a}
+
+.ecosystem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.eco-card{
+  min-height:174px;display:flex;flex-direction:column;padding:16px;border:1px solid #263b51;border-radius:10px;background:linear-gradient(145deg,#101f30,#0d1926);
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease
+}
+.eco-card:hover{transform:translateY(-2px);border-color:#44617d;box-shadow:0 13px 28px rgba(0,0,0,.16)}
+.eco-top{display:flex;align-items:center;gap:10px}
+.eco-icon{width:42px;height:36px;display:grid;place-items:center;border:1px solid #435970;border-radius:7px;color:#f3e3c1;background:#0b1622;font:500 11px/1 var(--ceremonial)}
+.eco-category{color:#8496a6;font-size:8px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.eco-card h3{margin:12px 0 0;font:500 20px/1.05 var(--display)}
+.eco-card p{margin:8px 0 15px;color:#7f91a1;font-size:10px;line-height:1.55}
+.eco-actions{display:flex;gap:6px;margin-top:auto}
+.launch-btn{min-height:34px;padding:6px 9px;border:1px solid #4a5d70;border-radius:6px;color:#f5f0e7;background:#17283a;font-size:9px;font-weight:700}
+
+.analytics-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:14px}
+.bar-chart{height:230px;display:flex;align-items:flex-end;gap:8px;padding:28px 8px 24px;border-bottom:1px solid #2a3e53}
+.bar-col{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:7px}
+.bar{width:min(32px,70%);min-height:3px;border-radius:4px 4px 0 0;background:linear-gradient(180deg,#d0ad64,#8e6d30)}
+.bar-value{color:#e8d7b3;font:9px/1 var(--mono)}
+.bar-label{color:#718394;font:8px/1 var(--mono)}
+.table-wrap{overflow:auto;border:1px solid #263b51;border-radius:9px}
+table{width:100%;border-collapse:collapse;min-width:620px}
+th,td{padding:10px 11px;border-bottom:1px solid #203347;text-align:left;font-size:9.5px}
+th{color:#8da0b1;background:#0b1724;font-size:8px;letter-spacing:.09em;text-transform:uppercase;position:sticky;top:0}
+td{color:#c8d1d9}
+td small{color:#6f8293}
+
+.notification-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.notice-list{display:grid;gap:9px}
+.notice-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:start;padding:14px;border:1px solid #273c52;border-radius:9px;background:#0e1b2a}
+.notice-card.unread{border-left:3px solid var(--gold)}
+.notice-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#13263a;color:#d9c08c;font-size:12px}
+.notice-copy strong{display:block;font-size:11px}
+.notice-copy p{margin:4px 0 0;color:#7f91a1;font-size:10px;line-height:1.5}
+.notice-meta{color:#6c7f91;font:8.5px/1.3 var(--mono);text-align:right}
+
+.beta-layout{display:grid;grid-template-columns:minmax(300px,.7fr) minmax(0,1.3fr);gap:14px}
+.form-grid{display:grid;gap:10px}
+.form-grid label{display:grid;gap:5px;color:#91a2b2;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.form-grid input,.form-grid select,.form-grid textarea{
+  width:100%;min-height:42px;padding:8px 10px;border:1px solid #30465d;border-radius:7px;color:#eef3f7;background:#0b1724
+}
+.form-grid textarea{min-height:84px;resize:vertical}
+.safety-note{margin:12px 0 0;padding:10px 12px;border-left:2px solid var(--gold);color:#927f5d;background:#151b1e;font-size:9px;line-height:1.55}
+
+.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.setting-card{padding:18px;border:1px solid #273c52;border-radius:10px;background:#0e1b2a}
+.setting-card h2{margin:0;font:500 22px/1.05 var(--display)}
+.setting-card p{color:#7d8f9f;font-size:10px;line-height:1.55}
+.setting-card label{display:grid;gap:6px;margin-top:12px;color:#91a2b2;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.setting-card input{min-height:42px;padding:0 10px;border:1px solid #30465d;border-radius:7px;color:#eef2f6;background:#0b1724}
+.bridge-state{display:flex;align-items:center;gap:8px;margin-top:12px;color:#8798a8;font-size:9px}
+.bridge-state .dot{width:8px;height:8px;border-radius:50%;background:#8a6c35}.bridge-state.connected .dot{background:#4aa56a}
+
+/* Mini Cloud as one portal tool */
+.cloud-shell{height:calc(100svh - 132px);min-height:540px;display:grid;grid-template-columns:280px minmax(0,1fr);border:1px solid #273c52;border-radius:12px;overflow:hidden;background:#0a1420}
+#sidebarCloud{padding:14px;border-right:1px solid #24374b;overflow:auto;background:#0b1622}
+#sidebarCloud h3{margin:0 0 12px;font:500 20px/1 var(--display)}
+.cloud-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.cloud-actions button,#cloudToolbar button{min-height:36px;border:1px solid #30465d;border-radius:6px;color:#dce5ec;background:#122135;font-size:9px}
+#tree{list-style:none;padding-left:10px;margin:12px 0 0;font-family:var(--mono);font-size:10px}
+#tree ul{list-style:none;padding-left:14px;margin:0}
+#tree li{cursor:pointer;margin:5px 0;color:#b9c5d0}
+#tree li:hover{color:#fff}
+.folder::before{content:"▸ ";color:#d1ad66}.file::before{content:"· ";color:#7b8e9f}.app::before{content:"◇ ";color:#6daf89}
+#cloudMain{min-width:0;display:flex;flex-direction:column}
+#path{padding:9px 12px;border-bottom:1px solid #24374b;background:#101c29;color:#8698a8;font:10px/1.2 var(--mono)}
+#editor{flex:1;min-height:0;width:100%;border:0;outline:0;resize:none;padding:14px;color:#e2e8ee;background:#07111b;font:12px/1.55 var(--mono)}
+#imagePreview{max-width:100%;max-height:55vh;display:none;margin:auto;object-fit:contain;background:#05090e}
+#cloudToolbar{display:flex;gap:6px;flex-wrap:wrap;padding:8px;border-top:1px solid #24374b;background:#0e1926}
+
+/* change passcode overlay */
+#changeOverlay{position:fixed;inset:0;z-index:9000;display:none;place-items:center;padding:20px;background:#000c}
+#changeOverlay.open{display:grid}
+.change-card{width:min(100%,460px);padding:26px;background:var(--paper);color:#111;border-radius:11px;box-shadow:0 30px 80px #0008}
+.change-card h2{margin:0 0 10px;font-family:var(--display);font-weight:500}
+.change-card form{display:grid;gap:10px}
+.change-card input{min-height:46px;padding:0 12px;border:1px solid #aeb7b2;border-radius:7px}
+.change-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+.empty{padding:28px;border:1px dashed #30465d;border-radius:9px;color:#718596;text-align:center;font-size:10px}
+
+@media(max-width:1100px){
+  .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dashboard-grid,.analytics-layout,.beta-layout{grid-template-columns:1fr}
+  .ecosystem-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:820px){
+  #adminRoot{grid-template-columns:1fr}
+  .sidebar{position:static;height:auto;padding:10px;border-right:0;border-bottom:1px solid #1e3043}
+  .brand{padding-bottom:10px}
+  .nav{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:10px}
+  .nav-button{grid-template-columns:1fr;justify-items:center;text-align:center;min-height:54px}
+  .nav-count{display:none}.nav-icon{width:auto}.nav-label{font-size:8px}
+  .sidebar-spacer,.sidebar-status,.lock-nav{display:none}
+  .topbar{top:0}
+  .settings-grid{grid-template-columns:1fr}
+  .cloud-shell{height:auto;min-height:700px;grid-template-columns:1fr}
+  #sidebarCloud{border-right:0;border-bottom:1px solid #24374b;max-height:260px}
+}
+@media(max-width:620px){
+  .gate-card{padding:28px 20px}
+  .code-row{grid-template-columns:1fr}
+  .show-btn{width:100%;min-width:0}
+  .view{padding:16px 11px}
+  .topbar{padding-inline:11px}.status-pill{display:none}
+  .metric-grid{grid-template-columns:1fr 1fr}
+  .ecosystem-grid,.mail-grid,.quick-grid{grid-template-columns:1fr}
+  .nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .view-head{align-items:flex-start;flex-direction:column}
+  .metric strong{font-size:32px}
+  .code-row{grid-template-columns:1fr}
+}
+@media(max-width:410px){
+  .metric-grid{grid-template-columns:1fr}
+  .topbar-title span{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+
+/* Repair 03 — centered premium hierarchy */
+.view-head{
+  justify-content:center!important;
+  align-items:center!important;
+  text-align:center!important;
+}
+.view-head>div{width:100%}
+.view-head p{margin-left:auto!important;margin-right:auto!important}
+.metric{text-align:center}
+.panel-head{
+  align-items:center!important;
+  text-align:center!important;
+  flex-direction:column;
+}
+.panel-head p{margin-left:auto!important;margin-right:auto!important}
+.mail-card{text-align:center}
+.mail-actions{justify-content:center}
+.quick-card{text-align:center}
+.eco-card{text-align:center}
+.eco-top,.eco-actions{justify-content:center}
+.setting-card{text-align:center}
+.setting-card label{text-align:left}
+.bridge-state{justify-content:center}
+
+
+
+/* Light command-center appearance */
+body[data-theme="light"]{
+  --bg:#edf1f4;--bg2:#f7f9fb;--panel:#fff;--panel2:#f7f9fb;--panel3:#eef3f7;
+  --ink:#101820;--ink2:#2f3a44;--muted:#657482;--line:#d4dde5;--line2:#c5d0d9;
+  background:#edf1f4;color:#101820;
+}
+body[data-theme="light"] #adminRoot{background:linear-gradient(180deg,#f7f9fb,#edf1f4)}
+body[data-theme="light"] .sidebar{
+  border-color:#d5dde4;background:linear-gradient(180deg,#f7f9fb,#edf2f6)
+}
+body[data-theme="light"] .brand,
+body[data-theme="light"] .sidebar-status{border-color:#d3dce4}
+body[data-theme="light"] .brand-mark{color:#142232;background:#fff;border-color:#9b7a3f}
+body[data-theme="light"] .brand-sub,
+body[data-theme="light"] .sidebar-status,
+body[data-theme="light"] .nav-count{color:#687988}
+body[data-theme="light"] .nav-button{color:#4b5c6a}
+body[data-theme="light"] .nav-button:hover{background:#e7edf2;color:#142232}
+body[data-theme="light"] .nav-button.active{border-color:#c4d0da;color:#142232;background:#e4ebf1}
+body[data-theme="light"] .topbar{
+  border-color:#d3dce4;background:rgba(248,250,252,.94)
+}
+body[data-theme="light"] .top-btn,
+body[data-theme="light"] .small-btn,
+body[data-theme="light"] .small-link,
+body[data-theme="light"] .action-btn,
+body[data-theme="light"] .launch-btn{
+  color:#243543;background:#fff;border-color:#c6d1db
+}
+body[data-theme="light"] .top-btn:hover,
+body[data-theme="light"] .small-btn:hover,
+body[data-theme="light"] .small-link:hover,
+body[data-theme="light"] .action-btn:hover,
+body[data-theme="light"] .launch-btn:hover{background:#edf2f6}
+body[data-theme="light"] .metric,
+body[data-theme="light"] .panel,
+body[data-theme="light"] .mail-card,
+body[data-theme="light"] .quick-card,
+body[data-theme="light"] .eco-card,
+body[data-theme="light"] .notice-card,
+body[data-theme="light"] .setting-card{
+  color:#14212b;background:linear-gradient(145deg,#fff,#f7f9fb);border-color:#d1dbe3;
+  box-shadow:0 12px 30px rgba(31,51,67,.07)
+}
+body[data-theme="light"] .metric strong,
+body[data-theme="light"] .panel-head h2,
+body[data-theme="light"] .eco-card h3{color:#14212b}
+body[data-theme="light"] .metric-label,
+body[data-theme="light"] .metric small,
+body[data-theme="light"] .panel-head p,
+body[data-theme="light"] .mail-card p,
+body[data-theme="light"] .quick-card small,
+body[data-theme="light"] .eco-card p,
+body[data-theme="light"] .notice-copy p,
+body[data-theme="light"] .feed-copy small{color:#6b7b88}
+body[data-theme="light"] .feed-item,
+body[data-theme="light"] th,
+body[data-theme="light"] td{border-color:#d8e0e7}
+body[data-theme="light"] .table-wrap{border-color:#d1dbe3;background:#fff}
+body[data-theme="light"] th{color:#5f7180;background:#edf2f6}
+body[data-theme="light"] td{color:#263744;background:#fff}
+body[data-theme="light"] td small{color:#70808d}
+body[data-theme="light"] .search,
+body[data-theme="light"] .select,
+body[data-theme="light"] .form-grid input,
+body[data-theme="light"] .form-grid select,
+body[data-theme="light"] .form-grid textarea,
+body[data-theme="light"] .setting-card input{
+  color:#14212b;background:#fff;border-color:#c8d3dc
+}
+body[data-theme="light"] .panel-tag{
+  color:#586b7a;background:#f7f9fb;border-color:#d0dae2
+}
+body[data-theme="light"] .status-pill{
+  color:#24613d;background:#edf8f1;border-color:#bad8c4
+}
+body[data-theme="light"] .cloud-shell{background:#fff;border-color:#d1dbe3}
+body[data-theme="light"] #sidebarCloud{background:#edf2f6;border-color:#d1dbe3}
+body[data-theme="light"] #path{color:#637482;background:#f7f9fb;border-color:#d1dbe3}
+body[data-theme="light"] #editor{color:#1c2b36;background:#fff}
+body[data-theme="light"] #cloudToolbar{background:#edf2f6;border-color:#d1dbe3}
+body[data-theme="light"] .cloud-actions button,
+body[data-theme="light"] #cloudToolbar button{
+  color:#243543;background:#fff;border-color:#c7d2dc
+}
+body[data-theme="light"] #tree li{color:#4d5f6d}
+body[data-theme="light"] #tree li:hover{color:#111}
+
+
+
+.github-family-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.github-family-card{
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:17px;
+  border:1px solid #293f55;
+  border-radius:10px;
+  background:linear-gradient(145deg,#101f30,#0c1825);
+  text-align:center;
+}
+.github-family-avatar{
+  width:54px;height:54px;
+  display:grid;place-items:center;
+  overflow:hidden;
+  border:1px solid #435c75;
+  border-radius:50%;
+  color:#ead7ad;
+  background:#08131e;
+  font:500 13px/1 var(--ceremonial);
+}
+.github-family-avatar img{width:100%;height:100%;object-fit:cover}
+.github-family-card h3{margin:12px 0 0;font:500 20px/1.05 var(--display)}
+.github-family-card p{margin:7px 0 12px;color:#7d90a1;font-size:9.5px;line-height:1.5}
+.github-family-meta{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:auto
+}
+.github-family-meta span{
+  padding:4px 7px;border:1px solid #30485f;border-radius:999px;color:#9cb0c0;background:#0b1724;
+  font-size:8px;font-weight:650;letter-spacing:.04em
+}
+.github-family-actions{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:11px}
+body[data-theme="light"] .github-family-card{
+  color:#14212b;background:linear-gradient(145deg,#fff,#f7f9fb);border-color:#d1dbe3
+}
+body[data-theme="light"] .github-family-card p{color:#697a88}
+body[data-theme="light"] .github-family-avatar{color:#614d28;background:#fff;border-color:#c9d4dd}
+body[data-theme="light"] .github-family-meta span{
+  color:#5d6f7d;background:#f5f8fa;border-color:#d2dce4
+}
+@media(max-width:1100px){
+  .github-family-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .github-family-grid{grid-template-columns:1fr}
+}
+
+
+
+/* Repair 05 — Ecosystem Pulse */
+.pulse-panel{margin-top:14px;padding:clamp(20px,2.6vw,28px)}
+.pulse-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.pulse-stat{
+  min-height:118px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:15px 12px;border:1px solid #293f55;border-radius:10px;background:#0b1724;text-align:center
+}
+.pulse-stat>span{color:#8ea0af;font-size:8px;font-weight:750;letter-spacing:.11em;text-transform:uppercase}
+.pulse-stat strong{display:block;margin-top:8px;color:#fff;font:500 34px/1 var(--display)}
+.pulse-stat strong.pulse-family{max-width:100%;font-size:clamp(17px,1.7vw,24px);overflow-wrap:anywhere}
+.pulse-stat small{display:block;margin-top:8px;color:#718394;font-size:9px;line-height:1.4}
+.pulse-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:12px;margin-top:12px}
+.pulse-family-list,.pulse-attention{display:grid;align-content:start;gap:8px;min-width:0}
+.pulse-family-row{
+  display:grid;grid-template-columns:minmax(110px,.7fr) minmax(0,1.3fr) auto;gap:10px;align-items:center;
+  min-height:52px;padding:10px 12px;border:1px solid #25394e;border-radius:8px;background:#0d1a28
+}
+.pulse-family-row strong{font-size:10px;overflow-wrap:anywhere}
+.pulse-family-bar{height:6px;overflow:hidden;border-radius:999px;background:#16283a}
+.pulse-family-bar i{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,#8e6d30,#d1ad66)}
+.pulse-family-row small{color:#7e90a0;font-size:8.5px;white-space:nowrap}
+.pulse-attention-title{
+  margin:0 0 2px;color:#d8c397;font:600 9px/1.2 var(--ceremonial);
+  letter-spacing:.12em;text-transform:uppercase;text-align:center
+}
+.pulse-signal{
+  display:grid;grid-template-columns:8px minmax(0,1fr);gap:9px;align-items:start;
+  padding:9px 10px;border:1px solid #293f55;border-radius:8px;background:#0d1926
+}
+.pulse-signal .feed-dot{margin-top:4px}
+.pulse-signal strong{display:block;font-size:9.5px}
+.pulse-signal small{display:block;margin-top:3px;color:#768899;font-size:8.5px;line-height:1.4}
+body[data-theme="light"] .pulse-stat,
+body[data-theme="light"] .pulse-family-row,
+body[data-theme="light"] .pulse-signal{color:#14212b;background:#fff;border-color:#d1dbe3}
+body[data-theme="light"] .pulse-stat strong{color:#14212b}
+body[data-theme="light"] .pulse-stat>span,
+body[data-theme="light"] .pulse-stat small,
+body[data-theme="light"] .pulse-family-row small,
+body[data-theme="light"] .pulse-signal small{color:#697b89}
+body[data-theme="light"] .pulse-family-bar{background:#e6edf2}
+body[data-theme="light"] .pulse-attention-title{color:#725b30}
+@media(max-width:1100px){
+  .pulse-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pulse-layout{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .pulse-metrics{grid-template-columns:1fr 1fr}
+  .pulse-family-row{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .pulse-family-bar{width:100%}
+}
+@media(max-width:410px){.pulse-metrics{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+
+<section id="gate" aria-label="Administrator gate">
+  <div class="gate-card">
+    <nav class="gate-breadcrumbs" aria-label="Administrator path">
+  <a href="/">Verve N Veda</a>
+  <span class="sep" aria-hidden="true">›</span>
+  <span>Administrator Gate</span>
+  <span class="sep" aria-hidden="true">›</span>
+  <strong aria-current="page">Command Center</strong>
+</nav>
+    <span class="gate-kicker">Second Security Layer</span>
+    <h1>ADMIN</h1>
+    <form class="gate-form" id="gateForm">
+      <label class="visually-hidden" for="gateCode">10-digit administrator passcode</label>
+      <div class="code-row">
+        <input class="code-input" id="gateCode" type="password" inputmode="numeric"
+               pattern="[0-9]{10}" minlength="10" maxlength="10" autocomplete="off"
+               aria-label="10-digit administrator passcode" placeholder="••••••••••" required>
+        <button class="show-btn" id="showCode" type="button">Show</button>
+      </div>
+      <p class="status" id="gateStatus" role="status" aria-live="polite"></p>
+      <button class="gate-submit" type="submit">Enter Command Center</button>
+    </form>
+
+    <form class="gate-form" id="gateSetupForm" hidden novalidate>
+      <p style="margin:0 0 2px">
+        Gate 2 has not yet been separated on this browser. Enter the former shared administrator passcode, then choose a new 10-digit Gate 2 passcode that is different from Gate 1.
+      </p>
+
+      <label for="gateLegacyCode">Former shared 10-digit passcode</label>
+      <input class="code-input" id="gateLegacyCode" type="password" inputmode="numeric"
+             pattern="[0-9]{10}" minlength="10" maxlength="10" autocomplete="current-password"
+             aria-describedby="gateSetupStatus" placeholder="••••••••••" required>
+
+      <label for="gateNewCode">New Gate 2 passcode</label>
+      <input class="code-input" id="gateNewCode" type="password" inputmode="numeric"
+             pattern="[0-9]{10}" minlength="10" maxlength="10" autocomplete="new-password"
+             aria-describedby="gateSetupStatus" placeholder="••••••••••" required>
+
+      <label for="gateConfirmCode">Confirm new Gate 2 passcode</label>
+      <input class="code-input" id="gateConfirmCode" type="password" inputmode="numeric"
+             pattern="[0-9]{10}" minlength="10" maxlength="10" autocomplete="new-password"
+             aria-describedby="gateSetupStatus" placeholder="••••••••••" required>
+
+      <p class="status" id="gateSetupStatus" role="status" aria-live="polite"></p>
+      <button class="gate-submit" type="submit">Create Independent Gate 2</button>
+    </form>
+
+    <p class="gate-note">This is the intentional second administrator layer for the private Verve N Veda workspace.</p>
+  </div>
+</section>
+
+<div id="adminRoot">
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Return to Verve N Veda public gateway">
+      <span class="brand-mark">V</span>
+      <span class="brand-copy">
+        <span class="brand-name">Verve N Veda</span>
+        <span class="brand-sub">Administration</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Administration sections">
+      <button class="nav-button active" type="button" data-view="dashboard"><span class="nav-icon">⌂</span><span class="nav-label">Dashboard</span></button>
+      <button class="nav-button" type="button" data-view="ecosystem"><span class="nav-icon">◇</span><span class="nav-label">Ecosystem</span><span class="nav-count" id="navGatewayCount">29</span></button>
+      <button class="nav-button" type="button" data-view="activity"><span class="nav-icon">↗</span><span class="nav-label">Activity</span><span class="nav-count" id="navActivityCount">0</span></button>
+      <button class="nav-button" type="button" data-view="notifications"><span class="nav-icon">●</span><span class="nav-label">Notifications</span><span class="nav-count" id="navUnreadCount">0</span></button>
+      <button class="nav-button" type="button" data-view="accounts"><span class="nav-icon">◎</span><span class="nav-label">Accounts</span><span class="nav-count" id="navAccountCount">0</span></button>
+      <button class="nav-button" type="button" data-view="beta"><span class="nav-icon">β</span><span class="nav-label">Beta Queue</span><span class="nav-count" id="navBetaCount">0</span></button>
+      <button class="nav-button" type="button" data-view="github"><span class="nav-icon">GH</span><span class="nav-label">GitHub</span><span class="nav-count" id="navGithubCount">4</span></button>
+      <button class="nav-button" type="button" data-view="cloud"><span class="nav-icon">▦</span><span class="nav-label">Mini Cloud</span></button>
+      <button class="nav-button" type="button" data-view="settings"><span class="nav-icon">⚙</span><span class="nav-label">Settings</span></button>
+    </nav>
+
+    <div class="sidebar-spacer"></div>
+    <div class="sidebar-status">
+      <strong>Browser-local administrator workspace</strong>
+      Sensitive cloud records should remain behind a future authenticated service.
+      <button class="lock-nav" id="lockCloud" type="button">Lock Admin Portal</button>
+    </div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar">
+      <div class="topbar-title">
+        <strong id="topbarViewTitle">Command Center</strong>
+        <span>Verve N Veda ecosystem operations</span>
+      </div>
+      <div class="topbar-actions">
+        <span class="status-pill"><span class="status-dot"></span>Session unlocked</span>
+        <button class="top-btn" id="themeToggle" type="button" aria-pressed="false">Light Mode</button>
+        <button class="top-btn" id="enableAlerts" type="button">Desktop Alerts</button>
+        <button class="top-btn" id="changePasscode" type="button">Passcode</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="view active" id="view-dashboard" data-view-panel="dashboard">
+        <div class="view-head">
+          <div>
+            <p class="eyebrow">Premium Administration Portal</p>
+            <h1>Command Center</h1>
+            <p>A private operational view of the Verve N Veda ecosystem, administrator activity, notification readiness, beta enrollment staging, and local tools.</p>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric gold"><span class="metric-label">Primary Gateways</span><strong id="metricGateways">29</strong><small>Current top-level ecosystem destinations</small></article>
+          <article class="metric blue"><span class="metric-label">Portal Launches</span><strong id="metricActivity">0</strong><small>Links opened from this admin portal</small></article>
+          <article class="metric green"><span class="metric-label">New Accounts</span><strong id="metricAccounts">0</strong><small>Account events received by the admin feed</small></article>
+          <article class="metric green"><span class="metric-label">Notifications</span><strong id="metricUnread">0</strong><small>Unread local or bridged notices</small></article>
+          <article class="metric red"><span class="metric-label">Beta Queue</span><strong id="metricBeta">0</strong><small>Preview enrollment leads</small></article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel">
+            <div class="panel-head">
+              <div><h2>Email & Notification Desk</h2><p>Two official inbox identities with a future-safe notification bridge.</p></div>
+              <span class="panel-tag" id="mailBridgeTag">Bridge waiting</span>
+            </div>
+            <div class="mail-grid">
+              <div class="mail-card">
+                <span class="mail-label">Verve N Veda</span>
+                <strong>vervenveda@proton.me</strong>
+                <p>General ecosystem, public resource, collaboration, and operational correspondence.</p>
+                <div class="mail-actions">
+                  <a class="small-link" href="https://mail.proton.me/" target="_blank" rel="noopener noreferrer">Open Proton Mail ↗</a>
+                  <button class="small-btn copy-mail" type="button" data-copy="vervenveda@proton.me">Copy Address</button>
+                </div>
+              </div>
+              <div class="mail-card">
+                <span class="mail-label">Khaemenes Academy</span>
+                <strong>khaemenesacademy@proton.me</strong>
+                <p>Academy, family, beta enrollment, curriculum, and education-related correspondence.</p>
+                <div class="mail-actions">
+                  <a class="small-link" href="https://mail.proton.me/" target="_blank" rel="noopener noreferrer">Open Proton Mail ↗</a>
+                  <button class="small-btn copy-mail" type="button" data-copy="khaemenesacademy@proton.me">Copy Address</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div><h2>Latest Notices</h2><p>Local system events and future remote notifications.</p></div>
+              <button class="small-btn" type="button" data-view-jump="notifications">Open Center</button>
+            </div>
+            <div class="feed" id="dashboardFeed"></div>
+          </article>
+        </div>
+
+        <article class="panel pulse-panel">
+          <div class="panel-head">
+            <div>
+              <h2>Ecosystem Pulse</h2>
+              <p>At-a-glance operational health across the four connected GitHub account families.</p>
+            </div>
+            <button class="small-btn" type="button" data-view-jump="github">Open GitHub Intelligence</button>
+          </div>
+
+          <div class="pulse-metrics">
+            <div class="pulse-stat">
+              <span>Updated Today</span>
+              <strong id="pulseUpdatedToday">0</strong>
+              <small>public repositories pushed today</small>
+            </div>
+            <div class="pulse-stat">
+              <span>New Core Commits</span>
+              <strong id="pulseNewCommits">0</strong>
+              <small>since the previous GitHub check</small>
+            </div>
+            <div class="pulse-stat">
+              <span>Attention Signals</span>
+              <strong id="pulseAttention">0</strong>
+              <small>core repos with issues, PRs, or fetch errors</small>
+            </div>
+            <div class="pulse-stat">
+              <span>Most Active Family</span>
+              <strong class="pulse-family" id="pulseActiveFamily">—</strong>
+              <small id="pulseActiveFamilyNote">waiting for GitHub data</small>
+            </div>
+          </div>
+
+          <div class="pulse-layout">
+            <div class="pulse-family-list" id="pulseFamilyList"></div>
+            <div class="pulse-attention" id="pulseAttentionList"></div>
+          </div>
+        </article>
+
+        <div class="dashboard-grid">
+          <article class="panel">
+            <div class="panel-head">
+              <div><h2>New Accounts</h2><p>Newest account events received from the future account service/Data Bridge.</p></div>
+              <button class="small-btn" type="button" data-view-jump="accounts">Open Accounts</button>
+            </div>
+            <div class="feed" id="dashboardAccountsFeed"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head">
+              <div><h2>GitHub Intelligence</h2><p>Recent activity across all four connected GitHub account families.</p></div>
+              <button class="small-btn" type="button" data-view-jump="github">Open GitHub</button>
+            </div>
+            <div class="feed" id="dashboardGithubFeed"></div>
+          </article>
+        </div>
+
+        <div class="quick-grid">
+          <button class="quick-card" type="button" data-view-jump="ecosystem"><span>Network</span><strong>Browse Ecosystem</strong><small>Launch and inspect all 29 primary gateways.</small></button>
+          <button class="quick-card" type="button" data-view-jump="accounts"><span>Accounts</span><strong>Review New Accounts</strong><small>See account events from the connected account service.</small></button>
+          <button class="quick-card" type="button" data-view-jump="github"><span>GitHub</span><strong>Repository Intelligence</strong><small>Review recent commits, issues, pull requests, and repository health.</small></button>
+        </div>
+      </section>
+
+      <section class="view" id="view-ecosystem" data-view-panel="ecosystem">
+        <div class="view-head">
+          <div><p class="eyebrow">Connected Network</p><h1>Ecosystem</h1><p>Search, inspect, and launch the same primary gateways represented on the public Verve N Veda home page.</p></div>
+        </div>
+        <div class="toolbar-row">
+          <input class="search" id="ecosystemSearch" type="search" placeholder="Search gateway, category, purpose…">
+          <select class="select" id="ecosystemFilter">
+            <option value="">All Halls</option>
+            <option>Education</option><option>Knowledge</option><option>Public Service</option><option>Creative & Professional</option>
+          </select>
+        </div>
+        <div class="ecosystem-grid" id="ecosystemGrid"></div>
+      </section>
+
+      <section class="view" id="view-activity" data-view-panel="activity">
+        <div class="view-head">
+          <div><p class="eyebrow">Click & URL Operations</p><h1>Activity</h1><p>This version accurately counts launches made from this administrator portal. Public visitor telemetry will appear here once a server event bridge is connected.</p></div>
+          <button class="action-btn" id="exportActivity" type="button">Export Activity</button>
+        </div>
+        <div class="analytics-layout">
+          <article class="panel"><div class="panel-head"><div><h2>Seven-Day Launches</h2><p>Administrator-origin ecosystem opens by local date.</p></div><span class="panel-tag">Local</span></div><div class="bar-chart" id="activityChart"></div></article>
+          <article class="panel"><div class="panel-head"><div><h2>Telemetry Status</h2><p>Public analytics remains separate until event ingestion exists.</p></div><span class="panel-tag" id="telemetryTag">Not connected</span></div>
+            <div class="feed">
+              <div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>Admin launches</strong><small>Recorded locally when a gateway is opened from this portal.</small></div></div>
+              <div class="feed-item"><span class="feed-dot warn"></span><div class="feed-copy"><strong>Public visitor clicks</strong><small>Requires a common event endpoint or analytics collector across the ecosystem.</small></div></div>
+              <div class="feed-item"><span class="feed-dot warn"></span><div class="feed-copy"><strong>Cross-origin traffic</strong><small>Cannot be inferred from localStorage on this admin page.</small></div></div>
+            </div>
+          </article>
+        </div>
+        <div class="panel" style="margin-top:14px">
+          <div class="panel-head"><div><h2>Recent Launch Log</h2><p>Newest administrator-origin events first.</p></div><button class="small-btn" id="clearActivity" type="button">Clear Local Log</button></div>
+          <div class="table-wrap"><table><thead><tr><th>Time</th><th>Destination</th><th>Hall</th><th>URL</th></tr></thead><tbody id="activityRows"></tbody></table></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-notifications" data-view-panel="notifications">
+        <div class="view-head">
+          <div><p class="eyebrow">Operations Inbox</p><h1>Notifications</h1><p>A unified local notification center designed to accept future normalized email, beta, telemetry, and system events through the Data Bridge.</p></div>
+        </div>
+        <div class="notification-tools">
+          <button class="action-btn green" id="markAllRead" type="button">Mark All Read</button>
+          <button class="action-btn" id="addLocalNotice" type="button">Add Local Note</button>
+          <button class="action-btn" id="syncNow" type="button">Sync Data Bridge</button>
+          <button class="action-btn red" id="clearNotifications" type="button">Clear Local Notices</button>
+        </div>
+        <div class="notice-list" id="notificationList"></div>
+      </section>
+
+
+      <section class="view" id="view-accounts" data-view-panel="accounts">
+        <div class="view-head">
+          <div><p class="eyebrow">Account Formation</p><h1>New Accounts</h1><p>Account events from the future family, student, parent, beta, or ecosystem account service will appear here through the Data Bridge. This static page does not invent account registrations.</p></div>
+          <button class="action-btn" id="exportAccounts" type="button">Export Accounts</button>
+        </div>
+        <div class="metric-grid" style="margin-bottom:14px">
+          <article class="metric green"><span class="metric-label">Total Received</span><strong id="accountTotal">0</strong><small>Account events retained locally</small></article>
+          <article class="metric blue"><span class="metric-label">Last 7 Days</span><strong id="accountWeek">0</strong><small>Recently formed accounts</small></article>
+          <article class="metric gold"><span class="metric-label">Pending</span><strong id="accountPending">0</strong><small>Awaiting review or completion</small></article>
+          <article class="metric red"><span class="metric-label">Bridge Status</span><strong id="accountBridgeState">—</strong><small>Account-service connection</small></article>
+        </div>
+        <article class="panel">
+          <div class="panel-head"><div><h2>Account Formation Feed</h2><p>Newest account records first. Sensitive credentials are never displayed.</p></div><button class="small-btn" id="syncAccounts" type="button">Sync Bridge</button></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Created</th><th>Account</th><th>Type</th><th>Email</th><th>Source</th><th>Status</th></tr></thead>
+              <tbody id="accountRows"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="view" id="view-beta" data-view-panel="beta">
+        <div class="view-head">
+          <div><p class="eyebrow">Future Enrollment Operations</p><h1>Beta Queue</h1><p>A lightweight preview queue for prospective beta participants. It intentionally avoids sensitive student records until a protected enrollment service exists.</p></div>
+          <button class="action-btn" id="exportBeta" type="button">Export Queue</button>
+        </div>
+        <div class="beta-layout">
+          <article class="panel">
+            <div class="panel-head"><div><h2>Add Interest Lead</h2><p>For testing the future enrollment workflow.</p></div><span class="panel-tag">Local Preview</span></div>
+            <form class="form-grid" id="betaForm">
+              <label>Name or household label<input id="betaName" required autocomplete="off"></label>
+              <label>Contact email<input id="betaEmail" type="email" required autocomplete="off"></label>
+              <label>Interest area<select id="betaProgram"><option>Khaemenes Academy</option><option>Preschool / Kinder Garden</option><option>Elementary</option><option>Middle School</option><option>High School</option><option>Higher Learning</option><option>General Verve N Veda Beta</option></select></label>
+              <label>Status<select id="betaStatus"><option>New</option><option>Contacted</option><option>Invited</option><option>Enrolled</option><option>Waitlist</option></select></label>
+              <label>Non-sensitive note<textarea id="betaNote" placeholder="Optional administrative note"></textarea></label>
+              <button class="action-btn green" type="submit">Add to Beta Queue</button>
+            </form>
+            <p class="safety-note"><strong>Preview boundary:</strong> do not store dates of birth, street addresses, medical data, academic records, government IDs, or other sensitive student information in this browser-local queue.</p>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><div><h2>Enrollment Leads</h2><p>Local staging records; newest first.</p></div><span class="panel-tag" id="betaSummaryTag">0 records</span></div>
+            <div class="table-wrap"><table><thead><tr><th>Added</th><th>Name</th><th>Email</th><th>Interest</th><th>Status</th><th></th></tr></thead><tbody id="betaRows"></tbody></table></div>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="view" id="view-github" data-view-panel="github">
+        <div class="view-head">
+          <div>
+            <p class="eyebrow">Repository Operations</p>
+            <h1>GitHub Intelligence</h1>
+            <p>Four connected GitHub families—Verve N Veda, JenniferPearl2028, artist1970, and KhaemenesAcademy—with public repository discovery plus deeper monitoring of the core root repositories.</p>
+          </div>
+          <button class="action-btn" id="refreshGithub" type="button">Refresh GitHub</button>
+        </div>
+
+        <div class="metric-grid" style="margin-bottom:14px">
+          <article class="metric gold"><span class="metric-label">GitHub Families</span><strong id="githubAccounts">4</strong><small>Connected account roots</small></article>
+          <article class="metric blue"><span class="metric-label">Public Repositories</span><strong id="githubPublicRepos">0</strong><small>Currently discoverable across the four accounts</small></article>
+          <article class="metric green"><span class="metric-label">Updated Today</span><strong id="githubUpdatedToday">0</strong><small>Public repositories pushed today</small></article>
+          <article class="metric red"><span class="metric-label">Core Watch</span><strong id="githubWatched">6</strong><small>Detailed root and infrastructure repositories</small></article>
+          <article class="metric blue"><span class="metric-label">API Remaining</span><strong id="githubRateRemaining">—</strong><small>Unauthenticated GitHub API requests remaining</small></article>
+        </div>
+
+        <article class="panel" style="margin-bottom:14px">
+          <div class="panel-head">
+            <div>
+              <h2>Account Families</h2>
+              <p>Each family discovers only repositories GitHub exposes publicly. Private repository names are intentionally not embedded in this Pages file.</p>
+            </div>
+            <span class="panel-tag" id="githubFamilyTag">Public discovery</span>
+          </div>
+          <div class="github-family-grid" id="githubFamilyGrid"></div>
+        </article>
+
+        <article class="panel" style="margin-bottom:14px">
+          <div class="panel-head">
+            <div>
+              <h2>Public Repository Directory</h2>
+              <p>Search and filter the public repositories currently visible beneath the connected account roots.</p>
+            </div>
+            <span class="panel-tag" id="githubRepoCountTag">0 repositories</span>
+          </div>
+          <div class="toolbar-row">
+            <input class="search" id="githubRepoSearch" type="search" placeholder="Search repository, account, description…">
+            <select class="select" id="githubOwnerFilter">
+              <option value="">All Accounts</option>
+              <option value="vervenveda">Verve N Veda</option>
+              <option value="JenniferPearl2028">JenniferPearl2028</option>
+              <option value="artist1970">artist1970</option>
+              <option value="KhaemenesAcademy">KhaemenesAcademy</option>
+            </select>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Account</th><th>Repository</th><th>Last Push</th><th>Branch</th><th>Open Items</th><th></th></tr></thead>
+              <tbody id="githubRepoRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Core Root Watch</h2>
+              <p id="coreWatchSummary">Deeper commit, issue, and pull-request monitoring for the primary infrastructure and root Pages repositories.</p>
+            </div>
+            <span class="panel-tag">Detailed watch</span>
+          </div>
+          <div class="ecosystem-grid" id="githubGrid"></div>
+        </article>
+
+        <p class="safety-note" style="max-width:900px;margin:16px auto 0!important;text-align:center">
+          This page uses GitHub’s public API without embedding a GitHub token. Public discovery is cached locally to reduce API use. Private repository information is not written into this static admin source.
+        </p>
+      </section>
+
+      <section class="view" id="view-cloud" data-view-panel="cloud">
+        <div class="view-head">
+          <div><p class="eyebrow">Browser-Local Workspace</p><h1>Mini Cloud</h1><p>Your original local filesystem remains available as an internal administrator tool for text, app prototypes, images, versions, import, and export.</p></div>
+        </div>
+        <div class="cloud-shell">
+          <aside id="sidebarCloud">
+            <h3>Mini Cloud OS</h3>
+            <div class="cloud-actions">
+              <button type="button" onclick="newFolder()">+ Folder</button>
+              <button type="button" onclick="newFile()">+ File</button>
+              <button type="button" onclick="uploadFile()">Upload</button>
+              <button type="button" onclick="exportCloud()">Export</button>
+              <button type="button" onclick="importCloud()">Import</button>
+            </div>
+            <ul id="tree"></ul>
+          </aside>
+          <div id="cloudMain">
+            <div id="path">/</div>
+            <textarea id="editor" placeholder="Select a file to edit..."></textarea>
+            <img id="imagePreview" alt="Image preview">
+            <div id="cloudToolbar">
+              <button type="button" onclick="saveFile()">Save</button>
+              <button type="button" onclick="showVersions()">Versions</button>
+              <button type="button" onclick="launchApp()">Launch App</button>
+              <button type="button" onclick="deleteItem()">Delete</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-settings" data-view-panel="settings">
+        <div class="view-head">
+          <div><p class="eyebrow">Future Infrastructure</p><h1>Settings</h1><p>Prepare the command center for a future server-side event, notification, and enrollment bridge without placing mailbox credentials in this static page.</p></div>
+        </div>
+        <div class="settings-grid">
+          <article class="setting-card">
+            <h2>Data Bridge</h2>
+            <p>Optional HTTPS endpoint for normalized notifications, telemetry summaries, and beta queue synchronization.</p>
+            <label>Bridge endpoint<input id="bridgeEndpoint" type="url" placeholder="https://your-secure-service.example/api/admin-feed"></label>
+            <div class="toolbar-row" style="margin-top:12px">
+              <button class="action-btn green" id="saveSettings" type="button">Save Settings</button>
+              <button class="action-btn" id="testBridge" type="button">Test Connection</button>
+            </div>
+            <div class="bridge-state" id="bridgeState"><span class="dot"></span><span>No endpoint configured</span></div>
+          </article>
+          <article class="setting-card">
+            <h2>Email Notification Architecture</h2>
+            <p>The static portal does not store Proton credentials. A future trusted service can normalize new-mail events and send only notification metadata into the Data Bridge.</p>
+            <div class="feed">
+              <div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>vervenveda@proton.me</strong><small>General Verve N Veda operations inbox</small></div></div>
+              <div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>khaemenesacademy@proton.me</strong><small>Academy and beta enrollment inbox</small></div></div>
+              <div class="feed-item"><span class="feed-dot warn"></span><div class="feed-copy"><strong>Credentials stay outside this page</strong><small>Use a trusted server integration or a device-local mail client/Bridge workflow later.</small></div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<input type="file" id="fileInput" hidden accept="image/*,.txt,.md,.json,.html,.css,.js,.pdf,.doc,.docx">
+
+<div id="changeOverlay">
+  <section class="change-card">
+    <h2>Change Admin Passcode</h2>
+    <p style="font-family:var(--sans);color:#55615a;font-size:13px">Enter the current 10-digit code, then your new 10-digit code twice.</p>
+    <form id="changeForm">
+      <input id="currentCode" type="password" inputmode="numeric" maxlength="10" placeholder="Current 10-digit code" required>
+      <input id="newCode" type="password" inputmode="numeric" maxlength="10" placeholder="New 10-digit code" required>
+      <input id="confirmCode" type="password" inputmode="numeric" maxlength="10" placeholder="Confirm new code" required>
+      <p class="status" id="changeStatus"></p>
+      <div class="change-actions">
+        <button class="gate-submit" type="submit">Save New Passcode</button>
+        <button class="secondary" id="cancelChange" type="button">Cancel</button>
+      </div>
+    </form>
+  </section>
+</div>
+
+<script>
+"use strict";
+
+/* =========================================================
+   SECOND ADMINISTRATOR GATE — INDEPENDENT CREDENTIAL
+   ========================================================= */
+const FRONT_RECORD_KEY="VNV_G1_RECORD_V3";
+const COMMAND_RECORD_KEY="VNV_G2_RECORD_V3";
+const LEGACY_RECORD_KEY="VNV_ADMIN_GATE_RECORD_V2";
+const FRONT_SESSION_KEY="VNV_G1_SESSION_V3";
+const COMMAND_SESSION_KEY="VNV_G2_SESSION_V3";
+const ATTEMPT_KEY="VNV_G2_FAILED_ATTEMPTS_V3";
+const ITERATIONS=120000;
+const encoder=new TextEncoder();
+
+const gateCode=document.getElementById("gateCode");
+const showCode=document.getElementById("showCode");
+const gateForm=document.getElementById("gateForm");
+const gateStatus=document.getElementById("gateStatus");
+const gateSetupForm=document.getElementById("gateSetupForm");
+const gateLegacyCode=document.getElementById("gateLegacyCode");
+const gateNewCode=document.getElementById("gateNewCode");
+const gateConfirmCode=document.getElementById("gateConfirmCode");
+const gateSetupStatus=document.getElementById("gateSetupStatus");
+const lockCloud=document.getElementById("lockCloud");
+const changePasscode=document.getElementById("changePasscode");
+const changeOverlay=document.getElementById("changeOverlay");
+const cancelChange=document.getElementById("cancelChange");
+const changeForm=document.getElementById("changeForm");
+const currentCode=document.getElementById("currentCode");
+const newCode=document.getElementById("newCode");
+const confirmCode=document.getElementById("confirmCode");
+const changeStatus=document.getElementById("changeStatus");
+
+function cleanCode(v){
+  return String(v||"").replace(/\D/g,"").slice(0,10);
+}
+function isValidCode(v){
+  return /^[0-9]{10}$/.test(String(v||""));
+}
+function bytesToBase64(bytes){
+  let binary="";
+  bytes.forEach(b=>binary+=String.fromCharCode(b));
+  return btoa(binary);
+}
+function base64ToBytes(v){
+  return Uint8Array.from(atob(v),c=>c.charCodeAt(0));
+}
+async function derive(code,salt){
+  const material=await crypto.subtle.importKey(
+    "raw",encoder.encode(code),{name:"PBKDF2"},false,["deriveBits"]
+  );
+  const bits=await crypto.subtle.deriveBits(
+    {name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},
+    material,256
+  );
+  return new Uint8Array(bits);
+}
+function constantTimeEqual(a,b){
+  if(a.length!==b.length)return false;
+  let diff=0;
+  for(let i=0;i<a.length;i++)diff|=a[i]^b[i];
+  return diff===0;
+}
+function readRecord(key){
+  try{
+    const raw=localStorage.getItem(key);
+    return raw?JSON.parse(raw):null;
+  }catch{
+    return null;
+  }
+}
+async function verifyAgainstRecord(code,record){
+  if(!isValidCode(code)||!record?.salt||!record?.hash)return false;
+  try{
+    return constantTimeEqual(
+      await derive(code,base64ToBytes(record.salt)),
+      base64ToBytes(record.hash)
+    );
+  }catch{
+    return false;
+  }
+}
+async function verifyCommand(code){
+  return verifyAgainstRecord(code,readRecord(COMMAND_RECORD_KEY));
+}
+async function saveCommandCode(code){
+  const salt=crypto.getRandomValues(new Uint8Array(16));
+  const hash=await derive(code,salt);
+  localStorage.setItem(COMMAND_RECORD_KEY,JSON.stringify({
+    version:3,
+    algorithm:"PBKDF2-SHA256",
+    iterations:ITERATIONS,
+    salt:bytesToBase64(salt),
+    hash:bytesToBase64(hash),
+    changedAt:new Date().toISOString()
+  }));
+}
+function hasFrontSession(){
+  try{
+    const record=JSON.parse(sessionStorage.getItem(FRONT_SESSION_KEY)||"null");
+    return Boolean(record?.unlocked);
+  }catch{
+    return false;
+  }
+}
+function setUnlocked(v){
+  try{
+    if(v){
+      sessionStorage.setItem(COMMAND_SESSION_KEY,JSON.stringify({
+        unlocked:true,
+        gate:"command",
+        at:new Date().toISOString()
+      }));
+    }else{
+      sessionStorage.removeItem(COMMAND_SESSION_KEY);
+    }
+  }catch{}
+}
+function isUnlocked(){
+  try{
+    return Boolean(JSON.parse(sessionStorage.getItem(COMMAND_SESSION_KEY)||"null")?.unlocked);
+  }catch{
+    return false;
+  }
+}
+function getFailedAttempts(){
+  try{
+    return Math.max(0,parseInt(sessionStorage.getItem(ATTEMPT_KEY)||"0",10)||0);
+  }catch{
+    return 0;
+  }
+}
+function setFailedAttempts(n){
+  try{
+    sessionStorage.setItem(ATTEMPT_KEY,String(Math.max(0,n|0)));
+  }catch{}
+}
+function wrongPasscodeMessage(attempt){
+  if(attempt===1)return "Wrong password! You unlocked a new achievement: 'Most Predictable Guess of the Day'.";
+  if(attempt===2)return "Access rejected. My cat walked across the keyboard and almost guessed a better password.";
+  if(attempt===3)return "Incorrect. Please consult a magic 8-ball for better password guessing abilities.";
+  if(attempt===4)return "Notice: This computer is now judging your life choices.";
+  if(attempt===5)return "Password incorrect. The Cyber Police of Disappointment have declined to comment.";
+  return "Access rejected. Incorrect administrator passcode.";
+}
+
+/* Gate 1 must have been completed in this tab before Gate 2 is offered. */
+if(!hasFrontSession()){
+  window.location.replace("/");
+}
+
+function renderGate(){
+  const commandRecord=readRecord(COMMAND_RECORD_KEY);
+  const legacyRecord=readRecord(LEGACY_RECORD_KEY);
+  const open=isUnlocked();
+
+  document.body.classList.toggle("unlocked",open);
+
+  if(open)return;
+
+  const needsSetup=!commandRecord;
+
+  gateForm.hidden=needsSetup;
+  gateSetupForm.hidden=!needsSetup;
+
+  if(needsSetup){
+    gateSetupStatus.textContent=legacyRecord
+      ? ""
+      : "This browser has no migratable administrator credential. Access fails closed.";
+    gateSetupStatus.className=legacyRecord ? "status" : "status error";
+
+    [gateLegacyCode,gateNewCode,gateConfirmCode].forEach(el=>{
+      if(el)el.disabled=!legacyRecord;
+    });
+
+    const submit=gateSetupForm.querySelector('button[type="submit"]');
+    if(submit)submit.disabled=!legacyRecord;
+
+    if(legacyRecord)setTimeout(()=>gateLegacyCode.focus(),40);
+  }else{
+    setTimeout(()=>gateCode.focus(),40);
+  }
+}
+
+[
+  "gateCode","gateLegacyCode","gateNewCode","gateConfirmCode",
+  "currentCode","newCode","confirmCode"
+].forEach(id=>{
+  document.getElementById(id)?.addEventListener("input",e=>{
+    e.target.value=cleanCode(e.target.value);
+  });
+});
+
+showCode.onclick=()=>{
+  const show=gateCode.type==="password";
+  gateCode.type=show?"text":"password";
+  showCode.textContent=show?"Hide":"Show";
+  gateCode.focus();
+};
+
+gateForm.onsubmit=async e=>{
+  e.preventDefault();
+  const code=cleanCode(gateCode.value);
+
+  if(!isValidCode(code)){
+    gateStatus.textContent="Enter exactly 10 digits.";
+    gateStatus.className="status error";
+    return;
+  }
+
+  gateStatus.textContent="Checking Gate 2…";
+  gateStatus.className="status";
+
+  if(!(await verifyCommand(code))){
+    const attempt=getFailedAttempts()+1;
+    setFailedAttempts(attempt);
+    gateStatus.textContent=wrongPasscodeMessage(attempt);
+    gateStatus.className="status error";
+    gateCode.select();
+    return;
+  }
+
+  setFailedAttempts(0);
+  setUnlocked(true);
+  gateStatus.textContent="";
+  renderGate();
+  showView("dashboard");
+};
+
+gateSetupForm.onsubmit=async e=>{
+  e.preventDefault();
+
+  const legacy=cleanCode(gateLegacyCode.value);
+  const next=cleanCode(gateNewCode.value);
+  const confirm=cleanCode(gateConfirmCode.value);
+  const legacyRecord=readRecord(LEGACY_RECORD_KEY);
+  const frontRecord=readRecord(FRONT_RECORD_KEY);
+
+  if(!legacyRecord){
+    gateSetupStatus.textContent="No migratable credential is available on this browser.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(!isValidCode(legacy)||!isValidCode(next)||!isValidCode(confirm)){
+    gateSetupStatus.textContent="All fields must contain exactly 10 digits.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(next!==confirm){
+    gateSetupStatus.textContent="The new Gate 2 passcodes do not match.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(!(await verifyAgainstRecord(legacy,legacyRecord))){
+    gateSetupStatus.textContent="The former shared passcode was not accepted.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(frontRecord && await verifyAgainstRecord(next,frontRecord)){
+    gateSetupStatus.textContent="Gate 2 must use a different passcode from Gate 1.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  await saveCommandCode(next);
+
+  /* Legacy verifier is no longer needed once both independent gates exist. */
+  if(frontRecord)localStorage.removeItem(LEGACY_RECORD_KEY);
+
+  gateLegacyCode.value="";
+  gateNewCode.value="";
+  gateConfirmCode.value="";
+  setUnlocked(true);
+  gateSetupStatus.textContent="";
+  renderGate();
+  showView("dashboard");
+};
+
+lockCloud.onclick=()=>{
+  setUnlocked(false);
+  setFailedAttempts(0);
+  gateCode.value="";
+  gateStatus.textContent="";
+  renderGate();
+};
+
+changePasscode.onclick=()=>changeOverlay.classList.add("open");
+
+cancelChange.onclick=()=>{
+  changeOverlay.classList.remove("open");
+  changeStatus.textContent="";
+};
+
+changeForm.onsubmit=async e=>{
+  e.preventDefault();
+
+  const current=cleanCode(currentCode.value);
+  const next=cleanCode(newCode.value);
+  const confirm=cleanCode(confirmCode.value);
+  const frontRecord=readRecord(FRONT_RECORD_KEY);
+
+  if(!isValidCode(current)||!isValidCode(next)||!isValidCode(confirm)){
+    changeStatus.textContent="All fields must contain exactly 10 digits.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  if(next!==confirm){
+    changeStatus.textContent="The new Gate 2 passcodes do not match.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  if(!(await verifyCommand(current))){
+    changeStatus.textContent="The current Gate 2 passcode was not accepted.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  if(frontRecord && await verifyAgainstRecord(next,frontRecord)){
+    changeStatus.textContent="Gate 2 must remain different from Gate 1.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  await saveCommandCode(next);
+  setUnlocked(true);
+
+  changeStatus.textContent="Gate 2 passcode updated independently.";
+  changeStatus.className="status ok";
+  currentCode.value=newCode.value=confirmCode.value="";
+};
+
+/* =========================================================
+   PREMIUM ADMIN DATA
+   ========================================================= */
+const ECOSYSTEM=[{"title":"333 Network","url":"https://vervenveda.github.io/333.github.io/","category":"Creative & Professional","icon":"333","desc":"Communication, meetings, mail, live art, site building, and digital infrastructure."},{"title":"NAIB","url":"https://artist1970.github.io/noema-ai.github.io/","category":"Knowledge","icon":"N","desc":"Intelligence, navigation, context, memory, and specialist routing."},{"title":"Khaemenes Academy","url":"https://vervenveda.github.io/Khaemenes_Academy.github.io/","category":"Education","icon":"KA","desc":"Central learning campus from preschool through higher learning."},{"title":"Khaemenes Preschool","url":"https://vervenveda.github.io/Khaemenes_Preschool.github.io/","category":"Education","icon":"PS","desc":"Early-learning stories, play, life skills, creativity, and discovery."},{"title":"Khaemenes Kinder Garden","url":"https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/","category":"Education","icon":"KG","desc":"Kindergarten learning through kindness, curiosity, literacy, numbers, and nature."},{"title":"Khaemenes Elementary","url":"https://vervenveda.github.io/Khaemenes_Elementary.github.io/","category":"Education","icon":"E","desc":"Grades 1–5 academics, family learning, and foundational skills."},{"title":"Khaemenes Middle","url":"https://vervenveda.github.io/Khaemenes_Middle.github.io/","category":"Education","icon":"M","desc":"Grades 6–8 academics, independence, exploration, and preparation."},{"title":"Khaemenes High","url":"https://vervenveda.github.io/Khaemenes_High.github.io/","category":"Education","icon":"HS","desc":"Grades 9–12 courses, portfolios, records, examinations, and graduation pathways."},{"title":"Khaemenes Higher Learning","url":"https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/","category":"Education","icon":"HL","desc":"College access, careers, professional development, and lifelong learning."},{"title":"Khaemenes Linguistics","url":"https://vervenveda.github.io/Khaemenes_Linguistics.github.io/","category":"Education","icon":"L","desc":"Languages, linguistics, translation, writing systems, and communication."},{"title":"ARSHIF","url":"https://vervenveda.github.io/Arshif.github.io/","category":"Knowledge","icon":"A","desc":"Research, literature, history, philosophy, culture, faith, and archives."},{"title":"The Verifier","url":"https://vervenveda.github.io/theverifier.github.io/","category":"Knowledge","icon":"V","desc":"News discovery, source comparison, evidence, research, and media literacy."},{"title":"PLERA Search","url":"https://vervenveda.github.io/PLERASearch.github.io/","category":"Knowledge","icon":"◎","desc":"Search gateway into trusted public learning and resource destinations."},{"title":"Solanar","url":"https://vervenveda.github.io/solanar.github.io/","category":"Knowledge","icon":"☀","desc":"Weather, Earth systems, climate, moon cycles, time, and environmental observation."},{"title":"Medicament Hub","url":"https://vervenveda.github.io/medicament-hub.github.io/","category":"Public Service","icon":"⚕","desc":"Health, medicine, family care, seniors, insurance, wellness, and safety."},{"title":"Firmament Law","url":"https://vervenveda.github.io/firmament.github.io/","category":"Public Service","icon":"§","desc":"Legal information, rights, evidence tools, family and veteran resources."},{"title":"One Nation for All","url":"https://vervenveda.github.io/onenationforall.github.io/","category":"Public Service","icon":"☆","desc":"Constitutional learning, voter access, veterans, service, and community support."},{"title":"Jennifer Pearl 2028 · GitHub","url":"https://jenniferpearl2028.github.io/","category":"Public Service","icon":"JP","desc":"Public-service campaign GitHub Pages destination."},{"title":"Jennifer Pearl 2028 · Campaign Home","url":"https://vervenveda.wixsite.com/home","category":"Public Service","icon":"JP","desc":"Live public-service campaign home."},{"title":"Veterans","url":"https://vervenveda.github.io/veterans.github.io/","category":"Public Service","icon":"★","desc":"Veteran benefits, housing, employment, services, and family assistance."},{"title":"Finance","url":"https://vervenveda.github.io/finance.github.io/","category":"Public Service","icon":"$","desc":"Financial literacy, planning, markets, consumer knowledge, and practical tools."},{"title":"River to Road","url":"https://vervenveda.github.io/river_to_road.github.io/","category":"Public Service","icon":"≈","desc":"Environmental stewardship, clean water, science, service, and community action."},{"title":"Aurora","url":"https://vervenveda.github.io/aurora.github.io/","category":"Public Service","icon":"☼","desc":"Rest, reflection, organization, wellbeing, and creative renewal."},{"title":"ProResource Hub","url":"https://vervenveda.github.io/proresource_hub.github.io/","category":"Creative & Professional","icon":"P","desc":"Writing, editing, media, research, design, meetings, and productivity tools."},{"title":"Bazaar Art","url":"https://vervenveda.github.io/bazaarart.github.io/","category":"Creative & Professional","icon":"✦","desc":"Art education, artist tools, galleries, creativity, and cultural enterprise."},{"title":"Bazaar Art Live","url":"https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html","category":"Creative & Professional","icon":"LIVE","desc":"Local-first creative community feed and live artistic connection."},{"title":"My Art Gallery","url":"https://vervenveda.github.io/myartgallery.github.io/","category":"Creative & Professional","icon":"▧","desc":"Artist Jenny Pearl portfolio and professional artistry archive."},{"title":"The Refrain","url":"https://vervenveda.github.io/the_refrain.github.io/","category":"Creative & Professional","icon":"♫","desc":"Music education, composition, recording, performance, and exploration."},{"title":"Arcade","url":"https://vervenveda.github.io/arcade.github.io/","category":"Creative & Professional","icon":"◆","desc":"Original games, strategy, puzzles, trivia, practice, and discovery."}];
+const K_ACTIVITY="VNV_ADMIN_ACTIVITY_V1";
+const K_NOTICES="VNV_ADMIN_NOTIFICATIONS_V1";
+const K_BETA="VNV_ADMIN_BETA_V1";
+const K_ACCOUNTS="VNV_ADMIN_ACCOUNTS_V1";
+const K_SETTINGS="VNV_ADMIN_SETTINGS_V1";
+const K_THEME="VNV_ADMIN_THEME_V1";
+const K_GITHUB_CACHE="VNV_ADMIN_GITHUB_CACHE_V1";
+const K_GITHUB_FAMILY_CACHE="VNV_ADMIN_GITHUB_FAMILY_CACHE_V1";
+const K_GITHUB_STATE="VNV_ADMIN_GITHUB_STATE_V1";
+const K_GITHUB_PULSE="VNV_ADMIN_GITHUB_PULSE_V1";
+
+const VIEW_TITLES={dashboard:"Command Center",ecosystem:"Ecosystem",activity:"Activity",notifications:"Notifications",accounts:"New Accounts",beta:"Beta Queue",github:"GitHub Intelligence",cloud:"Mini Cloud",settings:"Settings"};
+
+function readJSON(key,fallback){
+  try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}
+}
+function writeJSON(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch{}}
+function uid(){return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2,8)}`}
+function formatDateTime(iso){
+  try{return new Intl.DateTimeFormat(undefined,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(iso))}catch{return iso||""}
+}
+function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+
+let activity=readJSON(K_ACTIVITY,[]);
+let notices=readJSON(K_NOTICES,[]);
+let betaQueue=readJSON(K_BETA,[]);
+let accounts=readJSON(K_ACCOUNTS,[]);
+let settings=readJSON(K_SETTINGS,{bridgeEndpoint:""});
+let githubCache=readJSON(K_GITHUB_CACHE,{at:0,repos:[]});
+let githubFamilyCache=readJSON(K_GITHUB_FAMILY_CACHE,{at:0,families:[],repos:[],rateRemaining:null});
+let githubState=readJSON(K_GITHUB_STATE,{});
+let githubPulse=readJSON(K_GITHUB_PULSE,{at:0,changedCore:[],attention:[]});
+let remoteMetrics={};
+
+const GITHUB_FAMILIES=[
+  {
+    owner:"vervenveda",
+    label:"Verve N Veda",
+    accountUrl:"https://github.com/vervenveda",
+    rootRepo:"vervenveda/vervenveda.github.io",
+    description:"Primary public ecosystem and infrastructure repositories."
+  },
+  {
+    owner:"JenniferPearl2028",
+    label:"JenniferPearl2028",
+    accountUrl:"https://github.com/JenniferPearl2028",
+    rootRepo:"JenniferPearl2028/jenniferpearl2028.github.io",
+    description:"Presidential campaign Pages, policies, press, events, documents, and related public repositories."
+  },
+  {
+    owner:"artist1970",
+    label:"artist1970",
+    accountUrl:"https://github.com/artist1970",
+    rootRepo:"artist1970/noema-ai.github.io",
+    description:"Legacy, intelligence, archive, creative, experimental, and supporting public repositories."
+  },
+  {
+    owner:"KhaemenesAcademy",
+    label:"KhaemenesAcademy",
+    accountUrl:"https://github.com/KhaemenesAcademy",
+    rootRepo:"KhaemenesAcademy/KhaemenesAcademy.github.io",
+    description:"Independent Khaemenes Academy account root and future Academy repository family."
+  }
+];
+
+const WATCHED_REPOS=[
+  "vervenveda/vervenveda.github.io",
+  "vervenveda/Khaemenes_Academy.github.io",
+  "vervenveda/333.github.io",
+  "artist1970/noema-ai.github.io",
+  "JenniferPearl2028/jenniferpearl2028.github.io",
+  "KhaemenesAcademy/KhaemenesAcademy.github.io"
+];
+
+function seedNotices(){
+  if(notices.length)return;
+  notices=[
+    {id:uid(),title:"Premium admin workspace initialized",body:"Ecosystem, activity, notifications, beta staging, and Mini Cloud are available.",source:"System",level:"success",read:false,at:new Date().toISOString()},
+    {id:uid(),title:"Email bridge waiting",body:"Proton inbox notification metadata will require a future trusted bridge endpoint; mailbox credentials are not stored here.",source:"Email",level:"warn",read:false,at:new Date().toISOString()}
+  ];
+  writeJSON(K_NOTICES,notices);
+}
+seedNotices();
+
+
+function applyTheme(theme){
+  const t=theme==="light"?"light":"dark";
+  document.body.dataset.theme=t;
+  try{localStorage.setItem(K_THEME,t)}catch{}
+  const btn=document.getElementById("themeToggle");
+  if(btn){
+    btn.textContent=t==="dark"?"Light Mode":"Dark Mode";
+    btn.setAttribute("aria-pressed",String(t==="light"));
+  }
+}
+function initTheme(){
+  let saved="dark";
+  try{saved=localStorage.getItem(K_THEME)||"dark"}catch{}
+  applyTheme(saved);
+}
+document.getElementById("themeToggle").addEventListener("click",()=>applyTheme(document.body.dataset.theme==="light"?"dark":"light"));
+
+function showView(name){
+  document.querySelectorAll("[data-view-panel]").forEach(p=>p.classList.toggle("active",p.dataset.viewPanel===name));
+  document.querySelectorAll(".nav-button[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===name));
+  document.getElementById("topbarViewTitle").textContent=VIEW_TITLES[name]||"Administration";
+  if(name==="ecosystem")renderEcosystem();
+  if(name==="activity")renderActivity();
+  if(name==="notifications")renderNotifications();
+  if(name==="accounts")renderAccounts();
+  if(name==="beta")renderBeta();
+  if(name==="github")renderGithub();
+  if(name==="dashboard")renderDashboard();
+}
+document.querySelectorAll(".nav-button[data-view]").forEach(b=>b.addEventListener("click",()=>showView(b.dataset.view)));
+document.querySelectorAll("[data-view-jump]").forEach(b=>b.addEventListener("click",()=>showView(b.dataset.viewJump)));
+
+function updateCounts(){
+  const unread=notices.filter(n=>!n.read).length;
+  document.getElementById("navGatewayCount").textContent=String(ECOSYSTEM.length);
+  document.getElementById("navActivityCount").textContent=String(activity.length);
+  document.getElementById("navUnreadCount").textContent=String(unread);
+  document.getElementById("navAccountCount").textContent=String(accounts.length);
+  document.getElementById("navBetaCount").textContent=String(betaQueue.length);
+  document.getElementById("navGithubCount").textContent=String(GITHUB_FAMILIES.length);
+  document.getElementById("metricGateways").textContent=String(ECOSYSTEM.length);
+  document.getElementById("metricActivity").textContent=String(remoteMetrics.portalLaunches??activity.length);
+  document.getElementById("metricAccounts").textContent=String(remoteMetrics.newAccounts??accounts.length);
+  document.getElementById("metricUnread").textContent=String(unread);
+  document.getElementById("metricBeta").textContent=String(betaQueue.length);
+}
+function addNotice(title,body,{source="System",level="info",remoteId=""}={}){
+  if(remoteId && notices.some(n=>n.remoteId===remoteId))return;
+  const n={id:uid(),remoteId,title,body,source,level,read:false,at:new Date().toISOString()};
+  notices.unshift(n);notices=notices.slice(0,200);writeJSON(K_NOTICES,notices);updateCounts();renderDashboard();
+  if(Notification?.permission==="granted"){try{new Notification(title,{body})}catch{}}
+}
+function recordLaunch(item){
+  activity.unshift({id:uid(),title:item.title,url:item.url,category:item.category,at:new Date().toISOString()});
+  activity=activity.slice(0,500);writeJSON(K_ACTIVITY,activity);updateCounts();
+}
+function openGateway(item){
+  recordLaunch(item);
+  const w=window.open(item.url,"_blank","noopener,noreferrer");
+  if(!w)window.location.assign(item.url);
+}
+
+
+function githubFamilyPulse(){
+  const repos=githubFamilyCache.repos||[];
+  const families=GITHUB_FAMILIES.map(f=>{
+    const familyRepos=repos.filter(r=>r.owner===f.owner);
+    const sevenDaysAgo=Date.now()-7*86400000;
+    const recent=familyRepos.filter(r=>r.pushedAt&&new Date(r.pushedAt).getTime()>=sevenDaysAgo);
+    const latest=familyRepos
+      .filter(r=>r.pushedAt)
+      .sort((a,b)=>new Date(b.pushedAt)-new Date(a.pushedAt))[0]||null;
+    return {
+      owner:f.owner,
+      label:f.label,
+      total:familyRepos.length,
+      recent:recent.length,
+      latestPush:latest?.pushedAt||"",
+      latestRepo:latest?.name||""
+    };
+  });
+
+  const today=new Date();
+  today.setHours(0,0,0,0);
+  const updatedToday=repos.filter(r=>r.pushedAt&&new Date(r.pushedAt)>=today).length;
+  const active=families.slice().sort((a,b)=>{
+    if(b.recent!==a.recent)return b.recent-a.recent;
+    return new Date(b.latestPush||0)-new Date(a.latestPush||0);
+  })[0]||null;
+
+  return {families,updatedToday,active};
+}
+
+function renderEcosystemPulse(){
+  const pulse=githubFamilyPulse();
+  const changed=githubPulse.changedCore||[];
+  const attention=githubPulse.attention||[];
+
+  document.getElementById("pulseUpdatedToday").textContent=String(pulse.updatedToday);
+  document.getElementById("pulseNewCommits").textContent=String(changed.length);
+  document.getElementById("pulseAttention").textContent=String(attention.length);
+
+  const activeName=document.getElementById("pulseActiveFamily");
+  const activeNote=document.getElementById("pulseActiveFamilyNote");
+  if(pulse.active && pulse.active.total){
+    activeName.textContent=pulse.active.label;
+    activeNote.textContent=pulse.active.recent
+      ? `${pulse.active.recent} repos pushed in the last 7 days`
+      : (pulse.active.latestRepo ? `latest: ${pulse.active.latestRepo}` : "no recent push loaded");
+  }else{
+    activeName.textContent="—";
+    activeNote.textContent="waiting for GitHub data";
+  }
+
+  const maxRecent=Math.max(1,...pulse.families.map(f=>f.recent));
+  const familyList=document.getElementById("pulseFamilyList");
+  familyList.innerHTML=pulse.families.map(f=>{
+    const pct=Math.round((f.recent/maxRecent)*100);
+    const detail=f.total ? `${f.recent} recent · ${f.total} public` : "awaiting public data";
+    return `<div class="pulse-family-row">
+      <strong>${escapeHtml(f.label)}</strong>
+      <span class="pulse-family-bar" aria-hidden="true"><i style="width:${pct}%"></i></span>
+      <small>${escapeHtml(detail)}</small>
+    </div>`;
+  }).join("");
+
+  const attentionList=document.getElementById("pulseAttentionList");
+  if(attention.length){
+    attentionList.innerHTML=
+      `<p class="pulse-attention-title">Attention Signals</p>`+
+      attention.slice(0,6).map(r=>{
+        let reason="",level="warn";
+        if(r.error){reason=`Fetch error: ${r.error}`;level="error"}
+        else{
+          const parts=[];
+          if(r.issues)parts.push(`${r.issues} open issue${r.issues===1?"":"s"}`);
+          if(r.pulls)parts.push(`${r.pulls} open PR${r.pulls===1?"":"s"}`);
+          reason=parts.join(" · ")||"Review repository";
+        }
+        return `<div class="pulse-signal">
+          <span class="feed-dot ${level}"></span>
+          <div><strong>${escapeHtml(r.fullName)}</strong><small>${escapeHtml(reason)}</small></div>
+        </div>`;
+      }).join("");
+  }else{
+    attentionList.innerHTML=
+      `<p class="pulse-attention-title">Attention Signals</p><div class="empty">No core issues, pull requests, or fetch errors are currently recorded.</div>`;
+  }
+}
+
+function renderDashboard(){
+  updateCounts();
+  renderEcosystemPulse();
+  const feed=document.getElementById("dashboardFeed");
+  const list=notices.slice(0,4);
+  feed.innerHTML=list.length?list.map(n=>`<div class="feed-item"><span class="feed-dot ${escapeHtml(n.level||"info")}"></span><div class="feed-copy"><strong>${escapeHtml(n.title)}</strong><small>${escapeHtml(n.body)}</small></div><span class="feed-time">${escapeHtml(formatDateTime(n.at))}</span></div>`).join(""):`<div class="empty">No notices yet.</div>`;
+  const tag=document.getElementById("mailBridgeTag");
+  tag.textContent=settings.bridgeEndpoint?"Bridge configured":"Bridge waiting";
+
+  const accountFeed=document.getElementById("dashboardAccountsFeed");
+  const recentAccounts=accounts.slice(0,4);
+  accountFeed.innerHTML=recentAccounts.length?recentAccounts.map(a=>`<div class="feed-item"><span class="feed-dot success"></span><div class="feed-copy"><strong>${escapeHtml(a.name||a.email||"New account")}</strong><small>${escapeHtml(a.type||"Account")} · ${escapeHtml(a.status||"New")}</small></div><span class="feed-time">${escapeHtml(formatDateTime(a.createdAt||a.at))}</span></div>`).join(""):`<div class="empty">Awaiting account-formation events from the Data Bridge.</div>`;
+
+  const githubFeed=document.getElementById("dashboardGithubFeed");
+  const changedFeed=(githubPulse.changedCore||[]).map(r=>({
+    name:r.name,
+    owner:r.owner||r.fullName?.split("/")[0]||"",
+    message:`New core commit · ${r.commitMessage||r.commitSha?.slice(0,7)||""}`,
+    at:r.commitAt
+  }));
+  const detailedFeed=(githubCache.repos||[]).map(r=>({
+    name:r.name,
+    owner:r.owner||r.fullName?.split("/")[0]||"",
+    message:r.commitMessage||"Core repository metadata loaded",
+    at:r.commitAt||r.pushedAt
+  }));
+  const familyFeed=(githubFamilyCache.repos||[]).slice(0,8).map(r=>({
+    name:r.name,
+    owner:r.owner,
+    message:`Public repository push · ${r.owner}`,
+    at:r.pushedAt
+  }));
+  const repoFeed=[...changedFeed,...detailedFeed,...familyFeed]
+    .filter(r=>r.at)
+    .sort((a,b)=>new Date(b.at||0)-new Date(a.at||0))
+    .filter((r,i,arr)=>arr.findIndex(x=>`${x.owner}/${x.name}`===`${r.owner}/${r.name}`)===i)
+    .slice(0,4);
+  githubFeed.innerHTML=repoFeed.length?repoFeed.map(r=>`<div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>${escapeHtml(r.owner)} / ${escapeHtml(r.name)}</strong><small>${escapeHtml(r.message)}</small></div><span class="feed-time">${escapeHtml(formatDateTime(r.at))}</span></div>`).join(""):`<div class="empty">GitHub intelligence will load from the public repository API.</div>`;
+}
+
+function renderEcosystem(){
+  const q=(document.getElementById("ecosystemSearch").value||"").trim().toLowerCase();
+  const cat=document.getElementById("ecosystemFilter").value;
+  const items=ECOSYSTEM.filter(i=>(!cat||i.category===cat)&&(!q||`${i.title} ${i.category} ${i.desc}`.toLowerCase().includes(q)));
+  const grid=document.getElementById("ecosystemGrid");
+  grid.innerHTML=items.length?items.map((i,idx)=>`<article class="eco-card"><div class="eco-top"><span class="eco-icon">${escapeHtml(i.icon)}</span><span class="eco-category">${escapeHtml(i.category)}</span></div><h3>${escapeHtml(i.title)}</h3><p>${escapeHtml(i.desc)}</p><div class="eco-actions"><button class="launch-btn" type="button" data-eco-index="${ECOSYSTEM.indexOf(i)}">Open ↗</button></div></article>`).join(""):`<div class="empty">No gateways match this filter.</div>`;
+  grid.querySelectorAll("[data-eco-index]").forEach(b=>b.addEventListener("click",()=>openGateway(ECOSYSTEM[Number(b.dataset.ecoIndex)])));
+}
+document.getElementById("ecosystemSearch").addEventListener("input",renderEcosystem);
+document.getElementById("ecosystemFilter").addEventListener("change",renderEcosystem);
+
+
+async function githubFetchJson(url){
+  const res=await fetch(url,{headers:{"Accept":"application/vnd.github+json"},cache:"no-store"});
+  const remaining=res.headers.get("X-RateLimit-Remaining");
+  if(remaining!==null){
+    githubFamilyCache.rateRemaining=Number(remaining);
+  }
+  if(!res.ok){
+    const reset=res.headers.get("X-RateLimit-Reset");
+    const extra=res.status===403&&reset?` · resets ${new Date(Number(reset)*1000).toLocaleTimeString()}`:"";
+    throw new Error(`GitHub ${res.status}${extra}`);
+  }
+  return res.json();
+}
+
+async function fetchGithubFamily(family){
+  const url=`https://api.github.com/users/${encodeURIComponent(family.owner)}/repos?per_page=100&sort=pushed&direction=desc&type=owner`;
+  const repos=await githubFetchJson(url);
+  const publicRepos=Array.isArray(repos)?repos.filter(r=>!r.private):[];
+  return {
+    owner:family.owner,
+    label:family.label,
+    accountUrl:family.accountUrl,
+    rootRepo:family.rootRepo,
+    description:family.description,
+    avatarUrl:publicRepos[0]?.owner?.avatar_url||"",
+    repoCount:publicRepos.length,
+    latestPush:publicRepos[0]?.pushed_at||"",
+    repos:publicRepos.map(r=>({
+      owner:family.owner,
+      label:family.label,
+      name:r.name||"",
+      fullName:r.full_name||`${family.owner}/${r.name||""}`,
+      htmlUrl:r.html_url||`https://github.com/${family.owner}/${r.name||""}`,
+      description:r.description||"",
+      defaultBranch:r.default_branch||"main",
+      pushedAt:r.pushed_at||r.updated_at||"",
+      updatedAt:r.updated_at||"",
+      openItems:Number(r.open_issues_count)||0,
+      archived:Boolean(r.archived),
+      fork:Boolean(r.fork)
+    }))
+  };
+}
+
+async function refreshGithubFamilies(){
+  const families=[];
+  const repos=[];
+  for(const family of GITHUB_FAMILIES){
+    try{
+      const result=await fetchGithubFamily(family);
+      families.push({...result,repos:undefined});
+      repos.push(...result.repos);
+    }catch(err){
+      families.push({
+        ...family,
+        avatarUrl:"",
+        repoCount:null,
+        latestPush:"",
+        error:String(err.message||err)
+      });
+    }
+  }
+  githubFamilyCache={
+    at:Date.now(),
+    families,
+    repos:repos.sort((a,b)=>new Date(b.pushedAt||0)-new Date(a.pushedAt||0)),
+    rateRemaining:githubFamilyCache.rateRemaining
+  };
+  writeJSON(K_GITHUB_FAMILY_CACHE,githubFamilyCache);
+}
+
+async function fetchGithubRepo(fullName){
+  const base=`https://api.github.com/repos/${fullName}`;
+  const [meta,commits,pulls,issues]=await Promise.all([
+    githubFetchJson(base),
+    githubFetchJson(`${base}/commits?per_page=1`),
+    githubFetchJson(`${base}/pulls?state=open&per_page=100`),
+    githubFetchJson(`${base}/issues?state=open&per_page=100`)
+  ]);
+  const commit=Array.isArray(commits)?commits[0]:null;
+  const realIssues=Array.isArray(issues)?issues.filter(i=>!i.pull_request):[];
+  return {
+    fullName,
+    name:meta.name||fullName.split("/")[1],
+    owner:fullName.split("/")[0],
+    htmlUrl:meta.html_url||`https://github.com/${fullName}`,
+    description:meta.description||"",
+    defaultBranch:meta.default_branch||"main",
+    pushedAt:meta.pushed_at||meta.updated_at||"",
+    updatedAt:meta.updated_at||"",
+    issues:realIssues.length,
+    pulls:Array.isArray(pulls)?pulls.length:0,
+    commitSha:commit?.sha||"",
+    commitMessage:commit?.commit?.message?.split("\n")[0]||"",
+    commitAt:commit?.commit?.committer?.date||commit?.commit?.author?.date||""
+  };
+}
+
+async function refreshGitHub(manual=false){
+  const btn=document.getElementById("refreshGithub");
+  if(btn){btn.disabled=true;btn.textContent="Refreshing…"}
+  try{
+    await refreshGithubFamilies();
+
+    const repos=[];
+    for(const repo of WATCHED_REPOS){
+      try{repos.push(await fetchGithubRepo(repo))}
+      catch(err){repos.push({fullName:repo,name:repo.split("/")[1],owner:repo.split("/")[0],error:String(err.message||err)})}
+    }
+
+    const previous=githubState||{};
+    const changedCore=[];
+    repos.forEach(r=>{
+      if(r.commitSha && previous[r.fullName] && previous[r.fullName]!==r.commitSha){
+        changedCore.push({
+          fullName:r.fullName,
+          name:r.name,
+          owner:r.owner,
+          commitSha:r.commitSha,
+          commitMessage:r.commitMessage||"",
+          commitAt:r.commitAt||r.pushedAt||new Date().toISOString()
+        });
+        addNotice(
+          "New GitHub commit",
+          `${r.fullName}: ${r.commitMessage||r.commitSha.slice(0,7)}`,
+          {source:"GitHub",level:"info",remoteId:`gh:${r.fullName}:${r.commitSha}`}
+        );
+      }
+      if(r.commitSha)previous[r.fullName]=r.commitSha;
+    });
+
+    const attention=repos
+      .filter(r=>r.error || Number(r.issues)>0 || Number(r.pulls)>0)
+      .map(r=>({
+        fullName:r.fullName,
+        name:r.name,
+        owner:r.owner,
+        error:r.error||"",
+        issues:Number(r.issues)||0,
+        pulls:Number(r.pulls)||0,
+        pushedAt:r.pushedAt||""
+      }));
+
+    githubPulse={at:Date.now(),changedCore,attention};
+    writeJSON(K_GITHUB_PULSE,githubPulse);
+
+    githubState=previous;
+    writeJSON(K_GITHUB_STATE,githubState);
+    githubCache={at:Date.now(),repos};
+    writeJSON(K_GITHUB_CACHE,githubCache);
+
+    renderGithub();
+    renderDashboard();
+    if(manual){
+      addNotice(
+        "GitHub intelligence refreshed",
+        "Four account families and the detailed core watch were refreshed.",
+        {source:"GitHub",level:"success"}
+      );
+    }
+  }catch(err){
+    if(manual)addNotice("GitHub refresh failed",String(err.message||err),{source:"GitHub",level:"error"});
+  }finally{
+    if(btn){btn.disabled=false;btn.textContent="Refresh GitHub"}
+  }
+}
+
+function renderGithubFamilies(){
+  const families=githubFamilyCache.families||[];
+  const familyGrid=document.getElementById("githubFamilyGrid");
+
+  familyGrid.innerHTML=families.length?families.map(f=>{
+    const initials=(f.label||f.owner||"GH").split(/\s+/).map(x=>x[0]).join("").slice(0,3).toUpperCase();
+    const avatar=f.avatarUrl
+      ? `<img src="${escapeHtml(f.avatarUrl)}" alt="">`
+      : escapeHtml(initials||"GH");
+    const count=f.repoCount===null||f.repoCount===undefined?"—":String(f.repoCount);
+    const latest=f.latestPush?formatDateTime(f.latestPush):"No public push loaded";
+    return `<article class="github-family-card">
+      <span class="github-family-avatar">${avatar}</span>
+      <h3>${escapeHtml(f.label||f.owner)}</h3>
+      <p>${escapeHtml(f.error||f.description||"GitHub account family")}</p>
+      <div class="github-family-meta">
+        <span>${escapeHtml(count)} public repos</span>
+        <span>${escapeHtml(latest)}</span>
+      </div>
+      <div class="github-family-actions">
+        <a class="small-link" href="${escapeHtml(f.accountUrl)}" target="_blank" rel="noopener noreferrer">Open Account ↗</a>
+        <button class="small-btn github-family-filter" type="button" data-owner="${escapeHtml(f.owner)}">Show Repositories</button>
+      </div>
+    </article>`;
+  }).join(""):`<div class="empty">GitHub account families have not been loaded yet.</div>`;
+
+  familyGrid.querySelectorAll(".github-family-filter").forEach(btn=>btn.addEventListener("click",()=>{
+    document.getElementById("githubOwnerFilter").value=btn.dataset.owner||"";
+    renderGithubRepositoryDirectory();
+    document.getElementById("githubRepoRows")?.closest(".panel")?.scrollIntoView({behavior:"smooth",block:"start"});
+  }));
+}
+
+function renderGithubRepositoryDirectory(){
+  const allRepos=githubFamilyCache.repos||[];
+  const q=(document.getElementById("githubRepoSearch")?.value||"").trim().toLowerCase();
+  const owner=document.getElementById("githubOwnerFilter")?.value||"";
+  const repos=allRepos.filter(r=>{
+    if(owner && r.owner!==owner)return false;
+    if(!q)return true;
+    return `${r.owner} ${r.name} ${r.fullName} ${r.description}`.toLowerCase().includes(q);
+  });
+
+  document.getElementById("githubRepoCountTag").textContent=`${repos.length} repositor${repos.length===1?"y":"ies"}`;
+
+  const rows=document.getElementById("githubRepoRows");
+  rows.innerHTML=repos.length?repos.map(r=>`<tr>
+    <td>${escapeHtml(r.label||r.owner)}</td>
+    <td><strong>${escapeHtml(r.name)}</strong>${r.archived?" <small>· archived</small>":""}</td>
+    <td>${escapeHtml(formatDateTime(r.pushedAt))}</td>
+    <td>${escapeHtml(r.defaultBranch||"main")}</td>
+    <td>${Number(r.openItems)||0}</td>
+    <td><a class="small-link" href="${escapeHtml(r.htmlUrl)}" target="_blank" rel="noopener noreferrer">Open ↗</a></td>
+  </tr>`).join(""):`<tr><td colspan="6">No public repositories match this filter.</td></tr>`;
+}
+
+function renderGithub(){
+  const detailed=githubCache.repos||[];
+  const publicRepos=githubFamilyCache.repos||[];
+  const today=new Date();today.setHours(0,0,0,0);
+
+  const updatedToday=publicRepos.filter(r=>r.pushedAt&&new Date(r.pushedAt)>=today).length;
+
+  document.getElementById("githubAccounts").textContent=String(GITHUB_FAMILIES.length);
+  document.getElementById("githubPublicRepos").textContent=String(publicRepos.length);
+  document.getElementById("githubUpdatedToday").textContent=String(updatedToday);
+  document.getElementById("githubWatched").textContent=String(WATCHED_REPOS.length);
+  document.getElementById("githubRateRemaining").textContent=
+    githubFamilyCache.rateRemaining===null||githubFamilyCache.rateRemaining===undefined
+      ?"—"
+      :String(githubFamilyCache.rateRemaining);
+
+  const coreIssues=detailed.reduce((n,r)=>n+(Number(r.issues)||0),0);
+  const corePulls=detailed.reduce((n,r)=>n+(Number(r.pulls)||0),0);
+  const coreErrors=detailed.filter(r=>r.error).length;
+  const summary=document.getElementById("coreWatchSummary");
+  if(summary){
+    const parts=[
+      `${detailed.length||WATCHED_REPOS.length} watched`,
+      `${coreIssues} open issue${coreIssues===1?"":"s"}`,
+      `${corePulls} open PR${corePulls===1?"":"s"}`
+    ];
+    if(coreErrors)parts.push(`${coreErrors} fetch error${coreErrors===1?"":"s"}`);
+    summary.textContent=parts.join(" · ");
+  }
+
+  const familyTag=document.getElementById("githubFamilyTag");
+  if(familyTag){
+    familyTag.textContent=githubFamilyCache.at
+      ? `Updated ${formatDateTime(new Date(githubFamilyCache.at).toISOString())}`
+      : "Public discovery";
+  }
+
+  renderGithubFamilies();
+  renderGithubRepositoryDirectory();
+
+  const grid=document.getElementById("githubGrid");
+  grid.innerHTML=detailed.length?detailed.map(r=>`<article class="eco-card">
+    <div class="eco-top"><span class="eco-icon">GH</span><span class="eco-category">${escapeHtml(r.owner||"Repository")} · ${escapeHtml(r.defaultBranch||"main")}</span></div>
+    <h3>${escapeHtml(r.name)}</h3>
+    <p>${escapeHtml(r.error||r.commitMessage||r.description||"Repository metadata")}</p>
+    <div class="feed" style="margin:0 0 12px">
+      <div class="feed-item"><span class="feed-dot info"></span><div class="feed-copy"><strong>Last push</strong><small>${escapeHtml(formatDateTime(r.pushedAt))}</small></div></div>
+      <div class="feed-item"><span class="feed-dot warn"></span><div class="feed-copy"><strong>Issues / PRs</strong><small>${Number(r.issues)||0} issues · ${Number(r.pulls)||0} pull requests</small></div></div>
+    </div>
+    <div class="eco-actions"><a class="launch-btn" href="${escapeHtml(r.htmlUrl||`https://github.com/${r.fullName}`)}" target="_blank" rel="noopener noreferrer">Open Repository ↗</a></div>
+  </article>`).join(""):`<div class="empty">Detailed root monitoring has not been loaded yet.</div>`;
+}
+
+document.getElementById("githubRepoSearch").addEventListener("input",renderGithubRepositoryDirectory);
+document.getElementById("githubOwnerFilter").addEventListener("change",renderGithubRepositoryDirectory);
+document.getElementById("refreshGithub").onclick=()=>refreshGitHub(true);
+
+function lastSevenDays(){
+  const out=[];
+  const now=new Date();
+  for(let i=6;i>=0;i--){const d=new Date(now);d.setHours(0,0,0,0);d.setDate(d.getDate()-i);out.push(d)}
+  return out;
+}
+function renderActivity(){
+  updateCounts();
+  const days=lastSevenDays();
+  const counts=days.map(d=>{
+    const next=new Date(d);next.setDate(next.getDate()+1);
+    return activity.filter(a=>{const t=new Date(a.at);return t>=d&&t<next}).length;
+  });
+  const max=Math.max(1,...counts);
+  document.getElementById("activityChart").innerHTML=days.map((d,i)=>`<div class="bar-col"><span class="bar-value">${counts[i]}</span><span class="bar" style="height:${Math.max(3,(counts[i]/max)*150)}px"></span><span class="bar-label">${d.toLocaleDateString(undefined,{weekday:"short"})}</span></div>`).join("");
+  const rows=document.getElementById("activityRows");
+  rows.innerHTML=activity.length?activity.slice(0,100).map(a=>`<tr><td>${escapeHtml(formatDateTime(a.at))}</td><td>${escapeHtml(a.title)}</td><td>${escapeHtml(a.category)}</td><td><small>${escapeHtml(a.url)}</small></td></tr>`).join(""):`<tr><td colspan="4">No administrator-origin launches recorded yet.</td></tr>`;
+  document.getElementById("telemetryTag").textContent=settings.bridgeEndpoint?"Bridge configured":"Not connected";
+}
+
+function renderNotifications(){
+  updateCounts();
+  const list=document.getElementById("notificationList");
+  list.innerHTML=notices.length?notices.map(n=>`<article class="notice-card ${n.read?"":"unread"}" data-notice-id="${escapeHtml(n.id)}"><span class="notice-icon">${n.source==="Email"?"✉":n.source==="Beta"?"β":"●"}</span><div class="notice-copy"><strong>${escapeHtml(n.title)}</strong><p>${escapeHtml(n.body)}</p></div><div class="notice-meta">${escapeHtml(n.source)}<br>${escapeHtml(formatDateTime(n.at))}</div></article>`).join(""):`<div class="empty">No notifications.</div>`;
+  list.querySelectorAll("[data-notice-id]").forEach(el=>el.addEventListener("click",()=>{const n=notices.find(x=>x.id===el.dataset.noticeId);if(n&&!n.read){n.read=true;writeJSON(K_NOTICES,notices);renderNotifications();renderDashboard()}}));
+}
+
+
+function normalizeAccount(a){
+  return {
+    id:a.id||a.accountId||uid(),
+    remoteId:a.remoteId||a.id||"",
+    createdAt:a.createdAt||a.at||new Date().toISOString(),
+    name:a.name||a.displayName||a.household||"",
+    email:a.email||"",
+    type:a.type||a.accountType||"Account",
+    source:a.source||"Account Service",
+    status:a.status||"New"
+  };
+}
+function mergeAccounts(incoming){
+  let added=0;
+  (incoming||[]).forEach(raw=>{
+    const a=normalizeAccount(raw);
+    const key=a.remoteId||a.id||a.email;
+    const exists=accounts.some(x=>(x.remoteId||x.id||x.email)===key);
+    if(!exists){
+      accounts.unshift(a);added++;
+      addNotice("New account formed",`${a.name||a.email||"Account"} · ${a.type}`,{source:"Accounts",level:"success",remoteId:a.remoteId?`account:${a.remoteId}`:""});
+    }
+  });
+  accounts=accounts.slice(0,500);
+  writeJSON(K_ACCOUNTS,accounts);
+  return added;
+}
+function renderAccounts(){
+  updateCounts();
+  const now=Date.now();
+  const week=accounts.filter(a=>now-new Date(a.createdAt||a.at).getTime()<=7*86400000).length;
+  const pending=accounts.filter(a=>/pending|new|review/i.test(a.status||"")).length;
+  document.getElementById("accountTotal").textContent=String(accounts.length);
+  document.getElementById("accountWeek").textContent=String(week);
+  document.getElementById("accountPending").textContent=String(pending);
+  document.getElementById("accountBridgeState").textContent=settings.bridgeEndpoint?"ON":"—";
+  const rows=document.getElementById("accountRows");
+  rows.innerHTML=accounts.length?accounts.map(a=>`<tr><td>${escapeHtml(formatDateTime(a.createdAt||a.at))}</td><td>${escapeHtml(a.name||"—")}</td><td>${escapeHtml(a.type||"Account")}</td><td>${escapeHtml(a.email||"—")}</td><td>${escapeHtml(a.source||"—")}</td><td>${escapeHtml(a.status||"New")}</td></tr>`).join(""):`<tr><td colspan="6">No account events received yet. Configure the Data Bridge when the account service is ready.</td></tr>`;
+}
+document.getElementById("exportAccounts").onclick=()=>downloadJSON("verve-n-veda-accounts.json",accounts);
+document.getElementById("syncAccounts").onclick=()=>syncBridge(true);
+
+function renderBeta(){
+  updateCounts();
+  document.getElementById("betaSummaryTag").textContent=`${betaQueue.length} record${betaQueue.length===1?"":"s"}`;
+  const rows=document.getElementById("betaRows");
+  rows.innerHTML=betaQueue.length?betaQueue.map(b=>`<tr><td>${escapeHtml(formatDateTime(b.at))}</td><td>${escapeHtml(b.name)}</td><td>${escapeHtml(b.email)}</td><td>${escapeHtml(b.program)}</td><td>${escapeHtml(b.status)}</td><td><button class="small-btn beta-delete" type="button" data-beta-id="${escapeHtml(b.id)}">Remove</button></td></tr>`).join(""):`<tr><td colspan="6">No beta leads in the local preview queue.</td></tr>`;
+  rows.querySelectorAll(".beta-delete").forEach(btn=>btn.addEventListener("click",()=>{betaQueue=betaQueue.filter(x=>x.id!==btn.dataset.betaId);writeJSON(K_BETA,betaQueue);renderBeta();renderDashboard()}));
+}
+
+document.getElementById("betaForm").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const lead={
+    id:uid(),at:new Date().toISOString(),
+    name:document.getElementById("betaName").value.trim(),
+    email:document.getElementById("betaEmail").value.trim(),
+    program:document.getElementById("betaProgram").value,
+    status:document.getElementById("betaStatus").value,
+    note:document.getElementById("betaNote").value.trim()
+  };
+  if(!lead.name||!lead.email)return;
+  betaQueue.unshift(lead);betaQueue=betaQueue.slice(0,250);writeJSON(K_BETA,betaQueue);
+  addNotice("New beta lead staged",`${lead.name} · ${lead.program}`,{source:"Beta",level:"success"});
+  e.target.reset();renderBeta();renderDashboard();
+  if(settings.bridgeEndpoint){
+    try{await fetch(settings.bridgeEndpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({type:"beta_lead",lead})})}catch{}
+  }
+});
+
+function downloadJSON(name,data){
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)
+}
+document.getElementById("exportActivity").onclick=()=>downloadJSON("verve-n-veda-admin-activity.json",activity);
+document.getElementById("exportBeta").onclick=()=>downloadJSON("verve-n-veda-beta-queue.json",betaQueue);
+document.getElementById("clearActivity").onclick=()=>{if(confirm("Clear the local administrator launch log?")){activity=[];writeJSON(K_ACTIVITY,activity);renderActivity();renderDashboard()}};
+document.getElementById("markAllRead").onclick=()=>{notices.forEach(n=>n.read=true);writeJSON(K_NOTICES,notices);renderNotifications();renderDashboard()};
+document.getElementById("clearNotifications").onclick=()=>{if(confirm("Clear local notifications?")){notices=[];writeJSON(K_NOTICES,notices);renderNotifications();renderDashboard()}};
+document.getElementById("addLocalNotice").onclick=()=>{const v=prompt("Local admin note");if(v)addNotice("Administrator note",v,{source:"Local",level:"info"})};
+
+document.querySelectorAll(".copy-mail").forEach(b=>b.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent="Copied";setTimeout(()=>b.textContent="Copy Address",1200)}catch{}}));
+
+document.getElementById("enableAlerts").onclick=async()=>{
+  if(!("Notification" in window)){alert("Browser notifications are not supported here.");return}
+  const p=await Notification.requestPermission();
+  document.getElementById("enableAlerts").textContent=p==="granted"?"Alerts Enabled":"Desktop Alerts";
+};
+
+function renderSettings(){
+  document.getElementById("bridgeEndpoint").value=settings.bridgeEndpoint||"";
+  const st=document.getElementById("bridgeState");
+  st.classList.toggle("connected",Boolean(settings.bridgeEndpoint));
+  st.querySelector("span:last-child").textContent=settings.bridgeEndpoint?"Endpoint configured; use Test Connection.":"No endpoint configured";
+}
+document.getElementById("saveSettings").onclick=()=>{settings.bridgeEndpoint=document.getElementById("bridgeEndpoint").value.trim();writeJSON(K_SETTINGS,settings);renderSettings();renderDashboard();addNotice("Admin settings saved",settings.bridgeEndpoint?"Data Bridge endpoint configured.":"Data Bridge endpoint cleared.",{source:"System",level:"info"})};
+document.getElementById("testBridge").onclick=()=>syncBridge(true);
+document.getElementById("syncNow").onclick=()=>syncBridge(true);
+
+async function syncBridge(showFeedback=false){
+  const endpoint=(settings.bridgeEndpoint||"").trim();
+  if(!endpoint){if(showFeedback)alert("Configure a Data Bridge endpoint in Settings first.");return false}
+  const state=document.getElementById("bridgeState");
+  try{
+    const res=await fetch(endpoint,{method:"GET",cache:"no-store",headers:{"Accept":"application/json"}});
+    if(!res.ok)throw new Error(`HTTP ${res.status}`);
+    const data=await res.json();
+    if(Array.isArray(data.notifications)){
+      data.notifications.forEach(n=>addNotice(n.title||"Remote notification",n.body||"",{source:n.source||"Bridge",level:n.level||"info",remoteId:n.id||""}));
+    }
+    if(Array.isArray(data.accounts))mergeAccounts(data.accounts);
+    if(Array.isArray(data.beta)){
+      data.beta.forEach(lead=>{if(lead?.id&&!betaQueue.some(x=>x.remoteId===lead.id)){betaQueue.unshift({id:uid(),remoteId:lead.id,at:lead.at||new Date().toISOString(),name:lead.name||"Remote lead",email:lead.email||"",program:lead.program||"General Verve N Veda Beta",status:lead.status||"New",note:lead.note||""})}});
+      betaQueue=betaQueue.slice(0,250);writeJSON(K_BETA,betaQueue);
+    }
+    if(data.metrics&&typeof data.metrics==="object")remoteMetrics=data.metrics;
+    state?.classList.add("connected");
+    if(state)state.querySelector("span:last-child").textContent="Connected successfully";
+    document.getElementById("telemetryTag").textContent="Bridge connected";
+    document.getElementById("mailBridgeTag").textContent="Bridge connected";
+    renderDashboard();renderAccounts();renderBeta();
+    if(showFeedback)addNotice("Data Bridge synchronized","Remote admin feed synchronized successfully.",{source:"Bridge",level:"success"});
+    return true;
+  }catch(err){
+    state?.classList.remove("connected");
+    if(state)state.querySelector("span:last-child").textContent=`Connection failed: ${err.message}`;
+    if(showFeedback)addNotice("Data Bridge connection failed",String(err.message||err),{source:"Bridge",level:"error"});
+    return false;
+  }
+}
+
+document.getElementById("bridgeEndpoint").addEventListener("change",()=>{});
+document.querySelectorAll("[data-view='settings']").forEach(b=>b.addEventListener("click",renderSettings));
+
+/* =========================================================
+   ORIGINAL MINI CLOUD — preserved and integrated
+   ========================================================= */
+function encrypt(text){return text==null?"":String(text)}
+function decrypt(data){return data==null?"":String(data)}
+const editor=document.getElementById("editor");
+const imagePreview=document.getElementById("imagePreview");
+const fileInput=document.getElementById("fileInput");
+let fs=readJSON("VNV_MINI_CLOUD_FS_V2",null);
+if(!fs){fs={name:"root",type:"folder",children:[{name:"apps",type:"folder",children:[]}]}}
+let currentNode=null,currentPath=[];
+
+function renderTree(){const tree=document.getElementById("tree");tree.innerHTML="";renderNode(fs,tree,[]);renderDashboard()}
+function renderNode(node,parent,path){
+  node.children?.forEach((child,i)=>{
+    const li=document.createElement("li");li.textContent=child.name;li.className=(child.type==="file"&&child.name==="index.html")?"app":child.type;
+    li.onclick=e=>{e.stopPropagation();openNode(child,path.concat(i))};parent.appendChild(li);
+    if(child.type==="folder"){const ul=document.createElement("ul");parent.appendChild(ul);renderNode(child,ul,path.concat(i))}
+  })
+}
+function lookup(path){return path.reduce((n,i)=>n.children[i],fs)}
+function updatePathBar(path){const pathEl=document.getElementById("path");if(!path.length){pathEl.textContent="/";return}const parts=path.map((_,i)=>lookup(path.slice(0,i+1)).name);pathEl.textContent="/"+parts.join("/")}
+function openNode(node,path){
+  currentNode=node;currentPath=path;updatePathBar(path);
+  if(node.type!=="file"){editor.value="";imagePreview.style.display="none";imagePreview.src="";return}
+  const kind=node.fileKind||(typeof node.content==="string"&&node.content.startsWith("data:image/")?"image":"text");
+  if(kind==="image"){editor.value="";imagePreview.style.display="block";imagePreview.src=node.content||""}
+  else{editor.value=decrypt(node.content||"");imagePreview.style.display="none";imagePreview.src=""}
+}
+function parentFolder(){return currentPath.length?lookup(currentPath.slice(0,-1)):fs}
+function getTargetFolderForNew(){return currentNode&&currentNode.type==="folder"?currentNode:parentFolder()}
+function newFolder(){
+  const name=prompt("Folder name?");if(!name)return;const target=getTargetFolderForNew();target.children=target.children||[];target.children.push({name,type:"folder",children:[]});
+  const newIndex=target.children.length-1;const basePath=currentNode&&currentNode.type==="folder"?currentPath.slice():currentPath.slice(0,-1);const newPath=basePath.concat(newIndex);persist();openNode(lookup(newPath),newPath)
+}
+function newFile(){
+  const name=prompt("File name?");if(!name)return;const target=getTargetFolderForNew();target.children=target.children||[];target.children.push({name,type:"file",content:"",versions:[],fileKind:"text"});
+  const newIndex=target.children.length-1;const basePath=currentNode&&currentNode.type==="folder"?currentPath.slice():currentPath.slice(0,-1);const newPath=basePath.concat(newIndex);persist();openNode(lookup(newPath),newPath)
+}
+function uploadFile(){fileInput.value="";fileInput.click()}
+fileInput.addEventListener("change",e=>{
+  const file=e.target.files[0];if(!file)return;const target=getTargetFolderForNew();target.children=target.children||[];const isImage=file.type.startsWith("image/");const reader=new FileReader();
+  reader.onload=()=>{const node={name:file.name,type:"file",content:reader.result,versions:[],fileKind:isImage?"image":"text",mime:file.type||undefined};target.children.push(node);const newIndex=target.children.length-1;const basePath=currentNode&&currentNode.type==="folder"?currentPath.slice():currentPath.slice(0,-1);const newPath=basePath.concat(newIndex);persist();openNode(lookup(newPath),newPath)};
+  if(isImage)reader.readAsDataURL(file);else reader.readAsText(file)
+});
+function saveFile(){
+  if(!currentNode||currentNode.type!=="file")return;
+  if(currentNode.fileKind==="image"){alert("Image files can't be edited here. Upload a new image file to replace it.");return}
+  currentNode.versions=currentNode.versions||[];if(typeof currentNode.content==="string")currentNode.versions.unshift(currentNode.content);currentNode.versions=currentNode.versions.slice(0,10);currentNode.content=encrypt(editor.value);persist();addNotice("Mini Cloud file saved",currentNode.name,{source:"Mini Cloud",level:"success"})
+}
+function showVersions(){
+  if(!currentNode||currentNode.type!=="file"){alert("Select a file to view versions.");return}
+  if(currentNode.fileKind==="image"){alert("Version restore is not available for image files.");return}
+  if(!currentNode.versions?.length){alert("No versions recorded for this file yet.");return}
+  const indexStr=prompt(`Restore version index:\n0 = most recent previous version\n(Available: 0–${currentNode.versions.length-1})`);if(indexStr===null)return;
+  const v=parseInt(indexStr,10);if(isNaN(v)||v<0||v>=currentNode.versions.length){alert("Invalid version index.");return}
+  currentNode.content=currentNode.versions[v];editor.value=decrypt(currentNode.content);persist()
+}
+function launchApp(){
+  if(currentNode?.type==="file"&&currentNode.name==="index.html"){const html=decrypt(currentNode.content||"");const win=window.open();if(win){win.document.write(html);win.document.close()}else alert("Popup blocked. Please allow popups for this site to launch the app.")}
+  else alert('Select an "index.html" file inside an app folder to launch.')
+}
+function deleteItem(){
+  if(!currentNode||!currentPath.length){alert("Select a file or folder to delete.");return}
+  if(!confirm(`Delete "${currentNode.name}"? This cannot be undone.`))return;
+  parentFolder().children.splice(currentPath[currentPath.length-1],1);currentNode=null;currentPath=[];editor.value="";imagePreview.style.display="none";imagePreview.src="";updatePathBar([]);persist()
+}
+function exportCloud(){downloadJSON("mini-cloud.json",fs)}
+function importCloud(){
+  const input=document.createElement("input");input.type="file";input.accept="application/json";
+  input.onchange=e=>{const file=e.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{try{const imported=JSON.parse(reader.result);if(!imported||imported.type!=="folder"||!Array.isArray(imported.children)){alert("Invalid cloud file format.");return}fs=imported;currentNode=null;currentPath=[];editor.value="";imagePreview.style.display="none";imagePreview.src="";updatePathBar([]);persist()}catch{alert("Could not import cloud file (invalid JSON).")}};reader.readAsText(file)};input.click()
+}
+function persist(){writeJSON("VNV_MINI_CLOUD_FS_V2",fs);renderTree()}
+function countCloudFiles(node){let n=0;(node.children||[]).forEach(c=>{if(c.type==="file")n++;else n+=countCloudFiles(c)});return n}
+
+/* =========================================================
+   INITIALIZATION
+   ========================================================= */
+initTheme();
+renderGate();
+renderTree();
+updatePathBar([]);
+renderSettings();
+renderEcosystem();
+renderActivity();
+renderNotifications();
+renderAccounts();
+renderBeta();
+renderGithub();
+
+if(!(githubPulse.at) && Array.isArray(githubCache.repos) && githubCache.repos.length){
+  githubPulse={
+    at:Date.now(),
+    changedCore:[],
+    attention:githubCache.repos
+      .filter(r=>r.error || Number(r.issues)>0 || Number(r.pulls)>0)
+      .map(r=>({
+        fullName:r.fullName,
+        name:r.name,
+        owner:r.owner,
+        error:r.error||"",
+        issues:Number(r.issues)||0,
+        pulls:Number(r.pulls)||0,
+        pushedAt:r.pushedAt||""
+      }))
+  };
+  writeJSON(K_GITHUB_PULSE,githubPulse);
+}
+
+renderDashboard();
+showView("dashboard");
+
+const githubCacheAge=Date.now()-(Number(githubCache.at)||0);
+const githubFamilyCacheAge=Date.now()-(Number(githubFamilyCache.at)||0);
+if(
+  !githubCache.repos?.length ||
+  !githubFamilyCache.repos?.length ||
+  githubCacheAge>30*60*1000 ||
+  githubFamilyCacheAge>30*60*1000
+){
+  window.setTimeout(()=>refreshGitHub(false),900);
+}
+
+if(settings.bridgeEndpoint){
+  window.setTimeout(()=>syncBridge(false),1200);
+  window.setInterval(()=>syncBridge(false),60000);
+}
+</script>
+  <script src="repository-architecture.js"></script>
+  <script src="integrity-review-panel.js"></script>
+
+</body>
+</html>
