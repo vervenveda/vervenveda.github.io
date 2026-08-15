@@ -297,6 +297,44 @@
       .admin-code-row{grid-template-columns:1fr}
       .admin-code-toggle{min-height:44px}
     }
+    .admin-gate-breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:7px;
+  margin:0 0 18px;
+  color:#6d756f;
+  font-family:var(--sans);
+  font-size:10px;
+  letter-spacing:.06em;
+  line-height:1.4;
+  text-transform:uppercase;
+}
+
+.admin-gate-breadcrumbs a,
+.admin-gate-breadcrumbs span,
+.admin-gate-breadcrumbs strong{
+  font:inherit;
+}
+
+.admin-gate-breadcrumbs a{
+  color:#4e5b55;
+  text-decoration:none;
+}
+
+.admin-gate-breadcrumbs strong{
+  color:#8f2424;
+  font-weight:700;
+}
+
+.admin-gate-breadcrumbs .next{
+  color:#8a8f8c;
+}
+
+.admin-gate-breadcrumbs .sep{
+  color:#b59a67;
+  user-select:none;
+}
 
     /* HEADER — 72px desktop, aligned to ticker through shared variables */
     .site-header{
@@ -3548,50 +3586,163 @@
   </header>
 
 
-  <div class="admin-gate-overlay" id="adminGate" aria-hidden="true">
-    <section class="admin-gate-panel" role="dialog" aria-modal="true" aria-labelledby="adminGateTitle">
-      <div class="admin-gate-top">
-        <div>
-          <span class="admin-gate-kicker">Administrator Access</span>
-          <h2 id="adminGateTitle">Admin Gate</h2>
-        </div>
-        <button class="admin-gate-close" id="adminGateClose" type="button" aria-label="Close administrator gate">×</button>
-      </div>
-      <p>Enter the 10-digit local administrator gate code to continue to the Verve N Veda administration portal.</p>
+ <div class="admin-gate-overlay" id="adminGate" aria-hidden="true">
+  <section class="admin-gate-panel" role="dialog" aria-modal="true" aria-labelledby="adminGateTitle">
 
-      <form class="admin-gate-form" id="adminGateForm" novalidate>
-        <label for="adminCode">10-digit gate code</label>
-        <div class="admin-code-row">
-          <input class="admin-code-input" id="adminCode" name="adminCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="off" aria-describedby="adminGateStatus" required>
-          <button class="admin-code-toggle" id="adminShowCode" type="button" aria-pressed="false">Show</button>
-        </div>
-        <p class="admin-gate-status" id="adminGateStatus" role="status" aria-live="polite"></p>
-        <button class="admin-gate-submit" type="submit">Unlock Admin Portal</button>
+    <!-- ADMIN BREADCRUMBS -->
+    <nav class="admin-gate-breadcrumbs" aria-label="Administrator path">
+      <a href="/">Verve N Veda</a>
+      <span class="sep" aria-hidden="true">›</span>
+      <strong aria-current="page">Administrator Gate</strong>
+      <span class="sep" aria-hidden="true">›</span>
+      <span class="next" id="adminBreadcrumbCommand">Command Center</span>
+    </nav>
+
+    <div class="admin-gate-top">
+      <div>
+        <span class="admin-gate-kicker">Administrator Access</span>
+        <h2 id="adminGateTitle">Admin Gate</h2>
+      </div>
+      <button
+        class="admin-gate-close"
+        id="adminGateClose"
+        type="button"
+        aria-label="Close administrator gate">×</button>
+    </div>
+
+    <p>
+      Enter the 10-digit local administrator gate code to continue
+      to the Verve N Veda administration portal.
+    </p>
+
+    <form class="admin-gate-form" id="adminGateForm" novalidate>
+      <label for="adminCode">10-digit gate code</label>
+
+      <div class="admin-code-row">
+        <input
+          class="admin-code-input"
+          id="adminCode"
+          name="adminCode"
+          type="password"
+          inputmode="numeric"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          minlength="10"
+          autocomplete="off"
+          aria-describedby="adminGateStatus"
+          required>
+
+        <button
+          class="admin-code-toggle"
+          id="adminShowCode"
+          type="button"
+          aria-pressed="false">Show</button>
+      </div>
+
+      <p
+        class="admin-gate-status"
+        id="adminGateStatus"
+        role="status"
+        aria-live="polite"></p>
+
+      <button class="admin-gate-submit" type="submit">
+        Unlock Admin Portal
+      </button>
+    </form>
+
+    <div id="adminUnlocked" hidden>
+      <p class="admin-gate-status ok">
+        Gate unlocked for this browser session.
+      </p>
+
+      <div class="admin-unlocked-actions">
+        <button
+          class="admin-gate-submit"
+          id="adminOpenPortal"
+          type="button">
+          Open Admin Portal
+        </button>
+
+        <button
+          class="admin-gate-secondary"
+          id="adminChangeToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="adminChangePanel">
+          Change Gate Code
+        </button>
+
+        <button
+          class="admin-gate-secondary"
+          id="adminLockNow"
+          type="button">
+          Lock This Session
+        </button>
+      </div>
+
+      <form
+        class="admin-gate-form admin-change-panel"
+        id="adminChangePanel"
+        hidden
+        novalidate>
+
+        <label for="adminCurrentCode">Current 10-digit code</label>
+        <input
+          class="admin-code-input"
+          id="adminCurrentCode"
+          type="password"
+          inputmode="numeric"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          minlength="10"
+          autocomplete="off"
+          required>
+
+        <label for="adminNewCode">New 10-digit code</label>
+        <input
+          class="admin-code-input"
+          id="adminNewCode"
+          type="password"
+          inputmode="numeric"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          minlength="10"
+          autocomplete="new-password"
+          required>
+
+        <label for="adminConfirmCode">Confirm new code</label>
+        <input
+          class="admin-code-input"
+          id="adminConfirmCode"
+          type="password"
+          inputmode="numeric"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          minlength="10"
+          autocomplete="new-password"
+          required>
+
+        <p
+          class="admin-gate-status"
+          id="adminChangeStatus"
+          role="status"
+          aria-live="polite"></p>
+
+        <button class="admin-gate-submit" type="submit">
+          Save New Gate Code
+        </button>
       </form>
+    </div>
 
-      <div id="adminUnlocked" hidden>
-        <p class="admin-gate-status ok">Gate unlocked for this browser session.</p>
-        <div class="admin-unlocked-actions">
-          <button class="admin-gate-submit" id="adminOpenPortal" type="button">Open Admin Portal</button>
-          <button class="admin-gate-secondary" id="adminChangeToggle" type="button" aria-expanded="false" aria-controls="adminChangePanel">Change Gate Code</button>
-          <button class="admin-gate-secondary" id="adminLockNow" type="button">Lock This Session</button>
-        </div>
+    <p class="admin-gate-note">
+      <strong>Local gate:</strong>
+      this is a creative browser-local entrance gate.
+      The Admin Cloud will use its own server-side administrator
+      authentication for protected account data.
+    </p>
 
-        <form class="admin-gate-form admin-change-panel" id="adminChangePanel" hidden novalidate>
-          <label for="adminCurrentCode">Current 10-digit code</label>
-          <input class="admin-code-input" id="adminCurrentCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="off" required>
-          <label for="adminNewCode">New 10-digit code</label>
-          <input class="admin-code-input" id="adminNewCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="new-password" required>
-          <label for="adminConfirmCode">Confirm new code</label>
-          <input class="admin-code-input" id="adminConfirmCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="new-password" required>
-          <p class="admin-gate-status" id="adminChangeStatus" role="status" aria-live="polite"></p>
-          <button class="admin-gate-submit" type="submit">Save New Gate Code</button>
-        </form>
-      </div>
-
-      <p class="admin-gate-note"><strong>Local gate:</strong> this is a creative browser-local entrance gate. The Admin Cloud will use its own server-side administrator authentication for protected account data.</p>
-    </section>
-  </div>
+  </section>
+</div>
 
   <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
     <aside class="drawer" id="menuDrawer" role="dialog" aria-modal="true"
