@@ -1,0 +1,22 @@
+{
+  "name": "Verve N Veda Public Cloud",
+  "version": "33.1",
+  "visibility": "public-static",
+  "authority": "none",
+  "accountState": false,
+  "privilegedRoutes": false,
+  "routes": {
+    "gateway": ["halls", "directory", "network", "gateway"],
+    "halls": ["education", "knowledge", "public-service", "creative-network", "halls"],
+    "directory": ["discovery", "reference", "verification", "directory"],
+    "network": ["communication", "creative-work", "public-tools", "network"],
+    "continuity": ["revision", "branch", "bridge", "continuity"]
+  },
+  "publicDestinations": {
+    "education": "https://vervenveda.com/Khaemenes_Academy.github.io/",
+    "knowledge": "https://vervenveda.com/Arshif.github.io/",
+    "public-service": "https://vervenveda.com/firmament.github.io/",
+    "creative-network": "https://vervenveda.com/333.github.io/",
+    "home": "https://vervenveda.com/"
+  }
+}
