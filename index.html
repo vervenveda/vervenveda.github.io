@@ -3767,6 +3767,70 @@
         width:min(calc(100% - (var(--sn-14) * 2)),var(--max));
       }
     }
+
+/* =========================================================
+   VERVE N VEDA â€” SURGICAL BUTTON FIT SAFETY
+   2026-08-15
+   Text behavior only. Does not restructure header, grids,
+   sections, cards, ticker, drawer, or page geometry.
+   ========================================================= */
+
+/* Ordinary text controls may use two balanced lines when needed
+   instead of clipping or shrinking into illegibility. */
+.button,
+.control-button,
+.admin-gate-submit,
+.admin-gate-secondary,
+.admin-code-toggle,
+.pillar-primary,
+.pillar-browse,
+.feature-open-button,
+.feature-pause-button,
+.viewer-tool,
+.viewer-full-link{
+  min-width:0!important;
+  max-width:100%!important;
+  height:auto!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  hyphens:none!important;
+  text-align:center!important;
+  line-height:1.18!important;
+  letter-spacing:clamp(.018em,.035vw,.045em)!important;
+  font-size:clamp(10px,calc(9px + .16vw),11.5px)!important;
+}
+
+/* Keep the carefully balanced desktop header on ONE line.
+   Only typography compresses; button width and header grid stay untouched. */
+.header-links a{
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:clip!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  hyphens:none!important;
+  font-size:clamp(8.7px,calc(8px + .14vw),10.5px)!important;
+  letter-spacing:clamp(.008em,.025vw,.032em)!important;
+  line-height:1!important;
+  padding-inline:clamp(3px,.42vw,6px)!important;
+}
+
+/* The longest current label gets a final tiny optical correction
+   without changing the button's assigned width. */
+.header-links a[href="#campaign"]{
+  font-size:clamp(8.35px,calc(7.8px + .13vw),10px)!important;
+  letter-spacing:0!important;
+}
+
+/* At the breakpoint where the header nav is already hidden,
+   do not alter that existing behavior. */
+@media(max-width:1230px){
+  .header-links{display:none!important}
+}
+    
 </style>
 </head>
 <body id="top">
