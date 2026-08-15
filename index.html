@@ -6,6 +6,7 @@
   <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, community service, and the NAIB intelligence navigation layer.">
   <meta name="theme-color" content="#f4f0e7">
   <meta name="color-scheme" content="light">
+  <meta name="sacred-number-protocol" content="1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
   <meta name="robots" content="index,follow">
@@ -48,6 +49,35 @@
       --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
       --ceremonial:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
       --sans:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
+      /* SACRED NUMBER PROTOCOL v1.0 — canonical design constants */
+      --sn-3:3px;
+      --sn-7:7px;
+      --sn-11:11px;
+      --sn-14:14px;
+      --sn-24:24px;
+      --sn-33:33px;
+      --sn-44:44px;
+      --sn-55:55px;
+      --sn-66:66px;
+      --sn-weight-333:333;
+      --sn-weight-444:444;
+      --sn-weight-555:555;
+      --sn-weight-666:666;
+      --sn-space-xs:var(--sn-7);
+      --sn-space-sm:var(--sn-11);
+      --sn-space-md:var(--sn-14);
+      --sn-space-lg:var(--sn-24);
+      --sn-space-xl:var(--sn-33);
+      --sn-space-2xl:var(--sn-44);
+      --sn-space-3xl:var(--sn-55);
+      --sn-space-4xl:var(--sn-66);
+      --sn-control:var(--sn-44);
+      --sn-radius:var(--sn-7);
+      --sn-radius-lg:var(--sn-11);
+      --sn-line:1px;
+      --sn-motion-fast:180ms;
+      --sn-motion:333ms;
+      --sn-motion-slow:555ms;
     }
 
     *,*::before,*::after{box-sizing:border-box}
@@ -64,7 +94,7 @@
       font-family:var(--sans);
       font-size:14px;
       line-height:1.66;
-      font-weight:444;
+      font-weight:var(--sn-weight-444);
       text-align:center;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
@@ -287,7 +317,7 @@
     .admin-change-panel{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
     .admin-gate-note{
       margin:20px 0 0!important;padding:12px 13px;border-left:2px solid var(--gold);
-      background:#fff;color:#66716c!important;font-size:11px!important;
+      background:#fff;color:#66716c!important;font-size:var(--sn-11)!important;
     }
 
     @media(max-width:560px){
@@ -374,7 +404,7 @@
       color:#fff;background:var(--ink);
       font-family:var(--ceremonial);
       font-size:17px;
-      font-weight:555;
+      font-weight:var(--sn-weight-555);
       line-height:1;
       letter-spacing:.07em;
       white-space:nowrap;
@@ -772,7 +802,7 @@
       color:var(--gold-pale);
       font-family:var(--ceremonial);
       font-size:7px;
-      font-weight:444;
+      font-weight:var(--sn-weight-444);
       letter-spacing:.14em;
       text-transform:uppercase;
     }
@@ -781,7 +811,7 @@
       color:#fff;
       font-family:var(--display);
       font-size:14px;
-      font-weight:444;
+      font-weight:var(--sn-weight-444);
       line-height:1.08;
     }
     .intelligence-node small{
@@ -841,7 +871,7 @@
       color:var(--gold-pale);
       font-family:var(--sans);
       font-size:clamp(7px,.66vw,11px);
-      font-weight:555;
+      font-weight:var(--sn-weight-555);
       letter-spacing:.07em;
       line-height:1.25;
       text-transform:uppercase;
@@ -2300,7 +2330,7 @@
     .viewer-blocked-kicker,
     .menu-link small,
     .site-card small{
-      font-size:11px!important;
+      font-size:var(--sn-11)!important;
     }
 
     /* 14px is the smallest normal reading text. */
@@ -2337,15 +2367,15 @@
     .viewer-embed-blocked p,
     .ecosystem-category-link::after,
     .ecosystem-category-toggle{
-      font-size:14px!important;
+      font-size:var(--sn-14)!important;
     }
 
     .admin-gate-panel h2,
     .drawer h2,
     .network-count strong{
-      font-size:33px!important;
+      font-size:var(--sn-33)!important;
     }
-    .admin-gate-panel p{font-size:14px!important}
+    .admin-gate-panel p{font-size:var(--sn-14)!important}
     .admin-gate-close,
     .viewer-close,
     .privacy-note strong,
@@ -2356,12 +2386,12 @@
     .ecosystem-panel-heading,
     .viewer-summary h3,
     .viewer-embed-blocked h3{
-      font-size:24px!important;
+      font-size:var(--sn-24)!important;
     }
 
     .section .kicker{
-      font-size:24px!important;
-      font-weight:555;
+      font-size:var(--sn-24)!important;
+      font-weight:var(--sn-weight-555);
       letter-spacing:.11em;
     }
     .section .section-heading h2,
@@ -2370,10 +2400,10 @@
     .statement-copy h2,
     .final h2,
     .intelligence-copy h2{
-      font-size:24px!important;
+      font-size:var(--sn-24)!important;
       line-height:1.24!important;
     }
-    .section-intro{font-size:14px!important}
+    .section-intro{font-size:var(--sn-14)!important}
 
     /* Header section anchors: small, orderly, and visibly interactive. */
     .header-links{
@@ -2385,7 +2415,7 @@
       border:1px solid rgba(18,23,19,.14);
       border-radius:7px;
       background:rgba(255,255,255,.44);
-      font-weight:444;
+      font-weight:var(--sn-weight-444);
       letter-spacing:.055em;
     }
     .header-links a:hover,
@@ -2425,7 +2455,7 @@
       margin:0;
       color:var(--forest-deep);
       font-family:var(--display);
-      font-weight:444;
+      font-weight:var(--sn-weight-444);
     }
     .viewer-embed-blocked p{
       margin:14px auto 24px;
@@ -2441,7 +2471,7 @@
       .header-links a,
       .feature-breadcrumbs,
       .viewer-breadcrumbs{
-        font-size:11px!important;
+        font-size:var(--sn-11)!important;
       }
     }
 
@@ -3063,7 +3093,7 @@
       margin:0 0 13px!important;
       color:#d5b9be!important;
       font-size:clamp(21px,2.1vw,31px)!important;
-      font-weight:555;
+      font-weight:var(--sn-weight-555);
       letter-spacing:clamp(.08em,.11vw,.12em)!important;
       text-align:left;
     }
@@ -3102,7 +3132,7 @@
       color:#eee8dd;
       background:rgba(255,255,255,.045);
       font-size:clamp(9px,.68vw,11px);
-      font-weight:555;
+      font-weight:var(--sn-weight-555);
       letter-spacing:.07em;
       text-transform:uppercase;
     }
@@ -3635,6 +3665,108 @@
   }
 }
 
+
+
+    /* =========================================================
+       SACRED NUMBER PROTOCOL v1.0 — SAFE REPAIR LAYER
+       Purpose: normalize geometry, rhythm, typography and controls
+       without removing or renaming any existing feature, ID, class,
+       anchor, data attribute, URL, or JavaScript dependency.
+       ========================================================= */
+
+    :root{
+      --radius:var(--sn-radius);
+      --radius-lg:var(--sn-radius-lg);
+      --ticker-height:var(--sn-33);
+      --header-height:var(--sn-66);
+      --sticky-stack:calc(var(--sn-33) + var(--sn-66));
+    }
+
+    /* 3 — structure */
+    .shell{
+      width:min(calc(100% - (var(--sn-24) * 2)),var(--max));
+    }
+
+    /* 7 — geometry */
+    button,.button,input,select,textarea,.header-links a,.network-ticker-call{
+      border-radius:var(--sn-7);
+    }
+
+    /* 11 — utility / fine print */
+    .network-ticker-label,.network-ticker-app,.network-ticker-call,
+    .scroll-cue,.eyebrow,.brand-mark,.intelligence-node span,.network-count span,
+    .menu-link i,.admin-gate-kicker,.admin-gate-form label,.admin-code-toggle,
+    .admin-gate-submit,.admin-gate-secondary,.admin-gate-note,.brand-sub,
+    .header-links a,.button,.pillar-number,.pillar-primary,.pillar-browse,
+    .footer-meta span,.ecosystem-subgroup-title,.feature-visual-label,
+    .feature-kicker,.feature-breadcrumbs,.feature-open-button,.feature-pause-button,
+    .feature-counter,.viewer-breadcrumbs,.viewer-tool,.viewer-full-link,
+    .viewer-frame-note,.viewer-blocked-kicker,.menu-link small,.site-card small{
+      font-size:var(--sn-11)!important;
+    }
+
+    /* 14 — normal reading */
+    .brand-name,.section-intro,.feature-icon,.control-button,.directory-status,
+    .pillar-card p,.intelligence-copy p,.intelligence-node small,.intelligence-note,
+    .feature-card p,.support-copy p,.support-points span,.campaign-copy p,
+    .site-group,.site-card p,.statement-copy p,.final p,.privacy-note,footer,
+    .drawer p,.menu-group,.menu-link strong,.ecosystem-category-link,
+    .ecosystem-category-toggle,.ecosystem-panel-note,.ecosystem-link strong,
+    .ecosystem-link small,.ecosystem-link-arrow,.feature-description,
+    .viewer-summary p,.viewer-embed-blocked p{
+      font-size:var(--sn-14)!important;
+    }
+
+    /* 24 — component emphasis */
+    .admin-gate-close,.viewer-close,.privacy-note strong,.feature-card h3,
+    .intelligence-node strong,.site-card h3,.value strong,
+    .ecosystem-panel-heading,.viewer-summary h3,.viewer-embed-blocked h3,
+    .section .kicker,.section .section-heading h2,.support-copy h2,
+    .campaign-copy h2,.statement-copy h2,.final h2,.intelligence-copy h2{
+      font-size:var(--sn-24)!important;
+    }
+
+    /* 33 — major utility headings / network counters */
+    .admin-gate-panel h2,.drawer h2,.network-count strong{
+      font-size:var(--sn-33)!important;
+    }
+
+    /* 44 — interaction */
+    .button,.control-button,.menu-button,.admin-gate-close,.viewer-close{
+      min-height:var(--sn-44);
+    }
+
+    /* 55 — feature emphasis */
+    .feature-icon{
+      min-width:var(--sn-55);
+      min-height:var(--sn-55);
+    }
+
+    /* 66 — major interface rhythm */
+    .site-header{
+      min-height:var(--sn-66);
+    }
+
+    /* Sacred motion: restrained and removable through reduced-motion. */
+    .button,.header-links a,.pillar-card,.feature-card,.site-card,
+    .ecosystem-category-link,.ecosystem-category-toggle,.intelligence-node{
+      transition-duration:var(--sn-motion);
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        scroll-behavior:auto!important;
+        transition-duration:.01ms!important;
+      }
+    }
+
+    @media(max-width:700px){
+      .shell{
+        width:min(calc(100% - (var(--sn-14) * 2)),var(--max));
+      }
+    }
 </style>
 </head>
 <body id="top">
