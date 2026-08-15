@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-15T13:45:13.577Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-15T12:30:48Z",
+  "generatedAt": "2026-08-15T19:04:29.930Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-15T18:49:33Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -5374,6 +5374,102 @@
         "highStakesDomain": "",
         "requiresExplicitQuery": false,
         "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_linguistics.github.io.sovereign-interlingual-translator",
+      "title": "Sovereign Interlingual Translator",
+      "description": "Offline-first translation, language learning, and literary comparison across 77 modern and heritage language options, with optional consent-gated online translation.",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/multilingual-translator_index.html",
+      "sourceId": "khaemenes.linguistics",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "classification": "educational",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "languages",
+        "linguistics",
+        "translation",
+        "literacy",
+        "literary-study"
+      ],
+      "skills": [
+        "translation",
+        "language-comparison",
+        "interlingual-literacy",
+        "vocabulary",
+        "literary-comparison"
+      ],
+      "tags": [
+        "translator",
+        "multilingual",
+        "interlingual",
+        "offline-first",
+        "sovereign",
+        "literary-comparison"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "tool",
+      "learningValue": "cross-curricular-support",
+      "curricularWeight": "supplemental",
+      "learningObjectives": [],
+      "subjects": [
+        "language-arts",
+        "world-languages",
+        "literature"
+      ],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [
+        "offline-first",
+        "external-translation-explicit-consent",
+        "no-student-text-in-url"
+      ],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": [
+          "offline-first",
+          "external-translation-explicit-consent",
+          "no-student-text-in-url"
+        ]
       },
       "manifestPath": "mentor-manifest.json"
     },
