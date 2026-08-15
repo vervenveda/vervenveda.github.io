@@ -6,7 +6,6 @@
   <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, community service, and the NAIB intelligence navigation layer.">
   <meta name="theme-color" content="#f4f0e7">
   <meta name="color-scheme" content="light">
-  <meta name="sacred-number-protocol" content="1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
   <meta name="robots" content="index,follow">
@@ -24,7 +23,282 @@
   <meta property="og:site_name" content="Verve N Veda">
 
   <style>
-      /* HEADER — 72px desktop, aligned to ticker through shared variables */
+    :root{
+      --paper:#f4f0e7;
+      --paper-bright:#fbf9f4;
+      --white:#ffffff;
+      --ink:#080b0f;
+      --ink-soft:#30413d;
+      --forest:#243d33;
+      --forest-deep:#15251f;
+      --gold:#b48b45;
+      --gold-pale:#e7d7b6;
+      --navy:#10243b;
+      --line:rgba(11,14,24,.33);
+      --line-strong:rgba(14,24,33,.44);
+      --shadow:0 22px 55px rgba(24,33,24,.07);
+      --shadow-small:0 11px 33px rgba(24,33,249,.07);
+      --max:1222px;
+      --radius:7px;
+      --radius-lg:11px;
+      --muted:#66716c;
+      --ticker-height:33px;
+      --header-height:66px;
+      --sticky-stack:calc(var(--ticker-height) + var(--header-height));
+      --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
+      --ceremonial:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+      --sans:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{
+      scroll-behavior:smooth;
+      scroll-padding-top:calc(var(--sticky-stack) + 18px);
+    }
+    body{
+      margin:0;
+      min-width:333px;
+      overflow-x:hidden;
+      color:var(--ink);
+      background:var(--paper);
+      font-family:var(--sans);
+      font-size:14px;
+      line-height:1.66;
+      font-weight:444;
+      text-align:center;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    body.menu-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+    button{cursor:pointer}
+    img,svg,canvas,video{display:block;max-width:100%}
+    p,h1,h2,h3,strong,small,span,a,button{overflow-wrap:anywhere}
+    [hidden]{display:none!important}
+    ::selection{background:var(--gold-pale);color:var(--ink)}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .shell{width:min(calc(100% - 48px),var(--max));margin-inline:auto}
+    .visually-hidden{
+      position:absolute!important;
+      width:1px!important;height:1px!important;
+      padding:0!important;margin:-1px!important;
+      overflow:hidden!important;clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;border:0!important;
+    }
+
+    .skip-link{
+      position:fixed;top:9px;left:9px;z-index:4000;
+      transform:translateY(-170%);
+      padding:9px 14px;border-radius:var(--radius);
+      color:#fff;background:var(--ink);
+    }
+    .skip-link:focus{transform:none}
+
+    /* 333 NETWORK TICKER — one exact height, one exact rhythm */
+    .network-ticker{
+      position:sticky;top:0;z-index:1500;
+      height:var(--ticker-height);
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 40px;
+      overflow:hidden;
+      color:#f4ead1;
+      background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
+      border-bottom:1px solid rgba(255,255,255,.13);
+      box-shadow:0 4px 14px rgba(6,15,27,.15);
+    }
+    .network-ticker-viewport{
+      min-width:0;
+      overflow:hidden;
+      -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
+      mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
+    }
+    .network-ticker-track{
+      width:max-content;
+      height:100%;
+      display:flex;
+      align-items:center;
+      white-space:nowrap;
+      animation:networkTickerMove 26s linear infinite;
+      will-change:transform;
+    }
+    .network-ticker:hover .network-ticker-track,
+    .network-ticker:focus-within .network-ticker-track,
+    .network-ticker[data-paused="true"] .network-ticker-track{
+      animation-play-state:paused;
+    }
+    .network-ticker-set{
+      height:100%;
+      display:flex;
+      align-items:center;
+      gap:22px;
+      padding-inline:11px;
+    }
+    .network-ticker-label{
+      flex:0 0 auto;
+      color:var(--gold-pale);
+      font-family:var(--ceremonial);
+      font-size:10px;
+      font-weight:500;
+      letter-spacing:.25em;
+      text-transform:uppercase;
+    }
+    .network-ticker-app,
+    .network-ticker-call{
+      min-height:28px;
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      flex:0 0 auto;
+      color:#eef3f7;
+      font-size:11px;
+      font-weight:400;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .network-ticker-app::before{
+      content:"";
+      width:3px;height:3px;
+      border-radius:50%;
+      background:var(--gold);
+      box-shadow:0 0 0 2px rgba(180,139,69,.13);
+    }
+    .network-ticker-app:hover,
+    .network-ticker-call:hover{
+      color:#fff;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .network-ticker-call{
+      padding:3px 9px;
+      border:1px solid rgba(231,215,182,.3);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.05);
+    }
+    .ticker-control{
+      width:40px;height:var(--ticker-height);
+      display:grid;place-items:center;
+      border:0;border-left:1px solid rgba(255,255,255,.13);
+      color:#f4ead1;background:rgba(0,0,0,.14);
+      font-size:15px;
+    }
+    .ticker-control:hover{background:rgba(255,255,255,.09)}
+    @keyframes networkTickerMove{
+      from{transform:translateX(0)}
+      to{transform:translateX(-50%)}
+    }
+
+
+    /* ADMIN GATE — local creative front gate; server auth remains separate */
+    .admin-entry{
+      position:absolute;
+      left:12px;
+      top:50%;
+      z-index:6;
+      transform:translateY(-50%);
+      width:22px;
+      height:22px;
+      display:inline-grid;
+      place-items:center;
+      padding:0;
+      border:1px solid #7f1717;
+      border-radius:50%;
+      color:transparent;
+      background:radial-gradient(circle at 35% 35%,#e55b5b 0%,#c93434 45%,#951c1c 100%);
+      box-shadow:0 6px 18px rgba(126,25,25,.24);
+      font-size:7px;
+      line-height:0;
+    }
+    .admin-entry:hover,.admin-entry:focus-visible{
+      background:linear-gradient(180deg,#dc4545,#a92323);
+      box-shadow:0 9px 24px rgba(126,25,25,.3);
+    }
+    .site-header{position:sticky}
+    .header-inner{padding-left:44px}
+
+    .admin-gate-overlay{
+      position:fixed;
+      inset:0;
+      z-index:5000;
+      display:grid;
+      place-items:center;
+      padding:20px;
+      visibility:hidden;
+      opacity:0;
+      background:rgba(5,10,9,.72);
+      -webkit-backdrop-filter:blur(8px);
+      backdrop-filter:blur(8px);
+      transition:opacity .18s ease,visibility .18s ease;
+    }
+    .admin-gate-overlay.open{visibility:visible;opacity:1}
+    .admin-gate-panel{
+      width:min(100%,470px);
+      max-height:min(760px,calc(100svh - 40px));
+      overflow:auto;
+      padding:30px;
+      border:1px solid rgba(145,31,31,.28);
+      border-top:4px solid #a92323;
+      border-radius:11px;
+      color:var(--ink);
+      background:var(--paper-bright);
+      box-shadow:0 30px 80px rgba(0,0,0,.28);
+      text-align:left;
+    }
+    .admin-gate-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+    .admin-gate-kicker{
+      color:#9d2626;
+      font-family:var(--ceremonial);
+      font-size:14px;
+      font-weight:666;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .admin-gate-panel h2{margin-top:7px;color:var(--forest-deep);font-size:38px;line-height:1}
+    .admin-gate-panel p{color:var(--ink-soft);font-size:13px;line-height:1.65}
+    .admin-gate-close{
+      width:38px;height:38px;flex:0 0 38px;
+      border:1px solid var(--line-strong);border-radius:var(--radius);
+      color:var(--ink);background:#fff;font-size:21px;
+    }
+    .admin-gate-form{display:grid;gap:13px;margin-top:22px}
+    .admin-gate-form label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .admin-code-row{display:grid;grid-template-columns:minmax(0,1fr) 78px;gap:9px}
+    .admin-code-input{
+      width:100%;min-height:49px;padding:0 14px;
+      border:1px solid var(--line-strong);border-radius:var(--radius);
+      color:var(--ink);background:#fff;
+      font:600 18px/1 var(--sans);letter-spacing:.16em;
+    }
+    .admin-code-toggle{
+      border:1px solid var(--line-strong);border-radius:var(--radius);
+      color:var(--ink);background:#fff;font-size:11px;font-weight:700;
+    }
+    .admin-gate-submit,.admin-gate-secondary{
+      min-height:46px;border-radius:var(--radius);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+    }
+    .admin-gate-submit{border:1px solid #7f1717;color:#fff;background:#a92323}
+    .admin-gate-submit:hover{background:#8b1919}
+    .admin-gate-secondary{border:1px solid var(--line-strong);color:var(--ink);background:#fff}
+    .admin-gate-status{min-height:22px;margin:0!important;font-weight:650}
+    .admin-gate-status.error{color:#9d2626}
+    .admin-gate-status.ok{color:#26633d}
+    .admin-unlocked-actions{display:grid;gap:10px;margin-top:16px}
+    .admin-change-panel{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+    .admin-gate-note{
+      margin:20px 0 0!important;padding:12px 13px;border-left:2px solid var(--gold);
+      background:#fff;color:#66716c!important;font-size:11px!important;
+    }
+
+    @media(max-width:560px){
+      .admin-entry{left:7px;min-width:55px;height:33px;padding:0 7px;font-size:11px}
+      .header-inner{padding-left:44px}
+      .admin-gate-panel{padding:24px 24px}
+      .admin-code-row{grid-template-columns:1fr}
+      .admin-code-toggle{min-height:44px}
+    }
+
+    /* HEADER — 72px desktop, aligned to ticker through shared variables */
     .site-header{
       position:sticky;
       top:var(--ticker-height);
@@ -62,7 +336,7 @@
       color:#fff;background:var(--ink);
       font-family:var(--ceremonial);
       font-size:17px;
-      font-weight:var(--sn-weight-555);
+      font-weight:555;
       line-height:1;
       letter-spacing:.07em;
       white-space:nowrap;
@@ -107,22 +381,22 @@
       white-space:nowrap;
     }
     .header-links a{
-      min-height:33px;
+      min-height:44px;
       display:inline-flex;
       align-items:center;
-      padding:9px 14px;
-      border-radius:7px;
+      padding:7px 11px;
+      border-radius:var(--radius);
       color:var(--ink-soft);
-      font-size:6px;
-      font-weight:333;
-      letter-spacing:.066em;
+      font-size:9px;
+      font-weight:444;
+      letter-spacing:.077em;
       text-transform:uppercase;
       white-space:nowrap;
     }
     .header-links a:hover{color:var(--ink);background:var(--white)}
     .menu-button{
       justify-self:end;
-      width:44px;height:44px;
+      width:40px;height:40px;
       display:grid;place-items:center;
       border:1px solid var(--line-strong);
       border-radius:var(--radius);
@@ -230,9 +504,9 @@
       justify-content:center;
       padding:11px 18px;
       border:1px solid transparent;
-      border-radius:7px;
-      font-size:7px;
-      font-weight:555;
+      border-radius:var(--radius);
+      font-size:11px;
+      font-weight:600;
       letter-spacing:.08em;
       text-transform:uppercase;
       transition:transform .17s,background .17s,border-color .17s,box-shadow .17s;
@@ -460,7 +734,7 @@
       color:var(--gold-pale);
       font-family:var(--ceremonial);
       font-size:7px;
-      font-weight:var(--sn-weight-444);
+      font-weight:444;
       letter-spacing:.14em;
       text-transform:uppercase;
     }
@@ -469,7 +743,7 @@
       color:#fff;
       font-family:var(--display);
       font-size:14px;
-      font-weight:var(--sn-weight-444);
+      font-weight:444;
       line-height:1.08;
     }
     .intelligence-node small{
@@ -529,7 +803,7 @@
       color:var(--gold-pale);
       font-family:var(--sans);
       font-size:clamp(7px,.66vw,11px);
-      font-weight:var(--sn-weight-555);
+      font-weight:555;
       letter-spacing:.07em;
       line-height:1.25;
       text-transform:uppercase;
@@ -552,7 +826,7 @@
       align-items:stretch;
     }
     .feature-card{
-      min-height:333px;
+      min-height:305px;
       height:100%;
       display:flex;
       flex-direction:column;
@@ -865,15 +1139,15 @@
       margin-bottom:11px;
       color:var(--forest-deep);
       font-family:var(--display);
-      font-size:11px;
-      font-weight:444;
+      font-size:14px;
+      font-weight:500;
     }
 
     footer{
       padding:44px 24px;
       color:rgba(255,255,255,.68);
       background:#0a1511;
-      font-size:11px;
+      font-size:14px;
     }
     .footer-inner{
       display:grid;
@@ -1026,354 +1300,6 @@
       .network-ticker-track{transform:none!important}
       .scroll-cue::after{height:20px}
     }
-
-/* =========================================================
-   VERVE N VEDA â€” SURGICAL BUTTON FIT SAFETY
-   2026-08-15
-   Text behavior only. Does not restructure header, grids,
-   sections, cards, ticker, drawer, or page geometry.
-   ========================================================= */
-
-/* Ordinary text controls may use two balanced lines when needed
-   instead of clipping or shrinking into illegibility. */
-.button,
-.control-button,
-.admin-gate-submit,
-.admin-gate-secondary,
-.admin-code-toggle,
-.pillar-primary,
-.pillar-browse,
-.feature-open-button,
-.feature-pause-button,
-.viewer-tool,
-.viewer-full-link{
-  min-width:0!important;
-  max-width:100%!important;
-  height:auto!important;
-  white-space:normal!important;
-  overflow:visible!important;
-  text-overflow:clip!important;
-  overflow-wrap:normal!important;
-  word-break:normal!important;
-  hyphens:none!important;
-  text-align:center!important;
-  line-height:1.18!important;
-  letter-spacing:clamp(.018em,.035vw,.045em)!important;
-  font-size:clamp(10px,calc(9px + .16vw),11.5px)!important;
-}
-
-/* Keep the carefully balanced desktop header on ONE line.
-   Only typography compresses; button width and header grid stay untouched. */
-.header-links a{
-  white-space:nowrap!important;
-  overflow:hidden!important;
-  text-overflow:clip!important;
-  overflow-wrap:normal!important;
-  word-break:normal!important;
-  hyphens:none!important;
-  font-size:clamp(8.7px,calc(8px + .14vw),10.5px)!important;
-  letter-spacing:clamp(.008em,.025vw,.032em)!important;
-  line-height:1!important;
-  padding-inline:clamp(3px,.42vw,6px)!important;
-}
-
-/* The longest current label gets a final tiny optical correction
-   without changing the button's assigned width. */
-.header-links a[href="#campaign"]{
-  font-size:clamp(8.35px,calc(7.8px + .13vw),10px)!important;
-  letter-spacing:0!important;
-}
-
-/* At the breakpoint where the header nav is already hidden,
-   do not alter that existing behavior. */
-@media(max-width:1230px){
-  .header-links{display:none!important}
-}
-    *,*::before,*::after{box-sizing:border-box}
-    html{
-      scroll-behavior:smooth;
-      scroll-padding-top:calc(var(--sticky-stack) + 18px);
-    }
-    body{
-      margin:0;
-      min-width:333px;
-      overflow-x:hidden;
-      color:var(--ink);
-      background:var(--paper);
-      font-family:var(--sans);
-      font-size:14px;
-      line-height:1.66;
-      font-weight:var(--sn-weight-444);
-      text-align:center;
-      -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
-    }
-    body.menu-open{overflow:hidden}
-    a{color:inherit;text-decoration:none}
-    button,input,select{font:inherit}
-    button{cursor:pointer}
-    img,svg,canvas,video{display:block;max-width:100%}
-    p,h1,h2,h3,strong,small,span,a,button{overflow-wrap:anywhere}
-    [hidden]{display:none!important}
-    ::selection{background:var(--gold-pale);color:var(--ink)}
-    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-    .shell{width:min(calc(100% - 48px),var(--max));margin-inline:auto}
-    .visually-hidden{
-      position:absolute!important;
-      width:1px!important;height:1px!important;
-      padding:0!important;margin:-1px!important;
-      overflow:hidden!important;clip:rect(0,0,0,0)!important;
-      white-space:nowrap!important;border:0!important;
-    }
-
-    .skip-link{
-      position:fixed;top:9px;left:9px;z-index:4000;
-      transform:translateY(-170%);
-      padding:9px 14px;border-radius:var(--radius);
-      color:#fff;background:var(--ink);
-    }
-    .skip-link:focus{transform:none}
-
-    /* 333 NETWORK TICKER — one exact height, one exact rhythm */
-    .network-ticker{
-      position:sticky;top:0;z-index:1500;
-      height:var(--ticker-height);
-      display:grid;
-      grid-template-columns:minmax(0,1fr) 40px;
-      overflow:hidden;
-      color:#f4ead1;
-      background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
-      border-bottom:1px solid rgba(255,255,255,.13);
-      box-shadow:0 4px 14px rgba(6,15,27,.15);
-    }
-    .network-ticker-viewport{
-      min-width:0;
-      overflow:hidden;
-      -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
-      mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);
-    }
-    .network-ticker-track{
-      width:max-content;
-      height:100%;
-      display:flex;
-      align-items:center;
-      white-space:nowrap;
-      animation:networkTickerMove 26s linear infinite;
-      will-change:transform;
-    }
-    .network-ticker:hover .network-ticker-track,
-    .network-ticker:focus-within .network-ticker-track,
-    .network-ticker[data-paused="true"] .network-ticker-track{
-      animation-play-state:paused;
-    }
-    .network-ticker-set{
-      height:100%;
-      display:flex;
-      align-items:center;
-      gap:22px;
-      padding-inline:11px;
-    }
-    .network-ticker-label{
-      flex:0 0 auto;
-      color:var(--gold-pale);
-      font-family:var(--ceremonial);
-      font-size:10px;
-      font-weight:500;
-      letter-spacing:.25em;
-      text-transform:uppercase;
-    }
-    .network-ticker-app,
-    .network-ticker-call{
-      min-height:28px;
-      display:inline-flex;
-      align-items:center;
-      gap:7px;
-      flex:0 0 auto;
-      color:#eef3f7;
-      font-size:11px;
-      font-weight:400;
-      letter-spacing:.1em;
-      text-transform:uppercase;
-      white-space:nowrap;
-    }
-    .network-ticker-app::before{
-      content:"";
-      width:3px;height:3px;
-      border-radius:50%;
-      background:var(--gold);
-      box-shadow:0 0 0 2px rgba(180,139,69,.13);
-    }
-    .network-ticker-app:hover,
-    .network-ticker-call:hover{
-      color:#fff;
-      text-decoration:underline;
-      text-underline-offset:3px;
-    }
-    .network-ticker-call{
-      padding:3px 9px;
-      border:1px solid rgba(231,215,182,.3);
-      border-radius:var(--radius);
-      background:rgba(255,255,255,.05);
-    }
-    .ticker-control{
-      width:40px;height:var(--ticker-height);
-      display:grid;place-items:center;
-      border:0;border-left:1px solid rgba(255,255,255,.13);
-      color:#f4ead1;background:rgba(0,0,0,.14);
-      font-size:15px;
-    }
-    .ticker-control:hover{background:rgba(255,255,255,.09)}
-    @keyframes networkTickerMove{
-      from{transform:translateX(0)}
-      to{transform:translateX(-50%)}
-    }
-
-
-    /* ADMIN GATE — local creative front gate; server auth remains separate */
-    .admin-entry{
-      position:absolute;
-      left:12px;
-      top:50%;
-      z-index:6;
-      transform:translateY(-50%);
-      width:22px;
-      height:22px;
-      display:inline-grid;
-      place-items:center;
-      padding:0;
-      border:1px solid #7f1717;
-      border-radius:50%;
-      color:transparent;
-      background:radial-gradient(circle at 35% 35%,#e55b5b 0%,#c93434 45%,#951c1c 100%);
-      box-shadow:0 6px 18px rgba(126,25,25,.24);
-      font-size:7px;
-      line-height:0;
-    }
-    .admin-entry:hover,.admin-entry:focus-visible{
-      background:linear-gradient(180deg,#dc4545,#a92323);
-      box-shadow:0 9px 24px rgba(126,25,25,.3);
-    }
-    .site-header{position:sticky}
-    .header-inner{padding-left:44px}
-
-    .admin-gate-overlay{
-      position:fixed;
-      inset:0;
-      z-index:5000;
-      display:grid;
-      place-items:center;
-      padding:20px;
-      visibility:hidden;
-      opacity:0;
-      background:rgba(5,10,9,.72);
-      -webkit-backdrop-filter:blur(8px);
-      backdrop-filter:blur(8px);
-      transition:opacity .18s ease,visibility .18s ease;
-    }
-    .admin-gate-overlay.open{visibility:visible;opacity:1}
-    .admin-gate-panel{
-      width:min(100%,470px);
-      max-height:min(760px,calc(100svh - 40px));
-      overflow:auto;
-      padding:30px;
-      border:1px solid rgba(145,31,31,.28);
-      border-top:4px solid #a92323;
-      border-radius:11px;
-      color:var(--ink);
-      background:var(--paper-bright);
-      box-shadow:0 30px 80px rgba(0,0,0,.28);
-      text-align:left;
-    }
-    .admin-gate-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
-    .admin-gate-kicker{
-      color:#9d2626;
-      font-family:var(--ceremonial);
-      font-size:14px;
-      font-weight:666;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-    }
-    .admin-gate-panel h2{margin-top:7px;color:var(--forest-deep);font-size:38px;line-height:1}
-    .admin-gate-panel p{color:var(--ink-soft);font-size:13px;line-height:1.65}
-    .admin-gate-close{
-      width:38px;height:38px;flex:0 0 38px;
-      border:1px solid var(--line-strong);border-radius:var(--radius);
-      color:var(--ink);background:#fff;font-size:21px;
-    }
-    .admin-gate-form{display:grid;gap:13px;margin-top:22px}
-    .admin-gate-form label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-    .admin-code-row{display:grid;grid-template-columns:minmax(0,1fr) 78px;gap:9px}
-    .admin-code-input{
-      width:100%;min-height:49px;padding:0 14px;
-      border:1px solid var(--line-strong);border-radius:var(--radius);
-      color:var(--ink);background:#fff;
-      font:600 18px/1 var(--sans);letter-spacing:.16em;
-    }
-    .admin-code-toggle{
-      border:1px solid var(--line-strong);border-radius:var(--radius);
-      color:var(--ink);background:#fff;font-size:11px;font-weight:700;
-    }
-    .admin-gate-submit,.admin-gate-secondary{
-      min-height:46px;border-radius:var(--radius);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
-    }
-    .admin-gate-submit{border:1px solid #7f1717;color:#fff;background:#a92323}
-    .admin-gate-submit:hover{background:#8b1919}
-    .admin-gate-secondary{border:1px solid var(--line-strong);color:var(--ink);background:#fff}
-    .admin-gate-status{min-height:22px;margin:0!important;font-weight:650}
-    .admin-gate-status.error{color:#9d2626}
-    .admin-gate-status.ok{color:#26633d}
-    .admin-unlocked-actions{display:grid;gap:10px;margin-top:16px}
-    .admin-change-panel{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
-    .admin-gate-note{
-      margin:20px 0 0!important;padding:12px 13px;border-left:2px solid var(--gold);
-      background:#fff;color:#66716c!important;font-size:var(--sn-11)!important;
-    }
-
-    @media(max-width:560px){
-      .admin-entry{left:7px;min-width:55px;height:33px;padding:0 7px;font-size:11px}
-      .header-inner{padding-left:44px}
-      .admin-gate-panel{padding:24px 24px}
-      .admin-code-row{grid-template-columns:1fr}
-      .admin-code-toggle{min-height:44px}
-    }
-    .admin-gate-breadcrumbs{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:7px;
-  margin:0 0 18px;
-  color:#6d756f;
-  font-family:var(--sans);
-  font-size:10px;
-  letter-spacing:.06em;
-  line-height:1.4;
-  text-transform:uppercase;
-}
-
-.admin-gate-breadcrumbs a,
-.admin-gate-breadcrumbs span,
-.admin-gate-breadcrumbs strong{
-  font:inherit;
-}
-
-.admin-gate-breadcrumbs a{
-  color:#4e5b55;
-  text-decoration:none;
-}
-
-.admin-gate-breadcrumbs strong{
-  color:#8f2424;
-  font-weight:700;
-}
-
-.admin-gate-breadcrumbs .next{
-  color:#8a8f8c;
-}
-
-.admin-gate-breadcrumbs .sep{
-  color:#b59a67;
-  user-select:none;
-}
 
 
     /* =========================================================
@@ -2336,7 +2262,7 @@
     .viewer-blocked-kicker,
     .menu-link small,
     .site-card small{
-      font-size:var(--sn-11)!important;
+      font-size:11px!important;
     }
 
     /* 14px is the smallest normal reading text. */
@@ -2373,15 +2299,15 @@
     .viewer-embed-blocked p,
     .ecosystem-category-link::after,
     .ecosystem-category-toggle{
-      font-size:var(--sn-14)!important;
+      font-size:14px!important;
     }
 
     .admin-gate-panel h2,
     .drawer h2,
     .network-count strong{
-      font-size:var(--sn-33)!important;
+      font-size:33px!important;
     }
-    .admin-gate-panel p{font-size:var(--sn-14)!important}
+    .admin-gate-panel p{font-size:14px!important}
     .admin-gate-close,
     .viewer-close,
     .privacy-note strong,
@@ -2392,12 +2318,12 @@
     .ecosystem-panel-heading,
     .viewer-summary h3,
     .viewer-embed-blocked h3{
-      font-size:var(--sn-24)!important;
+      font-size:24px!important;
     }
 
     .section .kicker{
-      font-size:var(--sn-24)!important;
-      font-weight:var(--sn-weight-555);
+      font-size:24px!important;
+      font-weight:555;
       letter-spacing:.11em;
     }
     .section .section-heading h2,
@@ -2406,10 +2332,10 @@
     .statement-copy h2,
     .final h2,
     .intelligence-copy h2{
-      font-size:var(--sn-24)!important;
+      font-size:24px!important;
       line-height:1.24!important;
     }
-    .section-intro{font-size:var(--sn-14)!important}
+    .section-intro{font-size:14px!important}
 
     /* Header section anchors: small, orderly, and visibly interactive. */
     .header-links{
@@ -2421,7 +2347,7 @@
       border:1px solid rgba(18,23,19,.14);
       border-radius:7px;
       background:rgba(255,255,255,.44);
-      font-weight:var(--sn-weight-444);
+      font-weight:444;
       letter-spacing:.055em;
     }
     .header-links a:hover,
@@ -2461,7 +2387,7 @@
       margin:0;
       color:var(--forest-deep);
       font-family:var(--display);
-      font-weight:var(--sn-weight-444);
+      font-weight:444;
     }
     .viewer-embed-blocked p{
       margin:14px auto 24px;
@@ -2477,7 +2403,7 @@
       .header-links a,
       .feature-breadcrumbs,
       .viewer-breadcrumbs{
-        font-size:var(--sn-11)!important;
+        font-size:11px!important;
       }
     }
 
@@ -2930,8 +2856,8 @@
     .feature-pause-button,
     .viewer-tool,
     .viewer-full-link{
-      font-size:clamp(3px,.44vw,5px)!important;
-      letter-spacing:clamp(.033em,.044vw,.055em)!important;
+      font-size:clamp(7px,.55vw,7px)!important;
+      letter-spacing:clamp(.035em,.055vw,.075em)!important;
       line-height:1.11!important;
       white-space:nowrap!important;
       overflow:visible!important;
@@ -3099,7 +3025,7 @@
       margin:0 0 13px!important;
       color:#d5b9be!important;
       font-size:clamp(21px,2.1vw,31px)!important;
-      font-weight:var(--sn-weight-555);
+      font-weight:555;
       letter-spacing:clamp(.08em,.11vw,.12em)!important;
       text-align:left;
     }
@@ -3138,7 +3064,7 @@
       color:#eee8dd;
       background:rgba(255,255,255,.045);
       font-size:clamp(9px,.68vw,11px);
-      font-weight:var(--sn-weight-555);
+      font-weight:555;
       letter-spacing:.07em;
       text-transform:uppercase;
     }
@@ -3518,163 +3444,7 @@
         grid-template-columns:minmax(0,1fr) 40px!important;
       }
     }
-    /* =========================================================
-   FOUR GREAT HALLS — TYPOGRAPHY / OVERFLOW REPAIR
-   ========================================================= */
 
-.pillar-copy,
-.pillar-card h3,
-.pillar-card p,
-.pillar-primary,
-.pillar-browse{
-  min-width:0;
-  max-width:100%;
-}
-
-.pillar-card h3{
-  font-size:clamp(23px,1.75vw,30px);
-  line-height:1.08;
-  overflow-wrap:normal;
-  word-break:normal;
-  hyphens:none;
-}
-
-.pillar-primary{
-  white-space:normal;
-  overflow-wrap:normal;
-  word-break:normal;
-  line-height:1.35;
-  padding-inline:8px;
-}
-
-.pillar-browse{
-  min-height:52px;
-  padding:10px 14px;
-  white-space:normal;
-  overflow-wrap:normal;
-  word-break:normal;
-  line-height:1.25;
-}
-
-    /* =========================================================
-   VERVE N VEDA — RESPONSIVE CONTROL GEOMETRY
-   Typography and button containment only.
-   ========================================================= */
-
-:root{
-  --vnv-control:clamp(9px, .72vw, 11px);
-}
-
-/* ---------- universal control containment ---------- */
-
-.button,
-.control-button,
-.header-links a,
-.pillar-primary,
-.pillar-browse,
-.feature-open-button,
-.feature-pause-button,
-.viewer-tool,
-.viewer-full-link{
-  box-sizing:border-box!important;
-  max-width:100%!important;
-
-  font-size:var(--vnv-control)!important;
-  font-weight:400!important;
-  line-height:1.2!important;
-
-  overflow-wrap:normal!important;
-  word-break:normal!important;
-  hyphens:none!important;
-}
-
-/* ---------- top navigation ---------- */
-
-.header-links{
-  min-width:0!important;
-  display:flex!important;
-  justify-content:center!important;
-  gap:clamp(3px,.4vw,6px)!important;
-}
-
-.header-links a{
-  width:clamp(78px,7.4vw,106px)!important;
-  min-width:0!important;
-  height:32px!important;
-
-  padding-inline:clamp(3px,.5vw,7px)!important;
-
-  white-space:nowrap!important;
-  overflow:hidden!important;
-  text-overflow:clip!important;
-
-  letter-spacing:clamp(.005em,.08vw,.02em)!important;
-}
-
-/* ---------- ordinary buttons ---------- */
-
-.button,
-.control-button,
-.feature-open-button,
-.feature-pause-button,
-.viewer-tool,
-.viewer-full-link{
-  min-width:0!important;
-  width:auto!important;
-
-  padding-inline:clamp(9px,1.2vw,18px)!important;
-
-  white-space:normal!important;
-}
-
-/* ---------- Four Great Halls ---------- */
-
-.pillar-primary,
-.pillar-browse{
-  width:100%!important;
-  min-width:0!important;
-
-  padding-inline:clamp(7px,1vw,14px)!important;
-
-  font-size:clamp(9px,.7vw,11px)!important;
-  letter-spacing:clamp(.025em,.05vw,.055em)!important;
-  line-height:1.25!important;
-
-  white-space:normal!important;
-}
-
-/* ---------- smaller desktop ---------- */
-
-@media(max-width:1230px){
-  .header-links{
-    display:none!important;
-  }
-}
-
-/* ---------- tablets ---------- */
-
-@media(max-width:860px){
-  .button,
-  .control-button{
-    max-width:100%!important;
-  }
-}
-
-/* ---------- phones ---------- */
-
-@media(max-width:560px){
-  .button,
-  .control-button,
-  .pillar-primary,
-  .pillar-browse{
-    width:100%!important;
-  }
-}
-
-
-
-   
-    
 </style>
 </head>
 <body id="top">
@@ -3741,163 +3511,50 @@
   </header>
 
 
- <div class="admin-gate-overlay" id="adminGate" aria-hidden="true">
-  <section class="admin-gate-panel" role="dialog" aria-modal="true" aria-labelledby="adminGateTitle">
-
-    <!-- ADMIN BREADCRUMBS -->
-    <nav class="admin-gate-breadcrumbs" aria-label="Administrator path">
-      <a href="/">Verve N Veda</a>
-      <span class="sep" aria-hidden="true">›</span>
-      <strong aria-current="page">Administrator Gate</strong>
-      <span class="sep" aria-hidden="true">›</span>
-      <span class="next" id="adminBreadcrumbCommand">Command Center</span>
-    </nav>
-
-    <div class="admin-gate-top">
-      <div>
-        <span class="admin-gate-kicker">Administrator Access</span>
-        <h2 id="adminGateTitle">Admin Gate</h2>
+  <div class="admin-gate-overlay" id="adminGate" aria-hidden="true">
+    <section class="admin-gate-panel" role="dialog" aria-modal="true" aria-labelledby="adminGateTitle">
+      <div class="admin-gate-top">
+        <div>
+          <span class="admin-gate-kicker">Administrator Access</span>
+          <h2 id="adminGateTitle">Admin Gate</h2>
+        </div>
+        <button class="admin-gate-close" id="adminGateClose" type="button" aria-label="Close administrator gate">×</button>
       </div>
-      <button
-        class="admin-gate-close"
-        id="adminGateClose"
-        type="button"
-        aria-label="Close administrator gate">×</button>
-    </div>
+      <p>Enter the 10-digit local administrator gate code to continue to the Verve N Veda administration portal.</p>
 
-    <p>
-      Enter the 10-digit local administrator gate code to continue
-      to the Verve N Veda administration portal.
-    </p>
-
-    <form class="admin-gate-form" id="adminGateForm" novalidate>
-      <label for="adminCode">10-digit gate code</label>
-
-      <div class="admin-code-row">
-        <input
-          class="admin-code-input"
-          id="adminCode"
-          name="adminCode"
-          type="password"
-          inputmode="numeric"
-          pattern="[0-9]{10}"
-          maxlength="10"
-          minlength="10"
-          autocomplete="off"
-          aria-describedby="adminGateStatus"
-          required>
-
-        <button
-          class="admin-code-toggle"
-          id="adminShowCode"
-          type="button"
-          aria-pressed="false">Show</button>
-      </div>
-
-      <p
-        class="admin-gate-status"
-        id="adminGateStatus"
-        role="status"
-        aria-live="polite"></p>
-
-      <button class="admin-gate-submit" type="submit">
-        Unlock Admin Portal
-      </button>
-    </form>
-
-    <div id="adminUnlocked" hidden>
-      <p class="admin-gate-status ok">
-        Gate unlocked for this browser session.
-      </p>
-
-      <div class="admin-unlocked-actions">
-        <button
-          class="admin-gate-submit"
-          id="adminOpenPortal"
-          type="button">
-          Open Admin Portal
-        </button>
-
-        <button
-          class="admin-gate-secondary"
-          id="adminChangeToggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="adminChangePanel">
-          Change Gate Code
-        </button>
-
-        <button
-          class="admin-gate-secondary"
-          id="adminLockNow"
-          type="button">
-          Lock This Session
-        </button>
-      </div>
-
-      <form
-        class="admin-gate-form admin-change-panel"
-        id="adminChangePanel"
-        hidden
-        novalidate>
-
-        <label for="adminCurrentCode">Current 10-digit code</label>
-        <input
-          class="admin-code-input"
-          id="adminCurrentCode"
-          type="password"
-          inputmode="numeric"
-          pattern="[0-9]{10}"
-          maxlength="10"
-          minlength="10"
-          autocomplete="off"
-          required>
-
-        <label for="adminNewCode">New 10-digit code</label>
-        <input
-          class="admin-code-input"
-          id="adminNewCode"
-          type="password"
-          inputmode="numeric"
-          pattern="[0-9]{10}"
-          maxlength="10"
-          minlength="10"
-          autocomplete="new-password"
-          required>
-
-        <label for="adminConfirmCode">Confirm new code</label>
-        <input
-          class="admin-code-input"
-          id="adminConfirmCode"
-          type="password"
-          inputmode="numeric"
-          pattern="[0-9]{10}"
-          maxlength="10"
-          minlength="10"
-          autocomplete="new-password"
-          required>
-
-        <p
-          class="admin-gate-status"
-          id="adminChangeStatus"
-          role="status"
-          aria-live="polite"></p>
-
-        <button class="admin-gate-submit" type="submit">
-          Save New Gate Code
-        </button>
+      <form class="admin-gate-form" id="adminGateForm" novalidate>
+        <label for="adminCode">10-digit gate code</label>
+        <div class="admin-code-row">
+          <input class="admin-code-input" id="adminCode" name="adminCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="off" aria-describedby="adminGateStatus" required>
+          <button class="admin-code-toggle" id="adminShowCode" type="button" aria-pressed="false">Show</button>
+        </div>
+        <p class="admin-gate-status" id="adminGateStatus" role="status" aria-live="polite"></p>
+        <button class="admin-gate-submit" type="submit">Unlock Admin Portal</button>
       </form>
-    </div>
 
-    <p class="admin-gate-note">
-      <strong>Local gate:</strong>
-      this is a creative browser-local entrance gate.
-      The Admin Cloud will use its own server-side administrator
-      authentication for protected account data.
-    </p>
+      <div id="adminUnlocked" hidden>
+        <p class="admin-gate-status ok">Gate unlocked for this browser session.</p>
+        <div class="admin-unlocked-actions">
+          <button class="admin-gate-submit" id="adminOpenPortal" type="button">Open Admin Portal</button>
+          <button class="admin-gate-secondary" id="adminChangeToggle" type="button" aria-expanded="false" aria-controls="adminChangePanel">Change Gate Code</button>
+          <button class="admin-gate-secondary" id="adminLockNow" type="button">Lock This Session</button>
+        </div>
 
-  </section>
-</div>
+        <form class="admin-gate-form admin-change-panel" id="adminChangePanel" hidden novalidate>
+          <label for="adminCurrentCode">Current 10-digit code</label>
+          <input class="admin-code-input" id="adminCurrentCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="off" required>
+          <label for="adminNewCode">New 10-digit code</label>
+          <input class="admin-code-input" id="adminNewCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="new-password" required>
+          <label for="adminConfirmCode">Confirm new code</label>
+          <input class="admin-code-input" id="adminConfirmCode" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="new-password" required>
+          <p class="admin-gate-status" id="adminChangeStatus" role="status" aria-live="polite"></p>
+          <button class="admin-gate-submit" type="submit">Save New Gate Code</button>
+        </form>
+      </div>
+
+      <p class="admin-gate-note"><strong>Local gate:</strong> this is a creative browser-local entrance gate. The Admin Cloud will use its own server-side administrator authentication for protected account data.</p>
+    </section>
+  </div>
 
   <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
     <aside class="drawer" id="menuDrawer" role="dialog" aria-modal="true"
@@ -4422,321 +4079,248 @@
 
 
   <script>
-   (() => {
-  "use strict";
+    (() => {
+      "use strict";
 
-  const ADMIN_PORTAL_URL = "/admin/";
-  const FRONT_RECORD_KEY = "VNV_G1_RECORD_V3";
-  const COMMAND_RECORD_KEY = "VNV_G2_RECORD_V3";
-  const LEGACY_RECORD_KEY = "VNV_ADMIN_GATE_RECORD_V2";
-  const FRONT_SESSION_KEY = "VNV_G1_SESSION_V3";
-  const ITERATIONS = 120000;
-  const encoder = new TextEncoder();
-  const $ = id => document.getElementById(id);
-  let priorFocus = null;
+      const ADMIN_PORTAL_URL = "/admin/";
+      const RECORD_KEY = "VNV_ADMIN_GATE_RECORD_V2";
+      const SESSION_KEY = "VNV_ADMIN_GATE_SESSION_V2";
+      const DEFAULT_CODE = "0000000000";
+      const ITERATIONS = 120000;
+      const encoder = new TextEncoder();
+      const $ = id => document.getElementById(id);
+      let priorFocus = null;
 
-  const overlay = $("adminGate");
-  const panel = overlay?.querySelector(".admin-gate-panel");
-  const codeInput = $("adminCode");
-  const form = $("adminGateForm");
-  const unlocked = $("adminUnlocked");
-  const status = $("adminGateStatus");
+      const overlay = $("adminGate");
+      const panel = overlay?.querySelector(".admin-gate-panel");
+      const codeInput = $("adminCode");
+      const form = $("adminGateForm");
+      const unlocked = $("adminUnlocked");
+      const status = $("adminGateStatus");
 
-  function cleanCode(value){
-    return String(value || "").replace(/\D/g, "").slice(0,10);
-  }
-
-  function isValidCode(value){
-    return /^[0-9]{10}$/.test(String(value || ""));
-  }
-
-  function bytesToBase64(bytes){
-    let binary = "";
-    bytes.forEach(byte => binary += String.fromCharCode(byte));
-    return btoa(binary);
-  }
-
-  function base64ToBytes(value){
-    const binary = atob(value);
-    return Uint8Array.from(binary, char => char.charCodeAt(0));
-  }
-
-  async function derive(code,salt){
-    const material = await crypto.subtle.importKey(
-      "raw", encoder.encode(code), {name:"PBKDF2"}, false, ["deriveBits"]
-    );
-    const bits = await crypto.subtle.deriveBits(
-      {name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},
-      material,256
-    );
-    return new Uint8Array(bits);
-  }
-
-  function constantTimeEqual(a,b){
-    if(a.length !== b.length) return false;
-    let diff = 0;
-    for(let i=0;i<a.length;i++) diff |= a[i] ^ b[i];
-    return diff === 0;
-  }
-
-  function readRecord(key){
-    try{
-      const raw = localStorage.getItem(key);
-      return raw ? JSON.parse(raw) : null;
-    }catch{
-      return null;
-    }
-  }
-
-  async function verifyAgainstRecord(code,record){
-    if(!isValidCode(code) || !record?.salt || !record?.hash) return false;
-    try{
-      const salt = base64ToBytes(record.salt);
-      const expected = base64ToBytes(record.hash);
-      const actual = await derive(code,salt);
-      return constantTimeEqual(actual,expected);
-    }catch{
-      return false;
-    }
-  }
-
-  async function verifyFront(code){
-    const front = readRecord(FRONT_RECORD_KEY);
-    if(front) return verifyAgainstRecord(code,front);
-
-    const legacy = readRecord(LEGACY_RECORD_KEY);
-    if(legacy) return verifyAgainstRecord(code,legacy);
-
-    return false;
-  }
-
-  async function saveFrontCode(code){
-    const salt = crypto.getRandomValues(new Uint8Array(16));
-    const hash = await derive(code,salt);
-    localStorage.setItem(FRONT_RECORD_KEY,JSON.stringify({
-      version:3,
-      algorithm:"PBKDF2-SHA256",
-      iterations:ITERATIONS,
-      salt:bytesToBase64(salt),
-      hash:bytesToBase64(hash),
-      changedAt:new Date().toISOString()
-    }));
-  }
-
-  function setSessionUnlocked(value){
-    try{
-      if(value){
-        sessionStorage.setItem(FRONT_SESSION_KEY,JSON.stringify({
-          unlocked:true,
-          gate:"front",
-          at:new Date().toISOString()
-        }));
-      }else{
-        sessionStorage.removeItem(FRONT_SESSION_KEY);
+      function cleanCode(value){
+        return String(value || "").replace(/\D/g, "").slice(0,10);
       }
-    }catch{}
-  }
 
-  function isSessionUnlocked(){
-    try{
-      return Boolean(JSON.parse(sessionStorage.getItem(FRONT_SESSION_KEY) || "null")?.unlocked);
-    }catch{
-      return false;
-    }
-  }
-
-  function hasProvisionedCredential(){
-    return Boolean(readRecord(FRONT_RECORD_KEY) || readRecord(LEGACY_RECORD_KEY));
-  }
-
-  function renderGate(){
-    const open = isSessionUnlocked();
-    const provisioned = hasProvisionedCredential();
-
-    form.hidden = open || !provisioned;
-    unlocked.hidden = !open;
-    status.textContent = "";
-    status.className = "admin-gate-status";
-
-    const commandCrumb = $("adminBreadcrumbCommand");
-    if(commandCrumb){
-      commandCrumb.classList.toggle("ready",open);
-      commandCrumb.textContent = open ? "Command Center · Next" : "Command Center";
-    }
-
-    if(!open && !provisioned){
-      status.textContent = "Administrator access is not provisioned on this browser.";
-      status.className = "admin-gate-status error";
-      return;
-    }
-
-    if(!open){
-      codeInput.value = "";
-      setTimeout(() => codeInput.focus(),70);
-    }else{
-      setTimeout(() => $("adminOpenPortal")?.focus(),70);
-    }
-  }
-
-  function openGate(){
-    priorFocus = document.activeElement;
-    overlay.classList.add("open");
-    overlay.setAttribute("aria-hidden","false");
-    document.body.classList.add("menu-open");
-    renderGate();
-  }
-
-  function closeGate(){
-    overlay.classList.remove("open");
-    overlay.setAttribute("aria-hidden","true");
-    document.body.classList.remove("menu-open");
-    $("adminChangePanel").hidden = true;
-    $("adminChangeToggle").setAttribute("aria-expanded","false");
-    if(priorFocus instanceof HTMLElement) priorFocus.focus();
-  }
-
-  function gateFocusable(){
-    return [...panel.querySelectorAll(
-      'button:not([disabled]),input:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])'
-    )].filter(el => !el.hidden && !el.closest("[hidden]"));
-  }
-
-  [codeInput,$("adminCurrentCode"),$("adminNewCode"),$("adminConfirmCode")].forEach(input => {
-    input?.addEventListener("input",() => {
-      input.value = cleanCode(input.value);
-    });
-  });
-
-  $("adminEntry")?.addEventListener("click",openGate);
-  $("adminGateClose")?.addEventListener("click",closeGate);
-  overlay?.addEventListener("click",event => {
-    if(event.target === overlay) closeGate();
-  });
-
-  $("adminShowCode")?.addEventListener("click",() => {
-    const show = codeInput.type === "password";
-    codeInput.type = show ? "text" : "password";
-    $("adminShowCode").textContent = show ? "Hide" : "Show";
-    $("adminShowCode").setAttribute("aria-pressed",String(show));
-    codeInput.focus();
-  });
-
-  form?.addEventListener("submit",async event => {
-    event.preventDefault();
-    const code = cleanCode(codeInput.value);
-
-    if(!isValidCode(code)){
-      status.textContent = "Enter exactly 10 digits.";
-      status.className = "admin-gate-status error";
-      codeInput.focus();
-      return;
-    }
-
-    status.textContent = "Checking gate…";
-    status.className = "admin-gate-status";
-
-    if(!(await verifyFront(code))){
-      status.textContent = "Notice: This computer is now judging your life choices.";
-      status.className = "admin-gate-status error";
-      codeInput.select();
-      return;
-    }
-
-    /* One-time migration from the old shared verifier into Gate 1 only. */
-    if(!readRecord(FRONT_RECORD_KEY)){
-      await saveFrontCode(code);
-    }
-
-    setSessionUnlocked(true);
-    renderGate();
-  });
-
-  $("adminOpenPortal")?.addEventListener("click",() => {
-    if(!isSessionUnlocked()) return;
-    window.location.assign(ADMIN_PORTAL_URL);
-  });
-
-  $("adminLockNow")?.addEventListener("click",() => {
-    setSessionUnlocked(false);
-    renderGate();
-  });
-
-  $("adminChangeToggle")?.addEventListener("click",() => {
-    const change = $("adminChangePanel");
-    const opening = change.hidden;
-    change.hidden = !opening;
-    $("adminChangeToggle").setAttribute("aria-expanded",String(opening));
-    if(opening) setTimeout(() => $("adminCurrentCode").focus(),50);
-  });
-
-  $("adminChangePanel")?.addEventListener("submit",async event => {
-    event.preventDefault();
-
-    const current = cleanCode($("adminCurrentCode").value);
-    const next = cleanCode($("adminNewCode").value);
-    const confirm = cleanCode($("adminConfirmCode").value);
-    const changeStatus = $("adminChangeStatus");
-
-    if(!isValidCode(current) || !isValidCode(next) || !isValidCode(confirm)){
-      changeStatus.textContent = "All gate-code fields must contain exactly 10 digits.";
-      changeStatus.className = "admin-gate-status error";
-      return;
-    }
-
-    if(next !== confirm){
-      changeStatus.textContent = "The new gate codes do not match.";
-      changeStatus.className = "admin-gate-status error";
-      return;
-    }
-
-    if(!(await verifyFront(current))){
-      changeStatus.textContent = "The current Gate 1 code was not accepted.";
-      changeStatus.className = "admin-gate-status error";
-      return;
-    }
-
-    const commandRecord = readRecord(COMMAND_RECORD_KEY);
-    if(commandRecord && await verifyAgainstRecord(next,commandRecord)){
-      changeStatus.textContent = "Gate 1 and Gate 2 must use different passcodes.";
-      changeStatus.className = "admin-gate-status error";
-      return;
-    }
-
-    await saveFrontCode(next);
-    setSessionUnlocked(true);
-
-    changeStatus.textContent = "Gate 1 passcode updated independently.";
-    changeStatus.className = "admin-gate-status ok";
-    $("adminCurrentCode").value = "";
-    $("adminNewCode").value = "";
-    $("adminConfirmCode").value = "";
-  });
-
-  document.addEventListener("keydown",event => {
-    if(!overlay.classList.contains("open")) return;
-
-    if(event.key === "Escape"){
-      event.preventDefault();
-      closeGate();
-      return;
-    }
-
-    if(event.key === "Tab"){
-      const focusable = gateFocusable();
-      if(!focusable.length) return;
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-
-      if(event.shiftKey && document.activeElement === first){
-        event.preventDefault();
-        last.focus();
-      }else if(!event.shiftKey && document.activeElement === last){
-        event.preventDefault();
-        first.focus();
+      function isValidCode(value){
+        return /^[0-9]{10}$/.test(String(value || ""));
       }
-    }
-  });
-})();
+
+      function bytesToBase64(bytes){
+        let binary = "";
+        bytes.forEach(byte => binary += String.fromCharCode(byte));
+        return btoa(binary);
+      }
+
+      function base64ToBytes(value){
+        const binary = atob(value);
+        return Uint8Array.from(binary, char => char.charCodeAt(0));
+      }
+
+      async function derive(code,salt){
+        const material = await crypto.subtle.importKey(
+          "raw", encoder.encode(code), {name:"PBKDF2"}, false, ["deriveBits"]
+        );
+        const bits = await crypto.subtle.deriveBits(
+          {name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},
+          material,256
+        );
+        return new Uint8Array(bits);
+      }
+
+      function constantTimeEqual(a,b){
+        if(a.length !== b.length) return false;
+        let diff = 0;
+        for(let i=0;i<a.length;i++) diff |= a[i] ^ b[i];
+        return diff === 0;
+      }
+
+      function readRecord(){
+        try{
+          const raw = localStorage.getItem(RECORD_KEY);
+          return raw ? JSON.parse(raw) : null;
+        }catch{ return null; }
+      }
+
+      async function verify(code){
+        if(!isValidCode(code)) return false;
+        const record = readRecord();
+        if(!record?.salt || !record?.hash) return code === DEFAULT_CODE;
+        try{
+          const salt = base64ToBytes(record.salt);
+          const expected = base64ToBytes(record.hash);
+          const actual = await derive(code,salt);
+          return constantTimeEqual(actual,expected);
+        }catch{ return false; }
+      }
+
+      async function saveNewCode(code){
+        const salt = crypto.getRandomValues(new Uint8Array(16));
+        const hash = await derive(code,salt);
+        const record = {
+          version:2,
+          algorithm:"PBKDF2-SHA256",
+          iterations:ITERATIONS,
+          salt:bytesToBase64(salt),
+          hash:bytesToBase64(hash),
+          changedAt:new Date().toISOString()
+        };
+        localStorage.setItem(RECORD_KEY,JSON.stringify(record));
+      }
+
+      function setSessionUnlocked(value){
+        try{
+          if(value) sessionStorage.setItem(SESSION_KEY,JSON.stringify({unlocked:true,at:new Date().toISOString()}));
+          else sessionStorage.removeItem(SESSION_KEY);
+        }catch{}
+      }
+
+      function isSessionUnlocked(){
+        try{ return Boolean(JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null")?.unlocked); }
+        catch{ return false; }
+      }
+
+      function renderGate(){
+        const open = isSessionUnlocked();
+        form.hidden = open;
+        unlocked.hidden = !open;
+        status.textContent = "";
+        status.className = "admin-gate-status";
+        if(!open){
+          codeInput.value = "";
+          setTimeout(() => codeInput.focus(),70);
+        }else{
+          setTimeout(() => $("adminOpenPortal")?.focus(),70);
+        }
+      }
+
+      function openGate(){
+        priorFocus = document.activeElement;
+        overlay.classList.add("open");
+        overlay.setAttribute("aria-hidden","false");
+        document.body.classList.add("menu-open");
+        renderGate();
+      }
+
+      function closeGate(){
+        overlay.classList.remove("open");
+        overlay.setAttribute("aria-hidden","true");
+        document.body.classList.remove("menu-open");
+        $("adminChangePanel").hidden = true;
+        $("adminChangeToggle").setAttribute("aria-expanded","false");
+        if(priorFocus instanceof HTMLElement) priorFocus.focus();
+      }
+
+      function gateFocusable(){
+        return [...panel.querySelectorAll('button:not([disabled]),input:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])')]
+          .filter(el => !el.hidden && !el.closest('[hidden]'));
+      }
+
+      [codeInput,$("adminCurrentCode"),$("adminNewCode"),$("adminConfirmCode")].forEach(input => {
+        input?.addEventListener("input",() => { input.value = cleanCode(input.value); });
+      });
+
+      $("adminEntry")?.addEventListener("click",openGate);
+      $("adminGateClose")?.addEventListener("click",closeGate);
+      overlay?.addEventListener("click",event => { if(event.target === overlay) closeGate(); });
+
+      $("adminShowCode")?.addEventListener("click",() => {
+        const show = codeInput.type === "password";
+        codeInput.type = show ? "text" : "password";
+        $("adminShowCode").textContent = show ? "Hide" : "Show";
+        $("adminShowCode").setAttribute("aria-pressed",String(show));
+        codeInput.focus();
+      });
+
+      form?.addEventListener("submit",async event => {
+        event.preventDefault();
+        const code = cleanCode(codeInput.value);
+        if(!isValidCode(code)){
+          status.textContent = "Enter exactly 10 digits.";
+          status.className = "admin-gate-status error";
+          codeInput.focus();
+          return;
+        }
+        status.textContent = "Checking gate…";
+        status.className = "admin-gate-status";
+        const ok = await verify(code);
+        if(!ok){
+  status.textContent =
+    "Notice: This computer is now judging your life choices.";
+  status.className = "admin-gate-status error";
+  codeInput.select();
+  return;
+}
+        // First successful use initializes a hashed copy of the default code locally.
+        if(!readRecord()) await saveNewCode(code);
+        setSessionUnlocked(true);
+        renderGate();
+      });
+
+      $("adminOpenPortal")?.addEventListener("click",() => {
+        window.location.assign(ADMIN_PORTAL_URL);
+      });
+
+      $("adminLockNow")?.addEventListener("click",() => {
+        setSessionUnlocked(false);
+        renderGate();
+      });
+
+      $("adminChangeToggle")?.addEventListener("click",() => {
+        const change = $("adminChangePanel");
+        const opening = change.hidden;
+        change.hidden = !opening;
+        $("adminChangeToggle").setAttribute("aria-expanded",String(opening));
+        if(opening) setTimeout(() => $("adminCurrentCode").focus(),50);
+      });
+
+      $("adminChangePanel")?.addEventListener("submit",async event => {
+        event.preventDefault();
+        const current = cleanCode($("adminCurrentCode").value);
+        const next = cleanCode($("adminNewCode").value);
+        const confirm = cleanCode($("adminConfirmCode").value);
+        const changeStatus = $("adminChangeStatus");
+
+        if(!isValidCode(current) || !isValidCode(next) || !isValidCode(confirm)){
+          changeStatus.textContent = "All gate-code fields must contain exactly 10 digits.";
+          changeStatus.className = "admin-gate-status error";
+          return;
+        }
+        if(next !== confirm){
+          changeStatus.textContent = "The new gate codes do not match.";
+          changeStatus.className = "admin-gate-status error";
+          return;
+        }
+        if(!(await verify(current))){
+          changeStatus.textContent = "The current gate code was not accepted.";
+          changeStatus.className = "admin-gate-status error";
+          return;
+        }
+        await saveNewCode(next);
+        changeStatus.textContent = "New 10-digit gate code saved to this browser.";
+        changeStatus.className = "admin-gate-status ok";
+        $("adminCurrentCode").value = "";
+        $("adminNewCode").value = "";
+        $("adminConfirmCode").value = "";
+      });
+
+      document.addEventListener("keydown",event => {
+        if(!overlay.classList.contains("open")) return;
+        if(event.key === "Escape"){
+          event.preventDefault();
+          closeGate();
+          return;
+        }
+        if(event.key === "Tab"){
+          const focusable = gateFocusable();
+          if(!focusable.length) return;
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); }
+          else if(!event.shiftKey && document.activeElement === last){ event.preventDefault(); first.focus(); }
+        }
+      });
+    })();
   </script>
 
   <script>
@@ -5431,4 +5015,5 @@
     })();
   </script>
 </body>
+</html>
 </html>
