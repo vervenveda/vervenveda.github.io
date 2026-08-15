@@ -4267,248 +4267,321 @@
 
 
   <script>
-    (() => {
-      "use strict";
+   (() => {
+  "use strict";
 
-      const ADMIN_PORTAL_URL = "/admin/";
-      const RECORD_KEY = "VNV_ADMIN_GATE_RECORD_V2";
-      const SESSION_KEY = "VNV_ADMIN_GATE_SESSION_V2";
-      const DEFAULT_CODE = "0000000000";
-      const ITERATIONS = 120000;
-      const encoder = new TextEncoder();
-      const $ = id => document.getElementById(id);
-      let priorFocus = null;
+  const ADMIN_PORTAL_URL = "/admin/";
+  const FRONT_RECORD_KEY = "VNV_G1_RECORD_V3";
+  const COMMAND_RECORD_KEY = "VNV_G2_RECORD_V3";
+  const LEGACY_RECORD_KEY = "VNV_ADMIN_GATE_RECORD_V2";
+  const FRONT_SESSION_KEY = "VNV_G1_SESSION_V3";
+  const ITERATIONS = 120000;
+  const encoder = new TextEncoder();
+  const $ = id => document.getElementById(id);
+  let priorFocus = null;
 
-      const overlay = $("adminGate");
-      const panel = overlay?.querySelector(".admin-gate-panel");
-      const codeInput = $("adminCode");
-      const form = $("adminGateForm");
-      const unlocked = $("adminUnlocked");
-      const status = $("adminGateStatus");
+  const overlay = $("adminGate");
+  const panel = overlay?.querySelector(".admin-gate-panel");
+  const codeInput = $("adminCode");
+  const form = $("adminGateForm");
+  const unlocked = $("adminUnlocked");
+  const status = $("adminGateStatus");
 
-      function cleanCode(value){
-        return String(value || "").replace(/\D/g, "").slice(0,10);
+  function cleanCode(value){
+    return String(value || "").replace(/\D/g, "").slice(0,10);
+  }
+
+  function isValidCode(value){
+    return /^[0-9]{10}$/.test(String(value || ""));
+  }
+
+  function bytesToBase64(bytes){
+    let binary = "";
+    bytes.forEach(byte => binary += String.fromCharCode(byte));
+    return btoa(binary);
+  }
+
+  function base64ToBytes(value){
+    const binary = atob(value);
+    return Uint8Array.from(binary, char => char.charCodeAt(0));
+  }
+
+  async function derive(code,salt){
+    const material = await crypto.subtle.importKey(
+      "raw", encoder.encode(code), {name:"PBKDF2"}, false, ["deriveBits"]
+    );
+    const bits = await crypto.subtle.deriveBits(
+      {name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},
+      material,256
+    );
+    return new Uint8Array(bits);
+  }
+
+  function constantTimeEqual(a,b){
+    if(a.length !== b.length) return false;
+    let diff = 0;
+    for(let i=0;i<a.length;i++) diff |= a[i] ^ b[i];
+    return diff === 0;
+  }
+
+  function readRecord(key){
+    try{
+      const raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : null;
+    }catch{
+      return null;
+    }
+  }
+
+  async function verifyAgainstRecord(code,record){
+    if(!isValidCode(code) || !record?.salt || !record?.hash) return false;
+    try{
+      const salt = base64ToBytes(record.salt);
+      const expected = base64ToBytes(record.hash);
+      const actual = await derive(code,salt);
+      return constantTimeEqual(actual,expected);
+    }catch{
+      return false;
+    }
+  }
+
+  async function verifyFront(code){
+    const front = readRecord(FRONT_RECORD_KEY);
+    if(front) return verifyAgainstRecord(code,front);
+
+    const legacy = readRecord(LEGACY_RECORD_KEY);
+    if(legacy) return verifyAgainstRecord(code,legacy);
+
+    return false;
+  }
+
+  async function saveFrontCode(code){
+    const salt = crypto.getRandomValues(new Uint8Array(16));
+    const hash = await derive(code,salt);
+    localStorage.setItem(FRONT_RECORD_KEY,JSON.stringify({
+      version:3,
+      algorithm:"PBKDF2-SHA256",
+      iterations:ITERATIONS,
+      salt:bytesToBase64(salt),
+      hash:bytesToBase64(hash),
+      changedAt:new Date().toISOString()
+    }));
+  }
+
+  function setSessionUnlocked(value){
+    try{
+      if(value){
+        sessionStorage.setItem(FRONT_SESSION_KEY,JSON.stringify({
+          unlocked:true,
+          gate:"front",
+          at:new Date().toISOString()
+        }));
+      }else{
+        sessionStorage.removeItem(FRONT_SESSION_KEY);
       }
+    }catch{}
+  }
 
-      function isValidCode(value){
-        return /^[0-9]{10}$/.test(String(value || ""));
-      }
+  function isSessionUnlocked(){
+    try{
+      return Boolean(JSON.parse(sessionStorage.getItem(FRONT_SESSION_KEY) || "null")?.unlocked);
+    }catch{
+      return false;
+    }
+  }
 
-      function bytesToBase64(bytes){
-        let binary = "";
-        bytes.forEach(byte => binary += String.fromCharCode(byte));
-        return btoa(binary);
-      }
+  function hasProvisionedCredential(){
+    return Boolean(readRecord(FRONT_RECORD_KEY) || readRecord(LEGACY_RECORD_KEY));
+  }
 
-      function base64ToBytes(value){
-        const binary = atob(value);
-        return Uint8Array.from(binary, char => char.charCodeAt(0));
-      }
+  function renderGate(){
+    const open = isSessionUnlocked();
+    const provisioned = hasProvisionedCredential();
 
-      async function derive(code,salt){
-        const material = await crypto.subtle.importKey(
-          "raw", encoder.encode(code), {name:"PBKDF2"}, false, ["deriveBits"]
-        );
-        const bits = await crypto.subtle.deriveBits(
-          {name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},
-          material,256
-        );
-        return new Uint8Array(bits);
-      }
+    form.hidden = open || !provisioned;
+    unlocked.hidden = !open;
+    status.textContent = "";
+    status.className = "admin-gate-status";
 
-      function constantTimeEqual(a,b){
-        if(a.length !== b.length) return false;
-        let diff = 0;
-        for(let i=0;i<a.length;i++) diff |= a[i] ^ b[i];
-        return diff === 0;
-      }
+    const commandCrumb = $("adminBreadcrumbCommand");
+    if(commandCrumb){
+      commandCrumb.classList.toggle("ready",open);
+      commandCrumb.textContent = open ? "Command Center · Next" : "Command Center";
+    }
 
-      function readRecord(){
-        try{
-          const raw = localStorage.getItem(RECORD_KEY);
-          return raw ? JSON.parse(raw) : null;
-        }catch{ return null; }
-      }
+    if(!open && !provisioned){
+      status.textContent = "Administrator access is not provisioned on this browser.";
+      status.className = "admin-gate-status error";
+      return;
+    }
 
-      async function verify(code){
-        if(!isValidCode(code)) return false;
-        const record = readRecord();
-        if(!record?.salt || !record?.hash) return code === DEFAULT_CODE;
-        try{
-          const salt = base64ToBytes(record.salt);
-          const expected = base64ToBytes(record.hash);
-          const actual = await derive(code,salt);
-          return constantTimeEqual(actual,expected);
-        }catch{ return false; }
-      }
+    if(!open){
+      codeInput.value = "";
+      setTimeout(() => codeInput.focus(),70);
+    }else{
+      setTimeout(() => $("adminOpenPortal")?.focus(),70);
+    }
+  }
 
-      async function saveNewCode(code){
-        const salt = crypto.getRandomValues(new Uint8Array(16));
-        const hash = await derive(code,salt);
-        const record = {
-          version:2,
-          algorithm:"PBKDF2-SHA256",
-          iterations:ITERATIONS,
-          salt:bytesToBase64(salt),
-          hash:bytesToBase64(hash),
-          changedAt:new Date().toISOString()
-        };
-        localStorage.setItem(RECORD_KEY,JSON.stringify(record));
-      }
+  function openGate(){
+    priorFocus = document.activeElement;
+    overlay.classList.add("open");
+    overlay.setAttribute("aria-hidden","false");
+    document.body.classList.add("menu-open");
+    renderGate();
+  }
 
-      function setSessionUnlocked(value){
-        try{
-          if(value) sessionStorage.setItem(SESSION_KEY,JSON.stringify({unlocked:true,at:new Date().toISOString()}));
-          else sessionStorage.removeItem(SESSION_KEY);
-        }catch{}
-      }
+  function closeGate(){
+    overlay.classList.remove("open");
+    overlay.setAttribute("aria-hidden","true");
+    document.body.classList.remove("menu-open");
+    $("adminChangePanel").hidden = true;
+    $("adminChangeToggle").setAttribute("aria-expanded","false");
+    if(priorFocus instanceof HTMLElement) priorFocus.focus();
+  }
 
-      function isSessionUnlocked(){
-        try{ return Boolean(JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null")?.unlocked); }
-        catch{ return false; }
-      }
+  function gateFocusable(){
+    return [...panel.querySelectorAll(
+      'button:not([disabled]),input:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])'
+    )].filter(el => !el.hidden && !el.closest("[hidden]"));
+  }
 
-      function renderGate(){
-        const open = isSessionUnlocked();
-        form.hidden = open;
-        unlocked.hidden = !open;
-        status.textContent = "";
-        status.className = "admin-gate-status";
-        if(!open){
-          codeInput.value = "";
-          setTimeout(() => codeInput.focus(),70);
-        }else{
-          setTimeout(() => $("adminOpenPortal")?.focus(),70);
-        }
-      }
+  [codeInput,$("adminCurrentCode"),$("adminNewCode"),$("adminConfirmCode")].forEach(input => {
+    input?.addEventListener("input",() => {
+      input.value = cleanCode(input.value);
+    });
+  });
 
-      function openGate(){
-        priorFocus = document.activeElement;
-        overlay.classList.add("open");
-        overlay.setAttribute("aria-hidden","false");
-        document.body.classList.add("menu-open");
-        renderGate();
-      }
+  $("adminEntry")?.addEventListener("click",openGate);
+  $("adminGateClose")?.addEventListener("click",closeGate);
+  overlay?.addEventListener("click",event => {
+    if(event.target === overlay) closeGate();
+  });
 
-      function closeGate(){
-        overlay.classList.remove("open");
-        overlay.setAttribute("aria-hidden","true");
-        document.body.classList.remove("menu-open");
-        $("adminChangePanel").hidden = true;
-        $("adminChangeToggle").setAttribute("aria-expanded","false");
-        if(priorFocus instanceof HTMLElement) priorFocus.focus();
-      }
+  $("adminShowCode")?.addEventListener("click",() => {
+    const show = codeInput.type === "password";
+    codeInput.type = show ? "text" : "password";
+    $("adminShowCode").textContent = show ? "Hide" : "Show";
+    $("adminShowCode").setAttribute("aria-pressed",String(show));
+    codeInput.focus();
+  });
 
-      function gateFocusable(){
-        return [...panel.querySelectorAll('button:not([disabled]),input:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])')]
-          .filter(el => !el.hidden && !el.closest('[hidden]'));
-      }
+  form?.addEventListener("submit",async event => {
+    event.preventDefault();
+    const code = cleanCode(codeInput.value);
 
-      [codeInput,$("adminCurrentCode"),$("adminNewCode"),$("adminConfirmCode")].forEach(input => {
-        input?.addEventListener("input",() => { input.value = cleanCode(input.value); });
-      });
+    if(!isValidCode(code)){
+      status.textContent = "Enter exactly 10 digits.";
+      status.className = "admin-gate-status error";
+      codeInput.focus();
+      return;
+    }
 
-      $("adminEntry")?.addEventListener("click",openGate);
-      $("adminGateClose")?.addEventListener("click",closeGate);
-      overlay?.addEventListener("click",event => { if(event.target === overlay) closeGate(); });
+    status.textContent = "Checking gate…";
+    status.className = "admin-gate-status";
 
-      $("adminShowCode")?.addEventListener("click",() => {
-        const show = codeInput.type === "password";
-        codeInput.type = show ? "text" : "password";
-        $("adminShowCode").textContent = show ? "Hide" : "Show";
-        $("adminShowCode").setAttribute("aria-pressed",String(show));
-        codeInput.focus();
-      });
+    if(!(await verifyFront(code))){
+      status.textContent = "Notice: This computer is now judging your life choices.";
+      status.className = "admin-gate-status error";
+      codeInput.select();
+      return;
+    }
 
-      form?.addEventListener("submit",async event => {
+    /* One-time migration from the old shared verifier into Gate 1 only. */
+    if(!readRecord(FRONT_RECORD_KEY)){
+      await saveFrontCode(code);
+    }
+
+    setSessionUnlocked(true);
+    renderGate();
+  });
+
+  $("adminOpenPortal")?.addEventListener("click",() => {
+    if(!isSessionUnlocked()) return;
+    window.location.assign(ADMIN_PORTAL_URL);
+  });
+
+  $("adminLockNow")?.addEventListener("click",() => {
+    setSessionUnlocked(false);
+    renderGate();
+  });
+
+  $("adminChangeToggle")?.addEventListener("click",() => {
+    const change = $("adminChangePanel");
+    const opening = change.hidden;
+    change.hidden = !opening;
+    $("adminChangeToggle").setAttribute("aria-expanded",String(opening));
+    if(opening) setTimeout(() => $("adminCurrentCode").focus(),50);
+  });
+
+  $("adminChangePanel")?.addEventListener("submit",async event => {
+    event.preventDefault();
+
+    const current = cleanCode($("adminCurrentCode").value);
+    const next = cleanCode($("adminNewCode").value);
+    const confirm = cleanCode($("adminConfirmCode").value);
+    const changeStatus = $("adminChangeStatus");
+
+    if(!isValidCode(current) || !isValidCode(next) || !isValidCode(confirm)){
+      changeStatus.textContent = "All gate-code fields must contain exactly 10 digits.";
+      changeStatus.className = "admin-gate-status error";
+      return;
+    }
+
+    if(next !== confirm){
+      changeStatus.textContent = "The new gate codes do not match.";
+      changeStatus.className = "admin-gate-status error";
+      return;
+    }
+
+    if(!(await verifyFront(current))){
+      changeStatus.textContent = "The current Gate 1 code was not accepted.";
+      changeStatus.className = "admin-gate-status error";
+      return;
+    }
+
+    const commandRecord = readRecord(COMMAND_RECORD_KEY);
+    if(commandRecord && await verifyAgainstRecord(next,commandRecord)){
+      changeStatus.textContent = "Gate 1 and Gate 2 must use different passcodes.";
+      changeStatus.className = "admin-gate-status error";
+      return;
+    }
+
+    await saveFrontCode(next);
+    setSessionUnlocked(true);
+
+    changeStatus.textContent = "Gate 1 passcode updated independently.";
+    changeStatus.className = "admin-gate-status ok";
+    $("adminCurrentCode").value = "";
+    $("adminNewCode").value = "";
+    $("adminConfirmCode").value = "";
+  });
+
+  document.addEventListener("keydown",event => {
+    if(!overlay.classList.contains("open")) return;
+
+    if(event.key === "Escape"){
+      event.preventDefault();
+      closeGate();
+      return;
+    }
+
+    if(event.key === "Tab"){
+      const focusable = gateFocusable();
+      if(!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if(event.shiftKey && document.activeElement === first){
         event.preventDefault();
-        const code = cleanCode(codeInput.value);
-        if(!isValidCode(code)){
-          status.textContent = "Enter exactly 10 digits.";
-          status.className = "admin-gate-status error";
-          codeInput.focus();
-          return;
-        }
-        status.textContent = "Checking gate…";
-        status.className = "admin-gate-status";
-        const ok = await verify(code);
-        if(!ok){
-  status.textContent =
-    "Notice: This computer is now judging your life choices.";
-  status.className = "admin-gate-status error";
-  codeInput.select();
-  return;
-}
-        // First successful use initializes a hashed copy of the default code locally.
-        if(!readRecord()) await saveNewCode(code);
-        setSessionUnlocked(true);
-        renderGate();
-      });
-
-      $("adminOpenPortal")?.addEventListener("click",() => {
-        window.location.assign(ADMIN_PORTAL_URL);
-      });
-
-      $("adminLockNow")?.addEventListener("click",() => {
-        setSessionUnlocked(false);
-        renderGate();
-      });
-
-      $("adminChangeToggle")?.addEventListener("click",() => {
-        const change = $("adminChangePanel");
-        const opening = change.hidden;
-        change.hidden = !opening;
-        $("adminChangeToggle").setAttribute("aria-expanded",String(opening));
-        if(opening) setTimeout(() => $("adminCurrentCode").focus(),50);
-      });
-
-      $("adminChangePanel")?.addEventListener("submit",async event => {
+        last.focus();
+      }else if(!event.shiftKey && document.activeElement === last){
         event.preventDefault();
-        const current = cleanCode($("adminCurrentCode").value);
-        const next = cleanCode($("adminNewCode").value);
-        const confirm = cleanCode($("adminConfirmCode").value);
-        const changeStatus = $("adminChangeStatus");
-
-        if(!isValidCode(current) || !isValidCode(next) || !isValidCode(confirm)){
-          changeStatus.textContent = "All gate-code fields must contain exactly 10 digits.";
-          changeStatus.className = "admin-gate-status error";
-          return;
-        }
-        if(next !== confirm){
-          changeStatus.textContent = "The new gate codes do not match.";
-          changeStatus.className = "admin-gate-status error";
-          return;
-        }
-        if(!(await verify(current))){
-          changeStatus.textContent = "The current gate code was not accepted.";
-          changeStatus.className = "admin-gate-status error";
-          return;
-        }
-        await saveNewCode(next);
-        changeStatus.textContent = "New 10-digit gate code saved to this browser.";
-        changeStatus.className = "admin-gate-status ok";
-        $("adminCurrentCode").value = "";
-        $("adminNewCode").value = "";
-        $("adminConfirmCode").value = "";
-      });
-
-      document.addEventListener("keydown",event => {
-        if(!overlay.classList.contains("open")) return;
-        if(event.key === "Escape"){
-          event.preventDefault();
-          closeGate();
-          return;
-        }
-        if(event.key === "Tab"){
-          const focusable = gateFocusable();
-          if(!focusable.length) return;
-          const first = focusable[0];
-          const last = focusable[focusable.length - 1];
-          if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); }
-          else if(!event.shiftKey && document.activeElement === last){ event.preventDefault(); first.focus(); }
-        }
-      });
-    })();
+        first.focus();
+      }
+    }
+  });
+})();
   </script>
 
   <script>
