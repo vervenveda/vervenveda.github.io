@@ -3520,6 +3520,121 @@
   line-height:1.25;
 }
 
+    /* =========================================================
+   VERVE N VEDA — RESPONSIVE CONTROL GEOMETRY
+   Typography and button containment only.
+   ========================================================= */
+
+:root{
+  --vnv-control:clamp(9px, .72vw, 11px);
+}
+
+/* ---------- universal control containment ---------- */
+
+.button,
+.control-button,
+.header-links a,
+.pillar-primary,
+.pillar-browse,
+.feature-open-button,
+.feature-pause-button,
+.viewer-tool,
+.viewer-full-link{
+  box-sizing:border-box!important;
+  max-width:100%!important;
+
+  font-size:var(--vnv-control)!important;
+  font-weight:400!important;
+  line-height:1.2!important;
+
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  hyphens:none!important;
+}
+
+/* ---------- top navigation ---------- */
+
+.header-links{
+  min-width:0!important;
+  display:flex!important;
+  justify-content:center!important;
+  gap:clamp(3px,.4vw,6px)!important;
+}
+
+.header-links a{
+  width:clamp(78px,7.4vw,106px)!important;
+  min-width:0!important;
+  height:32px!important;
+
+  padding-inline:clamp(3px,.5vw,7px)!important;
+
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:clip!important;
+
+  letter-spacing:clamp(.005em,.08vw,.02em)!important;
+}
+
+/* ---------- ordinary buttons ---------- */
+
+.button,
+.control-button,
+.feature-open-button,
+.feature-pause-button,
+.viewer-tool,
+.viewer-full-link{
+  min-width:0!important;
+  width:auto!important;
+
+  padding-inline:clamp(9px,1.2vw,18px)!important;
+
+  white-space:normal!important;
+}
+
+/* ---------- Four Great Halls ---------- */
+
+.pillar-primary,
+.pillar-browse{
+  width:100%!important;
+  min-width:0!important;
+
+  padding-inline:clamp(7px,1vw,14px)!important;
+
+  font-size:clamp(9px,.7vw,11px)!important;
+  letter-spacing:clamp(.025em,.05vw,.055em)!important;
+  line-height:1.25!important;
+
+  white-space:normal!important;
+}
+
+/* ---------- smaller desktop ---------- */
+
+@media(max-width:1230px){
+  .header-links{
+    display:none!important;
+  }
+}
+
+/* ---------- tablets ---------- */
+
+@media(max-width:860px){
+  .button,
+  .control-button{
+    max-width:100%!important;
+  }
+}
+
+/* ---------- phones ---------- */
+
+@media(max-width:560px){
+  .button,
+  .control-button,
+  .pillar-primary,
+  .pillar-browse{
+    width:100%!important;
+  }
+}
+
 </style>
 </head>
 <body id="top">
