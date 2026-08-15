@@ -58,6 +58,24 @@ a{color:inherit}
 body.unlocked #gate{display:none}
 body:not(.unlocked) #adminRoot{display:none}
 
+  .gate-breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:7px;
+  margin:0 0 16px;
+  color:#727a75;
+  font-size:9px;
+  letter-spacing:.07em;
+  line-height:1.4;
+  text-transform:uppercase;
+}
+.gate-breadcrumbs a{color:#4f5a54;text-decoration:none}
+.gate-breadcrumbs strong{color:#8f2424;font-weight:700}
+.gate-breadcrumbs .sep{color:#b59a67;user-select:none}
+
+
 /* premium command center */
 #adminRoot{min-height:100svh;display:grid;grid-template-columns:248px minmax(0,1fr);background:linear-gradient(180deg,#08121e,#0b1522)}
 .sidebar{
@@ -522,6 +540,13 @@ body[data-theme="light"] .pulse-attention-title{color:#725b30}
 
 <section id="gate" aria-label="Administrator gate">
   <div class="gate-card">
+    <nav class="gate-breadcrumbs" aria-label="Administrator path">
+  <a href="/">Verve N Veda</a>
+  <span class="sep" aria-hidden="true">›</span>
+  <span>Administrator Gate</span>
+  <span class="sep" aria-hidden="true">›</span>
+  <strong aria-current="page">Command Center</strong>
+</nav>
     <span class="gate-kicker">Second Security Layer</span>
     <h1>ADMIN</h1>
     <form class="gate-form" id="gateForm">
@@ -951,13 +976,14 @@ body[data-theme="light"] .pulse-attention-title{color:#725b30}
 "use strict";
 
 /* =========================================================
-   INTENTIONAL SECOND-LAYER ADMIN GATE
+   SECOND ADMINISTRATOR GATE — INDEPENDENT CREDENTIAL
    ========================================================= */
-const RECORD_KEY="VNV_ADMIN_GATE_RECORD_V2";
-const SESSION_KEY="VNV_MINI_CLOUD_SESSION_V2";
-const SHARED_SESSION_KEY="VNV_ADMIN_GATE_SESSION_V2";
-const ATTEMPT_KEY="VNV_MINI_CLOUD_FAILED_ATTEMPTS_V2";
-const DEFAULT_CODE="0000000000";
+const FRONT_RECORD_KEY="VNV_G1_RECORD_V3";
+const COMMAND_RECORD_KEY="VNV_G2_RECORD_V3";
+const LEGACY_RECORD_KEY="VNV_ADMIN_GATE_RECORD_V2";
+const FRONT_SESSION_KEY="VNV_G1_SESSION_V3";
+const COMMAND_SESSION_KEY="VNV_G2_SESSION_V3";
+const ATTEMPT_KEY="VNV_G2_FAILED_ATTEMPTS_V3";
 const ITERATIONS=120000;
 const encoder=new TextEncoder();
 
@@ -965,6 +991,11 @@ const gateCode=document.getElementById("gateCode");
 const showCode=document.getElementById("showCode");
 const gateForm=document.getElementById("gateForm");
 const gateStatus=document.getElementById("gateStatus");
+const gateSetupForm=document.getElementById("gateSetupForm");
+const gateLegacyCode=document.getElementById("gateLegacyCode");
+const gateNewCode=document.getElementById("gateNewCode");
+const gateConfirmCode=document.getElementById("gateConfirmCode");
+const gateSetupStatus=document.getElementById("gateSetupStatus");
 const lockCloud=document.getElementById("lockCloud");
 const changePasscode=document.getElementById("changePasscode");
 const changeOverlay=document.getElementById("changeOverlay");
@@ -975,82 +1006,307 @@ const newCode=document.getElementById("newCode");
 const confirmCode=document.getElementById("confirmCode");
 const changeStatus=document.getElementById("changeStatus");
 
-function cleanCode(v){return String(v||"").replace(/\D/g,"").slice(0,10)}
-function isValidCode(v){return /^[0-9]{10}$/.test(String(v||""))}
-function bytesToBase64(bytes){let binary="";bytes.forEach(b=>binary+=String.fromCharCode(b));return btoa(binary)}
-function base64ToBytes(v){return Uint8Array.from(atob(v),c=>c.charCodeAt(0))}
+function cleanCode(v){
+  return String(v||"").replace(/\D/g,"").slice(0,10);
+}
+function isValidCode(v){
+  return /^[0-9]{10}$/.test(String(v||""));
+}
+function bytesToBase64(bytes){
+  let binary="";
+  bytes.forEach(b=>binary+=String.fromCharCode(b));
+  return btoa(binary);
+}
+function base64ToBytes(v){
+  return Uint8Array.from(atob(v),c=>c.charCodeAt(0));
+}
 async function derive(code,salt){
-  const material=await crypto.subtle.importKey("raw",encoder.encode(code),{name:"PBKDF2"},false,["deriveBits"]);
-  const bits=await crypto.subtle.deriveBits({name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},material,256);
-  return new Uint8Array(bits)
+  const material=await crypto.subtle.importKey(
+    "raw",encoder.encode(code),{name:"PBKDF2"},false,["deriveBits"]
+  );
+  const bits=await crypto.subtle.deriveBits(
+    {name:"PBKDF2",salt,iterations:ITERATIONS,hash:"SHA-256"},
+    material,256
+  );
+  return new Uint8Array(bits);
 }
-function constantTimeEqual(a,b){if(a.length!==b.length)return false;let diff=0;for(let i=0;i<a.length;i++)diff|=a[i]^b[i];return diff===0}
-function readRecord(){try{const raw=localStorage.getItem(RECORD_KEY);return raw?JSON.parse(raw):null}catch{return null}}
-async function verify(code){
-  if(!isValidCode(code))return false;
-  const record=readRecord();
-  if(!record?.salt||!record?.hash)return code===DEFAULT_CODE;
-  try{return constantTimeEqual(await derive(code,base64ToBytes(record.salt)),base64ToBytes(record.hash))}catch{return false}
+function constantTimeEqual(a,b){
+  if(a.length!==b.length)return false;
+  let diff=0;
+  for(let i=0;i<a.length;i++)diff|=a[i]^b[i];
+  return diff===0;
 }
-async function saveNewCode(code){
+function readRecord(key){
+  try{
+    const raw=localStorage.getItem(key);
+    return raw?JSON.parse(raw):null;
+  }catch{
+    return null;
+  }
+}
+async function verifyAgainstRecord(code,record){
+  if(!isValidCode(code)||!record?.salt||!record?.hash)return false;
+  try{
+    return constantTimeEqual(
+      await derive(code,base64ToBytes(record.salt)),
+      base64ToBytes(record.hash)
+    );
+  }catch{
+    return false;
+  }
+}
+async function verifyCommand(code){
+  return verifyAgainstRecord(code,readRecord(COMMAND_RECORD_KEY));
+}
+async function saveCommandCode(code){
   const salt=crypto.getRandomValues(new Uint8Array(16));
   const hash=await derive(code,salt);
-  localStorage.setItem(RECORD_KEY,JSON.stringify({
-    version:2,algorithm:"PBKDF2-SHA256",iterations:ITERATIONS,
-    salt:bytesToBase64(salt),hash:bytesToBase64(hash),changedAt:new Date().toISOString()
-  }))
+  localStorage.setItem(COMMAND_RECORD_KEY,JSON.stringify({
+    version:3,
+    algorithm:"PBKDF2-SHA256",
+    iterations:ITERATIONS,
+    salt:bytesToBase64(salt),
+    hash:bytesToBase64(hash),
+    changedAt:new Date().toISOString()
+  }));
+}
+function hasFrontSession(){
+  try{
+    const record=JSON.parse(sessionStorage.getItem(FRONT_SESSION_KEY)||"null");
+    return Boolean(record?.unlocked);
+  }catch{
+    return false;
+  }
 }
 function setUnlocked(v){
   try{
     if(v){
-      sessionStorage.setItem(SESSION_KEY,"1");
-      sessionStorage.setItem(SHARED_SESSION_KEY,JSON.stringify({unlocked:true,at:new Date().toISOString()}));
+      sessionStorage.setItem(COMMAND_SESSION_KEY,JSON.stringify({
+        unlocked:true,
+        gate:"command",
+        at:new Date().toISOString()
+      }));
     }else{
-      sessionStorage.removeItem(SESSION_KEY);
-      sessionStorage.removeItem(SHARED_SESSION_KEY);
+      sessionStorage.removeItem(COMMAND_SESSION_KEY);
     }
   }catch{}
 }
-function isUnlocked(){try{return sessionStorage.getItem(SESSION_KEY)==="1"}catch{return false}}
-function getFailedAttempts(){try{return Math.max(0,parseInt(sessionStorage.getItem(ATTEMPT_KEY)||"0",10)||0)}catch{return 0}}
-function setFailedAttempts(n){try{sessionStorage.setItem(ATTEMPT_KEY,String(Math.max(0,n|0)))}catch{}}
+function isUnlocked(){
+  try{
+    return Boolean(JSON.parse(sessionStorage.getItem(COMMAND_SESSION_KEY)||"null")?.unlocked);
+  }catch{
+    return false;
+  }
+}
+function getFailedAttempts(){
+  try{
+    return Math.max(0,parseInt(sessionStorage.getItem(ATTEMPT_KEY)||"0",10)||0);
+  }catch{
+    return 0;
+  }
+}
+function setFailedAttempts(n){
+  try{
+    sessionStorage.setItem(ATTEMPT_KEY,String(Math.max(0,n|0)));
+  }catch{}
+}
 function wrongPasscodeMessage(attempt){
-  if(attempt===1) return "Wrong password! You unlocked a new achievement: 'Most Predictable Guess of the Day'.";
-  if(attempt===2) return "Access rejected. My cat walked across the keyboard and almost guessed a better password.";
-  if(attempt===3) return "Incorrect. Please consult a magic 8-ball for better password guessing abilities.";
-  if(attempt===4) return "Notice: This computer is now judging your life choices.";
-  if(attempt===5) return "Password incorrect. The Cyber Police of Disappointment have declined to comment.";
+  if(attempt===1)return "Wrong password! You unlocked a new achievement: 'Most Predictable Guess of the Day'.";
+  if(attempt===2)return "Access rejected. My cat walked across the keyboard and almost guessed a better password.";
+  if(attempt===3)return "Incorrect. Please consult a magic 8-ball for better password guessing abilities.";
+  if(attempt===4)return "Notice: This computer is now judging your life choices.";
+  if(attempt===5)return "Password incorrect. The Cyber Police of Disappointment have declined to comment.";
   return "Access rejected. Incorrect administrator passcode.";
 }
-function renderGate(){
-  document.body.classList.toggle("unlocked",isUnlocked());
-  if(!isUnlocked())setTimeout(()=>gateCode.focus(),40);
+
+/* Gate 1 must have been completed in this tab before Gate 2 is offered. */
+if(!hasFrontSession()){
+  window.location.replace("/");
 }
-["gateCode","currentCode","newCode","confirmCode"].forEach(id=>document.getElementById(id).addEventListener("input",e=>e.target.value=cleanCode(e.target.value)));
-showCode.onclick=()=>{const show=gateCode.type==="password";gateCode.type=show?"text":"password";showCode.textContent=show?"Hide":"Show";gateCode.focus()};
+
+function renderGate(){
+  const commandRecord=readRecord(COMMAND_RECORD_KEY);
+  const legacyRecord=readRecord(LEGACY_RECORD_KEY);
+  const open=isUnlocked();
+
+  document.body.classList.toggle("unlocked",open);
+
+  if(open)return;
+
+  const needsSetup=!commandRecord;
+
+  gateForm.hidden=needsSetup;
+  gateSetupForm.hidden=!needsSetup;
+
+  if(needsSetup){
+    gateSetupStatus.textContent=legacyRecord
+      ? ""
+      : "This browser has no migratable administrator credential. Access fails closed.";
+    gateSetupStatus.className=legacyRecord ? "status" : "status error";
+
+    [gateLegacyCode,gateNewCode,gateConfirmCode].forEach(el=>{
+      if(el)el.disabled=!legacyRecord;
+    });
+
+    const submit=gateSetupForm.querySelector('button[type="submit"]');
+    if(submit)submit.disabled=!legacyRecord;
+
+    if(legacyRecord)setTimeout(()=>gateLegacyCode.focus(),40);
+  }else{
+    setTimeout(()=>gateCode.focus(),40);
+  }
+}
+
+[
+  "gateCode","gateLegacyCode","gateNewCode","gateConfirmCode",
+  "currentCode","newCode","confirmCode"
+].forEach(id=>{
+  document.getElementById(id)?.addEventListener("input",e=>{
+    e.target.value=cleanCode(e.target.value);
+  });
+});
+
+showCode.onclick=()=>{
+  const show=gateCode.type==="password";
+  gateCode.type=show?"text":"password";
+  showCode.textContent=show?"Hide":"Show";
+  gateCode.focus();
+};
+
 gateForm.onsubmit=async e=>{
   e.preventDefault();
   const code=cleanCode(gateCode.value);
-  if(!isValidCode(code)){gateStatus.textContent="Enter exactly 10 digits.";gateStatus.className="status error";return}
-  gateStatus.textContent="Checking gate…";gateStatus.className="status";
-  if(!(await verify(code))){
-    const attempt=getFailedAttempts()+1;setFailedAttempts(attempt);
-    gateStatus.textContent=wrongPasscodeMessage(attempt);gateStatus.className="status error";gateCode.select();return
+
+  if(!isValidCode(code)){
+    gateStatus.textContent="Enter exactly 10 digits.";
+    gateStatus.className="status error";
+    return;
   }
+
+  gateStatus.textContent="Checking Gate 2…";
+  gateStatus.className="status";
+
+  if(!(await verifyCommand(code))){
+    const attempt=getFailedAttempts()+1;
+    setFailedAttempts(attempt);
+    gateStatus.textContent=wrongPasscodeMessage(attempt);
+    gateStatus.className="status error";
+    gateCode.select();
+    return;
+  }
+
   setFailedAttempts(0);
-  if(!readRecord())await saveNewCode(code);
-  setUnlocked(true);gateStatus.textContent="";renderGate();showView("dashboard");
+  setUnlocked(true);
+  gateStatus.textContent="";
+  renderGate();
+  showView("dashboard");
 };
-lockCloud.onclick=()=>{setUnlocked(false);setFailedAttempts(0);gateCode.value="";gateStatus.textContent="";renderGate()};
+
+gateSetupForm.onsubmit=async e=>{
+  e.preventDefault();
+
+  const legacy=cleanCode(gateLegacyCode.value);
+  const next=cleanCode(gateNewCode.value);
+  const confirm=cleanCode(gateConfirmCode.value);
+  const legacyRecord=readRecord(LEGACY_RECORD_KEY);
+  const frontRecord=readRecord(FRONT_RECORD_KEY);
+
+  if(!legacyRecord){
+    gateSetupStatus.textContent="No migratable credential is available on this browser.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(!isValidCode(legacy)||!isValidCode(next)||!isValidCode(confirm)){
+    gateSetupStatus.textContent="All fields must contain exactly 10 digits.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(next!==confirm){
+    gateSetupStatus.textContent="The new Gate 2 passcodes do not match.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(!(await verifyAgainstRecord(legacy,legacyRecord))){
+    gateSetupStatus.textContent="The former shared passcode was not accepted.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  if(frontRecord && await verifyAgainstRecord(next,frontRecord)){
+    gateSetupStatus.textContent="Gate 2 must use a different passcode from Gate 1.";
+    gateSetupStatus.className="status error";
+    return;
+  }
+
+  await saveCommandCode(next);
+
+  /* Legacy verifier is no longer needed once both independent gates exist. */
+  if(frontRecord)localStorage.removeItem(LEGACY_RECORD_KEY);
+
+  gateLegacyCode.value="";
+  gateNewCode.value="";
+  gateConfirmCode.value="";
+  setUnlocked(true);
+  gateSetupStatus.textContent="";
+  renderGate();
+  showView("dashboard");
+};
+
+lockCloud.onclick=()=>{
+  setUnlocked(false);
+  setFailedAttempts(0);
+  gateCode.value="";
+  gateStatus.textContent="";
+  renderGate();
+};
+
 changePasscode.onclick=()=>changeOverlay.classList.add("open");
-cancelChange.onclick=()=>{changeOverlay.classList.remove("open");changeStatus.textContent=""};
+
+cancelChange.onclick=()=>{
+  changeOverlay.classList.remove("open");
+  changeStatus.textContent="";
+};
+
 changeForm.onsubmit=async e=>{
   e.preventDefault();
-  const current=cleanCode(currentCode.value),next=cleanCode(newCode.value),confirm=cleanCode(confirmCode.value);
-  if(!isValidCode(current)||!isValidCode(next)||!isValidCode(confirm)){changeStatus.textContent="All fields must contain exactly 10 digits.";changeStatus.className="status error";return}
-  if(next!==confirm){changeStatus.textContent="The new passcodes do not match.";changeStatus.className="status error";return}
-  if(!(await verify(current))){changeStatus.textContent="The current passcode was not accepted.";changeStatus.className="status error";return}
-  await saveNewCode(next);changeStatus.textContent="New passcode saved to this browser.";changeStatus.className="status ok";
+
+  const current=cleanCode(currentCode.value);
+  const next=cleanCode(newCode.value);
+  const confirm=cleanCode(confirmCode.value);
+  const frontRecord=readRecord(FRONT_RECORD_KEY);
+
+  if(!isValidCode(current)||!isValidCode(next)||!isValidCode(confirm)){
+    changeStatus.textContent="All fields must contain exactly 10 digits.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  if(next!==confirm){
+    changeStatus.textContent="The new Gate 2 passcodes do not match.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  if(!(await verifyCommand(current))){
+    changeStatus.textContent="The current Gate 2 passcode was not accepted.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  if(frontRecord && await verifyAgainstRecord(next,frontRecord)){
+    changeStatus.textContent="Gate 2 must remain different from Gate 1.";
+    changeStatus.className="status error";
+    return;
+  }
+
+  await saveCommandCode(next);
+  setUnlocked(true);
+
+  changeStatus.textContent="Gate 2 passcode updated independently.";
+  changeStatus.className="status ok";
   currentCode.value=newCode.value=confirmCode.value="";
 };
 
