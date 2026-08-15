@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#f4f0e7">
+  <title>Verve N Veda · Public Cloud Gateway</title>
+  <style>
+    :root{
+      --paper:#f4f0e7;
+      --paper-bright:#fbf9f4;
+      --white:#fff;
+      --ink:#080b0f;
+      --ink-soft:#30413d;
+      --forest:#243d33;
+      --forest-deep:#15251f;
+      --gold:#b48b45;
+      --gold-pale:#e7d7b6;
+      --navy:#10243b;
+      --line:rgba(11,14,24,.28);
+      --line-strong:rgba(14,24,33,.42);
+      --muted:#66716c;
+      --radius:7px;
+      --radius-lg:11px;
+      --max:1222px;
+      --ticker:33px;
+      --header:66px;
+      --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
+      --ceremonial:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+      --sans:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
+      --eyebrow:clamp(24px,calc(21px + .72vw),30px);
+      --support:clamp(18px,calc(16px + .58vw),23px);
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-width:0;
+      overflow-x:hidden;
+      color:var(--ink);
+      background:var(--paper);
+      font-family:var(--sans);
+      font-size:14px;
+      font-weight:400;
+      line-height:1.66;
+      text-align:center;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    body *{font-weight:400}
+    strong,b{font-weight:444}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .shell{width:min(calc(100% - 48px),var(--max));margin-inline:auto}
+
+    .ticker{
+      height:var(--ticker);
+      overflow:hidden;
+      color:#f4ead1;
+      background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
+      border-bottom:1px solid rgba(255,255,255,.13);
+    }
+    .ticker-track{
+      width:max-content;
+      height:100%;
+      display:flex;
+      align-items:center;
+      gap:22px;
+      padding-inline:11px;
+      white-space:nowrap;
+      animation:ticker 28s linear infinite;
+      font-size:11px;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .ticker-track span:first-child{
+      color:var(--gold-pale);
+      font-family:var(--ceremonial);
+      letter-spacing:.2em;
+    }
+    @keyframes ticker{to{transform:translateX(-50%)}}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      min-height:var(--header);
+      border-bottom:1px solid var(--line);
+      background:rgba(244,240,231,.96);
+      backdrop-filter:blur(18px);
+    }
+    .header-inner{
+      min-height:var(--header);
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:18px;
+    }
+    .brand{justify-self:start;display:flex;align-items:center;gap:10px;text-align:left}
+    .brand-mark{
+      width:36px;height:36px;display:grid;place-items:center;
+      border:1px solid var(--ink);border-radius:var(--radius);
+      color:#fff;background:var(--ink);
+      font-family:var(--ceremonial);font-size:15px;letter-spacing:.07em;
+    }
+    .brand-name{display:block;font-family:var(--ceremonial);font-size:15px;letter-spacing:.075em;text-transform:uppercase}
+    .brand-sub{display:block;color:var(--ink-soft);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    .nav{display:flex;justify-content:center;gap:7px;flex-wrap:wrap}
+    .nav a{
+      min-width:106px;height:32px;display:inline-flex;align-items:center;justify-content:center;
+      padding:0 7px;border:1px solid var(--ink);border-radius:var(--radius);
+      color:#fff;background:var(--ink);font-size:11px;letter-spacing:.02em;text-transform:uppercase;
+    }
+    .nav a:hover,.nav a:focus-visible{background:var(--forest);border-color:var(--forest);transform:translateY(-1px)}
+    .cloud-state{justify-self:end;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+
+    .hero{
+      min-height:calc(100svh - var(--ticker) - var(--header));
+      display:grid;place-items:center;
+      padding:66px 20px 55px;
+      border-bottom:1px solid var(--line);
+      background:radial-gradient(circle at 50% 4%,rgba(180,139,69,.10),transparent 31rem),linear-gradient(180deg,var(--paper-bright),#f8f5ee);
+    }
+    .hero-inner{width:min(100%,999px);display:grid;justify-items:center;gap:22px}
+    .eyebrow,.kicker{
+      margin:0;color:var(--gold);font-family:var(--ceremonial);
+      font-size:14px;letter-spacing:.18em;text-transform:uppercase;
+    }
+    h1,h2,h3{margin:0;text-wrap:balance}
+    h1{
+      color:var(--forest-deep);font-family:var(--ceremonial);
+      font-size:clamp(52px,9vw,111px);font-weight:400;line-height:.92;letter-spacing:.045em;
+    }
+    .hero-lead{
+      max-width:720px;margin:0;color:var(--ink-soft);
+      font-family:var(--display);font-size:clamp(17px,1.55vw,21px);line-height:1.62;
+    }
+    .hero-actions{display:flex;justify-content:center;gap:11px;flex-wrap:wrap}
+    .button{
+      min-height:44px;display:inline-flex;align-items:center;justify-content:center;
+      padding:11px 18px;border:1px solid var(--line-strong);border-radius:var(--radius);
+      font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+    }
+    .button-primary{color:#fff;background:var(--ink);border-color:var(--ink)}
+    .button:hover{transform:translateY(-1px)}
+    .button-primary:hover{background:var(--forest);border-color:var(--forest)}
+    .button-secondary:hover{background:#fff;border-color:var(--ink)}
+
+    .section{padding:88px 20px}
+    .section-alt{background:var(--paper-bright);border-block:1px solid var(--line)}
+    .section-dark{color:#fff;background:var(--forest-deep)}
+    .section-inner{width:min(100%,var(--max));margin:auto}
+    .section-heading{max-width:840px;margin:0 auto 44px}
+    .section .kicker{font-size:var(--eyebrow);line-height:1.12;letter-spacing:.09em}
+    .section h2{
+      max-width:760px;margin:8px auto 0;color:var(--forest-deep);
+      font-family:var(--display);font-size:var(--support);font-weight:400;line-height:1.24;
+    }
+    .section-intro{max-width:700px;margin:16px auto 0;color:var(--ink-soft);font-size:14px;line-height:1.72}
+    .section-dark .kicker{color:var(--gold-pale)}
+    .section-dark h2{color:#fff}
+    .section-dark .section-intro{color:rgba(255,255,255,.72)}
+
+    .hall-grid,.trace-grid{
+      width:min(100%,999px);margin:auto;display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;
+    }
+    .hall,.trace-node{
+      min-height:166px;display:grid;place-items:center;align-content:center;gap:11px;
+      padding:22px;border:1px solid var(--line);border-radius:var(--radius);
+      background:#fff;text-align:center;
+    }
+    .hall span,.trace-node span{color:var(--gold);font-family:var(--ceremonial);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    .hall strong,.trace-node strong{font-family:var(--display);font-size:21px;font-weight:444}
+    .hall small,.trace-node small{color:var(--muted);font-size:13px;line-height:1.55}
+    .hall:hover{border-color:var(--gold);transform:translateY(-2px)}
+
+    .trace-shell{
+      width:min(100%,999px);margin:0 auto;padding:33px;
+      border:1px solid rgba(255,255,255,.13);border-radius:var(--radius-lg);
+      background:rgba(255,255,255,.035);
+    }
+    .trace-path{
+      min-height:66px;display:grid;place-items:center;margin-bottom:22px;padding:14px;
+      border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);
+      color:#e7d7b6;font-family:var(--ceremonial);font-size:14px;letter-spacing:.08em;
+    }
+    .trace-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .trace-node{
+      min-height:122px;border-color:rgba(255,255,255,.13);color:#fff;background:rgba(255,255,255,.035);cursor:pointer;
+    }
+    .trace-node small{color:rgba(255,255,255,.62)}
+    .trace-node[aria-current="true"],.trace-node:hover{border-color:rgba(231,215,182,.45);background:rgba(255,255,255,.07)}
+
+    .continuity{
+      width:min(100%,888px);margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+    }
+    .continuity div{padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+    .continuity strong{display:block;color:var(--forest-deep);font-family:var(--display);font-size:21px}
+    .continuity span{display:block;margin-top:7px;color:var(--muted);font-size:13px}
+
+    footer{padding:44px 24px;color:rgba(255,255,255,.68);background:#0a1511;font-size:13px}
+    footer a{color:var(--gold-pale)}
+
+    @media(max-width:1000px){
+      .header-inner{grid-template-columns:1fr auto}.nav{display:none}.hall-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.trace-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.continuity{grid-template-columns:1fr}
+    }
+    @media(max-width:560px){
+      .shell{width:min(calc(100% - 26px),var(--max))}.cloud-state{display:none}.hall-grid,.trace-grid{grid-template-columns:1fr}.hero{padding-inline:14px}.section{padding:66px 14px}.hero-actions{width:min(100%,333px)}.button{width:100%}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="ticker" aria-label="Verve N Veda public network ticker">
+    <div class="ticker-track">
+      <span>VERVE N VEDA</span><span>EDUCATION</span><span>KNOWLEDGE</span><span>PUBLIC SERVICE</span><span>CREATIVE NETWORK</span><span>CONTINUITY</span><span>333 NETWORK</span><span>VERVE N VEDA</span><span>EDUCATION</span><span>KNOWLEDGE</span><span>PUBLIC SERVICE</span><span>CREATIVE NETWORK</span><span>CONTINUITY</span><span>333 NETWORK</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Verve N Veda public cloud gateway">
+        <span class="brand-mark">V</span>
+        <span><span class="brand-name">Verve N Veda</span><span class="brand-sub">Public Cloud</span></span>
+      </a>
+      <nav class="nav" aria-label="Cloud sections">
+        <a href="#halls">Halls</a><a href="#continuity">Continuity</a><a href="#trace">Gateway</a>
+      </nav>
+      <span class="cloud-state">Public · Static</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Verve N Veda · Public Gateway</div>
+        <h1>Verve N Veda</h1>
+        <p class="hero-lead">A connected public campus for education, research, creativity, public service, practical resources, and community discovery.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#halls">Explore the Halls</a>
+          <a class="button button-secondary" href="../index.html">Open Public Home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="halls">
+      <div class="section-inner">
+        <header class="section-heading">
+          <div class="kicker">Four Great Halls</div>
+          <h2>Independent public pathways connected through one gateway.</h2>
+          <p class="section-intro">Each hall keeps its own purpose and identity while remaining connected through public navigation and stable handoffs.</p>
+        </header>
+        <div class="hall-grid">
+          <a class="hall" href="https://vervenveda.com/Khaemenes_Academy.github.io/"><span>01</span><strong>Education</strong><small>Schools, courses, learning tools, mentors, and lifelong study.</small></a>
+          <a class="hall" href="https://vervenveda.com/Arshif.github.io/"><span>02</span><strong>Knowledge</strong><small>Research, archives, verification, discovery, and reference.</small></a>
+          <a class="hall" href="https://vervenveda.com/firmament.github.io/"><span>03</span><strong>Public Service</strong><small>Health, law, civic information, finance, and practical resources.</small></a>
+          <a class="hall" href="https://vervenveda.com/333.github.io/"><span>04</span><strong>Creative Network</strong><small>Communication, art, music, tools, games, and connected work.</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="continuity">
+      <div class="section-inner">
+        <header class="section-heading">
+          <div class="kicker">Continuity</div>
+          <h2>Public services remain distributed while the gateway keeps them easy to find.</h2>
+        </header>
+        <div class="continuity">
+          <div><strong>Directory</strong><span>Public destinations retain stable names and routes.</span></div>
+          <div><strong>Federation</strong><span>Independent projects remain connected without becoming one monolith.</span></div>
+          <div><strong>Reference</strong><span>Descriptive snapshots preserve continuity across revisions.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="trace">
+      <div class="section-inner">
+        <header class="section-heading">
+          <div class="kicker">Gateway Continuity</div>
+          <h2>A public routing reference for distributed halls and network services.</h2>
+          <p class="section-intro">This layer contains public descriptive waypoints only. It does not hold account state, credentials, or privileged routes.</p>
+        </header>
+        <div class="trace-shell">
+          <div class="trace-path" id="tracePath">gateway → halls → directory → network → gateway</div>
+          <div class="trace-grid" aria-label="Gateway reference nodes">
+            <button class="trace-node" type="button" data-key="gateway" aria-current="true"><span>01</span><strong>Gateway</strong><small>Public entry and navigation.</small></button>
+            <button class="trace-node" type="button" data-key="halls"><span>02</span><strong>Halls</strong><small>Independent public destinations.</small></button>
+            <button class="trace-node" type="button" data-key="directory"><span>03</span><strong>Directory</strong><small>Discovery and reference.</small></button>
+            <button class="trace-node" type="button" data-key="network"><span>04</span><strong>Network</strong><small>Communication and connected work.</small></button>
+            <button class="trace-node" type="button" data-key="continuity"><span>05</span><strong>Continuity</strong><small>Revision and stable handoffs.</small></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Jennifer Kay Pearl · Verve N Veda · Public continuity gateway · <a href="../index.html">Home</a>
+  </footer>
+
+  <script>
+    (()=>{
+      "use strict";
+      const paths={
+        gateway:"gateway → halls → directory → network → gateway",
+        halls:"halls → education → knowledge → service → creative → halls",
+        directory:"directory → discovery → reference → verification → directory",
+        network:"network → communication → creative work → public tools → network",
+        continuity:"continuity → revision → branch → bridge → continuity"
+      };
+      const trace=document.querySelector("#tracePath");
+      const nodes=[...document.querySelectorAll("[data-key]")];
+      nodes.forEach(node=>node.addEventListener("click",()=>{
+        nodes.forEach(item=>item.removeAttribute("aria-current"));
+        node.setAttribute("aria-current","true");
+        trace.textContent=paths[node.dataset.key]||paths.gateway;
+      }));
+    })();
+  </script>
+</body>
+</html>
