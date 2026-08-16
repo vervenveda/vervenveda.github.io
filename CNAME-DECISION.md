@@ -32,9 +32,11 @@ At the time of this verification, `www.vervenveda.com` is being used separately 
 
 ## Domain ownership verification
 
-GitHub Pages currently reports the custom-domain ownership/protection state as unverified even though the site is built, HTTPS is enforced, and the TLS certificate is approved.
+The `vervenveda.com` domain has already been verified at the GitHub account level. The repository Pages screen may still show a temporary DNS check while GitHub re-validates the custom-domain configuration after deployment.
 
-Recommended security action: verify `vervenveda.com` in the Verve N Veda GitHub account's **Settings → Pages** area and retain the GitHub-provided DNS TXT verification record. Domain verification helps prevent another GitHub account from claiming the domain if the Pages binding is ever removed or disabled.
+GitHub's Pages API may separately expose `protected_domain_state` as `unverified`. In this repository, that API field must not be treated by itself as proof that account-level domain ownership verification has failed. The GitHub account's **Settings → Pages → Verified domains** status is the authoritative operational check for ownership verification.
+
+Do not remove, re-add, or alter the working custom domain, `CNAME`, DNS records, or verification TXT record solely because a repository-level DNS check is in progress or because that API field reports `unverified`.
 
 ## Change-control rule
 
