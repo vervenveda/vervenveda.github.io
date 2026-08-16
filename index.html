@@ -2829,8 +2829,8 @@
       min-height:inherit!important;
       padding:12px 8px 12px 12px!important;
       gap:6px!important;
-      font-size:clamp(10px,.72vw,12px)!important;
-      letter-spacing:clamp(.055em,.075vw,.085em)!important;
+      font-size:clamp(9px,.66vw,11px)!important;
+      letter-spacing:clamp(.055em,.066vw,.077em)!important;
       line-height:1!important;
       white-space:nowrap!important;
       overflow:visible!important;
@@ -3443,6 +3443,45 @@
         grid-template-columns:minmax(0,1fr) 40px!important;
       }
     }
+
+        /* =========================================================
+   FOUR GREAT HALLS — TYPOGRAPHY / OVERFLOW REPAIR
+   ========================================================= */
+
+.pillar-copy,
+.pillar-card h3,
+.pillar-card p,
+.pillar-primary,
+.pillar-browse{
+  min-width:0;
+  max-width:100%;
+}
+
+.pillar-card h3{
+  font-size:clamp(23px,1.75vw,30px);
+  line-height:1.08;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+}
+
+.pillar-primary{
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+  line-height:1.35;
+  padding-inline:8px;
+}
+
+.pillar-browse{
+  min-height:52px;
+  padding:10px 14px;
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+  line-height:1.25;
+}
+
 
 </style>
 </head>
