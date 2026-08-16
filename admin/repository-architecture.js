@@ -1,7 +1,7 @@
 /* Verve N Veda Administration module loader · 2026-08-16 */
 (() => {
   "use strict";
-  const modules=["repository-architecture-core.js","academy-data-dashboard.js"];
+  const modules=["repository-architecture-core.js","academy-data-dashboard.js","beta-coverage-dashboard.js"];
   function loadNext(index){
     if(index>=modules.length)return;
     const src=modules[index];
