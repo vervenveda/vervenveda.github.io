@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-16T13:46:41.814Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-16T13:44:35Z",
+  "generatedAt": "2026-08-16T19:04:03.013Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-16T19:03:33Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -1727,6 +1727,223 @@
       "tags": [
         "academy",
         "school-navigation"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_academy.github.io.student-front-door",
+      "title": "Khaemenes Student Portal",
+      "description": "Learner-aware front door that reads the active Academy learner and recommends the registered school and grade destination through the public-safe NAIB routing contract.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/student/",
+      "sourceId": "khaemenes.academy",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "audiences": [
+        "preschool",
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "navigation",
+        "learner-continuity"
+      ],
+      "skills": [
+        "learner-routing"
+      ],
+      "tags": [
+        "student",
+        "front-door",
+        "grade-placement",
+        "naib"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_academy.github.io.family-enrollment",
+      "title": "Khaemenes Family Enrollment",
+      "description": "Canonical local enrollment surface for creating a family identity, registering separate learner identities, and assigning exact grade placement.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/family/enroll/",
+      "sourceId": "khaemenes.academy",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "family-learning",
+        "enrollment",
+        "learner-continuity"
+      ],
+      "skills": [
+        "family-setup",
+        "learner-placement"
+      ],
+      "tags": [
+        "family",
+        "enrollment",
+        "grade-placement"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": false,
+      "recommendable": false,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_academy.github.io.teacher-admin",
+      "title": "Khaemenes Academy Teacher Administration",
+      "description": "Academy-wide teacher-facing coordination surface for grade-level navigation, evidence review, learner continuity, and Archaemenes academic advisory support.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/teacher-admin/",
+      "sourceId": "khaemenes.academy",
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "classification": "educational",
+      "audiences": [
+        "adult"
+      ],
+      "roles": [
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "teacher-administration",
+        "evidence-integrity"
+      ],
+      "skills": [
+        "teacher-review",
+        "curriculum-review",
+        "learner-support"
+      ],
+      "tags": [
+        "teacher",
+        "administration",
+        "archaemenes",
+        "evidence-review"
       ],
       "minutes": null,
       "energy": "",
