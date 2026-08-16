@@ -32,7 +32,8 @@ jobs:
         id: matrix
         continue-on-error: true
         run: |
-          node assessment-engine/mentor/matrix/matrix-validator.mjs             --out="${RUNNER_TEMP}/mentor-matrix-report.json"
+          node assessment-engine/mentor/matrix/matrix-validator.mjs \
+            --out="${RUNNER_TEMP}/mentor-matrix-report.json"
 
       - name: Build and send daily admin report
         if: always()
@@ -50,21 +51,22 @@ jobs:
           REPORT_ACCOUNT_API_URL: ${{ secrets.REPORT_ACCOUNT_API_URL }}
           REPORT_ACCOUNT_API_TOKEN: ${{ secrets.REPORT_ACCOUNT_API_TOKEN }}
 
-          REPORT_ATTACH_ADULT_ROSTER: "true"
+          # Contact rosters are opt-in only. Account-derived report content is
+          # delivered by private email and is never retained as a GitHub artifact.
+          REPORT_ATTACH_ADULT_ROSTER: "false"
           REPORT_ATTACH_STUDENT_ROSTER: "false"
           REPORT_BIRTHDAY_WINDOW_DAYS: "14"
           REPORT_ATTENTION_INACTIVE_DAYS: "7"
           REPORT_ATTENTION_MASTERY_THRESHOLD: "80"
         run: |
-          python assessment-engine/mentor/reports/send-daily-admin-report.py             --matrix "${MATRIX_REPORT_PATH}"
+          python assessment-engine/mentor/reports/send-daily-admin-report.py \
+            --matrix "${MATRIX_REPORT_PATH}"
 
-      - name: Upload report artifacts
+      - name: Upload Mentor Matrix diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: daily-khaemenes-admin-report
-          path: |
-            ${{ runner.temp }}/mentor-matrix-report.json
-            ${{ runner.temp }}/khaemenes-daily-report/
+          name: mentor-matrix-diagnostics
+          path: ${{ runner.temp }}/mentor-matrix-report.json
           if-no-files-found: ignore
-          retention-days: 14
+          retention-days: 7
