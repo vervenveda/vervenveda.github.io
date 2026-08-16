@@ -1,24 +1,65 @@
-/* Verve N Veda · Beta Program universal link widget · v1.0.0 */
+/* Verve N Veda · Beta Program universal button widget · v1.1.0 */
 (() => {
   "use strict";
-  if(document.getElementById("vnvBetaProgramLink"))return;
 
+  const ID="vnvBetaProgramLink";
+  const STYLE_ID="vnvBetaProgramLinkStyles";
   const BETA_URL="https://vervenveda.com/beta/";
-  const source=(()=>{try{return `${location.hostname}${location.pathname}`.slice(0,240)}catch{return "ecosystem"}})();
-  const href=`${BETA_URL}?source=${encodeURIComponent(source)}`;
 
-  const style=document.createElement("style");
-  style.id="vnvBetaProgramLinkStyles";
-  style.textContent=`
-    #vnvBetaProgramLink{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:2147482000;display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:7px 11px;border:1px solid rgba(183,147,77,.72);border-radius:999px;color:#f7efe0;background:rgba(15,25,37,.94);box-shadow:0 8px 24px rgba(0,0,0,.18);font:600 10px/1.2 "Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.045em;text-decoration:none;backdrop-filter:blur(9px)}
-    #vnvBetaProgramLink:hover{transform:translateY(-1px);border-color:#dfc48e;background:#152538}#vnvBetaProgramLink span:first-child{font:600 15px/1 Georgia,serif;color:#dfc48e}@media print{#vnvBetaProgramLink{display:none!important}}@media(prefers-reduced-motion:reduce){#vnvBetaProgramLink{transition:none!important}}
-  `;
-  document.head.append(style);
+  if(document.getElementById(ID))return;
 
-  const a=document.createElement("a");
-  a.id="vnvBetaProgramLink";
-  a.href=href;
-  a.setAttribute("aria-label","Open the Verve N Veda Beta Program");
-  a.innerHTML='<span>β</span><span>Beta Program</span>';
-  document.body.append(a);
+  const safeSource=()=>{
+    try{
+      /* Deliberately limited to public routing metadata. Never include query,
+         hash, learner IDs, family IDs, form values, course state, or storage. */
+      const host=String(location.hostname||"").replace(/[^a-z0-9.:-]/gi,"").slice(0,120);
+      const path=String(location.pathname||"/").replace(/[\u0000-\u001f\u007f]/g,"").slice(0,240);
+      return `${host}${path}`.slice(0,320)||"ecosystem";
+    }catch{return "ecosystem"}
+  };
+
+  const betaHref=()=>`${BETA_URL}?source=${encodeURIComponent(safeSource())}`;
+
+  function mount(){
+    if(document.getElementById(ID)||!document.body)return;
+
+    if(!document.getElementById(STYLE_ID)){
+      const style=document.createElement("style");
+      style.id=STYLE_ID;
+      style.textContent=`
+        #${ID}{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:2147482000;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 12px;border:1px solid rgba(183,147,77,.72);border-radius:999px;color:#f7efe0;background:rgba(15,25,37,.94);box-shadow:0 8px 24px rgba(0,0,0,.18);font:600 10px/1.2 "Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.045em;text-decoration:none;backdrop-filter:blur(9px);cursor:pointer;-webkit-tap-highlight-color:transparent}
+        #${ID}:hover{transform:translateY(-1px);border-color:#dfc48e;background:#152538}
+        #${ID}:focus-visible{outline:3px solid #dfc48e;outline-offset:3px}
+        #${ID} .vnv-beta-mark{font:600 15px/1 Georgia,serif;color:#dfc48e}
+        @media(max-width:520px){#${ID}{right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));min-height:38px;padding:7px 10px}}
+        @media print{#${ID}{display:none!important}}
+        @media(prefers-reduced-motion:reduce){#${ID}{transition:none!important;transform:none!important}}
+      `;
+      (document.head||document.documentElement).append(style);
+    }
+
+    /* A button is intentional: several Verve N Veda surfaces guard anchor
+       navigation. Programmatic same-origin navigation avoids interfering with
+       those link policies while remaining keyboard accessible. */
+    const button=document.createElement("button");
+    button.id=ID;
+    button.type="button";
+    button.setAttribute("aria-label","Open the Verve N Veda Beta Program for this page");
+
+    const mark=document.createElement("span");
+    mark.className="vnv-beta-mark";
+    mark.setAttribute("aria-hidden","true");
+    mark.textContent="β";
+    const label=document.createElement("span");
+    label.textContent="Beta Program";
+    button.append(mark,label);
+
+    button.addEventListener("click",()=>{
+      try{window.location.assign(betaHref())}catch{window.location.href=BETA_URL}
+    });
+    document.body.append(button);
+  }
+
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});
+  else mount();
 })();
