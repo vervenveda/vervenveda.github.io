@@ -1,0 +1,30 @@
+{
+  "format": "vnv-beta-coverage-v1",
+  "updatedAt": "2026-08-16",
+  "betaUrl": "https://vervenveda.com/beta/",
+  "widgetUrl": "https://vervenveda.com/assets/vnv-beta-link.js",
+  "principle": "One canonical Beta Program destination with non-sensitive source-page attribution only.",
+  "coverage": [
+    {"surface":"Khaemenes Academy","repository":"vervenveda/Khaemenes_Academy.github.io","status":"covered-shared-registry","branch":"main","mechanism":"Family Registry loads canonical Beta widget","scope":"Pages loading the central Family Registry"},
+    {"surface":"Khaemenes Preschool","repository":"vervenveda/Khaemenes_Preschool.github.io","status":"covered-shared-adapter","branch":"main","mechanism":"Central Family Registry plus shared preschool profile bridge","scope":"Root and pages loading the shared profile bridge"},
+    {"surface":"Khaemenes Kinder Garden","repository":"vervenveda/Khaemenes_KinderGarden.github.io","status":"covered-shared-adapter","branch":"main","mechanism":"Central Family Registry plus Kinder family adapter","scope":"Root and pages loading shared Kinder adapter"},
+    {"surface":"Khaemenes Elementary","repository":"vervenveda/Khaemenes_Elementary.github.io","status":"covered-shared-adapter","branch":"main","mechanism":"Central Family Registry plus Elementary Academy adapter","scope":"Root and pages loading shared Elementary adapter"},
+    {"surface":"Khaemenes Middle","repository":"vervenveda/Khaemenes_Middle.github.io","status":"covered-shared-adapter","branch":"main","mechanism":"Middle grade continuity layer loads canonical Beta widget","scope":"Grade/course pages loading shared grade continuity"},
+    {"surface":"Khaemenes High","repository":"vervenveda/Khaemenes_High.github.io","status":"covered-hardening-branch","branch":"hardening/archaemenes-highschool","mechanism":"High grade context loads canonical Beta widget","scope":"Hardening branch surfaces loading shared High context","releaseNote":"Public main intentionally unchanged"},
+    {"surface":"Khaemenes Higher Learning","repository":"vervenveda/Khaemenes_Higher_Learning.github.io","status":"covered-shared-adapter","branch":"main","mechanism":"Higher Learning bridge loads canonical Beta widget","scope":"Pages loading Higher Learning bridge"},
+    {"surface":"ARSHIF","repository":"vervenveda/Arshif.github.io","status":"root-pending","branch":"main","mechanism":"Direct same-origin Beta link recommended because of strict CSP/inline architecture","scope":"Root inspected; deeper coverage pending"},
+    {"surface":"ProReSources","repository":"vervenveda/proresource_hub.github.io","status":"root-pending","branch":"main","mechanism":"Direct relative Beta link recommended because internal navigation guard blocks foreign origins","scope":"Root inspected; deeper coverage pending"},
+    {"surface":"Arcade","repository":"vervenveda/arcade.github.io","status":"root-pending","branch":"main","mechanism":"Direct same-host Beta link recommended under existing static-link policy","scope":"Root inspected; deeper coverage pending"},
+    {"surface":"Bazaar Art","repository":"vervenveda/bazaarart.github.io","status":"root-pending","branch":"main","mechanism":"Direct same-origin Beta link recommended under current CSP","scope":"Root inspected; deeper coverage pending"}
+  ],
+  "definitions": {
+    "covered-shared-registry": "Beta doorway is inherited from the central Academy Family Registry.",
+    "covered-shared-adapter": "Beta doorway is inherited from a shared repository adapter/continuity script.",
+    "covered-hardening-branch": "Coverage exists on the deliberate High School hardening branch but is not yet released to main.",
+    "root-pending": "Repository root has been inspected but still needs a CSP-compatible direct Beta doorway and deeper-page propagation audit."
+  },
+  "privacy": {
+    "allowedSourceMetadata": ["page path", "surface label"],
+    "prohibitedInPublicBetaTelemetry": ["passwords", "passcodes", "verification codes", "dates of birth", "medical data", "street addresses", "private academic records", "private anti-abuse signals"]
+  }
+}
