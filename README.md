@@ -2,14 +2,23 @@
 
 Verve N Veda is a public digital gateway connecting educational spaces, creative tools, civic resources, wellness hubs, research portals, and community-centered projects.
 
-## Live Site
+## Protected Production Artifact
 
-- https://vervenveda.com
-- https://vervenveda.github.io
+`index.html` is a **Protected Production Artifact — Surgical Changes Only**.
 
-## Repository Purpose
+Do not perform broad refactors, formatting sweeps, framework migrations, dependency substitutions, automated rewrites, or unrelated cleanup on the production page.
 
-This repository contains the public GitHub Pages website for Verve N Veda. The site is designed as a central entry point to the broader Verve N Veda ecosystem and its connected halls, tools, learning spaces, and public resources.
+Any approved change should identify the exact target, preserve a known-good version, use the smallest practical diff, receive security and functional review, be tested before deployment, and have a rollback path.
+
+AI assistants, automated coding tools, formatters, and refactoring tools must follow the same restrictions.
+
+## Public / Private Boundary
+
+This repository is public-facing and must remain credential-free. It may provide navigation, presentation, public resources, local-only browser features, and links to separately secured services.
+
+Never place production secrets, administrator credentials, API keys, private keys, access tokens, cloud/server/database credentials, recovery information, authenticated session material, or privileged remote-execution authority in this repository.
+
+Browser-only PINs, passwords, hidden menus, obscured routes, and JavaScript checks are not authoritative security controls. Privileged services must remain behind separately authenticated infrastructure.
 
 ## Core Principles
 
@@ -20,67 +29,35 @@ This repository contains the public GitHub Pages website for Verve N Veda. The s
 - Privacy-conscious design
 - Local-first tools where practical
 - Accessible, responsive presentation
-- Respectful and inclusive public service
+- Least privilege
+- Minimal external dependencies
+- Reversible production changes
 
 ## Main Files
 
-- `index.html` — Main landing page
+- `index.html` — Protected production landing page
 - `404.html` — Custom error page
 - `CNAME` — Custom-domain configuration
 - `robots.txt` — Search-engine crawler guidance
 - `sitemap.xml` — Search-engine sitemap
 - `site.webmanifest` — Web-app metadata
 - `privacy-policy.html` — Privacy information
-- `SECURITY.md` — Security policy
-- `LICENSE.md` — Repository license
-- `THIRD_PARTY_NOTICES.md` — Third-party acknowledgments
+- `SECURITY.md` — Security and trust-boundary policy
+- `CHANGE_CONTROL.md` — Production change-control procedure
+- `INCIDENT_RESPONSE.md` — Public-repository incident procedure
 - `CONTRIBUTING.md` — Contribution guidance
-- `humans.txt` — Human-readable project credits
+- `LICENSE.md` — Repository license
 
-## Development
+## Development and Deployment
 
-The site is designed to remain lightweight and compatible with GitHub Pages. Unless otherwise noted, pages use standard HTML, CSS, and JavaScript without requiring a server-side runtime.
+Keep the site lightweight and GitHub Pages compatible. Prefer standard HTML, CSS, and vanilla JavaScript. Experimental work should occur away from the protected production artifact whenever practical.
 
-## Local Preview
+Production changes should follow `CHANGE_CONTROL.md`.
 
-You may open `index.html` directly in a browser, though some browser features work best through a local server.
+## Security
 
-Example:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit:
-
-```text
-http://localhost:8000
-```
-
-## Deployment
-
-GitHub Pages publishes from the repository's configured branch and root directory. The custom domain is managed through the `CNAME` file and the DNS records for `vervenveda.com`.
-
-## Ownership and Credits
-
-Founded and directed by Jennifer Kay Pearl.
-
-Project credit:
-
-**Jennifer Pearl and Autumn Pearl**
-
-Organizational credit order:
-
-1. Inner National Corporation
-2. Artist Jenny Pearl
-3. Bazaar Art LLC
-
-## Contact and Security
-
-For security-related concerns, follow the process described in `SECURITY.md`.
-
-For general project information, use the public contact methods listed on the live website.
+For security concerns, follow `SECURITY.md`. For suspected secret exposure or unexpected production changes, follow `INCIDENT_RESPONSE.md`.
 
 ## License
 
-See `LICENSE.md` for the terms that apply to this repository.
+See `LICENSE.md`.

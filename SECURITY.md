@@ -1,177 +1,66 @@
 # Security Policy
 
-## Verve N Veda Security Commitment
+## Security Commitment
 
-Verve N Veda is committed to protecting the privacy, integrity, and security of its public websites, educational platforms, creative tools, and community resources.
+Verve N Veda is committed to protecting the privacy, integrity, and security of its public websites and resources.
 
-We appreciate responsible security research and welcome reports that help improve the safety of our projects.
+This repository is a **public presentation and navigation surface**, not a privileged control plane.
 
----
+## Protected Production Artifact
 
-# Supported Projects
+The root `index.html` is designated **Surgical Changes Only**. Do not automatically refactor, reformat, migrate, regenerate, or replace it. Necessary modifications must follow `CHANGE_CONTROL.md`.
 
-This policy applies to the public Verve N Veda ecosystem, including GitHub Pages websites and official public repositories unless otherwise noted.
+## Public / Private Trust Boundary
 
-Examples include:
+Everything committed publicly must be assumed readable by anyone.
 
-- Verve N Veda
-- Khaemenes Academy
-- Medicament Hub
-- Sanctuary
-- Solanar
-- The Refrain
-- ProResources
-- Bazaar Art
-- One Nation For All
-- The Verifier
-- PLERA Search
-- Other official Verve N Veda projects
+Public code may contain static HTML/CSS/JavaScript, public navigation and documentation, public assets, and non-secret local preferences.
 
----
+It must not contain production credentials, API secrets, administrator passwords, personal access tokens, cloud/registrar/DNS/database/server credentials, private keys, recovery codes, authenticated sessions, or privileged remote-execution authority.
 
-# Reporting a Security Issue
+Sensitive operations belong on separately secured and authenticated infrastructure.
 
-Please **do not disclose vulnerabilities publicly** before they have been reviewed.
+## Client-Side Boundary
 
-When reporting a concern, please include:
+Because browser code is visible:
 
-- affected page or application
-- URL
-- steps to reproduce
-- browser and operating system
-- screenshots when helpful
-- estimated impact
+- `localStorage` is not secure storage.
+- JavaScript source is public.
+- Browser-side PINs/passwords are convenience gates only.
+- Hidden menus and obscured URLs are not access controls.
+- Disabled buttons and client-side role flags are not authorization.
 
-Do **not** include:
+No sensitive service should trust a browser-side assertion without independent server-side authentication and authorization.
 
-- passwords
-- authentication tokens
-- API keys
-- private keys
-- personal information
-- financial information
-- medical information
-- educational records
+## Secret Handling
 
----
+If a secret is accidentally committed:
 
-# Responsible Testing
+1. Treat it as compromised.
+2. Do not rely on deleting it from the latest file.
+3. Revoke or rotate it at its authority source.
+4. Determine where it may have been exposed.
+5. Preserve necessary evidence without publicly reproducing the secret.
+6. Follow `INCIDENT_RESPONSE.md`.
 
-Researchers should:
+Never copy discovered secrets into public issues, documentation, commit messages, screenshots, or chat transcripts.
 
-- respect user privacy
-- avoid service disruption
-- avoid denial-of-service testing
-- avoid credential attacks
-- avoid social engineering
-- avoid malware
-- stop immediately if sensitive information becomes visible
+## Responsible Testing
 
-Testing should never intentionally affect other users or third-party services.
+Respect user privacy. Do not perform denial-of-service testing, credential attacks, social engineering, malware deployment, destructive testing, or unauthorized testing of third-party systems. Stop immediately if sensitive information becomes visible.
 
----
+## Privacy
 
-# Static Website Security
+Avoid unnecessary personal-data collection, behavioral analytics, fingerprinting, advertising identifiers, and hidden tracking. Local browser storage should contain only non-secret material.
 
-Many Verve N Veda applications are delivered as static HTML, CSS, and JavaScript.
+## Third-Party Resources
 
-Because these applications execute in the user's browser:
+External resources should use HTTPS, come from reputable providers, request minimal permissions, and degrade gracefully. Self-hosting is preferred when practical. Newly introduced third-party executable code requires review.
 
-- localStorage is not secure storage
-- JavaScript is publicly visible
-- client-side passwords are convenience features only
-- hidden menus are not security controls
+## Change Integrity
 
-Public repositories should never contain:
+Unexpected changes to `index.html`, `CNAME`, deployment configuration, or security documentation should be treated as security-significant until explained.
 
-- registrar credentials
-- GitHub personal access tokens
-- cloud credentials
-- payment secrets
-- administrator passwords
-- encryption keys
-- production API secrets
+## Reporting
 
-Sensitive operations should always occur on secured server infrastructure.
-
----
-
-# Privacy
-
-Verve N Veda values privacy-first design.
-
-Projects should avoid unnecessary collection of:
-
-- personal information
-- behavioral analytics
-- fingerprinting
-- advertising identifiers
-- hidden tracking technologies
-
-Local browser storage should be limited to:
-
-- preferences
-- accessibility settings
-- saved work
-- educational progress
-- locally generated content
-
----
-
-# Third-Party Resources
-
-External resources should:
-
-- use HTTPS
-- come from reputable providers
-- request minimal permissions
-- degrade gracefully when unavailable
-
-Self-hosted resources are preferred whenever practical.
-
----
-
-# HTTPS
-
-Official Verve N Veda websites are intended to be served over HTTPS.
-
-If a browser reports a certificate warning or insecure connection, please verify:
-
-- the URL
-- the browser version
-- cached DNS information
-- mixed-content warnings
-
-These issues are typically configuration-related rather than application vulnerabilities.
-
----
-
-# Scope
-
-This policy applies only to Verve N Veda-controlled websites and repositories.
-
-It does **not** authorize testing against:
-
-- GitHub
-- GitHub Pages
-- Namecheap
-- DNS providers
-- hosting providers
-- payment processors
-- government systems
-- third-party APIs
-- external websites linked from Verve N Veda
-
----
-
-# Disclosure
-
-After a reported issue has been investigated and resolved, Verve N Veda may publicly acknowledge the contribution of the reporting researcher when appropriate and with their permission.
-
----
-
-# Thank You
-
-Responsible security reporting helps improve the safety and reliability of Verve N Veda for everyone.
-
-Thank you for helping make these resources more secure.
+Do not disclose vulnerabilities publicly before review. Reports should contain only the information necessary to reproduce and understand the issue and must not include secrets or sensitive personal information.
