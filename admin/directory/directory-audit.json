@@ -1,0 +1,173 @@
+import json
+from pathlib import Path
+
+audit = {
+  "schema": "verve-n-veda-public-network-forensic-audit",
+  "audit_date": "2026-08-18",
+  "scope_note": "Security snapshot of findings established during the public-network audit in this conversation. Verified findings are separated from architectural recommendations. No private/admin URLs or CORE locations are recorded.",
+  "network_rules_established": [
+    "Public visitor directory contains visitor destinations only.",
+    "Directory destinations are public repository/root landing pages or public index.html experiences only.",
+    "Raw URLs/repository addresses are not displayed to visitors; human-readable names are displayed.",
+    "Admin links, admin dashboards, private repositories, private AI COREs, credentials, internal security/control surfaces and private manifests are excluded from the visitor directory.",
+    "Images/logos may be presentation metadata but are not directory destinations.",
+    "Directory-listed and showcase-eligible are separate concepts.",
+    "The lower-page showcase may randomly rotate eligible public destinations approximately every four seconds.",
+    "Public AI homes may be directory destinations where explicitly permitted; private CORE material is never directory material.",
+    "Noema is NO SHOW and is excluded from the public visitor directory.",
+    "NAIB may have a public visitor landing page, but no administrative destination belongs in the visitor directory.",
+    "Verve N Veda is the canonical master/public gateway; numbered directory engines may derive from the master without writing back to it.",
+    "Child/numbered directory engines may preserve local filters/presentation while synchronized public-door data descends from the master.",
+    "A discovered resource should pass discovery -> validation -> public classification before propagation.",
+    "The directory can supply page-specific buttons/links by category while retaining a broader ecosystem showcase."
+  ],
+  "repositories": [
+    {
+      "repository": "vervenveda/the_refrain.github.io",
+      "canonical_role": "Music House & Music Education Conservatory",
+      "status": "healthy core; federation/manifest follow-up",
+      "verified_findings": [
+        "Repository inventory observed: index.html; four apps; two education workshop pages.",
+        "Current landing page is a substantive redesigned music-focused page.",
+        "No mentor-manifest.json was found during the audit."
+      ],
+      "follow_up": {
+        "REF-01": "Resolve canonical ownership/federation of the local ARSHIF Music Hall copy before deleting or redirecting anything.",
+        "REF-02": "Create an appropriate public directory/mentor manifest if desired, with Moirai as specialist music mentor and verified public inventory.",
+        "REF-03": "Federate Khaemenes music curriculum rather than unnecessarily duplicating grade-owned curriculum."
+      }
+    },
+    {
+      "repository": "vervenveda/veterans.github.io",
+      "canonical_role": "Veteran Transition & Resource Hub",
+      "status": "canonical and healthy",
+      "verified_findings": [
+        "A substantial mentor-manifest.json exists.",
+        "Manifest classifies the source as civic/public-services and freshness-sensitive.",
+        "Manifest includes a local-only Military Skills Translation Notebook privacy boundary.",
+        "Repository contains documentation, validation/research material and a substantive index.html."
+      ],
+      "follow_up": {
+        "VET-01": "Regularly verify authoritative external public-service resources for freshness.",
+        "VET-02": "Maintain explicit federation relationships to relevant education, finance, housing, legal, health, research and search nodes.",
+        "VET-03": "Preserve hard exclusion of local user-entered notebook information from crawling/indexing."
+      }
+    },
+    {
+      "repository": "vervenveda/myartgallery.github.io",
+      "canonical_role": "Artist Portfolio & Living Archive",
+      "status": "canonical; documentation/inventory cleanup needed",
+      "verified_findings": [
+        "Observed tree was very small: README.md, index.html, and videos/frida_kahlo.",
+        "README described a larger intended/future structure not present in the observed repository tree.",
+        "No mentor-manifest.json was found.",
+        "videos/frida_kahlo was observed as a tiny extensionless object and was not verified as playable video media."
+      ],
+      "follow_up": {
+        "ART-01": "Reconcile README-described structure with the repository structure that actually exists.",
+        "ART-02": "Optionally add a lightweight public directory manifest with copyright-aware metadata.",
+        "ART-03": "Inspect/classify videos/frida_kahlo before advertising it as playable media."
+      }
+    },
+    {
+      "repository": "vervenveda/onenationforall.github.io",
+      "canonical_role": "Civic Participation & Civic Education Hub",
+      "status": "healthy core; separation and cleanup required",
+      "verified_findings": [
+        "mentor-manifest.json exists and deliberately separates civic/educational inventory from campaign/candidate material.",
+        "Three one-byte placeholder application files were observed: donate_index.html, revolution_index.html, volunteer_index.html.",
+        "Road_to_governor_index.html and statements/Letter_to_Americans_index.html were observed with identical blob SHA and size, indicating byte-for-byte duplicate content at audit time.",
+        "README and manifest used differing canonical public URL forms."
+      ],
+      "follow_up": {
+        "ONA-01": "Resolve/remove or implement the three one-byte placeholder applications.",
+        "ONA-02": "Investigate and correct the duplicated Road_to_governor / Letter_to_Americans content if unintended.",
+        "ONA-03": "Normalize the canonical public URL across README, manifest and site metadata.",
+        "ONA-04": "Preserve the manifest boundary between neutral civic/educational material and campaign/candidate material."
+      }
+    },
+    {
+      "repository": "vervenveda/JenniferPearl2028.github.io",
+      "canonical_role": "Campaign Gateway",
+      "status": "landing page substantive; supporting infrastructure incomplete",
+      "verified_findings": [
+        "index.html was observed as a substantive campaign gateway page.",
+        "A malformed .github workflow-directory path containing spaces was observed.",
+        "Two workflow files in that malformed location were observed as one-byte files.",
+        "Five .webp gallery files were observed at only roughly 23-27 bytes each and therefore were not credible as normal campaign photographs.",
+        "data/campaign-gallery.json was observed as one byte.",
+        "scripts/validate-gallery.cjs was observed as one byte.",
+        "README.md was observed as only 29 bytes.",
+        "No mentor-manifest.json was found."
+      ],
+      "follow_up": {
+        "JP28-01": "Repair/remove malformed and empty GitHub Actions workflow infrastructure.",
+        "JP28-02": "Replace tiny .webp placeholders with valid intended image assets.",
+        "JP28-03": "Populate the campaign gallery manifest if the gallery system is retained.",
+        "JP28-04": "Implement or remove the empty gallery validator.",
+        "JP28-05": "Replace the minimal README with canonical repository documentation and campaign classification metadata."
+      }
+    },
+    {
+      "repository": "vervenveda/vervenveda.github.io",
+      "canonical_role": "Public Network Gateway / Master Visitor Directory Host",
+      "status": "active; public/admin boundary requires continued care",
+      "verified_findings": [
+        "Root repository contains .github, .nojekyll, 404.html, accessibility/change-control/incident-response and other operational documentation.",
+        "Current index.html identifies itself as the Verve N Veda public gateway.",
+        "Current index.html contains an ADMIN GATE UI section including admin-entry and admin-gate-overlay styling.",
+        "Public visitor directory is being kept as-is at the user's direction."
+      ],
+      "follow_up": {
+        "VNV-01": "Maintain strict separation between visitor directory data and the separate admin cloud.",
+        "VNV-02": "Do not place admin URLs or private/control destinations in the public visitor directory, even as hidden records.",
+        "VNV-03": "When revisiting the admin gate, audit where it leads without copying admin destinations into public-directory artifacts.",
+        "VNV-04": "Preserve Verve N Veda as the canonical master source if numbered public directory engines are introduced."
+      }
+    }
+  ],
+  "public_inventory_nodes_audited_or_classified": [
+    "Khaemenes Academy",
+    "Khaemenes Preschool",
+    "Khaemenes Kinder Garden",
+    "Khaemenes Elementary",
+    "Khaemenes Middle",
+    "Khaemenes High",
+    "Khaemenes Higher Learning",
+    "Khaemenes Linguistics",
+    "PLERA Search",
+    "ARSHIF",
+    "333 Network",
+    "Arcade",
+    "Aurora",
+    "Bazaar Art",
+    "Finance",
+    "Firmament",
+    "Homeless Resources",
+    "Medicament",
+    "ProReSources",
+    "River to Road",
+    "Solanar",
+    "The Verifier",
+    "The Refrain",
+    "Veterans Career & Resource Hub",
+    "My Art Gallery",
+    "One Nation for All",
+    "Jennifer Pearl 2028",
+    "Verve N Veda"
+  ],
+  "classification_boundaries": {
+    "one_nation_for_all": "civic/public participation and civic education; campaign material should remain distinctly classified",
+    "jennifer_pearl_2028": "campaign/candidate gateway; not neutral civic instruction",
+    "khaemenes": "education",
+    "the_refrain": "music creation and music education",
+    "my_art_gallery": "artist-owned portfolio/living archive",
+    "veterans": "veteran transition and public-resource orchestration",
+    "verve_n_veda": "public gateway/master visitor-directory host"
+  },
+  "security_note": "This audit snapshot intentionally omits private/admin destinations and secrets. It records public-network findings and boundary rules only."
+}
+
+path = Path("/mnt/data/verve_n_veda_public_network_forensic_audit_2026-08-18.json")
+path.write_text(json.dumps(audit, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+print(f"Created {path.name}")
