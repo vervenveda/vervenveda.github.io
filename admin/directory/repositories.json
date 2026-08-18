@@ -1,0 +1,57 @@
+import json
+from pathlib import Path
+from datetime import date
+
+directory = {
+    "schema": "verve-n-veda-visitor-directory",
+    "version": "1.0.0",
+    "generated": "2026-08-18",
+    "purpose": "Security backup of the public visitor-door directory.",
+    "rules": {
+        "visitor_only": True,
+        "allowed_destinations": ["public repository root", "public index.html"],
+        "admin_links_allowed": False,
+        "private_links_allowed": False,
+        "display_raw_urls": False,
+        "noema_show": False
+    },
+    "entries": [
+        {"name":"Verve N Veda","category":"gateway","url":"https://vervenveda.com/"},
+        {"name":"Khaemenes Academy","category":"education","url":"https://vervenveda.com/Khaemenes_Academy.github.io/"},
+        {"name":"Khaemenes Preschool","category":"education","url":"https://vervenveda.com/Khaemenes_Preschool.github.io/"},
+        {"name":"Khaemenes Kinder Garden","category":"education","url":"https://vervenveda.com/Khaemenes_KinderGarden.github.io/"},
+        {"name":"Khaemenes Elementary","category":"education","url":"https://vervenveda.com/Khaemenes_Elementary.github.io/"},
+        {"name":"Khaemenes Middle","category":"education","url":"https://vervenveda.com/Khaemenes_Middle.github.io/"},
+        {"name":"Khaemenes High","category":"education","url":"https://vervenveda.com/Khaemenes_High.github.io/"},
+        {"name":"Khaemenes Higher Learning","category":"education","url":"https://vervenveda.com/Khaemenes_Higher_Learning.github.io/"},
+        {"name":"Khaemenes Linguistics","category":"education","url":"https://vervenveda.com/Khaemenes_Linguistics.github.io/"},
+        {"name":"PLERA Search","category":"research","url":"https://vervenveda.com/PLERASearch.github.io/"},
+        {"name":"ARSHIF","category":"research","url":"https://vervenveda.com/Arshif.github.io/"},
+        {"name":"333 Network","category":"network","url":"https://vervenveda.com/333.github.io/"},
+        {"name":"Arcade","category":"games","url":"https://vervenveda.com/arcade.github.io/"},
+        {"name":"Aurora","category":"wellbeing","url":"https://vervenveda.com/aurora.github.io/"},
+        {"name":"Bazaar Art","category":"arts","url":"https://vervenveda.com/bazaarart.github.io/"},
+        {"name":"Finance","category":"finance","url":"https://vervenveda.com/finance.github.io/"},
+        {"name":"Firmament","category":"law","url":"https://vervenveda.com/firmament.github.io/"},
+        {"name":"Homeless Resources","category":"public-service","url":"https://vervenveda.com/Homeless.github.io/"},
+        {"name":"Medicament","category":"health","url":"https://vervenveda.com/medicament-hub.github.io/"},
+        {"name":"ProReSources","category":"tools","url":"https://vervenveda.com/proresource_hub.github.io/"},
+        {"name":"River to Road","category":"environment","url":"https://vervenveda.com/river_to_road.github.io/"},
+        {"name":"Solanar","category":"science","url":"https://vervenveda.com/solanar.github.io/"},
+        {"name":"The Verifier","category":"news","url":"https://vervenveda.com/theverifier.github.io/"},
+        {"name":"The Refrain","category":"music","url":"https://vervenveda.com/the_refrain.github.io/"},
+        {"name":"Veterans Career & Resource Hub","category":"public-service","url":"https://vervenveda.com/veterans.github.io/"},
+        {"name":"My Art Gallery","category":"arts","url":"https://vervenveda.com/myartgallery.github.io/"},
+        {"name":"One Nation for All","category":"civic","url":"https://vervenveda.com/onenationforall.github.io/"},
+        {"name":"Jennifer Pearl 2028","category":"campaign","url":"https://vervenveda.com/JenniferPearl2028.github.io/"}
+    ],
+    "excluded": {
+        "admin": "All admin/cloud/control destinations intentionally excluded.",
+        "private": "Private repositories, CORE material, credentials, internal diagnostics, and security routes intentionally excluded.",
+        "noema": "NO SHOW — intentionally absent from public visitor directory."
+    }
+}
+
+out = Path("/mnt/data/verve_n_veda_visitor_directory_security_backup.json")
+out.write_text(json.dumps(directory, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+print(f"Created {out.name} with {len(directory['entries'])} public visitor root entries.")
