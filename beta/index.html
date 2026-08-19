@@ -2,28 +2,250 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Verve N Veda Beta Program — help test Khaemenes Academy and connected ecosystem experiences while the protected enrollment and feedback service is being completed.">
-<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Verve N Veda Public Beta Program — one thoughtful student report per day to help improve the free public ecosystem.">
+<meta name="theme-color" content="#17392f">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
+<meta name="robots" content="index,follow">
 <title>Verve N Veda · Beta Program</title>
 <style>
-:root{--ink:#172330;--muted:#687580;--paper:#f5f1e8;--card:#fff;--navy:#10283f;--gold:#b68e4e;--line:rgba(23,35,48,.14);--r:7px;--serif:Cinzel,Georgia,serif;--sans:"Avenir Next","Segoe UI",Arial,sans-serif;--shadow:0 18px 48px rgba(16,40,63,.10)}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:linear-gradient(180deg,#eef3f6,var(--paper));font:16px/1.65 var(--sans)}a{color:inherit}.shell{width:min(calc(100% - 32px),980px);margin:auto}.top{padding:24px 0;color:#fff;background:linear-gradient(135deg,#0a1827,var(--navy))}.top .shell{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.brand{font:500 clamp(24px,4vw,39px)/1 var(--serif)}.top a{padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:var(--r);text-decoration:none}.hero{text-align:center;padding:74px 0 36px}.eyebrow{color:#8a6d38;font:600 11px var(--serif);letter-spacing:.16em;text-transform:uppercase}.hero h1{margin:8px 0 16px;color:var(--navy);font:500 clamp(48px,8vw,86px)/.95 var(--serif)}.hero p{max-width:760px;margin:auto;color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-bottom:70px}.card{padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--shadow)}.card h2{margin:6px 0 10px;color:var(--navy);font:500 29px/1.08 var(--serif)}.card p,.card li{color:var(--muted)}.field{display:grid;gap:6px;margin-top:13px}.field label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.field input,.field select,.field textarea{width:100%;min-height:44px;padding:9px 11px;border:1px solid var(--line);border-radius:var(--r);font:inherit;background:#fff}.field textarea{min-height:100px;resize:vertical}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 14px;border:1px solid var(--navy);border-radius:var(--r);color:#fff;background:var(--navy);font:700 10px var(--sans);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer}.btn.gold{color:#18120a;background:var(--gold);border-color:var(--gold)}.btn.secondary{color:var(--navy);background:#fff}.notice{margin-top:14px;padding:12px;border-left:4px solid var(--gold);border-radius:var(--r);background:#fff8e8;color:#6f624b;font-size:13px}.wide{grid-column:1/-1}.status{min-height:24px;margin-top:12px;font-size:13px;font-weight:700}.ok{color:#356244}.warn{color:#8a5e21}@media(max-width:720px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.top .shell{justify-content:center;text-align:center}.actions .btn{width:100%}}</style>
+:root{
+  --paper:#f4f0e7;--paper2:#fbf9f4;--ink:#111815;--muted:#66716c;
+  --forest:#17392f;--forest2:#245246;--gold:#b48b45;--gold2:#e7d7b6;
+  --burgundy:#71363e;--line:rgba(18,23,19,.15);--line2:rgba(18,23,19,.26);
+  --max:1040px;
+  --formal:Cinzel,"Palatino Linotype",Palatino,Georgia,serif;
+  --body:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif
+}
+*{box-sizing:border-box}
+body{margin:0;min-width:300px;color:var(--ink);background:linear-gradient(180deg,#fbfaf6,var(--paper));font-family:var(--body);line-height:1.7;text-align:center}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.shell{width:min(calc(100% - 36px),var(--max));margin:auto}
+header{padding:18px 0;border-bottom:1px solid var(--line);background:var(--forest);color:#fff}
+.nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.nav a{padding:8px 12px;border:1px solid rgba(255,255,255,.20);border-radius:8px;font-size:.69rem;letter-spacing:.08em;text-transform:uppercase}
+.hero{padding:86px 0 74px}
+.kicker{margin:0;color:var(--burgundy);font:600 .68rem var(--formal);letter-spacing:.20em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--formal);font-weight:500;text-wrap:balance}
+h1{margin:10px 0 0;color:var(--forest);font-size:clamp(3.8rem,9vw,7rem);line-height:.95}
+.lede{max-width:780px;margin:22px auto 0;color:var(--muted);font-size:1.07rem}
+.badge{display:inline-block;margin-top:24px;padding:8px 14px;border:1px solid var(--gold);border-radius:999px;color:var(--forest);background:#fffdf8;font:600 .66rem var(--formal);letter-spacing:.10em;text-transform:uppercase}
+.section{padding:72px 0;border-top:1px solid var(--line)}
+.section.alt{background:rgba(255,255,255,.45)}
+h2{margin:8px 0 0;color:var(--forest);font-size:clamp(2rem,5vw,3.7rem)}
+.intro{max-width:760px;margin:16px auto 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:32px}
+.card{padding:25px 20px;border:1px solid var(--line);border-radius:18px;background:#fffdf8}
+.card strong{display:block;color:var(--forest);font-family:var(--formal);font-weight:500}
+.card p{margin:9px 0 0;color:var(--muted);font-size:.90rem}
+.feedback{max-width:780px;margin:32px auto 0;padding:30px;border:1px solid var(--line);border-radius:20px;background:#fffdf8;box-shadow:0 16px 40px rgba(18,34,28,.07)}
+.field{display:grid;gap:7px;margin-top:15px;text-align:left}
+.field label{font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.field input,.field textarea{width:100%;padding:12px 13px;border:1px solid var(--line2);border-radius:8px;color:var(--ink);background:#fff}
+.field textarea{min-height:155px;resize:vertical}
+.char-row{display:flex;justify-content:space-between;gap:12px;margin-top:5px;color:var(--muted);font-size:.76rem}
+.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{min-height:44px;padding:9px 16px;border:1px solid var(--forest);border-radius:8px;color:#fff;background:var(--forest);font-size:.70rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.btn.secondary{color:var(--forest);background:#fff}
+.btn:disabled{cursor:not-allowed;opacity:.55;transform:none}
+.status{min-height:1.6em;margin:15px 0 0;color:var(--forest2);font-weight:600}
+.daily-note{margin:18px auto 0;padding:14px 16px;border-left:3px solid var(--gold);max-width:690px;color:var(--muted);background:#faf6eb;font-size:.88rem;text-align:left}
+.success{border-color:rgba(46,105,70,.32);background:#f4faf5}
+.success .status{color:#24613b}
+footer{padding:35px 0;color:#727d77;font-size:.78rem;border-top:1px solid var(--line)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.grid{grid-template-columns:1fr}.hero{padding-top:62px}.feedback{padding:23px 18px}}
+</style>
 </head>
 <body>
-<header class="top"><div class="shell"><div class="brand">Verve N Veda</div><div><a href="../">Home</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></div></header>
-<section class="hero shell"><div class="eyebrow">Public Testing Program</div><h1>Beta Program</h1><p>Help us test Khaemenes Academy and the wider Verve N Veda ecosystem. Beta participation is for usability, navigation, curriculum experience, accessibility, and system feedback — never for exposing passwords, private student records, or other sensitive information.</p></section>
-<main class="shell grid">
-<section class="card"><div class="eyebrow">What We Test</div><h2>Real-world experience</h2><ul><li>navigation and broken links</li><li>student and family workflow clarity</li><li>grade and course continuity</li><li>mobile and print usability</li><li>accessibility and readability</li><li>assessment and lesson experience</li><li>bugs, confusing behavior, and missing resources</li></ul></section>
-<section class="card"><div class="eyebrow">Privacy Boundary</div><h2>Keep feedback non-sensitive</h2><p>Please do not submit passwords, passcodes, dates of birth, medical information, street addresses, government identifiers, private academic records, or other sensitive child information through this public beta form.</p><div class="notice">The protected enrollment/account service will handle authenticated family and learner data separately from beta feedback.</div></section>
-<section class="card wide"><div class="eyebrow">Beta Interest</div><h2>Join or send feedback</h2><form id="betaInterestForm">
-<div class="field"><label for="name">Name or household label</label><input id="name" maxlength="100" autocomplete="name" required></div>
-<div class="field"><label for="email">Contact email</label><input id="email" type="email" maxlength="180" autocomplete="email" required></div>
-<div class="field"><label for="program">Area of interest</label><select id="program"><option>Khaemenes Academy</option><option>Preschool / Kinder Garden</option><option>Elementary</option><option>Middle School</option><option>High School</option><option>Higher Learning</option><option>General Verve N Veda Beta</option></select></div>
-<div class="field"><label for="note">Non-sensitive feedback or interest note</label><textarea id="note" maxlength="1200" placeholder="What would you like to test, or what did you notice?"></textarea></div>
-<div class="actions"><button class="btn gold" type="submit">Prepare Beta Request</button><a class="btn secondary" href="mailto:khaemenesacademy@proton.me?subject=Khaemenes%20Academy%20Beta%20Program">Email Beta Team</a></div><p class="status" id="status" role="status" aria-live="polite"></p></form></section>
+<header>
+  <div class="shell nav">
+    <a href="../">Verve N Veda</a>
+    <a href="../ecosystem/">Ecosystem</a>
+    <a href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">Khaemenes Academy</a>
+    <a href="https://vervenveda.github.io/333.github.io/">333 Network</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="shell">
+    <p class="kicker">Public Participation · Free Ecosystem</p>
+    <h1>Beta Program</h1>
+    <p class="lede">Help us improve the public halls, courses, tools, games, resources and learning pathways across Verve N Veda and Khaemenes Academy. One thoughtful report each day is enough.</p>
+    <span class="badge">One Report Per Day</span>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="shell">
+    <p class="kicker">What to notice</p>
+    <h2>Test the experience.</h2>
+    <p class="intro">You do not need technical experience. Use the ecosystem naturally and tell us where something is unclear, broken, difficult to find or especially helpful.</p>
+    <div class="grid">
+      <div class="card"><strong>Navigation</strong><p>Do buttons, doors, menus and return paths lead where you expect?</p></div>
+      <div class="card"><strong>Learning</strong><p>Are lessons, explanations and activities understandable and useful?</p></div>
+      <div class="card"><strong>Accessibility</strong><p>Can you read, reach and operate everything comfortably on your device?</p></div>
+      <div class="card"><strong>Ideas</strong><p>What would make this page, class, tool or pathway genuinely better?</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <p class="kicker">Daily Beta Report</p>
+    <h2>What did you notice today?</h2>
+    <p class="intro">Take a moment and choose the most useful thing to report. You can send one beta report from this browser each calendar day.</p>
+
+    <form class="feedback" id="betaForm" novalidate>
+      <div class="field">
+        <label for="page">Page, class or tool</label>
+        <input id="page" name="page" maxlength="120" autocomplete="off" placeholder="Example: Pre-Algebra · Week 6">
+      </div>
+
+      <div class="field">
+        <label for="message">Your beta report</label>
+        <textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea>
+        <div class="char-row"><span>Be specific and kind.</span><span id="count">0 / 1200</span></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn" id="submitBtn" type="submit">Submit Daily Report</button>
+        <button class="btn secondary" id="clearBtn" type="button">Clear Draft</button>
+      </div>
+
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+      <p class="daily-note">A beta report is for improving the ecosystem. Never include passwords, private account information, home addresses, phone numbers or other sensitive personal information.</p>
+    </form>
+  </div>
+</section>
 </main>
+
+<footer>
+  <div class="shell">Verve N Veda · Public Beta Program · Free public learning ecosystem</div>
+</footer>
+
 <script>
-(()=>{"use strict";const form=document.getElementById("betaInterestForm"),status=document.getElementById("status"),params=new URLSearchParams(location.search),source=String(params.get("source")||"public-beta-page").slice(0,240);const clean=(v,max)=>String(v??"").replace(/[\u0000-\u001F\u007F]/g,"").trim().slice(0,max);form.addEventListener("submit",e=>{e.preventDefault();const name=clean(document.getElementById("name").value,100),email=clean(document.getElementById("email").value,180),program=clean(document.getElementById("program").value,80),note=clean(document.getElementById("note").value,1200);if(!name||!email)return;const subject=encodeURIComponent(`Beta Program · ${program}`);const body=encodeURIComponent(`Name / household: ${name}\nEmail: ${email}\nInterest: ${program}\nSource page: ${source}\n\nNon-sensitive note:\n${note||"(none)"}`);status.textContent="Your beta request is ready in your email application. No sensitive information was stored by this public page.";status.className="status ok";location.href=`mailto:khaemenesacademy@proton.me?subject=${subject}&body=${body}`})})();
+(() => {
+  "use strict";
+
+  const STORAGE_DAY = "vervenveda_beta_last_report_day_v1";
+  const STORAGE_REPORTS = "vervenveda_beta_local_reports_v1";
+  const STORAGE_DRAFT = "vervenveda_beta_draft_v1";
+
+  const form = document.getElementById("betaForm");
+  const page = document.getElementById("page");
+  const message = document.getElementById("message");
+  const count = document.getElementById("count");
+  const status = document.getElementById("status");
+  const submit = document.getElementById("submitBtn");
+  const clear = document.getElementById("clearBtn");
+
+  const todayKey = () => {
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth()+1).padStart(2,"0");
+    const day = String(d.getDate()).padStart(2,"0");
+    return `${y}-${m}-${day}`;
+  };
+
+  const gentleDailyMessage =
+    "Remember your message for tomorrow’s report. You already submitted your daily beta report.";
+
+  function alreadySubmittedToday(){
+    try { return localStorage.getItem(STORAGE_DAY) === todayKey(); }
+    catch { return false; }
+  }
+
+  function setLocked(locked){
+    message.disabled = locked;
+    page.disabled = locked;
+    submit.disabled = locked;
+    clear.disabled = locked;
+    form.classList.toggle("success", locked);
+    if(locked) status.textContent = gentleDailyMessage;
+  }
+
+  function updateCount(){
+    count.textContent = `${message.value.length} / 1200`;
+  }
+
+  function saveDraft(){
+    try{
+      localStorage.setItem(STORAGE_DRAFT, JSON.stringify({
+        page: page.value.slice(0,120),
+        message: message.value.slice(0,1200)
+      }));
+    }catch{}
+  }
+
+  function restoreDraft(){
+    if(alreadySubmittedToday()) return;
+    try{
+      const raw = localStorage.getItem(STORAGE_DRAFT);
+      if(!raw) return;
+      const draft = JSON.parse(raw);
+      page.value = typeof draft.page === "string" ? draft.page.slice(0,120) : "";
+      message.value = typeof draft.message === "string" ? draft.message.slice(0,1200) : "";
+    }catch{}
+    updateCount();
+  }
+
+  message.addEventListener("input", () => { updateCount(); saveDraft(); });
+  page.addEventListener("input", saveDraft);
+
+  clear.addEventListener("click", () => {
+    page.value = "";
+    message.value = "";
+    updateCount();
+    status.textContent = "";
+    try{ localStorage.removeItem(STORAGE_DRAFT); }catch{}
+    message.focus();
+  });
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+
+    if(alreadySubmittedToday()){
+      setLocked(true);
+      return;
+    }
+
+    const text = message.value.trim();
+    if(text.length < 10){
+      status.textContent = "Please add a little more detail so the report can be useful.";
+      message.focus();
+      return;
+    }
+
+    const report = {
+      date: todayKey(),
+      createdAt: new Date().toISOString(),
+      page: page.value.trim().slice(0,120),
+      message: text.slice(0,1200)
+    };
+
+    try{
+      const previous = JSON.parse(localStorage.getItem(STORAGE_REPORTS) || "[]");
+      const reports = Array.isArray(previous) ? previous : [];
+      reports.push(report);
+      localStorage.setItem(STORAGE_REPORTS, JSON.stringify(reports.slice(-60)));
+      localStorage.setItem(STORAGE_DAY, todayKey());
+      localStorage.removeItem(STORAGE_DRAFT);
+    }catch{
+      status.textContent = "This browser could not save the report. Please check local storage permissions and try again.";
+      return;
+    }
+
+    setLocked(true);
+  });
+
+  updateCount();
+  restoreDraft();
+  if(alreadySubmittedToday()) setLocked(true);
+})();
 </script>
 </body>
 </html>
