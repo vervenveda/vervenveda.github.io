@@ -1,40 +1,30 @@
 {
-  "format": "vnv-beta-coverage-v2",
-  "updatedAt": "2026-08-16",
-  "betaUrl": "https://vervenveda.com/beta/",
-  "widgetUrl": "/assets/vnv-beta-link.js",
-  "principle": "One canonical Beta Program destination with non-sensitive public source-page attribution only.",
-  "coverageRule": "Visible HTML filenames ending in index.html, including _index.html and common inndex.html typos, receive the canonical Beta doorway unless explicitly archived/private or unable to execute scripts by design.",
-  "continuousEnforcement": "Each covered repository has a Beta index coverage GitHub Action that scans index surfaces on push and adds the canonical same-origin widget when missing.",
-  "summary": {
-    "directIndexSurfacesCovered": 1118,
-    "publicMainDirectIndexSurfacesCovered": 683,
-    "highSchoolHardeningBranchDirectIndexSurfacesCovered": 435,
-    "repositoriesTracked": 12,
-    "unresolvedVisibleIndexSurfacesInTrackedRepositories": 0,
-    "note": "Administration, archives/private paths, and the Beta destination itself may be intentionally excluded. High School main remains intentionally unchanged."
-  },
-  "coverage": [
-    {"surface":"Verve N Veda Public Gateway","repository":"vervenveda/vervenveda.github.io","status":"covered-deep-index","branch":"main","directIndexCount":9,"mechanism":"Repository workflow + canonical same-origin Beta widget","scope":"Visible public index surfaces; admin, archive and beta destination intentionally excluded"},
-    {"surface":"Khaemenes Academy","repository":"vervenveda/Khaemenes_Academy.github.io","status":"covered-deep-index","branch":"main","directIndexCount":19,"mechanism":"Repository workflow plus existing Family Registry propagation","scope":"Academy front door, family, enrollment, student, teacher administration, health/parent resources and visible tool indexes"},
-    {"surface":"Khaemenes Preschool","repository":"vervenveda/Khaemenes_Preschool.github.io","status":"covered-deep-index","branch":"main","directIndexCount":55,"mechanism":"Repository workflow plus shared preschool bridge","scope":"Root, mentor and visible app/index surfaces","unresolved":0},
-    {"surface":"Khaemenes Kinder Garden","repository":"vervenveda/Khaemenes_KinderGarden.github.io","status":"covered-deep-index","branch":"main","directIndexCount":67,"mechanism":"Repository workflow plus Kinder family adapter","scope":"Root, curriculum, 36 unit indexes, apps, portfolio and teacher-tool indexes"},
-    {"surface":"Khaemenes Elementary","repository":"vervenveda/Khaemenes_Elementary.github.io","status":"covered-deep-index","branch":"main","directIndexCount":155,"mechanism":"Repository workflow plus Elementary Academy adapter","scope":"Root, Grades 01-05, Grade 01 unit/homework indexes, subject halls, games and teacher-tool indexes"},
-    {"surface":"Khaemenes Middle","repository":"vervenveda/Khaemenes_Middle.github.io","status":"covered-deep-index","branch":"main","directIndexCount":34,"mechanism":"Repository workflow plus middle grade continuity","scope":"Grades 06-08, subject halls and teacher-tool indexes"},
-    {"surface":"Khaemenes High","repository":"vervenveda/Khaemenes_High.github.io","status":"covered-hardening-branch-deep-index","branch":"hardening/archaemenes-highschool","directIndexCount":435,"mechanism":"Branch-scoped repository workflow plus High grade context","scope":"Visible course, homework/week, unit, assessment, record, portfolio, grade and tool indexes on the hardening branch","releaseNote":"High School main intentionally unchanged"},
-    {"surface":"Khaemenes Higher Learning","repository":"vervenveda/Khaemenes_Higher_Learning.github.io","status":"covered-deep-index","branch":"main","directIndexCount":192,"mechanism":"Repository workflow plus Higher Learning bridge","scope":"Career, GED, Technology, course, unit, assessment, diagnostic, teacher, teacher-key and tool indexes"},
-    {"surface":"ARSHIF","repository":"vervenveda/Arshif.github.io","status":"covered-deep-index","branch":"main","directIndexCount":33,"mechanism":"Repository workflow uses same-origin widget compatible with existing CSP","scope":"Root, Faith, halls, research/tool and visible app indexes","unresolved":0},
-    {"surface":"ProReSources","repository":"vervenveda/proresource_hub.github.io","status":"covered-deep-index","branch":"main","directIndexCount":18,"mechanism":"Repository workflow uses programmatic same-origin Beta button to coexist with navigation guards","scope":"Root and visible professional-tool indexes"},
-    {"surface":"Arcade","repository":"vervenveda/arcade.github.io","status":"covered-deep-index","branch":"main","directIndexCount":55,"mechanism":"Repository workflow uses same-origin programmatic Beta button compatible with static-link policy","scope":"Root, game cabinets, trivia, geometry and Kids Wing indexes"},
-    {"surface":"Bazaar Art","repository":"vervenveda/bazaarart.github.io","status":"covered-deep-index","branch":"main","directIndexCount":46,"mechanism":"Repository workflow uses same-origin widget compatible with current CSP","scope":"Root, classes, creative apps, games, instruments, composition and publishing indexes","unresolved":0}
+  "format": "vnv-beta-coverage-public-v3",
+  "updatedAt": "2026-08-19",
+  "program": "Verve N Veda Public Beta Program",
+  "status": "active",
+  "purpose": "A public summary of Beta Program availability across the Verve N Veda learning ecosystem.",
+  "principles": [
+    "Provide a consistent Beta Program experience across supported public learning surfaces.",
+    "Use only ordinary public page context to help identify where feedback originated.",
+    "Exclude private learner, family, academic, account, credential, and other sensitive information."
   ],
-  "definitions": {
-    "covered-deep-index": "All currently discovered visible index-style HTML surfaces in the tracked repository have direct canonical Beta widget coverage, with future index pages enforced on push.",
-    "covered-hardening-branch-deep-index": "Deep index coverage exists and is continuously enforced on the deliberate High School hardening branch; public main is not modified by this rollout."
-  },
+  "participating_surfaces": [
+    "Verve N Veda",
+    "Khaemenes Academy",
+    "Khaemenes Preschool",
+    "Khaemenes Kinder Garden",
+    "Khaemenes Elementary",
+    "Khaemenes Middle School",
+    "Khaemenes High School",
+    "Khaemenes Higher Learning",
+    "ARSHIF",
+    "ProReSources",
+    "Arcade",
+    "Bazaar Art"
+  ],
   "privacy": {
-    "allowedSourceMetadata": ["public hostname", "public pathname"],
-    "explicitlyExcludedFromSourceMetadata": ["query string", "URL hash", "learner ID", "family ID", "student or scholar ID", "grade", "answers", "form values", "localStorage contents", "course state", "credentials"],
-    "prohibitedInPublicBetaTelemetry": ["passwords", "passcodes", "verification codes", "dates of birth", "medical data", "street addresses", "private academic records", "private anti-abuse signals"]
+    "public_page_context_only": true,
+    "private_or_sensitive_information_excluded": true
   }
 }
