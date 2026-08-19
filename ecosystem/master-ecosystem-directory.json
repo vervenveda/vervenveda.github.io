@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.1.1",
   "title": "Verve N Veda Master Ecosystem Directory",
   "baseline": "2026-08-19",
   "purpose": "Normalized public-surface registry built from the forensic scan of the public vervenveda GitHub organization.",
@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 125,
+  "entryCount": 126,
   "entries": [
     {
       "id": "gateway-verve",
@@ -46,6 +46,18 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/vervenveda.github.io/"
+    },
+    {
+      "id": "gateway-beta",
+      "title": "Verve N Veda Beta Program",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "beta/index.html",
+      "type": "portal",
+      "category": "civic",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.github.io/vervenveda.github.io/beta/"
     },
     {
       "id": "network-333",
