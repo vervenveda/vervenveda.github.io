@@ -2,249 +2,102 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Verve N Veda Public Beta Program — one thoughtful student report per day to help improve the free public ecosystem.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Verve N Veda Public Beta Program — one thoughtful daily report to help improve public learning experiences.">
 <meta name="theme-color" content="#17392f">
 <meta name="color-scheme" content="light">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
-<meta name="robots" content="index,follow">
 <title>Verve N Veda · Beta Program</title>
 <style>
 :root{
-  --paper:#f4f0e7;--paper2:#fbf9f4;--ink:#111815;--muted:#66716c;
-  --forest:#17392f;--forest2:#245246;--gold:#b48b45;--gold2:#e7d7b6;
-  --burgundy:#71363e;--line:rgba(18,23,19,.15);--line2:rgba(18,23,19,.26);
-  --max:1040px;
-  --formal:Cinzel,"Palatino Linotype",Palatino,Georgia,serif;
-  --body:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif
+ --paper:#f4f0e7;--paper2:#fbf9f4;--panel:#fffdf8;--ink:#17251f;--muted:#66736d;
+ --forest:#17392f;--forest2:#245246;--gold:#b48b45;--gold2:#e7d7b6;--burgundy:#71363e;
+ --line:rgba(20,40,32,.15);--line2:rgba(20,40,32,.26);--max:1040px;--r:7px;--r2:21px;
+ --formal:Cinzel,"Palatino Linotype",Palatino,Georgia,serif;
+ --body:"Brandon Grotesque","Avenir Next",Avenir,"Segoe UI",Arial,sans-serif
 }
-*{box-sizing:border-box}
-body{margin:0;min-width:300px;color:var(--ink);background:linear-gradient(180deg,#fbfaf6,var(--paper));font-family:var(--body);line-height:1.7;text-align:center}
-a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.shell{width:min(calc(100% - 36px),var(--max));margin:auto}
-header{padding:18px 0;border-bottom:1px solid var(--line);background:var(--forest);color:#fff}
-.nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.nav a{padding:8px 12px;border:1px solid rgba(255,255,255,.20);border-radius:8px;font-size:.69rem;letter-spacing:.08em;text-transform:uppercase}
-.hero{padding:86px 0 74px}
-.kicker{margin:0;color:var(--burgundy);font:600 .68rem var(--formal);letter-spacing:.20em;text-transform:uppercase}
-h1,h2,h3{font-family:var(--formal);font-weight:500;text-wrap:balance}
-h1{margin:10px 0 0;color:var(--forest);font-size:clamp(3.8rem,9vw,7rem);line-height:.95}
-.lede{max-width:780px;margin:22px auto 0;color:var(--muted);font-size:1.07rem}
-.badge{display:inline-block;margin-top:24px;padding:8px 14px;border:1px solid var(--gold);border-radius:999px;color:var(--forest);background:#fffdf8;font:600 .66rem var(--formal);letter-spacing:.10em;text-transform:uppercase}
-.section{padding:72px 0;border-top:1px solid var(--line)}
-.section.alt{background:rgba(255,255,255,.45)}
-h2{margin:8px 0 0;color:var(--forest);font-size:clamp(2rem,5vw,3.7rem)}
-.intro{max-width:760px;margin:16px auto 0;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:32px}
-.card{padding:25px 20px;border:1px solid var(--line);border-radius:18px;background:#fffdf8}
-.card strong{display:block;color:var(--forest);font-family:var(--formal);font-weight:500}
-.card p{margin:9px 0 0;color:var(--muted);font-size:.90rem}
-.feedback{max-width:780px;margin:32px auto 0;padding:30px;border:1px solid var(--line);border-radius:20px;background:#fffdf8;box-shadow:0 16px 40px rgba(18,34,28,.07)}
-.field{display:grid;gap:7px;margin-top:15px;text-align:left}
-.field label{font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
-.field input,.field textarea{width:100%;padding:12px 13px;border:1px solid var(--line2);border-radius:8px;color:var(--ink);background:#fff}
-.field textarea{min-height:155px;resize:vertical}
-.char-row{display:flex;justify-content:space-between;gap:12px;margin-top:5px;color:var(--muted);font-size:.76rem}
-.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}
-.btn{min-height:44px;padding:9px 16px;border:1px solid var(--forest);border-radius:8px;color:#fff;background:var(--forest);font-size:.70rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
-.btn.secondary{color:var(--forest);background:#fff}
-.btn:disabled{cursor:not-allowed;opacity:.55;transform:none}
-.status{min-height:1.6em;margin:15px 0 0;color:var(--forest2);font-weight:600}
-.daily-note{margin:18px auto 0;padding:14px 16px;border-left:3px solid var(--gold);max-width:690px;color:var(--muted);background:#faf6eb;font-size:.88rem;text-align:left}
-.success{border-color:rgba(46,105,70,.32);background:#f4faf5}
-.success .status{color:#24613b}
-footer{padding:35px 0;color:#727d77;font-size:.78rem;border-top:1px solid var(--line)}
-@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:580px){.grid{grid-template-columns:1fr}.hero{padding-top:62px}.feedback{padding:23px 18px}}
+*{box-sizing:border-box}html{background:var(--paper)}
+body{margin:0;min-width:300px;color:var(--ink);background:radial-gradient(circle at 50% -10rem,rgba(180,139,69,.12),transparent 34rem),linear-gradient(180deg,#fbfaf6,var(--paper));font:16px/1.7 var(--body);text-align:center}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.shell{width:min(calc(100% - 34px),var(--max));margin:auto}
+header{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12);background:var(--forest);color:#fff}.nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.nav a{padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:var(--r);font-size:10px}
+.hero{padding:82px 0 70px}.kicker{margin:0;color:var(--burgundy);font:600 11px/1.4 var(--formal);letter-spacing:.19em;text-transform:uppercase}h1,h2,h3{font-family:var(--formal);font-weight:500;text-wrap:balance}h1{margin:10px 0 0;color:var(--forest);font-size:clamp(3.8rem,9vw,7rem);line-height:.95}.lede{max-width:780px;margin:22px auto 0;color:var(--muted);font-size:1.06rem}.badge{display:inline-block;margin-top:24px;padding:8px 14px;border:1px solid var(--gold);border-radius:999px;background:var(--panel);color:var(--forest);font:600 10px var(--formal);letter-spacing:.1em;text-transform:uppercase}
+.section{padding:70px 0;border-top:1px solid var(--line)}.section.alt{background:rgba(255,255,255,.48)}h2{margin:8px 0 0;color:var(--forest);font-size:clamp(2rem,5vw,3.7rem)}.intro{max-width:760px;margin:15px auto 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:31px}.card{padding:24px 19px;border:1px solid var(--line);border-radius:var(--r2);background:var(--panel)}.card strong{display:block;color:var(--forest);font-family:var(--formal);font-weight:500}.card p{margin:8px 0 0;color:var(--muted);font-size:.9rem}
+.feedback{max-width:790px;margin:31px auto 0;padding:30px;border:1px solid var(--line);border-radius:var(--r2);background:var(--panel);box-shadow:0 16px 40px rgba(18,34,28,.07)}.field{display:grid;gap:7px;margin-top:15px;text-align:left}.field label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.field input,.field textarea{width:100%;padding:12px 13px;border:1px solid var(--line2);border-radius:var(--r);color:var(--ink);background:#fff}.field textarea{min-height:155px;resize:vertical}.char-row{display:flex;justify-content:space-between;gap:12px;margin-top:5px;color:var(--muted);font-size:12px}
+.actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:20px}.btn{min-height:44px;padding:9px 15px;border:1px solid var(--forest);border-radius:var(--r);color:#fff;background:var(--forest);font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer}.btn.secondary{color:var(--forest);background:#fff;border-color:var(--line2)}.btn.gold{color:#2b2417;background:#ead6a4;border-color:#c5a45f}.btn:disabled{cursor:not-allowed;opacity:.52}.status{min-height:1.6em;margin:15px 0 0;color:var(--forest2);font-weight:600}.daily-note{margin:18px auto 0;padding:14px 16px;border-left:3px solid var(--gold);max-width:700px;color:var(--muted);background:#faf6eb;font-size:.88rem;text-align:left}.share-panel{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:11px;background:#f5f8f5}.share-panel h3{margin:0;color:var(--forest);font-size:1.25rem}
+footer{padding:35px 0;color:#727d77;font-size:12px;border-top:1px solid var(--line)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:580px){.grid{grid-template-columns:1fr}.hero{padding-top:60px}.feedback{padding:23px 17px}.actions .btn{width:100%}}
 </style>
 </head>
 <body>
-<header>
-  <div class="shell nav">
-    <a href="../">Verve N Veda</a>
-    <a href="../ecosystem/">Ecosystem</a>
-    <a href="https://vervenveda.github.io/Khaemenes_Academy.github.io/">Khaemenes Academy</a>
-    <a href="https://vervenveda.github.io/333.github.io/">333 Network</a>
-  </div>
-</header>
+<header><div class="shell nav"><a href="../">Verve N Veda</a><a href="../ecosystem/">Ecosystem</a><a href="../Khaemenes_Academy.github.io/">Khaemenes Academy</a><a href="../333.github.io/">333 Network</a></div></header>
 
 <main>
-<section class="hero">
-  <div class="shell">
-    <p class="kicker">Public Participation · Free Ecosystem</p>
-    <h1>Beta Program</h1>
-    <p class="lede">Help us improve the public halls, courses, tools, games, resources and learning pathways across Verve N Veda and Khaemenes Academy. One thoughtful report each day is enough.</p>
-    <span class="badge">One Report Per Day</span>
-  </div>
-</section>
+<section class="hero"><div class="shell"><p class="kicker">Public Participation · Free Ecosystem</p><h1>Beta Program</h1><p class="lede">Help improve public halls, courses, tools, games, resources, and learning pathways across Verve N Veda and Khaemenes Academy. One thoughtful report each day is enough.</p><span class="badge">One Daily Report</span></div></section>
 
-<section class="section alt">
-  <div class="shell">
-    <p class="kicker">What to notice</p>
-    <h2>Test the experience.</h2>
-    <p class="intro">You do not need technical experience. Use the ecosystem naturally and tell us where something is unclear, broken, difficult to find or especially helpful.</p>
-    <div class="grid">
-      <div class="card"><strong>Navigation</strong><p>Do buttons, doors, menus and return paths lead where you expect?</p></div>
-      <div class="card"><strong>Learning</strong><p>Are lessons, explanations and activities understandable and useful?</p></div>
-      <div class="card"><strong>Accessibility</strong><p>Can you read, reach and operate everything comfortably on your device?</p></div>
-      <div class="card"><strong>Ideas</strong><p>What would make this page, class, tool or pathway genuinely better?</p></div>
-    </div>
-  </div>
-</section>
+<section class="section alt"><div class="shell"><p class="kicker">What to notice</p><h2>Test the experience.</h2><p class="intro">Use the ecosystem naturally and tell us where something is unclear, broken, difficult to find, or especially helpful.</p><div class="grid"><div class="card"><strong>Navigation</strong><p>Do buttons, doors, menus, and return paths lead where you expect?</p></div><div class="card"><strong>Learning</strong><p>Are lessons, explanations, and activities understandable and useful?</p></div><div class="card"><strong>Accessibility</strong><p>Can you read, reach, and operate everything comfortably on your device?</p></div><div class="card"><strong>Ideas</strong><p>What would make this page, class, tool, or pathway genuinely better?</p></div></div></div></section>
 
-<section class="section">
-  <div class="shell">
-    <p class="kicker">Daily Beta Report</p>
-    <h2>What did you notice today?</h2>
-    <p class="intro">Take a moment and choose the most useful thing to report. You can send one beta report from this browser each calendar day.</p>
-
-    <form class="feedback" id="betaForm" novalidate>
-      <div class="field">
-        <label for="page">Page, class or tool</label>
-        <input id="page" name="page" maxlength="120" autocomplete="off" placeholder="Example: Pre-Algebra · Week 6">
-      </div>
-
-      <div class="field">
-        <label for="message">Your beta report</label>
-        <textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea>
-        <div class="char-row"><span>Be specific and kind.</span><span id="count">0 / 1200</span></div>
-      </div>
-
-      <div class="actions">
-        <button class="btn" id="submitBtn" type="submit">Submit Daily Report</button>
-        <button class="btn secondary" id="clearBtn" type="button">Clear Draft</button>
-      </div>
-
-      <p class="status" id="status" role="status" aria-live="polite"></p>
-      <p class="daily-note">A beta report is for improving the ecosystem. Never include passwords, private account information, home addresses, phone numbers or other sensitive personal information.</p>
-    </form>
-  </div>
-</section>
+<section class="section"><div class="shell"><p class="kicker">Daily Beta Report</p><h2>What did you notice today?</h2><p class="intro">Choose the most useful thing to report. Save one polished report for today, then copy, download, or share it through your preferred channel.</p>
+<form class="feedback" id="betaForm" novalidate>
+  <div class="field"><label for="page">Page, class or tool</label><input id="page" name="page" maxlength="120" autocomplete="off" placeholder="Example: Pre-Algebra · Week 6"></div>
+  <div class="field"><label for="message">Your beta report</label><textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea><div class="char-row"><span>Be specific and kind.</span><span id="count">0 / 1200</span></div></div>
+  <div class="actions"><button class="btn" id="saveBtn" type="submit">Save Daily Report</button><button class="btn secondary" id="clearBtn" type="button">Clear Draft</button></div>
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+  <div class="share-panel" id="sharePanel" hidden><h3>Today’s report is ready.</h3><p>Choose the sharing method that works for you.</p><div class="actions"><button class="btn" id="copyBtn" type="button">Copy Report</button><button class="btn secondary" id="downloadBtn" type="button">Download Report</button><button class="btn gold" id="shareBtn" type="button">Share Report</button></div></div>
+  <p class="daily-note">Do not include passwords, private account information, home addresses, phone numbers, or other sensitive personal information. Saving the report prepares your daily record; use Copy, Download, or Share when you are ready to send it onward.</p>
+</form>
+</div></section>
 </main>
-
-<footer>
-  <div class="shell">Verve N Veda · Public Beta Program · Free public learning ecosystem</div>
-</footer>
+<footer><div class="shell">Verve N Veda · Public Beta Program · Free public learning ecosystem</div></footer>
 
 <script>
 (() => {
-  "use strict";
+"use strict";
+const DAY_KEY="vervenveda_beta_last_report_day_v2",REPORT_KEY="vervenveda_beta_daily_report_v2",DRAFT_KEY="vervenveda_beta_draft_v2";
+const form=document.getElementById("betaForm"),page=document.getElementById("page"),message=document.getElementById("message"),count=document.getElementById("count"),status=document.getElementById("status"),saveBtn=document.getElementById("saveBtn"),clearBtn=document.getElementById("clearBtn"),sharePanel=document.getElementById("sharePanel"),copyBtn=document.getElementById("copyBtn"),downloadBtn=document.getElementById("downloadBtn"),shareBtn=document.getElementById("shareBtn");
+const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
+function read(key,fallback=null){try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}}
+function write(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}}
+function friendlySource(value){
+  if(!value)return "";
+  let text=String(value).slice(0,320).replace(/[?#].*$/,"").replace(/^https?:\/\//i,"");
+  text=text.replace(/^www\./i,"");
+  const parts=text.split("/").filter(Boolean);
+  if(parts[0]?.includes("."))parts.shift();
+  const skip=new Set(["index.html","index","courses","course"]);
+  const labels=parts.filter(p=>!skip.has(p.toLowerCase())).map(p=>decodeURIComponent(p).replace(/\.github\.io$/i,"").replace(/[_-]+/g," ").trim()).filter(Boolean);
+  return labels.map(x=>x.replace(/\b\w/g,m=>m.toUpperCase())).join(" · ").slice(0,120);
+}
+function sourceFromQuery(){try{return friendlySource(new URLSearchParams(location.search).get("source")||"")}catch{return ""}}
+function reportText(report){return `Verve N Veda Beta Report\nDate: ${report.date}\nPage / class / tool: ${report.page||"Not specified"}\n\n${report.message}`}
 
-  const STORAGE_DAY = "vervenveda_beta_last_report_day_v1";
-  const STORAGE_REPORTS = "vervenveda_beta_local_reports_v1";
-  const STORAGE_DRAFT = "vervenveda_beta_draft_v1";
-
-  const form = document.getElementById("betaForm");
-  const page = document.getElementById("page");
-  const message = document.getElementById("message");
-  const count = document.getElementById("count");
-  const status = document.getElementById("status");
-  const submit = document.getElementById("submitBtn");
-  const clear = document.getElementById("clearBtn");
-
-  const todayKey = () => {
-    const d = new Date();
-    const y = d.getFullYear();
-    const m = String(d.getMonth()+1).padStart(2,"0");
-    const day = String(d.getDate()).padStart(2,"0");
-    return `${y}-${m}-${day}`;
-  };
-
-  const gentleDailyMessage =
-    "Remember your message for tomorrow’s report. You already submitted your daily beta report.";
-
-  function alreadySubmittedToday(){
-    try { return localStorage.getItem(STORAGE_DAY) === todayKey(); }
-    catch { return false; }
-  }
-
-  function setLocked(locked){
-    message.disabled = locked;
-    page.disabled = locked;
-    submit.disabled = locked;
-    clear.disabled = locked;
-    form.classList.toggle("success", locked);
-    if(locked) status.textContent = gentleDailyMessage;
-  }
-
-  function updateCount(){
-    count.textContent = `${message.value.length} / 1200`;
-  }
-
-  function saveDraft(){
-    try{
-      localStorage.setItem(STORAGE_DRAFT, JSON.stringify({
-        page: page.value.slice(0,120),
-        message: message.value.slice(0,1200)
-      }));
-    }catch{}
-  }
-
-  function restoreDraft(){
-    if(alreadySubmittedToday()) return;
-    try{
-      const raw = localStorage.getItem(STORAGE_DRAFT);
-      if(!raw) return;
-      const draft = JSON.parse(raw);
-      page.value = typeof draft.page === "string" ? draft.page.slice(0,120) : "";
-      message.value = typeof draft.message === "string" ? draft.message.slice(0,1200) : "";
-    }catch{}
-    updateCount();
-  }
-
-  message.addEventListener("input", () => { updateCount(); saveDraft(); });
-  page.addEventListener("input", saveDraft);
-
-  clear.addEventListener("click", () => {
-    page.value = "";
-    message.value = "";
-    updateCount();
-    status.textContent = "";
-    try{ localStorage.removeItem(STORAGE_DRAFT); }catch{}
-    message.focus();
-  });
-
-  form.addEventListener("submit", event => {
-    event.preventDefault();
-
-    if(alreadySubmittedToday()){
-      setLocked(true);
-      return;
-    }
-
-    const text = message.value.trim();
-    if(text.length < 10){
-      status.textContent = "Please add a little more detail so the report can be useful.";
-      message.focus();
-      return;
-    }
-
-    const report = {
-      date: todayKey(),
-      createdAt: new Date().toISOString(),
-      page: page.value.trim().slice(0,120),
-      message: text.slice(0,1200)
-    };
-
-    try{
-      const previous = JSON.parse(localStorage.getItem(STORAGE_REPORTS) || "[]");
-      const reports = Array.isArray(previous) ? previous : [];
-      reports.push(report);
-      localStorage.setItem(STORAGE_REPORTS, JSON.stringify(reports.slice(-60)));
-      localStorage.setItem(STORAGE_DAY, todayKey());
-      localStorage.removeItem(STORAGE_DRAFT);
-    }catch{
-      status.textContent = "This browser could not save the report. Please check local storage permissions and try again.";
-      return;
-    }
-
-    setLocked(true);
-  });
-
+function updateCount(){count.textContent=`${message.value.length} / 1200`}
+function saveDraft(){write(DRAFT_KEY,{page:page.value.slice(0,120),message:message.value.slice(0,1200)})}
+function currentReport(){const r=read(REPORT_KEY,null);return r&&r.date===today()?r:null}
+function showSaved(report){
+  page.value=report.page||"";message.value=report.message||"";page.disabled=true;message.disabled=true;saveBtn.disabled=true;clearBtn.disabled=true;sharePanel.hidden=false;status.textContent="Today’s beta report is saved and ready to share.";updateCount();
+}
+function restore(){
+  const saved=currentReport();if(saved){showSaved(saved);return}
+  const draft=read(DRAFT_KEY,null),source=sourceFromQuery();
+  if(draft){page.value=typeof draft.page==="string"?draft.page.slice(0,120):"";message.value=typeof draft.message==="string"?draft.message.slice(0,1200):""}
+  if(!page.value&&source)page.value=source;
   updateCount();
-  restoreDraft();
-  if(alreadySubmittedToday()) setLocked(true);
+}
+message.addEventListener("input",()=>{updateCount();saveDraft()});page.addEventListener("input",saveDraft);
+clearBtn.addEventListener("click",()=>{page.value=sourceFromQuery();message.value="";status.textContent="";updateCount();try{localStorage.removeItem(DRAFT_KEY)}catch{}message.focus()});
+form.addEventListener("submit",e=>{
+  e.preventDefault();if(currentReport()){showSaved(currentReport());return}
+  const text=message.value.trim();if(text.length<10){status.textContent="Please add a little more detail so the report is useful.";message.focus();return}
+  const report={date:today(),createdAt:new Date().toISOString(),page:page.value.trim().slice(0,120),message:text.slice(0,1200)};
+  if(!write(REPORT_KEY,report)||!write(DAY_KEY,report.date)){status.textContent="This browser could not save the report. Please try again.";return}
+  try{localStorage.removeItem(DRAFT_KEY)}catch{}showSaved(report);
+});
+copyBtn.addEventListener("click",async()=>{const r=currentReport();if(!r)return;try{await navigator.clipboard.writeText(reportText(r));status.textContent="Report copied."}catch{status.textContent="Copy was not available. Use Download Report instead."}});
+downloadBtn.addEventListener("click",()=>{const r=currentReport();if(!r)return;const blob=new Blob([reportText(r)],{type:"text/plain;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=`Verve_N_Veda_Beta_Report_${r.date}.txt`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),500)});
+shareBtn.addEventListener("click",async()=>{const r=currentReport();if(!r)return;const text=reportText(r);if(navigator.share){try{await navigator.share({title:"Verve N Veda Beta Report",text});status.textContent="Share sheet opened."}catch{}}else{try{await navigator.clipboard.writeText(text);status.textContent="Sharing is not available here, so the report was copied instead."}catch{status.textContent="Use Download Report to save a copy."}}});
+restore();
 })();
 </script>
 </body>
