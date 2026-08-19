@@ -314,12 +314,12 @@
       display:grid;
       grid-template-columns:minmax(222px,1fr) auto minmax(44px,1fr);
       align-items:center;
-      column-gap:24px;
+      column-gap:33px;
     }
     .brand{
       justify-self:start;
       min-width:0;
-      max-width:360px;
+      max-width:444px;
       display:inline-flex;
       align-items:center;
       gap:24px;
@@ -457,7 +457,7 @@
       text-transform:uppercase;
     }
     h1,h2,h3{
-      margin:11px;
+      margin:24px;
       font-family:var(--display);
       font-weight:444;
       letter-spacing:.07em;
@@ -484,7 +484,7 @@
     }
     .hero-lead{
       max-width:777px;
-      margin:24 auto;
+      margin:33 auto;
       color:var(--ink-soft);
       font-family:var(--display);
       font-size:clamp(14px,1.55vw,24px);
@@ -494,8 +494,8 @@
       display:flex;
       justify-content:center;
       flex-wrap:wrap;
-      gap:24px;
-      margin-top:0;
+      gap:33px;
+      margin-top:11;
     }
     .button{
       min-height:44px;
@@ -537,14 +537,14 @@
     .scroll-cue:hover{color:var(--ink)}
 
     /* CONTENT */
-    .section{padding:clamp(99px,14vw,144px) 24x}
+    .section{padding:clamp(99px,24vw,155px) 33x}
     .section-alt{background:var(--paper-bright);border-block:1px solid var(--line)}
     .section-dark{color:#fff;background:var(--forest-deep)}
     .section-inner{width:min(100%,var(--max));margin:auto}
-    .section-heading{max-width:888px;margin:0 auto 55px}
+    .section-heading{max-width:888px;margin:0 auto 66px}
     .section h2{
       max-width:888px;
-      margin:14px auto 0;
+      margin:33px auto 0;
       color:var(--forest-deep);
       font-size:clamp(44px,4.4vw,77px);
       line-height:1.04;
@@ -575,7 +575,7 @@
       padding:0!important;
       overflow:hidden;
       border:1px solid var(--line);
-      border-top:7px solid var(--accent);
+      border-top:1px solid var(--accent);
       border-radius:7px;
       color:var(--ink);
       background:#fff;
@@ -595,7 +595,7 @@
       display:flex;
       flex-direction:column;
       align-items:center;
-      padding:clamp(33px,3.3vw,44px) clamp(24px,2.4vw,24px) 24px;
+      padding:clamp(44px,4.4vw,55px) clamp(24px,2.4vw,24px) 24px;
       color:inherit;
       background:#fff;
       text-decoration:none;
@@ -642,7 +642,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:24px 24px;
+      padding:33px 33px;
       border:7px;
       border-top:1px solid var(--line);
       color:var(--ink-soft);
@@ -697,7 +697,7 @@
       display:flex;
       flex-wrap:wrap;
       gap:24px;
-      margin-top:24px;
+      margin-top:33px;
     }
     .intelligence-actions .button-primary{
       color:var(--navy);
@@ -799,7 +799,7 @@
       position:relative;
       z-index:1;
       display:block;
-      margin-top:24px;
+      margin-top:33px;
       color:var(--gold-pale);
       font-family:var(--sans);
       font-size:clamp(7px,.66vw,11px);
@@ -810,8 +810,8 @@
     }
     .intelligence-note{
       grid-column:1 / -1;
-      margin:24px 0 0;
-      padding:14px 14px;
+      margin:33px 0 0;
+      padding:24px 24px;
       border-left:4px solid var(--gold);
       color:rgba(255,255,255,.62);
       background:rgba(0,0,0,.12);
@@ -822,7 +822,7 @@
     .featured-grid{
       display:grid;
       grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:14px;
+      gap:33px;
       align-items:stretch;
     }
     .feature-card{
@@ -883,7 +883,7 @@
       font-weight:444;
     }
     .feature-card h3{
-      margin-top:14px;
+      margin-top:33px;
       font-size:24px;
       line-height:1.04;
     }
@@ -1374,7 +1374,7 @@
     /* Down-page hierarchy: eyebrow = title; next line = supporting statement. */
     .section .kicker{
       display:block;
-      margin:0 auto 10px;
+      margin:0 auto 24px;
       color:var(--gold);
       font-family:var(--ceremonial);
       font-size:clamp(20px,1.8vw,27px);
@@ -1390,24 +1390,24 @@
     .statement-copy h2,
     .final h2,
     .intelligence-copy h2{
-      max-width:760px;
-      margin:8px auto 0;
+      max-width:777px;
+      margin:24px auto 0;
       font-family:var(--display);
       font-size:clamp(20px,2.15vw,31px)!important;
-      font-weight:500;
-      line-height:1.25!important;
+      font-weight:444;
+      line-height:1.24!important;
       letter-spacing:.01em;
       text-wrap:balance;
     }
     .section-heading{
-      max-width:840px;
+      max-width:888px;
       margin:0 auto 48px;
     }
     .section-intro{
-      max-width:680px;
-      margin:16px auto 0;
-      font-size:13px;
-      line-height:1.68;
+      max-width:666px;
+      margin:246px auto 0;
+      font-size:11px;
+      line-height:1.66;
     }
 
     /* Keep secondary sections centered after the hierarchy reversal. */
@@ -1433,10 +1433,9 @@
     .statement-copy p,
     .intelligence-copy p{
       max-width:720px;
-      margin:16px auto 0;
-      font-size:13px;
-      line-height:1.72;
-    }
+      margin:24px auto 0;
+      font-size:11px;
+      line-height:1.66
     .support-points,
     .intelligence-actions{
       justify-content:center;
@@ -1446,7 +1445,7 @@
     .intelligence-bridge{
       max-width:1040px;
       grid-template-columns:1fr;
-      gap:38px;
+      gap:33px;
       text-align:center;
     }
     .intelligence-copy{max-width:820px;margin-inline:auto}
@@ -1455,7 +1454,7 @@
       margin-inline:auto;
       grid-template-columns:repeat(2,minmax(0,1fr));
       grid-auto-rows:1fr;
-      gap:14px;
+      gap:33px;
     }
     .intelligence-node{
       min-height:156px;
@@ -1479,7 +1478,7 @@
     .network-statement{
       max-width:980px;
       grid-template-columns:1fr;
-      gap:34px;
+      gap:33px;
       text-align:center;
     }
     .statement-copy{max-width:780px;margin-inline:auto}
@@ -1488,7 +1487,7 @@
       margin-inline:auto;
       grid-template-columns:repeat(2,minmax(0,1fr));
       grid-auto-rows:1fr;
-      gap:14px;
+      gap:33px;
     }
     .value{
       min-height:132px;
@@ -1500,7 +1499,7 @@
       display:grid;
       place-items:center;
       align-content:center;
-      gap:11px;
+      gap:33px;
       color:#fff;
       text-decoration:none;
       cursor:pointer;
@@ -1569,7 +1568,7 @@
       flex-direction:column;
       align-items:center;
       justify-content:center;
-      gap:18px;
+      gap:33px;
       text-align:center;
     }
     .footer-credit{
