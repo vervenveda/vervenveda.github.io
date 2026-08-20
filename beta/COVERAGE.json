@@ -1,5 +1,5 @@
 {
-  "format": "vnv-beta-coverage-public-v5",
+  "format": "vnv-beta-coverage-public-v6",
   "updatedAt": "2026-08-20",
   "program": "Verve N Veda Public Beta Program",
   "status": "active",
@@ -12,20 +12,7 @@
   ],
   "coverage_policy": {
     "filename_rule": "Visible public HTML filenames ending in index.html, including _index.html and common inndex.html typos.",
-    "excluded_paths": [
-      ".git",
-      ".github",
-      "node_modules",
-      "vendor",
-      "archive",
-      "archives",
-      "backup",
-      "backups",
-      "deprecated",
-      "private",
-      "admin",
-      "beta"
-    ],
+    "excluded_paths": [".git", ".github", "node_modules", "vendor", "archive", "archives", "backup", "backups", "deprecated", "private", "admin", "beta"],
     "csp_rule": "Pages explicitly forbidding all scripts are not modified automatically.",
     "future_pages": "Repository-local GitHub Actions coverage workflows re-run after pushes so newly added visible index pages are covered automatically."
   },
@@ -46,11 +33,10 @@
     {"name":"Medicament Hub","repository":"vervenveda/medicament-hub.github.io","branch":"main","coveredIndexPages":47,"status":"covered"},
     {"name":"The Refrain","repository":"vervenveda/the_refrain.github.io","branch":"main","coveredIndexPages":7,"status":"covered"},
     {"name":"333 Network","repository":"vervenveda/333.github.io","branch":"main","coveredIndexPages":10,"status":"covered"},
-    {"name":"The Verifier","repository":"vervenveda/theverifier.github.io","branch":"main","coveredIndexPages":null,"status":"rollout-in-progress","note":"Canonical widget and repository-local coverage workflow installed; coverage report pending workflow completion."},
-    {"name":"PLERA Search","repository":"vervenveda/PLERASearch.github.io","branch":"main","coveredIndexPages":null,"status":"rollout-in-progress","note":"Canonical widget and repository-local coverage workflow installed; coverage report pending workflow completion."}
+    {"name":"The Verifier","repository":"vervenveda/theverifier.github.io","branch":"main","coveredIndexPages":40,"status":"covered"},
+    {"name":"PLERA Search","repository":"vervenveda/PLERASearch.github.io","branch":"main","coveredIndexPages":6,"status":"covered"},
+    {"name":"Finance Hub","repository":"vervenveda/finance.github.io","branch":"main","coveredIndexPages":31,"status":"covered"},
+    {"name":"Firmament Law","repository":"vervenveda/firmament.github.io","branch":"main","coveredIndexPages":24,"status":"covered"}
   ],
-  "privacy": {
-    "public_page_context_only": true,
-    "private_or_sensitive_information_excluded": true
-  }
+  "privacy": {"public_page_context_only": true, "private_or_sensitive_information_excluded": true}
 }
