@@ -1,8 +1,9 @@
-/* Verve N Veda · Beta Program universal button widget · v1.1.0 */
+/* Verve N Veda · Beta Program universal button widget · v1.2.0 */
 (() => {
   "use strict";
 
   const ID="vnvBetaProgramLink";
+  const FALLBACK_ID="vnvBetaProgramFallback";
   const STYLE_ID="vnvBetaProgramLinkStyles";
   const BETA_URL="https://vervenveda.com/beta/";
 
@@ -31,11 +32,19 @@
         #${ID}:hover{transform:translateY(-1px);border-color:#dfc48e;background:#152538}
         #${ID}:focus-visible{outline:3px solid #dfc48e;outline-offset:3px}
         #${ID} .vnv-beta-mark{font:600 15px/1 Georgia,serif;color:#dfc48e}
+        #${FALLBACK_ID}{display:none!important}
         @media(max-width:520px){#${ID}{right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));min-height:38px;padding:7px 10px}}
-        @media print{#${ID}{display:none!important}}
+        @media print{#${ID},#${FALLBACK_ID}{display:none!important}}
         @media(prefers-reduced-motion:reduce){#${ID}{transition:none!important;transform:none!important}}
       `;
       (document.head||document.documentElement).append(style);
+    }
+
+    const fallback=document.getElementById(FALLBACK_ID);
+    if(fallback){
+      fallback.setAttribute("href",betaHref());
+      fallback.setAttribute("aria-hidden","true");
+      fallback.tabIndex=-1;
     }
 
     /* A button is intentional: several Verve N Veda surfaces guard anchor
