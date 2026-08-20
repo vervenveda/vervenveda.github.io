@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { classifyRepository } from "../discovery/repository-classifier.js";
+import { repositoryAllowedByAccountPolicy } from "../discovery/repository-discovery.js";
 
 test("Admin repository is restricted", () => {
   const result = classifyRepository({
@@ -29,4 +30,14 @@ test("Khaemenes repository is recognized as educational", () => {
     owner: { login: "vervenveda" }
   });
   assert.equal(result.classification, "educational");
+});
+
+test("private repositories are never allowed into public discovery", () => {
+  assert.equal(repositoryAllowedByAccountPolicy({ name: "anything", private: true }, {}), false);
+});
+
+test("explicit public allowlist rejects unapproved repositories", () => {
+  const policy = { includeRepositories: ["Araneae.github.io", "NAIB.github.io"] };
+  assert.equal(repositoryAllowedByAccountPolicy({ name: "Araneae.github.io", private: false }, policy), true);
+  assert.equal(repositoryAllowedByAccountPolicy({ name: "unapproved.github.io", private: false }, policy), false);
 });
