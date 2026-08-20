@@ -35,7 +35,7 @@
     {"name":"Khaemenes Middle School","repository":"vervenveda/Khaemenes_Middle.github.io","branch":"main","coveredIndexPages":34,"status":"covered"},
     {"name":"Khaemenes High School","repository":"vervenveda/Khaemenes_High.github.io","branch":"hardening/archaemenes-highschool","coveredIndexPages":435,"status":"covered-release-hold","note":"High School main remains intentionally untouched until the hardening branch is deliberately released."},
     {"name":"Khaemenes Higher Learning","repository":"vervenveda/Khaemenes_Higher_Learning.github.io","branch":"main","coveredIndexPages":192,"status":"covered"},
-    {"name":"Khaemenes Linguistics","repository":"vervenveda/Khaemenes_Linguistics.github.io","branch":"main","coveredIndexPages":null,"status":"automation-installed-pending-report"},
+    {"name":"Khaemenes Linguistics","repository":"vervenveda/Khaemenes_Linguistics.github.io","branch":"main","coveredIndexPages":34,"status":"covered"},
     {"name":"ARSHIF","repository":"vervenveda/Arshif.github.io","branch":"main","coveredIndexPages":33,"status":"covered"},
     {"name":"ProReSources","repository":"vervenveda/proresource_hub.github.io","branch":"main","coveredIndexPages":17,"status":"covered"},
     {"name":"Arcade","repository":"vervenveda/arcade.github.io","branch":"main","coveredIndexPages":55,"status":"covered"},
