@@ -1,0 +1,70 @@
+{
+  "coverage": [
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "assessment-engine/agents/demos/index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "assessment-engine/apps/career_assessment_index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "assessment-engine/apps/career_star_index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "assessment-engine/apps/mentor_review_index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "assessment-engine/index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "assessment-engine/mentor/matrix/index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "cloud/index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "core/directory-agi/index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
+      "surface": "index.html"
+    }
+  ],
+  "format": "vnv-beta-coverage-feed-v1",
+  "privacy": {
+    "containsAnswers": false,
+    "containsBrowserStorage": false,
+    "containsCredentials": false,
+    "containsFamilyData": false,
+    "containsFormValues": false,
+    "containsLearnerData": false,
+    "containsQueryOrHash": false,
+    "containsReportBody": false,
+    "excludedPathsEnumerated": false,
+    "publicPageContextOnly": true
+  },
+  "program": "Verve N Veda / Khaemenes Academy Beta Program",
+  "repository": "vervenveda/vervenveda.github.io",
+  "summary": {
+    "actionableUnresolved": 0,
+    "addedInThisRun": 0,
+    "coveredPublicIndexSurfaces": 9,
+    "excludedByPolicy": 4
+  }
+}
