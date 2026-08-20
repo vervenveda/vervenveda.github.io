@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verve N Veda Beta Coverage Feed",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "repository", "program", "privacy", "summary", "coverage"],
+  "properties": {
+    "format": {"const": "vnv-beta-coverage-feed-v1"},
+    "repository": {"type": "string", "minLength": 3, "maxLength": 200},
+    "program": {"const": "Verve N Veda / Khaemenes Academy Beta Program"},
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "publicPageContextOnly",
+        "containsLearnerData",
+        "containsFamilyData",
+        "containsAnswers",
+        "containsFormValues",
+        "containsQueryOrHash",
+        "containsBrowserStorage",
+        "containsReportBody",
+        "containsCredentials",
+        "excludedPathsEnumerated"
+      ],
+      "properties": {
+        "publicPageContextOnly": {"const": true},
+        "containsLearnerData": {"const": false},
+        "containsFamilyData": {"const": false},
+        "containsAnswers": {"const": false},
+        "containsFormValues": {"const": false},
+        "containsQueryOrHash": {"const": false},
+        "containsBrowserStorage": {"const": false},
+        "containsReportBody": {"const": false},
+        "containsCredentials": {"const": false},
+        "excludedPathsEnumerated": {"const": false}
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coveredPublicIndexSurfaces", "addedInThisRun", "excludedByPolicy", "actionableUnresolved"],
+      "properties": {
+        "coveredPublicIndexSurfaces": {"type": "integer", "minimum": 0},
+        "addedInThisRun": {"type": "integer", "minimum": 0},
+        "excludedByPolicy": {"type": "integer", "minimum": 0},
+        "actionableUnresolved": {"type": "integer", "minimum": 0}
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["surface", "state"],
+        "properties": {
+          "surface": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500,
+            "pattern": "^[^?#]+$"
+          },
+          "state": {"enum": ["covered", "unresolved"]},
+          "mechanism": {"type": "string", "maxLength": 200},
+          "reason": {"enum": ["non-utf8", "csp-script-none", "missing-body-close"]}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"state": {"const": "covered"}}},
+            "then": {"required": ["mechanism"], "not": {"required": ["reason"]}}
+          },
+          {
+            "if": {"properties": {"state": {"const": "unresolved"}}},
+            "then": {"required": ["reason"], "not": {"required": ["mechanism"]}}
+          }
+        ]
+      }
+    }
+  }
+}
