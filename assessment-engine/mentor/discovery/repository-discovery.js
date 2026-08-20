@@ -10,6 +10,21 @@ function headers(token) {
   return result;
 }
 
+function normalizedSet(values) {
+  return new Set((Array.isArray(values) ? values : [])
+    .map(value => String(value || "").trim().toLowerCase())
+    .filter(Boolean));
+}
+
+export function repositoryAllowedByAccountPolicy(repo, accountPolicy = {}) {
+  if (!repo || repo.private === true) return false;
+
+  const include = normalizedSet(accountPolicy.includeRepositories);
+  if (include.size && !include.has(String(repo.name || "").toLowerCase())) return false;
+
+  return true;
+}
+
 async function listPublicRepos(login, token) {
   const all = [];
   for (let page = 1; page <= 10; page++) {
@@ -30,7 +45,11 @@ export async function discoverRepositories(accountPolicies, { token = "" } = {})
     const repos = await listPublicRepos(account.login, token);
 
     for (const repo of repos) {
+      if (!repositoryAllowedByAccountPolicy(repo, account)) continue;
+
       const classification = classifyRepository(repo, account);
+      if (classification.classification === "admin-only") continue;
+
       repositories.push({
         id: `github:${repo.full_name.toLowerCase()}`,
         owner: repo.owner.login,
