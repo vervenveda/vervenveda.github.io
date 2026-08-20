@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-19T18:52:00.214Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-19T18:50:40Z",
+  "generatedAt": "2026-08-20T01:50:21.680Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-20T01:42:27Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -11906,85 +11906,6 @@
         "sensitiveTopics": [],
         "externalInformation": true,
         "highStakesDomain": "public-services",
-        "requiresExplicitQuery": false,
-        "policyTags": []
-      },
-      "manifestPath": "mentor-manifest.json"
-    },
-    {
-      "id": "artist1970.noema-ai.github.io.noema-home",
-      "title": "NOEMA — Sovereign Adult Intelligence",
-      "description": "Adult AI presence for planning, family guidance, learning, research, creative work, practical tools, and specialist Verve N Veda modules.",
-      "url": "https://artist1970.github.io/noema-ai.github.io/",
-      "sourceId": "artist1970.noema",
-      "repository": "artist1970/noema-ai.github.io",
-      "classification": "professional-practical",
-      "audiences": [
-        "higher-learning",
-        "adult",
-        "parent"
-      ],
-      "roles": [
-        "student",
-        "parent",
-        "educator"
-      ],
-      "domains": [
-        "adult-learning",
-        "family",
-        "research",
-        "creative-work",
-        "professional"
-      ],
-      "skills": [
-        "resource-navigation",
-        "planning",
-        "decision-support",
-        "creative-direction"
-      ],
-      "tags": [
-        "noema",
-        "adult-ai",
-        "family-guide",
-        "orchestration",
-        "sovereign-intelligence"
-      ],
-      "minutes": null,
-      "energy": "",
-      "featured": true,
-      "mentorEligible": true,
-      "recommendable": true,
-      "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
-      "learningObjectives": [],
-      "subjects": [],
-      "highStakesDomain": "",
-      "inventoryAuthority": "",
-      "requiresLinkedLearner": false,
-      "requiredStage": "",
-      "requiresFreshnessCheck": false,
-      "dynamicContent": false,
-      "requiresPreferenceMatch": [],
-      "requiresAccountAwareness": false,
-      "sensitiveTopics": [],
-      "externalInformation": false,
-      "sourcePriority": 0,
-      "freshnessWindowMinutes": null,
-      "contentType": "",
-      "policyTags": [],
-      "requiresExplicitQuery": false,
-      "policy": {
-        "requiresFreshnessCheck": false,
-        "dynamicContent": false,
-        "requiresPreferenceMatch": [],
-        "requiresAccountAwareness": false,
-        "requiresLinkedLearner": false,
-        "requiredStage": "",
-        "sensitiveTopics": [],
-        "externalInformation": false,
-        "highStakesDomain": "",
         "requiresExplicitQuery": false,
         "policyTags": []
       },
