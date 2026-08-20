@@ -1,25 +1,43 @@
-/* Verve N Veda · Beta Program universal button widget · v1.2.0 */
+/* Verve N Veda · Beta Program universal button widget · v1.3.0 */
 (() => {
   "use strict";
 
   const ID="vnvBetaProgramLink";
   const FALLBACK_ID="vnvBetaProgramFallback";
   const STYLE_ID="vnvBetaProgramLinkStyles";
+  const SCRIPT_MARK="vnvBetaProgramScript";
   const BETA_URL="https://vervenveda.com/beta/";
+  const SCRIPT_URL="https://vervenveda.com/assets/vnv-beta-link.js";
 
-  if(document.getElementById(ID))return;
+  const clean=(value,max)=>String(value??"").replace(/[\u0000-\u001f\u007f]/g,"").slice(0,max);
 
   const safeSource=()=>{
     try{
       /* Deliberately limited to public routing metadata. Never include query,
          hash, learner IDs, family IDs, form values, course state, or storage. */
-      const host=String(location.hostname||"").replace(/[^a-z0-9.:-]/gi,"").slice(0,120);
-      const path=String(location.pathname||"/").replace(/[\u0000-\u001f\u007f]/g,"").slice(0,240);
+      const host=clean(location.hostname||"",120).replace(/[^a-z0-9.:-]/gi,"");
+      const path=clean(location.pathname||"/",240);
       return `${host}${path}`.slice(0,320)||"ecosystem";
     }catch{return "ecosystem"}
   };
 
-  const betaHref=()=>`${BETA_URL}?source=${encodeURIComponent(safeSource())}`;
+  const safeSurface=()=>{
+    try{
+      const path=String(location.pathname||"/").toLowerCase();
+      const base=(path.split("/").pop()||"").toLowerCase();
+      const indexLike=!base||base==="index.html"||base.endsWith("_index.html")||base.endsWith("-index.html");
+      const homeworkLike=/(^|\/)(homework|assignment|assignments|lesson|lessons|unit|units|worksheet|worksheets)(\/|$)/.test(path);
+      const assessmentLike=/(^|\/)(assessment|assessments|quiz|quizzes|exam|exams)(\/|$)/.test(path);
+      if(indexLike&&homeworkLike)return "homework-index";
+      if(indexLike&&assessmentLike)return "assessment-index";
+      if(indexLike)return "interactive-index";
+      if(homeworkLike)return "homework-surface";
+      if(assessmentLike)return "assessment-surface";
+      return "interactive-surface";
+    }catch{return "interactive-surface"}
+  };
+
+  const betaHref=()=>`${BETA_URL}?source=${encodeURIComponent(safeSource())}&surface=${encodeURIComponent(safeSurface())}`;
 
   function mount(){
     if(document.getElementById(ID)||!document.body)return;
@@ -53,6 +71,7 @@
     const button=document.createElement("button");
     button.id=ID;
     button.type="button";
+    button.dataset.betaSurface=safeSurface();
     button.setAttribute("aria-label","Open the Verve N Veda Beta Program for this page");
 
     const mark=document.createElement("span");
@@ -69,6 +88,44 @@
     document.body.append(button);
   }
 
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});
-  else mount();
+  function attachToFrame(frame){
+    if(!frame||frame.dataset?.vnvBetaBound==="1")return;
+    try{frame.dataset.vnvBetaBound="1"}catch{}
+    const install=()=>{
+      try{
+        const doc=frame.contentDocument;
+        if(!doc||!doc.documentElement)return; // cross-origin or unavailable: fail closed
+        if(doc.getElementById(ID)||doc.querySelector(`script[data-${SCRIPT_MARK}]`))return;
+        const script=doc.createElement("script");
+        script.src=SCRIPT_URL;
+        script.defer=true;
+        script.setAttribute(`data-${SCRIPT_MARK}`,"1");
+        (doc.head||doc.documentElement).appendChild(script);
+      }catch{/* Cross-origin frames are intentionally untouched. */}
+    };
+    frame.addEventListener("load",install,{passive:true});
+    install();
+  }
+
+  function bindVisibleFrames(){
+    if(!document.querySelectorAll)return;
+    document.querySelectorAll("iframe").forEach(attachToFrame);
+    if(typeof MutationObserver!=="function")return;
+    const observer=new MutationObserver(records=>{
+      for(const record of records){
+        for(const node of record.addedNodes||[]){
+          if(node?.nodeType!==1)continue;
+          if(node.tagName==="IFRAME")attachToFrame(node);
+          node.querySelectorAll?.("iframe").forEach(attachToFrame);
+        }
+      }
+    });
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+  }
+
+  function start(){mount();bindVisibleFrames()}
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
+  else start();
+
+  window.VNVBetaProgram=Object.freeze({version:"1.3.0",mount,source:safeSource,surface:safeSurface,href:betaHref});
 })();
