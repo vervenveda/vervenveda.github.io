@@ -1,27 +1,45 @@
 {
-  "format": "vnv-beta-coverage-public-v3",
-  "updatedAt": "2026-08-19",
+  "format": "vnv-beta-coverage-public-v4",
+  "updatedAt": "2026-08-20",
   "program": "Verve N Veda Public Beta Program",
   "status": "active",
   "purpose": "A public summary of Beta Program availability across the Verve N Veda learning ecosystem.",
   "principles": [
     "Provide a consistent Beta Program experience across supported public learning surfaces.",
-    "Use only ordinary public page context to help identify where feedback originated.",
-    "Exclude private learner, family, academic, account, credential, and other sensitive information."
+    "Use only ordinary public hostname and pathname context to identify where feedback originated.",
+    "Exclude learner IDs, family IDs, grades, answers, form values, query strings, hashes, localStorage contents, credentials, and other sensitive information.",
+    "Maintain repository-local automation so new visible index pages receive Beta coverage automatically."
   ],
-  "participating_surfaces": [
-    "Verve N Veda",
-    "Khaemenes Academy",
-    "Khaemenes Preschool",
-    "Khaemenes Kinder Garden",
-    "Khaemenes Elementary",
-    "Khaemenes Middle School",
-    "Khaemenes High School",
-    "Khaemenes Higher Learning",
-    "ARSHIF",
-    "ProReSources",
-    "Arcade",
-    "Bazaar Art"
+  "coverage_policy": {
+    "filename_rule": "Visible public HTML filenames ending in index.html, including _index.html and common inndex.html typos.",
+    "excluded_paths": [
+      ".git",
+      ".github",
+      "node_modules",
+      "vendor",
+      "archive",
+      "archives",
+      "backup",
+      "backups",
+      "deprecated",
+      "private"
+    ],
+    "csp_rule": "Pages explicitly forbidding all scripts are not modified automatically.",
+    "future_pages": "Repository-local GitHub Actions coverage workflows re-run after pushes so newly added visible index pages are covered automatically."
+  },
+  "surfaces": [
+    {"name":"Khaemenes Academy","repository":"vervenveda/Khaemenes_Academy.github.io","branch":"main","coveredIndexPages":20,"status":"covered"},
+    {"name":"Khaemenes Preschool","repository":"vervenveda/Khaemenes_Preschool.github.io","branch":"main","coveredIndexPages":55,"status":"covered"},
+    {"name":"Khaemenes Kinder Garden","repository":"vervenveda/Khaemenes_KinderGarden.github.io","branch":"main","coveredIndexPages":66,"status":"covered"},
+    {"name":"Khaemenes Elementary","repository":"vervenveda/Khaemenes_Elementary.github.io","branch":"main","coveredIndexPages":154,"status":"covered"},
+    {"name":"Khaemenes Middle School","repository":"vervenveda/Khaemenes_Middle.github.io","branch":"main","coveredIndexPages":34,"status":"covered"},
+    {"name":"Khaemenes High School","repository":"vervenveda/Khaemenes_High.github.io","branch":"hardening/archaemenes-highschool","coveredIndexPages":435,"status":"covered-release-hold","note":"High School main remains intentionally untouched until the hardening branch is deliberately released."},
+    {"name":"Khaemenes Higher Learning","repository":"vervenveda/Khaemenes_Higher_Learning.github.io","branch":"main","coveredIndexPages":192,"status":"covered"},
+    {"name":"Khaemenes Linguistics","repository":"vervenveda/Khaemenes_Linguistics.github.io","branch":"main","coveredIndexPages":null,"status":"automation-installed-pending-report"},
+    {"name":"ARSHIF","repository":"vervenveda/Arshif.github.io","branch":"main","coveredIndexPages":33,"status":"covered"},
+    {"name":"ProReSources","repository":"vervenveda/proresource_hub.github.io","branch":"main","coveredIndexPages":17,"status":"covered"},
+    {"name":"Arcade","repository":"vervenveda/arcade.github.io","branch":"main","coveredIndexPages":55,"status":"covered"},
+    {"name":"Bazaar Art","repository":"vervenveda/bazaarart.github.io","branch":"main","coveredIndexPages":46,"status":"covered"}
   ],
   "privacy": {
     "public_page_context_only": true,
