@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "accounts": [
     {
       "login": "vervenveda",
@@ -17,7 +17,19 @@
       "login": "artist1970",
       "enabled": true,
       "autoAcknowledge": true,
-      "defaultClassification": "unclassified"
+      "defaultClassification": "unclassified",
+      "includeRepositories": [
+        "Moirai.github.io",
+        "Arshif.github.io",
+        "Aurora.github.io",
+        "Hope.github.io",
+        "Archaemenes.github.io",
+        "NAIB.github.io",
+        "Eiren.github.io",
+        "Araneae.github.io",
+        "MAVRIC.github.io",
+        "Zelle.github.io"
+      ]
     }
   ]
 }
