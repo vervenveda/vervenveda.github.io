@@ -1,9 +1,15 @@
 {
-  "format": "vnv-beta-coverage-public-v6",
+  "format": "vnv-beta-coverage-public-v7",
   "updatedAt": "2026-08-20",
   "program": "Verve N Veda Public Beta Program",
   "status": "active",
   "purpose": "A public summary of Beta Program availability across the Verve N Veda learning and interactive ecosystem.",
+  "summary": {
+    "trackedRepositories": 20,
+    "directIndexSurfacesCovered": 1315,
+    "unresolvedVisibleIndexSurfacesInTrackedRepositories": 0,
+    "releaseHoldRepositories": 1
+  },
   "principles": [
     "Provide a consistent Beta Program experience across supported public learning and interactive surfaces.",
     "Use only ordinary public hostname and pathname context to identify where feedback originated.",
@@ -12,9 +18,17 @@
   ],
   "coverage_policy": {
     "filename_rule": "Visible public HTML filenames ending in index.html, including _index.html and common inndex.html typos.",
+    "included_surface_examples": [
+      "homework index pages",
+      "course and subject index pages",
+      "assessment index pages",
+      "game and interactive index pages",
+      "tool and studio index pages",
+      "public landing index pages"
+    ],
     "excluded_paths": [".git", ".github", "node_modules", "vendor", "archive", "archives", "backup", "backups", "deprecated", "private", "admin", "beta"],
-    "csp_rule": "Pages explicitly forbidding all scripts are not modified automatically.",
-    "future_pages": "Repository-local GitHub Actions coverage workflows re-run after pushes so newly added visible index pages are covered automatically."
+    "csp_rule": "Pages explicitly forbidding all scripts are not modified automatically and must be reviewed before changing their security policy.",
+    "future_pages": "Repository-local GitHub Actions coverage workflows re-run after pushes so newly added visible index pages receive Beta coverage automatically."
   },
   "surfaces": [
     {"name":"Verve N Veda Home","repository":"vervenveda/vervenveda.github.io","branch":"main","coveredIndexPages":9,"status":"covered","note":"Administrative, private/archive, and Beta destination pages are excluded by policy."},
@@ -38,5 +52,8 @@
     {"name":"Finance Hub","repository":"vervenveda/finance.github.io","branch":"main","coveredIndexPages":31,"status":"covered"},
     {"name":"Firmament Law","repository":"vervenveda/firmament.github.io","branch":"main","coveredIndexPages":24,"status":"covered"}
   ],
-  "privacy": {"public_page_context_only": true, "private_or_sensitive_information_excluded": true}
+  "privacy": {
+    "public_page_context_only": true,
+    "private_or_sensitive_information_excluded": true
+  }
 }
