@@ -13,35 +13,148 @@ jobs:
     if: ${{ !contains(github.event.head_commit.message || '', '[skip beta-rollout]') }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with: {fetch-depth: 0}
       - name: Ensure visible public index coverage
         run: |
           python3 - <<'PY'
           from pathlib import Path
+          import json
           import re
+
           tag='<script src="/assets/vnv-beta-link.js" defer></script>'
           excluded={'.git','.github','node_modules','vendor','archive','archives','backup','backups','deprecated','private','admin','beta'}
-          changed=[];already=[];skipped=[]
+          changed=[]
+          already=[]
+          excluded_paths=[]
+          unresolved=[]
+
           for p in sorted(Path('.').rglob('*.html')):
-            if not re.search(r'in+dex\.html$',p.name.lower()): continue
-            if {x.lower() for x in p.parts}&excluded: skipped.append((str(p),'excluded-path'));continue
-            try:t=p.read_text(encoding='utf-8')
-            except UnicodeDecodeError: skipped.append((str(p),'non-utf8'));continue
-            if 'vnv-beta-link.js' in t: already.append(str(p));continue
-            c=re.search(r'<meta[^>]+http-equiv=["\']Content-Security-Policy["\'][^>]+content=["\']([^"\']*)',t,re.I)
-            if c and re.search(r"(?:^|;)\s*script-src\s+'none'\s*(?:;|$)",c.group(1),re.I): skipped.append((str(p),'csp-script-none'));continue
-            m=list(re.finditer(r'</body\s*>',t,re.I))
-            if not m: skipped.append((str(p),'missing-body-close'));continue
-            i=m[-1].start();p.write_text(t[:i].rstrip()+'\n'+tag+'\n'+t[i:],encoding='utf-8');changed.append(str(p))
-          lines=['# Beta Index Coverage','',f'- Added in this run: **{len(changed)}**',f'- Already covered: **{len(already)}**',f'- Skipped: **{len(skipped)}**','', 'Rule: visible public HTML filenames ending in `index.html` (including `_index.html` and common `inndex.html` typos) receive `/assets/vnv-beta-link.js`. Administration and the Beta destination itself are excluded. The widget reports only public hostname + pathname; never learner/family IDs, answers, form values, query/hash, storage, or credentials.']
-          if changed:lines+=['','## Added','']+[f'- `{x}`' for x in changed]
-          if skipped:lines+=['','## Skipped','']+[f'- `{x}` — {y}' for x,y in skipped]
+            if not re.search(r'in+dex\.html$',p.name.lower()):
+              continue
+
+            path=str(p)
+            if {x.lower() for x in p.parts}&excluded:
+              excluded_paths.append((path,'excluded-path'))
+              continue
+
+            try:
+              text=p.read_text(encoding='utf-8')
+            except UnicodeDecodeError:
+              unresolved.append((path,'non-utf8'))
+              continue
+
+            if 'vnv-beta-link.js' in text:
+              already.append(path)
+              continue
+
+            c=re.search(r'<meta[^>]+http-equiv=["\']Content-Security-Policy["\'][^>]+content=["\']([^"\']*)',text,re.I)
+            if c and re.search(r"(?:^|;)\s*script-src\s+'none'\s*(?:;|$)",c.group(1),re.I):
+              unresolved.append((path,'csp-script-none'))
+              continue
+
+            m=list(re.finditer(r'</body\s*>',text,re.I))
+            if not m:
+              unresolved.append((path,'missing-body-close'))
+              continue
+
+            i=m[-1].start()
+            p.write_text(text[:i].rstrip()+'\n'+tag+'\n'+text[i:],encoding='utf-8')
+            changed.append(path)
+
+          covered=sorted(set(already+changed))
+          actionable=sorted(unresolved)
+
+          lines=[
+            '# Beta Index Coverage',
+            '',
+            f'- Added in this run: **{len(changed)}**',
+            f'- Already covered: **{len(already)}**',
+            f'- Excluded by policy: **{len(excluded_paths)}**',
+            f'- Actionable unresolved: **{len(actionable)}**',
+            '',
+            'Rule: visible public HTML filenames ending in `index.html` (including `_index.html` and common `inndex.html` typos) receive `/assets/vnv-beta-link.js`. Administration, private/archived material, backups, and the Beta destination itself are excluded. The widget reports only public hostname + pathname; never learner/family IDs, answers, form values, query/hash, storage, report text, or credentials.'
+          ]
+          if changed:
+            lines+=['','## Added','']+[f'- `{x}`' for x in changed]
+          if actionable:
+            lines+=['','## Actionable unresolved','']+[f'- `{x}` — {reason}' for x,reason in actionable]
           Path('BETA_INDEX_COVERAGE.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+
+          feed={
+            'format':'vnv-beta-coverage-feed-v1',
+            'repository':'vervenveda/vervenveda.github.io',
+            'program':'Verve N Veda / Khaemenes Academy Beta Program',
+            'privacy':{
+              'publicPageContextOnly':True,
+              'containsLearnerData':False,
+              'containsFamilyData':False,
+              'containsAnswers':False,
+              'containsFormValues':False,
+              'containsQueryOrHash':False,
+              'containsBrowserStorage':False,
+              'containsReportBody':False,
+              'containsCredentials':False,
+              'excludedPathsEnumerated':False
+            },
+            'summary':{
+              'coveredPublicIndexSurfaces':len(covered),
+              'addedInThisRun':len(changed),
+              'excludedByPolicy':len(excluded_paths),
+              'actionableUnresolved':len(actionable)
+            },
+            'coverage':[
+              {
+                'surface':path,
+                'state':'covered',
+                'mechanism':'/assets/vnv-beta-link.js'
+              }
+              for path in covered
+            ]+[
+              {
+                'surface':path,
+                'state':'unresolved',
+                'reason':reason
+              }
+              for path,reason in actionable
+            ]
+          }
+          Path('beta/coverage-feed.json').write_text(json.dumps(feed,indent=2,sort_keys=True)+'\n',encoding='utf-8')
+          PY
+      - name: Validate machine-readable coverage feed
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          feed=json.loads(Path('beta/coverage-feed.json').read_text(encoding='utf-8'))
+          assert feed['format']=='vnv-beta-coverage-feed-v1'
+          assert feed['privacy']['containsLearnerData'] is False
+          assert feed['privacy']['containsFamilyData'] is False
+          assert feed['privacy']['containsAnswers'] is False
+          assert feed['privacy']['containsFormValues'] is False
+          assert feed['privacy']['containsQueryOrHash'] is False
+          assert feed['privacy']['containsBrowserStorage'] is False
+          assert feed['privacy']['containsReportBody'] is False
+          assert feed['privacy']['containsCredentials'] is False
+          assert feed['privacy']['excludedPathsEnumerated'] is False
+
+          coverage=feed.get('coverage',[])
+          assert len(coverage)==feed['summary']['coveredPublicIndexSurfaces']+feed['summary']['actionableUnresolved']
+          for row in coverage:
+            path=str(row.get('surface',''))
+            lowered={part.lower() for part in Path(path).parts}
+            assert not lowered.intersection({'admin','private','archive','archives','backup','backups','beta'}), path
+            assert '?' not in path and '#' not in path, path
+            assert row.get('state') in {'covered','unresolved'}
+          print(f"Validated {len(coverage)} public Beta coverage rows.")
           PY
       - name: Commit coverage
         run: |
           if git diff --quiet; then exit 0; fi
           git config user.name "Verve N Veda Beta Coverage"
           git config user.email "actions@users.noreply.github.com"
-          git add --all && git commit -m "chore(beta): ensure visible index coverage [skip beta-rollout]" && git push
+          git add BETA_INDEX_COVERAGE.md beta/coverage-feed.json
+          git add -- '*.html'
+          git commit -m "chore(beta): ensure visible index coverage [skip beta-rollout]"
+          git push
