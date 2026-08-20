@@ -1,11 +1,11 @@
 {
-  "format": "vnv-beta-coverage-public-v4",
+  "format": "vnv-beta-coverage-public-v5",
   "updatedAt": "2026-08-20",
   "program": "Verve N Veda Public Beta Program",
   "status": "active",
-  "purpose": "A public summary of Beta Program availability across the Verve N Veda learning ecosystem.",
+  "purpose": "A public summary of Beta Program availability across the Verve N Veda learning and interactive ecosystem.",
   "principles": [
-    "Provide a consistent Beta Program experience across supported public learning surfaces.",
+    "Provide a consistent Beta Program experience across supported public learning and interactive surfaces.",
     "Use only ordinary public hostname and pathname context to identify where feedback originated.",
     "Exclude learner IDs, family IDs, grades, answers, form values, query strings, hashes, localStorage contents, credentials, and other sensitive information.",
     "Maintain repository-local automation so new visible index pages receive Beta coverage automatically."
@@ -22,12 +22,15 @@
       "backup",
       "backups",
       "deprecated",
-      "private"
+      "private",
+      "admin",
+      "beta"
     ],
     "csp_rule": "Pages explicitly forbidding all scripts are not modified automatically.",
     "future_pages": "Repository-local GitHub Actions coverage workflows re-run after pushes so newly added visible index pages are covered automatically."
   },
   "surfaces": [
+    {"name":"Verve N Veda Home","repository":"vervenveda/vervenveda.github.io","branch":"main","coveredIndexPages":9,"status":"covered","note":"Administrative, private/archive, and Beta destination pages are excluded by policy."},
     {"name":"Khaemenes Academy","repository":"vervenveda/Khaemenes_Academy.github.io","branch":"main","coveredIndexPages":20,"status":"covered"},
     {"name":"Khaemenes Preschool","repository":"vervenveda/Khaemenes_Preschool.github.io","branch":"main","coveredIndexPages":55,"status":"covered"},
     {"name":"Khaemenes Kinder Garden","repository":"vervenveda/Khaemenes_KinderGarden.github.io","branch":"main","coveredIndexPages":66,"status":"covered"},
@@ -39,7 +42,12 @@
     {"name":"ARSHIF","repository":"vervenveda/Arshif.github.io","branch":"main","coveredIndexPages":33,"status":"covered"},
     {"name":"ProReSources","repository":"vervenveda/proresource_hub.github.io","branch":"main","coveredIndexPages":17,"status":"covered"},
     {"name":"Arcade","repository":"vervenveda/arcade.github.io","branch":"main","coveredIndexPages":55,"status":"covered"},
-    {"name":"Bazaar Art","repository":"vervenveda/bazaarart.github.io","branch":"main","coveredIndexPages":46,"status":"covered"}
+    {"name":"Bazaar Art","repository":"vervenveda/bazaarart.github.io","branch":"main","coveredIndexPages":46,"status":"covered"},
+    {"name":"Medicament Hub","repository":"vervenveda/medicament-hub.github.io","branch":"main","coveredIndexPages":47,"status":"covered"},
+    {"name":"The Refrain","repository":"vervenveda/the_refrain.github.io","branch":"main","coveredIndexPages":7,"status":"covered"},
+    {"name":"333 Network","repository":"vervenveda/333.github.io","branch":"main","coveredIndexPages":10,"status":"covered"},
+    {"name":"The Verifier","repository":"vervenveda/theverifier.github.io","branch":"main","coveredIndexPages":null,"status":"rollout-in-progress","note":"Canonical widget and repository-local coverage workflow installed; coverage report pending workflow completion."},
+    {"name":"PLERA Search","repository":"vervenveda/PLERASearch.github.io","branch":"main","coveredIndexPages":null,"status":"rollout-in-progress","note":"Canonical widget and repository-local coverage workflow installed; coverage report pending workflow completion."}
   ],
   "privacy": {
     "public_page_context_only": true,
