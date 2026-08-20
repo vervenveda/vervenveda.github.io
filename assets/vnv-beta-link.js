@@ -1,4 +1,4 @@
-/* Verve N Veda · Beta Program universal button widget · v1.3.0 */
+/* Verve N Veda · Beta Program universal button widget · v1.4.0 */
 (() => {
   "use strict";
 
@@ -8,6 +8,7 @@
   const SCRIPT_MARK="vnvBetaProgramScript";
   const BETA_URL="https://vervenveda.com/beta/";
   const SCRIPT_URL="https://vervenveda.com/assets/vnv-beta-link.js";
+  const BAZAAR_LIVE_URL="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html";
 
   const clean=(value,max)=>String(value??"").replace(/[\u0000-\u001f\u007f]/g,"").slice(0,max);
 
@@ -38,6 +39,93 @@
   };
 
   const betaHref=()=>`${BETA_URL}?source=${encodeURIComponent(safeSource())}&surface=${encodeURIComponent(safeSurface())}`;
+
+  const isBazaarLanding=()=>{
+    try{
+      const host=String(location.hostname||"").toLowerCase();
+      const path=String(location.pathname||"/").toLowerCase();
+      const base=(path.split("/").pop()||"").toLowerCase();
+      const indexLike=!base||base==="index.html";
+      const bazaarHost=host.includes("bazaarart");
+      const bazaarPath=/(^|\/)bazaarart\.github\.io(\/|$)/.test(path);
+      return indexLike&&(bazaarHost||bazaarPath);
+    }catch{return false}
+  };
+
+  function enhanceBazaarLanding(){
+    if(!isBazaarLanding()||!document.body)return;
+    const BAZAAR_STYLE_ID="vnvBazaarLandingEnhancements";
+    const BAZAAR_CTA_ID="vnvBazaarLiveHeroCta";
+
+    if(!document.getElementById(BAZAAR_STYLE_ID)){
+      const style=document.createElement("style");
+      style.id=BAZAAR_STYLE_ID;
+      style.textContent=`
+        body .header-actions a[href*="Bazaar_Art_Live_index.html"]{
+          color:#fff!important;
+          background:linear-gradient(135deg,var(--rose,#d43f70),var(--plum,#4a2944));
+          border:1px solid rgba(255,255,255,.18);
+          box-shadow:0 7px 18px rgba(74,41,68,.18);
+          padding-inline:14px;
+        }
+        body .header-actions a[href*="Bazaar_Art_Live_index.html"]:hover,
+        body .header-actions a[href*="Bazaar_Art_Live_index.html"]:focus-visible{
+          color:#fff!important;
+          transform:translateY(-1px);
+        }
+        #${BAZAAR_CTA_ID}{
+          position:relative;
+          overflow:hidden;
+          color:#fff;
+          background:linear-gradient(135deg,var(--rose,#d43f70),var(--plum,#4a2944));
+          border-color:rgba(255,255,255,.2);
+          box-shadow:0 12px 28px rgba(74,41,68,.22);
+        }
+        #${BAZAAR_CTA_ID}::before{content:"●";margin-right:8px;color:#fff3bd;font-size:.72em}
+        #${BAZAAR_CTA_ID}:hover{filter:brightness(1.06)}
+        body[data-theme="adult-dark"] .hero-emblem-wrap{
+          position:relative;
+          overflow:hidden;
+          background:#17161e;
+          box-shadow:0 0 0 1px #2d2934,0 18px 42px rgba(0,0,0,.22);
+        }
+        body[data-theme="adult-dark"] .hero-emblem-wrap::after{
+          content:"";
+          position:absolute;
+          inset:0;
+          z-index:3;
+          pointer-events:none;
+          border:3px solid #2d2934;
+          box-shadow:inset 0 0 0 1px rgba(0,0,0,.72);
+        }
+        body[data-theme="adult-dark"] .hero-emblem{
+          position:relative;
+          z-index:1;
+          clip-path:inset(1px);
+        }
+        body[data-theme="adult-dark"] .brand-mark{
+          box-shadow:inset 0 0 0 2px #2d2934;
+          border-color:#2d2934!important;
+        }
+        @media(max-width:760px){
+          body .header-actions a[href*="Bazaar_Art_Live_index.html"]{display:inline-flex!important}
+        }
+        @media print{#${BAZAAR_CTA_ID}{display:none!important}}
+      `;
+      (document.head||document.documentElement).append(style);
+    }
+
+    const heroActions=document.querySelector(".hero-actions");
+    if(heroActions&&!document.getElementById(BAZAAR_CTA_ID)){
+      const live=document.createElement("a");
+      live.id=BAZAAR_CTA_ID;
+      live.className="button button-live button-primary";
+      live.href=BAZAAR_LIVE_URL;
+      live.textContent="Enter Bazaar Art Live";
+      live.setAttribute("aria-label","Enter Bazaar Art Live through the 333 Network");
+      heroActions.prepend(live);
+    }
+  }
 
   function mount(){
     if(document.getElementById(ID)||!document.body)return;
@@ -123,9 +211,9 @@
     observer.observe(document.documentElement,{childList:true,subtree:true});
   }
 
-  function start(){mount();bindVisibleFrames()}
+  function start(){mount();bindVisibleFrames();enhanceBazaarLanding()}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.3.0",mount,source:safeSource,surface:safeSurface,href:betaHref});
+  window.VNVBetaProgram=Object.freeze({version:"1.4.0",mount,source:safeSource,surface:safeSurface,href:betaHref});
 })();
