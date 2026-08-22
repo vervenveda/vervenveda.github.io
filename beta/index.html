@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Verve N Veda Public Beta Program — one thoughtful daily report to help improve public learning experiences.">
+<meta name="description" content="Verve N Veda Private Beta Report — send privacy-safe feedback to the administrator notification channel.">
 <meta name="theme-color" content="#17392f">
 <meta name="color-scheme" content="light">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -20,88 +20,220 @@
 *{box-sizing:border-box}html{background:var(--paper)}
 body{margin:0;min-width:300px;color:var(--ink);background:radial-gradient(circle at 50% -10rem,rgba(180,139,69,.12),transparent 34rem),linear-gradient(180deg,#fbfaf6,var(--paper));font:16px/1.7 var(--body);text-align:center}
 a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.shell{width:min(calc(100% - 34px),var(--max));margin:auto}
-header{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12);background:var(--forest);color:#fff}.nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.nav a{padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:var(--r);font-size:10px}
+header{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12);background:var(--forest);color:#fff}.nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.nav a{padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:var(--r);font-size:11px}
 .hero{padding:82px 0 70px}.kicker{margin:0;color:var(--burgundy);font:600 11px/1.4 var(--formal);letter-spacing:.19em;text-transform:uppercase}h1,h2,h3{font-family:var(--formal);font-weight:500;text-wrap:balance}h1{margin:10px 0 0;color:var(--forest);font-size:clamp(3.8rem,9vw,7rem);line-height:.95}.lede{max-width:780px;margin:22px auto 0;color:var(--muted);font-size:1.06rem}.badge{display:inline-block;margin-top:24px;padding:8px 14px;border:1px solid var(--gold);border-radius:999px;background:var(--panel);color:var(--forest);font:600 10px var(--formal);letter-spacing:.1em;text-transform:uppercase}
 .section{padding:70px 0;border-top:1px solid var(--line)}.section.alt{background:rgba(255,255,255,.48)}h2{margin:8px 0 0;color:var(--forest);font-size:clamp(2rem,5vw,3.7rem)}.intro{max-width:760px;margin:15px auto 0;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:31px}.card{padding:24px 19px;border:1px solid var(--line);border-radius:var(--r2);background:var(--panel)}.card strong{display:block;color:var(--forest);font-family:var(--formal);font-weight:500}.card p{margin:8px 0 0;color:var(--muted);font-size:.9rem}
-.feedback{max-width:790px;margin:31px auto 0;padding:30px;border:1px solid var(--line);border-radius:var(--r2);background:var(--panel);box-shadow:0 16px 40px rgba(18,34,28,.07)}.field{display:grid;gap:7px;margin-top:15px;text-align:left}.field label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.field input,.field textarea{width:100%;padding:12px 13px;border:1px solid var(--line2);border-radius:var(--r);color:var(--ink);background:#fff}.field textarea{min-height:155px;resize:vertical}.char-row{display:flex;justify-content:space-between;gap:12px;margin-top:5px;color:var(--muted);font-size:12px}
-.actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:20px}.btn{min-height:44px;padding:9px 15px;border:1px solid var(--forest);border-radius:var(--r);color:#fff;background:var(--forest);font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer}.btn.secondary{color:var(--forest);background:#fff;border-color:var(--line2)}.btn.gold{color:#2b2417;background:#ead6a4;border-color:#c5a45f}.btn:disabled{cursor:not-allowed;opacity:.52}.status{min-height:1.6em;margin:15px 0 0;color:var(--forest2);font-weight:600}.daily-note{margin:18px auto 0;padding:14px 16px;border-left:3px solid var(--gold);max-width:700px;color:var(--muted);background:#faf6eb;font-size:.88rem;text-align:left}.share-panel{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:11px;background:#f5f8f5}.share-panel h3{margin:0;color:var(--forest);font-size:1.25rem}
+.feedback{max-width:790px;margin:31px auto 0;padding:30px;border:1px solid var(--line);border-radius:var(--r2);background:var(--panel);box-shadow:0 16px 40px rgba(18,34,28,.07)}.field{display:grid;gap:7px;margin-top:15px;text-align:left}.field label{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.field input,.field textarea{width:100%;padding:12px 13px;border:1px solid var(--line2);border-radius:var(--r);color:var(--ink);background:#fff;font-size:16px}.field textarea{min-height:155px;resize:vertical}.char-row{display:flex;justify-content:space-between;gap:12px;margin-top:5px;color:var(--muted);font-size:12px}
+.actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:20px}.btn{min-height:44px;padding:9px 15px;border:1px solid var(--forest);border-radius:var(--r);color:#fff;background:var(--forest);font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer}.btn.secondary{color:var(--forest);background:#fff;border-color:var(--line2)}.btn.gold{color:#2b2417;background:#ead6a4;border-color:#c5a45f}.btn:disabled{cursor:not-allowed;opacity:.52}.status{min-height:1.6em;margin:15px 0 0;color:var(--forest2);font-weight:600}.daily-note{margin:18px auto 0;padding:14px 16px;border-left:3px solid var(--gold);max-width:700px;color:var(--muted);background:#faf6eb;font-size:.88rem;text-align:left}.receipt-panel{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:11px;background:#f5f8f5}.receipt-panel h3{margin:0;color:var(--forest);font-size:1.25rem}.privacy-line{max-width:760px;margin:18px auto 0;color:#5d6b64;font-size:.92rem}
 footer{padding:35px 0;color:#727d77;font-size:12px;border-top:1px solid var(--line)}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:580px){.grid{grid-template-columns:1fr}.hero{padding-top:60px}.feedback{padding:23px 17px}.actions .btn{width:100%}}
+@media print{header,.hero,.section.alt,footer,.actions,.daily-note{display:none!important}.section{border:0;padding:0}.feedback{box-shadow:none;border:0;margin:0 auto;padding:0}.field input,.field textarea{border:0;padding:0}.receipt-panel{border:0}}
 </style>
 </head>
 <body>
-<header><div class="shell nav"><a href="../">Verve N Veda</a><a href="../ecosystem/">Ecosystem</a><a href="../Khaemenes_Academy.github.io/">Khaemenes Academy</a><a href="../333.github.io/">333 Network</a></div></header>
+<header><div class="shell nav"><a href="../">Verve N Veda</a><a href="../Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></header>
 
 <main>
-<section class="hero"><div class="shell"><p class="kicker">Public Participation · Free Ecosystem</p><h1>Beta Program</h1><p class="lede">Help improve public halls, courses, tools, games, resources, and learning pathways across Verve N Veda and Khaemenes Academy. One thoughtful report each day is enough.</p><span class="badge">One Daily Report</span></div></section>
+<section class="hero"><div class="shell"><p class="kicker">Private Improvement Channel</p><h1>Beta Program</h1><p class="lede">Help improve public halls, courses, tools, games, resources, and learning pathways. Beta reports are intended for the administrator notification channel — not a public feed.</p><span class="badge">Private Beta Report</span></div></section>
 
 <section class="section alt"><div class="shell"><p class="kicker">What to notice</p><h2>Test the experience.</h2><p class="intro">Use the ecosystem naturally and tell us where something is unclear, broken, difficult to find, or especially helpful.</p><div class="grid"><div class="card"><strong>Navigation</strong><p>Do buttons, doors, menus, and return paths lead where you expect?</p></div><div class="card"><strong>Learning</strong><p>Are lessons, explanations, and activities understandable and useful?</p></div><div class="card"><strong>Accessibility</strong><p>Can you read, reach, and operate everything comfortably on your device?</p></div><div class="card"><strong>Ideas</strong><p>What would make this page, class, tool, or pathway genuinely better?</p></div></div></div></section>
 
-<section class="section"><div class="shell"><p class="kicker">Daily Beta Report</p><h2>What did you notice today?</h2><p class="intro">Choose the most useful thing to report. Save one polished report for today, then copy, download, or share it through your preferred channel.</p>
+<section class="section"><div class="shell"><p class="kicker">Private Beta Report</p><h2>What did you notice today?</h2><p class="intro">Submit one useful report. The page will never invoke a public share sheet. Downloaded and printed receipts are sanitized before they leave the page.</p>
 <form class="feedback" id="betaForm" novalidate>
   <div class="field"><label for="page">Page, class or tool</label><input id="page" name="page" maxlength="120" autocomplete="off" placeholder="Example: Pre-Algebra · Week 6"></div>
-  <div class="field"><label for="message">Your beta report</label><textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea><div class="char-row"><span>Be specific and kind.</span><span id="count">0 / 1200</span></div></div>
-  <div class="actions"><button class="btn" id="saveBtn" type="submit">Save Daily Report</button><button class="btn secondary" id="clearBtn" type="button">Clear Draft</button></div>
+  <div class="field"><label for="message">Your beta report</label><textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea><div class="char-row"><span>Do not include passwords or private personal information.</span><span id="count">0 / 1200</span></div></div>
+  <div class="actions"><button class="btn" id="submitBtn" type="submit">Send to Admin Notifications</button><button class="btn secondary" id="clearBtn" type="button">Clear Draft</button></div>
   <p class="status" id="status" role="status" aria-live="polite"></p>
-  <div class="share-panel" id="sharePanel" hidden><h3>Today’s report is ready.</h3><p>Choose the sharing method that works for you.</p><div class="actions"><button class="btn" id="copyBtn" type="button">Copy Report</button><button class="btn secondary" id="downloadBtn" type="button">Download Report</button><button class="btn gold" id="shareBtn" type="button">Share Report</button></div></div>
-  <p class="daily-note">Do not include passwords, private account information, home addresses, phone numbers, or other sensitive personal information. Saving the report prepares your daily record; use Copy, Download, or Share when you are ready to send it onward.</p>
+  <div class="receipt-panel" id="receiptPanel" hidden><h3>Private report prepared.</h3><p id="receiptState">A sanitized receipt is available below.</p><div class="actions"><button class="btn secondary" id="downloadBtn" type="button">Download Sanitized Copy</button><button class="btn gold" id="printBtn" type="button">Print Sanitized Copy</button></div></div>
+  <p class="daily-note"><strong>Privacy boundary:</strong> no public sharing control is provided. Sanitized receipts remove URLs, repository-style addresses, administrator/API routes, browser-storage keys, and network-address patterns. The administrator notification bridge is the intended delivery destination.</p>
 </form>
+<p class="privacy-line">If the private bridge is not configured on this deployment, the report fails closed: it remains private on the current device and is not posted publicly.</p>
 </div></section>
 </main>
-<footer><div class="shell">Verve N Veda · Public Beta Program · Free public learning ecosystem</div></footer>
+<footer><div class="shell">Verve N Veda · Private Beta Program</div></footer>
 
 <script>
 (() => {
 "use strict";
-const DAY_KEY="vervenveda_beta_last_report_day_v2",REPORT_KEY="vervenveda_beta_daily_report_v2",DRAFT_KEY="vervenveda_beta_draft_v2";
-const form=document.getElementById("betaForm"),page=document.getElementById("page"),message=document.getElementById("message"),count=document.getElementById("count"),status=document.getElementById("status"),saveBtn=document.getElementById("saveBtn"),clearBtn=document.getElementById("clearBtn"),sharePanel=document.getElementById("sharePanel"),copyBtn=document.getElementById("copyBtn"),downloadBtn=document.getElementById("downloadBtn"),shareBtn=document.getElementById("shareBtn");
-const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
+
+const DRAFT_KEY="vervenveda_beta_draft_v3";
+const REPORT_KEY="vervenveda_beta_private_report_v3";
+const ADMIN_NOTICES_KEY="VNV_ADMIN_NOTIFICATIONS_V1";
+const ADMIN_BETA_KEY="VNV_ADMIN_BETA_V1";
+const ADMIN_SETTINGS_KEY="VNV_ADMIN_SETTINGS_V1";
+
+const form=document.getElementById("betaForm");
+const page=document.getElementById("page");
+const message=document.getElementById("message");
+const count=document.getElementById("count");
+const status=document.getElementById("status");
+const submitBtn=document.getElementById("submitBtn");
+const clearBtn=document.getElementById("clearBtn");
+const receiptPanel=document.getElementById("receiptPanel");
+const receiptState=document.getElementById("receiptState");
+const downloadBtn=document.getElementById("downloadBtn");
+const printBtn=document.getElementById("printBtn");
+
+const uid=()=>`${Date.now().toString(36)}-${Math.random().toString(36).slice(2,10)}`;
+const today=()=>new Date().toISOString().slice(0,10);
+
 function read(key,fallback=null){try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}}
 function write(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}}
+function cleanPlain(value,max=1200){return String(value??"").replace(/[\u0000-\u001f\u007f]/g," ").replace(/\s+/g," ").trim().slice(0,max)}
 function friendlySource(value){
   if(!value)return "";
-  let text=String(value).slice(0,320).replace(/[?#].*$/,"").replace(/^https?:\/\//i,"");
-  text=text.replace(/^www\./i,"");
+  let text=String(value).slice(0,320).replace(/[?#].*$/,"").replace(/^https?:\/\//i,"").replace(/^www\./i,"");
   const parts=text.split("/").filter(Boolean);
   if(parts[0]?.includes("."))parts.shift();
   const skip=new Set(["index.html","index","courses","course"]);
-  const labels=parts.filter(p=>!skip.has(p.toLowerCase())).map(p=>decodeURIComponent(p).replace(/\.github\.io$/i,"").replace(/[_-]+/g," ").trim()).filter(Boolean);
-  return labels.map(x=>x.replace(/\b\w/g,m=>m.toUpperCase())).join(" · ").slice(0,120);
+  return parts.filter(p=>!skip.has(p.toLowerCase()))
+    .map(p=>{try{return decodeURIComponent(p)}catch{return p}})
+    .map(p=>p.replace(/\.github\.io$/i,"").replace(/[_-]+/g," ").trim())
+    .filter(Boolean).map(x=>x.replace(/\b\w/g,m=>m.toUpperCase())).join(" · ").slice(0,120);
 }
 function sourceFromQuery(){try{return friendlySource(new URLSearchParams(location.search).get("source")||"")}catch{return ""}}
-function reportText(report){return `Verve N Veda Beta Report\nDate: ${report.date}\nPage / class / tool: ${report.page||"Not specified"}\n\n${report.message}`}
+
+function sanitizeReceiptText(value){
+  let s=String(value??"");
+  s=s.replace(/\bhttps?:\/\/[^\s<>"']+/gi,"[link removed]");
+  s=s.replace(/\b(?:www\.)?[a-z0-9.-]+\.github\.io(?:\/[^\s<>"']*)?/gi,"[repository address removed]");
+  s=s.replace(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g,"[network address removed]");
+  s=s.replace(/\b(?:localhost|127\.0\.0\.1)(?::\d+)?\b/gi,"[local address removed]");
+  s=s.replace(/\/(?:admin|api|cloud|internal|private)(?:\/[A-Za-z0-9._~!$&'()*+,;=:@%-]*)*/gi,"[internal route removed]");
+  s=s.replace(/\bVNV_[A-Z0-9_]+\b/g,"[storage key removed]");
+  s=s.replace(/\b[A-Za-z0-9_.-]+\.github\.io\b/gi,"[repository name removed]");
+  return cleanPlain(s,1200);
+}
+function receiptText(report){
+  return [
+    "Verve N Veda Beta Report — Sanitized Receipt",
+    `Date: ${report.date}`,
+    `Page / class / tool: ${sanitizeReceiptText(report.page)||"Learning surface"}`,
+    "",
+    sanitizeReceiptText(report.message),
+    "",
+    "Privacy note: internal routes, repository-style addresses, network addresses, storage keys, and URLs are removed from this receipt."
+  ].join("\n");
+}
+function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
 
 function updateCount(){count.textContent=`${message.value.length} / 1200`}
 function saveDraft(){write(DRAFT_KEY,{page:page.value.slice(0,120),message:message.value.slice(0,1200)})}
-function currentReport(){const r=read(REPORT_KEY,null);return r&&r.date===today()?r:null}
-function showSaved(report){
-  page.value=report.page||"";message.value=report.message||"";page.disabled=true;message.disabled=true;saveBtn.disabled=true;clearBtn.disabled=true;sharePanel.hidden=false;status.textContent="Today’s beta report is saved and ready to share.";updateCount();
+function bridgeEndpoint(){
+  const settings=read(ADMIN_SETTINGS_KEY,{});
+  const endpoint=typeof settings?.bridgeEndpoint==="string"?settings.bridgeEndpoint.trim():"";
+  return /^https:\/\//i.test(endpoint)?endpoint:"";
 }
+
+function stageLocalAdmin(report){
+  /* Same-origin local staging. This is private to the browser profile and never public. */
+  const notices=read(ADMIN_NOTICES_KEY,[]);
+  notices.unshift({
+    id:uid(),remoteId:`beta-report:${report.id}`,
+    title:"New private beta report",
+    body:`${report.page||"Learning surface"} — ${report.message.slice(0,420)}`,
+    source:"Beta",level:"info",read:false,at:report.createdAt
+  });
+  write(ADMIN_NOTICES_KEY,notices.slice(0,200));
+
+  const queue=read(ADMIN_BETA_KEY,[]);
+  queue.unshift({
+    id:uid(),remoteId:report.id,at:report.createdAt,
+    name:"Beta Report",email:"",
+    program:report.page||"Verve N Veda Beta",
+    status:"New",note:report.message
+  });
+  write(ADMIN_BETA_KEY,queue.slice(0,250));
+}
+
+async function deliverPrivate(report){
+  stageLocalAdmin(report);
+  const endpoint=bridgeEndpoint();
+  if(!endpoint)return {remote:false,local:true,reason:"bridge-not-configured"};
+  try{
+    const res=await fetch(endpoint,{
+      method:"POST",
+      headers:{"Content-Type":"application/json","Accept":"application/json"},
+      credentials:"omit",
+      cache:"no-store",
+      referrerPolicy:"no-referrer",
+      body:JSON.stringify({
+        type:"beta_report",
+        report:{
+          id:report.id,
+          at:report.createdAt,
+          page:report.page,
+          message:report.message,
+          status:"New"
+        }
+      })
+    });
+    if(!res.ok)throw new Error(`HTTP ${res.status}`);
+    return {remote:true,local:true};
+  }catch(error){
+    return {remote:false,local:true,reason:String(error?.message||error)};
+  }
+}
+
 function restore(){
-  const saved=currentReport();if(saved){showSaved(saved);return}
   const draft=read(DRAFT_KEY,null),source=sourceFromQuery();
-  if(draft){page.value=typeof draft.page==="string"?draft.page.slice(0,120):"";message.value=typeof draft.message==="string"?draft.message.slice(0,1200):""}
+  if(draft){
+    page.value=typeof draft.page==="string"?draft.page.slice(0,120):"";
+    message.value=typeof draft.message==="string"?draft.message.slice(0,1200):"";
+  }
   if(!page.value&&source)page.value=source;
   updateCount();
 }
-message.addEventListener("input",()=>{updateCount();saveDraft()});page.addEventListener("input",saveDraft);
-clearBtn.addEventListener("click",()=>{page.value=sourceFromQuery();message.value="";status.textContent="";updateCount();try{localStorage.removeItem(DRAFT_KEY)}catch{}message.focus()});
-form.addEventListener("submit",e=>{
-  e.preventDefault();if(currentReport()){showSaved(currentReport());return}
-  const text=message.value.trim();if(text.length<10){status.textContent="Please add a little more detail so the report is useful.";message.focus();return}
-  const report={date:today(),createdAt:new Date().toISOString(),page:page.value.trim().slice(0,120),message:text.slice(0,1200)};
-  if(!write(REPORT_KEY,report)||!write(DAY_KEY,report.date)){status.textContent="This browser could not save the report. Please try again.";return}
-  try{localStorage.removeItem(DRAFT_KEY)}catch{}showSaved(report);
+
+message.addEventListener("input",()=>{updateCount();saveDraft()});
+page.addEventListener("input",saveDraft);
+clearBtn.addEventListener("click",()=>{page.value=sourceFromQuery();message.value="";status.textContent="";receiptPanel.hidden=true;updateCount();try{localStorage.removeItem(DRAFT_KEY)}catch{}message.focus()});
+
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const text=cleanPlain(message.value,1200);
+  if(text.length<10){status.textContent="Please add a little more detail so the report is useful.";message.focus();return}
+  const report={
+    id:uid(),date:today(),createdAt:new Date().toISOString(),
+    page:cleanPlain(page.value,120),message:text
+  };
+  write(REPORT_KEY,report);
+  try{localStorage.removeItem(DRAFT_KEY)}catch{}
+  submitBtn.disabled=true;
+  status.textContent="Sending through the private administrator channel…";
+  const result=await deliverPrivate(report);
+  receiptPanel.hidden=false;
+  if(result.remote){
+    status.textContent="Submitted privately to the administrator notification channel.";
+    receiptState.textContent="A sanitized receipt is available. No public share action was used.";
+  }else{
+    status.textContent="Saved privately on this device. The remote administrator bridge is not configured or could not be reached; nothing was posted publicly.";
+    receiptState.textContent="The report remains private on this device. A sanitized receipt is available.";
+  }
+  submitBtn.disabled=false;
 });
-copyBtn.addEventListener("click",async()=>{const r=currentReport();if(!r)return;try{await navigator.clipboard.writeText(reportText(r));status.textContent="Report copied."}catch{status.textContent="Copy was not available. Use Download Report instead."}});
-downloadBtn.addEventListener("click",()=>{const r=currentReport();if(!r)return;const blob=new Blob([reportText(r)],{type:"text/plain;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=`Verve_N_Veda_Beta_Report_${r.date}.txt`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),500)});
-shareBtn.addEventListener("click",async()=>{const r=currentReport();if(!r)return;const text=reportText(r);if(navigator.share){try{await navigator.share({title:"Verve N Veda Beta Report",text});status.textContent="Share sheet opened."}catch{}}else{try{await navigator.clipboard.writeText(text);status.textContent="Sharing is not available here, so the report was copied instead."}catch{status.textContent="Use Download Report to save a copy."}}});
+
+downloadBtn.addEventListener("click",()=>{
+  const report=read(REPORT_KEY,null);if(!report)return;
+  const blob=new Blob([receiptText(report)],{type:"text/plain;charset=utf-8"});
+  const url=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=url;a.download=`Verve_N_Veda_Beta_Receipt_${report.date}.txt`;
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),500);
+});
+
+printBtn.addEventListener("click",()=>{
+  const report=read(REPORT_KEY,null);if(!report)return;
+  const safe=receiptText(report).split("\n").map(line=>`<p>${escapeHtml(line)||"&nbsp;"}</p>`).join("");
+  const w=window.open("","_blank","noopener,noreferrer");
+  if(!w){status.textContent="Print window was blocked. Use Download Sanitized Copy instead.";return}
+  w.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>Sanitized Beta Receipt</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;color:#17251f;font:16px/1.6 Georgia,serif}h1{font-weight:500}p{white-space:pre-wrap}</style></head><body><h1>Verve N Veda Beta Report</h1>${safe}</body></html>`);
+  w.document.close();w.focus();setTimeout(()=>w.print(),100);
+});
+
 restore();
 })();
 </script>
-
-  <!-- Verve N Veda Beta Program -->
-  <script src="https://vervenveda.com/assets/vnv-beta-link.js" defer></script>
 </body>
 </html>
