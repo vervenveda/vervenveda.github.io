@@ -1,0 +1,170 @@
+/* Verve N Veda Administration · Light Theme
+   Readability/presentation layer only. No routing, gate, data, or authority logic. */
+
+body[data-theme="light"]{
+  --bg:#f4f0e7;
+  --bg2:#fbf9f4;
+  --panel:#ffffff;
+  --panel2:#f8f3e9;
+  --panel3:#fffaf0;
+  --ink:#17211d;
+  --ink2:#30413d;
+  --muted:#66716c;
+  --line:rgba(18,23,19,.14);
+  --line2:rgba(18,23,19,.24);
+  --gold:#b48b45;
+  --gold2:#d9bd83;
+  --forest:#243d33;
+  --green:#3f7655;
+  --red:#8e3e46;
+  --blue:#315f86;
+  --violet:#725f82;
+  --paper:#f4f0e7;
+  color:var(--ink);
+  background:var(--paper);
+  font-size:16px;
+  line-height:1.62;
+}
+body[data-theme="light"] #adminRoot{
+  color:var(--ink);
+  background:linear-gradient(180deg,#fbf9f4,#f4f0e7);
+}
+body[data-theme="light"] .sidebar{
+  color:var(--ink);
+  background:linear-gradient(180deg,#fffdf8,#f4eee2);
+  border-right:1px solid var(--line2);
+  box-shadow:7px 0 24px rgba(32,42,35,.04);
+}
+body[data-theme="light"] .brand,
+body[data-theme="light"] .sidebar-status{border-color:var(--line)}
+body[data-theme="light"] .brand-mark{color:#fff;background:var(--forest);border-color:var(--forest)}
+body[data-theme="light"] .brand-name{color:var(--forest);font-size:15px}
+body[data-theme="light"] .brand-sub{color:var(--muted);font-size:10px}
+body[data-theme="light"] .sidebar-status{color:var(--muted);font-size:12px}
+body[data-theme="light"] .sidebar-status strong{color:var(--ink);font-size:12px}
+body[data-theme="light"] .nav-button{color:#3f4c46;background:transparent;border-color:transparent}
+body[data-theme="light"] .nav-button:hover{color:var(--forest);background:#fff;border-color:var(--line)}
+body[data-theme="light"] .nav-button.active{
+  color:#fff;background:linear-gradient(90deg,var(--forest),#315648);
+  border-color:var(--forest);box-shadow:0 7px 18px rgba(36,61,51,.13)
+}
+body[data-theme="light"] .nav-icon{color:var(--gold);font-size:15px}
+body[data-theme="light"] .nav-button.active .nav-icon{color:#f4e5c5}
+body[data-theme="light"] .nav-label{font-size:12px;font-weight:700;letter-spacing:.035em}
+body[data-theme="light"] .nav-count{color:#405047;background:#fff;border-color:var(--line2);font-size:10px}
+body[data-theme="light"] .nav-button.active .nav-count{color:#fff;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28)}
+body[data-theme="light"] .lock-nav{color:#7a2932;background:#fff4f4;border-color:#cda4a9;font-size:11px}
+body[data-theme="light"] .workspace{background:transparent}
+body[data-theme="light"] .topbar{
+  color:var(--ink);background:rgba(251,249,244,.96);
+  border-bottom:1px solid var(--line);box-shadow:0 6px 18px rgba(32,42,35,.04)
+}
+body[data-theme="light"] .topbar-title strong{color:var(--forest);font-size:25px}
+body[data-theme="light"] .topbar-title span{color:var(--muted);font-size:11px}
+body[data-theme="light"] .top-btn{
+  color:var(--forest);background:#fff;border-color:var(--line2);
+  font-size:11px;font-weight:700
+}
+body[data-theme="light"] .top-btn:hover{background:#f2ecdf}
+body[data-theme="light"] .status-pill{color:#28583b;background:#eef7f0;border-color:#bcd6c4;font-size:10px}
+body[data-theme="light"] .view{color:var(--ink)}
+body[data-theme="light"] .view-head .eyebrow{color:var(--gold);font-size:11px}
+body[data-theme="light"] .view-head h1{color:var(--forest);font-size:clamp(38px,4vw,58px)}
+body[data-theme="light"] .view-head p{color:var(--muted);font-size:14px;line-height:1.7}
+body[data-theme="light"] .metric,
+body[data-theme="light"] .panel,
+body[data-theme="light"] .mail-card,
+body[data-theme="light"] .quick-card,
+body[data-theme="light"] .eco-card,
+body[data-theme="light"] .setting-card,
+body[data-theme="light"] .notice-card{
+  color:var(--ink);background:#fff;border-color:var(--line);
+  box-shadow:0 11px 30px rgba(28,41,33,.055)
+}
+body[data-theme="light"] .metric{background:linear-gradient(145deg,#fff,#fbf7ef)}
+body[data-theme="light"] .metric-label{color:#68756e;font-size:10px}
+body[data-theme="light"] .metric strong{color:var(--forest);font-size:40px}
+body[data-theme="light"] .metric small{color:var(--muted);font-size:12px;line-height:1.55}
+body[data-theme="light"] .panel-head h2{color:var(--forest);font-size:27px}
+body[data-theme="light"] .panel-head p{color:var(--muted);font-size:12px;line-height:1.6}
+body[data-theme="light"] .panel-tag{color:#5d6a63;background:#faf6ed;border-color:var(--line2);font-size:9px}
+body[data-theme="light"] .mail-card .mail-label{color:#7a6740;font-size:9px}
+body[data-theme="light"] .mail-card strong{color:var(--ink);font-size:14px}
+body[data-theme="light"] .mail-card p{color:var(--muted);font-size:12px}
+body[data-theme="light"] .small-btn,
+body[data-theme="light"] .small-link,
+body[data-theme="light"] .action-btn,
+body[data-theme="light"] .launch-btn{
+  color:var(--forest);background:#fbf8f1;border-color:var(--line2);
+  font-size:11px;font-weight:700
+}
+body[data-theme="light"] .small-btn:hover,
+body[data-theme="light"] .small-link:hover,
+body[data-theme="light"] .action-btn:hover,
+body[data-theme="light"] .launch-btn:hover{background:#efe8da}
+body[data-theme="light"] .action-btn.green{color:#fff;background:var(--forest);border-color:var(--forest)}
+body[data-theme="light"] .action-btn.gold{color:#2f281c;background:#ead8b5;border-color:#c6a86b}
+body[data-theme="light"] .action-btn.red{color:#7c2831;background:#fff2f3;border-color:#d3a8ad}
+body[data-theme="light"] .feed-item{border-color:var(--line)}
+body[data-theme="light"] .feed-copy strong{color:var(--ink);font-size:12px}
+body[data-theme="light"] .feed-copy small{color:var(--muted);font-size:10.5px;line-height:1.55}
+body[data-theme="light"] .feed-time{color:#758078;font-size:10px}
+body[data-theme="light"] .quick-card:hover,
+body[data-theme="light"] .eco-card:hover{background:#fffdf8;border-color:#cdbb97}
+body[data-theme="light"] .quick-card span,
+body[data-theme="light"] .eco-category{color:#856a36;font-size:9px}
+body[data-theme="light"] .quick-card strong{color:var(--forest);font-size:13px}
+body[data-theme="light"] .quick-card small{color:var(--muted);font-size:10.5px;line-height:1.55}
+body[data-theme="light"] .toolbar-row .search,
+body[data-theme="light"] .toolbar-row .select,
+body[data-theme="light"] input,
+body[data-theme="light"] select,
+body[data-theme="light"] textarea{
+  color:var(--ink);background:#fff;border-color:var(--line2);font-size:13px
+}
+body[data-theme="light"] input::placeholder,
+body[data-theme="light"] textarea::placeholder{color:#87918b}
+body[data-theme="light"] .table-wrap{border-color:var(--line);background:#fff}
+body[data-theme="light"] table{background:#fff}
+body[data-theme="light"] th{
+  color:#536158;background:#f2ede3;border-color:var(--line);
+  font-size:9.5px
+}
+body[data-theme="light"] td{
+  color:#34423b;border-color:var(--line);
+  font-size:11.5px;line-height:1.55
+}
+body[data-theme="light"] td small{color:var(--muted);font-size:10px}
+body[data-theme="light"] .notice-card{background:#fffdf8}
+body[data-theme="light"] .notice-card.unread{border-left-color:var(--gold);background:#fffaf0}
+body[data-theme="light"] .notice-icon{color:#806633;background:#f4ead6}
+body[data-theme="light"] .notice-copy strong{color:var(--forest);font-size:13px}
+body[data-theme="light"] .notice-copy p{color:#536159;font-size:12px;line-height:1.6}
+body[data-theme="light"] .notice-meta{color:var(--muted);font-size:10px}
+body[data-theme="light"] .empty{color:var(--muted);background:#faf7f0;border-color:var(--line)}
+body[data-theme="light"] .safety-note{color:#5b675f;background:#f7f2e7;border-color:#dfd1b5;font-size:11.5px;line-height:1.65}
+body[data-theme="light"] .bridge-state{color:#59665f;background:#f7f4ed;border-color:var(--line2);font-size:11px}
+body[data-theme="light"] .bridge-state.connected{color:#28583b;background:#eef7f0;border-color:#bcd6c4}
+body[data-theme="light"] #editor{color:var(--ink);background:#fff;border-color:var(--line);font-size:13px;line-height:1.55}
+body[data-theme="light"] #path{color:#536159;background:#f5f1e8;border-color:var(--line);font-size:11px}
+body[data-theme="light"] .beta-cover-stat,
+body[data-theme="light"] .beta-cover-row{color:var(--ink);background:#fff;border-color:var(--line)!important}
+body[data-theme="light"] .beta-cover-stat strong{color:var(--forest)!important}
+body[data-theme="light"] .beta-cover-stat span,
+body[data-theme="light"] .beta-cover-row small{color:var(--muted)!important}
+@media(max-width:900px){
+  body[data-theme="light"]{font-size:15px}
+  body[data-theme="light"] .nav-label{font-size:11.5px}
+}
+@media print{
+  body[data-theme="light"] #adminRoot{background:#fff!important;color:#111!important}
+  body[data-theme="light"] .sidebar,
+  body[data-theme="light"] .topbar,
+  body[data-theme="light"] .notification-tools,
+  body[data-theme="light"] .toolbar-row{display:none!important}
+  body[data-theme="light"] .workspace{display:block!important}
+  body[data-theme="light"] .view{padding:0!important}
+  body[data-theme="light"] .panel,
+  body[data-theme="light"] .metric,
+  body[data-theme="light"] .notice-card{box-shadow:none!important;border-color:#bbb!important}
+}
