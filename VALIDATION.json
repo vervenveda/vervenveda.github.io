@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "admin_css_created": true,
+    "loader_loads_css": true,
+    "loader_defaults_light": true,
+    "beta_has_no_navigator_share": true,
+    "beta_has_admin_notification_action": true,
+    "beta_stages_admin_notices": true,
+    "beta_stages_admin_queue": true,
+    "beta_uses_existing_bridge_settings": true,
+    "beta_sanitizes_receipts": true,
+    "beta_print_sanitized": true,
+    "beta_download_sanitized": true
+  }
+}
