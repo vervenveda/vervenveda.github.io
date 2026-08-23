@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-23T01:58:36.569Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-23T01:56:48Z",
+  "generatedAt": "2026-08-23T06:59:42.380Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-23T06:04:58Z",
   "accounts": [
     "vervenveda",
     "JenniferPearl2028",
@@ -114,8 +114,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-21T13:16:21Z",
-      "updatedAt": "2026-08-09T00:28:32Z",
-      "pushedAt": "2026-08-09T00:28:28Z",
+      "updatedAt": "2026-08-23T05:33:32Z",
+      "pushedAt": "2026-08-23T05:33:28Z",
       "discoveryStatus": "manifested",
       "classification": "wellness",
       "confidence": 1,
@@ -123,13 +123,13 @@
       "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "b189c21f5de15517964e532bc393c6892030a418",
+        "sha": "15222c979a9cae8ad880020e6a713b8e36e51f68",
         "htmlUrl": "https://github.com/vervenveda/aurora.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
+        "version": 2,
         "sourceId": "verve.aurora",
         "mentorSearchable": true,
         "inventoryAuthority": "",
-        "resourceCount": 7
+        "resourceCount": 33
       }
     },
     {
@@ -363,8 +363,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-22T18:59:55Z",
-      "updatedAt": "2026-08-23T01:39:29Z",
-      "pushedAt": "2026-08-23T01:56:48Z",
+      "updatedAt": "2026-08-23T05:50:36Z",
+      "pushedAt": "2026-08-23T05:50:15Z",
       "discoveryStatus": "manifested",
       "classification": "educational",
       "confidence": 1,
@@ -756,8 +756,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-19T22:57:37Z",
-      "updatedAt": "2026-08-21T16:23:30Z",
-      "pushedAt": "2026-08-23T01:22:18Z",
+      "updatedAt": "2026-08-23T06:05:35Z",
+      "pushedAt": "2026-08-23T06:04:58Z",
       "discoveryStatus": "manifested",
       "classification": "research-information",
       "confidence": 1,
@@ -765,13 +765,13 @@
       "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
       "manifest": {
         "path": "mentor-manifest.json",
-        "sha": "7a9ea0d9083a5b046a483714e9ee0b6a24983152",
+        "sha": "765db6301473c53e6c6da74985cf66c7fd95c71c",
         "htmlUrl": "https://github.com/vervenveda/theverifier.github.io/blob/main/mentor-manifest.json",
-        "version": 1,
+        "version": 3,
         "sourceId": "verve.verifier",
         "mentorSearchable": true,
         "inventoryAuthority": "",
-        "resourceCount": 6
+        "resourceCount": 8
       }
     },
     {
@@ -808,8 +808,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-18T22:34:19Z",
-      "updatedAt": "2026-08-22T18:48:11Z",
-      "pushedAt": "2026-08-22T18:48:06Z",
+      "updatedAt": "2026-08-23T01:58:48Z",
+      "pushedAt": "2026-08-23T01:58:45Z",
       "discoveryStatus": "discovered",
       "classification": "unclassified",
       "confidence": 0.25,
