@@ -1761,7 +1761,7 @@
       color:var(--forest-deep);
       font-family:var(--ceremonial);
       font-size:clamp(20px,2.1vw,28px);
-      font-weight:500;
+      font-weight:444;
       letter-spacing:.08em;
       line-height:1.1;
       text-transform:uppercase;
@@ -1780,7 +1780,7 @@
       border-radius:4px;
       color:var(--ink);
       background:#fff;
-      font-size:19px;
+      font-size:14px;
     }
     .ecosystem-panel-grid{
       display:grid;
@@ -1798,7 +1798,7 @@
       color:#7e6332;
       font-family:var(--ceremonial);
       font-size:9px;
-      font-weight:555;
+      font-weight:444;
       letter-spacing:.14em;
       line-height:1.4;
       text-transform:uppercase;
@@ -2611,9 +2611,10 @@
     .network-counts{
       grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))!important;
     }
-    .ecosystem-category-grid{
-      grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr))!important;
-    }
+   .ecosystem-category-grid{
+  width:min(100%,980px)!important;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))!important;
+}
     .ecosystem-panel-grid{
       grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr))!important;
     }
@@ -2818,9 +2819,9 @@
     /* Keep all ten names intact on one line. The grid drops a column
        before the lettering is allowed to wrap. */
     .ecosystem-category-grid{
-      grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr))!important;
-      gap:clamp(9px,1vw,12px)!important;
-    }
+  width:min(100%,980px)!important;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))!important;
+}
     .ecosystem-category-doorway{
       grid-template-columns:minmax(0,1fr) clamp(40px,3.3vw,46px)!important;
       min-height:clamp(62px,5vw,70px)!important;
