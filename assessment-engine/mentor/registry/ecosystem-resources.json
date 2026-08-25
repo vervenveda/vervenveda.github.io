@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-24T18:58:11.574Z",
-  "sourceLatestRepositoryTimestamp": "2026-08-24T18:54:46Z",
+  "generatedAt": "2026-08-25T01:51:15.168Z",
+  "sourceLatestRepositoryTimestamp": "2026-08-25T01:20:32Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -6774,7 +6774,7 @@
     {
       "id": "vervenveda.khaemenes_kindergarden.github.io.kindergarten-home",
       "title": "Khaemenes Kinder Garden",
-      "description": "",
+      "description": "Kindergarten learning gateway with a 36-week curriculum, public learning tools, Family Registry continuity, and Archaemenes as the Academy Mentor.",
       "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/",
       "sourceId": "khaemenes.kindergarten",
       "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
@@ -10290,7 +10290,7 @@
     {
       "id": "vervenveda.khaemenes_preschool.github.io.preschool-family-mentor-entry",
       "title": "Parent / Family Mentor Account",
-      "description": "Family entry on the Crechè home page. Once a Preschool learner is linked, the page reveals that child's personalized Mentor button.",
+      "description": "Family entry on the Crechè home page. Without an active family session it opens the Academy Family Profile. With an active family session, a learner can continue directly to Archaemenes.",
       "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/#familyMentorEntry",
       "sourceId": "khaemenes.preschool",
       "repository": "vervenveda/Khaemenes_Preschool.github.io",
@@ -10354,15 +10354,16 @@
       "manifestPath": "mentor-manifest.json"
     },
     {
-      "id": "vervenveda.khaemenes_preschool.github.io.preschool-personalized-mentor",
-      "title": "Khaemenes Preschool Personalized Mentor",
-      "description": "Child-only personalized Mentor using the active linked Preschool learner, the shared Crechè catalog, bounded help prompts, feelings check-in, adaptive learning path, learning garden, gentle read-aloud, breaks, and learner-scoped exploration progress.",
-      "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/mentor/",
+      "id": "vervenveda.khaemenes_preschool.github.io.academy-archaemenes-mentor",
+      "title": "Archaemenes · Khaemenes Academy Mentor",
+      "description": "The single Academy Mentor surface. Archaemenes reads the active learner from the Academy Family Registry and adapts one continuous Mentor identity to the learner's registered stage. Early learners receive bounded Wise Owl prompts rather than unrestricted private text chat.",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/mentor/",
       "sourceId": "khaemenes.preschool",
       "repository": "vervenveda/Khaemenes_Preschool.github.io",
       "classification": "educational",
       "audiences": [
-        "preschool"
+        "preschool",
+        "student"
       ],
       "roles": [
         "student"
@@ -10373,9 +10374,10 @@
       ],
       "skills": [],
       "tags": [
+        "archaemenes",
         "mentor",
+        "family-registry",
         "personalized-learning",
-        "bounded-interaction",
         "linked-learner"
       ],
       "minutes": null,
@@ -10392,7 +10394,7 @@
       "highStakesDomain": "",
       "inventoryAuthority": "",
       "requiresLinkedLearner": true,
-      "requiredStage": "preschool",
+      "requiredStage": "",
       "requiresFreshnessCheck": false,
       "dynamicContent": false,
       "requiresPreferenceMatch": [],
@@ -10410,7 +10412,7 @@
         "requiresPreferenceMatch": [],
         "requiresAccountAwareness": false,
         "requiresLinkedLearner": true,
-        "requiredStage": "preschool",
+        "requiredStage": "",
         "sensitiveTopics": [],
         "externalInformation": false,
         "highStakesDomain": "",
