@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-04T16:19:53.900Z",
-  "sourceLatestRepositoryTimestamp": "2026-09-04T11:15:12Z",
+  "generatedAt": "2026-09-04T20:44:13.504Z",
+  "sourceLatestRepositoryTimestamp": "2026-09-04T16:25:25Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -12646,88 +12646,6 @@
         "requiredStage": "",
         "sensitiveTopics": [],
         "externalInformation": false,
-        "highStakesDomain": "",
-        "requiresExplicitQuery": false,
-        "policyTags": []
-      },
-      "manifestPath": "mentor-manifest.json"
-    },
-    {
-      "id": "vervenveda.river_to_road.github.io.river-to-road-home",
-      "title": "River-to-Road",
-      "description": "Environmental action, stewardship, community cleanup, citizen-science, educational, and service-learning gateway.",
-      "url": "https://vervenveda.com/river_to_road.github.io/",
-      "sourceId": "verve.river-to-road",
-      "repository": "vervenveda/river_to_road.github.io",
-      "classification": "civic",
-      "audiences": [
-        "elementary",
-        "middle",
-        "high",
-        "higher-learning",
-        "adult",
-        "parent"
-      ],
-      "roles": [
-        "student",
-        "parent",
-        "educator"
-      ],
-      "domains": [
-        "environment",
-        "community-service",
-        "citizen-science",
-        "civic-action",
-        "education"
-      ],
-      "skills": [
-        "environmental-literacy",
-        "service-learning",
-        "observation",
-        "civic-participation"
-      ],
-      "tags": [
-        "river-to-road",
-        "environment",
-        "cleanup",
-        "stewardship",
-        "active-expansion"
-      ],
-      "minutes": null,
-      "energy": "",
-      "featured": false,
-      "mentorEligible": true,
-      "recommendable": true,
-      "explicitAdultOptIn": false,
-      "resourceType": "hub",
-      "learningValue": "supplemental",
-      "curricularWeight": "supplemental",
-      "learningObjectives": [],
-      "subjects": [],
-      "highStakesDomain": "",
-      "inventoryAuthority": "provisional-root-anchor",
-      "requiresLinkedLearner": false,
-      "requiredStage": "",
-      "requiresFreshnessCheck": true,
-      "dynamicContent": true,
-      "requiresPreferenceMatch": [],
-      "requiresAccountAwareness": false,
-      "sensitiveTopics": [],
-      "externalInformation": true,
-      "sourcePriority": 0,
-      "freshnessWindowMinutes": null,
-      "contentType": "",
-      "policyTags": [],
-      "requiresExplicitQuery": false,
-      "policy": {
-        "requiresFreshnessCheck": true,
-        "dynamicContent": true,
-        "requiresPreferenceMatch": [],
-        "requiresAccountAwareness": false,
-        "requiresLinkedLearner": false,
-        "requiredStage": "",
-        "sensitiveTopics": [],
-        "externalInformation": true,
         "highStakesDomain": "",
         "requiresExplicitQuery": false,
         "policyTags": []
