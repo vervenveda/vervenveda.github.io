@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-04T20:44:13.504Z",
-  "sourceLatestRepositoryTimestamp": "2026-09-04T16:25:25Z",
+  "generatedAt": "2026-09-05T04:24:28.945Z",
+  "sourceLatestRepositoryTimestamp": "2026-09-04T20:44:48Z",
   "accounts": [
     "vervenveda",
     "JenniferPearl2028",
@@ -696,12 +696,21 @@
       "createdAt": "2026-07-19T22:42:11Z",
       "updatedAt": "2026-08-09T22:40:43Z",
       "pushedAt": "2026-08-09T22:40:35Z",
-      "discoveryStatus": "manifest-error",
-      "classification": "unclassified",
-      "confidence": 0.25,
-      "recommendable": false,
-      "reason": "Mentor manifest was found but could not be loaded or normalized.",
-      "manifestError": "Manifest fetch failed for vervenveda/river_to_road.github.io: 504"
+      "discoveryStatus": "manifested",
+      "classification": "civic",
+      "confidence": 1,
+      "recommendable": true,
+      "reason": "Valid Mentor manifest loaded; repository has recommendable source-owned resources.",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "46be1a6c8a56abbbb8465d4caf4110f395d6c596",
+        "htmlUrl": "https://github.com/vervenveda/river_to_road.github.io/blob/main/mentor-manifest.json",
+        "version": 1,
+        "sourceId": "verve.river-to-road",
+        "mentorSearchable": true,
+        "inventoryAuthority": "provisional-root-anchor",
+        "resourceCount": 1
+      }
     },
     {
       "id": "github:vervenveda/solanar.github.io",
@@ -799,8 +808,8 @@
       "disabled": false,
       "hasPages": true,
       "createdAt": "2026-07-18T22:34:19Z",
-      "updatedAt": "2026-09-04T16:20:08Z",
-      "pushedAt": "2026-09-04T16:20:03Z",
+      "updatedAt": "2026-09-04T20:44:52Z",
+      "pushedAt": "2026-09-04T20:44:48Z",
       "discoveryStatus": "discovered",
       "classification": "unclassified",
       "confidence": 0.25,
@@ -937,12 +946,11 @@
       "createdAt": "2026-07-29T01:37:43Z",
       "updatedAt": "2026-07-29T01:37:48Z",
       "pushedAt": "2026-07-29T01:37:44Z",
-      "discoveryStatus": "manifest-error",
+      "discoveryStatus": "discovered",
       "classification": "campaign",
       "confidence": 1,
       "recommendable": false,
-      "reason": "Mentor manifest was found but could not be loaded or normalized.",
-      "manifestError": "Manifest fetch failed for JenniferPearl2028/policies.github.io: 500"
+      "reason": "Campaign account is segregated from ordinary educational recommendations."
     },
     {
       "id": "github:jenniferpearl2028/press.github.io",
