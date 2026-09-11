@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "name": "Khaemenes Admin Daily Report API Contract",
+  "endpointExample": "https://accounts.vervenveda.com/api/v1/admin/daily-report",
+  "authentication": {
+    "mode": "server-to-server bearer credential",
+    "notes": [
+      "Keep the credential only in GitHub Actions Secrets or another server-side secret store.",
+      "Never expose this admin endpoint or token in browser JavaScript.",
+      "Browser family invitations continue to use secure HttpOnly session cookies."
+    ]
+  },
+  "response": {
+    "generatedAt": "2026-08-09T12:00:00Z",
+    "families": [
+      {
+        "familyId": "fam_example",
+        "displayName": "Example Family",
+        "createdAt": "2026-08-09T10:30:00Z"
+      }
+    ],
+    "adults": [
+      {
+        "adultId": "adult_example",
+        "familyIds": [
+          "fam_example"
+        ],
+        "displayName": "Parent / Guardian",
+        "role": "parent",
+        "email": "parent@example.com",
+        "emailVerified": true,
+        "contactOptIn": true,
+        "birthday": {
+          "month": 5,
+          "day": 12
+        },
+        "birthdayWishesOptIn": false,
+        "createdAt": "2026-08-09T10:30:00Z"
+      }
+    ],
+    "learners": [
+      {
+        "learnerId": "learner_example",
+        "familyId": "fam_example",
+        "nickname": "Learner",
+        "stage": "elementary",
+        "email": "",
+        "emailVerified": false,
+        "guardianContactConsent": false,
+        "birthday": {
+          "month": 9,
+          "day": 7
+        },
+        "birthdayWishesOptIn": false,
+        "guardianBirthdayConsent": false,
+        "createdAt": "2026-08-09T10:35:00Z"
+      }
+    ],
+    "progress": [
+      {
+        "learnerId": "learner_example",
+        "courseId": "grade-04-mathematics",
+        "courseTitle": "Grade 4 Mathematics",
+        "expectedAssignments": 5,
+        "completedAssignments": 3,
+        "overdueAssignments": 2,
+        "masteryAverage": 76,
+        "scoredItems": 3,
+        "lastActivityAt": "2026-08-01T15:00:00Z",
+        "updatedAt": "2026-08-01T15:00:00Z"
+      }
+    ]
+  },
+  "privacy": {
+    "learnerBirthYearRequired": false,
+    "exactLearnerDOBInDailyEmail": false,
+    "studentContactRosterDefault": "disabled",
+    "automaticBirthdayWishes": "disabled",
+    "futureBirthdayWishRequirements": [
+      "birthdayWishesOptIn=true",
+      "for minors: guardianBirthdayConsent=true",
+      "verified delivery address",
+      "age-appropriate template",
+      "disable/unsubscribe control",
+      "no grade, progress, health, address, or family details in greeting"
+    ]
+  }
+}

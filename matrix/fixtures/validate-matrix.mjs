@@ -1,0 +1,15 @@
+import fs from "node:fs";import vm from "node:vm";import path from "node:path";import {fileURLToPath} from "node:url";
+const here=path.dirname(fileURLToPath(import.meta.url));const matrix=path.dirname(here);
+const code=fs.readFileSync(path.join(matrix,"matrix-core.js"),"utf8");const sandbox={globalThis:{},URL};vm.createContext(sandbox);vm.runInContext(code,sandbox);const C=sandbox.globalThis.VNMatrixCore;
+const read=n=>JSON.parse(fs.readFileSync(path.join(here,n),"utf8"));
+const repositoriesDoc=read("repos.json"),resourcesDoc=read("resources.json"),taxonomy=read("taxonomy.json"),overrides=read("overrides.json"),anchors=read("anchors.json"),stageTargets=read("stage.json"),examples=read("examples.json");
+const a=C.validateRegistryStructure({repositoriesDoc,resourcesDoc});if(!a.issues.some(x=>x.type==="unmanifested-repository"))throw new Error("unmanifested repo check missing");
+const b=C.validateObjectiveOverlay({taxonomy,overrides,anchors,stageTargets,examples,resourcesDoc});if(b.some(x=>x.severity==="error"))throw new Error("valid objective fixture produced error");
+const tree={tree:[{type:"blob",path:"apps/hidden_index.html"},{type:"blob",path:"lessons/week-01.html"}]};
+const manifest={sourceId:"test.a",resources:[{url:"https://vervenveda.com/a/"}]};
+const repo={fullName:"test/a",manifest:{inventoryAuthority:""}};
+const cfg=JSON.parse(fs.readFileSync(path.join(matrix,"matrix-config.json"),"utf8"));
+const orphans=C.detectOrphans({tree,manifest,repo,config:cfg});if(!orphans.some(x=>x.path==="apps/hidden_index.html"))throw new Error("orphan entrypoint not detected");
+const nested=C.validateNestedManifests([{path:"academy/x/mentor-manifest.json",manifest:{sourceId:"test.a.child",mentorSearchable:true}}],manifest,repo);if(!nested.some(x=>x.type==="active-nested-manifest-authority"))throw new Error("nested authority not detected");
+const delegated=C.validateNestedManifests([{path:"academy/x/mentor-manifest.json",manifest:{sourceId:"test.a.delegate",mentorSearchable:false,inventoryAuthority:"delegated-to-root",delegatedTo:"test.a"}}],manifest,repo);if(!delegated.some(x=>x.type==="delegated-nested-manifest"))throw new Error("delegated nested manifest not recognized");
+console.log("PASS matrix core structural/objective/orphan/nested-authority tests");

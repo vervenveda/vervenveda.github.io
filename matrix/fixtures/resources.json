@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "resources": [
+    {
+      "id": "test.a.one",
+      "title": "One",
+      "url": "https://example.com/a/",
+      "sourceId": "test.a",
+      "repository": "test/a",
+      "recommendable": true,
+      "mentorEligible": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "generatedAt": "2026-08-09T22:49:28Z",
+  "repositories": [
+    {
+      "id": "github:test/a",
+      "fullName": "test/a",
+      "classification": "educational",
+      "discoveryStatus": "manifested",
+      "recommendable": true,
+      "archived": false,
+      "disabled": false,
+      "defaultBranch": "main",
+      "manifest": {
+        "path": "mentor-manifest.json",
+        "sha": "old",
+        "version": 1,
+        "sourceId": "test.a",
+        "inventoryAuthority": "",
+        "resourceCount": 1
+      }
+    },
+    {
+      "id": "github:test/b",
+      "fullName": "test/b",
+      "classification": "educational",
+      "discoveryStatus": "discovered",
+      "recommendable": false,
+      "archived": false,
+      "disabled": false
+    }
+  ]
+}

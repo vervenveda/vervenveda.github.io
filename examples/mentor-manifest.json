@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "sourceId": "example.learning-lab",
+  "name": "Example Learning Lab",
+  "classification": "educational",
+  "mentorSearchable": true,
+  "audiences": [
+    "elementary",
+    "middle"
+  ],
+  "roles": [
+    "student",
+    "parent",
+    "educator"
+  ],
+  "resources": [
+    {
+      "id": "fraction-lab",
+      "title": "Fraction Lab",
+      "description": "Visual fraction comparison practice.",
+      "url": "https://example.invalid/fraction-lab/",
+      "audiences": [
+        "elementary"
+      ],
+      "domains": [
+        "mathematics"
+      ],
+      "skills": [
+        "fractions",
+        "comparison"
+      ],
+      "tags": [
+        "visual",
+        "practice"
+      ],
+      "minutes": 12,
+      "energy": "steady",
+      "mentorEligible": true
+    }
+  ]
+}

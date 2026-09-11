@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verve N Veda Mentor Matrix Report",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "mode",
+    "summary",
+    "metrics",
+    "issues"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "standard",
+        "deep"
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "error",
+        "warning",
+        "info",
+        "total",
+        "status"
+      ]
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "severity",
+          "type",
+          "message"
+        ],
+        "properties": {
+          "severity": {
+            "enum": [
+              "error",
+              "warning",
+              "info"
+            ]
+          },
+          "type": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "examples": [
+    {
+      "title": "test",
+      "expected": [
+        "MATH.TEST"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "anchors": [
+    {
+      "pattern": "\\b(short vowels?|long vowels?|silent e|digraphs?|r-controlled|phonics)\\b",
+      "objectives": [
+        "ELA.PHONICS",
+        "ELA.SPELLING"
+      ]
+    },
+    {
+      "pattern": "\\b(prefix(?:es)?|suffix(?:es)?|morphology|greek.*roots?|latin.*roots?|word formation)\\b",
+      "objectives": [
+        "ELA.MORPHOLOGY",
+        "ELA.VOCABULARY"
+      ]
+    },
+    {
+      "pattern": "\\b(vocabulary|new word|context clues?)\\b",
+      "objectives": [
+        "ELA.VOCABULARY"
+      ]
+    },
+    {
+      "pattern": "\\b(reading stamina|fluency)\\b",
+      "objectives": [
+        "ELA.FLUENCY",
+        "ELA.READING_COMPREHENSION"
+      ]
+    },
+    {
+      "pattern": "\\b(text evidence|close reading|annotation)\\b",
+      "objectives": [
+        "ELA.TEXT_EVIDENCE",
+        "ELA.READING_COMPREHENSION"
+      ]
+    },
+    {
+      "pattern": "\\b(narrative|storytelling|story craft)\\b",
+      "objectives": [
+        "ELA.NARRATIVE_WRITING",
+        "ELA.READING_COMPREHENSION"
+      ]
+    },
+    {
+      "pattern": "\\b(informational writing|procedural writing|explanation)\\b",
+      "objectives": [
+        "ELA.INFORMATIONAL_WRITING"
+      ]
+    },
+    {
+      "pattern": "\\b(opinion|argument|persuasion|debate|public speaking|oral defense)\\b",
+      "objectives": [
+        "ELA.OPINION_ARGUMENT",
+        "ELA.PUBLIC_SPEAKING",
+        "SS.PUBLIC_ARGUMENT"
+      ]
+    },
+    {
+      "pattern": "\\b(research|source(?:s)?|thesis|citation|big question)\\b",
+      "objectives": [
+        "ELA.RESEARCH",
+        "X.RESEARCH_NAVIGATION",
+        "X.SOURCE_DISCOVERY"
+      ]
+    },
+    {
+      "pattern": "\\b(place value|tens and ones|powers of ten)\\b",
+      "objectives": [
+        "MATH.PLACE_VALUE",
+        "MATH.NUMBER_SENSE"
+      ]
+    },
+    {
+      "pattern": "\\b(addition|subtraction)\\b",
+      "objectives": [
+        "MATH.ADD_SUB"
+      ]
+    },
+    {
+      "pattern": "\\b(multiplication|division|arrays?|long division)\\b",
+      "objectives": [
+        "MATH.MULT_DIV"
+      ]
+    },
+    {
+      "pattern": "\\b(fractions?|equal shares?|fair sharing)\\b",
+      "objectives": [
+        "MATH.FRACTIONS"
+      ]
+    },
+    {
+      "pattern": "\\b(equivalent fractions?|equivalence)\\b",
+      "objectives": [
+        "MATH.FRACTIONS",
+        "MATH.FRACTION_EQUIVALENCE"
+      ]
+    },
+    {
+      "pattern": "\\b(decimals?)\\b",
+      "objectives": [
+        "MATH.DECIMALS"
+      ]
+    },
+    {
+      "pattern": "\\b(ratios?|rates?|unit rates?)\\b",
+      "objectives": [
+        "MATH.RATIOS_RATES"
+      ]
+    },
+    {
+      "pattern": "\\b(percent|percentage)\\b",
+      "objectives": [
+        "MATH.PERCENT"
+      ]
+    },
+    {
+      "pattern": "\\b(rational numbers?)\\b",
+      "objectives": [
+        "MATH.RATIONAL_NUMBERS"
+      ]
+    },
+    {
+      "pattern": "\\b(expressions?|algebraic)\\b",
+      "objectives": [
+        "MATH.ALGEBRAIC_EXPRESSIONS"
+      ]
+    },
+    {
+      "pattern": "\\b(equations?|inequalities?)\\b",
+      "objectives": [
+        "MATH.EQUATIONS_INEQUALITIES"
+      ]
+    },
+    {
+      "pattern": "\\b(geometry|quadrilaterals?|lines?, angles?|symmetry|shape design)\\b",
+      "objectives": [
+        "MATH.GEOMETRY",
+        "MATH.SYMMETRY"
+      ]
+    },
+    {
+      "pattern": "\\b(area|perimeter|surface area|volume|three-dimensional|3d)\\b",
+      "objectives": [
+        "MATH.AREA_VOLUME",
+        "MATH.MEASUREMENT"
+      ]
+    },
+    {
+      "pattern": "\\b(coordinate plane|coordinates?)\\b",
+      "objectives": [
+        "MATH.COORDINATE_PLANE"
+      ]
+    },
+    {
+      "pattern": "\\b(statistics|data displays?|data stories?|distribution)\\b",
+      "objectives": [
+        "MATH.STATISTICS",
+        "MATH.DATA_GRAPHING"
+      ]
+    },
+    {
+      "pattern": "\\b(probability|chance)\\b",
+      "objectives": [
+        "MATH.PROBABILITY"
+      ]
+    },
+    {
+      "pattern": "\\b(money|budgets?|financial reasoning|entrepreneurship)\\b",
+      "objectives": [
+        "MATH.FINANCIAL_REASONING",
+        "SS.ECONOMICS"
+      ]
+    },
+    {
+      "pattern": "\\b(force(?:s)?|motion|kinematics|velocity|acceleration|newton)\\b",
+      "objectives": [
+        "SCI.FORCE_MOTION",
+        "SCI.INQUIRY"
+      ]
+    },
+    {
+      "pattern": "\\b(matter|mixtures?|particles?|atomic|bonding|stoichiometry|phase change)\\b",
+      "objectives": [
+        "SCI.MATTER",
+        "SCI.MEASUREMENT_EVIDENCE"
+      ]
+    },
+    {
+      "pattern": "\\b(energy|sound|light|waves?|thermal|momentum|electricity|magnetism)\\b",
+      "objectives": [
+        "SCI.ENERGY_WAVES"
+      ]
+    },
+    {
+      "pattern": "\\b(plants?|seeds?|life cycles?|offspring)\\b",
+      "objectives": [
+        "SCI.LIFE_CYCLES"
+      ]
+    },
+    {
+      "pattern": "\\b(cells?|cellular|homeostasis|life structures?)\\b",
+      "objectives": [
+        "SCI.CELLS_SYSTEMS",
+        "SCI.MODELING"
+      ]
+    },
+    {
+      "pattern": "\\b(genetics?|heredity|traits?|variation|dna|meiosis|mendelian)\\b",
+      "objectives": [
+        "SCI.GENETICS_HEREDITY",
+        "SCI.QUANTITATIVE_REASONING"
+      ]
+    },
+    {
+      "pattern": "\\b(ecosystems?|habitats?|adaptations?|biodiversity|energy flow)\\b",
+      "objectives": [
+        "SCI.ECOSYSTEMS",
+        "SCI.ENVIRONMENTAL_STEWARDSHIP"
+      ]
+    },
+    {
+      "pattern": "\\b(earth materials?|weathering|erosion|fossils?)\\b",
+      "objectives": [
+        "SCI.EARTH_MATERIALS"
+      ]
+    },
+    {
+      "pattern": "\\b(earth systems?|earth spheres?|water cycle)\\b",
+      "objectives": [
+        "SCI.EARTH_SYSTEMS"
+      ]
+    },
+    {
+      "pattern": "\\b(weather|climate|seasonal patterns?|sky watch)\\b",
+      "objectives": [
+        "SCI.WEATHER_CLIMATE",
+        "SCI.OBSERVATION"
+      ]
+    },
+    {
+      "pattern": "\\b(stars?|sun, earth, moon|moon|astronomy|orbital|gravitation)\\b",
+      "objectives": [
+        "SCI.ASTRONOMY",
+        "SCI.MODELING"
+      ]
+    },
+    {
+      "pattern": "\\b(environmental stewardship|human impact|cleanup|restoration)\\b",
+      "objectives": [
+        "SCI.ENVIRONMENTAL_STEWARDSHIP",
+        "X.SERVICE_LEARNING"
+      ]
+    },
+    {
+      "pattern": "\\b(engineering|design studio|engineering solutions?)\\b",
+      "objectives": [
+        "ENG.DESIGN",
+        "X.PROBLEM_SOLVING"
+      ]
+    },
+    {
+      "pattern": "\\b(maps?|geography|regions?|landforms?)\\b",
+      "objectives": [
+        "SS.GEOGRAPHY_MAPS"
+      ]
+    },
+    {
+      "pattern": "\\b(civics?|government|constitution|voting)\\b",
+      "objectives": [
+        "SS.CIVICS_GOVERNMENT",
+        "SS.RIGHTS_RESPONSIBILITIES"
+      ]
+    },
+    {
+      "pattern": "\\b(rights?|responsibilities|citizenship|service)\\b",
+      "objectives": [
+        "SS.RIGHTS_RESPONSIBILITIES",
+        "SS.CITIZENSHIP_SERVICE"
+      ]
+    },
+    {
+      "pattern": "\\b(economics|goods|services|needs|wants|trade)\\b",
+      "objectives": [
+        "SS.ECONOMICS"
+      ]
+    },
+    {
+      "pattern": "\\b(history|colonial|revolution|civilizations?|indigenous|historical perspective)\\b",
+      "objectives": [
+        "SS.HISTORY_PERSPECTIVE"
+      ]
+    },
+    {
+      "pattern": "\\b(law|laws|policy|legal)\\b",
+      "objectives": [
+        "SS.LAW_POLICY"
+      ]
+    },
+    {
+      "pattern": "\\b(culture|traditions|belief systems?|world stories?)\\b",
+      "objectives": [
+        "SS.CULTURE"
+      ]
+    },
+    {
+      "pattern": "\\b(digital citizenship|online safety)\\b",
+      "objectives": [
+        "TECH.DIGITAL_CITIZENSHIP"
+      ]
+    },
+    {
+      "pattern": "\\b(coding|computational thinking)\\b",
+      "objectives": [
+        "TECH.CODING"
+      ]
+    },
+    {
+      "pattern": "\\b(spreadsheets?|data tools?)\\b",
+      "objectives": [
+        "TECH.DATA_TOOLS"
+      ]
+    },
+    {
+      "pattern": "\\b(visual art|art studio|color theory|collage|poster)\\b",
+      "objectives": [
+        "ART.VISUAL_ART",
+        "ART.COLOR",
+        "ART.COMPOSITION"
+      ]
+    },
+    {
+      "pattern": "\\b(poetry, rhythm|rhythm|music)\\b",
+      "objectives": [
+        "MUSIC.RHYTHM",
+        "MUSIC.LITERACY"
+      ]
+    },
+    {
+      "pattern": "\\b(world languages?|language learning|cultural communication)\\b",
+      "objectives": [
+        "LANG.LANGUAGE_LEARNING",
+        "LANG.COMMUNICATION"
+      ]
+    },
+    {
+      "pattern": "\\b(health|wellness|responsible choices)\\b",
+      "objectives": [
+        "HEALTH.HEALTH_LITERACY",
+        "HEALTH.DECISION_MAKING",
+        "SEL.WELLNESS"
+      ]
+    },
+    {
+      "pattern": "\\b(goal setting|growth mindset)\\b",
+      "objectives": [
+        "HEALTH.GOAL_SETTING",
+        "SEL.SELF_MANAGEMENT"
+      ]
+    }
+  ]
+}

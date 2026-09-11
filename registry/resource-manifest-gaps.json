@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "checked": "2026-08-09",
+  "principle": "A resource can exist and still be intentionally non-targetable until its source repository exposes verified Mentor metadata.",
+  "gaps": [
+    {
+      "source": "khaemenes.preschool",
+      "status": "catalog-level-only",
+      "issue": "Crech\u00e8 exposes 52 child adventures through one Adventure Garden resource rather than individually manifested activity records.",
+      "effect": "Mentor can recommend the garden broadly but cannot make defensible lesson-to-specific-adventure claims from the root manifest alone.",
+      "nextRepair": "Deep preschool adventure manifest/catalog adapter."
+    },
+    {
+      "source": "verve.bazaar-art",
+      "status": "provisional-root-anchor",
+      "issue": "Bazaar Art's Mentor manifest exposes the specialist repository root rather than verified child courses/studios.",
+      "effect": "Visual-art objectives can route to Bazaar as exploration, but Art 101/201/301 and studios should not be treated as individually Mentor-owned until deep inventory is promoted.",
+      "nextRepair": "Deep Bazaar Art manifest."
+    },
+    {
+      "source": "verve.solanar",
+      "status": "provisional-root-anchor",
+      "issue": "Solanar exposes the Observatory root as the verified inventory authority while child weather/science paths continue expanding.",
+      "effect": "Weather/Earth-system mapping is valid at hub level but not yet child-app precise.",
+      "nextRepair": "Deep Solanar course/app manifest."
+    },
+    {
+      "source": "verve.river-to-road",
+      "status": "provisional-root-anchor",
+      "issue": "River-to-Road currently exposes its root environmental/service-learning gateway.",
+      "effect": "Mentor can align environmental stewardship/service learning to the hub, but event/tool-level targeting awaits a deep inventory.",
+      "nextRepair": "Deep River-to-Road manifest."
+    },
+    {
+      "source": "verve.firmament",
+      "status": "provisional-root-anchor",
+      "issue": "Firmament is currently a root-level legal/research federation anchor.",
+      "effect": "Law/civics objectives should route only to the verified hub until its child legal-study resources are enumerated.",
+      "nextRepair": "Deep Firmament manifest."
+    },
+    {
+      "source": "finance",
+      "status": "not-yet-recommendable-in-current-registry",
+      "issue": "The repository registry records Finance as discovered rather than validly manifested for recommendation.",
+      "effect": "Do not automatically route financial-reasoning objectives into Finance yet; use existing Khaemenes curriculum/internal tools until a source manifest is verified.",
+      "nextRepair": "Finance manifest and safety/age classification."
+    },
+    {
+      "source": "music-specialist",
+      "status": "verify-deep-inventory",
+      "issue": "The High School resource catalog references The Refrain and music courses/studios, but this Repair does not assert child-resource Mentor ownership without a fetched source manifest.",
+      "effect": "Music objectives remain in the taxonomy, while specific specialist recommendations should wait for verified source metadata.",
+      "nextRepair": "The Refrain source-manifest verification/deep inventory."
+    }
+  ]
+}

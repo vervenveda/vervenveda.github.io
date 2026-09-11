@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "status": "PASS_WITH_WARNINGS",
+    "error": 0,
+    "warning": 2,
+    "info": 1
+  },
+  "metrics": {
+    "repositories": 80,
+    "manifestedRepositories": 20,
+    "resources": 120,
+    "objectives": 110,
+    "overrides": 68,
+    "urlsChecked": 100
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "stale-registry-manifest",
+      "message": "Central registry is stale for example/repo.",
+      "repository": "example/repo"
+    },
+    {
+      "severity": "warning",
+      "type": "unmanifested-repository",
+      "message": "Repository is not manifested: example/other",
+      "repository": "example/other"
+    }
+  ]
+}

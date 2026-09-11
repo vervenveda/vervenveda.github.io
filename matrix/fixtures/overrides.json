@@ -1,0 +1,13 @@
+{
+  "overrides": [
+    {
+      "sourceId": "test.a",
+      "localId": "one",
+      "objectiveIds": [
+        "MATH.TEST"
+      ],
+      "alignment": "direct-practice",
+      "canCountAsMasteryEvidence": false
+    }
+  ]
+}
