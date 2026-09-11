@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Verve N Veda · STOS Gateway</title>
+<style>
+:root{color-scheme:light;background:#f7f3ec;color:#171417}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#fbf8f2,#f3ede4)}
+main{width:min(760px,100%);padding:42px;border:1px solid #d8cec2;border-radius:7px;background:#fff;box-shadow:0 18px 55px rgba(40,25,34,.09);text-align:center}
+h1{margin:0 0 10px;font-family:Georgia,serif;font-weight:400;letter-spacing:.08em;font-size:clamp(28px,5vw,52px)}
+p{max-width:610px;margin:10px auto;line-height:1.65;color:#564b50}
+.status{margin:24px auto 0;padding:13px 16px;border:1px solid #d9d0ca;border-radius:7px;background:#faf8f4;font-size:14px}
+a{display:inline-block;margin-top:22px;color:#4f3656;text-decoration:none;font-weight:700}
+small{display:block;margin-top:26px;color:#81767b}
+</style>
+<script src="/assets/stos-public-config.js"></script>
+</head>
+<body>
+<main>
+  <h1>Verve N Veda</h1>
+  <p>The public Verve N Veda gateway remains here while ecosystem navigation is handed to the sovereign STOS Verve N Veda environment.</p>
+  <div id="status" class="status">Connecting to the STOS public gateway…</div>
+  <a href="/">Return to Verve N Veda</a>
+  <small>Public handoff only · no private STOS paths or internal authority are exposed here.</small>
+</main>
+<script>
+(function(){
+  const status=document.getElementById('status');
+  const raw=(window.STOS_PUBLIC_GATEWAY&&window.STOS_PUBLIC_GATEWAY.url||'').trim();
+  let u=null;
+  try{ u=raw?new URL(raw):null; }catch(_){}
+  if(u && u.protocol==='https:'){
+    status.textContent='Opening the sovereign STOS Verve N Veda gateway…';
+    setTimeout(()=>location.replace(u.href),120);
+  }else{
+    status.textContent='The STOS public HTTPS gateway is not commissioned yet. This public page is bridge-ready and no longer routes visitors into individual GitHub ecosystem repositories.';
+  }
+})();
+</script>
+</body>
+</html>
