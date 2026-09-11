@@ -48,6 +48,11 @@
     {
       "mechanism": "/assets/vnv-beta-link.js",
       "state": "covered",
+      "surface": "matrix/index.html"
+    },
+    {
+      "mechanism": "/assets/vnv-beta-link.js",
+      "state": "covered",
       "surface": "stos/index.html"
     }
   ],
@@ -69,7 +74,7 @@
   "summary": {
     "actionableUnresolved": 0,
     "addedInThisRun": 0,
-    "coveredPublicIndexSurfaces": 10,
+    "coveredPublicIndexSurfaces": 11,
     "excludedByPolicy": 4
   }
 }

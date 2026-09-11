@@ -1,7 +1,7 @@
 # Beta Index Coverage
 
 - Added in this run: **0**
-- Already covered: **10**
+- Already covered: **11**
 - Excluded by policy: **4**
 - Actionable unresolved: **0**
 
