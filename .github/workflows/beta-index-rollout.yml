@@ -4,10 +4,18 @@ on:
   push:
     paths:
       - '**/index.html'
+      - '**/*_index.html'
+      - '**/*-index.html'
+      - '**/inndex.html'
       - '.github/workflows/beta-index-rollout.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: beta-index-rollout-main
+  cancel-in-progress: true
 
 jobs:
   rollout:
@@ -23,15 +31,22 @@ jobs:
           widget='<script src="https://vervenveda.com/assets/vnv-beta-link.js" defer></script>'
           direct='<a href="https://vervenveda.com/beta/" aria-label="Open the Verve N Veda Beta Program" style="position:fixed;right:14px;bottom:14px;z-index:2147483647;padding:9px 12px;border:1px solid currentColor;border-radius:7px;background:#fff;color:#111;text-decoration:none;font:600 13px/1.2 system-ui,sans-serif">β Beta Program</a>'
           script_re=re.compile(r'<script\b[^>]*src=["\'][^"\']*vnv-beta-link\.js[^"\']*["\'][^>]*>\s*</script>',re.I)
+          excluded={'.git','.github','node_modules','vendor','archive','archives','backup','backups','deprecated','private','admin','beta','stos'}
           changed=[]
-          for p in sorted(Path('.').rglob('index.html')):
-              if '.github' in p.parts or '.git' in p.parts: continue
+          for p in sorted(Path('.').rglob('*.html')):
+              if not (re.search(r'^(?:index|inndex)\.html$',p.name.lower()) or re.search(r'(?:_|-)index\.html$',p.name.lower())): continue
+              if {x.lower() for x in p.parts}&excluded: continue
               try: original=p.read_text(encoding='utf-8')
               except UnicodeDecodeError: continue
               t=original
+              t=re.sub(r'https://vervenveda\.github\.io[^"\']*/beta/', 'https://vervenveda.com/beta/', t, flags=re.I)
               has_csp='content-security-policy' in t.lower()
               has_direct='Open the Verve N Veda Beta Program' in t
-              has_widget='vnv-beta-link.js' in t
+              has_widget=bool(script_re.search(t))
+              if has_widget and not has_csp:
+                  cleaned=script_re.sub('',t)
+                  pos=cleaned.lower().rfind('</body>')
+                  if pos>=0: t=cleaned[:pos]+'\n'+widget+'\n'+cleaned[pos:]
               if has_csp:
                   if has_widget: t=script_re.sub(direct,t)
                   elif not has_direct:
