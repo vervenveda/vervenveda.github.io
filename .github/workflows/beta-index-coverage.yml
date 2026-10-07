@@ -23,14 +23,14 @@ jobs:
           import re
 
           tag='<script src="/assets/vnv-beta-link.js" defer></script>'
-          excluded={'.git','.github','node_modules','vendor','archive','archives','backup','backups','deprecated','private','admin','beta'}
+          excluded={'.git','.github','node_modules','vendor','archive','archives','backup','backups','deprecated','private','admin','beta','stos'}
           changed=[]
           already=[]
           excluded_paths=[]
           unresolved=[]
 
           for p in sorted(Path('.').rglob('*.html')):
-            if not re.search(r'in+dex\.html$',p.name.lower()):
+            if not (re.search(r'^(?:index|inndex)\.html$',p.name.lower()) or re.search(r'(?:_|-)index\.html$',p.name.lower())):
               continue
 
             path=str(p)
@@ -44,8 +44,12 @@ jobs:
               unresolved.append((path,'non-utf8'))
               continue
 
-            if 'vnv-beta-link.js' in text:
+            if re.search(r'(?:https://vervenveda\.com)?/assets/vnv-beta-link\.js', text, re.I):
               already.append(path)
+              continue
+
+            if re.search(r'vervenveda\.github\.io[^"\']*/beta/', text, re.I):
+              unresolved.append((path,'legacy-beta-url'))
               continue
 
             c=re.search(r'<meta[^>]+http-equiv=["\']Content-Security-Policy["\'][^>]+content=["\']([^"\']*)',text,re.I)
