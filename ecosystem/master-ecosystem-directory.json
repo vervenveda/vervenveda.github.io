@@ -57,7 +57,7 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/vervenveda.github.io/beta/"
+      "url": "https://vervenveda.com/beta/"
     },
     {
       "id": "network-333",
@@ -1545,7 +1545,7 @@
       "access": "free-public",
       "status": "admin",
       "directoryVisible": false,
-      "url": "https://vervenveda.github.io/vervenveda.github.io/admin/2index.html"
+      "url": "https://vervenveda.com/admin/2index.html"
     }
   ]
 }
