@@ -43,10 +43,10 @@ footer{padding:35px 0;color:#727d77;font-size:12px;border-top:1px solid var(--li
 <form class="feedback" id="betaForm" novalidate>
   <div class="field"><label for="page">Page, class or tool</label><input id="page" name="page" maxlength="120" autocomplete="off" placeholder="Example: Pre-Algebra · Week 6"></div>
   <div class="field"><label for="message">Your beta report</label><textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea><div class="char-row"><span>Do not include passwords or private personal information.</span><span id="count">0 / 1200</span></div></div>
-  <div class="actions"><button class="btn" id="submitBtn" type="submit">Send to Admin Notifications</button><button class="btn secondary" id="clearBtn" type="button">Clear Draft</button></div>
+  <div class="actions"><button class="btn" id="submitBtn" type="submit">Save / Send Beta Report</button><button class="btn secondary" id="clearBtn" type="button">Clear Draft</button></div>
   <p class="status" id="status" role="status" aria-live="polite"></p>
   <div class="receipt-panel" id="receiptPanel" hidden><h3>Private report prepared.</h3><p id="receiptState">A sanitized receipt is available below.</p><div class="actions"><button class="btn secondary" id="downloadBtn" type="button">Download Sanitized Copy</button><button class="btn gold" id="printBtn" type="button">Print Sanitized Copy</button></div></div>
-  <p class="daily-note"><strong>Privacy boundary:</strong> no public sharing control is provided. Sanitized receipts remove URLs, repository-style addresses, administrator/API routes, browser-storage keys, and network-address patterns. The administrator notification bridge is the intended delivery destination.</p>
+  <p class="daily-note"><strong>Privacy boundary:</strong> no public sharing control is provided. Sanitized receipts remove URLs, repository-style addresses, administrator/API routes, browser-storage keys, and network-address patterns. Delivery to administration requires a verified private receiver. Reports remain on this device until delivery is confirmed.</p>
 </form>
 <p class="privacy-line">If the private bridge is not configured on this deployment, the report fails closed: it remains private on the current device and is not posted publicly.</p>
 </div></section>
@@ -120,6 +120,7 @@ function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;",
 
 function updateCount(){count.textContent=`${message.value.length} / 1200`}
 function saveDraft(){write(DRAFT_KEY,{page:page.value.slice(0,120),message:message.value.slice(0,1200)})}
+const REPORT_SCHEMA="vnv-beta-report-v1";
 function bridgeEndpoint(){
   const settings=read(ADMIN_SETTINGS_KEY,{});
   const endpoint=typeof settings?.bridgeEndpoint==="string"?settings.bridgeEndpoint.trim():"";
@@ -148,7 +149,6 @@ function stageLocalAdmin(report){
 }
 
 async function deliverPrivate(report){
-  stageLocalAdmin(report);
   const endpoint=bridgeEndpoint();
   if(!endpoint)return {remote:false,local:true,reason:"bridge-not-configured"};
   try{
@@ -170,7 +170,9 @@ async function deliverPrivate(report){
       })
     });
     if(!res.ok)throw new Error(`HTTP ${res.status}`);
-    return {remote:true,local:true};
+    const response=await res.json();
+    if(response?.ok!==true||typeof response.receiptId!=="string"||!/^[a-zA-Z0-9_-]{8,120}$/.test(response.receiptId))throw new Error("Unverified receiver acknowledgement");
+    return {remote:true,local:true,receiptId:response.receiptId};
   }catch(error){
     return {remote:false,local:true,reason:String(error?.message||error)};
   }
@@ -195,21 +197,23 @@ form.addEventListener("submit",async e=>{
   const text=cleanPlain(message.value,1200);
   if(text.length<10){status.textContent="Please add a little more detail so the report is useful.";message.focus();return}
   const report={
-    id:uid(),date:today(),createdAt:new Date().toISOString(),
+    schema:REPORT_SCHEMA,id:uid(),date:today(),createdAt:new Date().toISOString(),
     page:cleanPlain(page.value,120),message:text
   };
-  write(REPORT_KEY,report);
-  try{localStorage.removeItem(DRAFT_KEY)}catch{}
+  const saved=write(REPORT_KEY,report);
+  if(!saved){status.textContent="Unable to save your report on this device. Please copy your text before leaving.";return}
   submitBtn.disabled=true;
   status.textContent="Sending through the private administrator channel…";
   const result=await deliverPrivate(report);
   receiptPanel.hidden=false;
   if(result.remote){
-    status.textContent="Submitted privately to the administrator notification channel.";
+    stageLocalAdmin(report);
+    try{localStorage.removeItem(DRAFT_KEY)}catch{}
+    status.textContent=`Private receiver confirmed report ${result.receiptId}. Please retain your receipt.`;
     receiptState.textContent="A sanitized receipt is available. No public share action was used.";
   }else{
-    status.textContent="Saved privately on this device. The remote administrator bridge is not configured or could not be reached; nothing was posted publicly.";
-    receiptState.textContent="The report remains private on this device. A sanitized receipt is available.";
+    status.textContent="Saved on this device only. No verified administrator delivery occurred. Keep your report and try again when the secure receiver is available.";
+    receiptState.textContent="Not delivered. A sanitized local copy is available; your draft is retained for retry.";
   }
   submitBtn.disabled=false;
 });
