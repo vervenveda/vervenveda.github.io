@@ -4,6 +4,7 @@
 
   const URL = "https://vervenveda.com/beta/COVERAGE.json";
   const FALLBACK = "../beta/COVERAGE.json";
+  const PAGE_FEED = "../beta/coverage-feed.json";
   const $ = id => document.getElementById(id);
   const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({
     "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;"
@@ -101,6 +102,7 @@
         <div class="beta-cover-stat"><span>Release Holds</span><strong id="betaCoverHeld">—</strong></div>
       </div>
       <div class="beta-cover-list" id="betaCoverageList"></div>
+      <div class="beta-cover-row" style="margin-top:12px"><strong>Verified page inventory (repository-local)</strong><small id="betaPageInventory">Loading the public index coverage feed…</small></div>
       <p class="safety-note" id="betaCoverageNote">Coverage reporting contains public route/status counts only. Beta source attribution excludes learner IDs, family IDs, grades, answers, form values, query strings, URL hashes, browser storage and credentials.</p>`;
     beta.append(panel);
     return true;
@@ -136,7 +138,21 @@
     }).join("");
   }
 
+  async function refreshPageFeed(){
+    const el=$("betaPageInventory");if(!el)return;
+    try{
+      const res=await fetch(PAGE_FEED,{cache:"no-store",credentials:"omit"});
+      if(!res.ok)throw new Error("HTTP "+res.status);
+      const data=await res.json();
+      if(data.format!=="vnv-beta-coverage-feed-v1"||!Array.isArray(data.coverage))throw new Error("Invalid feed");
+      const covered=data.coverage.filter(x=>x.state==="covered").length;
+      const unresolved=data.coverage.filter(x=>x.state==="unresolved").length;
+      el.textContent=covered+" recorded public index pages covered; "+unresolved+" unresolved. This feed does not certify every HTML page or live widget behavior. Visitor reports are not available through this public feed.";
+    }catch{el.textContent="Page coverage feed unavailable; do not infer complete coverage."}
+  }
+
   async function refresh(){
+    refreshPageFeed();
     if(!inject()) return;
     try{
       render(await readCoverage());
