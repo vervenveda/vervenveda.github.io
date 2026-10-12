@@ -48,7 +48,7 @@ footer{padding:35px 0;color:#727d77;font-size:12px;border-top:1px solid var(--li
   <div class="receipt-panel" id="receiptPanel" hidden><h3>Private report prepared.</h3><p id="receiptState">A sanitized receipt is available below.</p><div class="actions"><button class="btn secondary" id="downloadBtn" type="button">Download Sanitized Copy</button><button class="btn gold" id="printBtn" type="button">Print Sanitized Copy</button></div></div>
   <p class="daily-note"><strong>Privacy boundary:</strong> no public sharing control is provided. Sanitized receipts remove URLs, repository-style addresses, administrator/API routes, browser-storage keys, and network-address patterns. Delivery to administration requires a verified private receiver. Reports remain on this device until delivery is confirmed.</p>
 </form>
-<p class="privacy-line">Without a private receiver, reports remain on this device. The optional Email Report button opens your own email application; you must review and send the email yourself. Opening email does not confirm delivery.</p>
+<section class="feedback" aria-labelledby="outboxHeading"><h3 id="outboxHeading">Private Report Outbox</h3><p class="intro">Reports are stored only in this browser. Email prepared does not mean sent. A secure receiver acknowledgement is not proof of inbox delivery.</p><div id="outboxList" role="list"></div><div class="actions"><button class="btn secondary" id="refreshOutbox" type="button">Refresh Outbox</button></div></section><p class="privacy-line">Without a private receiver, reports remain on this device. The optional Email Report button opens your own email application; you must review and send the email yourself. Opening email does not confirm delivery.</p>
 </div></section>
 </main>
 <footer><div class="shell">Verve N Veda · Private Beta Program</div></footer>
@@ -59,6 +59,7 @@ footer{padding:35px 0;color:#727d77;font-size:12px;border-top:1px solid var(--li
 
 const DRAFT_KEY="vervenveda_beta_draft_v3";
 const REPORT_KEY="vervenveda_beta_private_report_v3";
+const OUTBOX_KEY="vervenveda_beta_outbox_v1";
 const ADMIN_NOTICES_KEY="VNV_ADMIN_NOTIFICATIONS_V1";
 const ADMIN_BETA_KEY="VNV_ADMIN_BETA_V1";
 const ADMIN_SETTINGS_KEY="VNV_ADMIN_SETTINGS_V1";
@@ -71,6 +72,7 @@ const status=document.getElementById("status");
 const submitBtn=document.getElementById("submitBtn");
 const clearBtn=document.getElementById("clearBtn");
 const emailBtn=document.getElementById("emailBtn");
+const outboxList=document.getElementById("outboxList");
 const receiptPanel=document.getElementById("receiptPanel");
 const receiptState=document.getElementById("receiptState");
 const downloadBtn=document.getElementById("downloadBtn");
@@ -121,6 +123,26 @@ function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;",
 
 function updateCount(){count.textContent=`${message.value.length} / 1200`}
 function saveDraft(){write(DRAFT_KEY,{page:page.value.slice(0,120),message:message.value.slice(0,1200)})}
+function outbox(){const items=read(OUTBOX_KEY,[]);return Array.isArray(items)?items.filter(x=>x&&typeof x.id==="string").slice(0,100):[]}
+function storeReport(report,state){
+  const items=outbox().filter(x=>x.id!==report.id);
+  items.unshift({...report,deliveryState:state,updatedAt:new Date().toISOString()});
+  return write(OUTBOX_KEY,items.slice(0,100));
+}
+function showOutbox(){
+  outboxList.replaceChildren();
+  const items=outbox();
+  if(!items.length){const p=document.createElement("p");p.textContent="No locally saved reports yet.";outboxList.append(p);return}
+  for(const item of items){
+    const row=document.createElement("div");row.setAttribute("role","listitem");row.className="card";row.style.marginTop="10px";
+    const heading=document.createElement("strong");heading.textContent=(item.page||"Learning surface")+" — "+item.deliveryState;
+    const details=document.createElement("p");details.textContent=item.date+" · "+item.id;
+    const reopen=document.createElement("button");reopen.type="button";reopen.className="btn secondary";reopen.textContent="Reopen / Retry";
+    reopen.addEventListener("click",()=>{page.value=item.page||"";message.value=item.message||"";write(REPORT_KEY,item);saveDraft();updateCount();status.textContent="Report reopened. Review and choose Save / Send or Email Report.";form.scrollIntoView({behavior:"smooth",block:"start"})});
+    row.append(heading,details,reopen);outboxList.append(row)
+  }
+}
+document.getElementById("refreshOutbox").addEventListener("click",showOutbox);
 const REPORT_SCHEMA="vnv-beta-report-v1";
 function bridgeEndpoint(){
   const settings=read(ADMIN_SETTINGS_KEY,{});
@@ -197,8 +219,8 @@ emailBtn.addEventListener("click",()=>{
   const current=read(REPORT_KEY,null);
   const same=current&&current.page===cleanPlain(page.value,120)&&current.message===text;
   const report=same?current:{schema:REPORT_SCHEMA,id:uid(),date:today(),createdAt:new Date().toISOString(),page:cleanPlain(page.value,120),message:text};
-  if(!write(REPORT_KEY,report)){status.textContent="Unable to save a local copy. Please copy your text before continuing.";return}
-  saveDraft();
+  if(!write(REPORT_KEY,report)||!storeReport(report,"email-prepared")){status.textContent="Unable to save a local copy. Please copy your text before continuing.";return}
+  saveDraft();showOutbox();
   const subject=encodeURIComponent("Verve N Veda Beta Report — "+report.id);
   const body=encodeURIComponent(receiptText(report)+"\n\nReceipt ID: "+report.id+"\n\nThis email must be sent manually by the visitor.");
   status.textContent="Your email application will open. Review the sanitized message and press Send there. Delivery is not confirmed here.";
@@ -220,21 +242,24 @@ form.addEventListener("submit",async e=>{
     page:cleanPlain(page.value,120),message:text
   };
   const saved=write(REPORT_KEY,report);
-  if(!saved){status.textContent="Unable to save your report on this device. Please copy your text before leaving.";return}
+  if(!saved||!storeReport(report,"ready")){status.textContent="Unable to save your report on this device. Please copy your text before leaving.";return}
   submitBtn.disabled=true;
   status.textContent=bridgeEndpoint()?"Contacting the configured private receiver…":"Saving locally; no private receiver is configured.";
   const result=await deliverPrivate(report);
   receiptPanel.hidden=false;
   if(result.remote){
+    storeReport(report,"receiver-accepted");
     stageLocalAdmin(report);
     try{localStorage.removeItem(DRAFT_KEY)}catch{}
     status.textContent=`Private receiver confirmed report ${result.receiptId}. Please retain your receipt.`;
     receiptState.textContent="A sanitized receipt is available. No public share action was used.";
   }else{
+    storeReport(report,"needs-attention");
     status.textContent="Saved on this device only. No verified administrator delivery occurred. Keep your report and try again when the secure receiver is available.";
     receiptState.textContent="Not delivered. A sanitized local copy is available; your draft is retained for retry.";
   }
   submitBtn.disabled=false;
+  showOutbox();
 });
 
 downloadBtn.addEventListener("click",()=>{
@@ -256,6 +281,7 @@ printBtn.addEventListener("click",()=>{
 });
 
 restore();
+showOutbox();
 })();
 </script>
 
