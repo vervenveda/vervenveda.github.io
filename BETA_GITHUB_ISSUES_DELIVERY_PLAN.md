@@ -1,3 +1,9 @@
+# SUPERSEDED — do not implement
+
+The administrator has rejected GitHub Issues and third-party Beta integration. This historical document is retained for audit only. **Current direction:** Verve N Veda branded Beta form; interim administrator email recipient `vervenveda@proton.me` after a secure first-party intake service is operational; future STOS integration only after secure terminal commissioning. Do not enable GitHub Issues delivery or treat browser-local report storage as delivered email. Work on `main` only and preserve STOS files.
+
+---
+
 # Beta Feedback → GitHub Issues: secure delivery plan
 
 Status: design / not yet deployed
