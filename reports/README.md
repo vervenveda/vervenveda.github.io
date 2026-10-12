@@ -69,7 +69,7 @@ Required for email:
 - `REPORT_SMTP_FROM`
 - `REPORT_SMTP_SECURITY`
 
-Set `REPORT_TO` to the private Proton address you provided in chat.
+Set `REPORT_TO` to `vervenveda@proton.me` (the confirmed administrator notification recipient). Do not put SMTP passwords or authentication tokens in this file.
 
 Do not place SMTP passwords in HTML, JavaScript, Python source, repository variables, or commits.
 
@@ -91,3 +91,7 @@ After upload and SMTP-secret configuration:
 GitHub → Actions → Daily Khaemenes Admin Report → Run workflow
 
 The Matrix step intentionally uses `continue-on-error`; the report should still email you when the Matrix discovers problems.
+
+Confirm the workflow run has succeeded **and** that a message actually arrived at `vervenveda@proton.me` (check spam as well). A successful GitHub Actions run alone does not prove inbox delivery. If mail fails, inspect the job logs for SMTP errors without copying credentials into issues, logs, or chat.
+
+**Beta limitation:** this scheduled workflow is not an inbound Beta report receiver. The public Beta form currently saves reports locally unless a protected HTTPS bridge is configured. Do not claim that Beta reports are emailed automatically. A first-party receiving service is required for unattended submissions; preserve a dormant adapter boundary for future STOS commissioning.
