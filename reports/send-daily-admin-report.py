@@ -533,6 +533,10 @@ def send_email(
     sender = env("REPORT_SMTP_FROM") or username
     recipients = [x.strip() for x in env("REPORT_TO").split(",") if x.strip()]
     security = env("REPORT_SMTP_SECURITY", "starttls").lower()
+    if security not in {"starttls", "ssl"}:
+        raise RuntimeError("Unsupported REPORT_SMTP_SECURITY: require starttls or ssl")
+    if len(recipients) != 1 or recipients[0].lower() != "vervenveda@proton.me":
+        raise RuntimeError("REPORT_TO must be the confirmed private administrator recipient")
 
     missing = []
     if not host:
@@ -653,7 +657,7 @@ def main() -> int:
         return 0
 
     send_email(subject, text_body, html_body, args.matrix, derived, outdir)
-    print("Daily Khaemenes administrative report sent.")
+    print("Daily Khaemenes administrative report accepted by SMTP; inbox delivery must be verified separately.")
     return 0
 
 
