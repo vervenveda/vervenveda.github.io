@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-12T15:18:55.894Z",
-  "sourceLatestRepositoryTimestamp": "2026-10-12T14:54:24Z",
+  "generatedAt": "2026-10-13T00:37:03.106Z",
+  "sourceLatestRepositoryTimestamp": "2026-10-13T00:34:57Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -7473,81 +7473,10 @@
       "manifestPath": "mentor-manifest.json"
     },
     {
-      "id": "vervenveda.khaemenes_linguistics.github.io.arabic-365",
-      "title": "Arabic 365",
-      "description": "",
-      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_365_index.html",
-      "sourceId": "khaemenes.linguistics",
-      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
-      "classification": "educational",
-      "audiences": [
-        "middle",
-        "high",
-        "higher-learning",
-        "adult"
-      ],
-      "roles": [
-        "student",
-        "parent",
-        "educator"
-      ],
-      "domains": [
-        "languages"
-      ],
-      "skills": [
-        "arabic",
-        "vocabulary"
-      ],
-      "tags": [
-        "arabic",
-        "daily-practice"
-      ],
-      "minutes": 15,
-      "energy": "steady",
-      "featured": false,
-      "mentorEligible": true,
-      "recommendable": true,
-      "explicitAdultOptIn": false,
-      "resourceType": "",
-      "learningValue": "",
-      "curricularWeight": "",
-      "learningObjectives": [],
-      "subjects": [],
-      "highStakesDomain": "",
-      "inventoryAuthority": "",
-      "requiresLinkedLearner": false,
-      "requiredStage": "",
-      "requiresFreshnessCheck": false,
-      "dynamicContent": false,
-      "requiresPreferenceMatch": [],
-      "requiresAccountAwareness": false,
-      "sensitiveTopics": [],
-      "externalInformation": false,
-      "sourcePriority": 0,
-      "freshnessWindowMinutes": null,
-      "contentType": "",
-      "policyTags": [],
-      "requiresExplicitQuery": false,
-      "policy": {
-        "requiresFreshnessCheck": false,
-        "dynamicContent": false,
-        "requiresPreferenceMatch": [],
-        "requiresAccountAwareness": false,
-        "requiresLinkedLearner": false,
-        "requiredStage": "",
-        "sensitiveTopics": [],
-        "externalInformation": false,
-        "highStakesDomain": "",
-        "requiresExplicitQuery": false,
-        "policyTags": []
-      },
-      "manifestPath": "mentor-manifest.json"
-    },
-    {
       "id": "vervenveda.khaemenes_linguistics.github.io.arabic-daily",
       "title": "Arabic Daily",
       "description": "",
-      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_daily_index.html",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Daily-language/index.html",
       "sourceId": "khaemenes.linguistics",
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
       "classification": "educational",
@@ -7830,7 +7759,7 @@
       "id": "vervenveda.khaemenes_linguistics.github.io.quran-root-explorer",
       "title": "Arabic Qur'an Root Explorer",
       "description": "",
-      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_Quran_root_explorer_index.html",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quran_root_explorer/index.html",
       "sourceId": "khaemenes.linguistics",
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
       "classification": "educational",
