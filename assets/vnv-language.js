@@ -79,7 +79,15 @@ function coverage(){
 function updateCoverage(){
  const c=coverage(),labels=CONTROL_LABELS[lang]||CONTROL_LABELS.en;
  for(const el of document.querySelectorAll("[data-vnv-coverage]")){
-  el.textContent=lang==="en"?labels[3]:`${Math.round(100*c.translated/Math.max(c.total,1))}% ${labels[4]} · ${c.missing} ${labels[5]}`;
+  // Show provenance rather than suggesting every available phrase is independently verified.
+  const e=c.evidence;
+  const drafts=e["unreviewed-source-draft"]+e["machine-or-browser-cache"];
+  el.textContent=lang==="en"?labels[3]:
+   `${Math.round(100*c.translated/Math.max(c.total,1))}% available · ${e["locally-reviewed"]} reviewed · ${e["curated-public-copy"]} curated · ${drafts} drafts · ${e.untranslated} untranslated`;
+  el.title="Source-string matches, not a human accuracy score. Composed interface: "+e["composed-interface"]+
+   "; unreviewed source: "+e["unreviewed-source-draft"]+"; machine/browser cache: "+e["machine-or-browser-cache"]+
+   "; original language: "+e["source-language"]+". Export Translation audit for full details.";
+  el.lang="en";el.dir="ltr";
  }
 }
 function scheduleCoverage(){
