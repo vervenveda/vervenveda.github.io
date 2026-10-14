@@ -1,0 +1,164 @@
+/*
+  Verve N Veda · Shared Public Presentation Standard · v1
+  Applies only to public GitHub-facing pages that opt in.
+  Dormant STOS, archive, disabled, diagnostic, and source-snippet surfaces are intentionally excluded.
+*/
+:root{
+  --vnv-radius:7px;
+  --vnv-body-size:14px;
+  --vnv-h1-size:44px;
+  --vnv-h2-size:33px;
+  --vnv-descriptor-size:24px;
+  --vnv-breath:clamp(18px,3vw,33px);
+}
+
+html{font-size:16px}
+
+body{
+  font-size:var(--vnv-body-size)!important;
+  line-height:1.65!important;
+  text-align:center;
+}
+
+h1{
+  font-size:var(--vnv-h1-size)!important;
+  line-height:1.12!important;
+  text-align:center;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+
+h2{
+  font-size:var(--vnv-h2-size)!important;
+  line-height:1.18!important;
+  text-align:center;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+
+h3,
+.descriptor,
+.subtitle,
+.subhead,
+.hero-subtitle,
+.section-intro,
+.lead{
+  font-size:var(--vnv-descriptor-size)!important;
+  line-height:1.35!important;
+  text-align:center;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+
+p,
+li,
+label,
+input,
+select,
+textarea{
+  font-size:var(--vnv-body-size);
+}
+
+button,
+.button,
+.btn,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+  border-radius:var(--vnv-radius)!important;
+}
+
+[class*="card"],
+.card,
+.tile,
+.doorway,
+.panel,
+.notice,
+.callout{
+  border-radius:var(--vnv-radius)!important;
+}
+
+.actions,
+.hero-actions,
+.button-row,
+.button-group,
+.cta-row,
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:stretch;
+  gap:11px;
+}
+
+.actions > a,
+.actions > button,
+.hero-actions > a,
+.hero-actions > button,
+.button-row > a,
+.button-row > button,
+.button-group > a,
+.button-group > button,
+.cta-row > a,
+.cta-row > button{
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.card-grid,
+.cards,
+.resource-grid,
+.portal-grid,
+.tool-grid,
+.app-grid,
+.course-grid,
+.directory-grid,
+.ecosystem-category-grid,
+.ecosystem-panel-grid,
+.pillar-grid,
+.feature-grid{
+  align-items:stretch!important;
+  grid-auto-rows:1fr;
+  gap:var(--vnv-breath)!important;
+}
+
+.card-grid > *,
+.cards > *,
+.resource-grid > *,
+.portal-grid > *,
+.tool-grid > *,
+.app-grid > *,
+.course-grid > *,
+.directory-grid > *,
+.ecosystem-category-grid > *,
+.ecosystem-panel-grid > *,
+.pillar-grid > *,
+.feature-grid > *{
+  min-width:0;
+  height:100%;
+}
+
+section,
+.section,
+main > article{
+  scroll-margin-top:96px;
+}
+
+@media (max-width:720px){
+  h1{font-size:clamp(36px,10vw,var(--vnv-h1-size))!important}
+  h2{font-size:clamp(28px,8vw,var(--vnv-h2-size))!important}
+  h3,
+  .descriptor,
+  .subtitle,
+  .subhead,
+  .hero-subtitle,
+  .section-intro,
+  .lead{font-size:clamp(20px,6vw,var(--vnv-descriptor-size))!important}
+}
