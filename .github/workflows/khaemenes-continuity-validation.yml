@@ -1,0 +1,27 @@
+name: Khaemenes Continuity Validation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'index.html'
+      - 'tools/validate-khaemenes-continuity.mjs'
+      - '.github/workflows/khaemenes-continuity-validation.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'tools/validate-khaemenes-continuity.mjs'
+      - '.github/workflows/khaemenes-continuity-validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - run: node tools/validate-khaemenes-continuity.mjs
