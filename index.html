@@ -3549,7 +3549,59 @@
       .hero-actions{display:grid;grid-template-columns:minmax(0,1fr);width:100%;}
       .hero-actions .button{width:100%!important;}
     }
-  </style>
+  
+    /* October refinement: airier editorial rhythm, compact and quiet controls. */
+    .hero-stage{gap:clamp(32px,5vh,55px)!important;}
+    .hero-copy{max-width:min(100%,1060px);text-align:center;}
+    .hero .eyebrow{margin-bottom:clamp(16px,2vw,25px)!important;line-height:1.5!important;}
+    .hero h1#gatewayTitle{letter-spacing:.012em!important;line-height:1.16!important;}
+    .hero-aside{gap:clamp(23px,3vw,34px)!important;}
+    .hero-aside::before{width:72px!important;opacity:.65;}
+    .hero-lead{max-width:680px!important;line-height:1.72!important;text-wrap:pretty;}
+    .hero-actions{gap:12px!important;margin-top:4px!important;}
+    .hero-actions .button{
+      width:auto!important;
+      min-height:38px!important;
+      padding:8px 15px!important;
+      font-weight:400!important;
+      letter-spacing:.045em!important;
+      line-height:1.4!important;
+      box-shadow:none!important;
+      transform:none;
+    }
+    .hero-actions .button:hover{transform:translateY(-1px);}
+    .header-links{gap:9px!important;}
+    .header-links a{
+      min-height:32px!important;
+      min-width:0!important;
+      padding:6px 12px!important;
+      font-weight:400!important;
+      letter-spacing:.035em!important;
+      box-shadow:none!important;
+    }
+    .menu-button{width:39px;height:39px;box-shadow:none!important;}
+    .section-heading{margin-bottom:clamp(32px,4vw,52px)!important;}
+    .pillar-grid,.featured-grid{gap:clamp(17px,2vw,26px)!important;}
+    .pillar-card,.feature-card{box-shadow:0 3px 13px rgba(20,28,24,.045)!important;}
+    .pillar-browse,.feature-open-button,.feature-pause-button,
+    .viewer-tool,.viewer-full-link{
+      min-height:36px!important;
+      padding:8px 13px!important;
+      letter-spacing:.035em!important;
+      font-weight:400!important;
+      box-shadow:none!important;
+    }
+    .ecosystem-category-link{padding:12px 14px!important;line-height:1.4!important;}
+    .ecosystem-category-grid{gap:clamp(9px,1.25vw,16px)!important;}
+    a:focus-visible,button:focus-visible{outline-offset:3px;}
+    @media(max-width:560px){
+      .hero h1#gatewayTitle{font-size:clamp(43px,10vw,56px)!important;line-height:1.18!important;}
+      .hero-stage{gap:30px!important;}
+      .hero-actions{width:min(100%,340px)!important;}
+      .hero-actions .button{width:100%!important;min-height:40px!important;}
+      .hero-lead{line-height:1.65!important;}
+    }
+</style>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
