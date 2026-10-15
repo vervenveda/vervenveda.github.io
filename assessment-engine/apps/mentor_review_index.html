@@ -395,7 +395,8 @@
         .replaceAll("&", "&amp;")
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;");
-      const html = `<!doctype html><html><head><meta charset="utf-8"><title>Mentor Review</title></head><body><pre>${escaped}</pre></body></html>`;
+      const html = `<!doctype html><html><head><meta charset="utf-8"><title>Mentor Review</title></head><body><pre>${escaped}</pre>  <script src="/assets/vnv-ecosystem-menu.js" defer></script>
+</body></html>`;
       download("khaemenes-mentor-review.html", html, "text/html");
     });
 

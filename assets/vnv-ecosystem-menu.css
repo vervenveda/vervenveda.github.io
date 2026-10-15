@@ -128,3 +128,111 @@
 @media (prefers-reduced-motion:reduce){
   .vnv-ecosystem-lines span{transition:none}
 }
+
+
+/* Canonical directory enhancement · 2026-10-14 */
+.vnv-ecosystem-dropdown{
+  width:min(420px,calc(100vw - 28px));
+  max-height:min(78vh,680px);
+  overflow:auto;
+  overscroll-behavior:contain;
+}
+.vnv-ecosystem-search-wrap{
+  display:grid;
+  gap:7px;
+  margin:2px 0 4px;
+}
+.vnv-ecosystem-search{
+  width:100%;
+  min-height:44px;
+  padding:10px 12px;
+  border:1px solid rgba(16,34,56,.18);
+  border-radius:7px;
+  background:#fffdf8;
+  color:#172331;
+  font:500 14px/1.35 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;
+  text-align:center;
+}
+.vnv-ecosystem-search:focus-visible{
+  border-color:#b79452;
+  outline:2px solid rgba(183,148,82,.25);
+  outline-offset:2px;
+}
+.vnv-ecosystem-status{
+  margin:0;
+  color:#59646d;
+  font-size:11px;
+  line-height:1.45;
+  text-align:center;
+}
+.vnv-ecosystem-results{
+  display:grid;
+  gap:11px;
+  margin-top:2px;
+}
+.vnv-ecosystem-group{
+  display:grid;
+  gap:7px;
+  padding-top:7px;
+  border-top:1px solid rgba(16,34,56,.10);
+}
+.vnv-ecosystem-group:first-child{
+  padding-top:0;
+  border-top:0;
+}
+.vnv-ecosystem-group-title{
+  margin:0;
+  color:#80642f;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-align:center;
+  text-transform:uppercase;
+}
+.vnv-ecosystem-result{
+  min-height:44px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  padding:9px 12px;
+  text-align:center;
+}
+.vnv-ecosystem-result strong{
+  font-size:14px;
+  font-weight:600;
+  line-height:1.25;
+}
+.vnv-ecosystem-result small{
+  color:#66717a;
+  font-size:10.5px;
+  font-weight:400;
+  line-height:1.35;
+}
+.vnv-ecosystem-result[aria-current="page"]{
+  border-color:#b79452;
+  background:#f5f0e4;
+}
+.vnv-ecosystem-empty{
+  margin:7px 0 2px;
+  color:#59646d;
+  font-size:12px;
+  line-height:1.5;
+  text-align:center;
+}
+@media (prefers-color-scheme:dark){
+  .vnv-ecosystem-search{
+    color:#eee5d5;
+    background:#142536;
+    border-color:rgba(232,225,209,.18);
+  }
+  .vnv-ecosystem-status,
+  .vnv-ecosystem-result small,
+  .vnv-ecosystem-empty{color:#b8c2c9}
+  .vnv-ecosystem-group{border-top-color:rgba(232,225,209,.11)}
+  .vnv-ecosystem-result[aria-current="page"]{background:#1a3144}
+}
+@media(max-width:520px){
+  .vnv-ecosystem-dropdown{width:min(340px,calc(100vw - 16px));max-height:82vh}
+}
