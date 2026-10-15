@@ -1,0 +1,543 @@
+{
+  "version": 3,
+  "generatedAt": "2026-10-14",
+  "policy": "Public HTML on main; dormant STOS, disabled, diagnostics, 404/offline and source snippets excluded.",
+  "pages": [
+    {
+      "title": "Elementary Kids Vote",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Elementary_Kids_Vote_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Elementary_Kids_Vote_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Florida Citizen Connect",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Florida_Citizen_connect_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Florida_Citizen_connect_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Florida Voter Hub",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Florida_Voter_Hub_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Florida_Voter_Hub_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Global Voter Portal",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Global_Voter_Portal_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Global_Voter_Portal_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "High School Voter Portal",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/High_School_voter_portal_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/High_School_voter_portal_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Jennifer Pearl President 2028",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Jennifer_Pearl_President_2028_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Jennifer_Pearl_President_2028_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "MiddleSchool Voting Portal",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/MiddleSchool_Voting_Portal_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/MiddleSchool_Voting_Portal_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "National Policy Proposals",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/National_Policy_Proposals_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/National_Policy_Proposals_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Pulse",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Pulse/",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Pulse/index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Reveda Pulse Poll",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Pulse/reveda_pulse_poll_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Pulse/reveda_pulse_poll_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Road To Governor",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Road_to_governor_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/Road_to_governor_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "US VOTER HUB",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/US_VOTER_HUB_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/US_VOTER_HUB_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Donate",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/donate_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/donate_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Lightbearers",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/lightbearers_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/lightbearers_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Reveda Resources",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/reveda_resources_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/reveda_resources_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Revolution",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/revolution_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/revolution_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Volunteer",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/volunteer_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/volunteer_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Voter Concerns Compass",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/voter_concerns_compass_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/voter_concerns_compass_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "We The People 2",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/we_the_people_2_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/we_the_people_2_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "We The People",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/we_the_people_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "apps/we_the_people_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "One Nation For All",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/",
+      "repo": "onenationforall.github.io",
+      "path": "index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "7 Pillars Platform",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/statements/7_pillars_platform_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "statements/7_pillars_platform_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Letter To Americans",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/statements/Letter_to_Americans_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "statements/Letter_to_Americans_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Letter To American People",
+      "url": "https://vervenveda.github.io/onenationforall.github.io/statements/letter_to_American_people_index.html",
+      "repo": "onenationforall.github.io",
+      "path": "statements/letter_to_American_people_index.html",
+      "category": "civic",
+      "source": "One Nation For All"
+    },
+    {
+      "title": "Collector Hub",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Collector_Hub_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Collector_Hub_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Estate Legacy Elder Care",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Estate_Legacy_Elder_Care_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Estate_Legacy_Elder_Care_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Evidence Analysis",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Evidence_Analysis_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Evidence_Analysis_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Family Hub",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Family_Hub_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Family_Hub_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Firmament Law",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Firmament_Law_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Firmament_Law_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Firmament Legal Console",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Firmament_Legal_Console_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Firmament_Legal_Console_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Firmament Questionaire",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Firmament_Questionaire_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Firmament_Questionaire_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Heritage Census",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Heritage_Census_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Heritage_Census_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Heritage KindredVault V5",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Heritage_KindredVault_v5_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Heritage_KindredVault_v5_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Heritage Quiz",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Heritage_Quiz_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Heritage_Quiz_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Homeless Hub",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Homeless_Hub_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Homeless_Hub_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Insurance Education",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Insurance_Education_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Insurance_Education_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Insurance Resources",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Insurance_Resources_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Insurance_Resources_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "LGBTQ+ Hub",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/LGBTQ%2B_Hub_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/LGBTQ+_Hub_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Law Governance Hall",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Law_Governance_hall_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Law_Governance_hall_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "PLEARA Shopping",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/PLEARA_Shopping_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/PLEARA_Shopping_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "PLERA Search Gate",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/PLERA_Search_Gate_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/PLERA_Search_Gate_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Plera Resources",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Plera_Resources_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Plera_Resources_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Senior Golden Path",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Senior_Golden_Path_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Senior_Golden_Path_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Senior News",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Senior_News_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Senior_News_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Senior Resource Library",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Senior_Resource_Library_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Senior_Resource_Library_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Senior Safety Check",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Senior_Safety_Check_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Senior_Safety_Check_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Veterans Hub Florida",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_Florida_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Veterans_Hub_Florida_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Veterans Hub National",
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_National_index.html",
+      "repo": "firmament.github.io",
+      "path": "apps/Veterans_Hub_National_index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Firmament",
+      "url": "https://vervenveda.github.io/firmament.github.io/",
+      "repo": "firmament.github.io",
+      "path": "index.html",
+      "category": "civic",
+      "source": "Firmament"
+    },
+    {
+      "title": "Homeless Resource Hub",
+      "url": "https://vervenveda.github.io/Homeless.github.io/",
+      "repo": "Homeless.github.io",
+      "path": "index.html",
+      "category": "civic",
+      "source": "Homeless Resource Hub"
+    },
+    {
+      "title": "Veterans Resource Hub",
+      "url": "https://vervenveda.github.io/veterans.github.io/",
+      "repo": "veterans.github.io",
+      "path": "index.html",
+      "category": "civic",
+      "source": "Veterans Resource Hub"
+    },
+    {
+      "title": "Jennifer Pearl 2028",
+      "url": "https://vervenveda.github.io/JenniferPearl2028.github.io/",
+      "repo": "JenniferPearl2028.github.io",
+      "path": "index.html",
+      "category": "civic",
+      "source": "Jennifer Pearl 2028"
+    },
+    {
+      "title": "Lawn Care Quiz",
+      "url": "https://vervenveda.github.io/river_to_road.github.io/apps/lawn_care_quiz_index.html",
+      "repo": "river_to_road.github.io",
+      "path": "apps/lawn_care_quiz_index.html",
+      "category": "environmental",
+      "source": "River to Road"
+    },
+    {
+      "title": "Virtual Lawn Mower",
+      "url": "https://vervenveda.github.io/river_to_road.github.io/apps/virtual_lawn_mower_index.html",
+      "repo": "river_to_road.github.io",
+      "path": "apps/virtual_lawn_mower_index.html",
+      "category": "environmental",
+      "source": "River to Road"
+    },
+    {
+      "title": "River to Road",
+      "url": "https://vervenveda.github.io/river_to_road.github.io/",
+      "repo": "river_to_road.github.io",
+      "path": "index.html",
+      "category": "environmental",
+      "source": "River to Road"
+    },
+    {
+      "title": "Bazaar Art Live",
+      "url": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+      "repo": "333.github.io",
+      "path": "app/Bazaar_Art_Live_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "Bunya Digital Infrastructure",
+      "url": "https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html",
+      "repo": "333.github.io",
+      "path": "app/Bunya_digital_infrastructure_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "EVen Mail",
+      "url": "https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html",
+      "repo": "333.github.io",
+      "path": "app/EVen_mail_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "FleaPit™ Media Hub",
+      "url": "https://vervenveda.github.io/333.github.io/app/FleaPit%E2%84%A2%20_media_hub_index.html",
+      "repo": "333.github.io",
+      "path": "app/FleaPit™ _media_hub_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "FleaPit™ Media Gate",
+      "url": "https://vervenveda.github.io/333.github.io/app/FleaPit%E2%84%A2_media_gate_Index.html",
+      "repo": "333.github.io",
+      "path": "app/FleaPit™_media_gate_Index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "HOLLO 333 Direct Connect",
+      "url": "https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+      "repo": "333.github.io",
+      "path": "app/HOLLO_333_direct_connect_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "KANSEE 333 Meeting Rooms",
+      "url": "https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+      "repo": "333.github.io",
+      "path": "app/KANSEE_333_meeting_rooms_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "SIte Builder",
+      "url": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html",
+      "repo": "333.github.io",
+      "path": "app/SIte_builder_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "WEAL Domain Hosting",
+      "url": "https://vervenveda.github.io/333.github.io/app/WEAL_domain_hosting_index.html",
+      "repo": "333.github.io",
+      "path": "app/WEAL_domain_hosting_index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "333 Network",
+      "url": "https://vervenveda.github.io/333.github.io/",
+      "repo": "333.github.io",
+      "path": "index.html",
+      "category": "communication",
+      "source": "333 Network"
+    },
+    {
+      "title": "PLERA Live Admin",
+      "url": "https://vervenveda.github.io/PLERA.github.io/apps/PLERA_Live_Admin_index.html",
+      "repo": "PLERA.github.io",
+      "path": "apps/PLERA_Live_Admin_index.html",
+      "category": "research",
+      "source": "PLERA"
+    },
+    {
+      "title": "PLERA Live Phone Face",
+      "url": "https://vervenveda.github.io/PLERA.github.io/apps/PLERA_Live_Phone_Face_index.html",
+      "repo": "PLERA.github.io",
+      "path": "apps/PLERA_Live_Phone_Face_index.html",
+      "category": "research",
+      "source": "PLERA"
+    }
+  ]
+}
