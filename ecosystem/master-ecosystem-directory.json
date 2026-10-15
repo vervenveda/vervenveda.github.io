@@ -1,7 +1,7 @@
 {
   "schemaVersion": "0.1.1",
   "title": "Verve N Veda Master Ecosystem Directory",
-  "baseline": "2026-08-19",
+  "baseline": "2026-10-14",
   "purpose": "Normalized public-surface registry built from the forensic scan of the public vervenveda GitHub organization.",
   "accessPrinciple": "free-public",
   "statusValues": [
@@ -1547,5 +1547,27 @@
       "directoryVisible": false,
       "url": "https://vervenveda.com/admin/2index.html"
     }
-  ]
+  ],
+  "pageCatalog": {
+    "version": 1,
+    "purpose": "Complete searchable catalog of current public HTML surfaces across the connected Verve N Veda ecosystem.",
+    "publicPageCount": 10875,
+    "repositoryCount": 28,
+    "parts": [
+      "/registry/ecosystem-pages-a.json",
+      "/registry/ecosystem-pages-b.json"
+    ],
+    "policy": {
+      "include": "Public GitHub-facing HTML pages and current public learning/resource surfaces.",
+      "exclude": [
+        "private repositories",
+        "admin-only surfaces",
+        "archive/reference-only surfaces",
+        "dormant STOS migration surfaces",
+        "offline and 404 utility pages where intentionally excluded by the catalog policy"
+      ],
+      "note": "STOS remains dormant future-migration infrastructure; GitHub is the current functional public environment."
+    },
+    "lastForensicRefresh": "2026-10-14"
+  }
 }

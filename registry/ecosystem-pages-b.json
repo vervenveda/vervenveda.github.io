@@ -2,7 +2,7 @@
   "version": 1,
   "generatedFrom": "GitHub main branches",
   "part": "B",
-  "pageCount": 5963,
+  "pageCount": 5962,
   "repositories": [
     {
       "repo": "medicament-hub.github.io",
@@ -15,12 +15,6 @@
       "html": 12,
       "included": 10,
       "excluded": 2
-    },
-    {
-      "repo": "PLERA.github.io",
-      "html": 2,
-      "included": 1,
-      "excluded": 1
     },
     {
       "repo": "veterans.github.io",
@@ -383,14 +377,6 @@
       "path": "index.html",
       "category": "communication",
       "source": "333 Network"
-    },
-    {
-      "title": "PLERA Live Phone Face",
-      "url": "https://vervenveda.github.io/PLERA.github.io/apps/PLERA_Live_Phone_Face_index.html",
-      "repo": "PLERA.github.io",
-      "path": "apps/PLERA_Live_Phone_Face_index.html",
-      "category": "communication",
-      "source": "PLERA"
     },
     {
       "title": "Affirmation Garden",

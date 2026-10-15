@@ -2,13 +2,13 @@
   "version": 1,
   "generatedFrom": "GitHub main branches",
   "part": "A",
-  "pageCount": 4906,
+  "pageCount": 4913,
   "repositories": [
     {
       "repo": "vervenveda.github.io",
       "html": 23,
-      "included": 14,
-      "excluded": 9
+      "included": 13,
+      "excluded": 10
     },
     {
       "repo": "river_to_road.github.io",
@@ -84,8 +84,8 @@
     },
     {
       "repo": "Khaemenes_High.github.io",
-      "html": 2859,
-      "included": 2818,
+      "html": 2867,
+      "included": 2826,
       "excluded": 41
     }
   ],
@@ -37851,14 +37851,6 @@
       "source": "Verve N Veda"
     },
     {
-      "title": "Stos",
-      "url": "https://vervenveda.com/stos/index.html",
-      "repo": "vervenveda.github.io",
-      "path": "stos/index.html",
-      "category": "research",
-      "source": "Verve N Veda"
-    },
-    {
       "title": "Environmental News",
       "url": "https://vervenveda.github.io/solanar.github.io/apps/environmental_news_index.html",
       "repo": "solanar.github.io",
@@ -39337,6 +39329,70 @@
       "path": "weather-academy/Solanar-Certification-year-02/tools/index.html",
       "category": "weather",
       "source": "Solanar"
+    },
+    {
+      "title": "Physics 12 Week 12 · Energy Efficiency Design Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/labs/efficiency-design-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/labs/efficiency-design-lab.html",
+      "category": "education",
+      "source": "Khaemenes High"
+    },
+    {
+      "title": "Physics 12 Week 12 · Work Rate & Power Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/labs/power-rate-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/labs/power-rate-studio.html",
+      "category": "education",
+      "source": "Khaemenes High"
+    },
+    {
+      "title": "Physics 12 · Week 12 · Same Energy, Different Time",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/lessons/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/lessons/day-01.html",
+      "category": "education",
+      "source": "Khaemenes High"
+    },
+    {
+      "title": "Physics 12 · Week 12 · Input Power Versus Useful Power",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/lessons/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/lessons/day-02.html",
+      "category": "education",
+      "source": "Khaemenes High"
+    },
+    {
+      "title": "Physics 12 · Week 12 · Efficiency Is a Ratio, Not a Speed",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/lessons/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/lessons/day-03.html",
+      "category": "education",
+      "source": "Khaemenes High"
+    },
+    {
+      "title": "Physics 12 · Week 12 · An Engineering Design Investigation",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/lessons/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/lessons/day-04.html",
+      "category": "education",
+      "source": "Khaemenes High"
+    },
+    {
+      "title": "Physics 12 · Week 12 · Capstone: Defend an Efficient Design",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/lessons/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/lessons/day-05.html",
+      "category": "education",
+      "source": "Khaemenes High"
+    },
+    {
+      "title": "Physics 12 Week 12 · Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-12/teacher/guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-12/teacher/guide.html",
+      "category": "education",
+      "source": "Khaemenes High"
     }
   ]
 }
