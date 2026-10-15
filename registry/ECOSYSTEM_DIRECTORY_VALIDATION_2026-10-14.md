@@ -91,3 +91,23 @@ Current required values:
 - `registry/ecosystem-pages-2026-10-14-g.json`
 
 The homepage loads these seven files directly into the searchable Complete Ecosystem Index.
+
+## Canonical navigation unification
+
+PASS — public navigation now uses one canonical curated source:
+
+`/ecosystem/master-ecosystem-directory.json`
+
+The master directory currently exposes **128 active, free-public, directory-visible destinations** from **140 classified records**. Dormant STOS surfaces, administrator/private destinations, disabled records, and offline-only fallbacks remain excluded.
+
+Shared public hamburger menus are enhanced by:
+
+- `/assets/vnv-ecosystem-menu.js`
+- `/assets/vnv-ecosystem-menu.css`
+
+The shared menu reads the canonical master directory at runtime, preserves a minimal Home/Directory fallback if the registry cannot be fetched, and does not depend on STOS.
+
+The Verve N Veda homepage also reads the same master directory before rendering its gateway menu, category panels, and featured ecosystem discovery. The older inline arrays remain emergency presentation fallbacks only and are no longer the navigation authority.
+
+The complete page catalog remains a separate **deep-search index** of 10,905 public HTML destinations. It is not a competing navigation authority; it exists so the homepage can search every indexed public page while the master directory governs curated public navigation.
+
