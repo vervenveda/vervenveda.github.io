@@ -591,25 +591,25 @@
       "id": "ling-arabic365",
       "title": "Arabic 365",
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
-      "path": "apps/Arabic_365_index.html",
+      "path": "apps/electives/Arabic/Daily-language/index.html",
       "type": "course",
       "category": "education",
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/Arabic_365_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Daily-language/index.html"
     },
     {
       "id": "ling-quran-root",
       "title": "Qur'an Root Explorer",
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
-      "path": "apps/Arabic_Quran_root_explorer_index.html",
+      "path": "apps/faith/Arabic/Quran_root_explorer/index.html",
       "type": "tool",
       "category": "education",
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/Arabic_Quran_root_explorer_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quran_root_explorer/index.html"
     },
     {
       "id": "arshif",
