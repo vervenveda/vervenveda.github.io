@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "generatedAt": "2026-10-14",
+  "policy": "Public Verve N Veda HTML on main; admin, dormant STOS, disabled, diagnostics, 404/offline and source snippets excluded.",
+  "pages": [
+    {
+      "title": "Reference",
+      "url": "https://vervenveda.com/archive/reference/",
+      "repo": "vervenveda.github.io",
+      "path": "archive/reference/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Demos",
+      "url": "https://vervenveda.com/assessment-engine/agents/demos/",
+      "repo": "vervenveda.github.io",
+      "path": "assessment-engine/agents/demos/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Career Assessment",
+      "url": "https://vervenveda.com/assessment-engine/apps/career_assessment_index.html",
+      "repo": "vervenveda.github.io",
+      "path": "assessment-engine/apps/career_assessment_index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Career Star",
+      "url": "https://vervenveda.com/assessment-engine/apps/career_star_index.html",
+      "repo": "vervenveda.github.io",
+      "path": "assessment-engine/apps/career_star_index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Mentor Review",
+      "url": "https://vervenveda.com/assessment-engine/apps/mentor_review_index.html",
+      "repo": "vervenveda.github.io",
+      "path": "assessment-engine/apps/mentor_review_index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Assessment Engine",
+      "url": "https://vervenveda.com/assessment-engine/",
+      "repo": "vervenveda.github.io",
+      "path": "assessment-engine/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Matrix",
+      "url": "https://vervenveda.com/assessment-engine/mentor/matrix/",
+      "repo": "vervenveda.github.io",
+      "path": "assessment-engine/mentor/matrix/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Beta",
+      "url": "https://vervenveda.com/beta/",
+      "repo": "vervenveda.github.io",
+      "path": "beta/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Cloud",
+      "url": "https://vervenveda.com/cloud/",
+      "repo": "vervenveda.github.io",
+      "path": "cloud/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Directory Agi",
+      "url": "https://vervenveda.com/core/directory-agi/",
+      "repo": "vervenveda.github.io",
+      "path": "core/directory-agi/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Verve N Veda",
+      "url": "https://vervenveda.com/",
+      "repo": "vervenveda.github.io",
+      "path": "index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Matrix",
+      "url": "https://vervenveda.com/matrix/",
+      "repo": "vervenveda.github.io",
+      "path": "matrix/index.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Privacy Policy",
+      "url": "https://vervenveda.com/privacy-policy.html",
+      "repo": "vervenveda.github.io",
+      "path": "privacy-policy.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    },
+    {
+      "title": "Privacy Policy",
+      "url": "https://vervenveda.com/privacy_policy.html",
+      "repo": "vervenveda.github.io",
+      "path": "privacy_policy.html",
+      "category": "gateway",
+      "source": "Verve N Veda"
+    }
+  ]
+}
