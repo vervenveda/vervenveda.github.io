@@ -5,7 +5,7 @@
 PASS — the live Verve N Veda directory now loads a fresh public-page catalog generated from the current `main` branches of the connected public `vervenveda` GitHub Pages repositories.
 
 - Public repositories indexed: **29**
-- Public HTML destinations indexed: **10,907**
+- Public HTML destinations indexed: **10,905**
 - Catalog parts: **7**
 - Source branch rule: **main**
 - Dormant STOS activation: **NO**
@@ -15,8 +15,8 @@ PASS — the live Verve N Veda directory now loads a fresh public-page catalog g
 
 | Repository | Public HTML pages |
 |---|---:|
-| Khaemenes_High.github.io | 2,835 |
-| Khaemenes_Academy.github.io | 21 |
+| Khaemenes_High.github.io | 2,834 |
+| Khaemenes_Academy.github.io | 20 |
 | Khaemenes_Higher_Learning.github.io | 3,146 |
 | Khaemenes_Preschool.github.io | 55 |
 | Khaemenes_KinderGarden.github.io | 389 |
