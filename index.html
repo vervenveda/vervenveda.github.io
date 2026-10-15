@@ -3655,7 +3655,7 @@
         <section class="complete-page-index" id="completePageIndex" aria-labelledby="completePageIndexTitle">
           <p class="kicker">Complete Ecosystem Index</p>
           <h3 id="completePageIndexTitle">Search every public page across the Verve N Veda network.</h3>
-          <p class="complete-index-copy">The featured doorways above stay concise. This searchable index includes every public HTML destination discovered on the main branches of the connected public repositories, while administrator, dormant STOS, archive, disabled, diagnostic, error, and offline-only surfaces remain intentionally excluded.</p>
+          <p class="complete-index-copy">The featured doorways above stay concise. This searchable index includes every public HTML destination discovered on the current main branches of the connected Verve N Veda repositories. Administrator, dormant STOS, disabled, diagnostic, error, offline-only, and source-snippet surfaces remain intentionally excluded; public archive and reference pages remain searchable.</p>
           <div class="complete-index-controls">
             <label class="visually-hidden" for="ecosystemPageSearch">Search every public ecosystem page</label>
             <input id="ecosystemPageSearch" type="search" autocomplete="off" placeholder="Search courses, lessons, tools, games, halls, topics…">
@@ -4540,7 +4540,15 @@
       async function loadEcosystemPageCatalog(){
         const status = $("ecosystemPageStatus");
         try{
-          const urls = ["/registry/ecosystem-pages-a.json","/registry/ecosystem-pages-b.json"];
+          const urls = [
+            "/registry/ecosystem-pages-2026-10-14-a.json",
+            "/registry/ecosystem-pages-2026-10-14-b.json",
+            "/registry/ecosystem-pages-2026-10-14-c.json",
+            "/registry/ecosystem-pages-2026-10-14-d.json",
+            "/registry/ecosystem-pages-2026-10-14-e.json",
+            "/registry/ecosystem-pages-2026-10-14-f.json",
+            "/registry/ecosystem-pages-2026-10-14-g.json"
+          ];
           const responses = await Promise.all(urls.map(url => fetch(url,{cache:"no-store",credentials:"same-origin"})));
           if(responses.some(response => !response.ok)) throw new Error("catalog request failed");
           const parts = await Promise.all(responses.map(response => response.json()));
