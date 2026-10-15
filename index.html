@@ -400,7 +400,7 @@
       width:44px;height:44px;
       display:grid;place-items:center;
       border:1px solid var(--line-strong);
-      border-radius7px;
+      border-radius:7px;
       color:var(--ink);background:transparent;
     }
     .menu-lines,
@@ -3487,6 +3487,77 @@
 
 </style>
   <link rel="stylesheet" href="/assets/vnv-global-standard.css" data-vnv-standard="2026-10-14">
+  <!-- 2026-10-15: homepage typography and collision-safe control refinement. -->
+  <style id="vnv-home-control-fit">
+    .hero h1#gatewayTitle{
+      font-size:clamp(40px, calc(34px + 1.6vw), 54px)!important;
+      line-height:1.15!important;
+      max-width:100%;
+      margin-inline:auto;
+      text-align:center;
+      overflow-wrap:normal;
+      word-break:normal;
+      text-wrap:balance;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:stretch;
+      gap:11px;
+      max-width:100%;
+    }
+    .hero-actions .button{
+      box-sizing:border-box;
+      min-width:0!important;
+      max-width:100%;
+      min-height:44px;
+      padding:11px 17px!important;
+      line-height:1.35!important;
+      white-space:normal!important;
+      overflow:visible!important;
+      text-align:center;
+      text-wrap:balance;
+      overflow-wrap:normal;
+      word-break:normal;
+      border-radius:7px!important;
+    }
+    .header-links{gap:7px!important;min-width:0;}
+    .header-links a{
+      box-sizing:border-box;
+      width:auto!important;
+      min-width:76px!important;
+      max-width:none!important;
+      height:auto!important;
+      min-height:36px!important;
+      padding:8px 12px!important;
+      line-height:1.25!important;
+      white-space:nowrap!important;
+      overflow:visible!important;
+      text-overflow:clip!important;
+      border-radius:7px!important;
+    }
+    .menu-button{border-radius:7px!important;}
+    .ecosystem-category-link,.pillar-browse,.feature-open-button,.feature-pause-button,
+    .viewer-tool,.viewer-full-link,.admin-gate-submit,.admin-gate-secondary{
+      box-sizing:border-box;
+      max-width:100%;
+      padding-inline:clamp(11px,1.2vw,18px)!important;
+      line-height:1.35!important;
+      white-space:normal!important;
+      text-align:center;
+      text-wrap:balance;
+      overflow-wrap:normal;
+      word-break:normal;
+      border-radius:7px!important;
+    }
+    @media(max-width:1230px){.header-links{display:none!important;}}
+    @media(max-width:560px){
+      .hero h1#gatewayTitle{font-size:clamp(36px,9vw,44px)!important;}
+      .hero-actions{display:grid;grid-template-columns:minmax(0,1fr);width:100%;}
+      .hero-actions .button{width:100%!important;}
+    }
+  </style>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
