@@ -4,22 +4,6 @@
   "policy": "Public HTML on main; dormant STOS, disabled, diagnostics, 404/offline and source snippets excluded.",
   "pages": [
     {
-      "title": "Halls",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "Halls/index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Language Learning V3",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/language-learning-v3_index.html",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "Halls/language-learning-v3_index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
       "title": "Arabic Lighted Path",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/Arabic_lighted_path_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
@@ -60,10 +44,66 @@
       "source": "Khaemenes Linguistics"
     },
     {
+      "title": "Dictionarybox",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/dictionarybox_index.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/dictionarybox_index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Daily Language",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Daily-language/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/electives/Arabic/Daily-language/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Quranic Studies",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Quranic_studies/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/electives/Arabic/Quranic_studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Temple Of Letters Full Course",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/temple-of-letters-full-course/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/electives/Arabic/temple-of-letters-full-course/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
       "title": "ESL Course",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/ESL_course_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
       "path": "apps/ESL_course_index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Qur'An Knowledge",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Qur'an-Knowledge/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/faith/Arabic/Qur'an-Knowledge/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Quran Root Explorer",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quran_root_explorer/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/faith/Arabic/Quran_root_explorer/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Quranic Study",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quranic_Study/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/faith/Arabic/Quranic_Study/index.html",
       "category": "education",
       "source": "Khaemenes Linguistics"
     },
@@ -148,6 +188,14 @@
       "source": "Khaemenes Linguistics"
     },
     {
+      "title": "Numina Grove",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/numina_grove_index.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/numina_grove_index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
       "title": "Russian Hub",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/Russian_hub_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
@@ -180,70 +228,6 @@
       "source": "Khaemenes Linguistics"
     },
     {
-      "title": "Dictionarybox",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/dictionarybox_index.html",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/dictionarybox_index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Daily Language",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Daily-language/",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/electives/Arabic/Daily-language/index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Quranic Studies",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Quranic_studies/",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/electives/Arabic/Quranic_studies/index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Temple Of Letters Full Course",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/temple-of-letters-full-course/",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/electives/Arabic/temple-of-letters-full-course/index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Qur'An Knowledge",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Qur'an-Knowledge/",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/faith/Arabic/Qur'an-Knowledge/index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Quran Root Explorer",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quran_root_explorer/",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/faith/Arabic/Quran_root_explorer/index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Quranic Study",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quranic_Study/",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/faith/Arabic/Quranic_Study/index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "Numina Grove",
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/numina_grove_index.html",
-      "repo": "Khaemenes_Linguistics.github.io",
-      "path": "apps/numina_grove_index.html",
-      "category": "education",
-      "source": "Khaemenes Linguistics"
-    },
-    {
       "title": "Translation Helper",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/translation_helper_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
@@ -268,6 +252,86 @@
       "source": "Khaemenes Linguistics"
     },
     {
+      "title": "Arabic I · Week 01",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/arabic-1/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/arabic-1/week-01/"
+    },
+    {
+      "title": "Arabic I · Week 02 — Letter Families and Writing Direction",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/arabic-1/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/arabic-1/week-02/"
+    },
+    {
+      "title": "Arabic I · Week 03 — Connected Letterforms and Joining",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/arabic-1/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/arabic-1/week-03/"
+    },
+    {
+      "title": "Arabic I · Week 04",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/arabic-1/week-04/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/arabic-1/week-04/"
+    },
+    {
+      "title": "Russian I · Week 01",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/russian-1/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/russian-1/week-01/"
+    },
+    {
+      "title": "Russian I · Week 02 — Printed and Handwritten Cyrillic Forms",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/russian-1/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/russian-1/week-02/"
+    },
+    {
+      "title": "Russian I · Week 03 — Word Stress and Pronunciation",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/russian-1/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/russian-1/week-03/"
+    },
+    {
+      "title": "Russian I · Week 04",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/courses/russian-1/week-04/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/courses/russian-1/week-04/"
+    },
+    {
+      "title": "Halls",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Language Learning V3",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/language-learning-v3_index.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "Halls/language-learning-v3_index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
       "title": "Khaemenes Linguistics",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/",
       "repo": "Khaemenes_Linguistics.github.io",
@@ -282,86 +346,6 @@
       "path": "multilingual-translator_index.html",
       "category": "education",
       "source": "Khaemenes Linguistics"
-    },
-    {
-      "title": "High School Physical Education 42week",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/High_School_Physical_Education_42week_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "PE Teacher Guide",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_Teacher_Guide_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_Teacher_Guide_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Quizzes",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_10/quizzes_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_10/quizzes_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Study Guide",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_10/study_guide_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_10/study_guide_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Quizzes",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_11/quizzes_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_11/quizzes_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Study Guide",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_11/study_guide_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_11/study_guide_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Quizzes",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_12/quizzes_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_12/quizzes_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Study Guide",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_12/study_guide_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_12/study_guide_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Quizzes",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_9/quizzes_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_9/quizzes_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Study Guide",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_9/study_guide_index.html",
-      "repo": "medicament-hub.github.io",
-      "path": "academy/high-school-health/PE_grade_9/study_guide_index.html",
-      "category": "health",
-      "source": "Medicament Hub"
     },
     {
       "title": "Electives",
@@ -460,10 +444,90 @@
       "source": "Medicament Hub"
     },
     {
+      "title": "High School Physical Education 42week",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/High_School_Physical_Education_42week_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
       "title": "High School Health",
       "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/",
       "repo": "medicament-hub.github.io",
       "path": "academy/high-school-health/index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Quizzes",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_10/quizzes_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_10/quizzes_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Study Guide",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_10/study_guide_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_10/study_guide_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Quizzes",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_11/quizzes_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_11/quizzes_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Study Guide",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_11/study_guide_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_11/study_guide_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Quizzes",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_12/quizzes_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_12/quizzes_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Study Guide",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_12/study_guide_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_12/study_guide_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Quizzes",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_9/quizzes_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_9/quizzes_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "Study Guide",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_grade_9/study_guide_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_grade_9/study_guide_index.html",
+      "category": "health",
+      "source": "Medicament Hub"
+    },
+    {
+      "title": "PE Teacher Guide",
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/PE_Teacher_Guide_index.html",
+      "repo": "medicament-hub.github.io",
+      "path": "academy/high-school-health/PE_Teacher_Guide_index.html",
       "category": "health",
       "source": "Medicament Hub"
     },
@@ -660,294 +724,6 @@
       "source": "Medicament Hub"
     },
     {
-      "title": "AffixSix™",
-      "url": "https://vervenveda.github.io/arcade.github.io/AffixSix%E2%84%A2_index.html",
-      "repo": "arcade.github.io",
-      "path": "AffixSix™_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "403",
-      "url": "https://vervenveda.github.io/arcade.github.io/Arcade_Foundation_Files/403.html",
-      "repo": "arcade.github.io",
-      "path": "Arcade_Foundation_Files/403.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Backgammon",
-      "url": "https://vervenveda.github.io/arcade.github.io/Backgammon_index.html",
-      "repo": "arcade.github.io",
-      "path": "Backgammon_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Checkers Variant Lab",
-      "url": "https://vervenveda.github.io/arcade.github.io/Checkers_Variant_Lab_index.html",
-      "repo": "arcade.github.io",
-      "path": "Checkers_Variant_Lab_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Chess Studio",
-      "url": "https://vervenveda.github.io/arcade.github.io/Chess_Studio_index.html",
-      "repo": "arcade.github.io",
-      "path": "Chess_Studio_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Mandala Rings Game",
-      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/mandala_rings_game_index.html",
-      "repo": "arcade.github.io",
-      "path": "Geometry/mandala_rings_game_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Original Sanctuary Game",
-      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/original-sanctuary-game_index.html",
-      "repo": "arcade.github.io",
-      "path": "Geometry/original-sanctuary-game_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Sacred Geometry Game",
-      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/sacred_geometry_game_index.html",
-      "repo": "arcade.github.io",
-      "path": "Geometry/sacred_geometry_game_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Hangman",
-      "url": "https://vervenveda.github.io/arcade.github.io/Hangman_index.html",
-      "repo": "arcade.github.io",
-      "path": "Hangman_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "IQ Quantum",
-      "url": "https://vervenveda.github.io/arcade.github.io/IQ-Quantum_index.html",
-      "repo": "arcade.github.io",
-      "path": "IQ-Quantum_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "IQ Mini",
-      "url": "https://vervenveda.github.io/arcade.github.io/IQ-mini_index.html",
-      "repo": "arcade.github.io",
-      "path": "IQ-mini_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Jenny'S Sudoku",
-      "url": "https://vervenveda.github.io/arcade.github.io/Jenny's_Sudoku_index.html",
-      "repo": "arcade.github.io",
-      "path": "Jenny's_Sudoku_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Learn A New Word",
-      "url": "https://vervenveda.github.io/arcade.github.io/Learn_a_New_Word_index.html",
-      "repo": "arcade.github.io",
-      "path": "Learn_a_New_Word_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Factors Multiples",
-      "url": "https://vervenveda.github.io/arcade.github.io/Math/factors-multiples.html",
-      "repo": "arcade.github.io",
-      "path": "Math/factors-multiples.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Number Family",
-      "url": "https://vervenveda.github.io/arcade.github.io/Math/number-family.html",
-      "repo": "arcade.github.io",
-      "path": "Math/number-family.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Primes Divisibility",
-      "url": "https://vervenveda.github.io/arcade.github.io/Math/primes-divisibility.html",
-      "repo": "arcade.github.io",
-      "path": "Math/primes-divisibility.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Orions Connect Four",
-      "url": "https://vervenveda.github.io/arcade.github.io/Orions_connect_four_index.html",
-      "repo": "arcade.github.io",
-      "path": "Orions_connect_four_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Pocket Arcade",
-      "url": "https://vervenveda.github.io/arcade.github.io/Pocket_Arcade_index.html",
-      "repo": "arcade.github.io",
-      "path": "Pocket_Arcade_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "SixbySix",
-      "url": "https://vervenveda.github.io/arcade.github.io/SixbySix_index.html",
-      "repo": "arcade.github.io",
-      "path": "SixbySix_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Tictactoe",
-      "url": "https://vervenveda.github.io/arcade.github.io/Tictactoe_index.html",
-      "repo": "arcade.github.io",
-      "path": "Tictactoe_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia ESL",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_ESL_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_ESL_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Soveriegn Arts",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_Soveriegn_arts_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_Soveriegn_arts_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Ancients",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_ancients_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_ancients_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Arts",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_arts_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_arts_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Bible",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_bible_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_bible_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Canon",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_canon_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_canon_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Civic Compass Inndex",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_civic_Compass_inndex.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_civic_Compass_inndex.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Daily News",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_daily_news_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_daily_news_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Health",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_health_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_health_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Lawn Care",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_lawn_care_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_lawn_care_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Mini IQ",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_mini_IQ_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_mini_IQ_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Music",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_music_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_music_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Oddball",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_oddball_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_oddball_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Remnenat Nations",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_remnenat_nations_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_remnenat_nations_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Testament",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_testament_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_testament_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "Trivia Testament Kids",
-      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_testament_kids_index.html",
-      "repo": "arcade.github.io",
-      "path": "Trivia_testament_kids_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
       "title": "A Balloon Brigade Game",
       "url": "https://vervenveda.github.io/arcade.github.io/a_balloon_brigade_game_index.html",
       "repo": "arcade.github.io",
@@ -1052,6 +828,46 @@
       "source": "Verve N Veda Arcade"
     },
     {
+      "title": "AffixSix™",
+      "url": "https://vervenveda.github.io/arcade.github.io/AffixSix%E2%84%A2_index.html",
+      "repo": "arcade.github.io",
+      "path": "AffixSix™_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "403",
+      "url": "https://vervenveda.github.io/arcade.github.io/Arcade_Foundation_Files/403.html",
+      "repo": "arcade.github.io",
+      "path": "Arcade_Foundation_Files/403.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Backgammon",
+      "url": "https://vervenveda.github.io/arcade.github.io/Backgammon_index.html",
+      "repo": "arcade.github.io",
+      "path": "Backgammon_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Checkers Variant Lab",
+      "url": "https://vervenveda.github.io/arcade.github.io/Checkers_Variant_Lab_index.html",
+      "repo": "arcade.github.io",
+      "path": "Checkers_Variant_Lab_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Chess Studio",
+      "url": "https://vervenveda.github.io/arcade.github.io/Chess_Studio_index.html",
+      "repo": "arcade.github.io",
+      "path": "Chess_Studio_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
       "title": "ABC Bubbles",
       "url": "https://vervenveda.github.io/arcade.github.io/games/kids/ABC_Bubbles_index.html",
       "repo": "arcade.github.io",
@@ -1108,6 +924,14 @@
       "source": "Verve N Veda Arcade"
     },
     {
+      "title": "Prek Waether Match",
+      "url": "https://vervenveda.github.io/arcade.github.io/games/kids/prek_waether_match_index.html",
+      "repo": "arcade.github.io",
+      "path": "games/kids/prek_waether_match_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
       "title": "Shapes",
       "url": "https://vervenveda.github.io/arcade.github.io/games/kids/Shapes_index.html",
       "repo": "arcade.github.io",
@@ -1116,10 +940,34 @@
       "source": "Verve N Veda Arcade"
     },
     {
-      "title": "Prek Waether Match",
-      "url": "https://vervenveda.github.io/arcade.github.io/games/kids/prek_waether_match_index.html",
+      "title": "Mandala Rings Game",
+      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/mandala_rings_game_index.html",
       "repo": "arcade.github.io",
-      "path": "games/kids/prek_waether_match_index.html",
+      "path": "Geometry/mandala_rings_game_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Original Sanctuary Game",
+      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/original-sanctuary-game_index.html",
+      "repo": "arcade.github.io",
+      "path": "Geometry/original-sanctuary-game_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Sacred Geometry Game",
+      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/sacred_geometry_game_index.html",
+      "repo": "arcade.github.io",
+      "path": "Geometry/sacred_geometry_game_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Hangman",
+      "url": "https://vervenveda.github.io/arcade.github.io/Hangman_index.html",
+      "repo": "arcade.github.io",
+      "path": "Hangman_index.html",
       "category": "games",
       "source": "Verve N Veda Arcade"
     },
@@ -1132,6 +980,230 @@
       "source": "Verve N Veda Arcade"
     },
     {
+      "title": "IQ Mini",
+      "url": "https://vervenveda.github.io/arcade.github.io/IQ-mini_index.html",
+      "repo": "arcade.github.io",
+      "path": "IQ-mini_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "IQ Quantum",
+      "url": "https://vervenveda.github.io/arcade.github.io/IQ-Quantum_index.html",
+      "repo": "arcade.github.io",
+      "path": "IQ-Quantum_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Jenny'S Sudoku",
+      "url": "https://vervenveda.github.io/arcade.github.io/Jenny's_Sudoku_index.html",
+      "repo": "arcade.github.io",
+      "path": "Jenny's_Sudoku_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Learn A New Word",
+      "url": "https://vervenveda.github.io/arcade.github.io/Learn_a_New_Word_index.html",
+      "repo": "arcade.github.io",
+      "path": "Learn_a_New_Word_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Factors Multiples",
+      "url": "https://vervenveda.github.io/arcade.github.io/Math/factors-multiples.html",
+      "repo": "arcade.github.io",
+      "path": "Math/factors-multiples.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Number Family",
+      "url": "https://vervenveda.github.io/arcade.github.io/Math/number-family.html",
+      "repo": "arcade.github.io",
+      "path": "Math/number-family.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Primes Divisibility",
+      "url": "https://vervenveda.github.io/arcade.github.io/Math/primes-divisibility.html",
+      "repo": "arcade.github.io",
+      "path": "Math/primes-divisibility.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Orions Connect Four",
+      "url": "https://vervenveda.github.io/arcade.github.io/Orions_connect_four_index.html",
+      "repo": "arcade.github.io",
+      "path": "Orions_connect_four_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Pocket Arcade",
+      "url": "https://vervenveda.github.io/arcade.github.io/Pocket_Arcade_index.html",
+      "repo": "arcade.github.io",
+      "path": "Pocket_Arcade_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "SixbySix",
+      "url": "https://vervenveda.github.io/arcade.github.io/SixbySix_index.html",
+      "repo": "arcade.github.io",
+      "path": "SixbySix_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Tictactoe",
+      "url": "https://vervenveda.github.io/arcade.github.io/Tictactoe_index.html",
+      "repo": "arcade.github.io",
+      "path": "Tictactoe_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Ancients",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_ancients_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_ancients_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Arts",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_arts_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_arts_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Bible",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_bible_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_bible_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Canon",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_canon_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_canon_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Civic Compass Inndex",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_civic_Compass_inndex.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_civic_Compass_inndex.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Daily News",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_daily_news_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_daily_news_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia ESL",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_ESL_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_ESL_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Health",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_health_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_health_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Lawn Care",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_lawn_care_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_lawn_care_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Mini IQ",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_mini_IQ_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_mini_IQ_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Music",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_music_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_music_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Oddball",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_oddball_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_oddball_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Remnenat Nations",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_remnenat_nations_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_remnenat_nations_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Soveriegn Arts",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_Soveriegn_arts_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_Soveriegn_arts_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Testament",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_testament_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_testament_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Trivia Testament Kids",
+      "url": "https://vervenveda.github.io/arcade.github.io/Trivia_testament_kids_index.html",
+      "repo": "arcade.github.io",
+      "path": "Trivia_testament_kids_index.html",
+      "category": "games",
+      "source": "Verve N Veda Arcade"
+    },
+    {
+      "title": "Environmental News",
+      "url": "https://vervenveda.github.io/solanar.github.io/apps/environmental_news_index.html",
+      "repo": "solanar.github.io",
+      "path": "apps/environmental_news_index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
       "title": "Lunar Reflections",
       "url": "https://vervenveda.github.io/solanar.github.io/apps/Lunar_reflections_index.html",
       "repo": "solanar.github.io",
@@ -1140,10 +1212,10 @@
       "source": "Solanar"
     },
     {
-      "title": "Solanar TraceLab",
-      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar-TraceLab/",
+      "title": "Solanar Kids Skylab",
+      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_kids_skylab_index.html",
       "repo": "solanar.github.io",
-      "path": "apps/Solanar-TraceLab/index.html",
+      "path": "apps/Solanar_kids_skylab_index.html",
       "category": "weather",
       "source": "Solanar"
     },
@@ -1172,18 +1244,10 @@
       "source": "Solanar"
     },
     {
-      "title": "Solanar Kids Skylab",
-      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_kids_skylab_index.html",
+      "title": "Solanar TraceLab",
+      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar-TraceLab/",
       "repo": "solanar.github.io",
-      "path": "apps/Solanar_kids_skylab_index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Environmental News",
-      "url": "https://vervenveda.github.io/solanar.github.io/apps/environmental_news_index.html",
-      "repo": "solanar.github.io",
-      "path": "apps/environmental_news_index.html",
+      "path": "apps/Solanar-TraceLab/index.html",
       "category": "weather",
       "source": "Solanar"
     },
@@ -1192,6 +1256,54 @@
       "url": "https://vervenveda.github.io/solanar.github.io/",
       "repo": "solanar.github.io",
       "path": "index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Elementary Weather Academy",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/elementary-weather-academy/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 101",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-101/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/elementary-weather-academy/weather-101/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 102",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-102/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/elementary-weather-academy/weather-102/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 103",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-103/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/elementary-weather-academy/weather-103/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 104",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-104/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/elementary-weather-academy/weather-104/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 105",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-105/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/elementary-weather-academy/weather-105/index.html",
       "category": "weather",
       "source": "Solanar"
     },
@@ -1242,6 +1354,14 @@
       "path": "weather-academy/Graduate-Programs/advanced-operational-meteorology/forms/forecast-shift.html",
       "category": "weather",
       "source": "Solanar"
+    },
+    {
+      "title": "Graduate Case Diagnostic",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/Graduate-Programs/advanced-operational-meteorology/forms/graduate-case-diagnostic.html",
+      "category": "weather",
+      "source": "Solanar",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/advanced-operational-meteorology/forms/graduate-case-diagnostic.html"
     },
     {
       "title": "Forms",
@@ -1788,6 +1908,14 @@
       "source": "Solanar"
     },
     {
+      "title": "Innovation / Residual Diagnostics",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/Graduate-Programs/numerical-weather-prediction-data-assimilation/forms/innovation-diagnostics.html",
+      "category": "weather",
+      "source": "Solanar",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/numerical-weather-prediction-data-assimilation/forms/innovation-diagnostics.html"
+    },
+    {
       "title": "Kalman Ensemble Da",
       "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/numerical-weather-prediction-data-assimilation/forms/kalman-ensemble-da.html",
       "repo": "solanar.github.io",
@@ -1964,6 +2092,14 @@
       "source": "Solanar"
     },
     {
+      "title": "Tropical Cyclogenesis Diagnostic",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/Graduate-Programs/tropical-meteorology-hurricane-science/forms/genesis-diagnostic.html",
+      "category": "weather",
+      "source": "Solanar",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/tropical-meteorology-hurricane-science/forms/genesis-diagnostic.html"
+    },
+    {
       "title": "Forms",
       "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/tropical-meteorology-hurricane-science/forms/",
       "repo": "solanar.github.io",
@@ -2104,6 +2240,86 @@
       "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Graduate-Programs/tropical-meteorology-hurricane-science/tools/",
       "repo": "solanar.github.io",
       "path": "weather-academy/Graduate-Programs/tropical-meteorology-hurricane-science/tools/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "High School Weather Academy",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/high-school-weather-academy/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 301",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-301/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/high-school-weather-academy/weather-301/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 302",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-302/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/high-school-weather-academy/weather-302/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 303",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-303/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/high-school-weather-academy/weather-303/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 304",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-304/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/high-school-weather-academy/weather-304/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather Academy",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Middle Weather Academy",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/middle-weather-academy/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 201",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/weather-201/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/middle-weather-academy/weather-201/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 202",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/weather-202/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/middle-weather-academy/weather-202/index.html",
+      "category": "weather",
+      "source": "Solanar"
+    },
+    {
+      "title": "Weather 203",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/weather-203/",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/middle-weather-academy/weather-203/index.html",
       "category": "weather",
       "source": "Solanar"
     },
@@ -2340,6 +2556,14 @@
       "source": "Solanar"
     },
     {
+      "title": "NWP Diagnostic Worksheet",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/Solanar-Certification-year-02/forms/model-diagnostic.html",
+      "category": "weather",
+      "source": "Solanar",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Solanar-Certification-year-02/forms/model-diagnostic.html"
+    },
+    {
       "title": "Radar Analysis Pro",
       "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Solanar-Certification-year-02/forms/radar-analysis-pro.html",
       "repo": "solanar.github.io",
@@ -2378,6 +2602,14 @@
       "path": "weather-academy/Solanar-Certification-year-02/forms/sounding-hodograph.html",
       "category": "weather",
       "source": "Solanar"
+    },
+    {
+      "title": "Synoptic Diagnostic Worksheet",
+      "repo": "solanar.github.io",
+      "path": "weather-academy/Solanar-Certification-year-02/forms/synoptic-diagnostic.html",
+      "category": "weather",
+      "source": "Solanar",
+      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/Solanar-Certification-year-02/forms/synoptic-diagnostic.html"
     },
     {
       "title": "Tropical Analysis",
@@ -2444,182 +2676,6 @@
       "source": "Solanar"
     },
     {
-      "title": "Elementary Weather Academy",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/elementary-weather-academy/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 101",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-101/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/elementary-weather-academy/weather-101/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 102",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-102/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/elementary-weather-academy/weather-102/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 103",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-103/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/elementary-weather-academy/weather-103/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 104",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-104/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/elementary-weather-academy/weather-104/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 105",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/elementary-weather-academy/weather-105/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/elementary-weather-academy/weather-105/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "High School Weather Academy",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/high-school-weather-academy/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 301",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-301/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/high-school-weather-academy/weather-301/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 302",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-302/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/high-school-weather-academy/weather-302/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 303",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-303/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/high-school-weather-academy/weather-303/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 304",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/high-school-weather-academy/weather-304/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/high-school-weather-academy/weather-304/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather Academy",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Middle Weather Academy",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/middle-weather-academy/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 201",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/weather-201/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/middle-weather-academy/weather-201/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 202",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/weather-202/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/middle-weather-academy/weather-202/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "Weather 203",
-      "url": "https://vervenveda.github.io/solanar.github.io/weather-academy/middle-weather-academy/weather-203/",
-      "repo": "solanar.github.io",
-      "path": "weather-academy/middle-weather-academy/weather-203/index.html",
-      "category": "weather",
-      "source": "Solanar"
-    },
-    {
-      "title": "EcoPulse News",
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/EcoPulse_news_index.html",
-      "repo": "theverifier.github.io",
-      "path": "apps/EcoPulse_news_index.html",
-      "category": "news",
-      "source": "The Verifier"
-    },
-    {
-      "title": "Interactive Live News Dashboard",
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Interactive_Live_%20News_%20Dashboard_index.html",
-      "repo": "theverifier.github.io",
-      "path": "apps/Interactive_Live_ News_ Dashboard_index.html",
-      "category": "news",
-      "source": "The Verifier"
-    },
-    {
-      "title": "Live Research News",
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Live_Research_News_index.html",
-      "repo": "theverifier.github.io",
-      "path": "apps/Live_Research_News_index.html",
-      "category": "news",
-      "source": "The Verifier"
-    },
-    {
-      "title": "Modern News Engine",
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Modern_News_Engine_index.html",
-      "repo": "theverifier.github.io",
-      "path": "apps/Modern_News_Engine_index.html",
-      "category": "news",
-      "source": "The Verifier"
-    },
-    {
-      "title": "PLERA Search Gate",
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/PLERA_Search_Gate_index.html",
-      "repo": "theverifier.github.io",
-      "path": "apps/PLERA_Search_Gate_index.html",
-      "category": "news",
-      "source": "The Verifier"
-    },
-    {
-      "title": "Trivia News",
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Trivia_news_index.html",
-      "repo": "theverifier.github.io",
-      "path": "apps/Trivia_news_index.html",
-      "category": "news",
-      "source": "The Verifier"
-    },
-    {
       "title": "App Portfolio",
       "url": "https://vervenveda.github.io/theverifier.github.io/apps/app_portfolio_index.html",
       "repo": "theverifier.github.io",
@@ -2636,6 +2692,14 @@
       "source": "The Verifier"
     },
     {
+      "title": "EcoPulse News",
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/EcoPulse_news_index.html",
+      "repo": "theverifier.github.io",
+      "path": "apps/EcoPulse_news_index.html",
+      "category": "news",
+      "source": "The Verifier"
+    },
+    {
       "title": "Education News",
       "url": "https://vervenveda.github.io/theverifier.github.io/apps/education_news_index.html",
       "repo": "theverifier.github.io",
@@ -2648,6 +2712,14 @@
       "url": "https://vervenveda.github.io/theverifier.github.io/apps/global_news_digest_index.html",
       "repo": "theverifier.github.io",
       "path": "apps/global_news_digest_index.html",
+      "category": "news",
+      "source": "The Verifier"
+    },
+    {
+      "title": "Interactive Live News Dashboard",
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Interactive_Live_%20News_%20Dashboard_index.html",
+      "repo": "theverifier.github.io",
+      "path": "apps/Interactive_Live_ News_ Dashboard_index.html",
       "category": "news",
       "source": "The Verifier"
     },
@@ -2676,6 +2748,22 @@
       "source": "The Verifier"
     },
     {
+      "title": "Live Research News",
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Live_Research_News_index.html",
+      "repo": "theverifier.github.io",
+      "path": "apps/Live_Research_News_index.html",
+      "category": "news",
+      "source": "The Verifier"
+    },
+    {
+      "title": "Modern News Engine",
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Modern_News_Engine_index.html",
+      "repo": "theverifier.github.io",
+      "path": "apps/Modern_News_Engine_index.html",
+      "category": "news",
+      "source": "The Verifier"
+    },
+    {
       "title": "News Feed",
       "url": "https://vervenveda.github.io/theverifier.github.io/apps/news_feed_index.html",
       "repo": "theverifier.github.io",
@@ -2692,6 +2780,14 @@
       "source": "The Verifier"
     },
     {
+      "title": "PLERA Search Gate",
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/PLERA_Search_Gate_index.html",
+      "repo": "theverifier.github.io",
+      "path": "apps/PLERA_Search_Gate_index.html",
+      "category": "news",
+      "source": "The Verifier"
+    },
+    {
       "title": "Science Daily",
       "url": "https://vervenveda.github.io/theverifier.github.io/apps/science_daily_index.html",
       "repo": "theverifier.github.io",
@@ -2704,6 +2800,14 @@
       "url": "https://vervenveda.github.io/theverifier.github.io/apps/science_news_index.html",
       "repo": "theverifier.github.io",
       "path": "apps/science_news_index.html",
+      "category": "news",
+      "source": "The Verifier"
+    },
+    {
+      "title": "Trivia News",
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Trivia_news_index.html",
+      "repo": "theverifier.github.io",
+      "path": "apps/Trivia_news_index.html",
       "category": "news",
       "source": "The Verifier"
     },
