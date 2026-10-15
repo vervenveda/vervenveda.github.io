@@ -1,5 +1,5 @@
 /*
-  Verve N Veda · Shared Public Presentation Standard · v1
+  Verve N Veda · Shared Public Presentation Standard · v2
   Applies only to public GitHub-facing pages that opt in.
   Dormant STOS, archive, disabled, diagnostic, and source-snippet surfaces are intentionally excluded.
 */
@@ -45,6 +45,8 @@ h3,
 .hero-subtitle,
 .section-intro,
 .lead{
+  max-width:900px;
+  margin-inline:auto;
   font-size:var(--vnv-descriptor-size)!important;
   line-height:1.35!important;
   text-align:center;
@@ -80,6 +82,16 @@ input[type="reset"]{
 .notice,
 .callout{
   border-radius:var(--vnv-radius)!important;
+  text-align:center;
+}
+
+[class*="card"] > .actions,
+.card > .actions,
+.tile > .actions,
+.doorway > .actions,
+.panel > .actions{
+  margin-top:auto;
+  justify-content:center;
 }
 
 .actions,
@@ -106,6 +118,8 @@ input[type="reset"]{
 .cta-row > a,
 .cta-row > button{
   min-height:44px;
+  flex:1 1 180px;
+  max-width:280px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
