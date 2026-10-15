@@ -1,0 +1,2663 @@
+{
+  "version": 3,
+  "generatedAt": "2026-10-14",
+  "policy": "Public HTML on main; dormant STOS, disabled, diagnostics, 404/offline and source snippets excluded.",
+  "pages": [
+    {
+      "title": "Act Of Kindness",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Act_of_Kindness_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Act_of_Kindness_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Affirmations",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Affirmations_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Affirmations_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Resources",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Art_resources_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Art_resources_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Simple Color Studio",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Art_simple_color_studio_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Art_simple_color_studio_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Art 101",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_101_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_art_101_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Art 201",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_201_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_art_201_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Art 301",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_301_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_art_301_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Art Education Portal",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_education_portal_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_art_education_portal_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Art Hall",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_hall_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_art_hall_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Music Hall",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_hall_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_music_hall_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Music Reading 101",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_reading_101_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_music_reading_101_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Music Staff",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_staff_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_music_staff_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Class Music Theory 201",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_theory_201_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Class_music_theory_201_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Elementary Art Atlas",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Elementary_Art_Atlas_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Elementary_Art_Atlas_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Forge Affirmations Dark",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Forge_affirmations_dark_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Forge_affirmations_dark_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Forge Affirmations Zen",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Forge_affirmations_zen_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Forge_affirmations_zen_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Game Kids Mirror Me",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Game_kids_mirror_me_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Game_kids_mirror_me_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Game Palette Forge",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Game_palette_forge_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Game_palette_forge_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Geometry Sancturay",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Geometry_sancturay_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Geometry_sancturay_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Inspiration Kind Of Creator",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Inspiration_Kind_of_Creator_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Inspiration_Kind_of_Creator_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Inspiration Wheel",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Inspiration_wheel_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Inspiration_wheel_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Journal Prose Editing Suite",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Journal_prose_editing_suite_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Journal_prose_editing_suite_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Journal Teen Boys",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Journal_teen_boys_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Journal_teen_boys_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Journal Teen Girls",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Journal_teen_girls_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Journal_teen_girls_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Photo Album Studio",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Photo_Album_Studio/",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Photo_Album_Studio/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "SixBitBun",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/SixBitBun_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/SixBitBun_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "SpinSpire Art Prompt Generator",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/SpinSpire_Art_Prompt_Generator_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/SpinSpire_Art_Prompt_Generator_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Word Alchemy Game",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Word_alchemy_game_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/Word_alchemy_game_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Education",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/art-education.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/art-education.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Tool Sagaen™ Art Studio",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_Sagaen%E2%84%A2_art_studio_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/art_tool_Sagaen™_art_studio_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Tool Advanced Sketch",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_advanced_sketch_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/art_tool_advanced_sketch_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Tool Color Studio",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_color_studio_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/art_tool_color_studio_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Tool Sketch Lab",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_sketch_lab_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/art_tool_sketch_lab_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Tool Trace Draw",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/art_tool_trace_draw_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/art_tool_trace_draw_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Staff Studio",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/composition/staff-studio_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/composition/staff-studio_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Vivoser Composer",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/composition/vivoser-composer_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/composition/vivoser-composer_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Mini Keyboard",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/instruments/mini-keyboard_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/instruments/mini-keyboard_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Mini Spinet",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/instruments/mini-spinet_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/instruments/mini-spinet_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Modern Spinet",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/instruments/modern-spinet_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/instruments/modern-spinet_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Pro Keyboard",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/instruments/pro-keyboard_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/instruments/pro-keyboard_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Vintage Spinet",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/instruments/vintage-spinet_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/instruments/vintage-spinet_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Photo Album",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/photo_album_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/photo_album_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Song Embedder",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/publishing/song-embedder_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/publishing/song-embedder_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Dual Frequency",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/sound-labs/dual-frequency_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/sound-labs/dual-frequency_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Frequency Tuner",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/sound-labs/frequency-tuner_index.html",
+      "repo": "bazaarart.github.io",
+      "path": "apps/sound-labs/frequency-tuner_index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art Class",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/classes/art-class/",
+      "repo": "bazaarart.github.io",
+      "path": "classes/art-class/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Bazaar Art",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/",
+      "repo": "bazaarart.github.io",
+      "path": "index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "ARSHIF Music Hall Resources Updated",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Composer Studio",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/composer_studio_index.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/composer_studio_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Pro Keyboard",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/pro-keyboard_index.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/pro-keyboard_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "The Staff",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/the-staff_index.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/the-staff_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Music 101 Workshop",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/education/Music%20101%20Workshop_index.html",
+      "repo": "the_refrain.github.io",
+      "path": "education/Music 101 Workshop_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Music 201 Workshop",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/education/Music%20201%20Workshop_index.html",
+      "repo": "the_refrain.github.io",
+      "path": "education/Music 201 Workshop_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "The Refrain",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/",
+      "repo": "the_refrain.github.io",
+      "path": "index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "AuraInk",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/AuraInk_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/AuraInk_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "AuraenTune",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/AuraenTune_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/AuraenTune_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Aurora Inspiration",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/Aurora_Inspiration_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/Aurora_Inspiration_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Breath Evening",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/Breath_evening_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/Breath_evening_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Sacred Geometry Sanctuary",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/Sacred_geometry_sanctuary_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/Sacred_geometry_sanctuary_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "SpinSpire",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/SpinSpire_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/SpinSpire_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Affirmation Garden",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/affirmation_garden_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/affirmation_garden_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Affirmation Garden Too",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/affirmation_garden_too_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/affirmation_garden_too_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Brain Maze",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/brain_maze_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/brain_maze_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Breath Reset",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/breath_reset_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/breath_reset_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Breathe Ground",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/breathe_ground_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/breathe_ground_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Color Alchemy",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/color_alchemy_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/color_alchemy_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Contribute",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/contribute_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/contribute_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Creative Mind Odyssey",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/creative_mind_odyssey_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/creative_mind_odyssey_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Creative Wheel",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/creative_wheel_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/creative_wheel_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Daily Journal",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/daily_journal_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/daily_journal_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Daily Rhythm",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/daily_rhythm_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/daily_rhythm_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Daily Spark",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/daily_spark_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/daily_spark_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Daily Writing Spark",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/daily_writing_spark_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/daily_writing_spark_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Dream Script",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/dream_script_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/dream_script_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Dual Frequency Tuner",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/dual_frequency_tuner_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/dual_frequency_tuner_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Emotional Weather",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/emotional_weather_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/emotional_weather_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Evening Ember",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/evening_ember_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/evening_ember_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Evening Prayer",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/evening_prayer_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/evening_prayer_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "First Hour",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/first_hour_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/first_hour_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Grounding Suite",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/grounding_suite_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/grounding_suite_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Inspiration Mosaic",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/inspiration_mosaic_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/inspiration_mosaic_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Letter To Me",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/letter_to_me_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/letter_to_me_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Loom Of Dawn",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/loom_of_dawn_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/loom_of_dawn_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Morning Muse",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/morning_muse_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/morning_muse_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Morning Reflection",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/morning_reflection_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/morning_reflection_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Morning Sanctum",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/morning_sanctum_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/morning_sanctum_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Niche Venn",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/niche_venn_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/niche_venn_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "One A Day",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/one_a_day_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/one_a_day_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Photo Album",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/photo_album_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/photo_album_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Quantum Task Handler",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/quantum_task_handler_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/quantum_task_handler_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Quiet Wins",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/quiet_wins_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/quiet_wins_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Song Embedder",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/song_embedder_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/song_embedder_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Soulbook",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/soulbook_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/soulbook_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Spire Mindful Breathing",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/spire_mindful_breathing_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/spire_mindful_breathing_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Starlight Jar",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/starlight_jar_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/starlight_jar_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Story Spark",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/story_spark_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/story_spark_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "The Village",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/the_village_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/the_village_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Tiny Triumphs",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/tiny_triumphs_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/tiny_triumphs_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Vintage Spinnet",
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/vintage_spinnet_index.html",
+      "repo": "aurora.github.io",
+      "path": "apps/vintage_spinnet_index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "Aurora",
+      "url": "https://vervenveda.github.io/aurora.github.io/",
+      "repo": "aurora.github.io",
+      "path": "index.html",
+      "category": "creative",
+      "source": "Aurora"
+    },
+    {
+      "title": "My Art Gallery",
+      "url": "https://vervenveda.github.io/myartgallery.github.io/",
+      "repo": "myartgallery.github.io",
+      "path": "index.html",
+      "category": "creative",
+      "source": "My Art Gallery"
+    },
+    {
+      "title": "ProReSources Updated",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/ProReSources_updated_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "ProReSources_updated_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "ProResources Accessible Theme",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/ProResources_accessible_theme_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "ProResources_accessible_theme_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Atlas Evidence Analysis",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Atlas_Evidence_Analysis.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Atlas_Evidence_Analysis.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "DailySpark™ Task Studio",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/DailySpark%E2%84%A2_task_studio_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/DailySpark™_task_studio_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Evidence Citation Studio",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Evidence_Citation_Studio/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Lab Resource Cloud",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/lab-resource-cloud.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Evidence_Citation_Studio/lab-resource-cloud.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Recovery",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/recovery.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Evidence_Citation_Studio/recovery.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Studio Core",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/studio-core.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Evidence_Citation_Studio/studio-core.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "FleaPit™ Protected Media Hub",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/FleaPit%E2%84%A2%20Protected%20Media%20Hub_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/FleaPit™ Protected Media Hub_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "FleaPit™ Media Hub",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/FleaPit%E2%84%A2_media_hub_Index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/FleaPit™_media_hub_Index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Harmony'S Haven Studio™ Multi Track",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Harmony's%20Haven%20Studio%E2%84%A2%20Multi-Track_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Harmony's Haven Studio™ Multi-Track_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "KhaeClean™",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeClean%E2%84%A2_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/KhaeClean™_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "KhaeZip™",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeZip%E2%84%A2_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/KhaeZip™_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Khaemenes Scientific Calculator",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Khaemenes Scientific Calculator",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Khaemenes_Scientific_Calculator/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Ohmic CAD Studio",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Ohmic_CAD_Studio.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Ohmic CAD",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/Ohmic_CAD_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "PLERA™ Search Gate",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/PLERA%E2%84%A2%20Search%20Gate_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/PLERA™ Search Gate_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Editingsuite",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE/Editorial%20Suite/editingsuite_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/PROSE/Editorial Suite/editingsuite_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Editorial Suite Core",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE/Editorial%20Suite/editorial-suite_core.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Handwriting Lab",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE/Handwriting%20Lab/handwriting-lab.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/PROSE/Handwriting Lab/handwriting-lab.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Editorial Gateway",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE/editorial-gateway.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/PROSE/editorial-gateway.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Writers Studio",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/PROSE/writers-studio.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/PROSE/writers-studio.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "SixBit Bun Studio",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/SixBit_Bun_Studio_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/SixBit_Bun_Studio_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "SixBit Bun",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/SixBit_Bun_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/SixBit_Bun_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Empire Systems Lab",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/empire-systems-lab_index.html",
+      "repo": "proresource_hub.github.io",
+      "path": "Protools/empire-systems-lab_index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Assets",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/assets/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/assets/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Code",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/code/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/code/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Design",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/design/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/design/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Files",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/files/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/files/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Categories",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Media",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/media/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/media/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Network",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/network/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/network/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Productivity",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/productivity/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/productivity/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Research",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/research/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/research/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Systems",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/systems/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/systems/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Writing",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/categories/writing/",
+      "repo": "proresource_hub.github.io",
+      "path": "categories/writing/index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "ProReSources",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/",
+      "repo": "proresource_hub.github.io",
+      "path": "index.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "After Action Review",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/after-action-review.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/after-action-review.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Annotated Bibliography",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/annotated-bibliography.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/annotated-bibliography.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Annual Report",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/annual-report.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/annual-report.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Apology Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/apology-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/apology-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Appeal Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/appeal-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/appeal-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Artist Statement",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/artist-statement.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/artist-statement.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Board Resolution",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/board-resolution.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/board-resolution.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Book Proposal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/book-proposal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/book-proposal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Book Review",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/book-review.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/book-review.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Book Synopsis",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/book-synopsis.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/book-synopsis.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Business Plan",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/business-plan.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/business-plan.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Case Study",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/case-study.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/case-study.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Change Request",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/change-request.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/change-request.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Childrens Story",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/childrens-story.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/childrens-story.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Community Proposal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/community-proposal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/community-proposal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Comparative Analysis",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/comparative-analysis.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/comparative-analysis.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Complaint Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/complaint-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/complaint-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Condolence Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/condolence-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/condolence-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Course Syllabus",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/course-syllabus.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/course-syllabus.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Cover Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/cover-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/cover-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Curriculum Vitae",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/curriculum-vitae.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/curriculum-vitae.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Daily Checklist",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/daily-checklist.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/daily-checklist.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Decision Memo",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/decision-memo.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/decision-memo.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Donor Thank You Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/donor-thank-you-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/donor-thank-you-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Editorial Calendar",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/editorial-calendar.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/editorial-calendar.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Ethical Will",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/ethical-will.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/ethical-will.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Eulogy",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/eulogy.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/eulogy.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Exhibition Proposal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/exhibition-proposal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/exhibition-proposal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Family History",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/family-history.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/family-history.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Fundraising Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/fundraising-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/fundraising-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Grant Proposal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/grant-proposal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/grant-proposal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Handoff Document",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/handoff-document.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/handoff-document.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Implementation Plan",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/implementation-plan.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/implementation-plan.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Incident Report",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/incident-report.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/incident-report.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Interview Preparation",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/interview-preparation.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/interview-preparation.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Issue Log",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/issue-log.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/issue-log.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Job Description",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/job-description.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/job-description.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Lab Report",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/lab-report.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/lab-report.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Legacy Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/legacy-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/legacy-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Lesson Plan",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/lesson-plan.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/lesson-plan.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Literature Review",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/literature-review.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/literature-review.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Media Kit",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/media-kit.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/media-kit.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Meeting Agenda",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/meeting-agenda.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/meeting-agenda.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Meeting Brief",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/meeting-brief.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/meeting-brief.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Memoir Chapter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/memoir-chapter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/memoir-chapter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Newsletter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/newsletter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/newsletter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Obituary",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/obituary.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/obituary.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Offer Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/offer-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/offer-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Academic Notes",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/academic-notes.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/academic-notes.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Assessment Rubric",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/assessment-rubric.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/assessment-rubric.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Assignment Brief",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/assignment-brief.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/assignment-brief.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Exam Review Plan",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/exam-review-plan.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/exam-review-plan.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Learning Goals Plan",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/learning-goals-plan.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/learning-goals-plan.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Peer Review",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/peer-review.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/peer-review.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Problem Set",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/problem-set.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/problem-set.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Project Reflection",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/project-reflection.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/project-reflection.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Reading Response",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/reading-response.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/reading-response.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Seminar Discussion",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/seminar-discussion.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/seminar-discussion.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Student Reflection",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/student-reflection.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/student-reflection.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Study Guide",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-academic-core/study-guide.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-academic-core/study-guide.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Assessment Correction",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/assessment-correction.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/assessment-correction.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Concept Reference",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/concept-reference.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/concept-reference.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Data Graph Study",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/data-graph-study.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/data-graph-study.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Error Analysis",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/error-analysis.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/error-analysis.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Math Model Study",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/math-model-study.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/math-model-study.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Mathematical Reasoning",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/mathematical-reasoning.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/mathematical-reasoning.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Problem Solving Journal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/problem-solving-journal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/problem-solving-journal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Proof Framework",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/proof-framework.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/proof-framework.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Vocabulary Conjecture",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/vocabulary-conjecture.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/vocabulary-conjecture.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Worked Example",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/worked-example.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-mathematics-core/worked-example.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Counterexample Studio",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/counterexample-studio.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/counterexample-studio.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Course Reading",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/course-reading.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/course-reading.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Final Examination",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/final-examination.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/final-examination.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Instructor Guide",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/instructor-guide.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/instructor-guide.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Mastery Assessment",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/mastery-assessment.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/mastery-assessment.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Mathematical Investigation Lab",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/mathematical-investigation-lab.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/mathematical-investigation-lab.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Midterm Examination",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/midterm-examination.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/midterm-examination.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Proof Workshop",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/proof-workshop.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/proof-workshop.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Research Brief",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/research-brief.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/research-brief.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Solution Commentary",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/solution-commentary.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/solution-commentary.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Source Commentary",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/source-commentary.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/source-commentary.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Theorem Proof Exposition",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-scholarly-publishing/theorem-proof-exposition.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/packs/khaemenes-scholarly-publishing/theorem-proof-exposition.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Performance Review",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/performance-review.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/performance-review.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Personal Journal Entry",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/personal-journal-entry.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/personal-journal-entry.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Personal Statement",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/personal-statement.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/personal-statement.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Petition",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/petition.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/petition.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Podcast Script",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/podcast-script.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/podcast-script.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Policy Document",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/policy-document.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/policy-document.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Portfolio Narrative",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/portfolio-narrative.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/portfolio-narrative.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Press Release",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/press-release.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/press-release.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Professional Bio",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/professional-bio.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/professional-bio.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Professional Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/professional-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/professional-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Program Plan",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/program-plan.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/program-plan.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Project Brief",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/project-brief.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/project-brief.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Project Charter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/project-charter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/project-charter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Project Proposal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/project-proposal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/project-proposal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Project Status Report",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/project-status-report.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/project-status-report.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Public Comment",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/public-comment.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/public-comment.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Public Records Request",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/public-records-request.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/public-records-request.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Query Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/query-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/query-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Recommendation Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/recommendation-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/recommendation-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Representative Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/representative-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/representative-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Research Paper",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/research-paper.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/research-paper.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Resignation Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/resignation-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/resignation-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Resume",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/resume.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/resume.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Risk Assessment",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/risk-assessment.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/risk-assessment.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Scholarship Essay",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/scholarship-essay.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/scholarship-essay.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Speech Address",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/speech-address.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/speech-address.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Sponsorship Proposal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/sponsorship-proposal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/sponsorship-proposal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Standard Operating Procedure",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/standard-operating-procedure.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/standard-operating-procedure.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Strategic Plan",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/strategic-plan.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/strategic-plan.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Testimony",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/testimony.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/testimony.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Thank You Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/thank-you-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/thank-you-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Thesis Proposal",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/thesis-proposal.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/thesis-proposal.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Video Script",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/video-script.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/video-script.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Volunteer Recruitment Letter",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/volunteer-recruitment-letter.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/volunteer-recruitment-letter.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Wedding Vows",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/templates/wedding-vows.html",
+      "repo": "proresource_hub.github.io",
+      "path": "templates/wedding-vows.html",
+      "category": "professional",
+      "source": "ProReSources"
+    },
+    {
+      "title": "Financial Aid",
+      "url": "https://vervenveda.github.io/finance.github.io/Financial-Aid/",
+      "repo": "finance.github.io",
+      "path": "Financial-Aid/index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Budget Calculator",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/budget-calculator_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/budget-calculator_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Budget Tool",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/budget-tool_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/budget-tool_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Budget Planner",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/budget_planner_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/budget_planner_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Chore Budget Hub",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/chore_budget_hub_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/chore_budget_hub_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Fianancial Inspiration Wheel",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/fianancial-inspiration-wheel_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/fianancial-inspiration-wheel_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Financial Library",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/financial-library_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/financial-library_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Global Job Search",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/global_job_search_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/global_job_search_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Grants Financial Aid",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/grants-financial-aid_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/grants-financial-aid_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "International Finance",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/international-finance_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/international-finance_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "News Finance Employment",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/news_finance_employment_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/news_finance_employment_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "News Finance",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/news_finance_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/news_finance_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Resource Library",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/resource-library_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/resource-library_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Simulator Economic Growth",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/simulator_economic_growth_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/simulator_economic_growth_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Simulator Supply Demand",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/simulator_supply_demand_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/simulator_supply_demand_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Small Business Budget",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/small-business-budget_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/small-business-budget_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Sovereign Legacy Planner",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/sovereign_legacy_planner.html",
+      "repo": "finance.github.io",
+      "path": "apps/sovereign_legacy_planner.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Thesara Financial Command Center",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/thesara_financial_command_center.html",
+      "repo": "finance.github.io",
+      "path": "apps/thesara_financial_command_center.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Ultimate Budget Tool",
+      "url": "https://vervenveda.github.io/finance.github.io/apps/ultimate-budget-tool_index.html",
+      "repo": "finance.github.io",
+      "path": "apps/ultimate-budget-tool_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Financial Hall",
+      "url": "https://vervenveda.github.io/finance.github.io/financial-hall/",
+      "repo": "finance.github.io",
+      "path": "financial-hall/index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Finance Academy",
+      "url": "https://vervenveda.github.io/finance.github.io/",
+      "repo": "finance.github.io",
+      "path": "index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Business Hub",
+      "url": "https://vervenveda.github.io/finance.github.io/nonprofit-hall/business-hub_index.html",
+      "repo": "finance.github.io",
+      "path": "nonprofit-hall/business-hub_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Business Incubator",
+      "url": "https://vervenveda.github.io/finance.github.io/nonprofit-hall/business-incubator_index.html",
+      "repo": "finance.github.io",
+      "path": "nonprofit-hall/business-incubator_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Business Management",
+      "url": "https://vervenveda.github.io/finance.github.io/nonprofit-hall/business-management_index.html",
+      "repo": "finance.github.io",
+      "path": "nonprofit-hall/business-management_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Nonprofit Hall",
+      "url": "https://vervenveda.github.io/finance.github.io/nonprofit-hall/",
+      "repo": "finance.github.io",
+      "path": "nonprofit-hall/index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "6 Week Personal Finance",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/6-week-personal-finance_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/6-week-personal-finance_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Crypto",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/crypto_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/crypto_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Debit Credit",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/debit-credit_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/debit-credit_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Finacial Academy",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/finacial-academy_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/finacial-academy_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Financial Budget",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/financial-budget_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/financial-budget_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Investment Foundations",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/investment-foundations_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/investment-foundations_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Personal Taxes",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/personal-taxes_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/personal-taxes_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Stock Market",
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/stock-market_index.html",
+      "repo": "finance.github.io",
+      "path": "workshops/stock-market_index.html",
+      "category": "finance",
+      "source": "Finance Academy"
+    },
+    {
+      "title": "Bible Context",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/Bible-context_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/Bible-context_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Yahushua Study",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/Yahushua_Study_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/Yahushua_Study_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Yahushua Portal",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/Yahushua_portal_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/Yahushua_portal_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Bible Before Cannon",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/bible_before_cannon_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/bible_before_cannon_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Biblical Portal",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/biblical_portal_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/biblical_portal_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Biblical Web Directory",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/biblical_web_directory_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/biblical_web_directory_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Foundations Of Faith",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/foundations_of_faith_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/foundations_of_faith_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Prayer",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/prayer_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/prayer_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Remnant Nations",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/remnant_nations_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/remnant_nations_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Testament",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/testament_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/testament_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Testament Study Portal",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/testament_study_portal_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/testament_study_portal_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Truth Tribe Class",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/truth_tribe_class_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/truth_tribe_class_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Truth Tribe",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/truth_tribe_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/truth_tribe_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Truth Tribe Kids",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/truth_tribe_kids_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/truth_tribe_kids_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Zionism Course",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/zionism_course_index.html",
+      "repo": "Arshif.github.io",
+      "path": "Faith/apps/zionism_course_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Faith",
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/",
+      "repo": "Arshif.github.io",
+      "path": "Faith/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Catalog",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/",
+      "repo": "Arshif.github.io",
+      "path": "catalog/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 10 Unit 01",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-10-unit-01.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-10-unit-01.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 10 Unit 03",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-10-unit-03.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-10-unit-03.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 11 Unit 01",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-11-unit-01.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-11-unit-01.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 11 Unit 03",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-11-unit-03.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-11-unit-03.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 12 Unit 01",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-12-unit-01.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-12-unit-01.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 12 Unit 03",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-12-unit-03.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-12-unit-03.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 9 Unit 01",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-9-unit-01.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-9-unit-01.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "English 9 Unit 03",
+      "url": "https://vervenveda.github.io/Arshif.github.io/catalog/texts/english-9-unit-03.html",
+      "repo": "Arshif.github.io",
+      "path": "catalog/texts/english-9-unit-03.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Reading Room",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/Reading_room_index.html",
+      "repo": "Arshif.github.io",
+      "path": "halls/Reading_room_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Culinary",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/culinary/",
+      "repo": "Arshif.github.io",
+      "path": "halls/culinary/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Exploration Travelogues",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/exploration-travelogues/",
+      "repo": "Arshif.github.io",
+      "path": "halls/exploration-travelogues/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Historical Biblical Parallels",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/historical-biblical-parallels/",
+      "repo": "Arshif.github.io",
+      "path": "halls/historical-biblical-parallels/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Halls",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/",
+      "repo": "Arshif.github.io",
+      "path": "halls/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Literacy Childrens Classics",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/literacy-childrens-classics/",
+      "repo": "Arshif.github.io",
+      "path": "halls/literacy-childrens-classics/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Literacy Indiginous Oral Traditions",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/literacy-indiginous-oral-traditions/",
+      "repo": "Arshif.github.io",
+      "path": "halls/literacy-indiginous-oral-traditions/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Literacy Lost Books",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/literacy-lost-books/",
+      "repo": "Arshif.github.io",
+      "path": "halls/literacy-lost-books/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Literacy Poetry 9th University",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/literacy-poetry-9th-university/",
+      "repo": "Arshif.github.io",
+      "path": "halls/literacy-poetry-9th-university/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Literacy World Classics",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/literacy-world-classics/",
+      "repo": "Arshif.github.io",
+      "path": "halls/literacy-world-classics/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Philosophy",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/philosophy/",
+      "repo": "Arshif.github.io",
+      "path": "halls/philosophy/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Theatre",
+      "url": "https://vervenveda.github.io/Arshif.github.io/halls/theatre/",
+      "repo": "Arshif.github.io",
+      "path": "halls/theatre/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "ARSHIF Archives",
+      "url": "https://vervenveda.github.io/Arshif.github.io/",
+      "repo": "Arshif.github.io",
+      "path": "index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "PLERA Search",
+      "url": "https://vervenveda.github.io/Arshif.github.io/tools/PLERA_Search_index.html",
+      "repo": "Arshif.github.io",
+      "path": "tools/PLERA_Search_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Close Reading Annotation Lab",
+      "url": "https://vervenveda.github.io/Arshif.github.io/tools/close-reading-annotation-lab/",
+      "repo": "Arshif.github.io",
+      "path": "tools/close-reading-annotation-lab/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Contribute",
+      "url": "https://vervenveda.github.io/Arshif.github.io/tools/contribute_index.html",
+      "repo": "Arshif.github.io",
+      "path": "tools/contribute_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Field Lab",
+      "url": "https://vervenveda.github.io/Arshif.github.io/tools/field-lab/",
+      "repo": "Arshif.github.io",
+      "path": "tools/field-lab/index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Song Embedder",
+      "url": "https://vervenveda.github.io/Arshif.github.io/tools/song_embedder_index.html",
+      "repo": "Arshif.github.io",
+      "path": "tools/song_embedder_index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    }
+  ]
+}
