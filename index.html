@@ -4545,10 +4545,58 @@
           if(responses.some(response => !response.ok)) throw new Error("catalog request failed");
           const parts = await Promise.all(responses.map(response => response.json()));
           ECOSYSTEM_PAGE_CATALOG = parts.flatMap(part => Array.isArray(part.pages) ? part.pages : []);
+
+          /* Keep the deep generated page catalog authoritative, then add any
+             primary GitHub Pages gateway that is present in SITES but absent
+             from the generated scan. This closes owner/repository gaps without
+             exposing administrator, diagnostic, offline-only, archive, or
+             dormant STOS surfaces. */
+          const urlKey = value => {
+            try{
+              const url = new URL(value,location.href);
+              url.hash = "";
+              url.search = "";
+              url.pathname = url.pathname.replace(/\/index\.html$/i,"/");
+              return url.href;
+            }catch{
+              return String(value || "");
+            }
+          };
+          const knownUrls = new Set(ECOSYSTEM_PAGE_CATALOG.map(page => urlKey(page?.url)).filter(Boolean));
+          const fallbackCategory = Object.freeze({
+            "Education":"education",
+            "Knowledge":"research",
+            "Public Service":"civic",
+            "Creative & Professional":"creative"
+          });
+          SITES.forEach(site => {
+            if(!site?.url || !/\.github\.io(?:\/|$)/i.test(site.url)) return;
+            const key = urlKey(site.url);
+            if(!key || knownUrls.has(key)) return;
+            try{
+              const url = new URL(site.url);
+              const owner = url.hostname.replace(/\.github\.io$/i,"");
+              const firstPath = decodeURIComponent(url.pathname.split("/").filter(Boolean)[0] || "");
+              const repo = firstPath || `${owner}/${owner}.github.io`;
+              ECOSYSTEM_PAGE_CATALOG.push({
+                title:site.title,
+                url:site.url,
+                repo,
+                path:"index.html",
+                category:fallbackCategory[site.group] || "gateway",
+                source:site.title
+              });
+              knownUrls.add(key);
+            }catch{
+              /* A malformed optional doorway must never block the directory. */
+            }
+          });
+
           const seen = new Set();
           ECOSYSTEM_PAGE_CATALOG = ECOSYSTEM_PAGE_CATALOG.filter(page => {
-            if(!page?.url || seen.has(page.url)) return false;
-            seen.add(page.url);
+            const key = urlKey(page?.url);
+            if(!key || seen.has(key)) return false;
+            seen.add(key);
             return true;
           });
           ECOSYSTEM_PAGE_CATALOG_READY = true;
