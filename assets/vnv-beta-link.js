@@ -1,4 +1,4 @@
-/* Verve N Veda · Beta Program universal button widget · v1.4.0 */
+/* Verve N Veda · Beta Program universal button widget · v1.5.0 */
 (() => {
   "use strict";
 
@@ -9,6 +9,9 @@
   const BETA_URL="https://vervenveda.com/beta/";
   const SCRIPT_URL="https://vervenveda.com/assets/vnv-beta-link.js";
   const BAZAAR_LIVE_URL="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html";
+  const HIGH_PROFILE_ID="khaemenesHighStudentProfileLink";
+  const HIGH_PROFILE_STYLE_ID="khaemenesHighStudentProfileLinkStyles";
+  const HIGH_PROFILE_URL="https://vervenveda.com/Khaemenes_Academy.github.io/student/";
 
   const clean=(value,max)=>String(value??"").replace(/[\u0000-\u001f\u007f]/g,"").slice(0,max);
 
@@ -51,6 +54,103 @@
       return indexLike&&(bazaarHost||bazaarPath);
     }catch{return false}
   };
+
+
+  const isHighSchoolSurface=()=>{
+    try{
+      const host=String(location.hostname||"").toLowerCase();
+      const path=String(location.pathname||"/").toLowerCase();
+      return host.includes("khaemenes-high")||/(^|\/)khaemenes_high\.github\.io(\/|$)/.test(path);
+    }catch{return false}
+  };
+
+  function betaStackOffset(){
+    const beta=document.getElementById(ID);
+    const height=beta?.getBoundingClientRect?.().height||40;
+    return Math.max(58,Math.ceil(height)+22);
+  }
+
+  function alignHighProfileSurface(){
+    if(!isHighSchoolSurface()||!document.body)return false;
+    const offset=betaStackOffset();
+    const bridge=document.getElementById("khaemenesFamilyBridge");
+    const quick=document.getElementById(HIGH_PROFILE_ID);
+    if(bridge){
+      bridge.style.right="max(12px, env(safe-area-inset-right))";
+      bridge.style.bottom=`calc(max(12px, env(safe-area-inset-bottom)) + ${offset}px)`;
+      bridge.style.borderRadius="7px";
+      if(quick)quick.remove();
+      return true;
+    }
+    if(quick){
+      quick.style.bottom=`calc(max(12px, env(safe-area-inset-bottom)) + ${offset}px)`;
+    }
+    return false;
+  }
+
+  function mountHighStudentProfile(){
+    if(!isHighSchoolSurface()||!document.body)return;
+
+    if(alignHighProfileSurface())return;
+
+    if(!document.getElementById(HIGH_PROFILE_STYLE_ID)){
+      const style=document.createElement("style");
+      style.id=HIGH_PROFILE_STYLE_ID;
+      style.textContent=`
+        #${HIGH_PROFILE_ID}{
+          position:fixed;right:max(12px,env(safe-area-inset-right));
+          bottom:calc(max(12px,env(safe-area-inset-bottom)) + 62px);
+          z-index:2147481999;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+          min-height:40px;padding:8px 12px;border:1px solid rgba(180,139,69,.72);
+          border-radius:7px;color:#17392f;background:rgba(255,253,248,.97);
+          box-shadow:0 8px 24px rgba(23,57,47,.14);
+          font:600 10px/1.2 "Avenir Next","Segoe UI",Arial,sans-serif;
+          letter-spacing:.045em;text-decoration:none;backdrop-filter:blur(9px);
+          cursor:pointer;-webkit-tap-highlight-color:transparent
+        }
+        #${HIGH_PROFILE_ID}:hover{transform:translateY(-1px);border-color:#b48b45;background:#fffaf0}
+        #${HIGH_PROFILE_ID}:focus-visible{outline:3px solid #b48b45;outline-offset:3px}
+        #${HIGH_PROFILE_ID} .khae-profile-mark{
+          width:20px;height:20px;display:grid;place-items:center;border-radius:50%;
+          color:#fff;background:#17392f;font:600 10px/1 Georgia,serif
+        }
+        @media(max-width:520px){
+          #${HIGH_PROFILE_ID}{right:max(8px,env(safe-area-inset-right));min-height:38px;padding:7px 10px}
+        }
+        @media print{#${HIGH_PROFILE_ID}{display:none!important}}
+        @media(prefers-reduced-motion:reduce){#${HIGH_PROFILE_ID}{transition:none!important;transform:none!important}}
+      `;
+      (document.head||document.documentElement).append(style);
+    }
+
+    if(!document.getElementById(HIGH_PROFILE_ID)){
+      const button=document.createElement("button");
+      button.id=HIGH_PROFILE_ID;
+      button.type="button";
+      button.setAttribute("aria-label","Open Khaemenes Academy Student Profile and pinned courses");
+      button.title="Student Profile · pinned courses and learning schedule";
+      const mark=document.createElement("span");
+      mark.className="khae-profile-mark";
+      mark.setAttribute("aria-hidden","true");
+      mark.textContent="S";
+      const label=document.createElement("span");
+      label.textContent="Student Profile";
+      button.append(mark,label);
+      button.addEventListener("click",()=>{
+        try{window.location.assign(HIGH_PROFILE_URL)}catch{window.location.href=HIGH_PROFILE_URL}
+      });
+      document.body.append(button);
+    }
+
+    alignHighProfileSurface();
+
+    if(typeof MutationObserver==="function"&&!document.documentElement.dataset.khaeHighProfileStackBound){
+      document.documentElement.dataset.khaeHighProfileStackBound="1";
+      const observer=new MutationObserver(()=>alignHighProfileSurface());
+      observer.observe(document.body,{childList:true,subtree:true});
+      window.addEventListener("resize",alignHighProfileSurface,{passive:true});
+    }
+  }
 
   function enhanceBazaarLanding(){
     if(!isBazaarLanding()||!document.body)return;
@@ -211,9 +311,9 @@
     observer.observe(document.documentElement,{childList:true,subtree:true});
   }
 
-  function start(){mount();bindVisibleFrames();enhanceBazaarLanding()}
+  function start(){mount();mountHighStudentProfile();bindVisibleFrames();enhanceBazaarLanding()}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.4.0",mount,source:safeSource,surface:safeSurface,href:betaHref});
+  window.VNVBetaProgram=Object.freeze({version:"1.5.0",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile});
 })();
