@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 126,
+  "entryCount": 140,
   "entries": [
     {
       "id": "gateway-verve",
@@ -1546,6 +1546,174 @@
       "status": "admin",
       "directoryVisible": false,
       "url": "https://vervenveda.com/admin/2index.html"
+    },
+    {
+      "id": "verve-404",
+      "title": "Page Not Found",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "404.html",
+      "type": "page",
+      "category": "gateway",
+      "access": "free-public",
+      "status": "internal",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/404.html"
+    },
+    {
+      "id": "verve-agent-demo",
+      "title": "Verve Sovereign Problem-Solving Agent",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "assessment-engine/agents/demos/index.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/assessment-engine/agents/demos/"
+    },
+    {
+      "id": "verve-career-assessment",
+      "title": "Career Assessment",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "assessment-engine/apps/career_assessment_index.html",
+      "type": "assessment",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/assessment-engine/apps/career_assessment_index.html"
+    },
+    {
+      "id": "verve-career-star",
+      "title": "Khaemenes Career Star",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "assessment-engine/apps/career_star_index.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/assessment-engine/apps/career_star_index.html"
+    },
+    {
+      "id": "verve-mentor-review",
+      "title": "Khaemenes Mentor Review",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "assessment-engine/apps/mentor_review_index.html",
+      "type": "mentor",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/assessment-engine/apps/mentor_review_index.html"
+    },
+    {
+      "id": "verve-assessment-engine",
+      "title": "NAIB Progress Assessment Engine",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "assessment-engine/index.html",
+      "type": "assessment",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/assessment-engine/"
+    },
+    {
+      "id": "verve-mentor-matrix",
+      "title": "Mentor Matrix Validator",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "assessment-engine/mentor/matrix/index.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "internal",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/assessment-engine/mentor/matrix/"
+    },
+    {
+      "id": "verve-objective-map-diagnostics-mentor",
+      "title": "Objective Map Diagnostics",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "assessment-engine/mentor/registry/objective-map-diagnostics.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "internal",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/assessment-engine/mentor/registry/objective-map-diagnostics.html"
+    },
+    {
+      "id": "verve-cloud",
+      "title": "Verve N Veda Public Cloud Gateway",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "cloud/index.html",
+      "type": "gateway",
+      "category": "gateway",
+      "access": "free-public",
+      "status": "internal",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/cloud/"
+    },
+    {
+      "id": "verve-directory-agi",
+      "title": "VNV Directory AGI",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "core/directory-agi/index.html",
+      "type": "tool",
+      "category": "gateway",
+      "access": "free-public",
+      "status": "internal",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/core/directory-agi/"
+    },
+    {
+      "id": "verve-matrix-alias",
+      "title": "Matrix Validator Alias",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "matrix/index.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "alias",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/matrix/"
+    },
+    {
+      "id": "verve-privacy",
+      "title": "Privacy Policy",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "privacy-policy.html",
+      "type": "resource",
+      "category": "civic",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/privacy-policy.html"
+    },
+    {
+      "id": "verve-privacy-alias",
+      "title": "Privacy Policy Alias",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "privacy_policy.html",
+      "type": "resource",
+      "category": "civic",
+      "access": "free-public",
+      "status": "alias",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/privacy_policy.html"
+    },
+    {
+      "id": "verve-objective-map-diagnostics",
+      "title": "Objective Map Diagnostics Alias",
+      "repository": "vervenveda/vervenveda.github.io",
+      "path": "registry/objective-map-diagnostics.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "alias",
+      "directoryVisible": false,
+      "url": "https://vervenveda.com/registry/objective-map-diagnostics.html"
     }
   ],
   "pageCatalog": {
