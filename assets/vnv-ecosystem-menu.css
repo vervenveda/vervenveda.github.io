@@ -1,0 +1,130 @@
+/* Verve N Veda · Global Ecosystem Hamburger
+   Public GitHub navigation only. No STOS runtime dependency. */
+.vnv-ecosystem-nav{
+  position:fixed;
+  top:max(14px,env(safe-area-inset-top));
+  right:max(14px,env(safe-area-inset-right));
+  z-index:2147482000;
+  margin:0;
+  font-family:"Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;
+  font-size:14px;
+  color:#172331;
+}
+.vnv-ecosystem-nav summary{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  margin-left:auto;
+  padding:0;
+  list-style:none;
+  cursor:pointer;
+  border:1px solid rgba(183,148,82,.72);
+  border-radius:7px;
+  background:rgba(252,249,242,.97);
+  box-shadow:0 8px 24px rgba(8,21,34,.14);
+  -webkit-tap-highlight-color:transparent;
+}
+.vnv-ecosystem-nav summary::-webkit-details-marker{display:none}
+.vnv-ecosystem-nav summary::marker{content:""}
+.vnv-ecosystem-nav summary:hover,
+.vnv-ecosystem-nav summary:focus-visible{
+  border-color:#80642f;
+  outline:3px solid rgba(183,148,82,.28);
+  outline-offset:3px;
+}
+.vnv-ecosystem-lines{
+  width:21px;
+  display:grid;
+  gap:4px;
+}
+.vnv-ecosystem-lines span{
+  display:block;
+  width:21px;
+  height:2px;
+  border-radius:7px;
+  background:#172331;
+  transition:transform .18s ease,opacity .18s ease;
+}
+.vnv-ecosystem-nav[open] .vnv-ecosystem-lines span:nth-child(1){
+  transform:translateY(6px) rotate(45deg);
+}
+.vnv-ecosystem-nav[open] .vnv-ecosystem-lines span:nth-child(2){
+  opacity:0;
+}
+.vnv-ecosystem-nav[open] .vnv-ecosystem-lines span:nth-child(3){
+  transform:translateY(-6px) rotate(-45deg);
+}
+.vnv-ecosystem-dropdown{
+  width:min(320px,calc(100vw - 28px));
+  margin-top:7px;
+  padding:14px;
+  display:grid;
+  gap:7px;
+  border:1px solid rgba(16,34,56,.16);
+  border-radius:7px;
+  background:#fcf9f2;
+  box-shadow:0 18px 44px rgba(8,21,34,.16);
+}
+.vnv-ecosystem-dropdown .vnv-ecosystem-kicker{
+  margin:0 0 2px;
+  text-align:center;
+  color:#80642f;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.vnv-ecosystem-dropdown a{
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  text-align:center;
+  text-decoration:none;
+  color:#172331;
+  border:1px solid rgba(16,34,56,.15);
+  border-radius:7px;
+  background:#fffdf8;
+  font-size:14px;
+  font-weight:500;
+  line-height:1.35;
+}
+.vnv-ecosystem-dropdown a:hover,
+.vnv-ecosystem-dropdown a:focus-visible{
+  border-color:#b79452;
+  background:#f5f0e4;
+  outline:2px solid rgba(183,148,82,.25);
+  outline-offset:2px;
+}
+.vnv-ecosystem-dropdown a.vnv-ecosystem-primary{
+  color:#fffdf8;
+  border-color:#102238;
+  background:#102238;
+}
+.vnv-ecosystem-dropdown a.vnv-ecosystem-primary:hover,
+.vnv-ecosystem-dropdown a.vnv-ecosystem-primary:focus-visible{
+  background:#1a314b;
+}
+@media (prefers-color-scheme:dark){
+  .vnv-ecosystem-nav{color:#eee5d5}
+  .vnv-ecosystem-nav summary,
+  .vnv-ecosystem-dropdown{background:#101d2a;border-color:rgba(232,225,209,.22)}
+  .vnv-ecosystem-lines span{background:#eee5d5}
+  .vnv-ecosystem-dropdown a{color:#eee5d5;background:#142536;border-color:rgba(232,225,209,.16)}
+  .vnv-ecosystem-dropdown a:hover,
+  .vnv-ecosystem-dropdown a:focus-visible{background:#1a3144}
+  .vnv-ecosystem-dropdown a.vnv-ecosystem-primary{background:#b79452;border-color:#b79452;color:#101820}
+}
+@media (max-width:520px){
+  .vnv-ecosystem-nav{
+    top:max(8px,env(safe-area-inset-top));
+    right:max(8px,env(safe-area-inset-right));
+  }
+  .vnv-ecosystem-dropdown{width:min(300px,calc(100vw - 16px))}
+}
+@media print{.vnv-ecosystem-nav{display:none!important}}
+@media (prefers-reduced-motion:reduce){
+  .vnv-ecosystem-lines span{transition:none}
+}
