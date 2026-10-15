@@ -1,5 +1,5 @@
 /*
-  Verve N Veda · Shared Public Presentation Standard · v2
+  Verve N Veda · Shared Public Presentation Standard · v3
   Applies only to public GitHub-facing pages that opt in.
   Dormant STOS, archive, disabled, diagnostic, and source-snippet surfaces are intentionally excluded.
 */
@@ -269,6 +269,49 @@ main > article{
 .menu-page-results{margin-top:18px}
 .menu-page-results .menu-group{margin-top:16px}
 .menu-page-note{margin:10px 0 0;color:var(--ink-soft,#30413d);font-size:11px;line-height:1.5;text-align:center}
+
+
+/* v3 balance pass — preserve page identity while enforcing the shared Verve N Veda rhythm. */
+h1,h2,h3,
+.descriptor,.subtitle,.subhead,.hero-subtitle,.section-intro,.lead,
+button,.button,.btn,[role="button"]{
+  hyphens:none;
+  -webkit-hyphens:none;
+  word-break:normal;
+}
+
+.section-heading,
+.hero-copy,
+.page-heading,
+.intro-wrap{
+  width:min(100%,960px);
+  margin-inline:auto;
+  text-align:center;
+}
+
+.complete-index-grid{
+  grid-auto-rows:1fr;
+  gap:var(--vnv-breath)!important;
+}
+
+.complete-index-card,
+[class*="card"]{
+  align-content:center;
+  justify-items:center;
+}
+
+.actions > a,
+.actions > button,
+.hero-actions > a,
+.hero-actions > button,
+.button-row > a,
+.button-row > button,
+.button-group > a,
+.button-group > button,
+.cta-row > a,
+.cta-row > button{
+  padding-inline:16px;
+}
 
 @media(max-width:900px){
   .complete-index-controls{grid-template-columns:1fr 1fr}
