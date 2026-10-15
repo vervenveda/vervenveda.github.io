@@ -39,12 +39,12 @@
       --line-strong:rgba(18,23,19,.25);
       --shadow:0 22px 55px rgba(27,34,29,.09);
       --shadow-small:0 11px 33px rgba(27,34,29,.07);
-      --max:1240px;
+      --max:1222px;
       --radius:7px;
-      --radius-lg:11px;
+      --radius-lg:7px;
       --muted:#66716c;
-      --ticker-height:36px;
-      --header-height:72px;
+      --ticker-height:33px;
+      --header-height:66px;
       --sticky-stack:calc(var(--ticker-height) + var(--header-height));
       --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
       --ceremonial:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
@@ -63,7 +63,7 @@
       color:var(--ink);
       background:var(--paper);
       font-family:var(--sans);
-      font-size:16px;
+      font-size:18px;
       line-height:1.62;
       font-weight:400;
       text-align:center;
@@ -132,28 +132,28 @@
       height:100%;
       display:flex;
       align-items:center;
-      gap:22px;
+      gap:24px;
       padding-inline:11px;
     }
     .network-ticker-label{
       flex:0 0 auto;
       color:var(--gold-pale);
       font-family:var(--ceremonial);
-      font-size:10px;
-      font-weight:500;
+      font-size:11px;
+      font-weight:444;
       letter-spacing:.25em;
       text-transform:uppercase;
     }
     .network-ticker-app,
     .network-ticker-call{
-      min-height:28px;
+      min-height:24px;
       display:inline-flex;
       align-items:center;
       gap:7px;
       flex:0 0 auto;
       color:#eef3f7;
       font-size:11px;
-      font-weight:400;
+      font-weight:444;
       letter-spacing:.1em;
       text-transform:uppercase;
       white-space:nowrap;
@@ -172,17 +172,17 @@
       text-underline-offset:3px;
     }
     .network-ticker-call{
-      padding:3px 9px;
+      padding:4px 11px;
       border:1px solid rgba(231,215,182,.3);
-      border-radius:var(--radius);
+      border-radius:7px;
       background:rgba(255,255,255,.05);
     }
     .ticker-control{
-      width:40px;height:var(--ticker-height);
+      width:44px;height:var(--ticker-height);
       display:grid;place-items:center;
       border:0;border-left:1px solid rgba(255,255,255,.13);
       color:#f4ead1;background:rgba(0,0,0,.14);
-      font-size:15px;
+      font-size:11px;
     }
     .ticker-control:hover{background:rgba(255,255,255,.09)}
     @keyframes networkTickerMove{
@@ -216,7 +216,7 @@
       box-shadow:0 9px 24px rgba(126,25,25,.3);
     }
     .site-header{position:sticky}
-    .header-inner{padding-left:44px}
+    .header-inner{padding-left:33px}
 
     .admin-gate-overlay{
       position:fixed;
@@ -224,7 +224,7 @@
       z-index:5000;
       display:grid;
       place-items:center;
-      padding:20px;
+      padding:14px;
       visibility:hidden;
       opacity:0;
       background:rgba(5,10,9,.72);
@@ -240,7 +240,7 @@
       padding:30px;
       border:1px solid rgba(145,31,31,.28);
       border-top:4px solid #a92323;
-      border-radius:11px;
+      border-radius:7px;
       color:var(--ink);
       background:var(--paper-bright);
       box-shadow:0 30px 80px rgba(0,0,0,.28);
@@ -250,20 +250,20 @@
     .admin-gate-kicker{
       color:#9d2626;
       font-family:var(--ceremonial);
-      font-size:10px;
-      font-weight:700;
+      font-size:11px;
+      font-weight:444;
       letter-spacing:.16em;
       text-transform:uppercase;
     }
     .admin-gate-panel h2{margin-top:7px;color:var(--forest-deep);font-size:38px;line-height:1}
     .admin-gate-panel p{color:var(--ink-soft);font-size:13px;line-height:1.65}
     .admin-gate-close{
-      width:38px;height:38px;flex:0 0 38px;
-      border:1px solid var(--line-strong);border-radius:var(--radius);
+      width:36px;height:36px;flex:0 0 36px;
+      border:1px solid var(--line-strong);border-radius:7px;
       color:var(--ink);background:#fff;font-size:21px;
     }
     .admin-gate-form{display:grid;gap:13px;margin-top:22px}
-    .admin-gate-form label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .admin-gate-form label{font-size:11px;font-weight:444;letter-spacing:.08em;text-transform:uppercase}
     .admin-code-row{display:grid;grid-template-columns:minmax(0,1fr) 78px;gap:9px}
     .admin-code-input{
       width:100%;min-height:49px;padding:0 14px;
@@ -336,8 +336,8 @@
       border-radius:var(--radius);
       color:#fff;background:var(--ink);
       font-family:var(--ceremonial);
-      font-size:17px;
-      font-weight:555;
+      font-size:14px;
+      font-weight:444;
       line-height:1;
       letter-spacing:.07em;
       white-space:nowrap;
@@ -354,8 +354,8 @@
       overflow:hidden;
       color:var(--ink);
       font-family:var(--ceremonial);
-      font-size:17px;
-      font-weight:400;
+      font-size:14px;
+      font-weight:444;
       letter-spacing:.09em;
       text-overflow:ellipsis;
       text-transform:uppercase;
@@ -366,8 +366,8 @@
       max-width:100%;
       overflow:hidden;
       color:var(--ink-soft);
-      font-size:9px;
-      font-weight:400;
+      font-size:7px;
+      font-weight:333;
       letter-spacing:.12em;
       text-overflow:ellipsis;
       text-transform:uppercase;
@@ -385,11 +385,11 @@
       min-height:40px;
       display:inline-flex;
       align-items:center;
-      padding:7px 10px;
-      border-radius:var(--radius);
+      padding:7px 11px;
+      border-radius:7px;
       color:var(--ink-soft);
-      font-size:11px;
-      font-weight:500;
+      font-size:9px;
+      font-weight:333;
       letter-spacing:.075em;
       text-transform:uppercase;
       white-space:nowrap;
@@ -397,10 +397,10 @@
     .header-links a:hover{color:var(--ink);background:var(--white)}
     .menu-button{
       justify-self:end;
-      width:40px;height:40px;
+      width:44px;height:44px;
       display:grid;place-items:center;
       border:1px solid var(--line-strong);
-      border-radius:var(--radius);
+      border-radius7px;
       color:var(--ink);background:transparent;
     }
     .menu-lines,
@@ -438,7 +438,7 @@
       display:grid;
       grid-template-rows:1fr auto;
       align-items:stretch;
-      gap:28px;
+      gap:24px;
     }
     .hero-stage{
       align-self:center;
@@ -451,8 +451,8 @@
       margin:0;
       color:var(--gold);
       font-family:var(--ceremonial);
-      font-size:clamp(11px,.85vw,13px);
-      font-weight:500;
+      font-size:clamp(14px,.88vw,14px);
+      font-weight:444;
       line-height:1.5;
       letter-spacing:.19em;
       text-transform:uppercase;
@@ -460,17 +460,17 @@
     h1,h2,h3{
       margin:0;
       font-family:var(--display);
-      font-weight:500;
+      font-weight:444;
       letter-spacing:.01em;
       text-wrap:balance;
     }
     h1{
       margin-top:24px;
-      max-width:1050px;
+      max-width:1111px;
       color:var(--forest-deep);
-      font-size:clamp(72px,8vw,124px);
-      line-height:.88;
-      letter-spacing:.012em;
+      font-size:clamp(77px,9vw,133px);
+      line-height:.99;
+      letter-spacing:.014em;
     }
     .hero-aside{
       width:min(100%,760px);
