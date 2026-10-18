@@ -45,6 +45,22 @@ EXCLUDED_PATH_WORDS = re.compile(
     r"(^|[/_.-])(diagnostic|diagnostics|source[-_ ]?snippet|error[-_ ]?page)([/_.-]|$)",
     re.I,
 )
+# Public files may remain available without being appropriate Ecosystem search
+# destinations. Keep implementation fragments, integration helpers, and
+# unmistakable archival aliases out of the searchable public catalog.
+CATALOG_HELPER_HTML = re.compile(
+    r"""(?ix)
+    (^|/)
+    (?:
+      seo[-_]?head[-_]?snippet |
+      structured[-_]?data |
+      .*?(?:profile|head|schema)[-_]?snippet |
+      .*?portal[-_]?integration |
+      .*?(?:old|legacy|backup|bak|deprecated|superseded)(?:[-_].*)?
+    )
+    \.html?$
+    """
+)
 NEW_REPO_BLOCK = re.compile(r"(^|[._-])(stos|dummy)([._-]|$)", re.I)
 
 
@@ -107,6 +123,8 @@ def public_html_path(path: str) -> bool:
     if parts[-1] in EXCLUDED_FILE_NAMES:
         return False
     if EXCLUDED_PATH_WORDS.search(normalized):
+        return False
+    if CATALOG_HELPER_HTML.search(normalized):
         return False
     return True
 
@@ -215,6 +233,7 @@ def main() -> int:
             candidates.append(record)
 
     pages: list[dict] = []
+    catalog_excluded_count = 0
     drift: list[dict] = []
     truncated_repositories: list[str] = []
     synced_repositories: list[str] = []
@@ -255,6 +274,8 @@ def main() -> int:
                 continue
             path = str(item.get("path") or "")
             if not public_html_path(path):
+                if path.lower().endswith((".html", ".htm")):
+                    catalog_excluded_count += 1
                 continue
             pages.append({
                 "title": title_for(path, source),
@@ -281,7 +302,7 @@ def main() -> int:
         "generatedAt": generated_at,
         "policy": (
             "Automatically synchronized public HTML from approved Verve N Veda repositories; "
-            "private/admin/backups/STOS/diagnostic/offline surfaces excluded. "
+            "private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. "
             "New repositories require explicit ecosystem approval."
         ),
     }
@@ -335,6 +356,7 @@ def main() -> int:
         "approvedRepositoryCount": len(approved),
         "syncedRepositoryCount": len(synced_repositories),
         "publicPageCount": len(pages),
+        "catalogExcludedHtmlCount": catalog_excluded_count,
         "candidateRepositoryCount": len(candidates),
         "ignoredRepositoryCount": len(ignored_new),
         "driftCount": len(drift),
