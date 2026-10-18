@@ -11,6 +11,7 @@ STOS remains dormant and is explicitly excluded.
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import re
 import shutil
@@ -248,7 +249,43 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
     groups=defaultdict(list)
     for rel in rels:
         groups[logical_duplicate_key(Path(rel))].append(rel)
-    version_sibling_groups=[sorted(v) for v in groups.values() if len(v)>1]
+
+    # Separate true byte-identical duplicates from merely versioned/sibling pages.
+    # A final exam and an assessment center, or a v2 packet and a broader packet,
+    # should not be called duplicates just because filenames are similar.
+    exact_duplicate_groups=[]
+    version_sibling_groups=[]
+    canonical_aliases=[]
+    for members in groups.values():
+        if len(members)<2:
+            continue
+        members=sorted(members)
+        hashes=defaultdict(list)
+        for rel in members:
+            data=rels[rel].read_bytes()
+            hashes[hashlib.sha256(data).hexdigest()].append(rel)
+        exact_duplicate_groups.extend(sorted(v) for v in hashes.values() if len(v)>1)
+
+        alias_members=set()
+        for rel in members:
+            text=rels[rel].read_text(encoding="utf-8",errors="ignore")
+            m=re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)',text,re.I)
+            if not m:
+                continue
+            candidate=normalize_candidate(dest,rels[rel],m.group(1))
+            if candidate is None:
+                continue
+            try:
+                target=candidate.relative_to(dest).as_posix()
+            except ValueError:
+                continue
+            if target in members and target!=rel:
+                canonical_aliases.append({"alias":rel,"canonical":target})
+                alias_members.add(rel); alias_members.add(target)
+        residual=[rel for rel in members if rel not in alias_members]
+        if len(residual)>1:
+            version_sibling_groups.append(residual)
+
     superseded=[r for r in rels if re.search(r"(^|[/_.-])(old|legacy|backup|bak|deprecated|superseded)([/_.-]|$)",r,re.I)]
 
     return {
@@ -258,12 +295,16 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
         "rootReachableHtmlCount":len(reachable),
         "rootOrphanHtmlCount":len(root_orphans),
         "unreferencedHtmlCount":len(unreferenced),
-        "duplicateGroupCount":len(version_sibling_groups),
+        "duplicateGroupCount":len(exact_duplicate_groups),
+        "versionSiblingGroupCount":len(version_sibling_groups),
+        "canonicalAliasCount":len(canonical_aliases),
         "supersededNameCount":len(superseded),
         "brokenLocalLinks":broken[:MAX_EXAMPLES],
         "rootOrphans":root_orphans[:MAX_EXAMPLES],
         "unreferencedPages":unreferenced[:MAX_EXAMPLES],
-        "duplicateGroups":version_sibling_groups[:30],
+        "duplicateGroups":exact_duplicate_groups[:30],
+        "versionSiblingGroups":version_sibling_groups[:30],
+        "canonicalAliases":canonical_aliases[:MAX_EXAMPLES],
         "supersededNames":superseded[:MAX_EXAMPLES],
     }
 
@@ -295,6 +336,8 @@ def main():
         "rootOrphanHtmlCount":sum(r["rootOrphanHtmlCount"] for r in results),
         "unreferencedHtmlCount":sum(r["unreferencedHtmlCount"] for r in results),
         "duplicateGroupCount":sum(r["duplicateGroupCount"] for r in results),
+        "versionSiblingGroupCount":sum(r.get("versionSiblingGroupCount",0) for r in results),
+        "canonicalAliasCount":sum(r.get("canonicalAliasCount",0) for r in results),
         "supersededNameCount":sum(r["supersededNameCount"] for r in results),
     }
     payload={
@@ -322,7 +365,9 @@ def main():
         f"- Broken local link references: {summary['brokenLocalLinkCount']}",
         f"- HTML pages not reachable from repository root index: {summary['rootOrphanHtmlCount']}",
         f"- HTML pages with no incoming in-repository link: {summary['unreferencedHtmlCount']}",
-        f"- Possible duplicate/sibling groups: {summary['duplicateGroupCount']}",
+        f"- Exact duplicate groups: {summary['duplicateGroupCount']}",
+        f"- Version/sibling groups requiring review: {summary['versionSiblingGroupCount']}",
+        f"- Canonical aliases already resolved: {summary['canonicalAliasCount']}",
         f"- Legacy/superseded-style filenames: {summary['supersededNameCount']}",
         "",
         "## Highest-priority repositories",
@@ -332,7 +377,8 @@ def main():
     for r in ranked[:15]:
         lines.append(
             f"- **{r['repository']}** — broken {r['brokenLocalLinkCount']}; "
-            f"unreferenced {r['unreferencedHtmlCount']}; duplicate groups {r['duplicateGroupCount']}."
+            f"unreferenced {r['unreferencedHtmlCount']}; exact duplicates {r['duplicateGroupCount']}; "
+            f"version siblings {r.get('versionSiblingGroupCount',0)}."
         )
     REPORT_MD.write_text("\n".join(lines)+"\n",encoding="utf-8")
     print(json.dumps(summary))
