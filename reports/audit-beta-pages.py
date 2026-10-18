@@ -24,6 +24,10 @@ def audit(root):
         except UnicodeDecodeError:
             rows.append({"path": rel, "status": "unreadable", "index": bool(INDEX.search(file.name))})
             continue
+        # HTML fragments used as include/snippet material are not standalone
+        # navigable pages and cannot host a page-level Beta doorway.
+        if not re.search(r"<!doctype\s+html|<html\b|<body\b", source, re.I):
+            continue
         mechanisms = []
         if WIDGET.search(source):
             mechanisms.append("widget")
