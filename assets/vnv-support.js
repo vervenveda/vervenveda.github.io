@@ -16,6 +16,10 @@
 
   if (lessonLike && !document.documentElement.hasAttribute("data-vnv-support-force")) return;
 
+  const childFacing =
+    /khaemenes_(preschool|kindergarden)\.github\.io/i.test(path) ||
+    /\b(preschool|crech[eè]|kinder garden|kindergarten)\b/i.test(title);
+
   const style = document.createElement("style");
   style.textContent = `
     #${TOP_ID}{
@@ -60,7 +64,13 @@
   const section = document.createElement("section");
   section.id = SUPPORT_ID;
   section.setAttribute("aria-labelledby", "vnvGlobalSupportTitle");
-  section.innerHTML = `
+  section.innerHTML = childFacing ? `
+    <p class="vnv-support-kicker">Grown-Up Support</p>
+    <h2 id="vnvGlobalSupportTitle">Learning stays free for every child.</h2>
+    <p>Parents, caregivers, and other grown-ups can voluntarily support the art, stories, games, repairs, accessibility work, and new learning experiences that keep Verve N Veda and Khaemenes Academy growing.</p>
+    <a class="vnv-support-button" href="${PAYMENT_URL}" target="_blank" rel="noopener noreferrer">Grown-Ups · Support with Stripe ↗</a>
+    <small>Children never need to donate. Secure payment is handled by Stripe. Contributions are voluntary, are not required for access, and are separate from campaign contributions. No tax-deductibility or charitable status is represented.</small>
+  ` : `
     <p class="vnv-support-kicker">Support Free Access</p>
     <h2 id="vnvGlobalSupportTitle">Everything here is free. Voluntary support helps keep it that way.</h2>
     <p>Verve N Veda and Khaemenes Academy provide free learning, tools, games, research, art, public resources, and continued development. If this work helps you or your family, you can support its maintenance and growth.</p>
@@ -75,8 +85,8 @@
   const top = document.createElement("a");
   top.id = TOP_ID;
   top.href = "#"+SUPPORT_ID;
-  top.textContent = "Support Free Access";
-  top.setAttribute("aria-label", "Jump to voluntary support information");
+  top.textContent = childFacing ? "Grown-Ups · Support" : "Support Free Access";
+  top.setAttribute("aria-label", childFacing ? "Grown-ups: jump to voluntary support information" : "Jump to voluntary support information");
   document.body.appendChild(top);
 
   const tickerSelectors = [
