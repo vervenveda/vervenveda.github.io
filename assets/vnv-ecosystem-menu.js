@@ -26,6 +26,11 @@
   if(document.getElementById("menuOverlay") && document.getElementById("menuButton") && /public gateway/i.test(document.title||"")) return;
 
   let entries=[];
+  let catalogParts=[];
+  let catalogPages=[];
+  let catalogLoaded=false;
+  let catalogLoading=null;
+  let ecosystemCounts={repositories:0,pages:0};
   let lastFocus=null;
 
   const esc=(value)=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
@@ -131,7 +136,7 @@
           <div><p class="vnv-eco-kicker">One Connected Public Campus</p><h2 id="vnvEcosystemMenuTitle">Ecosystem Directory</h2></div>
           <button class="vnv-eco-close" type="button" aria-label="Close ecosystem directory">×</button>
         </div>
-        <p class="vnv-eco-intro">Search the active public Verve N Veda network from any page.</p>
+        <p class="vnv-eco-intro">Browse curated doorways or search every synchronized public page across Verve N Veda.</p>
         <div class="vnv-eco-home"><a href="${HOME}">Verve N Veda Home</a></div>
         <label style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)" for="${IDS.search}">Search the ecosystem</label>
         <input id="${IDS.search}" type="search" autocomplete="off" placeholder="Search education, art, news, tools…">
@@ -147,6 +152,29 @@
     const status=document.getElementById(IDS.status);
     if(!box)return;
     const q=String(query||"").trim().toLowerCase();
+
+    if(q.length>=2 && !catalogLoaded){
+      status.textContent="Searching the synchronized public page catalog…";
+      ensureCatalog().then(()=>render(query)).catch(()=>render(query));
+      return;
+    }
+
+    if(q.length>=2 && catalogLoaded){
+      const matches=catalogPages.filter(page=>
+        [page.title,page.category,page.repo,page.path,page.source]
+          .join(" ").toLowerCase().includes(q)
+      ).slice(0,60);
+      box.innerHTML=matches.length
+        ? '<section><h3 class="vnv-eco-group">Complete Public Index</h3><div class="vnv-eco-list">'+matches.map(page=>
+            '<a class="vnv-eco-link" href="'+esc(page.url)+'"><span><strong>'+esc(page.title||page.path)+'</strong><small>'+esc((page.source||page.repo||"Verve N Veda")+' · '+(page.path||""))+'</small></span><span class="vnv-eco-arrow" aria-hidden="true">↗</span></a>'
+          ).join("")+'</div></section>'
+        : '<p class="vnv-eco-intro">No synchronized public page matches this search.</p>';
+      status.textContent=matches.length
+        ? "Showing "+matches.length+" of "+ecosystemCounts.pages.toLocaleString()+" synchronized public pages."
+        : "No match across "+ecosystemCounts.pages.toLocaleString()+" synchronized public pages.";
+      return;
+    }
+
     const filtered=entries.filter(e=>!q || [e.title,e.category,e.type,e.description].join(" ").toLowerCase().includes(q));
     const groups=new Map();
     filtered.forEach(e=>{
@@ -161,7 +189,44 @@
         '<a class="vnv-eco-link" href="'+esc(e.url)+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.type||"public doorway")+'</small></span><span class="vnv-eco-arrow" aria-hidden="true">↗</span></a>'
       ).join("")+'</div></section>';
     }).join("");
-    status.textContent=filtered.length+" public "+(filtered.length===1?"doorway":"doorways")+" available.";
+    const repoText=ecosystemCounts.repositories ? " · "+ecosystemCounts.repositories+" repositories" : "";
+    const pageText=ecosystemCounts.pages ? " · "+ecosystemCounts.pages.toLocaleString()+" searchable pages" : "";
+    status.textContent=filtered.length+" curated "+(filtered.length===1?"doorway":"doorways")+repoText+pageText+".";
+  }
+
+  async function ensureCatalog(){
+    if(catalogLoaded)return catalogPages;
+    if(catalogLoading)return catalogLoading;
+    catalogLoading=(async()=>{
+      const parts=catalogParts.length ? catalogParts : [
+        "/registry/ecosystem-pages-a.json",
+        "/registry/ecosystem-pages-b.json"
+      ];
+      const settled=await Promise.allSettled(parts.map(async part=>{
+        const url=new URL(part,PUBLIC_ROOT).href;
+        const response=await fetch(url,{cache:"no-store",credentials:"same-origin"});
+        if(!response.ok)throw new Error("HTTP "+response.status);
+        const data=await response.json();
+        return Array.isArray(data?.pages)?data.pages:[];
+      }));
+      const seen=new Set();
+      catalogPages=settled
+        .filter(result=>result.status==="fulfilled")
+        .flatMap(result=>result.value)
+        .filter(page=>{
+          const url=safeUrl(page?.url);
+          if(!url)return false;
+          const key=String(page.repo||"").toLowerCase()+"|"+String(page.path||"").toLowerCase();
+          if(seen.has(key))return false;
+          seen.add(key);
+          page.url=url;
+          return true;
+        });
+      if(!catalogPages.length)throw new Error("catalog unavailable");
+      catalogLoaded=true;
+      return catalogPages;
+    })().finally(()=>{catalogLoading=null});
+    return catalogLoading;
   }
 
   async function load(){
@@ -171,6 +236,13 @@
       if(!response.ok)throw new Error("HTTP "+response.status);
       const data=await response.json();
       if(!Array.isArray(data?.entries))throw new Error("entries missing");
+      catalogParts=Array.isArray(data?.pageCatalog?.parts)
+        ? data.pageCatalog.parts.filter(part=>/^\/registry\/[A-Za-z0-9._/-]+\.json$/i.test(String(part||"")))
+        : [];
+      ecosystemCounts={
+        repositories:Number(data?.pageCatalog?.repositoryCount)||0,
+        pages:Number(data?.pageCatalog?.publicPageCount)||0
+      };
       entries=data.entries.filter(e=>{
         if(!e||e.directoryVisible!==true||e.access!=="free-public"||e.status!=="active"||!e.title)return false;
         const url=safeUrl(e.url);
@@ -251,5 +323,5 @@
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVEcosystemMenu=Object.freeze({version:"1.0.1",open,close});
+  window.VNVEcosystemMenu=Object.freeze({version:"1.1.0",open,close});
 })();
