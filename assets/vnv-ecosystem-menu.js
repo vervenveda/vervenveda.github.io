@@ -10,8 +10,8 @@
     status:"vnvEcosystemMenuStatus",
     style:"vnvEcosystemMenuStyles"
   });
-  const REGISTRY="/ecosystem/master-ecosystem-directory.json";
-  const HOME="/";
+  const REGISTRY="https://vervenveda.com/ecosystem/master-ecosystem-directory.json";
+  const HOME="https://vervenveda.com/";
   const CATEGORY_ORDER=["education","research","news","weather","creative","professional","games","health","finance","civic","environmental","communication","gateway"];
   const CATEGORY_LABELS={
     education:"Education",research:"Research & Discovery",news:"News & Verification",
@@ -21,7 +21,7 @@
   };
 
   if(document.getElementById(IDS.button) || document.getElementById(IDS.overlay)) return;
-  if(document.getElementById("menuOverlay") && document.getElementById("menuButton") && /verve n veda/i.test(document.title||"")) return;
+  if(document.getElementById("menuOverlay") && document.getElementById("menuButton") && /public gateway/i.test(document.title||"")) return;
 
   let entries=[];
   let lastFocus=null;
