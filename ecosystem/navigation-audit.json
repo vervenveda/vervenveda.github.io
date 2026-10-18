@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T18:13:40Z",
+  "generatedAt": "2026-10-18T18:15:15Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
     "failedRepositoryCount": 0,
     "htmlCount": 11460,
-    "brokenLocalLinkCount": 2,
+    "brokenLocalLinkCount": 0,
     "rootOrphanHtmlCount": 9554,
     "unreferencedHtmlCount": 1753,
     "duplicateGroupCount": 23,
@@ -39,21 +39,13 @@
     {
       "repository": "vervenveda/arcade.github.io",
       "htmlCount": 60,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 8,
       "rootOrphanHtmlCount": 50,
       "unreferencedHtmlCount": 50,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "Math/primes-divisibility.html",
-          "target": "assets/lesson-engine.js",
-          "raw": "../assets/lesson-engine.js",
-          "tag": "script",
-          "attr": "src"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "AffixSix™_index.html",
         "Geometry/original-sanctuary-game_index.html",
@@ -981,21 +973,13 @@
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
       "htmlCount": 3168,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 7,
       "rootOrphanHtmlCount": 3150,
       "unreferencedHtmlCount": 188,
       "duplicateGroupCount": 11,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "courses/advanced-geometric-topology/curriculum/lessons/lesson-02/KH-MATH-AGT-W01-CR01_quotient-spaces-polygonal-schemas.html",
-          "target": "courses/advanced-geometric-topology/curriculum/lessons/index.html",
-          "raw": "../",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "Career/apps/assessment-mentor_index.html",
         "Career/apps/career-star_index.html",
