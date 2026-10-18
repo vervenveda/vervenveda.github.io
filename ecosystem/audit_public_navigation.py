@@ -134,11 +134,38 @@ def normalize_candidate(root:Path,source:Path,raw:str):
             candidate=candidate.with_suffix(".html")
     return candidate
 
+DYNAMIC_ROUTE_RE = re.compile(
+    r"""(?P<q>["'`])(?P<url>(?:https?://(?:www\.)?vervenveda\.com/|https?://vervenveda\.github\.io/)?[^"'\`<>\n]{1,320}?(?:\.html?|/))(?P=q)""",
+    re.I,
+)
+
+def dynamic_html_targets(root:Path,source:Path,text:str,rels:set[str]):
+    """Extract existing HTML destinations embedded in JS route arrays/config objects.
+    Dynamic strings improve reachability classification only; they never create broken-link findings.
+    """
+    found=set()
+    for match in DYNAMIC_ROUTE_RE.finditer(text):
+        raw=match.group("url").strip()
+        if not raw or raw.startswith(("#","data:","javascript:")):
+            continue
+        candidate=normalize_candidate(root,source,raw)
+        if candidate is None:
+            continue
+        try:
+            rel=candidate.relative_to(root).as_posix()
+        except ValueError:
+            continue
+        if rel in rels and candidate.exists() and candidate.suffix.lower() in HTML_EXT:
+            found.add(rel)
+    return found
+
 def logical_duplicate_key(path:Path):
     s=path.as_posix().lower()
     s=re.sub(r"(?:[_-]?index)?\.html?$","",s)
     s=re.sub(r"[_-]+"," ",s)
-    s=re.sub(r"\b(?:copy|old|legacy|backup|bak|final|new|updated|v\d+|version\d+)\b","",s)
+    # Only collapse unmistakable archival/copy/version labels. Words such as
+    # "final", "updated", and "new" can describe distinct public destinations.
+    s=re.sub(r"\b(?:copy|old|legacy|backup|bak|deprecated|superseded|v\d+|version\d+)\b","",s)
     s=re.sub(r"\s+"," ",s).strip()
     return s
 
@@ -181,6 +208,13 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
                 if candidate.suffix.lower() in HTML_EXT|ASSET_EXT or "." in candidate.name:
                     broken.append({"source":rel,"target":target,"raw":raw,"tag":tag,"attr":attr})
 
+        # Many portals build cards and course menus from JS arrays rather than literal
+        # <a> tags. Count existing route strings as real navigation without treating
+        # arbitrary JS strings as broken links.
+        for target in dynamic_html_targets(dest,p,text,set(rels)):
+            refs[target]+=1
+            graph[rel].add(target)
+
     # Reachability starts at root index plus every curated active public master-directory
     # path for this repository. This avoids labeling legitimate deep portals as orphans.
     seeds=[]
@@ -214,7 +248,7 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
     groups=defaultdict(list)
     for rel in rels:
         groups[logical_duplicate_key(Path(rel))].append(rel)
-    duplicate_groups=[sorted(v) for v in groups.values() if len(v)>1]
+    version_sibling_groups=[sorted(v) for v in groups.values() if len(v)>1]
     superseded=[r for r in rels if re.search(r"(^|[/_.-])(old|legacy|backup|bak|deprecated|superseded)([/_.-]|$)",r,re.I)]
 
     return {
@@ -224,12 +258,12 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
         "rootReachableHtmlCount":len(reachable),
         "rootOrphanHtmlCount":len(root_orphans),
         "unreferencedHtmlCount":len(unreferenced),
-        "duplicateGroupCount":len(duplicate_groups),
+        "duplicateGroupCount":len(version_sibling_groups),
         "supersededNameCount":len(superseded),
         "brokenLocalLinks":broken[:MAX_EXAMPLES],
         "rootOrphans":root_orphans[:MAX_EXAMPLES],
         "unreferencedPages":unreferenced[:MAX_EXAMPLES],
-        "duplicateGroups":duplicate_groups[:30],
+        "duplicateGroups":version_sibling_groups[:30],
         "supersededNames":superseded[:MAX_EXAMPLES],
     }
 
