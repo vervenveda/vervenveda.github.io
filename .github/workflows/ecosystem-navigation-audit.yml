@@ -1,4 +1,5 @@
 name: Ecosystem Navigation Audit
+# audit generation: 2
 
 on:
   workflow_dispatch:
