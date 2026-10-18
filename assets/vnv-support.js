@@ -2,7 +2,7 @@
   "use strict";
 
   const PAYMENT_URL = "https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s";
-  const ECOSYSTEM_MENU_URL = "/assets/vnv-ecosystem-menu.js";
+  const ECOSYSTEM_MENU_URL = "https://vervenveda.com/assets/vnv-ecosystem-menu.js";
   const SUPPORT_ID = "vnv-global-support";
   const TOP_ID = "vnv-global-support-top";
 
