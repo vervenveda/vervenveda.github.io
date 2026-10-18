@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T18:31:42Z",
+  "generatedAt": "2026-10-18T18:37:39Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
@@ -8,8 +8,11 @@
     "htmlCount": 11460,
     "brokenLocalLinkCount": 0,
     "rootOrphanHtmlCount": 8022,
-    "unreferencedHtmlCount": 1479,
-    "duplicateGroupCount": 10,
+    "unreferencedHtmlCount": 1478,
+    "duplicateGroupCount": 0,
+    "versionSiblingGroupCount": 8,
+    "intentionalSiblingGroupCount": 0,
+    "canonicalAliasCount": 2,
     "supersededNameCount": 3
   },
   "failures": [],
@@ -22,6 +25,9 @@
       "rootOrphanHtmlCount": 3,
       "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -34,6 +40,9 @@
         "app/WEAL_domain_hosting_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -44,6 +53,9 @@
       "rootOrphanHtmlCount": 3,
       "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -57,6 +69,9 @@
         "Math/primes-divisibility.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -67,6 +82,9 @@
       "rootOrphanHtmlCount": 15,
       "unreferencedHtmlCount": 5,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -94,6 +112,9 @@
         "tools/song_embedder_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -104,6 +125,9 @@
       "rootOrphanHtmlCount": 39,
       "unreferencedHtmlCount": 39,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -189,6 +213,9 @@
         "apps/vintage_spinnet_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -199,6 +226,9 @@
       "rootOrphanHtmlCount": 3,
       "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -212,6 +242,9 @@
         "classes/art-class/index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -222,6 +255,9 @@
       "rootOrphanHtmlCount": 22,
       "unreferencedHtmlCount": 22,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 1,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -273,6 +309,9 @@
         "workshops/stock-market_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": [
         "apps/sovereign_legacy_planner.html"
       ]
@@ -285,6 +324,9 @@
       "rootOrphanHtmlCount": 16,
       "unreferencedHtmlCount": 16,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 1,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -324,6 +366,9 @@
         "apps/Senior_Safety_Check_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": [
         "apps/Estate_Legacy_Elder_Care_index.html"
       ]
@@ -336,11 +381,17 @@
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [],
       "unreferencedPages": [],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -351,11 +402,17 @@
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [],
       "unreferencedPages": [],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -366,6 +423,9 @@
       "rootOrphanHtmlCount": 7,
       "unreferencedHtmlCount": 7,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -387,6 +447,9 @@
         "verify/index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -397,6 +460,9 @@
       "rootOrphanHtmlCount": 1778,
       "unreferencedHtmlCount": 120,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -564,6 +630,9 @@
         "grades/grade-03/assessments/midterm.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -573,7 +642,10 @@
       "rootReachableHtmlCount": 2268,
       "rootOrphanHtmlCount": 1010,
       "unreferencedHtmlCount": 693,
-      "duplicateGroupCount": 9,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 8,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 1,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -740,7 +812,8 @@
         "courses/mathematics/algebra-1/units/unit-06/practice/foundation.html",
         "courses/mathematics/algebra-1/units/unit-06/teacher-guide.html"
       ],
-      "duplicateGroups": [
+      "duplicateGroups": [],
+      "versionSiblingGroups": [
         [
           "courses/social-studies/grade-09/week-06/student-packet-v2.html",
           "courses/social-studies/grade-09/week-06/student-packet.html"
@@ -752,10 +825,6 @@
         [
           "courses/social-studies/grade-09/week-07/student-packet-v2.html",
           "courses/social-studies/grade-09/week-07/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/assessments/readiness-v3.html",
-          "courses/social-studies/grade-09/assessments/readiness.html"
         ],
         [
           "courses/social-studies/grade-09/week-09/student-packet-v2.html",
@@ -778,6 +847,13 @@
           "courses/social-studies/grade-09/weeks/week-09/student-packet.html"
         ]
       ],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [
+        {
+          "alias": "courses/social-studies/grade-09/assessments/readiness.html",
+          "canonical": "courses/social-studies/grade-09/assessments/readiness-v3.html"
+        }
+      ],
       "supersededNames": []
     },
     {
@@ -788,6 +864,9 @@
       "rootOrphanHtmlCount": 3150,
       "unreferencedHtmlCount": 178,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -955,6 +1034,9 @@
         "courses/introduction-to-proofs/units/unit-01/index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -965,6 +1047,9 @@
       "rootOrphanHtmlCount": 267,
       "unreferencedHtmlCount": 106,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1132,6 +1217,9 @@
         "curriculum/assessments/published-self-check-unit-34-assessment.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1142,6 +1230,9 @@
       "rootOrphanHtmlCount": 96,
       "unreferencedHtmlCount": 28,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1257,6 +1348,9 @@
         "multilingual-translator_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1267,6 +1361,9 @@
       "rootOrphanHtmlCount": 1335,
       "unreferencedHtmlCount": 39,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1393,6 +1490,9 @@
         "grades/grade-08/subjects/world-languages/index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1401,8 +1501,11 @@
       "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 10,
       "rootOrphanHtmlCount": 45,
-      "unreferencedHtmlCount": 45,
+      "unreferencedHtmlCount": 44,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1482,7 +1585,6 @@
         "apps/Spelling_safari_index.html",
         "apps/Sunny_ABCs_123s_Storytime/index.html",
         "apps/Sunny_ABCs_123s_Storytime_index.html",
-        "apps/cosmic_arabic_alphabet_quest_index.html",
         "apps/feelings_act_of_kindness_index.html",
         "apps/feelings_noetic_emotions_index.html",
         "apps/joke_jar_index.html",
@@ -1500,6 +1602,9 @@
         "apps/wondercabinet_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1510,6 +1615,9 @@
       "rootOrphanHtmlCount": 2,
       "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1521,6 +1629,9 @@
         "tools/Psychology_Mindscape_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1531,11 +1642,17 @@
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [],
       "unreferencedPages": [],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1546,11 +1663,17 @@
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [],
       "unreferencedPages": [],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1561,6 +1684,9 @@
       "rootOrphanHtmlCount": 3,
       "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1574,6 +1700,9 @@
         "apps/Shopping_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1584,6 +1713,9 @@
       "rootOrphanHtmlCount": 136,
       "unreferencedHtmlCount": 123,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 1,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1751,6 +1883,9 @@
         "templates/packs/khaemenes-scholarly-publishing/instructor-guide.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": [
         "templates/legacy-letter.html"
       ]
@@ -1763,11 +1898,17 @@
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [],
       "unreferencedPages": [],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1778,6 +1919,9 @@
       "rootOrphanHtmlCount": 45,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1829,6 +1973,9 @@
       ],
       "unreferencedPages": [],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1839,6 +1986,9 @@
       "rootOrphanHtmlCount": 3,
       "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1851,6 +2001,9 @@
         "apps/the-staff_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1861,6 +2014,9 @@
       "rootOrphanHtmlCount": 34,
       "unreferencedHtmlCount": 33,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1935,6 +2091,9 @@
         "editorial_standard_index.html"
       ],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     },
     {
@@ -1944,7 +2103,10 @@
       "rootReachableHtmlCount": 8,
       "rootOrphanHtmlCount": 10,
       "unreferencedHtmlCount": 10,
-      "duplicateGroupCount": 1,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 1,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
@@ -1971,11 +2133,14 @@
         "seo-head-snippet.html",
         "structured-data.html"
       ],
-      "duplicateGroups": [
-        [
-          "privacy-policy.html",
-          "privacy_policy.html"
-        ]
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [
+        {
+          "alias": "privacy_policy.html",
+          "canonical": "privacy-policy.html"
+        }
       ],
       "supersededNames": []
     },
@@ -1987,11 +2152,17 @@
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [],
       "unreferencedPages": [],
       "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
       "supersededNames": []
     }
   ]
