@@ -8,6 +8,7 @@
   const SCRIPT_MARK="vnvBetaProgramScript";
   const BETA_URL="https://vervenveda.com/beta/";
   const SCRIPT_URL="https://vervenveda.com/assets/vnv-beta-link.js";
+  const SUPPORT_URL="https://vervenveda.com/assets/vnv-support.js";
   const BAZAAR_LIVE_URL="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html";
   const HIGH_PROFILE_ID="khaemenesHighStudentProfileLink";
   const HIGH_PROFILE_STYLE_ID="khaemenesHighStudentProfileLinkStyles";
@@ -417,6 +418,14 @@
     }catch{}
   }
 
+  function ensureSupportComponent(){
+    try{
+      if(document.documentElement?.hasAttribute("data-vnv-support-off"))return;
+      if(document.getElementById("vnv-global-support"))return;
+      loadOnce(SUPPORT_URL,"vnv-support");
+    }catch{}
+  }
+
   function mount(){
     if(document.getElementById(ID)||!document.body)return;
 
@@ -503,9 +512,9 @@
     observer.observe(document.documentElement,{childList:true,subtree:true});
   }
 
-  function start(){mount();mountHighStudentProfile();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();bindVisibleFrames();enhanceBazaarLanding()}
+  function start(){mount();mountHighStudentProfile();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding()}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.7.3",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
+  window.VNVBetaProgram=Object.freeze({version:"1.7.4",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
 })();
