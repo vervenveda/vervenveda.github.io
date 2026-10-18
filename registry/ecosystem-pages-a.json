@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-18T18:08:03Z",
-  "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline surfaces excluded. New repositories require explicit ecosystem approval.",
+  "generatedAt": "2026-10-18T18:30:56Z",
+  "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
     {
@@ -1765,14 +1765,6 @@
       "source": "Finance Academy & Hall"
     },
     {
-      "title": "Sovereign Legacy Planner",
-      "url": "https://vervenveda.github.io/finance.github.io/apps/sovereign_legacy_planner.html",
-      "repo": "finance.github.io",
-      "path": "apps/sovereign_legacy_planner.html",
-      "category": "finance",
-      "source": "Finance Academy & Hall"
-    },
-    {
       "title": "Thesara Financial Command Center",
       "url": "https://vervenveda.github.io/finance.github.io/apps/thesara_financial_command_center.html",
       "repo": "finance.github.io",
@@ -1913,14 +1905,6 @@
       "url": "https://vervenveda.github.io/firmament.github.io/apps/Collector_Hub_index.html",
       "repo": "firmament.github.io",
       "path": "apps/Collector_Hub_index.html",
-      "category": "civic",
-      "source": "Firmament"
-    },
-    {
-      "title": "Estate Legacy Elder Care",
-      "url": "https://vervenveda.github.io/firmament.github.io/apps/Estate_Legacy_Elder_Care_index.html",
-      "repo": "firmament.github.io",
-      "path": "apps/Estate_Legacy_Elder_Care_index.html",
       "category": "civic",
       "source": "Firmament"
     },
@@ -24181,14 +24165,6 @@
       "source": "Khaemenes Sr. High"
     },
     {
-      "title": "High School Profile Snippet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-1/HIGH_SCHOOL_PROFILE_SNIPPET.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/mathematics/algebra-1/HIGH_SCHOOL_PROFILE_SNIPPET.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
       "title": "Algebra 1",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-1/",
       "repo": "Khaemenes_High.github.io",
@@ -45489,46 +45465,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-08/student-packet.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-12/weeks/week-08/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-08/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-12/weeks/week-08/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-09/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-12/weeks/week-09/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-09/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-12/weeks/week-09/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-10/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-12/weeks/week-10/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-10/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-12/weeks/week-10/teacher-guide.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
