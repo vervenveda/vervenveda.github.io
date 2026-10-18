@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T17:41:27Z",
+  "generatedAt": "2026-10-18T17:43:12Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
     "failedRepositoryCount": 0,
     "htmlCount": 11390,
-    "brokenLocalLinkCount": 4412,
-    "rootOrphanHtmlCount": 9741,
-    "unreferencedHtmlCount": 1924,
+    "brokenLocalLinkCount": 1547,
+    "rootOrphanHtmlCount": 9599,
+    "unreferencedHtmlCount": 1833,
     "duplicateGroupCount": 23,
     "supersededNameCount": 3
   },
@@ -19,8 +19,8 @@
       "htmlCount": 12,
       "brokenLocalLinkCount": 2,
       "rootReachableHtmlCount": 7,
-      "rootOrphanHtmlCount": 5,
-      "unreferencedHtmlCount": 4,
+      "rootOrphanHtmlCount": 3,
+      "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
@@ -40,17 +40,13 @@
         }
       ],
       "rootOrphans": [
-        "404.html",
         "app/FleaPit™ _media_hub_index.html",
         "app/FleaPit™_media_gate_Index.html",
-        "app/WEAL_domain_hosting_index.html",
-        "offline.html"
+        "app/WEAL_domain_hosting_index.html"
       ],
       "unreferencedPages": [
-        "404.html",
         "app/FleaPit™_media_gate_Index.html",
-        "app/WEAL_domain_hosting_index.html",
-        "offline.html"
+        "app/WEAL_domain_hosting_index.html"
       ],
       "duplicateGroups": [],
       "supersededNames": []
@@ -59,9 +55,9 @@
       "repository": "vervenveda/arcade.github.io",
       "htmlCount": 60,
       "brokenLocalLinkCount": 4,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 59,
-      "unreferencedHtmlCount": 59,
+      "rootReachableHtmlCount": 8,
+      "rootOrphanHtmlCount": 50,
+      "unreferencedHtmlCount": 50,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
@@ -96,19 +92,10 @@
       ],
       "rootOrphans": [
         "AffixSix™_index.html",
-        "Arcade_Foundation_Files/403.html",
-        "Arcade_Foundation_Files/404.html",
-        "Backgammon_index.html",
-        "Checkers_Variant_Lab_index.html",
-        "Chess_Studio_index.html",
-        "Geometry/mandala_rings_game_index.html",
         "Geometry/original-sanctuary-game_index.html",
-        "Geometry/sacred_geometry_game_index.html",
         "Hangman_index.html",
         "IQ-Quantum_index.html",
         "IQ-mini_index.html",
-        "Jenny's_Sudoku_index.html",
-        "Learn_a_New_Word_index.html",
         "Math/factors-multiples.html",
         "Math/number-family.html",
         "Math/primes-divisibility.html",
@@ -157,19 +144,10 @@
       ],
       "unreferencedPages": [
         "AffixSix™_index.html",
-        "Arcade_Foundation_Files/403.html",
-        "Arcade_Foundation_Files/404.html",
-        "Backgammon_index.html",
-        "Checkers_Variant_Lab_index.html",
-        "Chess_Studio_index.html",
-        "Geometry/mandala_rings_game_index.html",
         "Geometry/original-sanctuary-game_index.html",
-        "Geometry/sacred_geometry_game_index.html",
         "Hangman_index.html",
         "IQ-Quantum_index.html",
         "IQ-mini_index.html",
-        "Jenny's_Sudoku_index.html",
-        "Learn_a_New_Word_index.html",
         "Math/factors-multiples.html",
         "Math/number-family.html",
         "Math/primes-divisibility.html",
@@ -223,9 +201,9 @@
       "repository": "vervenveda/Arshif.github.io",
       "htmlCount": 43,
       "brokenLocalLinkCount": 16,
-      "rootReachableHtmlCount": 3,
-      "rootOrphanHtmlCount": 40,
-      "unreferencedHtmlCount": 30,
+      "rootReachableHtmlCount": 7,
+      "rootOrphanHtmlCount": 36,
+      "unreferencedHtmlCount": 26,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
@@ -343,12 +321,9 @@
         }
       ],
       "rootOrphans": [
-        "Faith/apps/Bible-context_index.html",
-        "Faith/apps/Yahushua_Study_index.html",
         "Faith/apps/Yahushua_portal_index.html",
         "Faith/apps/bible_before_cannon_index.html",
         "Faith/apps/biblical_portal_index.html",
-        "Faith/apps/biblical_web_directory_index.html",
         "Faith/apps/foundations_of_faith_index.html",
         "Faith/apps/prayer_index.html",
         "Faith/apps/remnant_nations_index.html",
@@ -358,7 +333,6 @@
         "Faith/apps/truth_tribe_index.html",
         "Faith/apps/truth_tribe_kids_index.html",
         "Faith/apps/zionism_course_index.html",
-        "Faith/index.html",
         "catalog/index.html",
         "catalog/texts/english-10-unit-01.html",
         "catalog/texts/english-10-unit-03.html",
@@ -385,12 +359,9 @@
         "tools/song_embedder_index.html"
       ],
       "unreferencedPages": [
-        "Faith/apps/Bible-context_index.html",
-        "Faith/apps/Yahushua_Study_index.html",
         "Faith/apps/Yahushua_portal_index.html",
         "Faith/apps/bible_before_cannon_index.html",
         "Faith/apps/biblical_portal_index.html",
-        "Faith/apps/biblical_web_directory_index.html",
         "Faith/apps/foundations_of_faith_index.html",
         "Faith/apps/prayer_index.html",
         "Faith/apps/remnant_nations_index.html",
@@ -400,7 +371,6 @@
         "Faith/apps/truth_tribe_index.html",
         "Faith/apps/truth_tribe_kids_index.html",
         "Faith/apps/zionism_course_index.html",
-        "Faith/index.html",
         "halls/culinary/index.html",
         "halls/exploration-travelogues/index.html",
         "halls/historical-biblical-parallels/index.html",
@@ -422,21 +392,13 @@
     {
       "repository": "vervenveda/aurora.github.io",
       "htmlCount": 46,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 7,
       "rootOrphanHtmlCount": 39,
       "unreferencedHtmlCount": 39,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/aurora.github.io/",
-          "tag": "link",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/AuraenTune_index.html",
         "apps/Sacred_geometry_sanctuary_index.html",
@@ -525,33 +487,17 @@
     {
       "repository": "vervenveda/bazaarart.github.io",
       "htmlCount": 47,
-      "brokenLocalLinkCount": 2,
-      "rootReachableHtmlCount": 8,
-      "rootOrphanHtmlCount": 39,
-      "unreferencedHtmlCount": 39,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 11,
+      "rootOrphanHtmlCount": 36,
+      "unreferencedHtmlCount": 36,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/bazaarart.github.io/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "apps/Photo_Album_Studio/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/bazaarart.github.io/",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/Act_of_Kindness_index.html",
         "apps/Affirmations_index.html",
         "apps/Art_resources_index.html",
-        "apps/Class_music_hall_index.html",
         "apps/Class_music_reading_101_index.html",
         "apps/Class_music_staff_index.html",
         "apps/Class_music_theory_201_index.html",
@@ -565,9 +511,7 @@
         "apps/Journal_prose_editing_suite_index.html",
         "apps/Journal_teen_boys_index.html",
         "apps/Journal_teen_girls_index.html",
-        "apps/Photo_Album_Studio/index.html",
         "apps/SixBitBun_index.html",
-        "apps/SpinSpire_Art_Prompt_Generator_index.html",
         "apps/Word_alchemy_game_index.html",
         "apps/art-education.html",
         "apps/art_tool_Sagaen™_art_studio_index.html",
@@ -592,7 +536,6 @@
         "apps/Act_of_Kindness_index.html",
         "apps/Affirmations_index.html",
         "apps/Art_resources_index.html",
-        "apps/Class_music_hall_index.html",
         "apps/Class_music_reading_101_index.html",
         "apps/Class_music_staff_index.html",
         "apps/Class_music_theory_201_index.html",
@@ -606,9 +549,7 @@
         "apps/Journal_prose_editing_suite_index.html",
         "apps/Journal_teen_boys_index.html",
         "apps/Journal_teen_girls_index.html",
-        "apps/Photo_Album_Studio/index.html",
         "apps/SixBitBun_index.html",
-        "apps/SpinSpire_Art_Prompt_Generator_index.html",
         "apps/Word_alchemy_game_index.html",
         "apps/art-education.html",
         "apps/art_tool_Sagaen™_art_studio_index.html",
@@ -636,9 +577,9 @@
       "repository": "vervenveda/finance.github.io",
       "htmlCount": 33,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 8,
-      "rootOrphanHtmlCount": 25,
-      "unreferencedHtmlCount": 25,
+      "rootReachableHtmlCount": 11,
+      "rootOrphanHtmlCount": 22,
+      "unreferencedHtmlCount": 22,
       "duplicateGroupCount": 0,
       "supersededNameCount": 1,
       "brokenLocalLinks": [],
@@ -656,16 +597,13 @@
         "apps/simulator_economic_growth_index.html",
         "apps/simulator_supply_demand_index.html",
         "apps/ultimate-budget-tool_index.html",
-        "financial-hall/index.html",
         "nonprofit-hall/business-hub_index.html",
         "nonprofit-hall/business-incubator_index.html",
         "nonprofit-hall/business-management_index.html",
-        "nonprofit-hall/index.html",
         "workshops/crypto_index.html",
         "workshops/debit-credit_index.html",
         "workshops/finacial-academy_index.html",
         "workshops/financial-budget_index.html",
-        "workshops/investment-foundations_index.html",
         "workshops/personal-taxes_index.html",
         "workshops/stock-market_index.html"
       ],
@@ -683,16 +621,13 @@
         "apps/simulator_economic_growth_index.html",
         "apps/simulator_supply_demand_index.html",
         "apps/ultimate-budget-tool_index.html",
-        "financial-hall/index.html",
         "nonprofit-hall/business-hub_index.html",
         "nonprofit-hall/business-incubator_index.html",
         "nonprofit-hall/business-management_index.html",
-        "nonprofit-hall/index.html",
         "workshops/crypto_index.html",
         "workshops/debit-credit_index.html",
         "workshops/finacial-academy_index.html",
         "workshops/financial-budget_index.html",
-        "workshops/investment-foundations_index.html",
         "workshops/personal-taxes_index.html",
         "workshops/stock-market_index.html"
       ],
@@ -704,21 +639,13 @@
     {
       "repository": "vervenveda/firmament.github.io",
       "htmlCount": 25,
-      "brokenLocalLinkCount": 1,
-      "rootReachableHtmlCount": 6,
-      "rootOrphanHtmlCount": 19,
-      "unreferencedHtmlCount": 19,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 9,
+      "rootOrphanHtmlCount": 16,
+      "unreferencedHtmlCount": 16,
       "duplicateGroupCount": 0,
       "supersededNameCount": 1,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/firmament.github.io/",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/Collector_Hub_index.html",
         "apps/Evidence_Analysis_index.html",
@@ -730,15 +657,12 @@
         "apps/Homeless_Hub_index.html",
         "apps/Insurance_Resources_index.html",
         "apps/LGBTQ+_Hub_index.html",
-        "apps/Law_Governance_hall_index.html",
         "apps/PLEARA_Shopping_index.html",
         "apps/PLERA_Search_Gate_index.html",
         "apps/Plera_Resources_index.html",
         "apps/Senior_News_index.html",
         "apps/Senior_Resource_Library_index.html",
-        "apps/Senior_Safety_Check_index.html",
-        "apps/Veterans_Hub_Florida_index.html",
-        "apps/Veterans_Hub_National_index.html"
+        "apps/Senior_Safety_Check_index.html"
       ],
       "unreferencedPages": [
         "apps/Collector_Hub_index.html",
@@ -751,15 +675,12 @@
         "apps/Homeless_Hub_index.html",
         "apps/Insurance_Resources_index.html",
         "apps/LGBTQ+_Hub_index.html",
-        "apps/Law_Governance_hall_index.html",
         "apps/PLEARA_Shopping_index.html",
         "apps/PLERA_Search_Gate_index.html",
         "apps/Plera_Resources_index.html",
         "apps/Senior_News_index.html",
         "apps/Senior_Resource_Library_index.html",
-        "apps/Senior_Safety_Check_index.html",
-        "apps/Veterans_Hub_Florida_index.html",
-        "apps/Veterans_Hub_National_index.html"
+        "apps/Senior_Safety_Check_index.html"
       ],
       "duplicateGroups": [],
       "supersededNames": [
@@ -799,26 +720,15 @@
     {
       "repository": "vervenveda/Khaemenes_Academy.github.io",
       "htmlCount": 23,
-      "brokenLocalLinkCount": 1,
-      "rootReachableHtmlCount": 13,
-      "rootOrphanHtmlCount": 10,
-      "unreferencedHtmlCount": 10,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 16,
+      "rootOrphanHtmlCount": 7,
+      "unreferencedHtmlCount": 7,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Academy.github.io/",
-          "tag": "link",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
-        "Health_learning/Health_is_wealth_6weeks_index.html",
         "Health_learning/Trivia_Health_index.html",
-        "Health_learning/wellness_workshop_index.html",
-        "Health_learning/workout_builder_index.html",
         "Parent_resources/Art_studio_index.html",
         "Parent_resources/Family_photo_album_index.html",
         "diagnostics/front-door/index.html",
@@ -827,10 +737,7 @@
         "verify/index.html"
       ],
       "unreferencedPages": [
-        "Health_learning/Health_is_wealth_6weeks_index.html",
         "Health_learning/Trivia_Health_index.html",
-        "Health_learning/wellness_workshop_index.html",
-        "Health_learning/workout_builder_index.html",
         "Parent_resources/Art_studio_index.html",
         "Parent_resources/Family_photo_album_index.html",
         "diagnostics/front-door/index.html",
@@ -1582,577 +1489,15 @@
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
       "htmlCount": 3225,
-      "brokenLocalLinkCount": 234,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 1382,
-      "rootOrphanHtmlCount": 1843,
-      "unreferencedHtmlCount": 780,
+      "rootOrphanHtmlCount": 1821,
+      "unreferencedHtmlCount": 764,
       "duplicateGroupCount": 11,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/algebra-1/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/algebra-1/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/assessments/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/assessments/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/assessments/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-08/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-08/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-08/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-08/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-08/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-08/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-08/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-07/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-07/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-07/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-07/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-07/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-07/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-07/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/Unit_04_Ratios_Rates_Proportional_Reasoning_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/Unit_04_Ratios_Rates_Proportional_Reasoning_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/Unit_04_Ratios_Rates_Proportional_Reasoning_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/Unit_04_Ratios_Rates_Proportional_Reasoning_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/Unit_04_Ratios_Rates_Proportional_Reasoning_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/Unit_04_Ratios_Rates_Proportional_Reasoning_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-04/Unit_04_Ratios_Rates_Proportional_Reasoning_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-10/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-10/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-10/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-10/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-06/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-06/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-06/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-06/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-06/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-06/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-06/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-11/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-11/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-11/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-11/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/Unit_03_Fractions_Decimals_Rational_Numbers_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/Unit_03_Fractions_Decimals_Rational_Numbers_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/Unit_03_Fractions_Decimals_Rational_Numbers_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/Unit_03_Fractions_Decimals_Rational_Numbers_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/Unit_03_Fractions_Decimals_Rational_Numbers_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/Unit_03_Fractions_Decimals_Rational_Numbers_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-03/Unit_03_Fractions_Decimals_Rational_Numbers_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/Unit_02_Integers_Absolute_Value_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/Unit_02_Integers_Absolute_Value_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/Unit_02_Integers_Absolute_Value_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-02/Unit_02_Integers_Absolute_Value_Verve_Arithmetic_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-01/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/units/unit-01/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_High.github.io/",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "assets/Learn-a-new-word.html",
-        "courses/language-arts/english-10/404.html",
         "courses/language-arts/english-10/assessments/diagnostic/index.html",
         "courses/language-arts/english-10/assessments/final/index.html",
         "courses/language-arts/english-10/assessments/index.html",
@@ -2170,7 +1515,6 @@
         "courses/language-arts/english-10/assessments/unit-11/index.html",
         "courses/language-arts/english-10/assessments/unit-12/index.html",
         "courses/language-arts/english-10/grades/grade-10/index.html",
-        "courses/language-arts/english-10/offline.html",
         "courses/language-arts/english-10/portfolio/index.html",
         "courses/language-arts/english-10/reading-list.html",
         "courses/language-arts/english-10/rubrics/argument.html",
@@ -2230,7 +1574,9 @@
         "courses/language-arts/english-10/weeks/week-27/index.html",
         "courses/language-arts/english-10/weeks/week-28/index.html",
         "courses/language-arts/english-10/weeks/week-29/index.html",
-        "courses/language-arts/english-10/weeks/week-30/index.html"
+        "courses/language-arts/english-10/weeks/week-30/index.html",
+        "courses/language-arts/english-10/weeks/week-31/index.html",
+        "courses/language-arts/english-10/weeks/week-32/index.html"
       ],
       "unreferencedPages": [
         "assets/Learn-a-new-word.html",
@@ -2238,7 +1584,6 @@
         "courses/language-arts/english-11/reading-list.html",
         "courses/language-arts/english-12/grades/grade-12/index.html",
         "courses/language-arts/english-12/reading-list.html",
-        "courses/language-arts/english-9/404.html",
         "courses/language-arts/english-9/foundations/index.html",
         "courses/language-arts/english-9/grades/grade-09/index.html",
         "courses/language-arts/english-9/rubrics/argument.html",
@@ -2246,7 +1591,6 @@
         "courses/language-arts/english-9/rubrics/research.html",
         "courses/language-arts/english-9/rubrics/speaking.html",
         "courses/mathematics/algebra-1/HIGH_SCHOOL_PROFILE_SNIPPET.html",
-        "courses/mathematics/algebra-1/offline.html",
         "courses/mathematics/algebra-1/practice/core.html",
         "courses/mathematics/algebra-1/practice/extended.html",
         "courses/mathematics/algebra-1/practice/foundation.html",
@@ -2312,7 +1656,9 @@
         "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-05-transformations-of-parent-functions.html",
         "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-06-piecewise-functions-discrete-models.html",
         "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-07-arithmetic-sequences-as-functions-inverse-thinking.html",
-        "courses/mathematics/algebra-1/units/unit-05/practice/core.html"
+        "courses/mathematics/algebra-1/units/unit-05/practice/core.html",
+        "courses/mathematics/algebra-1/units/unit-05/practice/extended.html",
+        "courses/mathematics/algebra-1/units/unit-05/practice/foundation.html"
       ],
       "duplicateGroups": [
         [
@@ -2365,290 +1711,17 @@
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
       "htmlCount": 3168,
-      "brokenLocalLinkCount": 2724,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 3167,
-      "unreferencedHtmlCount": 203,
+      "brokenLocalLinkCount": 201,
+      "rootReachableHtmlCount": 7,
+      "rootOrphanHtmlCount": 3150,
+      "unreferencedHtmlCount": 188,
       "duplicateGroupCount": 11,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "courses/linear-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/linear-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/linear-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/linear-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/calculus-ii/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/calculus-ii/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/calculus-ii/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/calculus-ii/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "courses/calculus-ii/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
           "target": "courses/mathematics/calculus-ii/index.html",
           "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/mathematics/calculus-ii/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/topology-differential-geometry/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/topology-differential-geometry/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/topology-differential-geometry/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/topology-differential-geometry/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/statistics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/statistics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/statistics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/statistics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/discrete-mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/discrete-mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/discrete-mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/discrete-mathematics/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/real-complex-analysis/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/real-complex-analysis/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/real-complex-analysis/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/real-complex-analysis/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/abstract-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/abstract-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/abstract-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/abstract-algebra/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/introduction-to-proofs/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/introduction-to-proofs/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/introduction-to-proofs/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/introduction-to-proofs/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/differential-equations/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/differential-equations/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/differential-equations/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/differential-equations/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/calculus-1/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/precalculus-trigonometry/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
           "tag": "a",
           "attr": "href"
         },
@@ -2931,21 +2004,288 @@
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l07.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l06.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l01.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l02.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l03.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l06.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l01.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l04.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l03.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l07.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l05.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l02.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l02.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l04.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l07.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l03.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l06.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l01.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l05.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l08.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l05.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l03.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l07.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l04.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l01.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l02.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l06.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l06.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l02.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l03.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l04.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l01.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l05.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l04.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l03.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l01.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l02.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l06.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l05.html",
+          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
         }
       ],
       "rootOrphans": [
         "Career/apps/assessment-mentor_index.html",
-        "Career/apps/career-assessment_index.html",
-        "Career/apps/career-mentor-hub_index.html",
         "Career/apps/career-star_index.html",
-        "Career/directory-agi/index.html",
-        "Career/index.html",
         "GED/Interactive_index.html",
         "GED/Preparation_index.html",
         "GED/Survey_index.html",
         "GED/index.html",
-        "GED/portal_index.html",
-        "Science/index.html",
         "Technology/coding/coding-101/index.html",
         "Technology/coding/coding-102/index.html",
         "Technology/coding/coding-103/index.html",
@@ -2962,7 +2302,6 @@
         "courses/abstract-algebra/assessments/midterm.html",
         "courses/abstract-algebra/diagnostic/index.html",
         "courses/abstract-algebra/index.html",
-        "courses/abstract-algebra/offline.html",
         "courses/abstract-algebra/records/course-completion-certificate.html",
         "courses/abstract-algebra/records/learner-profile.html",
         "courses/abstract-algebra/teacher-keys/index.html",
@@ -3013,18 +2352,21 @@
         "courses/abstract-algebra/teacher-keys/u07-l03-key.html",
         "courses/abstract-algebra/teacher-keys/u07-l04-key.html",
         "courses/abstract-algebra/teacher-keys/u07-l05-key.html",
-        "courses/abstract-algebra/teacher-keys/u07-l06-key.html"
+        "courses/abstract-algebra/teacher-keys/u07-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l06-key.html"
       ],
       "unreferencedPages": [
         "Career/apps/assessment-mentor_index.html",
-        "Career/apps/career-assessment_index.html",
-        "Career/apps/career-mentor-hub_index.html",
         "Career/apps/career-star_index.html",
-        "Career/directory-agi/index.html",
         "GED/Interactive_index.html",
         "GED/Preparation_index.html",
         "GED/Survey_index.html",
-        "Science/index.html",
         "Technology/coding/coding-101/index.html",
         "Technology/coding/coding-102/index.html",
         "Technology/coding/coding-103/index.html",
@@ -3035,7 +2377,6 @@
         "Technology/coding/coding-302_index.html",
         "Technology/coding/coding-303_index.html",
         "courses/abstract-algebra/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/abstract-algebra/offline.html",
         "courses/abstract-algebra/tools/coset-quotient-homomorphism-lab.html",
         "courses/abstract-algebra/tools/finite-field-polynomial-studio.html",
         "courses/abstract-algebra/units/unit-01/index.html",
@@ -3071,11 +2412,9 @@
         "courses/advanced-geometric-topology/curriculum/lessons/teacher-key/KH-MATH-AGT-L16-INSTRUCTOR-KEY/KH-MATH-AGT-L16-IK02_instructor-key.html",
         "courses/advanced-geometric-topology/lesson.html",
         "courses/calculus-ii/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/calculus-ii/offline.html",
         "courses/calculus-ii/tools/polar-lab.html",
         "courses/calculus-ii/tools/series-lab.html",
         "courses/differential-equations/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/differential-equations/offline.html",
         "courses/differential-equations/tools/index.html",
         "courses/differential-equations/units/unit-01/index.html",
         "courses/differential-equations/units/unit-02/index.html",
@@ -3091,11 +2430,18 @@
         "courses/differential-equations/units/unit-12/index.html",
         "courses/differential-equations/units/unit-13/index.html",
         "courses/discrete-mathematics/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/discrete-mathematics/offline.html",
         "courses/discrete-mathematics/tools/index.html",
         "courses/discrete-mathematics/units/unit-01/index.html",
         "courses/discrete-mathematics/units/unit-02/index.html",
-        "courses/discrete-mathematics/units/unit-03/index.html"
+        "courses/discrete-mathematics/units/unit-03/index.html",
+        "courses/discrete-mathematics/units/unit-04/index.html",
+        "courses/discrete-mathematics/units/unit-05/index.html",
+        "courses/discrete-mathematics/units/unit-06/index.html",
+        "courses/discrete-mathematics/units/unit-07/index.html",
+        "courses/discrete-mathematics/units/unit-08/index.html",
+        "courses/discrete-mathematics/units/unit-09/index.html",
+        "courses/discrete-mathematics/units/unit-10/index.html",
+        "courses/discrete-mathematics/units/unit-11/index.html"
       ],
       "duplicateGroups": [
         [
@@ -3149,16 +2495,14 @@
       "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
       "htmlCount": 389,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 9,
-      "rootOrphanHtmlCount": 380,
-      "unreferencedHtmlCount": 197,
+      "rootReachableHtmlCount": 15,
+      "rootOrphanHtmlCount": 374,
+      "unreferencedHtmlCount": 191,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/ABC_curriculum_index.html",
-        "apps/ABC_letter-lab.index.html",
-        "apps/ABC_spelling_soup_index.html",
         "apps/ABC_story-sing-along.html",
         "apps/Breath_index.html",
         "apps/History_curriculum_index.html",
@@ -3170,12 +2514,8 @@
         "apps/PE_curriculum_index.html",
         "apps/Spelling_safari_index.html",
         "apps/Weather_compass_index.html",
-        "apps/Weather_planetarium_index.html",
         "apps/Weather_wizard_index.html",
         "apps/breathing-bubble_index.html",
-        "apps/kindergarten_math_cloud_index.html",
-        "apps/math-garden_index.html",
-        "apps/sink-or-float_index.html",
         "apps/weather-match_index.html",
         "assessments/final-exam.html",
         "assessments/midterm.html",
@@ -3235,12 +2575,16 @@
         "assessments/unit-15-assessment.html",
         "assessments/unit-16-assessment.html",
         "assessments/unit-17-assessment.html",
-        "assessments/unit-18-assessment.html"
+        "assessments/unit-18-assessment.html",
+        "assessments/unit-19-assessment.html",
+        "assessments/unit-20-assessment.html",
+        "assessments/unit-21-assessment.html",
+        "assessments/unit-22-assessment.html",
+        "assessments/unit-23-assessment.html",
+        "assessments/unit-24-assessment.html"
       ],
       "unreferencedPages": [
         "apps/ABC_curriculum_index.html",
-        "apps/ABC_letter-lab.index.html",
-        "apps/ABC_spelling_soup_index.html",
         "apps/ABC_story-sing-along.html",
         "apps/Breath_index.html",
         "apps/History_curriculum_index.html",
@@ -3252,12 +2596,8 @@
         "apps/PE_curriculum_index.html",
         "apps/Spelling_safari_index.html",
         "apps/Weather_compass_index.html",
-        "apps/Weather_planetarium_index.html",
         "apps/Weather_wizard_index.html",
         "apps/breathing-bubble_index.html",
-        "apps/kindergarten_math_cloud_index.html",
-        "apps/math-garden_index.html",
-        "apps/sink-or-float_index.html",
         "apps/weather-match_index.html",
         "assessments/final-exam.html",
         "assessments/midterm.html",
@@ -3317,7 +2657,13 @@
         "curriculum/assessments/published-self-check-unit-12-assessment.html",
         "curriculum/assessments/published-self-check-unit-13-assessment.html",
         "curriculum/assessments/published-self-check-unit-14-assessment.html",
-        "curriculum/assessments/published-self-check-unit-15-assessment.html"
+        "curriculum/assessments/published-self-check-unit-15-assessment.html",
+        "curriculum/assessments/published-self-check-unit-16-assessment.html",
+        "curriculum/assessments/published-self-check-unit-17-assessment.html",
+        "curriculum/assessments/published-self-check-unit-18-assessment.html",
+        "curriculum/assessments/published-self-check-unit-19-assessment.html",
+        "curriculum/assessments/published-self-check-unit-20-assessment.html",
+        "curriculum/assessments/published-self-check-unit-21-assessment.html"
       ],
       "duplicateGroups": [],
       "supersededNames": []
@@ -3326,14 +2672,13 @@
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
       "htmlCount": 105,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 5,
-      "rootOrphanHtmlCount": 100,
-      "unreferencedHtmlCount": 32,
+      "rootReachableHtmlCount": 7,
+      "rootOrphanHtmlCount": 96,
+      "unreferencedHtmlCount": 28,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
-        "404.html",
         "Halls/courses/arabic-1/index.html",
         "Halls/courses/arabic-1/unit-02-applied-practice.html",
         "Halls/courses/arabic-1/week-01/index.html",
@@ -3412,10 +2757,10 @@
         "apps/German_hub_index.html",
         "apps/German_traveler_index.html",
         "apps/German_word_challenge_index.html",
-        "apps/Kids_ESL_adventure_index.html"
+        "apps/Kids_ESL_adventure_index.html",
+        "apps/Kids_ESL_index.html"
       ],
       "unreferencedPages": [
-        "404.html",
         "apps/Arabic_lighted_path_index.html",
         "apps/Arabic_memory_game_index.html",
         "apps/Arabic_numbers_index.html",
@@ -3435,18 +2780,15 @@
         "apps/Russian_skills_lab_index.html",
         "apps/Scrabble_word_finder_index.html",
         "apps/dictionarybox_index.html",
-        "apps/electives/Arabic/Daily-language/index.html",
         "apps/electives/Arabic/Quranic_studies/index.html",
         "apps/electives/Arabic/temple-of-letters-full-course/index.html",
         "apps/faith/Arabic/Qur'an-Knowledge/index.html",
-        "apps/faith/Arabic/Quran_root_explorer/index.html",
         "apps/faith/Arabic/Quranic_Study/index.html",
         "apps/numina_grove_index.html",
         "apps/translation_helper_index.html",
         "apps/translator.html",
         "apps/word_of_day_index.html",
-        "multilingual-translator_index.html",
-        "offline.html"
+        "multilingual-translator_index.html"
       ],
       "duplicateGroups": [],
       "supersededNames": []
@@ -3454,21 +2796,13 @@
     {
       "repository": "vervenveda/Khaemenes_Middle.github.io",
       "htmlCount": 1360,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 25,
       "rootOrphanHtmlCount": 1335,
       "unreferencedHtmlCount": 39,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Middle.github.io/",
-          "tag": "link",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "breakaway/index.html",
         "grades/grade-06/assessments/week-01-assessment.html",
@@ -3598,20 +2932,13 @@
     {
       "repository": "vervenveda/Khaemenes_Preschool.github.io",
       "htmlCount": 55,
-      "brokenLocalLinkCount": 8,
-      "rootReachableHtmlCount": 3,
-      "rootOrphanHtmlCount": 52,
-      "unreferencedHtmlCount": 52,
+      "brokenLocalLinkCount": 7,
+      "rootReachableHtmlCount": 9,
+      "rootOrphanHtmlCount": 46,
+      "unreferencedHtmlCount": 46,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Preschool.github.io/",
-          "tag": "link",
-          "attr": "href"
-        },
         {
           "source": "apps/PE_move_n_groove_index.html",
           "target": "movement/index.html",
@@ -3663,8 +2990,6 @@
         }
       ],
       "rootOrphans": [
-        "apps/ABC_Alphabet_Adventure_index.html",
-        "apps/ABC_Story_Time/index.html",
         "apps/ABC_adventure_hub_index.html",
         "apps/ABC_bilingual_index.html",
         "apps/ABC_bubble_adventure_index.html",
@@ -3694,20 +3019,16 @@
         "apps/Spelling_safari_index.html",
         "apps/Sunny_ABCs_123s_Storytime/index.html",
         "apps/Sunny_ABCs_123s_Storytime_index.html",
-        "apps/art_drawing_tool_index.html",
         "apps/cosmic_arabic_alphabet_quest_index.html",
         "apps/feelings_act_of_kindness_index.html",
-        "apps/feelings_game_index.html",
         "apps/feelings_noetic_emotions_index.html",
         "apps/joke_jar_index.html",
         "apps/little_worlds_promenade_index.html",
-        "apps/math_cloud_index.html",
         "apps/numbers_1-12_fun_index.html",
         "apps/numbers_drag_n_drop_index.html",
         "apps/reading_learnanewword_index.html",
         "apps/reading_sight_words_index.html",
         "apps/reading_storybird_grove/index.html",
-        "apps/shapes_game_index.html",
         "apps/shapes_match_index.html",
         "apps/weather_for_tots_index.html",
         "apps/weather_index.html",
@@ -3717,8 +3038,6 @@
         "mentor/index.html"
       ],
       "unreferencedPages": [
-        "apps/ABC_Alphabet_Adventure_index.html",
-        "apps/ABC_Story_Time/index.html",
         "apps/ABC_adventure_hub_index.html",
         "apps/ABC_bilingual_index.html",
         "apps/ABC_bubble_adventure_index.html",
@@ -3748,20 +3067,16 @@
         "apps/Spelling_safari_index.html",
         "apps/Sunny_ABCs_123s_Storytime/index.html",
         "apps/Sunny_ABCs_123s_Storytime_index.html",
-        "apps/art_drawing_tool_index.html",
         "apps/cosmic_arabic_alphabet_quest_index.html",
         "apps/feelings_act_of_kindness_index.html",
-        "apps/feelings_game_index.html",
         "apps/feelings_noetic_emotions_index.html",
         "apps/joke_jar_index.html",
         "apps/little_worlds_promenade_index.html",
-        "apps/math_cloud_index.html",
         "apps/numbers_1-12_fun_index.html",
         "apps/numbers_drag_n_drop_index.html",
         "apps/reading_learnanewword_index.html",
         "apps/reading_sight_words_index.html",
         "apps/reading_storybird_grove/index.html",
-        "apps/shapes_game_index.html",
         "apps/shapes_match_index.html",
         "apps/weather_for_tots_index.html",
         "apps/weather_index.html",
@@ -3776,9 +3091,9 @@
     {
       "repository": "vervenveda/medicament-hub.github.io",
       "htmlCount": 47,
-      "brokenLocalLinkCount": 41,
-      "rootReachableHtmlCount": 16,
-      "rootOrphanHtmlCount": 31,
+      "brokenLocalLinkCount": 33,
+      "rootReachableHtmlCount": 39,
+      "rootOrphanHtmlCount": 8,
       "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
@@ -3812,67 +3127,11 @@
           "attr": "href"
         },
         {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "academy/high-school-health/index.html",
           "target": "academy/high-school-health/data/repair08b-health-federation.js",
           "raw": "./data/repair08b-health-federation.js",
           "tag": "script",
           "attr": "src"
-        },
-        {
-          "source": "academy/high-school-health/courses/electives/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "academy/high-school-health/courses/health-wellness/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "halls/Psychology_Mind_Hall/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "halls/Childrens_Medicine_Hall/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "halls/Childrens_Medicine_Hall/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "halls/Childrens_Medicine_Hall/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "halls/Childrens_Medicine_Hall/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/medicament-hub.github.io/",
-          "tag": "a",
-          "attr": "href"
         },
         {
           "source": "medicament-hub.github.io/academy/high-school-health/index.html",
@@ -4072,29 +3331,6 @@
         }
       ],
       "rootOrphans": [
-        "academy/high-school-health/High_School_Physical_Education_42week_index.html",
-        "academy/high-school-health/PE_Teacher_Guide_index.html",
-        "academy/high-school-health/PE_grade_10/quizzes_index.html",
-        "academy/high-school-health/PE_grade_10/study_guide_index.html",
-        "academy/high-school-health/PE_grade_11/quizzes_index.html",
-        "academy/high-school-health/PE_grade_11/study_guide_index.html",
-        "academy/high-school-health/PE_grade_12/quizzes_index.html",
-        "academy/high-school-health/PE_grade_12/study_guide_index.html",
-        "academy/high-school-health/PE_grade_9/quizzes_index.html",
-        "academy/high-school-health/PE_grade_9/study_guide_index.html",
-        "academy/high-school-health/courses/electives/index.html",
-        "academy/high-school-health/courses/health-wellness/grade-09/index.html",
-        "academy/high-school-health/courses/health-wellness/grade-10/index.html",
-        "academy/high-school-health/courses/health-wellness/grade-11/index.html",
-        "academy/high-school-health/courses/health-wellness/grade-12/index.html",
-        "academy/high-school-health/courses/health-wellness/index.html",
-        "academy/high-school-health/courses/physical-education/grade-09/index.html",
-        "academy/high-school-health/courses/physical-education/grade-10/index.html",
-        "academy/high-school-health/courses/physical-education/grade-11/index.html",
-        "academy/high-school-health/courses/physical-education/grade-12/index.html",
-        "academy/high-school-health/courses/physical-education/index.html",
-        "academy/high-school-health/courses/physical-education/reader/index.html",
-        "academy/high-school-health/index.html",
         "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
         "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
         "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
@@ -4130,33 +3366,21 @@
     {
       "repository": "vervenveda/onenationforall.github.io",
       "htmlCount": 24,
-      "brokenLocalLinkCount": 1,
-      "rootReachableHtmlCount": 4,
-      "rootOrphanHtmlCount": 20,
-      "unreferencedHtmlCount": 20,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 8,
+      "rootOrphanHtmlCount": 16,
+      "unreferencedHtmlCount": 16,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "apps/US_VOTER_HUB_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/onenationforall.github.io/",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/Elementary_Kids_Vote_index.html",
         "apps/Florida_Citizen_connect_index.html",
-        "apps/Florida_Voter_Hub_index.html",
-        "apps/Global_Voter_Portal_index.html",
         "apps/High_School_voter_portal_index.html",
         "apps/Jennifer_Pearl_President_2028_index.html",
         "apps/MiddleSchool_Voting_Portal_index.html",
-        "apps/Pulse/index.html",
         "apps/Pulse/reveda_pulse_poll_index.html",
         "apps/Road_to_governor_index.html",
-        "apps/US_VOTER_HUB_index.html",
         "apps/donate_index.html",
         "apps/lightbearers_index.html",
         "apps/reveda_resources_index.html",
@@ -4170,15 +3394,11 @@
       "unreferencedPages": [
         "apps/Elementary_Kids_Vote_index.html",
         "apps/Florida_Citizen_connect_index.html",
-        "apps/Florida_Voter_Hub_index.html",
-        "apps/Global_Voter_Portal_index.html",
         "apps/High_School_voter_portal_index.html",
         "apps/Jennifer_Pearl_President_2028_index.html",
         "apps/MiddleSchool_Voting_Portal_index.html",
-        "apps/Pulse/index.html",
         "apps/Pulse/reveda_pulse_poll_index.html",
         "apps/Road_to_governor_index.html",
-        "apps/US_VOTER_HUB_index.html",
         "apps/donate_index.html",
         "apps/lightbearers_index.html",
         "apps/reveda_resources_index.html",
@@ -4195,33 +3415,21 @@
     {
       "repository": "vervenveda/PLERASearch.github.io",
       "htmlCount": 6,
-      "brokenLocalLinkCount": 1,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 5,
-      "unreferencedHtmlCount": 5,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 3,
+      "rootOrphanHtmlCount": 3,
+      "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/PLERASearch.github.io/",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/External_index.html",
         "apps/Insurance_index.html",
-        "apps/PLERA_Search_Gate_index.html",
-        "apps/PLERA_search_pro_index.html",
         "apps/Shopping_index.html"
       ],
       "unreferencedPages": [
         "apps/External_index.html",
         "apps/Insurance_index.html",
-        "apps/PLERA_Search_Gate_index.html",
-        "apps/PLERA_search_pro_index.html",
         "apps/Shopping_index.html"
       ],
       "duplicateGroups": [],
@@ -4230,10 +3438,10 @@
     {
       "repository": "vervenveda/proresource_hub.github.io",
       "htmlCount": 155,
-      "brokenLocalLinkCount": 136,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 154,
-      "unreferencedHtmlCount": 129,
+      "brokenLocalLinkCount": 119,
+      "rootReachableHtmlCount": 11,
+      "rootOrphanHtmlCount": 144,
+      "unreferencedHtmlCount": 127,
       "duplicateGroupCount": 0,
       "supersededNameCount": 1,
       "brokenLocalLinks": [
@@ -4350,34 +3558,6 @@
           "attr": "href"
         },
         {
-          "source": "Protools/KhaeZip™_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PLERA™ Search Gate_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/FleaPit™_media_hub_Index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/SixBit_Bun_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "Protools/SixBit_Bun_index.html",
           "target": "Protools/KhaeZip™ Protected Archive Studio_index.html",
           "raw": "KhaeZip™ Protected Archive Studio_index.html",
@@ -4393,13 +3573,6 @@
         },
         {
           "source": "Protools/SixBit_Bun_Studio_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/SixBit_Bun_Studio_index.html",
           "target": "Protools/KhaeZip™ Protected Archive Studio_index.html",
           "raw": "KhaeZip™ Protected Archive Studio_index.html",
           "tag": "a",
@@ -4407,71 +3580,8 @@
         },
         {
           "source": "Protools/SixBit_Bun_Studio_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/SixBit_Bun_Studio_index.html",
           "target": "Protools/KhaeZip™ Protected Archive Studio_index.html",
           "raw": "KhaeZip™ Protected Archive Studio_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/Ohmic_CAD_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/Ohmic_CAD_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/KhaeClean™_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/Harmony's Haven Studio™ Multi-Track_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/Ohmic_CAD_Studio.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/FleaPit™ Protected Media Hub_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/DailySpark™_task_studio_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/DailySpark™_task_studio_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
           "tag": "a",
           "attr": "href"
         },
@@ -4796,26 +3906,114 @@
           "raw": "../../Protools/333_network/index.html",
           "tag": "a",
           "attr": "href"
+        },
+        {
+          "source": "categories/assets/index.html",
+          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
+          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/assets/index.html",
+          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/assets/index.html",
+          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/assets/index.html",
+          "target": "Protools/333_network/index.html",
+          "raw": "../../Protools/333_network/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/assets/index.html",
+          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
+          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/assets/index.html",
+          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/assets/index.html",
+          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "Protools/333_network/index.html",
+          "raw": "../../Protools/333_network/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
+          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "Protools/333_network/index.html",
+          "raw": "../../Protools/333_network/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
+          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "tag": "a",
+          "attr": "href"
         }
       ],
       "rootOrphans": [
-        "ProReSources_updated_index.html",
         "ProResources_accessible_theme_index.html",
         "Protools/Atlas_Evidence_Analysis.html",
-        "Protools/DailySpark™_task_studio_index.html",
-        "Protools/Evidence_Citation_Studio/index.html",
-        "Protools/Evidence_Citation_Studio/lab-resource-cloud.html",
         "Protools/Evidence_Citation_Studio/recovery.html",
-        "Protools/Evidence_Citation_Studio/studio-core.html",
         "Protools/FleaPit™ Protected Media Hub_index.html",
         "Protools/FleaPit™_media_hub_Index.html",
         "Protools/Harmony's Haven Studio™ Multi-Track_index.html",
-        "Protools/KhaeClean™_index.html",
-        "Protools/KhaeZip™_index.html",
         "Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
-        "Protools/Khaemenes_Scientific_Calculator/index.html",
-        "Protools/Ohmic_CAD_Studio.html",
-        "Protools/Ohmic_CAD_index.html",
         "Protools/PLERA™ Search Gate_index.html",
         "Protools/PROSE/Editorial Suite/editingsuite_index.html",
         "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
@@ -4878,15 +4076,23 @@
         "templates/lesson-plan.html",
         "templates/literature-review.html",
         "templates/media-kit.html",
-        "templates/meeting-agenda.html"
+        "templates/meeting-agenda.html",
+        "templates/meeting-brief.html",
+        "templates/memoir-chapter.html",
+        "templates/newsletter.html",
+        "templates/obituary.html",
+        "templates/offer-letter.html",
+        "templates/packs/khaemenes-academic-core/academic-notes.html",
+        "templates/packs/khaemenes-academic-core/assessment-rubric.html",
+        "templates/packs/khaemenes-academic-core/assignment-brief.html",
+        "templates/packs/khaemenes-academic-core/exam-review-plan.html",
+        "templates/packs/khaemenes-academic-core/learning-goals-plan.html"
       ],
       "unreferencedPages": [
-        "ProReSources_updated_index.html",
         "ProResources_accessible_theme_index.html",
         "Protools/Atlas_Evidence_Analysis.html",
         "Protools/Evidence_Citation_Studio/recovery.html",
         "Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
-        "Protools/Khaemenes_Scientific_Calculator/index.html",
         "Protools/PROSE/Editorial Suite/editingsuite_index.html",
         "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
         "Protools/PROSE/Handwriting Lab/handwriting-lab.html",
@@ -4960,7 +4166,9 @@
         "templates/packs/khaemenes-mathematics-core/math-model-study.html",
         "templates/packs/khaemenes-mathematics-core/mathematical-reasoning.html",
         "templates/packs/khaemenes-mathematics-core/problem-solving-journal.html",
-        "templates/packs/khaemenes-mathematics-core/proof-framework.html"
+        "templates/packs/khaemenes-mathematics-core/proof-framework.html",
+        "templates/packs/khaemenes-mathematics-core/vocabulary-conjecture.html",
+        "templates/packs/khaemenes-mathematics-core/worked-example.html"
       ],
       "duplicateGroups": [],
       "supersededNames": [
@@ -4971,27 +4179,21 @@
       "repository": "vervenveda/river_to_road.github.io",
       "htmlCount": 3,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 2,
-      "unreferencedHtmlCount": 2,
+      "rootReachableHtmlCount": 3,
+      "rootOrphanHtmlCount": 0,
+      "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
-      "rootOrphans": [
-        "apps/lawn_care_quiz_index.html",
-        "apps/virtual_lawn_mower_index.html"
-      ],
-      "unreferencedPages": [
-        "apps/lawn_care_quiz_index.html",
-        "apps/virtual_lawn_mower_index.html"
-      ],
+      "rootOrphans": [],
+      "unreferencedPages": [],
       "duplicateGroups": [],
       "supersededNames": []
     },
     {
       "repository": "vervenveda/solanar.github.io",
       "htmlCount": 185,
-      "brokenLocalLinkCount": 17,
+      "brokenLocalLinkCount": 2,
       "rootReachableHtmlCount": 140,
       "rootOrphanHtmlCount": 45,
       "unreferencedHtmlCount": 0,
@@ -5006,114 +4208,9 @@
           "attr": "href"
         },
         {
-          "source": "weather-academy/Solanar-Certification-year-01/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "weather-academy/Solanar-Certification-year-02/index.html",
           "target": "weather-academy/Solanar-certification-year-01/index.html",
           "raw": "../Solanar-certification-year-01/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/elementary-weather-academy/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/middle-weather-academy/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/high-school-weather-academy/weather-302/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/high-school-weather-academy/weather-304/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/high-school-weather-academy/weather-303/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/high-school-weather-academy/weather-301/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/elementary-weather-academy/weather-104/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/elementary-weather-academy/weather-102/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/elementary-weather-academy/weather-101/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/elementary-weather-academy/weather-105/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/elementary-weather-academy/weather-103/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/middle-weather-academy/weather-203/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/middle-weather-academy/weather-202/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/middle-weather-academy/weather-201/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/solanar.github.io/",
           "tag": "a",
           "attr": "href"
         }
@@ -5172,55 +4269,13 @@
     {
       "repository": "vervenveda/the_refrain.github.io",
       "htmlCount": 7,
-      "brokenLocalLinkCount": 10,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 6,
-      "unreferencedHtmlCount": 4,
+      "brokenLocalLinkCount": 2,
+      "rootReachableHtmlCount": 4,
+      "rootOrphanHtmlCount": 3,
+      "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/the_refrain.github.io/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "apps/pro-keyboard_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "apps/pro-keyboard_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "apps/pro-keyboard_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "apps/composer_studio_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
         {
           "source": "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
           "target": "apps/Little_Composer_Studio_The_Refrain_index.html",
@@ -5234,33 +4289,15 @@
           "raw": "https://vervenveda.github.io/the_refrain.github.io/apps/Harmonys_Haven_Pro_Composition_Studio_index.html",
           "tag": "a",
           "attr": "href"
-        },
-        {
-          "source": "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/",
-          "tag": "a",
-          "attr": "href"
         }
       ],
       "rootOrphans": [
         "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-        "apps/composer_studio_index.html",
         "apps/pro-keyboard_index.html",
-        "apps/the-staff_index.html",
-        "education/Music 101 Workshop_index.html",
-        "education/Music 201 Workshop_index.html"
+        "apps/the-staff_index.html"
       ],
       "unreferencedPages": [
         "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-        "apps/composer_studio_index.html",
         "apps/pro-keyboard_index.html",
         "apps/the-staff_index.html"
       ],
@@ -5271,9 +4308,9 @@
       "repository": "vervenveda/theverifier.github.io",
       "htmlCount": 43,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 42,
-      "unreferencedHtmlCount": 37,
+      "rootReachableHtmlCount": 8,
+      "rootOrphanHtmlCount": 34,
+      "unreferencedHtmlCount": 33,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
@@ -5281,25 +4318,18 @@
         "apps/EcoPulse_news_index.html",
         "apps/Interactive_Live_ News_ Dashboard_index.html",
         "apps/Live_Research_News_index.html",
-        "apps/Modern_News_Engine_index.html",
         "apps/PLERA_Search_Gate_index.html",
         "apps/Trivia_news_index.html",
         "apps/app_portfolio_index.html",
-        "apps/daily_digest_index.html",
         "apps/education_news_index.html",
-        "apps/global_news_digest_index.html",
-        "apps/interactive_news_index.html",
-        "apps/kids_news_network_index.html",
         "apps/live_news_index.html",
         "apps/news_feed_index.html",
         "apps/news_ticker_index.html",
         "apps/science_daily_index.html",
-        "apps/science_news_index.html",
         "apps/ultimate_news_index.html",
         "apps/vintage_news_digest_index.html",
         "apps/vintage_news_index.html",
         "apps/violence_data_index.html",
-        "apps/world_wire_index.html",
         "columns/animals_biodiversity_index.html",
         "columns/arts_humanities_index.html",
         "columns/corruption_index.html",
@@ -5318,23 +4348,19 @@
         "columns/universe_index.html",
         "columns/us_politics_index.html",
         "columns/world_conflict_index.html",
-        "editorial_standard_index.html",
-        "offline.html"
+        "editorial_standard_index.html"
       ],
       "unreferencedPages": [
         "apps/EcoPulse_news_index.html",
         "apps/Interactive_Live_ News_ Dashboard_index.html",
         "apps/Live_Research_News_index.html",
-        "apps/Modern_News_Engine_index.html",
         "apps/PLERA_Search_Gate_index.html",
         "apps/Trivia_news_index.html",
         "apps/app_portfolio_index.html",
         "apps/education_news_index.html",
-        "apps/kids_news_network_index.html",
         "apps/live_news_index.html",
         "apps/news_feed_index.html",
         "apps/science_daily_index.html",
-        "apps/science_news_index.html",
         "apps/ultimate_news_index.html",
         "apps/vintage_news_digest_index.html",
         "apps/vintage_news_index.html",
@@ -5357,8 +4383,7 @@
         "columns/universe_index.html",
         "columns/us_politics_index.html",
         "columns/world_conflict_index.html",
-        "editorial_standard_index.html",
-        "offline.html"
+        "editorial_standard_index.html"
       ],
       "duplicateGroups": [],
       "supersededNames": []
@@ -5366,307 +4391,13 @@
     {
       "repository": "vervenveda/vervenveda.github.io",
       "htmlCount": 19,
-      "brokenLocalLinkCount": 54,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 18,
-      "unreferencedHtmlCount": 12,
+      "brokenLocalLinkCount": 4,
+      "rootReachableHtmlCount": 8,
+      "rootOrphanHtmlCount": 10,
+      "unreferencedHtmlCount": 10,
       "duplicateGroupCount": 1,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
-        {
-          "source": "seo-head-snippet.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "seo-head-snippet.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "seo-head-snippet.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/HOLLO_333_direct_connect_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/KANSEE_333_meeting_rooms_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/EVen_mail_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/Bazaar_Art_Live_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/SIte_builder_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/Bunya_digital_infrastructure_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/HOLLO_333_direct_connect_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/KANSEE_333_meeting_rooms_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/EVen_mail_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/Bazaar_Art_Live_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/SIte_builder_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/app/Bunya_digital_infrastructure_index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Khaemenes_Academy.github.io/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Academy.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "PLERASearch.github.io/index.html",
-          "raw": "https://vervenveda.github.io/PLERASearch.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "onenationforall.github.io/index.html",
-          "raw": "https://vervenveda.github.io/onenationforall.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "proresource_hub.github.io/index.html",
-          "raw": "https://vervenveda.github.io/proresource_hub.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Khaemenes_Academy.github.io/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Academy.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "333.github.io/index.html",
-          "raw": "https://vervenveda.github.io/333.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Khaemenes_Academy.github.io/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Academy.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "privacy_policy.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "404.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "privacy-policy.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "privacy-policy.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "privacy-policy.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "privacy-policy.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "privacy-policy.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "cloud/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "cloud/index.html",
-          "target": "Khaemenes_Academy.github.io/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Academy.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "cloud/index.html",
-          "target": "Arshif.github.io/index.html",
-          "raw": "https://vervenveda.com/Arshif.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "cloud/index.html",
-          "target": "firmament.github.io/index.html",
-          "raw": "https://vervenveda.com/firmament.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "cloud/index.html",
-          "target": "333.github.io/index.html",
-          "raw": "https://vervenveda.com/333.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "registry/objective-map-diagnostics.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "assessment-engine/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "matrix/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "beta/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
         {
           "source": "beta/index.html",
           "target": "Khaemenes_Academy.github.io/index.html",
@@ -5676,22 +4407,8 @@
         },
         {
           "source": "assessment-engine/apps/career_star_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "assessment-engine/apps/career_star_index.html",
           "target": "Khaemenes_Academy.github.io/index.html",
           "raw": "../../Khaemenes_Academy.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "assessment-engine/apps/mentor_review_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
           "tag": "a",
           "attr": "href"
         },
@@ -5704,80 +4421,28 @@
         },
         {
           "source": "assessment-engine/apps/career_assessment_index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "assessment-engine/apps/career_assessment_index.html",
           "target": "Khaemenes_Academy.github.io/index.html",
           "raw": "../../Khaemenes_Academy.github.io/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "assessment-engine/mentor/registry/objective-map-diagnostics.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "assessment-engine/mentor/matrix/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "assessment-engine/agents/demos/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "core/directory-agi/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "archive/reference/index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/",
           "tag": "a",
           "attr": "href"
         }
       ],
       "rootOrphans": [
-        "404.html",
         "archive/reference/index.html",
-        "assessment-engine/agents/demos/index.html",
-        "assessment-engine/apps/career_assessment_index.html",
-        "assessment-engine/apps/career_star_index.html",
-        "assessment-engine/apps/mentor_review_index.html",
-        "assessment-engine/index.html",
         "assessment-engine/mentor/matrix/index.html",
         "assessment-engine/mentor/registry/objective-map-diagnostics.html",
-        "beta/index.html",
         "cloud/index.html",
         "core/directory-agi/index.html",
         "matrix/index.html",
-        "privacy-policy.html",
         "privacy_policy.html",
         "registry/objective-map-diagnostics.html",
         "seo-head-snippet.html",
         "structured-data.html"
       ],
       "unreferencedPages": [
-        "404.html",
         "archive/reference/index.html",
         "assessment-engine/mentor/matrix/index.html",
         "assessment-engine/mentor/registry/objective-map-diagnostics.html",
-        "beta/index.html",
         "cloud/index.html",
         "core/directory-agi/index.html",
         "matrix/index.html",
@@ -5797,21 +4462,13 @@
     {
       "repository": "vervenveda/veterans.github.io",
       "htmlCount": 1,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 1,
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "index.html/index.html",
-          "raw": "https://vervenveda.com/veterans.github.io/",
-          "tag": "link",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [],
       "unreferencedPages": [],
       "duplicateGroups": [],
