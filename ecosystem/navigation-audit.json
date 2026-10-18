@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T18:08:40Z",
+  "generatedAt": "2026-10-18T18:10:50Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
     "failedRepositoryCount": 0,
     "htmlCount": 11460,
-    "brokenLocalLinkCount": 330,
-    "rootOrphanHtmlCount": 9565,
-    "unreferencedHtmlCount": 1765,
+    "brokenLocalLinkCount": 21,
+    "rootOrphanHtmlCount": 9554,
+    "unreferencedHtmlCount": 1753,
     "duplicateGroupCount": 23,
     "supersededNameCount": 3
   },
@@ -185,118 +185,13 @@
     {
       "repository": "vervenveda/Arshif.github.io",
       "htmlCount": 43,
-      "brokenLocalLinkCount": 16,
-      "rootReachableHtmlCount": 7,
-      "rootOrphanHtmlCount": 36,
-      "unreferencedHtmlCount": 26,
+      "brokenLocalLinkCount": 1,
+      "rootReachableHtmlCount": 16,
+      "rootOrphanHtmlCount": 27,
+      "unreferencedHtmlCount": 15,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
-        {
-          "source": "halls/Reading_room_index.html",
-          "target": "literacy-lost-books/index.html",
-          "raw": "../literacy-lost-books/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "halls/Reading_room_index.html",
-          "target": "literacy-lost-books/index.html",
-          "raw": "../literacy-lost-books/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "halls/Reading_room_index.html",
-          "target": "historical-biblical-parallels/index.html",
-          "raw": "../historical-biblical-parallels/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/Bible-context_index.html",
-          "raw": "./Bible-context_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/Yahushua_Study_index.html",
-          "raw": "./Yahushua_Study_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/Yahushua_portal_index.html",
-          "raw": "./Yahushua_portal_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/bible_before_cannon_index.html",
-          "raw": "./bible_before_cannon_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/biblical_web_directory_index.html",
-          "raw": "./biblical_web_directory_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/foundations_of_faith_index.html",
-          "raw": "./foundations_of_faith_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/prayer_index.html",
-          "raw": "./prayer_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/remnant_nations_index.html",
-          "raw": "./remnant_nations_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/testament_study_portal_index.html",
-          "raw": "./testament_study_portal_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/truth_tribe_class_index.html",
-          "raw": "./truth_tribe_class_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/truth_tribe_index.html",
-          "raw": "./truth_tribe_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Faith/index.html",
-          "target": "Faith/zionism_course_index.html",
-          "raw": "./zionism_course_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
         {
           "source": "halls/culinary/index.html",
           "target": "halls/PLERA_Search_index.html",
@@ -306,18 +201,9 @@
         }
       ],
       "rootOrphans": [
-        "Faith/apps/Yahushua_portal_index.html",
-        "Faith/apps/bible_before_cannon_index.html",
         "Faith/apps/biblical_portal_index.html",
-        "Faith/apps/foundations_of_faith_index.html",
-        "Faith/apps/prayer_index.html",
-        "Faith/apps/remnant_nations_index.html",
         "Faith/apps/testament_index.html",
-        "Faith/apps/testament_study_portal_index.html",
-        "Faith/apps/truth_tribe_class_index.html",
-        "Faith/apps/truth_tribe_index.html",
         "Faith/apps/truth_tribe_kids_index.html",
-        "Faith/apps/zionism_course_index.html",
         "catalog/index.html",
         "catalog/texts/english-10-unit-01.html",
         "catalog/texts/english-10-unit-03.html",
@@ -344,24 +230,13 @@
         "tools/song_embedder_index.html"
       ],
       "unreferencedPages": [
-        "Faith/apps/Yahushua_portal_index.html",
-        "Faith/apps/bible_before_cannon_index.html",
         "Faith/apps/biblical_portal_index.html",
-        "Faith/apps/foundations_of_faith_index.html",
-        "Faith/apps/prayer_index.html",
-        "Faith/apps/remnant_nations_index.html",
         "Faith/apps/testament_index.html",
-        "Faith/apps/testament_study_portal_index.html",
-        "Faith/apps/truth_tribe_class_index.html",
-        "Faith/apps/truth_tribe_index.html",
         "Faith/apps/truth_tribe_kids_index.html",
-        "Faith/apps/zionism_course_index.html",
         "halls/culinary/index.html",
         "halls/exploration-travelogues/index.html",
-        "halls/historical-biblical-parallels/index.html",
         "halls/literacy-childrens-classics/index.html",
         "halls/literacy-indiginous-oral-traditions/index.html",
-        "halls/literacy-lost-books/index.html",
         "halls/literacy-poetry-9th-university/index.html",
         "halls/literacy-world-classics/index.html",
         "halls/philosophy/index.html",
@@ -736,574 +611,13 @@
     {
       "repository": "vervenveda/Khaemenes_Elementary.github.io",
       "htmlCount": 2307,
-      "brokenLocalLinkCount": 288,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 30,
       "rootOrphanHtmlCount": 2277,
       "unreferencedHtmlCount": 120,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-01-packet.html",
-          "raw": "../../printables/week-01-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-02-packet.html",
-          "raw": "../../printables/week-02-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-03-packet.html",
-          "raw": "../../printables/week-03-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-04-packet.html",
-          "raw": "../../printables/week-04-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-05-packet.html",
-          "raw": "../../printables/week-05-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-06-packet.html",
-          "raw": "../../printables/week-06-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-07-packet.html",
-          "raw": "../../printables/week-07-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-08-packet.html",
-          "raw": "../../printables/week-08-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-09-packet.html",
-          "raw": "../../printables/week-09-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-10-packet.html",
-          "raw": "../../printables/week-10-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-11-packet.html",
-          "raw": "../../printables/week-11-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-12-packet.html",
-          "raw": "../../printables/week-12-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-13-packet.html",
-          "raw": "../../printables/week-13-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-14-packet.html",
-          "raw": "../../printables/week-14-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-15-packet.html",
-          "raw": "../../printables/week-15-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-16-packet.html",
-          "raw": "../../printables/week-16-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-17-packet.html",
-          "raw": "../../printables/week-17-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-18-packet.html",
-          "raw": "../../printables/week-18-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-19-packet.html",
-          "raw": "../../printables/week-19-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-20-packet.html",
-          "raw": "../../printables/week-20-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-21-packet.html",
-          "raw": "../../printables/week-21-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-22-packet.html",
-          "raw": "../../printables/week-22-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-23-packet.html",
-          "raw": "../../printables/week-23-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-24-packet.html",
-          "raw": "../../printables/week-24-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-25-packet.html",
-          "raw": "../../printables/week-25-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-26-packet.html",
-          "raw": "../../printables/week-26-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-27-packet.html",
-          "raw": "../../printables/week-27-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-28-packet.html",
-          "raw": "../../printables/week-28-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-29-packet.html",
-          "raw": "../../printables/week-29-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-30-packet.html",
-          "raw": "../../printables/week-30-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-31-packet.html",
-          "raw": "../../printables/week-31-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-32-packet.html",
-          "raw": "../../printables/week-32-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-33-packet.html",
-          "raw": "../../printables/week-33-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-34-packet.html",
-          "raw": "../../printables/week-34-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-35-packet.html",
-          "raw": "../../printables/week-35-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/index.html",
-          "target": "printables/week-36-packet.html",
-          "raw": "../../printables/week-36-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-01-packet.html",
-          "raw": "../../printables/week-01-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-02-packet.html",
-          "raw": "../../printables/week-02-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-03-packet.html",
-          "raw": "../../printables/week-03-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-04-packet.html",
-          "raw": "../../printables/week-04-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-05-packet.html",
-          "raw": "../../printables/week-05-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-06-packet.html",
-          "raw": "../../printables/week-06-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-07-packet.html",
-          "raw": "../../printables/week-07-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-08-packet.html",
-          "raw": "../../printables/week-08-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-09-packet.html",
-          "raw": "../../printables/week-09-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-10-packet.html",
-          "raw": "../../printables/week-10-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-11-packet.html",
-          "raw": "../../printables/week-11-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-12-packet.html",
-          "raw": "../../printables/week-12-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-13-packet.html",
-          "raw": "../../printables/week-13-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-14-packet.html",
-          "raw": "../../printables/week-14-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-15-packet.html",
-          "raw": "../../printables/week-15-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-16-packet.html",
-          "raw": "../../printables/week-16-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-17-packet.html",
-          "raw": "../../printables/week-17-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-18-packet.html",
-          "raw": "../../printables/week-18-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-19-packet.html",
-          "raw": "../../printables/week-19-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-20-packet.html",
-          "raw": "../../printables/week-20-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-21-packet.html",
-          "raw": "../../printables/week-21-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-22-packet.html",
-          "raw": "../../printables/week-22-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-23-packet.html",
-          "raw": "../../printables/week-23-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-24-packet.html",
-          "raw": "../../printables/week-24-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-25-packet.html",
-          "raw": "../../printables/week-25-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-26-packet.html",
-          "raw": "../../printables/week-26-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-27-packet.html",
-          "raw": "../../printables/week-27-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-28-packet.html",
-          "raw": "../../printables/week-28-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-29-packet.html",
-          "raw": "../../printables/week-29-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-30-packet.html",
-          "raw": "../../printables/week-30-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-31-packet.html",
-          "raw": "../../printables/week-31-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-32-packet.html",
-          "raw": "../../printables/week-32-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-33-packet.html",
-          "raw": "../../printables/week-33-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-34-packet.html",
-          "raw": "../../printables/week-34-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-35-packet.html",
-          "raw": "../../printables/week-35-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/mathematics/index.html",
-          "target": "printables/week-36-packet.html",
-          "raw": "../../printables/week-36-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-01-packet.html",
-          "raw": "../../printables/week-01-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-02-packet.html",
-          "raw": "../../printables/week-02-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-03-packet.html",
-          "raw": "../../printables/week-03-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-04-packet.html",
-          "raw": "../../printables/week-04-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-05-packet.html",
-          "raw": "../../printables/week-05-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-06-packet.html",
-          "raw": "../../printables/week-06-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-07-packet.html",
-          "raw": "../../printables/week-07-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/social-studies/index.html",
-          "target": "printables/week-08-packet.html",
-          "raw": "../../printables/week-08-packet.html",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "arts-music/index.html",
         "arts-music/week-01.html",
@@ -2658,56 +1972,13 @@
     {
       "repository": "vervenveda/proresource_hub.github.io",
       "htmlCount": 155,
-      "brokenLocalLinkCount": 6,
-      "rootReachableHtmlCount": 11,
-      "rootOrphanHtmlCount": 144,
-      "unreferencedHtmlCount": 125,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 13,
+      "rootOrphanHtmlCount": 142,
+      "unreferencedHtmlCount": 124,
       "duplicateGroupCount": 0,
       "supersededNameCount": 1,
-      "brokenLocalLinks": [
-        {
-          "source": "Protools/Evidence_Citation_Studio/studio-core.html",
-          "target": "Protools/Evidence_Citation_Studio/PLERA_Search_index.html",
-          "raw": "PLERA_Search_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/Evidence_Citation_Studio/studio-core.html",
-          "target": "Protools/Evidence_Citation_Studio/PROSE_index.html",
-          "raw": "PROSE_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/Evidence_Citation_Studio/studio-core.html",
-          "target": "Protools/Evidence_Citation_Studio/KhaeZip™_index.html",
-          "raw": "KhaeZip™_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
-          "target": "Protools/Khaemenes_Scientific_Calculator_index.html",
-          "raw": "https://vervenveda.com/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator_index.html",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
-          "target": "Protools/PROSE/Editorial Suite/PROSE_index.html",
-          "raw": "PROSE_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
-          "target": "Protools/PROSE/Editorial Suite/PROSE_index.html",
-          "raw": "PROSE_index.html",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "ProResources_accessible_theme_index.html",
         "Protools/Atlas_Evidence_Analysis.html",
@@ -2717,10 +1988,8 @@
         "Protools/Harmony's Haven Studio™ Multi-Track_index.html",
         "Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
         "Protools/PLERA™ Search Gate_index.html",
-        "Protools/PROSE/Editorial Suite/editingsuite_index.html",
         "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
         "Protools/PROSE/Handwriting Lab/handwriting-lab.html",
-        "Protools/PROSE/editorial-gateway.html",
         "Protools/PROSE/writers-studio.html",
         "Protools/SixBit_Bun_Studio_index.html",
         "Protools/SixBit_Bun_index.html",
@@ -2788,13 +2057,14 @@
         "templates/packs/khaemenes-academic-core/assessment-rubric.html",
         "templates/packs/khaemenes-academic-core/assignment-brief.html",
         "templates/packs/khaemenes-academic-core/exam-review-plan.html",
-        "templates/packs/khaemenes-academic-core/learning-goals-plan.html"
+        "templates/packs/khaemenes-academic-core/learning-goals-plan.html",
+        "templates/packs/khaemenes-academic-core/peer-review.html",
+        "templates/packs/khaemenes-academic-core/problem-set.html"
       ],
       "unreferencedPages": [
         "ProResources_accessible_theme_index.html",
         "Protools/Atlas_Evidence_Analysis.html",
         "Protools/Evidence_Citation_Studio/recovery.html",
-        "Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
         "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
         "Protools/PROSE/Handwriting Lab/handwriting-lab.html",
         "Protools/PROSE/writers-studio.html",
@@ -2870,7 +2140,8 @@
         "templates/packs/khaemenes-mathematics-core/vocabulary-conjecture.html",
         "templates/packs/khaemenes-mathematics-core/worked-example.html",
         "templates/packs/khaemenes-scholarly-publishing/counterexample-studio.html",
-        "templates/packs/khaemenes-scholarly-publishing/course-reading.html"
+        "templates/packs/khaemenes-scholarly-publishing/course-reading.html",
+        "templates/packs/khaemenes-scholarly-publishing/final-examination.html"
       ],
       "duplicateGroups": [],
       "supersededNames": [
