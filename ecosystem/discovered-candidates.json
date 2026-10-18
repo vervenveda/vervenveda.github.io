@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-18T17:26:30Z",
+  "account": "vervenveda",
+  "policy": "Discovery only. New repositories never become public ecosystem destinations automatically. STOS and reserved dummy repositories remain excluded.",
+  "candidates": [],
+  "ignored": [
+    {
+      "repository": "vervenveda/Dummy.github.io",
+      "name": "Dummy.github.io",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "archived": false,
+      "disabled": false,
+      "updatedAt": "2026-08-20T12:32:59Z",
+      "pushedAt": "2026-08-20T12:31:57Z",
+      "homepage": "",
+      "state": "under-review",
+      "directoryVisible": false,
+      "reason": "Excluded from automatic publication by reserved-name policy."
+    }
+  ]
+}
