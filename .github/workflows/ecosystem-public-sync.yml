@@ -85,4 +85,5 @@ jobs:
           git add registry/ecosystem-pages-a.json
           git add registry/ecosystem-pages-b.json
           git commit -m "chore(ecosystem): synchronize public registry [skip ecosystem-sync]"
+          git pull --rebase origin main
           git push
