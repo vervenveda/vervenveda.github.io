@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T18:37:39Z",
+  "generatedAt": "2026-10-18T18:39:37Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
@@ -10,8 +10,8 @@
     "rootOrphanHtmlCount": 8022,
     "unreferencedHtmlCount": 1478,
     "duplicateGroupCount": 0,
-    "versionSiblingGroupCount": 8,
-    "intentionalSiblingGroupCount": 0,
+    "versionSiblingGroupCount": 0,
+    "intentionalSiblingGroupCount": 8,
     "canonicalAliasCount": 2,
     "supersededNameCount": 3
   },
@@ -643,8 +643,8 @@
       "rootOrphanHtmlCount": 1010,
       "unreferencedHtmlCount": 693,
       "duplicateGroupCount": 0,
-      "versionSiblingGroupCount": 8,
-      "intentionalSiblingGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 8,
       "canonicalAliasCount": 1,
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
@@ -813,41 +813,89 @@
         "courses/mathematics/algebra-1/units/unit-06/teacher-guide.html"
       ],
       "duplicateGroups": [],
-      "versionSiblingGroups": [
-        [
-          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-06/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/week-10/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-10/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/week-07/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-07/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/week-09/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-09/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
-          "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html",
-          "courses/social-studies/grade-09/weeks/week-10/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
-          "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html",
-          "courses/social-studies/grade-09/weeks/week-09/student-packet.html"
-        ]
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [
+        {
+          "pages": [
+            "courses/social-studies/grade-09/week-06/student-packet-v2.html",
+            "courses/social-studies/grade-09/week-06/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/week-06/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/week-06/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/week-10/student-packet-v2.html",
+            "courses/social-studies/grade-09/week-10/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/week-10/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/week-10/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/week-07/student-packet-v2.html",
+            "courses/social-studies/grade-09/week-07/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/week-07/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/week-07/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/week-09/student-packet-v2.html",
+            "courses/social-studies/grade-09/week-09/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/week-09/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/week-09/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-10/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-10/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-09/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-09/student-packet.html": ""
+          }
+        }
       ],
-      "intentionalSiblingGroups": [],
       "canonicalAliases": [
         {
           "alias": "courses/social-studies/grade-09/assessments/readiness.html",
