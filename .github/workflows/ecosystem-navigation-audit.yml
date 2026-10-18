@@ -60,4 +60,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add ecosystem/navigation-audit.json ecosystem/NAVIGATION_AUDIT.md
           git commit -m "chore(ecosystem): refresh navigation audit"
+          git pull --rebase origin main
           git push
