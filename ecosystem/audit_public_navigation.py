@@ -229,6 +229,39 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
             refs[target]+=1
             graph[rel].add(target)
 
+        # Some protected landing shells load their actual public page from a local
+        # text fragment (for example data-core="index-core.txt"). Audit the fragment
+        # as navigation owned by the shell instead of falsely classifying its courses
+        # as orphaned. Only existing local fragment files are considered.
+        for core_ref in re.findall(r'data-core=[\"\']([^\"\']+)[\"\']',text,re.I):
+            core_path=(p.parent/unquote(core_ref)).resolve()
+            try:
+                core_path.relative_to(dest.resolve())
+            except ValueError:
+                continue
+            if not core_path.is_file():
+                continue
+            core_text=core_path.read_text(encoding="utf-8",errors="ignore")
+            core_parser=LinkParser()
+            try:
+                core_parser.feed(core_text)
+            except Exception:
+                pass
+            for _tag,_attr,raw in core_parser.links:
+                candidate=normalize_candidate(dest,p,raw)
+                if candidate is None:
+                    continue
+                try:
+                    target=candidate.relative_to(dest).as_posix()
+                except ValueError:
+                    continue
+                if candidate.exists() and target in rels and candidate.suffix.lower() in HTML_EXT:
+                    refs[target]+=1
+                    graph[rel].add(target)
+            for target in dynamic_html_targets(dest,p,core_text,set(rels)):
+                refs[target]+=1
+                graph[rel].add(target)
+
     # Reachability starts at root index plus every curated active public master-directory
     # path for this repository. This avoids labeling legitimate deep portals as orphans.
     seeds=[]
@@ -373,7 +406,7 @@ def main():
         "supersededNameCount":sum(r["supersededNameCount"] for r in results),
     }
     payload={
-        "version":1,
+        "version":2,
         "generatedAt":now(),
         "policy":"Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
         "summary":summary,
