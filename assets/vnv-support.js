@@ -32,6 +32,11 @@
       letter-spacing:.08em;text-transform:uppercase;text-decoration:none;white-space:nowrap;
       backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
     }
+    #${TOP_ID}.vnv-support-top-inline{
+      position:static;right:auto;top:auto;z-index:auto;
+      margin:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;
+      background:rgba(255,255,255,.56);
+    }
     #${TOP_ID}:hover,#${TOP_ID}:focus-visible{background:#fff;border-color:#243d33;transform:translateY(-1px)}
     #${SUPPORT_ID}{
       width:min(calc(100% - 32px),980px);margin:55px auto 28px;padding:28px;
@@ -53,6 +58,14 @@
       font-size:11px;font-weight:444;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
     }
     #${SUPPORT_ID} small{display:block;max-width:720px;margin:11px auto 0;color:#66716c;font-size:11px;line-height:1.5}
+    .vnv-support-ticker-link{
+      display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+      min-height:25px;padding:4px 10px;border:1px solid rgba(231,215,182,.3);border-radius:7px;
+      color:inherit;background:rgba(255,255,255,.05);
+      font:444 10px/1.2 "Brandon Grotesque","Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;
+      letter-spacing:.08em;text-transform:uppercase;text-decoration:none;white-space:nowrap;
+    }
+    .vnv-support-ticker-link:hover,.vnv-support-ticker-link:focus-visible{text-decoration:underline;text-underline-offset:3px}
     @media(max-width:700px){
       #${TOP_ID}{right:8px;top:8px;font-size:9px;padding:7px 9px}
       #${SUPPORT_ID}{width:min(calc(100% - 22px),980px);padding:22px 16px}
@@ -87,7 +100,16 @@
   top.href = "#"+SUPPORT_ID;
   top.textContent = childFacing ? "Grown-Ups · Support" : "Support Free Access";
   top.setAttribute("aria-label", childFacing ? "Grown-ups: jump to voluntary support information" : "Jump to voluntary support information");
-  document.body.appendChild(top);
+  const headerTarget =
+    document.querySelector(".header-actions") ||
+    document.querySelector(".site-header .header-inner") ||
+    document.querySelector("header nav");
+  if(headerTarget){
+    top.classList.add("vnv-support-top-inline");
+    headerTarget.appendChild(top);
+  }else{
+    document.body.appendChild(top);
+  }
 
   const tickerSelectors = [
     ".network-ticker-set",
@@ -104,8 +126,9 @@
       a.href = "#"+SUPPORT_ID;
       a.textContent = "Support Free Access";
       a.dataset.vnvSupportTicker = "true";
-      a.className = ticker.classList.contains("network-ticker-set") ? "network-ticker-call" : "";
-      a.style.whiteSpace = "nowrap";
+      a.className = ticker.classList.contains("network-ticker-set")
+        ? "network-ticker-call vnv-support-ticker-link"
+        : "vnv-support-ticker-link";
       ticker.appendChild(a);
     });
   });
