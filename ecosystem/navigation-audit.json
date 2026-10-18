@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T17:43:12Z",
+  "generatedAt": "2026-10-18T18:03:36Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
     "failedRepositoryCount": 0,
-    "htmlCount": 11390,
-    "brokenLocalLinkCount": 1547,
-    "rootOrphanHtmlCount": 9599,
-    "unreferencedHtmlCount": 1833,
+    "htmlCount": 11466,
+    "brokenLocalLinkCount": 1384,
+    "rootOrphanHtmlCount": 9571,
+    "unreferencedHtmlCount": 1768,
     "duplicateGroupCount": 23,
     "supersededNameCount": 3
   },
@@ -17,28 +17,13 @@
     {
       "repository": "vervenveda/333.github.io",
       "htmlCount": 12,
-      "brokenLocalLinkCount": 2,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 7,
       "rootOrphanHtmlCount": 3,
       "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "app/FleaPit™ _media_hub_index.html",
-          "target": "app/FleaPit™_media_hub_Index.html",
-          "raw": "FleaPit™_media_hub_Index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "app/FleaPit™ _media_hub_index.html",
-          "target": "app/FleaPit™_media_hub_Index.html",
-          "raw": "FleaPit™_media_hub_Index.html",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "app/FleaPit™ _media_hub_index.html",
         "app/FleaPit™_media_gate_Index.html",
@@ -750,301 +735,14 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Elementary.github.io",
-      "htmlCount": 2306,
-      "brokenLocalLinkCount": 1157,
-      "rootReachableHtmlCount": 1,
-      "rootOrphanHtmlCount": 2305,
-      "unreferencedHtmlCount": 184,
+      "htmlCount": 2307,
+      "brokenLocalLinkCount": 1116,
+      "rootReachableHtmlCount": 30,
+      "rootOrphanHtmlCount": 2277,
+      "unreferencedHtmlCount": 120,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
-        {
-          "source": "games/elementary_geometry/index.html",
-          "target": "games/index.html",
-          "raw": "../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "games/kindness_quest/index.html",
-          "target": "games/index.html",
-          "raw": "../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "games/lunar_phase_explorer/index.html",
-          "target": "games/index.html",
-          "raw": "../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "games/elementary_vocabulary_garden/index.html",
-          "target": "games/index.html",
-          "raw": "../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "games/elementary_weather_portal/index.html",
-          "target": "games/index.html",
-          "raw": "../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-08/index.html",
-          "target": "printables/unit-08-packet.html",
-          "raw": "../../printables/unit-08-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-29/index.html",
-          "target": "printables/unit-29-packet.html",
-          "raw": "../../printables/unit-29-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-07/index.html",
-          "target": "printables/unit-07-packet.html",
-          "raw": "../../printables/unit-07-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-16/index.html",
-          "target": "printables/unit-16-packet.html",
-          "raw": "../../printables/unit-16-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-23/index.html",
-          "target": "printables/unit-23-packet.html",
-          "raw": "../../printables/unit-23-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-14/index.html",
-          "target": "printables/unit-14-packet.html",
-          "raw": "../../printables/unit-14-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-35/index.html",
-          "target": "printables/unit-35-packet.html",
-          "raw": "../../printables/unit-35-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-17/index.html",
-          "target": "printables/unit-17-packet.html",
-          "raw": "../../printables/unit-17-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-36/index.html",
-          "target": "printables/unit-36-packet.html",
-          "raw": "../../printables/unit-36-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-32/index.html",
-          "target": "printables/unit-32-packet.html",
-          "raw": "../../printables/unit-32-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-04/index.html",
-          "target": "printables/unit-04-packet.html",
-          "raw": "../../printables/unit-04-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-10/index.html",
-          "target": "printables/unit-10-packet.html",
-          "raw": "../../printables/unit-10-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-06/index.html",
-          "target": "printables/unit-06-packet.html",
-          "raw": "../../printables/unit-06-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-28/index.html",
-          "target": "printables/unit-28-packet.html",
-          "raw": "../../printables/unit-28-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-11/index.html",
-          "target": "printables/unit-11-packet.html",
-          "raw": "../../printables/unit-11-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-03/index.html",
-          "target": "printables/unit-03-packet.html",
-          "raw": "../../printables/unit-03-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-22/index.html",
-          "target": "printables/unit-22-packet.html",
-          "raw": "../../printables/unit-22-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-02/index.html",
-          "target": "printables/unit-02-packet.html",
-          "raw": "../../printables/unit-02-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-01/index.html",
-          "target": "printables/unit-01-packet.html",
-          "raw": "../../printables/unit-01-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-12/index.html",
-          "target": "printables/unit-12-packet.html",
-          "raw": "../../printables/unit-12-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-15/index.html",
-          "target": "printables/unit-15-packet.html",
-          "raw": "../../printables/unit-15-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-24/index.html",
-          "target": "printables/unit-24-packet.html",
-          "raw": "../../printables/unit-24-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-33/index.html",
-          "target": "printables/unit-33-packet.html",
-          "raw": "../../printables/unit-33-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-20/index.html",
-          "target": "printables/unit-20-packet.html",
-          "raw": "../../printables/unit-20-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-21/index.html",
-          "target": "printables/unit-21-packet.html",
-          "raw": "../../printables/unit-21-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-34/index.html",
-          "target": "printables/unit-34-packet.html",
-          "raw": "../../printables/unit-34-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-18/index.html",
-          "target": "printables/unit-18-packet.html",
-          "raw": "../../printables/unit-18-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-13/index.html",
-          "target": "printables/unit-13-packet.html",
-          "raw": "../../printables/unit-13-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-31/index.html",
-          "target": "printables/unit-31-packet.html",
-          "raw": "../../printables/unit-31-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-05/index.html",
-          "target": "printables/unit-05-packet.html",
-          "raw": "../../printables/unit-05-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-26/index.html",
-          "target": "printables/unit-26-packet.html",
-          "raw": "../../printables/unit-26-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-19/index.html",
-          "target": "printables/unit-19-packet.html",
-          "raw": "../../printables/unit-19-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-09/index.html",
-          "target": "printables/unit-09-packet.html",
-          "raw": "../../printables/unit-09-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-25/index.html",
-          "target": "printables/unit-25-packet.html",
-          "raw": "../../printables/unit-25-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-27/index.html",
-          "target": "printables/unit-27-packet.html",
-          "raw": "../../printables/unit-27-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "lessons/unit-30/index.html",
-          "target": "printables/unit-30-packet.html",
-          "raw": "../../printables/unit-30-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
         {
           "source": "printables/printables/unit-30-packet.html",
           "target": "printables/assets/styles.css",
@@ -1317,6 +1015,293 @@
           "raw": "../teacher-tools/index.html",
           "tag": "a",
           "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-04-packet.html",
+          "target": "printables/assessments/weekly-assessments.html",
+          "raw": "../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-04-packet.html",
+          "target": "printables/records/certificate.html",
+          "raw": "../records/certificate.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-04-packet.html",
+          "target": "printables/lessons/unit-04/index.html",
+          "raw": "../lessons/unit-04/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-34-packet.html",
+          "target": "printables/assets/styles.css",
+          "raw": "../assets/styles.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-34-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-34-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-34-packet.html",
+          "target": "printables/teacher-tools/index.html",
+          "raw": "../teacher-tools/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-34-packet.html",
+          "target": "printables/assessments/weekly-assessments.html",
+          "raw": "../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-34-packet.html",
+          "target": "printables/records/certificate.html",
+          "raw": "../records/certificate.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-34-packet.html",
+          "target": "printables/lessons/unit-34/index.html",
+          "raw": "../lessons/unit-34/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-33-packet.html",
+          "target": "printables/assets/styles.css",
+          "raw": "../assets/styles.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-33-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-33-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-33-packet.html",
+          "target": "printables/teacher-tools/index.html",
+          "raw": "../teacher-tools/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-33-packet.html",
+          "target": "printables/assessments/weekly-assessments.html",
+          "raw": "../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-33-packet.html",
+          "target": "printables/records/certificate.html",
+          "raw": "../records/certificate.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-33-packet.html",
+          "target": "printables/lessons/unit-33/index.html",
+          "raw": "../lessons/unit-33/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-27-packet.html",
+          "target": "printables/assets/styles.css",
+          "raw": "../assets/styles.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-27-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-27-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-27-packet.html",
+          "target": "printables/teacher-tools/index.html",
+          "raw": "../teacher-tools/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-27-packet.html",
+          "target": "printables/assessments/weekly-assessments.html",
+          "raw": "../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-27-packet.html",
+          "target": "printables/records/certificate.html",
+          "raw": "../records/certificate.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-27-packet.html",
+          "target": "printables/lessons/unit-27/index.html",
+          "raw": "../lessons/unit-27/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-20-packet.html",
+          "target": "printables/assets/styles.css",
+          "raw": "../assets/styles.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-20-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-20-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-20-packet.html",
+          "target": "printables/teacher-tools/index.html",
+          "raw": "../teacher-tools/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-20-packet.html",
+          "target": "printables/assessments/weekly-assessments.html",
+          "raw": "../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-20-packet.html",
+          "target": "printables/records/certificate.html",
+          "raw": "../records/certificate.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-20-packet.html",
+          "target": "printables/lessons/unit-20/index.html",
+          "raw": "../lessons/unit-20/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-21-packet.html",
+          "target": "printables/assets/styles.css",
+          "raw": "../assets/styles.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-21-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-21-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-21-packet.html",
+          "target": "printables/teacher-tools/index.html",
+          "raw": "../teacher-tools/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-21-packet.html",
+          "target": "printables/assessments/weekly-assessments.html",
+          "raw": "../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-21-packet.html",
+          "target": "printables/records/certificate.html",
+          "raw": "../records/certificate.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-21-packet.html",
+          "target": "printables/lessons/unit-21/index.html",
+          "raw": "../lessons/unit-21/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-25-packet.html",
+          "target": "printables/assets/styles.css",
+          "raw": "../assets/styles.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-25-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "printables/printables/unit-25-packet.html",
+          "target": "printables/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
         }
       ],
       "rootOrphans": [
@@ -1396,43 +1381,15 @@
         "assessments/unit-35-assessment.html",
         "assessments/unit-36-assessment.html",
         "assessments/weekly-assessments.html",
-        "games/bazaarart-jr-studio/index.html",
-        "games/curiosity-machine/index.html",
-        "games/elementary_geometry/index.html",
-        "games/elementary_vocabulary_garden/index.html"
+        "grades/grade-01/assessments/final-exam.html",
+        "grades/grade-01/assessments/midterm.html",
+        "grades/grade-01/assessments/unit-01-assessment.html",
+        "grades/grade-01/assessments/unit-02-assessment.html"
       ],
       "unreferencedPages": [
         "arts-music/index.html",
         "assessments/final-exam.html",
         "assessments/midterm.html",
-        "games/bazaarart-jr-studio/index.html",
-        "games/curiosity-machine/index.html",
-        "games/elementary_geometry/index.html",
-        "games/elementary_vocabulary_garden/index.html",
-        "games/elementary_weather_portal/index.html",
-        "games/emotional_garden/index.html",
-        "games/force-motion-ramp-lab-k-5/index.html",
-        "games/fraction-picnic-k-5/index.html",
-        "games/journal-yearbook/index.html",
-        "games/jr-city-council/index.html",
-        "games/junior-engineer-studio/index.html",
-        "games/kids-voting-app/index.html",
-        "games/kindness_quest/index.html",
-        "games/learn_a_new_word/index.html",
-        "games/little_kitchen_helper/index.html",
-        "games/lunar_phase_explorer/index.html",
-        "games/math-market/index.html",
-        "games/movement-mission-generator/index.html",
-        "games/number-bonds-garden/index.html",
-        "games/number-forge/index.html",
-        "games/observation-lab/index.html",
-        "games/pattern-coder/index.html",
-        "games/sound-builder-cvc/index.html",
-        "games/sound-rhythm-lab/index.html",
-        "games/story-problem-studio/index.html",
-        "games/story-seed-garden/index.html",
-        "games/time-traveler-clock-lab/index.html",
-        "games/word-detective/index.html",
         "grades/grade-01/assessments/unit-01-assessment.html",
         "grades/grade-01/assessments/unit-02-assessment.html",
         "grades/grade-01/assessments/unit-03-assessment.html",
@@ -1481,16 +1438,44 @@
         "grades/grade-01/printables/unit-10-packet.html",
         "grades/grade-01/printables/unit-11-packet.html",
         "grades/grade-01/printables/unit-12-packet.html",
-        "grades/grade-01/printables/unit-13-packet.html"
+        "grades/grade-01/printables/unit-13-packet.html",
+        "grades/grade-01/printables/unit-14-packet.html",
+        "grades/grade-01/printables/unit-15-packet.html",
+        "grades/grade-01/printables/unit-16-packet.html",
+        "grades/grade-01/printables/unit-17-packet.html",
+        "grades/grade-01/printables/unit-18-packet.html",
+        "grades/grade-01/printables/unit-19-packet.html",
+        "grades/grade-01/printables/unit-20-packet.html",
+        "grades/grade-01/printables/unit-21-packet.html",
+        "grades/grade-01/printables/unit-22-packet.html",
+        "grades/grade-01/printables/unit-23-packet.html",
+        "grades/grade-01/printables/unit-24-packet.html",
+        "grades/grade-01/printables/unit-25-packet.html",
+        "grades/grade-01/printables/unit-26-packet.html",
+        "grades/grade-01/printables/unit-27-packet.html",
+        "grades/grade-01/printables/unit-28-packet.html",
+        "grades/grade-01/printables/unit-29-packet.html",
+        "grades/grade-01/printables/unit-30-packet.html",
+        "grades/grade-01/printables/unit-31-packet.html",
+        "grades/grade-01/printables/unit-32-packet.html",
+        "grades/grade-01/printables/unit-33-packet.html",
+        "grades/grade-01/printables/unit-34-packet.html",
+        "grades/grade-01/printables/unit-35-packet.html",
+        "grades/grade-01/printables/unit-36-packet.html",
+        "grades/grade-01/subjects/math/math-01_index.html",
+        "grades/grade-02/assessments/final-exam.html",
+        "grades/grade-02/assessments/midterm.html",
+        "grades/grade-03/assessments/final-exam.html",
+        "grades/grade-03/assessments/midterm.html"
       ],
       "duplicateGroups": [],
       "supersededNames": []
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3225,
+      "htmlCount": 3300,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1382,
+      "rootReachableHtmlCount": 1457,
       "rootOrphanHtmlCount": 1821,
       "unreferencedHtmlCount": 764,
       "duplicateGroupCount": 11,
@@ -1711,7 +1696,7 @@
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
       "htmlCount": 3168,
-      "brokenLocalLinkCount": 201,
+      "brokenLocalLinkCount": 106,
       "rootReachableHtmlCount": 7,
       "rootOrphanHtmlCount": 3150,
       "unreferencedHtmlCount": 188,
@@ -1719,561 +1704,561 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
-          "source": "courses/calculus-ii/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-          "target": "courses/mathematics/calculus-ii/index.html",
-          "raw": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/mathematics/calculus-ii/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "courses/mathematics/calculus-1/diagnostic/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/diagnostic/index.html",
           "target": "courses/mathematics/shared/course-entry-contract.js",
           "raw": "../../shared/course-entry-contract.js",
           "tag": "script",
           "attr": "src"
         },
         {
-          "source": "courses/mathematics/calculus-1/diagnostic/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/diagnostic/index.html",
           "target": "courses/mathematics/shared/math-entry-gate.js",
           "raw": "../../shared/math-entry-gate.js",
           "tag": "script",
           "attr": "src"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-08/lessons/u08-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-08/lessons/u08-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-08/lessons/u08-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-08/lessons/u08-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-08/lessons/u08-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-08/lessons/u08-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-08/lessons/u08-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-08/lessons/u08-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-08/lessons/u08-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-08/lessons/u08-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-08/lessons/u08-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-08/lessons/u08-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-08/lessons/u08-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-08/lessons/u08-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-07/lessons/u07-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-07/lessons/u07-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-07/lessons/u07-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-07/lessons/u07-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-07/lessons/u07-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-07/lessons/u07-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-07/lessons/u07-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-07/lessons/u07-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-07/lessons/u07-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-07/lessons/u07-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-07/lessons/u07-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-07/lessons/u07-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-07/lessons/u07-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-07/lessons/u07-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-04/lessons/u04-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-04/lessons/u04-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-04/lessons/u04-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-04/lessons/u04-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-04/lessons/u04-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-04/lessons/u04-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-04/lessons/u04-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-04/lessons/u04-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-04/lessons/u04-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-04/lessons/u04-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-04/lessons/u04-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-04/lessons/u04-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-04/lessons/u04-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-04/lessons/u04-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-10/lessons/u10-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-10/lessons/u10-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-10/lessons/u10-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-10/lessons/u10-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-10/lessons/u10-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-10/lessons/u10-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-10/lessons/u10-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-10/lessons/u10-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-10/lessons/u10-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-10/lessons/u10-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-10/lessons/u10-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-10/lessons/u10-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-10/lessons/u10-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-10/lessons/u10-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l08.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l08.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-06/lessons/u06-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-06/lessons/u06-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-11/lessons/u11-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-11/lessons/u11-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-11/lessons/u11-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-11/lessons/u11-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-11/lessons/u11-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-11/lessons/u11-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-11/lessons/u11-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-11/lessons/u11-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-03/lessons/u03-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-03/lessons/u03-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-03/lessons/u03-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-03/lessons/u03-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-03/lessons/u03-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-03/lessons/u03-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-03/lessons/u03-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-03/lessons/u03-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-02/lessons/u02-l08.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-02/lessons/u02-l08.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-01/lessons/u01-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-01/lessons/u01-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l07.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-01/lessons/u01-l07.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-01/lessons/u01-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-01/lessons/u01-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-01/lessons/u01-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-01/lessons/u01-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-01/lessons/u01-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-12/lessons/u12-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-12/lessons/u12-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-12/lessons/u12-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-12/lessons/u12-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-12/lessons/u12-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-12/lessons/u12-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-12/lessons/u12-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l04.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-13/lessons/u13-l04.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l03.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-13/lessons/u13-l03.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l01.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-13/lessons/u13-l01.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l02.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-13/lessons/u13-l02.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l06.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-13/lessons/u13-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/mathematics/calculus-1/units/unit-13/lessons/u13-l05.html",
-          "target": "courses/mathematics/calculus-1/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-13/lessons/u13-l05.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
+          "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/mathematics/precalculus-trigonometry/units/unit-05/lessons/u05-l06.html",
+          "target": "courses/mathematics/precalculus-trigonometry/https:/vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/index.html",
           "raw": "../../../https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/tools/calculator/",
           "tag": "a",
           "attr": "href"
@@ -3091,48 +3076,13 @@
     {
       "repository": "vervenveda/medicament-hub.github.io",
       "htmlCount": 47,
-      "brokenLocalLinkCount": 33,
+      "brokenLocalLinkCount": 28,
       "rootReachableHtmlCount": 39,
       "rootOrphanHtmlCount": 8,
       "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
-        {
-          "source": "index.html",
-          "target": "academy/PE_grade_9/study_guide_index.html",
-          "raw": "academy/PE_grade_9/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "academy/PE_grade_10/study_guide_index.html",
-          "raw": "academy/PE_grade_10/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "academy/PE_grade_11/study_guide_index.html",
-          "raw": "academy/PE_grade_11/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "academy/PE_grade_12/study_guide_index.html",
-          "raw": "academy/PE_grade_12/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "academy/high-school-health/index.html",
-          "target": "academy/high-school-health/data/repair08b-health-federation.js",
-          "raw": "./data/repair08b-health-federation.js",
-          "tag": "script",
-          "attr": "src"
-        },
         {
           "source": "medicament-hub.github.io/academy/high-school-health/index.html",
           "target": "medicament-hub.github.io/academy/high-school-health/courses/health-wellness/index.html",
@@ -3438,7 +3388,7 @@
     {
       "repository": "vervenveda/proresource_hub.github.io",
       "htmlCount": 155,
-      "brokenLocalLinkCount": 119,
+      "brokenLocalLinkCount": 103,
       "rootReachableHtmlCount": 11,
       "rootOrphanHtmlCount": 144,
       "unreferencedHtmlCount": 127,
@@ -3446,118 +3396,6 @@
       "supersededNameCount": 1,
       "brokenLocalLinks": [
         {
-          "source": "index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "./Protools/333_network/index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "./Protools/HOLLO™ 333 Direct Connect_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "./Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "./Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "./Protools/333_network/index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "./Protools/HOLLO™ 333 Direct Connect_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "./Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "./Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/333_network/index.html",
-          "raw": "./Protools/333_network/index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "./Protools/HOLLO™ 333 Direct Connect_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "./Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "./Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/333_network/index.html",
-          "raw": "./Protools/333_network/index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "./Protools/HOLLO™ 333 Direct Connect_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "./Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/index.html",
-          "target": "categories/Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "./Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "Protools/SixBit_Bun_index.html",
           "target": "Protools/KhaeZip™ Protected Archive Studio_index.html",
           "raw": "KhaeZip™ Protected Archive Studio_index.html",
@@ -3587,113 +3425,113 @@
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/files/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/writing/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
@@ -3713,295 +3551,407 @@
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/code/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/design/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/network/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/assets/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/systems/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/systems/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/systems/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/systems/index.html",
-          "target": "Protools/Bazaar Art Live 333 Social Feedindex.html",
-          "raw": "../../Protools/Bazaar Art Live 333 Social Feedindex.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/systems/index.html",
-          "target": "Protools/333_network/index.html",
-          "raw": "../../Protools/333_network/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/systems/index.html",
-          "target": "Protools/HOLLO™ 333 Direct Connect_index.html",
-          "raw": "../../Protools/HOLLO™ 333 Direct Connect_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
           "tag": "a",
           "attr": "href"
         },
         {
           "source": "categories/systems/index.html",
-          "target": "Protools/KANSEE™ 333 Meeting Rooms_index.html",
-          "raw": "../../Protools/KANSEE™ 333 Meeting Rooms_index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/systems/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/productivity/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/media/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/media/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/media/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/media/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/media/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/media/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "categories/media/index.html",
+          "target": "categories/.https:/vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+          "raw": "../.https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
           "tag": "a",
           "attr": "href"
         }
@@ -4193,28 +4143,13 @@
     {
       "repository": "vervenveda/solanar.github.io",
       "htmlCount": 185,
-      "brokenLocalLinkCount": 2,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 140,
       "rootOrphanHtmlCount": 45,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "weather-academy/Graduate-Programs/index.html",
-          "target": "weather-academy/Solanar-certification-year-02/index.html",
-          "raw": "../Solanar-certification-year-02/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "weather-academy/Solanar-Certification-year-02/index.html",
-          "target": "weather-academy/Solanar-certification-year-01/index.html",
-          "raw": "../Solanar-certification-year-01/",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "weather-academy/Graduate-Programs/climate-dynamics-modeling-prediction/final/index.html",
         "weather-academy/Graduate-Programs/climate-dynamics-modeling-prediction/forms/index.html",
@@ -4269,28 +4204,13 @@
     {
       "repository": "vervenveda/the_refrain.github.io",
       "htmlCount": 7,
-      "brokenLocalLinkCount": 2,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 4,
       "rootOrphanHtmlCount": 3,
-      "unreferencedHtmlCount": 3,
+      "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-          "target": "apps/Little_Composer_Studio_The_Refrain_index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/apps/Little_Composer_Studio_The_Refrain_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-          "target": "apps/Harmonys_Haven_Pro_Composition_Studio_index.html",
-          "raw": "https://vervenveda.github.io/the_refrain.github.io/apps/Harmonys_Haven_Pro_Composition_Studio_index.html",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
         "apps/pro-keyboard_index.html",
@@ -4298,7 +4218,6 @@
       ],
       "unreferencedPages": [
         "apps/ARSHIF_Music_Hall_Resources_Updated_index.html",
-        "apps/pro-keyboard_index.html",
         "apps/the-staff_index.html"
       ],
       "duplicateGroups": [],
