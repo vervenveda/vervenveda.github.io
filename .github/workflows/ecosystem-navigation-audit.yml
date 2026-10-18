@@ -1,0 +1,63 @@
+name: Ecosystem Navigation Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "ecosystem/audit_public_navigation.py"
+      - "ecosystem/master-ecosystem-directory.json"
+      - ".github/workflows/ecosystem-navigation-audit.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ecosystem-navigation-audit-main
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gateway repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Audit public navigation graph
+        run: python3 ecosystem/audit_public_navigation.py
+
+      - name: Validate audit outputs
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report=json.loads(Path("ecosystem/navigation-audit.json").read_text())
+          summary=report["summary"]
+          assert report["policy"].startswith("Read-only GitHub public navigation audit")
+          assert summary["failedRepositoryCount"] == 0
+          assert summary["repositoryCount"] > 0
+          assert report.get("failures") == []
+          print(
+              f"Audited {summary['repositoryCount']} repositories / "
+              f"{summary['htmlCount']} HTML files; "
+              f"broken={summary['brokenLocalLinkCount']}; "
+              f"unreferenced={summary['unreferencedHtmlCount']}."
+          )
+          PY
+
+      - name: Commit audit report
+        shell: bash
+        run: |
+          if git diff --quiet -- ecosystem/navigation-audit.json ecosystem/NAVIGATION_AUDIT.md; then
+            echo "No navigation-audit changes."
+            exit 0
+          fi
+          git config user.name "Verve N Veda Navigation Audit"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ecosystem/navigation-audit.json ecosystem/NAVIGATION_AUDIT.md
+          git commit -m "chore(ecosystem): refresh navigation audit"
+          git push
