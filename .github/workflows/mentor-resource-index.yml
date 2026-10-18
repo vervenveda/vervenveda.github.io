@@ -43,7 +43,7 @@ jobs:
       - name: Commit index changes
         shell: bash
         run: |
-          if git diff --quiet -- assessment-engine/mentor/registry/ecosystem-repositories.json assessment-engine/mentor/registry/ecosystem-resources.json; then
+          if git diff --quiet -- assessment-engine/mentor/registry/ecosystem-repositories.json assessment-engine/mentor/registry/ecosystem-resources.json registry/ecosystem-repositories.json; then
             echo "No registry changes."
             exit 0
           fi
@@ -52,6 +52,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assessment-engine/mentor/registry/ecosystem-repositories.json
           git add assessment-engine/mentor/registry/ecosystem-resources.json
+          git add registry/ecosystem-repositories.json
           git commit -m "chore(mentor): refresh ecosystem resource index"
           git pull --rebase origin main
           git push
