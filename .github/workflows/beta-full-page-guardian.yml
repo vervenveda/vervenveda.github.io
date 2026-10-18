@@ -5,6 +5,7 @@ on:
     paths:
       - '**/*.html'
       - 'reports/audit-beta-pages.py'
+      - 'reports/tests/*.py'
       - '.github/workflows/beta-full-page-guardian.yml'
   workflow_dispatch:
 permissions:
