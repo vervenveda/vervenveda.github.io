@@ -15,8 +15,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: ecosystem-public-sync-main
-  cancel-in-progress: true
+  group: ecosystem-writers-main
+  cancel-in-progress: false
 
 jobs:
   sync:
