@@ -170,6 +170,19 @@ def logical_duplicate_key(path:Path):
     s=re.sub(r"\s+"," ",s).strip()
     return s
 
+def page_role(text:str):
+    """Return a narrow semantic role only when the page declares one clearly."""
+    sample=re.sub(r"\s+"," ",text).lower()
+    if re.search(r"\bcanonical (?:student )?assessment\b",sample):
+        return "canonical-assessment"
+    if re.search(r"\bassessment center\b",sample):
+        return "assessment-center"
+    if re.search(r"\bcomprehensive final(?: examination)?\b",sample):
+        return "final-exam"
+    if re.search(r"\bstudent packet\b",sample):
+        return "student-packet"
+    return ""
+
 def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
     full=repo_info["repo"]
     name=full.split("/",1)[1]
@@ -255,6 +268,7 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
     # should not be called duplicates just because filenames are similar.
     exact_duplicate_groups=[]
     version_sibling_groups=[]
+    intentional_sibling_groups=[]
     canonical_aliases=[]
     for members in groups.values():
         if len(members)<2:
@@ -284,7 +298,16 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
                 alias_members.add(rel); alias_members.add(target)
         residual=[rel for rel in members if rel not in alias_members]
         if len(residual)>1:
-            version_sibling_groups.append(residual)
+            roles={rel:page_role(rels[rel].read_text(encoding="utf-8",errors="ignore")) for rel in residual}
+            declared={role for role in roles.values() if role}
+            # Different declared functions are legitimate siblings, not version ambiguity.
+            if len(declared)>1:
+                intentional_sibling_groups.append({
+                    "pages": residual,
+                    "roles": roles,
+                })
+            else:
+                version_sibling_groups.append(residual)
 
     superseded=[r for r in rels if re.search(r"(^|[/_.-])(old|legacy|backup|bak|deprecated|superseded)([/_.-]|$)",r,re.I)]
 
@@ -297,6 +320,7 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
         "unreferencedHtmlCount":len(unreferenced),
         "duplicateGroupCount":len(exact_duplicate_groups),
         "versionSiblingGroupCount":len(version_sibling_groups),
+        "intentionalSiblingGroupCount":len(intentional_sibling_groups),
         "canonicalAliasCount":len(canonical_aliases),
         "supersededNameCount":len(superseded),
         "brokenLocalLinks":broken[:MAX_EXAMPLES],
@@ -304,6 +328,7 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
         "unreferencedPages":unreferenced[:MAX_EXAMPLES],
         "duplicateGroups":exact_duplicate_groups[:30],
         "versionSiblingGroups":version_sibling_groups[:30],
+        "intentionalSiblingGroups":intentional_sibling_groups[:30],
         "canonicalAliases":canonical_aliases[:MAX_EXAMPLES],
         "supersededNames":superseded[:MAX_EXAMPLES],
     }
@@ -337,6 +362,7 @@ def main():
         "unreferencedHtmlCount":sum(r["unreferencedHtmlCount"] for r in results),
         "duplicateGroupCount":sum(r["duplicateGroupCount"] for r in results),
         "versionSiblingGroupCount":sum(r.get("versionSiblingGroupCount",0) for r in results),
+        "intentionalSiblingGroupCount":sum(r.get("intentionalSiblingGroupCount",0) for r in results),
         "canonicalAliasCount":sum(r.get("canonicalAliasCount",0) for r in results),
         "supersededNameCount":sum(r["supersededNameCount"] for r in results),
     }
@@ -367,6 +393,7 @@ def main():
         f"- HTML pages with no incoming in-repository link: {summary['unreferencedHtmlCount']}",
         f"- Exact duplicate groups: {summary['duplicateGroupCount']}",
         f"- Version/sibling groups requiring review: {summary['versionSiblingGroupCount']}",
+        f"- Intentional semantic sibling groups: {summary['intentionalSiblingGroupCount']}",
         f"- Canonical aliases already resolved: {summary['canonicalAliasCount']}",
         f"- Legacy/superseded-style filenames: {summary['supersededNameCount']}",
         "",
