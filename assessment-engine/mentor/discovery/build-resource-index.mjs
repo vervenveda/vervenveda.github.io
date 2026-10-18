@@ -9,6 +9,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const mentorRoot = path.resolve(here, "..");
 const accountsPath = path.join(here, "accounts.json");
 const reposPath = path.join(mentorRoot, "registry", "ecosystem-repositories.json");
+const compatibilityReposPath = path.resolve(mentorRoot, "..", "..", "registry", "ecosystem-repositories.json");
 const resourcesPath = path.join(mentorRoot, "registry", "ecosystem-resources.json");
 const token = process.env.GITHUB_TOKEN || "";
 
@@ -82,13 +83,16 @@ for (const repoRecord of repositories) {
   }
 }
 
-await fs.writeFile(reposPath, JSON.stringify({
+const repositoryRegistryPayload = JSON.stringify({
   version: 2,
   generatedAt,
   sourceLatestRepositoryTimestamp: latestRepositoryTimestamp,
   accounts: (accounts.accounts || []).map(item => item.login),
   repositories
-}, null, 2) + "\n");
+}, null, 2) + "\n";
+
+await fs.writeFile(reposPath, repositoryRegistryPayload);
+await fs.writeFile(compatibilityReposPath, repositoryRegistryPayload);
 
 await fs.writeFile(resourcesPath, JSON.stringify({
   version: 2,
