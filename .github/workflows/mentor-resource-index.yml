@@ -16,8 +16,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: mentor-resource-index
-  cancel-in-progress: true
+  group: ecosystem-writers-main
+  cancel-in-progress: false
 
 jobs:
   build-index:
