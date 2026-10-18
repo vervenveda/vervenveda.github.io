@@ -16,8 +16,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: ecosystem-navigation-audit-main
-  cancel-in-progress: true
+  group: ecosystem-writers-main
+  cancel-in-progress: false
 
 jobs:
   audit:
