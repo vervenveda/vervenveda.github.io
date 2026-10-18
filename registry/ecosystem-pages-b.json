@@ -1,9 +1,337 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-18T17:38:58Z",
+  "generatedAt": "2026-10-18T18:08:03Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-11/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-11/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-11/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-11/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-12/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-12/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-12/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-12/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-13/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-13/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-13/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-13/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-14/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-14/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-14/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-14/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-15/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-15/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-15/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-15/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-16/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-16/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-16/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-16/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-17/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-17/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-17/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-17/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-18/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-18/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-18/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-18/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-19/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-19/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-19/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-19/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-20/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-20/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-20/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-20/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-21/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-21/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-21/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-21/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-22/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-22/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-22/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-22/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-23/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-23/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-23/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-23/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-24/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-24/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-24/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-24/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-25/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-25/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-25/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-25/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-26/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-26/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-26/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-26/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-27/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-27/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-27/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-27/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-28/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-28/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-28/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-28/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-29/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-29/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-29/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-29/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-30/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-30/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-30/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-30/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-31/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-31/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
     {
       "title": "Teacher Guide",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-31/teacher-guide.html",
@@ -41617,54 +41945,6 @@
       "url": "https://vervenveda.github.io/medicament-hub.github.io/",
       "repo": "medicament-hub.github.io",
       "path": "index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Grade 09",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/",
-      "repo": "medicament-hub.github.io",
-      "path": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Grade 10",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/",
-      "repo": "medicament-hub.github.io",
-      "path": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Grade 11",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/",
-      "repo": "medicament-hub.github.io",
-      "path": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Grade 12",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/",
-      "repo": "medicament-hub.github.io",
-      "path": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "Physical Education",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/medicament-hub.github.io/academy/high-school-health/courses/physical-education/",
-      "repo": "medicament-hub.github.io",
-      "path": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/index.html",
-      "category": "health",
-      "source": "Medicament Hub"
-    },
-    {
-      "title": "High School Health",
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/medicament-hub.github.io/academy/high-school-health/",
-      "repo": "medicament-hub.github.io",
-      "path": "medicament-hub.github.io/academy/high-school-health/index.html",
       "category": "health",
       "source": "Medicament Hub"
     },
