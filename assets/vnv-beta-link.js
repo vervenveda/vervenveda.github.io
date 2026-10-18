@@ -8,7 +8,7 @@
   const SCRIPT_MARK="vnvBetaProgramScript";
   const BETA_URL="https://vervenveda.com/beta/";
   const SCRIPT_URL="https://vervenveda.com/assets/vnv-beta-link.js";
-  const ECOSYSTEM_MENU_URL="/assets/vnv-ecosystem-menu.js";
+  const ECOSYSTEM_MENU_URL="https://vervenveda.com/assets/vnv-ecosystem-menu.js";
   const SUPPORT_URL="https://vervenveda.com/assets/vnv-support.js";
   const BAZAAR_LIVE_URL="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html";
   const HIGH_PROFILE_ID="khaemenesHighStudentProfileLink";
@@ -421,7 +421,7 @@
 
   function ensureEcosystemMenu(){
     try{
-      if(document.getElementById("vnvEcosystemMenuButton")||document.getElementById("menuOverlay"))return;
+      if(document.getElementById("vnvEcosystemMenuButton"))return;\n      if(document.getElementById("menuOverlay")&&document.getElementById("menuButton")&&/public gateway/i.test(document.title||""))return;
       loadOnce(ECOSYSTEM_MENU_URL,"vnv-ecosystem-menu");
     }catch{}
   }
@@ -524,5 +524,5 @@
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.7.5",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
+  window.VNVBetaProgram=Object.freeze({version:"1.7.6",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
 })();
