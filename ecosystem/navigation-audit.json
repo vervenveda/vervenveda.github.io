@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T18:06:40Z",
+  "generatedAt": "2026-10-18T18:08:40Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
     "failedRepositoryCount": 0,
-    "htmlCount": 11466,
-    "brokenLocalLinkCount": 944,
-    "rootOrphanHtmlCount": 9571,
-    "unreferencedHtmlCount": 1768,
+    "htmlCount": 11460,
+    "brokenLocalLinkCount": 330,
+    "rootOrphanHtmlCount": 9565,
+    "unreferencedHtmlCount": 1765,
     "duplicateGroupCount": 23,
     "supersededNameCount": 3
   },
@@ -736,321 +736,13 @@
     {
       "repository": "vervenveda/Khaemenes_Elementary.github.io",
       "htmlCount": 2307,
-      "brokenLocalLinkCount": 864,
+      "brokenLocalLinkCount": 288,
       "rootReachableHtmlCount": 30,
       "rootOrphanHtmlCount": 2277,
       "unreferencedHtmlCount": 120,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
-        {
-          "source": "subjects/health-pe-sel/week-28.html",
-          "target": "printables/week-28-packet.html",
-          "raw": "../../printables/week-28-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-28.html",
-          "target": "assessments/week-28-assessment.html",
-          "raw": "../../assessments/week-28-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-18.html",
-          "target": "printables/week-18-packet.html",
-          "raw": "../../printables/week-18-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-18.html",
-          "target": "assessments/week-18-assessment.html",
-          "raw": "../../assessments/week-18-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-05.html",
-          "target": "printables/week-05-packet.html",
-          "raw": "../../printables/week-05-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-05.html",
-          "target": "assessments/week-05-assessment.html",
-          "raw": "../../assessments/week-05-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-29.html",
-          "target": "printables/week-29-packet.html",
-          "raw": "../../printables/week-29-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-29.html",
-          "target": "assessments/week-29-assessment.html",
-          "raw": "../../assessments/week-29-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-10.html",
-          "target": "printables/week-10-packet.html",
-          "raw": "../../printables/week-10-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-10.html",
-          "target": "assessments/week-10-assessment.html",
-          "raw": "../../assessments/week-10-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-19.html",
-          "target": "printables/week-19-packet.html",
-          "raw": "../../printables/week-19-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-19.html",
-          "target": "assessments/week-19-assessment.html",
-          "raw": "../../assessments/week-19-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-06.html",
-          "target": "printables/week-06-packet.html",
-          "raw": "../../printables/week-06-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-06.html",
-          "target": "assessments/week-06-assessment.html",
-          "raw": "../../assessments/week-06-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-11.html",
-          "target": "printables/week-11-packet.html",
-          "raw": "../../printables/week-11-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-11.html",
-          "target": "assessments/week-11-assessment.html",
-          "raw": "../../assessments/week-11-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-07.html",
-          "target": "printables/week-07-packet.html",
-          "raw": "../../printables/week-07-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-07.html",
-          "target": "assessments/week-07-assessment.html",
-          "raw": "../../assessments/week-07-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-23.html",
-          "target": "printables/week-23-packet.html",
-          "raw": "../../printables/week-23-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-23.html",
-          "target": "assessments/week-23-assessment.html",
-          "raw": "../../assessments/week-23-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-20.html",
-          "target": "printables/week-20-packet.html",
-          "raw": "../../printables/week-20-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-20.html",
-          "target": "assessments/week-20-assessment.html",
-          "raw": "../../assessments/week-20-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-09.html",
-          "target": "printables/week-09-packet.html",
-          "raw": "../../printables/week-09-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-09.html",
-          "target": "assessments/week-09-assessment.html",
-          "raw": "../../assessments/week-09-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-26.html",
-          "target": "printables/week-26-packet.html",
-          "raw": "../../printables/week-26-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-26.html",
-          "target": "assessments/week-26-assessment.html",
-          "raw": "../../assessments/week-26-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-32.html",
-          "target": "printables/week-32-packet.html",
-          "raw": "../../printables/week-32-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-32.html",
-          "target": "assessments/week-32-assessment.html",
-          "raw": "../../assessments/week-32-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-36.html",
-          "target": "printables/week-36-packet.html",
-          "raw": "../../printables/week-36-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-36.html",
-          "target": "assessments/week-36-assessment.html",
-          "raw": "../../assessments/week-36-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-22.html",
-          "target": "printables/week-22-packet.html",
-          "raw": "../../printables/week-22-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-22.html",
-          "target": "assessments/week-22-assessment.html",
-          "raw": "../../assessments/week-22-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-33.html",
-          "target": "printables/week-33-packet.html",
-          "raw": "../../printables/week-33-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-33.html",
-          "target": "assessments/week-33-assessment.html",
-          "raw": "../../assessments/week-33-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-03.html",
-          "target": "printables/week-03-packet.html",
-          "raw": "../../printables/week-03-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-03.html",
-          "target": "assessments/week-03-assessment.html",
-          "raw": "../../assessments/week-03-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-16.html",
-          "target": "printables/week-16-packet.html",
-          "raw": "../../printables/week-16-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-16.html",
-          "target": "assessments/week-16-assessment.html",
-          "raw": "../../assessments/week-16-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-24.html",
-          "target": "printables/week-24-packet.html",
-          "raw": "../../printables/week-24-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-24.html",
-          "target": "assessments/week-24-assessment.html",
-          "raw": "../../assessments/week-24-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-01.html",
-          "target": "printables/week-01-packet.html",
-          "raw": "../../printables/week-01-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-01.html",
-          "target": "assessments/week-01-assessment.html",
-          "raw": "../../assessments/week-01-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-21.html",
-          "target": "printables/week-21-packet.html",
-          "raw": "../../printables/week-21-packet.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "subjects/health-pe-sel/week-21.html",
-          "target": "assessments/week-21-assessment.html",
-          "raw": "../../assessments/week-21-assessment.html",
-          "tag": "a",
-          "attr": "href"
-        },
         {
           "source": "subjects/health-pe-sel/index.html",
           "target": "printables/week-01-packet.html",
@@ -1300,6 +992,314 @@
           "source": "subjects/health-pe-sel/index.html",
           "target": "printables/week-36-packet.html",
           "raw": "../../printables/week-36-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-01-packet.html",
+          "raw": "../../printables/week-01-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-02-packet.html",
+          "raw": "../../printables/week-02-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-03-packet.html",
+          "raw": "../../printables/week-03-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-04-packet.html",
+          "raw": "../../printables/week-04-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-05-packet.html",
+          "raw": "../../printables/week-05-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-06-packet.html",
+          "raw": "../../printables/week-06-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-07-packet.html",
+          "raw": "../../printables/week-07-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-08-packet.html",
+          "raw": "../../printables/week-08-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-09-packet.html",
+          "raw": "../../printables/week-09-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-10-packet.html",
+          "raw": "../../printables/week-10-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-11-packet.html",
+          "raw": "../../printables/week-11-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-12-packet.html",
+          "raw": "../../printables/week-12-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-13-packet.html",
+          "raw": "../../printables/week-13-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-14-packet.html",
+          "raw": "../../printables/week-14-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-15-packet.html",
+          "raw": "../../printables/week-15-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-16-packet.html",
+          "raw": "../../printables/week-16-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-17-packet.html",
+          "raw": "../../printables/week-17-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-18-packet.html",
+          "raw": "../../printables/week-18-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-19-packet.html",
+          "raw": "../../printables/week-19-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-20-packet.html",
+          "raw": "../../printables/week-20-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-21-packet.html",
+          "raw": "../../printables/week-21-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-22-packet.html",
+          "raw": "../../printables/week-22-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-23-packet.html",
+          "raw": "../../printables/week-23-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-24-packet.html",
+          "raw": "../../printables/week-24-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-25-packet.html",
+          "raw": "../../printables/week-25-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-26-packet.html",
+          "raw": "../../printables/week-26-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-27-packet.html",
+          "raw": "../../printables/week-27-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-28-packet.html",
+          "raw": "../../printables/week-28-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-29-packet.html",
+          "raw": "../../printables/week-29-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-30-packet.html",
+          "raw": "../../printables/week-30-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-31-packet.html",
+          "raw": "../../printables/week-31-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-32-packet.html",
+          "raw": "../../printables/week-32-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-33-packet.html",
+          "raw": "../../printables/week-33-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-34-packet.html",
+          "raw": "../../printables/week-34-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-35-packet.html",
+          "raw": "../../printables/week-35-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/mathematics/index.html",
+          "target": "printables/week-36-packet.html",
+          "raw": "../../printables/week-36-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-01-packet.html",
+          "raw": "../../printables/week-01-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-02-packet.html",
+          "raw": "../../printables/week-02-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-03-packet.html",
+          "raw": "../../printables/week-03-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-04-packet.html",
+          "raw": "../../printables/week-04-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-05-packet.html",
+          "raw": "../../printables/week-05-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-06-packet.html",
+          "raw": "../../printables/week-06-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-07-packet.html",
+          "raw": "../../printables/week-07-packet.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "subjects/social-studies/index.html",
+          "target": "printables/week-08-packet.html",
+          "raw": "../../printables/week-08-packet.html",
           "tag": "a",
           "attr": "href"
         }
@@ -2549,223 +2549,19 @@
     },
     {
       "repository": "vervenveda/medicament-hub.github.io",
-      "htmlCount": 47,
-      "brokenLocalLinkCount": 28,
+      "htmlCount": 41,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 39,
-      "rootOrphanHtmlCount": 8,
-      "unreferencedHtmlCount": 3,
+      "rootOrphanHtmlCount": 2,
+      "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/health-wellness/index.html",
-          "raw": "./courses/health-wellness/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/electives/index.html",
-          "raw": "./courses/electives/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/health-wellness/index.html",
-          "raw": "./courses/health-wellness/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/electives/index.html",
-          "raw": "./courses/electives/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
-          "raw": "../../High_School_Physical_Education_42week_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/reader/index.html",
-          "raw": "./reader/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_Teacher_Guide_index.html",
-          "raw": "../../PE_Teacher_Guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/health-wellness/index.html",
-          "raw": "../health-wellness/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
-          "raw": "../../../High_School_Physical_Education_42week_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_12/study_guide_index.html",
-          "raw": "../../../PE_grade_12/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_12/quizzes_index.html",
-          "raw": "../../../PE_grade_12/quizzes_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/reader/index.html",
-          "raw": "../reader/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_Teacher_Guide_index.html",
-          "raw": "../../../PE_Teacher_Guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
-          "raw": "../../../High_School_Physical_Education_42week_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_9/study_guide_index.html",
-          "raw": "../../../PE_grade_9/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_9/quizzes_index.html",
-          "raw": "../../../PE_grade_9/quizzes_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/reader/index.html",
-          "raw": "../reader/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_Teacher_Guide_index.html",
-          "raw": "../../../PE_Teacher_Guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
-          "raw": "../../../High_School_Physical_Education_42week_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_11/study_guide_index.html",
-          "raw": "../../../PE_grade_11/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_11/quizzes_index.html",
-          "raw": "../../../PE_grade_11/quizzes_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/reader/index.html",
-          "raw": "../reader/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_Teacher_Guide_index.html",
-          "raw": "../../../PE_Teacher_Guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
-          "raw": "../../../High_School_Physical_Education_42week_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_10/study_guide_index.html",
-          "raw": "../../../PE_grade_10/study_guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_grade_10/quizzes_index.html",
-          "raw": "../../../PE_grade_10/quizzes_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/reader/index.html",
-          "raw": "../reader/",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
-          "target": "medicament-hub.github.io/academy/high-school-health/PE_Teacher_Guide_index.html",
-          "raw": "../../../PE_Teacher_Guide_index.html",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
-        "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-09/index.html",
-        "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-10/index.html",
-        "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-11/index.html",
-        "medicament-hub.github.io/academy/high-school-health/courses/physical-education/grade-12/index.html",
-        "medicament-hub.github.io/academy/high-school-health/courses/physical-education/index.html",
-        "medicament-hub.github.io/academy/high-school-health/index.html",
         "tools/Noetic_Kids_Feelings_Emotions_index.html",
         "tools/Psychology_Mindscape_index.html"
       ],
       "unreferencedPages": [
-        "medicament-hub.github.io/academy/high-school-health/index.html",
         "tools/Noetic_Kids_Feelings_Emotions_index.html",
         "tools/Psychology_Mindscape_index.html"
       ],
@@ -2862,83 +2658,13 @@
     {
       "repository": "vervenveda/proresource_hub.github.io",
       "htmlCount": 155,
-      "brokenLocalLinkCount": 16,
+      "brokenLocalLinkCount": 6,
       "rootReachableHtmlCount": 11,
       "rootOrphanHtmlCount": 144,
-      "unreferencedHtmlCount": 127,
+      "unreferencedHtmlCount": 125,
       "duplicateGroupCount": 0,
       "supersededNameCount": 1,
       "brokenLocalLinks": [
-        {
-          "source": "categories/writing/index.html",
-          "target": "Protools/PROSE_index.html",
-          "raw": "../../Protools/PROSE_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "categories/writing/index.html",
-          "target": "Protools/PROSE™ editingsuite_index.html",
-          "raw": "../../Protools/PROSE™ editingsuite_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html?resume=1",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html?new=1",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html?library=1",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Protools/PROSE/editorial-gateway.html",
-          "target": "Protools/PROSE/PROSE™ editingsuite_index.html",
-          "raw": "PROSE™ editingsuite_index.html",
-          "tag": "a",
-          "attr": "href"
-        },
         {
           "source": "Protools/Evidence_Citation_Studio/studio-core.html",
           "target": "Protools/Evidence_Citation_Studio/PLERA_Search_index.html",
@@ -3069,10 +2795,8 @@
         "Protools/Atlas_Evidence_Analysis.html",
         "Protools/Evidence_Citation_Studio/recovery.html",
         "Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html",
-        "Protools/PROSE/Editorial Suite/editingsuite_index.html",
         "Protools/PROSE/Editorial Suite/editorial-suite_core.html",
         "Protools/PROSE/Handwriting Lab/handwriting-lab.html",
-        "Protools/PROSE/editorial-gateway.html",
         "Protools/PROSE/writers-studio.html",
         "Protools/empire-systems-lab_index.html",
         "templates/after-action-review.html",
@@ -3144,7 +2868,9 @@
         "templates/packs/khaemenes-mathematics-core/problem-solving-journal.html",
         "templates/packs/khaemenes-mathematics-core/proof-framework.html",
         "templates/packs/khaemenes-mathematics-core/vocabulary-conjecture.html",
-        "templates/packs/khaemenes-mathematics-core/worked-example.html"
+        "templates/packs/khaemenes-mathematics-core/worked-example.html",
+        "templates/packs/khaemenes-scholarly-publishing/counterexample-studio.html",
+        "templates/packs/khaemenes-scholarly-publishing/course-reading.html"
       ],
       "duplicateGroups": [],
       "supersededNames": [
