@@ -1,0 +1,83 @@
+name: Public Ecosystem Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "47 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "ecosystem/master-ecosystem-directory.json"
+      - "ecosystem/sync_public_ecosystem.py"
+      - ".github/workflows/ecosystem-public-sync.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ecosystem-public-sync-main
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    if: ${{ !contains(github.event.head_commit.message || '', '[skip ecosystem-sync]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Synchronize approved public ecosystem
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 ecosystem/sync_public_ecosystem.py
+
+      - name: Validate synchronization outputs
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          master=json.loads(Path("ecosystem/master-ecosystem-directory.json").read_text())
+          status=json.loads(Path("ecosystem/sync-status.json").read_text())
+          candidates=json.loads(Path("ecosystem/discovered-candidates.json").read_text())
+          a=json.loads(Path("registry/ecosystem-pages-a.json").read_text())
+          b=json.loads(Path("registry/ecosystem-pages-b.json").read_text())
+
+          pages=list(a.get("pages",[]))+list(b.get("pages",[]))
+          assert master["pageCatalog"]["parts"] == [
+              "/registry/ecosystem-pages-a.json",
+              "/registry/ecosystem-pages-b.json",
+          ]
+          assert master["pageCatalog"]["publicPageCount"] == len(pages)
+          assert master["pageCatalog"]["repositoryCount"] == status["syncedRepositoryCount"]
+          assert status["stos"]["state"] == "dormant"
+          assert status["stos"]["includedInPublicSync"] is False
+          assert all("stos" not in str(row.get("repository","")).lower() for row in candidates.get("candidates",[]))
+          assert len({(p["repo"].lower(),p["path"].lower()) for p in pages}) == len(pages)
+          assert all(str(p.get("url","")).startswith("https://") for p in pages)
+          print(
+              f"Validated {len(pages)} public pages across "
+              f"{status['syncedRepositoryCount']} approved repositories."
+          )
+          PY
+
+      - name: Commit synchronized registries
+        shell: bash
+        run: |
+          if git diff --quiet --             ecosystem/master-ecosystem-directory.json             ecosystem/discovered-candidates.json             ecosystem/sync-status.json             registry/ecosystem-pages-a.json             registry/ecosystem-pages-b.json
+          then
+            echo "No ecosystem registry changes."
+            exit 0
+          fi
+
+          git config user.name "Verve N Veda Ecosystem Sync"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ecosystem/master-ecosystem-directory.json
+          git add ecosystem/discovered-candidates.json
+          git add ecosystem/sync-status.json
+          git add registry/ecosystem-pages-a.json
+          git add registry/ecosystem-pages-b.json
+          git commit -m "chore(ecosystem): synchronize public registry [skip ecosystem-sync]"
+          git push
