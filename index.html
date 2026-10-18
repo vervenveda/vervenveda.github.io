@@ -217,6 +217,43 @@
     }
     .site-header{position:sticky}
     .header-inner{padding-left:33px}
+    .header-actions{
+      justify-self:end;
+      display:flex;
+      align-items:center;
+      gap:9px;
+    }
+    .header-support{
+      min-height:33px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:7px 11px;
+      border:1px solid rgba(36,61,51,.28);
+      border-radius:7px;
+      color:var(--forest-deep);
+      background:rgba(255,255,255,.72);
+      font-size:10px;
+      font-weight:444;
+      letter-spacing:.08em;
+      line-height:1;
+      text-transform:uppercase;
+      white-space:nowrap;
+      transition:background .16s ease,border-color .16s ease,transform .16s ease;
+    }
+    .header-support:hover,
+    .header-support:focus-visible{
+      background:#fff;
+      border-color:var(--forest);
+      transform:translateY(-1px);
+    }
+    @media(max-width:940px){
+      .header-support{font-size:9px;padding-inline:9px}
+    }
+    @media(max-width:760px){
+      .header-support span{display:none}
+      .header-support::after{content:"Support"}
+    }
 
     .admin-gate-overlay{
       position:fixed;
@@ -3617,7 +3654,7 @@
           <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
           <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
           <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
-          <a class="network-ticker-call" href="#support">Contribute · Support Original Work</a>
+          <a class="network-ticker-call" href="#support">Support Free Access</a>
           <a class="network-ticker-call" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
         </div>
         <div class="network-ticker-set" aria-hidden="true">
@@ -3628,7 +3665,7 @@
           <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
           <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
           <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
-          <a class="network-ticker-call" tabindex="-1" href="#support">Contribute · Support Original Work</a>
+          <a class="network-ticker-call" tabindex="-1" href="#support">Support Free Access</a>
           <a class="network-ticker-call" tabindex="-1" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
         </div>
       </div>
@@ -3658,11 +3695,16 @@
         <a href="#intelligence">NAIB</a>
       </nav>
 
-      <button class="menu-button" id="menuButton" type="button"
-              aria-expanded="false" aria-controls="menuOverlay"
-              aria-label="Open complete menu">
-        <span class="menu-lines" aria-hidden="true"></span>
-      </button>
+      <div class="header-actions">
+        <a class="header-support" href="#support" aria-label="Support free Verve N Veda access">
+          <span>Support Free Access</span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button"
+                aria-expanded="false" aria-controls="menuOverlay"
+                aria-label="Open complete menu">
+          <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -4127,7 +4169,8 @@
           <div class="support-copy">
             <p class="kicker">Support Independent Creation</p>
             <h2 id="supportTitle">Help original learning, games, tools, art, and public resources keep growing.</h2>
-            <p>Verve N Veda and the Khaemenes learning ecosystem are built as original educational, creative, and public-resource work. Voluntary contributions help support continued development, maintenance, hosting, research, curriculum building, and new tools.</p>
+            <p><strong>Everything across the public ecosystem remains free to access.</strong> If this work helps you or your family, voluntary support helps keep Verve N Veda and Khaemenes Academy available, maintained, and growing.</p>
+            <p>Verve N Veda and the Khaemenes learning ecosystem are built as original educational, creative, and public-resource work. Contributions help support continued development, maintenance, hosting, research, curriculum building, and new tools.</p>
             <p><strong>This support area is separate from Jennifer Pearl campaign contributions.</strong> No tax-deductibility or charitable status is represented on this page.</p>
             <div class="support-points" aria-label="What contributions support">
               <span>Original curriculum</span><span>Original games</span><span>Learning tools</span><span>Public resources</span><span>Independent development</span>
