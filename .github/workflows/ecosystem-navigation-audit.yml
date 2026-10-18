@@ -52,7 +52,7 @@ jobs:
       - name: Commit audit report
         shell: bash
         run: |
-          if git diff --quiet -- ecosystem/navigation-audit.json ecosystem/NAVIGATION_AUDIT.md; then
+          if [ -z "$(git status --porcelain -- ecosystem/navigation-audit.json ecosystem/NAVIGATION_AUDIT.md)" ]; then
             echo "No navigation-audit changes."
             exit 0
           fi
