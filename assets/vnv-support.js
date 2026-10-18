@@ -20,16 +20,24 @@
 
   const path = location.pathname.toLowerCase();
   const title = (document.title || "").toLowerCase();
-  const lessonLike =
-    /(^|\/)(lesson|lessons)(\/|$)/.test(path) ||
-    /(^|\/)(quiz|quizzes|exam|exams|assessment|assessments)(\/|$)/.test(path) ||
-    /\b(lesson|quiz|exam|assessment)\b/.test(title);
 
-  if (lessonLike && !document.documentElement.hasAttribute("data-vnv-support-force")) return;
+  /* Educational teaching surfaces stay free of fundraising prompts.
+     The ecosystem menu is loaded above before this guard returns. */
+  const instructionalPath =
+    /(^|\/)(lesson|lessons|quiz|quizzes|exam|exams|assessment|assessments|course|courses|workshop|workshops|unit|units|week|weeks)(\/|$)/.test(path) ||
+    /(^|[_-])(lesson|quiz|exam|assessment|course|workshop|unit|week)([_-]|\.|$)/.test(path);
+  const instructionalTitle =
+    /\b(lesson|quiz|exam|assessment|workshop|course)\b/.test(title) ||
+    /\b(unit|week)\s*(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|twenty-one|twenty-two|twenty-three|twenty-four|twenty-five|twenty-six|twenty-seven|twenty-eight|twenty-nine|thirty|thirty-one|thirty-two)\b/.test(title);
+  const instructionalSurface = instructionalPath || instructionalTitle;
 
+  if (instructionalSurface && !document.documentElement.hasAttribute("data-vnv-support-force")) return;
+
+  /* Child-facing public rooms keep the resource free and move any contribution
+     invitation explicitly to parents, caregivers, and other grown-ups. */
   const childFacing =
-    /khaemenes_(preschool|kindergarden)\.github\.io/i.test(path) ||
-    /\b(preschool|crech[eè]|kinder garden|kindergarten)\b/i.test(title);
+    /(^|\/)(?:khaemenes_(?:preschool|kindergarden)\.github\.io|[^/]*(?:kids?|children|youth|young[-_ ]?readers)[^/]*)(\/|$)/i.test(path) ||
+    /\b(preschool|crech[eè]|kinder garden|kindergarten|kids?|children|childrens|youth|young readers?|young newsroom)\b/i.test(title);
 
   const style = document.createElement("style");
   style.textContent = `
@@ -122,25 +130,47 @@
     document.body.appendChild(top);
   }
 
-  const tickerSelectors = [
-    ".network-ticker-set",
-    ".ticker-track",
-    ".news-ticker-track",
-    "[data-vnv-ticker]"
-  ];
-  const seen = new Set();
-  tickerSelectors.forEach(selector => {
-    document.querySelectorAll(selector).forEach(ticker => {
-      if (seen.has(ticker) || ticker.querySelector('[data-vnv-support-ticker]')) return;
-      seen.add(ticker);
-      const a = document.createElement("a");
-      a.href = "#"+SUPPORT_ID;
-      a.textContent = "Support Free Access";
-      a.dataset.vnvSupportTicker = "true";
-      a.className = ticker.classList.contains("network-ticker-set")
-        ? "network-ticker-call vnv-support-ticker-link"
-        : "vnv-support-ticker-link";
-      ticker.appendChild(a);
+  function addTickerSupportLink(ticker){
+    if(!ticker || ticker.querySelector('[data-vnv-support-ticker]')) return;
+    const a = document.createElement("a");
+    a.href = "#"+SUPPORT_ID;
+    a.textContent = childFacing ? "Grown-Ups · Support" : "Support Free Access";
+    a.dataset.vnvSupportTicker = "true";
+    a.className = ticker.classList.contains("network-ticker-set")
+      ? "network-ticker-call vnv-support-ticker-link"
+      : "vnv-support-ticker-link";
+    if(ticker.getAttribute("aria-hidden")==="true" || ticker.closest('[aria-hidden="true"]')) a.tabIndex=-1;
+    ticker.appendChild(a);
+  }
+
+  function installTickerSupportLinks(){
+    /* Prefer repeated ticker groups so both halves of a seamless marquee carry
+       the same support doorway. Fall back to the moving track when no group exists. */
+    const groupSelectors = [
+      ".network-ticker-set",
+      ".ticker-set",
+      ".tickerGroup",
+      ".ticker-group"
+    ];
+    const trackSelectors = [
+      ".ticker-track",
+      ".tickerTrack",
+      ".news-ticker-track",
+      ".marquee",
+      "[data-vnv-ticker]"
+    ];
+
+    const groups=[...document.querySelectorAll(groupSelectors.join(","))];
+    groups.forEach(addTickerSupportLink);
+
+    document.querySelectorAll(trackSelectors.join(",")).forEach(track=>{
+      const containsGroup=groups.some(group=>group!==track && track.contains(group));
+      if(!containsGroup) addTickerSupportLink(track);
     });
-  });
+  }
+
+  installTickerSupportLinks();
+  requestAnimationFrame(installTickerSupportLinks);
+  setTimeout(installTickerSupportLinks,500);
+  setTimeout(installTickerSupportLinks,1500);
 })();
