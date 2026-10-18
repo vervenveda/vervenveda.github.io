@@ -301,7 +301,13 @@ def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
             roles={rel:page_role(rels[rel].read_text(encoding="utf-8",errors="ignore")) for rel in residual}
             declared={role for role in roles.values() if role}
             # Different declared functions are legitimate siblings, not version ambiguity.
-            if len(declared)>1:
+            # A versioned page that explicitly declares itself the canonical assessment
+            # alongside an unversioned instructional packet is also intentional.
+            intentional = (
+                len(declared)>1 or
+                ("canonical-assessment" in declared and any(not role for role in roles.values()))
+            )
+            if intentional:
                 intentional_sibling_groups.append({
                     "pages": residual,
                     "roles": roles,
