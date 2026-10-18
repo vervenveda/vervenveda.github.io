@@ -10,8 +10,10 @@
     status:"vnvEcosystemMenuStatus",
     style:"vnvEcosystemMenuStyles"
   });
-  const REGISTRY="https://vervenveda.com/ecosystem/master-ecosystem-directory.json";
-  const HOME="https://vervenveda.com/";
+  const publicHost=/^(?:www\.)?vervenveda\.com$|^vervenveda\.github\.io$/i.test(location.hostname||"");
+  const PUBLIC_ROOT=publicHost ? location.origin+"/" : "https://vervenveda.com/";
+  const REGISTRY=PUBLIC_ROOT+"ecosystem/master-ecosystem-directory.json";
+  const HOME=PUBLIC_ROOT;
   const CATEGORY_ORDER=["education","research","news","weather","creative","professional","games","health","finance","civic","environmental","communication","gateway"];
   const CATEGORY_LABELS={
     education:"Education",research:"Research & Discovery",news:"News & Verification",
@@ -232,14 +234,22 @@
 
   function start(){
     if(!document.body)return;
-    installStyle();
-    mountButton();
-    mountDrawer();
-    bind();
-    load();
+    if(document.getElementById(IDS.button) || document.getElementById(IDS.overlay)) return;
+    if(document.getElementById("menuOverlay") && document.getElementById("menuButton") && /public gateway/i.test(document.title||"")) return;
+    if(window.__VNV_ECOSYSTEM_MENU_MOUNTING__) return;
+    window.__VNV_ECOSYSTEM_MENU_MOUNTING__=true;
+    try{
+      installStyle();
+      mountButton();
+      mountDrawer();
+      bind();
+      load();
+    }finally{
+      window.__VNV_ECOSYSTEM_MENU_MOUNTING__=false;
+    }
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVEcosystemMenu=Object.freeze({version:"1.0.0",open,close});
+  window.VNVEcosystemMenu=Object.freeze({version:"1.0.1",open,close});
 })();
