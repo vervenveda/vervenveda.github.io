@@ -102,6 +102,8 @@ def public_html_path(path: str) -> bool:
     parts = [part.lower() for part in normalized.split("/")]
     if set(parts) & EXCLUDED_PARTS:
         return False
+    if any(part.endswith(".github.io") for part in parts):
+        return False
     if parts[-1] in EXCLUDED_FILE_NAMES:
         return False
     if EXCLUDED_PATH_WORDS.search(normalized):
