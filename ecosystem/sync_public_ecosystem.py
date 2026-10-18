@@ -40,6 +40,7 @@ EXCLUDED_PARTS = {
 }
 EXCLUDED_FILE_NAMES = {
     "404.html", "404.htm", "offline.html", "offline.htm",
+    "recovery.html", "recovery.htm",
 }
 EXCLUDED_PATH_WORDS = re.compile(
     r"(^|[/_.-])(diagnostic|diagnostics|source[-_ ]?snippet|error[-_ ]?page)([/_.-]|$)",
