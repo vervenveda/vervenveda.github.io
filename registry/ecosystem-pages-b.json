@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-18T18:36:03Z",
+  "generatedAt": "2026-10-18T18:37:48Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
@@ -42409,14 +42409,6 @@
       "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/lab-resource-cloud.html",
       "repo": "proresource_hub.github.io",
       "path": "Protools/Evidence_Citation_Studio/lab-resource-cloud.html",
-      "category": "professional",
-      "source": "ProReSources"
-    },
-    {
-      "title": "Recovery",
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/recovery.html",
-      "repo": "proresource_hub.github.io",
-      "path": "Protools/Evidence_Citation_Studio/recovery.html",
       "category": "professional",
       "source": "ProReSources"
     },
