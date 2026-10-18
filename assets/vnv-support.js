@@ -6,7 +6,11 @@
   const SUPPORT_ID = "vnv-global-support";
   const TOP_ID = "vnv-global-support-top";
 
-  if(!document.getElementById("vnvEcosystemMenuButton") && !document.getElementById("menuOverlay")){
+  if(
+    !document.getElementById("vnvEcosystemMenuButton") &&
+    !document.getElementById("menuOverlay") &&
+    !document.querySelector('script[data-vnv-ecosystem-menu],script[src*="vnv-ecosystem-menu.js"]')
+  ){
     try{
       const menuScript=document.createElement("script");
       menuScript.src=ECOSYSTEM_MENU_URL;
