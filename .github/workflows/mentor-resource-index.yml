@@ -53,4 +53,5 @@ jobs:
           git add assessment-engine/mentor/registry/ecosystem-repositories.json
           git add assessment-engine/mentor/registry/ecosystem-resources.json
           git commit -m "chore(mentor): refresh ecosystem resource index"
+          git pull --rebase origin main
           git push
