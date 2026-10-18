@@ -62,7 +62,8 @@ def approved_repositories(master):
     return sorted(repos.values(),key=lambda x:x["repo"].lower())
 
 def should_skip(path:Path):
-    return any(part.lower() in EXCLUDED_DIRS for part in path.parts)
+    lowered=[part.lower() for part in path.parts]
+    return any(part in EXCLUDED_DIRS or part.endswith(".github.io") for part in lowered)
 
 def html_files(root:Path):
     return [p for p in root.rglob("*") if p.is_file() and p.suffix.lower() in HTML_EXT and not should_skip(p.relative_to(root))]
