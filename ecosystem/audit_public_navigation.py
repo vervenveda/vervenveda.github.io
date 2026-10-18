@@ -83,6 +83,11 @@ def normalize_candidate(root:Path,source:Path,raw:str):
         rel=None
         if host in {"vervenveda.com","www.vervenveda.com"}:
             if root.name=="vervenveda.github.io":
+                # Umbrella-domain project paths belong to child repositories,
+                # not folders inside the gateway checkout.
+                first=(path.lstrip("/").split("/",1)[0] if path.lstrip("/") else "")
+                if first.lower().endswith(".github.io"):
+                    return None
                 rel=path.lstrip("/") or "index.html"
             else:
                 prefix="/"+root.name+"/"
@@ -91,6 +96,9 @@ def normalize_candidate(root:Path,source:Path,raw:str):
         elif host=="vervenveda.github.io":
             prefix="/"+root.name+"/"
             if root.name=="vervenveda.github.io":
+                first=(path.lstrip("/").split("/",1)[0] if path.lstrip("/") else "")
+                if first.lower().endswith(".github.io"):
+                    return None
                 rel=path.lstrip("/") or "index.html"
             elif path.lower().startswith(prefix.lower()):
                 rel=path[len(prefix):] or "index.html"
@@ -113,7 +121,10 @@ def normalize_candidate(root:Path,source:Path,raw:str):
     except ValueError:
         return None
 
-    if str(raw).endswith("/") or candidate.is_dir():
+    if str(raw).endswith("/"):
+        if candidate.name.lower() not in {"index.html","index.htm"}:
+            candidate=candidate/"index.html"
+    elif candidate.is_dir():
         candidate=candidate/"index.html"
     elif candidate.suffix=="":
         if (candidate/"index.html").exists():
@@ -130,7 +141,7 @@ def logical_duplicate_key(path:Path):
     s=re.sub(r"\s+"," ",s).strip()
     return s
 
-def audit_repo(repo_info,tmp:Path):
+def audit_repo(repo_info,tmp:Path,curated_paths:set[str]):
     full=repo_info["repo"]
     name=full.split("/",1)[1]
     dest=tmp/name
@@ -169,11 +180,18 @@ def audit_repo(repo_info,tmp:Path):
                 if candidate.suffix.lower() in HTML_EXT|ASSET_EXT or "." in candidate.name:
                     broken.append({"source":rel,"target":target,"raw":raw,"tag":tag,"attr":attr})
 
-    # Reachability starts at root index plus all explicitly curated master paths for this repo.
+    # Reachability starts at root index plus every curated active public master-directory
+    # path for this repository. This avoids labeling legitimate deep portals as orphans.
     seeds=[]
     for seed in ("index.html","index.htm"):
         if seed in rels:
             seeds.append(seed)
+    for seed in sorted(curated_paths):
+        normalized=seed.strip("/")
+        if normalized.endswith("/"):
+            normalized += "index.html"
+        if normalized in rels and normalized not in seeds:
+            seeds.append(normalized)
     reachable=set(seeds)
     q=deque(seeds)
     while q:
@@ -185,8 +203,12 @@ def audit_repo(repo_info,tmp:Path):
     # Treat pages referenced anywhere in-repo as connected even if not reachable from root,
     # but keep a separate root-orphan metric.
     referenced={r for r in refs if r in rels}
-    root_orphans=sorted(set(rels)-reachable)
-    unreferenced=sorted(set(rels)-referenced-set(seeds))
+    orphan_pool={
+        rel for rel in rels
+        if Path(rel).name.lower() not in {"403.html","404.html","500.html","offline.html"}
+    }
+    root_orphans=sorted(orphan_pool-reachable)
+    unreferenced=sorted(orphan_pool-referenced-set(seeds))
 
     groups=defaultdict(list)
     for rel in rels:
@@ -213,13 +235,20 @@ def audit_repo(repo_info,tmp:Path):
 def main():
     master=json.loads(MASTER.read_text(encoding="utf-8"))
     repos=approved_repositories(master)
+    curated_by_repo=defaultdict(set)
+    for entry in master.get("entries",[]):
+        if entry.get("status")=="active" and entry.get("directoryVisible") is True:
+            repo=str(entry.get("repository") or "").strip().lower()
+            path=str(entry.get("path") or "").strip()
+            if repo and path:
+                curated_by_repo[repo].add(path)
     results=[]
     failures=[]
     with tempfile.TemporaryDirectory(prefix="vnv-nav-audit-") as td:
         tmp=Path(td)
         for info in repos:
             try:
-                results.append(audit_repo(info,tmp))
+                results.append(audit_repo(info,tmp,curated_by_repo.get(info["repo"].lower(),set())))
             except Exception as exc:
                 failures.append({"repository":info["repo"],"error":str(exc)})
 
