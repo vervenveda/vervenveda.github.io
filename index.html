@@ -4250,7 +4250,7 @@
         <a class="viewer-full-link" id="viewerFullLink" href="#" target="_blank" rel="noopener noreferrer">Open full page ↗</a>
       </div>
       <div class="viewer-frame-wrap">
-        <iframe class="viewer-frame" id="viewerFrame" title="Featured Verve N Veda destination" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <iframe class="viewer-frame" id="viewerFrame" title="Featured Verve N Veda destination" loading="eager" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads"></iframe>
         <div class="viewer-embed-blocked" id="viewerEmbedBlocked" hidden>
           <div>
             <p class="viewer-blocked-kicker">Protected Display</p>
@@ -4582,6 +4582,7 @@
       let activeEcosystemCategory = null;
       let ECOSYSTEM_PAGE_CATALOG = [];
       let ECOSYSTEM_PAGE_CATALOG_READY = false;
+      let ECOSYSTEM_PAGE_CATALOG_PARTS = [];
       const ECOSYSTEM_PAGE_LIMIT = 120;
 
       const ECOSYSTEM_CATEGORY_LABELS = Object.freeze({
@@ -4625,6 +4626,23 @@
         }
       }
 
+      function validatedPublicDirectoryUrl(value){
+        try{
+          const url=new URL(value,location.href);
+          if(url.protocol!=="https:" || !ALLOWED_HOSTS.has(url.hostname)) return null;
+          return url.href;
+        }catch{
+          return null;
+        }
+      }
+
+      function validatedCatalogPartPath(value){
+        if(typeof value!=="string") return null;
+        const path=value.trim();
+        if(!/^\/registry\/[A-Za-z0-9._/-]+\.json$/i.test(path)) return null;
+        return path;
+      }
+
       function initialsForDirectory(title){
         const words=String(title||"")
           .replace(/[^A-Za-z0-9 ]+/g," ")
@@ -4642,15 +4660,14 @@
           const payload=await response.json();
           if(!Array.isArray(payload?.entries)) throw new Error("entries missing");
 
+          ECOSYSTEM_PAGE_CATALOG_PARTS = Array.isArray(payload?.pageCatalog?.parts)
+            ? payload.pageCatalog.parts.map(validatedCatalogPartPath).filter(Boolean)
+            : [];
+
           const active=payload.entries.filter(entry=>{
             if(!entry || entry.directoryVisible!==true || entry.access!=="free-public" || entry.status!=="active") return false;
             if(!entry.title || !entry.url || !entry.category || !entry.type) return false;
-            try{
-              const url=new URL(entry.url,location.href);
-              return url.protocol==="https:" && ALLOWED_HOSTS.has(url.hostname);
-            }catch{
-              return false;
-            }
+            return Boolean(validatedPublicDirectoryUrl(entry.url));
           });
 
           if(!active.length) throw new Error("no active public entries");
@@ -4797,24 +4814,62 @@
 
       async function loadEcosystemPageCatalog(){
         const status = $("ecosystemPageStatus");
+        const emergencyParts = [
+          "/registry/ecosystem-pages-2026-10-14-a.json",
+          "/registry/ecosystem-pages-2026-10-14-b.json",
+          "/registry/ecosystem-pages-2026-10-14-c.json",
+          "/registry/ecosystem-pages-2026-10-14-d.json",
+          "/registry/ecosystem-pages-2026-10-14-e.json",
+          "/registry/ecosystem-pages-2026-10-14-f.json",
+          "/registry/ecosystem-pages-2026-10-14-g.json"
+        ];
+
+        async function fetchCatalogParts(urls){
+          const settled = await Promise.allSettled(
+            urls.map(async url => {
+              const response=await fetch(url,{cache:"no-store",credentials:"same-origin"});
+              if(!response.ok) throw new Error(`${url} HTTP ${response.status}`);
+              const part=await response.json();
+              if(!Array.isArray(part?.pages)) throw new Error(`${url} pages missing`);
+              return part.pages;
+            })
+          );
+          const pages=settled
+            .filter(result=>result.status==="fulfilled")
+            .flatMap(result=>result.value);
+          const failures=settled.filter(result=>result.status==="rejected");
+          return {pages,failures};
+        }
+
         try{
-          const urls = [
-            "/registry/ecosystem-pages-2026-10-14-a.json",
-            "/registry/ecosystem-pages-2026-10-14-b.json",
-            "/registry/ecosystem-pages-2026-10-14-c.json",
-            "/registry/ecosystem-pages-2026-10-14-d.json",
-            "/registry/ecosystem-pages-2026-10-14-e.json",
-            "/registry/ecosystem-pages-2026-10-14-f.json",
-            "/registry/ecosystem-pages-2026-10-14-g.json"
-          ];
-          const responses = await Promise.all(urls.map(url => fetch(url,{cache:"no-store",credentials:"same-origin"})));
-          if(responses.some(response => !response.ok)) throw new Error("catalog request failed");
-          const parts = await Promise.all(responses.map(response => response.json()));
-          ECOSYSTEM_PAGE_CATALOG = parts.flatMap(part => Array.isArray(part.pages) ? part.pages : []);
+          const canonicalParts = ECOSYSTEM_PAGE_CATALOG_PARTS.length
+            ? ECOSYSTEM_PAGE_CATALOG_PARTS
+            : emergencyParts;
+
+          let loaded = await fetchCatalogParts(canonicalParts);
+
+          /* The master registry owns the normal part list. The dated files remain
+             a presentation-only emergency fallback during registry rollovers. */
+          if(!loaded.pages.length && canonicalParts !== emergencyParts){
+            console.warn("Verve N Veda canonical page catalog unavailable; emergency catalog fallback active.");
+            loaded = await fetchCatalogParts(emergencyParts);
+          }
+
+          if(!loaded.pages.length) throw new Error("no readable catalog pages");
+          if(loaded.failures.length){
+            console.warn(`Verve N Veda page catalog loaded with ${loaded.failures.length} unavailable part(s).`);
+          }
+
+          ECOSYSTEM_PAGE_CATALOG = loaded.pages.filter(page =>
+            page &&
+            page.title &&
+            page.url &&
+            validatedPublicDirectoryUrl(page.url)
+          );
 
           /* Keep the deep generated page catalog authoritative, then add any
-             primary GitHub Pages gateway that is present in SITES but absent
-             from the generated scan. This closes owner/repository gaps without
+             canonical public gateway that is present in SITES but absent from
+             the generated scan. This closes owner/repository gaps without
              exposing administrator, diagnostic, offline-only, archive, or
              dormant STOS surfaces. */
           const urlKey = value => {
@@ -4836,17 +4891,20 @@
             "Creative & Professional":"creative"
           });
           SITES.forEach(site => {
-            if(!site?.url || !/\.github\.io(?:\/|$)/i.test(site.url)) return;
-            const key = urlKey(site.url);
+            const safeUrl=validatedPublicDirectoryUrl(site?.url);
+            if(!safeUrl) return;
+            const key = urlKey(safeUrl);
             if(!key || knownUrls.has(key)) return;
             try{
-              const url = new URL(site.url);
+              const url = new URL(safeUrl);
               const owner = url.hostname.replace(/\.github\.io$/i,"");
               const firstPath = decodeURIComponent(url.pathname.split("/").filter(Boolean)[0] || "");
-              const repo = firstPath || `${owner}/${owner}.github.io`;
+              const repo = url.hostname.endsWith(".github.io")
+                ? (firstPath || `${owner}/${owner}.github.io`)
+                : (firstPath || url.hostname);
               ECOSYSTEM_PAGE_CATALOG.push({
                 title:site.title,
-                url:site.url,
+                url:safeUrl,
                 repo,
                 path:"index.html",
                 category:fallbackCategory[site.group] || "gateway",
