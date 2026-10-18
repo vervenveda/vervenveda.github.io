@@ -62,6 +62,23 @@ CATALOG_HELPER_HTML = re.compile(
     \.html?$
     """
 )
+CATALOG_INTERNAL_PATH = re.compile(
+    r"""(?ix)
+    (^|/)
+    (?:
+      teacher[-_]?keys |
+      objective[-_]?map[-_]?diagnostics |
+      source[-_]?snippets?
+    )
+    (/|$)
+    """
+)
+CATALOG_COMPATIBILITY_ALIAS = re.compile(
+    r"""(?ix)
+    ^courses/social-studies/grade-09/week-(?:06|07|09|10)/
+    student-packet(?:-v2)?\.html?$
+    """
+)
 NEW_REPO_BLOCK = re.compile(r"(^|[._-])(stos|dummy)([._-]|$)", re.I)
 
 
@@ -126,6 +143,10 @@ def public_html_path(path: str) -> bool:
     if EXCLUDED_PATH_WORDS.search(normalized):
         return False
     if CATALOG_HELPER_HTML.search(normalized):
+        return False
+    if CATALOG_INTERNAL_PATH.search(normalized):
+        return False
+    if CATALOG_COMPATIBILITY_ALIAS.search(normalized):
         return False
     return True
 
