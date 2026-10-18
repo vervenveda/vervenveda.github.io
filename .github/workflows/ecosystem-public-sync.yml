@@ -57,6 +57,11 @@ jobs:
           assert all("stos" not in str(row.get("repository","")).lower() for row in candidates.get("candidates",[]))
           assert len({(p["repo"].lower(),p["path"].lower()) for p in pages}) == len(pages)
           assert all(str(p.get("url","")).startswith("https://") for p in pages)
+          assert status["driftCount"] == 0, f"Publication drift: {status['drift']}"
+          assert status["truncatedTreeCount"] == 0, f"Truncated repository trees: {status['truncatedRepositories']}"
+          assert status["syncedRepositoryCount"] == status["approvedRepositoryCount"], (
+              f"Only {status['syncedRepositoryCount']} of {status['approvedRepositoryCount']} approved repositories synchronized"
+          )
           print(
               f"Validated {len(pages)} public pages across "
               f"{status['syncedRepositoryCount']} approved repositories."
