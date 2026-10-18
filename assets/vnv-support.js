@@ -2,8 +2,19 @@
   "use strict";
 
   const PAYMENT_URL = "https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s";
+  const ECOSYSTEM_MENU_URL = "/assets/vnv-ecosystem-menu.js";
   const SUPPORT_ID = "vnv-global-support";
   const TOP_ID = "vnv-global-support-top";
+
+  if(!document.getElementById("vnvEcosystemMenuButton") && !document.getElementById("menuOverlay")){
+    try{
+      const menuScript=document.createElement("script");
+      menuScript.src=ECOSYSTEM_MENU_URL;
+      menuScript.defer=true;
+      menuScript.dataset.vnvEcosystemMenu="1";
+      (document.head||document.documentElement).appendChild(menuScript);
+    }catch{}
+  }
 
   if (document.getElementById(SUPPORT_ID) || document.documentElement.hasAttribute("data-vnv-support-off")) return;
 
