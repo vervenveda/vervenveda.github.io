@@ -1,9 +1,129 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-18T17:26:30Z",
+  "generatedAt": "2026-10-18T17:38:58Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-31/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-31/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-32/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-32/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-32/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-32/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-33/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-33/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-33/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-33/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-34/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-34/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-34/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-34/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-35/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-35/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-35/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-35/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-36/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-36/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-12/weeks/week-36/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-12/weeks/week-36/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Social Studies",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Cumulative 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/electives/grades/grade-09/psych-101/assessments/cumulative-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "electives/grades/grade-09/psych-101/assessments/cumulative-01.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Cumulative 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/electives/grades/grade-09/psych-101/assessments/cumulative-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "electives/grades/grade-09/psych-101/assessments/cumulative-02.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Cumulative 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/electives/grades/grade-09/psych-101/assessments/cumulative-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "electives/grades/grade-09/psych-101/assessments/cumulative-03.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
     {
       "title": "Week 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/electives/grades/grade-09/psych-101/assessments/week-01.html",
