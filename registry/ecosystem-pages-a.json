@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-19T13:57:32Z",
+  "generatedAt": "2026-10-19T22:38:26Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -4341,6 +4341,14 @@
       "source": "Khaemenes Elementary"
     },
     {
+      "title": "Printable",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/social-studies/printable.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/social-studies/printable.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
       "title": "Teacher",
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/social-studies/teacher.html",
       "repo": "Khaemenes_Elementary.github.io",
@@ -6753,6 +6761,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/subjects/social-studies/",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "grades/grade-02/subjects/social-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Printable",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/subjects/social-studies/printable.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/subjects/social-studies/printable.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -9753,6 +9769,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/subjects/social-studies/",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "grades/grade-03/subjects/social-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Printable",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/subjects/social-studies/printable.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-03/subjects/social-studies/printable.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/subjects/social-studies/teacher.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-03/subjects/social-studies/teacher.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -13037,6 +13069,22 @@
       "source": "Khaemenes Elementary"
     },
     {
+      "title": "Printable",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-04/subjects/social-studies/printable.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-04/subjects/social-studies/printable.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-04/subjects/social-studies/teacher.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-04/subjects/social-studies/teacher.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
       "title": "Week 01",
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-04/subjects/social-studies/week-01.html",
       "repo": "Khaemenes_Elementary.github.io",
@@ -16313,6 +16361,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-05/subjects/social-studies/",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "grades/grade-05/subjects/social-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Printable",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-05/subjects/social-studies/printable.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-05/subjects/social-studies/printable.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-05/subjects/social-studies/teacher.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-05/subjects/social-studies/teacher.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -33277,6 +33341,14 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Assessment Regression",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/physical-education/assessment-regression.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/physical-education/assessment-regression.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Assessment Studio",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/physical-education/assessment-studio.html",
       "repo": "Khaemenes_High.github.io",
@@ -41769,38 +41841,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/app.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-09/app.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Correction Form",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/correction-form.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/correction-form.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Final",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/final.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/final.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Midterm",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/midterm.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/midterm.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Readiness V3",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness-v3.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/readiness-v3.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
