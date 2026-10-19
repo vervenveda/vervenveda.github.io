@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-19T05:20:13Z",
+  "generatedAt": "2026-10-19T13:57:32Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -4037,6 +4037,318 @@
       "source": "Khaemenes Elementary"
     },
     {
+      "title": "Science",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-01.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-01.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-02.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-02.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-03.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-03.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 04",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-04.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-04.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 05",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-05.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-05.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 06",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-06.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-06.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 07",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-07.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-07.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 08",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-08.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-08.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 09",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-09.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-09.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 10",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-10.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-10.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 11",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-11.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-11.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 12",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-12.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-12.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 13",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-13.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-13.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 14",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-14.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-14.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 15",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-15.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-15.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 16",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-16.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-16.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 17",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-17.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-17.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 18",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-18.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-18.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 19",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-19.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-19.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 20",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-20.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-20.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 21",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-21.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-21.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 22",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-22.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-22.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 23",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-23.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-23.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 24",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-24.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-24.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 25",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-25.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-25.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 26",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-26.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-26.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 27",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-27.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-27.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 28",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-28.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-28.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 29",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-29.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-29.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 30",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-30.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-30.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 31",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-31.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-31.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 32",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-32.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-32.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 33",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-33.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-33.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 34",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-34.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-34.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 35",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-35.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-35.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Week 36",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/science/week-36.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/science/week-36.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Social Studies",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/social-studies/",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/social-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/social-studies/teacher.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/social-studies/teacher.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
       "title": "Teacher Tools",
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/teacher-tools/",
       "repo": "Khaemenes_Elementary.github.io",
@@ -6441,6 +6753,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/subjects/social-studies/",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "grades/grade-02/subjects/social-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/subjects/social-studies/teacher.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/subjects/social-studies/teacher.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -41481,158 +41801,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness-v3.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-09/assessments/readiness-v3.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Readiness",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/readiness.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Grade 09",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Prep",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/prep/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/prep/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Atlas And Data Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Certificate",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/certificate.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/certificate.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Civic Capstone",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/civic-capstone.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/civic-capstone.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Global Timeline",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/global-timeline.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/global-timeline.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Glossary",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/glossary.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/glossary.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Historical Systems Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/historical-systems-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/historical-systems-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Resources",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Media Verification Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/media-verification-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/media-verification-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Reading List",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/reading-list.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/reading-list.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Source Analysis Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/source-analysis-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/source-analysis-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Tool Gateway",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/tool-gateway.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/tool-gateway.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Writing Studio",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/writing-studio.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/writing-studio.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Systems Lab Roadmap",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/systems-lab-roadmap.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/systems-lab-roadmap.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Answer Key",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/ANSWER_KEY_INDEX.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/teacher/ANSWER_KEY_INDEX.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Final Answer Key",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/FINAL_ANSWER_KEY.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/teacher/FINAL_ANSWER_KEY.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Teacher",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/teacher/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }

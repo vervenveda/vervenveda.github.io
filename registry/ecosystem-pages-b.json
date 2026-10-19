@@ -1,9 +1,161 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-19T05:20:13Z",
+  "generatedAt": "2026-10-19T13:57:32Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Readiness",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/assessments/readiness.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Grade 09",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Prep",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/prep/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/prep/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Atlas And Data Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Certificate",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/certificate.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/certificate.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Civic Capstone",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/civic-capstone.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/civic-capstone.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Global Timeline",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/global-timeline.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/global-timeline.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Glossary",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/glossary.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/glossary.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Historical Systems Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/historical-systems-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/historical-systems-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Resources",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Media Verification Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/media-verification-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/media-verification-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Reading List",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/reading-list.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/reading-list.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Source Analysis Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/source-analysis-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/source-analysis-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Tool Gateway",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/tool-gateway.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/tool-gateway.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Writing Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/writing-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/writing-studio.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Systems Lab Roadmap",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/systems-lab-roadmap.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/systems-lab-roadmap.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Answer Key",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/ANSWER_KEY_INDEX.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/teacher/ANSWER_KEY_INDEX.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Final Answer Key",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/FINAL_ANSWER_KEY.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/teacher/FINAL_ANSWER_KEY.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/teacher/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
     {
       "title": "Midterm Key",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/midterm-key.html",
@@ -25681,6 +25833,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/records/certificate.html",
       "repo": "Khaemenes_KinderGarden.github.io",
       "path": "records/certificate.html",
+      "category": "education",
+      "source": "Khaemenes Kinder Garden"
+    },
+    {
+      "title": "Social Studies",
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/social-studies/",
+      "repo": "Khaemenes_KinderGarden.github.io",
+      "path": "social-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Kinder Garden"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/social-studies/teacher.html",
+      "repo": "Khaemenes_KinderGarden.github.io",
+      "path": "social-studies/teacher.html",
       "category": "education",
       "source": "Khaemenes Kinder Garden"
     },
