@@ -1,9 +1,33 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-18T21:02:31Z",
+  "generatedAt": "2026-10-19T05:20:13Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Midterm Key",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/midterm-key.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/teacher/midterm-key.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Midterm Answer Key",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/MIDTERM_ANSWER_KEY.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/teacher/MIDTERM_ANSWER_KEY.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/week-01/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/week-01/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
     {
       "title": "Teacher Guide",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/week-01/teacher-guide.html",
@@ -14837,6 +14861,14 @@
       "source": "Khaemenes Higher Learning"
     },
     {
+      "title": "Limits Laboratory",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/mathematics/calculus-1/tools/limits-laboratory/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/mathematics/calculus-1/tools/limits-laboratory/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
       "title": "Mastery Check",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/mathematics/calculus-1/units/unit-01/assessment/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
@@ -15081,6 +15113,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/mathematics/calculus-1/units/unit-02/teacher-guide.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/mathematics/calculus-1/units/unit-02/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Teacher Practice Key",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/mathematics/calculus-1/units/unit-02/teacher-practice-key.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/mathematics/calculus-1/units/unit-02/teacher-practice-key.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -22393,6 +22433,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-13/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/topology-differential-geometry/units/unit-13/mastery-check.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Collegiate",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/directory/collegiate/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "directory/collegiate/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Directory",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/directory/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "directory/index.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },

@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-18T21:02:31Z",
+  "generatedAt": "2026-10-19T05:20:13Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -36581,6 +36581,30 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Midterm Practice",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/midterm-practice/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/midterm-practice/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Printable Test",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/midterm-practice/printable-test.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/midterm-practice/printable-test.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Record",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/midterm-practice/student-record.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/midterm-practice/student-record.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Units 01 04",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/units-01-04/",
       "repo": "Khaemenes_High.github.io",
@@ -36649,6 +36673,30 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/units-08-09/student-record.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/integrated-science-9/assessments/units-08-09/student-record.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Units 10 12",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/units-10-12/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/units-10-12/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Printable Test",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/units-10-12/printable-test.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/units-10-12/printable-test.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Student Record",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/units-10-12/student-record.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/units-10-12/student-record.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -37461,6 +37509,14 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Biodiversity Conservation Check",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-05/biodiversity-conservation-check.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/units/unit-05/biodiversity-conservation-check.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Biodiversity Survey",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-05/biodiversity-survey.html",
       "repo": "Khaemenes_High.github.io",
@@ -37477,10 +37533,26 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Energy Food Web Check",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-05/energy-food-web-check.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/units/unit-05/energy-food-web-check.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Evidence Classification Lab",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-05/evidence-classification-lab.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/integrated-science-9/units/unit-05/evidence-classification-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Evolution Evidence Check",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-05/evolution-evidence-check.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/units/unit-05/evolution-evidence-check.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -37641,6 +37713,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-05/population-evidence-lab.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/integrated-science-9/units/unit-05/population-evidence-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Population Sampling Check",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-05/population-sampling-check.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/units/unit-05/population-sampling-check.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -41553,30 +41633,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-09/teacher/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Midterm Key",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/midterm-key.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/teacher/midterm-key.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Midterm Answer Key",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/teacher/MIDTERM_ANSWER_KEY.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/teacher/MIDTERM_ANSWER_KEY.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/week-01/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/week-01/student-packet.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
