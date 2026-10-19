@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-18T20:09:00Z",
+  "generatedAt": "2026-10-19T10:45:29Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
     "failedRepositoryCount": 0,
-    "htmlCount": 11610,
+    "htmlCount": 11624,
     "brokenLocalLinkCount": 0,
     "rootOrphanHtmlCount": 6308,
     "unreferencedHtmlCount": 1468,
@@ -637,9 +637,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3450,
+      "htmlCount": 3460,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2418,
+      "rootReachableHtmlCount": 2428,
       "rootOrphanHtmlCount": 1010,
       "unreferencedHtmlCount": 686,
       "duplicateGroupCount": 0,
@@ -883,9 +883,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
-      "htmlCount": 3168,
+      "htmlCount": 3172,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1722,
+      "rootReachableHtmlCount": 1726,
       "rootOrphanHtmlCount": 1435,
       "unreferencedHtmlCount": 175,
       "duplicateGroupCount": 0,
