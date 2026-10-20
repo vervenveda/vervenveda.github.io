@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-19T22:38:26Z",
+  "generatedAt": "2026-10-20T05:17:47Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -26497,6 +26497,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-1/units/unit-13/teacher-guide.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/algebra-1/units/unit-13/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Video Review",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-1/video-review.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/algebra-1/video-review.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
