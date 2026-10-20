@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-20T17:31:54Z",
+  "generatedAt": "2026-10-20T21:52:58Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -41849,6 +41849,30 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/app.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-09/app.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Correction Form",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/correction-form.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/assessments/correction-form.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Final",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/final.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/assessments/final.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Midterm",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/midterm.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/assessments/midterm.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
