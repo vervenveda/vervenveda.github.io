@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-20T12:12:14Z",
+  "generatedAt": "2026-10-20T17:31:54Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
@@ -22681,6 +22681,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Life Skills",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/life-skills/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "life-skills/index.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },

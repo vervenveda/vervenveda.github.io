@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T12:12:14Z",
+  "generatedAt": "2026-10-20T17:31:54Z",
   "account": "vervenveda",
   "policy": "Discovery only. New repositories never become public ecosystem destinations automatically. STOS and reserved dummy repositories remain excluded.",
-  "candidates": [],
+  "candidates": [
+    {
+      "repository": "vervenveda/Khaemenes_Academy_Life_Skills.github.io",
+      "name": "Khaemenes_Academy_Life_Skills.github.io",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "archived": false,
+      "disabled": false,
+      "updatedAt": "2026-10-20T17:18:30Z",
+      "pushedAt": "2026-10-20T17:18:29Z",
+      "homepage": "",
+      "state": "under-review",
+      "directoryVisible": false,
+      "reason": "New public Pages repository discovered; manual ecosystem approval required."
+    }
+  ],
   "ignored": [
     {
       "repository": "vervenveda/Dummy.github.io",
