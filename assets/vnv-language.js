@@ -270,6 +270,30 @@ body > #vnv-language-switch{display:flex;width:max-content;max-width:calc(100% -
 #vnv-language-select:focus-visible{outline:3px solid #b48b45;outline-offset:2px}
 html[dir="rtl"] #vnv-language-switch,html[dir="rtl"] #vnv-language-switch-drawer{direction:rtl}
 .vnv-translate-complete,.vnv-translation-audit{padding:6px 9px;border:1px solid #a89a79;border-radius:7px;background:#f5f0e4;color:#14261c;cursor:pointer;font:inherit;font-size:11px}.vnv-translate-complete:disabled{opacity:.6;cursor:wait}
+/* Compact parchment language rail, preserving all translation functions. */
+#vnv-language-switch{
+  gap:6px;padding:6px 10px;margin:7px auto;
+  border-color:rgba(87,74,48,.18);background:rgba(255,253,248,.88);
+  box-shadow:0 2px 12px rgba(40,45,35,.045);
+  font-size:11px;line-height:1.35;
+}
+body > #vnv-language-switch{
+  min-height:40px;width:fit-content;max-width:calc(100% - 20px);
+  margin:8px auto 10px;
+}
+#vnv-language-select{
+  min-height:32px;min-width:104px;max-width:155px;
+  padding:5px 8px;border-color:rgba(87,74,48,.26);background:#fffdf9;
+}
+#vnv-language-switch .vnv-translate-complete,
+#vnv-language-switch .vnv-translation-audit{
+  min-height:32px;padding:5px 8px;
+  border-color:rgba(87,74,48,.2);background:#f5f0e6;font-size:10px;
+}
+@media(max-width:480px){
+  #vnv-language-switch{gap:5px;padding:6px;justify-content:center}
+  #vnv-language-switch label{font-size:10px}
+}
 html[dir="rtl"] .ecosystem-category-grid,html[dir="rtl"] .quick-grid,html[dir="rtl"] .school-grid{direction:ltr}
 html[dir="rtl"] .ecosystem-category-grid > *,html[dir="rtl"] .quick-grid > *,html[dir="rtl"] .school-grid > *{direction:rtl}
 @media(max-width:480px){#vnv-language-switch{margin:6px auto}#vnv-language-select{min-width:106px}}
