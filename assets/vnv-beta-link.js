@@ -174,10 +174,16 @@
         #${EDUCATION_TOOLBAR_ID}>button:hover,#${EDUCATION_TOOLBAR_ID}>a:hover{transform:translateY(-1px)}
         #${EDUCATION_TOOLBAR_ID}>button:focus-visible,#${EDUCATION_TOOLBAR_ID}>a:focus-visible{outline:3px solid #b48b45;outline-offset:2px}
         @media(max-width:520px){
-          #${EDUCATION_TOOLBAR_ID}{right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));gap:4px;padding:4px}
+          #${EDUCATION_TOOLBAR_ID}{
+            right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));
+            width:max-content;max-width:calc(100vw - 16px);gap:4px;padding:4px;
+          }
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
-            width:96px!important;height:40px!important;min-height:40px!important;max-height:40px!important;
-            padding:6px!important;font-size:9px!important;letter-spacing:.01em!important
+            flex:1 1 0!important;min-width:0!important;
+            width:96px!important;max-width:96px!important;
+            height:40px!important;min-height:40px!important;max-height:40px!important;
+            padding:4px!important;font-size:9px!important;letter-spacing:.01em!important;
+            white-space:normal!important;text-align:center!important;line-height:1.15!important;
           }
         }
         @media(max-width:330px){
