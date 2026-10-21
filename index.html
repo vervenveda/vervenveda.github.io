@@ -3638,6 +3638,18 @@
       .hero-actions .button{width:100%!important;min-height:40px!important;}
       .hero-lead{line-height:1.65!important;}
     }
+    /* Edge-aligned gateway header only. The remaining page grid is unchanged. */
+    .site-header .shell.header-inner{
+      width:calc(100% - 22px);max-width:none;margin-inline:11px;
+      padding-left:0;padding-right:0;column-gap:12px;
+    }
+    .site-header .header-actions{justify-self:end}
+    @media(max-width:760px){
+      .site-header .shell.header-inner{
+        width:calc(100% - 14px);margin-inline:7px;
+        padding-left:0;padding-right:0;column-gap:7px;
+      }
+    }
 </style>
 </head>
 <body id="top">
