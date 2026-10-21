@@ -282,12 +282,12 @@ body > #vnv-language-switch{
   margin:8px auto 10px;
 }
 #vnv-language-select{
-  min-height:32px;min-width:104px;max-width:155px;
+  min-height:40px;min-width:104px;max-width:155px;
   padding:5px 8px;border-color:rgba(87,74,48,.26);background:#fffdf9;
 }
 #vnv-language-switch .vnv-translate-complete,
 #vnv-language-switch .vnv-translation-audit{
-  min-height:32px;padding:5px 8px;
+  min-height:40px;padding:6px 9px;
   border-color:rgba(87,74,48,.2);background:#f5f0e6;font-size:10px;
 }
 @media(max-width:480px){
