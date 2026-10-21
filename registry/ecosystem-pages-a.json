@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-20T21:52:58Z",
+  "generatedAt": "2026-10-21T05:19:14Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -28165,6 +28165,14 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Algebra Language Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-language-lab/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/algebra-language-lab/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Algebra Reasoning Foundations",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-reasoning-foundations/",
       "repo": "Khaemenes_High.github.io",
@@ -28177,6 +28185,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-structure-balance-challenge/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/assets/learning-games/algebra-structure-balance-challenge/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Angle Polygon Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/angle-polygon-studio/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/angle-polygon-studio/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Boundary Area Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/boundary-area-lab/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/boundary-area-lab/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -28245,6 +28269,14 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Equivalence Forge",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/equivalence-forge/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/equivalence-forge/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Estimate Defender",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/estimate-defender/",
       "repo": "Khaemenes_High.github.io",
@@ -28273,6 +28305,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/exponential-logarithm-lab/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/assets/learning-games/exponential-logarithm-lab/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Expression Translator Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/expression-translator-studio/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/expression-translator-studio/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -28313,6 +28353,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/gcf-lcm-challenge/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/assets/learning-games/gcf-lcm-challenge/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Geometric Probability Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/geometric-probability-lab/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/geometric-probability-lab/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Geometry Foundations Sort",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/geometry-foundations-sort/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/geometry-foundations-sort/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -28477,6 +28533,22 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Piecewise Boundary Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/piecewise-boundary-lab/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/piecewise-boundary-lab/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Polygon Design Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/polygon-design-lab/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/polygon-design-lab/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Polynomial Factoring Forge",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/polynomial-factoring-forge/",
       "repo": "Khaemenes_High.github.io",
@@ -28533,10 +28605,26 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Pythagorean Distance Mission",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/pythagorean-distance-mission/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/pythagorean-distance-mission/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Quadratic Graph Lab",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/quadratic-graph-lab/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/assets/learning-games/quadratic-graph-lab/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Quadrilateral Detective",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/quadrilateral-detective/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/quadrilateral-detective/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -28649,6 +28737,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/statistics-detective/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/assets/learning-games/statistics-detective/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Surface Volume Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/surface-volume-studio/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/assets/learning-games/surface-volume-studio/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -36941,6 +37037,22 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Academic Evidence Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/academic-evidence-companion.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/academic-evidence-companion.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Academic Research Desk",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/academic-research-desk.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/academic-research-desk.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Formula Reference",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/final-exam/formula-reference.html",
       "repo": "Khaemenes_High.github.io",
@@ -37181,6 +37293,14 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Science Evidence Portfolio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/science-evidence-portfolio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/science-evidence-portfolio.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Dataset Laboratory",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-01/dataset-laboratory.html",
       "repo": "Khaemenes_High.github.io",
@@ -37305,6 +37425,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-01/paper-helicopter-investigation.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/integrated-science-9/units/unit-01/paper-helicopter-investigation.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Question Evidence Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/units/unit-01/question-evidence-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/units/unit-01/question-evidence-studio.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -41845,6 +41973,14 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "High School Monte Carlo Trivia",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/games/high-school-monte-carlo-trivia.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/games/high-school-monte-carlo-trivia.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "App",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/app.html",
       "repo": "Khaemenes_High.github.io",
@@ -41873,6 +42009,94 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/midterm.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-09/assessments/midterm.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Readiness V3",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness-v3.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/assessments/readiness-v3.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Readiness",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/assessments/readiness.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Grade 09",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Prep",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/prep/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/prep/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Atlas And Data Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Certificate",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/certificate.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/certificate.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Civic Capstone",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/civic-capstone.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/civic-capstone.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Global Timeline",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/global-timeline.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/global-timeline.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Glossary",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/glossary.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/glossary.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Historical Systems Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/historical-systems-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/historical-systems-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Resources",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-09/resources/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }

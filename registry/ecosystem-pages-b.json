@@ -1,97 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-20T21:52:58Z",
+  "generatedAt": "2026-10-21T05:19:14Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Readiness V3",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness-v3.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/readiness-v3.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Readiness",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/readiness.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Grade 09",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Prep",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/prep/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/prep/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Atlas And Data Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Certificate",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/certificate.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/certificate.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Civic Capstone",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/civic-capstone.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/civic-capstone.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Global Timeline",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/global-timeline.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/global-timeline.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Glossary",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/glossary.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/glossary.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Historical Systems Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/historical-systems-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/historical-systems-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Resources",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
     {
       "title": "Media Verification Lab",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/media-verification-lab.html",
@@ -4989,6 +4901,46 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Academic Evidence Printout",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/tools/academic-evidence-printout.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/tools/academic-evidence-printout.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Civic Replay Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/tools/civic-replay-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/tools/civic-replay-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Evidence Ledger",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/tools/evidence-ledger.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/tools/evidence-ledger.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Source Quality Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/tools/source-quality-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/tools/source-quality-lab.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Visual Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/tools/visual-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/tools/visual-studio.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Cumulative 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/electives/grades/grade-09/psych-101/assessments/cumulative-01.html",
       "repo": "Khaemenes_High.github.io",
@@ -7357,6 +7309,14 @@
       "source": "Khaemenes Higher Learning"
     },
     {
+      "title": "Academic Language And Lexicology",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/academic-language-and-lexicology/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/academic-language-and-lexicology/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
       "title": "Assessments",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/advanced-geometric-topology/assessments/",
       "repo": "Khaemenes_Higher_Learning.github.io",
@@ -9177,6 +9137,70 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/calculus-ii/units/unit-13/teacher-guide.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/calculus-ii/units/unit-13/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Amendment Mastery",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/amendment-mastery.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/amendment-mastery.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Completion",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/completion.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/completion.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Constitutional Studies",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/lab.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/lab.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/week-01/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/week-02/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/week-03/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Week 04",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/constitutional-studies/week-04/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/constitutional-studies/week-04/index.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -25981,10 +26005,50 @@
       "source": "Khaemenes Linguistics"
     },
     {
+      "title": "Atelier Des Sons",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/atelier-des-sons/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/atelier-des-sons/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Chroniques Francophones",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/chroniques-francophones/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/chroniques-francophones/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Deutsche Geschichten",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/deutsche-geschichten/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/deutsche-geschichten/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Deutsches Klanglabor",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/deutsches-klanglabor/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/deutsches-klanglabor/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
       "title": "Dictionarybox",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/dictionarybox_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
       "path": "apps/dictionarybox_index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Die Lebendige Welt",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/die-lebendige-welt/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/die-lebendige-welt/index.html",
       "category": "education",
       "source": "Khaemenes Linguistics"
     },
@@ -26049,6 +26113,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/French_101_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
       "path": "apps/French_101_index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "German Mastery Constellation",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/german-mastery-constellation/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/german-mastery-constellation/index.html",
       "category": "education",
       "source": "Khaemenes Linguistics"
     },
@@ -26121,6 +26193,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/Language_learning_hall_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
       "path": "apps/Language_learning_hall_index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Le Monde Vivant",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/le-monde-vivant/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/le-monde-vivant/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Maitrise Constellation",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/maitrise-constellation/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/maitrise-constellation/index.html",
       "category": "education",
       "source": "Khaemenes Linguistics"
     },
@@ -27173,10 +27261,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 01 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-01-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-01-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 02 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-02-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-02-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 02 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-02-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-02-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27189,10 +27293,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 03 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-03-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-03-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 04 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-04-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-04-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 04 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-04-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-04-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27205,10 +27325,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 05 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-05-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-05-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 06 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-06-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-06-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 06 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-06-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-06-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27221,10 +27357,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 07 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-07-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-07-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 08 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-08-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-08-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 08 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-08-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-08-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27237,10 +27389,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 09 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-09-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-09-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 10 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-10-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-10-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 10 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-10-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-10-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27253,10 +27421,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 11 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-11-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-11-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 12 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-12-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-12-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 12 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-12-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-12-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27269,10 +27453,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 13 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-13-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-13-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 14 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-14-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-14-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 14 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-14-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-14-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27285,10 +27485,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 15 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-15-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-15-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 16 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-16-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-16-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 16 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-16-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-16-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -27301,10 +27517,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 17 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-17-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-17-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 18 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-18-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-18-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 18 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-18-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-18-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
