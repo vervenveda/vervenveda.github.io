@@ -180,7 +180,15 @@
           }
         }
         @media(max-width:330px){
-          #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{width:90px!important}
+          #${EDUCATION_TOOLBAR_ID}{
+            width:min(228px,calc(100vw - 16px));max-width:calc(100vw - 16px);
+            flex-wrap:wrap;justify-content:center;gap:4px;padding:4px;
+          }
+          #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
+            width:calc(50% - 2px)!important;min-width:0!important;
+            padding:5px!important;white-space:normal!important;
+            text-align:center!important;font-size:9px!important;line-height:1.15!important;
+          }
         }
         @media print{#${EDUCATION_TOOLBAR_ID}{display:none!important}}
         @media(prefers-reduced-motion:reduce){#${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{transition:none!important;transform:none!important}}
