@@ -147,17 +147,17 @@
       style.textContent=`
         #${EDUCATION_TOOLBAR_ID}{
           position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));
-          z-index:2147482100;display:flex;flex-wrap:nowrap;align-items:stretch;justify-content:space-evenly;gap:6px;
+          z-index:2147482100;display:flex;flex-wrap:nowrap;align-items:stretch;justify-content:space-evenly;gap:4px;
           width:max-content;max-width:calc(100vw - 24px);
-          padding:6px;border:1px solid rgba(180,139,69,.48);border-radius:7px;
+          padding:4px;border:1px solid rgba(180,139,69,.48);border-radius:7px;
           background:rgba(255,253,248,.96);box-shadow:0 10px 30px rgba(15,25,37,.16);
           backdrop-filter:blur(10px)
         }
         #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
           position:static!important;right:auto!important;bottom:auto!important;z-index:auto!important;
-          flex:1 1 0;min-width:0!important;width:126px!important;max-width:126px!important;height:42px!important;min-height:42px!important;max-height:42px!important;
+          flex:0 1 78px;min-width:0!important;width:78px!important;max-width:78px!important;height:44px!important;min-height:44px!important;max-height:44px!important;
           display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;
-          margin:0!important;padding:7px 9px!important;border-radius:7px!important;
+          margin:0!important;padding:5px 5px!important;border-radius:7px!important;
           box-sizing:border-box!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
           box-shadow:none!important;font:600 10px/1.15 "Avenir Next","Segoe UI",Arial,sans-serif!important;
           letter-spacing:.035em!important;text-decoration:none!important
@@ -180,7 +180,7 @@
           }
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
             flex:1 1 0!important;min-width:0!important;
-            width:96px!important;max-width:96px!important;
+            width:74px!important;max-width:74px!important;
             height:40px!important;min-height:40px!important;max-height:40px!important;
             padding:4px!important;font-size:9px!important;letter-spacing:.01em!important;
             white-space:normal!important;text-align:center!important;line-height:1.15!important;
@@ -188,7 +188,7 @@
         }
         @media(max-width:330px){
           #${EDUCATION_TOOLBAR_ID}{
-            width:calc(100vw - 16px);max-width:calc(100vw - 16px);
+            width:max-content;max-width:calc(100vw - 16px);
             flex-wrap:nowrap;justify-content:space-evenly;gap:3px;padding:3px;
           }
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
