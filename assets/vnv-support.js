@@ -164,6 +164,9 @@
     top.textContent=childFacing ? "Grown-Ups" : "Support";
     top.setAttribute("aria-label",childFacing ? "Grown-ups: voluntary support information" : "Voluntary support information");
     learnerToolbar.appendChild(top);
+  }else if(document.querySelector(".site-header .header-support")){
+    /* The gateway already has a native Support Free Access header link.
+       Keep that original control; do not append a second one. */
   }else if(headerTarget){
     top.classList.add("vnv-support-top-inline");
     headerTarget.appendChild(top);
