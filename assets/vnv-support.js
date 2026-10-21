@@ -170,7 +170,7 @@
       const label=(link.textContent+" "+(link.getAttribute("aria-label")||"")).trim();
       const href=(link.getAttribute("href")||"").trim();
       return /\b(?:support(?: free access)?|donat(?:e|ion|ions)?|contribut(?:e|ion|ions)?)\b/i.test(label) &&
-        (href==="#support" || href==="#vnv-global-support" || /^https:\/\/(?:buy\\.stripe\\.com|checkout\\.stripe\\.com)\\//i.test(href));
+        (href==="#support" || href==="#vnv-global-support" || /^https:\/\/(?:buy\.stripe\.com|checkout\.stripe\.com)\//i.test(href));
     })){
     /* Preserve a native header contribution button rather than adding a second one.
        Learner docks take precedence above, so profile/beta/support stay together. */
@@ -186,7 +186,7 @@
 
   function addTickerSupportLink(ticker){
     if(!ticker || ticker.querySelector('[data-vnv-support-ticker]')) return;
-    if([...ticker.querySelectorAll("a[href]")].some(link=>/\\bsupport(?: free access)?\\b/i.test(link.textContent||"") && /#support(?:$|\\?)/i.test(link.getAttribute("href")||""))) return;
+    if([...ticker.querySelectorAll("a[href]")].some(link=>/\bsupport(?: free access)?\b/i.test(link.textContent||"") && /#support(?:$|\?)/i.test(link.getAttribute("href")||""))) return;
     const a = document.createElement("a");
     a.href = "#"+SUPPORT_ID;
     a.textContent = childFacing ? "Grown-Ups · Support" : "Support Free Access";
