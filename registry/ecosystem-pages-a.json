@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-21T17:39:38Z",
+  "generatedAt": "2026-10-21T21:58:48Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -2581,6 +2581,102 @@
       "source": "Khaemenes Academy Life Skills"
     },
     {
+      "title": "Grade 10",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-10/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-10/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-10/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-10/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-10/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-10/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-10/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-10/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Grade 11",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-11/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-11/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-11/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-11/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-11/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-11/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-11/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-11/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Grade 12",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-12/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-12/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-12/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-12/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-12/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-12/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-12/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-12/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
       "title": "Grade 9",
       "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-9/",
       "repo": "Khaemenes_Academy_Life_Skills.github.io",
@@ -2597,10 +2693,322 @@
       "source": "Khaemenes Academy Life Skills"
     },
     {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-9/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-9/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/grade-9/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/grade-9/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
       "title": "High",
       "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/",
       "repo": "Khaemenes_Academy_Life_Skills.github.io",
       "path": "courses/culinary-independence/high/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Cula 101",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 04",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-04/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-04/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 05",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-05/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-05/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 06",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-06/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-06/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 07",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-07/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-07/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 08",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-08/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-08/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 09",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-09/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-09/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 10",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-10/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-10/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 11",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-11/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-11/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 12",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-12/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-12/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 13",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-13/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-13/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 14",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-14/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-14/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 15",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-15/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-15/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 16",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-16/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-16/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 17",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-17/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-17/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 18",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-18/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-18/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 19",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-19/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-19/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 20",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-20/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-20/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 21",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-21/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-21/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 22",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-22/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-22/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 23",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-23/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-23/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 24",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-24/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-24/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 25",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-25/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-25/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 26",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-26/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-26/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 27",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-27/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-27/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 28",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-28/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-28/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 29",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-29/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-29/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 30",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-30/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-30/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 31",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-31/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-31/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 32",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-32/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-32/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 33",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-33/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-33/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 34",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-34/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-34/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 35",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-35/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-35/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 36",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/cula-101/week-36/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/cula-101/week-36/index.html",
       "category": "education",
       "source": "Khaemenes Academy Life Skills"
     },
@@ -4565,6 +4973,62 @@
       "source": "Khaemenes Elementary"
     },
     {
+      "title": "Discovery To Independence",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/learning/discovery-to-independence.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/learning/discovery-to-independence.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 01 06 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/learning/weeks-01-06-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/learning/weeks-01-06-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 07 12 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/learning/weeks-07-12-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/learning/weeks-07-12-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 13 18 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/learning/weeks-13-18-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/learning/weeks-13-18-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 19 24 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/learning/weeks-19-24-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/learning/weeks-19-24-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 25 30 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/learning/weeks-25-30-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/learning/weeks-25-30-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 31 36 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/learning/weeks-31-36-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/learning/weeks-31-36-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
       "title": "Unit 01",
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/lessons/unit-01/",
       "repo": "Khaemenes_Elementary.github.io",
@@ -5805,6 +6269,54 @@
       "source": "Khaemenes Elementary"
     },
     {
+      "title": "Weeks 01 06 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/learning/weeks-01-06-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/learning/weeks-01-06-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 07 12 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/learning/weeks-07-12-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/learning/weeks-07-12-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 13 18 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/learning/weeks-13-18-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/learning/weeks-13-18-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 19 24 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/learning/weeks-19-24-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/learning/weeks-19-24-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 25 30 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/learning/weeks-25-30-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/learning/weeks-25-30-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 31 36 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/learning/weeks-31-36-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/learning/weeks-31-36-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
       "title": "Week 01 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/printables/week-01-packet.html",
       "repo": "Khaemenes_Elementary.github.io",
@@ -6089,6 +6601,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/printables/week-36-packet.html",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "grades/grade-02/printables/week-36-packet.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Record Recovery",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-02/record-recovery.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-02/record-recovery.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -8809,6 +9329,38 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "grades/grade-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 01 06 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/learning/weeks-01-06-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-03/learning/weeks-01-06-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 07 12 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/learning/weeks-07-12-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-03/learning/weeks-07-12-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 13 18 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/learning/weeks-13-18-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-03/learning/weeks-13-18-instructional-companion.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Weeks 19 24 Instructional Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-03/learning/weeks-19-24-instructional-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-03/learning/weeks-19-24-instructional-companion.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -18689,6 +19241,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Inquiry Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/inquiry-companion.html",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "inquiry-companion.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -42801,142 +43361,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-01.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 32",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 33",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 34",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
