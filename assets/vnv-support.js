@@ -80,7 +80,8 @@
     }
     @media(max-width:330px){
       #khaemenesLearnerUtilityToolbar > #${TOP_ID}{
-        width:0!important;height:44px!important;min-height:44px!important;max-height:44px!important;
+        flex:1 1 0!important;min-width:0!important;width:0!important;max-width:none!important;
+        height:44px!important;min-height:44px!important;max-height:44px!important;
         padding:3px!important;font-size:8px!important;line-height:1.12!important;letter-spacing:0!important;
       }
     }
