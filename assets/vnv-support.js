@@ -169,8 +169,8 @@
       if(link.id===TOP_ID)return false;
       const label=(link.textContent+" "+(link.getAttribute("aria-label")||"")).trim();
       const href=(link.getAttribute("href")||"").trim();
-      return /\\b(?:support(?: free access)?|donat(?:e|ion|ions)?|contribut(?:e|ion|ions)?)\\b/i.test(label) &&
-        (href.startsWith("#") || /^https:\\/\\//i.test(href) || href.startsWith("/"));
+      return /\b(?:support(?: free access)?|donat(?:e|ion|ions)?|contribut(?:e|ion|ions)?)\b/i.test(label) &&
+        (href.startsWith("#") || /^https:\/\//i.test(href) || href.startsWith("/"));
     })){
     /* Preserve a native header contribution button rather than adding a second one.
        Learner docks take precedence above, so profile/beta/support stay together. */
