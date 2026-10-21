@@ -57,6 +57,10 @@
         letter-spacing:.075em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
       }
       #${IDS.button}:hover,#${IDS.button}:focus-visible{background:#fff;border-color:rgba(49,73,62,.48)}
+      #${IDS.button}.vnv-eco-text-only{
+        min-height:34px;padding:6px 9px;letter-spacing:.03em;
+        white-space:normal;text-align:center;
+      }
       #${IDS.button} .vnv-eco-lines{width:14px;height:10px;display:grid;align-content:space-between}
       #${IDS.button} .vnv-eco-lines::before,#${IDS.button} .vnv-eco-lines::after,#${IDS.button} .vnv-eco-lines span{
         content:"";display:block;height:1px;background:currentColor
@@ -110,7 +114,11 @@
     button.setAttribute("aria-expanded","false");
     button.setAttribute("aria-controls",IDS.overlay);
     button.setAttribute("aria-label","Open Verve N Veda ecosystem directory");
-    button.innerHTML='<span class="vnv-eco-lines" aria-hidden="true"><span></span></span><span class="vnv-eco-label">Ecosystem</span>';
+    const nativeMenu=document.querySelector('#menuButton, .menu-button[aria-controls], .hamburger[aria-controls], [data-menu-toggle]');
+    button.innerHTML=nativeMenu
+      ? '<span class="vnv-eco-label">Ecosystem Directory</span>'
+      : '<span class="vnv-eco-lines" aria-hidden="true"><span></span></span><span class="vnv-eco-label">Ecosystem</span>';
+    if(nativeMenu)button.classList.add("vnv-eco-text-only");
 
     const target=
       document.querySelector(".header-actions") ||
