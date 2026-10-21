@@ -164,9 +164,16 @@
     top.textContent=childFacing ? "Grown-Ups" : "Support";
     top.setAttribute("aria-label",childFacing ? "Grown-ups: voluntary support information" : "Voluntary support information");
     learnerToolbar.appendChild(top);
-  }else if(document.querySelector(".site-header .header-support")){
-    /* The gateway already has a native Support Free Access header link.
-       Keep that original control; do not append a second one. */
+  }else if([...document.querySelectorAll("header a, .site-header a, .header-actions a, .head-actions a")]
+    .some(link=>{
+      if(link.id===TOP_ID)return false;
+      const label=(link.textContent+" "+(link.getAttribute("aria-label")||"")).trim();
+      const href=(link.getAttribute("href")||"").trim();
+      return /\\b(?:support(?: free access)?|donat(?:e|ion|ions)?|contribut(?:e|ion|ions)?)\\b/i.test(label) &&
+        (href.startsWith("#") || /^https:\\/\\//i.test(href) || href.startsWith("/"));
+    })){
+    /* Preserve a native header contribution button rather than adding a second one.
+       Learner docks take precedence above, so profile/beta/support stay together. */
   }else if(headerTarget){
     top.classList.add("vnv-support-top-inline");
     headerTarget.appendChild(top);
