@@ -32,6 +32,7 @@
   let catalogLoading=null;
   let ecosystemCounts={repositories:0,pages:0};
   let lastFocus=null;
+  let previousBodyOverflow=null;
 
   const esc=(value)=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
   const safeUrl=(value)=>{
@@ -280,6 +281,7 @@
     overlay.dataset.open="true";
     overlay.setAttribute("aria-hidden","false");
     button.setAttribute("aria-expanded","true");
+    previousBodyOverflow=document.body.style.overflow;
     document.body.style.overflow="hidden";
     setTimeout(()=>document.getElementById(IDS.search)?.focus(),0);
   }
@@ -289,7 +291,8 @@
     overlay.dataset.open="false";
     overlay.setAttribute("aria-hidden","true");
     button.setAttribute("aria-expanded","false");
-    document.body.style.overflow="";
+    if(previousBodyOverflow!==null)document.body.style.overflow=previousBodyOverflow;
+    previousBodyOverflow=null;
     if(lastFocus?.focus)lastFocus.focus();
   }
   function bind(){
