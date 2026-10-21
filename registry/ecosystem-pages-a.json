@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-21T12:25:19Z",
+  "generatedAt": "2026-10-21T15:20:17Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -2283,6 +2283,862 @@
       "path": "verify/index.html",
       "category": "education",
       "source": "Khaemenes Academy"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/career-work-readiness/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/career-work-readiness/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/career-work-readiness/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/career-work-readiness/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/career-work-readiness/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/career-work-readiness/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/career-work-readiness/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/career-work-readiness/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/caregiving-family-responsibilities/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/caregiving-family-responsibilities/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/caregiving-family-responsibilities/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/caregiving-family-responsibilities/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/caregiving-family-responsibilities/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/caregiving-family-responsibilities/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/caregiving-family-responsibilities/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/caregiving-family-responsibilities/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/civic-community-living/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/civic-community-living/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/civic-community-living/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/civic-community-living/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/civic-community-living/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/civic-community-living/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/civic-community-living/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/civic-community-living/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/creativity-arts-making/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/creativity-arts-making/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/creativity-arts-making/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/creativity-arts-making/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/creativity-arts-making/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/creativity-arts-making/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/creativity-arts-making/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/creativity-arts-making/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Grade 1",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/elementary/grade-1/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/elementary/grade-1/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Elementary",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/elementary/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/elementary/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "High",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/high/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/high/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Higher",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/higher/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/higher/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Culinary Independence",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Middle",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/middle/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/middle/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Play Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/preschool/play-lab/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/preschool/play-lab/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/culinary-independence/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/culinary-independence/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/digital-literacy-citizenship/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/digital-literacy-citizenship/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/digital-literacy-citizenship/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/digital-literacy-citizenship/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/digital-literacy-citizenship/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/digital-literacy-citizenship/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/digital-literacy-citizenship/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/digital-literacy-citizenship/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/emergency-readiness-resilience/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/emergency-readiness-resilience/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/emergency-readiness-resilience/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/emergency-readiness-resilience/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/emergency-readiness-resilience/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/emergency-readiness-resilience/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/emergency-readiness-resilience/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/emergency-readiness-resilience/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/entrepreneurship-small-business/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/entrepreneurship-small-business/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/entrepreneurship-small-business/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/entrepreneurship-small-business/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/entrepreneurship-small-business/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/entrepreneurship-small-business/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/entrepreneurship-small-business/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/entrepreneurship-small-business/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/gardening-food-growing/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/gardening-food-growing/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/gardening-food-growing/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/gardening-food-growing/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/gardening-food-growing/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/gardening-food-growing/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/gardening-food-growing/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/gardening-food-growing/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/health-first-aid-wellbeing/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/health-first-aid-wellbeing/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/health-first-aid-wellbeing/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/health-first-aid-wellbeing/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/health-first-aid-wellbeing/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/health-first-aid-wellbeing/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/health-first-aid-wellbeing/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/health-first-aid-wellbeing/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/home-management/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/home-management/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/home-management/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/home-management/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/home-management/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/home-management/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/home-management/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/home-management/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Courses",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Creativity Arts Making",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/creativity-arts-making/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/creativity-arts-making/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/creativity-arts-making/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/creativity-arts-making/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/creativity-arts-making/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/creativity-arts-making/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/creativity-arts-making/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/creativity-arts-making/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Culinary Independence",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/culinary-independence/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/culinary-independence/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/culinary-independence/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/culinary-independence/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/culinary-independence/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/culinary-independence/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/culinary-independence/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/culinary-independence/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Emergency Readiness Resilience",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/emergency-readiness-resilience/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/emergency-readiness-resilience/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/emergency-readiness-resilience/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/emergency-readiness-resilience/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/emergency-readiness-resilience/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/emergency-readiness-resilience/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/emergency-readiness-resilience/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/emergency-readiness-resilience/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Gardening Food Growing",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/gardening-food-growing/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/gardening-food-growing/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/gardening-food-growing/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/gardening-food-growing/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/gardening-food-growing/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/gardening-food-growing/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/gardening-food-growing/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/gardening-food-growing/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Health First Aid Wellbeing",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/health-first-aid-wellbeing/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/health-first-aid-wellbeing/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/health-first-aid-wellbeing/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/health-first-aid-wellbeing/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/health-first-aid-wellbeing/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/health-first-aid-wellbeing/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/health-first-aid-wellbeing/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/health-first-aid-wellbeing/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Home Management",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/home-management/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/home-management/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/home-management/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/home-management/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/home-management/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/home-management/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/home-management/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/home-management/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Kindergarten",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Personal Finance",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/personal-finance/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/personal-finance/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/personal-finance/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/personal-finance/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/personal-finance/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/personal-finance/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/personal-finance/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/personal-finance/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Sustainability Stewardship",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/sustainability-stewardship/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/sustainability-stewardship/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/sustainability-stewardship/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/sustainability-stewardship/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/sustainability-stewardship/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/sustainability-stewardship/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/kindergarten/sustainability-stewardship/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/kindergarten/sustainability-stewardship/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/legal-consumer-literacy/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/legal-consumer-literacy/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/legal-consumer-literacy/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/legal-consumer-literacy/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/legal-consumer-literacy/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/legal-consumer-literacy/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/legal-consumer-literacy/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/legal-consumer-literacy/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/personal-finance/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/personal-finance/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/personal-finance/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/personal-finance/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/personal-finance/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/personal-finance/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/personal-finance/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/personal-finance/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/relationships-communication/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/relationships-communication/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/relationships-communication/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/relationships-communication/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/relationships-communication/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/relationships-communication/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/relationships-communication/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/relationships-communication/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/sustainability-stewardship/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/sustainability-stewardship/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/sustainability-stewardship/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/sustainability-stewardship/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/sustainability-stewardship/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/sustainability-stewardship/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/sustainability-stewardship/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/sustainability-stewardship/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Preschool",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/transportation-navigation/preschool/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/transportation-navigation/preschool/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/transportation-navigation/preschool/week-01/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/transportation-navigation/preschool/week-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/transportation-navigation/preschool/week-02/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/transportation-navigation/preschool/week-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/transportation-navigation/preschool/week-03/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/transportation-navigation/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Khaemenes Academy Life Skills",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
     },
     {
       "title": "Arts Music",
@@ -41705,398 +42561,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-04.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 32",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 33",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 34",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 35",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-35/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-35/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-35/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-35/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-35/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-35/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-35/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-35/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-35/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-35/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-35/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-35/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 36",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-36/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-36/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-36/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-36/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-36/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-36/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-36/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-36/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-36/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-36/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-36/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-36/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Science Honors 12",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/science-honors-12_index.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/science-honors-12_index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Assessment Authority",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/shared/shared/assessment-authority/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/shared/shared/assessment-authority/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "High School Monte Carlo Trivia",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/games/high-school-monte-carlo-trivia.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/games/high-school-monte-carlo-trivia.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "App",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/app.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/app.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Correction Form",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/correction-form.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/correction-form.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Final",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/final.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/final.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Midterm",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/midterm.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/midterm.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Readiness V3",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness-v3.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/readiness-v3.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Readiness",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/assessments/readiness.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/assessments/readiness.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Grade 09",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Prep",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/prep/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/prep/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Atlas And Data Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/atlas-and-data-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Certificate",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/certificate.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/certificate.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Civic Capstone",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/civic-capstone.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/civic-capstone.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Global Timeline",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/global-timeline.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/global-timeline.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Glossary",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/glossary.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/glossary.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Historical Systems Lab",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/historical-systems-lab.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/historical-systems-lab.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Resources",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/resources/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/resources/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
