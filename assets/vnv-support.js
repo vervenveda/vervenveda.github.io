@@ -64,12 +64,19 @@
        Avoid a competing upper-right support button. */
     #khaemenesLearnerUtilityToolbar > #${TOP_ID}{
       position:static!important;right:auto!important;top:auto!important;bottom:auto!important;
-      z-index:auto!important;order:40;flex:1 1 0!important;
-      min-width:0!important;max-width:none!important;
+      z-index:auto!important;order:40;flex:0 1 78px!important;
+      min-width:0!important;width:78px!important;max-width:78px!important;
       margin:0!important;box-shadow:none!important;
       color:#15251f;background:#f8f0df;
       border:1px solid rgba(180,139,69,.72);
       text-align:center;white-space:normal!important;
+    }
+    @media(max-width:520px) and (min-width:331px){
+      #khaemenesLearnerUtilityToolbar > #${TOP_ID}{
+        flex:0 1 74px!important;width:74px!important;max-width:74px!important;
+        height:44px!important;min-height:44px!important;max-height:44px!important;
+        padding:4px!important;font-size:9px!important;
+      }
     }
     @media(max-width:330px){
       #khaemenesLearnerUtilityToolbar > #${TOP_ID}{
