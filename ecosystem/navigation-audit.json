@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-20T10:02:40Z",
+  "generatedAt": "2026-10-21T10:06:55Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 28,
     "failedRepositoryCount": 0,
-    "htmlCount": 11678,
+    "htmlCount": 11741,
     "brokenLocalLinkCount": 2,
-    "rootOrphanHtmlCount": 6391,
-    "unreferencedHtmlCount": 1507,
+    "rootOrphanHtmlCount": 6424,
+    "unreferencedHtmlCount": 1511,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -645,11 +645,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3462,
+      "htmlCount": 3489,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2429,
-      "rootOrphanHtmlCount": 1011,
-      "unreferencedHtmlCount": 687,
+      "rootReachableHtmlCount": 2460,
+      "rootOrphanHtmlCount": 1007,
+      "unreferencedHtmlCount": 697,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 4,
       "intentionalSiblingGroupCount": 4,
@@ -800,7 +800,6 @@
         "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-03-domain-range-from-tables-graphs-contexts.html",
         "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-04-multiple-representations-function-rules.html",
         "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-05-transformations-of-parent-functions.html",
-        "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-06-piecewise-functions-discrete-models.html",
         "courses/mathematics/algebra-1/units/unit-05/lessons/lesson-07-arithmetic-sequences-as-functions-inverse-thinking.html",
         "courses/mathematics/algebra-1/units/unit-05/practice/core.html",
         "courses/mathematics/algebra-1/units/unit-05/practice/extended.html",
@@ -818,14 +817,11 @@
         "courses/mathematics/algebra-1/units/unit-06/practice/core.html",
         "courses/mathematics/algebra-1/units/unit-06/practice/extended.html",
         "courses/mathematics/algebra-1/units/unit-06/practice/foundation.html",
-        "courses/mathematics/algebra-1/units/unit-06/teacher-guide.html"
+        "courses/mathematics/algebra-1/units/unit-06/teacher-guide.html",
+        "courses/mathematics/algebra-1/units/unit-07/assessment/mastery-check.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [
-        [
-          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-06/student-packet.html"
-        ],
         [
           "courses/social-studies/grade-09/week-10/student-packet-v2.html",
           "courses/social-studies/grade-09/week-10/student-packet.html"
@@ -837,19 +833,13 @@
         [
           "courses/social-studies/grade-09/week-09/student-packet-v2.html",
           "courses/social-studies/grade-09/week-09/student-packet.html"
+        ],
+        [
+          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-06/student-packet.html"
         ]
       ],
       "intentionalSiblingGroups": [
-        {
-          "pages": [
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
-          ],
-          "roles": {
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
-          }
-        },
         {
           "pages": [
             "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html",
@@ -879,6 +869,16 @@
             "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html": "canonical-assessment",
             "courses/social-studies/grade-09/weeks/week-09/student-packet.html": ""
           }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
+          }
         }
       ],
       "canonicalAliases": [
@@ -891,11 +891,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
-      "htmlCount": 3172,
+      "htmlCount": 3182,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1726,
-      "rootOrphanHtmlCount": 1435,
-      "unreferencedHtmlCount": 175,
+      "rootReachableHtmlCount": 1725,
+      "rootOrphanHtmlCount": 1446,
+      "unreferencedHtmlCount": 177,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -1010,6 +1010,7 @@
         "courses/abstract-algebra/units/unit-11/index.html",
         "courses/abstract-algebra/units/unit-12/index.html",
         "courses/abstract-algebra/units/unit-13/index.html",
+        "courses/academic-language-and-lexicology/index.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-01/KH-MATH-AGT-W01-R01_building-surfaces-from-polygons.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-02/KH-MATH-AGT-W01-CR01_quotient-spaces-polygonal-schemas.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-03/KH-MATH-AGT-W01-WE01_worked-surface-identification-examples.html",
@@ -1063,8 +1064,7 @@
         "courses/introduction-to-proofs/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
         "courses/introduction-to-proofs/units/unit-01/index.html",
         "courses/introduction-to-proofs/units/unit-02/index.html",
-        "courses/introduction-to-proofs/units/unit-03/index.html",
-        "courses/introduction-to-proofs/units/unit-04/index.html"
+        "courses/introduction-to-proofs/units/unit-03/index.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
@@ -1265,11 +1265,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
-      "htmlCount": 105,
+      "htmlCount": 113,
       "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 7,
-      "rootOrphanHtmlCount": 96,
-      "unreferencedHtmlCount": 28,
+      "rootOrphanHtmlCount": 104,
+      "unreferencedHtmlCount": 21,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -1364,27 +1364,20 @@
         "apps/Arabic_numbers_index.html",
         "apps/Arabic_numerology_index.html",
         "apps/Arabic_temple_of_letters_index.html",
-        "apps/French_101_index.html",
-        "apps/German_coach_index.html",
-        "apps/German_hub_index.html",
         "apps/German_traveler_index.html",
         "apps/German_word_challenge_index.html",
         "apps/Kids_ESL_adventure_index.html",
         "apps/Kids_ESL_index.html",
         "apps/Kids_ESL_picture_match_index.html",
         "apps/Kids_ESL_playground_index.html",
-        "apps/Russian_hub_index.html",
         "apps/Russian_numbers_index.html",
-        "apps/Russian_skills_lab_index.html",
         "apps/Scrabble_word_finder_index.html",
-        "apps/dictionarybox_index.html",
         "apps/electives/Arabic/Quranic_studies/index.html",
         "apps/electives/Arabic/temple-of-letters-full-course/index.html",
         "apps/faith/Arabic/Qur'an-Knowledge/index.html",
         "apps/faith/Arabic/Quranic_Study/index.html",
         "apps/numina_grove_index.html",
         "apps/translation_helper_index.html",
-        "apps/translator.html",
         "apps/word_of_day_index.html",
         "multilingual-translator_index.html"
       ],
@@ -1396,11 +1389,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Middle.github.io",
-      "htmlCount": 1360,
+      "htmlCount": 1378,
       "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 25,
-      "rootOrphanHtmlCount": 1335,
-      "unreferencedHtmlCount": 39,
+      "rootOrphanHtmlCount": 1353,
+      "unreferencedHtmlCount": 38,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -1448,50 +1441,49 @@
         "grades/grade-06/evidence/weekly-evidence-packet.html",
         "grades/grade-06/evidence/weekly-mastery-check.html",
         "grades/grade-06/printables/week-01-packet.html",
+        "grades/grade-06/printables/week-01-subject-evidence.html",
         "grades/grade-06/printables/week-02-packet.html",
+        "grades/grade-06/printables/week-02-subject-evidence.html",
         "grades/grade-06/printables/week-03-packet.html",
+        "grades/grade-06/printables/week-03-subject-evidence.html",
         "grades/grade-06/printables/week-04-packet.html",
+        "grades/grade-06/printables/week-04-subject-evidence.html",
         "grades/grade-06/printables/week-05-packet.html",
+        "grades/grade-06/printables/week-05-subject-evidence.html",
         "grades/grade-06/printables/week-06-packet.html",
+        "grades/grade-06/printables/week-06-subject-evidence.html",
         "grades/grade-06/printables/week-07-packet.html",
+        "grades/grade-06/printables/week-07-subject-evidence.html",
         "grades/grade-06/printables/week-08-packet.html",
+        "grades/grade-06/printables/week-08-subject-evidence.html",
         "grades/grade-06/printables/week-09-packet.html",
+        "grades/grade-06/printables/week-09-subject-evidence.html",
         "grades/grade-06/printables/week-10-packet.html",
+        "grades/grade-06/printables/week-10-subject-evidence.html",
         "grades/grade-06/printables/week-11-packet.html",
+        "grades/grade-06/printables/week-11-subject-evidence.html",
         "grades/grade-06/printables/week-12-packet.html",
+        "grades/grade-06/printables/week-12-subject-evidence.html",
         "grades/grade-06/printables/week-13-packet.html",
+        "grades/grade-06/printables/week-13-subject-evidence.html",
         "grades/grade-06/printables/week-14-packet.html",
+        "grades/grade-06/printables/week-14-subject-evidence.html",
         "grades/grade-06/printables/week-15-packet.html",
+        "grades/grade-06/printables/week-15-subject-evidence.html",
         "grades/grade-06/printables/week-16-packet.html",
+        "grades/grade-06/printables/week-16-subject-evidence.html",
         "grades/grade-06/printables/week-17-packet.html",
+        "grades/grade-06/printables/week-17-subject-evidence.html",
         "grades/grade-06/printables/week-18-packet.html",
+        "grades/grade-06/printables/week-18-subject-evidence.html",
         "grades/grade-06/printables/week-19-packet.html",
         "grades/grade-06/printables/week-20-packet.html",
         "grades/grade-06/printables/week-21-packet.html",
         "grades/grade-06/printables/week-22-packet.html",
-        "grades/grade-06/printables/week-23-packet.html",
-        "grades/grade-06/printables/week-24-packet.html",
-        "grades/grade-06/printables/week-25-packet.html",
-        "grades/grade-06/printables/week-26-packet.html",
-        "grades/grade-06/printables/week-27-packet.html",
-        "grades/grade-06/printables/week-28-packet.html",
-        "grades/grade-06/printables/week-29-packet.html",
-        "grades/grade-06/printables/week-30-packet.html",
-        "grades/grade-06/printables/week-31-packet.html",
-        "grades/grade-06/printables/week-32-packet.html",
-        "grades/grade-06/printables/week-33-packet.html",
-        "grades/grade-06/printables/week-34-packet.html",
-        "grades/grade-06/printables/week-35-packet.html",
-        "grades/grade-06/printables/week-36-packet.html",
-        "grades/grade-06/subjects/arts-music/index.html",
-        "grades/grade-06/subjects/arts-music/week-01.html",
-        "grades/grade-06/subjects/arts-music/week-02.html",
-        "grades/grade-06/subjects/arts-music/week-03.html",
-        "grades/grade-06/subjects/arts-music/week-04.html"
+        "grades/grade-06/printables/week-23-packet.html"
       ],
       "unreferencedPages": [
         "breakaway/index.html",
-        "grades/grade-06/evidence/weekly-evidence-packet.html",
         "grades/grade-06/evidence/weekly-mastery-check.html",
         "grades/grade-06/subjects/arts-music/index.html",
         "grades/grade-06/subjects/health-pe-sel/index.html",
