@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 140,
+  "entryCount": 141,
   "entries": [
     {
       "id": "gateway-verve",
@@ -166,6 +166,18 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/"
+    },
+    {
+      "id": "academy-life-skills",
+      "title": "Khaemenes Academy Life Skills",
+      "repository": "vervenveda/Khaemenes_Academy_Life_Skills.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/"
     },
     {
       "id": "academy-adult",
