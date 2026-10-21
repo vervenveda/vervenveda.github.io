@@ -60,6 +60,30 @@
       margin:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;
       background:rgba(255,255,255,.56);
     }
+    /* Academy learner pages share a single lower-right utility rail.
+       Avoid a competing upper-right support button. */
+    #khaemenesLearnerUtilityToolbar > #${TOP_ID}{
+      position:static!important;right:auto!important;top:auto!important;bottom:auto!important;
+      z-index:auto!important;order:40;flex:1 1 0!important;
+      min-width:0!important;max-width:none!important;
+      margin:0!important;box-shadow:none!important;
+      color:#15251f;background:#f8f0df;
+      border:1px solid rgba(180,139,69,.72);
+      text-align:center;white-space:normal!important;
+    }
+    @media(max-width:330px){
+      #khaemenesLearnerUtilityToolbar > #${TOP_ID}{
+        width:0!important;height:44px!important;min-height:44px!important;max-height:44px!important;
+        padding:3px!important;font-size:8px!important;line-height:1.12!important;letter-spacing:0!important;
+      }
+    }
+    #${TOP_ID}.vnv-support-top-standalone{
+      position:relative;right:auto;top:auto;z-index:auto;
+      display:flex;width:max-content;max-width:calc(100% - 24px);
+      margin:8px 12px 8px auto;box-shadow:none;
+      backdrop-filter:none;-webkit-backdrop-filter:none;
+      white-space:normal;text-align:center;
+    }
     #${TOP_ID}:hover,#${TOP_ID}:focus-visible{background:#fff;border-color:#243d33;transform:translateY(-1px)}
     #${SUPPORT_ID}{
       width:min(calc(100% - 32px),980px);margin:55px auto 28px;padding:28px;
@@ -123,15 +147,24 @@
   top.href = "#"+SUPPORT_ID;
   top.textContent = childFacing ? "Grown-Ups · Support" : "Support Free Access";
   top.setAttribute("aria-label", childFacing ? "Grown-ups: jump to voluntary support information" : "Jump to voluntary support information");
+  const learnerToolbar = document.getElementById("khaemenesLearnerUtilityToolbar");
   const headerTarget =
     document.querySelector(".header-actions") ||
     document.querySelector(".site-header .header-inner") ||
     document.querySelector("header nav");
-  if(headerTarget){
+  if(learnerToolbar){
+    top.classList.add("vnv-support-top-inline");
+    top.textContent=childFacing ? "Grown-Ups" : "Support";
+    top.setAttribute("aria-label",childFacing ? "Grown-ups: voluntary support information" : "Voluntary support information");
+    learnerToolbar.appendChild(top);
+  }else if(headerTarget){
     top.classList.add("vnv-support-top-inline");
     headerTarget.appendChild(top);
   }else{
-    document.body.appendChild(top);
+    /* Standalone pages without headers keep support in normal flow,
+       away from translation controls positioned near the upper right. */
+    top.classList.add("vnv-support-top-standalone");
+    document.body.insertBefore(top,document.body.firstChild);
   }
 
   function addTickerSupportLink(ticker){
