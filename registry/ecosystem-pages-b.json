@@ -1,121 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-21T15:20:17Z",
+  "generatedAt": "2026-10-21T17:39:38Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 32",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-32/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-32/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 33",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-33/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-33/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 34",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-34/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
     {
       "title": "Day 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-34/lessons/day-01.html",
@@ -26589,6 +26477,406 @@
       "source": "Khaemenes Linguistics"
     },
     {
+      "title": "English Esl",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/english-esl/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/english-esl/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Language Worlds",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-01.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-01.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-02.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-02.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-03.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-03.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 04",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-04.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-04.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 05",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-05.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-05.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 06",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-06.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-06.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 07",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-07.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-07.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 08",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-08.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-08.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 10",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-10.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-10.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 11",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-11.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-11.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 12",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-12.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-12.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 9",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/foundation-9.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/foundation-9.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Japanese",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 01 Checkpoint",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/unit-01-checkpoint.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/unit-01-checkpoint.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 02 Challenge",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/unit-02-challenge.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/unit-02-challenge.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 03 Checkpoint",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/japanese/unit-03-checkpoint.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/japanese/unit-03-checkpoint.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-01.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-01.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-02.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-02.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-03.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-03.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 04",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-04.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-04.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 05",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-05.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-05.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 06",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-06.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-06.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 07",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-07.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-07.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 08",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-08.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-08.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 10",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-10.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-10.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 11",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-11.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-11.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 12",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-12.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-12.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 9",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/foundation-9.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/foundation-9.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Mandarin",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 01 Checkpoint",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/unit-01-checkpoint.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/unit-01-checkpoint.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 02 Challenge",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/unit-02-challenge.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/unit-02-challenge.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 03 Checkpoint",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/unit-03-checkpoint.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/mandarin/unit-03-checkpoint.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-01.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-01.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 02",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-02.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-02.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 03",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-03.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-03.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 04",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-04.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-04.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 05",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-05.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-05.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 06",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-06.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-06.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 07",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-07.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-07.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 08",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-08.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-08.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 10",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-10.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-10.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 11",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-11.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-11.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 12",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-12.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-12.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Foundation 9",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/foundation-9.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/foundation-9.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Spanish",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 01 Checkpoint",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/unit-01-checkpoint.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/unit-01-checkpoint.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 02 Challenge",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/unit-02-challenge.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/unit-02-challenge.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Unit 03 Checkpoint",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/spanish/unit-03-checkpoint.html",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/spanish/unit-03-checkpoint.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
       "title": "Language Learning Hall",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/Language_learning_hall_index.html",
       "repo": "Khaemenes_Linguistics.github.io",
@@ -28053,10 +28341,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 24 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-24-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-24-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 25 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-25-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-25-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 25 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-25-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-25-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -28069,10 +28373,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 26 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-26-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-26-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 27 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-27-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-27-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 27 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-27-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-27-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -28085,10 +28405,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 28 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-28-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-28-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 29 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-29-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-29-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 29 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-29-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-29-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -28101,10 +28437,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 30 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-30-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-30-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 31 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-31-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-31-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 31 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-31-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-31-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
@@ -28117,10 +28469,26 @@
       "source": "Khaemenes Middle"
     },
     {
+      "title": "Week 32 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-32-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-32-subject-evidence.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
       "title": "Week 33 Packet",
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-33-packet.html",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-06/printables/week-33-packet.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Week 33 Subject Evidence",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-06/printables/week-33-subject-evidence.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-06/printables/week-33-subject-evidence.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
