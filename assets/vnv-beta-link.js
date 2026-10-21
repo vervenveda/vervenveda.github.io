@@ -181,15 +181,15 @@
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
             flex:1 1 0!important;min-width:0!important;
             width:74px!important;max-width:74px!important;
-            height:40px!important;min-height:40px!important;max-height:40px!important;
+            height:44px!important;min-height:44px!important;max-height:44px!important;
             padding:4px!important;font-size:9px!important;letter-spacing:.01em!important;
             white-space:normal!important;text-align:center!important;line-height:1.15!important;
           }
         }
         @media(max-width:330px){
           #${EDUCATION_TOOLBAR_ID}{
-            width:max-content;max-width:calc(100vw - 16px);
-            flex-wrap:nowrap;justify-content:space-evenly;gap:3px;padding:3px;
+            width:calc(100vw - 16px);max-width:calc(100vw - 16px);
+            box-sizing:border-box;flex-wrap:nowrap;justify-content:space-evenly;gap:3px;padding:3px;
           }
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
             flex:1 1 0!important;width:0!important;max-width:none!important;min-width:0!important;
