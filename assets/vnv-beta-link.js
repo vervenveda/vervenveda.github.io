@@ -76,9 +76,9 @@
         return {
           label:"Learner Profile",
           mark:"P",
-          url:ACADEMY_FAMILY_URL,
-          aria:"Open the Khaemenes Academy family learner profile",
-          title:"Learner Profile · family-managed child identity and curriculum continuity"
+          url:ACADEMY_STUDENT_URL,
+          aria:"Open the Khaemenes Academy learner Student Profile",
+          title:"Learner Profile · family-managed identity, Learning Compass and curriculum continuity"
         };
       }
       if(match("khaemenes-kindergarden","/khaemenes_kindergarden.github.io/")){
