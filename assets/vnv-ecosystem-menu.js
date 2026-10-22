@@ -117,12 +117,20 @@
     button.setAttribute("aria-controls",IDS.overlay);
     button.setAttribute("aria-label","Open Verve N Veda ecosystem directory");
     const nativeMenu=document.querySelector('#menuButton, .menu-button[aria-controls], .hamburger[aria-controls], [data-menu-toggle]');
-    button.innerHTML=nativeMenu
-      ? '<span class="vnv-eco-label">Ecosystem Directory</span>'
-      : '<span class="vnv-eco-lines" aria-hidden="true"><span></span></span><span class="vnv-eco-label">Ecosystem</span>';
-    if(nativeMenu)button.classList.add("vnv-eco-text-only");
+    if(ecosystemSlot){
+      button.innerHTML='<span class="vnv-eco-lines" aria-hidden="true"><span></span></span>';
+      button.classList.add("vnv-eco-icon-only");
+      button.title="Ecosystem Directory";
+    }else{
+      button.innerHTML=nativeMenu
+        ? '<span class="vnv-eco-label">Ecosystem Directory</span>'
+        : '<span class="vnv-eco-lines" aria-hidden="true"><span></span></span><span class="vnv-eco-label">Ecosystem</span>';
+      if(nativeMenu)button.classList.add("vnv-eco-text-only");
+    }
 
+    const ecosystemSlot=document.querySelector("[data-vnv-ecosystem-slot]");
     const target=
+      ecosystemSlot ||
       document.querySelector("[data-vnv-global-tools]") ||
       document.querySelector(".header-actions") ||
       document.querySelector(".nav-utilities") ||
