@@ -1731,7 +1731,7 @@
   "pageCatalog": {
     "version": 2,
     "purpose": "Complete searchable catalog of current public HTML surfaces across the connected Verve N Veda ecosystem.",
-    "publicPageCount": 10869,
+    "publicPageCount": 10872,
     "repositoryCount": 29,
     "parts": [
       "/registry/ecosystem-pages-a.json",
@@ -1754,7 +1754,7 @@
       "mode": "approved-repositories-only",
       "newRepositoryPolicy": "discover-under-review",
       "stos": "dormant-excluded",
-      "generatedAt": "2026-10-22T12:26:05Z"
+      "generatedAt": "2026-10-22T17:38:17Z"
     }
   }
 }
