@@ -212,19 +212,28 @@
         #${EDUCATION_TOOLBAR_ID}>#${HIGH_PROFILE_ID}{
           order:20;color:#17392f!important;background:#fffdf8!important;border:1px solid rgba(180,139,69,.72)!important
         }
+        #${EDUCATION_TOOLBAR_ID}>#${HIGH_WORK_ID},#${EDUCATION_TOOLBAR_ID}>#learnerRecordNoticeButton{
+          order:10;color:#493719!important;background:#fff4d8!important;border:1px solid #b48b45!important
+        }
+        #${EDUCATION_TOOLBAR_ID}>#${HIGH_SEARCH_ID}{
+          order:30;color:#17392f!important;background:#eef5f1!important;border:1px solid rgba(49,73,62,.38)!important
+        }
         #${EDUCATION_TOOLBAR_ID}>#${ID}{
-          order:30;color:#f7efe0!important;background:#0f1925!important;border:1px solid rgba(183,147,77,.72)!important
+          order:40;color:#f7efe0!important;background:#0f1925!important;border:1px solid rgba(183,147,77,.72)!important
+        }
+        #${EDUCATION_TOOLBAR_ID}>#${HIGH_CONTRIBUTE_ID}{
+          order:50;color:#563f27!important;background:#fffaf0!important;border:1px solid rgba(180,139,69,.62)!important
         }
         #${EDUCATION_TOOLBAR_ID}>button:hover,#${EDUCATION_TOOLBAR_ID}>a:hover{transform:translateY(-1px)}
         #${EDUCATION_TOOLBAR_ID}>button:focus-visible,#${EDUCATION_TOOLBAR_ID}>a:focus-visible{outline:3px solid #b48b45;outline-offset:2px}
         @media(max-width:520px){
           #${EDUCATION_TOOLBAR_ID}{
             right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));
-            width:max-content;max-width:calc(100vw - 16px);gap:4px;padding:4px;
+            width:calc(100vw - 16px);max-width:calc(100vw - 16px);box-sizing:border-box;gap:4px;padding:4px;
           }
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
             flex:1 1 0!important;min-width:0!important;
-            width:74px!important;max-width:74px!important;
+            width:0!important;max-width:none!important;
             height:44px!important;min-height:44px!important;max-height:44px!important;
             padding:4px!important;font-size:9px!important;letter-spacing:.01em!important;
             white-space:normal!important;text-align:center!important;line-height:1.15!important;
@@ -270,6 +279,56 @@
     return Math.max(58,Math.ceil(height)+22);
   }
 
+  function ensureHighStudentUtilityButtons(){
+    if(!isHighStudentSurface()||!document.body)return;
+    const toolbar=ensureEducationToolbar();if(!toolbar)return;
+    const profileUrl=highStudentProfileUrl();
+
+    const preserved=[...document.querySelectorAll("button,a")].find(el=>{
+      if(el.id===HIGH_WORK_ID)return false;
+      const id=String(el.id||"").toLowerCase();
+      const text=String(el.textContent||"").trim().toLowerCase();
+      return id==="learnerrecordnoticebutton"||
+        /preserv(ed)?[-_ ]?work|legacy[-_ ]?work|work[-_ ]?recovery/.test(id)||
+        text==="preserved work"||text.startsWith("preserved work ·");
+    });
+    let work=preserved||document.getElementById(HIGH_WORK_ID);
+    if(!work){
+      work=document.createElement("button");
+      work.id=HIGH_WORK_ID;
+      work.type="button";
+      work.addEventListener("click",()=>{
+        const url=highStudentProfileUrl();
+        try{location.assign(url)}catch{location.href=url}
+      });
+    }
+    work.textContent="My Work";
+    work.setAttribute("aria-label",preserved?"Open preserved student work and recovery":"Open my High School profile, records and learning evidence");
+    work.title=preserved?"My Work · preserved work and recovery":"My Work · records and evidence";
+    dockEducationUtility(work,10);
+
+    let search=document.getElementById(HIGH_SEARCH_ID);
+    if(!search){
+      search=document.createElement("button");
+      search.id=HIGH_SEARCH_ID;search.type="button";search.textContent="Search";
+      search.setAttribute("aria-label","Search Khaemenes and the Verve N Veda learning ecosystem");
+      search.title="Search · courses, resources and ecosystem pages";
+      search.addEventListener("click",openStudentSearch);
+    }
+    dockEducationUtility(search,30);
+
+    let contribute=document.getElementById(HIGH_CONTRIBUTE_ID);
+    if(!contribute){
+      contribute=document.createElement("a");
+      contribute.id=HIGH_CONTRIBUTE_ID;contribute.href=CONTRIBUTE_URL;contribute.textContent="Contribute";
+      contribute.setAttribute("aria-label","Open voluntary contribution and support information");
+      contribute.title="Contribute · voluntary support for free public access";
+    }
+    dockEducationUtility(contribute,50);
+
+    const beta=document.getElementById(ID);if(beta)dockEducationUtility(beta,40);
+  }
+
   function alignHighProfileSurface(){
     const config=educationProfileConfig();
     if(!config||!document.body)return false;
@@ -287,16 +346,8 @@
     }else if(quick){
       dockEducationUtility(quick,20);
     }
-    if(beta)dockEducationUtility(beta,30);
-
-    const preserved=[...document.querySelectorAll("button,a")].find(el=>{
-      const id=String(el.id||"").toLowerCase();
-      const text=String(el.textContent||"").trim().toLowerCase();
-      return id==="learnerrecordnoticebutton"||
-        /preserv(ed)?[-_ ]?work|legacy[-_ ]?work|work[-_ ]?recovery/.test(id)||
-        text==="preserved work"||text.startsWith("preserved work ·");
-    });
-    if(preserved&&preserved!==quick&&preserved!==beta)dockEducationUtility(preserved,10);
+    if(beta)dockEducationUtility(beta,isHighStudentSurface()?40:30);
+    ensureHighStudentUtilityButtons();
 
     const panel=document.getElementById("learnerRecordNoticePanel");
     const toolbar=document.getElementById(EDUCATION_TOOLBAR_ID);
@@ -353,7 +404,8 @@
       label.textContent=config.label;
       button.append(mark,label);
       button.addEventListener("click",()=>{
-        try{window.location.assign(config.url)}catch{window.location.href=config.url}
+        const url=isHighStudentSurface()?highStudentProfileUrl():config.url;
+        try{window.location.assign(url)}catch{window.location.href=url}
       });
       (ensureEducationToolbar()||document.body).append(button);
     }
@@ -588,9 +640,9 @@
     observer.observe(document.documentElement,{childList:true,subtree:true});
   }
 
-  function start(){mount();mountHighStudentProfile();ensureEducationWorkspace();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureEcosystemMenu();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding()}
+  function start(){mount();mountHighStudentProfile();ensureHighStudentUtilityButtons();ensureEducationWorkspace();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureEcosystemMenu();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding()}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.8.0",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
+  window.VNVBetaProgram=Object.freeze({version:"1.8.0",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig,highStudentProfileUrl,openStudentSearch});
 })();
