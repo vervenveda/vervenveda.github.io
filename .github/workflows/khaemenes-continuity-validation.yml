@@ -6,11 +6,15 @@ on:
     paths:
       - 'index.html'
       - 'tools/validate-khaemenes-continuity.mjs'
+      - 'assets/khaemenes-student-workspace-v2.js'
+      - 'tools/validate-khaemenes-student-workspace.mjs'
       - '.github/workflows/khaemenes-continuity-validation.yml'
   pull_request:
     paths:
       - 'index.html'
       - 'tools/validate-khaemenes-continuity.mjs'
+      - 'assets/khaemenes-student-workspace-v2.js'
+      - 'tools/validate-khaemenes-student-workspace.mjs'
       - '.github/workflows/khaemenes-continuity-validation.yml'
 
 permissions:
@@ -25,3 +29,4 @@ jobs:
         with:
           node-version: '24'
       - run: node tools/validate-khaemenes-continuity.mjs
+      - run: node tools/validate-khaemenes-student-workspace.mjs
