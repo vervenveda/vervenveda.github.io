@@ -1662,6 +1662,19 @@
     }
 
 
+    .directory-intelligence-doorway{
+      width:min(100%,1120px);margin:20px auto 28px;padding:18px 20px;
+      display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;
+      border:1px solid rgba(23,26,25,.18);border-left:4px solid #9c7b42;border-radius:7px;
+      background:rgba(255,255,255,.72);box-shadow:0 8px 22px rgba(16,20,18,.05);
+    }
+    .directory-intelligence-doorway h3{margin:4px 0 6px;font:500 22px/1.15 var(--serif);color:var(--ink)}
+    .directory-intelligence-doorway p{margin:0;color:var(--ink-soft);font-size:12px;line-height:1.6;max-width:75ch}
+    .directory-intelligence-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+    .directory-intelligence-actions a{display:inline-flex;align-items:center;min-height:40px;padding:8px 12px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--ink);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .directory-intelligence-actions a:first-child{background:#2b302f;color:#f4f0e7;border-color:#2b302f}
+    @media(max-width:760px){.directory-intelligence-doorway{grid-template-columns:1fr}.directory-intelligence-actions{justify-content:flex-start}}
+
     /* ECOSYSTEM DIRECTORY — elegant dropdown categories */
     .ecosystem-directory-section{
       background:linear-gradient(180deg,#f2eee5,#f7f4ed);
@@ -3820,6 +3833,19 @@
           <p class="section-intro">Open a featured site to enter its primary hub, browse a curated category, or use the complete index below to reach every public page currently cataloged across the connected GitHub ecosystem.</p>
         </div>
         <div class="ecosystem-category-grid" id="ecosystemCategoryGrid" aria-label="Explore the Verve N Veda ecosystem by category"></div>
+
+        <aside class="directory-intelligence-doorway" id="directoryIntelligenceDoorway" aria-labelledby="directoryIntelligenceTitle">
+          <div>
+            <p class="kicker">Directory Intelligence</p>
+            <h3 id="directoryIntelligenceTitle">Local Mini Cloud &amp; routing workspace</h3>
+            <p>The public directory helps visitors find the network. Directory AGI is the local-first companion for personal routing notes, local directory records, migration observations, and exportable browser backups. The Public Cloud Gateway remains a separate public routing and reference surface.</p>
+          </div>
+          <div class="directory-intelligence-actions" aria-label="Directory intelligence tools">
+            <a href="/core/directory-agi/">Open Directory AGI</a>
+            <a href="/core/directory-agi/#cloud">Mini Cloud</a>
+            <a href="/cloud/">Public Cloud Gateway</a>
+          </div>
+        </aside>
 
         <section class="complete-page-index" id="completePageIndex" aria-labelledby="completePageIndexTitle">
           <p class="kicker">Complete Ecosystem Index</p>
