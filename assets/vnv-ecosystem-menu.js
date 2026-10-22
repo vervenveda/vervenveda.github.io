@@ -123,6 +123,7 @@
     if(nativeMenu)button.classList.add("vnv-eco-text-only");
 
     const target=
+      document.querySelector("[data-vnv-global-tools]") ||
       document.querySelector(".header-actions") ||
       document.querySelector(".nav-utilities") ||
       document.querySelector(".topbar-inner") ||
