@@ -157,6 +157,7 @@
   top.setAttribute("aria-label", childFacing ? "Grown-ups: jump to voluntary support information" : "Jump to voluntary support information");
   const learnerToolbar = document.getElementById("khaemenesLearnerUtilityToolbar");
   const headerTarget =
+    document.querySelector("[data-vnv-global-tools]") ||
     document.querySelector(".header-actions") ||
     document.querySelector(".site-header .header-inner") ||
     document.querySelector("header nav");
