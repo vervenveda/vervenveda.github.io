@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T21:58:48Z",
+  "generatedAt": "2026-10-22T05:22:01Z",
   "account": "vervenveda",
   "policy": "Discovery only. New repositories never become public ecosystem destinations automatically. STOS and reserved dummy repositories remain excluded.",
-  "candidates": [],
+  "candidates": [
+    {
+      "repository": "vervenveda/PLERA.github.io",
+      "name": "PLERA.github.io",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "archived": false,
+      "disabled": false,
+      "updatedAt": "2026-10-21T23:04:51Z",
+      "pushedAt": "2026-10-21T23:04:49Z",
+      "homepage": "",
+      "state": "under-review",
+      "directoryVisible": false,
+      "reason": "New public Pages repository discovered; manual ecosystem approval required."
+    }
+  ],
   "ignored": [
     {
       "repository": "vervenveda/Dummy.github.io",

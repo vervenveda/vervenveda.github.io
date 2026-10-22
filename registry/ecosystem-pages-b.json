@@ -1,9 +1,129 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-21T21:58:48Z",
+  "generatedAt": "2026-10-22T05:22:01Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Week 29",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-29/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Week 30",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-30/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/lessons/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-30/lessons/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/lessons/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-30/lessons/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/lessons/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-30/lessons/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/lessons/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-30/lessons/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/lessons/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-30/lessons/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Week 31",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-31/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-31/lessons/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
     {
       "title": "Day 02",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-31/lessons/day-02.html",
