@@ -73,7 +73,7 @@ function announceCapabilities(workspace){
 
 function clearWorkspace(){
   const root=document.documentElement;
-  ["Active","Theme","TextSize","LineSpacing","ReadingWidth","Contrast","Density","ReducedMotion","Tts","Simplified"].forEach(key=>{
+  ["Active","Theme","TextSize","LineSpacing","ReadingWidth","Contrast","Density","ReducedMotion","Tts","Simplified","PreferredLanguage"].forEach(key=>{
     delete root.dataset["khaeWorkspace"+key];
   });
 }
