@@ -1,4 +1,4 @@
-/* Verve N Veda · Beta Program + Khaemenes learner rail widget · v1.7.7 */
+/* Verve N Veda · Beta Program + Khaemenes learner rail widget · v1.7.8 */
 (() => {
   "use strict";
 
@@ -10,6 +10,7 @@
   const SCRIPT_URL="https://vervenveda.com/assets/vnv-beta-link.js";
   const ECOSYSTEM_MENU_URL="https://vervenveda.com/assets/vnv-ecosystem-menu.js";
   const SUPPORT_URL="https://vervenveda.com/assets/vnv-support.js";
+  const KHAEMENES_WORKSPACE_URL="https://vervenveda.com/assets/khaemenes-student-workspace-v2.js";
   const BAZAAR_LIVE_URL="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html";
   const HIGH_PROFILE_ID="khaemenesHighStudentProfileLink";
   const HIGH_PROFILE_STYLE_ID="khaemenesHighStudentProfileLinkStyles";
@@ -409,6 +410,13 @@
     }catch{}
   }
 
+  function ensureEducationWorkspace(){
+    try{
+      if(!educationProfileConfig())return;
+      loadOnce(KHAEMENES_WORKSPACE_URL,"khaemenes-student-workspace-v2");
+    }catch{}
+  }
+
   function ensureEducationContinuationPublisher(){
     try{
       const path=String(location.pathname||"").toLowerCase();
@@ -537,9 +545,9 @@
     observer.observe(document.documentElement,{childList:true,subtree:true});
   }
 
-  function start(){mount();mountHighStudentProfile();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureEcosystemMenu();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding()}
+  function start(){mount();mountHighStudentProfile();ensureEducationWorkspace();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureEcosystemMenu();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding()}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.7.7",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
+  window.VNVBetaProgram=Object.freeze({version:"1.7.8",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
 })();
