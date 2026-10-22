@@ -116,7 +116,8 @@
       color:#fff;background:var(--ink);font-size:11px;letter-spacing:.02em;text-transform:uppercase;
     }
     .nav a:hover,.nav a:focus-visible{background:var(--forest);border-color:var(--forest);transform:translateY(-1px)}
-    .cloud-state{justify-self:end;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    .cloud-header-tools{justify-self:end;display:flex;align-items:center;gap:10px}
+    .cloud-state{color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 
     .hero{
       min-height:calc(100svh - var(--ticker) - var(--header));
@@ -219,18 +220,7 @@
   <link rel="stylesheet" href="/assets/vnv-ecosystem-menu.css">
 </head>
 <body>
-  <details class="vnv-ecosystem-nav" data-vnv-ecosystem-menu>
-    <summary aria-label="Open Verve N Veda ecosystem menu" title="Verve N Veda ecosystem menu">
-      <span class="vnv-ecosystem-lines" aria-hidden="true"><span></span><span></span><span></span></span>
-    </summary>
-    <nav class="vnv-ecosystem-dropdown" aria-label="Verve N Veda ecosystem">
-      <p class="vnv-ecosystem-kicker">Verve N Veda</p>
-      <a class="vnv-ecosystem-primary" href="https://vervenveda.com/#directory">Ecosystem Directory</a>
-      <a href="https://vervenveda.com/">Verve N Veda Home</a>
-    </nav>
-  </details>
-
-  <div class="ticker" aria-label="Verve N Veda public network ticker">
+<div class="ticker" aria-label="Verve N Veda public network ticker">
     <div class="ticker-track">
       <span>VERVE N VEDA</span><span>EDUCATION</span><span>KNOWLEDGE</span><span>PUBLIC SERVICE</span><span>CREATIVE NETWORK</span><span>CONTINUITY</span><span>333 NETWORK</span><span>VERVE N VEDA</span><span>EDUCATION</span><span>KNOWLEDGE</span><span>PUBLIC SERVICE</span><span>CREATIVE NETWORK</span><span>CONTINUITY</span><span>333 NETWORK</span>
     </div>
@@ -245,7 +235,10 @@
       <nav class="nav" aria-label="Cloud sections">
         <a href="#halls">Halls</a><a href="#continuity">Continuity</a><a href="#trace">Gateway</a>
       </nav>
-      <span class="cloud-state">Public · Static</span>
+      <div class="cloud-header-tools">
+        <span class="cloud-state">Public · Static</span>
+        <span data-vnv-ecosystem-slot aria-label="Verve N Veda ecosystem menu"></span>
+      </div>
     </div>
   </header>
 
@@ -392,6 +385,7 @@
 
 
 
+<script src="https://vervenveda.com/assets/vnv-ecosystem-menu.js" defer></script>
 <script src="https://vervenveda.com/assets/vnv-beta-link.js" defer></script>
 </body>
 </html>
