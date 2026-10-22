@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-22T10:09:43Z",
+  "generatedAt": "2026-10-22T22:43:12Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 29,
     "failedRepositoryCount": 0,
-    "htmlCount": 12086,
-    "brokenLocalLinkCount": 4,
-    "rootOrphanHtmlCount": 5467,
-    "unreferencedHtmlCount": 1495,
+    "htmlCount": 12111,
+    "brokenLocalLinkCount": 67,
+    "rootOrphanHtmlCount": 5419,
+    "unreferencedHtmlCount": 1496,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -454,11 +454,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Academy_Life_Skills.github.io",
-      "htmlCount": 207,
+      "htmlCount": 222,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 174,
-      "rootOrphanHtmlCount": 33,
-      "unreferencedHtmlCount": 0,
+      "rootReachableHtmlCount": 186,
+      "rootOrphanHtmlCount": 36,
+      "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -466,6 +466,9 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
+        "courses/creativity-arts-making/index.html",
+        "courses/entrepreneurship-small-business/index.html",
+        "courses/gardening-food-growing/index.html",
         "courses/kindergarten/creativity-arts-making/index.html",
         "courses/kindergarten/creativity-arts-making/week-01/index.html",
         "courses/kindergarten/creativity-arts-making/week-02/index.html",
@@ -500,7 +503,11 @@
         "courses/kindergarten/sustainability-stewardship/week-02/index.html",
         "courses/kindergarten/sustainability-stewardship/week-03/index.html"
       ],
-      "unreferencedPages": [],
+      "unreferencedPages": [
+        "courses/creativity-arts-making/index.html",
+        "courses/entrepreneurship-small-business/index.html",
+        "courses/gardening-food-growing/index.html"
+      ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
       "intentionalSiblingGroups": [],
@@ -700,9 +707,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3490,
+      "htmlCount": 3499,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2461,
+      "rootReachableHtmlCount": 2470,
       "rootOrphanHtmlCount": 1007,
       "unreferencedHtmlCount": 697,
       "duplicateGroupCount": 0,
@@ -878,6 +885,10 @@
       "duplicateGroups": [],
       "versionSiblingGroups": [
         [
+          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-06/student-packet.html"
+        ],
+        [
           "courses/social-studies/grade-09/week-10/student-packet-v2.html",
           "courses/social-studies/grade-09/week-10/student-packet.html"
         ],
@@ -888,13 +899,19 @@
         [
           "courses/social-studies/grade-09/week-09/student-packet-v2.html",
           "courses/social-studies/grade-09/week-09/student-packet.html"
-        ],
-        [
-          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-06/student-packet.html"
         ]
       ],
       "intentionalSiblingGroups": [
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
+          }
+        },
         {
           "pages": [
             "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html",
@@ -924,16 +941,6 @@
             "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html": "canonical-assessment",
             "courses/social-studies/grade-09/weeks/week-09/student-packet.html": ""
           }
-        },
-        {
-          "pages": [
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
-          ],
-          "roles": {
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
-          }
         }
       ],
       "canonicalAliases": [
@@ -948,9 +955,9 @@
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
       "htmlCount": 3183,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1726,
-      "rootOrphanHtmlCount": 1446,
-      "unreferencedHtmlCount": 177,
+      "rootReachableHtmlCount": 1740,
+      "rootOrphanHtmlCount": 1432,
+      "unreferencedHtmlCount": 174,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -961,7 +968,6 @@
         "GED/Interactive_index.html",
         "GED/Preparation_index.html",
         "GED/Survey_index.html",
-        "Technology/coding/coding-101/index.html",
         "Technology/coding/coding-102/index.html",
         "Technology/coding/coding-103/index.html",
         "Technology/coding/coding-201_index.html",
@@ -1037,13 +1043,13 @@
         "courses/abstract-algebra/units/unit-05/lessons/u05-l07.html",
         "courses/abstract-algebra/units/unit-05/mastery-check.html",
         "courses/abstract-algebra/units/unit-06/core-set.html",
-        "courses/abstract-algebra/units/unit-06/extended-set.html"
+        "courses/abstract-algebra/units/unit-06/extended-set.html",
+        "courses/abstract-algebra/units/unit-06/foundation-set.html"
       ],
       "unreferencedPages": [
         "GED/Interactive_index.html",
         "GED/Preparation_index.html",
         "GED/Survey_index.html",
-        "Technology/coding/coding-101/index.html",
         "Technology/coding/coding-103/index.html",
         "Technology/coding/coding-201_index.html",
         "Technology/coding/coding-202_index.html",
@@ -1065,7 +1071,6 @@
         "courses/abstract-algebra/units/unit-11/index.html",
         "courses/abstract-algebra/units/unit-12/index.html",
         "courses/abstract-algebra/units/unit-13/index.html",
-        "courses/academic-language-and-lexicology/index.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-01/KH-MATH-AGT-W01-R01_building-surfaces-from-polygons.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-02/KH-MATH-AGT-W01-CR01_quotient-spaces-polygonal-schemas.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-03/KH-MATH-AGT-W01-WE01_worked-surface-identification-examples.html",
@@ -1119,7 +1124,9 @@
         "courses/introduction-to-proofs/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
         "courses/introduction-to-proofs/units/unit-01/index.html",
         "courses/introduction-to-proofs/units/unit-02/index.html",
-        "courses/introduction-to-proofs/units/unit-03/index.html"
+        "courses/introduction-to-proofs/units/unit-03/index.html",
+        "courses/introduction-to-proofs/units/unit-04/index.html",
+        "courses/introduction-to-proofs/units/unit-05/index.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
@@ -1130,7 +1137,7 @@
     {
       "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
       "htmlCount": 393,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 125,
       "rootOrphanHtmlCount": 268,
       "unreferencedHtmlCount": 107,
@@ -1139,15 +1146,7 @@
       "intentionalSiblingGroupCount": 0,
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "social-studies/printable.html",
-          "target": "social-studies/styles.css",
-          "raw": "styles.css",
-          "tag": "link",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "apps/ABC_story-sing-along.html",
         "apps/Math_space_index.html_index.html",
@@ -1321,7 +1320,7 @@
     {
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
       "htmlCount": 194,
-      "brokenLocalLinkCount": 2,
+      "brokenLocalLinkCount": 66,
       "rootReachableHtmlCount": 7,
       "rootOrphanHtmlCount": 185,
       "unreferencedHtmlCount": 8,
@@ -1332,6 +1331,83 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
+          "source": "Halls/courses/arabic-1/week-06/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-28/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-10/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-16/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-19/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-14/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-23/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-05/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-15/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-11/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-27/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
           "source": "Halls/courses/arabic-1/week-01/index.html",
           "target": "Halls/assets/arabic-mastery-pilot.js",
           "raw": "../../../assets/arabic-mastery-pilot.js",
@@ -1339,11 +1415,382 @@
           "attr": "src"
         },
         {
+          "source": "Halls/courses/arabic-1/week-01/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-03/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-12/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
           "source": "Halls/courses/arabic-1/week-02/index.html",
           "target": "Halls/assets/arabic-mastery-pilot.js",
           "raw": "../../../assets/arabic-mastery-pilot.js",
           "tag": "script",
           "attr": "src"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-02/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-08/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-04/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-20/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-13/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-17/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-07/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-21/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-24/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-31/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-30/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-32/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-09/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-29/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-25/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-26/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-22/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/arabic-1/week-18/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-06/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-28/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-10/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-16/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-19/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-14/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-23/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-05/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-15/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-11/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-27/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-01/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-03/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-12/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-02/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-08/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-04/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-20/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-13/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-17/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-07/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-21/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-24/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-31/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-30/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-32/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-09/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-29/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-25/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-26/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-22/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "Halls/courses/russian-1/week-18/index.html",
+          "target": "Halls/courses/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
         }
       ],
       "rootOrphans": [
@@ -1446,11 +1893,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Middle.github.io",
-      "htmlCount": 1397,
+      "htmlCount": 1398,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 26,
-      "rootOrphanHtmlCount": 1371,
-      "unreferencedHtmlCount": 38,
+      "rootReachableHtmlCount": 64,
+      "rootOrphanHtmlCount": 1334,
+      "unreferencedHtmlCount": 39,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -1459,7 +1906,6 @@
       "brokenLocalLinks": [],
       "rootOrphans": [
         "breakaway/index.html",
-        "grades/grade-06/assessments/week-01-assessment.html",
         "grades/grade-06/assessments/week-02-assessment.html",
         "grades/grade-06/assessments/week-03-assessment.html",
         "grades/grade-06/assessments/week-04-assessment.html",
@@ -1495,10 +1941,7 @@
         "grades/grade-06/assessments/week-34-assessment.html",
         "grades/grade-06/assessments/week-35-assessment.html",
         "grades/grade-06/assessments/week-36-assessment.html",
-        "grades/grade-06/evidence/weekly-evidence-packet.html",
         "grades/grade-06/evidence/weekly-mastery-check.html",
-        "grades/grade-06/printables/week-01-packet.html",
-        "grades/grade-06/printables/week-01-subject-evidence.html",
         "grades/grade-06/printables/week-02-packet.html",
         "grades/grade-06/printables/week-02-subject-evidence.html",
         "grades/grade-06/printables/week-03-packet.html",
@@ -1537,7 +1980,11 @@
         "grades/grade-06/printables/week-19-subject-evidence.html",
         "grades/grade-06/printables/week-20-packet.html",
         "grades/grade-06/printables/week-20-subject-evidence.html",
-        "grades/grade-06/printables/week-21-packet.html"
+        "grades/grade-06/printables/week-21-packet.html",
+        "grades/grade-06/printables/week-21-subject-evidence.html",
+        "grades/grade-06/printables/week-22-packet.html",
+        "grades/grade-06/printables/week-22-subject-evidence.html",
+        "grades/grade-06/printables/week-23-packet.html"
       ],
       "unreferencedPages": [
         "breakaway/index.html",
@@ -1577,7 +2024,8 @@
         "grades/grade-08/subjects/science/index.html",
         "grades/grade-08/subjects/social-studies/index.html",
         "grades/grade-08/subjects/technology-design/index.html",
-        "grades/grade-08/subjects/world-languages/index.html"
+        "grades/grade-08/subjects/world-languages/index.html",
+        "resources/video-study/index.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
