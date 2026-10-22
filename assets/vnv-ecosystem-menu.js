@@ -67,13 +67,13 @@
         content:"";display:block;height:1px;background:currentColor
       }
       #${IDS.overlay}{
-        position:fixed;inset:0;z-index:2147483500;display:grid;justify-items:end;
+        position:fixed;inset:0;z-index:2147483500;display:grid;justify-items:end;overflow:hidden;contain:layout paint;
         visibility:hidden;opacity:0;background:rgba(9,15,13,.34);backdrop-filter:blur(4px);
         transition:opacity .18s ease,visibility .18s ease
       }
       #${IDS.overlay}[data-open="true"]{visibility:visible;opacity:1}
       #${IDS.drawer}{
-        width:min(92vw,420px);height:100%;overflow:auto;padding:24px 20px 30px;
+        width:min(92vw,420px);max-width:100vw;height:100%;overflow:auto;box-sizing:border-box;padding:24px 20px 30px;
         transform:translateX(102%);transition:transform .2s ease;
         color:#202d28;background:#fbf8ef;border-left:1px solid rgba(49,73,62,.18);
         box-shadow:-20px 0 54px rgba(20,30,25,.15)
