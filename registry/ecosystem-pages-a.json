@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-22T17:38:17Z",
+  "generatedAt": "2026-10-22T21:55:34Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -2381,6 +2381,14 @@
       "source": "Khaemenes Academy Life Skills"
     },
     {
+      "title": "Creativity Arts Making",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/creativity-arts-making/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/creativity-arts-making/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
       "title": "Preschool",
       "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/creativity-arts-making/preschool/",
       "repo": "Khaemenes_Academy_Life_Skills.github.io",
@@ -3365,6 +3373,14 @@
       "source": "Khaemenes Academy Life Skills"
     },
     {
+      "title": "Entrepreneurship Small Business",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/entrepreneurship-small-business/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/entrepreneurship-small-business/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
       "title": "Preschool",
       "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/entrepreneurship-small-business/preschool/",
       "repo": "Khaemenes_Academy_Life_Skills.github.io",
@@ -3393,6 +3409,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/entrepreneurship-small-business/preschool/week-03/",
       "repo": "Khaemenes_Academy_Life_Skills.github.io",
       "path": "courses/entrepreneurship-small-business/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Gardening Food Growing",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/gardening-food-growing/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/gardening-food-growing/index.html",
       "category": "education",
       "source": "Khaemenes Academy Life Skills"
     },
@@ -3457,6 +3481,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/health-first-aid-wellbeing/preschool/week-03/",
       "repo": "Khaemenes_Academy_Life_Skills.github.io",
       "path": "courses/health-first-aid-wellbeing/preschool/week-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy Life Skills"
+    },
+    {
+      "title": "Home Management",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy_Life_Skills.github.io/courses/home-management/",
+      "repo": "Khaemenes_Academy_Life_Skills.github.io",
+      "path": "courses/home-management/index.html",
       "category": "education",
       "source": "Khaemenes Academy Life Skills"
     },
@@ -23053,10 +23085,58 @@
       "source": "Khaemenes Sr. High"
     },
     {
+      "title": "Career Professional Studies",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Computing Digital Technology",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/computing-digital-technology/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/computing-digital-technology/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Fine Arts Visual Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/fine-arts-visual-studio/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/fine-arts-visual-studio/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Health Wellness Human Development",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/health-wellness-human-development/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/health-wellness-human-development/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
       "title": "Electives",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/electives/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Music Music Theory",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/music-music-theory/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/music-music-theory/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "World Languages Linguistics",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/world-languages-linguistics/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/world-languages-linguistics/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -43449,46 +43529,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-28/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
