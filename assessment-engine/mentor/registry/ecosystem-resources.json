@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-21T21:40:21.418Z",
-  "sourceLatestRepositoryTimestamp": "2026-10-21T21:36:56Z",
+  "generatedAt": "2026-10-22T04:40:16.843Z",
+  "sourceLatestRepositoryTimestamp": "2026-10-21T23:41:12Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -12512,6 +12512,357 @@
       "policy": {
         "requiresFreshnessCheck": true,
         "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plera.github.io.plera-search-home",
+      "title": "PLERA Search",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERA.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "research",
+        "navigation"
+      ],
+      "skills": [
+        "research-navigation"
+      ],
+      "tags": [
+        "search",
+        "research",
+        "current-info"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": true,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plera.github.io.search-gate",
+      "title": "PLERA Search Gate",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/PLERA_Search_Gate_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERA.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "research"
+      ],
+      "skills": [
+        "search",
+        "research-navigation"
+      ],
+      "tags": [
+        "search",
+        "research",
+        "current-info"
+      ],
+      "minutes": 10,
+      "energy": "curious",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plera.github.io.search-pro",
+      "title": "PLERA Search Pro",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/PLERA_search_pro_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERA.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "research"
+      ],
+      "skills": [
+        "advanced-search",
+        "research-navigation"
+      ],
+      "tags": [
+        "search",
+        "research",
+        "current-info"
+      ],
+      "minutes": 15,
+      "energy": "focused",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plera.github.io.insurance-gate",
+      "title": "Insurance Resource Gate",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/Insurance_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERA.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "practical-resources"
+      ],
+      "skills": [
+        "resource-navigation"
+      ],
+      "tags": [
+        "insurance",
+        "adult-resource",
+        "current-info"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": true,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.plera.github.io.shopping-gate",
+      "title": "Shopping Resource Gate",
+      "description": "",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/Shopping_index.html",
+      "sourceId": "verve.plera-search",
+      "repository": "vervenveda/PLERA.github.io",
+      "classification": "research-information",
+      "audiences": [
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "practical-resources"
+      ],
+      "skills": [
+        "resource-navigation"
+      ],
+      "tags": [
+        "shopping",
+        "adult-resource",
+        "current-info"
+      ],
+      "minutes": 10,
+      "energy": "steady",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "",
+      "learningValue": "",
+      "curricularWeight": "",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": true,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": true,
+        "dynamicContent": true,
         "requiresPreferenceMatch": [],
         "requiresAccountAwareness": false,
         "requiresLinkedLearner": false,
