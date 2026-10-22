@@ -160,7 +160,10 @@
     document.querySelector(".header-actions") ||
     document.querySelector(".site-header .header-inner") ||
     document.querySelector("header nav");
-  if(learnerToolbar){
+  if(learnerToolbar&&document.getElementById("khaemenesStudentContributeButton")){
+    /* High School learner rail already owns the single Contribute doorway.
+       Keep the full voluntary-support section below without creating a sixth rail control. */
+  }else if(learnerToolbar){
     top.classList.add("vnv-support-top-inline");
     top.textContent=childFacing ? "Grown-Ups" : "Support";
     top.setAttribute("aria-label",childFacing ? "Grown-ups: voluntary support information" : "Voluntary support information");
