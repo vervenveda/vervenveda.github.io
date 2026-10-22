@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.1.1",
+  "schemaVersion": "0.2.0",
   "title": "Verve N Veda Master Ecosystem Directory",
   "baseline": "2026-10-14",
   "purpose": "Normalized public-surface registry built from the forensic scan of the public vervenveda GitHub organization.",
@@ -45,7 +45,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/"
+      "url": "https://vervenveda.com/",
+      "developmentStatus": "live"
     },
     {
       "id": "gateway-beta",
@@ -69,7 +70,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/333.github.io/"
+      "url": "https://vervenveda.github.io/333.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "333-bazaar",
@@ -165,7 +167,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/"
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "academy-life-skills",
@@ -177,7 +180,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/"
+      "url": "https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "academy-adult",
@@ -633,7 +637,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Arshif.github.io/"
+      "url": "https://vervenveda.github.io/Arshif.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "arshif-faith",
@@ -693,7 +698,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/theverifier.github.io/"
+      "url": "https://vervenveda.github.io/theverifier.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "verifier-modern",
@@ -777,7 +783,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/PLERASearch.github.io/"
+      "url": "https://vervenveda.github.io/PLERASearch.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "plera-gate",
@@ -813,7 +820,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/solanar.github.io/"
+      "url": "https://vervenveda.github.io/solanar.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "solanar-live",
@@ -873,7 +881,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/river_to_road.github.io/"
+      "url": "https://vervenveda.github.io/river_to_road.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "river-quiz",
@@ -909,7 +918,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/bazaarart.github.io/"
+      "url": "https://vervenveda.github.io/bazaarart.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "bazaar-art-hall",
@@ -981,7 +991,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/the_refrain.github.io/"
+      "url": "https://vervenveda.github.io/the_refrain.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "refrain-101",
@@ -1029,7 +1040,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/aurora.github.io/"
+      "url": "https://vervenveda.github.io/aurora.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "aurora-inspiration",
@@ -1053,7 +1065,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/myartgallery.github.io/"
+      "url": "https://vervenveda.github.io/myartgallery.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "arcade",
@@ -1065,7 +1078,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/"
+      "url": "https://vervenveda.github.io/arcade.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "arcade-chess",
@@ -1257,7 +1271,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/finance.github.io/"
+      "url": "https://vervenveda.github.io/finance.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "finance-hall",
@@ -1341,7 +1356,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/"
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "medicament-pe",
@@ -1377,7 +1393,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/firmament.github.io/"
+      "url": "https://vervenveda.github.io/firmament.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "firmament-family",
@@ -1437,7 +1454,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Homeless.github.io/"
+      "url": "https://vervenveda.github.io/Homeless.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "veterans",
@@ -1449,7 +1467,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/veterans.github.io/"
+      "url": "https://vervenveda.github.io/veterans.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "one-nation",
@@ -1461,7 +1480,8 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/onenationforall.github.io/"
+      "url": "https://vervenveda.github.io/onenationforall.github.io/",
+      "developmentStatus": "live"
     },
     {
       "id": "one-us-voter",
@@ -1756,5 +1776,14 @@
       "stos": "dormant-excluded",
       "generatedAt": "2026-10-22T21:55:34Z"
     }
-  }
+  },
+  "developmentStatusValues": [
+    "live",
+    "partial",
+    "landing-ready",
+    "blueprint",
+    "under-construction",
+    "internal"
+  ],
+  "developmentStatusPurpose": "Tracks implementation maturity separately from routing availability. The existing status field remains authoritative for public routing and visibility."
 }
