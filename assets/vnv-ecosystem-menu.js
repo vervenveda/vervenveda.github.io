@@ -72,6 +72,7 @@
         transition:opacity .18s ease,visibility .18s ease
       }
       #${IDS.overlay}[data-open="true"]{visibility:visible;opacity:1}
+      #${IDS.overlay}:not([data-open="true"]) #${IDS.drawer}{display:none}
       #${IDS.drawer}{
         width:min(92vw,420px);max-width:100vw;height:100%;overflow:auto;box-sizing:border-box;padding:24px 20px 30px;
         transform:translateX(102%);transition:transform .2s ease;
