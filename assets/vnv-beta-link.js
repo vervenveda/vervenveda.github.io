@@ -1,4 +1,4 @@
-/* Verve N Veda · Beta Program + Khaemenes learner rail widget · v1.7.8 */
+/* Verve N Veda · Beta Program + Khaemenes learner rail widget · v1.8.0 */
 (() => {
   "use strict";
 
@@ -14,11 +14,16 @@
   const BAZAAR_LIVE_URL="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html";
   const HIGH_PROFILE_ID="khaemenesHighStudentProfileLink";
   const HIGH_PROFILE_STYLE_ID="khaemenesHighStudentProfileLinkStyles";
+  const HIGH_WORK_ID="khaemenesStudentWorkButton";
+  const HIGH_SEARCH_ID="khaemenesStudentSearchButton";
+  const HIGH_CONTRIBUTE_ID="khaemenesStudentContributeButton";
   const EDUCATION_TOOLBAR_ID="khaemenesLearnerUtilityToolbar";
   const EDUCATION_TOOLBAR_STYLE_ID="khaemenesLearnerUtilityToolbarStyles";
   const ACADEMY_STUDENT_URL="https://vervenveda.com/Khaemenes_Academy.github.io/student/";
   const ACADEMY_FAMILY_URL="https://vervenveda.com/Khaemenes_Academy.github.io/family/";
   const HIGHER_SCHOLAR_URL="https://vervenveda.com/Khaemenes_Academy.github.io/adult/";
+  const HIGH_SCHOOL_ROOT="https://vervenveda.com/Khaemenes_High.github.io/";
+  const CONTRIBUTE_URL="https://vervenveda.com/#vnv-global-support";
   const LINGUISTICS_CONTINUATION_URL="https://vervenveda.com/Khaemenes_Linguistics.github.io/assets/khaemenes-linguistics-continuation.js";
   const ELEMENTARY_CONTINUATION_URL="https://vervenveda.com/Khaemenes_Elementary.github.io/assets/khaemenes-elementary-continuation-publisher.js";
   const MIDDLE_CONTINUATION_URL="https://vervenveda.com/Khaemenes_Middle.github.io/assets/khaemenes-middle-continuation-publisher.js";
@@ -66,6 +71,44 @@
   };
 
 
+  const readLocalJSON=(key)=>{
+    try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):null}catch{return null}
+  };
+  const isHighStudentSurface=()=>{
+    try{
+      const host=String(location.hostname||"").toLowerCase();
+      const path=String(location.pathname||"").toLowerCase();
+      return host.includes("khaemenes-high")||path.includes("/khaemenes_high.github.io/");
+    }catch{return false}
+  };
+  const highStudentProfileUrl=()=>{
+    try{
+      const registered=window.KhaemenesFamilyRegistry?.getLearner?.()||null;
+      const active=readLocalJSON("khaemenes_active_learner_v1");
+      const registry=readLocalJSON("khaemenes_family_registry_v1");
+      const id=registered?.learnerId||(typeof active==="string"?active:active?.learnerId);
+      const stored=id?registry?.learners?.[id]:null;
+      const grade=Number(registered?.grade??stored?.grade);
+      if(Number.isInteger(grade)&&grade>=9&&grade<=12){
+        return HIGH_SCHOOL_ROOT+"grades/grade-"+String(grade).padStart(2,"0")+"/student-profile/";
+      }
+    }catch{}
+    return ACADEMY_STUDENT_URL;
+  };
+  const openStudentSearch=()=>{
+    const open=()=>{
+      try{
+        if(window.VNVEcosystemMenu?.open){window.VNVEcosystemMenu.open();return true}
+        const button=document.getElementById("vnvEcosystemMenuButton");
+        if(button){button.click();return true}
+      }catch{}
+      return false;
+    };
+    if(open())return;
+    ensureEcosystemMenu();
+    setTimeout(()=>{if(!open())setTimeout(open,180)},70);
+  };
+
   const educationProfileConfig=()=>{
     try{
       const host=String(location.hostname||"").toLowerCase();
@@ -112,8 +155,8 @@
         return {
           label:"Student Profile",
           mark:"S",
-          url:ACADEMY_STUDENT_URL,
-          aria:"Open Khaemenes Academy Student Profile and pinned courses",
+          url:highStudentProfileUrl(),
+          aria:"Open the active High School grade Student Profile and daily schedule",
           title:"Student Profile · pinned courses and learning schedule"
         };
       }
@@ -549,5 +592,5 @@
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.7.8",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
+  window.VNVBetaProgram=Object.freeze({version:"1.8.0",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig});
 })();
