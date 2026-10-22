@@ -125,7 +125,12 @@ function boot(){
     if(key==="khaemenes_student_profile_v2"||key.startsWith("khaemenes.student-profile.v3:")||key==="khaemenes_active_learner_v1"||key==="khaemenes_family_registry_v1")apply();
   });
   window.addEventListener("pageshow",apply);
-  let tries=0;const languageRetry=setInterval(()=>{tries++;if(apply()||tries>=8)clearInterval(languageRetry)},350);
+  let tries=0;const languageRetry=setInterval(()=>{
+    tries++;apply();
+    const P=window.KhaemenesStudentProfileV2,learner=P?.activeLearner?.(),record=learner?.learnerId?P.read?.(learner.learnerId):null;
+    const code=preferredLanguageCode(record?.workspace?.preferredLanguage);
+    if(!code||window.VNVLanguage?.setLanguage||tries>=8)clearInterval(languageRetry);
+  },350);
 }
 
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
