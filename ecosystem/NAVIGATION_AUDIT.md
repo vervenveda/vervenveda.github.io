@@ -1,6 +1,6 @@
 # Verve N Veda Public Navigation Audit
 
-Generated: 2026-10-21T15:20:07Z
+Generated: 2026-10-22T10:09:43Z
 
 STOS remains dormant and is excluded from this audit. No files are deleted or renamed automatically.
 
@@ -8,10 +8,10 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 - Repositories audited: 29
 - Repository audit failures: 0
-- HTML files inspected: 11857
+- HTML files inspected: 12086
 - Broken local link references: 4
-- HTML pages not reachable from repository root index: 6466
-- HTML pages with no incoming in-repository link: 1503
+- HTML pages not reachable from repository root index: 5467
+- HTML pages with no incoming in-repository link: 1495
 - Exact duplicate groups: 0
 - Version/sibling groups requiring review: 4
 - Intentional semantic sibling groups: 4
@@ -20,13 +20,13 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 ## Highest-priority repositories
 
-- **vervenveda/Khaemenes_Linguistics.github.io** — broken 2; unreferenced 13; exact duplicates 0; version siblings 0.
+- **vervenveda/Khaemenes_Linguistics.github.io** — broken 2; unreferenced 8; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Elementary.github.io** — broken 1; unreferenced 158; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_KinderGarden.github.io** — broken 1; unreferenced 107; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_High.github.io** — broken 0; unreferenced 697; exact duplicates 0; version siblings 4.
 - **vervenveda/Khaemenes_Higher_Learning.github.io** — broken 0; unreferenced 177; exact duplicates 0; version siblings 0.
 - **vervenveda/proresource_hub.github.io** — broken 0; unreferenced 123; exact duplicates 0; version siblings 0.
-- **vervenveda/Khaemenes_Preschool.github.io** — broken 0; unreferenced 43; exact duplicates 0; version siblings 0.
+- **vervenveda/Khaemenes_Preschool.github.io** — broken 0; unreferenced 40; exact duplicates 0; version siblings 0.
 - **vervenveda/aurora.github.io** — broken 0; unreferenced 39; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Middle.github.io** — broken 0; unreferenced 38; exact duplicates 0; version siblings 0.
 - **vervenveda/theverifier.github.io** — broken 0; unreferenced 33; exact duplicates 0; version siblings 0.
