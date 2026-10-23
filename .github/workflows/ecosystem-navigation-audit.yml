@@ -28,6 +28,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Test public navigation path resolution
+        run: python3 -m unittest discover -s ecosystem/tests -p "test_*.py" -v
+
       - name: Audit public navigation graph
         run: python3 ecosystem/audit_public_navigation.py
 
