@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-23T10:02:30Z",
+  "generatedAt": "2026-10-23T22:58:40Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 29,
     "failedRepositoryCount": 0,
-    "htmlCount": 12112,
-    "brokenLocalLinkCount": 69,
-    "rootOrphanHtmlCount": 5419,
-    "unreferencedHtmlCount": 1532,
+    "htmlCount": 12114,
+    "brokenLocalLinkCount": 55,
+    "rootOrphanHtmlCount": 5418,
+    "unreferencedHtmlCount": 1530,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -1333,10 +1333,10 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
-      "htmlCount": 194,
-      "brokenLocalLinkCount": 66,
+      "htmlCount": 195,
+      "brokenLocalLinkCount": 52,
       "rootReachableHtmlCount": 7,
-      "rootOrphanHtmlCount": 185,
+      "rootOrphanHtmlCount": 186,
       "unreferencedHtmlCount": 8,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
@@ -1345,21 +1345,7 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
-          "source": "Halls/courses/arabic-1/week-06/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "Halls/courses/arabic-1/week-28/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-10/index.html",
           "target": "Halls/courses/index.html",
           "raw": "../../index.html",
           "tag": "a",
@@ -1394,13 +1380,6 @@
           "attr": "href"
         },
         {
-          "source": "Halls/courses/arabic-1/week-05/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "Halls/courses/arabic-1/week-15/index.html",
           "target": "Halls/courses/index.html",
           "raw": "../../index.html",
@@ -1408,70 +1387,7 @@
           "attr": "href"
         },
         {
-          "source": "Halls/courses/arabic-1/week-11/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
           "source": "Halls/courses/arabic-1/week-27/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-01/index.html",
-          "target": "Halls/assets/arabic-mastery-pilot.js",
-          "raw": "../../../assets/arabic-mastery-pilot.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-01/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-03/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-12/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-02/index.html",
-          "target": "Halls/assets/arabic-mastery-pilot.js",
-          "raw": "../../../assets/arabic-mastery-pilot.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-02/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-08/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-04/index.html",
           "target": "Halls/courses/index.html",
           "raw": "../../index.html",
           "tag": "a",
@@ -1493,13 +1409,6 @@
         },
         {
           "source": "Halls/courses/arabic-1/week-17/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-07/index.html",
           "target": "Halls/courses/index.html",
           "raw": "../../index.html",
           "tag": "a",
@@ -1535,13 +1444,6 @@
         },
         {
           "source": "Halls/courses/arabic-1/week-32/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-09/index.html",
           "target": "Halls/courses/index.html",
           "raw": "../../index.html",
           "tag": "a",
@@ -1896,8 +1798,8 @@
         "apps/Scrabble_word_finder_index.html",
         "apps/numina_grove_index.html",
         "apps/translation_helper_index.html",
-        "apps/word_of_day_index.html",
-        "multilingual-translator_index.html"
+        "apps/translator-entry.html",
+        "apps/word_of_day_index.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
@@ -2049,9 +1951,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Preschool.github.io",
-      "htmlCount": 58,
+      "htmlCount": 59,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 14,
+      "rootReachableHtmlCount": 15,
       "rootOrphanHtmlCount": 44,
       "unreferencedHtmlCount": 40,
       "duplicateGroupCount": 0,
@@ -2647,9 +2549,9 @@
       "repository": "vervenveda/vervenveda.github.io",
       "htmlCount": 19,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 8,
-      "rootOrphanHtmlCount": 10,
-      "unreferencedHtmlCount": 10,
+      "rootReachableHtmlCount": 10,
+      "rootOrphanHtmlCount": 8,
+      "unreferencedHtmlCount": 8,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -2660,8 +2562,6 @@
         "archive/reference/index.html",
         "assessment-engine/mentor/matrix/index.html",
         "assessment-engine/mentor/registry/objective-map-diagnostics.html",
-        "cloud/index.html",
-        "core/directory-agi/index.html",
         "matrix/index.html",
         "privacy_policy.html",
         "registry/objective-map-diagnostics.html",
@@ -2672,8 +2572,6 @@
         "archive/reference/index.html",
         "assessment-engine/mentor/matrix/index.html",
         "assessment-engine/mentor/registry/objective-map-diagnostics.html",
-        "cloud/index.html",
-        "core/directory-agi/index.html",
         "matrix/index.html",
         "privacy_policy.html",
         "registry/objective-map-diagnostics.html",
