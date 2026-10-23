@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-22T22:41:43Z",
+  "generatedAt": "2026-10-23T05:22:57Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -2249,6 +2249,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/student/",
       "repo": "Khaemenes_Academy.github.io",
       "path": "student/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy"
+    },
+    {
+      "title": "Profile",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/student/profile.html",
+      "repo": "Khaemenes_Academy.github.io",
+      "path": "student/profile.html",
       "category": "education",
       "source": "Khaemenes Academy"
     },
