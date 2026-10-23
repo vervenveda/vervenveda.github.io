@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-22T22:43:12Z",
+  "generatedAt": "2026-10-23T10:02:30Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 29,
     "failedRepositoryCount": 0,
-    "htmlCount": 12111,
-    "brokenLocalLinkCount": 67,
+    "htmlCount": 12112,
+    "brokenLocalLinkCount": 69,
     "rootOrphanHtmlCount": 5419,
-    "unreferencedHtmlCount": 1496,
+    "unreferencedHtmlCount": 1532,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -417,9 +417,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Academy.github.io",
-      "htmlCount": 23,
+      "htmlCount": 24,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 16,
+      "rootReachableHtmlCount": 17,
       "rootOrphanHtmlCount": 7,
       "unreferencedHtmlCount": 7,
       "duplicateGroupCount": 0,
@@ -517,7 +517,7 @@
     {
       "repository": "vervenveda/Khaemenes_Elementary.github.io",
       "htmlCount": 2388,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 3,
       "rootReachableHtmlCount": 1616,
       "rootOrphanHtmlCount": 772,
       "unreferencedHtmlCount": 158,
@@ -528,7 +528,21 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
+          "source": "grades/grade-01/index.html",
+          "target": "grades/grade-01/subjects/math/index.html",
+          "raw": "subjects/math/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
           "source": "grades/grade-01/subjects/social-studies/printable.html",
+          "target": "grades/grade-01/subjects/social-studies/styles.css",
+          "raw": "styles.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-01/subjects/social-studies/teacher.html",
           "target": "grades/grade-01/subjects/social-studies/styles.css",
           "raw": "styles.css",
           "tag": "link",
@@ -1140,7 +1154,7 @@
       "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 125,
       "rootOrphanHtmlCount": 268,
-      "unreferencedHtmlCount": 107,
+      "unreferencedHtmlCount": 143,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
