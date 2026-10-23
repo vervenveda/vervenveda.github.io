@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-23T12:07:35Z",
+  "generatedAt": "2026-10-23T17:26:49Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
@@ -39769,6 +39769,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/wondercabinet_index.html",
       "repo": "Khaemenes_Preschool.github.io",
       "path": "apps/wondercabinet_index.html",
+      "category": "education",
+      "source": "Khaemenes Preschool · Crechè"
+    },
+    {
+      "title": "Graduation",
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/graduation/",
+      "repo": "Khaemenes_Preschool.github.io",
+      "path": "graduation/index.html",
       "category": "education",
       "source": "Khaemenes Preschool · Crechè"
     },
