@@ -1,4 +1,4 @@
-/* Verve N Veda · Beta Program + Khaemenes learner rail widget · v1.8.0 */
+/* Verve N Veda · Beta Program + Khaemenes learner rail widget · v1.8.1 */
 (() => {
   "use strict";
 
@@ -197,20 +197,21 @@
       style.textContent=`
         #${EDUCATION_TOOLBAR_ID}{
           position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));
-          z-index:2147482100;display:flex;flex-wrap:nowrap;align-items:stretch;justify-content:space-evenly;gap:4px;
-          width:max-content;max-width:calc(100vw - 24px);
-          padding:4px;border:1px solid rgba(180,139,69,.48);border-radius:7px;
+          z-index:2147482100;display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));align-items:stretch;gap:6px;
+          width:min(390px,calc(100vw - 24px));max-width:calc(100vw - 24px);box-sizing:border-box;
+          padding:6px;border:1px solid rgba(180,139,69,.48);border-radius:7px;
           background:rgba(255,253,248,.96);box-shadow:0 10px 30px rgba(15,25,37,.16);
           backdrop-filter:blur(10px)
         }
         #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
           position:static!important;right:auto!important;bottom:auto!important;z-index:auto!important;
-          flex:0 1 78px;min-width:0!important;width:78px!important;max-width:78px!important;height:44px!important;min-height:44px!important;max-height:44px!important;
-          display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;
-          margin:0!important;padding:5px 5px!important;border-radius:7px!important;
-          box-sizing:border-box!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
-          box-shadow:none!important;font:600 10px/1.15 "Avenir Next","Segoe UI",Arial,sans-serif!important;
-          letter-spacing:.035em!important;text-decoration:none!important
+          min-width:0!important;width:auto!important;max-width:none!important;height:auto!important;min-height:48px!important;max-height:none!important;
+          display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;
+          margin:0!important;padding:8px 7px!important;border-radius:7px!important;
+          box-sizing:border-box!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;
+          overflow-wrap:normal!important;word-break:normal!important;text-align:center!important;
+          box-shadow:none!important;font:600 10.5px/1.2 "Avenir Next","Segoe UI",Arial,sans-serif!important;
+          letter-spacing:.015em!important;text-decoration:none!important
         }
         #${EDUCATION_TOOLBAR_ID}>#learnerRecordNoticeButton{
           order:10;color:#493719!important;background:#fff4d8!important;border:1px solid #b48b45!important
@@ -235,26 +236,26 @@
         @media(max-width:520px){
           #${EDUCATION_TOOLBAR_ID}{
             right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));
-            width:calc(100vw - 16px);max-width:calc(100vw - 16px);box-sizing:border-box;gap:4px;padding:4px;
+            width:min(320px,calc(100vw - 16px));max-width:calc(100vw - 16px);box-sizing:border-box;
+            grid-template-columns:repeat(auto-fit,minmax(88px,1fr));gap:5px;padding:5px;
           }
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
-            flex:1 1 0!important;min-width:0!important;
-            width:0!important;max-width:none!important;
-            height:44px!important;min-height:44px!important;max-height:44px!important;
-            padding:4px!important;font-size:9px!important;letter-spacing:.01em!important;
-            white-space:normal!important;text-align:center!important;line-height:1.15!important;
+            min-width:0!important;width:auto!important;max-width:none!important;
+            height:auto!important;min-height:46px!important;max-height:none!important;
+            padding:7px 5px!important;font-size:10px!important;letter-spacing:0!important;
+            white-space:normal!important;text-align:center!important;line-height:1.2!important;
           }
         }
         @media(max-width:330px){
           #${EDUCATION_TOOLBAR_ID}{
-            width:calc(100vw - 16px);max-width:calc(100vw - 16px);
-            box-sizing:border-box;flex-wrap:nowrap;justify-content:space-evenly;gap:3px;padding:3px;
+            width:calc(100vw - 12px);max-width:calc(100vw - 12px);
+            box-sizing:border-box;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:4px;padding:4px;
           }
           #${EDUCATION_TOOLBAR_ID}>button,#${EDUCATION_TOOLBAR_ID}>a{
-            flex:1 1 0!important;width:0!important;max-width:none!important;min-width:0!important;
-            height:44px!important;min-height:44px!important;max-height:44px!important;
-            padding:3px!important;white-space:normal!important;overflow-wrap:normal!important;
-            text-align:center!important;font-size:8px!important;line-height:1.12!important;letter-spacing:0!important;
+            min-width:0!important;width:auto!important;max-width:none!important;
+            height:auto!important;min-height:44px!important;max-height:none!important;
+            padding:6px 4px!important;white-space:normal!important;overflow-wrap:normal!important;
+            text-align:center!important;font-size:9.5px!important;line-height:1.15!important;letter-spacing:0!important;
           }
         }
         @media print{#${EDUCATION_TOOLBAR_ID}{display:none!important}}
@@ -646,5 +647,5 @@
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.8.0",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig,highStudentProfileUrl,openStudentSearch,isClosedBookAssessmentSurface});
+  window.VNVBetaProgram=Object.freeze({version:"1.8.1",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig,highStudentProfileUrl,openStudentSearch,isClosedBookAssessmentSurface});
 })();
