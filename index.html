@@ -3904,7 +3904,8 @@
                 <p class="feature-description" id="featureDescription">A rotating doorway into the applications, learning halls, studios, services, games, and public resources across Verve N Veda.</p>
                 <nav class="feature-breadcrumbs" id="featureBreadcrumbs" aria-label="Featured destination breadcrumb"></nav>
                 <div class="feature-actions">
-                  <button class="feature-open-button" id="featureOpenButton" type="button">Open in ecosystem viewer</button>
+                  <a class="feature-open-button" id="featureOpenButton" href="https://vervenveda.com/" target="_blank" rel="noopener noreferrer">Open full page ↗</a>
+                  <button class="feature-pause-button" id="featurePreviewButton" type="button">Preview</button>
                   <button class="feature-pause-button" id="featurePauseButton" type="button" aria-pressed="false">Pause</button>
                   <span class="feature-counter" id="featureCounter"></span>
                 </div>
@@ -5048,12 +5049,13 @@
               ${group.items.map(entry => `
                 <a class="ecosystem-link"
                    href="${escapeAttribute(entry.url)}"
+                   target="_blank" rel="noopener noreferrer"
                    data-ecosystem-url="${escapeAttribute(entry.url)}"
                    data-ecosystem-title="${escapeAttribute(entry.title)}"
                    data-ecosystem-desc="${escapeAttribute(entry.desc)}"
                    data-ecosystem-category="${escapeAttribute(category.label)}"
                    data-ecosystem-subgroup="${escapeAttribute(group.title)}"
-                   aria-label="Open ${escapeAttribute(entry.title)} in the Verve N Veda ecosystem viewer">
+                   aria-label="Open full page for ${escapeAttribute(entry.title)} in a new tab">
                   <span class="ecosystem-link-copy">
                     <strong>${escapeHtml(entry.title)}</strong>
                     <small>${escapeHtml(entry.desc)}</small>
@@ -5066,19 +5068,7 @@
         `).join("");
         panel.hidden = false;
 
-        grid.querySelectorAll(".ecosystem-link").forEach(link => {
-          link.addEventListener("click",event => {
-            if(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
-            event.preventDefault();
-            openFeatureViewer({
-              url:link.dataset.ecosystemUrl,
-              title:link.dataset.ecosystemTitle,
-              desc:link.dataset.ecosystemDesc,
-              category:link.dataset.ecosystemCategory,
-              subgroup:link.dataset.ecosystemSubgroup
-            });
-          });
-        });
+        /* Native links open applications in full browsing contexts. The viewer remains an optional featured preview. */
       }
 
       function setEcosystemCategory(id,{
@@ -5134,17 +5124,17 @@
         education:"https://vervenveda.com/Khaemenes_Academy.github.io/",
         games:"https://vervenveda.github.io/arcade.github.io/",
         civic:"https://vervenveda.github.io/onenationforall.github.io/",
-        environment:"https://vervenveda.github.io/river_to_road.github.io/",
+        environmental:"https://vervenveda.github.io/river_to_road.github.io/",
         health:"https://vervenveda.github.io/medicament-hub.github.io/",
-        communicate:"https://vervenveda.github.io/333.github.io/",
+        communication:"https://vervenveda.github.io/333.github.io/",
         finance:"https://vervenveda.github.io/finance.github.io/",
         research:"https://vervenveda.github.io/Arshif.github.io/"
       });
 
       function ecosystemCategoryHub(category){
         const items=category?.groups?.flatMap(group=>group.items||[]) || [];
-        return items.find(item=>item.type==="gateway"||item.type==="network")?.url ||
-               ECOSYSTEM_CATEGORY_HUBS[category?.id] ||
+        return ECOSYSTEM_CATEGORY_HUBS[category?.id] ||
+               items.find(item=>item.type==="gateway"||item.type==="network")?.url ||
                items[0]?.url ||
                "#directory";
       }
@@ -5453,6 +5443,7 @@
         const slide=$("featureSlide");
         const apply=()=>{
           currentFeature=item;
+          $("featureOpenButton").href=item.url;
           const media=FEATURE_MEDIA[item.url] || null;
           const visual=$("featureVisual");
           const image=$("featureImage");
@@ -5597,7 +5588,7 @@
         syncFeaturePauseButton();
         startFeatureTimer();
 
-        $("featureOpenButton")?.addEventListener("click",()=>openFeatureViewer(currentFeature));
+        $("featurePreviewButton")?.addEventListener("click",()=>openFeatureViewer(currentFeature));
         $("featurePauseButton")?.addEventListener("click",()=>{
           featurePaused=!featurePaused;
           syncFeaturePauseButton();

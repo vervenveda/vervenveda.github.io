@@ -112,10 +112,14 @@ def normalize_candidate(root:Path,source:Path,raw:str):
         if not path:
             return None
         if path.startswith("/"):
-            # Root-relative links on project pages generally point to the umbrella gateway,
-            # not the current repository; leave them to ecosystem-level routing.
-            return None
-        candidate=(source.parent/path)
+            # The umbrella gateway owns its own root-relative paths (/cloud/, /core/, etc.).
+            # In project repositories, root-relative links instead belong to the umbrella host.
+            first=path.lstrip("/").split("/",1)[0]
+            if root.name!="vervenveda.github.io" or first.lower().endswith(".github.io"):
+                return None
+            candidate=root/path.lstrip("/")
+        else:
+            candidate=source.parent/path
 
     candidate=Path(os.path.normpath(str(candidate)))
     try:
