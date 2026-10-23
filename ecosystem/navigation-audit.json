@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-23T22:58:40Z",
+  "generatedAt": "2026-10-23T23:04:26Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 29,
     "failedRepositoryCount": 0,
-    "htmlCount": 12114,
-    "brokenLocalLinkCount": 55,
-    "rootOrphanHtmlCount": 5418,
-    "unreferencedHtmlCount": 1530,
+    "htmlCount": 12115,
+    "brokenLocalLinkCount": 0,
+    "rootOrphanHtmlCount": 5417,
+    "unreferencedHtmlCount": 1529,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -516,39 +516,17 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Elementary.github.io",
-      "htmlCount": 2388,
-      "brokenLocalLinkCount": 3,
-      "rootReachableHtmlCount": 1616,
-      "rootOrphanHtmlCount": 772,
-      "unreferencedHtmlCount": 158,
+      "htmlCount": 2389,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 1618,
+      "rootOrphanHtmlCount": 771,
+      "unreferencedHtmlCount": 157,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "grades/grade-01/index.html",
-          "target": "grades/grade-01/subjects/math/index.html",
-          "raw": "subjects/math/index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-01/subjects/social-studies/printable.html",
-          "target": "grades/grade-01/subjects/social-studies/styles.css",
-          "raw": "styles.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-01/subjects/social-studies/teacher.html",
-          "target": "grades/grade-01/subjects/social-studies/styles.css",
-          "raw": "styles.css",
-          "tag": "link",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "arts-music/index.html",
         "arts-music/week-01.html",
@@ -707,11 +685,11 @@
         "grades/grade-01/printables/unit-34-packet.html",
         "grades/grade-01/printables/unit-35-packet.html",
         "grades/grade-01/printables/unit-36-packet.html",
-        "grades/grade-01/subjects/math/math-01_index.html",
         "grades/grade-01/subjects/social-studies/printable.html",
         "grades/grade-02/assessments/final-exam.html",
         "grades/grade-02/assessments/midterm.html",
-        "grades/grade-02/subjects/social-studies/printable.html"
+        "grades/grade-02/subjects/social-studies/printable.html",
+        "grades/grade-02/subjects/social-studies/week-01.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
@@ -1334,7 +1312,7 @@
     {
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
       "htmlCount": 195,
-      "brokenLocalLinkCount": 52,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 7,
       "rootOrphanHtmlCount": 186,
       "unreferencedHtmlCount": 8,
@@ -1343,372 +1321,7 @@
       "intentionalSiblingGroupCount": 0,
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "Halls/courses/arabic-1/week-28/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-16/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-19/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-14/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-23/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-15/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-27/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-20/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-13/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-17/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-21/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-24/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-31/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-30/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-32/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-29/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-25/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-26/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-22/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/arabic-1/week-18/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-06/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-28/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-10/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-16/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-19/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-14/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-23/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-05/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-15/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-11/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-27/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-01/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-03/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-12/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-02/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-08/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-04/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-20/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-13/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-17/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-07/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-21/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-24/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-31/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-30/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-32/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-09/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-29/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-25/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-26/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-22/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        },
-        {
-          "source": "Halls/courses/russian-1/week-18/index.html",
-          "target": "Halls/courses/index.html",
-          "raw": "../../index.html",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "Halls/courses/arabic-1/index.html",
         "Halls/courses/arabic-1/mastery-map.html",
