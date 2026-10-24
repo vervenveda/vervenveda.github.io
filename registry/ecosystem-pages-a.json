@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-23T21:40:53Z",
+  "generatedAt": "2026-10-24T03:08:48Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -65,14 +65,6 @@
       "url": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html",
       "repo": "333.github.io",
       "path": "app/SIte_builder_index.html",
-      "category": "communication",
-      "source": "333 Network"
-    },
-    {
-      "title": "Weal Domain Hosting",
-      "url": "https://vervenveda.github.io/333.github.io/app/WEAL_domain_hosting_index.html",
-      "repo": "333.github.io",
-      "path": "app/WEAL_domain_hosting_index.html",
       "category": "communication",
       "source": "333 Network"
     },
@@ -193,14 +185,6 @@
       "url": "https://vervenveda.github.io/arcade.github.io/AffixSix%E2%84%A2_index.html",
       "repo": "arcade.github.io",
       "path": "AffixSix™_index.html",
-      "category": "games",
-      "source": "Verve N Veda Arcade"
-    },
-    {
-      "title": "403",
-      "url": "https://vervenveda.github.io/arcade.github.io/Arcade_Foundation_Files/403.html",
-      "repo": "arcade.github.io",
-      "path": "Arcade_Foundation_Files/403.html",
       "category": "games",
       "source": "Verve N Veda Arcade"
     },
@@ -1953,14 +1937,6 @@
       "url": "https://vervenveda.github.io/firmament.github.io/apps/Heritage_Census_index.html",
       "repo": "firmament.github.io",
       "path": "apps/Heritage_Census_index.html",
-      "category": "civic",
-      "source": "Firmament"
-    },
-    {
-      "title": "Heritage Kindredvault V5",
-      "url": "https://vervenveda.github.io/firmament.github.io/apps/Heritage_KindredVault_v5_index.html",
-      "repo": "firmament.github.io",
-      "path": "apps/Heritage_KindredVault_v5_index.html",
       "category": "civic",
       "source": "Firmament"
     },
@@ -5865,6 +5841,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/records/certificate.html",
       "repo": "Khaemenes_Elementary.github.io",
       "path": "grades/grade-01/records/certificate.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
+      "title": "Math",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/grades/grade-01/subjects/math/",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "grades/grade-01/subjects/math/index.html",
       "category": "education",
       "source": "Khaemenes Elementary"
     },
@@ -20501,6 +20485,14 @@
       "source": "Khaemenes Elementary"
     },
     {
+      "title": "Student Profile",
+      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/student-profile/",
+      "repo": "Khaemenes_Elementary.github.io",
+      "path": "student-profile/index.html",
+      "category": "education",
+      "source": "Khaemenes Elementary"
+    },
+    {
       "title": "Arts Music",
       "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/subjects/arts-music/",
       "repo": "Khaemenes_Elementary.github.io",
@@ -26597,14 +26589,6 @@
       "source": "Khaemenes Sr. High"
     },
     {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-1/assessments/administration-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/mathematics/algebra-1/assessments/administration-guide.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
       "title": "Final Exam 36 Weeks",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-1/assessments/final-exam-36-weeks.html",
       "repo": "Khaemenes_High.github.io",
@@ -28601,14 +28585,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-1/video-review.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/algebra-1/video-review.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/algebra-2/assessments/administration-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/mathematics/algebra-2/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -30901,14 +30877,6 @@
       "source": "Khaemenes Sr. High"
     },
     {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/geometry/assessments/administration-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/mathematics/geometry/assessments/administration-guide.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
       "title": "Final",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/geometry/assessments/final.html",
       "repo": "Khaemenes_High.github.io",
@@ -32521,14 +32489,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/pre-algebra/assessments/administration-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/mathematics/pre-algebra/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     },
@@ -43593,6 +43553,54 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-02.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Week 28",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-28/index.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }

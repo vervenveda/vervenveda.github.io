@@ -1,57 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-23T21:40:53Z",
+  "generatedAt": "2026-10-24T03:08:48Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 28",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
     {
       "title": "Day 03",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
@@ -6493,14 +6445,6 @@
       "source": "Khaemenes Higher Learning"
     },
     {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/abstract-algebra/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/abstract-algebra/assessments/administration-guide.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
       "title": "Final",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/abstract-algebra/assessments/final.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
@@ -8113,14 +8057,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/advanced-geometric-topology/lesson.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/advanced-geometric-topology/lesson.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/calculus-ii/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/calculus-ii/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -9837,14 +9773,6 @@
       "source": "Khaemenes Higher Learning"
     },
     {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/differential-equations/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/differential-equations/assessments/administration-guide.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
       "title": "Final",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/differential-equations/assessments/final.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
@@ -11289,14 +11217,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/differential-equations/units/unit-13/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/differential-equations/units/unit-13/mastery-check.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/discrete-mathematics/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/discrete-mathematics/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -12757,14 +12677,6 @@
       "source": "Khaemenes Higher Learning"
     },
     {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/introduction-to-proofs/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/introduction-to-proofs/assessments/administration-guide.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
       "title": "Final",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/introduction-to-proofs/assessments/final.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
@@ -14201,14 +14113,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/introduction-to-proofs/units/unit-13/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/introduction-to-proofs/units/unit-13/mastery-check.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/linear-algebra/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/linear-algebra/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -15657,14 +15561,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/linear-algebra/units/unit-13/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/linear-algebra/units/unit-13/mastery-check.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/mathematics/calculus-1/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/mathematics/calculus-1/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -17317,14 +17213,6 @@
       "source": "Khaemenes Higher Learning"
     },
     {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/mathematics/precalculus-trigonometry/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/mathematics/precalculus-trigonometry/assessments/administration-guide.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
       "title": "Final",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/mathematics/precalculus-trigonometry/assessments/final.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
@@ -18941,14 +18829,6 @@
       "source": "Khaemenes Higher Learning"
     },
     {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/real-complex-analysis/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/real-complex-analysis/assessments/administration-guide.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
       "title": "Final",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/real-complex-analysis/assessments/final.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
@@ -20385,14 +20265,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/real-complex-analysis/units/unit-13/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/real-complex-analysis/units/unit-13/mastery-check.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/statistics/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/statistics/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -21841,14 +21713,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/statistics/units/unit-13/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/statistics/units/unit-13/mastery-check.html",
-      "category": "education",
-      "source": "Khaemenes Higher Learning"
-    },
-    {
-      "title": "Administration Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/assessments/administration-guide.html",
-      "repo": "Khaemenes_Higher_Learning.github.io",
-      "path": "courses/topology-differential-geometry/assessments/administration-guide.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
@@ -25797,10 +25661,26 @@
       "source": "Khaemenes Kinder Garden"
     },
     {
+      "title": "Guardian Release",
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/family/guardian-release/",
+      "repo": "Khaemenes_KinderGarden.github.io",
+      "path": "family/guardian-release/index.html",
+      "category": "education",
+      "source": "Khaemenes Kinder Garden"
+    },
+    {
       "title": "Family",
       "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/family/",
       "repo": "Khaemenes_KinderGarden.github.io",
       "path": "family/index.html",
+      "category": "education",
+      "source": "Khaemenes Kinder Garden"
+    },
+    {
+      "title": "Graduation",
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/graduation/",
+      "repo": "Khaemenes_KinderGarden.github.io",
+      "path": "graduation/index.html",
       "category": "education",
       "source": "Khaemenes Kinder Garden"
     },
@@ -26585,6 +26465,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/social-studies/teacher.html",
       "repo": "Khaemenes_KinderGarden.github.io",
       "path": "social-studies/teacher.html",
+      "category": "education",
+      "source": "Khaemenes Kinder Garden"
+    },
+    {
+      "title": "Student Profile",
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/student-profile/",
+      "repo": "Khaemenes_KinderGarden.github.io",
+      "path": "student-profile/index.html",
       "category": "education",
       "source": "Khaemenes Kinder Garden"
     },
@@ -39813,6 +39701,14 @@
       "source": "Khaemenes Preschool · Crechè"
     },
     {
+      "title": "Student Profile",
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/student-profile/",
+      "repo": "Khaemenes_Preschool.github.io",
+      "path": "student-profile/index.html",
+      "category": "education",
+      "source": "Khaemenes Preschool · Crechè"
+    },
+    {
       "title": "Electives",
       "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/courses/electives/",
       "repo": "medicament-hub.github.io",
@@ -40149,14 +40045,6 @@
       "source": "My Art Gallery"
     },
     {
-      "title": "Donate",
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/donate_index.html",
-      "repo": "onenationforall.github.io",
-      "path": "apps/donate_index.html",
-      "category": "civic",
-      "source": "One Nation For All"
-    },
-    {
       "title": "Elementary Kids Vote",
       "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Elementary_Kids_Vote_index.html",
       "repo": "onenationforall.github.io",
@@ -40253,14 +40141,6 @@
       "source": "One Nation For All"
     },
     {
-      "title": "Revolution",
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/revolution_index.html",
-      "repo": "onenationforall.github.io",
-      "path": "apps/revolution_index.html",
-      "category": "civic",
-      "source": "One Nation For All"
-    },
-    {
       "title": "Road To Governor",
       "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Road_to_governor_index.html",
       "repo": "onenationforall.github.io",
@@ -40273,14 +40153,6 @@
       "url": "https://vervenveda.github.io/onenationforall.github.io/apps/US_VOTER_HUB_index.html",
       "repo": "onenationforall.github.io",
       "path": "apps/US_VOTER_HUB_index.html",
-      "category": "civic",
-      "source": "One Nation For All"
-    },
-    {
-      "title": "Volunteer",
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/volunteer_index.html",
-      "repo": "onenationforall.github.io",
-      "path": "apps/volunteer_index.html",
       "category": "civic",
       "source": "One Nation For All"
     },
@@ -40339,6 +40211,150 @@
       "path": "statements/Letter_to_Americans_index.html",
       "category": "civic",
       "source": "One Nation For All"
+    },
+    {
+      "title": "Artist1970 Audit",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/artist1970-audit.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/artist1970-audit.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Community",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/community.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/community.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Mentors",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/mentors.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/mentors.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Origins",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/origins.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/origins.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Portrait Archive",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/portrait-archive.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/portrait-archive.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Residential District",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/residential-district.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/residential-district.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Sanctuary Charter",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/sanctuary-charter.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/sanctuary-charter.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Source Register",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/source-register.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/source-register.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "World Atlas",
+      "url": "https://vervenveda.github.io/PLERA.github.io/codex/world-atlas.html",
+      "repo": "PLERA.github.io",
+      "path": "codex/world-atlas.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "PLERA · Hope's Haven",
+      "url": "https://vervenveda.github.io/PLERA.github.io/",
+      "repo": "PLERA.github.io",
+      "path": "index.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Chronicles",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/chronicles.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/chronicles.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Galactic",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/galactic.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/galactic.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Goliath",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/goliath.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/goliath.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Matrix",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/matrix.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/matrix.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Mentor Pals",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/mentor-pals.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/mentor-pals.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Universe",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/universe.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/universe.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Village Atlas",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/village-atlas.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/village-atlas.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
+    },
+    {
+      "title": "Village",
+      "url": "https://vervenveda.github.io/PLERA.github.io/realms/village.html",
+      "repo": "PLERA.github.io",
+      "path": "realms/village.html",
+      "category": "creative",
+      "source": "PLERA · Hope's Haven"
     },
     {
       "title": "External",

@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-23T21:40:53Z",
+  "generatedAt": "2026-10-24T03:08:48Z",
   "account": "vervenveda",
   "policy": "Discovery only. New repositories never become public ecosystem destinations automatically. STOS and reserved dummy repositories remain excluded.",
   "candidates": [
     {
-      "repository": "vervenveda/PLERA.github.io",
-      "name": "PLERA.github.io",
+      "repository": "vervenveda/Saudi_Arabia.github.io",
+      "name": "Saudi_Arabia.github.io",
       "defaultBranch": "main",
       "hasPages": true,
       "archived": false,
       "disabled": false,
-      "updatedAt": "2026-10-22T22:36:06Z",
-      "pushedAt": "2026-10-22T22:36:03Z",
+      "updatedAt": "2026-10-24T03:07:53Z",
+      "pushedAt": "2026-10-24T03:07:49Z",
       "homepage": "",
       "state": "under-review",
       "directoryVisible": false,
