@@ -3743,7 +3743,7 @@
         </div>
         <button class="admin-gate-close" id="adminGateClose" type="button" aria-label="Close local admin shortcut">×</button>
       </div>
-      <p>Enter the 10-digit local gate code to open the Verve N Veda admin portal shortcut on this device. This local gate is a convenience feature, not secure authentication.</p>
+      <p>Enter this browser's 10-digit local gate code to open the Verve N Veda admin portal shortcut. On first use, the code you enter becomes this browser's local gate code. This convenience gate is not secure authentication.</p>
 
       <form class="admin-gate-form" id="adminGateForm" novalidate>
         <label for="adminCode">10-digit gate code</label>
@@ -4358,7 +4358,6 @@
       const ADMIN_PORTAL_URL = "/admin/";
       const RECORD_KEY = "VNV_ADMIN_GATE_RECORD_V2";
       const SESSION_KEY = "VNV_ADMIN_GATE_SESSION_V2";
-      const DEFAULT_CODE = "0000000000";
       const ITERATIONS = 120000;
       const encoder = new TextEncoder();
       const $ = id => document.getElementById(id);
@@ -4418,7 +4417,7 @@
       async function verify(code){
         if(!isValidCode(code)) return false;
         const record = readRecord();
-        if(!record?.salt || !record?.hash) return code === DEFAULT_CODE;
+        if(!record?.salt || !record?.hash) return false;
         try{
           const salt = base64ToBytes(record.salt);
           const expected = base64ToBytes(record.hash);
@@ -4514,18 +4513,26 @@
           codeInput.focus();
           return;
         }
-        status.textContent = "Checking gate…";
+        const record = readRecord();
+        if(!record?.salt || !record?.hash){
+          status.textContent = "Creating this browser's local gate code…";
+          status.className = "admin-gate-status";
+          await saveNewCode(code);
+          setSessionUnlocked(true);
+          renderGate();
+          return;
+        }
+
+        status.textContent = "Checking local gate…";
         status.className = "admin-gate-status";
         const ok = await verify(code);
         if(!ok){
-  status.textContent =
-    "Notice: This computer is now judging your life choices.";
-  status.className = "admin-gate-status error";
-  codeInput.select();
-  return;
-}
-        // First successful use initializes a hashed copy of the default code locally.
-        if(!readRecord()) await saveNewCode(code);
+          status.textContent = "That local gate code was not accepted.";
+          status.className = "admin-gate-status error";
+          codeInput.select();
+          return;
+        }
+
         setSessionUnlocked(true);
         renderGate();
       });
