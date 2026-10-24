@@ -1,25 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-24T16:14:51Z",
+  "generatedAt": "2026-10-24T18:24:53Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
     {
       "title": "Day 05",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
@@ -40213,6 +40197,22 @@
       "source": "One Nation For All"
     },
     {
+      "title": "Palestine · Land · People · Memory",
+      "url": "https://vervenveda.github.io/Palestine.github.io/",
+      "repo": "Palestine.github.io",
+      "path": "index.html",
+      "category": "diplomacy",
+      "source": "Palestine · Land · People · Memory"
+    },
+    {
+      "title": "Palestine Research Notebook",
+      "url": "https://vervenveda.github.io/Palestine.github.io/learning/palestine-research-notebook.html",
+      "repo": "Palestine.github.io",
+      "path": "learning/palestine-research-notebook.html",
+      "category": "diplomacy",
+      "source": "Palestine · Land · People · Memory"
+    },
+    {
       "title": "Artist1970 Audit",
       "url": "https://vervenveda.github.io/PLERA.github.io/codex/artist1970-audit.html",
       "repo": "PLERA.github.io",
@@ -41651,6 +41651,22 @@
       "path": "index.html",
       "category": "environmental",
       "source": "River to Road"
+    },
+    {
+      "title": "Arabic Companion",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/arabic-companion/",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "arabic-companion/index.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "Saudi Arabia · People · Heritage · Horizon",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "index.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
     },
     {
       "title": "Environmental News",

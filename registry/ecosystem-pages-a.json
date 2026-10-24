@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-24T16:14:51Z",
+  "generatedAt": "2026-10-24T18:24:53Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -43601,6 +43601,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
