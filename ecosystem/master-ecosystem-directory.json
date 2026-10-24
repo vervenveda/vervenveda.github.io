@@ -1774,12 +1774,14 @@
       "include": "Public GitHub-facing HTML pages and current public learning/resource surfaces.",
       "exclude": [
         "private repositories",
-        "admin-only surfaces",
-        "archive/reference-only surfaces",
-        "dormant STOS migration surfaces",
-        "offline and 404 utility pages where intentionally excluded by the catalog policy"
+        "admin/private/credential/vault-like surfaces",
+        "backup and dormant STOS migration surfaces",
+        "diagnostic and internal helper surfaces",
+        "offline and 404 utility pages",
+        "legacy/compatibility aliases excluded by catalog policy",
+        "tiny placeholder HTML"
       ],
-      "note": "STOS remains dormant future-migration infrastructure; GitHub is the current functional public environment."
+      "note": "STOS remains dormant future-migration infrastructure; GitHub is the current functional public environment. New repositories remain under review until explicitly approved in the canonical master directory."
     },
     "lastForensicRefresh": "2026-10-24",
     "autoSync": {
