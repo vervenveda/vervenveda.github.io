@@ -1,7 +1,7 @@
 {
-  "schemaVersion": "0.2.0",
+  "schemaVersion": "0.3.0",
   "title": "Verve N Veda Master Ecosystem Directory",
-  "baseline": "2026-10-23",
+  "baseline": "2026-10-24",
   "purpose": "Normalized public-surface registry built from the forensic scan of the public vervenveda GitHub organization.",
   "accessPrinciple": "free-public",
   "statusValues": [
@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 142,
+  "entryCount": 144,
   "entries": [
     {
       "id": "gateway-verve",
@@ -1759,6 +1759,32 @@
       "directoryVisible": true,
       "url": "https://vervenveda.com/PLERA.github.io/",
       "developmentStatus": "landing-ready"
+    },
+    {
+      "id": "country-saudi-arabia",
+      "title": "Saudi Arabia · People · Heritage · Horizon",
+      "repository": "vervenveda/Saudi_Arabia.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "diplomacy",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Saudi_Arabia.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "country-palestine",
+      "title": "Palestine · Land · People · Memory",
+      "repository": "vervenveda/Palestine.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "diplomacy",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Palestine.github.io/",
+      "developmentStatus": "live"
     }
   ],
   "pageCatalog": {
@@ -1800,5 +1826,11 @@
     "under-construction",
     "internal"
   ],
-  "developmentStatusPurpose": "Tracks implementation maturity separately from routing availability. The existing status field remains authoritative for public routing and visibility."
+  "developmentStatusPurpose": "Tracks implementation maturity separately from routing availability. The existing status field remains authoritative for public routing and visibility.",
+  "diplomacy": {
+    "category": "diplomacy",
+    "label": "World & Diplomacy",
+    "purpose": "Source-led country and cultural gateways that connect public history, heritage, language, civic understanding, and Khaemenes Academy learning.",
+    "publishingRule": "Country gateways remain under review until explicitly approved here; active entries must use source-led factual presentation and maintain a visible education pathway."
+  }
 }
