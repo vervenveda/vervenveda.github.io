@@ -37,6 +37,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import json
+          import re
           from pathlib import Path
 
           master=json.loads(Path("ecosystem/master-ecosystem-directory.json").read_text())
@@ -57,6 +58,9 @@ jobs:
           assert all("stos" not in str(row.get("repository","")).lower() for row in candidates.get("candidates",[]))
           assert len({(p["repo"].lower(),p["path"].lower()) for p in pages}) == len(pages)
           assert all(str(p.get("url","")).startswith("https://") for p in pages)
+          privileged = re.compile(r"(?i)(^|/)[^/]*(admin|administrator|private|operator[-_ ]?console|control[-_ ]?panel|credential|secret|vault)[^/]*\.html?$")
+          assert not [p for p in pages if privileged.search(str(p.get("path","")))], "Privileged-looking HTML entered the public catalog"
+          assert int(status.get("catalogExcludedTinyHtmlCount", 0)) >= 0
           assert status["driftCount"] == 0, f"Publication drift: {status['drift']}"
           assert status["truncatedTreeCount"] == 0, f"Truncated repository trees: {status['truncatedRepositories']}"
           assert status["syncedRepositoryCount"] == status["approvedRepositoryCount"], (

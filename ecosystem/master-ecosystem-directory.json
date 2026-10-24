@@ -1,7 +1,7 @@
 {
   "schemaVersion": "0.2.0",
   "title": "Verve N Veda Master Ecosystem Directory",
-  "baseline": "2026-10-14",
+  "baseline": "2026-10-23",
   "purpose": "Normalized public-surface registry built from the forensic scan of the public vervenveda GitHub organization.",
   "accessPrinciple": "free-public",
   "statusValues": [
@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 141,
+  "entryCount": 142,
   "entries": [
     {
       "id": "gateway-verve",
@@ -1746,6 +1746,19 @@
       "status": "alias",
       "directoryVisible": false,
       "url": "https://vervenveda.com/registry/objective-map-diagnostics.html"
+    },
+    {
+      "id": "plera-haven",
+      "title": "PLERA · Hope's Haven",
+      "repository": "vervenveda/PLERA.github.io",
+      "path": "index.html",
+      "type": "archive",
+      "category": "creative",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/PLERA.github.io/",
+      "developmentStatus": "landing-ready"
     }
   ],
   "pageCatalog": {

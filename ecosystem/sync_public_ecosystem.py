@@ -73,6 +73,22 @@ CATALOG_INTERNAL_PATH = re.compile(
     (/|$)
     """
 )
+CATALOG_PRIVILEGED_HTML = re.compile(
+    r"""(?ix)
+    (^|/)
+    [^/]*(?:
+      admin |
+      administrator |
+      private |
+      operator[-_ ]?console |
+      control[-_ ]?panel |
+      credential |
+      secret |
+      vault
+    )[^/]*\.html?$
+    """
+)
+MIN_PUBLIC_HTML_BYTES = 64
 CATALOG_COMPATIBILITY_ALIAS = re.compile(
     r"""(?ix)
     ^courses/social-studies/grade-09/week-(?:06|07|09|10)/
@@ -145,6 +161,8 @@ def public_html_path(path: str) -> bool:
     if CATALOG_HELPER_HTML.search(normalized):
         return False
     if CATALOG_INTERNAL_PATH.search(normalized):
+        return False
+    if CATALOG_PRIVILEGED_HTML.search(normalized):
         return False
     if CATALOG_COMPATIBILITY_ALIAS.search(normalized):
         return False
@@ -256,6 +274,7 @@ def main() -> int:
 
     pages: list[dict] = []
     catalog_excluded_count = 0
+    catalog_excluded_tiny_html_count = 0
     drift: list[dict] = []
     truncated_repositories: list[str] = []
     synced_repositories: list[str] = []
@@ -298,6 +317,11 @@ def main() -> int:
             if not public_html_path(path):
                 if path.lower().endswith((".html", ".htm")):
                     catalog_excluded_count += 1
+                continue
+            size = int(item.get("size") or 0)
+            if size < MIN_PUBLIC_HTML_BYTES:
+                catalog_excluded_count += 1
+                catalog_excluded_tiny_html_count += 1
                 continue
             pages.append({
                 "title": title_for(path, source),
@@ -379,6 +403,7 @@ def main() -> int:
         "syncedRepositoryCount": len(synced_repositories),
         "publicPageCount": len(pages),
         "catalogExcludedHtmlCount": catalog_excluded_count,
+        "catalogExcludedTinyHtmlCount": catalog_excluded_tiny_html_count,
         "candidateRepositoryCount": len(candidates),
         "ignoredRepositoryCount": len(ignored_new),
         "driftCount": len(drift),
