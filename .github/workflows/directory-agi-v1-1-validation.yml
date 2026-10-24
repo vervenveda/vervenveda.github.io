@@ -1,0 +1,34 @@
+name: Directory AGI v1.1 Validation
+
+on:
+  pull_request:
+    paths:
+      - 'core/directory-agi/**'
+      - 'ecosystem/master-ecosystem-directory.json'
+      - 'admin/directory/repositories.json'
+      - 'admin/directory/directory-audit.json'
+      - '.github/workflows/directory-agi-v1-1-validation.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - 'core/directory-agi/**'
+      - 'ecosystem/master-ecosystem-directory.json'
+      - 'admin/directory/repositories.json'
+      - 'admin/directory/directory-audit.json'
+      - '.github/workflows/directory-agi-v1-1-validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: JavaScript syntax
+        run: node --check core/directory-agi/directory-agi-v1.1.js
+      - name: Directory AGI forensic contract
+        run: node core/directory-agi/tools/validate-directory-agi-v1.1.mjs

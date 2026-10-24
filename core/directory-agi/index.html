@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
   <meta name="referrer" content="no-referrer">
-  <title>VNV Directory AGI</title>
+  <title>VNV Directory AGI · Mini Cloud v1.1</title>
   <style>
     :root{
       --ink:#101713;
@@ -50,9 +50,10 @@
     .item strong{display:block}
     .item a{color:var(--forest);word-break:break-word}
     .aliases{font-size:11px;color:var(--muted)}
+    .record-source{display:inline-flex;margin:4px 0 5px;padding:2px 6px;border:1px solid var(--line);border-radius:999px;font-size:9px;letter-spacing:.08em;text-transform:uppercase}.record-source.canonical{background:rgba(178,138,72,.12);color:#6f562b}.record-source.local{background:rgba(32,61,49,.09);color:var(--forest)}
     .output{min-height:150px;padding:12px;border:1px solid var(--line);border-radius:7px;background:#0f1713;color:#e9efe9;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
     .toolbar{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:10px 0}
     .stat{padding:9px;border:1px solid var(--line);border-radius:7px;background:#fff;text-align:center}
     .stat b{display:block;font-size:20px;font-family:var(--display)}
     .stat span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
@@ -67,14 +68,14 @@
 </head>
 <body>
 <h1>VNV Directory AGI</h1>
-  <p class="sub">Independent Mini AGI chassis for canonical ecosystem routing, aliases, migration awareness, and local directory notes. Dormant by design; the Verve N Veda Gateway does not import or reference this file.</p>
-  <div class="status">Dormant · Local-first · Directory seed v1</div>
+  <p class="sub">Local-first Mini Cloud for canonical ecosystem routing, personal aliases, external references, migration notes, and recovery. The canonical ecosystem registry is read-only here; personal data remains a separate browser-local overlay.</p>
+  <div class="status">Directory AGI v1.1 · Canonical read-only · Local overlay</div>
 
   <div id="container">
     <section id="cloud" class="module" aria-labelledby="cloudTitle">
       <h2 id="cloudTitle">Cloud Storage</h2>
-      <p class="small">Local notes and migration observations. This uses a namespaced browser store and contains no credentials.</p>
-      <textarea id="cloudInput" placeholder="Store a routing note, migration observation, or directory reminder..."></textarea>
+      <p class="small">Revisioned local notes and migration observations. Writes are verified with a pre-mutation recovery snapshot; no credentials are stored.</p>
+      <textarea id="cloudInput" maxlength="4000" placeholder="Store a routing note, migration observation, or directory reminder..."></textarea>
       <button id="cloudStore">Store in Cloud</button>
       <div class="toolbar">
         <button class="secondary" id="cloudClear">Clear Cloud</button>
@@ -90,13 +91,13 @@
 
     <section id="directory" class="module" aria-labelledby="directoryTitle">
       <h2 id="directoryTitle">Directory</h2>
-      <p class="small">Canonical records are nested by category and group. Search checks titles, aliases, descriptions, groups, and URLs.</p>
+      <p class="small">The canonical ecosystem registry is loaded read-only when available, with the embedded seed used only as an emergency fallback. Personal records remain visibly separate local overlays.</p>
       <input id="directorySearch" type="search" placeholder="Search the directory..." autocomplete="off">
-      <div class="stats" id="stats"></div>
+      <p class="small" id="canonicalSyncStatus" role="status" aria-live="polite">Preparing canonical directory…</p><div class="toolbar"><button class="secondary" id="syncCanonical">Sync Canonical Directory</button><button class="secondary" id="resetSeed">Reset Local Overlay</button></div><div class="stats" id="stats"></div>
       <div class="scroll" id="directoryList"></div>
 
       <div class="divider"></div>
-      <h3>Add Local Directory Record</h3>
+      <h3>Add Local External Reference</h3>
       <input id="addTitle" placeholder="Title">
       <input id="addUrl" placeholder="https://...">
       <div class="row">
@@ -104,8 +105,7 @@
         <input id="addGroup" placeholder="Group">
       </div>
       <input id="addAliases" placeholder="Aliases, comma separated">
-      <button id="addRecord">Add Local Record</button>
-      <button class="secondary" id="resetSeed">Reset Directory to Seed</button>
+      <button id="addRecord">Add Local Reference</button><p class="small">Local references are always labelled <strong>Local external</strong>, even when they point to a Verve N Veda host. They never become canonical records and never write back to the master ecosystem directory.</p>
     </section>
 
     <section id="interface" class="module" aria-labelledby="interfaceTitle">
@@ -125,6 +125,8 @@
         <code>show cloud</code><br>
         <code>validate</code><br>
         <code>stats</code><br>
+        <code>sync canonical</code><br>
+        <code>recover last</code><br>
         <code>help</code>
       </p>
     </section>
@@ -132,19 +134,10 @@
 
   <script>
   (() => {
-    'use strict';
-
-    const VERSION = '1.0.0';
-    const KEYS = Object.freeze({
-      cloud: 'VNV_DIRECTORY_AGI_CLOUD_V1',
-      directory: 'VNV_DIRECTORY_AGI_DIRECTORY_V1',
-      state: 'VNV_DIRECTORY_AGI_STATE_V1'
-    });
-
+    "use strict";
     const u = (path) => `https://vervenveda.github.io/${path}`;
     const item = (id,title,url,desc,aliases=[],previousLocations=[]) => ({id,title,url,desc,aliases,previousLocations});
-
-    const SEED_DIRECTORY = [
+    window.VNV_DIRECTORY_AGI_SEED_V1 = [
       {
         id:'education', label:'Education', groups:[
           {title:'Academy Gateways', items:[
@@ -306,331 +299,9 @@
         ]
       }
     ];
-
-    const clone = value => JSON.parse(JSON.stringify(value));
-    const safeParse = (raw,fallback) => { try { const value=JSON.parse(raw); return value ?? fallback; } catch { return fallback; } };
-    const read = (key,fallback) => {
-      try{return safeParse(localStorage.getItem(key),fallback);}
-      catch(error){
-        console.warn('Directory AGI storage read failed',error);
-        return fallback;
-      }
-    };
-    const write = (key,value) => {
-      try{
-        localStorage.setItem(key,JSON.stringify(value));
-        return {ok:true,error:null};
-      }catch(error){
-        console.warn('Directory AGI storage write failed',error);
-        setOutput('Browser storage could not save this change. Export a Cloud backup before leaving this page.');
-        updateStorageStatus(false);
-        return {ok:false,error};
-      }
-    };
-    function storageBytes(){
-      try{
-        return [KEYS.cloud,KEYS.directory,KEYS.state].reduce((sum,key)=>{
-          const value=localStorage.getItem(key)||'';
-          return sum + new Blob([key,value]).size;
-        },0);
-      }catch{return 0}
-    }
-    function formatBytes(bytes){
-      if(bytes<1024)return bytes+' B';
-      if(bytes<1024*1024)return (bytes/1024).toFixed(1)+' KB';
-      return (bytes/(1024*1024)).toFixed(2)+' MB';
-    }
-    function updateStorageStatus(ok=true){
-      const node=document.getElementById('cloudStorageStatus');
-      if(!node)return;
-      node.textContent=ok
-        ? 'Browser storage active · '+formatBytes(storageBytes())+' stored locally'
-        : 'Browser storage unavailable or full · export a Cloud backup now';
-    }
-    const esc = value => String(value ?? '').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
-    const normalize = value => String(value ?? '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
-
-    function getDirectory(){
-      const stored = read(KEYS.directory,null);
-      if(Array.isArray(stored)) return stored;
-      const seeded = clone(SEED_DIRECTORY);
-      write(KEYS.directory,seeded);
-      write(KEYS.state,{version:VERSION,seededAt:new Date().toISOString()});
-      return seeded;
-    }
-
-    function setDirectory(directory){ return write(KEYS.directory,directory); }
-    function getCloud(){ const c=read(KEYS.cloud,[]); return Array.isArray(c)?c:[]; }
-    function setCloud(cloud){ return write(KEYS.cloud,cloud); }
-
-    function flatten(directory=getDirectory()){
-      return directory.flatMap(category => category.groups.flatMap(group => group.items.map(record => ({...record,categoryId:category.id,category:category.label,group:group.title}))));
-    }
-
-    function searchable(record){
-      return normalize([record.title,record.id,record.desc,record.category,record.group,...(record.aliases||[]),record.url].join(' '));
-    }
-
-    function matches(query){
-      const q=normalize(query);
-      if(!q) return flatten();
-      return flatten().filter(record => searchable(record).includes(q));
-    }
-
-    function resolve(name){
-      const q=normalize(name);
-      if(!q) return null;
-      const records=flatten();
-      return records.find(r=>normalize(r.id)===q || normalize(r.title)===q || (r.aliases||[]).some(a=>normalize(a)===q))
-        || records.find(r=>searchable(r).includes(q))
-        || null;
-    }
-
-    function formatRecord(r){
-      if(!r) return 'No matching directory record.';
-      const moved=(r.previousLocations||[]).length ? `\nPrevious: ${(r.previousLocations||[]).join(' | ')}` : '';
-      const aliases=(r.aliases||[]).length ? `\nAliases: ${(r.aliases||[]).join(', ')}` : '';
-      return `${r.title}\nCategory: ${r.category} / ${r.group}\nURL: ${r.url}\n${r.desc}${aliases}${moved}`;
-    }
-
-    function renderCloud(){
-      const list=document.getElementById('cloudData');
-      const cloud=getCloud();
-      list.innerHTML=cloud.length ? cloud.slice().reverse().map(entry=>`<li><strong>${esc(new Date(entry.createdAt).toLocaleString())}</strong><br>${esc(entry.text)}</li>`).join('') : '<li>Cloud is empty.</li>';
-    }
-
-    function renderStats(){
-      const directory=getDirectory();
-      const records=flatten(directory);
-      const moved=records.filter(r=>(r.previousLocations||[]).length).length;
-      document.getElementById('stats').innerHTML=`
-        <div class="stat"><b>${records.length}</b><span>Records</span></div>
-        <div class="stat"><b>${directory.length}</b><span>Categories</span></div>
-        <div class="stat"><b>${moved}</b><span>Moved</span></div>`;
-    }
-
-    function renderDirectory(query=''){
-      const root=document.getElementById('directoryList');
-      const directory=getDirectory();
-      const q=normalize(query);
-      const html=[];
-      directory.forEach(category=>{
-        const groups=[];
-        category.groups.forEach(group=>{
-          const items=group.items.filter(record=>!q || searchable({...record,category:category.label,group:group.title}).includes(q));
-          if(!items.length) return;
-          groups.push(`<details open><summary>${esc(group.title)} · ${items.length}</summary><div class="group-body">${items.map(record=>`
-            <div class="item">
-              <strong>${esc(record.title)}</strong>
-              <div class="small">${esc(record.desc)}</div>
-              <a href="${esc(record.url)}" target="_blank" rel="noopener noreferrer">${esc(record.url)}</a>
-              ${(record.aliases||[]).length?`<div class="aliases">Aliases: ${esc(record.aliases.join(', '))}</div>`:''}
-              ${(record.previousLocations||[]).length?`<div class="aliases">Moved from: ${esc(record.previousLocations.join(' · '))}</div>`:''}
-            </div>`).join('')}</div></details>`);
-        });
-        if(groups.length) html.push(`<h3>${esc(category.label)}</h3>${groups.join('')}`);
-      });
-      root.innerHTML=html.join('') || '<p class="small">No matching records.</p>';
-      renderStats();
-    }
-
-    function addLocalRecord(){
-      const title=document.getElementById('addTitle').value.trim();
-      const url=document.getElementById('addUrl').value.trim();
-      const categoryLabel=document.getElementById('addCategory').value.trim() || 'Local';
-      const groupTitle=document.getElementById('addGroup').value.trim() || 'Added Records';
-      const aliases=document.getElementById('addAliases').value.split(',').map(s=>s.trim()).filter(Boolean);
-      if(!title || !url) return setOutput('Title and URL are required.');
-      try { const parsed=new URL(url); if(parsed.protocol!=='https:') throw new Error(); } catch { return setOutput('Use a valid https:// URL.'); }
-      const directory=getDirectory();
-      let category=directory.find(c=>normalize(c.label)===normalize(categoryLabel));
-      if(!category){ category={id:`local-${Date.now()}`,label:categoryLabel,groups:[]}; directory.push(category); }
-      let group=category.groups.find(g=>normalize(g.title)===normalize(groupTitle));
-      if(!group){ group={title:groupTitle,items:[]}; category.groups.push(group); }
-      group.items.push(item(`local-${Date.now()}`,title,url,'Locally added directory record.',aliases));
-      setDirectory(directory);
-      ['addTitle','addUrl','addCategory','addGroup','addAliases'].forEach(id=>document.getElementById(id).value='');
-      renderDirectory(document.getElementById('directorySearch').value);
-      setOutput(`Added local directory record: ${title}`);
-    }
-
-    function validateDirectory(){
-      const records=flatten();
-      const problems=[];
-      const ids=new Set();
-      records.forEach(r=>{
-        if(!r.id||!r.title||!r.url) problems.push(`Missing required field: ${r.title||r.id||'unknown'}`);
-        if(ids.has(r.id)) problems.push(`Duplicate id: ${r.id}`); else ids.add(r.id);
-        try { const parsed=new URL(r.url); if(parsed.protocol!=='https:') problems.push(`Non-HTTPS URL: ${r.title}`); } catch { problems.push(`Invalid URL: ${r.title}`); }
-      });
-      return problems;
-    }
-
-    function setOutput(text){ document.getElementById('output').textContent=text; }
-
-    function processCommand(){
-      const field=document.getElementById('userInput');
-      const raw=field.value.trim();
-      const lower=raw.toLowerCase();
-      let output='';
-      if(!raw) return;
-
-      if(lower==='help'){
-        output='Commands:\nfind <term>\nresolve <name>\nshow category <name>\nshow moved\nshow directory\nshow cloud\nvalidate\nstats\nhelp';
-      } else if(lower==='show cloud'){
-        const cloud=getCloud();
-        output=cloud.length?cloud.map(x=>`${x.createdAt} · ${x.text}`).join('\n'):'Cloud is empty.';
-      } else if(lower==='show directory'){
-        output=flatten().map(r=>`${r.category} / ${r.group} · ${r.title} · ${r.url}`).join('\n');
-      } else if(lower==='show moved'){
-        const moved=flatten().filter(r=>(r.previousLocations||[]).length);
-        output=moved.length?moved.map(r=>`${r.title}\n  now: ${r.url}\n  from: ${r.previousLocations.join(' | ')}`).join('\n\n'):'No migration records.';
-      } else if(lower==='validate'){
-        const problems=validateDirectory();
-        output=problems.length?`Validation found ${problems.length} issue(s):\n${problems.join('\n')}`:`Validation passed: ${flatten().length} records have unique IDs and valid HTTPS URL syntax.`;
-      } else if(lower==='stats'){
-        const records=flatten();
-        const aliases=records.reduce((n,r)=>n+(r.aliases||[]).length,0);
-        const moved=records.filter(r=>(r.previousLocations||[]).length).length;
-        output=`Version: ${VERSION}\nCategories: ${getDirectory().length}\nRecords: ${records.length}\nAliases: ${aliases}\nMigration records: ${moved}`;
-      } else if(lower.startsWith('resolve ')){
-        output=formatRecord(resolve(raw.slice(8)));
-      } else if(lower.startsWith('find ')){
-        const results=matches(raw.slice(5));
-        output=results.length?results.slice(0,25).map(formatRecord).join('\n\n---\n\n'):'No matches.';
-      } else if(lower.startsWith('show category ')){
-        const q=normalize(raw.slice(14));
-        const results=flatten().filter(r=>normalize(r.category).includes(q)||normalize(r.categoryId).includes(q));
-        output=results.length?results.map(r=>`${r.group} · ${r.title} · ${r.url}`).join('\n'):'Category not found.';
-      } else {
-        const direct=resolve(raw);
-        output=direct?formatRecord(direct):'Command not recognized. Type help.';
-      }
-      setOutput(output);
-      field.value='';
-    }
-
-    function exportJson(){
-      const payload={
-        type:'VNV_DIRECTORY_AGI_EXPORT',
-        version:VERSION,
-        exportedAt:new Date().toISOString(),
-        directory:getDirectory(),
-        cloud:getCloud()
-      };
-      const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
-      const url=URL.createObjectURL(blob);
-      const a=document.createElement('a');
-      a.href=url;
-      a.download='vnv-directory-agi-export.json';
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(()=>URL.revokeObjectURL(url),500);
-    }
-
-    function cloudBackupPayload(){
-      return {
-        type:'VNV_DIRECTORY_AGI_CLOUD_BACKUP',
-        version:VERSION,
-        exportedAt:new Date().toISOString(),
-        storageKeys:{cloud:KEYS.cloud,directory:KEYS.directory,state:KEYS.state},
-        cloud:getCloud()
-      };
-    }
-    function exportCloudBackup(){
-      const payload=cloudBackupPayload();
-      const blob=new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'});
-      const url=URL.createObjectURL(blob);
-      const a=document.createElement('a');
-      a.href=url;
-      a.download='vnv-directory-agi-cloud-backup.json';
-      document.body.append(a);a.click();a.remove();
-      setTimeout(()=>URL.revokeObjectURL(url),0);
-      setOutput('Cloud backup exported.');
-    }
-    function validateCloudBackup(payload){
-      if(!payload||payload.type!=='VNV_DIRECTORY_AGI_CLOUD_BACKUP')return {ok:false,message:'This is not a Directory AGI Cloud backup.'};
-      if(!Array.isArray(payload.cloud))return {ok:false,message:'Cloud backup is missing its Cloud records.'};
-      const clean=payload.cloud.filter(item=>
-        item && typeof item==='object' &&
-        typeof item.text==='string' &&
-        typeof item.createdAt==='string'
-      ).map(item=>({
-        id:String(item.id||('note-'+Date.now())),
-        createdAt:String(item.createdAt),
-        text:String(item.text)
-      }));
-      return {ok:true,cloud:clean,message:'Cloud backup validated.'};
-    }
-    async function importCloudBackupFile(file){
-      try{
-        const text=await file.text();
-        const payload=JSON.parse(text);
-        const checked=validateCloudBackup(payload);
-        if(!checked.ok){setOutput(checked.message);return;}
-        const preview=checked.cloud.length+' Cloud record'+(checked.cloud.length===1?'':'s')+' found. Import and replace the current Cloud records?';
-        if(!window.confirm(preview)){setOutput('Cloud backup import cancelled.');return;}
-        const result=setCloud(checked.cloud);
-        if(result?.ok===false)return;
-        renderCloud();
-        updateStorageStatus(true);
-        setOutput('Cloud backup restored: '+checked.cloud.length+' record'+(checked.cloud.length===1?'':'s')+'.');
-      }catch(error){
-        console.warn('Cloud backup import failed',error);
-        setOutput('Cloud backup could not be read or validated.');
-      }
-    }
-
-    document.getElementById('cloudStore').addEventListener('click',()=>{
-      const input=document.getElementById('cloudInput');
-      const text=input.value.trim();
-      if(!text) return;
-      const cloud=getCloud();
-      cloud.push({id:`note-${Date.now()}`,createdAt:new Date().toISOString(),text});
-      setCloud(cloud);
-      input.value='';
-      renderCloud();
-    });
-    document.getElementById('cloudClear').addEventListener('click',()=>{
-      const saved=setCloud([]);
-      if(saved?.ok===false)return;
-      renderCloud();updateStorageStatus(true);setOutput('Cloud cleared.');
-    });
-    document.getElementById('cloudBackup').addEventListener('click',exportCloudBackup);
-    document.getElementById('cloudImport').addEventListener('click',()=>document.getElementById('cloudImportFile').click());
-    document.getElementById('cloudImportFile').addEventListener('change',event=>{
-      const file=event.target.files&&event.target.files[0];
-      if(file)importCloudBackupFile(file);
-      event.target.value='';
-    });
-    document.getElementById('directorySearch').addEventListener('input',e=>renderDirectory(e.target.value));
-    document.getElementById('addRecord').addEventListener('click',addLocalRecord);
-    document.getElementById('resetSeed').addEventListener('click',()=>{ setDirectory(clone(SEED_DIRECTORY)); renderDirectory(); setOutput('Directory reset to embedded seed v1.'); });
-    document.getElementById('runCommand').addEventListener('click',processCommand);
-    document.getElementById('userInput').addEventListener('keydown',e=>{ if(e.key==='Enter') processCommand(); });
-    document.getElementById('exportBtn').addEventListener('click',exportJson);
-
-    renderCloud();
-    renderDirectory();
-    updateStorageStatus(true);
-
-    Object.defineProperty(window,'VNVDirectoryAGI',{
-      value:Object.freeze({
-        version:VERSION,
-        find:(term)=>matches(term),
-        resolve:(name)=>resolve(name),
-        all:()=>flatten(),
-        categories:()=>getDirectory().map(c=>({id:c.id,label:c.label})),
-        validate:()=>validateDirectory(),
-        reset:()=>{setDirectory(clone(SEED_DIRECTORY));renderDirectory();return true;}
-      }),
-      enumerable:false,
-      configurable:false,
-      writable:false
-    });
   })();
   </script>
+  <script src="./directory-agi-v1.1.js"></script>
 
 
 

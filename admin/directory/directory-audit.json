@@ -1,7 +1,4 @@
-import json
-from pathlib import Path
-
-audit = {
+{
   "schema": "verve-n-veda-public-network-forensic-audit",
   "audit_date": "2026-08-18",
   "scope_note": "Security snapshot of findings established during the public-network audit in this conversation. Verified findings are separated from architectural recommendations. No private/admin URLs or CORE locations are recorded.",
@@ -167,7 +164,3 @@ audit = {
   },
   "security_note": "This audit snapshot intentionally omits private/admin destinations and secrets. It records public-network findings and boundary rules only."
 }
-
-path = Path("/mnt/data/verve_n_veda_public_network_forensic_audit_2026-08-18.json")
-path.write_text(json.dumps(audit, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-print(f"Created {path.name}")
