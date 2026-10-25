@@ -1,73 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-24T21:11:10Z",
+  "generatedAt": "2026-10-25T05:18:53Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 29",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 30",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-30/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
     {
       "title": "Day 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-30/lessons/day-01.html",
@@ -40213,6 +40149,14 @@
       "source": "Palestine · Land · People · Memory"
     },
     {
+      "title": "Research",
+      "url": "https://vervenveda.github.io/Palestine.github.io/research/",
+      "repo": "Palestine.github.io",
+      "path": "research/index.html",
+      "category": "diplomacy",
+      "source": "Palestine · Land · People · Memory"
+    },
+    {
       "title": "Artist1970 Audit",
       "url": "https://vervenveda.github.io/PLERA.github.io/codex/artist1970-audit.html",
       "repo": "PLERA.github.io",
@@ -41661,10 +41605,130 @@
       "source": "Saudi Arabia · People · Heritage · Horizon"
     },
     {
+      "title": "Architecture",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/culture/architecture.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "culture/architecture.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "Art",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/culture/art.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "culture/art.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "History",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/culture/history.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "culture/history.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "Culture",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/culture/",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "culture/index.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "Music",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/culture/music.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "culture/music.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
       "title": "Saudi Arabia · People · Heritage · Horizon",
       "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/",
       "repo": "Saudi_Arabia.github.io",
       "path": "index.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "Saudi Research Notebook",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/learning/saudi-research-notebook.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "learning/saudi-research-notebook.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "01 Deep Time Hail",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/01-deep-time-hail.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/01-deep-time-hail.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "02 Hegra Oasis Networks",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/02-hegra-oasis-networks.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/02-hegra-oasis-networks.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "03 Hijaz Islam Pilgrimage",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/03-hijaz-islam-pilgrimage.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/03-hijaz-islam-pilgrimage.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "04 Diriyah Saudi States",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/04-diriyah-saudi-states.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/04-diriyah-saudi-states.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "05 Unification Oil Modernization",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/05-unification-oil-modernization.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/05-unification-oil-modernization.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "06 Regions Living Heritage",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/06-regions-living-heritage.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/06-regions-living-heritage.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "07 Built Landscapes Water",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/07-built-landscapes-water.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/07-built-landscapes-water.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "08 Saudi Today Open Questions",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/08-saudi-today-open-questions.html",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/08-saudi-today-open-questions.html",
+      "category": "diplomacy",
+      "source": "Saudi Arabia · People · Heritage · Horizon"
+    },
+    {
+      "title": "Research",
+      "url": "https://vervenveda.github.io/Saudi_Arabia.github.io/research/",
+      "repo": "Saudi_Arabia.github.io",
+      "path": "research/index.html",
       "category": "diplomacy",
       "source": "Saudi Arabia · People · Heritage · Horizon"
     },

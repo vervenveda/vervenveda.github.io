@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T21:11:10Z",
+  "generatedAt": "2026-10-25T05:18:53Z",
   "account": "vervenveda",
   "policy": "Discovery only. New repositories never become public ecosystem destinations automatically. STOS and reserved dummy repositories remain excluded.",
   "candidates": [
@@ -11,8 +11,8 @@
       "hasPages": true,
       "archived": false,
       "disabled": false,
-      "updatedAt": "2026-10-24T21:10:54Z",
-      "pushedAt": "2026-10-24T21:10:53Z",
+      "updatedAt": "2026-10-25T02:05:48Z",
+      "pushedAt": "2026-10-25T02:05:46Z",
       "homepage": "",
       "state": "under-review",
       "directoryVisible": false,
