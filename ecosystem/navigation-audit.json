@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-24T18:26:17Z",
+  "generatedAt": "2026-10-25T09:48:21Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 32,
     "failedRepositoryCount": 0,
-    "htmlCount": 12144,
-    "brokenLocalLinkCount": 0,
+    "htmlCount": 12161,
+    "brokenLocalLinkCount": 32,
     "rootOrphanHtmlCount": 5419,
     "unreferencedHtmlCount": 1531,
     "duplicateGroupCount": 0,
@@ -699,9 +699,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3499,
-      "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2470,
+      "htmlCount": 3500,
+      "brokenLocalLinkCount": 32,
+      "rootReachableHtmlCount": 2471,
       "rootOrphanHtmlCount": 1007,
       "unreferencedHtmlCount": 697,
       "duplicateGroupCount": 0,
@@ -709,7 +709,232 @@
       "intentionalSiblingGroupCount": 4,
       "canonicalAliasCount": 1,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [],
+      "brokenLocalLinks": [
+        {
+          "source": "courses/language-arts/english-12/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-01/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-04/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-07/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-01/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-04/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-07/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-01/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-04/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-07/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-01/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-04/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-07/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        }
+      ],
       "rootOrphans": [
         "assets/Learn-a-new-word.html",
         "courses/language-arts/english-10/grades/grade-10/index.html",
@@ -1740,9 +1965,9 @@
     },
     {
       "repository": "vervenveda/Palestine.github.io",
-      "htmlCount": 2,
+      "htmlCount": 3,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2,
+      "rootReachableHtmlCount": 3,
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
@@ -2023,9 +2248,9 @@
     },
     {
       "repository": "vervenveda/Saudi_Arabia.github.io",
-      "htmlCount": 2,
+      "htmlCount": 17,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2,
+      "rootReachableHtmlCount": 17,
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
