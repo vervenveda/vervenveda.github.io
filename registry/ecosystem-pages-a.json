@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-26T13:34:36Z",
+  "generatedAt": "2026-10-26T22:52:30Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -1513,6 +1513,14 @@
       "url": "https://vervenveda.github.io/bazaarart.github.io/academy/",
       "repo": "bazaarart.github.io",
       "path": "academy/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Art101 Lesson Template",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/templates/art101-lesson-template.html",
+      "repo": "bazaarart.github.io",
+      "path": "academy/templates/art101-lesson-template.html",
       "category": "creative",
       "source": "Bazaar Art"
     },
