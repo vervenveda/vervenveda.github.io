@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-25T09:48:21Z",
+  "generatedAt": "2026-10-26T11:05:30Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 32,
     "failedRepositoryCount": 0,
-    "htmlCount": 12161,
-    "brokenLocalLinkCount": 32,
-    "rootOrphanHtmlCount": 5419,
-    "unreferencedHtmlCount": 1531,
+    "htmlCount": 12208,
+    "brokenLocalLinkCount": 54,
+    "rootOrphanHtmlCount": 5451,
+    "unreferencedHtmlCount": 1535,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -220,23 +220,86 @@
     },
     {
       "repository": "vervenveda/bazaarart.github.io",
-      "htmlCount": 47,
-      "brokenLocalLinkCount": 0,
+      "htmlCount": 78,
+      "brokenLocalLinkCount": 4,
       "rootReachableHtmlCount": 44,
-      "rootOrphanHtmlCount": 3,
-      "unreferencedHtmlCount": 3,
+      "rootOrphanHtmlCount": 34,
+      "unreferencedHtmlCount": 6,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [],
+      "brokenLocalLinks": [
+        {
+          "source": "academy/grade-9/unit-04/index.html",
+          "target": "academy/unit-01/week-01/index.html",
+          "raw": "../../unit-01/week-01/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "academy/grade-9/unit-04/index.html",
+          "target": "academy/unit-03/index.html",
+          "raw": "../../unit-03/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "academy/grade-9/unit-04/week-09/index.html",
+          "target": "academy/grade-9/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "academy/grade-9/unit-02/week-02/index.html",
+          "target": "academy/grade-9/unit-02/week-02/what-counts-as-an-edge.png",
+          "raw": "what-counts-as-an-edge.png",
+          "tag": "img",
+          "attr": "src"
+        }
+      ],
       "rootOrphans": [
+        "academy/grade-10/unit-01/index.html",
+        "academy/grade-10/unit-01/week-01/index.html",
+        "academy/grade-11/unit-01/index.html",
+        "academy/grade-11/unit-01/week-01/index.html",
+        "academy/grade-12/unit-01/index.html",
+        "academy/grade-12/unit-01/week-01/index.html",
+        "academy/grade-9/unit-01/index.html",
+        "academy/grade-9/unit-01/week-01/index.html",
+        "academy/grade-9/unit-02/index.html",
+        "academy/grade-9/unit-02/week-02/index.html",
+        "academy/grade-9/unit-02/week-03/index.html",
+        "academy/grade-9/unit-02/week-04/index.html",
+        "academy/grade-9/unit-03/index.html",
+        "academy/grade-9/unit-03/week-05/index.html",
+        "academy/grade-9/unit-03/week-06/index.html",
+        "academy/grade-9/unit-03/week-07/index.html",
+        "academy/grade-9/unit-04/index.html",
+        "academy/grade-9/unit-04/week-08/index.html",
+        "academy/grade-9/unit-04/week-09/index.html",
+        "academy/grade-9/unit-04/week-10/index.html",
+        "academy/grade-9/unit-05/index.html",
+        "academy/grade-9/unit-05/week-11/index.html",
+        "academy/grade-9/unit-05/week-12/index.html",
+        "academy/grade-9/unit-05/week-13/index.html",
+        "academy/grade-9/unit-06/index.html",
+        "academy/grade-9/unit-06/week-14/index.html",
+        "academy/grade-9/unit-06/week-15/index.html",
+        "academy/grade-9/unit-06/week-16/index.html",
+        "academy/grade-9/unit-07/index.html",
+        "academy/grade-9/unit-07/week-17/index.html",
+        "academy/index.html",
         "apps/art-education.html",
         "apps/photo_album_index.html",
         "classes/art-class/index.html"
       ],
       "unreferencedPages": [
+        "academy/grade-10/unit-01/index.html",
+        "academy/grade-11/unit-01/index.html",
+        "academy/grade-12/unit-01/index.html",
         "apps/art-education.html",
         "apps/photo_album_index.html",
         "classes/art-class/index.html"
@@ -699,11 +762,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3500,
-      "brokenLocalLinkCount": 32,
-      "rootReachableHtmlCount": 2471,
-      "rootOrphanHtmlCount": 1007,
-      "unreferencedHtmlCount": 697,
+      "htmlCount": 3502,
+      "brokenLocalLinkCount": 50,
+      "rootReachableHtmlCount": 2472,
+      "rootOrphanHtmlCount": 1008,
+      "unreferencedHtmlCount": 698,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 4,
       "intentionalSiblingGroupCount": 4,
@@ -931,6 +994,132 @@
           "source": "courses/language-arts/english-9/weeks/week-07/index.html",
           "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
           "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/inquiry-ledger/index.html",
+          "target": "courses/assets/high-navigation-v1.js",
+          "raw": "../../assets/high-navigation-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/paper-helicopter-investigation.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/investigation-design-task.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/index.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/dataset-laboratory.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/mastery-quiz.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/unit-assessment.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/student-record.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-08.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-05.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-02.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-07.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-01.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-06.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-09.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-03.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-10.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-04.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
           "attr": "src"
         }
@@ -1170,9 +1359,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
-      "htmlCount": 3183,
+      "htmlCount": 3196,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1740,
+      "rootReachableHtmlCount": 1752,
       "rootOrphanHtmlCount": 1432,
       "unreferencedHtmlCount": 174,
       "duplicateGroupCount": 0,
@@ -1647,9 +1836,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Middle.github.io",
-      "htmlCount": 1398,
+      "htmlCount": 1399,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 64,
+      "rootReachableHtmlCount": 65,
       "rootOrphanHtmlCount": 1334,
       "unreferencedHtmlCount": 39,
       "duplicateGroupCount": 0,
