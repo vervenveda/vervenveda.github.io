@@ -1,6 +1,7 @@
 (() => {
   "use strict";
 
+  const CURRENT_SCRIPT_URL=document.currentScript?.src||"https://vervenveda.com/assets/vnv-ecosystem-menu.js";
   const IDS = Object.freeze({
     button:"vnvEcosystemMenuButton",
     overlay:"vnvEcosystemMenuOverlay",
@@ -46,8 +47,14 @@
   };
 
   function installStyle(){
-    /* Presentation lives in /assets/vnv-ecosystem-menu.css.
-       Keep this function as a compatibility seam for older boot paths. */
+    // Load the existing menu CSS on lesson pages too, not only site homepages.
+    if(document.getElementById(IDS.style)||
+       document.querySelector('link[rel="stylesheet"][href*="vnv-ecosystem-menu.css"]'))return;
+    const link=document.createElement("link");
+    link.id=IDS.style;
+    link.rel="stylesheet";
+    link.href=new URL("vnv-ecosystem-menu.css",CURRENT_SCRIPT_URL).href;
+    (document.head||document.documentElement).appendChild(link);
   }
 
   function mountButton(){
@@ -90,6 +97,8 @@
     overlay.id=IDS.overlay;
     overlay.dataset.open="false";
     overlay.setAttribute("aria-hidden","true");
+    // The optional directory must remain hidden even if its stylesheet fails.
+    overlay.style.display="none";
     overlay.innerHTML=`
       <aside id="${IDS.drawer}" role="dialog" aria-modal="true" aria-labelledby="vnvEcosystemMenuTitle">
         <div class="vnv-eco-top">
@@ -229,6 +238,7 @@
     lastFocus=document.activeElement;
     const overlay=document.getElementById(IDS.overlay);
     const button=document.getElementById(IDS.button);
+    overlay.style.display="grid";
     overlay.dataset.open="true";
     overlay.setAttribute("aria-hidden","false");
     button.setAttribute("aria-expanded","true");
@@ -241,6 +251,7 @@
     const button=document.getElementById(IDS.button);
     overlay.dataset.open="false";
     overlay.setAttribute("aria-hidden","true");
+    overlay.style.display="none";
     button.setAttribute("aria-expanded","false");
     if(previousBodyOverflow!==null)document.body.style.overflow=previousBodyOverflow;
     previousBodyOverflow=null;
