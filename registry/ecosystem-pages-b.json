@@ -1,9 +1,17 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-25T21:14:35Z",
+  "generatedAt": "2026-10-26T05:18:03Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Sr. High"
+    },
     {
       "title": "Day 03",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
@@ -20265,6 +20273,94 @@
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/real-complex-analysis/units/unit-13/mastery-check.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/real-complex-analysis/units/unit-13/mastery-check.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Astr 101",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/astr-101/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/astr-101/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Bio 101",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/bio-101/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/bio-101/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Bio 102",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/bio-102/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/bio-102/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Chem 101",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/chem-101/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/chem-101/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Chem 102",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/chem-102/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/chem-102/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Env 101",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/env-101/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/env-101/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Science",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Phys 101",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/phys-101/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/phys-101/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Phys 102",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/phys-102/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/phys-102/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Phys 151",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/phys-151/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/phys-151/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Phys 152",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/science/phys-152/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/science/phys-152/index.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
