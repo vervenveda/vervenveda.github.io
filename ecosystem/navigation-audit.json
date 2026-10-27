@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-26T11:05:30Z",
+  "generatedAt": "2026-10-27T10:32:23Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 32,
     "failedRepositoryCount": 0,
-    "htmlCount": 12208,
-    "brokenLocalLinkCount": 54,
-    "rootOrphanHtmlCount": 5451,
+    "htmlCount": 12221,
+    "brokenLocalLinkCount": 55,
+    "rootOrphanHtmlCount": 5463,
     "unreferencedHtmlCount": 1535,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
@@ -220,17 +220,31 @@
     },
     {
       "repository": "vervenveda/bazaarart.github.io",
-      "htmlCount": 78,
-      "brokenLocalLinkCount": 4,
+      "htmlCount": 91,
+      "brokenLocalLinkCount": 5,
       "rootReachableHtmlCount": 44,
-      "rootOrphanHtmlCount": 34,
-      "unreferencedHtmlCount": 6,
+      "rootOrphanHtmlCount": 47,
+      "unreferencedHtmlCount": 7,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
+        {
+          "source": "academy/templates/art101-lesson-template.html",
+          "target": "academy/templates/original-lesson-art.webp",
+          "raw": "./original-lesson-art.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "academy/grade-9/unit-08/index.html",
+          "target": "academy/unit-01/week-01/index.html",
+          "raw": "../../unit-01/week-01/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
         {
           "source": "academy/grade-9/unit-04/index.html",
           "target": "academy/unit-01/week-01/index.html",
@@ -251,13 +265,6 @@
           "raw": "../../index.html",
           "tag": "a",
           "attr": "href"
-        },
-        {
-          "source": "academy/grade-9/unit-02/week-02/index.html",
-          "target": "academy/grade-9/unit-02/week-02/what-counts-as-an-edge.png",
-          "raw": "what-counts-as-an-edge.png",
-          "tag": "img",
-          "attr": "src"
         }
       ],
       "rootOrphans": [
@@ -291,7 +298,20 @@
         "academy/grade-9/unit-06/week-16/index.html",
         "academy/grade-9/unit-07/index.html",
         "academy/grade-9/unit-07/week-17/index.html",
+        "academy/grade-9/unit-07/week-18/index.html",
+        "academy/grade-9/unit-07/week-19/index.html",
+        "academy/grade-9/unit-08/index.html",
+        "academy/grade-9/unit-08/week-20/index.html",
+        "academy/grade-9/unit-08/week-21/index.html",
+        "academy/grade-9/unit-08/week-22/index.html",
+        "academy/grade-9/unit-09/index.html",
+        "academy/grade-9/unit-09/week-23/index.html",
+        "academy/grade-9/unit-09/week-24/index.html",
+        "academy/grade-9/unit-09/week-25/index.html",
+        "academy/grade-9/unit-10/index.html",
+        "academy/grade-9/unit-10/week-26/index.html",
         "academy/index.html",
+        "academy/templates/art101-lesson-template.html",
         "apps/art-education.html",
         "apps/photo_album_index.html",
         "classes/art-class/index.html"
@@ -300,6 +320,7 @@
         "academy/grade-10/unit-01/index.html",
         "academy/grade-11/unit-01/index.html",
         "academy/grade-12/unit-01/index.html",
+        "academy/templates/art101-lesson-template.html",
         "apps/art-education.html",
         "apps/photo_album_index.html",
         "classes/art-class/index.html"
@@ -764,9 +785,9 @@
       "repository": "vervenveda/Khaemenes_High.github.io",
       "htmlCount": 3502,
       "brokenLocalLinkCount": 50,
-      "rootReachableHtmlCount": 2472,
-      "rootOrphanHtmlCount": 1008,
-      "unreferencedHtmlCount": 698,
+      "rootReachableHtmlCount": 2473,
+      "rootOrphanHtmlCount": 1007,
+      "unreferencedHtmlCount": 697,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 4,
       "intentionalSiblingGroupCount": 4,
