@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-26T22:52:30Z",
+  "generatedAt": "2026-10-27T05:36:14Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -1505,6 +1505,86 @@
       "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-07/week-19/",
       "repo": "bazaarart.github.io",
       "path": "academy/grade-9/unit-07/week-19/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Unit 08",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-08/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-08/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 20",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-08/week-20/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-08/week-20/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 21",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-08/week-21/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-08/week-21/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 22",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-08/week-22/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-08/week-22/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Unit 09",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-09/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-09/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 23",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-09/week-23/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-09/week-23/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 24",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-09/week-24/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-09/week-24/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 25",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-09/week-25/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-09/week-25/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Unit 10",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-10/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-10/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 26",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-10/week-26/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-10/week-26/index.html",
       "category": "creative",
       "source": "Bazaar Art"
     },
@@ -43841,46 +43921,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-01.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 28",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/index.html",
       "category": "education",
       "source": "Khaemenes Sr. High"
     }
