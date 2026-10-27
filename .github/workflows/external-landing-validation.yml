@@ -1,0 +1,31 @@
+name: External Landing Header & Beta Toolbar Regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/vnv-external-landing.css'
+      - 'assets/vnv-external-landing.js'
+      - 'tests/vnv-external-landing.test.mjs'
+      - '.github/workflows/external-landing-validation.yml'
+  pull_request:
+    paths:
+      - 'assets/vnv-external-landing.css'
+      - 'assets/vnv-external-landing.js'
+      - 'tests/vnv-external-landing.test.mjs'
+      - '.github/workflows/external-landing-validation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  isolated-dom-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check vanilla JavaScript syntax
+        run: node --check assets/vnv-external-landing.js
+      - name: Test toolbar, dialog and Beta collision boundaries
+        run: node tests/vnv-external-landing.test.mjs
