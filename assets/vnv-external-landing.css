@@ -1,0 +1,180 @@
+/* Verve N Veda · external campus/mission landing standard, v1 · 2026-10-27
+   Scoped to opted-in public landing pages only. Preserve identity, tickers, native
+   menus, translations, primary nav, application panels and all learner records. */
+body[data-vnv-outer-landing="true"] > header {
+  box-sizing:border-box;
+  min-height:64px;
+}
+body[data-vnv-outer-landing="true"] > header :is(.brand,.site-brand) {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+}
+body[data-vnv-outer-landing="true"] > header :is(.brand-name,.brand-copy strong,.brand > span > strong,.site-brand .brand-name) {
+  font-family:"Cinzel","Palatino Linotype",Georgia,serif;
+  font-weight:400!important;
+  line-height:1.35;
+  letter-spacing:.015em;
+  overflow-wrap:break-word;
+}
+html[dir="rtl"] body[data-vnv-outer-landing="true"] > header :is(.brand-name,.brand-copy strong,.brand > span > strong) {
+  font-family:"Noto Sans Arabic","Scheherazade New",Tahoma,serif;
+  letter-spacing:0;
+}
+body[data-vnv-outer-landing="true"] > header :is(nav a,button,select) {
+  font-weight:400;
+  text-underline-offset:3px;
+}
+body[data-vnv-outer-landing="true"] > header :is(a,button,select):focus-visible,
+body[data-vnv-outer-landing="true"] .vnv-external-dock :is(a,button):focus-visible {
+  outline:3px solid #b48b45!important;
+  outline-offset:3px!important;
+}
+body[data-vnv-outer-landing="true"] > header :is(.nav,.header-inner,.header-in) {
+  min-width:0;
+}
+/* A pre-existing floating Beta link must not cover this dock. Original elements
+   stay in the source/DOM, but the single standard dock is what users see. */
+body[data-vnv-outer-landing="true"] #vnvBetaProgramLink,
+body[data-vnv-outer-landing="true"] > a[href^="https://vervenveda.com/beta/"][style*="position:fixed"] {
+  display:none!important;
+}
+body[data-vnv-outer-landing="true"] .vnv-external-dock {
+  position:fixed!important;
+  inset:auto max(10px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) auto!important;
+  z-index:2147483001!important;
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  gap:4px!important;
+  max-width:calc(100vw - 20px)!important;
+  box-sizing:border-box!important;
+  margin:0!important;
+  padding:4px!important;
+  border:1px solid #c9b993!important;
+  border-radius:7px!important;
+  background:rgba(255,253,248,.97)!important;
+  box-shadow:0 5px 19px rgba(12,25,32,.18)!important;
+  backdrop-filter:blur(8px);
+  color:#223d33!important;
+  direction:ltr;
+}
+body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button) {
+  position:static!important;
+  appearance:none!important;
+  display:inline-flex!important;
+  flex:0 0 auto!important;
+  justify-content:center!important;
+  align-items:center!important;
+  box-sizing:border-box!important;
+  width:auto!important;
+  max-width:none!important;
+  min-width:0!important;
+  height:33px!important;
+  min-height:33px!important;
+  max-height:33px!important;
+  margin:0!important;
+  padding:5px 9px!important;
+  gap:5px!important;
+  border:1px solid #d4d0c5!important;
+  border-radius:7px!important;
+  background:#f8f6ef!important;
+  color:#1e4034!important;
+  font:400 10px/1.2 "Nunito","Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+  overflow-wrap:normal!important;
+  word-break:keep-all!important;
+  text-overflow:clip!important;
+  text-decoration:none!important;
+  text-align:center!important;
+  box-shadow:none!important;
+  cursor:pointer!important;
+}
+body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button) > span:not(.vnv-dock-icon) {
+  color:inherit!important;
+  font:inherit!important;
+  white-space:nowrap!important;
+}
+body[data-vnv-outer-landing="true"] .vnv-external-dock .vnv-dock-icon {
+  display:inline-grid;
+  place-items:center;
+  flex:0 0 14px;
+  width:14px;
+  height:14px;
+  border:1px solid currentColor;
+  border-radius:50%;
+  font:400 9px/1 Georgia,serif;
+}
+body[data-vnv-outer-landing="true"] .vnv-external-dock [data-vnv-tool="contribute"] {
+  background:#e2eee6!important;
+}
+body[data-vnv-outer-landing="true"] .vnv-external-dock [data-vnv-tool="beta"] {
+  background:#15283a!important;
+  border-color:#967541!important;
+  color:#fff9ed!important;
+}
+body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button):hover {filter:brightness(.96)}
+#vnvExternalUpdates {
+  box-sizing:border-box;
+  position:fixed;
+  inset:0;
+  margin:auto;
+  width:min(670px,calc(100vw - 20px));
+  max-width:670px;
+  max-height:calc(100dvh - 20px);
+  overflow:auto;
+  padding:21px 24px;
+  border:1px solid #b48b45;
+  border-radius:7px;
+  background:#fffdf8;
+  color:#1c2b29;
+  box-shadow:0 20px 55px rgba(7,21,33,.48);
+  font:400 16px/1.55 "Nunito","Avenir Next","Segoe UI",Arial,sans-serif;
+}
+#vnvExternalUpdates::backdrop {background:rgba(6,16,25,.7)}
+#vnvExternalUpdates .vnv-dialog-top {display:flex;gap:14px;align-items:flex-start;justify-content:space-between}
+#vnvExternalUpdates h2 {margin:0;font:400 24px/1.3 Georgia,serif;color:#142b38}
+#vnvExternalUpdates p {color:#364844;font-size:16px}
+#vnvExternalUpdates nav {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px}
+#vnvExternalUpdates nav a,
+#vnvExternalUpdates button {
+  border:1px solid #c5b8a3;
+  background:#f5f0e6;
+  color:#17392f;
+  border-radius:7px;
+  text-decoration:none;
+  padding:9px 12px;
+  font:400 15px/1.4 "Nunito",Arial,sans-serif;
+}
+@media(max-width:590px) {
+  body[data-vnv-outer-landing="true"] .vnv-external-dock {
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    width:min(330px,calc(100vw - 16px))!important;
+    gap:3px!important;
+    right:8px!important;
+    bottom:8px!important;
+  }
+  body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button) {
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    padding:5px 3px!important;gap:3px!important;font-size:9px!important
+  }
+}
+@media(max-width:320px) {
+  body[data-vnv-outer-landing="true"] .vnv-external-dock {grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:460px) {
+  #vnvExternalUpdates{padding:13px}
+  #vnvExternalUpdates nav{grid-template-columns:1fr}
+}
+@media print {
+  body[data-vnv-outer-landing="true"] .vnv-external-dock,#vnvExternalUpdates {display:none!important}
+}
+@media(prefers-reduced-motion:reduce) {
+  body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button) {transition:none!important}
+}
