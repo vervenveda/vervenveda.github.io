@@ -1,25 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-27T12:40:38Z",
+  "generatedAt": "2026-10-27T18:16:06Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Week 27",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
     {
       "title": "Day 02",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-02.html",
