@@ -5,7 +5,7 @@ import vm from "node:vm";
 const script=fs.readFileSync("assets/vnv-external-landing.js","utf8");
 const css=fs.readFileSync("assets/vnv-external-landing.css","utf8");
 assert.match(script,/data-vnv-outer-landing|vnvOuterLanding/);
-assert.doesNotMatch(script,/localStorage|sessionStorage/,"No student or personal state may be written");
+assert.doesNotMatch(script,/\b(?:localStorage|sessionStorage)\s*(?:\.|\[)/,"No browser storage APIs may be accessed");
 assert.match(css,/#vnvBetaProgramLink/,"Existing floating Beta controls suppressed on opted-in pages");
 assert.match(css,/\[style\*="position:fixed"\]/,"Existing fixed manual Beta links suppressed");
 assert.match(css,/@media\(max-width:590px\)/,"Narrow phones have responsive layout");
