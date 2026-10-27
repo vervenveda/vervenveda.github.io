@@ -311,9 +311,14 @@
         try{location.assign(url)}catch{location.href=url}
       });
     }
-    work.textContent="My Work";
-    work.setAttribute("aria-label",preserved?"Open preserved student work and recovery":"Open my High School profile, records and learning evidence");
-    work.title=preserved?"My Work · preserved work and recovery":"My Work · records and evidence";
+    // A preserved-work recovery control owns its own warning label and click handler.
+    // Do not replace its text: the student-toolbar MutationObserver watches childList,
+    // and setting textContent on every callback creates an unbounded observer loop.
+    if (!preserved && work.textContent !== "My Work") work.textContent="My Work";
+    const accessibleLabel=preserved?"Open preserved student work and recovery":"Open my High School profile, records and learning evidence";
+    if(work.getAttribute("aria-label")!==accessibleLabel)work.setAttribute("aria-label",accessibleLabel);
+    const tooltip=preserved?"Preserved work · recovery options":"My Work · records and evidence";
+    if(work.title!==tooltip)work.title=tooltip;
     dockEducationUtility(work,10);
 
     let search=document.getElementById(HIGH_SEARCH_ID);
