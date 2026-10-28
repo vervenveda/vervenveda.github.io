@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-28T13:32:33Z",
+  "generatedAt": "2026-10-28T22:51:46Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
@@ -26561,6 +26561,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/printables/unit-36-packet.html",
       "repo": "Khaemenes_KinderGarden.github.io",
       "path": "printables/unit-36-packet.html",
+      "category": "education",
+      "source": "Khaemenes Kinder Garden"
+    },
+    {
+      "title": "Reading",
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/reading/",
+      "repo": "Khaemenes_KinderGarden.github.io",
+      "path": "reading/index.html",
       "category": "education",
       "source": "Khaemenes Kinder Garden"
     },
