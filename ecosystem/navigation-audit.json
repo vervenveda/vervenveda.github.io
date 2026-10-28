@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-27T10:32:23Z",
+  "generatedAt": "2026-10-28T11:19:55Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 32,
@@ -795,210 +795,7 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
-          "source": "courses/language-arts/english-12/weeks/week-06/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-12/weeks/week-05/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-12/weeks/week-01/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-12/weeks/week-03/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-12/weeks/week-02/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-12/weeks/week-08/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-12/weeks/week-04/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-12/weeks/week-07/index.html",
-          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-06/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-05/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-01/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-03/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-02/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-08/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-04/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-10/weeks/week-07/index.html",
-          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-06/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-05/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-01/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-03/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-02/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-08/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-04/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-11/weeks/week-07/index.html",
-          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-9/weeks/week-06/index.html",
-          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-9/weeks/week-05/index.html",
-          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
           "source": "courses/language-arts/english-9/weeks/week-01/index.html",
-          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-9/weeks/week-03/index.html",
-          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-9/weeks/week-02/index.html",
-          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
-          "raw": "../../assets/original-source-evidence-bridge-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/language-arts/english-9/weeks/week-08/index.html",
           "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
           "raw": "../../assets/original-source-evidence-bridge-v1.js",
           "tag": "script",
@@ -1012,8 +809,211 @@
           "attr": "src"
         },
         {
+          "source": "courses/language-arts/english-9/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-9/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
           "source": "courses/language-arts/english-9/weeks/week-07/index.html",
           "target": "courses/language-arts/english-9/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-01/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-04/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-12/weeks/week-07/index.html",
+          "target": "courses/language-arts/english-12/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-01/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-04/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-10/weeks/week-07/index.html",
+          "target": "courses/language-arts/english-10/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-01/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-04/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-03/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-08/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-05/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-02/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-06/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
+          "raw": "../../assets/original-source-evidence-bridge-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/language-arts/english-11/weeks/week-07/index.html",
+          "target": "courses/language-arts/english-11/assets/original-source-evidence-bridge-v1.js",
           "raw": "../../assets/original-source-evidence-bridge-v1.js",
           "tag": "script",
           "attr": "src"
@@ -1022,27 +1022,6 @@
           "source": "courses/science/inquiry-ledger/index.html",
           "target": "courses/assets/high-navigation-v1.js",
           "raw": "../../assets/high-navigation-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/science/integrated-science-9/units/unit-01/paper-helicopter-investigation.html",
-          "target": "courses/science/shared/course-entry-contract.js",
-          "raw": "../../../shared/course-entry-contract.js?v=20261025",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/science/integrated-science-9/units/unit-01/investigation-design-task.html",
-          "target": "courses/science/shared/course-entry-contract.js",
-          "raw": "../../../shared/course-entry-contract.js?v=20261025",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/science/integrated-science-9/units/unit-01/index.html",
-          "target": "courses/science/shared/course-entry-contract.js",
-          "raw": "../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
           "attr": "src"
         },
@@ -1068,6 +1047,13 @@
           "attr": "src"
         },
         {
+          "source": "courses/science/integrated-science-9/units/unit-01/investigation-design-task.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
           "source": "courses/science/integrated-science-9/units/unit-01/student-record.html",
           "target": "courses/science/shared/course-entry-contract.js",
           "raw": "../../../shared/course-entry-contract.js?v=20261025",
@@ -1075,14 +1061,21 @@
           "attr": "src"
         },
         {
-          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-08.html",
+          "source": "courses/science/integrated-science-9/units/unit-01/index.html",
           "target": "courses/science/shared/course-entry-contract.js",
-          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
           "attr": "src"
         },
         {
-          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-05.html",
+          "source": "courses/science/integrated-science-9/units/unit-01/paper-helicopter-investigation.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-01.html",
           "target": "courses/science/shared/course-entry-contract.js",
           "raw": "../../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
@@ -1096,14 +1089,21 @@
           "attr": "src"
         },
         {
-          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-07.html",
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-10.html",
           "target": "courses/science/shared/course-entry-contract.js",
           "raw": "../../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
           "attr": "src"
         },
         {
-          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-01.html",
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-08.html",
+          "target": "courses/science/shared/course-entry-contract.js",
+          "raw": "../../../../shared/course-entry-contract.js?v=20261025",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-04.html",
           "target": "courses/science/shared/course-entry-contract.js",
           "raw": "../../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
@@ -1117,7 +1117,7 @@
           "attr": "src"
         },
         {
-          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-09.html",
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-07.html",
           "target": "courses/science/shared/course-entry-contract.js",
           "raw": "../../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
@@ -1131,14 +1131,14 @@
           "attr": "src"
         },
         {
-          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-10.html",
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-05.html",
           "target": "courses/science/shared/course-entry-contract.js",
           "raw": "../../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
           "attr": "src"
         },
         {
-          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-04.html",
+          "source": "courses/science/integrated-science-9/units/unit-01/lessons/day-09.html",
           "target": "courses/science/shared/course-entry-contract.js",
           "raw": "../../../../shared/course-entry-contract.js?v=20261025",
           "tag": "script",
@@ -1312,33 +1312,23 @@
       "duplicateGroups": [],
       "versionSiblingGroups": [
         [
-          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-06/student-packet.html"
-        ],
-        [
           "courses/social-studies/grade-09/week-10/student-packet-v2.html",
           "courses/social-studies/grade-09/week-10/student-packet.html"
         ],
         [
-          "courses/social-studies/grade-09/week-07/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-07/student-packet.html"
+          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-06/student-packet.html"
         ],
         [
           "courses/social-studies/grade-09/week-09/student-packet-v2.html",
           "courses/social-studies/grade-09/week-09/student-packet.html"
+        ],
+        [
+          "courses/social-studies/grade-09/week-07/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-07/student-packet.html"
         ]
       ],
       "intentionalSiblingGroups": [
-        {
-          "pages": [
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
-          ],
-          "roles": {
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
-          }
-        },
         {
           "pages": [
             "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html",
@@ -1351,12 +1341,12 @@
         },
         {
           "pages": [
-            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
           ],
           "roles": {
-            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-07/student-packet.html": ""
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
           }
         },
         {
@@ -1367,6 +1357,16 @@
           "roles": {
             "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html": "canonical-assessment",
             "courses/social-studies/grade-09/weeks/week-09/student-packet.html": ""
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html": ""
           }
         }
       ],
