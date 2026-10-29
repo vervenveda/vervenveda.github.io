@@ -31,6 +31,7 @@
   let catalogPages=[];
   let catalogLoaded=false;
   let catalogLoading=null;
+  let catalogUnavailable=false;
   let ecosystemCounts={repositories:0,pages:0};
   let lastFocus=null;
   let previousBodyOverflow=null;
@@ -122,9 +123,12 @@
     if(!box)return;
     const q=String(query||"").trim().toLowerCase();
 
-    if(q.length>=2 && !catalogLoaded){
+    if(q.length>=2 && !catalogLoaded && !catalogUnavailable){
       status.textContent="Searching the synchronized public page catalog…";
-      ensureCatalog().then(()=>render(query)).catch(()=>render(query));
+      ensureCatalog().then(()=>render(query)).catch(()=>{
+        catalogUnavailable=true;
+        render(query);
+      });
       return;
     }
 
@@ -160,7 +164,7 @@
     }).join("");
     const repoText=ecosystemCounts.repositories ? " · "+ecosystemCounts.repositories+" repositories" : "";
     const pageText=ecosystemCounts.pages ? " · "+ecosystemCounts.pages.toLocaleString()+" searchable pages" : "";
-    status.textContent=filtered.length+" curated "+(filtered.length===1?"doorway":"doorways")+repoText+pageText+".";
+    status.textContent=catalogUnavailable&&q.length>=2 ? "Full page catalog unavailable; showing matching public doorways." : filtered.length+" curated "+(filtered.length===1?"doorway":"doorways")+repoText+pageText+".";
   }
 
   async function ensureCatalog(){
@@ -193,6 +197,7 @@
         });
       if(!catalogPages.length)throw new Error("catalog unavailable");
       catalogLoaded=true;
+      catalogUnavailable=false;
       return catalogPages;
     })().finally(()=>{catalogLoading=null});
     return catalogLoading;
