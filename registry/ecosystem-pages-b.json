@@ -1,49 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-10-29T13:43:52Z",
+  "generatedAt": "2026-10-29T22:58:21Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-27/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Week 28",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/index.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Sr. High"
-    },
     {
       "title": "Day 03",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
@@ -21917,10 +21877,90 @@
       "source": "Khaemenes Higher Learning"
     },
     {
+      "title": "Polygon Gluing Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/tools/polygon-gluing-studio.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/tools/polygon-gluing-studio.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Simplicial Homology Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/tools/simplicial-homology-studio.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/tools/simplicial-homology-studio.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
       "title": "Surface Curvature Studio",
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/tools/surface-curvature-studio.html",
       "repo": "Khaemenes_Higher_Learning.github.io",
       "path": "courses/topology-differential-geometry/tools/surface-curvature-studio.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Exit Check",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/exit-check.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/exit-check.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "Unit 00",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "U00 L01",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/lessons/u00-l01.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/lessons/u00-l01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "U00 L02",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/lessons/u00-l02.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/lessons/u00-l02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "U00 L03",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/lessons/u00-l03.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/lessons/u00-l03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "U00 L04",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/lessons/u00-l04.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/lessons/u00-l04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "U00 L05",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/lessons/u00-l05.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/lessons/u00-l05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning"
+    },
+    {
+      "title": "U00 L06",
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/units/unit-00/lessons/u00-l06.html",
+      "repo": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/topology-differential-geometry/units/unit-00/lessons/u00-l06.html",
       "category": "education",
       "source": "Khaemenes Higher Learning"
     },
