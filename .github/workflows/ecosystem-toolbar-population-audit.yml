@@ -1,0 +1,31 @@
+name: Ecosystem Toolbar Population Audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'ecosystem/apply-ecosystem-toolbar.py'
+      - '.github/workflows/ecosystem-toolbar-population-audit.yml'
+permissions:
+  contents: read
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Audit every eligible public HTML page
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 ecosystem/apply-ecosystem-toolbar.py --report /tmp/toolbar-population-audit.json
+      - name: Show totals
+        run: python3 - <<'PY'
+          import json
+          p=json.load(open('/tmp/toolbar-population-audit.json'))
+          print(json.dumps(p['totals'],indent=2))
+          if p['totals']['failures']:
+              raise SystemExit(1)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ecosystem-toolbar-population-audit
+          path: /tmp/toolbar-population-audit.json
