@@ -1,0 +1,22 @@
+name: Ecosystem Toolbar Guardian
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - 'assets/vnv-beta-link.js'
+      - 'assets/vnv-ecosystem-toolbar.js'
+      - 'reports/audit-ecosystem-toolbar-pages.py'
+      - '.github/workflows/ecosystem-toolbar-guardian.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check shared toolbar syntax
+        run: node --check assets/vnv-ecosystem-toolbar.js
+      - name: Verify legacy Beta UI is retired
+        run: python3 reports/audit-ecosystem-toolbar-pages.py
