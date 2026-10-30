@@ -1,0 +1,33 @@
+{
+  "schema": "vnv-ecosystem-toolbar-migration-audit-v1",
+  "auditedAt": "2026-10-30",
+  "sourceDirectory": "ecosystem/master-ecosystem-directory.json",
+  "directoryBaseline": "2026-10-24",
+  "scope": {
+    "activeVisibleDirectoryEntries": 132,
+    "repositories": 32,
+    "archivedInternalAndDirectoryHiddenExcluded": true
+  },
+  "canonicalToolbar": "https://vervenveda.com/assets/vnv-ecosystem-toolbar.js",
+  "legacyBeta": {
+    "globalAsset": "assets/vnv-beta-link.js",
+    "state": "compatibility-only-no-standalone-ui",
+    "localLegacyAssetsConvertedToCompatibility": true,
+    "betaRolloutWorkflowsRetired": true,
+    "queuedOrRunningBetaRolloutJobs": 0
+  },
+  "verification": {
+    "directoryEntriesWithExactlyOneCanonicalToolbar": 132,
+    "directoryEntriesWithLegacyBetaScript": 0,
+    "directoryEntriesWithLegacyBetaFallbackId": 0,
+    "cspExceptions": 0,
+    "gatewayAdditionalPublicPagesCleaned": 8,
+    "sharedToolbarSyntax": "pass",
+    "gatewayToolbarGuardian": "pass"
+  },
+  "notes": [
+    "Khaemenes Academy and High School had already begun canonical-toolbar migration before this ecosystem pass.",
+    "Directory AGI v1.1 validation has a separate stale-registry-count failure and was not altered during this toolbar-only pass.",
+    "Unlisted archived/internal pages are outside this active public-directory audit."
+  ]
+}
