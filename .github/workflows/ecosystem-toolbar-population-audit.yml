@@ -7,7 +7,7 @@ on:
       - 'ecosystem/apply-ecosystem-toolbar.py'
       - '.github/workflows/ecosystem-toolbar-population-audit.yml'
 permissions:
-  contents: read
+  contents: write
 jobs:
   dry-run:
     runs-on: ubuntu-latest
@@ -16,16 +16,28 @@ jobs:
       - name: Audit every eligible public HTML page
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 ecosystem/apply-ecosystem-toolbar.py --report /tmp/toolbar-population-audit.json
+        run: python3 ecosystem/apply-ecosystem-toolbar.py --report ecosystem/toolbar-population-audit.json
       - name: Show totals
-        run: python3 - <<'PY'
+        run: |
+          python3 - <<'PY'
           import json
-          p=json.load(open('/tmp/toolbar-population-audit.json'))
+          p=json.load(open('ecosystem/toolbar-population-audit.json'))
           print(json.dumps(p['totals'],indent=2))
           if p['totals']['failures']:
               raise SystemExit(1)
           PY
+      - name: Preserve dry-run receipt
+        run: |
+          git config user.name "Verve N Veda Ecosystem Guardian"
+          git config user.email "ecosystem@vervenveda.com"
+          git add ecosystem/toolbar-population-audit.json
+          if git diff --cached --quiet; then
+            echo "Receipt unchanged."
+          else
+            git commit -m "Record ecosystem toolbar population dry-run"
+            git push
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: ecosystem-toolbar-population-audit
-          path: /tmp/toolbar-population-audit.json
+          path: ecosystem/toolbar-population-audit.json
