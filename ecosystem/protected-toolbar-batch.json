@@ -1,0 +1,77 @@
+{
+  "schema": "vnv-protected-toolbar-batch-v1",
+  "auditedAt": "2026-10-30",
+  "canonicalToolbar": "https://vervenveda.com/assets/vnv-ecosystem-toolbar.js",
+  "policy": "Read-only audit of repositories whose automated workflow installation was blocked by connector safety checks. Do not bypass protections; use repository-local/manual execution of the canonical normalizer.",
+  "repositories": [
+    {
+      "repository": "vervenveda/Khaemenes_Preschool.github.io",
+      "htmlCount": 60,
+      "canonicalToolbarMatches": 7,
+      "legacyBetaMatches": 55,
+      "state": "manual-normalization-required"
+    },
+    {
+      "repository": "vervenveda/aurora.github.io",
+      "htmlCount": 46,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "manual-normalization-required"
+    },
+    {
+      "repository": "vervenveda/myartgallery.github.io",
+      "htmlCount": 1,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "manual-normalization-required"
+    },
+    {
+      "repository": "vervenveda/onenationforall.github.io",
+      "htmlCount": 24,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "manual-normalization-required"
+    },
+    {
+      "repository": "vervenveda/river_to_road.github.io",
+      "htmlCount": 3,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "manual-normalization-required"
+    },
+    {
+      "repository": "artist1970/noema-ai.github.io",
+      "htmlCount": 3,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "manual-normalization-required",
+      "notes": [
+        "admin/docs-vault/index.html and internal/core/noema-core.html should remain exempt; public index.html is eligible"
+      ]
+    },
+    {
+      "repository": "artist1970/Eiren.github.io",
+      "htmlCount": 1,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "manual-normalization-required"
+    },
+    {
+      "repository": "artist1970/Zelle.github.io",
+      "htmlCount": 1,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "manual-normalization-required"
+    },
+    {
+      "repository": "artist1970/STOS.github.io",
+      "htmlCount": 1,
+      "canonicalToolbarMatches": 0,
+      "legacyBetaMatches": 0,
+      "state": "review-before-normalization",
+      "notes": [
+        "Public repository, but STOS treatment remains intentionally separate from ordinary ecosystem pages."
+      ]
+    }
+  ]
+}
