@@ -396,7 +396,7 @@
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;");
       const html = `<!doctype html><html><head><meta charset="utf-8"><title>Mentor Review</title></head><body><pre>${escaped}</pre>  <script src="/assets/vnv-ecosystem-menu.js" defer></script>
-<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js" defer data-vnv-ecosystem-toolbar="1"></script>
+<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body></html>`;
       download("khaemenes-mentor-review.html", html, "text/html");
     });

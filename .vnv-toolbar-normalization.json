@@ -1,0 +1,33 @@
+{
+  "schema": "vnv-toolbar-normalization-v1",
+  "counts": {
+    "html": 23,
+    "eligible": 17,
+    "already": 0,
+    "changed": 17,
+    "protected": 0,
+    "internal": 4,
+    "fragments": 2,
+    "legacyRemoved": 1,
+    "duplicatesCollapsed": 0
+  },
+  "changed": [
+    "404.html",
+    "assessment-engine/agents/demos/index.html",
+    "assessment-engine/apps/career_assessment_index.html",
+    "assessment-engine/apps/career_star_index.html",
+    "assessment-engine/apps/mentor_review_index.html",
+    "assessment-engine/index.html",
+    "assessment-engine/mentor/matrix/index.html",
+    "assessment-engine/mentor/registry/objective-map-diagnostics.html",
+    "beta/index.html",
+    "cloud/index.html",
+    "core/directory-agi/index.html",
+    "index.html",
+    "matrix/index.html",
+    "privacy-policy.html",
+    "privacy_policy.html",
+    "registry/objective-map-diagnostics.html",
+    "stos/index.html"
+  ]
+}
