@@ -682,18 +682,18 @@
   }
 
   function start(){
-    if(isHighStudentSurface()){
-      ensureOfficialHighToolbar();
-      ensureEducationWorkspace();
-      ensureEcosystemMenu();
-      ensureSupportComponent();
-      enhanceBazaarLanding();
-      return;
-    }
-    mount();mountHighStudentProfile();ensureHighStudentUtilityButtons();ensureEducationWorkspace();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureEcosystemMenu();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding();
+    // Legacy Beta bootstrap is compatibility-only. The official ecosystem
+    // toolbar owns the visible lower-right utility surface everywhere.
+    ensureOfficialHighToolbar();
+    ensureEducationWorkspace();
+    ensureEducationContinuationPublisher();
+    ensureLinguisticsContinuation();
+    ensureEcosystemMenu();
+    ensureSupportComponent();
+    enhanceBazaarLanding();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
-  window.VNVBetaProgram=Object.freeze({version:"1.8.1",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig,highStudentProfileUrl,openStudentSearch,isClosedBookAssessmentSurface});
+  window.VNVBetaProgram=Object.freeze({version:"1.9.0",mount,source:safeSource,surface:safeSurface,href:betaHref,studentProfile:mountHighStudentProfile,educationProfile:educationProfileConfig,highStudentProfileUrl,openStudentSearch,isClosedBookAssessmentSurface});
 })();
