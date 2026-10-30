@@ -24,7 +24,7 @@ PROTECTED_RE=re.compile(r'(^|/)(quiz|quizzes|exam|exams|assessment|assessments)(
 CLOSED_RE=re.compile(r'data-closed-book|<body[^>]*data-closed-book',re.I)
 TOOLBAR_RE=re.compile(r'<script\b[^>]*\bsrc=["\'][^"\']*vnv-ecosystem-toolbar\.js[^"\']*["\'][^>]*>\s*</script>|<script\b[^>]*\bsrc=["\'][^"\']*vnv-ecosystem-toolbar\.js[^"\']*["\'][^>]*>',re.I)
 LEGACY_SCRIPT_RE=re.compile(r'<script\b[^>]*\bsrc=["\'][^"\']*vnv-beta-link\.js[^"\']*["\'][^>]*>\s*</script>|<script\b[^>]*\bsrc=["\'][^"\']*vnv-beta-link\.js[^"\']*["\'][^>]*>',re.I)
-LEGACY_NODE_RE=re.compile(r'<(?P<tag>a|button)[^>]*\bid=["\'](?:vnvBetaProgramLink|vnvBetaProgramFallback)["\'][^>]*>[\s\S]*?</(?P=tag)>',re.I)
+LEGACY_NODE_RE=re.compile(r'<(?P<tag>a|button)[^>]*(?:\\bid=["\\'](?:vnvBetaProgramLink|vnvBetaProgramFallback)["\\']|href=["\\']https://vervenveda\\.com/beta/?["\\']|aria-label=["\\']Open the Verve N Veda Beta Program["\\'])[^>]*>[\\s\\S]*?</(?P=tag)>',re.I)
 HTML_RE=re.compile(r'<!doctype\s+html|<html\b|<body\b',re.I)
 
 def run(cmd,cwd=None,capture=False):
