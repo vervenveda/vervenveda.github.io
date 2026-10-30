@@ -8,7 +8,7 @@ LEGACY=re.compile(r'<script\b[^>]*\bsrc=["\'][^"\']*vnv-beta-link\.js[^"\']*["\'
 FALLBACK=re.compile(r'id=["\'](?:vnvBetaProgramLink|vnvBetaProgramFallback)["\']',re.I)
 CUSTOM_BETA=re.compile(
     r'<(?:a|button)\b[^>]*(?:href=["\']https://vervenveda\.com/beta/?["\']|'
-    r'aria-label=["\']Open the Verve N Veda Beta Program["\'])[^>]*>',
+    r'aria-label=["\'][^"\']*Verve N Veda Beta Program[^"\']*["\'])[^>]*>',
     re.I,
 )
 CUSTOM_DOCK=re.compile(
