@@ -3,11 +3,29 @@
 if(window.VNVEcosystemToolbar)return;
 const A="https://vervenveda.com/Khaemenes_Academy.github.io/",V="https://vervenveda.com/";
 const ROOT="vnvEcosystemUtilityDock";
+const ACADEMY_TICKER="https://vervenveda.com/Khaemenes_Academy.github.io/assets/khaemenes-academy-ticker.js";
 let mounted=false;
+
+function ensureAcademyTicker(){
+ try{
+  const host=String(location.hostname||"").toLowerCase();
+  const path=String(location.pathname||"").toLowerCase();
+  const academy=host.includes("khaemenes_academy")||path.includes("/khaemenes_academy.github.io/");
+  if(!academy)return;
+  if(window.KhaemenesAcademyTicker?.mount){window.KhaemenesAcademyTicker.mount();return;}
+  if(document.querySelector('script[data-khaemenes-academy-ticker]'))return;
+  const s=document.createElement("script");
+  s.src=ACADEMY_TICKER;
+  s.defer=true;
+  s.dataset.khaemenesAcademyTicker="1";
+  (document.head||document.documentElement).append(s);
+ }catch{}
+}
 function mount(){
  if(mounted||!document.body)return;
  // Existing protected examinations must not gain study/search shortcuts.
  if(/\/(quiz|quizzes|exam|exams|assessment|assessments)\//i.test(location.pathname)||document.documentElement.hasAttribute("data-closed-book")||document.body.hasAttribute("data-closed-book"))return;
+ ensureAcademyTicker();
  if(document.getElementById(ROOT))return;
  const style=document.createElement("style");style.id="vnvEcosystemUtilityStyles";style.textContent="/* Verve N Veda canonical ecosystem toolbar — six controls, isolated from page layout. */
 /* Hide only duplicate floating utility launchers; retain lesson-specific in-page tools. */
@@ -39,6 +57,6 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
  document.body.append(dock,dialog);mounted=true;
 }
-window.VNVEcosystemToolbar=Object.freeze({version:"1.0.0",mount});
+window.VNVEcosystemToolbar=Object.freeze({version:"1.0.1",mount});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
 })();
