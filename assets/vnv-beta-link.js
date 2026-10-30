@@ -10,6 +10,7 @@
   const SCRIPT_URL="https://vervenveda.com/assets/vnv-beta-link.js";
   const ECOSYSTEM_MENU_URL="https://vervenveda.com/assets/vnv-ecosystem-menu.js";
   const SUPPORT_URL="https://vervenveda.com/assets/vnv-support.js";
+  const OFFICIAL_TOOLBAR_URL="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js";
   const KHAEMENES_WORKSPACE_URL="https://vervenveda.com/assets/khaemenes-student-workspace-v2.js";
   const BAZAAR_LIVE_URL="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html";
   const HIGH_PROFILE_ID="khaemenesHighStudentProfileLink";
@@ -648,7 +649,49 @@
     observer.observe(document.documentElement,{childList:true,subtree:true});
   }
 
-  function start(){mount();mountHighStudentProfile();ensureHighStudentUtilityButtons();ensureEducationWorkspace();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureEcosystemMenu();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding()}
+  function retireHighLegacyUtilities(){
+    try{
+      if(!document.getElementById("vnvEcosystemUtilityDock"))return;
+      for(const id of [ID,FALLBACK_ID,EDUCATION_TOOLBAR_ID,"khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
+        document.getElementById(id)?.remove();
+      }
+    }catch{}
+  }
+
+  function ensureOfficialHighToolbar(){
+    try{
+      if(window.VNVEcosystemToolbar?.mount){
+        window.VNVEcosystemToolbar.mount();
+        retireHighLegacyUtilities();
+        return;
+      }
+      let script=document.querySelector('script[src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"]');
+      if(!script){
+        script=document.createElement("script");
+        script.src=OFFICIAL_TOOLBAR_URL;
+        script.defer=true;
+        script.dataset.vnvEcosystemToolbar="1";
+        (document.head||document.documentElement).append(script);
+      }
+      script.addEventListener("load",()=>{
+        try{window.VNVEcosystemToolbar?.mount?.()}catch{}
+        retireHighLegacyUtilities();
+      },{once:true});
+      setTimeout(retireHighLegacyUtilities,120);
+    }catch{}
+  }
+
+  function start(){
+    if(isHighStudentSurface()){
+      ensureOfficialHighToolbar();
+      ensureEducationWorkspace();
+      ensureEcosystemMenu();
+      ensureSupportComponent();
+      enhanceBazaarLanding();
+      return;
+    }
+    mount();mountHighStudentProfile();ensureHighStudentUtilityButtons();ensureEducationWorkspace();ensureEducationContinuationPublisher();ensureLinguisticsContinuation();ensureEcosystemMenu();ensureSupportComponent();bindVisibleFrames();enhanceBazaarLanding();
+  }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
   else start();
 
