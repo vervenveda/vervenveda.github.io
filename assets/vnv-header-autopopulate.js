@@ -162,7 +162,8 @@ function legacyCandidates(options={}){
   return [
     "[data-vnv-header-legacy]",
     "header.site-header",
-    "header[data-khae-header]"
+    "header[data-khae-header]",
+    "body > header:first-of-type"
   ];
 }
 function removeLegacy(options={}){
