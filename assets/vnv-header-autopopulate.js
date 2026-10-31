@@ -138,6 +138,66 @@ function ensureStyle(){
 `;
   (document.head||document.documentElement).append(s);
 }
+function parseRgb(value){
+  const m=String(value||"").match(/rgba?\\(\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)(?:\\s*,\\s*(\\d+(?:\\.\\d+)?))?\\s*\\)/i);
+  if(!m)return null;
+  return {r:Number(m[1]),g:Number(m[2]),b:Number(m[3]),a:m[4]===undefined?1:Number(m[4])};
+}
+function resolvedBackground(el){
+  let node=el;
+  while(node&&node!==document.documentElement){
+    const bg=parseRgb(getComputedStyle(node).backgroundColor);
+    if(bg&&bg.a>0.05)return bg;
+    node=node.parentElement;
+  }
+  return {r:244,g:240,b:231,a:1};
+}
+function relativeLuminance({r,g,b}){
+  const channel=v=>{
+    v/=255;
+    return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4);
+  };
+  return 0.2126*channel(r)+0.7152*channel(g)+0.0722*channel(b);
+}
+function bestContrastText(bg){
+  const L=relativeLuminance(bg);
+  const dark=0.02;
+  const light=0.96;
+  const darkRatio=(L+0.05)/(dark+0.05);
+  const lightRatio=(light+0.05)/(L+0.05);
+  return lightRatio>darkRatio?"#fffdf8":"#080b0f";
+}
+function applyAutoContrast(root=document){
+  const selectors=[
+    "#"+ROOT_ID+" .vnv-header-title",
+    "#"+ROOT_ID+" .vnv-header-subtitle",
+    "#"+ROOT_ID+" .vnv-header-actions a",
+    "#"+ROOT_ID+" .vnv-header-menu-button",
+    "#"+PANEL_ID+" .vnv-header-menu-top",
+    "#"+PANEL_ID+" .vnv-header-menu-kicker",
+    "#"+PANEL_ID+" .vnv-header-menu-search",
+    "#"+PANEL_ID+" .menu-branch-button",
+    "#"+PANEL_ID+" .menu-branch-button strong",
+    "#"+PANEL_ID+" .menu-branch-button small",
+    "#"+PANEL_ID+" .menu-branch-back",
+    "#"+PANEL_ID+" .menu-branch-title",
+    "#"+PANEL_ID+" .menu-subgroup-title",
+    "#"+PANEL_ID+" .menu-group",
+    "#"+PANEL_ID+" .menu-link",
+    "#"+PANEL_ID+" .menu-link strong",
+    "#"+PANEL_ID+" .menu-link small",
+    "#"+PANEL_ID+" p"
+  ];
+  for(const selector of selectors){
+    root.querySelectorAll(selector).forEach(el=>{
+      const color=bestContrastText(resolvedBackground(el));
+      el.style.setProperty("color",color,"important");
+    });
+  }
+}
+function scheduleAutoContrast(){
+  requestAnimationFrame(()=>applyAutoContrast(document));
+}
 function currentTickerHeight(){
   const ids=["vnv333NetworkTicker","vnvTickerAutoPopulate"];
   let total=0;
@@ -202,6 +262,7 @@ function update(root,options={}){
   oldLogo?.replaceWith(createLogo(root,title,options));
   root.dataset.vnvHeaderVersion=VERSION;
   syncTop();
+  scheduleAutoContrast();
   return root;
 }
 function mount(options={}){
@@ -279,7 +340,8 @@ function mount(options={}){
     const ro=new ResizeObserver(syncTop);
     ["vnv333NetworkTicker","vnvTickerAutoPopulate"].forEach(id=>{const el=document.getElementById(id);if(el)ro.observe(el)});
   }
-  window.addEventListener("resize",syncTop,{passive:true});
+  window.addEventListener("resize",()=>{syncTop();scheduleAutoContrast()},{passive:true});
+  scheduleAutoContrast();
   return root;
 }
 
@@ -393,6 +455,7 @@ function renderRoot(){
  activeBranch="";
  const box=document.getElementById(IDS.content);if(!box)return;
  box.innerHTML=`<div class="vnv-menu-branch-home" aria-label="Verve N Veda main menu folders">${BRANCHES.map(b=>`<button class="vnv-menu-branch-button" type="button" data-vnv-branch="${b.id}"><span><strong>${esc(b.label)}</strong><small>${esc(b.desc)}</small></span><span class="vnv-menu-arrow">›</span></button>`).join("")}</div>`;
+ scheduleAutoContrast();
 }
 function academyHaystack(item){
  return [item?.title,item?.repo,item?.path,item?.source,item?.url,item?.description,item?.type].join(" ").toLowerCase();
@@ -420,6 +483,7 @@ function renderAcademyRoot(){
  '<div class="menu-subgroup-title">Academy Repositories</div><div class="vnv-menu-branch-home">'+
  ACADEMY_REPOSITORIES.map(repo=>'<button class="vnv-menu-branch-button" type="button" data-academy-repo="'+esc(repo.id)+'"><span><strong>'+esc(repo.label)+'</strong><small>'+esc(repo.desc)+'</small></span><span class="vnv-menu-arrow">›</span></button>').join("")+
  '</div>';
+ scheduleAutoContrast();
 }
 function renderAcademyRepository(repoId){
  const repo=ACADEMY_REPOSITORIES.find(item=>item.id===repoId);if(!repo)return renderAcademyRoot();
@@ -434,6 +498,7 @@ function renderAcademyRepository(repoId){
    return '<button class="vnv-menu-branch-button" type="button" data-academy-folder="'+esc(folder.id)+'"><span><strong>'+esc(folder.label)+'</strong><small>'+esc(folder.desc)+(count?' · '+count+' found':'')+'</small></span><span class="vnv-menu-arrow">›</span></button>';
  }).join("")+
  '</div>';
+ scheduleAutoContrast();
 }
 function renderAcademyFolder(folderId){
  const repo=ACADEMY_REPOSITORIES.find(item=>item.id===academyRepositoryId);
@@ -444,6 +509,7 @@ function renderAcademyFolder(folderId){
  const pages=academyFolderPages(repo.id,folder.id);
  box.innerHTML='<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-academy-repo-back>← '+esc(repo.label)+'</button><div class="vnv-menu-title">'+esc(folder.label)+'</div></div>'+
  (pages.length?'<div class="vnv-menu-list">'+pages.slice(0,80).map(page=>linkHtml({title:page.title||page.path,url:page.url,icon:"↗",desc:(page.source||page.repo||repo.label)+" · "+(page.path||"")})).join("")+'</div>':'<p>No indexed '+esc(folder.label.toLowerCase())+' pages are registered here yet.</p>');
+ scheduleAutoContrast();
 }
 function branchSections(branch){
  if(branch.special==="home")return [{title:"Main Gateways",items:[
@@ -474,6 +540,7 @@ function renderBranch(id){
  activeBranch=id;const box=document.getElementById(IDS.content);if(!box)return;
  const sections=branchSections(branch);
  box.innerHTML=`<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-vnv-home>← Main folders</button><div class="vnv-menu-title">${esc(branch.label)}</div></div>${sections.map(s=>`<section><div class="vnv-menu-subgroup-title">${esc(s.title)}</div><div class="vnv-menu-list">${s.items.map(linkHtml).join("")}</div></section>`).join("")||'<p>No registered destinations in this branch yet.</p>'}`;
+ scheduleAutoContrast();
 }
 function renderSearch(query){
  const q=String(query||"").trim().toLowerCase();
@@ -485,6 +552,7 @@ function renderSearch(query){
  ${doorway.length?`<section><div class="vnv-menu-subgroup-title">Gateway Matches</div><div class="vnv-menu-list">${doorway.map(e=>linkHtml({...e,desc:e.description||e.type,icon:initials(e.title)})).join("")}</div></section>`:""}
  ${pages.length?`<section><div class="vnv-menu-subgroup-title">Complete Page Index</div><div class="vnv-menu-list">${pages.map(p=>linkHtml({title:p.title||p.path,url:p.url,icon:"↗",desc:(p.source||p.repo)+" · "+p.path})).join("")}</div></section>`:""}
  ${!doorway.length&&!pages.length?'<p>No public ecosystem page matches this search.</p>':""}`;
+ scheduleAutoContrast();
 }
 async function loadData(){
  try{
