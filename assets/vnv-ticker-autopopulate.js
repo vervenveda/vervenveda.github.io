@@ -1,10 +1,10 @@
-/* Verve N Veda · Ticker AutoPopulate · canonical migration engine · v1.0.0
+/* Verve N Veda · Ticker AutoPopulate · canonical migration engine · v1.0.1
    Purpose: one discoverable ticker authority per migrated page.
    Frozen exception: Verve N Veda public gateway root is never modified by this engine. */
 (()=>{"use strict";
 if(window.VNV_TICKER?.autoPopulate)return;
 
-const VERSION="1.0.0";
+const VERSION="1.0.1";
 const ROOT_ID="vnvTickerAutoPopulate";
 const STYLE_ID="vnvTickerAutoPopulateStyles";
 const PAUSE_KEY="VNV_TICKER_PAUSED";
@@ -115,6 +115,26 @@ function setBlock(label,links,hidden){
   }
   return set;
 }
+function fillShortSets(viewport,sets,links){
+  if(!viewport||!sets?.length||!links?.length)return;
+  const target=Math.max(0,viewport.clientWidth+160);
+  for(const set of sets){
+    set.querySelectorAll("[data-vnv-ticker-fill]").forEach(node=>node.remove());
+    if(set.scrollWidth>=target)continue;
+    let guard=0,index=0;
+    while(set.scrollWidth<target&&guard<96){
+      const item=links[index%links.length];
+      const a=document.createElement("a");
+      a.href=item.href;
+      a.textContent=item.label;
+      a.tabIndex=-1;
+      a.setAttribute("aria-hidden","true");
+      a.dataset.vnvTickerFill="1";
+      set.append(a);
+      index++;guard++;
+    }
+  }
+}
 function render(links,options={}){
   if(!links?.length)return null;
   ensureStyle();
@@ -129,7 +149,8 @@ function render(links,options={}){
   const viewport=document.createElement("div");viewport.className="vnv-ticker-viewport";
   const track=document.createElement("div");track.className="vnv-ticker-track";
   const label=options.label||defaultLabel();
-  track.append(setBlock(label,links,false),setBlock(label,links,true),setBlock(label,links,true));
+  const sets=[setBlock(label,links,false),setBlock(label,links,true),setBlock(label,links,true)];
+  track.append(...sets);
   viewport.append(track);
 
   const button=document.createElement("button");
@@ -147,6 +168,15 @@ function render(links,options={}){
 
   const anchor=document.querySelector(options.before||"[data-khae-header],.site-header,header");
   if(anchor?.parentNode)anchor.parentNode.insertBefore(ticker,anchor); else document.body.prepend(ticker);
+
+  const refill=()=>fillShortSets(viewport,sets,links);
+  requestAnimationFrame(refill);
+  if(typeof ResizeObserver==="function"){
+    const ro=new ResizeObserver(()=>refill());
+    ro.observe(viewport);
+  }else{
+    window.addEventListener("resize",refill,{passive:true});
+  }
   return ticker;
 }
 function autoPopulate(options={}){
