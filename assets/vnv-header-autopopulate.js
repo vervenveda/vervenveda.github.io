@@ -101,14 +101,14 @@ function ensureStyle(){
   s.id=STYLE_ID;
   s.textContent=`
 :root{--vnv-header-height:66px;--vnv-header-top:0px}
-#${ROOT_ID}{position:sticky;top:var(--vnv-header-top);z-index:2147480000;height:var(--vnv-header-height);box-sizing:border-box;border-bottom:1px solid rgba(18,23,19,.14);background:rgba(244,240,231,.97);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);font-family:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;color:#080b0f}
-#${ROOT_ID} .vnv-header-inner{height:100%;display:grid;grid-template-columns:minmax(220px,1fr) auto minmax(44px,1fr);align-items:center;gap:14px;padding:0 11px}
-#${ROOT_ID} .vnv-header-home{min-width:0;display:flex;align-items:center;gap:11px;color:inherit!important;text-decoration:none!important;text-align:left}
+#${ROOT_ID}{position:sticky;top:var(--vnv-header-top);z-index:2147480000;min-height:var(--vnv-header-height);height:auto;box-sizing:border-box;border-bottom:1px solid rgba(18,23,19,.14);background:rgba(244,240,231,.97);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);font-family:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;color:#080b0f}
+#${ROOT_ID} .vnv-header-inner{min-height:var(--vnv-header-height);height:auto;display:grid;grid-template-columns:minmax(220px,1fr) auto minmax(44px,1fr);align-items:center;gap:14px;padding:0 11px}
+#${ROOT_ID} .vnv-header-home{min-width:0;width:max-content;max-width:100%;display:flex;align-items:center;gap:11px;color:inherit!important;text-decoration:none!important;text-align:left}
 #${ROOT_ID} .vnv-header-logo{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;overflow:hidden;border:1px solid #080b0f;border-radius:7px;color:#fff;background:#080b0f;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:12px;font-weight:400;letter-spacing:.04em;line-height:1}
 #${ROOT_ID} .vnv-header-logo img{width:100%;height:100%;object-fit:cover;display:block}
-#${ROOT_ID} .vnv-header-copy{min-width:0;display:grid;gap:3px}
-#${ROOT_ID} .vnv-header-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:15px;font-weight:400;letter-spacing:.055em;line-height:1.1}
-#${ROOT_ID} .vnv-header-subtitle{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#30413d;font-size:9px;font-weight:400;letter-spacing:.05em;line-height:1.2}
+#${ROOT_ID} .vnv-header-copy{min-width:0;max-width:min(42vw,520px);display:grid;gap:3px;align-content:center}
+#${ROOT_ID} .vnv-header-title{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;word-break:normal;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(11px,1.15vw,15px);font-weight:400;letter-spacing:clamp(.025em,.06vw,.055em);line-height:1.08}
+#${ROOT_ID} .vnv-header-subtitle{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;color:#30413d;font-size:clamp(8px,.72vw,9px);font-weight:400;letter-spacing:.045em;line-height:1.15}
 #${ROOT_ID} .vnv-header-actions{min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap}
 #${ROOT_ID} .vnv-header-actions a{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid rgba(18,23,19,.16);border-radius:7px;color:#30413d!important;background:rgba(255,255,255,.5);text-decoration:none!important;font-size:9px;font-weight:400;letter-spacing:.055em;text-transform:uppercase;white-space:nowrap}
 #${ROOT_ID} .vnv-header-actions a:hover,#${ROOT_ID} .vnv-header-actions a:focus-visible{color:#080b0f!important;background:#fff;border-color:#b48b45}
