@@ -39,6 +39,11 @@ function pageTitle(options={}){
 function pageSubtitle(options={}){
   const explicit=cleanText(options.subtitle||document.body?.dataset.vnvHeaderSubtitle);
   if(explicit)return explicit;
+  const legacy=cleanText(
+    document.querySelector("[data-khae-brand-sub]")?.textContent ||
+    document.querySelector(".page-subtitle,.hero-subtitle,.brand-sub,.brand-copy small")?.textContent
+  );
+  if(legacy)return legacy.slice(0,90);
   const meta=cleanText(document.querySelector('meta[name="description"]')?.content);
   return meta && meta.length<=90 ? meta : "";
 }
@@ -53,11 +58,21 @@ function iconSource(options={}){
   if(explicit)return explicit;
   const meta=cleanText(document.querySelector('meta[name="vnv-header-logo"]')?.content);
   if(meta)return meta;
+  const legacyImg=document.querySelector("[data-khae-brand-mark] img,.brand-mark img,.seal img,.logo img,header img[src]");
+  const legacySrc=cleanText(legacyImg?.currentSrc||legacyImg?.src);
+  if(legacySrc)return legacySrc;
   const icon=document.querySelector('link[rel="apple-touch-icon"][href],link[rel~="icon"][href]');
   return cleanText(icon?.href);
 }
 function iconText(options={},title=""){
-  return cleanText(options.icon||document.body?.dataset.vnvHeaderIcon)||initials(title);
+  const explicit=cleanText(options.icon||document.body?.dataset.vnvHeaderIcon);
+  if(explicit)return explicit;
+  const legacy=cleanText(
+    document.querySelector("[data-khae-brand-mark]")?.textContent ||
+    document.querySelector(".brand-mark,.seal")?.textContent
+  );
+  if(legacy && legacy.length<=5)return legacy;
+  return initials(title);
 }
 function homeHref(options={}){
   return cleanText(options.home||document.body?.dataset.vnvHeaderHome)||location.href;
