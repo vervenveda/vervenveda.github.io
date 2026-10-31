@@ -79,7 +79,7 @@ function ensureStyle(){
   const s=document.createElement("style");
   s.id=STYLE_ID;
   s.textContent=`
-:root{--vnv-autopopulate-ticker-height:33px}
+:root{--vnv-autopopulate-ticker-height:33px;--khae-ticker-height:var(--vnv-autopopulate-ticker-height)}
 #${ROOT_ID}{position:sticky;top:0;z-index:2147481000;height:var(--vnv-autopopulate-ticker-height);display:grid;grid-template-columns:minmax(0,1fr) 44px;overflow:hidden;color:#f4ead1;background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);border-bottom:1px solid rgba(255,255,255,.13);box-shadow:0 4px 14px rgba(6,15,27,.12);font-family:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif}
 #${ROOT_ID}[data-vnv-ticker-engine="autopopulate"]{isolation:isolate}
 #${ROOT_ID} .vnv-ticker-viewport{min-width:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%)}
@@ -93,7 +93,7 @@ function ensureStyle(){
 #${ROOT_ID} .vnv-ticker-control{width:44px;height:var(--vnv-autopopulate-ticker-height);display:grid;place-items:center;padding:0;border:0;border-left:1px solid rgba(255,255,255,.13);border-radius:0;color:#f4ead1;background:rgba(0,0,0,.08);font:400 11px/1 Arial,sans-serif;cursor:pointer}
 #${ROOT_ID} .vnv-ticker-control:hover{background:rgba(255,255,255,.09)}
 @keyframes vnvAutoTickerMove{to{transform:translateX(-33.333333%)}}
-@media(max-width:560px){:root{--vnv-autopopulate-ticker-height:32px}#${ROOT_ID}{grid-template-columns:minmax(0,1fr) 36px}#${ROOT_ID} .vnv-ticker-set{gap:12px;padding-inline:7px}#${ROOT_ID} .vnv-ticker-label,#${ROOT_ID} a{font-size:9px!important}#${ROOT_ID} .vnv-ticker-control{width:36px}}
+@media(max-width:560px){:root{--vnv-autopopulate-ticker-height:32px;--khae-ticker-height:var(--vnv-autopopulate-ticker-height)}#${ROOT_ID}{grid-template-columns:minmax(0,1fr) 36px}#${ROOT_ID} .vnv-ticker-set{gap:12px;padding-inline:7px}#${ROOT_ID} .vnv-ticker-label,#${ROOT_ID} a{font-size:9px!important}#${ROOT_ID} .vnv-ticker-control{width:36px}}
 @media(prefers-reduced-motion:reduce){#${ROOT_ID} .vnv-ticker-track{animation:none!important;transform:none!important;overflow-x:auto}}
 @media print{#${ROOT_ID}{display:none!important}}`;
   (document.head||document.documentElement).append(s);
