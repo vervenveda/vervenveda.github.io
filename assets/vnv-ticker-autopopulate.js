@@ -52,7 +52,7 @@ function discover(options={}){
     if(!visible(a)||exclude.some(sel=>{try{return a.matches(sel)||a.closest(sel)}catch{return false}}))continue;
     const href=normalizedHref(a), label=textOf(a);
     if(!href||!label||label.length>54)continue;
-    const key=href.replace(/#.*$/,"");
+    const key=href;
     if(seen.has(key))continue;
     seen.add(key);
     out.push({label,href});
