@@ -1,10 +1,10 @@
-/* Verve N Veda · Header AutoPopulate · canonical idempotent header engine · v1.0.0
+/* Verve N Veda · Header AutoPopulate · canonical idempotent header engine · v1.1.0
    Purpose: one simple page-identity header per migrated public page.
    Ticker systems remain separate: this file never mounts, removes, or styles tickers. */
 (()=>{"use strict";
 if(window.VNV_HEADER?.mount)return;
 
-const VERSION="1.0.0";
+const VERSION="1.1.0";
 const ROOT_ID="vnvHeaderAutoPopulate";
 const STYLE_ID="vnvHeaderAutoPopulateStyles";
 const PANEL_ID="vnvHeaderMenu";
@@ -77,6 +77,36 @@ function iconText(options={},title=""){
 function homeHref(options={}){
   return cleanText(options.home||document.body?.dataset.vnvHeaderHome)||location.href;
 }
+function captureActions(options={}){
+  if(Array.isArray(options.actions)){
+    return options.actions.map(item=>({label:cleanText(item.label),href:item.href})).filter(item=>item.label&&item.href).slice(0,7);
+  }
+  const selectors=options.actionSelectors||["[data-khae-nav] a[href]","[data-khae-actions] a[href]",".header-links a[href]",".head-actions a[href]"];
+  const out=[],seen=new Set();
+  for(const selector of selectors){
+    document.querySelectorAll(selector).forEach(a=>{
+      const label=cleanText(a.textContent),href=a.getAttribute("href");
+      if(!label||!href)return;
+      const key=label+"|"+href;
+      if(seen.has(key))return;
+      seen.add(key);
+      out.push({label,href});
+    });
+  }
+  return out.slice(0,7);
+}
+function createActions(actions){
+  const nav=document.createElement("nav");
+  nav.className="vnv-header-actions";
+  nav.setAttribute("aria-label","Page shortcuts");
+  for(const item of actions){
+    const a=document.createElement("a");
+    a.href=item.href;
+    a.textContent=item.label;
+    nav.append(a);
+  }
+  return nav;
+}
 function ensureStyle(){
   if(document.getElementById(STYLE_ID))return;
   const s=document.createElement("style");
@@ -84,13 +114,16 @@ function ensureStyle(){
   s.textContent=`
 :root{--vnv-header-height:66px;--vnv-header-top:0px}
 #${ROOT_ID}{position:sticky;top:var(--vnv-header-top);z-index:2147480000;height:var(--vnv-header-height);box-sizing:border-box;border-bottom:1px solid rgba(18,23,19,.14);background:rgba(244,240,231,.97);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);font-family:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;color:#080b0f}
-#${ROOT_ID} .vnv-header-inner{height:100%;display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;gap:14px;padding:0 11px}
+#${ROOT_ID} .vnv-header-inner{height:100%;display:grid;grid-template-columns:minmax(220px,1fr) auto minmax(44px,1fr);align-items:center;gap:14px;padding:0 11px}
 #${ROOT_ID} .vnv-header-home{min-width:0;display:flex;align-items:center;gap:11px;color:inherit!important;text-decoration:none!important;text-align:left}
 #${ROOT_ID} .vnv-header-logo{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;overflow:hidden;border:1px solid #080b0f;border-radius:7px;color:#fff;background:#080b0f;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:12px;font-weight:400;letter-spacing:.04em;line-height:1}
 #${ROOT_ID} .vnv-header-logo img{width:100%;height:100%;object-fit:cover;display:block}
 #${ROOT_ID} .vnv-header-copy{min-width:0;display:grid;gap:3px}
 #${ROOT_ID} .vnv-header-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:15px;font-weight:400;letter-spacing:.055em;line-height:1.1}
 #${ROOT_ID} .vnv-header-subtitle{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#30413d;font-size:9px;font-weight:400;letter-spacing:.05em;line-height:1.2}
+#${ROOT_ID} .vnv-header-actions{min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap}
+#${ROOT_ID} .vnv-header-actions a{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid rgba(18,23,19,.16);border-radius:7px;color:#30413d!important;background:rgba(255,255,255,.5);text-decoration:none!important;font-size:9px;font-weight:400;letter-spacing:.055em;text-transform:uppercase;white-space:nowrap}
+#${ROOT_ID} .vnv-header-actions a:hover,#${ROOT_ID} .vnv-header-actions a:focus-visible{color:#080b0f!important;background:#fff;border-color:#b48b45}
 #${ROOT_ID} .vnv-header-menu-button{justify-self:end;width:40px;height:40px;display:grid;place-items:center;padding:0;border:1px solid #080b0f;border-radius:7px;color:#fff;background:#080b0f;cursor:pointer}
 #${ROOT_ID} .vnv-header-lines,#${ROOT_ID} .vnv-header-lines::before,#${ROOT_ID} .vnv-header-lines::after{content:"";display:block;width:14px;height:1.5px;border-radius:7px;background:#fff;transition:.18s}
 #${ROOT_ID} .vnv-header-lines{position:relative}
@@ -111,7 +144,7 @@ function ensureStyle(){
 #${PANEL_ID} .vnv-header-menu-list a{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid rgba(18,23,19,.14);border-radius:7px;color:#080b0f!important;background:#fff;text-decoration:none!important;font-size:12px;font-weight:400}
 #${PANEL_ID} .vnv-header-menu-list a:hover,#${PANEL_ID} .vnv-header-menu-list a:focus-visible{border-color:#b48b45;background:#f4f0e7}
 #${PANEL_ID} .vnv-header-menu-list a::after{content:"›";color:#b48b45;font-size:18px}
-@media(max-width:560px){:root{--vnv-header-height:64px}#${ROOT_ID} .vnv-header-inner{padding:0 7px}#${ROOT_ID} .vnv-header-logo{width:38px;height:38px;flex-basis:38px}#${ROOT_ID} .vnv-header-title{font-size:13px}#${ROOT_ID} .vnv-header-subtitle{font-size:8px}}
+@media(max-width:1120px){#${ROOT_ID} .vnv-header-actions a:nth-child(n+5){display:none}}\n@media(max-width:860px){#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 44px}#${ROOT_ID} .vnv-header-actions{display:none}}\n@media(max-width:560px){:root{--vnv-header-height:64px}#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 40px;padding:0 7px}#${ROOT_ID} .vnv-header-logo{width:38px;height:38px;flex-basis:38px}#${ROOT_ID} .vnv-header-title{font-size:13px}#${ROOT_ID} .vnv-header-subtitle{font-size:8px}}
 @media print{#${ROOT_ID},#${PANEL_ID}{display:none!important}}
 `;
   (document.head||document.documentElement).append(s);
@@ -217,7 +250,7 @@ function mount(options={}){
   const existing=document.getElementById(ROOT_ID);
   if(existing)return update(existing,options);
 
-  removeLegacy(options);
+  const actions=captureActions(options);\n\n  removeLegacy(options);
 
   const root=document.createElement("header");
   root.id=ROOT_ID;
@@ -249,7 +282,7 @@ function mount(options={}){
   copy.append(titleEl,sub);
   home.append(copy);
 
-  const button=document.createElement("button");
+  const actionNav=createActions(actions);\n\n  const button=document.createElement("button");
   button.className="vnv-header-menu-button";
   button.type="button";
   button.setAttribute("aria-expanded","false");
@@ -261,7 +294,7 @@ function mount(options={}){
   button.append(lines);
   button.addEventListener("click",()=>setMenu(button.getAttribute("aria-expanded")!=="true"));
 
-  inner.append(home,button);
+  inner.append(home,actionNav,button);
   root.append(inner);
 
   const anchor=document.getElementById("vnvTickerAutoPopulate")||document.getElementById("vnv333NetworkTicker");
