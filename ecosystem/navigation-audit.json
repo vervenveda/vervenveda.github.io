@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-30T11:24:17Z",
+  "generatedAt": "2026-10-31T10:55:41Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 32,
     "failedRepositoryCount": 0,
     "htmlCount": 12236,
-    "brokenLocalLinkCount": 56,
+    "brokenLocalLinkCount": 58,
     "rootOrphanHtmlCount": 5289,
     "unreferencedHtmlCount": 1521,
     "duplicateGroupCount": 0,
@@ -221,7 +221,7 @@
     {
       "repository": "vervenveda/bazaarart.github.io",
       "htmlCount": 91,
-      "brokenLocalLinkCount": 5,
+      "brokenLocalLinkCount": 7,
       "rootReachableHtmlCount": 44,
       "rootOrphanHtmlCount": 47,
       "unreferencedHtmlCount": 7,
@@ -231,6 +231,20 @@
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
+        {
+          "source": "apps/Class_art_education_portal_index.html",
+          "target": "apps/${escapeHTML(s.url)}",
+          "raw": "${escapeHTML(s.url)}",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "apps/art-education.html",
+          "target": "apps/${escapeHTML(s.url)}",
+          "raw": "${escapeHTML(s.url)}",
+          "tag": "a",
+          "attr": "href"
+        },
         {
           "source": "academy/templates/art101-lesson-template.html",
           "target": "academy/templates/original-lesson-art.webp",
