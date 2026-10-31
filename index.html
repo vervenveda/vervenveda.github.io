@@ -1266,6 +1266,98 @@
     .menu-link strong{display:block;font-size:13px;font-weight:600}
     .menu-link small{display:block;color:var(--ink-soft);font-size:10px;line-height:1.45}
 
+    /* BRANCHED ECOSYSTEM MENU — compact first screen, canonical directory underneath */
+    .menu-branch-home{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:9px;
+      margin-top:20px;
+    }
+    .menu-branch-button{
+      min-width:0;
+      min-height:88px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:center;
+      gap:12px;
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:7px;
+      color:var(--ink);
+      background:#fff;
+      text-align:left;
+    }
+    .menu-branch-button:hover,
+    .menu-branch-button:focus-visible{
+      border-color:var(--gold);
+      background:var(--paper);
+    }
+    .menu-branch-button strong{
+      display:block;
+      font-family:var(--ceremonial);
+      font-size:14px;
+      font-weight:444;
+      line-height:1.25;
+      letter-spacing:.025em;
+    }
+    .menu-branch-button small{
+      display:block;
+      margin-top:5px;
+      color:var(--ink-soft);
+      font-size:10px;
+      line-height:1.45;
+    }
+    .menu-branch-arrow{
+      color:var(--gold);
+      font-size:18px;
+      line-height:1;
+    }
+    .menu-branch-toolbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin:18px 0 8px;
+      padding-bottom:10px;
+      border-bottom:1px solid var(--line);
+    }
+    .menu-branch-back{
+      min-height:34px;
+      padding:7px 11px;
+      border:1px solid var(--line-strong);
+      border-radius:7px;
+      color:var(--ink);
+      background:#fff;
+      font-size:10px;
+      font-weight:444;
+      letter-spacing:.04em;
+    }
+    .menu-branch-title{
+      min-width:0;
+      color:var(--forest-deep);
+      font-family:var(--ceremonial);
+      font-size:14px;
+      font-weight:444;
+      letter-spacing:.04em;
+      text-align:right;
+    }
+    .menu-subgroup{
+      margin-top:16px;
+    }
+    .menu-subgroup:first-of-type{margin-top:8px}
+    .menu-subgroup-title{
+      margin:0 0 7px;
+      color:var(--gold);
+      font-size:10px;
+      font-weight:444;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    @media(max-width:560px){
+      .menu-branch-home{grid-template-columns:1fr}
+      .menu-branch-button{min-height:72px}
+    }
+
     @media(max-width:1140px){
       .header-inner{grid-template-columns:minmax(0,1fr) auto}
       .header-links{display:none}
@@ -3786,7 +3878,7 @@
         <h2 id="menuTitle">Verve N Veda Directory</h2>
         <button class="close-button" id="closeMenu" type="button" aria-label="Close menu">×</button>
       </div>
-      <p>Search every connected public landing page. Repository screens are never used as visitor destinations.</p>
+      <p>Choose a main folder to explore one branch of the ecosystem, or search across every connected public destination.</p>
       <label class="visually-hidden" for="menuSearch">Search the complete directory</label>
       <input class="drawer-search" id="menuSearch" type="search"
              placeholder="Search education, law, weather, art, veterans…"
@@ -5247,64 +5339,241 @@
       /* Complete drawer directory ----------------------------------------
          Uses the primary SITES registry so the drawer remains a concise
          gateway while the larger ecosystem directory handles deep links. */
+      const MENU_BRANCHES = Object.freeze([
+        {
+          id:"home",
+          label:"Verve N Veda Home",
+          desc:"Main gateway, ecosystem search, and network entry points.",
+          categoryIds:[],
+          special:"home"
+        },
+        {
+          id:"academy",
+          label:"Khaemenes Academy",
+          desc:"Schools, courses, learning portals, assessments, and academic tools.",
+          categoryIds:["education"]
+        },
+        {
+          id:"professional",
+          label:"Professional",
+          desc:"Professional studios, practical tools, resources, and workspaces.",
+          categoryIds:["professional"]
+        },
+        {
+          id:"creative",
+          label:"Creative",
+          desc:"Art, music, studios, creative tools, galleries, and games.",
+          categoryIds:["creative","games"]
+        },
+        {
+          id:"communication",
+          label:"Communication",
+          desc:"Networks, mail, meetings, publishing, and connected communication tools.",
+          categoryIds:["communication"],
+          siteTitles:["333 Network"]
+        },
+        {
+          id:"citizen",
+          label:"Citizen Resources",
+          desc:"Health, finance, weather, Earth, legal, veteran, research, and practical public resources.",
+          categoryIds:["health","finance","weather","environmental","research"],
+          siteTitles:["Firmament Law","Veterans"]
+        },
+        {
+          id:"civic",
+          label:"Civic and Political",
+          desc:"Civic learning, public policy, elections, diplomacy, campaigns, and news.",
+          categoryIds:["civic","diplomacy","news"],
+          siteTitles:["One Nation for All","Jennifer Pearl 2028 · GitHub","Jennifer Pearl 2028 · Campaign Home"]
+        },
+        {
+          id:"ai",
+          label:"AI Mentors",
+          desc:"NAIB and the ecosystem's registered mentors, guides, and AI learning companions.",
+          categoryIds:[],
+          siteTitles:["NAIB"],
+          special:"mentors"
+        }
+      ]);
+
+      let activeMenuBranch = "";
+
+      function menuLinkHtml(item){
+        return `
+          <a class="menu-link" href="${escapeAttribute(item.url)}"
+             aria-label="Open ${escapeAttribute(item.title)}">
+            <i aria-hidden="true">${escapeHtml(item.icon || "→")}</i>
+            <span>
+              <strong>${escapeHtml(item.title)}</strong>
+              <small>${escapeHtml(item.desc || "Verve N Veda ecosystem destination.")}</small>
+            </span>
+            <span aria-hidden="true">→</span>
+          </a>`;
+      }
+
+      function branchDirectoryItems(branch){
+        const seen = new Set();
+        const sections = [];
+
+        if(branch.special === "home"){
+          sections.push({
+            title:"Main Gateways",
+            items:[
+              {title:"Verve N Veda Home",url:"https://vervenveda.com/",icon:"V",desc:"Return to the main Verve N Veda public gateway."},
+              {title:"Explore the Ecosystem",url:"https://vervenveda.com/#directory",icon:"◎",desc:"Open the complete public ecosystem directory."},
+              {title:"PLERA Search",url:"https://vervenveda.github.io/PLERASearch.github.io/",icon:"⌕",desc:"Search connected public learning and resource destinations."},
+              {title:"333 Network",url:"https://vervenveda.github.io/333.github.io/",icon:"333",desc:"Open the Verve N Veda communication and network gateway."}
+            ]
+          });
+          return sections;
+        }
+
+        for(const categoryId of branch.categoryIds || []){
+          const category = ECOSYSTEM_DIRECTORY.find(entry => entry.id === categoryId);
+          if(!category) continue;
+          for(const group of category.groups || []){
+            const items = (group.items || []).filter(item => {
+              const key = directoryUrlKey(item.url);
+              if(!item.url || seen.has(key)) return false;
+              seen.add(key);
+              return true;
+            }).map(item => ({
+              ...item,
+              icon:initialsForDirectory(item.title)
+            }));
+            if(items.length){
+              sections.push({
+                title:`${category.label} · ${group.title}`,
+                items
+              });
+            }
+          }
+        }
+
+        const specialSites = SITES.filter(site => (branch.siteTitles || []).includes(site.title));
+        const uniqueSpecial = specialSites.filter(site => {
+          const key=directoryUrlKey(site.url);
+          if(seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+        if(uniqueSpecial.length) sections.unshift({title:"Gateways",items:uniqueSpecial});
+
+        if(branch.special === "mentors"){
+          const mentorItems=[];
+          for(const category of ECOSYSTEM_DIRECTORY){
+            for(const group of category.groups || []){
+              for(const item of group.items || []){
+                const haystack=`${group.title} ${item.title} ${item.desc || ""}`.toLowerCase();
+                if(!/(mentor|guide|naib|ai companion|assistant)/.test(haystack)) continue;
+                const key=directoryUrlKey(item.url);
+                if(!item.url || seen.has(key)) continue;
+                seen.add(key);
+                mentorItems.push({...item,icon:initialsForDirectory(item.title)});
+              }
+            }
+          }
+          if(mentorItems.length) sections.push({title:"Mentors & Guides",items:mentorItems});
+        }
+
+        return sections;
+      }
+
+      function renderMenuRoot(){
+        activeMenuBranch="";
+        const content=$("menuContent");
+        if(!content) return;
+        content.innerHTML=`
+          <div class="menu-branch-home" aria-label="Verve N Veda main menu folders">
+            ${MENU_BRANCHES.map(branch => `
+              <button class="menu-branch-button" type="button" data-menu-branch="${escapeAttribute(branch.id)}"
+                      aria-label="Open ${escapeAttribute(branch.label)} folder">
+                <span>
+                  <strong>${escapeHtml(branch.label)}</strong>
+                  <small>${escapeHtml(branch.desc)}</small>
+                </span>
+                <span class="menu-branch-arrow" aria-hidden="true">›</span>
+              </button>`).join("")}
+          </div>`;
+      }
+
+      function renderMenuBranch(branchId){
+        const content=$("menuContent");
+        const branch=MENU_BRANCHES.find(entry => entry.id === branchId);
+        if(!content || !branch){ renderMenuRoot(); return; }
+        activeMenuBranch=branch.id;
+        const sections=branchDirectoryItems(branch);
+        content.innerHTML=`
+          <div class="menu-branch-toolbar">
+            <button class="menu-branch-back" type="button" data-menu-home aria-label="Back to main menu folders">← Main folders</button>
+            <div class="menu-branch-title">${escapeHtml(branch.label)}</div>
+          </div>
+          ${sections.length ? sections.map(section => `
+            <section class="menu-subgroup" aria-label="${escapeAttribute(section.title)}">
+              <div class="menu-subgroup-title">${escapeHtml(section.title)}</div>
+              <div class="menu-list">
+                ${section.items.map(menuLinkHtml).join("")}
+              </div>
+            </section>`).join("") :
+            '<p role="status" style="margin:22px 0;color:var(--ink-soft);font-size:13px">This branch is ready for registered destinations.</p>'}`;
+        content.querySelector("[data-menu-home]")?.focus();
+      }
+
       function buildMenu(query = ""){
         const content = $("menuContent");
         if(!content) return;
 
         const term = String(query || "").trim().toLowerCase();
-        const matches = SITES.filter(site => !term || searchableText(site).includes(term));
+        if(!term){
+          if(activeMenuBranch) renderMenuBranch(activeMenuBranch);
+          else renderMenuRoot();
+          return;
+        }
+
+        const matches = SITES.filter(site => searchableText(site).includes(term));
         const pageMatches = term.length >= 2 && ECOSYSTEM_PAGE_CATALOG_READY
           ? ECOSYSTEM_PAGE_CATALOG.filter(page => ecosystemPageSearchText(page).includes(term)).slice(0,80)
           : [];
 
         if(!matches.length && !pageMatches.length){
           content.innerHTML = `
+            <div class="menu-branch-toolbar">
+              <button class="menu-branch-back" type="button" data-menu-home>← Main folders</button>
+              <div class="menu-branch-title">Search</div>
+            </div>
             <p role="status" style="margin:22px 0 0;color:var(--ink-soft);font-size:13px;line-height:1.6">
               No public ecosystem page matches <strong>${escapeHtml(query)}</strong>.
             </p>`;
           return;
         }
 
-        const gatewayHtml = GROUP_ORDER.map(group => {
-          const groupSites = matches.filter(site => site.group === group);
-          if(!groupSites.length) return "";
-
-          return `
-            <section aria-label="${escapeAttribute(group)}">
-              <div class="menu-group">${escapeHtml(group)}</div>
-              <div class="menu-list">
-                ${groupSites.map(site => `
-                  <a class="menu-link" href="${escapeAttribute(site.url)}"
-                     aria-label="Open ${escapeAttribute(site.title)}">
-                    <i aria-hidden="true">${escapeHtml(site.icon || "→")}</i>
-                    <span>
-                      <strong>${escapeHtml(site.title)}</strong>
-                      <small>${escapeHtml(site.desc)}</small>
-                    </span>
-                    <span aria-hidden="true">→</span>
-                  </a>`).join("")}
-              </div>
-            </section>`;
-        }).join("");
+        const gatewayHtml = matches.length ? `
+          <section aria-label="Gateway matches">
+            <div class="menu-group">Gateway Matches</div>
+            <div class="menu-list">
+              ${matches.map(menuLinkHtml).join("")}
+            </div>
+          </section>` : "";
 
         const pageHtml = pageMatches.length ? `
           <section class="menu-page-results" aria-label="Matching public pages">
             <div class="menu-group">Complete Page Index · ${pageMatches.length} shown</div>
             <div class="menu-list">
-              ${pageMatches.map(page => `
-                <a class="menu-link" href="${escapeAttribute(page.url)}" aria-label="Open ${escapeAttribute(page.title || page.path)}">
-                  <i aria-hidden="true">↗</i>
-                  <span>
-                    <strong>${escapeHtml(page.title || page.path)}</strong>
-                    <small>${escapeHtml(page.source || page.repo)} · ${escapeHtml(page.path)}</small>
-                  </span>
-                  <span aria-hidden="true">→</span>
-                </a>`).join("")}
+              ${pageMatches.map(page => menuLinkHtml({
+                title:page.title || page.path,
+                url:page.url,
+                icon:"↗",
+                desc:`${page.source || page.repo} · ${page.path}`
+              })).join("")}
             </div>
             <p class="menu-page-note">Search covers the complete public catalog. Refine your words if more than 80 pages match.</p>
           </section>` : "";
 
-        content.innerHTML = gatewayHtml + pageHtml;
+        content.innerHTML = `
+          <div class="menu-branch-toolbar">
+            <button class="menu-branch-back" type="button" data-menu-home>← Main folders</button>
+            <div class="menu-branch-title">Search</div>
+          </div>` + gatewayHtml + pageHtml;
       }
 
       function getFocusableElements(){
@@ -5320,6 +5589,7 @@
         $("menuButton").setAttribute("aria-expanded","true");
         document.body.classList.add("menu-open");
         const query = String(initialQuery || "");
+        activeMenuBranch="";
         $("menuSearch").value = query;
         buildMenu(query);
         setTimeout(() => {
@@ -5335,6 +5605,7 @@
         $("menuButton").setAttribute("aria-expanded","false");
         document.body.classList.remove("menu-open");
         $("menuSearch").value = "";
+        activeMenuBranch="";
         buildMenu();
         if(restoreFocus && lastFocusedElement instanceof HTMLElement) lastFocusedElement.focus();
       }
@@ -5345,7 +5616,23 @@
       menuOverlay.addEventListener("click",event => {
         if(event.target === menuOverlay) closeMenu();
       });
-      $("menuSearch").addEventListener("input",event => buildMenu(event.target.value));
+      $("menuSearch").addEventListener("input",event => {
+        activeMenuBranch="";
+        buildMenu(event.target.value);
+      });
+      $("menuContent").addEventListener("click",event => {
+        const branchButton=event.target.closest("[data-menu-branch]");
+        if(branchButton){
+          renderMenuBranch(branchButton.dataset.menuBranch);
+          return;
+        }
+        const homeButton=event.target.closest("[data-menu-home]");
+        if(homeButton){
+          activeMenuBranch="";
+          $("menuSearch").value="";
+          renderMenuRoot();
+        }
+      });
 
       document.addEventListener("keydown",event => {
         if(!menuOverlay.classList.contains("open") &&
