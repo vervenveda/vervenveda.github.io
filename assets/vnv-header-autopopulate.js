@@ -174,24 +174,28 @@ function applyAutoContrast(root=document){
     "#"+ROOT_ID+" .vnv-header-actions a",
     "#"+ROOT_ID+" .vnv-header-menu-button",
     "#"+PANEL_ID+" .vnv-header-menu-top",
+    "#"+PANEL_ID+" .vnv-header-menu-top *",
     "#"+PANEL_ID+" .vnv-header-menu-kicker",
     "#"+PANEL_ID+" .vnv-header-menu-search",
     "#"+PANEL_ID+" .menu-branch-button",
-    "#"+PANEL_ID+" .menu-branch-button strong",
-    "#"+PANEL_ID+" .menu-branch-button small",
+    "#"+PANEL_ID+" .menu-branch-button *",
     "#"+PANEL_ID+" .menu-branch-back",
     "#"+PANEL_ID+" .menu-branch-title",
     "#"+PANEL_ID+" .menu-subgroup-title",
     "#"+PANEL_ID+" .menu-group",
     "#"+PANEL_ID+" .menu-link",
-    "#"+PANEL_ID+" .menu-link strong",
-    "#"+PANEL_ID+" .menu-link small",
-    "#"+PANEL_ID+" p"
+    "#"+PANEL_ID+" .menu-link *",
+    "#"+PANEL_ID+" p",
+    "#"+PANEL_ID+" small",
+    "#"+PANEL_ID+" span",
+    "#"+PANEL_ID+" strong"
   ];
   for(const selector of selectors){
     root.querySelectorAll(selector).forEach(el=>{
       const color=bestContrastText(resolvedBackground(el));
       el.style.setProperty("color",color,"important");
+      el.style.setProperty("-webkit-text-fill-color",color,"important");
+      el.style.setProperty("opacity","1","important");
     });
   }
 }
