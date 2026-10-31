@@ -322,6 +322,29 @@ const BRANCHES=Object.freeze([
  {id:"ai",label:"AI Mentors",desc:"NAIB and the ecosystem's registered mentors, guides, and AI learning companions.",special:"mentors",titles:["NAIB"]}
 ]);
 
+const ACADEMY_REPOSITORIES=Object.freeze([
+ {id:"preschool",label:"PreK / Crèche",desc:"Preschool, Crèche, early learning, family and teacher resources.",root:"https://vervenveda.com/Khaemenes_Preschool.github.io/",patterns:["khaemenes_preschool.github.io","khaemenes preschool","crèche","creche"]},
+ {id:"kindergarten",label:"Kindergarten",desc:"Kindergarten profile, lessons, curriculum, games and family tools.",root:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/",patterns:["khaemenes_kindergarden.github.io","khaemenes kinder garden","kindergarten"]},
+ {id:"elementary",label:"Elementary",desc:"Grades 1–5 learning, student profile, curriculum and resources.",root:"https://vervenveda.com/Khaemenes_Elementary.github.io/",patterns:["khaemenes_elementary.github.io","khaemenes elementary"]},
+ {id:"middle",label:"Middle School",desc:"Grades 6–8 pathways, lessons, basecamp and resources.",root:"https://vervenveda.com/Khaemenes_Middle.github.io/",patterns:["khaemenes_middle.github.io","middle school"]},
+ {id:"high",label:"High School",desc:"High-school portals, departments, courses, profiles and resources.",root:"https://vervenveda.com/Khaemenes_High.github.io/",patterns:["khaemenes_high.github.io","high school"]},
+ {id:"higher",label:"Higher Learning",desc:"Collegiate, advanced, research, career and university pathways.",root:"https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",patterns:["khaemenes_higher_learning.github.io","higher learning"]},
+ {id:"linguistics",label:"Linguistics",desc:"Languages, halls, courses, readers and linguistic tools.",root:"https://vervenveda.com/Khaemenes_Linguistics.github.io/",patterns:["khaemenes_linguistics.github.io","linguistics"]},
+ {id:"life-skills",label:"Life Skills",desc:"Practical independence, wellness, health and daily-life learning.",root:"https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/",patterns:["khaemenes_academy_life_skills.github.io","life skills"]},
+ {id:"proresources",label:"ProReSources / Tools",desc:"Professional and practical tools available across the Academy ecosystem.",root:"https://vervenveda.github.io/proresource_hub.github.io/ProReSources_updated_index.html",patterns:["proresource_hub.github.io","proresources"]},
+ {id:"arcade",label:"Arcade / Games",desc:"Learning games, practice environments and playful study tools.",root:"https://vervenveda.github.io/arcade.github.io/",patterns:["arcade.github.io","arcade"]}
+]);
+const ACADEMY_FOLDERS=Object.freeze([
+ {id:"profile",label:"Profile",desc:"Student profiles, accounts, dashboards and learner identity.",match:/profile|account|dashboard|learner|student[-_ ]?portal/i},
+ {id:"lessons",label:"Lessons",desc:"Lessons, units, weeks, curriculum and daily learning.",match:/lesson|week|unit|curriculum|daily|roadmap/i},
+ {id:"courses",label:"Courses",desc:"Courses, subjects, departments, halls and academic pathways.",match:/course|subject|department|hall|class|101|102|201|202/i},
+ {id:"games",label:"Games",desc:"Games, play, practice and interactive learning.",match:/game|play|arcade|practice|lab/i},
+ {id:"family",label:"Family / Parent",desc:"Family portals, parent resources, enrollment and evidence.",match:/family|parent|enroll|guardian|homeschool|transcript|diploma/i},
+ {id:"teacher",label:"Teacher",desc:"Teacher tools, administration, rubrics and instructional resources.",match:/teacher|admin|rubric|instructor|faculty/i},
+ {id:"resources",label:"Resources",desc:"Libraries, readers, reference tools, support and general resources.",match:/resource|library|reader|reading|reference|support|tool|guide|directory|search/i}
+]);
+let academyRepositoryId="";
+let academyFolderId="";
 let entries=[],catalog=[],catalogParts=[],activeBranch="",lastFocus=null,previousOverflow="";
 const esc=v=>String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 function safeUrl(value){try{const u=new URL(value,location.href);return /^https?:$/.test(u.protocol)?u.href:""}catch{return""}}
@@ -371,6 +394,57 @@ function renderRoot(){
  const box=document.getElementById(IDS.content);if(!box)return;
  box.innerHTML=`<div class="vnv-menu-branch-home" aria-label="Verve N Veda main menu folders">${BRANCHES.map(b=>`<button class="vnv-menu-branch-button" type="button" data-vnv-branch="${b.id}"><span><strong>${esc(b.label)}</strong><small>${esc(b.desc)}</small></span><span class="vnv-menu-arrow">›</span></button>`).join("")}</div>`;
 }
+function academyHaystack(item){
+ return [item?.title,item?.repo,item?.path,item?.source,item?.url,item?.description,item?.type].join(" ").toLowerCase();
+}
+function academyRepositoryFor(item){
+ const haystack=academyHaystack(item);
+ return ACADEMY_REPOSITORIES.find(repo=>repo.patterns.some(pattern=>haystack.includes(pattern)))||null;
+}
+function academyPages(repoId){
+ return catalog.filter(page=>academyRepositoryFor(page)?.id===repoId);
+}
+function academyGateway(repo){
+ return {title:"Open "+repo.label,url:repo.root,icon:initials(repo.label),desc:"Open the main "+repo.label+" landing page."};
+}
+function academyFolderPages(repoId,folderId){
+ const folder=ACADEMY_FOLDERS.find(item=>item.id===folderId);
+ if(!folder)return[];
+ const pages=academyPages(repoId);
+ return pages.filter(page=>folder.match.test([page.title,page.path,page.source].join(" ")));
+}
+function renderAcademyRoot(){
+ activeBranch="academy";academyRepositoryId="";academyFolderId="";
+ const box=document.getElementById(IDS.content);if(!box)return;
+ box.innerHTML='<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-vnv-home>← Main folders</button><div class="vnv-menu-title">Khaemenes Academy</div></div>'+
+ '<div class="menu-subgroup-title">Academy Repositories</div><div class="vnv-menu-branch-home">'+
+ ACADEMY_REPOSITORIES.map(repo=>'<button class="vnv-menu-branch-button" type="button" data-academy-repo="'+esc(repo.id)+'"><span><strong>'+esc(repo.label)+'</strong><small>'+esc(repo.desc)+'</small></span><span class="vnv-menu-arrow">›</span></button>').join("")+
+ '</div>';
+}
+function renderAcademyRepository(repoId){
+ const repo=ACADEMY_REPOSITORIES.find(item=>item.id===repoId);if(!repo)return renderAcademyRoot();
+ academyRepositoryId=repoId;academyFolderId="";
+ const box=document.getElementById(IDS.content);if(!box)return;
+ const pages=academyPages(repoId);
+ box.innerHTML='<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-academy-root>← Academy</button><div class="vnv-menu-title">'+esc(repo.label)+'</div></div>'+
+ '<div class="vnv-menu-list">'+linkHtml(academyGateway(repo))+'</div>'+
+ '<div class="menu-subgroup-title">Browse '+esc(repo.label)+'</div><div class="vnv-menu-branch-home">'+
+ ACADEMY_FOLDERS.map(folder=>{
+   const count=academyFolderPages(repoId,folder.id).length;
+   return '<button class="vnv-menu-branch-button" type="button" data-academy-folder="'+esc(folder.id)+'"><span><strong>'+esc(folder.label)+'</strong><small>'+esc(folder.desc)+(count?' · '+count+' found':'')+'</small></span><span class="vnv-menu-arrow">›</span></button>';
+ }).join("")+
+ '</div>';
+}
+function renderAcademyFolder(folderId){
+ const repo=ACADEMY_REPOSITORIES.find(item=>item.id===academyRepositoryId);
+ const folder=ACADEMY_FOLDERS.find(item=>item.id===folderId);
+ if(!repo||!folder)return renderAcademyRoot();
+ academyFolderId=folderId;
+ const box=document.getElementById(IDS.content);if(!box)return;
+ const pages=academyFolderPages(repo.id,folder.id);
+ box.innerHTML='<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-academy-repo-back>← '+esc(repo.label)+'</button><div class="vnv-menu-title">'+esc(folder.label)+'</div></div>'+
+ (pages.length?'<div class="vnv-menu-list">'+pages.slice(0,80).map(page=>linkHtml({title:page.title||page.path,url:page.url,icon:"↗",desc:(page.source||page.repo||repo.label)+" · "+(page.path||"")})).join("")+'</div>':'<p>No indexed '+esc(folder.label.toLowerCase())+' pages are registered here yet.</p>');
+}
 function branchSections(branch){
  if(branch.special==="home")return [{title:"Main Gateways",items:[
   {title:"Verve N Veda Home",url:HOME,icon:"V",desc:"Return to the main Verve N Veda public gateway."},
@@ -395,6 +469,7 @@ function branchSections(branch){
  return sections;
 }
 function renderBranch(id){
+ if(id==="academy")return renderAcademyRoot();
  const branch=BRANCHES.find(b=>b.id===id);if(!branch)return renderRoot();
  activeBranch=id;const box=document.getElementById(IDS.content);if(!box)return;
  const sections=branchSections(branch);
@@ -437,7 +512,14 @@ function mountDrawer(){
  document.body.append(overlay);
  overlay.querySelector(".vnv-menu-close").addEventListener("click",close);
  overlay.addEventListener("click",e=>{if(e.target===overlay)close()});
- overlay.querySelector("#"+IDS.content).addEventListener("click",e=>{const b=e.target.closest("[data-vnv-branch]");if(b)renderBranch(b.dataset.vnvBranch);if(e.target.closest("[data-vnv-home]")){document.getElementById(IDS.search).value="";renderRoot()}});
+ overlay.querySelector("#"+IDS.content).addEventListener("click",e=>{
+ const branch=e.target.closest("[data-vnv-branch]");if(branch){renderBranch(branch.dataset.vnvBranch);return}
+ const repo=e.target.closest("[data-academy-repo]");if(repo){renderAcademyRepository(repo.dataset.academyRepo);return}
+ const folder=e.target.closest("[data-academy-folder]");if(folder){renderAcademyFolder(folder.dataset.academyFolder);return}
+ if(e.target.closest("[data-academy-root]")){renderAcademyRoot();return}
+ if(e.target.closest("[data-academy-repo-back]")){renderAcademyRepository(academyRepositoryId);return}
+ if(e.target.closest("[data-vnv-home]")){document.getElementById(IDS.search).value="";renderRoot()}
+});
  document.getElementById(IDS.search).addEventListener("input",e=>{activeBranch="";renderSearch(e.target.value)});
  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&overlay.dataset.open==="true")close()});
  return overlay;
