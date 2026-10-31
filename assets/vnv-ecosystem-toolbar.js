@@ -12,6 +12,8 @@ function ensureAcademyTicker(){
   const path=String(location.pathname||"").toLowerCase();
   const academy=host.includes("khaemenes_academy")||path.includes("/khaemenes_academy.github.io/");
   if(!academy)return;
+  /* AutoPopulate migration guard: never resurrect the legacy Academy ticker on a migrated page. */
+  if(window.VNV_TICKER?.autoPopulate||document.getElementById("vnvTickerAutoPopulate")||document.querySelector('script[data-vnv-ticker-autopopulate]'))return;
   if(window.KhaemenesAcademyTicker?.mount){window.KhaemenesAcademyTicker.mount();return;}
   if(document.querySelector('script[data-khaemenes-academy-ticker]'))return;
   const s=document.createElement("script");
