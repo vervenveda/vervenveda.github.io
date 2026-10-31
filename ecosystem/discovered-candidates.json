@@ -1,9 +1,23 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-31T13:04:08Z",
+  "generatedAt": "2026-10-31T21:51:30Z",
   "account": "vervenveda",
   "policy": "Discovery only. New repositories never become public ecosystem destinations automatically. STOS and reserved dummy repositories remain excluded.",
   "candidates": [
+    {
+      "repository": "vervenveda/admin.github.io",
+      "name": "admin.github.io",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "archived": false,
+      "disabled": false,
+      "updatedAt": "2026-10-31T16:21:06Z",
+      "pushedAt": "2026-10-31T16:21:02Z",
+      "homepage": "",
+      "state": "under-review",
+      "directoryVisible": false,
+      "reason": "New public Pages repository discovered; manual ecosystem approval required."
+    },
     {
       "repository": "vervenveda/Iran.github.io",
       "name": "Iran.github.io",
@@ -11,8 +25,8 @@
       "hasPages": true,
       "archived": false,
       "disabled": false,
-      "updatedAt": "2026-10-25T02:05:48Z",
-      "pushedAt": "2026-10-25T02:05:46Z",
+      "updatedAt": "2026-10-31T16:25:18Z",
+      "pushedAt": "2026-10-31T16:25:14Z",
       "homepage": "",
       "state": "under-review",
       "directoryVisible": false,
