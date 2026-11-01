@@ -83,26 +83,6 @@ function captureActions(options={}){
   }
   return out.slice(0,5);
 }
-/* Auto contrast for page-specific header buttons. Contrast always follows the
-   rendered background rather than assuming a light header everywhere. */
-function syncHeaderActionContrast(){
-  const root=document.getElementById(ROOT_ID);
-  if(!root)return;
-  root.querySelectorAll(".vnv-header-actions a").forEach(link=>{
-    const c=getComputedStyle(link).backgroundColor;
-    const m=c.match(/rgba?\\(([^)]+)\\)/i);
-    if(!m)return;
-    const values=m[1].split(/[, ]+/).map(Number);
-    if(values.length<3)return;
-    let [r,g,b]=values,alpha=values.length>=4?values[3]:1;
-    if(alpha<1){const parent=getComputedStyle(root).backgroundColor.match(/rgba?\\(([^)]+)\\)/i);
-      const p=parent?parent[1].split(/[, ]+/).map(Number):[244,240,231];
-      r=r*alpha+p[0]*(1-alpha);g=g*alpha+p[1]*(1-alpha);b=b*alpha+p[2]*(1-alpha);
-    }
-    const luminance=[r,g,b].map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4}).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
-    link.style.setProperty("--vnv-header-action-text",luminance>.18?"#17252a":"#fff8ed");
-  });
-}
 function createActions(actions){
   const nav=document.createElement("nav");
   nav.className="vnv-header-actions";
@@ -364,8 +344,7 @@ function mount(options={}){
     const ro=new ResizeObserver(syncTop);
     ["vnv333NetworkTicker","vnvTickerAutoPopulate"].forEach(id=>{const el=document.getElementById(id);if(el)ro.observe(el)});
   }
-  window.addEventListener("resize",()=>{syncTop();
-  requestAnimationFrame(syncHeaderActionContrast);scheduleAutoContrast()},{passive:true});
+  window.addEventListener("resize",()=>{syncTop();scheduleAutoContrast()},{passive:true});
   scheduleAutoContrast();
   return root;
 }
