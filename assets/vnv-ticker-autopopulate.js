@@ -13,7 +13,7 @@ const DEFAULT_MAX=14;
 function frozenGateway(){
   const host=String(location.hostname||"").toLowerCase();
   const path=(String(location.pathname||"/").replace(/\/+$/,"")||"/").toLowerCase();
-  return path==="/" && (host==="vervenveda.com"||host==="www.vervenveda.com"||host==="vervenveda.github.io");
+  return document.documentElement.dataset.vnvTickerGateway!=="enabled" && path==="/" && (host==="vervenveda.com"||host==="www.vervenveda.com"||host==="vervenveda.github.io");
 }
 function visible(el){
   if(!el||el.hidden||el.closest("[hidden],[aria-hidden='true'],dialog:not([open])"))return false;
@@ -155,13 +155,14 @@ function render(links,options={}){
 
   const button=document.createElement("button");
   button.className="vnv-ticker-control";button.type="button";
-  let paused=false;try{paused=localStorage.getItem(PAUSE_KEY)==="true"}catch{}
+  const pauseKey=options.pauseKey||PAUSE_KEY;
+  let paused=false;try{paused=localStorage.getItem(pauseKey)==="true"}catch{}
   const apply=value=>{
     ticker.dataset.paused=String(value);
     button.setAttribute("aria-pressed",String(value));
     button.setAttribute("aria-label",value?"Resume quick-link ticker":"Pause quick-link ticker");
     button.textContent=value?"▶":"Ⅱ";
-    try{localStorage.setItem(PAUSE_KEY,String(value))}catch{}
+    try{localStorage.setItem(pauseKey,String(value))}catch{}
   };
   apply(paused);button.addEventListener("click",()=>apply(ticker.dataset.paused!=="true"));
   ticker.append(viewport,button);
