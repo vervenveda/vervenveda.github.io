@@ -6047,6 +6047,42 @@
 
 
 
+<!-- Gateway-only opt-in: retain native 333 ticker and mount one canonical page-link ticker. -->
+<script>
+  document.documentElement.dataset.vnvTickerGateway = "enabled";
+</script>
+<style id="vnv-gateway-dual-ticker-stack">
+  /* Keep the original 333 strip at 0; stack the page-link strip immediately below. */
+  body > #vnvTickerAutoPopulate {
+    top:var(--ticker-height,33px)!important;
+  }
+  body:has(> #vnvTickerAutoPopulate) > .site-header {
+    top:calc(var(--ticker-height,33px) + var(--vnv-autopopulate-ticker-height,33px))!important;
+  }
+</style>
+<script src="/assets/vnv-ticker-autopopulate.js"></script>
+<script>
+  if(window.VNV_TICKER?.autoPopulate && !document.getElementById("vnvTickerAutoPopulate")){
+    window.VNV_TICKER.autoPopulate({
+      before:".site-header",
+      label:"Verve N Veda · Explore",
+      ariaLabel:"Verve N Veda page links",
+      pauseKey:"VNV_GATEWAY_AUTOTICKER_PAUSED",
+      cleanLegacy:false,
+      exclude:[
+        "#vnvTickerAutoPopulate a",
+        "#networkTicker a",
+        "[data-vnv-ticker-ignore]",
+        "a[download]",
+        ".skip-link",
+        ".ticker-control",
+        ".vnv-ticker-control",
+        "[aria-label*='logout' i]",
+        "[aria-label*='sign out' i]"
+      ]
+    });
+  }
+</script>
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 
 <!-- Verve N Veda Beta Program -->
