@@ -1,6 +1,6 @@
 # Verve N Veda Public Navigation Audit
 
-Generated: 2026-11-02T00:09:12Z
+Generated: 2026-11-02T13:29:07Z
 
 STOS remains dormant and is excluded from this audit. No files are deleted or renamed automatically.
 
@@ -10,8 +10,8 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 - Repository audit failures: 0
 - HTML files inspected: 12244
 - Broken local link references: 62
-- HTML pages not reachable from repository root index: 5326
-- HTML pages with no incoming in-repository link: 1529
+- HTML pages not reachable from repository root index: 5324
+- HTML pages with no incoming in-repository link: 1527
 - Exact duplicate groups: 0
 - Version/sibling groups requiring review: 4
 - Intentional semantic sibling groups: 4
@@ -29,8 +29,8 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 - **vervenveda/Khaemenes_KinderGarden.github.io** — broken 0; unreferenced 123; exact duplicates 0; version siblings 0.
 - **vervenveda/proresource_hub.github.io** — broken 0; unreferenced 123; exact duplicates 0; version siblings 0.
 - **vervenveda/aurora.github.io** — broken 0; unreferenced 44; exact duplicates 0; version siblings 0.
-- **vervenveda/Khaemenes_Preschool.github.io** — broken 0; unreferenced 40; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Middle.github.io** — broken 0; unreferenced 39; exact duplicates 0; version siblings 0.
+- **vervenveda/Khaemenes_Preschool.github.io** — broken 0; unreferenced 38; exact duplicates 0; version siblings 0.
 - **vervenveda/theverifier.github.io** — broken 0; unreferenced 33; exact duplicates 0; version siblings 0.
 - **vervenveda/finance.github.io** — broken 0; unreferenced 22; exact duplicates 0; version siblings 0.
 - **vervenveda/firmament.github.io** — broken 0; unreferenced 16; exact duplicates 0; version siblings 0.
