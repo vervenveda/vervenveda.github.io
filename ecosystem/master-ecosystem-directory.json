@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 144,
+  "entryCount": 149,
   "entries": [
     {
       "id": "gateway-verve",
@@ -1784,6 +1784,71 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Palestine.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "mentor-zelle",
+      "title": "Zelle · Creative Guide",
+      "repository": "artist1970/Zelle.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://artist1970.github.io/Zelle.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "mentor-archaemenes",
+      "title": "Archaemenes · Principal & Educational Mentor",
+      "repository": "artist1970/Archaemenes.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://artist1970.github.io/Archaemenes.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "mentor-eiren",
+      "title": "Eiren · Poet & Literary Gem",
+      "repository": "artist1970/Eiren.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://artist1970.github.io/Eiren.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "mentor-hope",
+      "title": "Hope · Counseling & Student Support",
+      "repository": "artist1970/Hope.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://artist1970.github.io/Hope.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "mentor-aurora",
+      "title": "Aurora · Restorative Wellness",
+      "repository": "artist1970/Aurora.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://artist1970.github.io/Aurora.github.io/",
       "developmentStatus": "live"
     }
   ],
