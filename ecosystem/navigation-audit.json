@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-01T11:51:03Z",
+  "generatedAt": "2026-11-02T00:09:12Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
-    "repositoryCount": 32,
+    "repositoryCount": 37,
     "failedRepositoryCount": 0,
-    "htmlCount": 12236,
-    "brokenLocalLinkCount": 58,
-    "rootOrphanHtmlCount": 5323,
-    "unreferencedHtmlCount": 1526,
+    "htmlCount": 12244,
+    "brokenLocalLinkCount": 62,
+    "rootOrphanHtmlCount": 5326,
+    "unreferencedHtmlCount": 1529,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -17,6 +17,151 @@
   },
   "failures": [],
   "repositories": [
+    {
+      "repository": "artist1970/Archaemenes.github.io",
+      "htmlCount": 2,
+      "brokenLocalLinkCount": 3,
+      "rootReachableHtmlCount": 1,
+      "rootOrphanHtmlCount": 1,
+      "unreferencedHtmlCount": 1,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 0,
+      "brokenLocalLinks": [
+        {
+          "source": "high/index.html",
+          "target": "early/index.html",
+          "raw": "../early/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "high/index.html",
+          "target": "middle/index.html",
+          "raw": "../middle/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "high/index.html",
+          "target": "higher/index.html",
+          "raw": "../higher/",
+          "tag": "a",
+          "attr": "href"
+        }
+      ],
+      "rootOrphans": [
+        "high/index.html"
+      ],
+      "unreferencedPages": [
+        "high/index.html"
+      ],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": []
+    },
+    {
+      "repository": "artist1970/Aurora.github.io",
+      "htmlCount": 1,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 1,
+      "rootOrphanHtmlCount": 0,
+      "unreferencedHtmlCount": 0,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 0,
+      "brokenLocalLinks": [],
+      "rootOrphans": [],
+      "unreferencedPages": [],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": []
+    },
+    {
+      "repository": "artist1970/Eiren.github.io",
+      "htmlCount": 1,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 1,
+      "rootOrphanHtmlCount": 0,
+      "unreferencedHtmlCount": 0,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 0,
+      "brokenLocalLinks": [],
+      "rootOrphans": [],
+      "unreferencedPages": [],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": []
+    },
+    {
+      "repository": "artist1970/Hope.github.io",
+      "htmlCount": 3,
+      "brokenLocalLinkCount": 1,
+      "rootReachableHtmlCount": 1,
+      "rootOrphanHtmlCount": 2,
+      "unreferencedHtmlCount": 2,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 0,
+      "brokenLocalLinks": [
+        {
+          "source": "knowledge/import-review.html",
+          "target": "knowledge/index.html",
+          "raw": "./",
+          "tag": "a",
+          "attr": "href"
+        }
+      ],
+      "rootOrphans": [
+        "HopeCore.html",
+        "knowledge/import-review.html"
+      ],
+      "unreferencedPages": [
+        "HopeCore.html",
+        "knowledge/import-review.html"
+      ],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": []
+    },
+    {
+      "repository": "artist1970/Zelle.github.io",
+      "htmlCount": 1,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 1,
+      "rootOrphanHtmlCount": 0,
+      "unreferencedHtmlCount": 0,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 0,
+      "brokenLocalLinks": [],
+      "rootOrphans": [],
+      "unreferencedPages": [],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": []
+    },
     {
       "repository": "vervenveda/333.github.io",
       "htmlCount": 12,
