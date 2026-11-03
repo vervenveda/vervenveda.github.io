@@ -5031,6 +5031,12 @@
 
         if(!activeFilter){
           visible = ECOSYSTEM_PAGE_CATALOG.filter(page => page.path === "index.html");
+          // One additional approved public doorway completes the default three-column grid.
+          // Reuse the indexed record instead of duplicating its URL or metadata.
+          const faithHall = ECOSYSTEM_PAGE_CATALOG.find(page =>
+            page.url && new URL(page.url,location.href).pathname.replace(/\\/$/,"").toLowerCase() === "/arshif.github.io/faith"
+          );
+          if(faithHall && !visible.some(page => page.url === faithHall.url)) visible.push(faithHall);
         }
 
         visible = visible
