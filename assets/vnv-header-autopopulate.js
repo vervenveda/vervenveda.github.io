@@ -118,7 +118,7 @@ function ensureStyle(){
 #${ROOT_ID} .vnv-header-lines::before,#${ROOT_ID} .vnv-header-lines::after{position:absolute;left:0}
 #${ROOT_ID} .vnv-header-lines::before{top:-6px}
 #${ROOT_ID} .vnv-header-lines::after{top:6px}
-#${ROOT_ID} .vnv-header-menu-button[aria-expanded="true"] .vnv-header-lines{background:transparent}
+#${ROOT_ID} .vnv-header-menu-button[aria-expanded="true"] .vnv-header-lines{background:transparent!important}
 #${ROOT_ID} .vnv-header-menu-button[aria-expanded="true"] .vnv-header-lines::before{transform:translateY(6px) rotate(45deg)}
 #${ROOT_ID} .vnv-header-menu-button[aria-expanded="true"] .vnv-header-lines::after{transform:translateY(-6px) rotate(-45deg)}
 #${PANEL_ID}{position:fixed;inset:0;z-index:2147483000;display:grid;justify-items:end;visibility:hidden;opacity:0;background:rgba(6,15,12,.56);transition:opacity .18s ease,visibility .18s ease}
