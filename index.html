@@ -5053,7 +5053,7 @@
           <a class="complete-index-card" href="${escapeAttribute(page.url)}">
             <span class="complete-index-badge">${escapeHtml(ECOSYSTEM_CATEGORY_LABELS[page.category] || page.category || "Ecosystem")}</span>
             <strong>${escapeHtml(page.title || page.path)}</strong>
-            <small>${escapeHtml(page.source || page.repo)} · ${escapeHtml(page.path)}</small>
+            <small>${escapeHtml(page.source || page.repo)}${page.path && !/^index\.html$/i.test(page.path.trim()) ? " · " + escapeHtml(page.path.replace(/\/index\.html$/i,"/")) : ""}</small>
           </a>`).join("");
       }
 
