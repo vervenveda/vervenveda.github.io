@@ -3825,6 +3825,15 @@
       outline-offset:2px;
     }
   </style>
+  <!-- Default index grid: center a two-card final row without adding or changing catalog records. -->
+  <style id="vnv-index-last-row-centering-2026-11">
+    @media(min-width:950px) {
+      #completePageIndex .complete-index-grid:has(> .complete-index-card:nth-child(3n + 2):last-child)
+      > .complete-index-card:nth-last-child(-n + 2) {
+        transform:translateX(calc(50% + 5px));
+      }
+    }
+  </style>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -4008,6 +4017,30 @@
           </div>
         </aside>
 
+        <section class="ecosystem-feature-showcase" id="ecosystemFeatureShowcase" aria-label="Featured destination across Verve N Veda">
+          <div class="feature-showcase-shell">
+            <article class="feature-slide" id="featureSlide" aria-live="polite">
+              <div class="feature-visual" id="featureVisual">
+                <img id="featureImage" alt="">
+                <span class="feature-monogram" id="featureMonogram" aria-hidden="true">V</span>
+                <span class="feature-visual-label" id="featureVisualLabel">Featured across Verve N Veda</span>
+              </div>
+              <div class="feature-copy">
+                <p class="feature-kicker" id="featureKicker">Featured across Verve N Veda</p>
+                <h3 class="feature-title" id="featureTitle">Discover the ecosystem</h3>
+                <p class="feature-description" id="featureDescription">A rotating doorway into the applications, learning halls, studios, services, games, and public resources across Verve N Veda.</p>
+                <nav class="feature-breadcrumbs" id="featureBreadcrumbs" aria-label="Featured destination breadcrumb"></nav>
+                <div class="feature-actions">
+                  <a class="feature-open-button" id="featureOpenButton" href="https://vervenveda.com/" target="_blank" rel="noopener noreferrer">Open full page ↗</a>
+                  <button class="feature-pause-button" id="featurePreviewButton" type="button">Preview</button>
+                  <button class="feature-pause-button" id="featurePauseButton" type="button" aria-pressed="false">Pause</button>
+                  <span class="feature-counter" id="featureCounter"></span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section class="complete-page-index" id="completePageIndex" aria-labelledby="completePageIndexTitle">
           <p class="kicker">Complete Ecosystem Index</p>
           <h3 id="completePageIndexTitle">Search every public page across the Verve N Veda network.</h3>
@@ -4051,29 +4084,7 @@
           </section>
         </div>
 
-        <section class="ecosystem-feature-showcase" id="ecosystemFeatureShowcase" aria-label="Featured destination across Verve N Veda">
-          <div class="feature-showcase-shell">
-            <article class="feature-slide" id="featureSlide" aria-live="polite">
-              <div class="feature-visual" id="featureVisual">
-                <img id="featureImage" alt="">
-                <span class="feature-monogram" id="featureMonogram" aria-hidden="true">V</span>
-                <span class="feature-visual-label" id="featureVisualLabel">Featured across Verve N Veda</span>
-              </div>
-              <div class="feature-copy">
-                <p class="feature-kicker" id="featureKicker">Featured across Verve N Veda</p>
-                <h3 class="feature-title" id="featureTitle">Discover the ecosystem</h3>
-                <p class="feature-description" id="featureDescription">A rotating doorway into the applications, learning halls, studios, services, games, and public resources across Verve N Veda.</p>
-                <nav class="feature-breadcrumbs" id="featureBreadcrumbs" aria-label="Featured destination breadcrumb"></nav>
-                <div class="feature-actions">
-                  <a class="feature-open-button" id="featureOpenButton" href="https://vervenveda.com/" target="_blank" rel="noopener noreferrer">Open full page ↗</a>
-                  <button class="feature-pause-button" id="featurePreviewButton" type="button">Preview</button>
-                  <button class="feature-pause-button" id="featurePauseButton" type="button" aria-pressed="false">Pause</button>
-                  <span class="feature-counter" id="featureCounter"></span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
+
       </div>
     </section>
 
