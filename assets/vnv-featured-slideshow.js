@@ -69,7 +69,7 @@ function mount(root){
  const previewLink=document.createElement("a");previewLink.textContent="Open Full Page";previewLink.target="_blank";previewLink.rel="noopener noreferrer";
  const close=document.createElement("button");close.type="button";close.textContent="Close";
  bar.append(previewName,previewLink,close);
- const frame=document.createElement("iframe");frame.title="Featured destination preview";frame.setAttribute("sandbox","allow-scripts allow-forms allow-same-origin");frame.referrerPolicy="strict-origin-when-cross-origin";
+ const frame=document.createElement("iframe");frame.title="Featured destination preview";frame.setAttribute("sandbox","allow-scripts allow-forms");frame.referrerPolicy="strict-origin-when-cross-origin";
  dialog.append(bar,frame);root.append(dialog);
  close.addEventListener("click",()=>dialog.close());dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()});
  dialog.addEventListener("close",()=>frame.removeAttribute("src"));
