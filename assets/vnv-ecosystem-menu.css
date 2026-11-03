@@ -21,7 +21,8 @@
   cursor:pointer;
   border:1px solid rgba(183,148,82,.72);
   border-radius:7px;
-  background:rgba(252,249,242,.97);
+  color:#fff8e9;
+  background:#202724;
   box-shadow:0 8px 24px rgba(8,21,34,.14);
   -webkit-tap-highlight-color:transparent;
 }
@@ -43,7 +44,7 @@
   width:21px;
   height:2px;
   border-radius:7px;
-  background:#172331;
+  background:#fff8e9;
   transition:transform .18s ease,opacity .18s ease;
 }
 .vnv-ecosystem-nav[open] .vnv-ecosystem-lines span:nth-child(1){
@@ -246,18 +247,18 @@
       #vnvEcosystemMenuButton{
         min-height:34px;display:inline-flex;align-items:center;justify-content:center;gap:8px;
         padding:6px 10px;border:1px solid rgba(49,73,62,.24);border-radius:7px;
-        color:#233b32;background:rgba(255,253,248,.86);
+        color:#fff8e9!important;background:#202724!important;
         box-shadow:none;font:500 10px/1.1 "Avenir Next","Segoe UI",Arial,sans-serif;
         letter-spacing:.075em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
       }
-      #vnvEcosystemMenuButton:hover,#vnvEcosystemMenuButton:focus-visible{background:#fff;border-color:rgba(49,73,62,.48)}
+      #vnvEcosystemMenuButton:hover,#vnvEcosystemMenuButton:focus-visible{background:#344148!important;color:#fff8e9!important;border-color:#b48b45;outline:2px solid #b48b45;outline-offset:2px}
       #vnvEcosystemMenuButton.vnv-eco-text-only{
         min-height:34px;padding:6px 9px;letter-spacing:.03em;
         white-space:normal;text-align:center;
       }
       #vnvEcosystemMenuButton .vnv-eco-lines{width:14px;height:10px;display:grid;align-content:space-between}
       #vnvEcosystemMenuButton .vnv-eco-lines::before,#vnvEcosystemMenuButton .vnv-eco-lines::after,#vnvEcosystemMenuButton .vnv-eco-lines span{
-        content:"";display:block;height:1px;background:currentColor
+        content:"";display:block;height:1px;background:#fff8e9!important
       }
       #vnvEcosystemMenuOverlay{
         position:fixed;inset:0;z-index:2147483500;display:grid;justify-items:end;overflow:hidden;contain:layout paint;
