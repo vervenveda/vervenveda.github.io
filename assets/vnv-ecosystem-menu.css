@@ -110,7 +110,7 @@
 }
 @media (prefers-color-scheme:dark){
   .vnv-ecosystem-nav{color:#eee5d5}
-  .vnv-ecosystem-nav summary,
+  .vnv-ecosystem-nav summary{background:#202724;border-color:rgba(232,225,209,.22)}
   .vnv-ecosystem-dropdown{background:#101d2a;border-color:rgba(232,225,209,.22)}
   .vnv-ecosystem-lines span{background:#eee5d5}
   .vnv-ecosystem-dropdown a{color:#eee5d5;background:#142536;border-color:rgba(232,225,209,.16)}
