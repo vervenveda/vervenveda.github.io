@@ -9,6 +9,39 @@ const version="1.0.0", START=performance.now();
 const ids=["vnv333NetworkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","vnvEnrichedMenuOverlay"];
 const names=["333 ticker","Auto ticker","VNV header","Branched menu"];
 const events=[];let panel,content,status,observed=false,scheduled=false,lastReport=null;
+const shifts=[];const layoutSamples=[];const STYLE_LIMIT=30;
+const watchSelectors=["#vnv333NetworkTicker","#vnvTickerAutoPopulate","#vnvHeaderAutoPopulate",".grade09-local-masthead","#grade09ProfileFirst","#khaeProfileToolRail","#learningToday","#grade09BlueprintTools"];
+const stableName=(n)=>{
+ if(!n||n.nodeType!==1)return "unknown";
+ if(n.id)return "#"+n.id;
+ if(n.classList?.length)return n.tagName.toLowerCase()+"."+[...n.classList].slice(0,2).join(".");
+ return n.tagName.toLowerCase();
+};
+function recordGeometry(stage){
+ const list=[];
+ for(const selector of watchSelectors){
+  const node=document.querySelector(selector);
+  if(!node)continue;
+  const r=node.getBoundingClientRect();
+  list.push({node:selector,x:Math.round(r.x),y:Math.round(r.y),width:Math.round(r.width),height:Math.round(r.height)});
+ }
+ if(layoutSamples.length<40)layoutSamples.push({at:now(),stage,items:list});
+}
+if(typeof PerformanceObserver==="function"){
+ try{
+  const po=new PerformanceObserver(entryList=>{
+   for(const entry of entryList.getEntries()){
+    const sources=(entry.sources||[]).map(a=>stableName(a.node)).slice(0,6);
+    const item={at:Math.round(entry.startTime)+"ms",value:Number(entry.value.toFixed(4)),recentInput:entry.hadRecentInput,sources};
+    shifts.push(item);if(shifts.length>35)shifts.shift();
+    if(!entry.hadRecentInput)event("LAYOUT SHIFT "+item.value+" "+sources.join(", "));
+   }
+   schedule();
+  });
+  po.observe({type:"layout-shift",buffered:true});
+ }catch{}
+}
+
 const MAX=55,NO_SCAN="vnv-inspector-root";
 const now=()=>Math.round(performance.now()-START)+"ms";
 function event(msg){
@@ -108,7 +141,7 @@ function inspect(){
  const components=chrome(),actions=interactive(),popup=dialogs();
  return {tool:"VNV Forensic UI Inspector",version,page:location.pathname,
   timestamp:new Date().toISOString(),chrome:components,
-  controls:actions,dialogs:popup,events:events.slice(),
+  controls:actions,dialogs:popup,events:events.slice(),layoutShifts:shifts.slice(),layoutSamples:layoutSamples.slice(),
   limitations:"Read-only structural scan. Cannot confirm server availability, click event wiring, or complex gradient/transparency contrast."};
 }
 function el(tag,label){const e=document.createElement(tag);if(label!==undefined)e.textContent=label;return e}
@@ -127,7 +160,8 @@ function render(){
   (issues||"No structural or obvious contrast warnings.")+
   "\n\nSHARED DESTINATIONS (inspect for loops)\n"+(duplicates||"None detected")+
   "\n\nDIALOGS\n"+(dialogsText||"None")+
-  "\n\nTIMELINE\n"+lastReport.events.slice(-16).join("\n");
+  "\n\nLAYOUT SHIFTS\n"+(lastReport.layoutShifts.map(x=>x.at+" · "+x.value+" · "+x.sources.join(", ")).join("\n")||"No layout shifts detected")+
+  "\n\nTIMELINE\n"+lastReport.events.slice(-22).join("\n");
  status.textContent="Read-only · "+new Date().toLocaleTimeString()+" · No academic records scanned";
 }
 function schedule(){
@@ -150,6 +184,19 @@ function build(){
  panel.append(title,row,content,status);document.body.append(panel);
 }
 const observer=new MutationObserver(changes=>{
+ let stylesAdded=0,removedSections=0;
+ for(const m of changes)if(m.type==="childList"){
+  for(const n of m.addedNodes){
+   if(n.nodeType!==1||!own(n))continue;
+   if(n.matches?.('style,link[rel="stylesheet"]'))stylesAdded++;
+   else stylesAdded+=n.querySelectorAll?.('style,link[rel="stylesheet"]').length||0;
+   if(n.matches?.('.grade09-profile-first,#grade09ProfileFirst,#khaeProfileToolRail'))event("MOUNT "+stableName(n));
+  }
+  for(const n of m.removedNodes)if(n.nodeType===1&&own(n)&&n.matches?.('.grade09-profile-first,#grade09ProfileFirst,#khaeProfileToolRail'))removedSections++;
+ }
+ if(stylesAdded)event("STYLE INSERTED count="+stylesAdded);
+ if(removedSections)event("PROFILE BLOCK MOVED/REMOVED count="+removedSections);
+
  let altered=false;
  for(const m of changes){
   if(!own(m.target))continue;
@@ -170,7 +217,11 @@ const observer=new MutationObserver(changes=>{
 function start(){
  if(panel)return;build();
  observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","style","class","aria-hidden","open"]});
- event("Inspector started");schedule();
+ event("Inspector started");recordGeometry("startup");
+ requestAnimationFrame(()=>recordGeometry("first frame"));
+ window.addEventListener("load",()=>{recordGeometry("window load");requestAnimationFrame(()=>recordGeometry("after load"))},{once:true});
+ setTimeout(()=>{recordGeometry("1.5 seconds");schedule()},1500);
+ schedule();
 }
 window.addEventListener("error",e=>{
  if(e.target!==window&&e.target?.tagName==="SCRIPT")record("Script load failed: "+shortPath(e.target.src));
