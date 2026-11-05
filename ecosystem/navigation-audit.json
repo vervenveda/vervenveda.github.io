@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-04T12:58:58Z",
+  "generatedAt": "2026-11-05T13:11:17Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 37,
     "failedRepositoryCount": 0,
-    "htmlCount": 12244,
-    "brokenLocalLinkCount": 62,
+    "htmlCount": 12246,
+    "brokenLocalLinkCount": 65,
     "rootOrphanHtmlCount": 5322,
     "unreferencedHtmlCount": 1525,
     "duplicateGroupCount": 0,
@@ -670,9 +670,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Academy.github.io",
-      "htmlCount": 24,
+      "htmlCount": 25,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 17,
+      "rootReachableHtmlCount": 18,
       "rootOrphanHtmlCount": 7,
       "unreferencedHtmlCount": 7,
       "duplicateGroupCount": 0,
@@ -952,9 +952,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3502,
-      "brokenLocalLinkCount": 51,
-      "rootReachableHtmlCount": 2473,
+      "htmlCount": 3503,
+      "brokenLocalLinkCount": 54,
+      "rootReachableHtmlCount": 2474,
       "rootOrphanHtmlCount": 1007,
       "unreferencedHtmlCount": 697,
       "duplicateGroupCount": 0,
@@ -963,6 +963,27 @@
       "canonicalAliasCount": 1,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
+        {
+          "source": "grades/grade-11/student-profile/index.html",
+          "target": "grades/grade-11/student-profile/games/index.html",
+          "raw": "games/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-10/student-profile/index.html",
+          "target": "grades/grade-10/student-profile/games/index.html",
+          "raw": "games/",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-12/student-profile/index.html",
+          "target": "grades/grade-12/student-profile/games/index.html",
+          "raw": "games/",
+          "tag": "a",
+          "attr": "href"
+        },
         {
           "source": "courses/language-arts/english-9/index.html",
           "target": "courses/language-arts/english-9/${esc(s.url)}",
