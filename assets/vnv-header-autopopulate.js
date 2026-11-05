@@ -367,6 +367,52 @@ const IDS=Object.freeze({
   style:"vnvEnrichedMenuStyles"
 });
 const HOME="https://vervenveda.com/";
+/* The enriched menu has a separate lexical scope from VNV_HEADER.
+   Its own contrast scheduler updates menu controls only, once per frame. */
+let menuContrastPending=false;
+function scheduleAutoContrast(){
+ if(menuContrastPending)return;
+ menuContrastPending=true;
+ requestAnimationFrame(()=>{
+  menuContrastPending=false;
+  const root=document.getElementById(IDS.overlay);
+  if(!root)return;
+  function rgba(value){
+   if(!value||!value.startsWith("rgb"))return null;
+   const numbers=value.match(/[0-9.]+/g);
+   if(!numbers||numbers.length<3)return null;
+   const vals=numbers.map(Number);
+   if(vals.length>3&&vals[3]<0.98)return null;
+   return vals.slice(0,3);
+  }
+  function luminance(rgb){
+   const channels=rgb.map(n=>{
+    const v=n/255;
+    return v<=0.04045?v/12.92:Math.pow((v+0.055)/1.055,2.4);
+   });
+   return channels[0]*0.2126+channels[1]*0.7152+channels[2]*0.0722;
+  }
+  const dark="#243038",cream="#fff8e9";
+  const ld=luminance([36,48,56]),lc=luminance([255,248,233]);
+  const contrast=(a,b)=>(Math.max(a,b)+0.05)/(Math.min(a,b)+0.05);
+  for(const item of root.querySelectorAll("button,a,input")){
+   let bg=null;
+   for(let n=item;n&&n!==document.body;n=n.parentElement){
+    const found=rgba(getComputedStyle(n).backgroundColor);
+    if(found){bg=luminance(found);break}
+   }
+   if(bg===null)continue;
+   const color=contrast(ld,bg)>=contrast(lc,bg)?dark:cream;
+   item.style.setProperty("color",color,"important");
+   item.style.setProperty("-webkit-text-fill-color",color,"important");
+   for(const child of item.querySelectorAll("strong,small,span")){
+    if(child.classList.contains("vnv-menu-arrow"))continue;
+    child.style.setProperty("color",color,"important");
+    child.style.setProperty("-webkit-text-fill-color",color,"important");
+   }
+  }
+ });
+}
 const REGISTRY=HOME+"ecosystem/master-ecosystem-directory.json";
 const CATALOG_FALLBACK=[
   HOME+"registry/ecosystem-pages-2026-10-14-a.json",
