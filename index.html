@@ -4850,6 +4850,7 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
       let ECOSYSTEM_PAGE_CATALOG = [];
       let ECOSYSTEM_PAGE_CATALOG_READY = false;
       let ECOSYSTEM_PAGE_CATALOG_PARTS = [];
+      let ECOSYSTEM_PAGE_CATALOG_EXPECTED_COUNT = null;
       const ECOSYSTEM_PAGE_LIMIT = 120;
 
       const ECOSYSTEM_CATEGORY_LABELS = Object.freeze({
@@ -4931,6 +4932,8 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
           ECOSYSTEM_PAGE_CATALOG_PARTS = Array.isArray(payload?.pageCatalog?.parts)
             ? payload.pageCatalog.parts.map(validatedCatalogPartPath).filter(Boolean)
             : [];
+          ECOSYSTEM_PAGE_CATALOG_EXPECTED_COUNT = Number.isSafeInteger(payload?.pageCatalog?.publicPageCount)
+            ? payload.pageCatalog.publicPageCount : null;
 
           const active=payload.entries.filter(entry=>{
             if(!entry || entry.directoryVisible!==true || entry.access!=="free-public" || entry.status!=="active") return false;
@@ -5082,115 +5085,41 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
 
       async function loadEcosystemPageCatalog(){
         const status = $("ecosystemPageStatus");
-        const emergencyParts = [
-          "/registry/ecosystem-pages-2026-10-14-a.json",
-          "/registry/ecosystem-pages-2026-10-14-b.json",
-          "/registry/ecosystem-pages-2026-10-14-c.json",
-          "/registry/ecosystem-pages-2026-10-14-d.json",
-          "/registry/ecosystem-pages-2026-10-14-e.json",
-          "/registry/ecosystem-pages-2026-10-14-f.json",
-          "/registry/ecosystem-pages-2026-10-14-g.json"
-        ];
-
+        // One canonical public inventory: the master registry determines the
+        // authoritative catalog shards. No historical/dated catalog fallback.
         async function fetchCatalogParts(urls){
-          const settled = await Promise.allSettled(
-            urls.map(async url => {
-              const response=await fetch(url,{cache:"no-store",credentials:"same-origin"});
-              if(!response.ok) throw new Error(`${url} HTTP ${response.status}`);
-              const part=await response.json();
-              if(!Array.isArray(part?.pages)) throw new Error(`${url} pages missing`);
-              return part.pages;
-            })
-          );
-          const pages=settled
-            .filter(result=>result.status==="fulfilled")
-            .flatMap(result=>result.value);
-          const failures=settled.filter(result=>result.status==="rejected");
-          return {pages,failures};
+          if(!urls.length) throw new Error("canonical catalog parts unavailable");
+          const shards=await Promise.all(urls.map(async url=>{
+            const response=await fetch(url,{cache:"no-store",credentials:"same-origin"});
+            if(!response.ok) throw new Error(`${url} HTTP ${response.status}`);
+            const data=await response.json();
+            if(!Array.isArray(data?.pages)) throw new Error(`${url} pages missing`);
+            return data;
+          }));
+          const generation=String(shards[0]?.generatedAt||"");
+          if(!generation||shards.some(part=>String(part.generatedAt||"")!==generation)){
+            throw new Error("catalog shards disagree on generation");
+          }
+          return shards.flatMap(part=>part.pages);
         }
 
         try{
-          const canonicalParts = ECOSYSTEM_PAGE_CATALOG_PARTS.length
-            ? ECOSYSTEM_PAGE_CATALOG_PARTS
-            : emergencyParts;
-
-          let loaded = await fetchCatalogParts(canonicalParts);
-
-          /* The master registry owns the normal part list. The dated files remain
-             a presentation-only emergency fallback during registry rollovers. */
-          if(!loaded.pages.length && canonicalParts !== emergencyParts){
-            console.warn("Verve N Veda canonical page catalog unavailable; emergency catalog fallback active.");
-            loaded = await fetchCatalogParts(emergencyParts);
+          const pages=await fetchCatalogParts(ECOSYSTEM_PAGE_CATALOG_PARTS);
+          if(!pages.length) throw new Error("canonical catalog is empty");
+          if(ECOSYSTEM_PAGE_CATALOG_EXPECTED_COUNT!==null &&
+             pages.length!==ECOSYSTEM_PAGE_CATALOG_EXPECTED_COUNT){
+            throw new Error("canonical catalog count mismatch");
           }
-
-          if(!loaded.pages.length) throw new Error("no readable catalog pages");
-          if(loaded.failures.length){
-            console.warn(`Verve N Veda page catalog loaded with ${loaded.failures.length} unavailable part(s).`);
+          const known=new Set();
+          for(const page of pages){
+            if(!page?.title||!page?.url||!validatedPublicDirectoryUrl(page.url)){
+              throw new Error("canonical catalog contains invalid public destination");
+            }
+            const key=String(page.url).replace(/\\/+$/,"").toLowerCase();
+            if(known.has(key)) throw new Error("canonical catalog contains duplicate destination");
+            known.add(key);
           }
-
-          ECOSYSTEM_PAGE_CATALOG = loaded.pages.filter(page =>
-            page &&
-            page.title &&
-            page.url &&
-            validatedPublicDirectoryUrl(page.url)
-          );
-
-          /* Keep the deep generated page catalog authoritative, then add any
-             canonical public gateway that is present in SITES but absent from
-             the generated scan. This closes owner/repository gaps without
-             exposing administrator, diagnostic, offline-only, archive, or
-             dormant STOS surfaces. */
-          const urlKey = value => {
-            try{
-              const url = new URL(value,location.href);
-              url.hash = "";
-              url.search = "";
-              url.pathname = url.pathname.replace(/\/index\.html$/i,"/");
-              return url.href;
-            }catch{
-              return String(value || "");
-            }
-          };
-          const knownUrls = new Set(ECOSYSTEM_PAGE_CATALOG.map(page => urlKey(page?.url)).filter(Boolean));
-          const fallbackCategory = Object.freeze({
-            "Education":"education",
-            "Knowledge":"research",
-            "Public Service":"civic",
-            "Creative & Professional":"creative"
-          });
-          SITES.forEach(site => {
-            const safeUrl=validatedPublicDirectoryUrl(site?.url);
-            if(!safeUrl) return;
-            const key = urlKey(safeUrl);
-            if(!key || knownUrls.has(key)) return;
-            try{
-              const url = new URL(safeUrl);
-              const owner = url.hostname.replace(/\.github\.io$/i,"");
-              const firstPath = decodeURIComponent(url.pathname.split("/").filter(Boolean)[0] || "");
-              const repo = url.hostname.endsWith(".github.io")
-                ? (firstPath || `${owner}/${owner}.github.io`)
-                : (firstPath || url.hostname);
-              ECOSYSTEM_PAGE_CATALOG.push({
-                title:site.title,
-                url:safeUrl,
-                repo,
-                path:"index.html",
-                category:fallbackCategory[site.group] || "gateway",
-                source:site.title
-              });
-              knownUrls.add(key);
-            }catch{
-              /* A malformed optional doorway must never block the directory. */
-            }
-          });
-
-          const seen = new Set();
-          ECOSYSTEM_PAGE_CATALOG = ECOSYSTEM_PAGE_CATALOG.filter(page => {
-            const key = urlKey(page?.url);
-            if(!key || seen.has(key)) return false;
-            seen.add(key);
-            return true;
-          });
+          ECOSYSTEM_PAGE_CATALOG=pages;
           ECOSYSTEM_PAGE_CATALOG_READY = true;
           populateCompleteIndexRepositories();
           renderCompletePageIndex();
