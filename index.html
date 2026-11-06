@@ -3701,6 +3701,75 @@
       border-radius:7px!important;
     }
     #support .support-payment .button{background:#28332f!important;color:#f4f0e7!important;border-color:#28332f!important;}
+    #support .support-bridge{
+      grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);
+      gap:clamp(22px,3vw,38px);
+      align-items:center;
+      padding:clamp(26px,4vw,44px);
+    }
+    #support .support-copy .kicker{font-size:16px!important;letter-spacing:.11em!important;}
+    #support .support-copy h2{
+      margin:10px 0 20px!important;
+      font-family:var(--display),Georgia,serif!important;
+      font-size:clamp(30px,3.1vw,43px)!important;
+      font-weight:400!important;
+      line-height:1.2!important;
+      text-wrap:balance;
+    }
+    #support .support-copy p{margin:0 0 15px!important;}
+    #support .support-copy .support-impact{font-size:18px!important;line-height:1.65!important;}
+    #support .support-impact strong{color:#28332f;font-weight:600;}
+    #support .support-copy .support-reassurance{
+      margin-top:19px!important;
+      padding:15px 18px;
+      border-left:3px solid #a88043;
+      background:#f3eddf;
+      border-radius:0 7px 7px 0;
+    }
+    #support .support-copy .support-separation{
+      margin-top:18px!important;
+      font-size:16px!important;
+      color:#435249!important;
+    }
+    #support .support-payment{
+      gap:15px;
+      justify-items:center;
+      align-content:center;
+      min-height:270px;
+      padding:28px 22px!important;
+      text-align:center;
+    }
+    #support .support-payment .support-payment-eyebrow{
+      margin:0;
+      font-family:var(--display),Georgia,serif;
+      font-size:22px!important;
+      color:#28332f;
+      letter-spacing:.05em;
+    }
+    #support .support-payment .support-payment-message{
+      margin:0;
+      font-size:16px!important;
+      color:#28332f;
+      line-height:1.55;
+    }
+    #support .support-payment .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      width:min(100%,250px);
+      padding:10px 18px!important;
+      border-radius:7px!important;
+      font-size:16px!important;
+      font-weight:400!important;
+      text-align:center;
+      text-decoration:none;
+    }
+    #support .support-payment small{max-width:300px;line-height:1.6!important;}
+    @media(max-width:760px){
+      #support .support-bridge{grid-template-columns:1fr;}
+      #support .support-copy{text-align:left;}
+    }
     @media(max-width:640px){
       #privacy .privacy-note{padding:24px 20px;}
       #support .support-bridge{padding:25px 19px;}
@@ -4597,23 +4666,24 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
         <div class="support-bridge">
           <div class="support-copy">
             <p class="kicker">Support Independent Creation</p>
-            <h2 id="supportTitle">Help original learning, games, tools, art, and public resources keep growing.</h2>
-            <p><strong>Everything across the public ecosystem remains free to access.</strong> If this work helps you or your family, your support helps keep Verve N Veda and Khaemenes Academy available, maintained, and growing.</p>
-            <p>Verve N Veda and the Khaemenes learning ecosystem are built as original educational, creative, and public-resource work. Contributions help support continued development, maintenance, hosting, research, curriculum building, and new tools.</p>
-            <p><strong>This support area is separate from Jennifer Pearl campaign contributions.</strong> No tax-deductibility or charitable status is represented on this page.</p>
-            <div class="support-points" aria-label="What contributions support">
-              <span>Original curriculum</span><span>Original games</span><span>Learning tools</span><span>Public resources</span><span>Independent development</span>
-            </div>
+            <h2 id="supportTitle">Keep Free Access Growing</h2>
+            <p class="support-impact"><strong>11,000+ free pages.</strong> Lessons, educational resources, creative tools, games, research, and inspiration across Verve N Veda and Khaemenes Academy.</p>
+            <p>Everything here is free to explore and learn from. No student or family should have to donate to belong, participate, or benefit.</p>
+            <p><strong>Keeping it free takes real work.</strong> Voluntary donations help with hosting, maintenance, curriculum, accessibility, new tools, and the time needed to keep this growing public resource available. Continued support matters, even when it arrives gradually.</p>
+            <p class="support-reassurance">If you can give today, your contribution makes a difference. If you cannot, you are still welcome here. Learn, share a resource, and come back whenever you like.</p>
+            <p class="support-separation">Donations support Verve N Veda's independent educational and creative work, not Jennifer Pearl's campaign. No tax-deductibility or charitable status is claimed.</p>
           </div>
           <div class="support-payment">
+            <p class="support-payment-eyebrow">Free for Everyone</p>
+            <p class="support-payment-message">Help sustain a growing library of free learning and public resources.</p>
             <a class="button button-primary"
                href="https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s"
                target="_blank"
                rel="noopener noreferrer"
-               aria-label="Support free Verve N Veda access securely through Stripe">
-              Support Verve N Veda with Stripe ↗
+               aria-label="Make a voluntary donation to support Verve N Veda through Stripe">
+              Support Free Access
             </a>
-            <small>Contributions are voluntary support for Verve N Veda original work and free ecosystem access for all.</small>
+            <small>Give what you can, when you can. Every contribution is voluntary; access never depends on donating.</small>
           </div>
         </div>
       </div>
