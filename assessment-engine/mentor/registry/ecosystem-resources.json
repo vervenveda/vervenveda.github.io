@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-05T19:54:45.273Z",
-  "sourceLatestRepositoryTimestamp": "2026-11-05T19:40:13Z",
+  "generatedAt": "2026-11-06T06:38:21.760Z",
+  "sourceLatestRepositoryTimestamp": "2026-11-06T06:38:17Z",
   "resources": [
     {
       "id": "vervenveda.333.github.io.333-gateway",
@@ -16845,8 +16845,8 @@
     },
     {
       "id": "vervenveda.theverifier.github.io.live-research-news",
-      "title": "Live Research News",
-      "description": "Research-oriented current-information feed for source comparison and follow-up investigation.",
+      "title": "Daily News Briefing",
+      "description": "A source-aware daily briefing for science, health, environment, and global reporting with direct links to original publishers.",
       "url": "https://vervenveda.com/theverifier.github.io/apps/Live_Research_News_index.html",
       "sourceId": "verve.verifier",
       "repository": "vervenveda/theverifier.github.io",
@@ -16871,7 +16871,11 @@
       ],
       "tags": [
         "news",
-        "research",
+        "daily-briefing",
+        "science",
+        "health",
+        "environment",
+        "global",
         "current-info"
       ],
       "minutes": 20,
