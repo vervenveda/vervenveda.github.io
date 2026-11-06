@@ -41,10 +41,37 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  if(other)other.style.setProperty("display","none","important");
 }
  const link=(key,label,url)=>{const e=document.createElement("a");e.dataset.vnvTool=key;e.textContent=label;e.href=url;e.setAttribute("aria-label",label==="Profile"?"Open learner or scholar profile":label);dock.append(e);return e};
- let path=location.pathname.toLowerCase();
- let profile=A+"student/";
- if(path.includes("higher_learning")||path.includes("/adult/"))profile=A+"adult/";
- link("profile","Profile",profile);
+ // The canonical Profile doorway is resolved from the selected Academy
+ // learner on every activation, not from the page currently being visited.
+ // No registration or private records are modified by this navigation.
+ function registeredProfileDestination(){
+  const tour=A+"tour/";
+  try{
+   const id=JSON.parse(localStorage.getItem("khaemenes_active_learner_v1")||"null");
+   const family=JSON.parse(localStorage.getItem("khaemenes_family_registry_v1")||"null");
+   const person=typeof id==="string"?family?.learners?.[id]:null;
+   if(!person||person.learnerId!==id||person.selfDirectedAdult===true&&!["higher"].includes(person.stage))return tour;
+   const linked=window.KhaemenesStudentProfileV2?.activeLearner?.()?.learnerId;
+   if(linked&&String(linked)!==id)return tour;
+   if(person.stage==="high"){
+    const n=Number(person.grade);
+    return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/":tour;
+   }
+   if(person.stage==="higher"||person.selfDirectedAdult===true)return A+"adult/";
+   if(["preschool","kindergarten","elementary","middle"].includes(person.stage))return A+"student/profile.html";
+  }catch{}
+  return tour;
+ }
+ const profileLink=link("profile","Profile",registeredProfileDestination());
+ const refreshProfile=()=>{profileLink.href=registeredProfileDestination()};
+ profileLink.addEventListener("pointerenter",refreshProfile);
+ profileLink.addEventListener("focus",refreshProfile);
+ profileLink.addEventListener("click",refreshProfile);
+ window.addEventListener("pageshow",refreshProfile);
+ window.addEventListener("khaemenes-family-changed",refreshProfile);
+ window.addEventListener("storage",event=>{
+  if(!event.key||/khaemenes_(active_learner|family_registry)_v1/.test(event.key))refreshProfile();
+ });
  link("search","Search",V+"PLERASearch.github.io/");
  const updates=document.createElement("button");updates.type="button";updates.dataset.vnvTool="updates";updates.textContent="Updates";dock.append(updates);
  const mentorUrl="https://artist1970.github.io/Archaemenes.github.io/#archaemenesConversation";
