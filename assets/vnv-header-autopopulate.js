@@ -611,7 +611,7 @@ async function loadData(){
   catalogParts=Array.isArray(d?.pageCatalog?.parts)?d.pageCatalog.parts.map(p=>new URL(p,HOME).href):CATALOG_FALLBACK;
  }catch{
   entries=[
-   {title:"Khaemenes Academy",url:"https://vervenveda.com/Khaemenes_Academy.github.io/",category:"education",type:"gateway"},
+   {title:"Khaemenes Academy",url:"https://vervenveda.com/KhaemenesAcademy_Home.github.io/",category:"education",type:"gateway"},
    {title:"PLERA Search",url:"https://vervenveda.github.io/PLERASearch.github.io/",category:"research",type:"gateway"},
    {title:"The Verifier",url:"https://vervenveda.github.io/theverifier.github.io/",category:"news",type:"gateway"},
    {title:"Bazaar Art",url:"https://vervenveda.github.io/bazaarart.github.io/",category:"creative",type:"gateway"},
