@@ -4045,7 +4045,7 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
               <a class="button button-secondary" href="https://vervenveda.github.io/333.github.io/">Open 333 Network</a>
             </div>
             <div class="enrolled-student-entry-row">
-            <a class="enrolled-student-entry" href="https://vervenveda.com/Khaemenes_Academy.github.io/student/" aria-label="Enrolled Students Enter Here — open the Khaemenes Academy Student Portal">Enrolled Students Enter Here</a>
+            <a class="enrolled-student-entry" id="vnvEnrolledStudentEntry" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/" aria-label="Enrolled Students Enter Here">Enrolled Students Enter Here</a>
             </div>
           </div>
         </div>
@@ -5948,7 +5948,37 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
         const media=FEATURE_MEDIA[item.url] || null;
         printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(item.title)}</title><style>body{font-family:Georgia,serif;color:#18201c;margin:48px;line-height:1.6}small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#806a42}h1{font-weight:444;font-size:33px}img{max-width:100%;max-height:420px;object-fit:contain;border:1px solid #ddd}a{color:#21493d;word-break:break-all}.crumb{font:11px Arial,sans-serif;color:#756d60;margin-bottom:24px}
 
-</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script></body></html>`);
+</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script><script id="vnv-enrolled-student-direct-profile">
+(()=>{"use strict";
+ const entry=document.getElementById("vnvEnrolledStudentEntry");if(!entry)return;
+ const A="https://vervenveda.com/Khaemenes_Academy.github.io/";
+ const H="https://vervenveda.com/Khaemenes_High.github.io/";
+ function destination(){
+  try{
+   const id=JSON.parse(localStorage.getItem("khaemenes_active_learner_v1")||"null");
+   const family=JSON.parse(localStorage.getItem("khaemenes_family_registry_v1")||"null");
+   const learner=typeof id==="string"?family?.learners?.[id]:null;
+   if(!learner||learner.learnerId!==id)return A+"family/";
+   const stage=String(learner.stage||"").toLowerCase();
+   const grade=String(learner.grade||"").replace(/^grade[- ]?/i,"").trim();
+   const n=Number(grade);
+   if(stage==="high"&&[9,10,11,12].includes(n)){
+    return H+"grades/grade-"+String(n).padStart(2,"0")+"/student-profile/profile/";
+   }
+   if(stage==="higher"||learner.selfDirectedAdult===true)return A+"adult/";
+   return A+"student/";
+  }catch{return A+"family/"}
+ }
+ const refresh=()=>{entry.href=destination();return entry.href};
+ entry.addEventListener("click",e=>{if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;const target=refresh();e.preventDefault();location.assign(target)},true);
+ entry.addEventListener("pointerenter",refresh);
+ entry.addEventListener("focus",refresh);
+ window.addEventListener("pageshow",refresh);
+ window.addEventListener("storage",e=>{if(!e.key||/khaemenes_(active_learner|family_registry)_v1/.test(e.key))refresh()});
+ refresh();
+})();
+</script>
+</body></html>`);
         printWindow.document.close();
       }
 
