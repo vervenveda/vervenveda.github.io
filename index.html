@@ -3623,10 +3623,14 @@
   <link rel="stylesheet" href="/assets/vnv-global-standard.css" data-vnv-standard="2026-10-14">
   <!-- 2026-10-15: homepage typography and collision-safe control refinement. -->
   <style id="vnv-enrolled-student-entry-style">
+    .hero .enrolled-student-entry-row{
+      display:flex;justify-content:center;align-items:center;
+      width:100%;margin-top:25px;text-align:center;
+    }
     .hero .enrolled-student-entry{
       display:inline-flex;align-items:center;justify-content:center;
       width:auto;max-width:calc(100% - 16px);min-height:40px;
-      margin:20px auto 0;padding:9px 19px;
+      margin:0;padding:9px 19px;
       border:1px solid #28332f;border-radius:7px;
       background:#28332f;color:#f4f0e7;
       font-family:inherit;font-size:16px;font-weight:400;
@@ -3642,7 +3646,8 @@
       outline:3px solid #a88043;outline-offset:4px;
     }
     @media(max-width:560px){
-      .hero .enrolled-student-entry{margin-top:16px;padding:10px 15px;}
+      .hero .enrolled-student-entry-row{margin-top:20px;}
+      .hero .enrolled-student-entry{padding:10px 15px;}
     }
     @media(prefers-reduced-motion:reduce){
       .hero .enrolled-student-entry{transition:none;}
@@ -4025,7 +4030,6 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
           <div class="hero-copy">
             <p class="eyebrow">One Connected Public Campus</p>
             <h1 id="gatewayTitle">Verve N Veda</h1>
-            <a class="enrolled-student-entry" href="https://vervenveda.com/Khaemenes_Academy.github.io/student/" aria-label="Enrolled Students Enter Here — open the Khaemenes Academy Student Portal">Enrolled Students Enter Here</a>
           </div>
 
    <div class="hero-aside">
@@ -4039,6 +4043,9 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
               <a class="button button-primary" href="#directory">Explore the Ecosystem</a>
               <a class="button button-secondary" href="#pillars">Discover the Halls</a>
               <a class="button button-secondary" href="https://vervenveda.github.io/333.github.io/">Open 333 Network</a>
+            </div>
+            <div class="enrolled-student-entry-row">
+            <a class="enrolled-student-entry" href="https://vervenveda.com/Khaemenes_Academy.github.io/student/" aria-label="Enrolled Students Enter Here — open the Khaemenes Academy Student Portal">Enrolled Students Enter Here</a>
             </div>
           </div>
         </div>
