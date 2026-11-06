@@ -232,7 +232,12 @@ def main() -> int:
     generated_at = now_iso()
     master = json.loads(MASTER_PATH.read_text(encoding="utf-8"))
     entries = list(master.get("entries") or [])
-    identities = repo_identity(entries)
+    # The generated full-page catalog scans only this account. Other owners
+    # may remain approved as curated public doorways in the same master.
+    identities = {
+        key: value for key, value in repo_identity(entries).items()
+        if key.startswith(f"{ACCOUNT.lower()}/")
+    }
     approved = set(identities)
 
     discovered = list_public_account_repos(ACCOUNT)
