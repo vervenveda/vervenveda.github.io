@@ -23,6 +23,14 @@ function ensureAcademyTicker(){
   (document.head||document.documentElement).append(s);
  }catch{}
 }
+function academyStudentSurface(){
+ try{
+  const host=String(location.hostname||"").toLowerCase();
+  const path=String(location.pathname||"").toLowerCase();
+  return (host.includes("khaemenes_high")||path.includes("/khaemenes_high.github.io/")||host.includes("khaemenes_academy")||path.includes("/khaemenes_academy.github.io/"))
+    && (/\/student-profile\//.test(path)||/\/student\//.test(path)||/\/grades\/grade-(?:09|10|11|12)\//.test(path));
+ }catch{return false}
+}
 function mount(){
  if(mounted||!document.body)return;
  // Existing protected examinations must not gain study/search shortcuts.
@@ -41,6 +49,12 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  if(other)other.style.setProperty("display","none","important");
 }
  const link=(key,label,url)=>{const e=document.createElement("a");e.dataset.vnvTool=key;e.textContent=label;e.href=url;e.setAttribute("aria-label",label==="Profile"?"Open learner or scholar profile":label);dock.append(e);return e};
+ const protectStudentResource=(anchor,label)=>{
+  if(!academyStudentSurface())return anchor;
+  anchor.target="_blank";anchor.rel="noopener noreferrer";
+  anchor.setAttribute("aria-label",label+" — opens in a new tab");
+  return anchor;
+ };
  // The canonical Profile doorway is resolved from the selected Academy
  // learner on every activation, not from the page currently being visited.
  // No registration or private records are modified by this navigation.
@@ -86,7 +100,7 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  window.addEventListener("storage",event=>{
   if(!event.key||/khaemenes_(active_learner|family_registry)_v1/.test(event.key))refreshProfile();
  });
- link("search","Search",V+"PLERASearch.github.io/");
+ protectStudentResource(link("search","Search",V+"PLERASearch.github.io/"),"Search");
  const updates=document.createElement("button");updates.type="button";updates.dataset.vnvTool="updates";updates.textContent="Updates";dock.append(updates);
  const mentorUrl="https://artist1970.github.io/Archaemenes.github.io/#archaemenesConversation";
  const mentor=link("mentor","Mentor",mentorUrl);
@@ -107,8 +121,8 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  mentor.addEventListener("click",e=>{if(e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;e.preventDefault();try{mentorDialog.showModal();mentorFrame.src=mentorUrl;mentorClose.focus()}catch{window.open(mentorUrl,"_blank","noopener,noreferrer")}});
  mentorDialog.addEventListener("click",e=>{if(e.target===mentorDialog)mentorDialog.close()});
  mentorDialog.addEventListener("close",()=>mentorFrame.removeAttribute("src"));
- link("support","Support","https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s");
- link("beta","Beta",V+"beta/");
+ protectStudentResource(link("support","Support","https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s"),"Support");
+ protectStudentResource(link("beta","Beta",V+"beta/"),"Beta");
  const dialog=document.createElement("dialog");dialog.id="vnvEcosystemUtilityUpdates";
  const title=document.createElement("h2");title.textContent="Updates & Help";dialog.append(title);
  const note=document.createElement("p");note.textContent="Academy information and assistance.";dialog.append(note);
