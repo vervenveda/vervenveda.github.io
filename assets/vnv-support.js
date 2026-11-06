@@ -102,8 +102,8 @@
       text-align:center;
     }
     #${SUPPORT_ID} .vnv-support-kicker{
-      margin:0 0 7px;color:#806a42;font-family:Cinzel,Georgia,serif;
-      font-size:11px;font-weight:444;letter-spacing:.15em;text-transform:uppercase;
+      width:100%;margin:0 auto 7px;color:#806a42;font-family:Cinzel,Georgia,serif;
+      font-size:11px;font-weight:444;letter-spacing:.15em;text-transform:uppercase;text-align:center;
     }
     #${SUPPORT_ID} h2{margin:0 auto 10px;max-width:760px;font:444 26px/1.15 Cinzel,Georgia,serif;color:#15251f}
     #${SUPPORT_ID} p{max-width:760px;margin:8px auto;color:#30413d;font-size:14px;line-height:1.65}
@@ -139,8 +139,9 @@
     <a class="vnv-support-button" href="${PAYMENT_URL}" target="_blank" rel="noopener noreferrer">Grown-Ups · Support with Stripe ↗</a>
     <small>Children never need to donate. Secure payment is handled by Stripe. Contributions are voluntary, are not required for access, and are separate from campaign contributions. No tax-deductibility or charitable status is represented.</small>
   ` : `
-    <p class="vnv-support-kicker">Support Free Access</p>
-    <h2 id="vnvGlobalSupportTitle">Everything here is free. Voluntary support helps keep it that way.</h2>
+    <p class="vnv-support-kicker">Voluntary Support</p>
+    <h2 id="vnvGlobalSupportTitle">Support Free Access</h2>
+    <p><strong>Everything here is free. Voluntary support helps keep it that way.</strong></p>
     <p>Verve N Veda and Khaemenes Academy provide free learning, tools, games, research, art, public resources, and continued development. If this work helps you or your family, you can support its maintenance and growth.</p>
     <a class="vnv-support-button" href="${PAYMENT_URL}" target="_blank" rel="noopener noreferrer">Support with Stripe ↗</a>
     <small>Secure payment is handled by Stripe. Contributions are voluntary, are not required for access, and are separate from campaign contributions. No tax-deductibility or charitable status is represented.</small>
