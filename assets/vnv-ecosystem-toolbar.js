@@ -45,7 +45,7 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  // learner on every activation, not from the page currently being visited.
  // No registration or private records are modified by this navigation.
  function registeredProfileDestination(){
-  const tour=A+"tour/";
+  const fallback=A+"family/";
   // Read, never mutate, the selected Academy identity. One learner = one
   // deterministic destination even after repeat mounts or grade visits.
   try{
@@ -53,19 +53,19 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
    const family=JSON.parse(localStorage.getItem("khaemenes_family_registry_v1")||"null");
    const record=typeof id==="string"?family?.learners?.[id]:null;
    const person=record?.learnerId===id?record:null;
-   if(!person)return tour;
+   if(!person)return fallback;
    const linked=window.KhaemenesStudentProfileV2?.activeLearner?.()?.learnerId;
-   if(linked&&String(linked)!==id)return tour;
+   if(linked&&String(linked)!==id)return fallback;
    const stage=String(person.stage||"").toLowerCase();
    const grade=String(person.grade||"").replace(/^grade[- ]?/i,"").trim().toLowerCase();
    if(stage==="high"){
     const n=Number(grade);
-    return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/":tour;
+    return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/profile/":fallback;
    }
    if(stage==="higher"||person.selfDirectedAdult===true)return A+"adult/";
    if(["preschool","kindergarten","elementary","middle"].includes(stage))return A+"student/profile.html";
   }catch{}
-  return tour;
+  return fallback;
  }
  const profileLink=link("profile","Profile",registeredProfileDestination());
  // A click re-resolves immediately before navigation. The live destination
@@ -118,6 +118,6 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
  document.body.append(dock,dialog,mentorDialog);mounted=true;
 }
-window.VNVEcosystemToolbar=Object.freeze({version:"1.0.4",mount});
+window.VNVEcosystemToolbar=Object.freeze({version:"1.0.5",mount});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
 })();
