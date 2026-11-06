@@ -56,7 +56,25 @@ footer{padding:35px 0;color:#727d77;font-size:12px;border-top:1px solid var(--li
 <section class="section"><div class="shell"><p class="kicker">Private Beta Report</p><h2>What did you notice today?</h2><p class="intro">Submit one useful report per page per calendar day. You may update or retry that same daily report, but this browser will not create a second report for the same page on the same day. The page will never invoke a public share sheet. Downloaded and printed receipts are sanitized before they leave the page.</p>
 <form class="feedback" id="betaForm" novalidate>
   <div class="field"><label for="page">Page, class or tool</label><input id="page" name="page" maxlength="120" autocomplete="off" placeholder="Example: Pre-Algebra · Week 6"></div>
-  <div class="field"><label for="message">Your beta report</label><textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea><div class="char-row"><span>Do not include passwords or private personal information.</span><span id="count">0 / 1200</span></div></div>
+  <div class="field"><label for="issueType">What would you like to report?</label>
+<select id="issueType" name="issueType" required>
+<option value="">Choose a report category</option>
+<option value="broken-link">Broken link or wrong destination</option>
+<option value="page-error">Page not loading or missing content</option>
+<option value="button-action">Button, menu, or action not working</option>
+<option value="game-tool">Game, tool, studio, or app not working</option>
+<option value="lesson-content">Lesson, course, or content issue</option>
+<option value="visual">Visual discrepancy or layout problem</option>
+<option value="accessibility">Accessibility or readability issue</option>
+<option value="suggestion">Suggestion for improvement</option>
+<option value="other">Other feedback</option>
+</select></div>
+<div class="field"><label for="section">Exact section, feature, or button (optional)</label><input id="section" name="section" maxlength="160" autocomplete="off" placeholder="Example: Grade 09 · Today's Class Checkpoints"></div>
+<div class="field"><label for="steps">What action did you take? (optional)</label><textarea id="steps" name="steps" maxlength="700" placeholder="Example: Opened Lesson 3, pressed Start Quiz, then nothing happened."></textarea></div>
+<div class="field"><label for="expected">What did you expect to happen? (optional)</label><textarea id="expected" name="expected" maxlength="500" placeholder="Example: The quiz should open."></textarea></div>
+<div class="field"><label for="observed">What actually happened or looked wrong? (optional)</label><textarea id="observed" name="observed" maxlength="700" placeholder="Example: The button faded, but no quiz appeared."></textarea></div>
+<div class="field"><label for="suggestion">How could we make it better? (optional)</label><textarea id="suggestion" name="suggestion" maxlength="700" placeholder="Ideas for clarity, navigation, design, or learning."></textarea></div>
+<div class="field"><label for="message">Additional description</label><textarea id="message" name="message" maxlength="1200" required placeholder="Tell us what happened, what was confusing, what worked well, or what you would improve."></textarea><div class="char-row"><span>Do not include passwords or private personal information.</span><span id="count">0 / 1200</span></div></div>
   <div class="actions"><button class="btn" id="submitBtn" type="submit">Save / Send Beta Report</button><button class="btn secondary" id="emailBtn" type="button">Email Report</button><button class="btn secondary" id="clearBtn" type="button">Clear Draft</button></div>
   <p class="status" id="status" role="status" aria-live="polite"></p>
   <div class="receipt-panel" id="receiptPanel" hidden><h3>Private report prepared.</h3><p id="receiptState">A sanitized receipt is available below.</p><div class="actions"><button class="btn secondary" id="downloadBtn" type="button">Download Sanitized Copy</button><button class="btn gold" id="printBtn" type="button">Print Sanitized Copy</button></div></div>
@@ -82,6 +100,16 @@ const DAILY_LIMIT_KEY="vervenveda_beta_daily_page_limit_v1";
 const form=document.getElementById("betaForm");
 const page=document.getElementById("page");
 const message=document.getElementById("message");
+const issueType=document.getElementById("issueType");
+const sectionField=document.getElementById("section");
+const stepsField=document.getElementById("steps");
+const expectedField=document.getElementById("expected");
+const observedField=document.getElementById("observed");
+const suggestionField=document.getElementById("suggestion");
+const detailFields={issueType,section:sectionField,steps:stepsField,expected:expectedField,observed:observedField,suggestion:suggestionField};
+const allowedTypes=new Set(["broken-link","page-error","button-action","game-tool","lesson-content","visual","accessibility","suggestion","other"]);
+function detailValues(){return {issueType:allowedTypes.has(issueType.value)?issueType.value:"other",section:cleanPlain(sectionField.value,160),steps:cleanPlain(stepsField.value,700),expected:cleanPlain(expectedField.value,500),observed:cleanPlain(observedField.value,700),suggestion:cleanPlain(suggestionField.value,700)}}
+function restoreDetails(v){for(const [key,field] of Object.entries(detailFields)){const value=String(v?.[key]||"");field.value=key==="issueType"?(allowedTypes.has(value)?value:""):value.slice(0,700)}}
 const count=document.getElementById("count");
 const status=document.getElementById("status");
 const submitBtn=document.getElementById("submitBtn");
@@ -139,7 +167,8 @@ function existingDailyReport(){
     sourceKey:entry.sourceKey||sourceKeyFromQuery(),
     dailyKey:slot,
     page:entry.page||sourceFromQuery()||"Learning surface",
-    message:entry.message||""
+    message:entry.message||"",
+    issueType:entry.issueType||"other",section:entry.section||"",steps:entry.steps||"",expected:entry.expected||"",observed:entry.observed||"",suggestion:entry.suggestion||""
   };
 }
 function claimDailyReport(report){
@@ -178,6 +207,7 @@ function buildDailyReport(text){
     sourceKey,
     dailyKey,
     page:cleanPlain(page.value,120)||base.page||sourceFromQuery()||"Learning surface",
+    ...detailValues(),
     message:text,
     updatedAt:new Date().toISOString()
   };
@@ -192,6 +222,7 @@ function applyDailyLimitState(){
   if(!existing)return false;
   if(existing.page&&!page.value)page.value=existing.page.slice(0,120);
   if(existing.message)message.value=String(existing.message).slice(0,1200);
+  restoreDetails(existing);
   write(REPORT_KEY,existing);
   submitBtn.textContent="Update / Retry Today's Report";
   emailBtn.textContent="Email Today's Report";
@@ -215,6 +246,12 @@ function receiptText(report){
     "Verve N Veda Beta Report — Sanitized Receipt",
     `Date: ${report.date}`,
     `Page / class / tool: ${sanitizeReceiptText(report.page)||"Learning surface"}`,
+    `Issue category: ${sanitizeReceiptText(report.issueType||"Other")}`,
+    `Section or feature: ${sanitizeReceiptText(report.section||"Not specified")}`,
+    `Action taken: ${sanitizeReceiptText(report.steps||"Not specified")}`,
+    `Expected: ${sanitizeReceiptText(report.expected||"Not specified")}`,
+    `Observed: ${sanitizeReceiptText(report.observed||"Not specified")}`,
+    `Suggestion: ${sanitizeReceiptText(report.suggestion||"Not specified")}`,
     "",
     sanitizeReceiptText(report.message),
     "",
@@ -224,7 +261,7 @@ function receiptText(report){
 function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
 
 function updateCount(){count.textContent=`${message.value.length} / 1200`}
-function saveDraft(){write(DRAFT_KEY,{page:page.value.slice(0,120),message:message.value.slice(0,1200)})}
+function saveDraft(){write(DRAFT_KEY,{page:page.value.slice(0,120),message:message.value.slice(0,1200),...detailValues()})}
 function outbox(){const items=read(OUTBOX_KEY,[]);return Array.isArray(items)?items.filter(x=>x&&typeof x.id==="string").slice(0,100):[]}
 function storeReport(report,state){
   const items=outbox().filter(x=>x.id!==report.id);
@@ -240,7 +277,7 @@ function showOutbox(){
     const heading=document.createElement("strong");heading.textContent=(item.page||"Learning surface")+" — "+item.deliveryState;
     const details=document.createElement("p");details.textContent=item.date+" · "+item.id;
     const reopen=document.createElement("button");reopen.type="button";reopen.className="btn secondary";reopen.textContent="Reopen / Retry";
-    reopen.addEventListener("click",()=>{page.value=item.page||"";message.value=item.message||"";write(REPORT_KEY,item);saveDraft();updateCount();status.textContent="Report reopened. Review and choose Save / Send or Email Report.";form.scrollIntoView({behavior:"smooth",block:"start"})});
+    reopen.addEventListener("click",()=>{page.value=item.page||"";message.value=item.message||"";restoreDetails(item);write(REPORT_KEY,item);saveDraft();updateCount();status.textContent="Report reopened. Review and choose Save / Send or Email Report.";form.scrollIntoView({behavior:"smooth",block:"start"})});
     row.append(heading,details,reopen);outboxList.append(row)
   }
 }
@@ -293,6 +330,12 @@ async function deliverPrivate(report){
           idempotencyKey:report.dailyKey,
           page:report.page,
           message:report.message,
+          issueType:report.issueType,
+          section:report.section,
+          steps:report.steps,
+          expected:report.expected,
+          observed:report.observed,
+          suggestion:report.suggestion,
           status:"New"
         }
       })
@@ -310,6 +353,7 @@ function restore(){
   const draft=read(DRAFT_KEY,null),source=sourceFromQuery();
   if(draft){
     page.value=typeof draft.page==="string"?draft.page.slice(0,120):"";
+    restoreDetails(draft);
     message.value=typeof draft.message==="string"?draft.message.slice(0,1200):"";
   }
   if(!page.value&&source)page.value=source;
@@ -319,6 +363,8 @@ function restore(){
 
 message.addEventListener("input",()=>{updateCount();saveDraft()});
 page.addEventListener("input",saveDraft);
+for(const field of Object.values(detailFields))field.addEventListener("input",saveDraft);
+issueType.addEventListener("change",saveDraft);
 emailBtn.addEventListener("click",()=>{
   const text=cleanPlain(message.value,1200);
   if(text.length<10){status.textContent="Please add at least 10 characters before preparing an email.";message.focus();return}
@@ -333,11 +379,12 @@ emailBtn.addEventListener("click",()=>{
   window.location.href="mailto:vervenveda@proton.me?subject="+subject+"&body="+body;
 });
 
-clearBtn.addEventListener("click",()=>{page.value=sourceFromQuery();message.value="";receiptPanel.hidden=true;updateCount();try{localStorage.removeItem(DRAFT_KEY)}catch{}if(!applyDailyLimitState())status.textContent="Draft cleared.";message.focus()});
+clearBtn.addEventListener("click",()=>{page.value=sourceFromQuery();message.value="";restoreDetails({});receiptPanel.hidden=true;updateCount();try{localStorage.removeItem(DRAFT_KEY)}catch{}if(!applyDailyLimitState())status.textContent="Draft cleared.";message.focus()});
 
 form.addEventListener("submit",async e=>{
   e.preventDefault();
   const text=cleanPlain(message.value,1200);
+  if(!issueType.value){status.textContent="Please choose the report category.";issueType.focus();return}
   if(text.length<10){status.textContent="Please add a little more detail so the report is useful.";message.focus();return}
   const report=buildDailyReport(text);
   if(!persistDailyReport(report,"ready")){status.textContent="Unable to save today’s page report on this device. Please copy your text before leaving.";return}
@@ -374,13 +421,7 @@ printBtn.addEventListener("click",()=>{
   const safe=receiptText(report).split("\n").map(line=>`<p>${escapeHtml(line)||"&nbsp;"}</p>`).join("");
   const w=window.open("","_blank","noopener,noreferrer");
   if(!w){status.textContent="Print window was blocked. Use Download Sanitized Copy instead.";return}
-  w.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>Sanitized Beta Receipt</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;color:#17251f;font:16px/1.6 Georgia,serif}h1{font-weight:500}p{white-space:pre-wrap}</style></head><body><h1>Verve N Veda Beta Report</h1>${safe}  <script src="/assets/vnv-ecosystem-menu.js" defer></script>
-<script src="https://vervenveda.com/assets/vnv-support.js" defer></script>
-
-<script src="https://vervenveda.com/assets/vnv-header-autopopulate.js"></script>
-<script>VNV_HEADER.mount({replaceLegacy:true});</script>
-<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
-</body></html>`);
+  w.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>Sanitized Beta Receipt</title><style>body{max-width:760px;margin:48px auto;padding:0 24px;color:#17251f;font:16px/1.6 Georgia,serif}h1{font-weight:400}p{white-space:pre-wrap}</style></head><body><h1>Verve N Veda Beta Report</h1>${safe}</body></html>`);
   w.document.close();w.focus();setTimeout(()=>w.print(),100);
 });
 
