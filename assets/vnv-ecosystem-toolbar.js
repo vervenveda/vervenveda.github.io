@@ -112,7 +112,7 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  const mentorHeader=document.createElement("div");mentorHeader.className="vnv-mentor-popup-header";
  const mentorTitle=document.createElement("strong");mentorTitle.textContent="Archaemenes · Scholarly Conversation";
  const mentorActions=document.createElement("div");mentorActions.className="vnv-mentor-popup-actions";
- const mentorDirect=document.createElement("a");mentorDirect.href=mentorUrl;mentorDirect.target="_blank";mentorDirect.rel="noopener noreferrer";mentorDirect.textContent="Open full page";
+ const mentorDirect=document.createElement("a");mentorDirect.href=mentorUrl;mentorDirect.target="_blank";mentorDirect.rel="noopener noreferrer";mentorDirect.textContent="Open Mentor in New Tab";
  const mentorClose=document.createElement("button");mentorClose.type="button";mentorClose.textContent="Close";mentorClose.setAttribute("aria-label","Close Archaemenes conversation");
  mentorClose.addEventListener("click",()=>mentorDialog.close());
  mentorActions.append(mentorDirect,mentorClose);mentorHeader.append(mentorTitle,mentorActions);
