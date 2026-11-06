@@ -5115,7 +5115,7 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
             if(!page?.title||!page?.url||!validatedPublicDirectoryUrl(page.url)){
               throw new Error("canonical catalog contains invalid public destination");
             }
-            const key=String(page.url).replace(/\\/+$/,"").toLowerCase();
+            const key=String(page.url).replace(/\/+$/,"").toLowerCase();
             if(known.has(key)) throw new Error("canonical catalog contains duplicate destination");
             known.add(key);
           }
