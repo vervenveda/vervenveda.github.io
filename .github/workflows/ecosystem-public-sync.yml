@@ -9,6 +9,7 @@ on:
     paths:
       - "ecosystem/master-ecosystem-directory.json"
       - "ecosystem/sync_public_ecosystem.py"
+      - "ecosystem/build_directory_cloud_zip.py"
       - ".github/workflows/ecosystem-public-sync.yml"
 
 permissions:
@@ -91,3 +92,15 @@ jobs:
           git commit -m "chore(ecosystem): synchronize public registry [skip ecosystem-sync]"
           git pull --rebase origin main
           git push
+
+      - name: Archive the canonical Directory Cloud
+        run: python3 ecosystem/build_directory_cloud_zip.py
+
+      - name: Publish downloadable Directory Cloud ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: Verve-N-Veda-Directory-Cloud
+          path: directory-cloud.zip
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
