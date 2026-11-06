@@ -54,6 +54,8 @@ function updates(){
 }
 function install(){
  if(!document.body||document.body.dataset.vnvOuterLanding!=="true"||document.getElementById(DOCK_ID))return;
+ // Canonical toolbar owns floating ecosystem utilities. Never mount a competing legacy dock.
+ if(document.querySelector('script[src*="vnv-ecosystem-toolbar.js"]')||document.getElementById("vnvEcosystemUtilityDock"))return;
  const dock=el("nav",{id:DOCK_ID,"class":"vnv-external-dock","aria-label":"Verve N Veda quick utilities"});
  dockLink(dock,"search","Search",URLS.search,"S");
  const up=el("button",{type:"button","data-vnv-tool":"updates","aria-label":"Open ecosystem updates","aria-haspopup":"dialog","aria-controls":DIALOG_ID});
