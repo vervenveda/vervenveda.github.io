@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-06T16:57:16Z",
+  "generatedAt": "2026-11-06T17:55:51Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
-    "repositoryCount": 38,
+    "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12255,
+    "htmlCount": 12265,
     "brokenLocalLinkCount": 62,
-    "rootOrphanHtmlCount": 5322,
-    "unreferencedHtmlCount": 1521,
+    "rootOrphanHtmlCount": 5323,
+    "unreferencedHtmlCount": 1522,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
     "canonicalAliasCount": 2,
-    "supersededNameCount": 3
+    "supersededNameCount": 4
   },
   "failures": [],
   "repositories": [
@@ -183,6 +183,31 @@
       "unreferencedPages": [
         "app/FleaPit™_media_gate_Index.html",
         "app/WEAL_domain_hosting_index.html"
+      ],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": []
+    },
+    {
+      "repository": "vervenveda/Academy-Yearbook.github.io",
+      "htmlCount": 2,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 1,
+      "rootOrphanHtmlCount": 1,
+      "unreferencedHtmlCount": 1,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 0,
+      "brokenLocalLinks": [],
+      "rootOrphans": [
+        "yearbook-agi-minicloud.html"
+      ],
+      "unreferencedPages": [
+        "yearbook-agi-minicloud.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
@@ -646,6 +671,29 @@
       "intentionalSiblingGroups": [],
       "canonicalAliases": [],
       "supersededNames": []
+    },
+    {
+      "repository": "vervenveda/Iran.github.io",
+      "htmlCount": 8,
+      "brokenLocalLinkCount": 0,
+      "rootReachableHtmlCount": 8,
+      "rootOrphanHtmlCount": 0,
+      "unreferencedHtmlCount": 0,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 1,
+      "brokenLocalLinks": [],
+      "rootOrphans": [],
+      "unreferencedPages": [],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": [
+        "culture/legacy.html"
+      ]
     },
     {
       "repository": "vervenveda/JenniferPearl2028.github.io",
