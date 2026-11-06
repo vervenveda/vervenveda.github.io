@@ -72,9 +72,9 @@ body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button) {
   width:auto!important;
   max-width:none!important;
   min-width:0!important;
-  height:33px!important;
-  min-height:33px!important;
-  max-height:33px!important;
+  height:auto!important;
+  min-height:44px!important;
+  max-height:none!important;
   margin:0!important;
   padding:5px 9px!important;
   gap:5px!important;
@@ -82,7 +82,7 @@ body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button) {
   border-radius:7px!important;
   background:#f8f6ef!important;
   color:#1e4034!important;
-  font:400 10px/1.2 "Nunito","Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif!important;
+  font:400 16px/1.2 "Nunito","Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif!important;
   text-transform:none!important;
   letter-spacing:0!important;
   white-space:nowrap!important;
@@ -108,7 +108,7 @@ body[data-vnv-outer-landing="true"] .vnv-external-dock .vnv-dock-icon {
   height:14px;
   border:1px solid currentColor;
   border-radius:50%;
-  font:400 9px/1 Georgia,serif;
+  font:400 12px/1 Georgia,serif;
 }
 body[data-vnv-outer-landing="true"] .vnv-external-dock [data-vnv-tool="contribute"] {
   background:#e2eee6!important;
@@ -149,7 +149,7 @@ body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button):hover {fi
   border-radius:7px;
   text-decoration:none;
   padding:9px 12px;
-  font:400 15px/1.4 "Nunito",Arial,sans-serif;
+  font:400 16px/1.4 "Nunito",Arial,sans-serif;
 }
 @media(max-width:590px) {
   body[data-vnv-outer-landing="true"] .vnv-external-dock {
@@ -162,7 +162,7 @@ body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button):hover {fi
   }
   body[data-vnv-outer-landing="true"] .vnv-external-dock > :is(a,button) {
     width:100%!important;max-width:100%!important;min-width:0!important;
-    padding:5px 3px!important;gap:3px!important;font-size:9px!important
+    padding:5px 3px!important;gap:3px!important;font-size:16px!important
   }
 }
 @media(max-width:320px) {
