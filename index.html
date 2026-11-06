@@ -3654,7 +3654,59 @@
       .hero .enrolled-student-entry:hover{transform:none;}
     }
   </style>
-  <style id="vnv-home-control-fit">
+    <style id="vnv-footer-information-contrast">
+    /* Two public information sections follow NAIB; preserve existing anchors. */
+    #privacy.section{background:#ede6d8!important;padding-block:55px!important;}
+    #privacy .privacy-note{
+      max-width:900px;
+      padding:30px 36px;
+      border:3px solid #28332f!important;
+      border-radius:7px!important;
+      background:#fffdf7!important;
+      color:#28332f!important;
+      font-size:16px!important;
+      line-height:1.7!important;
+      box-shadow:0 4px 15px rgba(20,28,24,.07);
+      text-align:center;
+    }
+    #privacy .privacy-note strong{
+      color:#23362f!important;
+      font-size:clamp(24px,3vw,33px)!important;
+      font-weight:400!important;
+      margin-bottom:15px!important;
+    }
+    #support.section{background:#f5f0e7!important;padding-block:65px!important;}
+    #support .support-bridge{
+      max-width:1040px;
+      margin-inline:auto;
+      border:3px solid #28332f!important;
+      border-radius:7px!important;
+      background:#fffdf7!important;
+      box-shadow:0 5px 16px rgba(20,28,24,.065)!important;
+    }
+    #support .support-copy h2{color:#23362f!important;}
+    #support .support-copy p{color:#28332f!important;font-size:16px!important;line-height:1.7!important;}
+    #support .support-payment{
+      background:#f3eddf!important;
+      border:1px solid #7d887e!important;
+      border-radius:7px!important;
+    }
+    #support .support-payment small{color:#384840!important;font-size:16px!important;}
+    #support .support-points span{
+      color:#28332f!important;
+      background:#f3eddf!important;
+      border-color:#b4b9ac!important;
+      font-size:16px!important;
+      font-weight:400!important;
+      border-radius:7px!important;
+    }
+    #support .support-payment .button{background:#28332f!important;color:#f4f0e7!important;border-color:#28332f!important;}
+    @media(max-width:640px){
+      #privacy .privacy-note{padding:24px 20px;}
+      #support .support-bridge{padding:25px 19px;}
+    }
+  </style>
+<style id="vnv-home-control-fit">
     .hero h1#gatewayTitle{
       font-size:clamp(40px, calc(55px + 1.7vw), 77px)!important;
       line-height:1.15!important;
@@ -4469,41 +4521,6 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
       </div>
     </section>
 
-    <section class="section section-alt" id="privacy">
-      <div class="section-inner">
-        <div class="privacy-note">
-          <strong>Privacy &amp; Public Access</strong>
-          This public gateway does not require an account and does not collect public form submissions on this page. There are No Ads and the platform is free.  Contributions are always welcome through the support button in our toolbar.
-        </div>
-      </div>
-    </section>
-    <section class="section" id="support" aria-labelledby="supportTitle">
-      <div class="section-inner">
-        <div class="support-bridge">
-          <div class="support-copy">
-            <p class="kicker">Support Independent Creation</p>
-            <h2 id="supportTitle">Help original learning, games, tools, art, and public resources keep growing.</h2>
-            <p><strong>Everything across the public ecosystem remains free to access.</strong> If this work helps you or your family, your support helps keep Verve N Veda and Khaemenes Academy available, maintained, and growing.</p>
-            <p>Verve N Veda and the Khaemenes learning ecosystem are built as original educational, creative, and public-resource work. Contributions help support continued development, maintenance, hosting, research, curriculum building, and new tools.</p>
-            <p><strong>This support area is separate from Jennifer Pearl campaign contributions.</strong> No tax-deductibility or charitable status is represented on this page.</p>
-            <div class="support-points" aria-label="What contributions support">
-              <span>Original curriculum</span><span>Original games</span><span>Learning tools</span><span>Public resources</span><span>Independent development</span>
-            </div>
-          </div>
-          <div class="support-payment">
-            <a class="button button-primary"
-               href="https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Support free Verve N Veda access securely through Stripe">
-              Support Verve N Veda with Stripe ↗
-            </a>
-            <small>Contributions are voluntary support for Verve N Veda original work and free ecosystem access for all.</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section intelligence-section" id="intelligence" aria-labelledby="intelligenceTitle">
       <div class="section-inner intelligence-bridge">
         <div class="intelligence-copy">
@@ -4563,6 +4580,41 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
           <p class="intelligence-note">
             NAIB provides local navigation.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="privacy">
+      <div class="section-inner">
+        <div class="privacy-note">
+          <strong>Privacy &amp; Public Access</strong>
+          This public gateway does not require an account and does not collect public form submissions on this page. There are No Ads and the platform is free.  Contributions are always welcome through the support button in our toolbar.
+        </div>
+      </div>
+    </section>
+    <section class="section" id="support" aria-labelledby="supportTitle">
+      <div class="section-inner">
+        <div class="support-bridge">
+          <div class="support-copy">
+            <p class="kicker">Support Independent Creation</p>
+            <h2 id="supportTitle">Help original learning, games, tools, art, and public resources keep growing.</h2>
+            <p><strong>Everything across the public ecosystem remains free to access.</strong> If this work helps you or your family, your support helps keep Verve N Veda and Khaemenes Academy available, maintained, and growing.</p>
+            <p>Verve N Veda and the Khaemenes learning ecosystem are built as original educational, creative, and public-resource work. Contributions help support continued development, maintenance, hosting, research, curriculum building, and new tools.</p>
+            <p><strong>This support area is separate from Jennifer Pearl campaign contributions.</strong> No tax-deductibility or charitable status is represented on this page.</p>
+            <div class="support-points" aria-label="What contributions support">
+              <span>Original curriculum</span><span>Original games</span><span>Learning tools</span><span>Public resources</span><span>Independent development</span>
+            </div>
+          </div>
+          <div class="support-payment">
+            <a class="button button-primary"
+               href="https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Support free Verve N Veda access securely through Stripe">
+              Support Verve N Veda with Stripe ↗
+            </a>
+            <small>Contributions are voluntary support for Verve N Veda original work and free ecosystem access for all.</small>
+          </div>
         </div>
       </div>
     </section>
@@ -5993,36 +6045,7 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
         const media=FEATURE_MEDIA[item.url] || null;
         printWindow.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${escapeHtml(item.title)}</title><style>body{font-family:Georgia,serif;color:#18201c;margin:48px;line-height:1.6}small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#806a42}h1{font-weight:444;font-size:33px}img{max-width:100%;max-height:420px;object-fit:contain;border:1px solid #ddd}a{color:#21493d;word-break:break-all}.crumb{font:11px Arial,sans-serif;color:#756d60;margin-bottom:24px}
 
-</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script><script id="vnv-enrolled-student-direct-profile">
-(()=>{"use strict";
- const entry=document.getElementById("vnvEnrolledStudentEntry");if(!entry)return;
- const A="https://vervenveda.com/Khaemenes_Academy.github.io/";
- const H="https://vervenveda.com/Khaemenes_High.github.io/";
- function destination(){
-  try{
-   const id=JSON.parse(localStorage.getItem("khaemenes_active_learner_v1")||"null");
-   const family=JSON.parse(localStorage.getItem("khaemenes_family_registry_v1")||"null");
-   const learner=typeof id==="string"?family?.learners?.[id]:null;
-   if(!learner||learner.learnerId!==id)return A+"family/";
-   const stage=String(learner.stage||"").toLowerCase();
-   const grade=String(learner.grade||"").replace(/^grade[- ]?/i,"").trim();
-   const n=Number(grade);
-   if(stage==="high"&&[9,10,11,12].includes(n)){
-    return H+"grades/grade-"+String(n).padStart(2,"0")+"/student-profile/profile/";
-   }
-   if(stage==="higher"||learner.selfDirectedAdult===true)return A+"adult/";
-   return A+"student/";
-  }catch{return A+"family/"}
- }
- const refresh=()=>{entry.href=destination();return entry.href};
- entry.addEventListener("click",e=>{if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;const target=refresh();e.preventDefault();location.assign(target)},true);
- entry.addEventListener("pointerenter",refresh);
- entry.addEventListener("focus",refresh);
- window.addEventListener("pageshow",refresh);
- window.addEventListener("storage",e=>{if(!e.key||/khaemenes_(active_learner|family_registry)_v1/.test(e.key))refresh()});
- refresh();
-})();
-</script>
+</style></head><body><div class="crumb">Verve N Veda › ${escapeHtml(item.category)} › ${escapeHtml(item.subgroup)}</div><small>Featured ecosystem destination</small><h1>${escapeHtml(item.title)}</h1>${media?.image?`<img src="${escapeAttribute(media.image)}" alt="${escapeAttribute(media.alt||"")}">`:""}<p>${escapeHtml(item.desc)}</p><p><a href="${escapeAttribute(item.url)}">${escapeHtml(item.url)}</a></p><script>window.onload=()=>window.print()<\/script>
 </body></html>`);
         printWindow.document.close();
       }
@@ -6084,6 +6107,37 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
       initFeaturedShowcase();
     })();
   </script>
+
+<script id="vnv-enrolled-student-direct-profile">
+(()=>{"use strict";
+ const entry=document.getElementById("vnvEnrolledStudentEntry");if(!entry)return;
+ const A="https://vervenveda.com/Khaemenes_Academy.github.io/";
+ const H="https://vervenveda.com/Khaemenes_High.github.io/";
+ function destination(){
+  try{
+   const id=JSON.parse(localStorage.getItem("khaemenes_active_learner_v1")||"null");
+   const family=JSON.parse(localStorage.getItem("khaemenes_family_registry_v1")||"null");
+   const learner=typeof id==="string"?family?.learners?.[id]:null;
+   if(!learner||learner.learnerId!==id)return A+"family/";
+   const stage=String(learner.stage||"").toLowerCase();
+   const grade=String(learner.grade||"").replace(/^grade[- ]?/i,"").trim();
+   const n=Number(grade);
+   if(stage==="high"&&[9,10,11,12].includes(n)){
+    return H+"grades/grade-"+String(n).padStart(2,"0")+"/student-profile/profile/";
+   }
+   if(stage==="higher"||learner.selfDirectedAdult===true)return A+"adult/";
+   return A+"student/";
+  }catch{return A+"family/"}
+ }
+ const refresh=()=>{entry.href=destination();return entry.href};
+ entry.addEventListener("click",e=>{if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;const target=refresh();e.preventDefault();location.assign(target)},true);
+ entry.addEventListener("pointerenter",refresh);
+ entry.addEventListener("focus",refresh);
+ window.addEventListener("pageshow",refresh);
+ window.addEventListener("storage",e=>{if(!e.key||/khaemenes_(active_learner|family_registry)_v1/.test(e.key))refresh()});
+ refresh();
+})();
+</script>
 
   <!-- Legacy reference branch: intentionally absent from the public directory. -->
   <script>
