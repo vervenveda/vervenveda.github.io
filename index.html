@@ -3867,6 +3867,26 @@ body{font-size:16px}
 button,input,select,textarea{font-size:16px!important}
 a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
 </style>
+<style id="vnv-complete-index-title-only-2026-11">
+    /* TITLE-ONLY COMPLETE ECOSYSTEM INDEX CARDS
+       Presentation only: catalog data, categories, filters and routes remain unchanged. */
+    #completePageIndex .complete-index-card{
+      min-height:78px!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:center!important;
+      padding:18px 20px!important;
+      text-align:center!important;
+    }
+    #completePageIndex .complete-index-card > strong{
+      margin:0!important;
+      color:#f7f0e3!important;
+      font-family:Cinzel,Georgia,serif!important;
+      font-size:18px!important;
+      font-weight:444!important;
+      line-height:1.35!important;
+    }
+  </style>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -5095,10 +5115,10 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
         }
 
         results.innerHTML = shown.map(page => `
-          <a class="complete-index-card" href="${escapeAttribute(page.url)}">
-            <span class="complete-index-badge">${escapeHtml(ECOSYSTEM_CATEGORY_LABELS[page.category] || page.category || "Ecosystem")}</span>
+          <a class="complete-index-card"
+             href="${escapeAttribute(page.url)}"
+             aria-label="Open ${escapeAttribute(page.title || page.path)}">
             <strong>${escapeHtml(page.title || page.path)}</strong>
-            <small>${escapeHtml(page.source || page.repo)}${page.path && !/^index\.html$/i.test(page.path.trim()) ? " · " + escapeHtml(page.path.replace(/\/index\.html$/i,"/")) : ""}</small>
           </a>`).join("");
       }
 
