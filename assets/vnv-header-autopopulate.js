@@ -1,10 +1,10 @@
-/* Verve N Veda · Header AutoPopulate · canonical idempotent header engine · v2.0.0
+/* Verve N Veda · Header AutoPopulate · canonical idempotent header engine · v2.1.0
    Purpose: one simple page-identity header per migrated public page.
    Ticker systems remain separate: this file never mounts, removes, or styles tickers. */
 (()=>{"use strict";
 if(window.VNV_HEADER?.mount)return;
 
-const VERSION="2.0.0";
+const VERSION="2.1.0";
 const ROOT_ID="vnvHeaderAutoPopulate";
 const STYLE_ID="vnvHeaderAutoPopulateStyles";
 const PANEL_ID="vnvHeaderMenu";
@@ -107,10 +107,10 @@ function ensureStyle(){
 #${ROOT_ID} .vnv-header-logo{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;overflow:hidden;border:1px solid #080b0f;border-radius:7px;color:#fff;background:#080b0f;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:12px;font-weight:400;letter-spacing:.04em;line-height:1}
 #${ROOT_ID} .vnv-header-logo img{width:100%;height:100%;object-fit:cover;display:block}
 #${ROOT_ID} .vnv-header-copy{min-width:0;max-width:min(42vw,520px);display:grid;gap:3px;align-content:center}
-#${ROOT_ID} .vnv-header-title{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;word-break:normal;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(11px,1.15vw,15px);font-weight:400;letter-spacing:clamp(.025em,.06vw,.055em);line-height:1.08}
-#${ROOT_ID} .vnv-header-subtitle{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;color:#30413d;font-size:clamp(8px,.72vw,9px);font-weight:400;letter-spacing:.045em;line-height:1.15}
+#${ROOT_ID} .vnv-header-title{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;word-break:normal;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:16px;font-weight:400;letter-spacing:clamp(.025em,.06vw,.055em);line-height:1.08}
+#${ROOT_ID} .vnv-header-subtitle{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;color:#30413d;font-size:16px;font-weight:400;letter-spacing:.045em;line-height:1.15}
 #${ROOT_ID} .vnv-header-actions{min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap}
-#${ROOT_ID} .vnv-header-actions a{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid rgba(18,23,19,.16);border-radius:7px;color:var(--vnv-header-action-text,#30413d)!important;background:rgba(255,255,255,.5);text-decoration:none!important;font-size:9px;font-weight:400;letter-spacing:.055em;text-transform:uppercase;white-space:nowrap}
+#${ROOT_ID} .vnv-header-actions a{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid rgba(18,23,19,.16);border-radius:7px;color:var(--vnv-header-action-text,#30413d)!important;background:rgba(255,255,255,.5);text-decoration:none!important;font-size:16px;font-weight:400;letter-spacing:.055em;text-transform:uppercase;white-space:nowrap}
 #${ROOT_ID} .vnv-header-actions a:hover,#${ROOT_ID} .vnv-header-actions a:focus-visible{color:#080b0f!important;background:#fff;border-color:#b48b45}
 #${ROOT_ID} .vnv-header-menu-button{justify-self:end;width:40px;height:40px;display:grid;place-items:center;padding:0;border:1px solid #202724!important;border-radius:7px;color:#fff8e9!important;background:#202724!important;cursor:pointer}
 #${ROOT_ID} .vnv-header-lines,#${ROOT_ID} .vnv-header-lines::before,#${ROOT_ID} .vnv-header-lines::after{content:"";display:block;width:14px;height:1.5px;border-radius:7px;background:#fff8e9!important;transition:.18s}
@@ -126,14 +126,14 @@ function ensureStyle(){
 #${PANEL_ID} .vnv-header-menu-panel{width:min(92vw,390px);height:100%;box-sizing:border-box;overflow:auto;padding:18px;background:#fbf9f4;box-shadow:-18px 0 48px rgba(8,11,15,.18);transform:translateX(100%);transition:transform .2s ease}
 #${PANEL_ID}[data-open="true"] .vnv-header-menu-panel{transform:none}
 #${PANEL_ID} .vnv-header-menu-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid rgba(18,23,19,.14)}
-#${PANEL_ID} .vnv-header-menu-top strong{font-family:Cinzel,Aboreto,Georgia,serif;font-size:15px;font-weight:400;letter-spacing:.05em}
+#${PANEL_ID} .vnv-header-menu-top strong{font-family:Cinzel,Aboreto,Georgia,serif;font-size:16px;font-weight:400;letter-spacing:.05em}
 #${PANEL_ID} .vnv-header-menu-close{width:36px;height:36px;display:grid;place-items:center;padding:0;border:1px solid rgba(18,23,19,.25);border-radius:7px;background:#fff;color:#080b0f;font-size:20px;cursor:pointer}
 #${PANEL_ID} .vnv-header-menu-list{display:grid;gap:7px;margin-top:14px}
-#${PANEL_ID} .vnv-header-menu-list a{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid rgba(18,23,19,.14);border-radius:7px;color:#080b0f!important;background:#fff;text-decoration:none!important;font-size:12px;font-weight:400}
+#${PANEL_ID} .vnv-header-menu-list a{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid rgba(18,23,19,.14);border-radius:7px;color:#080b0f!important;background:#fff;text-decoration:none!important;font-size:16px;font-weight:400}
 #${PANEL_ID} .vnv-header-menu-list a:hover,#${PANEL_ID} .vnv-header-menu-list a:focus-visible{border-color:#b48b45;background:#f4f0e7}
 #${PANEL_ID} .vnv-header-menu-list a::after{content:"›";color:#b48b45;font-size:18px}
 @media(max-width:860px){#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 44px}#${ROOT_ID} .vnv-header-actions{display:none}}
-@media(max-width:560px){:root{--vnv-header-height:64px}#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 40px;padding:0 7px}#${ROOT_ID} .vnv-header-logo{width:38px;height:38px;flex-basis:38px}#${ROOT_ID} .vnv-header-title{font-size:13px}#${ROOT_ID} .vnv-header-subtitle{font-size:8px}}
+@media(max-width:560px){:root{--vnv-header-height:64px}#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 40px;padding:0 7px}#${ROOT_ID} .vnv-header-logo{width:38px;height:38px;flex-basis:38px}#${ROOT_ID} .vnv-header-title{font-size:16px}#${ROOT_ID} .vnv-header-subtitle{display:none}}
 @media print{#${ROOT_ID},#${PANEL_ID}{display:none!important}}
 `;
   (document.head||document.documentElement).append(s);
@@ -475,26 +475,26 @@ function installStyle(){
 #${IDS.overlay}[data-open="true"]{display:grid}
 #${IDS.drawer}{width:min(94vw,500px);height:100%;overflow:auto;box-sizing:border-box;padding:22px;color:#202d28;background:#fbf8ef;border-left:1px solid rgba(49,73,62,.18);box-shadow:-20px 0 54px rgba(20,30,25,.18);text-align:left}
 #${IDS.drawer} .vnv-menu-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
-#${IDS.drawer} .vnv-menu-kicker{margin:0 0 5px;color:#91733f;font:400 10px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+#${IDS.drawer} .vnv-menu-kicker{margin:0 0 5px;color:#91733f;font:400 18px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
 #${IDS.drawer} h2{margin:0;color:#233b32;font:400 29px/1.05 Cinzel,Georgia,serif}
 #${IDS.drawer} .vnv-menu-close{width:38px;height:38px;flex:0 0 38px;border:1px solid rgba(49,73,62,.22);border-radius:7px;background:#fff;color:#243a32;font-size:21px;cursor:pointer}
-#${IDS.search}{width:100%;min-height:42px;margin:17px 0 14px;padding:0 12px;border:1px solid rgba(49,73,62,.22);border-radius:7px;background:#fff;color:#202d28;font:400 13px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
+#${IDS.search}{width:100%;min-height:42px;margin:17px 0 14px;padding:0 12px;border:1px solid rgba(49,73,62,.22);border-radius:7px;background:#fff;color:#202d28;font:400 18px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
 #${IDS.content}{display:grid;gap:14px}
 .vnv-menu-branch-home{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
 .vnv-menu-branch-button{min-height:88px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:11px;padding:14px;border:1px solid rgba(49,73,62,.15);border-radius:7px;color:#202d28;background:#fff;text-align:left;cursor:pointer}
 .vnv-menu-branch-button:hover,.vnv-menu-branch-button:focus-visible{border-color:#b48b45;background:#f4f0e7}
-.vnv-menu-branch-button strong{display:block;font:400 13px/1.25 Cinzel,Georgia,serif;letter-spacing:.035em}
-.vnv-menu-branch-button small{display:block;margin-top:5px;color:#6b756f;font:400 10px/1.4 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
+.vnv-menu-branch-button strong{display:block;font:400 16px/1.25 Cinzel,Georgia,serif;letter-spacing:.035em}
+.vnv-menu-branch-button small{display:block;margin-top:5px;color:#6b756f;font:400 16px/1.4 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
 .vnv-menu-arrow{color:#b48b45;font-size:20px}
 .vnv-menu-toolbar{display:flex;align-items:center;justify-content:space-between;gap:11px;padding-bottom:10px;border-bottom:1px solid rgba(49,73,62,.14)}
 .vnv-menu-back{min-height:34px;padding:7px 10px;border:1px solid rgba(49,73,62,.2);border-radius:7px;background:#fff;color:#243a32;cursor:pointer}
-.vnv-menu-title{font:400 13px/1.2 Cinzel,Georgia,serif}
+.vnv-menu-title{font:400 16px/1.2 Cinzel,Georgia,serif}
 .vnv-menu-subgroup-title{margin:15px 0 7px;color:#92743f;font:400 10px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
 .vnv-menu-list{display:grid;gap:6px}
 .vnv-menu-link{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:9px;align-items:center;padding:10px 11px;border:1px solid rgba(49,73,62,.12);border-radius:7px;color:#25362f;background:#fff;text-decoration:none}
 .vnv-menu-link:hover,.vnv-menu-link:focus-visible{border-color:rgba(145,115,63,.46);background:#fffefb}
-.vnv-menu-link i{width:28px;height:28px;display:grid;place-items:center;border-radius:7px;background:#f4f0e7;color:#6f5935;font:400 9px/1 Cinzel,Georgia,serif;font-style:normal}
-.vnv-menu-link strong{display:block;font:400 12px/1.3 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
+.vnv-menu-link i{width:28px;height:28px;display:grid;place-items:center;border-radius:7px;background:#f4f0e7;color:#6f5935;font:400 16px/1 Cinzel,Georgia,serif;font-style:normal}
+.vnv-menu-link strong{display:block;font:400 16px/1.3 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
 .vnv-menu-link small{display:block;margin-top:2px;color:#7b837f;font:400 9px/1.35 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
 @media(max-width:560px){#${IDS.button}{width:40px;height:40px;min-height:40px}.vnv-menu-branch-home{grid-template-columns:1fr}.vnv-menu-branch-button{min-height:72px}#${IDS.drawer}{padding:18px 14px}}
 @media print{#${IDS.button},#${IDS.overlay}{display:none!important}}
