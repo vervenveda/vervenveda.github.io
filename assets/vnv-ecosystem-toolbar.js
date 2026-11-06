@@ -46,27 +46,41 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  // No registration or private records are modified by this navigation.
  function registeredProfileDestination(){
   const tour=A+"tour/";
+  // Read, never mutate, the selected Academy identity. One learner = one
+  // deterministic destination even after repeat mounts or grade visits.
   try{
    const id=JSON.parse(localStorage.getItem("khaemenes_active_learner_v1")||"null");
    const family=JSON.parse(localStorage.getItem("khaemenes_family_registry_v1")||"null");
-   const person=typeof id==="string"?family?.learners?.[id]:null;
-   if(!person||person.learnerId!==id||person.selfDirectedAdult===true&&!["higher"].includes(person.stage))return tour;
+   const record=typeof id==="string"?family?.learners?.[id]:null;
+   const person=record?.learnerId===id?record:null;
+   if(!person)return tour;
    const linked=window.KhaemenesStudentProfileV2?.activeLearner?.()?.learnerId;
    if(linked&&String(linked)!==id)return tour;
-   if(person.stage==="high"){
-    const n=Number(person.grade);
+   const stage=String(person.stage||"").toLowerCase();
+   const grade=String(person.grade||"").replace(/^grade[- ]?/i,"").trim().toLowerCase();
+   if(stage==="high"){
+    const n=Number(grade);
     return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/":tour;
    }
-   if(person.stage==="higher"||person.selfDirectedAdult===true)return A+"adult/";
-   if(["preschool","kindergarten","elementary","middle"].includes(person.stage))return A+"student/profile.html";
+   if(stage==="higher"||person.selfDirectedAdult===true)return A+"adult/";
+   if(["preschool","kindergarten","elementary","middle"].includes(stage))return A+"student/profile.html";
   }catch{}
   return tour;
  }
  const profileLink=link("profile","Profile",registeredProfileDestination());
- const refreshProfile=()=>{profileLink.href=registeredProfileDestination()};
+ // A click re-resolves immediately before navigation. The live destination
+ // never goes through the general Student Portal for High School learners.
+ const refreshProfile=()=>{const target=registeredProfileDestination();if(profileLink.href!==target)profileLink.href=target;return target};
+ const navigateProfile=event=>{
+  if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  const target=refreshProfile();
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  location.assign(target);
+ };
+ profileLink.addEventListener("click",navigateProfile,true);
  profileLink.addEventListener("pointerenter",refreshProfile);
  profileLink.addEventListener("focus",refreshProfile);
- profileLink.addEventListener("click",refreshProfile);
  window.addEventListener("pageshow",refreshProfile);
  window.addEventListener("khaemenes-family-changed",refreshProfile);
  window.addEventListener("storage",event=>{
@@ -104,6 +118,6 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
  document.body.append(dock,dialog,mentorDialog);mounted=true;
 }
-window.VNVEcosystemToolbar=Object.freeze({version:"1.0.3",mount});
+window.VNVEcosystemToolbar=Object.freeze({version:"1.0.4",mount});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
 })();
