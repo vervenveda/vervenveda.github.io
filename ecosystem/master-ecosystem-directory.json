@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 149,
+  "entryCount": 179,
   "entries": [
     {
       "id": "gateway-verve",
@@ -160,14 +160,14 @@
     {
       "id": "academy",
       "title": "Khaemenes Academy",
-      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "repository": "vervenveda/KhaemenesAcademy_Home.github.io",
       "path": "index.html",
       "type": "gateway",
       "category": "education",
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/",
+      "url": "https://vervenveda.com/KhaemenesAcademy_Home.github.io/",
       "developmentStatus": "live"
     },
     {
