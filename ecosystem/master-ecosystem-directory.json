@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 179,
+  "entryCount": 181,
   "entries": [
     {
       "id": "gateway-verve",
@@ -181,6 +181,19 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "academy-yearbook",
+      "title": "Khaemenes Academy Yearbook Studio",
+      "repository": "vervenveda/Academy-Yearbook.github.io",
+      "path": "index.html",
+      "type": "studio",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Academy-Yearbook.github.io/",
       "developmentStatus": "live"
     },
     {
@@ -2144,6 +2157,19 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Palestine.github.io/",
+      "developmentStatus": "live"
+    },
+    {
+      "id": "country-iran",
+      "title": "Iran · Art · Music · Script · Legacy · Innovation",
+      "repository": "vervenveda/Iran.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "diplomacy",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Iran.github.io/",
       "developmentStatus": "live"
     },
     {
