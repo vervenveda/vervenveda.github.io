@@ -1,0 +1,29 @@
+name: Academy Gateway Handoff Integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'tests/academy-gateway-handoff.test.mjs'
+      - '.github/workflows/academy-gateway-handoff.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'tests/academy-gateway-handoff.test.mjs'
+      - '.github/workflows/academy-gateway-handoff.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  academy-handoff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Academy handoff and learner fallback routing
+        run: node tests/academy-gateway-handoff.test.mjs
