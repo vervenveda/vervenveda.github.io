@@ -130,7 +130,7 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
    const url=new URL(location.href);
    if(url.protocol!=="https:"&&url.protocol!=="http:")return "";
    const host=url.hostname.toLowerCase();
-   if(host!=="vervenveda.com"&&host!=="www.vervenveda.com"&&!/^(?:[a-z0-9-]+)\\.github\\.io$/.test(host))return "";
+   if(host!=="vervenveda.com"&&host!=="www.vervenveda.com"&&!/^(?:[a-z0-9-]+)\.github\.io$/.test(host))return "";
    const pathname=decodeURIComponent(url.pathname);
    const parts=pathname.split("/").filter(Boolean);
    if(parts.length>12||parts.some(part=>part.length>64||!/^[-a-zA-Z0-9_.]+$/.test(part)||/[0-9]{7,}/.test(part)||/@/.test(part)))return "";
