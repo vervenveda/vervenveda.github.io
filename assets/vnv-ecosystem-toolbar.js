@@ -55,63 +55,53 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
   anchor.setAttribute("aria-label",label+" — opens in a new tab");
   return anchor;
  };
- // The canonical Profile doorway is resolved from the selected Academy
- // learner on every activation, not from the page currently being visited.
- // No registration or private records are modified by this navigation.
- function registeredProfileDestination(){
-  const fallback=A+"student/";
-  // Read, never mutate, the selected Academy identity. One learner = one
-  // deterministic destination even after repeat mounts or grade visits.
-  try{
-   const id=JSON.parse(localStorage.getItem("khaemenes_active_learner_v1")||"null");
-   const family=JSON.parse(localStorage.getItem("khaemenes_family_registry_v1")||"null");
-   const record=typeof id==="string"?family?.learners?.[id]:null;
-   const person=record?.learnerId===id?record:null;
-   if(!person)return fallback;
-   const linked=window.KhaemenesStudentProfileV2?.activeLearner?.()?.learnerId;
-   if(linked&&String(linked)!==id)return fallback;
-   const stage=String(person.stage||"").toLowerCase();
-   const grade=String(person.grade||"").replace(/^grade[- ]?/i,"").trim().toLowerCase();
-   if(stage==="high"){
-    const n=Number(grade);
-    return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/":fallback;
-   }
-   if(stage==="preschool")return V+"Khaemenes_Preschool.github.io/student-profile/";
-   if(stage==="kindergarten")return V+"Khaemenes_KinderGarden.github.io/student-profile/";
-   if(stage==="elementary"){
-    const n=Number(grade);
-    return [1,2,3,4,5].includes(n)?V+"Khaemenes_Elementary.github.io/student-profile/":fallback;
-   }
-   // Middle School has no verified dedicated learner-profile editor yet;
-   // send its learner to the appropriate grade landing instead of the
-   // unrelated legacy reflection/portfolio page.
-   if(stage==="middle"){
-    const n=Number(grade);
-    return [6,7,8].includes(n)?V+"Khaemenes_Middle.github.io/grades/grade-"+String(n).padStart(2,"0")+"/":fallback;
-   }
-   if(stage==="higher"||person.selfDirectedAdult===true)return A+"adult/";
-  }catch{}
-  return fallback;
+ // One canonical chooser; no learner selection or account mutation.
+ const profileLink=link("profile","Profile","#choose-profile");
+ profileLink.setAttribute("aria-haspopup","dialog");
+ profileLink.setAttribute("aria-controls","vnvProfileGradeChooser");
+ profileLink.setAttribute("aria-label","Choose a Student or Parent Profile");
+ const profileDialog=document.createElement("dialog");profileDialog.id="vnvProfileGradeChooser";profileDialog.setAttribute("aria-labelledby","vnvProfileChooseHeading");
+ const chooserCss=document.createElement("style");chooserCss.id="vnvProfileGradeChooserCSS";
+ chooserCss.textContent=`
+ #vnvProfileGradeChooser{width:min(94vw,850px);max-height:calc(100dvh - 24px);margin:auto;padding:25px;overflow:auto;background:#fff8e9;color:#202724;border:2px solid #b48b45;border-radius:7px;box-shadow:0 22px 60px #0006}
+ #vnvProfileGradeChooser::backdrop{background:rgba(10,20,18,.75)}
+ #vnvProfileGradeChooser *{box-sizing:border-box}
+ #vnvProfileGradeChooser header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+ #vnvProfileGradeChooser h2{font:400 33px/1.25 Cinzel,Georgia,serif;color:#202724;margin:0}
+ #vnvProfileGradeChooser h3{font:400 24px/1.25 Cinzel,Georgia,serif;color:#202724;margin:19px 0 10px}
+ #vnvProfileGradeChooser p{font:400 18px/1.55 Nunito,Arial,sans-serif;color:#34463b}
+ #vnvProfileGradeChooser .vnv-profile-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+ #vnvProfileGradeChooser a{display:flex;align-items:center;justify-content:center;min-height:53px;padding:9px;border:1px solid #b48b45;border-radius:7px;background:#202724;color:#fff8e9;text-align:center;text-decoration:none;font:400 16px/1.3 Nunito,Arial,sans-serif}
+ #vnvProfileGradeChooser a:hover{background:#3a5449}
+ #vnvProfileGradeChooser button{min-height:47px;padding:9px 16px;border:1px solid #202724;border-radius:7px;background:#fff8e9;color:#202724;font:400 16px/1.3 Nunito,Arial,sans-serif;cursor:pointer}
+ #vnvProfileGradeChooser a:focus-visible,#vnvProfileGradeChooser button:focus-visible{outline:3px solid #b48b45;outline-offset:2px}
+ @media(max-width:650px){#vnvProfileGradeChooser .vnv-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#vnvProfileGradeChooser{padding:15px}}
+ `;document.head.append(chooserCss);
+ const chooserHead=document.createElement("header");
+ const chooserHeading=document.createElement("h2");chooserHeading.id="vnvProfileChooseHeading";chooserHeading.textContent="Choose Your Profile";
+ const chooserClose=document.createElement("button");chooserClose.type="button";chooserClose.textContent="Close";chooserClose.addEventListener("click",()=>profileDialog.close());
+ chooserHead.append(chooserHeading,chooserClose);profileDialog.append(chooserHead);
+ const intro=document.createElement("p");intro.textContent="Choose a student grade or parent portal. Opening a grade does not change any learner's enrollment or records.";profileDialog.append(intro);
+ const chooserGroups=[
+  ["Early Learning",[["Pre-K",V+"Khaemenes_Preschool.github.io/student-profile/#learningStudio"],["Kindergarten",V+"Khaemenes_KinderGarden.github.io/student-profile/"]]],
+  ["Elementary Grades 1–5",[1,2,3,4,5].map(n=>["Grade "+n,V+"Khaemenes_Elementary.github.io/student-profile/"] )],
+  ["Middle Grades 6–8",[6,7,8].map(n=>["Grade "+n,V+"Khaemenes_Middle.github.io/grades/grade-"+String(n).padStart(2,"0")+"/"])],
+  ["High School Grades 9–12",[9,10,11,12].map(n=>["Grade "+n,V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/"])],
+  ["Family & Adult",[["Parent / Guardian",A+"family/#khaeFamilyParentProfileHero"],["Higher Learning",A+"adult/"]]]
+ ];
+ for(const [name,items] of chooserGroups){
+  const h=document.createElement("h3");h.textContent=name;profileDialog.append(h);
+  const grid=document.createElement("nav");grid.className="vnv-profile-grid";grid.setAttribute("aria-label",name);
+  for(const [label,url] of items){const item=document.createElement("a");item.href=url;item.textContent=label;grid.append(item)}
+  profileDialog.append(grid);
  }
- const profileLink=link("profile","Profile",registeredProfileDestination());
- // A click re-resolves immediately before navigation. The live destination
- // never goes through the general Student Portal for High School learners.
- const refreshProfile=()=>{const target=registeredProfileDestination();if(profileLink.href!==target)profileLink.href=target;return target};
- const navigateProfile=event=>{
-  if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
-  const target=refreshProfile();
-  event.preventDefault();
-  event.stopImmediatePropagation();
-  location.assign(target);
- };
- profileLink.addEventListener("click",navigateProfile,true);
- profileLink.addEventListener("pointerenter",refreshProfile);
- profileLink.addEventListener("focus",refreshProfile);
- window.addEventListener("pageshow",refreshProfile);
- window.addEventListener("khaemenes-family-changed",refreshProfile);
- window.addEventListener("storage",event=>{
-  if(!event.key||/khaemenes_(active_learner|family_registry)_v1/.test(event.key))refreshProfile();
+ const qualifier=document.createElement("p");qualifier.textContent="Elementary grades share their current profile page. Middle School choices currently open the grade landing pages.";profileDialog.append(qualifier);
+ profileLink.addEventListener("click",e=>{
+  if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+  e.preventDefault();if(!profileDialog.open)profileDialog.showModal();chooserClose.focus();
  });
+ profileDialog.addEventListener("click",e=>{if(e.target===profileDialog)profileDialog.close()});
+ profileDialog.addEventListener("close",()=>profileLink.focus());
  protectStudentResource(link("search","Search",V+"PLERASearch.github.io/"),"Search");
  const updates=document.createElement("button");updates.type="button";updates.dataset.vnvTool="updates";updates.textContent="Updates";dock.append(updates);
  const mentorUrl="https://artist1970.github.io/Archaemenes.github.io/#archaemenesConversation";
@@ -167,7 +157,7 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  const close=document.createElement("button");close.type="button";close.textContent="Close";close.addEventListener("click",()=>dialog.close());dialog.append(close);
  updates.addEventListener("click",()=>dialog.showModal());
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
- document.body.append(dock,dialog,mentorDialog);mounted=true;
+ document.body.append(dock,dialog,mentorDialog,profileDialog);mounted=true;
 }
 window.VNVEcosystemToolbar=Object.freeze({version:"1.0.5",mount});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
