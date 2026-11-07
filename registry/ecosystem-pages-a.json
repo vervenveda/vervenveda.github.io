@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-06T19:41:31Z",
+  "generatedAt": "2026-11-07T06:36:06Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -2689,6 +2689,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/tour/",
       "repo": "Khaemenes_Academy.github.io",
       "path": "tour/index.html",
+      "category": "education",
+      "source": "Adult Scholar Enrollment"
+    },
+    {
+      "title": "Student Profile",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/tour/student-profile/",
+      "repo": "Khaemenes_Academy.github.io",
+      "path": "tour/student-profile/index.html",
       "category": "education",
       "source": "Adult Scholar Enrollment"
     },
