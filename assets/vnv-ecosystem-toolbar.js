@@ -76,8 +76,20 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
     const n=Number(grade);
     return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/":fallback;
    }
+   if(stage==="preschool")return V+"Khaemenes_Preschool.github.io/student-profile/";
+   if(stage==="kindergarten")return V+"Khaemenes_KinderGarden.github.io/student-profile/";
+   if(stage==="elementary"){
+    const n=Number(grade);
+    return [1,2,3,4,5].includes(n)?V+"Khaemenes_Elementary.github.io/student-profile/":fallback;
+   }
+   // Middle School has no verified dedicated learner-profile editor yet;
+   // send its learner to the appropriate grade landing instead of the
+   // unrelated legacy reflection/portfolio page.
+   if(stage==="middle"){
+    const n=Number(grade);
+    return [6,7,8].includes(n)?V+"Khaemenes_Middle.github.io/grades/grade-"+String(n).padStart(2,"0")+"/":fallback;
+   }
    if(stage==="higher"||person.selfDirectedAdult===true)return A+"adult/";
-   if(["preschool","kindergarten","elementary","middle"].includes(stage))return A+"student/profile.html";
   }catch{}
   return fallback;
  }
