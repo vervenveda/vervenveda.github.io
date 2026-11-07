@@ -1,0 +1,46 @@
+name: Ecosystem Directory Integrity Preflight
+# Manual, read-only verification. Never edits registry or catalog files.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-directory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current gateway
+        uses: actions/checkout@v6
+
+      - name: Check offline preflight regressions
+        run: python3 -m unittest discover -s ecosystem/tests -p "test_directory_preflight.py" -v
+
+      - name: Validate current master and catalog shards
+        id: preflight
+        shell: bash
+        run: |
+          set +e
+          python3 ecosystem/directory_preflight.py > directory-preflight-report.json
+          code=$?
+          cat directory-preflight-report.json
+          if [ "$code" -ne 0 ]; then
+            echo "::warning::Public directory preflight reported integrity failures. Inspect the artifact before publishing catalog changes."
+          fi
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Store diagnostics as workflow artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ecosystem-directory-preflight
+          path: directory-preflight-report.json
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Require clean directory before release approval
+        if: steps.preflight.outputs.exit_code != '0'
+        run: |
+          echo "Directory preflight is not clean; no files were changed."
+          exit 1
