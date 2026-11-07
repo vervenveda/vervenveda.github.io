@@ -6193,7 +6193,7 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
    const grade=String(learner.grade||"").replace(/^grade[- ]?/i,"").trim();
    const n=Number(grade);
    if(stage==="high"&&[9,10,11,12].includes(n)){
-    return H+"grades/grade-"+String(n).padStart(2,"0")+"/student-profile/profile/";
+    return H+"grades/grade-"+String(n).padStart(2,"0")+"/student-profile/";
    }
    if(stage==="higher"||learner.selfDirectedAdult===true)return A+"adult/";
    return A+"student/";
