@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-06T19:04:36Z",
+  "generatedAt": "2026-11-07T11:43:22Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12265,
-    "brokenLocalLinkCount": 62,
-    "rootOrphanHtmlCount": 5323,
+    "htmlCount": 12267,
+    "brokenLocalLinkCount": 63,
+    "rootOrphanHtmlCount": 5324,
     "unreferencedHtmlCount": 1522,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
@@ -168,7 +168,7 @@
       "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 7,
       "rootOrphanHtmlCount": 3,
-      "unreferencedHtmlCount": 2,
+      "unreferencedHtmlCount": 1,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -181,7 +181,6 @@
         "app/WEAL_domain_hosting_index.html"
       ],
       "unreferencedPages": [
-        "app/FleaPit™_media_gate_Index.html",
         "app/WEAL_domain_hosting_index.html"
       ],
       "duplicateGroups": [],
@@ -718,9 +717,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Academy.github.io",
-      "htmlCount": 25,
+      "htmlCount": 26,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 19,
+      "rootReachableHtmlCount": 20,
       "rootOrphanHtmlCount": 6,
       "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
@@ -994,17 +993,24 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3511,
-      "brokenLocalLinkCount": 51,
+      "htmlCount": 3512,
+      "brokenLocalLinkCount": 52,
       "rootReachableHtmlCount": 2481,
-      "rootOrphanHtmlCount": 1008,
-      "unreferencedHtmlCount": 698,
+      "rootOrphanHtmlCount": 1009,
+      "unreferencedHtmlCount": 699,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 4,
       "intentionalSiblingGroupCount": 4,
       "canonicalAliasCount": 1,
       "supersededNameCount": 0,
       "brokenLocalLinks": [
+        {
+          "source": "grades/grade-10/technology/index.html",
+          "target": "grades/index.html",
+          "raw": "../../",
+          "tag": "a",
+          "attr": "href"
+        },
         {
           "source": "courses/language-arts/english-9/index.html",
           "target": "courses/language-arts/english-9/${esc(s.url)}",
