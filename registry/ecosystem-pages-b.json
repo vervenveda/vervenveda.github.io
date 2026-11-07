@@ -1,41 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-07T13:33:18Z",
+  "generatedAt": "2026-11-07T22:17:27Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Week 29",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/index.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
     {
       "title": "Day 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-01.html",
@@ -6381,6 +6349,30 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Daily Lessons",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-11/student-profile/daily-lessons/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-11/student-profile/daily-lessons/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Games",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-11/student-profile/games/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-11/student-profile/games/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Grades",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-11/student-profile/grades/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-11/student-profile/grades/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Student Profile",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-11/student-profile/",
       "repo": "Khaemenes_High.github.io",
@@ -6397,10 +6389,42 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Settings",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-11/student-profile/settings/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-11/student-profile/settings/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Grade 12",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-12/",
       "repo": "Khaemenes_High.github.io",
       "path": "grades/grade-12/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Daily Lessons",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-12/student-profile/daily-lessons/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-12/student-profile/daily-lessons/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Games",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-12/student-profile/games/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-12/student-profile/games/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Grades",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-12/student-profile/grades/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-12/student-profile/grades/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -6417,6 +6441,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-12/student-profile/profile/",
       "repo": "Khaemenes_High.github.io",
       "path": "grades/grade-12/student-profile/profile/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Settings",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/grades/grade-12/student-profile/settings/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "grades/grade-12/student-profile/settings/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
