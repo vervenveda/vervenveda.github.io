@@ -59,7 +59,7 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  // learner on every activation, not from the page currently being visited.
  // No registration or private records are modified by this navigation.
  function registeredProfileDestination(){
-  const fallback=A+"family/";
+  const fallback=A+"student/";
   // Read, never mutate, the selected Academy identity. One learner = one
   // deterministic destination even after repeat mounts or grade visits.
   try{
