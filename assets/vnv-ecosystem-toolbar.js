@@ -122,7 +122,32 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  mentorDialog.addEventListener("click",e=>{if(e.target===mentorDialog)mentorDialog.close()});
  mentorDialog.addEventListener("close",()=>mentorFrame.removeAttribute("src"));
  protectStudentResource(link("support","Support","https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s"),"Support");
- protectStudentResource(link("beta","Beta",V+"beta/"),"Beta");
+ // Beta reports carry public route context only. Never transmit search/hash,
+// user state, identifiers from protected routes or filesystem/network internals.
+ const betaLink=protectStudentResource(link("beta","Beta",V+"beta/"),"Beta");
+ function betaPublicSource(){
+  try{
+   const url=new URL(location.href);
+   if(url.protocol!=="https:"&&url.protocol!=="http:")return "";
+   const host=url.hostname.toLowerCase();
+   if(host!=="vervenveda.com"&&host!=="www.vervenveda.com"&&!/^(?:[a-z0-9-]+)\\.github\\.io$/.test(host))return "";
+   const pathname=decodeURIComponent(url.pathname);
+   const parts=pathname.split("/").filter(Boolean);
+   if(parts.length>12||parts.some(part=>part.length>64||!/^[-a-zA-Z0-9_.]+$/.test(part)||/[0-9]{7,}/.test(part)||/@/.test(part)))return "";
+   if(parts.some(part=>/^(?:admin|private|internal|api|account|auth|session|token|checkout|payment|vault)$/i.test(part)))return "";
+   const path="/"+parts.join("/");
+   return (host==="vervenveda.com"||host==="www.vervenveda.com"?path:host+path).slice(0,240);
+  }catch{return ""}
+ }
+ const refreshBeta=()=>{
+  const source=betaPublicSource();
+  betaLink.href=V+"beta/"+(source?"?source="+encodeURIComponent(source):"");
+ };
+ betaLink.addEventListener("pointerenter",refreshBeta);
+ betaLink.addEventListener("focus",refreshBeta);
+ betaLink.addEventListener("click",refreshBeta,true);
+ window.addEventListener("pageshow",refreshBeta);
+ refreshBeta();
  const dialog=document.createElement("dialog");dialog.id="vnvEcosystemUtilityUpdates";
  const title=document.createElement("h2");title.textContent="Updates & Help";dialog.append(title);
  const note=document.createElement("p");note.textContent="Academy information and assistance.";dialog.append(note);
