@@ -74,7 +74,7 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
    const grade=String(person.grade||"").replace(/^grade[- ]?/i,"").trim().toLowerCase();
    if(stage==="high"){
     const n=Number(grade);
-    return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/profile/":fallback;
+    return [9,10,11,12].includes(n)?V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/":fallback;
    }
    if(stage==="higher"||person.selfDirectedAdult===true)return A+"adult/";
    if(["preschool","kindergarten","elementary","middle"].includes(stage))return A+"student/profile.html";
