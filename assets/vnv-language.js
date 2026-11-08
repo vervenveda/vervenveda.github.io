@@ -294,6 +294,40 @@ body > #vnv-language-switch{
   #vnv-language-switch{gap:5px;padding:6px;justify-content:center}
   #vnv-language-switch label{font-size:10px}
 }
+/* Canonical charcoal translation rail. Preserve selectors and translation controls. */
+#vnv-language-switch,
+#vnv-language-switch-drawer{
+  background:#243038;
+  color:#fff8e9;
+  border:1px solid #b48b45;
+  box-shadow:0 2px 12px rgba(20,28,24,.14);
+}
+#vnv-language-switch label,
+#vnv-language-switch-drawer label{
+  color:#fff8e9;
+  -webkit-text-fill-color:#fff8e9;
+}
+#vnv-language-switch #vnv-language-select,
+#vnv-language-switch-drawer #vnv-language-select-drawer{
+  background:#fff8e9;
+  color:#243038;
+  -webkit-text-fill-color:#243038;
+  border-color:#b48b45;
+}
+#vnv-language-switch .vnv-translate-complete,
+#vnv-language-switch .vnv-translation-audit,
+#vnv-language-switch-drawer .vnv-translate-complete,
+#vnv-language-switch-drawer .vnv-translation-audit{
+  background:#fff8e9;
+  color:#243038;
+  -webkit-text-fill-color:#243038;
+  border-color:#b48b45;
+}
+#vnv-language-switch :is(select,button):focus-visible,
+#vnv-language-switch-drawer :is(select,button):focus-visible{
+  outline:3px solid #e3c389;
+  outline-offset:2px;
+}
 html[dir="rtl"] .ecosystem-category-grid,html[dir="rtl"] .quick-grid,html[dir="rtl"] .school-grid{direction:ltr}
 html[dir="rtl"] .ecosystem-category-grid > *,html[dir="rtl"] .quick-grid > *,html[dir="rtl"] .school-grid > *{direction:rtl}
 @media(max-width:480px){#vnv-language-switch{margin:6px auto}#vnv-language-select{min-width:106px}}
