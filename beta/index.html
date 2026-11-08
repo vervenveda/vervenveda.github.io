@@ -29,24 +29,62 @@ header{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12);background:v
 footer{padding:35px 0;color:#727d77;font-size:12px;border-top:1px solid var(--line)}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:580px){.grid{grid-template-columns:1fr}.hero{padding-top:60px}.feedback{padding:23px 17px}.actions .btn{width:100%}}
 @media print{header,.hero,.section.alt,footer,.actions,.daily-note{display:none!important}.section{border:0;padding:0}.feedback{box-shadow:none;border:0;margin:0 auto;padding:0}.field input,.field textarea{border:0;padding:0}.receipt-panel{border:0}}
+
+/* Beta visual standard: scoped to the public page, never the report data pipeline. */
+:root{--paper:#f4f0e7;--paper2:#faf7f0;--panel:#fffaf0;--ink:#243038;--muted:#4f5e55;--forest:#243038;--forest2:#394a43;--gold:#b48b45;--gold2:#d9bf91;--r:7px;--r2:7px;--max:1100px}
+body{color:#243038;background:linear-gradient(180deg,#faf7f0,#f4f0e7);font:400 17px/1.65 var(--body)}
+main{overflow:clip}
+.hero{position:relative;padding:75px 16px 64px!important;background:linear-gradient(180deg,#f4f0e7,#fffaf0)!important;border-bottom:2px solid #b48b45!important}
+.hero .shell{max-width:1000px;padding:31px 24px 35px;border:1px solid #d0bd95;border-radius:7px;background:rgba(255,253,248,.78);box-shadow:0 10px 36px rgba(18,29,24,.07)}
+.kicker{color:#956f39!important;font:400 14px/1.4 var(--formal)!important;letter-spacing:.15em!important;text-align:center}
+.hero h1{margin:17px auto 0!important;font:400 clamp(48px,7vw,80px)/1.13 var(--formal)!important;letter-spacing:.015em;color:#243038!important;text-align:center}
+.hero .lede{max-width:770px;margin:25px auto 0;font:400 19px/1.7 var(--body);color:#405147}
+.hero .badge{display:inline-block;margin:24px auto 0;padding:9px 18px;border:1px solid #b48b45;border-radius:7px;background:#243038;color:#fff8e9;font:400 16px/1.35 var(--body);letter-spacing:.035em;text-transform:none}
+.section{padding:62px 16px 68px!important;border-top:1px solid #d5c6a8!important}
+.section.alt{background:#f9f6ef!important}
+.section>.shell{max-width:1100px}
+.section .kicker{font-size:14px!important}
+.section h2{margin:13px auto 0;font:400 clamp(28px,4vw,44px)/1.25 var(--formal)!important;color:#243038!important}
+.section .intro{max-width:790px;margin:16px auto 0;color:#46584e;font:400 18px/1.65 var(--body)}
+.section .grid{gap:14px;margin-top:32px}
+.section .grid>.card{min-width:0;padding:24px 21px;border:2px solid #c9b48b;border-radius:7px;background:#fffaf0;box-shadow:0 5px 16px rgba(18,29,24,.05)}
+.section .card strong{font:400 22px/1.35 var(--formal);color:#243038}
+.section .card p{font:400 17px/1.55 var(--body);color:#46584e;margin-top:10px}
+.feedback{max-width:870px!important;margin:32px auto 0!important;padding:33px!important;border:2px solid #c9b48b!important;border-radius:7px!important;background:#fffaf0!important;box-shadow:0 8px 28px rgba(18,29,24,.08)!important}
+.feedback h3{font:400 28px/1.3 var(--formal)!important;color:#243038}
+.feedback .field{gap:8px;margin-top:19px}
+.feedback .field label{color:#243038;font:400 16px/1.4 var(--body);letter-spacing:.015em;text-transform:none}
+.feedback .field :is(input,select,textarea){min-height:44px;padding:12px 14px;border:1px solid #bda678;border-radius:7px;background:#fffdf8;color:#243038;font:400 17px/1.45 var(--body);box-shadow:none}
+.feedback .field textarea{min-height:130px}
+.feedback .field textarea:not(#message){min-height:95px}
+.feedback .field :is(input,select,textarea):focus-visible{outline:3px solid #d9bf91;outline-offset:2px}
+.feedback :is(input,textarea)::placeholder{color:#6b756d;opacity:1}
+.feedback .actions{gap:9px;margin-top:23px}
+.feedback .btn{min-height:44px;padding:10px 17px;border:1px solid #243038;border-radius:7px;background:#243038;color:#fff8e9;font:400 16px/1.3 var(--body);letter-spacing:.005em;text-transform:none;box-shadow:none}
+.feedback .btn.secondary{border-color:#b48b45;background:#fff8e9;color:#243038}
+.feedback .btn.gold{border-color:#b48b45;background:#dfc893;color:#243038}
+.feedback .btn:hover:not(:disabled){background:#394a43;color:#fff8e9}
+.feedback .btn.secondary:hover:not(:disabled){background:#efe1ca;color:#243038}
+.feedback .btn.gold:hover:not(:disabled){background:#d5b77d;color:#243038}
+.feedback .daily-note{max-width:100%;margin-top:25px;padding:18px 20px;border:1px solid #d2bd96;border-left:3px solid #b48b45;border-radius:7px;background:#f4f0e7;color:#46584e;font:400 16px/1.55 var(--body)}
+.feedback .receipt-panel{padding:20px;border:1px solid #d2bd96;border-radius:7px;background:#f4f0e7}
+.feedback .receipt-panel h3{font-size:24px!important}
+.feedback .char-row{font-size:14px}
+.feedback .status{font-size:16px}
+.feedback #outboxList{margin-top:20px;text-align:left}
+.privacy-line{font:400 16px/1.65 var(--body);color:#46584e}
+footer{padding:32px 16px;background:#243038;color:#fff8e9;border-top:1px solid #b48b45;font-size:16px}
+@media(max-width:900px){.section .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.hero{padding:40px 12px!important}.hero .shell{padding:25px 15px}.section{padding:45px 12px!important}.section .grid{grid-template-columns:minmax(0,1fr)}.feedback{padding:22px 16px!important}.feedback .actions{flex-direction:column}.feedback .actions .btn{width:100%}.hero .lede{font-size:17px}}
+@media print{#vnv333NetworkTicker,#vnvTickerAutoPopulate,#vnvHeaderAutoPopulate,#vnvEcosystemUtilityDock{display:none!important}.feedback{box-shadow:none!important;border:none!important}}
+
 </style>
   <link rel="stylesheet" href="/assets/vervenveda-global-standard.css">
   <link rel="stylesheet" href="/assets/vnv-global-standard.css" data-vnv-standard="2026-10-14">
   <link rel="stylesheet" href="/assets/vnv-ecosystem-menu.css">
 </head>
 <body>
-  <details class="vnv-ecosystem-nav" data-vnv-ecosystem-menu>
-    <summary aria-label="Open Verve N Veda ecosystem menu" title="Verve N Veda ecosystem menu">
-      <span class="vnv-ecosystem-lines" aria-hidden="true"><span></span><span></span><span></span></span>
-    </summary>
-    <nav class="vnv-ecosystem-dropdown" aria-label="Verve N Veda ecosystem">
-      <p class="vnv-ecosystem-kicker">Verve N Veda</p>
-      <a class="vnv-ecosystem-primary" href="https://vervenveda.com/#directory">Ecosystem Directory</a>
-      <a href="https://vervenveda.com/">Verve N Veda Home</a>
-    </nav>
-  </details>
-
-<header><div class="shell nav"><a href="../">Verve N Veda</a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a></div></header>
+  <!-- Canonical VNV ticker/header/branched menu mount below; no legacy local header. -->
 
 <main>
 <section class="hero"><div class="shell"><p class="kicker">Private Improvement Channel</p><h1>Beta Program</h1><p class="lede">Help improve public halls, courses, tools, games, resources, and learning pathways. Beta reports are intended for the administrator notification channel — not a public feed.</p><span class="badge">Private Beta Report</span></div></section>
@@ -420,6 +458,29 @@ printBtn.addEventListener("click",()=>{
 restore();
 showOutbox();
 })();
+</script>
+
+<!-- Shared VNV chrome; mount a single header/menu and the authorized ticker pair. -->
+<script src="/assets/vnv-333-ticker.js" defer></script>
+<script src="/assets/vnv-ticker-autopopulate.js" defer></script>
+<script src="/assets/vnv-header-autopopulate.js" defer></script>
+<script src="/assets/vnv-ecosystem-toolbar.js?v=1.0.7" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  // Only public page links are discovered. The form/report content stays local.
+  window.VNV_TICKER?.autoPopulate?.({
+    before:"#vnvHeaderAutoPopulate",
+    label:"Beta Program · Explore",
+    ariaLabel:"Verve N Veda Beta Program page links",
+    exclude:["#vnv333NetworkTicker a","#vnvTickerAutoPopulate a","a[download]","[data-vnv-ticker-ignore]"]
+  });
+  window.VNV_HEADER?.mount?.({
+    title:"Beta Program",
+    subtitle:"Private Improvement Channel",
+    home:"https://vervenveda.com/",
+    replaceLegacy:false
+  });
+},{once:true});
 </script>
 
 <!-- Verve N Veda Beta Program -->
