@@ -6440,6 +6440,15 @@ document.addEventListener("DOMContentLoaded",()=>{
 </script>
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 
+<!-- Read-only forensic diagnostics; no script loaded on ordinary visits. -->
+<script id="vnv-gateway-chrome-audit-optin">
+if(new URLSearchParams(location.search).get("chrome_audit")==="1"){
+  const probe=document.createElement("script");
+  probe.src="/assets/vnv-gateway-chrome-forensic-probe.js?v=1.1.0";
+  probe.async=false;
+  document.body.appendChild(probe);
+}
+</script>
 <!-- Verve N Veda Beta Program -->
 </body>
 </html>
