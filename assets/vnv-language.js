@@ -384,6 +384,43 @@ body > #vnv-language-switch{
   #vnv-language-rail .vnv-translate-complete,
   #vnv-language-rail .vnv-translation-audit{min-height:38px;}
 }
+/* Crisp cream translator controls, scoped to the full-width gateway band. */
+#vnv-language-rail #vnv-language-switch .vnv-translate-complete,
+#vnv-language-rail #vnv-language-switch .vnv-translation-audit,
+#vnv-language-rail #vnv-language-switch #vnv-language-select{
+  background-color:#fffaf0;
+  background-image:none;
+  color:#243038;
+  -webkit-text-fill-color:#243038;
+  border:1px solid #cab58c;
+  border-radius:7px;
+  min-height:38px;
+  padding:7px 13px;
+  font:400 16px/1.35 "Brandon Grotesque",Nunito,Arial,sans-serif;
+  letter-spacing:.005em;
+  box-shadow:0 1px 2px rgba(0,0,0,.12);
+  transition:background-color .15s ease,border-color .15s ease;
+}
+#vnv-language-rail #vnv-language-switch :is(.vnv-translate-complete,.vnv-translation-audit):hover{
+  background-color:#f3e6d0;
+  border-color:#b48b45;
+}
+#vnv-language-rail #vnv-language-switch :is(.vnv-translate-complete,.vnv-translation-audit):disabled{
+  opacity:.7;
+  cursor:wait;
+}
+#vnv-language-switch-drawer :is(.vnv-translate-complete,.vnv-translation-audit),
+#vnv-language-switch-drawer #vnv-language-select-drawer{
+  background-color:#fffaf0;
+  color:#243038;
+  -webkit-text-fill-color:#243038;
+  border:1px solid #cab58c;
+  border-radius:7px;
+  font:400 16px/1.35 "Brandon Grotesque",Nunito,Arial,sans-serif;
+}
+@media(prefers-reduced-motion:reduce){
+  #vnv-language-rail #vnv-language-switch :is(.vnv-translate-complete,.vnv-translation-audit){transition:none}
+}
 html[dir="rtl"] .ecosystem-category-grid,html[dir="rtl"] .quick-grid,html[dir="rtl"] .school-grid{direction:ltr}
 html[dir="rtl"] .ecosystem-category-grid > *,html[dir="rtl"] .quick-grid > *,html[dir="rtl"] .school-grid > *{direction:rtl}
 @media(max-width:480px){#vnv-language-switch{margin:6px auto}#vnv-language-select{min-width:106px}}
