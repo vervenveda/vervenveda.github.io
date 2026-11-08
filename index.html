@@ -3956,57 +3956,61 @@
     }
 </style>
   <style id="vnv-enrolled-account-row-unification-20261108">
-    /* Six matched, low-profile entrances; 7px corners and compact row spacing. */
-    .hero .hero-actions{gap:8px!important;}
-    .hero .hero-actions .vnv-hero-doorway{
-      width:260px!important;min-width:0!important;
-      min-height:40px!important;
-      padding:7px 12px!important;
-      border-radius:7px!important;
-      color:#fff8e9!important;
-      -webkit-text-fill-color:#fff8e9!important;
-      white-space:nowrap!important;
-      font-size:16px!important;
-      letter-spacing:.015em!important;
-      line-height:1.25!important;
-    }
+    /* Two identical three-column rows, sized to the original compact enrolled buttons. */
+    .hero .hero-actions,
     .hero .enrolled-student-entry-row{
+      box-sizing:border-box!important;
       display:grid!important;
-      grid-template-columns:repeat(3,minmax(0,260px));
-      justify-content:center!important;
+      grid-template-columns:repeat(3,minmax(0,1fr))!important;
       align-items:stretch!important;
-      gap:8px!important;
-      margin-top:6px!important;
-      width:100%!important;
+      justify-content:center!important;
+      column-gap:7px!important;
+      width:min(100%,466px)!important;
+      max-width:466px!important;
+      margin-left:auto!important;
+      margin-right:auto!important;
     }
+    .hero .hero-actions{row-gap:7px!important;}
+    .hero .enrolled-student-entry-row{margin-top:6px!important;}
+    .hero .hero-actions .vnv-hero-doorway,
     .hero .enrolled-student-entry-row .enrolled-student-entry{
       box-sizing:border-box!important;
-      width:100%!important;max-width:none!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:center!important;
+      flex:none!important;
+      width:100%!important;
+      min-width:0!important;
+      max-width:none!important;
       min-height:40px!important;
-      margin:0!important;padding:7px 12px!important;
+      margin:0!important;
+      padding:7px 9px!important;
+      border:1px solid #28332f!important;
       border-radius:7px!important;
-      text-align:center!important;
+      background:#28332f!important;
       color:#fff8e9!important;
       -webkit-text-fill-color:#fff8e9!important;
-      white-space:nowrap!important;
+      text-align:center!important;
+      text-decoration:none!important;
       font-size:16px!important;
       font-weight:400!important;
-      letter-spacing:.005em!important;
       line-height:1.25!important;
+      letter-spacing:0!important;
+      white-space:normal!important;
+      text-wrap:balance!important;
     }
-    @media(max-width:850px){
-      .hero .hero-actions{width:min(100%,420px)!important;margin-inline:auto;}
-      .hero .hero-actions .vnv-hero-doorway{
-        width:100%!important;
-        white-space:normal!important;
-      }
+    .hero .hero-actions .vnv-hero-doorway:hover,
+    .hero .enrolled-student-entry-row .enrolled-student-entry:hover{
+      background:#394a43!important;
+      border-color:#394a43!important;
+      color:#fff8e9!important;
+    }
+    @media(max-width:540px){
+      .hero .hero-actions,
       .hero .enrolled-student-entry-row{
         grid-template-columns:minmax(0,1fr)!important;
-        width:min(100%,420px)!important;
-        margin:6px auto 0!important;
-      }
-      .hero .enrolled-student-entry-row .enrolled-student-entry{
-        white-space:normal!important;
+        width:min(100%,340px)!important;
+        max-width:340px!important;
       }
     }
   </style> <!-- Isolated directory typography and 4-by-4 balanced navigation; no admin/terminal changes. -->
