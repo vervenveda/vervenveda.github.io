@@ -76,6 +76,101 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  #vnvProfileGradeChooser button{min-height:47px;padding:9px 16px;border:1px solid #202724;border-radius:7px;background:#fff8e9;color:#202724;font:400 16px/1.3 Nunito,Arial,sans-serif;cursor:pointer}
  #vnvProfileGradeChooser a:focus-visible,#vnvProfileGradeChooser button:focus-visible{outline:3px solid #b48b45;outline-offset:2px}
  @media(max-width:650px){#vnvProfileGradeChooser .vnv-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#vnvProfileGradeChooser{padding:15px}}
+ /* Unified charcoal/parchment modal system: only these two utility dialogs. */
+ #vnvProfileGradeChooser,#vnvEcosystemUtilityUpdates{
+   box-sizing:border-box!important;
+   border:2px solid #b48b45!important;
+   border-radius:7px!important;
+   background:#f4f0e7!important;
+   color:#243038!important;
+   box-shadow:0 24px 70px rgba(10,20,18,.38)!important;
+   max-height:calc(100dvh - 32px)!important;
+   overflow:auto!important;
+   padding:0!important;
+ }
+ #vnvProfileGradeChooser{width:min(860px,calc(100vw - 32px))!important;}
+ #vnvEcosystemUtilityUpdates{width:min(590px,calc(100vw - 32px))!important;max-width:none!important;}
+ #vnvProfileGradeChooser::backdrop,#vnvEcosystemUtilityUpdates::backdrop{background:rgba(8,19,16,.70)!important;}
+ #vnvProfileGradeChooser > header,#vnvEcosystemUtilityUpdates > header{
+   display:flex!important;align-items:center!important;justify-content:center!important;
+   flex-wrap:wrap!important;gap:13px!important;
+   margin:0!important;padding:24px 24px 20px!important;
+   border-bottom:2px solid #b48b45!important;
+   background:#243038!important;color:#fff8e9!important;
+   text-align:center!important;
+ }
+ #vnvProfileGradeChooser > header h2,#vnvEcosystemUtilityUpdates > header h2{
+   flex:1 1 100%!important;margin:0!important;
+   font:400 clamp(26px,4vw,33px)/1.25 Cinzel,Georgia,serif!important;
+   color:#fff8e9!important;-webkit-text-fill-color:#fff8e9!important;
+   text-align:center!important;
+ }
+ #vnvProfileGradeChooser > header button,#vnvEcosystemUtilityUpdates > header button{
+   min-height:39px!important;padding:7px 20px!important;
+   border:1px solid #c8ad76!important;border-radius:7px!important;
+   background:#fff8e9!important;color:#243038!important;
+   -webkit-text-fill-color:#243038!important;
+   font:400 16px/1.35 Nunito,Arial,sans-serif!important;
+   cursor:pointer!important;
+ }
+ #vnvProfileGradeChooser > p{
+   max-width:730px!important;
+   margin:20px auto!important;padding:0 24px!important;
+   font:400 18px/1.55 Nunito,Arial,sans-serif!important;
+   color:#34463b!important;text-align:center!important;
+ }
+ #vnvProfileGradeChooser > h3{
+   margin:24px 24px 12px!important;
+   font:400 24px/1.3 Cinzel,Georgia,serif!important;
+   text-align:center!important;color:#243038!important;
+ }
+ #vnvProfileGradeChooser .vnv-profile-grid{
+   display:grid!important;
+   grid-template-columns:repeat(4,minmax(0,1fr))!important;
+   gap:10px!important;margin:0 24px!important;
+ }
+ #vnvProfileGradeChooser .vnv-profile-grid a{
+   min-height:48px!important;padding:10px 12px!important;
+   border:1px solid #b48b45!important;border-radius:7px!important;
+   background:#243038!important;color:#fff8e9!important;
+   -webkit-text-fill-color:#fff8e9!important;
+   font:400 16px/1.3 Nunito,Arial,sans-serif!important;
+   text-align:center!important;text-decoration:none!important;
+ }
+ #vnvProfileGradeChooser .vnv-profile-grid a:hover{background:#394a43!important;}
+ #vnvEcosystemUtilityUpdates .vnv-updates-body{
+   padding:26px 26px 28px!important;text-align:center!important;
+ }
+ #vnvEcosystemUtilityUpdates .vnv-updates-body p{
+   margin:0 auto 22px!important;max-width:460px!important;
+   font:400 18px/1.6 Nunito,Arial,sans-serif!important;
+   color:#34463b!important;text-align:center!important;
+ }
+ #vnvEcosystemUtilityUpdates .vnv-updates-actions{
+   display:flex!important;justify-content:center!important;flex-wrap:wrap!important;gap:10px!important;
+ }
+ #vnvEcosystemUtilityUpdates .vnv-updates-actions a{
+   display:inline-flex!important;align-items:center!important;justify-content:center!important;
+   min-height:44px!important;padding:10px 18px!important;
+   border:1px solid #b48b45!important;border-radius:7px!important;
+   background:#243038!important;color:#fff8e9!important;
+   -webkit-text-fill-color:#fff8e9!important;
+   font:400 16px/1.35 Nunito,Arial,sans-serif!important;
+   text-decoration:none!important;
+ }
+ #vnvEcosystemUtilityUpdates .vnv-updates-actions a:hover{background:#394a43!important;}
+ #vnvProfileGradeChooser :is(a,button):focus-visible,
+ #vnvEcosystemUtilityUpdates :is(a,button):focus-visible{outline:3px solid #b48b45!important;outline-offset:3px!important;}
+ @media(max-width:650px){
+   #vnvProfileGradeChooser .vnv-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;margin:0 15px!important;}
+   #vnvProfileGradeChooser > header,#vnvEcosystemUtilityUpdates > header{padding:19px 14px!important;}
+   #vnvProfileGradeChooser > h3{margin-inline:15px!important;}
+   #vnvProfileGradeChooser > p{padding-inline:15px!important;}
+   #vnvEcosystemUtilityUpdates .vnv-updates-body{padding:20px 15px!important;}
+ }
+ @media(max-width:360px){
+   #vnvProfileGradeChooser .vnv-profile-grid{grid-template-columns:minmax(0,1fr)!important;}
+ }
  `;document.head.append(chooserCss);
  const chooserHead=document.createElement("header");
  const chooserHeading=document.createElement("h2");chooserHeading.id="vnvProfileChooseHeading";chooserHeading.textContent="Choose Your Profile";
@@ -150,15 +245,21 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  betaLink.addEventListener("click",refreshBeta,true);
  window.addEventListener("pageshow",refreshBeta);
  refreshBeta();
- const dialog=document.createElement("dialog");dialog.id="vnvEcosystemUtilityUpdates";
- const title=document.createElement("h2");title.textContent="Updates & Help";dialog.append(title);
- const note=document.createElement("p");note.textContent="Academy information and assistance.";dialog.append(note);
- const help=document.createElement("a");help.href=A+"#help";help.textContent="Academy Help Desk";dialog.append(help);
- const close=document.createElement("button");close.type="button";close.textContent="Close";close.addEventListener("click",()=>dialog.close());dialog.append(close);
- updates.addEventListener("click",()=>dialog.showModal());
+ const dialog=document.createElement("dialog");dialog.id="vnvEcosystemUtilityUpdates";dialog.setAttribute("aria-labelledby","vnvUpdatesHeading");
+ const updatesHeader=document.createElement("header");
+ const title=document.createElement("h2");title.id="vnvUpdatesHeading";title.textContent="Updates & Help";
+ const close=document.createElement("button");close.type="button";close.textContent="Close";close.setAttribute("aria-label","Close Updates and Help");
+ close.addEventListener("click",()=>dialog.close());updatesHeader.append(title,close);
+ const updatesBody=document.createElement("div");updatesBody.className="vnv-updates-body";
+ const note=document.createElement("p");note.textContent="Academy information and assistance.";
+ const updatesActions=document.createElement("nav");updatesActions.className="vnv-updates-actions";updatesActions.setAttribute("aria-label","Academy assistance");
+ const help=document.createElement("a");help.href=A+"#help";help.textContent="Academy Help Desk";
+ updatesActions.append(help);updatesBody.append(note,updatesActions);dialog.append(updatesHeader,updatesBody);
+ updates.addEventListener("click",()=>{if(!dialog.open)dialog.showModal();close.focus()});
+ dialog.addEventListener("close",()=>updates.focus());
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
  document.body.append(dock,dialog,mentorDialog,profileDialog);mounted=true;
 }
-window.VNVEcosystemToolbar=Object.freeze({version:"1.0.5",mount});
+window.VNVEcosystemToolbar=Object.freeze({version:"1.0.6",mount});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
 })();
