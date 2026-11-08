@@ -1,4 +1,4 @@
-/* Verve N Veda gateway forensic chrome probe v1.1.0
+/* Verve N Veda gateway forensic chrome probe v1.3.0
  * Opt-in only: ?chrome_audit=1. Read-only observation, no cookies, storage,
  * learner records, registry, outbound requests, or reporting.
  * Gateway uses native #networkTicker / .site-header / #menuOverlay,
@@ -12,9 +12,10 @@ const TARGETS=[
  ["Auto ticker",()=>document.getElementById("vnvTickerAutoPopulate")],
  ["VNV header",()=>document.querySelector("header.site-header")||document.getElementById("vnvHeaderAutoPopulate")],
  ["Branched menu",()=>document.getElementById("menuOverlay")||document.getElementById("vnvEnrichedMenuOverlay")],
- ["Universal toolbar",()=>document.getElementById("vnvEcosystemUtilityDock")]
+ ["Universal toolbar",()=>document.getElementById("vnvEcosystemUtilityDock")],
+ ["Translator rail",()=>document.getElementById("vnv-language-rail")]
 ];
-const tracked=new Set(["networkTicker","vnv333NetworkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","menuOverlay","vnvEnrichedMenuOverlay","vnvEcosystemUtilityDock"]);
+const tracked=new Set(["networkTicker","vnv333NetworkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","menuOverlay","vnvEnrichedMenuOverlay","vnvEcosystemUtilityDock","vnv-language-rail"]);
 const traces=[];let queued=false,closed=false,panel=null,output=null;
 const when=()=>Math.round(performance.now())+"ms";
 function summary(name,find){
@@ -47,7 +48,7 @@ function display(){
  }
  output.textContent="Current (no student data):\n"+
  TARGETS.map(([name,find])=>summary(name,find)).join("\n")+
- "\n\nEvent timeline:\n"+traces.slice(-16).join("\n");
+ "\n\nEarly refresh timeline:\n"+(window.VNVEarlyRefreshTrace?.events?.().slice(-24).join("\n")||"Early probe unavailable")+"\n\nLater events:\n"+traces.slice(-16).join("\n");
 }
 function record(note){
  if(closed)return;
@@ -88,5 +89,5 @@ window.addEventListener("error",e=>{
  else if(e.message)record("JS ERROR: "+String(e.message).slice(0,140));
 },true);
 window.addEventListener("unhandledrejection",e=>record("PROMISE REJECTION: "+String(e.reason?.message||"unknown").slice(0,130)));
-window.VNVGatewayChromeAudit=Object.freeze({version:"1.2.0",snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
+window.VNVGatewayChromeAudit=Object.freeze({version:"1.3.0",snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
 })();
