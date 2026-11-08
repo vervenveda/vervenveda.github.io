@@ -3622,44 +3622,7 @@
 </style>
   <link rel="stylesheet" href="/assets/vnv-global-standard.css" data-vnv-standard="2026-10-14">
   <!-- 2026-10-15: homepage typography and collision-safe control refinement. -->
-  <style id="vnv-enrolled-account-row-unification-20261108">
-    /* Two symmetric rows: main public doors above, three enrolled account doors below. */
-    .hero .hero-actions{gap:10px!important;}
-    .hero .hero-actions .vnv-hero-doorway{
-      width:205px!important;min-width:0!important;
-      min-height:48px!important;
-      white-space:normal!important;text-wrap:balance!important;
-    }
-    .hero .enrolled-student-entry-row{
-      display:grid!important;
-      grid-template-columns:repeat(3,minmax(0,205px));
-      justify-content:center!important;
-      align-items:stretch!important;
-      gap:10px!important;
-      margin-top:12px!important;
-      width:100%!important;
-    }
-    .hero .enrolled-student-entry-row .enrolled-student-entry{
-      box-sizing:border-box!important;
-      width:100%!important;max-width:none!important;
-      min-height:48px!important;
-      margin:0!important;padding:9px 12px!important;
-      text-align:center!important;
-      color:#f4f0e7!important;
-      -webkit-text-fill-color:#f4f0e7!important;
-      white-space:normal!important;
-      text-wrap:balance!important;
-      font-size:16px!important;font-weight:400!important;
-    }
-    @media(max-width:700px){
-      .hero .hero-actions{width:min(100%,420px)!important;margin-inline:auto;}
-      .hero .hero-actions .vnv-hero-doorway{width:100%!important;}
-      .hero .enrolled-student-entry-row{
-        grid-template-columns:minmax(0,1fr)!important;
-        width:min(100%,420px)!important;margin:12px auto 0!important;
-      }
-    }
-  </style>
+
   <style id="vnv-enrolled-student-entry-style">
     .hero .enrolled-student-entry-row{
       display:flex;justify-content:center;align-items:center;
@@ -3992,6 +3955,44 @@
       .hero .hero-actions .vnv-hero-doorway:hover{transform:none!important;}
     }
 </style>
+  <style id="vnv-enrolled-account-row-unification-20261108">
+    /* Two symmetric rows: main public doors above, three enrolled account doors below. */
+    .hero .hero-actions{gap:10px!important;}
+    .hero .hero-actions .vnv-hero-doorway{
+      width:205px!important;min-width:0!important;
+      min-height:48px!important;
+      white-space:normal!important;text-wrap:balance!important;
+    }
+    .hero .enrolled-student-entry-row{
+      display:grid!important;
+      grid-template-columns:repeat(3,minmax(0,205px));
+      justify-content:center!important;
+      align-items:stretch!important;
+      gap:10px!important;
+      margin-top:12px!important;
+      width:100%!important;
+    }
+    .hero .enrolled-student-entry-row .enrolled-student-entry{
+      box-sizing:border-box!important;
+      width:100%!important;max-width:none!important;
+      min-height:48px!important;
+      margin:0!important;padding:9px 12px!important;
+      text-align:center!important;
+      color:#f4f0e7!important;
+      -webkit-text-fill-color:#f4f0e7!important;
+      white-space:normal!important;
+      text-wrap:balance!important;
+      font-size:16px!important;font-weight:400!important;
+    }
+    @media(max-width:700px){
+      .hero .hero-actions{width:min(100%,420px)!important;margin-inline:auto;}
+      .hero .hero-actions .vnv-hero-doorway{width:100%!important;}
+      .hero .enrolled-student-entry-row{
+        grid-template-columns:minmax(0,1fr)!important;
+        width:min(100%,420px)!important;margin:12px auto 0!important;
+      }
+    }
+  </style>
   <!-- Isolated directory typography and 4-by-4 balanced navigation; no admin/terminal changes. -->
   <style id="vnv-directory-legibility-2026-11">
     #directory .ecosystem-category-grid {
