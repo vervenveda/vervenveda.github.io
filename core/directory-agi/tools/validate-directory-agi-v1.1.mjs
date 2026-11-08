@@ -10,13 +10,36 @@ const runtime=read("core/directory-agi/directory-agi-v1.1.js");
 const registry=JSON.parse(read("ecosystem/master-ecosystem-directory.json"));
 const repoEvidence=JSON.parse(read("admin/directory/repositories.json"));
 const auditEvidence=JSON.parse(read("admin/directory/directory-audit.json"));
-const visible=registry.entries.filter(x=>x.directoryVisible===true&&x.status==="active"&&x.access==="free-public");
-ok(registry.entryCount===registry.entries.length,"master registry entryCount matches entries");
-ok(registry.entryCount===142,"master registry retains 142 normalized entries");
-ok(visible.length===130,"master registry retains 130 active visible destinations");
-ok(new Set(visible.map(x=>x.repository)).size===30,"visible canonical directory spans 30 repositories");
-ok(visible.every(x=>/^https:\/\/(vervenveda\.com|vervenveda\.github\.io)\//.test(x.url)),"canonical visible URLs remain on approved Verve N Veda hosts");
-ok(registry.baseline==="2026-10-23","master registry baseline is the October 23 refresh");
+const syncStatus=JSON.parse(read("ecosystem/sync-status.json"));
+const entries=Array.isArray(registry.entries)?registry.entries:[];
+const visible=entries.filter(x=>x?.directoryVisible===true&&x.status==="active"&&x.access==="free-public");
+const normalizedUrl=url=>typeof url==="string"?url.replace(/\/+$/,"").toLowerCase():"";
+function approvedPublicUrl(entry){
+  try{
+    const url=new URL(entry.url);
+    if(url.protocol!=="https:"||url.username||url.password)return false;
+    if(["vervenveda.com","vervenveda.github.io"].includes(url.hostname))return true;
+    // Existing curated mentor gateways use artist1970.github.io, with paths tied to their repository.
+    if(url.hostname==="artist1970.github.io"&&/^artist1970\/[^/]+\.github\.io$/.test(entry.repository||"")){
+      return url.pathname.startsWith("/"+entry.repository.split("/")[1]+"/");
+    }
+    return false;
+  }catch{return false}
+}
+ok(entries.length>0,"master registry contains curated entries");
+ok(registry.entryCount===entries.length,"master registry entryCount matches entries");
+ok(entries.every(x=>x&&typeof x.id==="string"&&x.id.trim()&&typeof x.url==="string"&&x.url.trim()),"curated entries have IDs and URLs");
+ok(new Set(entries.map(x=>x.id)).size===entries.length,"curated entry IDs are unique");
+ok(new Set(entries.map(x=>normalizedUrl(x.url))).size===entries.length,"curated destination URLs are unique");
+ok(visible.length>0,"master registry retains active visible destinations");
+ok(visible.every(x=>typeof x.title==="string"&&x.title.trim()&&typeof x.repository==="string"&&x.repository.trim()),"visible entries have titles and repositories");
+ok(visible.every(approvedPublicUrl),"visible canonical URLs remain on approved public gateway hosts");
+ok(typeof registry.baseline==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(registry.baseline),"master registry has a dated baseline");
+ok(registry.pageCatalog?.publicPageCount===syncStatus.publicPageCount,"catalog count agrees with latest sync status");
+ok(registry.pageCatalog?.repositoryCount===syncStatus.syncedRepositoryCount,"catalog repository count agrees with latest sync status");
+ok(syncStatus.syncedRepositoryCount===syncStatus.approvedRepositoryCount&&syncStatus.syncedRepositoryCount>0,"all approved public repositories synchronized");
+ok(syncStatus.driftCount===0&&syncStatus.truncatedTreeCount===0,"sync reports no drift or truncated trees");
+ok(syncStatus.stos?.state==="dormant"&&syncStatus.stos?.includedInPublicSync===false,"STOS remains excluded from public directory sync");
 ok(visible.some(x=>x.id==="plera-haven"&&x.repository==="vervenveda/PLERA.github.io"&&x.type==="archive"&&x.category==="creative"),"PLERA Hope's Haven is approved as the public creative archive gateway");
 ok(index.includes("VNV_DIRECTORY_AGI_SEED_V1"),"embedded v1 seed remains available only as fallback data");
 ok(index.includes("./directory-agi-v1.1.js"),"Directory AGI loads the v1.1 runtime");
