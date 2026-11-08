@@ -3970,7 +3970,11 @@
       margin-left:auto!important;
       margin-right:auto!important;
     }
-    .hero .hero-actions{row-gap:7px!important;}
+    /* Give the editorial copy breathing room; keep both button rows a single compact group. */
+    .hero .hero-actions{
+      row-gap:7px!important;
+      margin-top:clamp(22px,3vw,34px)!important;
+    }
     .hero .enrolled-student-entry-row{margin-top:6px!important;}
     .hero .hero-actions .vnv-hero-doorway,
     .hero .enrolled-student-entry-row .enrolled-student-entry{
