@@ -1,6 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Opt-in only: capture early chrome changes before the first page render. -->
+  <script id="vnv-gateway-early-refresh-trace">
+  (()=>{"use strict";
+    if(new URLSearchParams(location.search).get("chrome_audit")!=="1")return;
+    const events=[];const stamp=()=>Math.round(performance.now())+"ms";
+    const names=["networkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","menuOverlay","vnvEnrichedMenuOverlay","vnvEcosystemUtilityDock","vnv-language-rail"];
+    const trace=note=>{events.push(stamp()+" "+note);if(events.length>70)events.shift()};
+    const describe=node=>{
+      if(node.nodeType!==1)return "";
+      if(names.includes(node.id))return node.id;
+      if(node.matches?.(".site-header"))return "site-header";
+      for(const id of names)if(node.querySelector?.("#"+id))return id;
+      if(node.querySelector?.(".site-header"))return "site-header";
+      return "";
+    };
+    const observer=new MutationObserver(records=>{
+      for(const r of records){
+        if(r.type!=="childList")continue;
+        for(const node of r.addedNodes){const name=describe(node);if(name)trace("ADDED "+name)}
+        for(const node of r.removedNodes){const name=describe(node);if(name)trace("REMOVED "+name)}
+      }
+    });
+    observer.observe(document.documentElement,{subtree:true,childList:true});
+    trace("Early observer installed");
+    document.addEventListener("DOMContentLoaded",()=>trace("DOMContentLoaded"),{once:true});
+    window.addEventListener("load",()=>trace("window load"),{once:true});
+    window.addEventListener("pageshow",()=>trace("pageshow"));
+    window.VNVEarlyRefreshTrace=Object.freeze({events:()=>events.slice(),stop:()=>observer.disconnect()});
+  })();
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, community service, and the NAIB intelligence navigation layer.">
