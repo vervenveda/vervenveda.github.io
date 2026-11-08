@@ -48,7 +48,7 @@ function display(){
  }
  output.textContent="Current (no student data):\n"+
  TARGETS.map(([name,find])=>summary(name,find)).join("\n")+
- "\n\nEarly refresh timeline:\n"+(window.VNVEarlyRefreshTrace?.events?.().slice(-24).join("\n")||"Early probe unavailable")+"\n\nLater events:\n"+traces.slice(-16).join("\n");
+ "\n\nBootstrap status (presentation only):\n"+JSON.stringify(window.VNVGatewayBootstrap?.verify?.()||{state:"unavailable"},null,2)+"\n\nEarly refresh timeline:\n"+(window.VNVEarlyRefreshTrace?.events?.().slice(-24).join("\n")||"Early probe unavailable")+"\n\nLater events:\n"+traces.slice(-16).join("\n");
 }
 function record(note){
  if(closed)return;
@@ -89,5 +89,5 @@ window.addEventListener("error",e=>{
  else if(e.message)record("JS ERROR: "+String(e.message).slice(0,140));
 },true);
 window.addEventListener("unhandledrejection",e=>record("PROMISE REJECTION: "+String(e.reason?.message||"unknown").slice(0,130)));
-window.VNVGatewayChromeAudit=Object.freeze({version:"1.3.0",snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
+window.VNVGatewayChromeAudit=Object.freeze({version:"1.4.0",snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
 })();
