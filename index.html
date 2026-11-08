@@ -3910,50 +3910,6 @@
       }
     }
 
-    /* Canonical three-button hero treatment: calm, uniform, and legible. */
-    .hero .hero-actions .vnv-hero-doorway{
-      display:inline-flex!important;
-      align-items:center!important;
-      justify-content:center!important;
-      flex:0 0 auto;
-      width:clamp(128px,12vw,158px)!important;
-      min-width:128px!important;
-      min-height:40px!important;
-      padding:9px 14px!important;
-      border:1px solid #28332f!important;
-      border-radius:7px!important;
-      background:#28332f!important;
-      color:#f4f0e7!important;
-      font-size:16px!important;
-      font-weight:400!important;
-      letter-spacing:.025em!important;
-      line-height:1.25!important;
-      text-align:center!important;
-      text-decoration:none!important;
-      box-shadow:0 2px 7px rgba(20,28,24,.07)!important;
-      white-space:nowrap!important;
-      transition:background .16s ease,transform .16s ease!important;
-    }
-    .hero .hero-actions .vnv-hero-doorway:hover{
-      background:#394a43!important;
-      border-color:#394a43!important;
-      color:#fff!important;
-      transform:translateY(-1px)!important;
-    }
-    .hero .hero-actions .vnv-hero-doorway:focus-visible{
-      outline:3px solid #a88043!important;
-      outline-offset:3px!important;
-    }
-    @media(max-width:560px){
-      .hero .hero-actions .vnv-hero-doorway{
-        width:100%!important;
-        min-width:0!important;
-      }
-    }
-    @media(prefers-reduced-motion:reduce){
-      .hero .hero-actions .vnv-hero-doorway{transition:none!important;}
-      .hero .hero-actions .vnv-hero-doorway:hover{transform:none!important;}
-    }
 </style>
   <style id="vnv-enrolled-account-row-unification-20261108">
     /* Two identical three-column rows, sized to the original compact enrolled buttons. */
@@ -4002,6 +3958,17 @@
       letter-spacing:0!important;
       white-space:nowrap!important;
       text-wrap:nowrap!important;
+    }
+    .hero .hero-actions .vnv-hero-doorway:focus-visible,
+    .hero .enrolled-student-entry-row .enrolled-student-entry:focus-visible{
+      outline:3px solid #b48b45!important;
+      outline-offset:3px!important;
+    }
+    @media(prefers-reduced-motion:reduce){
+      .hero .hero-actions .vnv-hero-doorway,
+      .hero .enrolled-student-entry-row .enrolled-student-entry{transition:none!important;}
+      .hero .hero-actions .vnv-hero-doorway:hover,
+      .hero .enrolled-student-entry-row .enrolled-student-entry:hover{transform:none!important;}
     }
     .hero .hero-actions .vnv-hero-doorway:hover,
     .hero .enrolled-student-entry-row .enrolled-student-entry:hover{
