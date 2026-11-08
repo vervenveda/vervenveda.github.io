@@ -1,0 +1,45 @@
+name: Vervenveda Pre-Migration Integrity Gate
+# Owner-triggered, source-only audit. No repository changes, cloud writes, or deployment.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository source
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Validate audit script syntax
+        run: python3 -m py_compile ecosystem/premigration_integrity.py
+
+      - name: Record read-only source and Mini Cloud contracts
+        id: inspect
+        shell: bash
+        run: |
+          set +e
+          python3 ecosystem/premigration_integrity.py --output-dir premigration-evidence
+          result=$?
+          echo "result=$result" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Save reviewable migration evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vervenveda-premigration-source-evidence
+          path: premigration-evidence/source-integrity-manifest.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Fail on missing critical source or contract
+        if: steps.inspect.outputs.result != '0'
+        run: |
+          echo "::error::Pre-migration integrity gate detected missing critical sources or inconsistent contracts. Inspect the evidence artifact."
+          exit 1
