@@ -6292,7 +6292,21 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
 
 <script src="assets/khaemenes-campus-phrases.js" defer></script>
 <script src="assets/khaemenes-interlingual-core.js" defer></script>
+<!-- Khaemenes Linguistics is the canonical translator resource owner.
+     This is an additive, opt-in resource handoff; gateway local translator is fallback. -->
+<script src="https://vervenveda.com/Khaemenes_Linguistics.github.io/assets/khaemenes-translator-loader.js?v=1.1.1" defer></script>
 <script src="assets/vnv-language.js?v=20261108-cream-buttons" defer></script>
+<script id="vnv-linguistics-canonical-resource-handoff">
+document.addEventListener("DOMContentLoaded",()=>{
+  const loader=window.KhaemenesTranslatorLoader;
+  if(!loader?.ensure)return; // Preserve current gateway translator if Linguistics is unreachable.
+  loader.ensure({full:true,upgradeLegacyCore:true}).then(report=>{
+    if(!report?.canonicalCore||report.records?.some(r=>r.state==="unavailable"||r.state==="skipped-incomplete-resources"))return;
+    document.documentElement.dataset.vnvTranslatorAuthority="linguistics";
+    window.VNVLanguage?.refresh?.();
+  }).catch(()=>{}); // Never block the public gateway or change student storage.
+},{once:true});
+</script>
 
 
 
