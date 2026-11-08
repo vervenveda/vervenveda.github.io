@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 193,
+  "entryCount": 195,
   "entries": [
     {
       "id": "gateway-verve",
@@ -2380,6 +2380,30 @@
       "directoryVisible": true,
       "url": "https://artist1970.github.io/Aurora.github.io/",
       "developmentStatus": "live"
+    },
+    {
+      "id": "higher-life-skills",
+      "title": "Life Skills & Practical Independence",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "path": "life-skills/index.html",
+      "type": "hub",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/index.html"
+    },
+    {
+      "id": "higher-articulation-academy",
+      "title": "Articulation Academy · Thoughtful Communication",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "path": "life-skills/articulation-academy.html",
+      "type": "course",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/articulation-academy.html"
     }
   ],
   "pageCatalog": {
