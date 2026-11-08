@@ -11,9 +11,10 @@ const TARGETS=[
  ["333 ticker",()=>document.getElementById("networkTicker")||document.getElementById("vnv333NetworkTicker")],
  ["Auto ticker",()=>document.getElementById("vnvTickerAutoPopulate")],
  ["VNV header",()=>document.querySelector("header.site-header")||document.getElementById("vnvHeaderAutoPopulate")],
- ["Branched menu",()=>document.getElementById("menuOverlay")||document.getElementById("vnvEnrichedMenuOverlay")]
+ ["Branched menu",()=>document.getElementById("menuOverlay")||document.getElementById("vnvEnrichedMenuOverlay")],
+ ["Universal toolbar",()=>document.getElementById("vnvEcosystemUtilityDock")]
 ];
-const tracked=new Set(["networkTicker","vnv333NetworkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","menuOverlay","vnvEnrichedMenuOverlay"]);
+const tracked=new Set(["networkTicker","vnv333NetworkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","menuOverlay","vnvEnrichedMenuOverlay","vnvEcosystemUtilityDock"]);
 const traces=[];let queued=false,closed=false,panel=null,output=null;
 const when=()=>Math.round(performance.now())+"ms";
 function summary(name,find){
@@ -87,5 +88,5 @@ window.addEventListener("error",e=>{
  else if(e.message)record("JS ERROR: "+String(e.message).slice(0,140));
 },true);
 window.addEventListener("unhandledrejection",e=>record("PROMISE REJECTION: "+String(e.reason?.message||"unknown").slice(0,130)));
-window.VNVGatewayChromeAudit=Object.freeze({version:"1.1.0",snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
+window.VNVGatewayChromeAudit=Object.freeze({version:"1.2.0",snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
 })();
