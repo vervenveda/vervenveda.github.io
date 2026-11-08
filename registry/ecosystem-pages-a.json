@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-08T17:21:17Z",
+  "generatedAt": "2026-11-08T22:22:22Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -44097,6 +44097,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-29/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/lessons/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/weeks/week-29/lessons/day-01.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }
