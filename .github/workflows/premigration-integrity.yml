@@ -17,7 +17,13 @@ jobs:
           persist-credentials: false
 
       - name: Validate audit script syntax
-        run: python3 -m py_compile ecosystem/premigration_integrity.py
+        run: |
+          python3 -m py_compile ecosystem/premigration_integrity.py ecosystem/migration_source_seal.py
+
+      - name: Validate Browser–STOS boundary contract (synthetic negative tests)
+        run: |
+          python3 -m py_compile ecosystem/test_browser_sovereign_authority_contract.py
+          python3 -m unittest discover -s ecosystem -p 'test_browser_sovereign_authority_contract.py' -v
 
       - name: Record read-only source and Mini Cloud contracts
         id: inspect
@@ -29,17 +35,30 @@ jobs:
           echo "result=$result" >> "$GITHUB_OUTPUT"
           exit 0
 
+      - name: Seal tracked source and record STOS compatibility indicators
+        id: seal
+        shell: bash
+        run: |
+          set +e
+          python3 ecosystem/migration_source_seal.py --output-dir "$RUNNER_TEMP/vnv-migration-evidence"
+          result=$?
+          echo "result=$result" >> "$GITHUB_OUTPUT"
+          exit 0
+
       - name: Save reviewable migration evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: vervenveda-premigration-source-evidence
-          path: premigration-evidence/source-integrity-manifest.json
+          path: |
+            premigration-evidence/source-integrity-manifest.json
+            ${{ runner.temp }}/vnv-migration-evidence/tracked-source-seal.json
+            ${{ runner.temp }}/vnv-migration-evidence/stos-compatibility-ledger.json
           if-no-files-found: error
           retention-days: 30
 
       - name: Fail on missing critical source or contract
-        if: steps.inspect.outputs.result != '0'
+        if: steps.inspect.outputs.result != '0' || steps.seal.outputs.result != '0'
         run: |
           echo "::error::Pre-migration integrity gate detected missing critical sources or inconsistent contracts. Inspect the evidence artifact."
           exit 1

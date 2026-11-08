@@ -14,7 +14,7 @@ jobs:
           from pathlib import Path
           import re,json
           U='https://vervenveda.com/assets/vnv-ecosystem-toolbar.js'; TAG=f'<script src="{U}"></script>'
-          SKIP={'.git','.github','node_modules','vendor','admin','internal','private','archive','archives','backup','backups','deprecated'}
+          SKIP={'.git','.github','node_modules','vendor','admin','internal','private','archive','archives','backup','backups','deprecated','stos'}
           P=re.compile(r'(^|/)(quiz|quizzes|exam|exams|assessment|assessments)(/|$)',re.I)
           D=re.compile(r'<!doctype\s+html|<html\b|<body\b',re.I)
           TB=re.compile(r'<script\b[^>]*\bsrc=["\'][^"\']*vnv-ecosystem-toolbar\.js[^"\']*["\'][^>]*>(?:\s*</script>)?',re.I)
@@ -23,6 +23,8 @@ jobs:
           c={'html':0,'eligible':0,'already':0,'changed':0,'protected':0,'internal':0,'fragments':0,'legacyRemoved':0,'duplicatesCollapsed':0}; changed=[]
           for p in sorted(set(Path('.').rglob('*.html'))|set(Path('.').rglob('*.htm'))):
             rel=p.as_posix().lstrip('./'); c['html']+=1
+            # The protected root gateway is never eligible for bulk normalization.
+            if rel == 'index.html':c['protected']+=1;continue
             if {x.lower() for x in p.parts}&SKIP:c['internal']+=1;continue
             try:s=p.read_text(encoding='utf-8')
             except UnicodeDecodeError:continue

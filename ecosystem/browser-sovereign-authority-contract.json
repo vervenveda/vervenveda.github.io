@@ -1,0 +1,117 @@
+{
+  "schema": "vnv-browser-sovereign-boundary-v1",
+  "version": 1,
+  "scope": "migration-evidence-contract-only",
+  "defaultPolicy": "deny",
+  "deploymentStatus": "not-enforced-by-this-file",
+  "browser": {
+    "classification": "untrusted-client",
+    "mayAuthorizePrivilegedOperations": false,
+    "mayProvideVerifiedIdentity": false,
+    "mayRequestApprovedCapabilities": true,
+    "localStorageIdentityIsAuthority": false,
+    "localAdminUnlockIsAuthority": false,
+    "localStorageCanManageLocalPreferences": true
+  },
+  "operationClasses": [
+    {
+      "id": "public-navigation",
+      "client": "allow-local",
+      "protectedAuthority": false
+    },
+    {
+      "id": "public-directory-search",
+      "client": "allow-local",
+      "protectedAuthority": false
+    },
+    {
+      "id": "public-translation",
+      "client": "allow-local",
+      "protectedAuthority": false,
+      "note": "Remote translation requires affirmative consent and sensitive-content controls."
+    },
+    {
+      "id": "local-ui-preferences",
+      "client": "allow-local",
+      "protectedAuthority": false
+    },
+    {
+      "id": "student-route-selection",
+      "client": "navigation-hint-only",
+      "protectedAuthority": true,
+      "note": "Protected learner records require a verified service session and ownership."
+    },
+    {
+      "id": "beta-report-submission",
+      "client": "request-only",
+      "protectedAuthority": true,
+      "note": "Protected delivery/processing must use approved destination and validated data."
+    },
+    {
+      "id": "student-progress-read",
+      "client": "request-only",
+      "protectedAuthority": true
+    },
+    {
+      "id": "student-progress-write",
+      "client": "request-only",
+      "protectedAuthority": true
+    },
+    {
+      "id": "account-record-change",
+      "client": "request-only",
+      "protectedAuthority": true
+    },
+    {
+      "id": "admin-workspace-access",
+      "client": "request-only",
+      "protectedAuthority": true
+    },
+    {
+      "id": "sovereign-storage-mutation",
+      "client": "no-direct-access",
+      "protectedAuthority": true
+    },
+    {
+      "id": "terminal-commissioning",
+      "client": "deny",
+      "protectedAuthority": true
+    }
+  ],
+  "protectedServices": {
+    "requireServerAuthentication": true,
+    "requirePerOperationAuthorization": true,
+    "validateResourceOwnership": true,
+    "rejectBrowserLocalUnlockClaims": true,
+    "rejectUnapprovedServiceEndpoints": true,
+    "auditConsequentialOperations": true,
+    "allowCredentialsInPublicJavascript": false,
+    "requireSeparateNativeExecutionAuthority": true
+  },
+  "serviceEndpoints": {
+    "policy": "approved-service-registry-only",
+    "allowArbitraryBrowserChosenProtectedEndpoints": false,
+    "allowPublicNavigationLinks": true,
+    "productionEndpointsDefinedHere": false
+  },
+  "governance": {
+    "humanFinalApproval": true,
+    "noemaMayPropose": true,
+    "noemaMayExecute": false,
+    "naibMayRequestCapabilities": true,
+    "naibIsProtectedAuthority": false
+  },
+  "stos": {
+    "publicGatewayAuthority": false,
+    "browserCommissioningAllowed": false,
+    "browserVaultAccessAllowed": false,
+    "t01MustRemainUnchanged": true,
+    "t03CommissionedByThisContract": false
+  },
+  "evidence": {
+    "contractIsAuthorization": false,
+    "sourceAuditIsProductionCertification": false,
+    "negativeTestsAreSynthetic": true,
+    "liveAuthenticationAndOwnershipTestsPending": true
+  }
+}
