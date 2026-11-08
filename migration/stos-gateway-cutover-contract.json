@@ -1,0 +1,49 @@
+{
+  "schema": "vnv-stos-gateway-cutover-v1",
+  "status": "HOLD_PREPARATION",
+  "source": {
+    "repository": "vervenveda/vervenveda.github.io",
+    "baselineCommit": "836bdb78769f70b255e5c0bc7773b6f6de61a28d",
+    "eventualVisibility": "private",
+    "editingRetained": true
+  },
+  "publicGateway": {
+    "repository": "KhaemenesAcademy/vervenveda.github.io",
+    "baselineCommit": "9c33d833da151394b533ad52a9de2098cc9ac090",
+    "indexGitBlob": "a883f035329a89e55d526160c54ffdac3c7af2f9",
+    "domain": "vervenveda.com",
+    "currentCnamePresent": false,
+    "assetsSelfContained": false,
+    "verifiedDeployed": false
+  },
+  "stos": {
+    "actualImportLocated": false,
+    "indexHashVerified": false,
+    "inboundPullOperational": false,
+    "privilegedPushFromGitHubAllowed": false,
+    "automaticPromotionEnabled": false,
+    "t01MutationAllowed": false
+  },
+  "sync": {
+    "direction": "github-authored-candidate-to-STOS-authorized-pull",
+    "trust": "default-deny",
+    "onConflict": "hold",
+    "integrity": "commit-and-content-sha256",
+    "requireIndependentNativeAuthorization": true,
+    "requireHumanPromotionApproval": true,
+    "requireReleaseReceipt": true,
+    "requireRollback": true
+  },
+  "cutover": {
+    "domainTransferred": false,
+    "fullSourcePrivatized": false,
+    "oldPublicHostRetired": false,
+    "blockedOn": [
+      "public-assets-and-deep-links",
+      "stos-import-reconciliation",
+      "native-importer-and-auth",
+      "new-pages-and-https",
+      "rollback-and-acceptance"
+    ]
+  }
+}
