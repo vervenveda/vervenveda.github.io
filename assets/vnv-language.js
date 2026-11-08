@@ -328,6 +328,62 @@ body > #vnv-language-switch{
   outline:3px solid #e3c389;
   outline-offset:2px;
 }
+/* Full-width charcoal language band beneath the VNV gateway header. */
+#vnv-language-rail{
+  box-sizing:border-box;
+  width:100%;
+  padding:7px 16px 8px;
+  background:#243038;
+  border-bottom:1px solid #b48b45;
+}
+#vnv-language-rail #vnv-language-switch{
+  display:flex;
+  width:fit-content;
+  max-width:100%;
+  min-height:36px;
+  gap:8px;
+  margin:0 auto;
+  padding:0;
+  border:0;
+  border-radius:7px;
+  box-shadow:none;
+  background:transparent;
+  color:#fff8e9;
+  font-size:16px;
+}
+#vnv-language-rail #vnv-language-switch label{
+  font-size:16px;
+  color:#fff8e9;
+  -webkit-text-fill-color:#fff8e9;
+}
+#vnv-language-rail #vnv-language-select,
+#vnv-language-rail .vnv-translate-complete,
+#vnv-language-rail .vnv-translation-audit{
+  box-sizing:border-box;
+  min-height:36px;
+  height:auto;
+  padding:6px 11px;
+  border:1px solid #b48b45;
+  border-radius:7px;
+  font-size:16px;
+  line-height:1.3;
+  font-weight:400;
+  background:#fff8e9;
+  color:#243038;
+  -webkit-text-fill-color:#243038;
+}
+#vnv-language-rail #vnv-language-switch [data-vnv-coverage]{
+  font-size:13px!important;
+  color:#fff8e9!important;
+  -webkit-text-fill-color:#fff8e9!important;
+}
+@media(max-width:650px){
+  #vnv-language-rail{padding:8px 12px;}
+  #vnv-language-rail #vnv-language-switch{width:100%;justify-content:center;gap:7px;flex-wrap:wrap;}
+  #vnv-language-rail #vnv-language-select,
+  #vnv-language-rail .vnv-translate-complete,
+  #vnv-language-rail .vnv-translation-audit{min-height:38px;}
+}
 html[dir="rtl"] .ecosystem-category-grid,html[dir="rtl"] .quick-grid,html[dir="rtl"] .school-grid{direction:ltr}
 html[dir="rtl"] .ecosystem-category-grid > *,html[dir="rtl"] .quick-grid > *,html[dir="rtl"] .school-grid > *{direction:rtl}
 @media(max-width:480px){#vnv-language-switch{margin:6px auto}#vnv-language-select{min-width:106px}}
@@ -344,7 +400,11 @@ function makeSelector(){
  let target;
  if(document.querySelector(".site-header .header-inner")){
   const main=document.querySelector("main");
-  if(main)main.before(wrap);else document.body.append(wrap);
+  if(main){
+   let rail=document.getElementById("vnv-language-rail");
+   if(!rail){rail=document.createElement("div");rail.id="vnv-language-rail";rail.setAttribute("role","group");rail.setAttribute("aria-label","Page translation tools");main.before(rail)}
+   rail.append(wrap);
+  }else document.body.append(wrap);
   const drawer=document.getElementById("menuDrawer");
   if(drawer){
    const mirror=wrap.cloneNode(true);
