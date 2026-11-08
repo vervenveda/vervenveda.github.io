@@ -4007,6 +4007,56 @@
     }
 
 </style>
+  <style id="vnv-gateway-opening-viewport-contract-20261108">
+    /* The initial screen includes BOTH tickers, the official header and translator.
+       Never allocate a second grid row solely to push Scroll to Explore off screen. */
+    :root{--vnv-gateway-chrome-stack:calc(var(--ticker-height,33px) + var(--vnv-gateway-autoticker-reserve,33px) + var(--header-height,66px) + var(--vnv-gateway-language-reserve,54px));}
+    .hero{
+      min-height:calc(100svh - var(--vnv-gateway-chrome-stack))!important;
+      overflow:visible!important;
+    }
+    .hero .hero-inner{
+      min-height:inherit!important;
+      display:flex!important;
+      flex-direction:column!important;
+      justify-content:center!important;
+      align-items:center!important;
+      gap:0!important;
+      padding:clamp(18px,3.5vh,38px) 0 clamp(14px,2vh,24px)!important;
+    }
+    .hero .hero-stage{
+      align-self:center!important;
+      width:100%!important;
+      gap:clamp(20px,3vh,32px)!important;
+    }
+    .hero .hero-aside{row-gap:0!important;}
+    .hero .hero-actions{margin-top:clamp(52px,5vw,64px)!important;}
+    .hero .scroll-cue{
+      align-self:center!important;
+      margin:clamp(11px,1.8vh,18px) auto 0!important;
+      gap:5px!important;
+      color:#30413d!important;
+      font-size:16px!important;
+      font-weight:400!important;
+      line-height:1.25!important;
+      letter-spacing:.095em!important;
+    }
+    .hero .scroll-cue::after{height:14px!important;}
+    @media(max-height:760px) and (min-width:801px){
+      .hero .hero-inner{padding:14px 0!important;}
+      .hero .hero-stage{gap:clamp(14px,2.5vh,22px)!important;}
+      .hero h1#gatewayTitle{font-size:clamp(54px,6.7vw,84px)!important;}
+      .hero .hero-actions{margin-top:52px!important;}
+      .hero .scroll-cue{margin-top:10px!important;}
+    }
+    @media(max-width:800px){
+      .hero .hero-inner{padding:26px 0 22px!important;}
+      .hero .hero-stage{gap:22px!important;}
+      .hero .hero-actions{margin-top:clamp(32px,5vw,52px)!important;}
+      .hero .scroll-cue{margin-top:13px!important;}
+    }
+    @media(prefers-reduced-motion:reduce){.hero .scroll-cue{scroll-behavior:auto!important;}}
+  </style>
   <style id="vnv-enrolled-account-row-unification-20261108">
     /* Two identical three-column rows, sized to the original compact enrolled buttons. */
     .hero .hero-actions,
@@ -4351,12 +4401,11 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
               <a class="enrolled-student-entry" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/#khaeFamilyParentProfileHero">Enrolled Families Enter Here</a>
               <a class="enrolled-student-entry" href="https://vervenveda.com/Khaemenes_Academy.github.io/adult/">Enrolled Adults Enter Here</a>
             </div>
+            <a class="scroll-cue" href="#directory" aria-label="Scroll to explore the Verve N Veda ecosystem directory">
+              <span>Scroll to Explore</span>
+            </a>
           </div>
         </div>
-
-        <a class="scroll-cue" href="#directory" aria-label="Scroll to explore the Verve N Veda ecosystem directory">
-          <span>Scroll to Explore</span>
-        </a>
       </div>
     </section>
 
