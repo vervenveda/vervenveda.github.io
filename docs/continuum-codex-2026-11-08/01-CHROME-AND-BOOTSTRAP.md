@@ -1,0 +1,1149 @@
+# VNV Continuum Codex · 01 · Canonical chrome and startup
+
+Frozen snapshot of **vervenveda/vervenveda.github.io** on **2026-11-08**. Verbatim source blocks follow; do not run or copy all modules into the same page indiscriminately. The gateway's native `#networkTicker`, `.site-header`, and `#menuOverlay` are the actual homepage implementation, while the shared modules support other pages.
+
+## Native 333 ticker — exact gateway HTML
+
+```html
+<div class="network-ticker" id="networkTicker" data-paused="false" aria-label="333 Network application ticker">
+    <div class="network-ticker-viewport">
+      <div class="network-ticker-track">
+        <div class="network-ticker-set">
+          <span class="network-ticker-label">333 Network</span>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
+          <a class="network-ticker-app" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+          <a class="network-ticker-call" href="#support">Support Free Access</a>
+          <a class="network-ticker-call" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
+        </div>
+        <div class="network-ticker-set" aria-hidden="true">
+          <span class="network-ticker-label">333 Network</span>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
+          <a class="network-ticker-app" tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+          <a class="network-ticker-call" tabindex="-1" href="#support">Support Free Access</a>
+          <a class="network-ticker-call" tabindex="-1" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
+        </div>
+      </div>
+    </div>
+    <button class="ticker-control" id="tickerControl" type="button" aria-pressed="false" aria-label="Pause 333 Network ticker">Ⅱ</button>
+  </div>
+```
+
+## Native official header — exact gateway HTML
+
+```html
+<header class="site-header">
+    <div class="shell header-inner">
+      <div class="brand" aria-label="Verve N Veda Home">
+        <button class="brand-mark admin-brand-button" id="adminEntry" type="button" aria-label="Open local admin shortcut" title="Local admin shortcut" aria-haspopup="dialog" aria-controls="adminGate">V</button>
+        <a class="brand-home" href="#top" aria-label="Verve N Veda home">
+          <span class="brand-copy">
+            <span class="brand-name"></span>
+            <span class="brand-sub"></span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="header-links" aria-label="Page sections">
+        <a href="#directory">Explore</a>
+        <a href="#pillars">Halls</a>
+        <a href="#featured">Matrix</a>
+        <a href="#campaign">Civic</a>
+        <a href="#mission">Promise</a>
+        <a href="#support">Donate</a>
+        <a href="#intelligence">NAIB</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-support" href="#support" aria-label="Support Verve N Veda Free Access">
+          <span>Support Free Access</span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button"
+                aria-expanded="false" aria-controls="menuOverlay"
+                aria-label="Open complete menu">
+          <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+```
+
+## Branched hamburger menu / overlay — exact gateway HTML
+
+```html
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <aside class="drawer" id="menuDrawer" role="dialog" aria-modal="true"
+           aria-labelledby="menuTitle" aria-label="Complete Verve N Veda directory">
+      <div class="drawer-top">
+        <h2 id="menuTitle">Verve N Veda Directory</h2>
+        <button class="close-button" id="closeMenu" type="button" aria-label="Close menu">×</button>
+      </div>
+      <p>Choose a main folder to explore one branch of the ecosystem, or search across every connected public destination.</p>
+      <label class="visually-hidden" for="menuSearch">Search the complete directory</label>
+      <input class="drawer-search" id="menuSearch" type="search"
+             placeholder="Search education, law, weather, art, veterans…"
+             autocomplete="off">
+      <div id="menuContent"></div>
+    </aside>
+  </div>
+```
+
+## Prepaint bootstrap layout CSS
+
+```html
+<style id="vnv-gateway-bootstrap-layout">
+    :root{--vnv-gateway-autoticker-reserve:33px;--vnv-gateway-language-reserve:54px}
+    body > #vnvGatewayAutoTickerSlot{
+      height:var(--vnv-gateway-autoticker-reserve);min-height:var(--vnv-gateway-autoticker-reserve);
+      width:100%;background:#101b2b;box-sizing:border-box;overflow:hidden;
+    }
+    body > #vnv-language-rail{
+      box-sizing:border-box;width:100%;min-height:var(--vnv-gateway-language-reserve);
+      padding:7px 16px 8px;background:#243038;border-bottom:1px solid #b48b45;
+    }
+    body > .site-header{top:calc(var(--ticker-height,33px) + var(--vnv-gateway-autoticker-reserve))!important}
+    @media print{#vnvGatewayAutoTickerSlot{display:none!important}}
+  </style>
+```
+
+## Presentation-only bootstrap controller
+
+```html
+<script id="vnv-gateway-bootstrap-controller">
+  (()=>{"use strict";
+    if(window.VNVGatewayBootstrap)return;
+    const state={ticker:"pending",language:"reserved",toolbar:"pending",faults:[]};
+    const report=(name,reason)=>{state.faults.push(name+": "+reason);if(state.faults.length>12)state.faults.shift()};
+    function mountTicker(){
+      const existing=document.getElementById("vnvTickerAutoPopulate");
+      const slot=document.getElementById("vnvGatewayAutoTickerSlot");
+      if(existing){slot?.remove();state.ticker="existing";return existing}
+      if(state.ticker==="mounting")return null;
+      if(!window.VNV_TICKER?.autoPopulate){state.ticker="unavailable";report("auto ticker","engine unavailable");return null}
+      state.ticker="mounting";
+      try{
+        const ticker=window.VNV_TICKER.autoPopulate({
+          before:".site-header",label:"Verve N Veda · Explore",
+          ariaLabel:"Verve N Veda page links",
+          pauseKey:"VNV_GATEWAY_AUTOTICKER_PAUSED",cleanLegacy:false,
+          exclude:[
+            "#vnvTickerAutoPopulate a","#networkTicker a","[data-vnv-ticker-ignore]",
+            "a[download]",".skip-link",".ticker-control",".vnv-ticker-control",
+            "[aria-label*='logout' i]","[aria-label*='sign out' i]"
+          ]
+        });
+        if(ticker?.isConnected){slot?.remove();state.ticker="mounted";return ticker}
+        // The reserved strip remains in place on failure so the hero doesn't jump.
+        state.ticker="fallback";report("auto ticker","no ticker mounted");return null;
+      }catch(e){state.ticker="fallback";report("auto ticker",String(e?.message||"mount failed").slice(0,100));return null}
+    }
+    function verify(){
+      const native=document.getElementById("networkTicker");
+      const auto=document.getElementById("vnvTickerAutoPopulate");
+      const header=document.querySelector("body > .site-header");
+      const language=document.getElementById("vnv-language-rail");
+      const dock=document.getElementById("vnvEcosystemUtilityDock");
+      state.language=language?.firstElementChild?"mounted":language?"reserved":"missing";
+      state.toolbar=dock?"mounted":"unavailable";
+      const geometry=[native,auto||document.getElementById("vnvGatewayAutoTickerSlot"),header,language]
+        .map(el=>el?Math.round(el.getBoundingClientRect().height):null);
+      const duplicates={
+        native:document.querySelectorAll("#networkTicker").length,
+        auto:document.querySelectorAll("#vnvTickerAutoPopulate").length,
+        header:document.querySelectorAll("body > .site-header").length,
+        rail:document.querySelectorAll("#vnv-language-rail").length,
+        toolbar:document.querySelectorAll("#vnvEcosystemUtilityDock").length
+      };
+      return {version:"1.0.0",ticker:state.ticker,language:state.language,
+        toolbar:state.toolbar,geometry,duplicates,faults:state.faults.slice()};
+    }
+    window.VNVGatewayBootstrap=Object.freeze({version:"1.0.0",mountTicker,verify});
+  })();
+  </script>
+```
+
+## Authorized two-ticker stacking CSS
+
+```html
+<style id="vnv-gateway-dual-ticker-stack">
+  /* Keep the original 333 strip at 0; stack the page-link strip immediately below. */
+  body > #vnvTickerAutoPopulate {
+    top:var(--ticker-height,33px)!important;
+  }
+  body:has(> #vnvTickerAutoPopulate) > .site-header {
+    top:calc(var(--ticker-height,33px) + var(--vnv-autopopulate-ticker-height,33px))!important;
+  }
+</style>
+```
+
+## Reusable canonical 333 ticker engine — complete source
+
+**Ownership:** `assets/vnv-333-ticker.js`. **Gateway exception:** native 333 ticker is already in `index.html`; do not mount this reusable ticker a second time on the gateway.
+
+```javascript
+/* Verve N Veda · canonical 333 Network ecosystem ticker · v1.0.0
+   Shared implementation of the original Verve N Veda gateway ticker.
+   Authorized ticker pair: this ecosystem ticker + vnv-ticker-autopopulate.js only. */
+(()=>{"use strict";
+if(window.VNV333Ticker)return;
+const ROOT="vnv333NetworkTicker",STYLE="vnv333NetworkTickerStyles",PAUSE_KEY="VNV_333_TICKER_PAUSED";
+const H=33;
+const links=[
+ ["HOLLO","https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html","app"],
+ ["KANSEE","https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html","app"],
+ ["E=Ven Mail","https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html","app"],
+ ["Bazaar Art Live","https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html","app"],
+ ["SIte Studio","https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html","app"],
+ ["Bunya","https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html","app"],
+ ["Support Free Access","https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s","call"],
+ ["Open 333 →","https://vervenveda.github.io/333.github.io/","call"]
+];
+function frozenGateway(){
+ const host=String(location.hostname||"").toLowerCase();
+ const path=(String(location.pathname||"/").replace(/\/+$/,"")||"/").toLowerCase();
+ return path==="/"&&(host==="vervenveda.com"||host==="www.vervenveda.com"||host==="vervenveda.github.io");
+}
+function ensureStyle(){
+ if(document.getElementById(STYLE))return;
+ const s=document.createElement("style");s.id=STYLE;s.textContent=`
+:root{--vnv-333-ticker-height:33px}
+#${ROOT}{position:sticky;top:0;z-index:2147481200;height:var(--vnv-333-ticker-height);display:grid;grid-template-columns:minmax(0,1fr) 44px;overflow:hidden;color:#f4ead1;background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);border-bottom:1px solid rgba(255,255,255,.13);box-shadow:0 4px 14px rgba(6,15,27,.15);font-family:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif}
+#${ROOT} .vnv333-viewport{min-width:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%)}
+#${ROOT} .vnv333-track{width:max-content;height:100%;display:flex;align-items:center;white-space:nowrap;animation:vnv333Move 26s linear infinite;will-change:transform}
+#${ROOT}:hover .vnv333-track,#${ROOT}:focus-within .vnv333-track,#${ROOT}[data-paused="true"] .vnv333-track{animation-play-state:paused}
+#${ROOT} .vnv333-set{height:100%;display:flex;align-items:center;gap:24px;padding-inline:11px}
+#${ROOT} .vnv333-label{flex:0 0 auto;color:#e7d7b6;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:11px;font-weight:444;letter-spacing:.25em;text-transform:uppercase}
+#${ROOT} a{min-height:24px;display:inline-flex;align-items:center;gap:7px;flex:0 0 auto;color:#eef3f7!important;text-decoration:none!important;font-size:11px!important;font-weight:444!important;letter-spacing:.1em!important;text-transform:uppercase!important;white-space:nowrap!important}
+#${ROOT} a[data-kind="app"]::before{content:"";width:3px;height:3px;border-radius:50%;background:#b48b45;box-shadow:0 0 0 2px rgba(180,139,69,.13)}
+#${ROOT} a[data-kind="call"]{padding:4px 11px;border:1px solid rgba(231,215,182,.3);border-radius:7px;background:rgba(255,255,255,.05)}
+#${ROOT} a:hover,#${ROOT} a:focus-visible{color:#fff!important;text-decoration:underline!important;text-underline-offset:3px!important}
+#${ROOT} .vnv333-control{width:44px;height:var(--vnv-333-ticker-height);display:grid;place-items:center;padding:0;border:0;border-left:1px solid rgba(255,255,255,.13);border-radius:0;color:#f4ead1;background:rgba(0,0,0,.14);font:400 11px/1 Arial,sans-serif;cursor:pointer}
+#${ROOT} .vnv333-control:hover{background:rgba(255,255,255,.09)}
+#vnvTickerAutoPopulate{top:var(--vnv-333-ticker-height)!important}
+@keyframes vnv333Move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:560px){:root{--vnv-333-ticker-height:32px}#${ROOT}{grid-template-columns:minmax(0,1fr) 36px}#${ROOT} .vnv333-track{animation-duration:24s}#${ROOT} .vnv333-set{gap:18px;padding-inline:9px}#${ROOT} .vnv333-label{font-size:9px}#${ROOT} a{font-size:10px!important}#${ROOT} .vnv333-control{width:36px}}
+@media(prefers-reduced-motion:reduce){#${ROOT} .vnv333-track{animation:none!important;transform:none!important;overflow-x:auto}}
+@media print{#${ROOT}{display:none!important}}
+`;document.head.append(s);
+}
+function makeSet(hidden=false){
+ const set=document.createElement("div");set.className="vnv333-set";if(hidden)set.setAttribute("aria-hidden","true");
+ const label=document.createElement("span");label.className="vnv333-label";label.textContent="333 Network";set.append(label);
+ for(const [text,url,kind] of links){const a=document.createElement("a");a.href=url;a.textContent=text;a.dataset.kind=kind;if(hidden)a.tabIndex=-1;set.append(a)}
+ return set;
+}
+function syncStack(){
+ const local=document.getElementById("vnvTickerAutoPopulate");
+ const total=H+(local?Math.ceil(local.getBoundingClientRect().height||33):0);
+ document.documentElement.style.setProperty("--vnv-ticker-stack-height",total+"px");
+ document.documentElement.style.setProperty("--ticker-height",total+"px");
+}
+function mount(){
+ if(frozenGateway()||!document.body||document.getElementById(ROOT))return;
+ ensureStyle();
+ const ticker=document.createElement("div");ticker.id=ROOT;ticker.dataset.paused="false";ticker.setAttribute("aria-label","333 Network ecosystem ticker");
+ const viewport=document.createElement("div");viewport.className="vnv333-viewport";
+ const track=document.createElement("div");track.className="vnv333-track";track.append(makeSet(false),makeSet(true));viewport.append(track);
+ const button=document.createElement("button");button.className="vnv333-control";button.type="button";
+ let paused=false;try{paused=localStorage.getItem(PAUSE_KEY)==="true"}catch{}
+ const apply=v=>{ticker.dataset.paused=String(v);button.setAttribute("aria-pressed",String(v));button.setAttribute("aria-label",v?"Resume 333 Network ticker":"Pause 333 Network ticker");button.textContent=v?"▶":"Ⅱ";try{localStorage.setItem(PAUSE_KEY,String(v))}catch{}};
+ apply(paused);button.addEventListener("click",()=>apply(ticker.dataset.paused!=="true"));
+ ticker.append(viewport,button);
+ const anchor=document.getElementById("vnvTickerAutoPopulate")||document.querySelector("[data-khae-header],.site-header,header");
+ if(anchor?.parentNode)anchor.parentNode.insertBefore(ticker,anchor);else document.body.prepend(ticker);
+ syncStack();
+ const mo=new MutationObserver(()=>syncStack());mo.observe(document.body,{childList:true,subtree:false});
+ window.addEventListener("resize",syncStack,{passive:true});
+}
+window.VNV333Ticker=Object.freeze({version:"1.0.0",mount});
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
+})();
+```
+
+## AutoPopulate ticker engine — complete source
+
+**Ownership:** `assets/vnv-ticker-autopopulate.js`; the gateway mounts it once via `window.VNVGatewayBootstrap.mountTicker()` after its script has loaded.
+
+```javascript
+/* Verve N Veda · Ticker AutoPopulate · canonical migration engine · v1.0.1
+   Purpose: one discoverable ticker authority per migrated page.
+   Frozen exception: Verve N Veda public gateway root is never modified by this engine. */
+(()=>{"use strict";
+if(window.VNV_TICKER?.autoPopulate)return;
+
+const VERSION="1.0.1";
+const ROOT_ID="vnvTickerAutoPopulate";
+const STYLE_ID="vnvTickerAutoPopulateStyles";
+const PAUSE_KEY="VNV_TICKER_PAUSED";
+const DEFAULT_MAX=14;
+
+function frozenGateway(){
+  const host=String(location.hostname||"").toLowerCase();
+  const path=(String(location.pathname||"/").replace(/\/+$/,"")||"/").toLowerCase();
+  return document.documentElement.dataset.vnvTickerGateway!=="enabled" && path==="/" && (host==="vervenveda.com"||host==="www.vervenveda.com"||host==="vervenveda.github.io");
+}
+function visible(el){
+  if(!el||el.hidden||el.closest("[hidden],[aria-hidden='true'],dialog:not([open])"))return false;
+  const s=getComputedStyle(el);
+  return s.display!=="none"&&s.visibility!=="hidden";
+}
+function textOf(a){
+  return String(a.getAttribute("data-ticker-label")||a.getAttribute("aria-label")||a.textContent||"")
+    .replace(/\s+/g," ").trim();
+}
+function normalizedHref(a){
+  const raw=a.getAttribute("href");
+  if(!raw||/^\s*(?:javascript:|mailto:|tel:)/i.test(raw))return "";
+  try{
+    const u=new URL(raw,location.href);
+    if(!/^https?:$/.test(u.protocol))return "";
+    if(u.href===location.href)return "";
+    return u.href;
+  }catch{return "";}
+}
+function discover(options={}){
+  const explicit=[...document.querySelectorAll("a[data-ticker]")];
+  const selectors=options.selectors||[
+    "header a[href]","nav a[href]","main a[href]",
+    "[class*='card'] a[href]","[class*='portal'] a[href]",
+    "[class*='resource'] a[href]","[class*='course'] a[href]"
+  ];
+  const candidates=explicit.length?explicit:[...document.querySelectorAll(selectors.join(","))];
+  const exclude=options.exclude||[
+    "#"+ROOT_ID+" a","[data-vnv-ticker-ignore]","a[download]",
+    ".skip-link",".ticker-control",".vnv-ticker-control",
+    "[aria-label*='logout' i]","[aria-label*='sign out' i]"
+  ];
+  const seen=new Set(), out=[];
+  for(const a of candidates){
+    if(!visible(a)||exclude.some(sel=>{try{return a.matches(sel)||a.closest(sel)}catch{return false}}))continue;
+    const href=normalizedHref(a), label=textOf(a);
+    if(!href||!label||label.length>54)continue;
+    const key=href;
+    if(seen.has(key))continue;
+    seen.add(key);
+    out.push({label,href});
+    if(out.length>=Number(options.max||document.body?.dataset.vnvTickerMax||DEFAULT_MAX))break;
+  }
+  return out;
+}
+function cleanLegacy(options={}){
+  if(options.cleanLegacy===false)return;
+  const selectors=options.legacySelectors||[
+    "#khaeNetworkTicker",
+    "[data-khaemenes-academy-ticker-root]",
+    ".khae-network-ticker",
+    ".academy-ticker",
+    ".quick-links-ticker",
+    ".site-ticker"
+  ];
+  for(const sel of selectors){
+    document.querySelectorAll(sel).forEach(el=>{if(el.id!==ROOT_ID)el.remove()});
+  }
+}
+function ensureStyle(){
+  if(document.getElementById(STYLE_ID))return;
+  const s=document.createElement("style");
+  s.id=STYLE_ID;
+  s.textContent=`
+:root{--vnv-autopopulate-ticker-height:33px;--khae-ticker-height:var(--vnv-autopopulate-ticker-height)}
+#${ROOT_ID}{position:sticky;top:0;z-index:2147481000;height:var(--vnv-autopopulate-ticker-height);display:grid;grid-template-columns:minmax(0,1fr) 44px;overflow:hidden;color:#f4ead1;background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);border-bottom:1px solid rgba(255,255,255,.13);box-shadow:0 4px 14px rgba(6,15,27,.12);font-family:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif}
+#${ROOT_ID}[data-vnv-ticker-engine="autopopulate"]{isolation:isolate}
+#${ROOT_ID} .vnv-ticker-viewport{min-width:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%)}
+#${ROOT_ID} .vnv-ticker-track{width:max-content;height:100%;display:flex;align-items:center;white-space:nowrap;animation:vnvAutoTickerMove 33s linear infinite;will-change:transform}
+#${ROOT_ID}:hover .vnv-ticker-track,#${ROOT_ID}:focus-within .vnv-ticker-track,#${ROOT_ID}[data-paused="true"] .vnv-ticker-track{animation-play-state:paused}
+#${ROOT_ID} .vnv-ticker-set{height:100%;display:flex;align-items:center;gap:14px;padding-inline:11px}
+#${ROOT_ID} .vnv-ticker-label{color:#ead9b8;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:10px;font-weight:444;letter-spacing:.18em;text-transform:uppercase}
+#${ROOT_ID} a{color:#eef3f6!important;text-decoration:none!important;font-size:10px!important;font-weight:400!important;letter-spacing:.075em!important;text-transform:uppercase!important;white-space:nowrap!important}
+#${ROOT_ID} a::before{content:"·";margin-right:12px;color:rgba(255,255,255,.38)}
+#${ROOT_ID} a:hover,#${ROOT_ID} a:focus-visible{color:#fff!important;text-decoration:underline!important;text-underline-offset:3px!important}
+#${ROOT_ID} .vnv-ticker-control{width:44px;height:var(--vnv-autopopulate-ticker-height);display:grid;place-items:center;padding:0;border:0;border-left:1px solid rgba(255,255,255,.13);border-radius:0;color:#f4ead1;background:rgba(0,0,0,.08);font:400 11px/1 Arial,sans-serif;cursor:pointer}
+#${ROOT_ID} .vnv-ticker-control:hover{background:rgba(255,255,255,.09)}
+@keyframes vnvAutoTickerMove{to{transform:translateX(-33.333333%)}}
+@media(max-width:560px){:root{--vnv-autopopulate-ticker-height:32px;--khae-ticker-height:var(--vnv-autopopulate-ticker-height)}#${ROOT_ID}{grid-template-columns:minmax(0,1fr) 36px}#${ROOT_ID} .vnv-ticker-set{gap:12px;padding-inline:7px}#${ROOT_ID} .vnv-ticker-label,#${ROOT_ID} a{font-size:9px!important}#${ROOT_ID} .vnv-ticker-control{width:36px}}
+@media(prefers-reduced-motion:reduce){#${ROOT_ID} .vnv-ticker-track{animation:none!important;transform:none!important;overflow-x:auto}}
+@media print{#${ROOT_ID}{display:none!important}}`;
+  (document.head||document.documentElement).append(s);
+}
+function defaultLabel(){
+  return document.body?.dataset.vnvTickerLabel ||
+    document.querySelector("h1")?.textContent?.replace(/\s+/g," ").trim().slice(0,38) ||
+    "Quick Links";
+}
+function setBlock(label,links,hidden){
+  const set=document.createElement("div"); set.className="vnv-ticker-set";
+  if(hidden)set.setAttribute("aria-hidden","true");
+  const lab=document.createElement("span");lab.className="vnv-ticker-label";lab.textContent=label;
+  set.append(lab);
+  for(const item of links){
+    const a=document.createElement("a");a.href=item.href;a.textContent=item.label;
+    if(hidden)a.tabIndex=-1;
+    set.append(a);
+  }
+  return set;
+}
+function fillShortSets(viewport,sets,links){
+  if(!viewport||!sets?.length||!links?.length)return;
+  const target=Math.max(0,viewport.clientWidth+160);
+  for(const set of sets){
+    set.querySelectorAll("[data-vnv-ticker-fill]").forEach(node=>node.remove());
+    if(set.scrollWidth>=target)continue;
+    let guard=0,index=0;
+    while(set.scrollWidth<target&&guard<96){
+      const item=links[index%links.length];
+      const a=document.createElement("a");
+      a.href=item.href;
+      a.textContent=item.label;
+      a.tabIndex=-1;
+      a.setAttribute("aria-hidden","true");
+      a.dataset.vnvTickerFill="1";
+      set.append(a);
+      index++;guard++;
+    }
+  }
+}
+function render(links,options={}){
+  if(!links?.length)return null;
+  ensureStyle();
+  document.getElementById(ROOT_ID)?.remove();
+  const ticker=document.createElement("div");
+  ticker.id=ROOT_ID;
+  ticker.dataset.vnvTickerEngine="autopopulate";
+  ticker.dataset.vnvTickerVersion=VERSION;
+  ticker.dataset.paused="false";
+  ticker.setAttribute("aria-label",options.ariaLabel||"Page quick links");
+
+  const viewport=document.createElement("div");viewport.className="vnv-ticker-viewport";
+  const track=document.createElement("div");track.className="vnv-ticker-track";
+  const label=options.label||defaultLabel();
+  const sets=[setBlock(label,links,false),setBlock(label,links,true),setBlock(label,links,true)];
+  track.append(...sets);
+  viewport.append(track);
+
+  const button=document.createElement("button");
+  button.className="vnv-ticker-control";button.type="button";
+  const pauseKey=options.pauseKey||PAUSE_KEY;
+  let paused=false;try{paused=localStorage.getItem(pauseKey)==="true"}catch{}
+  const apply=value=>{
+    ticker.dataset.paused=String(value);
+    button.setAttribute("aria-pressed",String(value));
+    button.setAttribute("aria-label",value?"Resume quick-link ticker":"Pause quick-link ticker");
+    button.textContent=value?"▶":"Ⅱ";
+    try{localStorage.setItem(pauseKey,String(value))}catch{}
+  };
+  apply(paused);button.addEventListener("click",()=>apply(ticker.dataset.paused!=="true"));
+  ticker.append(viewport,button);
+
+  const anchor=document.querySelector(options.before||"[data-khae-header],.site-header,header");
+  if(anchor?.parentNode)anchor.parentNode.insertBefore(ticker,anchor); else document.body.prepend(ticker);
+
+  const refill=()=>fillShortSets(viewport,sets,links);
+  requestAnimationFrame(refill);
+  if(typeof ResizeObserver==="function"){
+    const ro=new ResizeObserver(()=>refill());
+    ro.observe(viewport);
+  }else{
+    window.addEventListener("resize",refill,{passive:true});
+  }
+  return ticker;
+}
+function autoPopulate(options={}){
+  if(frozenGateway()||document.documentElement.dataset.vnvTicker==="off"||document.body?.dataset.vnvTicker==="off")return null;
+  cleanLegacy(options);
+  const links=Array.isArray(options.links)&&options.links.length?options.links:discover(options);
+  return render(links,options);
+}
+
+window.VNV_TICKER=Object.freeze({version:VERSION,autoPopulate,discover});
+})();
+```
+
+## Universal page header and enriched branched menu engine — complete source
+
+**Ownership:** `assets/vnv-header-autopopulate.js`. This engine contains the header and enriched-menu implementation used on migrated pages. The root gateway preserves its native header and overlay.
+
+```javascript
+/* Verve N Veda · Header AutoPopulate · canonical idempotent header engine · v2.1.0
+   Purpose: one simple page-identity header per migrated public page.
+   Ticker systems remain separate: this file never mounts, removes, or styles tickers. */
+(()=>{"use strict";
+if(window.VNV_HEADER?.mount)return;
+
+const VERSION="2.1.0";
+const ROOT_ID="vnvHeaderAutoPopulate";
+const STYLE_ID="vnvHeaderAutoPopulateStyles";
+const PANEL_ID="vnvHeaderMenu";
+const HOME="https://vervenveda.com/";
+
+function cleanText(value){
+  return String(value||"").replace(/\s+/g," ").trim();
+}
+function pageTitle(options={}){
+  const explicit=cleanText(options.title||document.body?.dataset.vnvHeaderTitle);
+  if(explicit)return explicit;
+  const h1=[...document.querySelectorAll("main h1,h1")].find(el=>!el.closest("#"+ROOT_ID));
+  const fromH1=cleanText(h1?.textContent);
+  if(fromH1)return fromH1.slice(0,90);
+  const og=cleanText(document.querySelector('meta[property="og:title"]')?.content);
+  if(og)return og.split(/\s[|·—–]\s/)[0].trim().slice(0,90);
+  const doc=cleanText(document.title);
+  if(doc)return doc.split(/\s[|·—–]\s/)[0].trim().slice(0,90);
+  return "Verve N Veda";
+}
+function pageSubtitle(options={}){
+  const explicit=cleanText(options.subtitle||document.body?.dataset.vnvHeaderSubtitle);
+  if(explicit)return explicit;
+  const legacy=cleanText(
+    document.querySelector("[data-khae-brand-sub]")?.textContent ||
+    document.querySelector(".page-subtitle,.hero-subtitle,.brand-sub,.brand-copy small")?.textContent
+  );
+  if(legacy)return legacy.slice(0,90);
+  const meta=cleanText(document.querySelector('meta[name="description"]')?.content);
+  return meta && meta.length<=90 ? meta : "";
+}
+function initials(title){
+  const words=cleanText(title).replace(/[^A-Za-z0-9 ]+/g," ").split(/\s+/).filter(Boolean);
+  if(!words.length)return "V";
+  if(words.length===1)return words[0].slice(0,3).toUpperCase();
+  return words.slice(0,3).map(word=>word[0]).join("").toUpperCase();
+}
+function iconSource(options={}){
+  const explicit=cleanText(options.logo||document.body?.dataset.vnvHeaderLogo);
+  if(explicit)return explicit;
+  const meta=cleanText(document.querySelector('meta[name="vnv-header-logo"]')?.content);
+  if(meta)return meta;
+  const legacyImg=document.querySelector("[data-khae-brand-mark] img,.brand-mark img,.seal img,.logo img,header img[src]");
+  const legacySrc=cleanText(legacyImg?.currentSrc||legacyImg?.src);
+  if(legacySrc)return legacySrc;
+  const icon=document.querySelector('link[rel="apple-touch-icon"][href],link[rel~="icon"][href]');
+  return cleanText(icon?.href);
+}
+function iconText(options={},title=""){
+  const explicit=cleanText(options.icon||document.body?.dataset.vnvHeaderIcon);
+  if(explicit)return explicit;
+  const legacy=cleanText(
+    document.querySelector("[data-khae-brand-mark]")?.textContent ||
+    document.querySelector(".brand-mark,.seal")?.textContent
+  );
+  if(legacy && legacy.length<=5)return legacy;
+  return initials(title);
+}
+function homeHref(options={}){
+  return cleanText(options.home||document.body?.dataset.vnvHeaderHome)||location.href;
+}
+function captureActions(options={}){
+  if(Array.isArray(options.actions)){
+    return options.actions.map(item=>({label:cleanText(item.label),href:item.href})).filter(item=>item.label&&item.href).slice(0,5);
+  }
+  const selectors=options.actionSelectors||["[data-khae-nav] a[href]","[data-khae-actions] a[href]",".header-links a[href]",".head-actions a[href]"];
+  const out=[],seen=new Set();
+  for(const selector of selectors){
+    document.querySelectorAll(selector).forEach(a=>{
+      const label=cleanText(a.textContent),href=a.getAttribute("href");
+      if(!label||!href)return;
+      const key=label+"|"+href;
+      if(seen.has(key))return;
+      seen.add(key);out.push({label,href});
+    });
+  }
+  return out.slice(0,5);
+}
+function createActions(actions){
+  const nav=document.createElement("nav");
+  nav.className="vnv-header-actions";
+  nav.setAttribute("aria-label","Page shortcuts");
+  for(const item of actions){
+    const a=document.createElement("a");
+    a.href=item.href;
+    a.textContent=item.label;
+    nav.append(a);
+  }
+  return nav;
+}
+function ensureStyle(){
+  if(document.getElementById(STYLE_ID))return;
+  const s=document.createElement("style");
+  s.id=STYLE_ID;
+  s.textContent=`
+:root{--vnv-header-height:66px;--vnv-header-top:0px}
+#${ROOT_ID}{position:sticky;top:var(--vnv-header-top);z-index:2147480000;min-height:var(--vnv-header-height);height:auto;box-sizing:border-box;border-bottom:1px solid rgba(18,23,19,.14);background:rgba(244,240,231,.97);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);font-family:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;color:#080b0f}
+#${ROOT_ID} .vnv-header-inner{min-height:var(--vnv-header-height);height:auto;display:grid;grid-template-columns:minmax(220px,1fr) auto minmax(44px,1fr);align-items:center;gap:14px;padding:0 11px}
+#${ROOT_ID} .vnv-header-home{min-width:0;width:max-content;max-width:100%;display:flex;align-items:center;gap:11px;color:inherit!important;text-decoration:none!important;text-align:left}
+#${ROOT_ID} .vnv-header-logo{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;overflow:hidden;border:1px solid #080b0f;border-radius:7px;color:#fff;background:#080b0f;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:12px;font-weight:400;letter-spacing:.04em;line-height:1}
+#${ROOT_ID} .vnv-header-logo img{width:100%;height:100%;object-fit:cover;display:block}
+#${ROOT_ID} .vnv-header-copy{min-width:0;max-width:min(42vw,520px);display:grid;gap:3px;align-content:center}
+#${ROOT_ID} .vnv-header-title{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;word-break:normal;font-family:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:16px;font-weight:400;letter-spacing:clamp(.025em,.06vw,.055em);line-height:1.08}
+#${ROOT_ID} .vnv-header-subtitle{min-width:0;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;color:#30413d;font-size:16px;font-weight:400;letter-spacing:.045em;line-height:1.15}
+#${ROOT_ID} .vnv-header-actions{min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap}
+#${ROOT_ID} .vnv-header-actions a{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid rgba(18,23,19,.16);border-radius:7px;color:var(--vnv-header-action-text,#30413d)!important;background:rgba(255,255,255,.5);text-decoration:none!important;font-size:16px;font-weight:400;letter-spacing:.055em;text-transform:uppercase;white-space:nowrap}
+#${ROOT_ID} .vnv-header-actions a:hover,#${ROOT_ID} .vnv-header-actions a:focus-visible{color:#080b0f!important;background:#fff;border-color:#b48b45}
+#${ROOT_ID} .vnv-header-menu-button{justify-self:end;width:40px;height:40px;display:grid;place-items:center;padding:0;border:1px solid #202724!important;border-radius:7px;color:#fff8e9!important;background:#202724!important;cursor:pointer}
+#${ROOT_ID} .vnv-header-lines,#${ROOT_ID} .vnv-header-lines::before,#${ROOT_ID} .vnv-header-lines::after{content:"";display:block;width:14px;height:1.5px;border-radius:7px;background:#fff8e9!important;transition:.18s}
+#${ROOT_ID} .vnv-header-lines{position:relative}
+#${ROOT_ID} .vnv-header-lines::before,#${ROOT_ID} .vnv-header-lines::after{position:absolute;left:0}
+#${ROOT_ID} .vnv-header-lines::before{top:-6px}
+#${ROOT_ID} .vnv-header-lines::after{top:6px}
+#${ROOT_ID} .vnv-header-menu-button[aria-expanded="true"] .vnv-header-lines{background:transparent!important}
+#${ROOT_ID} .vnv-header-menu-button[aria-expanded="true"] .vnv-header-lines::before{transform:translateY(6px) rotate(45deg)}
+#${ROOT_ID} .vnv-header-menu-button[aria-expanded="true"] .vnv-header-lines::after{transform:translateY(-6px) rotate(-45deg)}
+#${PANEL_ID}{position:fixed;inset:0;z-index:2147483000;display:grid;justify-items:end;visibility:hidden;opacity:0;background:rgba(6,15,12,.56);transition:opacity .18s ease,visibility .18s ease}
+#${PANEL_ID}[data-open="true"]{visibility:visible;opacity:1}
+#${PANEL_ID} .vnv-header-menu-panel{width:min(92vw,390px);height:100%;box-sizing:border-box;overflow:auto;padding:18px;background:#fbf9f4;box-shadow:-18px 0 48px rgba(8,11,15,.18);transform:translateX(100%);transition:transform .2s ease}
+#${PANEL_ID}[data-open="true"] .vnv-header-menu-panel{transform:none}
+#${PANEL_ID} .vnv-header-menu-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid rgba(18,23,19,.14)}
+#${PANEL_ID} .vnv-header-menu-top strong{font-family:Cinzel,Aboreto,Georgia,serif;font-size:16px;font-weight:400;letter-spacing:.05em}
+#${PANEL_ID} .vnv-header-menu-close{width:36px;height:36px;display:grid;place-items:center;padding:0;border:1px solid rgba(18,23,19,.25);border-radius:7px;background:#fff;color:#080b0f;font-size:20px;cursor:pointer}
+#${PANEL_ID} .vnv-header-menu-list{display:grid;gap:7px;margin-top:14px}
+#${PANEL_ID} .vnv-header-menu-list a{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid rgba(18,23,19,.14);border-radius:7px;color:#080b0f!important;background:#fff;text-decoration:none!important;font-size:16px;font-weight:400}
+#${PANEL_ID} .vnv-header-menu-list a:hover,#${PANEL_ID} .vnv-header-menu-list a:focus-visible{border-color:#b48b45;background:#f4f0e7}
+#${PANEL_ID} .vnv-header-menu-list a::after{content:"›";color:#b48b45;font-size:18px}
+@media(max-width:860px){#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 44px}#${ROOT_ID} .vnv-header-actions{display:none}}
+@media(max-width:560px){:root{--vnv-header-height:64px}#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 40px;padding:0 7px}#${ROOT_ID} .vnv-header-logo{width:38px;height:38px;flex-basis:38px}#${ROOT_ID} .vnv-header-title{font-size:16px}#${ROOT_ID} .vnv-header-subtitle{display:none}}
+@media print{#${ROOT_ID},#${PANEL_ID}{display:none!important}}
+`;
+  (document.head||document.documentElement).append(s);
+}
+function parseRgb(value){
+  const m=String(value||"").match(/rgba?\\(\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)(?:\\s*,\\s*(\\d+(?:\\.\\d+)?))?\\s*\\)/i);
+  if(!m)return null;
+  return {r:Number(m[1]),g:Number(m[2]),b:Number(m[3]),a:m[4]===undefined?1:Number(m[4])};
+}
+function resolvedBackground(el){
+  let node=el;
+  while(node&&node!==document.documentElement){
+    const bg=parseRgb(getComputedStyle(node).backgroundColor);
+    if(bg&&bg.a>0.05)return bg;
+    node=node.parentElement;
+  }
+  return {r:244,g:240,b:231,a:1};
+}
+function relativeLuminance({r,g,b}){
+  const channel=v=>{
+    v/=255;
+    return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4);
+  };
+  return 0.2126*channel(r)+0.7152*channel(g)+0.0722*channel(b);
+}
+function bestContrastText(bg){
+  const L=relativeLuminance(bg);
+  const dark=0.02;
+  const light=0.96;
+  const darkRatio=(L+0.05)/(dark+0.05);
+  const lightRatio=(light+0.05)/(L+0.05);
+  return lightRatio>darkRatio?"#fffdf8":"#080b0f";
+}
+function applyAutoContrast(root=document){
+  const selectors=[
+    "#"+ROOT_ID+" .vnv-header-title",
+    "#"+ROOT_ID+" .vnv-header-subtitle",
+    "#"+ROOT_ID+" .vnv-header-actions a",
+    "#"+ROOT_ID+" .vnv-header-menu-button",
+    "#"+PANEL_ID+" .vnv-header-menu-top",
+    "#"+PANEL_ID+" .vnv-header-menu-top *",
+    "#"+PANEL_ID+" .vnv-header-menu-kicker",
+    "#"+PANEL_ID+" .vnv-header-menu-search",
+    "#"+PANEL_ID+" .menu-branch-button",
+    "#"+PANEL_ID+" .menu-branch-button *",
+    "#"+PANEL_ID+" .menu-branch-back",
+    "#"+PANEL_ID+" .menu-branch-title",
+    "#"+PANEL_ID+" .menu-subgroup-title",
+    "#"+PANEL_ID+" .menu-group",
+    "#"+PANEL_ID+" .menu-link",
+    "#"+PANEL_ID+" .menu-link *",
+    "#"+PANEL_ID+" p",
+    "#"+PANEL_ID+" small",
+    "#"+PANEL_ID+" span",
+    "#"+PANEL_ID+" strong"
+  ];
+  for(const selector of selectors){
+    root.querySelectorAll(selector).forEach(el=>{
+      const color=bestContrastText(resolvedBackground(el));
+      el.style.setProperty("color",color,"important");
+      el.style.setProperty("-webkit-text-fill-color",color,"important");
+      el.style.setProperty("opacity","1","important");
+    });
+  }
+}
+function scheduleAutoContrast(){
+  requestAnimationFrame(()=>applyAutoContrast(document));
+}
+function currentTickerHeight(){
+  const ids=["vnv333NetworkTicker","vnvTickerAutoPopulate"];
+  let total=0;
+  for(const id of ids){
+    const el=document.getElementById(id);
+    if(el && getComputedStyle(el).display!=="none")total+=Math.ceil(el.getBoundingClientRect().height||0);
+  }
+  return total;
+}
+function syncTop(){
+  document.documentElement.style.setProperty("--vnv-header-top",currentTickerHeight()+"px");
+}
+function legacyCandidates(options={}){
+  if(Array.isArray(options.legacySelectors))return options.legacySelectors;
+  return [
+    "[data-vnv-header-legacy]",
+    "header.site-header",
+    "header[data-khae-header]",
+    "body > header:first-of-type"
+  ];
+}
+function removeLegacy(options={}){
+  if(options.replaceLegacy!==true && document.body?.dataset.vnvHeaderReplace!=="true")return;
+  for(const sel of legacyCandidates(options)){
+    try{
+      document.querySelectorAll(sel).forEach(el=>{if(el.id!==ROOT_ID)el.remove()});
+    }catch{}
+  }
+}
+function createLogo(root,title,options={}){
+  const box=document.createElement("span");
+  box.className="vnv-header-logo";
+  const src=iconSource(options);
+  if(src){
+    const img=document.createElement("img");
+    img.src=src;
+    img.alt="";
+    img.addEventListener("error",()=>{
+      img.remove();
+      box.textContent=iconText(options,title);
+    },{once:true});
+    box.append(img);
+  }else{
+    box.textContent=iconText(options,title);
+  }
+  return box;
+}
+function update(root,options={}){
+  if(!root)return null;
+  const title=pageTitle(options);
+  const subtitle=pageSubtitle(options);
+  const titleEl=root.querySelector(".vnv-header-title");
+  const subtitleEl=root.querySelector(".vnv-header-subtitle");
+  if(titleEl)titleEl.textContent=title;
+  if(subtitleEl){
+    subtitleEl.textContent=subtitle;
+    subtitleEl.hidden=!subtitle;
+  }
+  const home=root.querySelector(".vnv-header-home");
+  if(home)home.href=homeHref(options);
+  const oldLogo=root.querySelector(".vnv-header-logo");
+  oldLogo?.replaceWith(createLogo(root,title,options));
+  root.dataset.vnvHeaderVersion=VERSION;
+  syncTop();
+  scheduleAutoContrast();
+  return root;
+}
+function mount(options={}){
+  if(!document.body)return null;
+  ensureStyle();
+  const existing=document.getElementById(ROOT_ID);
+  if(existing)return update(existing,options);
+
+  const actions=captureActions(options);
+
+  removeLegacy(options);
+
+  const root=document.createElement("header");
+  root.id=ROOT_ID;
+  root.dataset.vnvHeaderEngine="autopopulate";
+  root.dataset.vnvHeaderVersion=VERSION;
+  root.setAttribute("aria-label","Page identity and ecosystem menu");
+
+  const inner=document.createElement("div");
+  inner.className="vnv-header-inner";
+
+  const home=document.createElement("a");
+  home.className="vnv-header-home";
+  home.href=homeHref(options);
+  home.setAttribute("aria-label","Page home");
+
+  const title=pageTitle(options);
+  home.append(createLogo(root,title,options));
+
+  const copy=document.createElement("span");
+  copy.className="vnv-header-copy";
+  const titleEl=document.createElement("span");
+  titleEl.className="vnv-header-title";
+  titleEl.textContent=title;
+  const sub=document.createElement("span");
+  sub.className="vnv-header-subtitle";
+  const subtitle=pageSubtitle(options);
+  sub.textContent=subtitle;
+  sub.hidden=!subtitle;
+  copy.append(titleEl,sub);
+  home.append(copy);
+
+  const actionNav=createActions(actions);
+
+  const button=document.createElement("button");
+  button.className="vnv-header-menu-button";
+  button.type="button";
+  button.setAttribute("aria-expanded","false");
+  button.setAttribute("aria-controls","vnvEnrichedMenuOverlay");
+  button.setAttribute("aria-label","Open Verve N Veda menu");
+  const lines=document.createElement("span");
+  lines.className="vnv-header-lines";
+  lines.setAttribute("aria-hidden","true");
+  button.append(lines);
+  button.dataset.vnvEnrichedTrigger="true";
+  button.addEventListener("click",()=>window.VNV_ENRICHED_MENU?.open());
+
+  inner.append(home,actionNav,button);
+  root.append(inner);
+
+  const anchor=document.getElementById("vnvTickerAutoPopulate")||document.getElementById("vnv333NetworkTicker");
+  if(anchor){
+    const parent=anchor.parentNode;
+    let after=anchor;
+    const second=document.getElementById("vnvTickerAutoPopulate");
+    if(second && second.parentNode===parent)after=second;
+    parent.insertBefore(root,after.nextSibling);
+  }else{
+    document.body.prepend(root);
+  }
+
+  window.VNV_ENRICHED_MENU?.mount({noButton:true});
+  syncTop();
+  if(typeof ResizeObserver==="function"){
+    const ro=new ResizeObserver(syncTop);
+    ["vnv333NetworkTicker","vnvTickerAutoPopulate"].forEach(id=>{const el=document.getElementById(id);if(el)ro.observe(el)});
+  }
+  window.addEventListener("resize",()=>{syncTop();scheduleAutoContrast()},{passive:true});
+  scheduleAutoContrast();
+  return root;
+}
+
+window.VNV_HEADER=Object.freeze({version:VERSION,mount,update});
+})();
+
+/* Verve N Veda · Enriched Branched Ecosystem Menu · canonical shared menu · v1.0.0
+   One menu authority for migrated headers. Folder-first, registry-backed, searchable. */
+(()=>{"use strict";
+if(window.VNV_ENRICHED_MENU?.mount)return;
+
+const VERSION="1.0.0";
+const IDS=Object.freeze({
+  button:"vnvEnrichedMenuButton",
+  overlay:"vnvEnrichedMenuOverlay",
+  drawer:"vnvEnrichedMenuDrawer",
+  search:"vnvEnrichedMenuSearch",
+  content:"vnvEnrichedMenuContent",
+  style:"vnvEnrichedMenuStyles"
+});
+const HOME="https://vervenveda.com/";
+/* The enriched menu has a separate lexical scope from VNV_HEADER.
+   Its own contrast scheduler updates menu controls only, once per frame. */
+let menuContrastPending=false;
+function scheduleAutoContrast(){
+ if(menuContrastPending)return;
+ menuContrastPending=true;
+ requestAnimationFrame(()=>{
+  menuContrastPending=false;
+  const root=document.getElementById(IDS.overlay);
+  if(!root)return;
+  function rgba(value){
+   if(!value||!value.startsWith("rgb"))return null;
+   const numbers=value.match(/[0-9.]+/g);
+   if(!numbers||numbers.length<3)return null;
+   const vals=numbers.map(Number);
+   if(vals.length>3&&vals[3]<0.98)return null;
+   return vals.slice(0,3);
+  }
+  function luminance(rgb){
+   const channels=rgb.map(n=>{
+    const v=n/255;
+    return v<=0.04045?v/12.92:Math.pow((v+0.055)/1.055,2.4);
+   });
+   return channels[0]*0.2126+channels[1]*0.7152+channels[2]*0.0722;
+  }
+  const dark="#243038",cream="#fff8e9";
+  const ld=luminance([36,48,56]),lc=luminance([255,248,233]);
+  const contrast=(a,b)=>(Math.max(a,b)+0.05)/(Math.min(a,b)+0.05);
+  for(const item of root.querySelectorAll("button,a,input")){
+   let bg=null;
+   for(let n=item;n&&n!==document.body;n=n.parentElement){
+    const found=rgba(getComputedStyle(n).backgroundColor);
+    if(found){bg=luminance(found);break}
+   }
+   if(bg===null)continue;
+   const color=contrast(ld,bg)>=contrast(lc,bg)?dark:cream;
+   item.style.setProperty("color",color,"important");
+   item.style.setProperty("-webkit-text-fill-color",color,"important");
+   for(const child of item.querySelectorAll("strong,small,span")){
+    if(child.classList.contains("vnv-menu-arrow"))continue;
+    child.style.setProperty("color",color,"important");
+    child.style.setProperty("-webkit-text-fill-color",color,"important");
+   }
+  }
+ });
+}
+const REGISTRY=HOME+"ecosystem/master-ecosystem-directory.json";
+const CATALOG_FALLBACK=[
+  HOME+"registry/ecosystem-pages-2026-10-14-a.json",
+  HOME+"registry/ecosystem-pages-2026-10-14-b.json",
+  HOME+"registry/ecosystem-pages-2026-10-14-c.json",
+  HOME+"registry/ecosystem-pages-2026-10-14-d.json",
+  HOME+"registry/ecosystem-pages-2026-10-14-e.json",
+  HOME+"registry/ecosystem-pages-2026-10-14-f.json",
+  HOME+"registry/ecosystem-pages-2026-10-14-g.json"
+];
+const BRANCHES=Object.freeze([
+ {id:"home",label:"Verve N Veda Home",desc:"Main gateway, ecosystem search, and network entry points.",special:"home"},
+ {id:"academy",label:"Khaemenes Academy",desc:"Schools, courses, learning portals, assessments, and academic tools.",categories:["education"]},
+ {id:"professional",label:"Professional",desc:"Professional studios, practical tools, resources, and workspaces.",categories:["professional"]},
+ {id:"creative",label:"Creative",desc:"Art, music, studios, creative tools, galleries, and games.",categories:["creative","games"]},
+ {id:"communication",label:"Communication",desc:"Networks, mail, meetings, publishing, and connected communication tools.",categories:["communication"],titles:["333 Network"]},
+ {id:"citizen",label:"Citizen Resources",desc:"Health, finance, weather, Earth, legal, veteran, research, and practical public resources.",categories:["health","finance","weather","environmental","research"],titles:["Firmament Law","Veterans"]},
+ {id:"civic",label:"Civic and Political",desc:"Civic learning, public policy, elections, diplomacy, campaigns, and news.",categories:["civic","diplomacy","news"],titles:["One Nation for All","Jennifer Pearl 2028 · GitHub","Jennifer Pearl 2028 · Campaign Home"]},
+ {id:"ai",label:"AI Mentors",desc:"NAIB and the ecosystem's registered mentors, guides, and AI learning companions.",special:"mentors",titles:["NAIB"]}
+]);
+
+const ACADEMY_REPOSITORIES=Object.freeze([
+ {id:"preschool",label:"PreK / Crèche",desc:"Preschool, Crèche, early learning, family and teacher resources.",root:"https://vervenveda.com/Khaemenes_Preschool.github.io/",patterns:["khaemenes_preschool.github.io","khaemenes preschool","crèche","creche"]},
+ {id:"kindergarten",label:"Kindergarten",desc:"Kindergarten profile, lessons, curriculum, games and family tools.",root:"https://vervenveda.com/Khaemenes_KinderGarden.github.io/",patterns:["khaemenes_kindergarden.github.io","khaemenes kinder garden","kindergarten"]},
+ {id:"elementary",label:"Elementary",desc:"Grades 1–5 learning, student profile, curriculum and resources.",root:"https://vervenveda.com/Khaemenes_Elementary.github.io/",patterns:["khaemenes_elementary.github.io","khaemenes elementary"]},
+ {id:"middle",label:"Middle School",desc:"Grades 6–8 pathways, lessons, basecamp and resources.",root:"https://vervenveda.com/Khaemenes_Middle.github.io/",patterns:["khaemenes_middle.github.io","middle school"]},
+ {id:"high",label:"High School",desc:"High-school portals, departments, courses, profiles and resources.",root:"https://vervenveda.com/Khaemenes_High.github.io/",patterns:["khaemenes_high.github.io","high school"]},
+ {id:"higher",label:"Higher Learning",desc:"Collegiate, advanced, research, career and university pathways.",root:"https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",patterns:["khaemenes_higher_learning.github.io","higher learning"]},
+ {id:"linguistics",label:"Linguistics",desc:"Languages, halls, courses, readers and linguistic tools.",root:"https://vervenveda.com/Khaemenes_Linguistics.github.io/",patterns:["khaemenes_linguistics.github.io","linguistics"]},
+ {id:"life-skills",label:"Life Skills",desc:"Practical independence, wellness, health and daily-life learning.",root:"https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/",patterns:["khaemenes_academy_life_skills.github.io","life skills"]},
+ {id:"proresources",label:"ProReSources / Tools",desc:"Professional and practical tools available across the Academy ecosystem.",root:"https://vervenveda.github.io/proresource_hub.github.io/ProReSources_updated_index.html",patterns:["proresource_hub.github.io","proresources"]},
+ {id:"arcade",label:"Arcade / Games",desc:"Learning games, practice environments and playful study tools.",root:"https://vervenveda.github.io/arcade.github.io/",patterns:["arcade.github.io","arcade"]}
+]);
+const ACADEMY_FOLDERS=Object.freeze([
+ {id:"profile",label:"Profile",desc:"Student profiles, accounts, dashboards and learner identity.",match:/profile|account|dashboard|learner|student[-_ ]?portal/i},
+ {id:"lessons",label:"Lessons",desc:"Lessons, units, weeks, curriculum and daily learning.",match:/lesson|week|unit|curriculum|daily|roadmap/i},
+ {id:"courses",label:"Courses",desc:"Courses, subjects, departments, halls and academic pathways.",match:/course|subject|department|hall|class|101|102|201|202/i},
+ {id:"games",label:"Games",desc:"Games, play, practice and interactive learning.",match:/game|play|arcade|practice|lab/i},
+ {id:"family",label:"Family / Parent",desc:"Family portals, parent resources, enrollment and evidence.",match:/family|parent|enroll|guardian|homeschool|transcript|diploma/i},
+ {id:"teacher",label:"Teacher",desc:"Teacher tools, administration, rubrics and instructional resources.",match:/teacher|admin|rubric|instructor|faculty/i},
+ {id:"resources",label:"Resources",desc:"Libraries, readers, reference tools, support and general resources.",match:/resource|library|reader|reading|reference|support|tool|guide|directory|search/i}
+]);
+let academyRepositoryId="";
+let academyFolderId="";
+let entries=[],catalog=[],catalogParts=[],activeBranch="",lastFocus=null,previousOverflow="";
+const esc=v=>String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+function safeUrl(value){try{const u=new URL(value,location.href);return /^https?:$/.test(u.protocol)?u.href:""}catch{return""}}
+function initials(title){const w=String(title||"").replace(/[^A-Za-z0-9 ]+/g," ").trim().split(/\s+/).filter(Boolean);return !w.length?"V":w.length===1?w[0].slice(0,3).toUpperCase():w.slice(0,3).map(x=>x[0]).join("").toUpperCase()}
+
+function installStyle(){
+ if(document.getElementById(IDS.style))return;
+ const s=document.createElement("style");s.id=IDS.style;s.textContent=`
+#${IDS.button}{width:44px;height:44px;min-height:44px;display:grid;place-items:center;padding:0;border:1px solid #202724!important;border-radius:7px;color:#fff8e9!important;background:#202724!important;cursor:pointer}
+#${IDS.button}:hover,#${IDS.button}:focus-visible{background:#344148!important;color:#fff8e9!important;outline:2px solid #b48b45;outline-offset:2px}
+#${IDS.button} .vnv-menu-lines,#${IDS.button} .vnv-menu-lines::before,#${IDS.button} .vnv-menu-lines::after{content:"";display:block;width:14px;height:1.5px;border-radius:7px;background:#fff8e9!important}
+#${IDS.button} .vnv-menu-lines{position:relative}
+#${IDS.button} .vnv-menu-lines::before,#${IDS.button} .vnv-menu-lines::after{position:absolute;left:0}
+#${IDS.button} .vnv-menu-lines::before{top:-6px}#${IDS.button} .vnv-menu-lines::after{top:6px}
+#${IDS.overlay}{position:fixed;inset:0;z-index:2147483500;display:none;justify-items:end;background:rgba(9,15,13,.42);backdrop-filter:blur(4px)}
+#${IDS.overlay}[data-open="true"]{display:grid}
+#${IDS.drawer}{width:min(94vw,500px);height:100%;overflow:auto;box-sizing:border-box;padding:22px;color:#202d28;background:#fbf8ef;border-left:1px solid rgba(49,73,62,.18);box-shadow:-20px 0 54px rgba(20,30,25,.18);text-align:left}
+#${IDS.drawer} .vnv-menu-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+#${IDS.drawer} .vnv-menu-kicker{margin:0 0 5px;color:#91733f;font:400 18px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+#${IDS.drawer} h2{margin:0;color:#233b32;font:400 29px/1.05 Cinzel,Georgia,serif}
+#${IDS.drawer} .vnv-menu-close{width:38px;height:38px;flex:0 0 38px;border:1px solid rgba(49,73,62,.22);border-radius:7px;background:#fff;color:#243a32;font-size:21px;cursor:pointer}
+#${IDS.search}{width:100%;min-height:42px;margin:17px 0 14px;padding:0 12px;border:1px solid rgba(49,73,62,.22);border-radius:7px;background:#fff;color:#202d28;font:400 18px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
+#${IDS.content}{display:grid;gap:14px}
+.vnv-menu-branch-home{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.vnv-menu-branch-button{min-height:88px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:11px;padding:14px;border:1px solid rgba(49,73,62,.15);border-radius:7px;color:#202d28;background:#fff;text-align:left;cursor:pointer}
+.vnv-menu-branch-button:hover,.vnv-menu-branch-button:focus-visible{border-color:#b48b45;background:#f4f0e7}
+.vnv-menu-branch-button strong{display:block;font:400 16px/1.25 Cinzel,Georgia,serif;letter-spacing:.035em}
+.vnv-menu-branch-button small{display:block;margin-top:5px;color:#6b756f;font:400 16px/1.4 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
+.vnv-menu-arrow{color:#b48b45;font-size:20px}
+.vnv-menu-toolbar{display:flex;align-items:center;justify-content:space-between;gap:11px;padding-bottom:10px;border-bottom:1px solid rgba(49,73,62,.14)}
+.vnv-menu-back{min-height:34px;padding:7px 10px;border:1px solid rgba(49,73,62,.2);border-radius:7px;background:#fff;color:#243a32;cursor:pointer}
+.vnv-menu-title{font:400 16px/1.2 Cinzel,Georgia,serif}
+.vnv-menu-subgroup-title{margin:15px 0 7px;color:#92743f;font:400 10px/1.2 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.vnv-menu-list{display:grid;gap:6px}
+.vnv-menu-link{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:9px;align-items:center;padding:10px 11px;border:1px solid rgba(49,73,62,.12);border-radius:7px;color:#25362f;background:#fff;text-decoration:none}
+.vnv-menu-link:hover,.vnv-menu-link:focus-visible{border-color:rgba(145,115,63,.46);background:#fffefb}
+.vnv-menu-link i{width:28px;height:28px;display:grid;place-items:center;border-radius:7px;background:#f4f0e7;color:#6f5935;font:400 16px/1 Cinzel,Georgia,serif;font-style:normal}
+.vnv-menu-link strong{display:block;font:400 16px/1.3 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
+.vnv-menu-link small{display:block;margin-top:2px;color:#7b837f;font:400 9px/1.35 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif}
+@media(max-width:560px){#${IDS.button}{width:40px;height:40px;min-height:40px}.vnv-menu-branch-home{grid-template-columns:1fr}.vnv-menu-branch-button{min-height:72px}#${IDS.drawer}{padding:18px 14px}}
+@media print{#${IDS.button},#${IDS.overlay}{display:none!important}}
+`;document.head.append(s);
+}
+function linkHtml(item){return `<a class="vnv-menu-link" href="${esc(item.url)}"><i aria-hidden="true">${esc(item.icon||initials(item.title))}</i><span><strong>${esc(item.title)}</strong><small>${esc(item.desc||item.type||"Verve N Veda ecosystem destination.")}</small></span><span class="vnv-menu-arrow" aria-hidden="true">→</span></a>`}
+function renderRoot(){
+ activeBranch="";
+ const box=document.getElementById(IDS.content);if(!box)return;
+ box.innerHTML=`<div class="vnv-menu-branch-home" aria-label="Verve N Veda main menu folders">${BRANCHES.map(b=>`<button class="vnv-menu-branch-button" type="button" data-vnv-branch="${b.id}"><span><strong>${esc(b.label)}</strong><small>${esc(b.desc)}</small></span><span class="vnv-menu-arrow">›</span></button>`).join("")}</div>`;
+ scheduleAutoContrast();
+}
+function academyHaystack(item){
+ return [item?.title,item?.repo,item?.path,item?.source,item?.url,item?.description,item?.type].join(" ").toLowerCase();
+}
+function academyRepositoryFor(item){
+ const haystack=academyHaystack(item);
+ return ACADEMY_REPOSITORIES.find(repo=>repo.patterns.some(pattern=>haystack.includes(pattern)))||null;
+}
+function academyPages(repoId){
+ return catalog.filter(page=>academyRepositoryFor(page)?.id===repoId);
+}
+function academyGateway(repo){
+ return {title:"Open "+repo.label,url:repo.root,icon:initials(repo.label),desc:"Open the main "+repo.label+" landing page."};
+}
+function academyFolderPages(repoId,folderId){
+ const folder=ACADEMY_FOLDERS.find(item=>item.id===folderId);
+ if(!folder)return[];
+ const pages=academyPages(repoId);
+ return pages.filter(page=>folder.match.test([page.title,page.path,page.source].join(" ")));
+}
+function renderAcademyRoot(){
+ activeBranch="academy";academyRepositoryId="";academyFolderId="";
+ const box=document.getElementById(IDS.content);if(!box)return;
+ box.innerHTML='<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-vnv-home>← Main folders</button><div class="vnv-menu-title">Khaemenes Academy</div></div>'+
+ '<div class="menu-subgroup-title">Academy Repositories</div><div class="vnv-menu-branch-home">'+
+ ACADEMY_REPOSITORIES.map(repo=>'<button class="vnv-menu-branch-button" type="button" data-academy-repo="'+esc(repo.id)+'"><span><strong>'+esc(repo.label)+'</strong><small>'+esc(repo.desc)+'</small></span><span class="vnv-menu-arrow">›</span></button>').join("")+
+ '</div>';
+ scheduleAutoContrast();
+}
+function renderAcademyRepository(repoId){
+ const repo=ACADEMY_REPOSITORIES.find(item=>item.id===repoId);if(!repo)return renderAcademyRoot();
+ academyRepositoryId=repoId;academyFolderId="";
+ const box=document.getElementById(IDS.content);if(!box)return;
+ const pages=academyPages(repoId);
+ box.innerHTML='<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-academy-root>← Academy</button><div class="vnv-menu-title">'+esc(repo.label)+'</div></div>'+
+ '<div class="vnv-menu-list">'+linkHtml(academyGateway(repo))+'</div>'+
+ '<div class="menu-subgroup-title">Browse '+esc(repo.label)+'</div><div class="vnv-menu-branch-home">'+
+ ACADEMY_FOLDERS.map(folder=>{
+   const count=academyFolderPages(repoId,folder.id).length;
+   return '<button class="vnv-menu-branch-button" type="button" data-academy-folder="'+esc(folder.id)+'"><span><strong>'+esc(folder.label)+'</strong><small>'+esc(folder.desc)+(count?' · '+count+' found':'')+'</small></span><span class="vnv-menu-arrow">›</span></button>';
+ }).join("")+
+ '</div>';
+ scheduleAutoContrast();
+}
+function renderAcademyFolder(folderId){
+ const repo=ACADEMY_REPOSITORIES.find(item=>item.id===academyRepositoryId);
+ const folder=ACADEMY_FOLDERS.find(item=>item.id===folderId);
+ if(!repo||!folder)return renderAcademyRoot();
+ academyFolderId=folderId;
+ const box=document.getElementById(IDS.content);if(!box)return;
+ const pages=academyFolderPages(repo.id,folder.id);
+ box.innerHTML='<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-academy-repo-back>← '+esc(repo.label)+'</button><div class="vnv-menu-title">'+esc(folder.label)+'</div></div>'+
+ (pages.length?'<div class="vnv-menu-list">'+pages.slice(0,80).map(page=>linkHtml({title:page.title||page.path,url:page.url,icon:"↗",desc:(page.source||page.repo||repo.label)+" · "+(page.path||"")})).join("")+'</div>':'<p>No indexed '+esc(folder.label.toLowerCase())+' pages are registered here yet.</p>');
+ scheduleAutoContrast();
+}
+function branchSections(branch){
+ if(branch.special==="home")return [{title:"Main Gateways",items:[
+  {title:"Verve N Veda Home",url:HOME,icon:"V",desc:"Return to the main Verve N Veda public gateway."},
+  {title:"Explore the Ecosystem",url:HOME+"#directory",icon:"◎",desc:"Open the complete public ecosystem directory."},
+  {title:"PLERA Search",url:"https://vervenveda.github.io/PLERASearch.github.io/",icon:"PS",desc:"Search connected public learning and resource destinations."},
+  {title:"333 Network",url:"https://vervenveda.github.io/333.github.io/",icon:"333",desc:"Open the communication and network gateway."}
+ ]}];
+ const seen=new Set(),sections=[];
+ const add=(title,items)=>{
+   const unique=items.filter(x=>{const u=safeUrl(x.url);if(!u||seen.has(u))return false;seen.add(u);x.url=u;return true});
+   if(unique.length)sections.push({title,items:unique});
+ };
+ for(const cat of branch.categories||[]){
+   const items=entries.filter(e=>e.category===cat).map(e=>({...e,desc:e.description||e.type,icon:initials(e.title)}));
+   add(cat.replace(/(^|[-_ ])\w/g,m=>m.toUpperCase()),items);
+ }
+ if(branch.titles?.length)add("Gateways",entries.filter(e=>branch.titles.includes(e.title)).map(e=>({...e,desc:e.description||e.type,icon:initials(e.title)})));
+ if(branch.special==="mentors"){
+   const mentor=entries.filter(e=>/(mentor|guide|naib|assistant|companion)/i.test([e.title,e.description,e.type].join(" "))).map(e=>({...e,desc:e.description||e.type,icon:initials(e.title)}));
+   add("Mentors & Guides",mentor);
+ }
+ return sections;
+}
+function renderBranch(id){
+ if(id==="academy")return renderAcademyRoot();
+ const branch=BRANCHES.find(b=>b.id===id);if(!branch)return renderRoot();
+ activeBranch=id;const box=document.getElementById(IDS.content);if(!box)return;
+ const sections=branchSections(branch);
+ box.innerHTML=`<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-vnv-home>← Main folders</button><div class="vnv-menu-title">${esc(branch.label)}</div></div>${sections.map(s=>`<section><div class="vnv-menu-subgroup-title">${esc(s.title)}</div><div class="vnv-menu-list">${s.items.map(linkHtml).join("")}</div></section>`).join("")||'<p>No registered destinations in this branch yet.</p>'}`;
+ scheduleAutoContrast();
+}
+function renderSearch(query){
+ const q=String(query||"").trim().toLowerCase();
+ if(!q)return activeBranch?renderBranch(activeBranch):renderRoot();
+ const doorway=entries.filter(e=>[e.title,e.category,e.type,e.description].join(" ").toLowerCase().includes(q));
+ const pages=catalog.filter(p=>[p.title,p.category,p.repo,p.path,p.source].join(" ").toLowerCase().includes(q)).slice(0,80);
+ const box=document.getElementById(IDS.content);if(!box)return;
+ box.innerHTML=`<div class="vnv-menu-toolbar"><button class="vnv-menu-back" type="button" data-vnv-home>← Main folders</button><div class="vnv-menu-title">Search</div></div>
+ ${doorway.length?`<section><div class="vnv-menu-subgroup-title">Gateway Matches</div><div class="vnv-menu-list">${doorway.map(e=>linkHtml({...e,desc:e.description||e.type,icon:initials(e.title)})).join("")}</div></section>`:""}
+ ${pages.length?`<section><div class="vnv-menu-subgroup-title">Complete Page Index</div><div class="vnv-menu-list">${pages.map(p=>linkHtml({title:p.title||p.path,url:p.url,icon:"↗",desc:(p.source||p.repo)+" · "+p.path})).join("")}</div></section>`:""}
+ ${!doorway.length&&!pages.length?'<p>No public ecosystem page matches this search.</p>':""}`;
+ scheduleAutoContrast();
+}
+async function loadData(){
+ try{
+  const r=await fetch(REGISTRY,{cache:"no-store"});if(!r.ok)throw 0;const d=await r.json();
+  entries=(d.entries||[]).filter(e=>e.directoryVisible===true&&e.status==="active"&&e.access==="free-public"&&safeUrl(e.url)).map(e=>({...e,url:safeUrl(e.url)}));
+  catalogParts=Array.isArray(d?.pageCatalog?.parts)?d.pageCatalog.parts.map(p=>new URL(p,HOME).href):CATALOG_FALLBACK;
+ }catch{
+  entries=[
+   {title:"Khaemenes Academy",url:"https://vervenveda.com/KhaemenesAcademy_Home.github.io/",category:"education",type:"gateway"},
+   {title:"PLERA Search",url:"https://vervenveda.github.io/PLERASearch.github.io/",category:"research",type:"gateway"},
+   {title:"The Verifier",url:"https://vervenveda.github.io/theverifier.github.io/",category:"news",type:"gateway"},
+   {title:"Bazaar Art",url:"https://vervenveda.github.io/bazaarart.github.io/",category:"creative",type:"gateway"},
+   {title:"333 Network",url:"https://vervenveda.github.io/333.github.io/",category:"communication",type:"network"}
+  ];
+  catalogParts=CATALOG_FALLBACK;
+ }
+ const settled=await Promise.allSettled(catalogParts.map(async url=>{const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw 0;const d=await r.json();return d.pages||[]}));
+ const seen=new Set();
+ catalog=settled.filter(x=>x.status==="fulfilled").flatMap(x=>x.value).filter(p=>{const u=safeUrl(p.url);const k=(p.repo||"")+"|"+(p.path||"");if(!u||seen.has(k))return false;seen.add(k);p.url=u;return true});
+}
+function mountDrawer(){
+ let overlay=document.getElementById(IDS.overlay);if(overlay)return overlay;
+ overlay=document.createElement("div");overlay.id=IDS.overlay;overlay.dataset.open="false";overlay.setAttribute("aria-hidden","true");
+ overlay.innerHTML=`<aside id="${IDS.drawer}" role="dialog" aria-modal="true" aria-labelledby="vnvEnrichedMenuTitle"><div class="vnv-menu-top"><div><p class="vnv-menu-kicker">One Connected Public Campus</p><h2 id="vnvEnrichedMenuTitle">Verve N Veda</h2></div><button class="vnv-menu-close" type="button" aria-label="Close menu">×</button></div><label style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)" for="${IDS.search}">Search ecosystem</label><input id="${IDS.search}" type="search" autocomplete="off" placeholder="Search the complete ecosystem…"><div id="${IDS.content}"></div></aside>`;
+ document.body.append(overlay);
+ overlay.querySelector(".vnv-menu-close").addEventListener("click",close);
+ overlay.addEventListener("click",e=>{if(e.target===overlay)close()});
+ overlay.querySelector("#"+IDS.content).addEventListener("click",e=>{
+ const branch=e.target.closest("[data-vnv-branch]");if(branch){renderBranch(branch.dataset.vnvBranch);return}
+ const repo=e.target.closest("[data-academy-repo]");if(repo){renderAcademyRepository(repo.dataset.academyRepo);return}
+ const folder=e.target.closest("[data-academy-folder]");if(folder){renderAcademyFolder(folder.dataset.academyFolder);return}
+ if(e.target.closest("[data-academy-root]")){renderAcademyRoot();return}
+ if(e.target.closest("[data-academy-repo-back]")){renderAcademyRepository(academyRepositoryId);return}
+ if(e.target.closest("[data-vnv-home]")){document.getElementById(IDS.search).value="";renderRoot()}
+});
+ document.getElementById(IDS.search).addEventListener("input",e=>{activeBranch="";renderSearch(e.target.value)});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&overlay.dataset.open==="true")close()});
+ return overlay;
+}
+function mountButton(options={}){
+ let button=document.getElementById(IDS.button);if(button)return button;
+ button=document.createElement("button");button.id=IDS.button;button.type="button";button.setAttribute("aria-expanded","false");button.setAttribute("aria-controls",IDS.overlay);button.setAttribute("aria-label","Open Verve N Veda menu");button.innerHTML='<span class="vnv-menu-lines" aria-hidden="true"></span>';
+ const target=options.target?document.querySelector(options.target):document.querySelector("[data-vnv-ecosystem-slot]");
+ if(target)target.replaceChildren(button);else document.body.append(button);
+ button.addEventListener("click",open);return button;
+}
+function open(){
+ const overlay=mountDrawer(),button=document.getElementById(IDS.button);lastFocus=document.activeElement;previousOverflow=document.body.style.overflow;document.body.style.overflow="hidden";overlay.dataset.open="true";overlay.setAttribute("aria-hidden","false");button?.setAttribute("aria-expanded","true");document.querySelectorAll("[data-vnv-enriched-trigger]").forEach(el=>el.setAttribute("aria-expanded","true"));activeBranch="";document.getElementById(IDS.search).value="";renderRoot();setTimeout(()=>document.getElementById(IDS.search)?.focus(),0);
+}
+function close(){
+ const overlay=document.getElementById(IDS.overlay),button=document.getElementById(IDS.button);if(!overlay)return;overlay.dataset.open="false";overlay.setAttribute("aria-hidden","true");button?.setAttribute("aria-expanded","false");document.querySelectorAll("[data-vnv-enriched-trigger]").forEach(el=>el.setAttribute("aria-expanded","false"));document.body.style.overflow=previousOverflow;lastFocus?.focus?.();
+}
+async function mount(options={}){
+ if(!document.body)return null;installStyle();if(options.noButton!==true)mountButton(options);mountDrawer();renderRoot();await loadData();return document.getElementById(IDS.button)||document.querySelector("[data-vnv-enriched-trigger]");
+}
+window.VNV_ENRICHED_MENU=Object.freeze({version:VERSION,mount,open,close});
+})();
+```
+
+## Source manifest
+
+- `index.html` — GitHub blob `de6ef4b1b860e051a965de0401843f8d668ea5d0`; [source](../../index.html)
+- `assets/vnv-333-ticker.js` — GitHub blob `9cee1e33022043060a8e7a2e5f0cdcce55d0b592`; [source](../../assets/vnv-333-ticker.js)
+- `assets/vnv-ticker-autopopulate.js` — GitHub blob `0bd454d19f16dc7d253c3ef37c86449d57d4e213`; [source](../../assets/vnv-ticker-autopopulate.js)
+- `assets/vnv-header-autopopulate.js` — GitHub blob `31c617d30ee778a8686401ce5a26f868d72daee1`; [source](../../assets/vnv-header-autopopulate.js)
+- `assets/vnv-ecosystem-toolbar.js` — GitHub blob `1018290c6c29ca4ed527df1febbd8b718e97c7bd`; [source](../../assets/vnv-ecosystem-toolbar.js)
+- `assets/vnv-language.js` — GitHub blob `b65ef766cfbd0adcd88b4e7cc970a1e3ee35bd7c`; [source](../../assets/vnv-language.js)
+- `assets/khaemenes-campus-phrases.js` — GitHub blob `2a7c6c8030df3d62df7312cb9111acfe7a5534f6`; [source](../../assets/khaemenes-campus-phrases.js)
+- `assets/khaemenes-interlingual-core.js` — GitHub blob `13955ca419bcdb785ba1289137553f67306b0d77`; [source](../../assets/khaemenes-interlingual-core.js)
+- `assets/vervenveda-global-standard.css` — GitHub blob `0f2846e2de3a938c939e60ee6e8807726cf267db`; [source](../../assets/vervenveda-global-standard.css)
+- `assets/vnv-global-standard.css` — GitHub blob `4a1639543b3a96d9d756f88e13b8e7a26d8db0a2`; [source](../../assets/vnv-global-standard.css)
+- `assets/vnv-featured-slideshow.js` — GitHub blob `c8315139b66c346a7fb559106309f3e5885fd961`; [source](../../assets/vnv-featured-slideshow.js)
