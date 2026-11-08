@@ -17516,6 +17516,151 @@
         "policyTags": []
       },
       "manifestPath": "mentor-manifest.json"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.life-skills",
+      "title": "Life Skills & Practical Independence",
+      "description": "Higher Learning life-skills hub with fourteen pathways: communication, home management, finance, digital literacy, careers, wellbeing and practical independence.",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/",
+      "sourceId": "khaemenes.higher-learning.life-skills",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "life-skills",
+        "practical-independence",
+        "higher-learning"
+      ],
+      "skills": [
+        "life-skills-navigation"
+      ],
+      "tags": [
+        "life-skills",
+        "fourteen-pathways",
+        "practical-independence"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "hub",
+      "learningValue": "source-navigation",
+      "curricularWeight": "supplemental",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "source-owned-local-only",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "life-skills/index.html"
+    },
+    {
+      "id": "vervenveda.khaemenes_higher_learning.github.io.articulation-academy",
+      "title": "Articulation Academy · Thoughtful Communication",
+      "description": "Public communication studio covering phrase library, 21-day articulation course, mastery studios, situational conversation practice and five-minute daily exercises.",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/articulation-academy.html",
+      "sourceId": "khaemenes.higher-learning.life-skills",
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "classification": "educational",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "communication",
+        "articulation",
+        "language",
+        "life-skills"
+      ],
+      "skills": [
+        "articulation-and-conversation"
+      ],
+      "tags": [
+        "articulation-academy",
+        "conversation",
+        "public-speaking",
+        "phrase-library",
+        "21-day-course"
+      ],
+      "minutes": null,
+      "energy": "",
+      "featured": false,
+      "mentorEligible": true,
+      "recommendable": true,
+      "explicitAdultOptIn": false,
+      "resourceType": "interactive-course",
+      "learningValue": "source-navigation",
+      "curricularWeight": "supplemental",
+      "learningObjectives": [],
+      "subjects": [],
+      "highStakesDomain": "",
+      "inventoryAuthority": "source-owned-local-only",
+      "requiresLinkedLearner": false,
+      "requiredStage": "",
+      "requiresFreshnessCheck": false,
+      "dynamicContent": false,
+      "requiresPreferenceMatch": [],
+      "requiresAccountAwareness": false,
+      "sensitiveTopics": [],
+      "externalInformation": false,
+      "sourcePriority": 0,
+      "freshnessWindowMinutes": null,
+      "contentType": "",
+      "policyTags": [],
+      "requiresExplicitQuery": false,
+      "policy": {
+        "requiresFreshnessCheck": false,
+        "dynamicContent": false,
+        "requiresPreferenceMatch": [],
+        "requiresAccountAwareness": false,
+        "requiresLinkedLearner": false,
+        "requiredStage": "",
+        "sensitiveTopics": [],
+        "externalInformation": false,
+        "highStakesDomain": "",
+        "requiresExplicitQuery": false,
+        "policyTags": []
+      },
+      "manifestPath": "life-skills/articulation-academy.html"
     }
   ]
 }
