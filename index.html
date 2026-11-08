@@ -31,6 +31,72 @@
     window.VNVEarlyRefreshTrace=Object.freeze({events:()=>events.slice(),stop:()=>observer.disconnect()});
   })();
   </script>
+  <!-- Presentation-only gateway bootstrap: layout reservation and idempotent mounts.
+       No STOS authority, storage, account access, or network reporting. -->
+  <style id="vnv-gateway-bootstrap-layout">
+    :root{--vnv-gateway-autoticker-reserve:33px;--vnv-gateway-language-reserve:54px}
+    body > #vnvGatewayAutoTickerSlot{
+      height:var(--vnv-gateway-autoticker-reserve);min-height:var(--vnv-gateway-autoticker-reserve);
+      width:100%;background:#101b2b;box-sizing:border-box;overflow:hidden;
+    }
+    body > #vnv-language-rail{
+      box-sizing:border-box;width:100%;min-height:var(--vnv-gateway-language-reserve);
+      padding:7px 16px 8px;background:#243038;border-bottom:1px solid #b48b45;
+    }
+    body > .site-header{top:calc(var(--ticker-height,33px) + var(--vnv-gateway-autoticker-reserve))!important}
+    @media print{#vnvGatewayAutoTickerSlot{display:none!important}}
+  </style>
+  <script id="vnv-gateway-bootstrap-controller">
+  (()=>{"use strict";
+    if(window.VNVGatewayBootstrap)return;
+    const state={ticker:"pending",language:"reserved",toolbar:"pending",faults:[]};
+    const report=(name,reason)=>{state.faults.push(name+": "+reason);if(state.faults.length>12)state.faults.shift()};
+    function mountTicker(){
+      const existing=document.getElementById("vnvTickerAutoPopulate");
+      const slot=document.getElementById("vnvGatewayAutoTickerSlot");
+      if(existing){slot?.remove();state.ticker="existing";return existing}
+      if(state.ticker==="mounting")return null;
+      if(!window.VNV_TICKER?.autoPopulate){state.ticker="unavailable";report("auto ticker","engine unavailable");return null}
+      state.ticker="mounting";
+      try{
+        const ticker=window.VNV_TICKER.autoPopulate({
+          before:".site-header",label:"Verve N Veda · Explore",
+          ariaLabel:"Verve N Veda page links",
+          pauseKey:"VNV_GATEWAY_AUTOTICKER_PAUSED",cleanLegacy:false,
+          exclude:[
+            "#vnvTickerAutoPopulate a","#networkTicker a","[data-vnv-ticker-ignore]",
+            "a[download]",".skip-link",".ticker-control",".vnv-ticker-control",
+            "[aria-label*='logout' i]","[aria-label*='sign out' i]"
+          ]
+        });
+        if(ticker?.isConnected){slot?.remove();state.ticker="mounted";return ticker}
+        // The reserved strip remains in place on failure so the hero doesn't jump.
+        state.ticker="fallback";report("auto ticker","no ticker mounted");return null;
+      }catch(e){state.ticker="fallback";report("auto ticker",String(e?.message||"mount failed").slice(0,100));return null}
+    }
+    function verify(){
+      const native=document.getElementById("networkTicker");
+      const auto=document.getElementById("vnvTickerAutoPopulate");
+      const header=document.querySelector("body > .site-header");
+      const language=document.getElementById("vnv-language-rail");
+      const dock=document.getElementById("vnvEcosystemUtilityDock");
+      state.language=language?.firstElementChild?"mounted":language?"reserved":"missing";
+      state.toolbar=dock?"mounted":"unavailable";
+      const geometry=[native,auto||document.getElementById("vnvGatewayAutoTickerSlot"),header,language]
+        .map(el=>el?Math.round(el.getBoundingClientRect().height):null);
+      const duplicates={
+        native:document.querySelectorAll("#networkTicker").length,
+        auto:document.querySelectorAll("#vnvTickerAutoPopulate").length,
+        header:document.querySelectorAll("body > .site-header").length,
+        rail:document.querySelectorAll("#vnv-language-rail").length,
+        toolbar:document.querySelectorAll("#vnvEcosystemUtilityDock").length
+      };
+      return {version:"1.0.0",ticker:state.ticker,language:state.language,
+        toolbar:state.toolbar,geometry,duplicates,faults:state.faults.slice()};
+    }
+    window.VNVGatewayBootstrap=Object.freeze({version:"1.0.0",mountTicker,verify});
+  })();
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Verve N Veda — an elegant public gateway to education, research, civic resources, health, professional tools, art, music, weather, wellbeing, community service, and the NAIB intelligence navigation layer.">
@@ -4154,6 +4220,8 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
     <button class="ticker-control" id="tickerControl" type="button" aria-pressed="false" aria-label="Pause 333 Network ticker">Ⅱ</button>
   </div>
 
+  <!-- Reserved ticker height exists before scripts mount: prevents initial hero displacement. -->
+  <div id="vnvGatewayAutoTickerSlot" aria-hidden="true"></div>
   <header class="site-header">
     <div class="shell header-inner">
       <div class="brand" aria-label="Verve N Veda Home">
@@ -4251,7 +4319,9 @@ a.btn,.btn,.tool-button,.open-app,.copy-link{font-size:16px!important}
     </aside>
   </div>
 
-  <main id="main">
+  <!-- The canonical translator populates this existing rail without inserting a new block. -->
+<div id="vnv-language-rail" role="group" aria-label="Page translation tools"></div>
+<main id="main">
     <section class="hero" aria-labelledby="gatewayTitle">
       <div class="shell hero-inner">
         <div class="hero-stage">
@@ -6414,26 +6484,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 </style>
 <script src="/assets/vnv-ticker-autopopulate.js"></script>
 <script>
-  if(window.VNV_TICKER?.autoPopulate && !document.getElementById("vnvTickerAutoPopulate")){
-    window.VNV_TICKER.autoPopulate({
-      before:".site-header",
-      label:"Verve N Veda · Explore",
-      ariaLabel:"Verve N Veda page links",
-      pauseKey:"VNV_GATEWAY_AUTOTICKER_PAUSED",
-      cleanLegacy:false,
-      exclude:[
-        "#vnvTickerAutoPopulate a",
-        "#networkTicker a",
-        "[data-vnv-ticker-ignore]",
-        "a[download]",
-        ".skip-link",
-        ".ticker-control",
-        ".vnv-ticker-control",
-        "[aria-label*='logout' i]",
-        "[aria-label*='sign out' i]"
-      ]
-    });
-  }
+  window.VNVGatewayBootstrap?.mountTicker();
 </script>
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js?v=1.0.7"></script>
 
