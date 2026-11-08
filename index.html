@@ -3965,8 +3965,8 @@
       align-items:stretch!important;
       justify-content:center!important;
       column-gap:7px!important;
-      width:min(100%,466px)!important;
-      max-width:466px!important;
+      width:min(100%,760px)!important;
+      max-width:760px!important;
       margin-left:auto!important;
       margin-right:auto!important;
     }
@@ -3996,8 +3996,8 @@
       font-weight:400!important;
       line-height:1.25!important;
       letter-spacing:0!important;
-      white-space:normal!important;
-      text-wrap:balance!important;
+      white-space:nowrap!important;
+      text-wrap:nowrap!important;
     }
     .hero .hero-actions .vnv-hero-doorway:hover,
     .hero .enrolled-student-entry-row .enrolled-student-entry:hover{
@@ -4005,13 +4005,15 @@
       border-color:#394a43!important;
       color:#fff8e9!important;
     }
-    @media(max-width:540px){
+    @media(max-width:800px){
       .hero .hero-actions,
       .hero .enrolled-student-entry-row{
         grid-template-columns:minmax(0,1fr)!important;
         width:min(100%,340px)!important;
         max-width:340px!important;
       }
+      .hero .hero-actions .vnv-hero-doorway,
+      .hero .enrolled-student-entry-row .enrolled-student-entry{white-space:normal!important;text-wrap:balance!important;}
     }
   </style> <!-- Isolated directory typography and 4-by-4 balanced navigation; no admin/terminal changes. -->
   <style id="vnv-directory-legibility-2026-11">
