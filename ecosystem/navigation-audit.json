@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-08T11:55:45Z",
+  "generatedAt": "2026-11-08T22:22:13Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12275,
+    "htmlCount": 12276,
     "brokenLocalLinkCount": 12,
     "rootOrphanHtmlCount": 5324,
     "unreferencedHtmlCount": 1522,
@@ -1247,9 +1247,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
-      "htmlCount": 3206,
+      "htmlCount": 3207,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1755,
+      "rootReachableHtmlCount": 1756,
       "rootOrphanHtmlCount": 1439,
       "unreferencedHtmlCount": 181,
       "duplicateGroupCount": 0,
