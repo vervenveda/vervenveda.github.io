@@ -1,8 +1,6 @@
 name: Normalize Official Ecosystem Toolbar
+# Explicit maintenance only: never auto-rewrite the public site on a push.
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/normalize-vnv-ecosystem-toolbar.yml']
   workflow_dispatch:
 permissions: {contents: write}
 jobs:
@@ -45,9 +43,54 @@ jobs:
           Path('.vnv-toolbar-normalization.json').write_text(json.dumps({'schema':'vnv-toolbar-normalization-v1','counts':c,'changed':changed},indent=2)+'\n')
           print(json.dumps(c,indent=2))
           PY
-      - name: Commit normalized toolbar
+      - name: Validate and stage only declared toolbar normalization outputs
+        shell: bash
         run: |
+          python3 - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+
+          root = Path.cwd().resolve()
+          manifest = Path(".vnv-toolbar-normalization.json")
+          if not manifest.is_file() or manifest.is_symlink():
+              raise SystemExit("Missing or unsafe toolbar normalization manifest")
+          data = json.loads(manifest.read_text(encoding="utf-8"))
+          if data.get("schema") != "vnv-toolbar-normalization-v1":
+              raise SystemExit("Unrecognized toolbar normalization schema")
+          changed = data.get("changed")
+          if not isinstance(changed, list) or len(changed) != len(set(changed)):
+              raise SystemExit("Invalid normalization changed-files list")
+          if data.get("counts", {}).get("changed") != len(changed):
+              raise SystemExit("Normalization manifest file-count mismatch")
+          for name in changed:
+              if not isinstance(name, str) or not name or name.startswith(("/", "-")):
+                  raise SystemExit("Invalid declared path in normalization manifest")
+              p = Path(name)
+              if p.is_absolute() or ".." in p.parts or p.suffix.lower() not in (".html", ".htm"):
+                  raise SystemExit("Out-of-scope normalization path")
+              full = root / p
+              if full.is_symlink() or not full.is_file() or not full.resolve().is_relative_to(root):
+                  raise SystemExit("Unsafe declared HTML path")
+          # The generated audit manifest and precisely the HTML files the
+          # normalizer recorded are the only permitted staged files.
+          subprocess.run(["git", "add", "--", str(manifest), *changed], check=True)
+          staged = subprocess.check_output(["git", "diff", "--cached", "--name-only", "-z"]).decode().split("\0")
+          actual = {name for name in staged if name}
+          expected = set(changed) | {str(manifest)}
+          if not actual <= expected:
+              raise SystemExit("Unexpected staged file: " + str(sorted(actual - expected)))
+          print(f"Scoped toolbar staging: {len(changed)} declared HTML files.")
+          PY
+      - name: Commit declared toolbar changes only
+        shell: bash
+        run: |
+          set -euo pipefail
           git config user.name "Verve N Veda Ecosystem Guardian"
           git config user.email "ecosystem@vervenveda.com"
-          git add -A
-          if git diff --cached --quiet; then echo "No toolbar changes required."; else git commit -m "Normalize official Verve N Veda ecosystem toolbar" && git push; fi
+          if git diff --cached --quiet; then
+            echo "No toolbar changes required."
+          else
+            git commit -m "Normalize official Verve N Veda ecosystem toolbar [manual]"
+            git push
+          fi
