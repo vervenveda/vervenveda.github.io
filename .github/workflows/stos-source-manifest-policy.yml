@@ -1,0 +1,30 @@
+name: STOS Source Manifest Policy (No Publication)
+
+on:
+  pull_request:
+    paths:
+      - "ecosystem/build_stos_source_manifest.py"
+      - "ecosystem/tests/test_stos_source_manifest.py"
+      - ".github/workflows/stos-source-manifest-policy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-source-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run isolated proposed-manifest policy tests
+        run: python3 -m unittest discover -s ecosystem/tests -p 'test_stos_source_manifest.py' -v
+      - name: Verify script compiles
+        run: python3 -m py_compile ecosystem/build_stos_source_manifest.py
+      - name: Confirm no STOS publication or approval
+        run: |
+          echo "SOURCE_MANIFEST_TEST=PASS"
+          echo "SOURCE_RELEASE_APPROVED=NO"
+          echo "STOS_INTAKE=NOT_ATTEMPTED"
+          echo "TERMINAL_COMMISSIONING=NOT_ATTEMPTED"
