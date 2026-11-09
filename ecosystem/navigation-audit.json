@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-08T22:22:13Z",
+  "generatedAt": "2026-11-09T13:53:15Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12276,
-    "brokenLocalLinkCount": 12,
-    "rootOrphanHtmlCount": 5324,
-    "unreferencedHtmlCount": 1522,
+    "htmlCount": 12278,
+    "brokenLocalLinkCount": 11,
+    "rootOrphanHtmlCount": 5326,
+    "unreferencedHtmlCount": 1524,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -717,11 +717,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Academy.github.io",
-      "htmlCount": 26,
+      "htmlCount": 28,
       "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 20,
-      "rootOrphanHtmlCount": 6,
-      "unreferencedHtmlCount": 2,
+      "rootOrphanHtmlCount": 8,
+      "unreferencedHtmlCount": 4,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -731,13 +731,17 @@
       "rootOrphans": [
         "Parent_resources/Art_studio_index.html",
         "Parent_resources/Family_photo_album_index.html",
+        "academy/testing/families/index.html",
         "diagnostics/front-door/index.html",
+        "family/mini-cloud/index.html",
         "tools/Keyboard_index.html",
         "tools/song_embedder_index.html",
         "verify/index.html"
       ],
       "unreferencedPages": [
+        "academy/testing/families/index.html",
         "diagnostics/front-door/index.html",
+        "family/mini-cloud/index.html",
         "verify/index.html"
       ],
       "duplicateGroups": [],
@@ -994,7 +998,7 @@
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
       "htmlCount": 3520,
-      "brokenLocalLinkCount": 1,
+      "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 2489,
       "rootOrphanHtmlCount": 1009,
       "unreferencedHtmlCount": 699,
@@ -1003,15 +1007,7 @@
       "intentionalSiblingGroupCount": 4,
       "canonicalAliasCount": 1,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [
-        {
-          "source": "courses/language-arts/english-9/index.html",
-          "target": "courses/language-arts/english-9/${esc(s.url)}",
-          "raw": "${esc(s.url)}",
-          "tag": "a",
-          "attr": "href"
-        }
-      ],
+      "brokenLocalLinks": [],
       "rootOrphans": [
         "assets/Learn-a-new-word.html",
         "courses/language-arts/english-10/grades/grade-10/index.html",
