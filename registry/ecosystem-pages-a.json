@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-09T07:12:05Z",
+  "generatedAt": "2026-11-09T22:42:23Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -2507,6 +2507,14 @@
       "path": "index.html",
       "category": "civic",
       "source": "Jennifer Pearl 2028"
+    },
+    {
+      "title": "Families",
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/academy/testing/families/",
+      "repo": "Khaemenes_Academy.github.io",
+      "path": "academy/testing/families/index.html",
+      "category": "education",
+      "source": "Adult Scholar Enrollment"
     },
     {
       "title": "Enroll",
