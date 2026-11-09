@@ -235,12 +235,12 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
   ["Elementary Grades 1–5",[1,2,3,4,5].map(n=>["Grade "+n,V+"Khaemenes_Elementary.github.io/student-profile/"] )],
   ["Middle Grades 6–8",[6,7,8].map(n=>["Grade "+n,V+"Khaemenes_Middle.github.io/grades/grade-"+String(n).padStart(2,"0")+"/"])],
   ["High School Grades 9–12",[9,10,11,12].map(n=>["Grade "+n,V+"Khaemenes_High.github.io/grades/grade-"+String(n).padStart(2,"0")+"/student-profile/"])],
-  ["Family & Adult",[["Parent / Guardian",A+"family/#khaeFamilyParentProfileHero"],["Higher Learning",A+"adult/"],["Family Mini Cloud","http://127.0.0.1:8767/source/family-mini-cloud-phase07-ui.html"]]]
+  ["Family & Adult",[["Parent / Guardian",A+"family/#khaeFamilyParentProfileHero"],["Higher Learning",A+"adult/"],["Family Mini Cloud","https://github.com/vervenveda/Khaemenes_Academy.github.io/blob/recovery/family-mini-cloud-phase07-2026-11-09/family/mini-cloud/index.html"]]]
  ];
  for(const [name,items] of chooserGroups){
   const h=document.createElement("h3");h.textContent=name;profileDialog.append(h);
   const grid=document.createElement("nav");grid.className="vnv-profile-grid";if(name==="Family & Adult")grid.classList.add("vnv-profile-grid-family");grid.setAttribute("aria-label",name);
-  for(const [label,url] of items){const item=document.createElement("a");item.href=url;item.textContent=label;if(label==="Family Mini Cloud"){item.target="_blank";item.rel="noopener noreferrer";item.title="Opens your local Family Mini Cloud server on this device";}grid.append(item)}
+  for(const [label,url] of items){const item=document.createElement("a");item.href=url;item.textContent=label;if(label==="Family Mini Cloud"){item.target="_blank";item.rel="noopener noreferrer";item.title="View the Family Mini Cloud recovery preview on GitHub (not a live account service)";}grid.append(item)}
   profileDialog.append(grid);
  }
  const qualifier=document.createElement("p");qualifier.textContent="Elementary grades share their current profile page. Middle School choices currently open the grade landing pages.";profileDialog.append(qualifier);
