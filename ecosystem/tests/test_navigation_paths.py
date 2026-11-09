@@ -52,5 +52,35 @@ class NavigationPathTests(unittest.TestCase):
             self.assertEqual(audit.normalize_candidate(root, source, "../index.html"), course / "index.html")
 
 
+    def test_javascript_interpolated_links_are_not_literal_paths(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d) / "bazaarart.github.io"
+            (root / "apps").mkdir(parents=True)
+            source = root / "apps" / "art-education.html"
+            source.write_text("template", encoding="utf-8")
+            self.assertIsNone(audit.normalize_candidate(root, source, "${escapeHTML(s.url)}"))
+            self.assertIsNone(audit.normalize_candidate(root, source, "./item/${lesson.slug}.html"))
+            self.assertIsNone(audit.normalize_candidate(root, source, "{{ url }}"))
+
+    def test_real_missing_relative_link_remains_detectable(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d) / "bazaarart.github.io"
+            source = root / "academy" / "grade-9" / "unit-04" / "index.html"
+            source.parent.mkdir(parents=True)
+            path = audit.normalize_candidate(root, source, "../../unit-03/index.html")
+            self.assertEqual(path, root / "academy" / "unit-03" / "index.html")
+            self.assertFalse(path.exists())
+
+    def test_existing_relative_unit_link_resolves_correctly(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d) / "bazaarart.github.io"
+            source = root / "academy" / "grade-9" / "unit-04" / "index.html"
+            destination = root / "academy" / "grade-9" / "unit-03" / "index.html"
+            source.parent.mkdir(parents=True)
+            destination.parent.mkdir(parents=True)
+            destination.write_text("Art Unit 03", encoding="utf-8")
+            self.assertEqual(audit.normalize_candidate(root, source, "../unit-03/index.html"), destination)
+
+
 if __name__ == "__main__":
     unittest.main()

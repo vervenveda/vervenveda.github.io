@@ -1,0 +1,23 @@
+name: Directory Audit Regression (Read Only)
+
+on:
+  pull_request:
+    paths:
+      - "ecosystem/audit_public_navigation.py"
+      - "ecosystem/reconcile_directory_evidence.py"
+      - "ecosystem/tests/**"
+      - ".github/workflows/directory-audit-regression.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-audit-instruments:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Offline audit regression tests
+        run: python3 -m unittest discover -s ecosystem/tests -p 'test_*.py' -v
+      - name: Read-only scope reconciliation
+        run: python3 ecosystem/reconcile_directory_evidence.py
