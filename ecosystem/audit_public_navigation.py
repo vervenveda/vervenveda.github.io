@@ -71,6 +71,10 @@ def html_files(root:Path):
 
 def normalize_candidate(root:Path,source:Path,raw:str):
     raw=raw.strip()
+    # HTML templates can contain JS interpolation; these are not literal URLs.
+    # Do not report ${escapeHTML(item.url)} or mixed templated paths as missing files.
+    if "${" in raw or "{{" in raw or "<%" in raw:
+        return None
     if not raw or raw.startswith(("#","mailto:","tel:","javascript:","data:","blob:")):
         return None
     parsed=urlsplit(raw)
