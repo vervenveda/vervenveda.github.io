@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-10T07:44:24Z",
+  "generatedAt": "2026-11-10T20:00:19Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -1993,6 +1993,14 @@
       "url": "https://vervenveda.github.io/bazaarart.github.io/",
       "repo": "bazaarart.github.io",
       "path": "index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Bazaar Art Browser Smoke",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/tests/bazaar-art-browser-smoke.html",
+      "repo": "bazaarart.github.io",
+      "path": "tests/bazaar-art-browser-smoke.html",
       "category": "creative",
       "source": "Bazaar Art"
     },
@@ -44105,14 +44113,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Week 29",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-29/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-29/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }
