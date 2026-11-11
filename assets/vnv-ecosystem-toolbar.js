@@ -254,9 +254,9 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  const updates=document.createElement("button");updates.type="button";updates.dataset.vnvTool="updates";updates.textContent="Updates";dock.append(updates);
  // Direct Academy mentor conversation: no legacy iframe or cross-origin popup.
  // The mentor page owns the visitor chat, registered-learner context, and navigation.
- const mentorUrl="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/#mentorWorkspace";
+ const mentorUrl="https://artist1970.github.io/Archaemenes.github.io/#archaemenesConversation";
  const mentor=link("mentor","Mentor",mentorUrl);
- mentor.setAttribute("aria-label","Archaemenes Mentor — open Academy conversation");
+ mentor.setAttribute("aria-label","Archaemenes Mentor — public conversation");
  protectStudentResource(link("support","Support","https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s"),"Support");
  // Beta reports carry public route context only. Never transmit search/hash,
 // user state, identifiers from protected routes or filesystem/network internals.
@@ -299,6 +299,6 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
  document.body.append(dock,dialog,profileDialog);mounted=true;
 }
-window.VNVEcosystemToolbar=Object.freeze({version:"1.0.8",mount});
+window.VNVEcosystemToolbar=Object.freeze({version:"1.0.9",mount});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
 })();
