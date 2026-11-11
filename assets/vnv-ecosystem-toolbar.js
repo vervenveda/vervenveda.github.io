@@ -252,27 +252,11 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  profileDialog.addEventListener("close",()=>profileLink.focus());
  protectStudentResource(link("search","Search",V+"PLERASearch.github.io/"),"Search");
  const updates=document.createElement("button");updates.type="button";updates.dataset.vnvTool="updates";updates.textContent="Updates";dock.append(updates);
- const mentorUrl="https://artist1970.github.io/Archaemenes.github.io/#archaemenesConversation";
-  // The in-dialog frame opens at the page hero, not at the lower conversation anchor.
-  const mentorLandingUrl="https://artist1970.github.io/Archaemenes.github.io/";
+ // Direct Academy mentor conversation: no legacy iframe or cross-origin popup.
+ // The mentor page owns the visitor chat, registered-learner context, and navigation.
+ const mentorUrl="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/#mentorWorkspace";
  const mentor=link("mentor","Mentor",mentorUrl);
- mentor.setAttribute("aria-haspopup","dialog");
- mentor.setAttribute("aria-controls","vnvArchaemenesMentorDialog");
- const mentorDialog=document.createElement("dialog");
- mentorDialog.id="vnvArchaemenesMentorDialog";
- mentorDialog.setAttribute("aria-label","Conversation with Archaemenes");
- const mentorHeader=document.createElement("div");mentorHeader.className="vnv-mentor-popup-header";
- const mentorTitle=document.createElement("strong");mentorTitle.textContent="Archaemenes · Scholarly Conversation";
- const mentorActions=document.createElement("div");mentorActions.className="vnv-mentor-popup-actions";
- const mentorDirect=document.createElement("a");mentorDirect.href=mentorUrl;mentorDirect.target="_blank";mentorDirect.rel="noopener noreferrer";mentorDirect.textContent="Open Mentor in New Tab";
- const mentorClose=document.createElement("button");mentorClose.type="button";mentorClose.textContent="Close";mentorClose.setAttribute("aria-label","Close Archaemenes conversation");
- mentorClose.addEventListener("click",()=>mentorDialog.close());
- mentorActions.append(mentorDirect,mentorClose);mentorHeader.append(mentorTitle,mentorActions);
- const mentorFrame=document.createElement("iframe");mentorFrame.title="Archaemenes public mentor conversation";mentorFrame.loading="lazy";mentorFrame.referrerPolicy="no-referrer";
- mentorDialog.append(mentorHeader,mentorFrame);
- mentor.addEventListener("click",e=>{if(e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;e.preventDefault();try{mentorDialog.showModal();mentorFrame.src=mentorLandingUrl;mentorClose.focus()}catch{window.open(mentorUrl,"_blank","noopener,noreferrer")}});
- mentorDialog.addEventListener("click",e=>{if(e.target===mentorDialog)mentorDialog.close()});
- mentorDialog.addEventListener("close",()=>mentorFrame.removeAttribute("src"));
+ mentor.setAttribute("aria-label","Archaemenes Mentor — open Academy conversation");
  protectStudentResource(link("support","Support","https://buy.stripe.com/aFa8wQ5xf9Scf65caT4AU0s"),"Support");
  // Beta reports carry public route context only. Never transmit search/hash,
 // user state, identifiers from protected routes or filesystem/network internals.
@@ -313,8 +297,8 @@ for(const legacy of ["khaeLandingUtilityDock","khaemenesHomeUtilityDock"]){
  updates.addEventListener("click",()=>{if(!dialog.open)dialog.showModal();close.focus()});
  dialog.addEventListener("close",()=>updates.focus());
  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
- document.body.append(dock,dialog,mentorDialog,profileDialog);mounted=true;
+ document.body.append(dock,dialog,profileDialog);mounted=true;
 }
-window.VNVEcosystemToolbar=Object.freeze({version:"1.0.7",mount});
+window.VNVEcosystemToolbar=Object.freeze({version:"1.0.8",mount});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount,{once:true});else mount();
 })();
