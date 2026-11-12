@@ -1,0 +1,24 @@
+name: Public Mentor Chat Feed Core Guardrails
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/vnv-mentor-chat-shell-v1.js'
+      - 'tests/vnv-mentor-chat-shell.test.cjs'
+      - '.github/workflows/mentor-chat-shell.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  standard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Parse and test shared mentor feed
+        run: |
+          node --check assets/vnv-mentor-chat-shell-v1.js
+          node --test tests/vnv-mentor-chat-shell.test.cjs
