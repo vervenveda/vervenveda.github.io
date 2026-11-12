@@ -150,7 +150,7 @@ function boot(){
  ".vnv-mentor-feedback textarea{display:block;width:100%;min-height:74px;resize:vertical;margin:9px 0;padding:12px;background:#fffdf7;color:#24322a;border:1px solid #a38e65;border-radius:7px;font:400 16px/1.5 Nunito,Arial,sans-serif}",
  ".vnv-mentor-feedback button{border-radius:7px;border:1px solid #9d804e;background:#263e35;color:#fff8ec;font:400 16px/1.4 Nunito,Arial,sans-serif;min-height:44px;padding:10px 12px;margin:6px}",
  "[data-vnv-source-answer]{display:none!important}",
- "body.vnv-mentor-popup-open #vnvEcosystemUtilityDock,body.vnv-mentor-popup-open #vnvEcosystemToolbar,body.vnv-mentor-popup-open .vnv-ecosystem-utility-dock{visibility:hidden!important;pointer-events:none!important}"
+ "body:is(.vnv-mentor-popup-open,.vnv-mentor-chat-focused) #vnvEcosystemUtilityDock,body:is(.vnv-mentor-popup-open,.vnv-mentor-chat-focused) #vnvEcosystemToolbar,body:is(.vnv-mentor-popup-open,.vnv-mentor-chat-focused) .vnv-ecosystem-utility-dock{visibility:hidden!important;pointer-events:none!important}"
  ].join("\n");
  document.head.appendChild(uiStyle);
  const toolbar=document.createElement("div");toolbar.className="vnv-mentor-feed-tools";
@@ -331,6 +331,17 @@ function boot(){
    hint.textContent="Conversation cleared. Previous turns are no longer included in exports.";
   },true);
  }
+ /* The toolbar remains on the underlying page, but never intercepts a
+  * student's typing or keyboard focus in the chat composer. */
+ const setFocus=()=>document.body.classList.add("vnv-mentor-chat-focused");
+ const clearFocus=()=>queueMicrotask(()=>{
+  if(document.activeElement!==input&&document.activeElement!==log)
+   document.body.classList.remove("vnv-mentor-chat-focused");
+ });
+ input.addEventListener("focus",setFocus);
+ input.addEventListener("blur",clearFocus);
+ log.addEventListener("focusin",setFocus);
+ log.addEventListener("focusout",clearFocus);
  const popup=root.closest("dialog,[role='dialog'],.modal,.popup,[data-feature]");
  if(popup){
   const state=()=>{
@@ -341,7 +352,7 @@ function boot(){
   new MutationObserver(state).observe(popup,{attributes:true,attributeFilter:["hidden","aria-hidden","style","class"]});
   state();
  }
- global.addEventListener("pagehide",()=>{document.body.classList.remove("vnv-mentor-popup-open");observer.disconnect();});
+ global.addEventListener("pagehide",()=>{document.body.classList.remove("vnv-mentor-popup-open","vnv-mentor-chat-focused");observer.disconnect();});
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});
 else boot();
