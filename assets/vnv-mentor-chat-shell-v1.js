@@ -47,6 +47,38 @@ function commonReply(message,mentorName){
     .replace("I'm a Khaemenes Academy digital mentor","I'm "+(mentorName||"a Khaemenes Academy digital mentor")+", a Khaemenes Academy digital mentor");
  return answer;
 }
+/* Consent is explicit in the command, not inferred from conversation text.
+ * Goal stays in RAM only, never in a shared knowledge bank or student cloud.
+ */
+function createSessionLearningMemory(){
+ let goal="";
+ const prohibited=/\b(?:password|passcode|private key|api key|token|secret|bank account|credit card|medical record|student id|student record|suicide|self-harm|diagnosis|address|phone number|birthdate)\b/i;
+ return Object.freeze({
+  canHandle(message){
+   const q=normalize(message);
+   return /^my learning goal is\b/.test(q)||/^what is my learning goal$/.test(q)||
+     /^(?:forget|clear) my learning goal$/.test(q);
+  },
+  reply(message){
+   const q=normalize(message);
+   if(q==="what is my learning goal")
+    return goal?"Your learning goal for this page is: "+goal+". You can change it or ask me to forget it.":
+      "You haven't chosen a learning goal for this page. Say: My learning goal is to practice French.";
+   if(/^(?:forget|clear) my learning goal$/.test(q)){
+    goal="";return "I've cleared the learning goal from this page's temporary memory.";
+   }
+   const m=String(message||"").trim().match(/^my learning goal is\s+(.{5,150}?)\s*[.!?]*$/i);
+   if(!m)return null;
+   const proposed=m[1].trim().replace(/[.!?]+$/,"");
+   if(prohibited.test(proposed)||/@|https?:\/\/|\b\d{5,}\b/i.test(proposed))
+    return "Please choose a general, non-personal learning goal. I won't remember private identifying or sensitive details in this public demo.";
+   goal=proposed.slice(0,120);
+   return "I'll keep this learning goal while this page is open: "+goal+". It won't be automatically uploaded, used for training, or saved after you leave.";
+  },
+  clear(){goal="";},
+  snapshot(){return goal;}
+ });
+}
 const exportSchema="vnv-mentor-conversation-export-v1";
 function cleanText(x){return String(x||"").replace(/\r\n?/g,"\n").trim();}
 function exportContent({mentorId,mentorName,messages,format="json",page=""}){
@@ -74,7 +106,7 @@ function exportContent({mentorId,mentorName,messages,format="json",page=""}){
  }
  return lines.join("\n");
 }
-const api=Object.freeze({version:"1.0.0",normalize,commonReply,exportContent,exportSchema});
+const api=Object.freeze({version:"1.1.0",normalize,commonReply,createSessionLearningMemory,exportContent,exportSchema});
 global.VNVMentorConversationFeed=api;
 if(typeof module!=="undefined"&&module.exports)module.exports=api;
 if(!global.document)return;
@@ -88,6 +120,7 @@ function boot(){
  const singleSource=opts.chatAnswer?document.querySelector(opts.chatAnswer):null;
  const single=Boolean(singleSource);
  const name=opts.mentorName||opts.mentorId;
+ const sessionMemory=createSessionLearningMemory();
  if(single){
   log=document.createElement("div");
   log.setAttribute("role","log");log.setAttribute("aria-live","polite");
@@ -112,6 +145,10 @@ function boot(){
  ".vnv-mentor-feed-tools button{border-radius:7px!important;border:1px solid #9d804e!important;padding:10px 13px!important;min-height:44px!important;background:#273b34!important;color:#fff8e9!important;font:400 16px/1.4 Nunito,Arial,sans-serif!important;cursor:pointer!important}",
  ".vnv-mentor-feed-tools button:hover{background:#425c4f!important}",
  ".vnv-mentor-feed-tools p{flex-basis:100%;margin:0;text-align:center;font:400 16px/1.4 Nunito,Arial,sans-serif;color:inherit}",
+ ".vnv-mentor-feedback{max-width:900px;margin:8px auto 18px;border:1px solid #aa925e;border-radius:7px;padding:12px;background:#f9f4e9;color:#27352d;font:400 16px/1.5 Nunito,Arial,sans-serif}",
+ ".vnv-mentor-feedback summary{cursor:pointer;font:400 18px/1.5 Cinzel,Georgia,serif}",
+ ".vnv-mentor-feedback textarea{display:block;width:100%;min-height:74px;resize:vertical;margin:9px 0;padding:12px;background:#fffdf7;color:#24322a;border:1px solid #a38e65;border-radius:7px;font:400 16px/1.5 Nunito,Arial,sans-serif}",
+ ".vnv-mentor-feedback button{border-radius:7px;border:1px solid #9d804e;background:#263e35;color:#fff8ec;font:400 16px/1.4 Nunito,Arial,sans-serif;min-height:44px;padding:10px 12px;margin:6px}",
  "[data-vnv-source-answer]{display:none!important}",
  "body.vnv-mentor-popup-open #vnvEcosystemUtilityDock,body.vnv-mentor-popup-open #vnvEcosystemToolbar,body.vnv-mentor-popup-open .vnv-ecosystem-utility-dock{visibility:hidden!important;pointer-events:none!important}"
  ].join("\n");
@@ -123,6 +160,65 @@ function boot(){
   btn.textContent=kind==="txt"?"Save conversation (.txt)":"Export conversation (.json)";
   btn.addEventListener("click",()=>save(kind));
   toolbar.appendChild(btn);
+ }
+ /* Suggested improvements are local, unapproved drafts; NEVER self-training.
+  * The visitor must explicitly download a JSON for human editorial review.
+  * Sensitive / student companion pages intentionally have no feedback intake.
+  */
+ const suggestions=[];
+ if(!["hope","aurora","klasaipeer"].includes(opts.mentorId)){
+  const details=document.createElement("details");
+  details.className="vnv-mentor-feedback";
+  const summary=document.createElement("summary");
+  summary.textContent="Suggest a better answer (optional, human review)";
+  const explain=document.createElement("p");
+  explain.textContent="Public educational facts only. Do not enter names, accounts, private experiences, grades, health details or student records. Suggestions are not automatically learned or uploaded.";
+  const q=document.createElement("textarea"),a=document.createElement("textarea");
+  q.setAttribute("aria-label","Public learning question to improve");
+  q.placeholder="Public learning question";q.maxLength=300;
+  a.setAttribute("aria-label","Proposed better answer");
+  a.placeholder="Proposed better answer, with a publicly checkable source if possible";
+  a.maxLength=1200;
+  const add=document.createElement("button");add.type="button";add.textContent="Add local review suggestion";
+  const exportSuggestions=document.createElement("button");exportSuggestions.type="button";
+  exportSuggestions.textContent="Export suggestions for human review";
+  const clearSuggestions=document.createElement("button");clearSuggestions.type="button";
+  clearSuggestions.textContent="Delete local suggestions";
+  const note=document.createElement("p");note.setAttribute("role","status");
+  note.textContent="Suggestions remain in temporary page memory until you export or delete them.";
+  const prohibited=/\b(?:password|passcode|secret|api key|private key|access token|student|learner record|grade|account|medical|health|diagnosis|suicide|self-harm|home address|phone number|credit card)\b|@|https?:\/\/[^\s]*@|\b\d{5,}\b/i;
+  add.addEventListener("click",()=>{
+   const question=q.value.trim(),answer=a.value.trim();
+   if(question.length<8||answer.length<20||prohibited.test(question)||prohibited.test(answer)||
+     suggestions.length>=20){
+    note.textContent="Only non-personal educational corrections (8–300 character question, 20–1200 character answer) are accepted here. Maximum 20 drafts.";
+    return;
+   }
+   suggestions.push(Object.freeze({schema:"vnv-unverified-public-mentor-suggestion-v1",
+    mentorId:opts.mentorId,question,proposedAnswer:answer,
+    reviewState:"needs-human-verification",submittedAt:new Date().toISOString()}));
+   q.value="";a.value="";
+   note.textContent=suggestions.length+" unverified suggestion(s) in temporary memory. Export for a reviewer; the mentor has not learned them.";
+  });
+  exportSuggestions.addEventListener("click",()=>{
+   if(!suggestions.length){note.textContent="No suggestions to export.";return;}
+   const payload=JSON.stringify({
+    schema:"vnv-unverified-public-knowledge-review-bundle-v1",
+    trainingApplied:false,published:false,containsOnlyVisitorProposals:true,
+    suggestions
+   },null,2)+"\n";
+   const url=URL.createObjectURL(new Blob([payload],{type:"application/json;charset=utf-8"}));
+   const link=document.createElement("a");link.href=url;
+   link.download="vnv-"+opts.mentorId+"-unverified-suggestions.json";
+   document.body.appendChild(link);link.click();link.remove();
+   setTimeout(()=>URL.revokeObjectURL(url),2000);
+   note.textContent="Export initiated. A human reviewer must verify sources and approve any future knowledge update.";
+  });
+  clearSuggestions.addEventListener("click",()=>{
+   suggestions.length=0;q.value="";a.value="";note.textContent="Temporary suggestions deleted.";
+  });
+  details.append(summary,explain,q,a,add,exportSuggestions,clearSuggestions,note);
+  toolbar.insertAdjacentElement("afterend",details);
  }
  const hint=document.createElement("p");
  hint.textContent="Save a complete copy to your device or preferred drive. No messages are uploaded or used for automatic training.";
@@ -192,7 +288,7 @@ function boot(){
  }
  function commonAnswer(){
   const q=String(input.value||"").trim();
-  return q?commonReply(q,name):null;
+  return q?(sessionMemory.reply(q)||commonReply(q,name)):null;
  }
  function handleSend(event){
   if(input.disabled||send.disabled)return;
@@ -218,8 +314,9 @@ function boot(){
  }
  input.addEventListener("keydown",ev=>{
   if(ev.key==="Enter"&&!ev.shiftKey&&!ev.isComposing) {
-   const shared=commonAnswer();
-   if(shared)handleSend(ev);
+   const q=String(input.value||"").trim();
+   const known=sessionMemory.canHandle(q)||Boolean(commonReply(q,name));
+   if(known)handleSend(ev);
    else if(single){ // Original engine handles enter if it supports it.
      // Single-answer controls do not implement Enter; submit ourselves.
      ev.preventDefault();
@@ -229,7 +326,7 @@ function boot(){
  },true);
  if(clear){
   clear.addEventListener("click",()=>{
-   pending=null;
+   pending=null;sessionMemory.clear();
    if(single)setTimeout(()=>{log.replaceChildren();},0);
    hint.textContent="Conversation cleared. Previous turns are no longer included in exports.";
   },true);

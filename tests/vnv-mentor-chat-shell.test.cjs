@@ -27,3 +27,21 @@ test("JSON and text exports include all supplied turns with timestamps and no si
  const txt=api.exportContent({mentorId:"pierre",mentorName:"Pierre",messages,format:"txt"});
  assert.match(txt,/What is a noun\?/);assert.match(txt,/Hello!/);
 });
+
+test("session-only learning goal can be explicitly taught, recalled and forgotten",()=>{
+ const memory=api.createSessionLearningMemory();
+ assert.equal(memory.snapshot(),"");
+ assert.equal(memory.canHandle("My learning goal is to practice French"),true);
+ assert.match(memory.reply("My learning goal is to practice French"),/practice French/);
+ assert.match(memory.reply("What is my learning goal?"),/practice French/);
+ assert.match(memory.reply("Forget my learning goal"),/cleared/);
+ assert.match(memory.reply("What is my learning goal?"),/haven't chosen/);
+ assert.equal(memory.snapshot(),"");
+});
+test("public session memory refuses sensitive personal information and never persists",()=>{
+ const memory=api.createSessionLearningMemory();
+ assert.match(memory.reply("My learning goal is share my password at 12345"),/non-personal/);
+ assert.equal(memory.snapshot(),"");
+ assert.equal(memory.reply("I need help with a real exam"),null);
+ assert.equal(api.createSessionLearningMemory().snapshot(),"");
+});
