@@ -92,6 +92,8 @@ body:has(#vnvEcosystemUtilityDock) :is(#khaemenesLearnerUtilityToolbar,#khaeLand
  }
  #vnvArchaemenesMentorDialog .vnv-mentor-popup-header strong{text-align:center!important}
 }
+/* Keep the canonical dock on the page, never on top of an active popup dialog. */
+html:root body:has(dialog[open], [role="dialog"][aria-modal="true"]:not([hidden])) #vnvEcosystemUtilityDock{visibility:hidden!important;pointer-events:none!important}
 @media print{#vnvEcosystemUtilityDock,#vnvEcosystemUtilityUpdates,#vnvArchaemenesMentorDialog{display:none!important}}`;document.head.append(style);
  const dock=document.createElement("nav");dock.id=ROOT;dock.setAttribute("aria-label","Verve N Veda ecosystem utilities");
 // Legacy campus dock is removed only after the canonical dock can mount;
