@@ -35,7 +35,24 @@ const COMMON=Object.freeze({
  "thank you":"You're welcome! Would you like another example or a different topic?",
  "thanks":"You're welcome! What would you like to explore next?",
  "goodbye":"Goodbye! You can export this conversation before leaving the page.",
- "bye":"Goodbye! Remember to save the conversation if you would like your own copy."
+ "bye":"Goodbye! Remember to save the conversation if you would like your own copy.",
+ "can you help me":"Yes. Tell me the subject and what part is confusing, and we can choose a small next step. I will let you know if I need a different specialist.",
+ "can you teach me":"I can guide you through a reviewed example, ask a practice question, and help you check your understanding. Which subject would you like to start with?",
+ "what should i ask you":"Try a specific question about my specialty. You can also ask for a definition, an example or a short practice activity.",
+ "tell me a joke":"Why did the pencil bring a map to class? It wanted to draw its own conclusions.",
+ "are you human":"No. I am a digital teaching interface, not a human being. I can offer reviewed guidance without pretending to have human experiences.",
+ "are you real":"This chat is a real software service, but I am not a human person or a live classroom teacher.",
+ "do you have feelings":"I do not experience feelings the way people do. I can still respond thoughtfully and help you explore your questions.",
+ "what is artificial intelligence":"Artificial intelligence is software designed to perform tasks such as pattern recognition, language analysis or planning. Different AI systems have very different capabilities and limits.",
+ "what is ai":"AI stands for artificial intelligence: software that can perform tasks such as recognizing patterns or working with language. This public mentor uses reviewed resources and rules rather than an unrestricted language model.",
+ "what is machine learning":"Machine learning is a way of developing computer systems that detect patterns in training examples and use those patterns for later predictions. It is not the same as a computer knowing that every answer is true.",
+ "how do you know things":"I rely on reviewed question-and-answer material and limited teaching rules. I may need to ask for clarification or say I do not know rather than guess.",
+ "how old are you":"I do not have a human age. I am a digital Academy mentor interface that can be improved through reviewed updates.",
+ "what is gravity":"Gravity is the attraction between objects that have mass. On Earth it helps keep us on the ground and causes objects to fall when unsupported.",
+ "why is the sky blue":"Air molecules scatter shorter-wavelength blue sunlight more strongly than red sunlight, so clear daytime skies often look blue.",
+ "what is 2 + 2":"2 + 2 = 4.",
+ "what is 5 + 5":"5 + 5 = 10.",
+ "what is 3 + 3":"3 + 3 = 6."
 });
 function normalize(x){return String(x||"").normalize("NFKC").trim().toLowerCase().replace(/[.!?。！？]+$/u,"").replace(/\s+/gu," ").trim();}
 function commonReply(message,mentorName){
