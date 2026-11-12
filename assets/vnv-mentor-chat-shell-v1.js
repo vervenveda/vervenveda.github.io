@@ -186,7 +186,7 @@ function boot(){
   clearSuggestions.textContent="Delete local suggestions";
   const note=document.createElement("p");note.setAttribute("role","status");
   note.textContent="Suggestions remain in temporary page memory until you export or delete them.";
-  const prohibited=/\b(?:password|passcode|secret|api key|private key|access token|student|learner record|grade|account|medical|health|diagnosis|suicide|self-harm|home address|phone number|credit card)\b|@|https?:\/\/[^\s]*@|\b\d{5,}\b/i;
+  const prohibited=/\b(?:password|passcode|secret|api key|private key|access token|student|learner record|grade|account|medical|health|diagnosis|suicide|self-harm|home address|phone number|credit card|locked[\s-]?(?:exam|test)|answer[\s-]?key|assessment)\b|@|https?:\/\/[^\s]*@|\b\d{5,}\b/i;
   add.addEventListener("click",()=>{
    const question=q.value.trim(),answer=a.value.trim();
    if(question.length<8||answer.length<20||prohibited.test(question)||prohibited.test(answer)||
