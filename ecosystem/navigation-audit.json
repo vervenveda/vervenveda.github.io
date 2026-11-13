@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-12T13:45:49Z",
+  "generatedAt": "2026-11-13T13:05:11Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12279,
+    "htmlCount": 12280,
     "brokenLocalLinkCount": 9,
     "rootOrphanHtmlCount": 5326,
     "unreferencedHtmlCount": 1523,
@@ -982,9 +982,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3520,
+      "htmlCount": 3521,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2489,
+      "rootReachableHtmlCount": 2490,
       "rootOrphanHtmlCount": 1009,
       "unreferencedHtmlCount": 699,
       "duplicateGroupCount": 0,
@@ -1160,23 +1160,33 @@
       "duplicateGroups": [],
       "versionSiblingGroups": [
         [
-          "courses/social-studies/grade-09/week-10/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-10/student-packet.html"
+          "courses/social-studies/grade-09/week-07/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-07/student-packet.html"
         ],
         [
-          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-06/student-packet.html"
+          "courses/social-studies/grade-09/week-10/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-10/student-packet.html"
         ],
         [
           "courses/social-studies/grade-09/week-09/student-packet-v2.html",
           "courses/social-studies/grade-09/week-09/student-packet.html"
         ],
         [
-          "courses/social-studies/grade-09/week-07/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-07/student-packet.html"
+          "courses/social-studies/grade-09/week-06/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-06/student-packet.html"
         ]
       ],
       "intentionalSiblingGroups": [
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html": ""
+          }
+        },
         {
           "pages": [
             "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html",
@@ -1185,16 +1195,6 @@
           "roles": {
             "courses/social-studies/grade-09/weeks/week-10/student-packet-v2.html": "canonical-assessment",
             "courses/social-studies/grade-09/weeks/week-10/student-packet.html": ""
-          }
-        },
-        {
-          "pages": [
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
-          ],
-          "roles": {
-            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
           }
         },
         {
@@ -1209,12 +1209,12 @@
         },
         {
           "pages": [
-            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html"
           ],
           "roles": {
-            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-07/student-packet.html": ""
+            "courses/social-studies/grade-09/weeks/week-06/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-06/student-packet.html": ""
           }
         }
       ],
