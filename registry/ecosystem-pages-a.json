@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-12T20:27:14Z",
+  "generatedAt": "2026-11-13T07:18:10Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -33021,6 +33021,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Learner Archive",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/pre-algebra/records/learner-archive.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/pre-algebra/records/learner-archive.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Exit Mastery",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/pre-algebra/units/unit-00/assessment/exit-mastery.html",
       "repo": "Khaemenes_High.github.io",
@@ -44113,14 +44121,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-05.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }
