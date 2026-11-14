@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-14T18:29:10Z",
+  "generatedAt": "2026-11-14T22:44:44Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -37053,6 +37053,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "W21 Inheritance",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-21/labs/w21-inheritance.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/biology-10/weeks/week-21/labs/w21-inheritance.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Day 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-21/lessons/day-01.html",
       "repo": "Khaemenes_High.github.io",
@@ -37245,6 +37253,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "W25 Gene Regulation",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-25/labs/w25-gene-regulation.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/biology-10/weeks/week-25/labs/w25-gene-regulation.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Day 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-25/lessons/day-01.html",
       "repo": "Khaemenes_High.github.io",
@@ -37385,6 +37401,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-28/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/biology-10/weeks/week-28/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "W28 Population Genetics",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-28/labs/w28-population-genetics.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/biology-10/weeks/week-28/labs/w28-population-genetics.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -37629,6 +37653,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "W33 Population Dynamics",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-33/labs/w33-population-dynamics.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/biology-10/weeks/week-33/labs/w33-population-dynamics.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Day 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-33/lessons/day-01.html",
       "repo": "Khaemenes_High.github.io",
@@ -37721,6 +37753,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-35/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/biology-10/weeks/week-35/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "W35 Capstone",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-35/labs/w35-capstone.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/biology-10/weeks/week-35/labs/w35-capstone.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -44113,22 +44153,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-28/lessons/day-03.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }
