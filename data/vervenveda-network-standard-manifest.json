@@ -256,6 +256,17 @@
       "name": "333-Network-Private-Core",
       "kind": "infrastructure",
       "publicSurface": false
+    },
+    {
+      "owner": "KhaemenesAcademy",
+      "name": "KhaemenesAcademy.github.io",
+      "kind": "academy-front-door",
+      "publicSurface": true,
+      "role": "future-canonical-academy-gateway",
+      "replaces": "vervenveda/KhaemenesAcademy_Home.github.io"
     }
+  ],
+  "externalGovernedSurfaces": [
+    "KhaemenesAcademy/KhaemenesAcademy.github.io"
   ]
 }
