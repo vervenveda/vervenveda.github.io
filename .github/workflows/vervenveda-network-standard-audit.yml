@@ -1,0 +1,44 @@
+name: Verve N Veda Network Standard Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 9 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - 'data/vervenveda-network-standard-manifest.json'
+      - 'tools/vervenveda-network-standard-audit.mjs'
+      - '.github/workflows/vervenveda-network-standard-audit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit all Verve N Veda repositories
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node tools/vervenveda-network-standard-audit.mjs
+      - name: Validate generated report
+        run: git diff --check
+      - name: Commit master compliance report
+        shell: bash
+        run: |
+          if git diff --quiet reports/; then
+            echo "Network compliance report is unchanged."
+            exit 0
+          fi
+          git config user.name "Verve N Veda Network Audit"
+          git config user.email "vervenveda@users.noreply.github.com"
+          git add reports/vervenveda-network-standard.json reports/vervenveda-network-standard.md
+          git commit -m "Refresh Verve N Veda network standard report"
+          git push
