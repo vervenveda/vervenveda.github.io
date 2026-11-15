@@ -14,9 +14,9 @@ async function api(url){
   if(!r.ok)throw new Error(r.status+" "+r.statusText+" "+url);
   return r.json();
 }
-async function fileText(repo,file){
+async function fileText(repo,file,owner=OWNER){
   try{
-    const j=await api(`https://api.github.com/repos/${OWNER}/${repo}/contents/${file}?ref=main`);
+    const j=await api(`https://api.github.com/repos/${owner}/${repo}/contents/${file}?ref=main`);
     if(!j?.content)return "";
     return Buffer.from(j.content,"base64").toString("utf8");
   }catch{return ""}
@@ -25,10 +25,11 @@ const yes=v=>v?"PASS":"—";
 const has=(text,re)=>re.test(text||"");
 
 async function inspect(entry){
-  const base={name:entry.name,kind:entry.kind,publicSurface:entry.publicSurface};
+  const repoOwner=entry.owner||OWNER;
+  const base={owner:repoOwner,name:entry.name,kind:entry.kind,publicSurface:entry.publicSurface,role:entry.role||null,replaces:entry.replaces||null};
   let tree;
   try{
-    tree=await api(`https://api.github.com/repos/${OWNER}/${entry.name}/git/trees/main?recursive=1`);
+    tree=await api(`https://api.github.com/repos/${repoOwner}/${entry.name}/git/trees/main?recursive=1`);
   }catch(error){
     return {...base,status:"UNAVAILABLE",error:String(error.message||error)};
   }
@@ -39,9 +40,9 @@ async function inspect(entry){
   const hasIndex=paths.includes("index.html");
   const semanticAudit=paths.includes("tools/semantic-hierarchy-audit.mjs");
   const guardCandidates=paths.filter(p=>/^assets\/.*(?:global|chrome|standard).*\.js$/i.test(p));
-  const indexText=hasIndex?await fileText(entry.name,"index.html"):"";
+  const indexText=hasIndex?await fileText(entry.name,"index.html",repoOwner):"";
   let guardText="";
-  for(const p of guardCandidates.slice(0,4))guardText+="\n"+await fileText(entry.name,p);
+  for(const p of guardCandidates.slice(0,4))guardText+="\n"+await fileText(entry.name,p,repoOwner);
   const authority=indexText+"\n"+guardText;
 
   const earlyLearning=entry.ageBandStandard==="early-learning";
