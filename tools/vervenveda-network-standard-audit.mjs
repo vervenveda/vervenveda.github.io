@@ -44,26 +44,30 @@ async function inspect(entry){
   for(const p of guardCandidates.slice(0,4))guardText+="\n"+await fileText(entry.name,p);
   const authority=indexText+"\n"+guardText;
 
+  const earlyLearning=entry.ageBandStandard==="early-learning";
   const checks={
     ticker333:has(authority,/vnv-333-ticker\.js|vnv333NetworkTicker|VNV333Ticker/i),
     autoTicker:has(authority,/vnv-ticker-autopopulate\.js|vnvTickerAutoPopulate|VNV_TICKER/i),
     officialHeader:has(authority,/vnv-header-autopopulate\.js|VNV_HEADER/i),
     officialToolbar:has(authority,/vnv-ecosystem-toolbar\.js|vnvEcosystemUtilityDock|VNVEcosystemToolbar/i),
     typography16:has(guardText,/font-size["',:]?\s*16px|font-size:16px|size<16/i),
+    typography18:has(guardText,/font-size["',:]?\s*18px|font-size:18px|size<18/i),
     typography33:has(guardText,/font-size:33px!important|ordinaryTitlePx[^\d]*33/i),
     typography66:has(guardText,/font-size:66px!important|primaryHeroTitlePx[^\d]*66/i),
     semanticAuthority:has(guardText,/khaemenesHierarchy="title-description-v1"|__KHAEMENES_SEMANTIC_HIERARCHY_V1__/i),
     semanticAudit
   };
   const required=entry.publicSurface
-    ?["ticker333","autoTicker","officialHeader","officialToolbar","typography16","typography33","typography66","semanticAuthority","semanticAudit"]
+    ?(earlyLearning
+      ?["autoTicker","officialHeader","officialToolbar","typography18","typography33","typography66","semanticAuthority","semanticAudit"]
+      :["ticker333","autoTicker","officialHeader","officialToolbar","typography16","typography33","typography66","semanticAuthority","semanticAudit"])
     :[];
   const passCount=required.filter(k=>checks[k]).length;
   const status=!entry.publicSurface?"INFRASTRUCTURE":
     passCount===required.length?"HARDENED":
     passCount>=5?"PARTIAL":"NEEDS STANDARDIZATION";
 
-  return {...base,htmlFiles,protectedIndexCores,hasIndex,guardCandidates,checks,passCount,requiredCount:required.length,status};
+  return {...base,htmlFiles,protectedIndexCores,hasIndex,guardCandidates,checks,passCount,requiredCount:required.length,status,ageBandStandard:entry.ageBandStandard||"default",intentional333Omission:earlyLearning};
 }
 
 const results=[];
@@ -100,7 +104,9 @@ Generated: ${summary.generatedAt}
 
 **Hardened:** ${summary.hardened} · **Partial:** ${summary.partial} · **Needs standardization:** ${summary.needsStandardization} · **Unavailable:** ${summary.unavailable}
 
-Standard: readable text ≥16px; ordinary titles 33px; one primary hero title 66px; eyebrow = category/brand; title = heading; description = paragraph.
+Default standard: readable text ≥16px; ordinary titles 33px; one primary hero title 66px; eyebrow = category/brand; title = heading; description = paragraph.
+
+Early Learning exception (Preschool + Kindergarten): readable text ≥18px; **no 333 ticker**; AutoPopulate ticker remains required with the official header/menu and lower-right toolbar.
 
 | Repository | Type | HTML | 333 | Auto | Header | Toolbar | 16/33/66 | Semantic hierarchy | Status |
 |---|---|---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
