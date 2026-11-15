@@ -1,0 +1,219 @@
+{
+  "owner": "vervenveda",
+  "version": "2026-11-14.v1",
+  "standard": {
+    "minimumReadableTextPx": 16,
+    "ordinaryTitlePx": 33,
+    "primaryHeroTitlePx": 66,
+    "semanticRule": "eyebrow = category/brand; title = heading; description = paragraph",
+    "chrome": [
+      "333 ticker",
+      "AutoPopulate ticker",
+      "official VNV header",
+      "hamburger/enriched ecosystem menu",
+      "official 3x2 lower-right ecosystem toolbar"
+    ]
+  },
+  "repositories": [
+    {
+      "name": "vervenveda.github.io",
+      "kind": "gateway",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_Academy.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "Arshif.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "onenationforall.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "arcade.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "river_to_road.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "theverifier.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "firmament.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "PLERASearch.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "solanar.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "myartgallery.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "admin.github.io",
+      "kind": "admin-surface",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_Preschool.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "proresource_hub.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "bazaarart.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "aurora.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_Linguistics.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_KinderGarden.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_High.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_Middle.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_Elementary.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_Higher_Learning.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "PLERA.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "the_refrain.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "medicament-hub.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "JenniferPearl2028.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "veterans.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "Homeless.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "finance.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "333.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "Khaemenes_Assessment_Authority",
+      "kind": "infrastructure",
+      "publicSurface": false
+    },
+    {
+      "name": "Dummy.github.io",
+      "kind": "test-surface",
+      "publicSurface": true
+    },
+    {
+      "name": "spyder-cloud",
+      "kind": "infrastructure",
+      "publicSurface": false
+    },
+    {
+      "name": "Khaemenes_Academy_Life_Skills.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "Saudi_Arabia.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "Palestine.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "Iran.github.io",
+      "kind": "public-app",
+      "publicSurface": true
+    },
+    {
+      "name": "Academy-Yearbook.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "KhaemenesAcademy_Home.github.io",
+      "kind": "academy",
+      "publicSurface": true
+    },
+    {
+      "name": "333-Network-Private-Core",
+      "kind": "infrastructure",
+      "publicSurface": false
+    }
+  ]
+}
