@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-15T19:07:01Z",
+  "generatedAt": "2026-11-16T07:17:08Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -23829,6 +23829,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Evidence Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/evidence-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/evidence-studio.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Grade 10",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/grades/grade-10/",
       "repo": "Khaemenes_High.github.io",
@@ -23849,6 +23857,46 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/offline-reading-pack-weeks-01-06.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-10/offline-reading-pack-weeks-01-06.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 07 12",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/offline-reading-pack-weeks-07-12.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/offline-reading-pack-weeks-07-12.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 13 18",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/offline-reading-pack-weeks-13-18.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/offline-reading-pack-weeks-13-18.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 19 24",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/offline-reading-pack-weeks-19-24.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/offline-reading-pack-weeks-19-24.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 25 30",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/offline-reading-pack-weeks-25-30.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/offline-reading-pack-weeks-25-30.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 31 36",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/offline-reading-pack-weeks-31-36.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/offline-reading-pack-weeks-31-36.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -23909,6 +23957,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Progress Report",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/records/progress-report.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/records/progress-report.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Reading Log",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/records/reading-log.html",
       "repo": "Khaemenes_High.github.io",
@@ -23949,6 +24005,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Product Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/rubrics/product-companion.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/rubrics/product-companion.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Research",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/rubrics/research.html",
       "repo": "Khaemenes_High.github.io",
@@ -23985,6 +24049,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/units/unit-01/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-10/units/unit-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Reading Dossier",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/units/unit-01/reading-dossier.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/units/unit-01/reading-dossier.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -24629,6 +24701,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Evidence Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/evidence-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/evidence-studio.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Grade 11",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/grades/grade-11/",
       "repo": "Khaemenes_High.github.io",
@@ -24649,6 +24729,46 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/offline-reading-pack-weeks-01-06.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-11/offline-reading-pack-weeks-01-06.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 07 12",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/offline-reading-pack-weeks-07-12.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/offline-reading-pack-weeks-07-12.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 13 18",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/offline-reading-pack-weeks-13-18.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/offline-reading-pack-weeks-13-18.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 19 24",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/offline-reading-pack-weeks-19-24.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/offline-reading-pack-weeks-19-24.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 25 30",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/offline-reading-pack-weeks-25-30.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/offline-reading-pack-weeks-25-30.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 31 36",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/offline-reading-pack-weeks-31-36.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/offline-reading-pack-weeks-31-36.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -24709,6 +24829,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Progress Report",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/records/progress-report.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/records/progress-report.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Reading Log",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/records/reading-log.html",
       "repo": "Khaemenes_High.github.io",
@@ -24749,6 +24877,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Product Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/rubrics/product-companion.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/rubrics/product-companion.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Research",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/rubrics/research.html",
       "repo": "Khaemenes_High.github.io",
@@ -24785,6 +24921,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/units/unit-01/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-11/units/unit-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Reading Dossier",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/units/unit-01/reading-dossier.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/units/unit-01/reading-dossier.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -25429,6 +25573,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Evidence Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/evidence-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/evidence-studio.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Grade 12",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/grades/grade-12/",
       "repo": "Khaemenes_High.github.io",
@@ -25449,6 +25601,46 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/offline-reading-pack-weeks-01-06.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-12/offline-reading-pack-weeks-01-06.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 07 12",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/offline-reading-pack-weeks-07-12.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/offline-reading-pack-weeks-07-12.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 13 18",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/offline-reading-pack-weeks-13-18.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/offline-reading-pack-weeks-13-18.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 19 24",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/offline-reading-pack-weeks-19-24.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/offline-reading-pack-weeks-19-24.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 25 30",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/offline-reading-pack-weeks-25-30.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/offline-reading-pack-weeks-25-30.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 31 36",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/offline-reading-pack-weeks-31-36.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/offline-reading-pack-weeks-31-36.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -25509,6 +25701,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Progress Report",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/records/progress-report.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/records/progress-report.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Reading Log",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/records/reading-log.html",
       "repo": "Khaemenes_High.github.io",
@@ -25549,6 +25749,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Product Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/rubrics/product-companion.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/rubrics/product-companion.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Research",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/rubrics/research.html",
       "repo": "Khaemenes_High.github.io",
@@ -25585,6 +25793,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/units/unit-01/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-12/units/unit-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Reading Dossier",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/units/unit-01/reading-dossier.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/units/unit-01/reading-dossier.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -26133,6 +26349,110 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Unit 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-01/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-02/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-02/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-03/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-03/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-04/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-04/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-05/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-05/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 06",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-06/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-06/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 07",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-07/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-07/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 08",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-08/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-08/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 09",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-09/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-09/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 10",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-10/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-10/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 11",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-11/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-11/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Unit 12",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/assessments/unit-12/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/assessments/unit-12/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Evidence Studio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/evidence-studio.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/evidence-studio.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Foundations",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/foundations/",
       "repo": "Khaemenes_High.github.io",
@@ -26169,6 +26489,46 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/offline-reading-pack-weeks-01-06.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-9/offline-reading-pack-weeks-01-06.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 07 12",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/offline-reading-pack-weeks-07-12.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/offline-reading-pack-weeks-07-12.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 13 18",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/offline-reading-pack-weeks-13-18.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/offline-reading-pack-weeks-13-18.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 19 24",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/offline-reading-pack-weeks-19-24.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/offline-reading-pack-weeks-19-24.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 25 30",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/offline-reading-pack-weeks-25-30.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/offline-reading-pack-weeks-25-30.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Offline Reading Pack Weeks 31 36",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/offline-reading-pack-weeks-31-36.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/offline-reading-pack-weeks-31-36.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -26229,6 +26589,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Progress Report",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/records/progress-report.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/records/progress-report.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Reading Log",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/records/reading-log.html",
       "repo": "Khaemenes_High.github.io",
@@ -26245,6 +26613,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Rubrics",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/rubrics/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/rubrics/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Literary Analysis",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/rubrics/literary-analysis.html",
       "repo": "Khaemenes_High.github.io",
@@ -26257,6 +26633,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/rubrics/narrative.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-9/rubrics/narrative.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Product Companion",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/rubrics/product-companion.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/rubrics/product-companion.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -26313,6 +26697,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/units/unit-01/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-9/units/unit-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Reading Dossier",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/units/unit-01/reading-dossier.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/units/unit-01/reading-dossier.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -44097,190 +44489,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-21/lessons/day-04.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-21/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-21/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-21/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Week 22",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-22/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-22/index.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-22/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-22/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-22/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-22/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-22/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-22/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-22/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-22/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-22/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-22/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Week 23",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-23/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-23/index.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-23/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-23/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-23/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-23/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-23/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-23/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-23/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-23/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-23/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-23/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Week 24",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-24/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-24/index.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-24/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-24/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-24/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-24/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-24/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-24/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-24/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-24/lessons/day-04.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 05",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-24/lessons/day-05.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-24/lessons/day-05.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Week 25",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-25/",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-25/index.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-25/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-25/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-25/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-25/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-25/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-25/lessons/day-03.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }
