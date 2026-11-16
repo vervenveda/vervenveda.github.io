@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-16T07:17:08Z",
+  "generatedAt": "2026-11-16T22:31:27Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
@@ -737,6 +737,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/science-honors-12_index.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/science-honors-12_index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Family Records",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/shared/family-records/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/shared/family-records/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
