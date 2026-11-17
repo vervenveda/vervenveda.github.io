@@ -1,4 +1,4 @@
-/* Verve N Veda · Universal Class Tools Toolbar v1.0.0
+/* Verve N Veda · Universal Class Tools Toolbar v1.1.0
    Canonical lower-left learning-tools companion to vnv-ecosystem-toolbar.js.
    Idempotent. Directory-backed. Navigation only; no grading/mastery mutations. */
 (()=>{
@@ -8,7 +8,10 @@ const LEGACY_API_KEY="KhaemenesClassToolsToolbarV1";
 const CONFIG_KEY="KhaemenesClassToolsConfigV1";
 const ROOT_ID="vnvClassToolsToolbar";
 const STYLE_ID="vnvClassToolsToolbarStyles";
-const DIRECTORY_URL="https://vervenveda.com/ecosystem/master-ecosystem-directory.json";
+const DIRECTORY_URLS=Object.freeze([
+ "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/master-ecosystem-directory.json",
+ "https://vervenveda.com/ecosystem/master-ecosystem-directory.json"
+]);
 
 const HIGH_DEFAULT=Object.freeze({
  id:"high-school",
@@ -56,10 +59,19 @@ const activeEntry=e=>e&&e.directoryVisible===true&&e.access==="free-public"&&e.s
 
 async function directory(){
  if(directoryPromise)return directoryPromise;
- directoryPromise=fetch(DIRECTORY_URL,{cache:"no-store",credentials:"omit"})
-  .then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()})
-  .then(data=>Array.isArray(data?.entries)?data.entries.filter(activeEntry):[])
-  .catch(err=>{console.warn("VNV Class Tools directory unavailable; local fallbacks remain active.",err);return []});
+ directoryPromise=(async()=>{
+  let lastError=null;
+  for(const url of DIRECTORY_URLS){
+   try{
+    const r=await fetch(url,{cache:"no-store",credentials:"omit"});
+    if(!r.ok)throw Error("HTTP "+r.status);
+    const data=await r.json();
+    if(Array.isArray(data?.entries))return data.entries.filter(activeEntry);
+   }catch(err){lastError=err}
+  }
+  console.warn("VNV Class Tools directory unavailable; local fallbacks remain active.",lastError);
+  return [];
+ })();
  return directoryPromise;
 }
 async function resolveEcosystemId(id,fallback=""){
@@ -188,7 +200,7 @@ async function mount(){
  return true;
 }
 function unmount(){if(controller)controller.abort();document.getElementById(ROOT_ID)?.remove();document.documentElement.dataset.vnvClassTools="unmounted";}
-const api=Object.freeze({version:"1.0.0",mount,unmount,isMounted,directory});
+const api=Object.freeze({version:"1.1.0",mount,unmount,isMounted,directory});
 window[API_KEY]=api;window[LEGACY_API_KEY]=api;
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>void mount(),{once:true});
 else void mount();
