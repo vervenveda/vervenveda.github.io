@@ -99,7 +99,7 @@ function isMounted(){return !!document.getElementById(ROOT_ID)}
 function installStyle(){
  if(document.getElementById(STYLE_ID))return;
  const s=document.createElement("style");s.id=STYLE_ID;s.textContent=[
-  '#vnvClassToolsToolbar{position:fixed;left:max(12px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom));z-index:2147482400;width:min(320px,calc(100vw - 24px));font:400 16px/1.4 "Brandon Grotesque","Avenir Next",Arial,sans-serif}',
+  '#vnvClassToolsToolbar{position:fixed;left:max(12px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom));z-index:2147482400;width:min(240px,calc(100vw - 24px));font:400 16px/1.4 "Brandon Grotesque","Avenir Next",Arial,sans-serif}',
   '#vnvClassToolsToggle{min-height:48px;padding:10px 16px;border:1px solid rgba(180,139,69,.72);border-radius:7px;background:#243038;color:#fff8e9;font:400 16px/1.35 Cinzel,Georgia,serif;box-shadow:0 8px 24px #0004;cursor:pointer}',
   '#vnvClassToolsPanel{margin-top:6px;padding:7px;border:1px solid rgba(180,139,69,.48);border-radius:7px;background:rgba(255,253,248,.97);box-shadow:0 10px 30px rgba(15,25,37,.17);backdrop-filter:blur(10px)}',
   '#vnvClassToolsPanel[hidden],#vnvClassToolsPanel [hidden]{display:none!important}',
@@ -114,7 +114,7 @@ function installStyle(){
   '#vnvClassToolsPanel .vct-links a{display:block;min-height:44px;box-sizing:border-box;padding:10px;border:1px solid #b48b45;border-radius:7px;background:#243038;color:#fff8e9;text-align:center;text-decoration:none;font-size:16px}',
   '#vnvClassToolsToolbar :is(button,a):focus-visible{outline:3px solid #e0bf83;outline-offset:3px}',
   '#vnvClassToolsToggle,#vnvClassToolsPanel .vct-grid>:is(button,a){white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis}',
-  '@media(max-width:620px){#vnvClassToolsToolbar{width:min(294px,calc(100vw - 20px))}#vnvClassToolsPanel .vct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}',
+  '@media(max-width:700px){#vnvClassToolsToolbar{left:auto;right:max(12px,env(safe-area-inset-right));bottom:calc(max(12px,env(safe-area-inset-bottom)) + var(--vnv-ecosystem-dock-height, 150px) + 10px);width:min(240px,calc(100vw - 24px))}#vnvClassToolsPanel{max-height:min(58dvh,420px);overflow-y:auto;overscroll-behavior:contain}#vnvClassToolsPanel .vct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}',
   '@media print{#vnvClassToolsToolbar{display:none!important}}'
  ].join("");
  (document.head||document.documentElement).append(s);
