@@ -2428,13 +2428,13 @@
       ],
       "note": "STOS remains dormant future-migration infrastructure; GitHub is the current functional public environment. New repositories remain under review until explicitly approved in the canonical master directory."
     },
-    "lastForensicRefresh": "2026-11-16",
+    "lastForensicRefresh": "2026-11-17",
     "autoSync": {
       "enabled": true,
       "mode": "approved-repositories-only",
       "newRepositoryPolicy": "discover-under-review",
       "stos": "dormant-excluded",
-      "generatedAt": "2026-11-16T22:31:27Z"
+      "generatedAt": "2026-11-17T08:29:40Z"
     }
   },
   "developmentStatusValues": [
