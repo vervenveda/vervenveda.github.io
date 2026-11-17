@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-16T13:37:44Z",
+  "generatedAt": "2026-11-17T14:22:17Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12371,
-    "brokenLocalLinkCount": 9,
-    "rootOrphanHtmlCount": 5470,
-    "unreferencedHtmlCount": 1959,
+    "htmlCount": 12374,
+    "brokenLocalLinkCount": 34,
+    "rootOrphanHtmlCount": 5473,
+    "unreferencedHtmlCount": 1961,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
     "canonicalAliasCount": 2,
-    "supersededNameCount": 4
+    "supersededNameCount": 5
   },
   "failures": [],
   "repositories": [
@@ -702,9 +702,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Academy.github.io",
-      "htmlCount": 29,
+      "htmlCount": 30,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 21,
+      "rootReachableHtmlCount": 22,
       "rootOrphanHtmlCount": 8,
       "unreferencedHtmlCount": 4,
       "duplicateGroupCount": 0,
@@ -982,17 +982,193 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3609,
-      "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 2436,
-      "rootOrphanHtmlCount": 1151,
-      "unreferencedHtmlCount": 698,
+      "htmlCount": 3611,
+      "brokenLocalLinkCount": 25,
+      "rootReachableHtmlCount": 2435,
+      "rootOrphanHtmlCount": 1154,
+      "unreferencedHtmlCount": 700,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 4,
       "intentionalSiblingGroupCount": 4,
       "canonicalAliasCount": 1,
-      "supersededNameCount": 0,
-      "brokenLocalLinks": [],
+      "supersededNameCount": 1,
+      "brokenLocalLinks": [
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/shared/course-entry-contract.js",
+          "raw": "../../shared/course-entry-contract.js?v=20261016",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/shared/learner-scope-v1.js",
+          "raw": "../../shared/learner-scope-v1.js?v=20261016",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/assets/vervenveda-parchment.css",
+          "raw": "../../../assets/vervenveda-parchment.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/shared/monte-carlo-assessment-v1.js",
+          "raw": "../../shared/monte-carlo-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/shared/high-school-learning-context-v1.js",
+          "raw": "../../shared/high-school-learning-context-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/shared/high-school-assessment-adapter-v1.js",
+          "raw": "../../shared/high-school-assessment-adapter-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/assets/academy-unified-print-header.js",
+          "raw": "../../../assets/academy-unified-print-header.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/assets/high-navigation-v1.css",
+          "raw": "../../../assets/high-navigation-v1.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/assets/grade10-course-focus-v1.css",
+          "raw": "assets/grade10-course-focus-v1.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/unit-01/evidence-lab.html",
+          "raw": "unit-01/evidence-lab.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/mathematics/tools/vocabulary-studio.html",
+          "raw": "../../mathematics/tools/vocabulary-studio.html?course=social-studies-10&unit=01",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/tools/visual-studio.html",
+          "raw": "../tools/visual-studio.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/tools/academic-evidence-printout.html",
+          "raw": "../tools/academic-evidence-printout.html?grade=10",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/tools/source-quality-lab.html",
+          "raw": "../tools/source-quality-lab.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/tools/evidence-ledger.html",
+          "raw": "../tools/evidence-ledger.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/tools/visual-studio.html",
+          "raw": "../tools/visual-studio.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/unit-01/evidence-lab.html",
+          "raw": "unit-01/evidence-lab.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/resources/map-data-analysis.html",
+          "raw": "resources/map-data-analysis.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/mathematics/tools/vocabulary-studio.html",
+          "raw": "../../mathematics/tools/vocabulary-studio.html?course=social-studies-10&unit=01",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/docs/CURRICULUM_MAP.md",
+          "raw": "docs/CURRICULUM_MAP.md",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/assets/high-school-return-to-classes.js",
+          "raw": "../../../assets/high-school-return-to-classes.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/assets/high-navigation-v1.js",
+          "raw": "../../../assets/high-navigation-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/assets/grade10-socialstudies-unified-upgrade.js",
+          "raw": "assets/grade10-socialstudies-unified-upgrade.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/assets/socialstudies-beta-bridge.js",
+          "raw": "assets/socialstudies-beta-bridge.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
+          "target": "courses/social-studies/grade-10/workflow/assets/grade10-course-focus-v1.js",
+          "raw": "assets/grade10-course-focus-v1.js",
+          "tag": "script",
+          "attr": "src"
+        }
+      ],
       "rootOrphans": [
         "assets/Learn-a-new-word.html",
         "courses/language-arts/english-10/grades/grade-10/index.html",
@@ -1224,7 +1400,9 @@
           "canonical": "courses/social-studies/grade-09/assessments/readiness-v3.html"
         }
       ],
-      "supersededNames": []
+      "supersededNames": [
+        "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html"
+      ]
     },
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
