@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-18T07:56:24Z",
+  "generatedAt": "2026-11-18T20:53:51Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -23861,6 +23861,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Learning Tools",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/learning-tools.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/learning-tools.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Offline Reading Pack Weeks 01 06",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/offline-reading-pack-weeks-01-06.html",
       "repo": "Khaemenes_High.github.io",
@@ -24733,6 +24741,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Learning Tools",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/learning-tools.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/learning-tools.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Offline Reading Pack Weeks 01 06",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/offline-reading-pack-weeks-01-06.html",
       "repo": "Khaemenes_High.github.io",
@@ -25601,6 +25617,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-12/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Learning Tools",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/learning-tools.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/learning-tools.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -26705,6 +26729,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/units/unit-01/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-9/units/unit-01/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Interactive Worksheet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/units/unit-01/interactive-worksheet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/units/unit-01/interactive-worksheet.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -32317,6 +32349,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Retention Lab",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/geometry/assessments/retention-lab.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/geometry/assessments/retention-lab.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Weekly Mastery",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/geometry/assessments/weekly-mastery.html",
       "repo": "Khaemenes_High.github.io",
@@ -33985,6 +34025,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/pre-algebra/records/learner-archive.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/pre-algebra/records/learner-archive.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Teacher",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/pre-algebra/teacher/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/pre-algebra/teacher/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -36921,6 +36969,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/readiness/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/readiness/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Runtime Acceptance",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/runtime-acceptance/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/runtime-acceptance/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Storage Failure Fixture",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/runtime-acceptance/storage-failure-fixture.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/runtime-acceptance/storage-failure-fixture.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -44609,38 +44673,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-18/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/weeks/week-18/index.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 01",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-18/lessons/day-01.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-18/lessons/day-01.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 02",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-18/lessons/day-02.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-18/lessons/day-02.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 03",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-18/lessons/day-03.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-18/lessons/day-03.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Day 04",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/weeks/week-18/lessons/day-04.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/science/physics-engineering-12/weeks/week-18/lessons/day-04.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }
