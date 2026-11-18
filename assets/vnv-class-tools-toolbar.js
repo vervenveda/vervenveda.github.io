@@ -180,6 +180,15 @@ function installStyle(){
   '#vnvClassToolsToolbar :is(button,a):focus-visible{outline:3px solid #e0bf83;outline-offset:3px}',
   '#vnvClassToolsToggle,#vnvClassToolsPanel .vct-grid>:is(button,a){white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis}',
   '@media(max-width:700px){#vnvClassToolsToolbar{left:auto;right:max(12px,env(safe-area-inset-right));bottom:calc(max(12px,env(safe-area-inset-bottom)) + var(--vnv-ecosystem-dock-height, 150px) + 10px);width:min(240px,calc(100vw - 24px))}#vnvClassToolsPanel{max-height:min(58dvh,420px);overflow-y:auto;overscroll-behavior:contain}#vnvClassToolsPanel .vct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}',
+  /* Elementary preset alone inherits the gateway ecosystem-directory charcoal / parchment skin.
+     Preserve the 240px canonical dock and the right-side toolbar's compact 44px tile geometry. */
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"]{width:min(240px,calc(100vw - 24px))!important;left:max(12px,env(safe-area-inset-left))!important;right:auto!important;bottom:max(12px,env(safe-area-inset-bottom))!important}',
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"] #vnvClassToolsPanel{padding:7px!important;border:1px solid rgba(180,139,69,.48)!important;border-radius:7px!important;background:rgba(255,253,248,.97)!important}',
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"] .vct-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:5px!important}',
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"] .vct-grid .vct-tool{min-height:44px!important;padding:4px!important;gap:0!important;border:1px solid #171a19!important;border-radius:7px!important;background:linear-gradient(180deg,#343837,#272b2a)!important;color:#f4f0e7!important;font:400 16px/1.2 "Brandon Grotesque","Avenir Next",Arial,sans-serif!important;white-space:nowrap!important}',
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"] .vct-grid .vct-tool strong{font:400 16px/1.2 "Brandon Grotesque","Avenir Next",Arial,sans-serif!important;color:#f4f0e7!important;white-space:nowrap!important}',
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"] .vct-grid .vct-tool span{display:none!important}',
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"] .vct-grid .vct-tool:hover,#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"] .vct-grid .vct-tool:focus-visible{background:linear-gradient(180deg,#3d4240,#2b302e)!important;color:#fff!important;transform:translateY(-1px)}',
   '@media print{#vnvClassToolsToolbar{display:none!important}}'
  ].join("");
  (document.head||document.documentElement).append(s);
