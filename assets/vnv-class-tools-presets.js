@@ -18,12 +18,12 @@ const elementary=Object.freeze({
  toggleLabel:"Tools",
  ariaLabel:"Elementary learning tools",
  tools:[
-  {type:"ecosystem-list",label:"Games",sub:"Practice & play",filter:{category:"games",limit:9}},
-  {type:"materials",label:"Materials",sub:"Printables & lessons"},
-  {type:"ecosystem-list",label:"Explore",sub:"Learning discoveries",filter:{category:"education",limit:9}},
-  {type:"link",label:"Parent",sub:"Family support",href:PARENT},
-  {type:"ecosystem-link",label:"Search",sub:"Search ecosystem",ecosystemId:"plera",fallbackHref:SEARCH},
-  {type:"help",label:"Instructions",sub:"How to use tools"}
+  {type:"ecosystem-list",label:"Games",sub:"",filter:{category:"games",limit:9}},
+  {type:"materials",label:"Study",sub:""},
+  {type:"ecosystem-list",label:"Explore",sub:"",filter:{category:"education",limit:9}},
+  {type:"link",label:"Parent",sub:"",href:PARENT},
+  {type:"ecosystem-link",label:"Search",sub:"",ecosystemId:"plera",fallbackHref:SEARCH},
+  {type:"help",label:"Help",sub:""}
  ],
  materials:{
   title:"Learning Materials",
