@@ -12,6 +12,7 @@ const contexts=[
 for(const text of contexts)assert.ok(html.includes(text),"Gateway Academy doorway missing: "+text);
 assert.ok(html.includes('education:"'+LANDING+'"'),"Education directory hub must use Academy Home");
 assert.ok(html.includes('const A="'+CORE+'"'),"Enrolled-student fallback must point to Academy Core");
+assert.ok(html.includes('href="'+CORE+'">Enter Full Academy</a>'),"Gateway must provide a direct Full Academy fallback when the welcome landing is unavailable");
 assert.match(html,/if\(stage==="high"&&\[9,10,11,12\]\.includes\(n\)\)/,
  "High-school learner routing guard must remain explicit");
 assert.match(html,/return A\+"student\/"/,"Other learners must retain Academy Student Portal fallback");
