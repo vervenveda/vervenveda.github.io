@@ -45,6 +45,9 @@ jobs:
           assert summary["failedRepositoryCount"] == 0
           assert summary["repositoryCount"] > 0
           assert report.get("failures") == []
+          broken = int(summary.get("brokenLocalLinkCount", 0))
+          if broken:
+              print(f"::warning title=Public navigation integrity::Audit found {broken} broken local references; CI passes repository-scan integrity only, not zero-broken-link acceptance.")
           print(
               f"Audited {summary['repositoryCount']} repositories / "
               f"{summary['htmlCount']} HTML files; "
