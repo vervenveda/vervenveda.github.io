@@ -1,4 +1,4 @@
-/* Verve N Veda · Universal Class Tools Toolbar v1.5.0
+/* Verve N Veda · Universal Class Tools Toolbar v1.6.0
    Canonical lower-left learning-tools companion to vnv-ecosystem-toolbar.js.
    Idempotent. Directory-backed. Navigation only; no grading/mastery mutations. */
 (()=>{
@@ -165,13 +165,13 @@ function installStyle(){
  if(document.getElementById(STYLE_ID))return;
  const s=document.createElement("style");s.id=STYLE_ID;s.textContent=[
   '#vnvClassToolsToolbar{position:fixed;left:max(12px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom));z-index:2147482400;width:min(240px,calc(100vw - 24px));font:400 16px/1.4 "Brandon Grotesque","Avenir Next",Arial,sans-serif}',
-  '#vnvClassToolsToggle{min-height:48px;padding:10px 16px;border:1px solid rgba(180,139,69,.72);border-radius:7px;background:#243038;color:#fff8e9;font:400 16px/1.35 Cinzel,Georgia,serif;box-shadow:0 8px 24px #0004;cursor:pointer}',
-  '#vnvClassToolsPanel{margin-top:6px;padding:7px;border:1px solid rgba(180,139,69,.48);border-radius:7px;background:rgba(255,253,248,.97);box-shadow:0 10px 30px rgba(15,25,37,.17);backdrop-filter:blur(10px)}',
+  '#vnvClassToolsToggle{min-height:44px;padding:4px 12px;border:1px solid #202724;border-radius:7px;background:#202724;color:#fffdf3;font:400 16px/1.2 "Nunito","Brandon Grotesque","Avenir Next",Arial,sans-serif;box-shadow:none;cursor:pointer}',
+  '#vnvClassToolsPanel{margin-top:6px;padding:7px;border:1px solid #202724;border-radius:7px;background:rgba(255,253,243,.98);box-shadow:none;backdrop-filter:blur(10px)}',
   '#vnvClassToolsPanel[hidden],#vnvClassToolsPanel [hidden]{display:none!important}',
-  '#vnvClassToolsPanel .vct-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}',
-  '#vnvClassToolsPanel .vct-tool{box-sizing:border-box;display:flex;min-width:0;min-height:70px;padding:8px 5px;flex-direction:column;align-items:center;justify-content:center;gap:3px;border:1px solid rgba(180,139,69,.5);border-radius:7px;background:#fffdf8;color:#243038;text-align:center;text-decoration:none;cursor:pointer;font:400 16px/1.25 "Brandon Grotesque","Avenir Next",Arial,sans-serif}',
-  '#vnvClassToolsPanel .vct-tool strong{font:400 16px/1.2 Cinzel,Georgia,serif;color:#243038}',
-  '#vnvClassToolsPanel .vct-tool span{font-size:16px;line-height:1.2;color:#4b554f}',
+  '#vnvClassToolsPanel .vct-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}',
+  '#vnvClassToolsPanel .vct-tool{box-sizing:border-box;display:flex;min-width:0;min-height:44px;padding:4px;flex-direction:column;align-items:center;justify-content:center;gap:0;border:1px solid #202724;border-radius:7px;background:#fffdf3;color:#202724;text-align:center;text-decoration:none;cursor:pointer;font:400 16px/1.2 "Nunito","Brandon Grotesque","Avenir Next",Arial,sans-serif}',
+  '#vnvClassToolsPanel .vct-tool strong{font:400 16px/1.2 "Nunito","Brandon Grotesque","Avenir Next",Arial,sans-serif;color:#202724}',
+  '#vnvClassToolsPanel .vct-tool span{display:none!important}',
   '#vnvClassToolsPanel .vct-pop{margin-top:7px;padding:12px;border:1px solid #b48b45;border-radius:7px;background:#fffaf0;color:#243038;max-height:42vh;overflow:auto}',
   '#vnvClassToolsPanel .vct-pop h2{margin:0 0 7px;font:400 20px/1.3 Cinzel,Georgia,serif}',
   '#vnvClassToolsPanel .vct-pop p{margin:7px 0;font-size:16px;line-height:1.5}',
@@ -179,7 +179,7 @@ function installStyle(){
   '#vnvClassToolsPanel .vct-links a{display:block;min-height:44px;box-sizing:border-box;padding:10px;border:1px solid #b48b45;border-radius:7px;background:#243038;color:#fff8e9;text-align:center;text-decoration:none;font-size:16px}',
   '#vnvClassToolsToolbar :is(button,a):focus-visible{outline:3px solid #e0bf83;outline-offset:3px}',
   '#vnvClassToolsToggle,#vnvClassToolsPanel .vct-grid>:is(button,a){white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis}',
-  '@media(max-width:700px){#vnvClassToolsToolbar{left:auto;right:max(12px,env(safe-area-inset-right));bottom:calc(max(12px,env(safe-area-inset-bottom)) + var(--vnv-ecosystem-dock-height, 150px) + 10px);width:min(240px,calc(100vw - 24px))}#vnvClassToolsPanel{max-height:min(58dvh,420px);overflow-y:auto;overscroll-behavior:contain}#vnvClassToolsPanel .vct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}',
+  '@media(max-width:700px){#vnvClassToolsToolbar{left:max(12px,env(safe-area-inset-left));right:auto;bottom:max(12px,env(safe-area-inset-bottom));width:min(240px,calc(100vw - 24px))}#vnvClassToolsPanel{max-height:min(58dvh,420px);overflow-y:auto;overscroll-behavior:contain}#vnvClassToolsPanel .vct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}',
   /* Elementary preset alone inherits the gateway ecosystem-directory charcoal / parchment skin.
      Preserve the 240px canonical dock and the right-side toolbar's compact 44px tile geometry. */
   '#vnvClassToolsToolbar[data-vnv-class-tools-config="elementary"]{width:min(240px,calc(100vw - 24px))!important;left:max(12px,env(safe-area-inset-left))!important;right:auto!important;bottom:max(12px,env(safe-area-inset-bottom))!important}',
@@ -240,7 +240,7 @@ async function renderLessonMaterials(root,c,mats){
 }
 async function resolvedTools(c){
  const out=[];
- for(const tool of (c.tools||[]).slice(0,6)){
+ for(const tool of (c.tools||[]).slice(0,8)){
   const copy={...tool};
   if(copy.type==="ecosystem-link"){
    copy.href=await resolveEcosystemId(copy.ecosystemId,copy.fallbackHref);
@@ -330,7 +330,7 @@ async function mount(){
  return true;
 }
 function unmount(){if(controller)controller.abort();document.getElementById(ROOT_ID)?.remove();document.documentElement.dataset.vnvClassTools="unmounted";}
-const api=Object.freeze({version:"1.5.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames,matchingLessonResources});
+const api=Object.freeze({version:"1.6.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames,matchingLessonResources});
 window[API_KEY]=api;window[LEGACY_API_KEY]=api;
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>void mount(),{once:true});
 else void mount();
