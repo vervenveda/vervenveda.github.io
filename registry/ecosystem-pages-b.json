@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-19T07:56:10Z",
+  "generatedAt": "2026-11-19T20:58:26Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
@@ -6741,6 +6741,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Psychology",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/electives/psychology/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "electives/psychology/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Family Activity Center",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/family-activity-center/",
       "repo": "Khaemenes_High.github.io",
@@ -7049,6 +7057,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/portfolio/review.html",
       "repo": "Khaemenes_High.github.io",
       "path": "portfolio/review.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Pre Algebra Mathematics Engine V2.2.1 Reference",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/workflow/blueprints/pre-algebra-mathematics-engine-v2.2.1-reference.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "workflow/blueprints/pre-algebra-mathematics-engine-v2.2.1-reference.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
