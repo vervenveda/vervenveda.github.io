@@ -667,3 +667,79 @@ html,body{
   background:var(--kme-charcoal)!important;
   color:var(--kme-cream)!important;
 }
+
+
+/* v1.2.1 legacy-token neutralization + full centered lesson geometry */
+.khaemenes-math-engine{
+  --gold:var(--kme-charcoal)!important;
+  --gold2:var(--kme-charcoal)!important;
+  --green:var(--kme-charcoal)!important;
+  --blue:var(--kme-charcoal)!important;
+  --danger:var(--kme-charcoal)!important;
+  --forest:var(--kme-charcoal)!important;
+  --forest-deep:var(--kme-charcoal)!important;
+  --panel:var(--kme-cream)!important;
+  --bg2:var(--kme-paper-2)!important;
+  --line:var(--kme-line)!important;
+  --line-strong:var(--kme-charcoal)!important;
+  --ink:var(--kme-ink)!important;
+  --muted:var(--kme-muted)!important;
+}
+
+.khaemenes-math-engine :is(
+  .card,.question,.example,.lesson-reading,.set-panel,.pathway-panel,
+  .notice,.field,.takeaway,.answer,.feedback,.pause-card,
+  .objective-list li,.warmup li,.option,td,th,dd,dt
+){
+  text-align:center!important;
+}
+
+.khaemenes-math-engine :is(ul,ol){
+  max-width:900px;
+  margin-inline:auto;
+}
+
+.khaemenes-math-engine :is(.objective-list,.warmup){
+  padding-left:0!important;
+  list-style-position:inside!important;
+}
+
+.khaemenes-math-engine :is(table,.vocab-table){
+  margin-inline:auto!important;
+}
+
+.khaemenes-math-engine .vocab-table :is(th,td){
+  text-align:center!important;
+}
+
+.khaemenes-math-engine .field{
+  display:grid!important;
+  justify-items:center!important;
+}
+
+.khaemenes-math-engine :is(select,input,textarea){
+  text-align:center!important;
+}
+
+.khaemenes-math-engine .options{
+  width:100%!important;
+  max-width:880px!important;
+  margin-inline:auto!important;
+}
+
+.khaemenes-math-engine .option{
+  display:grid!important;
+  grid-template-columns:28px minmax(0,1fr)!important;
+  align-items:center!important;
+}
+
+.khaemenes-math-engine .option :is(span,label,.option-text){
+  text-align:center!important;
+}
+
+.khaemenes-math-engine .section-head,
+.khaemenes-math-engine .section-head :is(h2,p),
+.khaemenes-math-engine .help-text{
+  text-align:center!important;
+  margin-inline:auto!important;
+}
