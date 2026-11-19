@@ -180,7 +180,7 @@ function installStyle(){
   '#vnvClassToolsToolbar :is(button,a):focus-visible{outline:3px solid #e0bf83;outline-offset:3px}',
   '#vnvClassToolsToggle,#vnvClassToolsPanel .vct-grid>:is(button,a){white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis}',
   '#vnvClassToolsToolbar[data-vnv-class-tools-config="high-school-math-landing"]{width:min(240px,calc(100vw - 24px))!important}',
-  '#vnvClassToolsToolbar[data-vnv-class-tools-config="high-school-math-landing"] #vnvClassToolsToggle{box-sizing:border-box!important;width:74px!important;min-width:74px!important;height:44px!important;min-height:44px!important;padding:4px!important}',
+  '#vnvClassToolsToolbar[data-vnv-class-tools-config="high-school-math-landing"] #vnvClassToolsToggle{box-sizing:border-box!important;width:72px!important;min-width:72px!important;height:44px!important;min-height:44px!important;padding:4px!important}',
   '#vnvClassToolsToolbar[data-vnv-class-tools-config="high-school-math-landing"] #vnvClassToolsPanel{padding:7px!important;border:1px solid rgba(180,139,69,.48)!important;background:rgba(255,253,248,.97)!important}',
   '#vnvClassToolsToolbar[data-vnv-class-tools-config="high-school-math-landing"] .vct-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:5px!important}',
   '#vnvClassToolsToolbar[data-vnv-class-tools-config="high-school-math-landing"] .vct-grid .vct-tool{min-height:44px!important;padding:4px!important;border:1px solid rgba(23,57,47,.35)!important;background:#f5f8f6!important;color:#17392f!important;font:400 16px/1.2 "Nunito","Brandon Grotesque","Avenir Next",Arial,sans-serif!important}',
