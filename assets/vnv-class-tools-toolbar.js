@@ -1,4 +1,4 @@
-/* Verve N Veda · Universal Class Tools Toolbar v1.6.0
+/* Verve N Veda · Universal Class Tools Toolbar v1.6.1
    Canonical lower-left learning-tools companion to vnv-ecosystem-toolbar.js.
    Idempotent. Directory-backed. Navigation only; no grading/mastery mutations. */
 (()=>{
@@ -248,7 +248,7 @@ async function renderLessonMaterials(root,c,mats){
 }
 async function resolvedTools(c){
  const out=[];
- for(const tool of (c.tools||[]).slice(0,8)){
+ for(const tool of (c.tools||[]).slice(0,12)){
   const copy={...tool};
   if(copy.type==="ecosystem-link"){
    copy.href=await resolveEcosystemId(copy.ecosystemId,copy.fallbackHref);
@@ -338,7 +338,7 @@ async function mount(){
  return true;
 }
 function unmount(){if(controller)controller.abort();document.getElementById(ROOT_ID)?.remove();document.documentElement.dataset.vnvClassTools="unmounted";}
-const api=Object.freeze({version:"1.6.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames,matchingLessonResources});
+const api=Object.freeze({version:"1.6.1",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames,matchingLessonResources});
 window[API_KEY]=api;window[LEGACY_API_KEY]=api;
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>void mount(),{once:true});
 else void mount();
