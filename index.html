@@ -6536,6 +6536,60 @@ document.addEventListener("DOMContentLoaded",()=>{
   window.VNVGatewayBootstrap?.mountTicker();
 </script>
 
+<style id="vnv-gateway-control-normalization">
+  /* Canonical VNV control geometry: 7px corners, 16px interactive type. */
+  .site-header .brand-mark,
+  .site-header .menu-button{
+    box-sizing:border-box!important;
+    width:44px!important;
+    height:44px!important;
+    min-width:44px!important;
+    min-height:44px!important;
+    flex:0 0 44px!important;
+    border-radius:7px!important;
+    font-size:16px!important;
+  }
+  .site-header .header-links a,
+  .site-header .header-support,
+  .site-header button{
+    border-radius:7px!important;
+    font-size:16px!important;
+  }
+
+  #menuOverlay button,
+  #menuOverlay a,
+  #menuOverlay input{
+    border-radius:7px!important;
+    font-size:16px!important;
+  }
+  #menuOverlay .close-button,
+  #menuOverlay .menu-branch-back,
+  #menuOverlay .menu-branch-button,
+  #menuOverlay .menu-link{
+    border-radius:7px!important;
+    font-size:16px!important;
+  }
+  #menuOverlay .menu-branch-button strong,
+  #menuOverlay .menu-branch-button small,
+  #menuOverlay .menu-link strong,
+  #menuOverlay .menu-link small,
+  #menuOverlay .menu-link i,
+  #menuOverlay .menu-branch-back{
+    font-size:16px!important;
+  }
+
+  @media(max-width:560px){
+    .site-header .brand-mark,
+    .site-header .menu-button{
+      width:40px!important;
+      height:40px!important;
+      min-width:40px!important;
+      min-height:40px!important;
+      flex-basis:40px!important;
+    }
+  }
+</style>
+
 <!-- Gateway lower-left tools: explicit public-root configuration for the canonical idempotent class-tools engine. -->
 <script id="vnv-gateway-class-tools-config">
 window.KhaemenesClassToolsConfigV1 = Object.freeze({
