@@ -743,3 +743,65 @@ html,body{
   text-align:center!important;
   margin-inline:auto!important;
 }
+
+
+/* v1.2.2 shared toolbar parity on active mathematics pages */
+html[data-khaemenes-math-engine-active] #vnvClassToolsToolbar,
+html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock{
+  width:min(240px,calc(100vw - 24px))!important;
+  box-sizing:border-box!important;
+}
+
+html[data-khaemenes-math-engine-active] #vnvClassToolsPanel,
+html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock{
+  border:3px solid var(--kme-charcoal)!important;
+  border-radius:7px!important;
+  background:var(--kme-cream)!important;
+  box-shadow:none!important;
+}
+
+html[data-khaemenes-math-engine-active] #vnvClassToolsToggle,
+html[data-khaemenes-math-engine-active] #vnvClassToolsPanel .vct-tool,
+html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock>a,
+html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock>button{
+  min-height:44px!important;
+  border:3px solid var(--kme-charcoal)!important;
+  border-radius:7px!important;
+  background:var(--kme-cream)!important;
+  color:var(--kme-charcoal)!important;
+  font:400 16px/1.2 var(--kme-body-font)!important;
+  box-shadow:none!important;
+}
+
+html[data-khaemenes-math-engine-active] #vnvClassToolsToggle{
+  background:var(--kme-charcoal)!important;
+  color:var(--kme-cream)!important;
+}
+
+html[data-khaemenes-math-engine-active] #vnvClassToolsPanel .vct-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:5px!important;
+}
+
+html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:5px!important;
+}
+
+html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock [data-vnv-tool]{
+  background:var(--kme-cream)!important;
+  color:var(--kme-charcoal)!important;
+  border-color:var(--kme-charcoal)!important;
+}
+
+html[data-khaemenes-math-engine-active] #vnvClassToolsToolbar :is(button,a):focus-visible,
+html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock :is(button,a):focus-visible{
+  outline:3px solid var(--kme-charcoal)!important;
+  outline-offset:3px!important;
+}
+
+@media(max-width:700px){
+  html[data-khaemenes-math-engine-active] #vnvClassToolsPanel .vct-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
