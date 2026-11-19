@@ -1,4 +1,4 @@
-/* Khaemenes Mathematics Engine v2.1.1
+/* Khaemenes Mathematics Engine v2.1.2
    Canonical mathematics presentation blueprint.
    Palette: charcoal + crisp cream + khaki parchment only.
    Typography: Cinzel display; Brandon Grotesque / Nunito body.
@@ -752,4 +752,11 @@ html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock>button{
 }
 .khaemenes-math-engine .lesson-reading p{
   text-align:left;
+}
+
+/* Progressive-disclosure wrappers for lesson activities. */
+.khaemenes-math-engine .kme-disclosure-wrap{
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
 }
