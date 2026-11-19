@@ -1,4 +1,4 @@
-/* Khaemenes Mathematics Engine v2.1.3
+/* Khaemenes Mathematics Engine v2.2.0
    Canonical mathematics presentation blueprint.
    Palette: charcoal + crisp cream + khaki parchment only.
    Typography: Cinzel display; Brandon Grotesque / Nunito body.
@@ -806,5 +806,87 @@ html[data-khaemenes-math-engine-active] #vnvEcosystemUtilityDock>button{
   .khaemenes-math-engine .question fieldset{
     grid-template-columns:36px minmax(0,1fr);
     column-gap:11px;
+  }
+}
+
+/* Lesson completion checklist + reflection spacing */
+.khaemenes-math-engine #reflection{
+  margin-top:11px;
+}
+.khaemenes-math-engine .kme-completion-card{
+  width:100%;
+  padding:24px;
+  border:3px solid var(--kme-charcoal);
+  border-radius:7px;
+  background:var(--kme-cream);
+  color:var(--kme-charcoal);
+}
+.khaemenes-math-engine .kme-completion-list{
+  max-width:880px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:11px;
+  margin:18px auto;
+}
+.khaemenes-math-engine .kme-completion-item{
+  min-height:66px;
+  display:grid;
+  grid-template-columns:28px minmax(0,1fr);
+  align-items:start;
+  gap:11px;
+  padding:14px;
+  border:3px solid var(--kme-charcoal);
+  border-radius:7px;
+  background:var(--kme-paper);
+  color:var(--kme-charcoal);
+  text-align:left;
+}
+.khaemenes-math-engine .kme-completion-item.is-complete{
+  background:var(--kme-parchment);
+}
+.khaemenes-math-engine .kme-completion-item input[type="checkbox"]{
+  width:22px;
+  min-width:22px;
+  height:22px;
+  margin:2px 0 0;
+  padding:0;
+  accent-color:var(--kme-charcoal);
+}
+.khaemenes-math-engine .kme-completion-copy{
+  display:grid;
+  gap:3px;
+  text-align:left;
+}
+.khaemenes-math-engine .kme-completion-label{
+  color:var(--kme-charcoal);
+  font:400 18px/1.35 var(--kme-display);
+  text-align:left;
+}
+.khaemenes-math-engine .kme-completion-note{
+  color:var(--kme-muted);
+  font:400 16px/1.45 var(--kme-body);
+  text-align:left;
+}
+.khaemenes-math-engine .kme-completion-status{
+  max-width:880px;
+  margin:18px auto 0;
+  padding:14px 16px;
+  border:3px solid var(--kme-charcoal);
+  border-radius:7px;
+  background:var(--kme-parchment);
+  color:var(--kme-charcoal);
+  font:400 18px/1.5 var(--kme-body);
+  text-align:center;
+}
+.khaemenes-math-engine #lessonCompletion .lesson-nav{
+  margin-top:18px;
+  gap:14px;
+}
+.khaemenes-math-engine #lessonCompletion .lesson-nav .btn{
+  margin:0;
+}
+@media(max-width:760px){
+  .khaemenes-math-engine .kme-completion-list{
+    grid-template-columns:1fr;
   }
 }
