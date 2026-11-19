@@ -1,14 +1,14 @@
-/* Khaemenes Mathematics Engine · Universal Presentation v1.0.0
+/* Khaemenes Mathematics Engine · Universal Presentation v1.1.0
    Canonical shared stylesheet for mathematics from foundational levels through Higher Learning.
    One source of truth: pages should reference this file rather than copy its rules locally. */
 
 :root{
   --kme-charcoal:#202724;
   --kme-charcoal-2:#2b3431;
-  --kme-parchment:#f4f0e7;
-  --kme-paper:#fffdf8;
-  --kme-paper-2:#f8f2e7;
-  --kme-cream:#fff8e9;
+  --kme-parchment:#efe7d7;
+  --kme-paper:#fffdf6;
+  --kme-paper-2:#f6efe2;
+  --kme-cream:#fffdf3;
   --kme-gold:#b48b45;
   --kme-gold-soft:#d7c28f;
   --kme-forest:#243d33;
@@ -16,8 +16,8 @@
   --kme-burgundy:#7d3d3d;
   --kme-ink:#252927;
   --kme-muted:#5b605d;
-  --kme-line:#cdbf9f;
-  --kme-line-soft:#e7ddc9;
+  --kme-line:#b9aa8f;
+  --kme-line-soft:#ddd1bb;
   --kme-radius:7px;
   --kme-max:1120px;
   --kme-title:66px;
@@ -348,4 +348,204 @@
   .kme-workspace{width:100%;margin:0}
   .kme-section{break-inside:avoid;box-shadow:none}
   .kme-btn,.kme-actions{display:none!important}
+}
+
+
+/* v1.1 universal visual contract
+   Crisp cream + parchment + charcoal, 7px radius everywhere,
+   centered instructional geometry, no bold typography, even grids. */
+
+html,body{
+  background:var(--kme-parchment);
+}
+
+[data-khaemenes-math-engine],
+.khaemenes-math-engine{
+  text-align:center;
+  background:var(--kme-parchment);
+}
+
+[data-khaemenes-math-engine] :is(*),
+.khaemenes-math-engine :is(*){
+  font-weight:400!important;
+}
+
+[data-khaemenes-math-engine] :is(button,a,input,select,textarea,fieldset,.card,.question,.option,.notice,.field,.reading-card,.example,.set-panel,.pathway-panel,.pause-card,.takeaway,.answer,.feedback,details,summary),
+.khaemenes-math-engine :is(button,a,input,select,textarea,fieldset,.card,.question,.option,.notice,.field,.reading-card,.example,.set-panel,.pathway-panel,.pause-card,.takeaway,.answer,.feedback,details,summary){
+  border-radius:var(--kme-radius)!important;
+}
+
+[data-khaemenes-math-engine] :is(p,li,label,legend,dd,dt,td,th,span),
+.khaemenes-math-engine :is(p,li,label,legend,dd,dt,td,th,span){
+  font-family:var(--kme-body-font);
+}
+
+[data-khaemenes-math-engine] :is(h1,h2,h3,h4,.eyebrow,.academy-eyebrow),
+.khaemenes-math-engine :is(h1,h2,h3,h4,.eyebrow,.academy-eyebrow){
+  font-family:var(--kme-display)!important;
+  font-weight:400!important;
+}
+
+.kme-hero,
+.khaemenes-math-engine .hero{
+  background:var(--kme-charcoal)!important;
+  color:var(--kme-cream)!important;
+  border:0!important;
+}
+
+.khaemenes-math-engine .hero .academy-eyebrow{
+  margin:0 auto 7px!important;
+  color:var(--kme-cream)!important;
+  font-size:33px!important;
+  line-height:1.2!important;
+  letter-spacing:.03em!important;
+}
+
+.khaemenes-math-engine .hero .eyebrow{
+  margin:0 auto 7px!important;
+  color:var(--kme-gold-soft)!important;
+  font-size:24px!important;
+  line-height:1.25!important;
+  letter-spacing:.02em!important;
+  text-transform:none!important;
+}
+
+.khaemenes-math-engine .hero h1{
+  margin:0 auto 11px!important;
+  max-width:1000px!important;
+  color:var(--kme-cream)!important;
+  font-size:66px!important;
+  line-height:1.08!important;
+  letter-spacing:0!important;
+}
+
+.khaemenes-math-engine .hero .lead{
+  max-width:800px!important;
+  margin:0 auto!important;
+  color:var(--kme-cream)!important;
+  font-size:18px!important;
+}
+
+.khaemenes-math-engine .hero .actions{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:11px!important;
+  max-width:880px!important;
+  margin:22px auto 0!important;
+}
+
+.khaemenes-math-engine .hero .actions>*{
+  min-height:44px!important;
+  width:100%!important;
+  border-radius:7px!important;
+  border:1px solid var(--kme-gold-soft)!important;
+  background:var(--kme-cream)!important;
+  color:var(--kme-charcoal)!important;
+  font-size:16px!important;
+  font-weight:400!important;
+}
+
+.khaemenes-math-engine .hero .actions>.primary{
+  background:var(--kme-charcoal-2)!important;
+  color:var(--kme-cream)!important;
+  border-color:var(--kme-cream)!important;
+}
+
+.khaemenes-math-engine>section,
+.khaemenes-math-engine main>section{
+  text-align:center;
+}
+
+.khaemenes-math-engine .wrap{
+  width:min(calc(100% - 32px),1120px)!important;
+  margin-inline:auto!important;
+}
+
+.khaemenes-math-engine .card,
+.khaemenes-math-engine .question,
+.khaemenes-math-engine .example,
+.khaemenes-math-engine .lesson-reading,
+.khaemenes-math-engine .set-panel,
+.khaemenes-math-engine .pathway-panel{
+  background:var(--kme-paper)!important;
+  border:1px solid var(--kme-line)!important;
+  color:var(--kme-ink)!important;
+  box-shadow:none!important;
+}
+
+.khaemenes-math-engine .lesson-layout,
+.khaemenes-math-engine .concept-grid,
+.khaemenes-math-engine .quick-check-grid,
+.khaemenes-math-engine .set-details,
+.khaemenes-math-engine .card-grid,
+.khaemenes-math-engine .grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:14px!important;
+}
+
+.khaemenes-math-engine .set-tabs{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:11px!important;
+}
+
+.khaemenes-math-engine .lesson-main,
+.khaemenes-math-engine .lesson-side,
+.khaemenes-math-engine .section-head,
+.khaemenes-math-engine .guided-note,
+.khaemenes-math-engine .reading-stack,
+.khaemenes-math-engine .pause-card{
+  margin-inline:auto!important;
+}
+
+.khaemenes-math-engine :is(input,select,textarea){
+  background:var(--kme-cream)!important;
+  color:var(--kme-charcoal)!important;
+  border:1px solid var(--kme-line)!important;
+  border-radius:7px!important;
+  font-weight:400!important;
+}
+
+.khaemenes-math-engine :is(.btn,.option,.set-tab,.pathway-tabs button){
+  border-radius:7px!important;
+  font-weight:400!important;
+}
+
+.khaemenes-math-engine .question-number{
+  border-radius:7px!important;
+  background:var(--kme-charcoal)!important;
+}
+
+.khaemenes-math-engine .kme-status{
+  background:var(--kme-cream)!important;
+  color:var(--kme-charcoal)!important;
+  border-color:var(--kme-line)!important;
+}
+
+@media(max-width:900px){
+  .khaemenes-math-engine .hero .actions,
+  .khaemenes-math-engine .lesson-layout,
+  .khaemenes-math-engine .concept-grid,
+  .khaemenes-math-engine .quick-check-grid,
+  .khaemenes-math-engine .set-details,
+  .khaemenes-math-engine .card-grid,
+  .khaemenes-math-engine .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:660px){
+  .khaemenes-math-engine .hero h1{font-size:44px!important}
+  .khaemenes-math-engine .hero .academy-eyebrow{font-size:28px!important}
+  .khaemenes-math-engine .hero .eyebrow{font-size:20px!important}
+  .khaemenes-math-engine .hero .actions,
+  .khaemenes-math-engine .lesson-layout,
+  .khaemenes-math-engine .concept-grid,
+  .khaemenes-math-engine .quick-check-grid,
+  .khaemenes-math-engine .set-details,
+  .khaemenes-math-engine .card-grid,
+  .khaemenes-math-engine .grid{
+    grid-template-columns:1fr!important;
+  }
 }
