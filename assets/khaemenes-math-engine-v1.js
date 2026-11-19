@@ -36,6 +36,7 @@ function mount(input={}){
   root.dataset.khaemenesMathEngine=VERSION;
   root.dataset.engineOwner="canonical";
   root.classList.add("khaemenes-math-engine");
+  document.documentElement.dataset.khaemenesMathEngineActive=VERSION;
 
   const context=normalizeContext(input);
   window.KhaemenesMathContext=context;
