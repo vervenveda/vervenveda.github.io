@@ -365,8 +365,8 @@ html,body{
   background:var(--kme-parchment);
 }
 
-[data-khaemenes-math-engine] :is(*),
-.khaemenes-math-engine :is(*){
+[data-khaemenes-math-engine] :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,th,td,label,legend,button,a,input,select,textarea,strong,b,span,small),
+.khaemenes-math-engine :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,th,td,label,legend,button,a,input,select,textarea,strong,b,span,small){
   font-weight:400!important;
 }
 
