@@ -1,4 +1,4 @@
-/* Khaemenes Mathematics Engine · Universal Presentation v1.2.4
+/* Khaemenes Mathematics Engine · Universal Presentation v1.2.5
    Canonical shared stylesheet for mathematics from foundational levels through Higher Learning.
    One source of truth: pages should reference this file rather than copy its rules locally. */
 
@@ -1031,5 +1031,111 @@ html:root body .khaemenes-math-engine .pause-card{
   }
   html:root body .khaemenes-math-engine .hero{
     padding:33px 14px!important;
+  }
+}
+
+
+/* v1.2.5 page-OCD alignment: centered breadcrumb, 16px minimum, Cinzel titles, collapsed opening bars */
+html:root body .khaemenes-math-engine,
+html:root body .khaemenes-math-engine *{
+  font-size:max(16px,1em);
+}
+
+html:root body .khaemenes-math-engine :is(h1,h2,h3,h4,h5,h6,.eyebrow,.academy-eyebrow,legend,summary){
+  font-family:Cinzel,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif!important;
+  font-weight:400!important;
+}
+
+.kme-breadcrumb-bar{
+  justify-content:center!important;
+  text-align:center!important;
+}
+
+.kme-breadcrumb-bar .breadcrumb{
+  justify-content:center!important;
+  text-align:center!important;
+  margin-inline:auto!important;
+}
+
+.kme-breadcrumb-bar .breadcrumb :is(a,span){
+  font-size:16px!important;
+}
+
+.kme-opening-stack{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:11px!important;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+}
+
+.kme-lesson-accordion{
+  width:100%!important;
+  margin:0!important;
+  border:3px solid var(--kme-charcoal)!important;
+  border-radius:7px!important;
+  background:var(--kme-cream)!important;
+  overflow:hidden!important;
+}
+
+.kme-lesson-accordion>summary{
+  min-height:55px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:11px 18px!important;
+  cursor:pointer!important;
+  list-style:none!important;
+  background:var(--kme-charcoal)!important;
+  color:var(--kme-cream)!important;
+  font:400 18px/1.25 var(--kme-display)!important;
+  text-align:center!important;
+}
+
+.kme-lesson-accordion>summary::-webkit-details-marker{
+  display:none!important;
+}
+
+.kme-lesson-accordion>summary::after{
+  content:"＋";
+  margin-left:11px;
+  font-family:var(--kme-body-font)!important;
+  font-size:18px!important;
+  line-height:1!important;
+}
+
+.kme-lesson-accordion[open]>summary::after{
+  content:"−";
+}
+
+.kme-accordion-body{
+  padding:14px!important;
+  background:var(--kme-cream)!important;
+}
+
+.kme-accordion-body .lesson-main,
+.kme-accordion-body .lesson-side{
+  min-height:0!important;
+  padding:14px!important;
+  border:0!important;
+  background:var(--kme-cream)!important;
+}
+
+.kme-accordion-body .side-actions{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:11px!important;
+  max-width:760px!important;
+  margin:14px auto 0!important;
+}
+
+.kme-accordion-body .side-actions>*{
+  min-height:44px!important;
+}
+
+@media(max-width:660px){
+  .kme-accordion-body .side-actions{
+    grid-template-columns:1fr!important;
   }
 }
