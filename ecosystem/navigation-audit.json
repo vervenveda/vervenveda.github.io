@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-18T13:55:37Z",
+  "generatedAt": "2026-11-19T14:24:48Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12415,
-    "brokenLocalLinkCount": 34,
-    "rootOrphanHtmlCount": 5477,
-    "unreferencedHtmlCount": 1964,
+    "htmlCount": 12421,
+    "brokenLocalLinkCount": 49,
+    "rootOrphanHtmlCount": 5480,
+    "unreferencedHtmlCount": 1967,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 4,
     "intentionalSiblingGroupCount": 4,
@@ -982,17 +982,31 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3652,
-      "brokenLocalLinkCount": 25,
-      "rootReachableHtmlCount": 2472,
-      "rootOrphanHtmlCount": 1158,
-      "unreferencedHtmlCount": 703,
+      "htmlCount": 3658,
+      "brokenLocalLinkCount": 40,
+      "rootReachableHtmlCount": 2475,
+      "rootOrphanHtmlCount": 1161,
+      "unreferencedHtmlCount": 706,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 4,
       "intentionalSiblingGroupCount": 4,
       "canonicalAliasCount": 1,
       "supersededNameCount": 1,
       "brokenLocalLinks": [
+        {
+          "source": "courses/electives/index.html",
+          "target": "shared/high-school-class-tools-universal-v1.js",
+          "raw": "../../shared/high-school-class-tools-universal-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/physical-education/index.html",
+          "target": "shared/high-school-class-tools-universal-v1.js",
+          "raw": "../../shared/high-school-class-tools-universal-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
         {
           "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
           "target": "courses/social-studies/shared/course-entry-contract.js",
@@ -1165,6 +1179,97 @@
           "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
           "target": "courses/social-studies/grade-10/workflow/assets/grade10-course-focus-v1.js",
           "raw": "assets/grade10-course-focus-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/pre-algebra/assessments/final-exam-36-weeks.html",
+          "target": "courses/mathematics/pre-algebra/assets/math-learning-tools-v2.js",
+          "raw": "../assets/math-learning-tools-v2.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/pre-algebra/assessments/final-exam-36-weeks.html",
+          "target": "courses/assets/vnv-language.js",
+          "raw": "../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/pre-algebra/assessments/midterm-units-01-07.html",
+          "target": "courses/mathematics/pre-algebra/assets/math-learning-tools-v2.js",
+          "raw": "../assets/math-learning-tools-v2.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/pre-algebra/assessments/midterm-units-01-07.html",
+          "target": "courses/assets/vnv-language.js",
+          "raw": "../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/algebra-1/assessments/final-exam-36-weeks.html",
+          "target": "courses/mathematics/algebra-1/assets/math-learning-tools-v2.js",
+          "raw": "../assets/math-learning-tools-v2.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/algebra-1/assessments/final-exam-36-weeks.html",
+          "target": "courses/assets/vnv-language.js",
+          "raw": "../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/algebra-2/units/unit-01/assessment/mastery-check.html",
+          "target": "courses/mathematics/algebra-2/units/assets/math-learning-tools-v2.js",
+          "raw": "../../assets/math-learning-tools-v2.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/algebra-2/units/unit-01/assessment/mastery-check.html",
+          "target": "courses/mathematics/assets/vnv-language.js",
+          "raw": "../../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/geometry/units/unit-01/assessment/mastery-check.html",
+          "target": "courses/mathematics/geometry/units/assets/math-learning-tools-v2.js",
+          "raw": "../../assets/math-learning-tools-v2.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/mathematics/geometry/units/unit-01/assessment/mastery-check.html",
+          "target": "courses/mathematics/assets/vnv-language.js",
+          "raw": "../../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "workflow/blueprints/pre-algebra-mathematics-engine-v2.2.1-reference.html",
+          "target": "workflow/index.html",
+          "raw": "../",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/blueprints/pre-algebra-mathematics-engine-v2.2.1-reference.html",
+          "target": "workflow/assets/lesson-engine-core.js",
+          "raw": "../assets/lesson-engine-core.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "workflow/blueprints/pre-algebra-mathematics-engine-v2.2.1-reference.html",
+          "target": "workflow/blueprints/khaemenes-math-forensic-probe.js",
+          "raw": "khaemenes-math-forensic-probe.js?v=1.0.0",
           "tag": "script",
           "attr": "src"
         }
