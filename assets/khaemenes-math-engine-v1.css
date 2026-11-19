@@ -549,3 +549,68 @@ html,body{
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* v1.1.1 contrast-border refinement
+   Sacred 3px borders for selected instructional surfaces. */
+.khaemenes-math-engine :is(
+  .kme-section,
+  .kme-card,
+  .card,
+  .question,
+  .example,
+  .lesson-reading,
+  .set-panel,
+  .pathway-panel,
+  .kme-problem,
+  .kme-objective,
+  .kme-directions,
+  .kme-collapsible
+){
+  border-width:3px!important;
+  border-style:solid!important;
+  border-color:var(--kme-line)!important;
+}
+
+.khaemenes-math-engine .kme-section{
+  border-left-color:var(--kme-charcoal)!important;
+}
+
+.khaemenes-math-engine .kme-section[data-phase="worked-example"],
+.khaemenes-math-engine .kme-section[data-phase="apply"]{
+  border-left-color:var(--kme-gold)!important;
+}
+
+.khaemenes-math-engine .kme-section[data-phase="exit"]{
+  border-left-color:var(--kme-forest)!important;
+}
+
+.khaemenes-math-engine :is(
+  input,
+  select,
+  textarea,
+  .kme-workarea,
+  .kme-graph-workarea,
+  .kme-diagram-workarea,
+  .kme-proof-workarea,
+  .kme-data-workarea
+){
+  border-width:3px!important;
+  border-style:solid!important;
+  border-color:var(--kme-line)!important;
+}
+
+.khaemenes-math-engine :is(
+  .btn,
+  .kme-btn,
+  .option,
+  .set-tab,
+  .pathway-tabs button
+){
+  border-width:3px!important;
+}
+
+.khaemenes-math-engine .hero .actions>*{
+  border-width:3px!important;
+}
+
