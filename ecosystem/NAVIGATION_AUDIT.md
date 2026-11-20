@@ -1,6 +1,6 @@
 # Verve N Veda Public Navigation Audit
 
-Generated: 2026-11-19T15:02:47Z
+Generated: 2026-11-20T13:59:53Z
 
 STOS remains dormant and is excluded from this audit. No files are deleted or renamed automatically.
 
@@ -8,23 +8,23 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 - Repositories audited: 40
 - Repository audit failures: 0
-- HTML files inspected: 12421
-- Broken local link references: 49
-- HTML pages not reachable from repository root index: 5480
-- HTML pages with no incoming in-repository link: 1967
+- HTML files inspected: 12426
+- Broken local link references: 84
+- HTML pages not reachable from repository root index: 5810
+- HTML pages with no incoming in-repository link: 1973
 - Exact duplicate groups: 0
-- Version/sibling groups requiring review: 4
+- Version/sibling groups requiring review: 5
 - Intentional semantic sibling groups: 4
-- Canonical aliases already resolved: 2
+- Canonical aliases already resolved: 3
 - Legacy/superseded-style filenames: 5
 
 ## Highest-priority repositories
 
-- **vervenveda/Khaemenes_High.github.io** — broken 40; unreferenced 706; exact duplicates 0; version siblings 4.
+- **vervenveda/Khaemenes_Elementary.github.io** — broken 47; unreferenced 592; exact duplicates 0; version siblings 0.
+- **vervenveda/Khaemenes_High.github.io** — broken 28; unreferenced 711; exact duplicates 0; version siblings 5.
 - **vervenveda/bazaarart.github.io** — broken 5; unreferenced 7; exact duplicates 0; version siblings 0.
 - **artist1970/Archaemenes.github.io** — broken 3; unreferenced 1; exact duplicates 0; version siblings 0.
 - **artist1970/Hope.github.io** — broken 1; unreferenced 1; exact duplicates 0; version siblings 0.
-- **vervenveda/Khaemenes_Elementary.github.io** — broken 0; unreferenced 592; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Higher_Learning.github.io** — broken 0; unreferenced 181; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_KinderGarden.github.io** — broken 0; unreferenced 123; exact duplicates 0; version siblings 0.
 - **vervenveda/proresource_hub.github.io** — broken 0; unreferenced 123; exact duplicates 0; version siblings 0.

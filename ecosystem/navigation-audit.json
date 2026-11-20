@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-19T15:02:47Z",
+  "generatedAt": "2026-11-20T13:59:53Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 40,
     "failedRepositoryCount": 0,
-    "htmlCount": 12421,
-    "brokenLocalLinkCount": 49,
-    "rootOrphanHtmlCount": 5480,
-    "unreferencedHtmlCount": 1967,
+    "htmlCount": 12426,
+    "brokenLocalLinkCount": 84,
+    "rootOrphanHtmlCount": 5810,
+    "unreferencedHtmlCount": 1973,
     "duplicateGroupCount": 0,
-    "versionSiblingGroupCount": 4,
+    "versionSiblingGroupCount": 5,
     "intentionalSiblingGroupCount": 4,
-    "canonicalAliasCount": 2,
+    "canonicalAliasCount": 3,
     "supersededNameCount": 5
   },
   "failures": [],
@@ -739,8 +739,8 @@
       "repository": "vervenveda/Khaemenes_Academy_Life_Skills.github.io",
       "htmlCount": 222,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 186,
-      "rootOrphanHtmlCount": 36,
+      "rootReachableHtmlCount": 1,
+      "rootOrphanHtmlCount": 221,
       "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
@@ -749,42 +749,86 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
+        "courses/career-work-readiness/index.html",
+        "courses/career-work-readiness/preschool/index.html",
+        "courses/career-work-readiness/preschool/week-01/index.html",
+        "courses/career-work-readiness/preschool/week-02/index.html",
+        "courses/career-work-readiness/preschool/week-03/index.html",
+        "courses/caregiving-family-responsibilities/index.html",
+        "courses/caregiving-family-responsibilities/preschool/index.html",
+        "courses/caregiving-family-responsibilities/preschool/week-01/index.html",
+        "courses/caregiving-family-responsibilities/preschool/week-02/index.html",
+        "courses/caregiving-family-responsibilities/preschool/week-03/index.html",
+        "courses/civic-community-living/index.html",
+        "courses/civic-community-living/preschool/index.html",
+        "courses/civic-community-living/preschool/week-01/index.html",
+        "courses/civic-community-living/preschool/week-02/index.html",
+        "courses/civic-community-living/preschool/week-03/index.html",
         "courses/creativity-arts-making/index.html",
-        "courses/entrepreneurship-small-business/index.html",
-        "courses/gardening-food-growing/index.html",
-        "courses/kindergarten/creativity-arts-making/index.html",
-        "courses/kindergarten/creativity-arts-making/week-01/index.html",
-        "courses/kindergarten/creativity-arts-making/week-02/index.html",
-        "courses/kindergarten/creativity-arts-making/week-03/index.html",
-        "courses/kindergarten/culinary-independence/index.html",
-        "courses/kindergarten/culinary-independence/week-01/index.html",
-        "courses/kindergarten/culinary-independence/week-02/index.html",
-        "courses/kindergarten/culinary-independence/week-03/index.html",
-        "courses/kindergarten/emergency-readiness-resilience/index.html",
-        "courses/kindergarten/emergency-readiness-resilience/week-01/index.html",
-        "courses/kindergarten/emergency-readiness-resilience/week-02/index.html",
-        "courses/kindergarten/emergency-readiness-resilience/week-03/index.html",
-        "courses/kindergarten/gardening-food-growing/index.html",
-        "courses/kindergarten/gardening-food-growing/week-01/index.html",
-        "courses/kindergarten/gardening-food-growing/week-02/index.html",
-        "courses/kindergarten/gardening-food-growing/week-03/index.html",
-        "courses/kindergarten/health-first-aid-wellbeing/index.html",
-        "courses/kindergarten/health-first-aid-wellbeing/week-01/index.html",
-        "courses/kindergarten/health-first-aid-wellbeing/week-02/index.html",
-        "courses/kindergarten/health-first-aid-wellbeing/week-03/index.html",
-        "courses/kindergarten/home-management/index.html",
-        "courses/kindergarten/home-management/week-01/index.html",
-        "courses/kindergarten/home-management/week-02/index.html",
-        "courses/kindergarten/home-management/week-03/index.html",
-        "courses/kindergarten/index.html",
-        "courses/kindergarten/personal-finance/index.html",
-        "courses/kindergarten/personal-finance/week-01/index.html",
-        "courses/kindergarten/personal-finance/week-02/index.html",
-        "courses/kindergarten/personal-finance/week-03/index.html",
-        "courses/kindergarten/sustainability-stewardship/index.html",
-        "courses/kindergarten/sustainability-stewardship/week-01/index.html",
-        "courses/kindergarten/sustainability-stewardship/week-02/index.html",
-        "courses/kindergarten/sustainability-stewardship/week-03/index.html"
+        "courses/creativity-arts-making/preschool/index.html",
+        "courses/creativity-arts-making/preschool/week-01/index.html",
+        "courses/creativity-arts-making/preschool/week-02/index.html",
+        "courses/creativity-arts-making/preschool/week-03/index.html",
+        "courses/culinary-independence/elementary/grade-1/index.html",
+        "courses/culinary-independence/elementary/grade-1/week-01/index.html",
+        "courses/culinary-independence/elementary/grade-1/week-02/index.html",
+        "courses/culinary-independence/elementary/grade-1/week-03/index.html",
+        "courses/culinary-independence/elementary/grade-2/index.html",
+        "courses/culinary-independence/elementary/grade-2/week-01/index.html",
+        "courses/culinary-independence/elementary/grade-2/week-02/index.html",
+        "courses/culinary-independence/elementary/grade-2/week-03/index.html",
+        "courses/culinary-independence/elementary/grade-3/index.html",
+        "courses/culinary-independence/elementary/grade-3/week-01/index.html",
+        "courses/culinary-independence/elementary/grade-3/week-02/index.html",
+        "courses/culinary-independence/elementary/grade-3/week-03/index.html",
+        "courses/culinary-independence/elementary/grade-4/index.html",
+        "courses/culinary-independence/elementary/grade-4/week-01/index.html",
+        "courses/culinary-independence/elementary/grade-4/week-02/index.html",
+        "courses/culinary-independence/elementary/grade-4/week-03/index.html",
+        "courses/culinary-independence/elementary/grade-5/index.html",
+        "courses/culinary-independence/elementary/grade-5/week-01/index.html",
+        "courses/culinary-independence/elementary/grade-5/week-02/index.html",
+        "courses/culinary-independence/elementary/grade-5/week-03/index.html",
+        "courses/culinary-independence/elementary/index.html",
+        "courses/culinary-independence/high/grade-10/index.html",
+        "courses/culinary-independence/high/grade-10/week-01/index.html",
+        "courses/culinary-independence/high/grade-10/week-02/index.html",
+        "courses/culinary-independence/high/grade-10/week-03/index.html",
+        "courses/culinary-independence/high/grade-11/index.html",
+        "courses/culinary-independence/high/grade-11/week-01/index.html",
+        "courses/culinary-independence/high/grade-11/week-02/index.html",
+        "courses/culinary-independence/high/grade-11/week-03/index.html",
+        "courses/culinary-independence/high/grade-12/index.html",
+        "courses/culinary-independence/high/grade-12/week-01/index.html",
+        "courses/culinary-independence/high/grade-12/week-02/index.html",
+        "courses/culinary-independence/high/grade-12/week-03/index.html",
+        "courses/culinary-independence/high/grade-9/index.html",
+        "courses/culinary-independence/high/grade-9/week-01/index.html",
+        "courses/culinary-independence/high/grade-9/week-02/index.html",
+        "courses/culinary-independence/high/grade-9/week-03/index.html",
+        "courses/culinary-independence/high/index.html",
+        "courses/culinary-independence/higher/cula-101/index.html",
+        "courses/culinary-independence/higher/cula-101/week-01/index.html",
+        "courses/culinary-independence/higher/cula-101/week-02/index.html",
+        "courses/culinary-independence/higher/cula-101/week-03/index.html",
+        "courses/culinary-independence/higher/cula-101/week-04/index.html",
+        "courses/culinary-independence/higher/cula-101/week-05/index.html",
+        "courses/culinary-independence/higher/cula-101/week-06/index.html",
+        "courses/culinary-independence/higher/cula-101/week-07/index.html",
+        "courses/culinary-independence/higher/cula-101/week-08/index.html",
+        "courses/culinary-independence/higher/cula-101/week-09/index.html",
+        "courses/culinary-independence/higher/cula-101/week-10/index.html",
+        "courses/culinary-independence/higher/cula-101/week-11/index.html",
+        "courses/culinary-independence/higher/cula-101/week-12/index.html",
+        "courses/culinary-independence/higher/cula-101/week-13/index.html",
+        "courses/culinary-independence/higher/cula-101/week-14/index.html",
+        "courses/culinary-independence/higher/cula-101/week-15/index.html",
+        "courses/culinary-independence/higher/cula-101/week-16/index.html",
+        "courses/culinary-independence/higher/cula-101/week-17/index.html",
+        "courses/culinary-independence/higher/cula-101/week-18/index.html",
+        "courses/culinary-independence/higher/cula-101/week-19/index.html",
+        "courses/culinary-independence/higher/cula-101/week-20/index.html",
+        "courses/culinary-independence/higher/cula-101/week-21/index.html"
       ],
       "unreferencedPages": [
         "courses/creativity-arts-making/index.html",
@@ -800,7 +844,7 @@
     {
       "repository": "vervenveda/Khaemenes_Elementary.github.io",
       "htmlCount": 2390,
-      "brokenLocalLinkCount": 0,
+      "brokenLocalLinkCount": 47,
       "rootReachableHtmlCount": 1590,
       "rootOrphanHtmlCount": 800,
       "unreferencedHtmlCount": 592,
@@ -809,7 +853,337 @@
       "intentionalSiblingGroupCount": 0,
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [],
+      "brokenLocalLinks": [
+        {
+          "source": "grades/grade-02/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/mathematics/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/language-arts/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/technology/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/integrated-projects/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/health-pe-sel/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/arts-music/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-01/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-01/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-01/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-01/subjects/math/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/mathematics/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/language-arts/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/integrated-projects/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/health-pe-sel/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/arts-music/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/technology-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/mathematics/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/language-arts/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/integrated-projects/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/health-pe-sel/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/arts-music/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/technology-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/mathematics/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/language-arts/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/integrated-projects/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/health-pe-sel/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/arts-music/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/technology-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/elementary_vocabulary_garden/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/elementary_geometry/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/math-market/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/kindness_quest/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/junior-engineer-studio/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/curiosity-machine/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/word-detective/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        }
+      ],
       "rootOrphans": [
         "arts-music/index.html",
         "arts-music/week-01.html",
@@ -982,31 +1356,17 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3658,
-      "brokenLocalLinkCount": 40,
-      "rootReachableHtmlCount": 2475,
-      "rootOrphanHtmlCount": 1161,
-      "unreferencedHtmlCount": 706,
+      "htmlCount": 3663,
+      "brokenLocalLinkCount": 28,
+      "rootReachableHtmlCount": 2337,
+      "rootOrphanHtmlCount": 1304,
+      "unreferencedHtmlCount": 711,
       "duplicateGroupCount": 0,
-      "versionSiblingGroupCount": 4,
+      "versionSiblingGroupCount": 5,
       "intentionalSiblingGroupCount": 4,
-      "canonicalAliasCount": 1,
+      "canonicalAliasCount": 2,
       "supersededNameCount": 1,
       "brokenLocalLinks": [
-        {
-          "source": "courses/electives/index.html",
-          "target": "shared/high-school-class-tools-universal-v1.js",
-          "raw": "../../shared/high-school-class-tools-universal-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/physical-education/index.html",
-          "target": "shared/high-school-class-tools-universal-v1.js",
-          "raw": "../../shared/high-school-class-tools-universal-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
         {
           "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
           "target": "courses/social-studies/shared/course-entry-contract.js",
@@ -1179,76 +1539,6 @@
           "source": "courses/social-studies/grade-10/workflow/legacy-index-pre-canonical-migration-2026-11-16.html",
           "target": "courses/social-studies/grade-10/workflow/assets/grade10-course-focus-v1.js",
           "raw": "assets/grade10-course-focus-v1.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/assessments/final-exam-36-weeks.html",
-          "target": "courses/mathematics/pre-algebra/assets/math-learning-tools-v2.js",
-          "raw": "../assets/math-learning-tools-v2.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/assessments/final-exam-36-weeks.html",
-          "target": "courses/assets/vnv-language.js",
-          "raw": "../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/assessments/midterm-units-01-07.html",
-          "target": "courses/mathematics/pre-algebra/assets/math-learning-tools-v2.js",
-          "raw": "../assets/math-learning-tools-v2.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/pre-algebra/assessments/midterm-units-01-07.html",
-          "target": "courses/assets/vnv-language.js",
-          "raw": "../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/algebra-1/assessments/final-exam-36-weeks.html",
-          "target": "courses/mathematics/algebra-1/assets/math-learning-tools-v2.js",
-          "raw": "../assets/math-learning-tools-v2.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/algebra-1/assessments/final-exam-36-weeks.html",
-          "target": "courses/assets/vnv-language.js",
-          "raw": "../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/algebra-2/units/unit-01/assessment/mastery-check.html",
-          "target": "courses/mathematics/algebra-2/units/assets/math-learning-tools-v2.js",
-          "raw": "../../assets/math-learning-tools-v2.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/algebra-2/units/unit-01/assessment/mastery-check.html",
-          "target": "courses/mathematics/assets/vnv-language.js",
-          "raw": "../../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/geometry/units/unit-01/assessment/mastery-check.html",
-          "target": "courses/mathematics/geometry/units/assets/math-learning-tools-v2.js",
-          "raw": "../../assets/math-learning-tools-v2.js",
-          "tag": "script",
-          "attr": "src"
-        },
-        {
-          "source": "courses/mathematics/geometry/units/unit-01/assessment/mastery-check.html",
-          "target": "courses/mathematics/assets/vnv-language.js",
-          "raw": "../../../../assets/vnv-language.js?v=20261118-high-school-bounded-refresh-1",
           "tag": "script",
           "attr": "src"
         },
@@ -1453,6 +1743,10 @@
           "courses/social-studies/grade-09/week-07/student-packet.html"
         ],
         [
+          "courses/social-studies/grade-09/week-27/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-27/student-packet.html"
+        ],
+        [
           "courses/social-studies/grade-09/week-06/student-packet-v2.html",
           "courses/social-studies/grade-09/week-06/student-packet.html"
         ]
@@ -1503,6 +1797,10 @@
         {
           "alias": "courses/social-studies/grade-09/assessments/readiness.html",
           "canonical": "courses/social-studies/grade-09/assessments/readiness-v3.html"
+        },
+        {
+          "alias": "courses/social-studies/grade-09/weeks/week-27/student-packet.html",
+          "canonical": "courses/social-studies/grade-09/weeks/week-27/student-packet-v2.html"
         }
       ],
       "supersededNames": [
@@ -2180,9 +2478,9 @@
       "repository": "vervenveda/medicament-hub.github.io",
       "htmlCount": 41,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 39,
-      "rootOrphanHtmlCount": 2,
-      "unreferencedHtmlCount": 2,
+      "rootReachableHtmlCount": 37,
+      "rootOrphanHtmlCount": 4,
+      "unreferencedHtmlCount": 3,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -2190,10 +2488,13 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
+        "academy/high-school-health/courses/electives/index.html",
+        "academy/high-school-health/index.html",
         "tools/Noetic_Kids_Feelings_Emotions_index.html",
         "tools/Psychology_Mindscape_index.html"
       ],
       "unreferencedPages": [
+        "academy/high-school-health/index.html",
         "tools/Noetic_Kids_Feelings_Emotions_index.html",
         "tools/Psychology_Mindscape_index.html"
       ],
