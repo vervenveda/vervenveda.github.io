@@ -133,6 +133,7 @@ function boot(){
  const root=document.querySelector(opts.chatRoot),input=document.querySelector(opts.chatInput),
   send=document.querySelector(opts.chatSend),clear=opts.chatClear?document.querySelector(opts.chatClear):null;
  if(!root||!input||!send)return;
+ root.classList.add("vnv-mentor-chat-root");
  let log=opts.chatLog?document.querySelector(opts.chatLog):null;
  const singleSource=opts.chatAnswer?document.querySelector(opts.chatAnswer):null;
  const single=Boolean(singleSource);
@@ -189,6 +190,10 @@ function boot(){
  ".vnv-mentor-message-feed [data-vnv-role='user'] strong,.vnv-mentor-message-feed>[data-vnv-role='user'] strong{color:#fff8eb!important}",
  ".vnv-mentor-turn-time{display:block!important;font:400 16px/1.4 Nunito,Arial,sans-serif!important;opacity:.81;text-align:right;margin-top:8px;white-space:nowrap}",
  ".vnv-mentor-chat-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:900px;margin:0 auto 9px;padding:14px 18px;background:#243038;color:#fff8e9;border-radius:7px;font:400 18px/1.35 Cinzel,Georgia,serif}",
+ ".vnv-mentor-chat-root textarea,.vnv-mentor-chat-root input[type='text']{box-sizing:border-box;max-width:100%;min-height:48px;padding:12px 14px;border:1px solid #b8a57d;border-radius:7px;background:#fffdf7;color:#243038;font:400 16px/1.5 Nunito,Arial,sans-serif}",
+ ".vnv-mentor-chat-root textarea{width:100%;min-height:64px;max-height:180px;resize:vertical}",
+ ".vnv-mentor-chat-root textarea:focus-visible,.vnv-mentor-chat-root input[type='text']:focus-visible{outline:2px solid #b48b45;outline-offset:2px}",
+
  ".vnv-mentor-message-feed{width:100%!important;max-width:900px!important;margin:0 auto!important;height:clamp(320px,47dvh,490px)!important;max-height:490px!important}",
  ".vnv-mentor-feed-tools{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;padding:10px 0 14px;font:400 16px/1.4 Nunito,Arial,sans-serif}",
  ".vnv-mentor-feed-tools button{border-radius:7px!important;border:1px solid #9d804e!important;padding:10px 13px!important;min-height:44px!important;background:#273b34!important;color:#fff8e9!important;font:400 16px/1.4 Nunito,Arial,sans-serif!important;cursor:pointer!important}",
