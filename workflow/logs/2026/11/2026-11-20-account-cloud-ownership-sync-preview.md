@@ -31,3 +31,7 @@ Source inspected through connected GitHub permissions:
 - Any future *source* bridge should be a new expressly approved allowlisted artifact, not an overwrite of either repository's authoritative contracts.
 - Production identity, credential and student records remain under independent native commissioning controls.
 - Main VNV `index.html` and ecosystem directory untouched.
+
+## Exact-commit CI acceptance
+- [GitHub Actions run 44830261754](https://github.com/vervenveda/vervenveda.github.io/actions/runs/44830261754) returned `completed/success` for commit `ae93526d4b2c6e08cbdf9eca1bd5af5176d9eedf`, containing the preview source, tests and workflow updates.
+- CI scope: four caller tests, five reconciliation tests, six preview tests (15 synthetic cases total in the job). This is a mock/source-only acceptance, not a live cross-account deployment or STOS runtime test.
