@@ -143,10 +143,13 @@ function boot(){
  const section=root.closest("section");
  const sectionToMove=root.closest("#begin")||section;
  if(access&&sectionToMove&&sectionToMove!==access&&
-    access.parentElement===sectionToMove.parentElement&&
     !sectionToMove.hidden&&!sectionToMove.closest("[hidden]")&&
     !sectionToMove.closest("[data-feature]")){
-   access.insertAdjacentElement("afterend",sectionToMove);
+   if(access.parentElement===sectionToMove.parentElement)
+     access.insertAdjacentElement("afterend",sectionToMove);
+   else if(access.nextElementSibling===sectionToMove.parentElement&&
+           sectionToMove.parentElement?.tagName==="MAIN")
+     sectionToMove.parentElement.prepend(sectionToMove);
  }
  const chatSection=sectionToMove||root;
  if(!chatSection.id)chatSection.id="vnv-chat-"+opts.mentorId;
@@ -171,6 +174,10 @@ function boot(){
   singleSource.setAttribute("role","presentation");
  }
  if(!log)return;
+ // Some legacy mentor pages put the composer above the output. Move only
+ // the dedicated log, without moving or replacing their form and voice controls.
+ if(log===root&&log.parentElement===input.parentElement)
+   input.parentElement.insertBefore(log,input.parentElement.firstChild);
  log.classList.add("vnv-mentor-message-feed");
  log.setAttribute("tabindex","0");
  if(!log.hasAttribute("role"))log.setAttribute("role","log");
