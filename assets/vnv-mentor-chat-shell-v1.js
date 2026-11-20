@@ -203,7 +203,7 @@ function boot(){
  printButton.addEventListener("click",()=>{
    const rows=messages();if(!rows.length){hint.textContent="No conversation to print.";return}
    const html=rows.map(m=>"<p><strong>"+escapePrint(m.role==="user"?"You":name)+"</strong> · "+escapePrint(new Date(m.timestamp).toLocaleString())+"</p><p>"+escapePrint(m.content).replace(/\n/g,"<br>")+"</p>").join("");
-   const view=window.open("","_blank","noopener,noreferrer,width=900,height=700");
+   const view=window.open("","_blank","width=900,height=700");
    if(!view){hint.textContent="Allow the print window in your browser to print this conversation.";return}
    view.document.open();view.document.write("<!doctype html><html><head><meta charset='utf-8'><title>Mentor Conversation</title><style>body{font:16px/1.5 Arial;max-width:750px;margin:35px auto;padding:12px;color:#243038}p{white-space:normal;overflow-wrap:anywhere}</style></head><body><h1>"+escapePrint(name)+" · Conversation</h1>"+html+"</body></html>");view.document.close();view.focus();view.print();
  });
@@ -371,11 +371,11 @@ function boot(){
    const q=String(input.value||"").trim();
    const known=sessionMemory.canHandle(q)||Boolean(commonReply(q,name));
    if(known){ev.preventDefault();handleSend(ev);}
-   else if(!send.form){ev.preventDefault();send.click();}
-   else if(single){ // Original engine handles enter if it supports it.
-     // Single-answer controls do not implement Enter; submit ourselves.
+   else {
      ev.preventDefault();
-     send.click();
+     // Use the mentor's existing form or send button; never replace its logic.
+     if(send.form&&typeof send.form.requestSubmit==="function")send.form.requestSubmit(send);
+     else send.click();
    }
   }
  },true);
