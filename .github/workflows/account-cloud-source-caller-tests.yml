@@ -6,6 +6,8 @@ on:
       - 'tests/account-cloud-source-caller.test.mjs'
       - 'tools/account-cloud-reconcile-dry-run.mjs'
       - 'tests/account-cloud-reconcile-dry-run.test.mjs'
+      - 'tools/account-cloud-sync-preview.mjs'
+      - 'tests/account-cloud-sync-preview.test.mjs'
       - '.github/workflows/account-cloud-source-caller-tests.yml'
   pull_request:
     paths:
@@ -13,6 +15,8 @@ on:
       - 'tests/account-cloud-source-caller.test.mjs'
       - 'tools/account-cloud-reconcile-dry-run.mjs'
       - 'tests/account-cloud-reconcile-dry-run.test.mjs'
+      - 'tools/account-cloud-sync-preview.mjs'
+      - 'tests/account-cloud-sync-preview.test.mjs'
       - '.github/workflows/account-cloud-source-caller-tests.yml'
   workflow_dispatch:
 permissions:
@@ -26,4 +30,4 @@ jobs:
         with:
           persist-credentials: false
       - name: Synthetic source caller regression (no private credentials or network requests)
-        run: node --test tests/account-cloud-source-caller.test.mjs tests/account-cloud-reconcile-dry-run.test.mjs
+        run: node --test tests/account-cloud-source-caller.test.mjs tests/account-cloud-reconcile-dry-run.test.mjs tests/account-cloud-sync-preview.test.mjs
