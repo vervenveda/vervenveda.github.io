@@ -1,0 +1,298 @@
+{
+  "schema": "vnv-repository-handoff-inventory-v1",
+  "date": "2026-11-20",
+  "scope": "vervenveda GitHub account, 40 GitHub search results, page 1 plus empty page 2",
+  "total": 40,
+  "tierCounts": {
+    "P3_INDEPENDENT": 17,
+    "P1_ACADEMIC_REVIEW": 12,
+    "P2_BOUNDARY_REVIEW": 11
+  },
+  "classification": "planning_review_not_account_authorization",
+  "sourceOnly": true,
+  "automaticSync": false,
+  "protectedAccountAccess": false,
+  "assessmentAuthorityRetained": true,
+  "repositories": [
+    {
+      "repository": "vervenveda/Dummy.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/river_to_road.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/the_refrain.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Saudi_Arabia.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Homeless.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Academy.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Middle.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_KinderGarden.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/JenniferPearl2028.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/onenationforall.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/theverifier.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/KhaemenesAcademy_Home.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Palestine.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/PLERASearch.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/solanar.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_High.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/medicament-hub.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/333.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/PLERA.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/veterans.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/333-Network-Private-Core",
+      "visibility": "private",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Academy_Life_Skills.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Academy-Yearbook.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Assessment_Authority",
+      "visibility": "private",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/firmament.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/spyder-cloud",
+      "visibility": "private",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Preschool.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Arshif.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/vervenveda.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/admin.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/bazaarart.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/proresource_hub.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/aurora.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/myartgallery.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/finance.github.io",
+      "visibility": "public",
+      "tier": "P2_BOUNDARY_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/arcade.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Elementary.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Iran.github.io",
+      "visibility": "public",
+      "tier": "P3_INDEPENDENT",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    },
+    {
+      "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
+      "visibility": "public",
+      "tier": "P1_ACADEMIC_REVIEW",
+      "runtimeAccess": "NOT_AUTHORIZED",
+      "sourceTransfer": "NOT_AUTHORIZED"
+    }
+  ]
+}
