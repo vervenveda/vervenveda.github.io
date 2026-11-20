@@ -137,6 +137,29 @@ function boot(){
  const singleSource=opts.chatAnswer?document.querySelector(opts.chatAnswer):null;
  const single=Boolean(singleSource);
  const name=opts.mentorName||opts.mentorId;
+ // Move only a complete, already-visible conversation section. Keep nested
+ // demos and specialty engines in their original hosts.
+ const access=document.getElementById("vnv-mentor-landing-access");
+ const section=root.closest("section");
+ const sectionToMove=root.closest("#begin")||section;
+ if(access&&sectionToMove&&sectionToMove!==access&&
+    access.parentElement===sectionToMove.parentElement&&
+    !sectionToMove.hidden&&!sectionToMove.closest("[hidden]")&&
+    !sectionToMove.closest("[data-feature]")){
+   access.insertAdjacentElement("afterend",sectionToMove);
+ }
+ const chatSection=sectionToMove||root;
+ if(!chatSection.id)chatSection.id="vnv-chat-"+opts.mentorId;
+ chatSection.style.scrollMarginTop="calc(var(--vnv-header-height,66px) + 16px)";
+ // Existing in-page anchors should land at the top edge of the complete chat.
+ const anchors=[root.id,chatSection.id].filter(Boolean);
+ for(const anchor of anchors)document.querySelectorAll('a[href="#'+anchor+'"]').forEach(a=>{
+   a.addEventListener("click",e=>{
+     if(chatSection.closest("[hidden]"))return;
+     e.preventDefault();chatSection.scrollIntoView({behavior:"smooth",block:"start"});
+     history.replaceState(null,"","#"+chatSection.id);
+   });
+ });
  const sessionMemory=createSessionLearningMemory();
  if(single){
   log=document.createElement("div");
@@ -158,6 +181,8 @@ function boot(){
  ".vnv-mentor-message-feed>[data-vnv-role='user']{align-self:flex-end!important;background:#29473f!important;color:#fff8eb!important;border-color:#29473f!important;text-align:left!important}",
  ".vnv-mentor-message-feed [data-vnv-role='user'] strong,.vnv-mentor-message-feed>[data-vnv-role='user'] strong{color:#fff8eb!important}",
  ".vnv-mentor-turn-time{display:block!important;font:400 16px/1.4 Nunito,Arial,sans-serif!important;opacity:.81;text-align:right;margin-top:8px;white-space:nowrap}",
+ ".vnv-mentor-chat-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:900px;margin:0 auto 9px;padding:14px 18px;background:#243038;color:#fff8e9;border-radius:7px;font:400 18px/1.35 Cinzel,Georgia,serif}",
+ ".vnv-mentor-message-feed{width:100%!important;max-width:900px!important;margin:0 auto!important;height:clamp(320px,47dvh,490px)!important;max-height:490px!important}",
  ".vnv-mentor-feed-tools{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;padding:10px 0 14px;font:400 16px/1.4 Nunito,Arial,sans-serif}",
  ".vnv-mentor-feed-tools button{border-radius:7px!important;border:1px solid #9d804e!important;padding:10px 13px!important;min-height:44px!important;background:#273b34!important;color:#fff8e9!important;font:400 16px/1.4 Nunito,Arial,sans-serif!important;cursor:pointer!important}",
  ".vnv-mentor-feed-tools button:hover{background:#425c4f!important}",
@@ -170,8 +195,20 @@ function boot(){
  "body:is(.vnv-mentor-popup-open,.vnv-mentor-chat-focused) #vnvEcosystemUtilityDock,body:is(.vnv-mentor-popup-open,.vnv-mentor-chat-focused) #vnvEcosystemToolbar,body:is(.vnv-mentor-popup-open,.vnv-mentor-chat-focused) .vnv-ecosystem-utility-dock{visibility:hidden!important;pointer-events:none!important}"
  ].join("\n");
  document.head.appendChild(uiStyle);
+ const heading=document.createElement("div");heading.className="vnv-mentor-chat-heading";heading.textContent=name+" · AI Mentor";
+ log.insertAdjacentElement("beforebegin",heading);
  const toolbar=document.createElement("div");toolbar.className="vnv-mentor-feed-tools";
  toolbar.setAttribute("aria-label","Conversation export controls");
+ const printButton=document.createElement("button");printButton.type="button";printButton.textContent="Print";
+ printButton.addEventListener("click",()=>{
+   const rows=messages();if(!rows.length){hint.textContent="No conversation to print.";return}
+   const html=rows.map(m=>"<p><strong>"+escapePrint(m.role==="user"?"You":name)+"</strong> · "+escapePrint(new Date(m.timestamp).toLocaleString())+"</p><p>"+escapePrint(m.content).replace(/\n/g,"<br>")+"</p>").join("");
+   const view=window.open("","_blank","noopener,noreferrer,width=900,height=700");
+   if(!view){hint.textContent="Allow the print window in your browser to print this conversation.";return}
+   view.document.open();view.document.write("<!doctype html><html><head><meta charset='utf-8'><title>Mentor Conversation</title><style>body{font:16px/1.5 Arial;max-width:750px;margin:35px auto;padding:12px;color:#243038}p{white-space:normal;overflow-wrap:anywhere}</style></head><body><h1>"+escapePrint(name)+" · Conversation</h1>"+html+"</body></html>");view.document.close();view.focus();view.print();
+ });
+ function escapePrint(t){return String(t).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+ toolbar.appendChild(printButton);
  for(const kind of ["txt","json"]){
   const btn=document.createElement("button");btn.type="button";
   btn.textContent=kind==="txt"?"Save conversation (.txt)":"Export conversation (.json)";
@@ -333,7 +370,8 @@ function boot(){
   if(ev.key==="Enter"&&!ev.shiftKey&&!ev.isComposing) {
    const q=String(input.value||"").trim();
    const known=sessionMemory.canHandle(q)||Boolean(commonReply(q,name));
-   if(known)handleSend(ev);
+   if(known){ev.preventDefault();handleSend(ev);}
+   else if(!send.form){ev.preventDefault();send.click();}
    else if(single){ // Original engine handles enter if it supports it.
      // Single-answer controls do not implement Enter; submit ourselves.
      ev.preventDefault();
