@@ -18,3 +18,8 @@
 - Confirm new CI run for exact commit containing test and workflow changes.
 - Execute `node tools/account-cloud-source-caller.mjs` and/or `node tools/account-cloud-reconcile-dry-run.mjs` on owner Mac **only if** an authorized private-read credential already exists, and inspect the redacted report.
 - Separately obtain explicit approval for any future allowed transfer mapping and destination changes. No STOS/T03 commissioning.
+
+## CI acceptance addendum
+- [GitHub Actions run 44828820224](https://github.com/vervenveda/vervenveda.github.io/actions/runs/44828820224) completed with conclusion `success` on exact source/test/workflow commit `1bb004b0d2e9b1f0771efc72f9324cbf27d4f37a`.
+- This verifies the mocked 4-case caller test and 5-case reconciliation test suite as executed by the dedicated CI job; it is **not** a runtime private-repository token check.
+- Owner Mac authenticated caller invocation: NOT RUN. Source transfer: NOT PERMITTED. T03 commissioning: HOLD.
