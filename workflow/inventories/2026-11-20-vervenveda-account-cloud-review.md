@@ -2,10 +2,14 @@
 **Date:** 2026-11-20 · **Owner:** `vervenveda` · **Source:** complete GitHub repository search under `user:vervenveda` (40 results, second page empty).  
 **Mode:** strictly read-only inventory, no account-data import, no automatic linking and no source synchronization authorized.
 
+## Owner-approved scope correction — 2026-11-20
+**Account Cloud is Academy-only.** Of the 40 inventoried repositories, only the 12 P1 Academy repositories are candidates for a future Academy-specific interface review. The full VNV repository remains a *source-only caller and public gateway*, not an account-data feeder. The 333 Network has a separate cloud and independent terminals; all other ecosystem services retain their own terminals and storage authority. P2 and P3 entries below are retained as ecosystem inventory context and **are explicitly excluded as Academy Account Cloud feeders**. No cross-cloud shared identity, record transfer, universal account store, or automatic connection is approved.
+
+
 ## Summary
 - **40 repositories:** 37 public, 3 private, all unarchived according to search metadata.
 - **12 P1 academic review candidates:** potential Academy subject, profile, enrollment, portfolio, transcript or academic-evidence **interface** providers. An integration candidate is not evidence of a working Account Cloud connection.
-- **11 P2 boundary review:** gateway, admin, search, core, network or optional resource providers. Review only when a concrete approved need exists.
+- **11 P2 non-Academy boundary review:** gateway, admin, search, core, network or optional resource providers. Not Academy Account Cloud feeders.
 - **17 P3 independent:** no default Account Cloud relationship, regardless of public navigation adjacency.
 - Three private repositories are `333-Network-Private-Core`, `Khaemenes_Assessment_Authority` and `spyder-cloud`. Their private code and records must not be copied into public source or reports.
 
