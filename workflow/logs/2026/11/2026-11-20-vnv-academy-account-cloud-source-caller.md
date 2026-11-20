@@ -21,3 +21,6 @@ This caller is **not** a cross-account installation or source mirroring authorit
 2. Optional owner-authorized local source inspection with read access to both repositories; preserve a redacted report and file hashes only.
 3. Compare desired allowlisted source transfer paths and establish an explicit dry-run manifest, review/approval, and rollback requirements in a separate future proposal.
 4. Keep actual source writes, bidirectional sync, STOS T03, and student account migrations disabled.
+
+## CI acceptance addendum
+GitHub Actions run [44828308513](https://github.com/vervenveda/vervenveda.github.io/actions/runs/44828308513) finished `completed/success` at exact head SHA `9a2efc2123dfc57fe0a744c010dba36b344434d5`. This covers the four synthetic, mock-only read boundary tests. It does **not** verify authenticated private Academy access, authorize source transfer, or commission STOS.
