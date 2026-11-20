@@ -32,7 +32,7 @@ export function buildSourceSyncPreview(manifest) {
   const expected=['vnv','academy-account-cloud'];
   for(let i=0;i<expected.length;i++){
     const r=manifest.repositories[i], key=expected[i], cfg=OWNERSHIP[key];
-    if(!r || r.target!==key || !cfg || !Array.isArray(r.files) ||
+    if(!r || r.target!==key || r.repository!==(key==='vnv'?'vervenveda/vervenveda.github.io':'KhaemenesAcademy/Account-Cloud.github.io') || !cfg || !Array.isArray(r.files) ||
        r.files.length!==Object.keys(cfg).length ||
        !/^[a-f0-9]{40}$/.test(r.commit||''))return base('HOLD','unexpected_repository_inventory');
     for(const f of r.files){
