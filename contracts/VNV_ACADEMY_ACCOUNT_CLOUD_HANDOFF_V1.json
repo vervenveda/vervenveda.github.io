@@ -1,0 +1,41 @@
+{
+  "schema": "vnv-academy-account-cloud-handoff-contract-v1",
+  "version": "1.0.0",
+  "status": "PROPOSAL_SOURCE_ONLY",
+  "transport": "NONE",
+  "enabled": false,
+  "caller": "vervenveda/vervenveda.github.io",
+  "receiver": "KhaemenesAcademy/Account-Cloud.github.io",
+  "allowedPurpose": "SOURCE_PROVENANCE_REVIEW",
+  "permittedMetadata": [
+    "requestId",
+    "contractVersion",
+    "purpose",
+    "callerRepository",
+    "receiverRepository",
+    "sourceCommit",
+    "sourcePath",
+    "sourceSha256",
+    "sourceBytes"
+  ],
+  "approvedSourcePaths": [
+    "workflow/README.md",
+    "STOS_PUBLIC_BRIDGE.md"
+  ],
+  "protectedResourceAccess": false,
+  "githubSourceWrite": false,
+  "automaticSync": false,
+  "studentRecordAccess": false,
+  "sessionCredentialTransfer": false,
+  "runtimeCommissioning": false,
+  "requiresFutureIndependentApproval": [
+    "destination_repository_and_path",
+    "reviewed_source_to_destination_mapping",
+    "independently_authenticated_principal",
+    "authorization_policy_and_audit",
+    "dry_run_diff_and_conflict_policy",
+    "rollback_and_byte_identity",
+    "explicit_owner_approval",
+    "native_stos_commissioning_if_runtime_access_is_proposed"
+  ]
+}
