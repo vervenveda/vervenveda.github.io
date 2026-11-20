@@ -25,3 +25,8 @@
 ## Protection
 - Existing VNV `index.html`, its ecosystem directory, Academy source repository, T01/T03, STOS registry, GitHub credentials and family records: **unchanged**.
 - No new automatic sync, second account database, or user-side Mac instructions.
+
+## CI verification addendum
+- [GitHub Actions run 44830559407](https://github.com/vervenveda/vervenveda.github.io/actions/runs/44830559407) completed `success` against exact tested head `3bf86dc6c246e54241f2501ab14deb3d1e2b75fc`.
+- CI workflow executes four source caller tests, five reconciliation tests, six ownership-preview tests, and seven handoff validator tests: **22 synthetic tests in the successful job**.
+- This certifies only the mocked/offline code checks. Independently authenticated service-to-service authorization, STOS T03, Mac local credentials, network route and runtime data handling remain HOLD.
