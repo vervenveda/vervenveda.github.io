@@ -4,6 +4,7 @@ Newest entries first. Date is America/New_York.
 
 | Date | Type | Topic | Status |
 | --- | --- | --- | --- |
+| 2026-11-20 | inventory · boundary review | [40-repository Account Cloud feeder inventory](inventories/2026-11-20-vervenveda-account-cloud-review.md) / [structured inventory](inventories/2026-11-20-vervenveda-repository-handoff-inventory.json) | 40 repositories: 12 P1, 11 P2, 17 P3; all source-only, no new authorized transfers |
 | 2026-11-20 | contract · validator · tests | [VNV–Academy Account Cloud handoff v1](logs/2026/11/2026-11-20-vnv-academy-handoff-contract-v1.md) | Versioned source-only proposal and seven validator tests; 22 synthetic CI tests PASS (run 44830559407); no transfer or T03 commissioning |
 | 2026-11-20 | audit · source preview · test | [Account Cloud ownership-aware zero-copy synchronization preview](logs/2026/11/2026-11-20-account-cloud-ownership-sync-preview.md) | Four source ownership decisions; 0 approved transfers; 15 synthetic tests PASS (run 44830261754); cross-account transfers and T03 HOLD |
 | 2026-11-20 | audit · upgrade · test | [Cross-account private source read and dry-run reconciliation](logs/2026/11/2026-11-20-cross-account-read-access-and-reconciliation.md) | Connected GitHub reads verified at pinned SHAs; dry-run tooling/test committed; Mac caller auth and source transfer HOLD |
