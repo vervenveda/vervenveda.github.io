@@ -30,3 +30,20 @@
 - `pageCatalog.publicPageCount` describes a separately scanned page catalog, not the 197 top-level directory entries; adding a gateway entry does not by itself establish Associates course-page catalog indexing.
 
 **Files changed in gateway:** `ecosystem/master-ecosystem-directory.json`, one independent regression test and one independent GitHub Actions workflow. **Unchanged:** `index.html`, shared chrome scripts, all Academy account and course sources.
+
+## Bubble 2 canonical campus origin unification — subsequent approved execution
+
+**Change boundary:** the master JSON registry only; no changes to the fragile `index.html`, no storage migration and no credential/account writes.
+
+**Seven routes normalized to `https://vervenveda.com`:**
+- Main Pre-K, Kindergarten, Elementary, Middle and Higher Learning home entrances (the High School and Associate-Level home entries were already canonical)
+- Academy Adult Enrollment (`academy-adult`)
+- Higher Learning Career Portal (`higher-career`)
+
+The seven entries updated above mean **all seven Academy campus home entrances plus the two verified adult/career entry routes** have a canonical host. Exact paths were preserved. The existing full directory count is still 197 and no entry was deleted or duplicated.
+
+**Source and deployment verification:** the canonical public `vervenveda.com` host returned the five affected school homepages, the adult enrollment page, and the Higher Learning Career Portal in public source checks. The older `vervenveda.github.io` destination could not be reliably inspected, so its redirect behavior is unverified; the verified canonical pages were selected as public routing destinations without claiming legacy data was imported.
+
+**Regression:** the Bubble 4 test now requires canonical host for `preschool`, `kinder`, `elementary`, `middle`, `high`, `higher`, `higher-associates`, `academy-adult`, and `higher-career`. A separate test **reports** remaining older deep links; they were intentionally not mass-rewritten because several app paths were not accessible through the public URL checker. [GitHub Actions #44876962274](https://github.com/vervenveda/vervenveda.github.io/actions/runs/44876962274) completed **SUCCESS** on exact tested commit `480808a2ad1c730df41898ca52b13970709f9603`; existing Academy handoff test also passed. An earlier CI failed only because the previous origin-mismatch test expected mixed hosts; it was replaced with the new canonical-host assertion.
+
+**Outstanding acceptance:** Compare the same existing family/learner on an authorized device at the canonical origin. Browser localStorage does not cross origins, so neither link normalization nor GitHub CI proves a learner profile has moved from a legacy `.github.io` origin. No profile creation, PIN, family membership, course grade, archive, or T03 commissioning was performed.
