@@ -423,8 +423,8 @@ body > #vnv-language-switch{
 #vnv-language-rail{
   width:100%;
   max-width:none;
-  min-height:50px;
-  padding:6px clamp(10px,2vw,24px);
+  min-height:25px;
+  padding:2px clamp(8px,2vw,18px);
   background:#252b2b;
   border-top:1px solid rgba(255,248,233,.12);
   border-bottom:1px solid #b48b45;
@@ -434,10 +434,10 @@ body > #vnv-language-switch{
   flex-flow:row nowrap;
   align-items:center;
   justify-content:center;
-  gap:10px;
+  gap:7px;
   width:max-content;
   max-width:100%;
-  min-height:38px;
+  min-height:21px;
   margin:0 auto;
   padding:0;
   background:transparent;
@@ -455,10 +455,10 @@ body > #vnv-language-switch{
   width:auto;
   min-width:110px;
   max-width:200px;
-  min-height:38px;
-  height:38px;
+  min-height:21px;
+  height:21px;
   margin:0;
-  padding:5px 12px;
+  padding:0 9px;
   border:1px solid #d1c1a3;
   border-radius:7px;
   background:#fff8e9;
@@ -479,7 +479,7 @@ body > #vnv-language-switch{
     overflow-x:auto;
     overscroll-behavior-x:contain;
     -webkit-overflow-scrolling:touch;
-    padding:6px 10px;
+    padding:2px 8px;
   }
   #vnv-language-rail #vnv-language-switch{
     flex-wrap:nowrap;
@@ -487,11 +487,11 @@ body > #vnv-language-switch{
     width:max-content;
     max-width:none;
     margin:0 auto;
-    gap:8px;
+    gap:6px;
   }
   #vnv-language-rail #vnv-language-switch :is(#vnv-language-select,.vnv-translate-complete,.vnv-translation-audit){
-    min-height:38px;
-    height:38px;
+    min-height:21px;
+    height:21px;
   }
 }
 @media(prefers-reduced-motion:reduce){
