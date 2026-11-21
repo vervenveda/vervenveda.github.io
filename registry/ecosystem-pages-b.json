@@ -1,17 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-21T19:03:01Z",
+  "generatedAt": "2026-11-21T19:47:12Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-26/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-26/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
     {
       "title": "Student Packet",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-27/student-packet.html",
@@ -26109,6 +26101,22 @@
       "source": "Khaemenes Higher Learning · Associate-Level Certificate"
     },
     {
+      "title": "Completion Review",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/completion-review/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/completion-review/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Final Exam",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/final-exam/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/final-exam/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
       "title": "Drawing Painting Composition",
       "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/",
       "repo": "Khaemenes_HL_Associates-Level.github.io",
@@ -27553,6 +27561,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-05.html",
       "repo": "Khaemenes_HL_Associates-Level.github.io",
       "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Year 1 To Year 2 Bridge",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/year-1-to-year-2-bridge/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/year-1-to-year-2-bridge/index.html",
       "category": "education",
       "source": "Khaemenes Higher Learning · Associate-Level Certificate"
     },
