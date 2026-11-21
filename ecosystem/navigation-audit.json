@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-20T13:59:53Z",
+  "generatedAt": "2026-11-21T06:39:25Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
-    "repositoryCount": 40,
+    "repositoryCount": 41,
     "failedRepositoryCount": 0,
-    "htmlCount": 12426,
-    "brokenLocalLinkCount": 84,
-    "rootOrphanHtmlCount": 5810,
-    "unreferencedHtmlCount": 1973,
+    "htmlCount": 12972,
+    "brokenLocalLinkCount": 497,
+    "rootOrphanHtmlCount": 7700,
+    "unreferencedHtmlCount": 2116,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 5,
     "intentionalSiblingGroupCount": 4,
@@ -702,11 +702,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Academy.github.io",
-      "htmlCount": 30,
+      "htmlCount": 31,
       "brokenLocalLinkCount": 0,
       "rootReachableHtmlCount": 22,
-      "rootOrphanHtmlCount": 8,
-      "unreferencedHtmlCount": 4,
+      "rootOrphanHtmlCount": 9,
+      "unreferencedHtmlCount": 5,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -718,6 +718,7 @@
         "Parent_resources/Family_photo_album_index.html",
         "academy/testing/families/index.html",
         "diagnostics/front-door/index.html",
+        "family-cloud/index.html",
         "family/mini-cloud/index.html",
         "tools/Keyboard_index.html",
         "tools/song_embedder_index.html",
@@ -726,6 +727,7 @@
       "unreferencedPages": [
         "academy/testing/families/index.html",
         "diagnostics/front-door/index.html",
+        "family-cloud/index.html",
         "family/mini-cloud/index.html",
         "verify/index.html"
       ],
@@ -1356,11 +1358,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3663,
+      "htmlCount": 3671,
       "brokenLocalLinkCount": 28,
-      "rootReachableHtmlCount": 2337,
-      "rootOrphanHtmlCount": 1304,
-      "unreferencedHtmlCount": 711,
+      "rootReachableHtmlCount": 2341,
+      "rootOrphanHtmlCount": 1308,
+      "unreferencedHtmlCount": 715,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 5,
       "intentionalSiblingGroupCount": 4,
@@ -1809,11 +1811,11 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Higher_Learning.github.io",
-      "htmlCount": 3207,
+      "htmlCount": 3344,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 1756,
-      "rootOrphanHtmlCount": 1439,
-      "unreferencedHtmlCount": 181,
+      "rootReachableHtmlCount": 63,
+      "rootOrphanHtmlCount": 3269,
+      "unreferencedHtmlCount": 305,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -1832,75 +1834,75 @@
         "Technology/coding/coding-301_index.html",
         "Technology/coding/coding-302_index.html",
         "Technology/coding/coding-303_index.html",
+        "associate-certificate/index.html",
         "courses/abstract-algebra/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/abstract-algebra/units/unit-01/core-set.html",
-        "courses/abstract-algebra/units/unit-01/extended-set.html",
-        "courses/abstract-algebra/units/unit-01/foundation-set.html",
-        "courses/abstract-algebra/units/unit-01/index.html",
-        "courses/abstract-algebra/units/unit-01/investigation.html",
-        "courses/abstract-algebra/units/unit-01/lessons/u01-l01.html",
-        "courses/abstract-algebra/units/unit-01/lessons/u01-l02.html",
-        "courses/abstract-algebra/units/unit-01/lessons/u01-l03.html",
-        "courses/abstract-algebra/units/unit-01/lessons/u01-l04.html",
-        "courses/abstract-algebra/units/unit-01/lessons/u01-l05.html",
-        "courses/abstract-algebra/units/unit-01/lessons/u01-l06.html",
-        "courses/abstract-algebra/units/unit-01/lessons/u01-l07.html",
-        "courses/abstract-algebra/units/unit-01/mastery-check.html",
-        "courses/abstract-algebra/units/unit-02/core-set.html",
-        "courses/abstract-algebra/units/unit-02/extended-set.html",
-        "courses/abstract-algebra/units/unit-02/foundation-set.html",
-        "courses/abstract-algebra/units/unit-02/index.html",
-        "courses/abstract-algebra/units/unit-02/investigation.html",
-        "courses/abstract-algebra/units/unit-02/lessons/u02-l01.html",
-        "courses/abstract-algebra/units/unit-02/lessons/u02-l02.html",
-        "courses/abstract-algebra/units/unit-02/lessons/u02-l03.html",
-        "courses/abstract-algebra/units/unit-02/lessons/u02-l04.html",
-        "courses/abstract-algebra/units/unit-02/lessons/u02-l05.html",
-        "courses/abstract-algebra/units/unit-02/lessons/u02-l06.html",
-        "courses/abstract-algebra/units/unit-02/lessons/u02-l07.html",
-        "courses/abstract-algebra/units/unit-02/mastery-check.html",
-        "courses/abstract-algebra/units/unit-03/core-set.html",
-        "courses/abstract-algebra/units/unit-03/extended-set.html",
-        "courses/abstract-algebra/units/unit-03/foundation-set.html",
-        "courses/abstract-algebra/units/unit-03/index.html",
-        "courses/abstract-algebra/units/unit-03/investigation.html",
-        "courses/abstract-algebra/units/unit-03/lessons/u03-l01.html",
-        "courses/abstract-algebra/units/unit-03/lessons/u03-l02.html",
-        "courses/abstract-algebra/units/unit-03/lessons/u03-l03.html",
-        "courses/abstract-algebra/units/unit-03/lessons/u03-l04.html",
-        "courses/abstract-algebra/units/unit-03/lessons/u03-l05.html",
-        "courses/abstract-algebra/units/unit-03/lessons/u03-l06.html",
-        "courses/abstract-algebra/units/unit-03/lessons/u03-l07.html",
-        "courses/abstract-algebra/units/unit-03/mastery-check.html",
-        "courses/abstract-algebra/units/unit-04/core-set.html",
-        "courses/abstract-algebra/units/unit-04/extended-set.html",
-        "courses/abstract-algebra/units/unit-04/foundation-set.html",
-        "courses/abstract-algebra/units/unit-04/index.html",
-        "courses/abstract-algebra/units/unit-04/investigation.html",
-        "courses/abstract-algebra/units/unit-04/lessons/u04-l01.html",
-        "courses/abstract-algebra/units/unit-04/lessons/u04-l02.html",
-        "courses/abstract-algebra/units/unit-04/lessons/u04-l03.html",
-        "courses/abstract-algebra/units/unit-04/lessons/u04-l04.html",
-        "courses/abstract-algebra/units/unit-04/lessons/u04-l05.html",
-        "courses/abstract-algebra/units/unit-04/lessons/u04-l06.html",
-        "courses/abstract-algebra/units/unit-04/lessons/u04-l07.html",
-        "courses/abstract-algebra/units/unit-04/mastery-check.html",
-        "courses/abstract-algebra/units/unit-05/core-set.html",
-        "courses/abstract-algebra/units/unit-05/extended-set.html",
-        "courses/abstract-algebra/units/unit-05/foundation-set.html",
-        "courses/abstract-algebra/units/unit-05/index.html",
-        "courses/abstract-algebra/units/unit-05/investigation.html",
-        "courses/abstract-algebra/units/unit-05/lessons/u05-l01.html",
-        "courses/abstract-algebra/units/unit-05/lessons/u05-l02.html",
-        "courses/abstract-algebra/units/unit-05/lessons/u05-l03.html",
-        "courses/abstract-algebra/units/unit-05/lessons/u05-l04.html",
-        "courses/abstract-algebra/units/unit-05/lessons/u05-l05.html",
-        "courses/abstract-algebra/units/unit-05/lessons/u05-l06.html",
-        "courses/abstract-algebra/units/unit-05/lessons/u05-l07.html",
-        "courses/abstract-algebra/units/unit-05/mastery-check.html",
-        "courses/abstract-algebra/units/unit-06/core-set.html",
-        "courses/abstract-algebra/units/unit-06/extended-set.html",
-        "courses/abstract-algebra/units/unit-06/foundation-set.html"
+        "courses/abstract-algebra/assessments/administration-guide.html",
+        "courses/abstract-algebra/assessments/final.html",
+        "courses/abstract-algebra/assessments/index.html",
+        "courses/abstract-algebra/assessments/midterm.html",
+        "courses/abstract-algebra/course-console.html",
+        "courses/abstract-algebra/diagnostic/index.html",
+        "courses/abstract-algebra/records/course-completion-certificate.html",
+        "courses/abstract-algebra/records/learner-profile.html",
+        "courses/abstract-algebra/teacher-keys/index.html",
+        "courses/abstract-algebra/teacher-keys/u01-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u01-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u01-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u01-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u01-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u01-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u01-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u02-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u02-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u02-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u02-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u02-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u02-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u02-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u03-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u03-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u03-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u03-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u03-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u03-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u03-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u04-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u04-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u04-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u04-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u04-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u04-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u04-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u05-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u05-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u05-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u05-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u05-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u05-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u05-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u06-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u06-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u06-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u06-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u06-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u06-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u06-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u07-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l01-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l02-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l03-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l04-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l05-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l06-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l07-key.html",
+        "courses/abstract-algebra/teacher-keys/u08-l08-key.html",
+        "courses/abstract-algebra/teacher-keys/u09-l01-key.html"
       ],
       "unreferencedPages": [
         "GED/Interactive_index.html",
@@ -1913,7 +1915,9 @@
         "Technology/coding/coding-301_index.html",
         "Technology/coding/coding-302_index.html",
         "Technology/coding/coding-303_index.html",
+        "associate-certificate/index.html",
         "courses/abstract-algebra/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
+        "courses/abstract-algebra/course-console.html",
         "courses/abstract-algebra/units/unit-01/index.html",
         "courses/abstract-algebra/units/unit-02/index.html",
         "courses/abstract-algebra/units/unit-03/index.html",
@@ -1927,6 +1931,7 @@
         "courses/abstract-algebra/units/unit-11/index.html",
         "courses/abstract-algebra/units/unit-12/index.html",
         "courses/abstract-algebra/units/unit-13/index.html",
+        "courses/advanced-geometric-topology/course-console.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-01/KH-MATH-AGT-W01-R01_building-surfaces-from-polygons.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-02/KH-MATH-AGT-W01-CR01_quotient-spaces-polygonal-schemas.html",
         "courses/advanced-geometric-topology/curriculum/lessons/lesson-03/KH-MATH-AGT-W01-WE01_worked-surface-identification-examples.html",
@@ -1947,42 +1952,690 @@
         "courses/advanced-geometric-topology/curriculum/lessons/teacher-key/KH-MATH-AGT-L16-INSTRUCTOR-KEY/KH-MATH-AGT-L16-IK02_instructor-key.html",
         "courses/advanced-geometric-topology/lesson.html",
         "courses/calculus-ii/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/differential-equations/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/differential-equations/tools/index.html",
-        "courses/differential-equations/units/unit-01/index.html",
-        "courses/differential-equations/units/unit-02/index.html",
-        "courses/differential-equations/units/unit-03/index.html",
-        "courses/differential-equations/units/unit-04/index.html",
-        "courses/differential-equations/units/unit-05/index.html",
-        "courses/differential-equations/units/unit-06/index.html",
-        "courses/differential-equations/units/unit-07/index.html",
-        "courses/differential-equations/units/unit-08/index.html",
-        "courses/differential-equations/units/unit-09/index.html",
-        "courses/differential-equations/units/unit-10/index.html",
-        "courses/differential-equations/units/unit-11/index.html",
-        "courses/differential-equations/units/unit-12/index.html",
-        "courses/differential-equations/units/unit-13/index.html",
-        "courses/discrete-mathematics/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/discrete-mathematics/tools/index.html",
-        "courses/discrete-mathematics/units/unit-01/index.html",
-        "courses/discrete-mathematics/units/unit-02/index.html",
-        "courses/discrete-mathematics/units/unit-03/index.html",
-        "courses/discrete-mathematics/units/unit-04/index.html",
-        "courses/discrete-mathematics/units/unit-05/index.html",
-        "courses/discrete-mathematics/units/unit-06/index.html",
-        "courses/discrete-mathematics/units/unit-07/index.html",
-        "courses/discrete-mathematics/units/unit-08/index.html",
-        "courses/discrete-mathematics/units/unit-09/index.html",
-        "courses/discrete-mathematics/units/unit-10/index.html",
-        "courses/discrete-mathematics/units/unit-11/index.html",
-        "courses/discrete-mathematics/units/unit-12/index.html",
-        "courses/discrete-mathematics/units/unit-13/index.html",
-        "courses/introduction-to-proofs/HIGHER_LEARNING_PORTAL_INTEGRATION.html",
-        "courses/introduction-to-proofs/units/unit-01/index.html",
-        "courses/introduction-to-proofs/units/unit-02/index.html",
-        "courses/introduction-to-proofs/units/unit-03/index.html",
-        "courses/introduction-to-proofs/units/unit-04/index.html",
-        "courses/introduction-to-proofs/units/unit-05/index.html"
+        "courses/calculus-ii/course-console.html",
+        "courses/calculus-iii-multivariable/assessments/final.html",
+        "courses/calculus-iii-multivariable/assessments/midterm.html",
+        "courses/calculus-iii-multivariable/course-console.html",
+        "courses/calculus-iii-multivariable/diagnostic/index.html",
+        "courses/calculus-iii-multivariable/index.html",
+        "courses/calculus-iii-multivariable/records/course-completion-certificate.html",
+        "courses/calculus-iii-multivariable/units/unit-01/lessons/u01-l01.html",
+        "courses/calculus-iii-multivariable/units/unit-01/lessons/u01-l02.html",
+        "courses/calculus-iii-multivariable/units/unit-01/lessons/u01-l03.html",
+        "courses/calculus-iii-multivariable/units/unit-01/lessons/u01-l04.html",
+        "courses/calculus-iii-multivariable/units/unit-01/lessons/u01-l05.html",
+        "courses/calculus-iii-multivariable/units/unit-01/lessons/u01-l06.html",
+        "courses/calculus-iii-multivariable/units/unit-01/lessons/u01-l07.html",
+        "courses/calculus-iii-multivariable/units/unit-01/mastery-check.html",
+        "courses/calculus-iii-multivariable/units/unit-02/lessons/u02-l01.html",
+        "courses/calculus-iii-multivariable/units/unit-02/lessons/u02-l02.html",
+        "courses/calculus-iii-multivariable/units/unit-02/lessons/u02-l03.html",
+        "courses/calculus-iii-multivariable/units/unit-02/lessons/u02-l04.html",
+        "courses/calculus-iii-multivariable/units/unit-02/lessons/u02-l05.html",
+        "courses/calculus-iii-multivariable/units/unit-02/lessons/u02-l06.html",
+        "courses/calculus-iii-multivariable/units/unit-02/lessons/u02-l07.html",
+        "courses/calculus-iii-multivariable/units/unit-02/mastery-check.html",
+        "courses/calculus-iii-multivariable/units/unit-03/lessons/u03-l01.html",
+        "courses/calculus-iii-multivariable/units/unit-03/lessons/u03-l02.html",
+        "courses/calculus-iii-multivariable/units/unit-03/lessons/u03-l03.html",
+        "courses/calculus-iii-multivariable/units/unit-03/lessons/u03-l04.html",
+        "courses/calculus-iii-multivariable/units/unit-03/lessons/u03-l05.html",
+        "courses/calculus-iii-multivariable/units/unit-03/lessons/u03-l06.html",
+        "courses/calculus-iii-multivariable/units/unit-03/lessons/u03-l07.html",
+        "courses/calculus-iii-multivariable/units/unit-03/mastery-check.html",
+        "courses/calculus-iii-multivariable/units/unit-04/lessons/u04-l01.html",
+        "courses/calculus-iii-multivariable/units/unit-04/lessons/u04-l02.html"
+      ],
+      "duplicateGroups": [],
+      "versionSiblingGroups": [],
+      "intentionalSiblingGroups": [],
+      "canonicalAliases": [],
+      "supersededNames": []
+    },
+    {
+      "repository": "vervenveda/Khaemenes_HL_Associates-Level.github.io",
+      "htmlCount": 394,
+      "brokenLocalLinkCount": 405,
+      "rootReachableHtmlCount": 342,
+      "rootOrphanHtmlCount": 52,
+      "unreferencedHtmlCount": 15,
+      "duplicateGroupCount": 0,
+      "versionSiblingGroupCount": 0,
+      "intentionalSiblingGroupCount": 0,
+      "canonicalAliasCount": 0,
+      "supersededNameCount": 0,
+      "brokenLocalLinks": [
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-02/lesson-01.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/week-02-day-02.html",
+          "raw": "../week-02-day-02.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/lesson-03.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-05/lesson-01.html",
+          "raw": "../unit-05/lesson-01.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-02.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/index.html",
+          "raw": "../../",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-03.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/index.html",
+          "raw": "../../",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-08/day-02.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/index.html",
+          "raw": "../../",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-08/day-03.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/index.html",
+          "raw": "../../",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-02.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/index.html",
+          "raw": "../../",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-03.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/lessons/index.html",
+          "raw": "../../",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/index.html",
+          "raw": "../../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/Modern-Graphic-Design-Portfolio-Spread.webp",
+          "raw": "./Modern-Graphic-Design-Portfolio-Spread.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/progression-gate-v1.js",
+          "raw": "../../../shared/progression-gate-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/index.html",
+          "raw": "../../../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/Symetrical-Assymetrical.webp",
+          "raw": "./Symetrical-Assymetrical.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/index.html",
+          "raw": "../../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-08/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/index.html",
+          "raw": "../../unit-03/index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-08/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-08/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-08/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/index.html",
+          "raw": "../../../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/Plant-Growth-Stages-A-Visual-Sequence.webp",
+          "raw": "./Plant-Growth-Stages-A-Visual-Sequence.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/Geometric-Construction-and-Figure-Movement-Studies.webp",
+          "raw": "./Geometric-Construction-and-Figure-Movement-Studies.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-24/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-24/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-24/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-23/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-23/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-23/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-25/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-25/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-25/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/Observational-Drawin-Form-Light-and-Perspective.webp",
+          "raw": "./Observational-Drawin-Form-Light-and-Perspective.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/Space-in-Art.webp",
+          "raw": "./Space-in-Art.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/Human-Figure-in-Space.webp",
+          "raw": "./Human-Figure-in-Space.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/Light-Shadow-and-Volume-Study.webp",
+          "raw": "./Light-Shadow-and-Volume-Study.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/Designing-a-Spatial-Narrative.webp",
+          "raw": "./Designing-a-Spatial-Narrative.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/Perspective-and-Spatial-Construction.webp",
+          "raw": "./Perspective-and-Spatial-Construction.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/Architectural-Perspective-Art-Lesson-Board.webp",
+          "raw": "./Architectural-Perspective-Art-Lesson-Board.webp",
+          "tag": "img",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-20/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-20/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-20/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-21/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-21/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-21/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-22/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-22/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-22/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/index.html",
+          "raw": "../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/Pattern-Repetition-and-Movement-1.webp",
+          "raw": "./Pattern-Repetition-and-Movement-1.webp",
+          "tag": "img",
+          "attr": "src"
+        }
+      ],
+      "rootOrphans": [
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-02/lesson-01.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-02/lesson-02.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-02/lesson-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-03/lesson-01.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-03/lesson-02.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-03/lesson-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/lesson-01.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/lesson-02.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/lesson-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-08/day-02.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-08/day-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-02.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-02.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/week-01-day-01.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-02/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-03/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-04/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-05/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-06/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-07/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-08/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-09/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-04/week-10/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-17/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-18/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-20/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-21/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-22/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-23/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-24/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-09/week-25/index.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+        "library/halls/business-management/source.html",
+        "library/halls/financial-hall/source.html",
+        "library/halls/law-governance/source.html",
+        "library/halls/music/source.html",
+        "library/halls/philosophy/source.html",
+        "library/halls/psychology-mind/source.html",
+        "library/halls/visual-arts/source.html",
+        "library/halls/world-classics/source.html",
+        "workflow/imports/yearbook-reference/academy-yearbook-index.html",
+        "workflow/imports/yearbook-reference/yearbook-agi-minicloud.html"
+      ],
+      "unreferencedPages": [
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-08/day-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-03.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/lessons/week-01-day-01.html",
+        "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+        "library/halls/business-management/source.html",
+        "library/halls/financial-hall/source.html",
+        "library/halls/law-governance/source.html",
+        "library/halls/music/source.html",
+        "library/halls/philosophy/source.html",
+        "library/halls/psychology-mind/source.html",
+        "library/halls/visual-arts/source.html",
+        "library/halls/world-classics/source.html",
+        "workflow/imports/yearbook-reference/academy-yearbook-index.html",
+        "workflow/imports/yearbook-reference/yearbook-agi-minicloud.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
@@ -2175,9 +2828,9 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Linguistics.github.io",
-      "htmlCount": 201,
+      "htmlCount": 202,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 190,
+      "rootReachableHtmlCount": 191,
       "rootOrphanHtmlCount": 9,
       "unreferencedHtmlCount": 9,
       "duplicateGroupCount": 0,
@@ -2216,17 +2869,74 @@
     },
     {
       "repository": "vervenveda/Khaemenes_Middle.github.io",
-      "htmlCount": 1399,
-      "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 65,
-      "rootOrphanHtmlCount": 1334,
-      "unreferencedHtmlCount": 39,
+      "htmlCount": 1404,
+      "brokenLocalLinkCount": 8,
+      "rootReachableHtmlCount": 67,
+      "rootOrphanHtmlCount": 1337,
+      "unreferencedHtmlCount": 38,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
       "canonicalAliasCount": 0,
       "supersededNameCount": 0,
-      "brokenLocalLinks": [],
+      "brokenLocalLinks": [
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/engines/mathematics/week-01.html",
+          "raw": "week-01.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/assessments/weekly-assessments.html",
+          "raw": "../../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/engines/mathematics/week-01.html",
+          "raw": "week-01.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/engines/mathematics/week-01.html",
+          "raw": "week-01.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/assessments/weekly-assessments.html",
+          "raw": "../../assessments/weekly-assessments.html",
+          "tag": "a",
+          "attr": "href"
+        },
+        {
+          "source": "workflow/engines/mathematics/grade-07-approved-lesson-01.html",
+          "target": "workflow/index.html",
+          "raw": "../../index.html",
+          "tag": "a",
+          "attr": "href"
+        }
+      ],
       "rootOrphans": [
         "breakaway/index.html",
         "grades/grade-06/assessments/week-02-assessment.html",
@@ -2316,7 +3026,6 @@
         "grades/grade-06/subjects/health-pe-sel/index.html",
         "grades/grade-06/subjects/integrated-projects/index.html",
         "grades/grade-06/subjects/language-arts/index.html",
-        "grades/grade-06/subjects/mathematics/index.html",
         "grades/grade-06/subjects/science/index.html",
         "grades/grade-06/subjects/social-studies/index.html",
         "grades/grade-06/subjects/technology-design/index.html",
@@ -2343,12 +3052,12 @@
         "grades/grade-08/subjects/health-pe-sel/index.html",
         "grades/grade-08/subjects/integrated-projects/index.html",
         "grades/grade-08/subjects/language-arts/index.html",
-        "grades/grade-08/subjects/mathematics/index.html",
         "grades/grade-08/subjects/science/index.html",
         "grades/grade-08/subjects/social-studies/index.html",
         "grades/grade-08/subjects/technology-design/index.html",
         "grades/grade-08/subjects/world-languages/index.html",
-        "resources/video-study/index.html"
+        "resources/video-study/index.html",
+        "workflow/engines/mathematics/grade-07-approved-lesson-01.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
