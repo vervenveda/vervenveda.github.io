@@ -265,6 +265,7 @@ function toolHTML(t,i){
  if(t.type==="materials")return '<button class="vct-tool" type="button" data-vct-materials>'+body+'</button>';
  if(t.type==="notes")return '<button class="vct-tool" type="button" data-vct-notes>'+body+'</button>';
  if(t.type==="help")return '<button class="vct-tool" type="button" data-vct-help>'+body+'</button>';
+ if(t.type==="translator")return '<button class="vct-tool" type="button" data-vct-translator>'+body+'</button>';
  if(t.type==="ecosystem-list")return '<button class="vct-tool" type="button" data-vct-list="'+i+'">'+body+'</button>';
  return '<button class="vct-tool" type="button" data-vct-action="'+esc(t.action||"")+'">'+body+'</button>';
 }
@@ -287,6 +288,7 @@ async function mount(){
    pop(c.materials?.title||"Learning Materials",c.materials?.intro||"Open the materials that match your class.",'data-vct-materials-panel')+
    '<div class="vct-pop" data-vct-help-panel hidden><h2>'+esc(c.help?.title||"How Class Tools Work")+'</h2>'+(c.help?.paragraphs||[]).map(p=>'<p>'+String(p)+'</p>').join("")+'</div>'+
    pop("Ecosystem Tools","Approved public tools from the Verve N Veda ecosystem directory.",'data-vct-directory-panel')+
+   '<div class="vct-pop" data-vct-translator-panel hidden><h2>Language & Translator</h2><p>Use the canonical Verve N Veda language controls for this page.</p><div data-vnv-language-mount></div></div>'+
   '</section>';
  document.body.append(root);
  const toggle=root.querySelector("#vnvClassToolsToggle"),panel=root.querySelector("#vnvClassToolsPanel");
@@ -314,6 +316,14 @@ async function mount(){
  },{signal:controller.signal}));
  root.querySelector("[data-vct-materials]")?.addEventListener("click",()=>{const p=root.querySelector("[data-vct-materials-panel]");const open=p.hidden;hidePops();p.hidden=!open},{signal:controller.signal});
  root.querySelector("[data-vct-help]")?.addEventListener("click",()=>{const p=root.querySelector("[data-vct-help-panel]");const open=p.hidden;hidePops();p.hidden=!open},{signal:controller.signal});
+ root.querySelector("[data-vct-translator]")?.addEventListener("click",()=>{
+  const p=root.querySelector("[data-vct-translator-panel]"),mount=p?.querySelector("[data-vnv-language-mount]");if(!p||!mount)return;
+  const open=p.hidden;hidePops();p.hidden=!open;
+  if(open){
+   const lang=document.getElementById("vnv-language-switch");
+   if(lang&&lang.parentNode!==mount)mount.append(lang);
+  }
+ },{signal:controller.signal});
  root.querySelector("[data-vct-notes]")?.addEventListener("click",()=>{
   if(typeof c.openNotes==="function"){c.openNotes({root,setOpen});return}
   const trigger=document.querySelector('[data-profile-dialog-for="my-profile-extras"],[data-profile-dialog-for="study-studio"],button[aria-controls*="study" i],a[href*="study" i]');
