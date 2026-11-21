@@ -1,745 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-21T07:41:52Z",
+  "generatedAt": "2026-11-21T18:43:02Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-16/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-16/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-17/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-17/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-17/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-17/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-18/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-18/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-18/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-18/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-19/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-19/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-19/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-19/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-20/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-20/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-20/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-20/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-21/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-21/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-21/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-21/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-22/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-22/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-22/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-22/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-23/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-23/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-23/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-23/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-24/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-24/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-24/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-24/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-25/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-25/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-25/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-25/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-26/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-26/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-26/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-26/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-27/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-27/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-27/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-27/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-28/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-28/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-28/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-28/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-29/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-29/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-29/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-29/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-30/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-30/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-30/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-30/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-31/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-31/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-31/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-31/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-32/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-32/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-32/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-32/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-33/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-33/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-33/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-33/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-34/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-34/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-34/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-34/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-35/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-35/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-35/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-35/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-36/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-36/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-36/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-36/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-01/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-01/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-01/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-01/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-02/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-02/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-03/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-03/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-03/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-03/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-04/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-04/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-04/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-04/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-05/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-05/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-05/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-05/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-06/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-06/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-06/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-06/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-07/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-07/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-07/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-07/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-08/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-08/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-08/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-08/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-09/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-09/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-09/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-09/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-10/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-10/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-10/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-10/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-11/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-11/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-11/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-11/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-12/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-12/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-12/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-12/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-13/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-13/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-13/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-13/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-14/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-14/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-14/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-14/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-15/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-15/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-15/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-15/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-16/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-16/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-16/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-16/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-17/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-17/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-17/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-17/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-18/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-18/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-18/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-18/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-19/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-19/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-19/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-19/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-20/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-20/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-20/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-20/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-21/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-21/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-21/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-21/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-22/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-22/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-22/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-22/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-23/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-23/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-23/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-23/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-24/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-24/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-24/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-24/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-25/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-25/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-25/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-25/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-26/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-26/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
     {
       "title": "Teacher Guide",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-26/teacher-guide.html",
@@ -25117,6 +24381,38 @@
       "source": "Khaemenes Higher Learning · Associate-Level Certificate"
     },
     {
+      "title": "2D Design Color Visual Communication",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/2d-design-color-visual-communication/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/2d-design-color-visual-communication/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "3D Material Space Time Production",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/3d-material-space-time-production/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/3d-material-space-time-production/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Artist Research Critique Portfolio Writing",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/artist-research-critique-portfolio-writing/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/artist-research-critique-portfolio-writing/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Creative Enterprise Niche Market Discovery",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/creative-enterprise-niche-market-discovery/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/creative-enterprise-niche-market-discovery/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
       "title": "Drawing Observation Creative Calling",
       "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/",
       "repo": "Khaemenes_HL_Associates-Level.github.io",
@@ -26809,6 +26105,1454 @@
       "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/",
       "repo": "Khaemenes_HL_Associates-Level.github.io",
       "path": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Drawing Painting Composition",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/index.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-01/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-01/week-02/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-03/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-04/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-02/week-05/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-06/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-07/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-03/week-08/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-09/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-10/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-04/week-11/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-12/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-13/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-05/week-14/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-15/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-16/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-06/week-17/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-18/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-07/week-19/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-20/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-21/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-08/week-22/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-23/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-24/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-09/week-25/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-26/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-27/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-10/week-28/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-29/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-30/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-11/week-31/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/lesson-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/lesson-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-32/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-33/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-12/week-34/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/lesson-01.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/lesson-01.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Lesson 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/lesson-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/lesson-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-35/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-02.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-05.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-painting-composition/lessons/unit-13/week-36/day-05.html",
       "category": "education",
       "source": "Khaemenes Higher Learning · Associate-Level Certificate"
     },
@@ -31113,6 +31857,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/translator.html",
       "repo": "Khaemenes_Linguistics.github.io",
       "path": "apps/translator.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Vocabulary Mini Cloud",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/vocabulary-mini-cloud/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/vocabulary-mini-cloud/index.html",
       "category": "education",
       "source": "Khaemenes Linguistics"
     },
