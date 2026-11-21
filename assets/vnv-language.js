@@ -39,6 +39,39 @@ function cacheTranslation(src,code,value){
  const all=Object.entries(translationsCache);if(all.length>1600)translationsCache=Object.fromEntries(all.slice(-1200));
  try{localStorage.setItem(LANG_CACHE_KEY,JSON.stringify(translationsCache))}catch{}
 }
+/* Public-page translation memory: browser-local dictionary candidates only.
+ * Never harvest form fields, editable text, account/learner areas, or private surfaces.
+ * Sentence matches are contextual examples, not inferred word translations. */
+const PAGE_PAIRS_KEY="vnv_page_dictionary_candidates_v1";
+const PAGE_PAIRS_MAX=900;
+const PAGE_PRIVATE_SELECTOR="form,[contenteditable],[data-private],[data-learner],[data-student],[data-account],[data-i18n-no-online],#adminGate,[autocomplete],dialog,[role='dialog'],[data-vnv-no-dictionary]";
+function publicDictionarySurface(el){
+ if(!el||el.closest(PAGE_PRIVATE_SELECTOR)||ignored(el))return false;
+ return !!el.closest("main,header,nav,footer,[role='main']");
+}
+function rememberPagePair(source,translated,element){
+ if(lang==="en"||!publicDictionarySurface(element))return;
+ const a=normalize(source),b=normalize(translated);
+ if(a.length<2||b.length<2||a===b||a.length>280||b.length>280)return;
+ // Static/public prose only: never retain emails, identifiers, URL strings, or user text.
+ if(/(?:https?:\/\/|www\.|@|\b\d{5,}\b)/i.test(a))return;
+ const word=/^[\p{L}\p{M}'’-]+$/u.test(a);
+ const k=lang+"|"+a;
+ try{
+  const rows=JSON.parse(localStorage.getItem(PAGE_PAIRS_KEY)||"{}");
+  const safe=rows&&typeof rows==="object"&&!Array.isArray(rows)?rows:{};
+  // Do not churn storage for an unchanged saved pair.
+  if(safe[k]?.translation===b)return;
+  delete safe[k];
+  safe[k]={source:a,translation:b,from:"en",to:lang,
+   kind:word?"word-candidate":"contextual-phrase",
+   status:"unreviewed-page-translation",page:location.pathname.slice(0,220),
+   sourceType:"public-rendered-text",savedAt:new Date().toISOString()};
+  const keys=Object.keys(safe);
+  for(const stale of keys.slice(0,Math.max(0,keys.length-PAGE_PAIRS_MAX)))delete safe[stale];
+  localStorage.setItem(PAGE_PAIRS_KEY,JSON.stringify(safe));
+ }catch{/* No storage permission or quota: translation remains usable. */}
+}
 function shouldTranslateText(src){return /[\p{L}]/u.test(src) && src.length>=2}
 function translationEvidence(source){
  if(lang==="en")return "source-language";
@@ -222,6 +255,7 @@ function textTranslate(n){
  const phrase=normalize(base);if(!phrase)return;
  const replacement=translate(phrase);
  const value=replacement?base.replace(phrase,replacement):base;
+ if(replacement&&lang!=="en"&&replacement!==phrase)rememberPagePair(phrase,replacement,parent);
  if(n.nodeValue!==value)n.nodeValue=value;
  lastRendered.set(n,value);
 }
