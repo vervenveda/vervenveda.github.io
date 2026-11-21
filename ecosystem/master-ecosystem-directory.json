@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 196,
+  "entryCount": 197,
   "entries": [
     {
       "id": "gateway-verve",
@@ -867,6 +867,19 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/"
+    },
+    {
+      "id": "higher-associates",
+      "title": "Khaemenes Higher Learning · Associate-Level Certificate",
+      "repository": "vervenveda/Khaemenes_HL_Associates-Level.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Khaemenes_HL_Associates-Level.github.io/",
+      "developmentStatus": "partial"
     },
     {
       "id": "higher-career",
