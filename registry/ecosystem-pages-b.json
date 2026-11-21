@@ -1,33 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-21T06:38:13Z",
+  "generatedAt": "2026-11-21T06:45:13Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/weeks/week-21/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/weeks/week-21/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/weeks/week-21/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/weeks/week-21/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/weeks/week-22/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-09/weeks/week-22/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
     {
       "title": "Teacher Guide",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-09/weeks/week-22/teacher-guide.html",
@@ -25885,6 +25861,14 @@
       "source": "Khaemenes Higher Learning · Associate-Level Certificate"
     },
     {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-08/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-08/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
       "title": "Day 02",
       "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-02.html",
       "repo": "Khaemenes_HL_Associates-Level.github.io",
@@ -25893,10 +25877,42 @@
       "source": "Khaemenes Higher Learning · Associate-Level Certificate"
     },
     {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-09/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
       "title": "Day 02",
       "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-02.html",
       "repo": "Khaemenes_HL_Associates-Level.github.io",
       "path": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-03.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Higher Learning · Associate-Level Certificate"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_HL_Associates-Level.github.io/courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-04.html",
+      "repo": "Khaemenes_HL_Associates-Level.github.io",
+      "path": "courses/tracks/arts/drawing-observation-creative-calling/lessons/unit-04/week-10/day-04.html",
       "category": "education",
       "source": "Khaemenes Higher Learning · Associate-Level Certificate"
     },
@@ -40473,6 +40489,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-08/subjects/mathematics/",
       "repo": "Khaemenes_Middle.github.io",
       "path": "grades/grade-08/subjects/mathematics/index.html",
+      "category": "education",
+      "source": "Khaemenes Middle"
+    },
+    {
+      "title": "Lesson 01",
+      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/grades/grade-08/subjects/mathematics/lesson-01.html",
+      "repo": "Khaemenes_Middle.github.io",
+      "path": "grades/grade-08/subjects/mathematics/lesson-01.html",
       "category": "education",
       "source": "Khaemenes Middle"
     },
