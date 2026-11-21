@@ -131,3 +131,18 @@ test('Bubble 5 continued: menu and translator have distinct fallback owners',()=
  assert.match(language,/Page-local learner responses and admin inputs are excluded/);
  assert.match(html,/This convenience gate is not secure authentication/);
 });
+
+test('Sovereign Translator is a single visible canonical Linguistics tool in the live ecosystem directory',()=>{
+ const matches=directory.filter(e=>e.repository==='vervenveda/Khaemenes_Linguistics.github.io'&&e.path==='apps/translator.html');
+ assert.equal(matches.length,1);
+ const tool=matches[0];
+ assert.equal(tool.id,'ling-sovereign-translator');
+ assert.equal(tool.title,'Sovereign Translator');
+ assert.equal(tool.type,'tool');
+ assert.equal(tool.category,'education');
+ assert.ok(eligible(tool));
+ assert.equal(tool.url,'https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/translator.html');
+ assert.equal(directory.filter(e=>e.id===tool.id).length,1);
+ assert.ok(html.includes('const source="/ecosystem/master-ecosystem-directory.json"'));
+ assert.ok(!directory.some(e=>e.id!==tool.id&&e.url===tool.url));
+});
