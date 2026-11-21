@@ -418,6 +418,82 @@ body > #vnv-language-switch{
   border-radius:7px;
   font:400 16px/1.35 "Brandon Grotesque",Nunito,Arial,sans-serif;
 }
+/* Refined 2026-11-21: one elegant edge-to-edge charcoal translator bar.
+   Presentation only: all translation, review, consent and export controls remain intact. */
+#vnv-language-rail{
+  width:100%;
+  max-width:none;
+  min-height:50px;
+  padding:6px clamp(10px,2vw,24px);
+  background:#252b2b;
+  border-top:1px solid rgba(255,248,233,.12);
+  border-bottom:1px solid #b48b45;
+}
+#vnv-language-rail #vnv-language-switch{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:max-content;
+  max-width:100%;
+  min-height:38px;
+  margin:0 auto;
+  padding:0;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  font:400 16px/1.25 "Brandon Grotesque",Nunito,Arial,sans-serif;
+}
+#vnv-language-rail #vnv-language-switch label{
+  flex:0 0 auto;
+  font:400 16px/1.25 "Brandon Grotesque",Nunito,Arial,sans-serif;
+  white-space:nowrap;
+}
+#vnv-language-rail #vnv-language-switch :is(#vnv-language-select,.vnv-translate-complete,.vnv-translation-audit){
+  flex:0 0 auto;
+  width:auto;
+  min-width:110px;
+  max-width:200px;
+  min-height:38px;
+  height:38px;
+  margin:0;
+  padding:5px 12px;
+  border:1px solid #d1c1a3;
+  border-radius:7px;
+  background:#fff8e9;
+  color:#252b2b;
+  -webkit-text-fill-color:#252b2b;
+  font:400 16px/1.25 "Brandon Grotesque",Nunito,Arial,sans-serif;
+  text-align:center;
+  white-space:nowrap;
+  box-shadow:none;
+}
+#vnv-language-rail #vnv-language-switch [data-vnv-coverage]{
+  flex:0 0 auto;
+  font:400 16px/1.25 "Brandon Grotesque",Nunito,Arial,sans-serif!important;
+  white-space:nowrap;
+}
+@media(max-width:760px){
+  #vnv-language-rail{
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+    padding:6px 10px;
+  }
+  #vnv-language-rail #vnv-language-switch{
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    width:max-content;
+    max-width:none;
+    margin:0 auto;
+    gap:8px;
+  }
+  #vnv-language-rail #vnv-language-switch :is(#vnv-language-select,.vnv-translate-complete,.vnv-translation-audit){
+    min-height:38px;
+    height:38px;
+  }
+}
 @media(prefers-reduced-motion:reduce){
   #vnv-language-rail #vnv-language-switch :is(.vnv-translate-complete,.vnv-translation-audit){transition:none}
 }
