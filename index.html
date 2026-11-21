@@ -34,14 +34,14 @@
   <!-- Presentation-only gateway bootstrap: layout reservation and idempotent mounts.
        No STOS authority, storage, account access, or network reporting. -->
   <style id="vnv-gateway-bootstrap-layout">
-    :root{--vnv-gateway-autoticker-reserve:33px;--vnv-gateway-language-reserve:54px}
+    :root{--vnv-gateway-autoticker-reserve:33px;--vnv-gateway-language-reserve:25px}
     body > #vnvGatewayAutoTickerSlot{
       height:var(--vnv-gateway-autoticker-reserve);min-height:var(--vnv-gateway-autoticker-reserve);
       width:100%;background:#101b2b;box-sizing:border-box;overflow:hidden;
     }
     body > #vnv-language-rail{
       box-sizing:border-box;width:100%;min-height:var(--vnv-gateway-language-reserve);
-      padding:7px 16px 8px;background:#243038;border-bottom:1px solid #b48b45;
+      padding:2px 12px;background:#252b2b;border-bottom:1px solid #b48b45;
     }
     body > .site-header{top:calc(var(--ticker-height,33px) + var(--vnv-gateway-autoticker-reserve))!important}
     @media print{#vnvGatewayAutoTickerSlot{display:none!important}}
@@ -6437,7 +6437,7 @@ a.button,button.button {
 <!-- Khaemenes Linguistics is the canonical translator resource owner.
      This is an additive, opt-in resource handoff; gateway local translator is fallback. -->
 <script src="https://vervenveda.com/Khaemenes_Linguistics.github.io/assets/khaemenes-translator-loader.js?v=1.1.1" defer></script>
-<script src="assets/vnv-language.js?v=20261121-compact-bar" defer></script>
+<script src="assets/vnv-language.js?v=20261121-half-height" defer></script>
 <script id="vnv-linguistics-canonical-resource-handoff">
 document.addEventListener("DOMContentLoaded",()=>{
   const loader=window.KhaemenesTranslatorLoader;
