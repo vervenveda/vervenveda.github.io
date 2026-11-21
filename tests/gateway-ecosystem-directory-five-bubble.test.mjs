@@ -114,7 +114,7 @@ test('Bubble 5: gateway retains native ticker, header, hamburger, translator and
 
 test('Bubble 5 continued: menu and translator have distinct fallback owners',()=>{
  assert.match(html,/aria-controls="menuOverlay"/);
- assert.match(html,/function closeMenu\(\)/);
+ assert.match(html,/function closeMenu\(restoreFocus = true\)/);
  assert.match(html,/id="menuSearch"/);
  assert.match(html,/id="closeMenu"/);
  assert.match(html,/khaemenes-translator-loader\.js\?v=1\.1\.1/);
