@@ -2435,8 +2435,8 @@
   "pageCatalog": {
     "version": 2,
     "purpose": "Complete searchable catalog of current public HTML surfaces across the connected Verve N Veda ecosystem.",
-    "publicPageCount": 11185,
-    "repositoryCount": 35,
+    "publicPageCount": 11709,
+    "repositoryCount": 36,
     "parts": [
       "/registry/ecosystem-pages-a.json",
       "/registry/ecosystem-pages-b.json"
@@ -2454,13 +2454,13 @@
       ],
       "note": "STOS remains dormant future-migration infrastructure; GitHub is the current functional public environment. New repositories remain under review until explicitly approved in the canonical master directory."
     },
-    "lastForensicRefresh": "2026-11-20",
+    "lastForensicRefresh": "2026-11-21",
     "autoSync": {
       "enabled": true,
       "mode": "approved-repositories-only",
       "newRepositoryPolicy": "discover-under-review",
       "stos": "dormant-excluded",
-      "generatedAt": "2026-11-20T20:43:27Z"
+      "generatedAt": "2026-11-21T06:38:13Z"
     }
   },
   "developmentStatusValues": [
