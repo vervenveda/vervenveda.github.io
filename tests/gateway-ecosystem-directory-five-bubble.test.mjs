@@ -78,18 +78,25 @@ test('Bubble 3: canonical navigation with deliberate emergency fallback, not a s
  console.log('VNV_DIRECTORY_PARITY_REPORT='+JSON.stringify(report));
 });
 
-test('Bubble 4: host-origin mixing is visible without rewriting existing Academy links',()=>{
+test('Bubble 4: all seven stage main entrances and verified adult enrollment use the Academy canonical origin',()=>{
  const stages=['preschool','kinder','elementary','middle','high','higher','higher-associates'];
- const rows=stages.map(id=>{
-  const x=directory.find(e=>e.id===id);
-  assert.ok(x,'missing school stage '+id);
-  return {id,host:new URL(x.url).hostname};
+ const ids=[...stages,'academy-adult','higher-career'];
+ const rows=ids.map(id=>{
+  const e=directory.find(x=>x.id===id);
+  assert.ok(e,'missing canonical Academy entry '+id);
+  const url=new URL(e.url);
+  assert.equal(url.origin,'https://vervenveda.com',id);
+  assert.ok(url.pathname.startsWith('/Khaemenes_'),id);
+  return {id,host:url.hostname};
  });
- const hosts=new Set(rows.map(x=>x.host));
- assert.ok(hosts.has('vervenveda.com'));
- assert.ok(hosts.has('vervenveda.github.io'));
- assert.equal(rows.find(x=>x.id==='higher-associates').host,'vervenveda.com');
- console.log('VNV_ACADEMY_ORIGIN_AUDIT='+JSON.stringify({rows,originParity:'UNVERIFIED_CROSS_ORIGIN',migratedRecords:0}));
+ console.log('VNV_ACADEMY_ORIGIN_AUDIT='+JSON.stringify({rows,originParity:'CANONICAL_PUBLIC_ENTRANCES',migratedRecords:0,liveStudentStorageReadback:'NOT_PERFORMED'}));
+});
+test('Legacy educational deep links remain an explicit audit HOLD, never an automatic data migration',()=>{
+ const primary=new Set(['preschool','kinder','elementary','middle','high','higher','higher-associates','academy-adult','higher-career']);
+ const older=directory.filter(e=>e.repository?.startsWith('vervenveda/Khaemenes_')&&!primary.has(e.id)&&new URL(e.url).hostname==='vervenveda.github.io');
+ console.log('VNV_UNVERIFIED_DEEP_LINKS='+JSON.stringify({count:older.length,ids:older.map(x=>x.id),storageMigration:'NONE'}));
+ assert.ok(!html.includes('localStorage.clear()'));
+ assert.ok(!html.includes('sessionStorage.clear()'));
 });
 
 test('Bubble 5: gateway retains native ticker, header, hamburger, translator and tool owners',()=>{
