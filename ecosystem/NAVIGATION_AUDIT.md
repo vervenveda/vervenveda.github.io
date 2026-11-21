@@ -1,6 +1,6 @@
 # Verve N Veda Public Navigation Audit
 
-Generated: 2026-11-21T06:45:02Z
+Generated: 2026-11-21T13:27:35Z
 
 STOS remains dormant and is excluded from this audit. No files are deleted or renamed automatically.
 
@@ -8,10 +8,10 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 - Repositories audited: 41
 - Repository audit failures: 0
-- HTML files inspected: 12975
-- Broken local link references: 500
-- HTML pages not reachable from repository root index: 7703
-- HTML pages with no incoming in-repository link: 2116
+- HTML files inspected: 13144
+- Broken local link references: 490
+- HTML pages not reachable from repository root index: 7868
+- HTML pages with no incoming in-repository link: 2124
 - Exact duplicate groups: 0
 - Version/sibling groups requiring review: 5
 - Intentional semantic sibling groups: 4
@@ -20,7 +20,7 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 ## Highest-priority repositories
 
-- **vervenveda/Khaemenes_HL_Associates-Level.github.io** — broken 408; unreferenced 15; exact duplicates 0; version siblings 0.
+- **vervenveda/Khaemenes_HL_Associates-Level.github.io** — broken 398; unreferenced 23; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Elementary.github.io** — broken 47; unreferenced 592; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_High.github.io** — broken 28; unreferenced 715; exact duplicates 0; version siblings 5.
 - **vervenveda/Khaemenes_Middle.github.io** — broken 8; unreferenced 38; exact duplicates 0; version siblings 0.
