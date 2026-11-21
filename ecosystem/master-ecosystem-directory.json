@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 197,
+  "entryCount": 198,
   "entries": [
     {
       "id": "gateway-verve",
@@ -964,6 +964,19 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/"
+    },
+    {
+      "id": "ling-sovereign-translator",
+      "title": "Sovereign Translator",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "path": "apps/translator.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/translator.html",
+      "developmentStatus": "live"
     },
     {
       "id": "ling-halls",
