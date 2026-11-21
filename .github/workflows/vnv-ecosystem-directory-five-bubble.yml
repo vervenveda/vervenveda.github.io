@@ -1,0 +1,39 @@
+name: VNV Gateway Ecosystem Directory Five-Bubble Guard
+on:
+  push:
+    paths:
+      - 'ecosystem/master-ecosystem-directory.json'
+      - 'tests/gateway-ecosystem-directory-five-bubble.test.mjs'
+      - 'assets/vnv-ticker-autopopulate.js'
+      - 'assets/vnv-header-autopopulate.js'
+      - 'assets/vnv-ecosystem-toolbar.js'
+      - 'assets/vnv-language.js'
+      - '.github/workflows/vnv-ecosystem-directory-five-bubble.yml'
+  pull_request:
+    paths:
+      - 'ecosystem/master-ecosystem-directory.json'
+      - 'tests/gateway-ecosystem-directory-five-bubble.test.mjs'
+      - 'assets/vnv-ticker-autopopulate.js'
+      - 'assets/vnv-header-autopopulate.js'
+      - 'assets/vnv-ecosystem-toolbar.js'
+      - 'assets/vnv-language.js'
+      - 'index.html'
+      - '.github/workflows/vnv-ecosystem-directory-five-bubble.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  directory-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test five directory, origin and chrome safety contracts
+        run: node --test tests/gateway-ecosystem-directory-five-bubble.test.mjs
+      - name: Verify original Academy gateway links remain unchanged
+        run: node tests/academy-gateway-handoff.test.mjs
