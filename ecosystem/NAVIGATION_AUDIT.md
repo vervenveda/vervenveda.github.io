@@ -1,6 +1,6 @@
 # Verve N Veda Public Navigation Audit
 
-Generated: 2026-11-21T19:02:52Z
+Generated: 2026-11-22T13:19:29Z
 
 STOS remains dormant and is excluded from this audit. No files are deleted or renamed automatically.
 
@@ -8,10 +8,10 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 - Repositories audited: 41
 - Repository audit failures: 0
-- HTML files inspected: 13326
-- Broken local link references: 489
-- HTML pages not reachable from repository root index: 7869
-- HTML pages with no incoming in-repository link: 2131
+- HTML files inspected: 13354
+- Broken local link references: 491
+- HTML pages not reachable from repository root index: 7867
+- HTML pages with no incoming in-repository link: 2134
 - Exact duplicate groups: 0
 - Version/sibling groups requiring review: 5
 - Intentional semantic sibling groups: 4
@@ -20,11 +20,11 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 ## Highest-priority repositories
 
-- **vervenveda/Khaemenes_HL_Associates-Level.github.io** — broken 397; unreferenced 27; exact duplicates 0; version siblings 0.
+- **vervenveda/Khaemenes_HL_Associates-Level.github.io** — broken 399; unreferenced 27; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Elementary.github.io** — broken 47; unreferenced 592; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_High.github.io** — broken 28; unreferenced 715; exact duplicates 0; version siblings 5.
 - **vervenveda/Khaemenes_Middle.github.io** — broken 8; unreferenced 38; exact duplicates 0; version siblings 0.
-- **vervenveda/bazaarart.github.io** — broken 5; unreferenced 9; exact duplicates 0; version siblings 0.
+- **vervenveda/bazaarart.github.io** — broken 5; unreferenced 12; exact duplicates 0; version siblings 0.
 - **artist1970/Archaemenes.github.io** — broken 3; unreferenced 1; exact duplicates 0; version siblings 0.
 - **artist1970/Hope.github.io** — broken 1; unreferenced 1; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Higher_Learning.github.io** — broken 0; unreferenced 305; exact duplicates 0; version siblings 0.
