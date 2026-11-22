@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-22T07:27:19Z",
+  "generatedAt": "2026-11-22T19:58:07Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -37269,6 +37269,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Landing",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/landing.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/biology-10/landing.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Week 01",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/biology-10/weeks/week-01/",
       "repo": "Khaemenes_High.github.io",
@@ -39073,6 +39081,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/chemistry-11/inquiry-ledger.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/chemistry-11/inquiry-ledger.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Landing",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/chemistry-11/landing.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/chemistry-11/landing.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -40925,6 +40941,46 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Quarterly Investigations",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/quarterly-investigations/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/quarterly-investigations/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Quarter 1",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-1.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-1.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Quarter 2",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-2.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-2.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Quarter 3",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-3.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-3.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Quarter 4",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-4.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/assessments/quarterly-investigations/quarter-4.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Units 01 04",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/assessments/units-01-04/",
       "repo": "Khaemenes_High.github.io",
@@ -41089,6 +41145,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/integrated-science-9/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Landing",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/integrated-science-9/landing.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/integrated-science-9/landing.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -43785,6 +43849,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/science/physics-engineering-12/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Landing",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/science/physics-engineering-12/landing.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/science/physics-engineering-12/landing.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -48337,46 +48409,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-24/student-packet.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-10/weeks/week-24/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-24/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-24/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-25/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-25/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-25/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-25/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-26/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-26/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-26/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-26/teacher-guide.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }

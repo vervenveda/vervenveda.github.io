@@ -1,9 +1,49 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-22T07:27:19Z",
+  "generatedAt": "2026-11-22T19:58:07Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-24/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-24/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-25/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-25/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-25/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-25/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-26/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-26/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-26/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-26/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
     {
       "title": "Student Packet",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-27/student-packet.html",
