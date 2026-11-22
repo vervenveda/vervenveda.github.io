@@ -1,24 +1,9 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-21T19:47:12Z",
+  "generatedAt": "2026-11-22T07:27:19Z",
   "account": "vervenveda",
   "policy": "Discovery only. New repositories never become public ecosystem destinations automatically. STOS and reserved dummy repositories remain excluded.",
-  "candidates": [
-    {
-      "repository": "vervenveda/admin.github.io",
-      "name": "admin.github.io",
-      "defaultBranch": "main",
-      "hasPages": true,
-      "archived": false,
-      "disabled": false,
-      "updatedAt": "2026-11-07T00:08:06Z",
-      "pushedAt": "2026-11-07T00:08:01Z",
-      "homepage": "",
-      "state": "under-review",
-      "directoryVisible": false,
-      "reason": "New public Pages repository discovered; manual ecosystem approval required."
-    }
-  ],
+  "candidates": [],
   "ignored": [
     {
       "repository": "vervenveda/Dummy.github.io",

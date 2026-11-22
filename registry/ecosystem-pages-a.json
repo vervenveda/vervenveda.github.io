@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-21T19:47:12Z",
+  "generatedAt": "2026-11-22T07:27:19Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -1601,6 +1601,110 @@
       "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-10/week-26/",
       "repo": "bazaarart.github.io",
       "path": "academy/grade-9/unit-10/week-26/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 27",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-10/week-27/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-10/week-27/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 28",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-10/week-28/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-10/week-28/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Unit 11",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-11/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-11/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 29",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-11/week-29/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-11/week-29/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 30",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-11/week-30/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-11/week-30/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 31",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-11/week-31/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-11/week-31/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Unit 12",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-12/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-12/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 32",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-12/week-32/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-12/week-32/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 33",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-12/week-33/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-12/week-33/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 34",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-12/week-34/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-12/week-34/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Unit 13",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-13/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-13/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 35",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-13/week-35/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-13/week-35/index.html",
+      "category": "creative",
+      "source": "Bazaar Art"
+    },
+    {
+      "title": "Week 36",
+      "url": "https://vervenveda.github.io/bazaarart.github.io/academy/grade-9/unit-13/week-36/",
+      "repo": "bazaarart.github.io",
+      "path": "academy/grade-9/unit-13/week-36/index.html",
       "category": "creative",
       "source": "Bazaar Art"
     },
