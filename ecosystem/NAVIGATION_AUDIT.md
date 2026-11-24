@@ -1,6 +1,6 @@
 # Verve N Veda Public Navigation Audit
 
-Generated: 2026-11-24T15:52:24Z
+Generated: 2026-11-24T17:11:15Z
 
 STOS remains dormant and is excluded from this audit. No files are deleted or renamed automatically.
 
@@ -8,21 +8,21 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 - Repositories audited: 41
 - Repository audit failures: 0
-- HTML files inspected: 13455
+- HTML files inspected: 13467
 - Broken local link references: 491
-- HTML pages not reachable from repository root index: 7874
-- HTML pages with no incoming in-repository link: 2010
+- HTML pages not reachable from repository root index: 7886
+- HTML pages with no incoming in-repository link: 2016
 - Exact duplicate groups: 0
 - Version/sibling groups requiring review: 5
-- Intentional semantic sibling groups: 4
-- Canonical aliases already resolved: 3
+- Intentional semantic sibling groups: 6
+- Canonical aliases already resolved: 5
 - Legacy/superseded-style filenames: 5
 
 ## Highest-priority repositories
 
 - **vervenveda/Khaemenes_HL_Associates-Level.github.io** — broken 399; unreferenced 27; exact duplicates 0; version siblings 0.
 - **vervenveda/Khaemenes_Elementary.github.io** — broken 47; unreferenced 592; exact duplicates 0; version siblings 0.
-- **vervenveda/Khaemenes_High.github.io** — broken 28; unreferenced 592; exact duplicates 0; version siblings 5.
+- **vervenveda/Khaemenes_High.github.io** — broken 28; unreferenced 598; exact duplicates 0; version siblings 5.
 - **vervenveda/Khaemenes_Middle.github.io** — broken 8; unreferenced 38; exact duplicates 0; version siblings 0.
 - **vervenveda/bazaarart.github.io** — broken 5; unreferenced 12; exact duplicates 0; version siblings 0.
 - **artist1970/Archaemenes.github.io** — broken 3; unreferenced 1; exact duplicates 0; version siblings 0.

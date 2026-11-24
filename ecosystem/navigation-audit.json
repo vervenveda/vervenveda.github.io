@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-24T15:52:24Z",
+  "generatedAt": "2026-11-24T17:11:15Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 41,
     "failedRepositoryCount": 0,
-    "htmlCount": 13455,
+    "htmlCount": 13467,
     "brokenLocalLinkCount": 491,
-    "rootOrphanHtmlCount": 7874,
-    "unreferencedHtmlCount": 2010,
+    "rootOrphanHtmlCount": 7886,
+    "unreferencedHtmlCount": 2016,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 5,
-    "intentionalSiblingGroupCount": 4,
-    "canonicalAliasCount": 3,
+    "intentionalSiblingGroupCount": 6,
+    "canonicalAliasCount": 5,
     "supersededNameCount": 5
   },
   "failures": [],
@@ -1379,15 +1379,15 @@
     },
     {
       "repository": "vervenveda/Khaemenes_High.github.io",
-      "htmlCount": 3768,
+      "htmlCount": 3780,
       "brokenLocalLinkCount": 28,
       "rootReachableHtmlCount": 2428,
-      "rootOrphanHtmlCount": 1317,
-      "unreferencedHtmlCount": 592,
+      "rootOrphanHtmlCount": 1329,
+      "unreferencedHtmlCount": 598,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 5,
-      "intentionalSiblingGroupCount": 4,
-      "canonicalAliasCount": 2,
+      "intentionalSiblingGroupCount": 6,
+      "canonicalAliasCount": 4,
       "supersededNameCount": 1,
       "brokenLocalLinks": [
         {
@@ -1777,6 +1777,26 @@
       "intentionalSiblingGroups": [
         {
           "pages": [
+            "courses/social-studies/grade-09/week-08/student-assessment-v2.html",
+            "courses/social-studies/grade-09/week-08/student-assessment.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/week-08/student-assessment-v2.html": "",
+            "courses/social-studies/grade-09/week-08/student-assessment.html": "canonical-assessment"
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/week-05/student-assessment-v2.html",
+            "courses/social-studies/grade-09/week-05/student-assessment.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/week-05/student-assessment-v2.html": "",
+            "courses/social-studies/grade-09/week-05/student-assessment.html": "canonical-assessment"
+          }
+        },
+        {
+          "pages": [
             "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html",
             "courses/social-studies/grade-09/weeks/week-09/student-packet.html"
           ],
@@ -1822,8 +1842,16 @@
           "canonical": "courses/social-studies/grade-09/assessments/readiness-v3.html"
         },
         {
+          "alias": "courses/social-studies/grade-09/weeks/week-08/student-assessment-v2.html",
+          "canonical": "courses/social-studies/grade-09/weeks/week-08/student-assessment.html"
+        },
+        {
           "alias": "courses/social-studies/grade-09/weeks/week-27/student-packet-v2.html",
           "canonical": "courses/social-studies/grade-09/weeks/week-27/student-packet.html"
+        },
+        {
+          "alias": "courses/social-studies/grade-09/weeks/week-05/student-assessment-v2.html",
+          "canonical": "courses/social-studies/grade-09/weeks/week-05/student-assessment.html"
         }
       ],
       "supersededNames": [
