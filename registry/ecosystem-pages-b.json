@@ -1,9 +1,49 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-24T10:25:48Z",
+  "generatedAt": "2026-11-24T17:11:28Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-36/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/week-36/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-01/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-01/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-01/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-01/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Student Packet",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-02/student-packet.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-02/student-packet.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
     {
       "title": "Student Packet",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-03/student-packet.html",
@@ -48273,6 +48313,14 @@
       "url": "https://vervenveda.github.io/the_refrain.github.io/apps/pro-keyboard_index.html",
       "repo": "the_refrain.github.io",
       "path": "apps/pro-keyboard_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Recording Booth",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/recording-booth.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/recording-booth.html",
       "category": "creative",
       "source": "The Refrain"
     },
