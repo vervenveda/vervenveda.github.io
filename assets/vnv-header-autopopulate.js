@@ -1,10 +1,10 @@
-/* Verve N Veda · Header AutoPopulate · canonical idempotent header engine · v2.1.0
+/* Verve N Veda · Header AutoPopulate · canonical idempotent header engine · v2.2.0
    Purpose: one simple page-identity header per migrated public page.
    Ticker systems remain separate: this file never mounts, removes, or styles tickers. */
 (()=>{"use strict";
 if(window.VNV_HEADER?.mount)return;
 
-const VERSION="2.1.0";
+const VERSION="2.2.0";
 const ROOT_ID="vnvHeaderAutoPopulate";
 const STYLE_ID="vnvHeaderAutoPopulateStyles";
 const PANEL_ID="vnvHeaderMenu";
@@ -134,6 +134,21 @@ function ensureStyle(){
 #${PANEL_ID} .vnv-header-menu-list a::after{content:"›";color:#b48b45;font-size:18px}
 @media(max-width:860px){#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 44px}#${ROOT_ID} .vnv-header-actions{display:none}}
 @media(max-width:560px){:root{--vnv-header-height:64px}#${ROOT_ID} .vnv-header-inner{grid-template-columns:minmax(0,1fr) 40px;padding:0 7px}#${ROOT_ID} .vnv-header-logo{width:38px;height:38px;flex-basis:38px}#${ROOT_ID} .vnv-header-title{font-size:16px}#${ROOT_ID} .vnv-header-subtitle{display:none}}
+
+/* Official centered translator slot. Preserve explicitly supplied action links below
+   the compact rail only when they exist; hamburger-only headers stay one row. */
+#${ROOT_ID}{--vnv-header-height:43px}
+#${ROOT_ID} .vnv-header-inner{box-sizing:border-box;grid-template-columns:minmax(33px,1fr) minmax(0,max-content) minmax(33px,1fr);grid-template-rows:auto;gap:7px;min-height:43px;padding:5px 11px}
+#${ROOT_ID} .vnv-header-home{grid-column:1;grid-row:1;gap:7px}
+#${ROOT_ID} .vnv-header-logo,#${ROOT_ID} .vnv-header-menu-button{box-sizing:border-box;width:33px;height:33px;min-width:33px;min-height:33px;border-radius:7px}
+#${ROOT_ID} .vnv-header-logo{flex:0 0 33px}
+#${ROOT_ID} .vnv-header-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#${ROOT_ID} .vnv-header-subtitle{display:none}
+#${ROOT_ID} .vnv-header-language{grid-column:2;grid-row:1;min-width:0;max-width:100%;height:33px;justify-self:center}
+#${ROOT_ID} .vnv-header-menu-button{grid-column:3;grid-row:1}
+#${ROOT_ID} .vnv-header-actions{grid-column:1/-1;grid-row:2;flex-wrap:wrap}
+#${ROOT_ID} .vnv-header-actions:empty{display:none}
+@media(max-width:1000px){#${ROOT_ID} .vnv-header-inner{grid-template-columns:33px minmax(0,1fr) 33px;padding-inline:7px}#${ROOT_ID} .vnv-header-copy{display:none}#${ROOT_ID} .vnv-header-language{width:100%}}
 @media print{#${ROOT_ID},#${PANEL_ID}{display:none!important}}
 `;
   (document.head||document.documentElement).append(s);
@@ -249,6 +264,12 @@ function createLogo(root,title,options={}){
   }
   return box;
 }
+function ensureLanguageSlot(root){
+  const inner=root.querySelector(".vnv-header-inner");if(!inner)return;
+  let slot=inner.querySelector("[data-vnv-language-slot]");
+  if(!slot){slot=document.createElement("div");slot.className="vnv-header-language";slot.setAttribute("data-vnv-language-slot","");slot.setAttribute("data-i18n-ignore","");slot.setAttribute("role","group");slot.setAttribute("aria-label","Page translation tools");inner.insertBefore(slot,inner.querySelector(".vnv-header-menu-button"))}
+  document.dispatchEvent(new CustomEvent("vnv:header-ready"));
+}
 function update(root,options={}){
   if(!root)return null;
   const title=pageTitle(options);
@@ -265,6 +286,7 @@ function update(root,options={}){
   const oldLogo=root.querySelector(".vnv-header-logo");
   oldLogo?.replaceWith(createLogo(root,title,options));
   root.dataset.vnvHeaderVersion=VERSION;
+  ensureLanguageSlot(root);
   syncTop();
   scheduleAutoContrast();
   return root;
@@ -338,6 +360,7 @@ function mount(options={}){
     document.body.prepend(root);
   }
 
+  ensureLanguageSlot(root);
   window.VNV_ENRICHED_MENU?.mount({noButton:true});
   syncTop();
   if(typeof ResizeObserver==="function"){
