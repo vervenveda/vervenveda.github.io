@@ -1,0 +1,723 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-24",
+  "sourceGeneratedAt": "2026-09-11T20:56:38.543Z",
+  "policy": "Exact normalized URL crosswalk only; unmatched records are not necessarily invalid, and do not authorize new public routes. Preserve mentor eligibility and policy fields.",
+  "counts": {
+    "resources": 118,
+    "matched": 5,
+    "unmatched": 113
+  },
+  "matched": [
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.higher-home",
+      "canonicalId": "higher",
+      "routeStatus": "active",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.middle-home",
+      "canonicalId": "middle",
+      "routeStatus": "active",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.onenationforall.github.io.elementary-kids-vote",
+      "canonicalId": "one-elementary-kids-vote",
+      "routeStatus": "active",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Elementary_Kids_Vote_index.html"
+    },
+    {
+      "resourceId": "vervenveda.onenationforall.github.io.middle-voting-portal",
+      "canonicalId": "one-middle-school-vote",
+      "routeStatus": "active",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/MiddleSchool_Voting_Portal_index.html"
+    },
+    {
+      "resourceId": "vervenveda.onenationforall.github.io.high-voter-portal",
+      "canonicalId": "one-high-school-vote",
+      "routeStatus": "active",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/High_School_voter_portal_index.html"
+    }
+  ],
+  "unmatched": [
+    {
+      "resourceId": "vervenveda.aurora.github.io.aurora-home",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.auraink",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/AuraInk_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.auraen-tune",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/AuraenTune_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.aurora-inspiration",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/Aurora_Inspiration_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.gentle-wake",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/Breath_evening_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.breath-reset",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/breath_reset_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.breathe-ground",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/breathe_ground_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.color-alchemy",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/color_alchemy_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.creative-odyssey",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/creative_mind_odyssey_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.creative-wheel",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/creative_wheel_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.daily-journal",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/daily_journal_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.daily-spark",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/daily_spark_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.daily-writing-spark",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/daily_writing_spark_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.dreamscript",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/dream_script_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.evening-ember",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/evening_ember_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.night-prayer",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/evening_prayer_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.first-hour",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/first_hour_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.grounding-suite",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/grounding_suite_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.inspiration-mosaic",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/inspiration_mosaic_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.letter-inner-self",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/letter_to_me_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.loom-dawn",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/loom_of_dawn_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.morning-muse",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/morning_muse_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.morning-reflections",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/morning_reflection_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.morning-sanctum",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/morning_sanctum_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.niche-venn",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/niche_venn_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.one-creation",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/one_a_day_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.song-embedder",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/song_embedder_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.soulbook",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/soulbook_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.spire",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/spire_mindful_breathing_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.starlight-jar",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/starlight_jar_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.story-spark",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/story_spark_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.tiny-triumphs",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/tiny_triumphs_index.html"
+    },
+    {
+      "resourceId": "vervenveda.aurora.github.io.vintage-spinet",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/aurora.github.io/apps/vintage_spinnet_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_academy.github.io.academy-home",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_academy.github.io.student-front-door",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/student/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_academy.github.io.family-enrollment",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/family/enroll/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_academy.github.io.teacher-admin",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/teacher-admin/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_academy.github.io.homeschool-compass",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Homeschool_compass_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_academy.github.io.transcript-generator",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Transcript_generator_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_academy.github.io.diploma-generator",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Diploma_generator_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.higher-math-catalog",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.intro-proofs",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/introduction-to-proofs/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.linear-algebra",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/linear-algebra/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.calculus-ii",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/calculus-ii/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.differential-equations",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/differential-equations/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.discrete-math",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/discrete-mathematics/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.abstract-algebra",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/abstract-algebra/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.statistics",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/statistics/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.real-complex-analysis",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/real-complex-analysis/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_higher_learning.github.io.topology-geometry",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/courses/topology-differential-geometry/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.linguistics-home",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.sovereign-interlingual-translator",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/multilingual-translator_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.arabic-365",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_365_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.arabic-daily",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_daily_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.arabic-memory",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_memory_game_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.arabic-numbers",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_numbers_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.esl-course",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/ESL_course_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_linguistics.github.io.quran-root-explorer",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/Arabic_Quran_root_explorer_index.html"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-language-arts",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/language-arts/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-mathematics",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/mathematics/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-science",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/science/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-social-studies",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/social-studies/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-technology-design",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/technology-design/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-world-languages",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/world-languages/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-health-pe-sel",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/health-pe-sel/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-arts-music",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/arts-music/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-06-integrated-projects",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-06/subjects/integrated-projects/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-language-arts",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/language-arts/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-mathematics",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/mathematics/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-science",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/science/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-social-studies",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/social-studies/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-technology-design",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/technology-design/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-world-languages",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/world-languages/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-health-pe-sel",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/health-pe-sel/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-arts-music",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/arts-music/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-07-integrated-projects",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-07/subjects/integrated-projects/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-language-arts",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/language-arts/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-mathematics",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/mathematics/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-science",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/science/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-social-studies",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/social-studies/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-technology-design",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/technology-design/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-world-languages",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/world-languages/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-health-pe-sel",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/health-pe-sel/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-arts-music",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/arts-music/"
+    },
+    {
+      "resourceId": "vervenveda.khaemenes_middle.github.io.grade-08-integrated-projects",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/grades/grade-08/subjects/integrated-projects/"
+    },
+    {
+      "resourceId": "vervenveda.onenationforall.github.io.one-nation-home",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/onenationforall.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.onenationforall.github.io.us-voter-hub",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/US_VOTER_HUB_index.html"
+    },
+    {
+      "resourceId": "vervenveda.onenationforall.github.io.florida-citizen-connect",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Florida_Citizen_connect_index.html"
+    },
+    {
+      "resourceId": "vervenveda.onenationforall.github.io.global-voter-portal",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Global_Voter_Portal_index.html"
+    },
+    {
+      "resourceId": "vervenveda.plerasearch.github.io.plera-search-home",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/PLERASearch.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.plerasearch.github.io.search-gate",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/PLERA_Search_Gate_index.html"
+    },
+    {
+      "resourceId": "vervenveda.plerasearch.github.io.search-pro",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/PLERA_search_pro_index.html"
+    },
+    {
+      "resourceId": "vervenveda.plerasearch.github.io.insurance-gate",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/Insurance_index.html"
+    },
+    {
+      "resourceId": "vervenveda.plerasearch.github.io.shopping-gate",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/PLERASearch.github.io/apps/Shopping_index.html"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.proresources-home",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.daily-spark",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/DailySpark%E2%84%A2_task_studio_index.html"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.khae-clean",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/KhaeClean%E2%84%A2_index.html"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.khae-zip",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/KhaeZip%E2%84%A2_index.html"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.ohmic-cad",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.prose",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/PROSE_index.html"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.plera-search-gate",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/PLERA%E2%84%A2%20Search%20Gate_index.html"
+    },
+    {
+      "resourceId": "vervenveda.proresource_hub.github.io.scientific-calculator",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/Khaemenes_Scientific_Calculator_index.html"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.verifier-home",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.daily-top-30",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/daily_digest_index.html"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.global-source-directory",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/global_news_digest_index.html"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.young-readers-newsroom",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/kids_news_network_index.html"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.education-news",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/education_news_index.html"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.eco-pulse",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/EcoPulse_news_index.html"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.interactive-news",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/interactive_news_index.html"
+    },
+    {
+      "resourceId": "vervenveda.theverifier.github.io.live-research-news",
+      "canonicalId": null,
+      "routeStatus": "not-matched",
+      "url": "https://vervenveda.com/theverifier.github.io/apps/Live_Research_News_index.html"
+    }
+  ]
+}
