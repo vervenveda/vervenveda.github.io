@@ -579,10 +579,20 @@ html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer) > :is(selec
  html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer),
  html:root body #vnv-language-rail #vnv-language-switch{justify-content:flex-start!important}
 }
+
+/* Canonical header slot: keep the existing selector and all its event handlers. */
+html:root body [data-vnv-language-slot]{min-width:0;max-width:100%;width:max-content;height:33px;box-sizing:border-box;justify-self:center;overflow:hidden}
+html:root body [data-vnv-language-slot] #vnv-language-switch{height:33px!important;min-height:33px!important;max-height:33px!important;max-width:100%!important;margin:0!important;padding:2px 4px!important;gap:4px!important;position:static!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none;justify-content:safe center!important}
+html:root body [data-vnv-language-slot] #vnv-language-switch::-webkit-scrollbar{display:none}
+html:root body [data-vnv-language-slot] #vnv-language-switch > :is(select,button){height:27px!important;min-height:27px!important;max-height:27px!important;padding:1px 6px!important;line-height:1.15!important}
+html:root body [data-vnv-language-slot] #vnv-language-switch > label{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)}
+@media(max-width:1000px){html:root body [data-vnv-language-slot]{width:100%;max-width:max-content}html:root body [data-vnv-language-slot] #vnv-language-switch{justify-content:flex-start!important}}
 `;
 document.head.append(styles);
+function mountHeaderSelector(){const slot=document.querySelector("[data-vnv-language-slot]"),wrap=document.getElementById("vnv-language-switch");if(!slot||!wrap)return false;if(wrap.parentElement!==slot){const previous=wrap.parentElement;slot.append(wrap);if(previous?.id==="vnv-language-rail"&&!previous.children.length)previous.remove()}return true}
+document.addEventListener("vnv:header-ready",mountHeaderSelector);
 function makeSelector(){
- if(document.getElementById("vnv-language-switch"))return;
+ if(document.getElementById("vnv-language-switch")){mountHeaderSelector();return}
  const wrap=document.createElement("div");wrap.id="vnv-language-switch";wrap.setAttribute("data-i18n-ignore","");
  const label=document.createElement("label");label.htmlFor="vnv-language-select";
  const select=document.createElement("select");select.id="vnv-language-select";
@@ -590,7 +600,8 @@ function makeSelector(){
  for(const c of CODES){const opt=document.createElement("option");opt.value=c;opt.textContent=META[c][0];select.append(opt)}
  select.value=lang;wrap.append(label,select);addCoverageControl(wrap);
  let target;
- if(document.querySelector(".site-header .header-inner")){
+ if(document.querySelector("[data-vnv-language-slot]")){document.querySelector("[data-vnv-language-slot]").append(wrap);}
+ else if(document.querySelector(".site-header .header-inner")){
   const main=document.querySelector("main");
   if(main){
    let rail=document.getElementById("vnv-language-rail");
