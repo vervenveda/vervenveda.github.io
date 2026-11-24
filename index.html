@@ -5366,8 +5366,8 @@ a.button,button.button {
                 url:entry.url,
                 icon:prior.icon || initialsForDirectory(entry.title),
                 group:NAV_GROUP_BY_CATEGORY[entry.category] || "Knowledge",
-                desc:prior.desc || `${entry.title} · public ${entry.type} in the Verve N Veda ${ECOSYSTEM_CATEGORY_LABELS[entry.category] || entry.category} ecosystem.`,
-                keywords:`${prior.keywords || ""} ${entry.repository || ""} ${entry.path || ""} ${entry.category} ${entry.type}`.trim()
+                desc:entry.description || prior.desc || `${entry.title} · public ${entry.type} in the Verve N Veda ${ECOSYSTEM_CATEGORY_LABELS[entry.category] || entry.category} ecosystem.`,
+                keywords:`${(entry.keywords || []).join(" ")} ${prior.keywords || ""} ${entry.repository || ""} ${entry.path || ""} ${entry.category} ${entry.type}`.trim()
               };
             })
             .sort((a,b)=>{
@@ -5387,7 +5387,7 @@ a.button,button.button {
               title:entry.title,
               url:entry.url,
               type:entry.type,
-              desc:prior.desc || `${ECOSYSTEM_TYPE_GROUPS[entry.type] || entry.type} destination in the Verve N Veda ${ECOSYSTEM_CATEGORY_LABELS[entry.category]} ecosystem.`
+              desc:entry.description || prior.desc || `${ECOSYSTEM_TYPE_GROUPS[entry.type] || entry.type} destination in the Verve N Veda ${ECOSYSTEM_CATEGORY_LABELS[entry.category]} ecosystem.`
             });
           });
 
