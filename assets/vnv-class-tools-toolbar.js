@@ -9,8 +9,8 @@ const CONFIG_KEY="KhaemenesClassToolsConfigV1";
 const ROOT_ID="vnvClassToolsToolbar";
 const STYLE_ID="vnvClassToolsToolbarStyles";
 const DIRECTORY_URLS=Object.freeze([
- "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/master-ecosystem-directory.json",
- "https://vervenveda.com/ecosystem/master-ecosystem-directory.json"
+ "https://vervenveda.com/ecosystem/master-ecosystem-directory.json",
+ "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/master-ecosystem-directory.json"
 ]);
 const MATHEMATICS_ARCHIVE_URLS=Object.freeze([
  "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/learning-tools/mathematics.json",
