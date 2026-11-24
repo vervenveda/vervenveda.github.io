@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-24T17:11:15Z",
+  "generatedAt": "2026-11-24T21:43:19Z",
   "policy": "Read-only GitHub public navigation audit. STOS dormant/excluded. Findings are candidates for review, not automatic deletions.",
   "summary": {
     "repositoryCount": 41,
     "failedRepositoryCount": 0,
-    "htmlCount": 13467,
+    "htmlCount": 13470,
     "brokenLocalLinkCount": 491,
-    "rootOrphanHtmlCount": 7886,
-    "unreferencedHtmlCount": 2016,
+    "rootOrphanHtmlCount": 7875,
+    "unreferencedHtmlCount": 1997,
     "duplicateGroupCount": 0,
     "versionSiblingGroupCount": 5,
     "intentionalSiblingGroupCount": 6,
@@ -243,11 +243,11 @@
     },
     {
       "repository": "vervenveda/Arshif.github.io",
-      "htmlCount": 43,
+      "htmlCount": 44,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 28,
-      "rootOrphanHtmlCount": 15,
-      "unreferencedHtmlCount": 5,
+      "rootReachableHtmlCount": 42,
+      "rootOrphanHtmlCount": 2,
+      "unreferencedHtmlCount": 2,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 0,
       "intentionalSiblingGroupCount": 0,
@@ -255,28 +255,12 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [],
       "rootOrphans": [
-        "catalog/index.html",
-        "catalog/texts/english-10-unit-01.html",
-        "catalog/texts/english-10-unit-03.html",
-        "catalog/texts/english-11-unit-01.html",
-        "catalog/texts/english-11-unit-03.html",
-        "catalog/texts/english-12-unit-01.html",
-        "catalog/texts/english-12-unit-03.html",
-        "catalog/texts/english-9-unit-01.html",
-        "catalog/texts/english-9-unit-03.html",
-        "halls/Reading_room_index.html",
-        "halls/culinary/index.html",
         "tools/PLERA_Search_index.html",
-        "tools/contribute_index.html",
-        "tools/field-lab/index.html",
-        "tools/song_embedder_index.html"
+        "tools/field-lab/index.html"
       ],
       "unreferencedPages": [
-        "halls/culinary/index.html",
         "tools/PLERA_Search_index.html",
-        "tools/contribute_index.html",
-        "tools/field-lab/index.html",
-        "tools/song_embedder_index.html"
+        "tools/field-lab/index.html"
       ],
       "duplicateGroups": [],
       "versionSiblingGroups": [],
@@ -878,21 +862,7 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
-          "source": "games/elementary_geometry/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
           "source": "games/elementary_vocabulary_garden/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "games/word-detective/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../assets/elementary-landing-chrome.css",
           "tag": "link",
@@ -913,6 +883,13 @@
           "attr": "href"
         },
         {
+          "source": "games/junior-engineer-studio/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
           "source": "games/kindness_quest/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../assets/elementary-landing-chrome.css",
@@ -920,9 +897,205 @@
           "attr": "href"
         },
         {
-          "source": "games/junior-engineer-studio/index.html",
+          "source": "games/word-detective/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "games/elementary_geometry/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/integrated-projects/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/health-pe-sel/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/arts-music/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/mathematics/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/technology-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-03/subjects/language-arts/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/integrated-projects/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/health-pe-sel/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/arts-music/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/mathematics/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/technology/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-02/subjects/language-arts/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/teacher-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/integrated-projects/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/health-pe-sel/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/arts-music/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/mathematics/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/science/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/technology-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-05/subjects/language-arts/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
           "tag": "link",
           "attr": "href"
         },
@@ -934,20 +1107,6 @@
           "attr": "href"
         },
         {
-          "source": "grades/grade-04/subjects/language-arts/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-04/subjects/mathematics/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
           "source": "grades/grade-04/subjects/integrated-projects/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../../../assets/elementary-landing-chrome.css",
@@ -955,7 +1114,7 @@
           "attr": "href"
         },
         {
-          "source": "grades/grade-04/subjects/technology-tools/index.html",
+          "source": "grades/grade-04/subjects/health-pe-sel/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../../../assets/elementary-landing-chrome.css",
           "tag": "link",
@@ -969,7 +1128,7 @@
           "attr": "href"
         },
         {
-          "source": "grades/grade-04/subjects/health-pe-sel/index.html",
+          "source": "grades/grade-04/subjects/mathematics/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../../../assets/elementary-landing-chrome.css",
           "tag": "link",
@@ -984,6 +1143,20 @@
         },
         {
           "source": "grades/grade-04/subjects/social-studies/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/technology-tools/index.html",
+          "target": "assets/elementary-landing-chrome.css",
+          "raw": "../../../../assets/elementary-landing-chrome.css",
+          "tag": "link",
+          "attr": "href"
+        },
+        {
+          "source": "grades/grade-04/subjects/language-arts/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../../../assets/elementary-landing-chrome.css",
           "tag": "link",
@@ -1012,195 +1185,6 @@
         },
         {
           "source": "grades/grade-01/subjects/social-studies/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/teacher-tools/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/language-arts/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/mathematics/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/integrated-projects/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/technology/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/arts-music/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/health-pe-sel/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/science/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-02/subjects/social-studies/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/teacher-tools/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/language-arts/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/mathematics/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/integrated-projects/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/technology-tools/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/arts-music/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/health-pe-sel/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/science/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-03/subjects/social-studies/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/teacher-tools/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/language-arts/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/mathematics/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/integrated-projects/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/technology-tools/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/arts-music/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/health-pe-sel/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/science/index.html",
-          "target": "assets/elementary-landing-chrome.css",
-          "raw": "../../../../assets/elementary-landing-chrome.css",
-          "tag": "link",
-          "attr": "href"
-        },
-        {
-          "source": "grades/grade-05/subjects/social-studies/index.html",
           "target": "assets/elementary-landing-chrome.css",
           "raw": "../../../../assets/elementary-landing-chrome.css",
           "tag": "link",
@@ -1381,9 +1365,9 @@
       "repository": "vervenveda/Khaemenes_High.github.io",
       "htmlCount": 3780,
       "brokenLocalLinkCount": 28,
-      "rootReachableHtmlCount": 2428,
-      "rootOrphanHtmlCount": 1329,
-      "unreferencedHtmlCount": 598,
+      "rootReachableHtmlCount": 2426,
+      "rootOrphanHtmlCount": 1331,
+      "unreferencedHtmlCount": 582,
       "duplicateGroupCount": 0,
       "versionSiblingGroupCount": 5,
       "intentionalSiblingGroupCount": 6,
@@ -1754,12 +1738,12 @@
       "duplicateGroups": [],
       "versionSiblingGroups": [
         [
-          "courses/social-studies/grade-09/week-09/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-09/student-packet.html"
-        ],
-        [
           "courses/social-studies/grade-09/week-27/student-packet-v2.html",
           "courses/social-studies/grade-09/week-27/student-packet.html"
+        ],
+        [
+          "courses/social-studies/grade-09/week-07/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-07/student-packet.html"
         ],
         [
           "courses/social-studies/grade-09/week-10/student-packet-v2.html",
@@ -1770,21 +1754,11 @@
           "courses/social-studies/grade-09/week-06/student-packet.html"
         ],
         [
-          "courses/social-studies/grade-09/week-07/student-packet-v2.html",
-          "courses/social-studies/grade-09/week-07/student-packet.html"
+          "courses/social-studies/grade-09/week-09/student-packet-v2.html",
+          "courses/social-studies/grade-09/week-09/student-packet.html"
         ]
       ],
       "intentionalSiblingGroups": [
-        {
-          "pages": [
-            "courses/social-studies/grade-09/week-08/student-assessment-v2.html",
-            "courses/social-studies/grade-09/week-08/student-assessment.html"
-          ],
-          "roles": {
-            "courses/social-studies/grade-09/week-08/student-assessment-v2.html": "",
-            "courses/social-studies/grade-09/week-08/student-assessment.html": "canonical-assessment"
-          }
-        },
         {
           "pages": [
             "courses/social-studies/grade-09/week-05/student-assessment-v2.html",
@@ -1797,12 +1771,22 @@
         },
         {
           "pages": [
-            "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-09/student-packet.html"
+            "courses/social-studies/grade-09/week-08/student-assessment-v2.html",
+            "courses/social-studies/grade-09/week-08/student-assessment.html"
           ],
           "roles": {
-            "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-09/student-packet.html": ""
+            "courses/social-studies/grade-09/week-08/student-assessment-v2.html": "",
+            "courses/social-studies/grade-09/week-08/student-assessment.html": "canonical-assessment"
+          }
+        },
+        {
+          "pages": [
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
+          ],
+          "roles": {
+            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-07/student-packet.html": ""
           }
         },
         {
@@ -1827,12 +1811,12 @@
         },
         {
           "pages": [
-            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html",
-            "courses/social-studies/grade-09/weeks/week-07/student-packet.html"
+            "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html",
+            "courses/social-studies/grade-09/weeks/week-09/student-packet.html"
           ],
           "roles": {
-            "courses/social-studies/grade-09/weeks/week-07/student-packet-v2.html": "canonical-assessment",
-            "courses/social-studies/grade-09/weeks/week-07/student-packet.html": ""
+            "courses/social-studies/grade-09/weeks/week-09/student-packet-v2.html": "canonical-assessment",
+            "courses/social-studies/grade-09/weeks/week-09/student-packet.html": ""
           }
         }
       ],
@@ -1842,16 +1826,16 @@
           "canonical": "courses/social-studies/grade-09/assessments/readiness-v3.html"
         },
         {
-          "alias": "courses/social-studies/grade-09/weeks/week-08/student-assessment-v2.html",
-          "canonical": "courses/social-studies/grade-09/weeks/week-08/student-assessment.html"
+          "alias": "courses/social-studies/grade-09/weeks/week-05/student-assessment-v2.html",
+          "canonical": "courses/social-studies/grade-09/weeks/week-05/student-assessment.html"
         },
         {
           "alias": "courses/social-studies/grade-09/weeks/week-27/student-packet-v2.html",
           "canonical": "courses/social-studies/grade-09/weeks/week-27/student-packet.html"
         },
         {
-          "alias": "courses/social-studies/grade-09/weeks/week-05/student-assessment-v2.html",
-          "canonical": "courses/social-studies/grade-09/weeks/week-05/student-assessment.html"
+          "alias": "courses/social-studies/grade-09/weeks/week-08/student-assessment-v2.html",
+          "canonical": "courses/social-studies/grade-09/weeks/week-08/student-assessment.html"
         }
       ],
       "supersededNames": [
@@ -2055,563 +2039,563 @@
       "supersededNameCount": 0,
       "brokenLocalLinks": [
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m08-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m09-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/Observational-Drawin-Form-Light-and-Perspective.webp",
+          "raw": "./Observational-Drawin-Form-Light-and-Perspective.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m04-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m03-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m09-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-11/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m07-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m07-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/Space-in-Art.webp",
+          "raw": "./Space-in-Art.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m03-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/Human-Figure-in-Space.webp",
+          "raw": "./Human-Figure-in-Space.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m08-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m06-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-13/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m08-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m12-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/Light-Shadow-and-Volume-Study.webp",
+          "raw": "./Light-Shadow-and-Volume-Study.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m01-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m02-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-05/week-12/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m11-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-20/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m09-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-20/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m02-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-20/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m06-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-22/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m11-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-22/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m04-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-22/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m10-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-21/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m05-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-21/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m02-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-08/week-21/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m10-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m01-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m01-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-10/week-26/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m07-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/index.html",
+          "raw": "../../../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m11-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m12-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/Modern-Graphic-Design-Portfolio-Spread.webp",
+          "raw": "./Modern-Graphic-Design-Portfolio-Spread.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m10-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m04-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-01/week-01/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/progression-gate-v1.js",
+          "raw": "../../../shared/progression-gate-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m12-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-03/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/index.html",
+          "raw": "../../../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m03-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-03/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m05-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-03/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-03/Height-and-Width-Perspective-Guide.webp",
+          "raw": "./Height-and-Width-Perspective-Guide.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m06-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-03/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/quantitative-reasoning/lessons/m05-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-03/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m08-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-02/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/index.html",
+          "raw": "../../../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m09-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-02/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m04-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-02/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-02/what-counts-as-an-edge.webp",
+          "raw": "what-counts-as-an-edge.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m03-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-02/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m09-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-04/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/index.html",
+          "raw": "../../../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m07-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-04/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m07-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-04/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-04/Drawing-a-Sphere-Step-by-Step.png",
+          "raw": "./Drawing-a-Sphere-Step-by-Step.png",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m03-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-04/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m08-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-02/week-04/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m06-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-18/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m08-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-18/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-18/Pattern-Repetition-and-Movement-Poster.webp",
+          "raw": "./Pattern-Repetition-and-Movement-Poster.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m12-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-18/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m01-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-18/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m02-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-17/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m11-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-17/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-17/Balance-Rhythm-and-Composition-Poster.webp",
+          "raw": "./Balance-Rhythm-and-Composition-Poster.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m09-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-17/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m02-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-17/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m06-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m11-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/Pattern-Repetition-and-Movement-1.webp",
+          "raw": "./Pattern-Repetition-and-Movement-1.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m04-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/Pattern-Repetition-and-Movement-2.webp",
+          "raw": "./Pattern-Repetition-and-Movement-2.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m10-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m05-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-07/week-19/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m02-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m10-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/Designing-a-Spatial-Narrative.webp",
+          "raw": "./Designing-a-Spatial-Narrative.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m01-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m01-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-16/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m07-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m11-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/Perspective-and-Spatial-Construction.webp",
+          "raw": "./Perspective-and-Spatial-Construction.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m12-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m10-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-14/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m04-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m12-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/Architectural-Perspective-Art-Lesson-Board.webp",
+          "raw": "./Architectural-Perspective-Art-Lesson-Board.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m03-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m05-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-06/week-15/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m06-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-05/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/world-humanities/lessons/m05-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-05/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m08-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-05/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m09-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-07/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m04-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-07/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-07/Color-Place-and-Meaning-Infographic.webp",
+          "raw": "./Color-Place-and-Meaning-Infographic.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m03-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-07/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m09-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-07/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/shared/formative-assessment-v1.js",
+          "raw": "../../../shared/formative-assessment-v1.js",
+          "tag": "script",
+          "attr": "src"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m07-l02.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-06/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m07-l01.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
-          "attr": "href"
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-06/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-06/Color-Relationships-A-Color-Theory-Guide.webp",
+          "raw": "./Color-Relationships-A-Color-Theory-Guide.webp",
+          "tag": "img",
+          "attr": "src"
         },
         {
-          "source": "courses/core/digital-information-literacy/lessons/m03-l03.html",
-          "target": "courses/core/assets/course.css",
-          "raw": "../../assets/course.css",
-          "tag": "link",
+          "source": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/week-06/index.html",
+          "target": "courses/tracks/arts/drawing-observation-creative-calling/source-curriculum/bazaar-art-art101/grade-9/unit-03/index.html",
+          "raw": "../index.html",
+          "tag": "a",
           "attr": "href"
         }
       ],
@@ -3721,9 +3705,9 @@
     },
     {
       "repository": "vervenveda/the_refrain.github.io",
-      "htmlCount": 10,
+      "htmlCount": 12,
       "brokenLocalLinkCount": 0,
-      "rootReachableHtmlCount": 10,
+      "rootReachableHtmlCount": 12,
       "rootOrphanHtmlCount": 0,
       "unreferencedHtmlCount": 0,
       "duplicateGroupCount": 0,
