@@ -1,0 +1,30 @@
+name: Public HTTP Link Audit
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ecosystem/audit_live_public_links.py
+      - ecosystem/tests/test_live_public_links.py
+      - .github/workflows/public-http-link-audit.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Test HTTP audit policy
+        run: python3 -m unittest ecosystem.tests.test_live_public_links -v
+      - name: Audit approved live destinations
+        if: github.event_name == 'workflow_dispatch'
+        run: python3 ecosystem/audit_live_public_links.py --output public-http-audit.json
+      - name: Publish read-only report
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-http-audit
+          path: public-http-audit.json
+          if-no-files-found: error
