@@ -1,17 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-24T00:21:52Z",
+  "generatedAt": "2026-11-24T10:25:48Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
     {
       "title": "Student Packet",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-03/student-packet.html",
@@ -48261,6 +48253,14 @@
       "source": "The Refrain"
     },
     {
+      "title": "Audio Editing Desk",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/audio-editing-desk.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/audio-editing-desk.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
       "title": "Composer Studio",
       "url": "https://vervenveda.github.io/the_refrain.github.io/apps/composer_studio_index.html",
       "repo": "the_refrain.github.io",
@@ -48281,6 +48281,14 @@
       "url": "https://vervenveda.github.io/the_refrain.github.io/apps/the-staff_index.html",
       "repo": "the_refrain.github.io",
       "path": "apps/the-staff_index.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Vocal Transcription",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/vocal-transcription.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/vocal-transcription.html",
       "category": "creative",
       "source": "The Refrain"
     },
