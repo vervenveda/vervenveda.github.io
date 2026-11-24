@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-24T17:11:28Z",
+  "generatedAt": "2026-11-24T22:45:59Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
@@ -48309,6 +48309,14 @@
       "source": "The Refrain"
     },
     {
+      "title": "Music Cloud",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/music-cloud.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/music-cloud.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
       "title": "Pro Keyboard",
       "url": "https://vervenveda.github.io/the_refrain.github.io/apps/pro-keyboard_index.html",
       "repo": "the_refrain.github.io",
@@ -48321,6 +48329,14 @@
       "url": "https://vervenveda.github.io/the_refrain.github.io/apps/recording-booth.html",
       "repo": "the_refrain.github.io",
       "path": "apps/recording-booth.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Song Project",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/song-project.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/song-project.html",
       "category": "creative",
       "source": "The Refrain"
     },

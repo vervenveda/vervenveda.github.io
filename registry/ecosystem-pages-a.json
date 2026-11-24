@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-24T17:11:28Z",
+  "generatedAt": "2026-11-24T22:45:59Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -857,6 +857,14 @@
       "url": "https://vervenveda.github.io/Arshif.github.io/",
       "repo": "Arshif.github.io",
       "path": "index.html",
+      "category": "research",
+      "source": "ARSHIF Archives"
+    },
+    {
+      "title": "Search",
+      "url": "https://vervenveda.github.io/Arshif.github.io/search/",
+      "repo": "Arshif.github.io",
+      "path": "search/index.html",
       "category": "research",
       "source": "ARSHIF Archives"
     },
