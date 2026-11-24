@@ -1,4 +1,4 @@
-/* Verve N Veda gateway forensic chrome probe v1.3.0
+/* Verve N Veda gateway forensic chrome probe v1.4.1
  * Opt-in only: ?chrome_audit=1. Read-only observation, no cookies, storage,
  * learner records, registry, outbound requests, or reporting.
  * Gateway uses native #networkTicker / .site-header / #menuOverlay,
@@ -12,10 +12,12 @@ const TARGETS=[
  ["Auto ticker",()=>document.getElementById("vnvTickerAutoPopulate")],
  ["VNV header",()=>document.querySelector("header.site-header")||document.getElementById("vnvHeaderAutoPopulate")],
  ["Branched menu",()=>document.getElementById("menuOverlay")||document.getElementById("vnvEnrichedMenuOverlay")],
- ["Universal toolbar",()=>document.getElementById("vnvEcosystemUtilityDock")],
- ["Translator rail",()=>document.getElementById("vnv-language-rail")]
+ ["Left universal toolbar",()=>document.getElementById("vnvClassToolsToolbar")],
+ ["Right ecosystem toolbar",()=>document.getElementById("vnvEcosystemUtilityDock")],
+ ["Translator header slot",()=>document.querySelector("header.site-header [data-vnv-language-slot]")],
+ ["Translator",()=>document.getElementById("vnv-language-switch")]
 ];
-const tracked=new Set(["networkTicker","vnv333NetworkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","menuOverlay","vnvEnrichedMenuOverlay","vnvEcosystemUtilityDock","vnv-language-rail"]);
+const tracked=new Set(["networkTicker","vnv333NetworkTicker","vnvTickerAutoPopulate","vnvHeaderAutoPopulate","menuOverlay","vnvEnrichedMenuOverlay","vnvEcosystemUtilityDock","vnvClassToolsToolbar","vnv-language-switch","vnv-language-rail"]);
 const traces=[];let queued=false,closed=false,panel=null,output=null;
 const when=()=>Math.round(performance.now())+"ms";
 function summary(name,find){
@@ -30,6 +32,16 @@ function summary(name,find){
  const state=closedMenu?"CLOSED (expected)":visible?"PRESENT":"HIDDEN";
  return name+": "+state+" · "+w+"×"+h+" at ("+x+","+y+")"+
   " · display "+css.display+" · visibility "+css.visibility+" · opacity "+css.opacity+" · parent "+parent;
+}
+function translatorContract(){
+ const header=document.querySelector("header.site-header");
+ const slots=document.querySelectorAll("[data-vnv-language-slot]");
+ const switches=document.querySelectorAll("#vnv-language-switch");
+ const rails=document.querySelectorAll("#vnv-language-rail");
+ const slot=slots[0],control=switches[0];
+ const mounted=!!(header&&slot&&control&&header.contains(slot)&&slot.contains(control));
+ const offset=mounted?Math.round((slot.getBoundingClientRect().left+slot.getBoundingClientRect().width/2)-(header.getBoundingClientRect().left+header.getBoundingClientRect().width/2)):null;
+ return {slots:slots.length,translators:switches.length,legacyRails:rails.length,mountedInHeader:mounted,centerOffsetPx:offset,placement:mounted&&slots.length===1&&switches.length===1&&rails.length===0?"PASS":"REVIEW"};
 }
 function display(){
  if(closed||!document.body)return;
@@ -48,6 +60,7 @@ function display(){
  }
  output.textContent="Current (no student data):\n"+
  TARGETS.map(([name,find])=>summary(name,find)).join("\n")+
+ "\n\nTranslator placement:\n"+JSON.stringify(translatorContract(),null,2)+
  "\n\nBootstrap status (presentation only):\n"+JSON.stringify(window.VNVGatewayBootstrap?.verify?.()||{state:"unavailable"},null,2)+"\n\nEarly refresh timeline:\n"+(window.VNVEarlyRefreshTrace?.events?.().slice(-24).join("\n")||"Early probe unavailable")+"\n\nLater events:\n"+traces.slice(-16).join("\n");
 }
 function record(note){
@@ -89,5 +102,5 @@ window.addEventListener("error",e=>{
  else if(e.message)record("JS ERROR: "+String(e.message).slice(0,140));
 },true);
 window.addEventListener("unhandledrejection",e=>record("PROMISE REJECTION: "+String(e.reason?.message||"unknown").slice(0,130)));
-window.VNVGatewayChromeAudit=Object.freeze({version:"1.4.0",snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
+window.VNVGatewayChromeAudit=Object.freeze({version:"1.4.1",translatorContract,snapshot:()=>TARGETS.map(([name,find])=>summary(name,find)),events:()=>traces.slice()});
 })();
