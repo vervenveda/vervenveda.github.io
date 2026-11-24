@@ -534,6 +534,51 @@ body > #vnv-language-switch{
 html[dir="rtl"] .ecosystem-category-grid,html[dir="rtl"] .quick-grid,html[dir="rtl"] .school-grid{direction:ltr}
 html[dir="rtl"] .ecosystem-category-grid > *,html[dir="rtl"] .quick-grid > *,html[dir="rtl"] .school-grid > *{direction:rtl}
 @media(max-width:480px){#vnv-language-switch{margin:6px auto}#vnv-language-select{min-width:106px}}
+
+/* Universal compact single-line translator, including standalone page mounts.
+   Do not reduce typography to make the controls fit. On narrow devices the
+   rail scrolls horizontally; it never grows a second row. */
+html:root body #vnv-language-rail{
+ box-sizing:border-box!important;width:100%!important;max-width:100%!important;
+ padding:0 8px!important;margin:0!important;min-height:0!important;
+ background:#292827!important;border:0!important;
+}
+html:root body #vnv-language-switch,
+html:root body #vnv-language-rail #vnv-language-switch,
+html:root body #vnv-language-switch-drawer{
+ box-sizing:border-box!important;display:flex!important;flex-flow:row nowrap!important;
+ align-items:center!important;justify-content:safe center!important;
+ gap:6px!important;width:max-content!important;max-width:calc(100% - 16px)!important;
+ min-width:0!important;min-height:0!important;height:auto!important;
+ margin:4px auto!important;padding:3px 7px!important;
+ overflow-x:auto!important;overflow-y:hidden!important;overscroll-behavior-x:contain;
+ -webkit-overflow-scrolling:touch;background:#292827!important;color:#f8f0df!important;
+ border:1px solid #b48b45!important;border-radius:7px!important;box-shadow:none!important;
+ font:400 16px/1.25 Nunito,"Brandon Grotesque",Arial,sans-serif!important;
+ scrollbar-width:thin;scrollbar-color:#b48b45 #292827;
+}
+html:root body #vnv-language-rail #vnv-language-switch{margin:0 auto!important;border-color:transparent!important;max-width:100%!important}
+html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer) > :is(label,span,select,button){
+ flex:0 0 auto!important;white-space:nowrap!important;max-width:none!important;
+ font:400 16px/1.25 Nunito,"Brandon Grotesque",Arial,sans-serif!important;
+ letter-spacing:0!important;margin:0!important;
+}
+html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer) > :is(label,[data-vnv-coverage]){
+ color:#f8f0df!important;-webkit-text-fill-color:#f8f0df!important;
+}
+html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer) > :is(select,button){
+ box-sizing:border-box!important;width:auto!important;min-width:0!important;
+ min-height:30px!important;height:30px!important;padding:2px 9px!important;
+ border:1px solid #cdbfa8!important;border-radius:7px!important;
+ background:#f8f0df!important;color:#292827!important;-webkit-text-fill-color:#292827!important;
+ box-shadow:none!important;text-transform:none!important;
+}
+html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer) > select{min-width:100px!important;max-width:160px!important}
+html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer) > :is(select,button):focus-visible{outline:2px solid #d8b66b!important;outline-offset:-2px!important}
+@media(max-width:760px){
+ html:root body :is(#vnv-language-switch,#vnv-language-switch-drawer),
+ html:root body #vnv-language-rail #vnv-language-switch{justify-content:flex-start!important}
+}
 `;
 document.head.append(styles);
 function makeSelector(){
