@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-23T08:14:22Z",
+  "generatedAt": "2026-11-24T00:21:52Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -23797,10 +23797,674 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Cumulative 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/cumulative-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/cumulative-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Cumulative 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/cumulative-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/cumulative-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Cumulative 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/cumulative-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/cumulative-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 06",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-06.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-06.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 07",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-07.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-07.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 08",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-08.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-08.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 09",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-09.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-09.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 10",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-10.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-10.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 11",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-11.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-11.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 12",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-12.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-12.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Week 13",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/assessments/week-13.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/assessments/week-13.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Career Professional Studies",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/electives/career-professional-studies/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Lessons",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-01/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-01/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-01/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-01/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-01/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-01/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-01/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-01/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-01/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-01/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-02/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-02/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-02/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-02/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-02/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-02/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-02/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-02/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-02/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-02/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-03/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-03/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-03/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-03/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-03/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-03/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-03/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-03/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-03/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-03/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-04/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-04/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-04/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-04/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-04/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-04/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-04/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-04/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-04/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-04/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-05/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-05/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-05/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-05/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-05/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-05/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-05/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-05/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-05/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-05/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-06/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-06/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-06/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-06/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-06/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-06/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-06/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-06/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-06/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-06/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-07/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-07/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-07/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-07/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-07/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-07/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-07/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-07/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-07/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-07/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-08/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-08/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-08/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-08/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-08/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-08/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-08/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-08/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-08/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-08/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-09/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-09/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-09/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-09/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-09/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-09/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-09/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-09/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-09/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-09/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-10/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-10/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-10/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-10/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-10/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-10/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-10/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-10/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-10/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-10/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-11/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-11/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-11/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-11/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-11/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-11/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-11/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-11/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-11/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-11/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-12/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-12/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-12/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-12/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-12/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-12/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-12/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-12/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-12/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-12/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 01",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-13/day-01.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-13/day-01.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 02",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-13/day-02.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-13/day-02.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 03",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-13/day-03.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-13/day-03.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 04",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-13/day-04.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-13/day-04.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Day 05",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/lessons/week-13/day-05.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/lessons/week-13/day-05.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/career-professional-studies/portfolio/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/career-professional-studies/portfolio/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -23841,6 +24505,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/music-music-theory/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/electives/music-music-theory/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Psychology 101",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/psychology-101/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/psychology-101/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -24217,6 +24889,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/units/unit-01/reading-dossier.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-10/units/unit-01/reading-dossier.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Reading Spine",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-10/units/unit-01/reading-spine.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-10/units/unit-01/reading-spine.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -25101,6 +25781,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Reading Spine",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/units/unit-01/reading-spine.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-11/units/unit-01/reading-spine.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Unit 02",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-11/units/unit-02/",
       "repo": "Khaemenes_High.github.io",
@@ -25977,6 +26665,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/units/unit-01/reading-dossier.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-12/units/unit-01/reading-dossier.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Reading Spine",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-12/units/unit-01/reading-spine.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-12/units/unit-01/reading-spine.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -26889,6 +27585,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/units/unit-01/reading-dossier.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/language-arts/english-9/units/unit-01/reading-dossier.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Reading Spine",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/language-arts/english-9/units/unit-01/reading-spine.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/language-arts/english-9/units/unit-01/reading-spine.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -34281,14 +34985,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/pre-algebra/units/unit-01/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/mathematics/pre-algebra/units/unit-01/index.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Lesson 01 Number Systems Engine Preview",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/mathematics/pre-algebra/units/unit-01/lessons/lesson-01-number-systems-engine-preview.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/mathematics/pre-algebra/units/unit-01/lessons/lesson-01-number-systems-engine-preview.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -45853,6 +46549,14 @@
       "source": "Khaemenes Academy High School"
     },
     {
+      "title": "Assessment Authority",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/shared/assessment-authority/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/shared/assessment-authority/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
       "title": "Family Records",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/shared/family-records/",
       "repo": "Khaemenes_High.github.io",
@@ -48057,358 +48761,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-02/student-packet.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-10/weeks/week-02/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-02/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-03/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-03/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-03/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-03/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-04/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-04/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-04/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-04/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-05/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-05/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-05/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-05/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-06/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-06/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-06/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-06/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-07/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-07/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-07/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-07/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-08/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-08/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-08/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-08/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-09/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-09/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-09/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-09/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-10/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-10/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-10/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-10/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-11/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-11/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-11/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-11/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-12/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-12/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-12/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-12/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-13/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-13/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-13/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-13/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-14/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-14/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-14/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-14/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-15/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-15/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-15/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-15/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-16/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-16/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-16/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-16/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-17/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-17/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-17/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-17/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-18/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-18/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-18/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-18/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-19/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-19/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-19/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-19/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-20/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-20/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-20/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-20/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-21/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-21/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-21/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-21/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-22/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-22/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-22/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-22/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-23/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-23/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-23/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-23/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-24/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-24/student-packet.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }
