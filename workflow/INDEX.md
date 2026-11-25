@@ -4,6 +4,7 @@ Newest entries first. Date is America/New_York.
 
 | Date | Type | Topic | Status |
 | --- | --- | --- | --- |
+| 2026-11-24 | forensic audit · architecture · security | [Deep gateway repository and index audit](logs/2026/11/2026-11-24-gateway-deep-forensic-audit.md) | Source baseline recorded; 491 reported references for triage; sovereignty, offline and runtime HOLD; CSS deferred |
 | 2026-11-24 | audit · repair · test · decision | [Gateway directory and public HTTP certification](logs/2026/11/2026-11-24-gateway-directory-http-certification.md) | 185/185 source and HTTP PASS; 110 expected redirects; browser/security and mirror automation HOLD |
 | 2026-11-20 | inventory · boundary review | [40-repository Account Cloud feeder inventory](inventories/2026-11-20-vervenveda-account-cloud-review.md) / [structured inventory](inventories/2026-11-20-vervenveda-repository-handoff-inventory.json) | 40 repositories: 12 P1, 11 P2, 17 P3; all source-only, no new authorized transfers |
 | 2026-11-20 | contract · validator · tests | [VNV–Academy Account Cloud handoff v1](logs/2026/11/2026-11-20-vnv-academy-handoff-contract-v1.md) | Versioned source-only proposal and seven validator tests; 22 synthetic CI tests PASS (run 44830559407); no transfer or T03 commissioning |
