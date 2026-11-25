@@ -1,0 +1,21 @@
+name: Page Vocabulary Capture Contract
+on:
+  pull_request:
+    paths:
+      - 'assets/vnv-language.js'
+      - 'tests/page-vocabulary-capture.test.mjs'
+      - '.github/workflows/page-vocabulary-capture.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/page-vocabulary-capture.test.mjs
