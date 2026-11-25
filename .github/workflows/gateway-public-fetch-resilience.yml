@@ -1,0 +1,21 @@
+name: Gateway Public Fetch Resilience
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'tests/gateway-public-fetch-resilience.test.mjs'
+      - '.github/workflows/gateway-public-fetch-resilience.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  bounded-public-fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/gateway-public-fetch-resilience.test.mjs
