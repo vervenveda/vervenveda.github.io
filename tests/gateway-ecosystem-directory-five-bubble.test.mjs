@@ -57,7 +57,8 @@ test('Bubble 2: full canonical registry remains well-formed without duplicated I
 
 test('Bubble 3: canonical navigation with deliberate emergency fallback, not a second authority',()=>{
  assert.match(html,/const source="\/ecosystem\/master-ecosystem-directory\.json"/);
- assert.match(html,/fetch\(source,\{cache:"no-store",credentials:"same-origin"\}\)/);
+ assert.match(html,/fetchPublicRegistryJson\(source, 8000\)/);
+ assert.match(html,/fetch\(path,\{cache:"no-store",credentials:"same-origin",signal:controller.signal\}\)/);
  assert.match(html,/console\.warn\("Verve N Veda canonical directory fallback active:"/);
  const sites=fallbackSites(),categories=fallbackDirectory();
  assert.ok(sites.some(e=>e.title==='Khaemenes Academy'));
