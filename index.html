@@ -5319,12 +5319,23 @@ a.button,button.button {
         return words.slice(0,3).map(word=>word[0]).join("").toUpperCase();
       }
 
+      // Public registry requests only. Keep the deadline active through body parsing.
+      async function fetchPublicRegistryJson(path, timeoutMs = 8000){
+        const controller = new AbortController();
+        const timer = setTimeout(()=>controller.abort(), timeoutMs);
+        try{
+          const response=await fetch(path,{cache:"no-store",credentials:"same-origin",signal:controller.signal});
+          if(!response.ok) throw new Error(`HTTP ${response.status}`);
+          return await response.json();
+        }finally{
+          clearTimeout(timer);
+        }
+      }
+
       async function loadCanonicalNavigation(){
         const source="/ecosystem/master-ecosystem-directory.json";
         try{
-          const response=await fetch(source,{cache:"no-store",credentials:"same-origin"});
-          if(!response.ok) throw new Error(`HTTP ${response.status}`);
-          const payload=await response.json();
+          const payload=await fetchPublicRegistryJson(source, 8000);
           if(!Array.isArray(payload?.entries)) throw new Error("entries missing");
 
           ECOSYSTEM_PAGE_CATALOG_PARTS = Array.isArray(payload?.pageCatalog?.parts)
@@ -5488,9 +5499,7 @@ a.button,button.button {
         async function fetchCatalogParts(urls){
           if(!urls.length) throw new Error("canonical catalog parts unavailable");
           const shards=await Promise.all(urls.map(async url=>{
-            const response=await fetch(url,{cache:"no-store",credentials:"same-origin"});
-            if(!response.ok) throw new Error(`${url} HTTP ${response.status}`);
-            const data=await response.json();
+            const data=await fetchPublicRegistryJson(url, 15000);
             if(!Array.isArray(data?.pages)) throw new Error(`${url} pages missing`);
             return data;
           }));
