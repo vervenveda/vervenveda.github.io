@@ -1,0 +1,27 @@
+name: Public Boundary Guardian
+on:
+  pull_request:
+    paths:
+      - 'admin/**'
+      - 'cloud/**'
+      - 'assets/stos-public-config.js'
+      - 'ecosystem/sync-status.json'
+      - 'ecosystem/master-ecosystem-directory.json'
+      - 'ecosystem-manifest.json'
+      - 'ecosystem/public_boundary_guardian.py'
+      - 'ecosystem/tests/test_public_boundary_guardian.py'
+      - '.github/workflows/public-boundary-guardian.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  boundary-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check declared public boundaries
+        run: python3 ecosystem/public_boundary_guardian.py
+      - name: Test baseline and synthetic boundary violations
+        run: python3 -m unittest discover -s ecosystem/tests -p 'test_public_boundary_guardian.py' -v
