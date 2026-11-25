@@ -104,7 +104,8 @@ test('Bubble 5: gateway retains native ticker, header, hamburger, translator and
  assert.equal((html.match(/class="site-header"/g)||[]).length,1);
  assert.equal((html.match(/id="menuButton"/g)||[]).length,1);
  assert.equal((html.match(/id="menuOverlay"/g)||[]).length,1);
- assert.equal((html.match(/id="vnv-language-rail"/g)||[]).length,1);
+ assert.equal((html.match(/<div\b[^>]*\bdata-vnv-language-slot\b[^>]*>/g)||[]).length,1);
+ assert.equal((html.match(/id="vnv-language-rail"/g)||[]).length,0);
  assert.equal((html.match(/id="vnvGatewayAutoTickerSlot"/g)||[]).length,1);
  for(const src of ['/assets/vnv-ticker-autopopulate.js','/assets/vnv-class-tools-toolbar.js',
    'https://vervenveda.com/assets/vnv-ecosystem-toolbar.js'])
@@ -125,7 +126,7 @@ test('Bubble 5 continued: menu and translator have distinct fallback owners',()=
  assert.match(html,/id="menuSearch"/);
  assert.match(html,/id="closeMenu"/);
  assert.match(html,/khaemenes-translator-loader\.js\?v=1\.1\.1/);
- assert.match(html,/assets\/vnv-language\.js\?v=20261108-cream-buttons/);
+ assert.match(html,/assets\/vnv-language\.js\?v=20261124-header-slot/);
  assert.match(html,/if\(!loader\?\.ensure\)return/);
  assert.match(html,/\.catch\(\(\)=>\{\}\)/);
  assert.match(language,/Page-local learner responses and admin inputs are excluded/);
@@ -133,7 +134,7 @@ test('Bubble 5 continued: menu and translator have distinct fallback owners',()=
 });
 
 test('Sovereign Translator is a single visible canonical Linguistics tool in the live ecosystem directory',()=>{
- const matches=directory.filter(e=>e.repository==='vervenveda/Khaemenes_Linguistics.github.io'&&e.path==='apps/translator.html');
+ const matches=directory.filter(e=>e.repository==='vervenveda/Khaemenes_Linguistics.github.io'&&e.path==='apps/translator-entry.html');
  assert.equal(matches.length,1);
  const tool=matches[0];
  assert.equal(tool.id,'ling-sovereign-translator');
@@ -141,8 +142,23 @@ test('Sovereign Translator is a single visible canonical Linguistics tool in the
  assert.equal(tool.type,'tool');
  assert.equal(tool.category,'education');
  assert.ok(eligible(tool));
- assert.equal(tool.url,'https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/translator.html');
+ assert.equal(tool.url,'https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/translator-entry.html');
  assert.equal(directory.filter(e=>e.id===tool.id).length,1);
  assert.ok(html.includes('const source="/ecosystem/master-ecosystem-directory.json"'));
  assert.ok(!directory.some(e=>e.id!==tool.id&&e.url===tool.url));
 });
+
+ test('Retired Wix route remains absent and sovereign front doors are reserved, not public authority',()=>{
+ assert.ok(!html.includes('vervenveda.wixsite.com'));
+ const manifest=JSON.parse(read('ecosystem-manifest.json'));
+ for(const [id,host] of [['stos-public-front-door','https://stosme.github.io/'],['academy-public-front-door','https://khaemenesacademy.github.io/']]){
+  const item=manifest.reservedModules.find(e=>e.id===id);
+  assert.ok(item,id);
+  assert.equal(item.status,'reserved');
+  assert.equal(item.publicNavigation,false);
+  assert.equal(item.urls.public,null);
+  assert.equal(manifest.owners.find(e=>e.id===item.owner)?.publicRoot,host);
+  assert.ok(!directory.some(e=>eligible(e)&&e.url===host));
+ }
+ assert.equal(manifest.integrity.counts.reservedModules,manifest.reservedModules.length);
+ });
