@@ -40,6 +40,18 @@
   },
   "owners": [
     {
+      "id": "stosme",
+      "github": "STOSme",
+      "role": "reserved-sovereign-front-door",
+      "publicRoot": "https://stosme.github.io/"
+    },
+    {
+      "id": "khaemenesacademy",
+      "github": "KhaemenesAcademy",
+      "role": "reserved-academy-front-door",
+      "publicRoot": "https://khaemenesacademy.github.io/"
+    },
+    {
       "id": "vervenveda",
       "github": "vervenveda",
       "role": "primary-public-product-namespace",
@@ -1459,6 +1471,46 @@
   ],
   "reservedModules": [
     {
+      "id": "stos-public-front-door",
+      "name": "STOS Public Front Door",
+      "aliases": [],
+      "owner": "stosme",
+      "repository": null,
+      "role": "reserved-sovereign-front-door",
+      "publicNavigation": false,
+      "urls": {
+        "public": null
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": [],
+      "notes": "Requested address https://stosme.github.io/; repository and publication unverified. No STOS activation, public sync, or private infrastructure access authorized."
+    },
+    {
+      "id": "academy-public-front-door",
+      "name": "Khaemenes Academy Public Front Door",
+      "aliases": [],
+      "owner": "khaemenesacademy",
+      "repository": "KhaemenesAcademy/KhaemenesAcademy.github.io",
+      "role": "reserved-academy-front-door",
+      "publicNavigation": false,
+      "urls": {
+        "public": null
+      },
+      "version": {
+        "value": null,
+        "source": "not-declared"
+      },
+      "status": "reserved",
+      "capabilities": [],
+      "legacyReplacementFor": [],
+      "notes": "Requested address https://khaemenesacademy.github.io/; source repository private and Pages disabled at inspection. Do not activate or change visibility."
+    },
+    {
       "id": "campaign-documents",
       "name": "Campaign Documents",
       "aliases": [],
@@ -1897,7 +1949,7 @@
     "counts": {
       "apps": 37,
       "backstageSystems": 4,
-      "reservedModules": 6,
+      "reservedModules": 8,
       "legacyRepositories": 12,
       "relationships": 15
     },
