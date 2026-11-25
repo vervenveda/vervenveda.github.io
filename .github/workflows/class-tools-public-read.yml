@@ -1,0 +1,22 @@
+name: Class Tools Public Read Resilience
+on:
+  pull_request:
+    paths:
+      - 'assets/vnv-class-tools-toolbar.js'
+      - 'tests/class-tools-public-read.test.mjs'
+      - '.github/workflows/class-tools-public-read.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  class-tools-public-read:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check assets/vnv-class-tools-toolbar.js
+      - run: node --test tests/class-tools-public-read.test.mjs
