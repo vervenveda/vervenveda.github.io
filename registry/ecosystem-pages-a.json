@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-25T09:09:57Z",
+  "generatedAt": "2026-11-25T21:58:36Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "a",
   "pages": [
@@ -23801,6 +23801,22 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/capstone/senior-capstone/",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/capstone/senior-capstone/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Art 101",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/art-101/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/art-101/index.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
+    {
+      "title": "Art 201",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/electives/art-201/",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/electives/art-201/index.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     },
@@ -48833,14 +48849,6 @@
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-36/student-packet.html",
       "repo": "Khaemenes_High.github.io",
       "path": "courses/social-studies/grade-10/week-36/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-36/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-36/teacher-guide.html",
       "category": "education",
       "source": "Khaemenes Academy High School"
     }

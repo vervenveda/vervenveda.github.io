@@ -1,9 +1,17 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-25T09:09:57Z",
+  "generatedAt": "2026-11-25T21:58:36Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
+    {
+      "title": "Teacher Guide",
+      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-36/teacher-guide.html",
+      "repo": "Khaemenes_High.github.io",
+      "path": "courses/social-studies/grade-10/week-36/teacher-guide.html",
+      "category": "education",
+      "source": "Khaemenes Academy High School"
+    },
     {
       "title": "Student Packet",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-01/student-packet.html",
