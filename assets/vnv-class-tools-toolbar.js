@@ -62,36 +62,48 @@ const routeAllowed=c=>{
 };
 const activeEntry=e=>e&&e.directoryVisible===true&&e.access==="free-public"&&e.status==="active"&&typeof e.url==="string";
 
+// Public reads only: bound each origin, including response body retrieval.
+const PUBLIC_READ_TIMEOUT_MS=4000;
+const FAILED_READ_RETRY_MS=30000;
+let directoryRetryAt=0;
+let mathematicsArchiveRetryAt=0;
+async function fetchPublicToolJson(url,timeoutMs=PUBLIC_READ_TIMEOUT_MS){
+ const request=new AbortController();
+ const timer=setTimeout(()=>request.abort(),timeoutMs);
+ try{
+  const r=await fetch(url,{cache:"no-store",credentials:"omit",signal:request.signal});
+  if(!r.ok)throw Error("HTTP "+r.status);
+  return await r.json();
+ }finally{clearTimeout(timer)}
+}
 async function directory(){
- if(directoryPromise)return directoryPromise;
+ if(directoryPromise&&(!directoryRetryAt||Date.now()<directoryRetryAt))return directoryPromise;
+ directoryRetryAt=0;
  directoryPromise=(async()=>{
-  let lastError=null;
   for(const url of DIRECTORY_URLS){
    try{
-    const r=await fetch(url,{cache:"no-store",credentials:"omit"});
-    if(!r.ok)throw Error("HTTP "+r.status);
-    const data=await r.json();
+    const data=await fetchPublicToolJson(url);
     if(Array.isArray(data?.entries))return data.entries.filter(activeEntry);
-   }catch(err){lastError=err}
+   }catch{}
   }
-  console.warn("VNV Class Tools directory unavailable; local fallbacks remain active.",lastError);
+  directoryRetryAt=Date.now()+FAILED_READ_RETRY_MS;
+  console.warn("VNV Class Tools directory unavailable; local fallbacks remain active.");
   return [];
  })();
  return directoryPromise;
 }
 async function mathematicsArchive(){
- if(mathematicsArchivePromise)return mathematicsArchivePromise;
+ if(mathematicsArchivePromise&&(!mathematicsArchiveRetryAt||Date.now()<mathematicsArchiveRetryAt))return mathematicsArchivePromise;
+ mathematicsArchiveRetryAt=0;
  mathematicsArchivePromise=(async()=>{
-  let lastError=null;
   for(const url of MATHEMATICS_ARCHIVE_URLS){
    try{
-    const r=await fetch(url,{cache:"no-store",credentials:"omit"});
-    if(!r.ok)throw Error("HTTP "+r.status);
-    const data=await r.json();
+    const data=await fetchPublicToolJson(url);
     if(Array.isArray(data?.games))return data;
-   }catch(err){lastError=err}
+   }catch{}
   }
-  console.warn("VNV mathematics learning-tools archive unavailable; normal fallbacks remain active.",lastError);
+  mathematicsArchiveRetryAt=Date.now()+FAILED_READ_RETRY_MS;
+  console.warn("VNV mathematics learning-tools archive unavailable; normal fallbacks remain active.");
   return {games:[],shared_tools:[]};
  })();
  return mathematicsArchivePromise;
