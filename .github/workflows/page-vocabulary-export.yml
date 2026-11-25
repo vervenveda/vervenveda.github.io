@@ -1,0 +1,21 @@
+name: Vocabulary Review Export
+on:
+  pull_request:
+    paths:
+      - 'vocabulary-review/**'
+      - 'tests/page-vocabulary-export.test.mjs'
+      - '.github/workflows/page-vocabulary-export.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/page-vocabulary-export.test.mjs
