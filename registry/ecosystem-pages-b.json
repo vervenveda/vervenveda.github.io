@@ -1,25 +1,9 @@
 {
   "version": 4,
-  "generatedAt": "2026-11-26T08:53:46Z",
+  "generatedAt": "2026-11-26T21:55:38Z",
   "policy": "Automatically synchronized public HTML from approved Verve N Veda repositories; private/admin/backups/STOS/diagnostic/offline/helper/legacy surfaces excluded. New repositories require explicit ecosystem approval.",
   "part": "b",
   "pages": [
-    {
-      "title": "Teacher Guide",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/week-36/teacher-guide.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/week-36/teacher-guide.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
-    {
-      "title": "Student Packet",
-      "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-01/student-packet.html",
-      "repo": "Khaemenes_High.github.io",
-      "path": "courses/social-studies/grade-10/weeks/week-01/student-packet.html",
-      "category": "education",
-      "source": "Khaemenes Academy High School"
-    },
     {
       "title": "Teacher Guide",
       "url": "https://vervenveda.github.io/Khaemenes_High.github.io/courses/social-studies/grade-10/weeks/week-01/teacher-guide.html",
@@ -31557,6 +31541,22 @@
       "source": "Khaemenes Linguistics"
     },
     {
+      "title": "French",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/french/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/french/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "German",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/german/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/german/index.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
       "title": "Language Worlds",
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/",
       "repo": "Khaemenes_Linguistics.github.io",
@@ -31977,6 +31977,14 @@
       "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/mandarin/unit-04-checkpoint.html",
       "repo": "Khaemenes_Linguistics.github.io",
       "path": "apps/language-worlds/mandarin/unit-04-checkpoint.html",
+      "category": "education",
+      "source": "Khaemenes Linguistics"
+    },
+    {
+      "title": "Russian",
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/language-worlds/russian/",
+      "repo": "Khaemenes_Linguistics.github.io",
+      "path": "apps/language-worlds/russian/index.html",
       "category": "education",
       "source": "Khaemenes Linguistics"
     },
@@ -48337,6 +48345,14 @@
       "url": "https://vervenveda.github.io/the_refrain.github.io/apps/song-project.html",
       "repo": "the_refrain.github.io",
       "path": "apps/song-project.html",
+      "category": "creative",
+      "source": "The Refrain"
+    },
+    {
+      "title": "Studio Highway",
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/studio-highway.html",
+      "repo": "the_refrain.github.io",
+      "path": "apps/studio-highway.html",
       "category": "creative",
       "source": "The Refrain"
     },
