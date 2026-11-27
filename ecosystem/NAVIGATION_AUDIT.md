@@ -1,6 +1,6 @@
 # Verve N Veda Public Navigation Audit
 
-Generated: 2026-11-26T15:10:19Z
+Generated: 2026-11-27T15:02:51Z
 
 STOS remains dormant and is excluded from this audit. No files are deleted or renamed automatically.
 
@@ -8,10 +8,10 @@ STOS remains dormant and is excluded from this audit. No files are deleted or re
 
 - Repositories audited: 41
 - Repository audit failures: 0
-- HTML files inspected: 13473
+- HTML files inspected: 13477
 - Broken local link references: 491
-- HTML pages not reachable from repository root index: 7876
-- HTML pages with no incoming in-repository link: 1998
+- HTML pages not reachable from repository root index: 7872
+- HTML pages with no incoming in-repository link: 1994
 - Exact duplicate groups: 0
 - Version/sibling groups requiring review: 5
 - Intentional semantic sibling groups: 6
